@@ -1,0 +1,8 @@
+{
+  "en": {
+    "TestBundle.hello": "Hello World!"
+  },
+  "pl": {
+    "TestBundle.hello": "Witaj Świecie!"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "types": ["@intlify/vite-plugin-vue-i18n/client", "vite/client", "cypress"],
+    "baseUrl": "./src/",
+    "paths": {
+      "@Assets/*": ["Assets/*"],
+      "@Bundles/*": ["Bundles/*"],
+      "@Configs/*": ["Configs/*"],
+      "@Views/*": ["Views/*"]
+    }
+  },
+  "include": ["./src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

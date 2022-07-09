@@ -1,0 +1,5 @@
+{
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single"
+}
