@@ -1,4 +1,4 @@
-@mixin hover($name) {
+@mixin hover($name: 'hover') {
   @media (hover: $name) {
     @content;
   }
