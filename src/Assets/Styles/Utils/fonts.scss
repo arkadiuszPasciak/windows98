@@ -1,0 +1,31 @@
+$ms-sans-serif-medium: 'MSSansSerifMedium';
+$src-ms-sans-serif-medium: '@Assets/Fonts/#{$ms-sans-serif-medium}/#{$ms-sans-serif-medium}';
+
+@font-face {
+  font-family: $ms-sans-serif-medium;
+  src: url('#{$src-ms-sans-serif-medium}.svg##{$ms-sans-serif-medium}')
+      format('svg'),
+    url('#{$src-ms-sans-serif-medium}.ttf') format('truetype'),
+    url('#{$src-ms-sans-serif-medium}.woff') format('woff'),
+    url('#{$src-ms-sans-serif-medium}.woff2') format('woff2'),
+    url('#{$src-ms-sans-serif-medium}.eot'),
+    url('#{$src-ms-sans-serif-medium}.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$ms-sans-serif-bold: 'MSSansSerifBold';
+$src-ms-sans-serif-bold: '@Assets/Fonts/#{$ms-sans-serif-bold}/#{$ms-sans-serif-bold}';
+
+@font-face {
+  font-family: $ms-sans-serif-bold;
+  src: url('#{$src-ms-sans-serif-bold}.svg##{$ms-sans-serif-bold}')
+      format('svg'),
+    url('#{$src-ms-sans-serif-bold}.ttf') format('truetype'),
+    url('#{$src-ms-sans-serif-bold}.woff') format('woff'),
+    url('#{$src-ms-sans-serif-bold}.woff2') format('woff2'),
+    url('#{$src-ms-sans-serif-bold}.eot'),
+    url('#{$src-ms-sans-serif-bold}.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

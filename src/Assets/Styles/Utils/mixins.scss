@@ -1,0 +1,9 @@
+@mixin font($weight, $font-size, $line-height) {
+  @if $weight == 'bold' {
+    font: 400 ($font-size + px)/ ($line-height + px) $font-ms-sans-serif-bold;
+  }
+
+  @if $weight == 'medium' {
+    font: 400 ($font-size + px)/ ($line-height + px) $font-ms-sans-serif-medium;
+  }
+}
