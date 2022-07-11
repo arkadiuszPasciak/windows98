@@ -10,6 +10,7 @@ export default defineConfig({
   plugins: [vue(), vueI18n(), eslintPlugin(), tsconfigPaths()],
   resolve: {
     alias: {
+      '~@': path.resolve(__dirname, './src'),
       '@Assets': path.resolve(__dirname, './src/Assets'),
       '@Bundles': path.resolve(__dirname, './src/Bundles'),
       '@Config': path.resolve(__dirname, './src/Config'),
