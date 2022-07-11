@@ -1,13 +1,12 @@
 <template>
-  <div class="UIInput" :class="`v-${variant} l-p-${labelPosition}`">
+  <div class="UITextarea" :class="`v-${variant} l-p-${labelPosition}`">
     <label class="label" :for="id">{{ labelName }}</label>
-    <input
+    <textarea
       :id="id"
-      class="input"
-      :type="type"
+      class="textarea"
+      :value="modelValue"
       :disabled="disabled"
       :readonly="readonly"
-      :value="modelValue"
       @input="
         $emit('update:modelValue', ($event.target as HTMLInputElement).value)
       "
@@ -21,10 +20,6 @@
   defineProps({
     variant: {
       type: String as PropType<'primary'>,
-      required: true,
-    },
-    type: {
-      type: String as PropType<'text' | 'password' | 'email'>,
       required: true,
     },
     id: {
@@ -57,5 +52,5 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '@Bundles/UIBundle/Styles/UIInput.styles.scss';
+  @import '@Bundles/UIBundle/Styles/UITextarea.styles.scss';
 </style>
