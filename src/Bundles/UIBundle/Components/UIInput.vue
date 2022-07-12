@@ -54,6 +54,8 @@
       required: true,
     },
   })
+
+  defineEmits(['update:modelValue'])
 </script>
 
 <style lang="scss" scoped>
