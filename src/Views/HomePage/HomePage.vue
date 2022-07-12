@@ -1,11 +1,11 @@
 <template>
   <div class="HomePage">
-    <UIButton variant="primary" size="medium">Click Me!</UIButton>
+    <Pulpit />
   </div>
 </template>
 
 <script setup lang="ts">
-  import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import Pulpit from '@Bundles/PulpitBundle/Components/Pulpit.vue'
 </script>
 
 <style lang="scss" scoped></style>
