@@ -4,3 +4,7 @@ $border-raised-inner: inset -2px -2px $cl-grey80, inset 2px 2px $cl-greyDF;
 $border-raised-outer: inset -1px -1px $cl-black0A, inset 1px 1px $cl-white;
 $border-sunken-inner: inset -2px -2px $cl-greyDF, inset 2px 2px $cl-grey80;
 $border-sunken-outer: inset -1px -1px $cl-white, inset 1px 1px $cl-black0A;
+$border-range-inner: 1px 0 0 $cl-white, 1px 1px 0 $cl-white, 0 1px 0 $cl-white,
+  -1px 0 0 $cl-greyC0;
+$border-range-outer: -1px -1px 0 $cl-greyC0, 0 -1px 0 $cl-greyC0,
+  -1px 1px 0 $cl-white, 1px -1px $cl-greyC0;
