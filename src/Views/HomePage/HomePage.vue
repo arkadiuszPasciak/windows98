@@ -10,4 +10,8 @@
   import Pulpit from '@Bundles/PulpitBundle/Components/Pulpit.vue'
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  .HomePage {
+    position: relative;
+  }
+</style>

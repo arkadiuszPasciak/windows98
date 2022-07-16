@@ -1,0 +1,22 @@
+.StartPanelItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+
+  .name {
+    color: $cl-black;
+  }
+
+  &.s-medium {
+    min-width: 135px;
+
+    .icon {
+      margin-right: 6px;
+    }
+
+    .name {
+      @include font('medium', 11, 13);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.StartPanel {
+  display: none;
+  background-color: $cl-greyC0;
+  border-top: 1px solid $cl-white;
+  border-left: 1px solid $cl-white;
+  border-right: 1px solid $cl-black;
+  border-bottom: 1px solid $cl-black;
+  min-width: 140px;
+  height: 200px;
+
+  &.is-active {
+    display: block;
+  }
+
+  &.v-primary {
+    position: fixed;
+    bottom: 26px;
+    left: 2px;
+  }
+}
