@@ -4,13 +4,14 @@
       class="button-start"
       variant="primary"
       size="medium"
+      :disabled="!apps ? true : false"
       @click="togglePrimaryPanel"
     >
       {{ t('Pulpit.start') }}
     </UIButton>
 
     <StartPanel
-      v-if="primaryPanelStatus"
+      v-if="primaryPanelStatus && apps"
       variant="primary"
       :class="primaryPanelStatus ? 'is-active' : ''"
     >
@@ -19,6 +20,7 @@
           size="medium"
           :name="app.data.name"
           :icon-name="app.data.iconName"
+          :class="app.items ? 'is-arrow' : ''"
         >
           <StartPanel v-if="app.items" variant="secondary">
             <template
@@ -30,6 +32,7 @@
                 size="small"
                 :name="appSecondary.data.name"
                 :icon-name="appSecondary.data.iconName"
+                :class="appSecondary.items ? 'is-arrow' : ''"
               >
                 <StartPanel v-if="appSecondary.items" variant="secondary">
                   <template
@@ -70,7 +73,9 @@
   const primaryPanelStatus: Ref<boolean> = ref(false)
 
   const togglePrimaryPanel = () => {
-    primaryPanelStatus.value = !primaryPanelStatus.value
+    if (apps) {
+      primaryPanelStatus.value = !primaryPanelStatus.value
+    }
   }
 </script>
 

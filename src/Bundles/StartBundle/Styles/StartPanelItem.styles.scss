@@ -38,4 +38,17 @@
       @include font('medium', 11, 13);
     }
   }
+
+  &.is-arrow {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid $cl-black;
+    }
+  }
 }
