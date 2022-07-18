@@ -1,14 +1,18 @@
-interface IStartStorePanel {
+export interface IStartStoreApps {
+  data: IStartStoreAppData
+  items?: IStartStoreAppItem[]
+}
+
+interface IStartStoreAppData {
   name: string
   iconName: string
 }
 
-export interface IStartStorePanels {
-  data: IStartStorePanel
-  items?: {
-    data?: IStartStorePanel
-    items?: {
-      data?: IStartStorePanel
-    }
-  }[]
+interface IStartStoreAppItem {
+  data: IStartStoreAppData
+  items?: IStartStoreAppItemItem[]
+}
+
+interface IStartStoreAppItemItem {
+  data: IStartStoreAppData
 }

@@ -7,6 +7,8 @@
       :src="`src/Assets/Icons/Applications/${iconName}.png`"
     />
     <p class="name">{{ name }}</p>
+
+    <div v-if="$slots.default" class="under-panel"><slot></slot></div>
   </div>
 </template>
 

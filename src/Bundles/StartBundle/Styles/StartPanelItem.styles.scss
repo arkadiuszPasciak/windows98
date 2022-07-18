@@ -1,4 +1,5 @@
 .StartPanelItem {
+  position: relative;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -8,14 +9,22 @@
     @include hover {
       background-color: $cl-blue33;
 
-      .name {
+      & > .name {
         color: $cl-white;
+      }
+
+      & > .under-panel {
+        display: block;
       }
     }
   }
 
   .name {
     color: $cl-black;
+  }
+
+  .under-panel {
+    display: none;
   }
 
   &.s-medium {

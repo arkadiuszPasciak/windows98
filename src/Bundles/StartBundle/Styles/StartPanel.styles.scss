@@ -1,5 +1,4 @@
 .StartPanel {
-  display: none;
   background-color: $cl-greyC0;
   border-top: 1px solid $cl-white;
   border-left: 1px solid $cl-white;
@@ -7,13 +6,20 @@
   border-bottom: 1px solid $cl-black;
   min-width: 140px;
 
-  &.is-active {
-    display: block;
-  }
-
   &.v-primary {
+    display: none;
     position: fixed;
     bottom: 26px;
     left: 2px;
+  }
+
+  &.v-secondary {
+    position: absolute;
+    top: -1px;
+    left: 100%;
+  }
+
+  &.is-active {
+    display: block;
   }
 }

@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { IStartStorePanels } from '@Bundles/StartBundle/Support/Start.support'
+import { IStartStoreApps } from '@Bundles/StartBundle/Support/Start.support'
 
 export const useStartStore = defineStore('start', {
   state: () => ({
@@ -15,12 +15,14 @@ export const useStartStore = defineStore('start', {
               name: 'Accessories',
               iconName: 'programs',
             },
-            items: {
-              data: {
-                name: 'Calculator',
-                iconName: 'calculator',
+            items: [
+              {
+                data: {
+                  name: 'Calculator',
+                  iconName: 'calculator',
+                },
               },
-            },
+            ],
           },
           {
             data: {
@@ -72,6 +74,6 @@ export const useStartStore = defineStore('start', {
           iconName: 'shut-down',
         },
       },
-    ] as IStartStorePanels[],
+    ] as IStartStoreApps[],
   }),
 })
