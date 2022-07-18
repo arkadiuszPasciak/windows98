@@ -1,5 +1,15 @@
 .Start {
   .button-start {
     min-width: 55px;
+    padding: 0 6px;
+    @include font('bold', 11, 11);
+
+    &:not(:disabled):active {
+      padding: 0 6px;
+    }
+  }
+
+  .button-icon {
+    margin-right: 3px;
   }
 }

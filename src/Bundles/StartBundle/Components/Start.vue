@@ -7,6 +7,14 @@
       :disabled="!apps ? true : false"
       @click="togglePrimaryPanel"
     >
+      <template #icon-left>
+        <img
+          class="button-icon"
+          :width="23"
+          :height="23"
+          :src="`src/Assets/Icons/Applications/windows.png`"
+        />
+      </template>
       {{ t('Pulpit.start') }}
     </UIButton>
 
