@@ -10,6 +10,7 @@
     </UIButton>
 
     <StartPanel
+      v-if="primaryPanelStatus"
       variant="primary"
       size="medium"
       :class="primaryPanelStatus ? 'is-active' : ''"

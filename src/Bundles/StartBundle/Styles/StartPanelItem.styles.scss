@@ -4,6 +4,16 @@
   cursor: pointer;
   padding: 5px;
 
+  &:hover {
+    @include hover {
+      background-color: $cl-blue33;
+
+      .name {
+        color: $cl-white;
+      }
+    }
+  }
+
   .name {
     color: $cl-black;
   }

@@ -25,7 +25,7 @@ export const useStartStore = defineStore('start', {
           {
             data: {
               name: 'Microsoft Exchange',
-              iconName: 'mirosoft-exchange',
+              iconName: 'microsoft-exchange',
             },
           },
           {
@@ -63,7 +63,7 @@ export const useStartStore = defineStore('start', {
       {
         data: {
           name: 'Run...',
-          iconName: 'Run',
+          iconName: 'run',
         },
       },
       {

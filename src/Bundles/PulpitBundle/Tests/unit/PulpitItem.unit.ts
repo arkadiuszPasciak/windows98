@@ -29,9 +29,11 @@ describe('[PulpitBundle]<Components>(PulpitItem)', async () => {
     expect(name.text()).toBe('My Computer')
   })
 
-  it('should have attributes: id, for', () => {
+  it('should have attributes: id, for and src', () => {
     expect(icon.attributes('width')).toBe('32')
     expect(icon.attributes('height')).toBe('32')
-    expect(icon.attributes('src')).toBe('src/Assets/Icons/mycomputer.png')
+    expect(icon.attributes('src')).toBe(
+      'src/Assets/Icons/Applications/mycomputer.png'
+    )
   })
 })

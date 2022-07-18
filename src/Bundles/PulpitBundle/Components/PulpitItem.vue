@@ -4,7 +4,7 @@
       class="icon"
       width="32"
       height="32"
-      :src="`src/Assets/Icons/${iconName}.png`"
+      :src="`src/Assets/Icons/Applications/${iconName}.png`"
     />
     <p class="name">{{ name }}</p>
   </div>

@@ -4,7 +4,7 @@
       class="icon"
       :width="size === 'medium' ? 25 : 18"
       :height="size === 'medium' ? 25 : 18"
-      :src="`src/Assets/Icons/${iconName}.png`"
+      :src="`src/Assets/Icons/Applications/${iconName}.png`"
     />
     <p class="name">{{ name }}</p>
   </div>
