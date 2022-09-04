@@ -15,7 +15,7 @@
           :src="`src/Assets/Icons/Applications/windows.png`"
         />
       </template>
-      {{ t('Pulpit.start') }}
+      {{ t('StartBundle.start') }}
     </UIButton>
 
     <StartPanel

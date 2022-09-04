@@ -1,10 +1,14 @@
 import { mount } from '@vue/test-utils'
 import { expect, it, describe } from 'vitest'
+import { i18n } from '@Configs/I18n/I18n.config'
 import StartPanelItem from '@Bundles/StartBundle/Components/StartPanelItem.vue'
 
 const defaultWrapper = mount(StartPanelItem, {
+  global: {
+    plugins: [i18n],
+  },
   props: {
-    name: 'Shut Down...',
+    name: 'StartBundle.shut-down',
     iconName: 'shut-down',
     size: 'small',
   },

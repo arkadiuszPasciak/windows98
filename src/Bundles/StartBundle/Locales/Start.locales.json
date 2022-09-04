@@ -1,8 +1,26 @@
 {
   "en": {
-    "Pulpit.start": "Start"
+    "StartBundle.accessories": "Accessories",
+    "StartBundle.calculator": "Calculator",
+    "StartBundle.documents": "Documents",
+    "StartBundle.find": "Find",
+    "StartBundle.help": "Help",
+    "StartBundle.programs": "Programs",
+    "StartBundle.run": "Run...",
+    "StartBundle.settings": "Settings",
+    "StartBundle.shut-down": "Shut Down...",
+    "StartBundle.start": "Start"
   },
   "pl": {
-    "Pulpit.start": "Start"
+    "StartBundle.accessories": "Akcesoria",
+    "StartBundle.calculator": "Kalkulator",
+    "StartBundle.documents": "Dokumenty",
+    "StartBundle.find": "Znajdź",
+    "StartBundle.help": "Pomoc",
+    "StartBundle.programs": "Programy",
+    "StartBundle.run": "Włącz...",
+    "StartBundle.settings": "Ustawienia",
+    "StartBundle.shut-down": "Wyłącz...",
+    "StartBundle.start": "Start"
   }
 }

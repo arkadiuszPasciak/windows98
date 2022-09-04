@@ -6,7 +6,7 @@
       :height="size === 'medium' ? 25 : 18"
       :src="`src/Assets/Icons/Applications/${iconName}.png`"
     />
-    <p class="name">{{ name }}</p>
+    <p class="name">{{ t(name) }}</p>
 
     <div v-if="$slots.default" class="under-panel"><slot></slot></div>
   </div>
@@ -14,6 +14,7 @@
 
 <script setup lang="ts">
   import { PropType } from 'vue'
+  import { useI18n } from 'vue-i18n'
 
   defineProps({
     size: {
@@ -28,7 +29,11 @@
       required: true,
     },
   })
+
+  const { t } = useI18n()
 </script>
+
+<i18n src="@Bundles/StartBundle/Locales/Start.locales.json"></i18n>
 
 <style lang="scss" scoped>
   @import '@Bundles/StartBundle/Styles/StartPanelItem.styles.scss';
