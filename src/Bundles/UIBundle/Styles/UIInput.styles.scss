@@ -13,6 +13,23 @@
     }
   }
 
+  &.l-p-left {
+    .label {
+      margin-right: 6px;
+    }
+  }
+
+  &.l-p-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 200px;
+
+    .label {
+      margin-bottom: 5px;
+    }
+  }
+
   &.v-primary {
     .input,
     .label {
@@ -34,23 +51,6 @@
       &[readonly] + .label {
         color: $cl-grey80;
       }
-    }
-  }
-
-  &.l-p-left {
-    .label {
-      margin-right: 6px;
-    }
-  }
-
-  &.l-p-top {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-basis: 200px;
-
-    .label {
-      margin-bottom: 5px;
     }
   }
 }

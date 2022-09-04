@@ -2,5 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npm run test:run
-npm run lint:eslint
-npm run pretty-quick
+npx lint-staged --no-stash
