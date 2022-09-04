@@ -1,4 +1,7 @@
 .UIButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @include font('medium', 11, 11);
   border: none;
   box-shadow: $border-raised-outer, $border-raised-inner;

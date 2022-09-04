@@ -1,0 +1,54 @@
+.StartPanelItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+
+  &:hover {
+    @include hover {
+      background-color: $cl-blue33;
+
+      & > .name {
+        color: $cl-white;
+      }
+
+      & > .under-panel {
+        display: block;
+      }
+    }
+  }
+
+  .name {
+    color: $cl-black;
+  }
+
+  .under-panel {
+    display: none;
+  }
+
+  &.s-medium {
+    min-width: 135px;
+
+    .icon {
+      margin-right: 6px;
+    }
+
+    .name {
+      @include font('medium', 11, 13);
+    }
+  }
+
+  &.is-arrow {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid $cl-black;
+    }
+  }
+}
