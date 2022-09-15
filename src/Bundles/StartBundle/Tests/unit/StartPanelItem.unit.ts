@@ -38,7 +38,7 @@ describe('[StartBundle]<Components>(StartPanelItem)', async () => {
     expect(icon.attributes('width')).toBe('18')
     expect(icon.attributes('height')).toBe('18')
     expect(icon.attributes('src')).toBe(
-      'src/Assets/Icons/Applications/shut-down.png'
+      'src/Assets/Icons/Applications/shut-down.png',
     )
   })
 })

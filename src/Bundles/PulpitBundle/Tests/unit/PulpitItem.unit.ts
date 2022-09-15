@@ -33,7 +33,7 @@ describe('[PulpitBundle]<Components>(PulpitItem)', async () => {
     expect(icon.attributes('width')).toBe('32')
     expect(icon.attributes('height')).toBe('32')
     expect(icon.attributes('src')).toBe(
-      'src/Assets/Icons/Applications/mycomputer.png'
+      'src/Assets/Icons/Applications/mycomputer.png',
     )
   })
 })

@@ -20,7 +20,7 @@ describe('[UIBundle]<Components>(UICheckbox)', async () => {
     expect(defaultWrapper.html()).toBe(
       `<label class="UICheckbox v-primary" data-v-1a3e1ba4=""><input class="input" type="checkbox" data-v-1a3e1ba4=""><span class="checkmark" data-v-1a3e1ba4=""><i class="icon" data-v-1a3e1ba4=""></i></span>
   <p class="text" data-v-1a3e1ba4="">I am not checked</p>
-</label>`
+</label>`,
     )
   })
 

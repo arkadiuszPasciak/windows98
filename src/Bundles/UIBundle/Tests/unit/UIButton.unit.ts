@@ -15,7 +15,7 @@ const defaultWrapper = mount(UIButton, {
 describe('[UIBundle]<Components>(UIButton)', async () => {
   it('should have classes: main, variant and size', () => {
     expect(defaultWrapper.attributes('class')).toBe(
-      'UIButton v-primary s-medium'
+      'UIButton v-primary s-medium',
     )
   })
 
@@ -25,7 +25,7 @@ describe('[UIBundle]<Components>(UIButton)', async () => {
 
   it('should have html structure', () => {
     expect(defaultWrapper.html()).toBe(
-      '<button class="UIButton v-primary s-medium" type="button" data-v-3a6be6dd="">Click Me!</button>'
+      '<button class="UIButton v-primary s-medium" type="button" data-v-3a6be6dd="">Click Me!</button>',
     )
   })
 
