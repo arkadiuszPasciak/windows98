@@ -1,5 +1,8 @@
 <template>
-  <div class="UITextarea" :class="`v-${variant} l-p-${labelPosition}`">
+  <div
+    class="UITextarea"
+    :class="`variant-${variant} label-position-${labelPosition}`"
+  >
     <label class="label" :for="id">{{ labelName }}</label>
     <textarea
       :id="id"
@@ -20,7 +23,7 @@
   defineProps({
     variant: {
       type: String as PropType<'primary'>,
-      required: true,
+      default: 'primary',
     },
     id: {
       type: String,
@@ -28,12 +31,10 @@
     },
     disabled: {
       type: Boolean,
-      required: false,
       default: false,
     },
     readonly: {
       type: Boolean,
-      required: false,
       default: false,
     },
     modelValue: {
@@ -46,7 +47,7 @@
     },
     labelPosition: {
       type: String as PropType<'top' | 'left'>,
-      required: true,
+      default: 'top',
     },
   })
 

@@ -1,5 +1,9 @@
 <template>
-  <button class="UIButton" :class="`v-${variant} s-${size}`" type="button">
+  <button
+    class="UIButton"
+    :class="`variant-${variant} size-${size}`"
+    type="button"
+  >
     <slot name="icon-left"></slot>
     <slot></slot>
     <slot name="icon-right"></slot>
@@ -12,11 +16,11 @@
   defineProps({
     variant: {
       type: String as PropType<'primary'>,
-      required: true,
+      default: 'primary',
     },
     size: {
       type: String as PropType<'small' | 'medium'>,
-      required: true,
+      default: 'medium',
     },
   })
 </script>

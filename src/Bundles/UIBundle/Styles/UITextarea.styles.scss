@@ -13,13 +13,13 @@
     }
   }
 
-  &.l-p-left {
+  &.label-position-left {
     .label {
       margin-right: 6px;
     }
   }
 
-  &.l-p-top {
+  &.label-position-top {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,7 +30,7 @@
     }
   }
 
-  &.v-primary {
+  &.variant-primary {
     .textarea,
     .label {
       color: $cl-black22;

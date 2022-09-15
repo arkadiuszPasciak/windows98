@@ -1,5 +1,8 @@
 <template>
-  <div class="UIInput" :class="`v-${variant} l-p-${labelPosition}`">
+  <div
+    class="UIInput"
+    :class="`variant-${variant} label-position-${labelPosition}`"
+  >
     <label class="label" :for="id">{{ labelName }}</label>
     <input
       :id="id"
@@ -21,11 +24,11 @@
   defineProps({
     variant: {
       type: String as PropType<'primary'>,
-      required: true,
+      defaut: 'primary',
     },
     type: {
       type: String as PropType<'text' | 'password' | 'email'>,
-      required: true,
+      default: 'text',
     },
     id: {
       type: String,
@@ -33,12 +36,10 @@
     },
     disabled: {
       type: Boolean,
-      required: false,
       default: false,
     },
     readonly: {
       type: Boolean,
-      required: false,
       default: false,
     },
     modelValue: {
@@ -51,7 +52,7 @@
     },
     labelPosition: {
       type: String as PropType<'top' | 'left'>,
-      required: true,
+      default: 'top',
     },
   })
 

@@ -13,7 +13,9 @@ const defaultWrapper = mount(UICheckbox, {
 
 describe('[UIBundle]<Components>(UICheckbox)', async () => {
   it('should have classes: main and variant', () => {
-    expect(defaultWrapper.attributes('class')).toBe('UICheckbox v-primary')
+    expect(defaultWrapper.attributes('class')).toBe(
+      'UICheckbox variant-primary',
+    )
   })
 
   it('should have attribute type checkbox in input', () => {

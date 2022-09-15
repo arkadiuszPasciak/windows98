@@ -15,7 +15,7 @@ const defaultWrapper = mount(UIButton, {
 describe('[UIBundle]<Components>(UIButton)', async () => {
   it('should have classes: main, variant and size', () => {
     expect(defaultWrapper.attributes('class')).toBe(
-      'UIButton v-primary s-medium',
+      'UIButton variant-primary size-medium',
     )
   })
 

@@ -7,7 +7,7 @@
     color: $cl-black22;
   }
 
-  &.p-horizontal {
+  &.position-horizontal {
     .range {
       &::-webkit-slider-runnable-track {
         @include ui-range-track('horizontal');
@@ -36,7 +36,7 @@
     }
   }
 
-  &.p-vertical {
+  &.position-vertical {
     height: 130px;
 
     .range {

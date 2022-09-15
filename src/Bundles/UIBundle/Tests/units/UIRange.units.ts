@@ -23,7 +23,7 @@ const labelEnd = defaultWrapper.find('.is-end')
 describe('[UIBundle]<Components>(UIRange)', async () => {
   it('should have classes: main, variant and position class', () => {
     expect(defaultWrapper.attributes('class')).toBe(
-      'UIRange v-primary p-horizontal',
+      'UIRange variant-primary position-horizontal',
     )
   })
 

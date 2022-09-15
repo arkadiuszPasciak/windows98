@@ -1,5 +1,5 @@
 <template>
-  <div class="UIRange" :class="`v-${variant} p-${position}`">
+  <div class="UIRange" :class="`variant-${variant} position-${position}`">
     <label v-if="labelNameStart" class="label is-start" :for="id">{{
       labelNameStart
     }}</label>
@@ -36,7 +36,7 @@
   defineProps({
     variant: {
       type: String as PropType<'primary'>,
-      required: true,
+      default: 'primary',
     },
     id: {
       type: String,
@@ -44,17 +44,14 @@
     },
     minValue: {
       type: Number,
-      required: false,
       default: 0,
     },
     maxValue: {
       type: Number,
-      required: false,
       default: 10,
     },
     stepValue: {
       type: Number,
-      required: false,
       default: 1,
     },
     modelValue: {
@@ -63,7 +60,7 @@
     },
     position: {
       type: String as PropType<'horizontal' | 'vertical'>,
-      required: true,
+      default: 'horizontal',
     },
     labelNameStart: {
       type: String,

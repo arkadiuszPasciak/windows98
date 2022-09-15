@@ -18,7 +18,7 @@ const label = defaultWrapper.find('.label')
 describe('[UIBundle]<Components>(UITextarea)', async () => {
   it('should have classes: main, variant and label position class', () => {
     expect(defaultWrapper.attributes('class')).toBe(
-      'UITextarea v-primary l-p-left',
+      'UITextarea variant-primary label-position-left',
     )
   })
 

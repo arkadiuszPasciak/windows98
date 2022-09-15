@@ -19,7 +19,7 @@ const label = defaultWrapper.find('.label')
 describe('[UIBundle]<Components>(UIInput)', async () => {
   it('should have classes: main, variant and label position class', () => {
     expect(defaultWrapper.attributes('class')).toBe(
-      'UIInput v-primary l-p-left',
+      'UIInput variant-primary label-position-left',
     )
   })
 
