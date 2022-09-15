@@ -12,22 +12,22 @@
     "node": "16.16.0"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
     "prepare": "husky install",
+    "update:packages": "npx npm-check-updates",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "lint:js": "eslint --ext \".ts,.js,.vue\" .",
     "lintfix:js": "eslint --fix --ext \".ts,.js,.vue\" .",
     "lint:styles": "stylelint **/*.{scss,vue}",
     "lintfix:styles": "stylelint **/*.{scss,vue} --fix",
     "lint:prettier": "prettier --check .",
     "lintfix:prettier": "prettier --write --list-different .",
-    "lint:markup": "vue-tsc --noEmit",
+    "typecheck": "vue-tsc --noEmit",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "cypress:open": "cypress open",
-    "update:packages": "npx npm-check-updates"
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "pinia": "^2.0.22",

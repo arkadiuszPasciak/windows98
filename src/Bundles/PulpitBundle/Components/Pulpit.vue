@@ -14,7 +14,7 @@
 <script setup lang="ts">
   import PulpitItem from '@Bundles/PulpitBundle/Components/PulpitItem.vue'
   import { usePulpitStore } from '@Bundles/PulpitBundle/Stores/Pulpit.stores'
-  import { IPulpitStoreApps } from '@Bundles/PulpitBundle/Support/Pulpit.support'
+  import { IPulpitStoreApps } from '@Bundles/PulpitBundle/Supports/Pulpit.supports'
 
   const store = usePulpitStore()
   const apps = store.$state.apps as IPulpitStoreApps[]
