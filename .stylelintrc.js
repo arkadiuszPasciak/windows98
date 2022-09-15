@@ -1,6 +1,5 @@
 module.exports = {
   plugins: ['stylelint-prettier'],
-  extends: ['stylelint-config-recommended'],
   overrides: [
     {
       files: ['*.scss', '**/*.scss'],
