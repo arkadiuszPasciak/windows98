@@ -2,8 +2,6 @@
   <div class="Start">
     <UIButton
       class="button-start"
-      variant="primary"
-      size="medium"
       :disabled="!apps ? true : false"
       @click="togglePrimaryPanel"
     >
