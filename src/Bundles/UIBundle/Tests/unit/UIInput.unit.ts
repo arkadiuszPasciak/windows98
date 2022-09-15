@@ -23,12 +23,6 @@ describe('[UIBundle]<Components>(UIInput)', async () => {
     )
   })
 
-  it('should have html structure', () => {
-    expect(defaultWrapper.html()).toBe(
-      '<div class="UIInput v-primary l-p-left" data-v-3a82de22=""><label class="label" for="main-email" data-v-3a82de22="">Email</label><input id="main-email" class="input" type="email" data-v-3a82de22=""></div>',
-    )
-  })
-
   it('should have attributes: type, id, for', () => {
     expect(input.attributes('type')).toBe('email')
     expect(input.attributes('id')).toBe('main-email')

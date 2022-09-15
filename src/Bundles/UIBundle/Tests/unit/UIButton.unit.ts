@@ -23,12 +23,6 @@ describe('[UIBundle]<Components>(UIButton)', async () => {
     expect(defaultWrapper.text()).toBe('Click Me!')
   })
 
-  it('should have html structure', () => {
-    expect(defaultWrapper.html()).toBe(
-      '<button class="UIButton v-primary s-medium" type="button" data-v-3a6be6dd="">Click Me!</button>',
-    )
-  })
-
   it('should have attribute type', () => {
     expect(defaultWrapper.attributes('type')).toBe('button')
   })

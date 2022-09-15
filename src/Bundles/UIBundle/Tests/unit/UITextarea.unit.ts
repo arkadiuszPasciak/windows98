@@ -22,12 +22,6 @@ describe('[UIBundle]<Components>(UITextarea)', async () => {
     )
   })
 
-  it('should have html structure', () => {
-    expect(defaultWrapper.html()).toBe(
-      '<div class="UITextarea v-primary l-p-left" data-v-437e0bb6=""><label class="label" for="comment" data-v-437e0bb6="">Email</label><textarea id="comment" class="textarea" data-v-437e0bb6=""></textarea></div>',
-    )
-  })
-
   it('should have attributes: id, for', () => {
     expect(textarea.attributes('id')).toBe('comment')
     expect(label.attributes('for')).toBe('comment')

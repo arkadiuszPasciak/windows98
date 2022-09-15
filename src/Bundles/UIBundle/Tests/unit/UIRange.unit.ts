@@ -27,14 +27,6 @@ describe('[UIBundle]<Components>(UIRange)', async () => {
     )
   })
 
-  it('should have html structure', () => {
-    expect(defaultWrapper.html()).toBe(
-      `<div class="UIRange v-primary p-horizontal" data-v-503380e2=""><label class="label is-start" for="person-age" data-v-503380e2="">Low</label>
-  <!--v-if--><input id="person-age" class="range" type="range" min="1" max="12" step="3" data-v-503380e2=""><label class="label is-end" for="person-age" data-v-503380e2="">High</label>
-</div>`,
-    )
-  })
-
   it('should have attributes: type, id, min, max, step for', () => {
     expect(input.attributes('type')).toBe('range')
     expect(input.attributes('id')).toBe('person-age')
