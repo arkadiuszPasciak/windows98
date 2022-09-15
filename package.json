@@ -1,7 +1,16 @@
 {
   "name": "windows98",
-  "private": true,
-  "version": "0.1.0",
+  "version": "0.0.4",
+  "description": "My sandbox to improve my programming skills based on Windows 98",
+  "author": "Arkadiusz Paściak",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkadiuszPasciak/windows98.git"
+  },
+  "homepage": "https://github.com/arkadiuszPasciak/windows98#readme",
+  "engines": {
+    "node": "16.16.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
