@@ -15,6 +15,7 @@
     "types": ["@intlify/vite-plugin-vue-i18n/client", "vite/client", "cypress"],
     "baseUrl": "./src/",
     "paths": {
+      "@/*": ["*"],
       "@Assets/*": ["Assets/*"],
       "@Bundles/*": ["Bundles/*"],
       "@Configs/*": ["Configs/*"],

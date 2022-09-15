@@ -16,13 +16,13 @@
     box-shadow: $border-sunken-outer, $border-sunken-inner;
   }
 
-  &.s-small {
+  &.size-small {
     width: 16px;
     height: 14px;
     padding: 1px;
   }
 
-  &.s-medium {
+  &.size-medium {
     height: 23px;
     min-width: 75px;
     padding: 0 12px;
@@ -37,7 +37,7 @@
     }
   }
 
-  &.v-primary {
+  &.variant-primary {
     background-color: $cl-greyC0;
     color: $cl-black22;
   }

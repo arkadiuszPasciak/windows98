@@ -1,4 +1,4 @@
-import { IStartStoreApps } from '@Bundles/StartBundle/Support/Start.support'
+import { IStartStoreApps } from '@Bundles/StartBundle/Supports/Start.supports'
 
 export const startStoreApps = [
   {
@@ -23,13 +23,13 @@ export const startStoreApps = [
       },
       {
         data: {
-          name: 'Microsoft Exchange',
+          name: 'StartBundle.microsoft-exchange',
           iconName: 'microsoft-exchange',
         },
       },
       {
         data: {
-          name: 'MS-DOS Prompt',
+          name: 'StartBundle.ms-dos-prompt',
           iconName: 'ms-dos-prompt',
         },
       },

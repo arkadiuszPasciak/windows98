@@ -1,16 +1,77 @@
-# Vue 3 + TypeScript + Vite + i18n + Husky + Vitest + Cypress + Sass + Prettier + Eslint + Stylelint
+# Windows98
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+My sandbox to improve my programming skills based on Windows 98
 
-## Recommended IDE Setup
+## Table of Contents
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [Windows98](#windows98)
+  - [Features](#features)
+  - [Quick Start](#quick-start)
+    - [Install application](#install-application)
+  - [Deploy](#deploy)
+    - [Node.js server](#nodejs-server)
+  - [Commands](#commands)
+  - [Bundle Structure](#bundle-structure)
 
-## Type Support For `.vue` Imports in TS
+## Features
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+- 🖼 [Get ready for a development environment that can finally catch up with you](https://vitejs.dev/)
+- 🖼 [Builds your next application with Vue 3](https://vuejs.org/)
+- 🤖 [Strongly typed, object oriented, compiled language (TypeScript)](https://www.typescriptlang.org/)
+- 🛹 [State & Store Management (Pinia)](https://pinia.vuejs.org/)
+- 🚩 [Localization (i18n) by @intlify](https://github.com/intlify/bundle-tools/blob/main/packages/vite-plugin-vue-i18n/README.md)
+- 🐶 [Improves your commits and more (Husky)](https://typicode.github.io/husky/)
+- 🐛 [Helps you find and fix problems with your JavaScript (Eslint)](https://eslint.org/)
+- 🖌 [Helps you find and fix problems with your SCSS (Stylelint)](https://stylelint.io/)
+- 🖨 [Takes your code and reprints to coding standards (Prettier)](https://prettier.io/)
+- 💩 [Runs linters against staged git files (Lint-staged)](https://github.com/okonet/lint-staged)
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+## Quick Start
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+### Install application
+
+- This project using `npm` as package manager.
+- Clone this project to your computer `git clone https://github.com/arkadiuszPasciak/windows98`
+- Install dependencies `npm install`
+- Run `npm run dev` to start development server and open `http://127.0.0.1:5173/` in your browser
+
+## Deploy
+
+### Node.js server
+
+- Run `npm run build` to build the project
+- Serve `dist/index.html` file
+  Checkout the [deployment documentation](https://vitejs.dev/guide/build.html).
+
+## Commands
+
+- [`npm install`](https://docs.npmjs.com/cli/v6/commands/npm-install) to install the project
+- [`npm run prepare`](https://typicode.github.io/husky/#/?id=install) to install the husky. It's automatically after `npm install`
+- [`npm update:packages`](https://www.npmjs.com/package/npm-check-updates) to update npm packages
+- [`npm run dev`](https://vitejs.dev/guide/#command-line-interface) to start dev server
+- [`npm run build`](https://vitejs.dev/guide/#command-line-interface) to build for productin
+- [`npm run preview`](https://vitejs.dev/guide/#command-line-interface) to start preview production build
+- [`npm run lint:js`](https://eslint.org/docs/latest/user-guide/command-line-interface) to show files `js, ts, vue` to lint
+- [`npm run lint:styles`](https://stylelint.io/user-guide/usage/cli/) to show files `scss, vue` to lint
+- [`npm run lint:prettier`](https://stylelint.io/user-guide/usage/cli/) to show files `*` to format
+- [`npm run lintfix:js`](https://eslint.org/docs/latest/user-guide/command-line-interface) to fix files `js, ts, vue`
+- [`npm run lintfix:styles`](https://stylelint.io/user-guide/usage/cli/) to fix files `scss, vue`
+- [`npm run lintfix:prettier`](https://stylelint.io/user-guide/usage/cli/) to format files `*`
+- [`npm run typecheck`](https://www.npmjs.com/package/vue-tsc) to check types
+- [`npm run test`](https://vitest.dev/guide/cli.html#vitest) to test in the current directory
+- [`npm run test:ui`](https://vitest.dev/guide/ui.html) to test with use UI
+- [`npm run test:run`](https://vitest.dev/guide/cli.html#vitest-run) to test on single run without watch mode
+
+## Bundle structure
+
+```
+Components
+Locales
+Mocks
+Services
+Stores
+Styles
+Supports
+Tests
+└── units
+```

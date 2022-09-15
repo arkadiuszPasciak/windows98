@@ -1,12 +1,12 @@
-import { IPulpitStoreApps } from '@Bundles/PulpitBundle/Support/Pulpit.support'
+import { IPulpitStoreApps } from '@Bundles/PulpitBundle/Supports/Pulpit.supports'
 
 export const pulpitStoreApps = [
   {
-    name: 'My Computer',
+    name: 'PulpitBundle.my-computer',
     iconName: 'mycomputer',
   },
   {
-    name: 'Recycle Bin',
+    name: 'PulpitBundle.recycle',
     iconName: 'recycle',
   },
 ] as IPulpitStoreApps[]

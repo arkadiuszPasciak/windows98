@@ -2,8 +2,6 @@
   <div class="Start">
     <UIButton
       class="button-start"
-      variant="primary"
-      size="medium"
       :disabled="!apps ? true : false"
       @click="togglePrimaryPanel"
     >
@@ -71,7 +69,7 @@
   import StartPanel from '@Bundles/StartBundle/Components/StartPanel.vue'
   import StartPanelItem from '@Bundles/StartBundle/Components/StartPanelItem.vue'
   import { useStartStore } from '@Bundles/StartBundle/Stores/Start.stores'
-  import { IStartStoreApps } from '@Bundles/StartBundle/Support/Start.support'
+  import { IStartStoreApps } from '@Bundles/StartBundle/Supports/Start.supports'
 
   const { t } = useI18n()
   const store = useStartStore()

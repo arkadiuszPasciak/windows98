@@ -1,25 +1,20 @@
 import { mount } from '@vue/test-utils'
 import { expect, it, describe } from 'vitest'
-import { i18n } from '@Configs/I18n/I18n.config'
-import StartPanelItem from '@Bundles/StartBundle/Components/StartPanelItem.vue'
+import PulpitItem from '@Bundles/PulpitBundle/Components/PulpitItem.vue'
 
-const defaultWrapper = mount(StartPanelItem, {
-  global: {
-    plugins: [i18n],
-  },
+const defaultWrapper = mount(PulpitItem, {
   props: {
-    name: 'StartBundle.shut-down',
-    iconName: 'shut-down',
-    size: 'small',
+    name: 'My Computer',
+    iconName: 'mycomputer',
   },
 })
 
 const name = defaultWrapper.find('.name')
 const icon = defaultWrapper.find('.icon')
 
-describe('[StartBundle]<Components>(StartPanelItem)', async () => {
+describe('[PulpitBundle]<Components>(PulpitItem)', async () => {
   it('should have classes', () => {
-    expect(defaultWrapper.attributes('class')).toBe('StartPanelItem s-small')
+    expect(defaultWrapper.attributes('class')).toBe('PulpitItem')
     expect(icon.attributes('class')).toBe('icon')
     expect(name.attributes('class')).toBe('name')
   })
@@ -31,14 +26,14 @@ describe('[StartBundle]<Components>(StartPanelItem)', async () => {
   })
 
   it('should have text', () => {
-    expect(name.text()).toBe('Shut Down...')
+    expect(name.text()).toBe('My Computer')
   })
 
   it('should have attributes: id, for and src', () => {
-    expect(icon.attributes('width')).toBe('18')
-    expect(icon.attributes('height')).toBe('18')
+    expect(icon.attributes('width')).toBe('32')
+    expect(icon.attributes('height')).toBe('32')
     expect(icon.attributes('src')).toBe(
-      'src/Assets/Icons/Applications/shut-down.png'
+      'src/Assets/Icons/Applications/mycomputer.png',
     )
   })
 })

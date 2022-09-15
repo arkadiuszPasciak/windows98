@@ -1,5 +1,5 @@
 <template>
-  <label class="UICheckbox" :class="`v-${variant}`">
+  <label class="UICheckbox" :class="`variant-${variant}`">
     <input
       class="input"
       type="checkbox"
@@ -21,17 +21,15 @@
   defineProps({
     variant: {
       type: String as PropType<'primary'>,
-      required: true,
+      default: 'primary',
     },
     disabled: {
       type: Boolean,
-      required: false,
       default: false,
     },
     checked: {
       type: Boolean,
-      required: false,
-      default: true,
+      default: false,
     },
   })
 
