@@ -1,4 +1,4 @@
-import { IStartStoreApps } from '@Bundles/StartBundle/Support/Start.support'
+import { IStartStoreApps } from '@Bundles/StartBundle/Supports/Start.supports'
 
 export const startStoreApps = [
   {

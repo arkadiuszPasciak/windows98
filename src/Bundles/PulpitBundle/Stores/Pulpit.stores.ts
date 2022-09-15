@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { IPulpitStoreApps } from '@Bundles/PulpitBundle/Support/Pulpit.support'
+import { IPulpitStoreApps } from '@Bundles/PulpitBundle/Supports/Pulpit.supports'
 import { pulpitStoreApps } from '@Bundles/PulpitBundle/Mocks/Pulpit.mocks'
 
 export const usePulpitStore = defineStore('pulpit', {
