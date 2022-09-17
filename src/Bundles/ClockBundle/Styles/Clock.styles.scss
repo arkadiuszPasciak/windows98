@@ -1,0 +1,8 @@
+.Clock {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  color: $cl-black22;
+  @include font('medium', 12, 12);
+  letter-spacing: 0.7px;
+}
