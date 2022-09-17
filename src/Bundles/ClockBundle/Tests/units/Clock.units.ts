@@ -1,20 +1,26 @@
-import { mount } from '@vue/test-utils'
 import { expect, it, describe } from 'vitest'
-import { createTestingPinia } from '@pinia/testing'
-import Clock from '@Bundles/ClockBundle/Components/Clock.vue'
+import { getTimeClock } from '@Bundles/ClockBundle/Services/Clock.services'
 
-const defaultWrapper = mount(Clock, {
-  global: {
-    plugins: [createTestingPinia()],
-  },
-})
-
-describe('[ClockBundle]<Components>(Clock)', () => {
-  it('should have class', () => {
-    expect(defaultWrapper.attributes('class')).toBe('Clock')
+describe('[ClockBundle]<Services>(getTimeClock)', () => {
+  it('should return short time', () => {
+    expect(
+      getTimeClock({
+        timeStyle: 'short',
+      }),
+    ).length(5)
   })
 
-  it('should be visible', () => {
-    expect(defaultWrapper.isVisible()).toBe(true)
+  it('should return medium time', () => {
+    expect(
+      getTimeClock({
+        timeStyle: 'medium',
+      }),
+    ).length(8)
+  })
+
+  it('should return null if params are falsy or empty', () => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    expect(getTimeClock()).toBe(null)
   })
 })
