@@ -13,17 +13,3 @@ exports[`[ClockBundle]<Snapshots>(Clock) > renders correctly component 1`] = `
   </p>
 </div>
 `;
-
-exports[`[ClockBundle]<Snapshots>(Clock) > renders correctly element 1`] = `
-<div
-  class="Clock"
-  data-v-6c9b3303=""
->
-  <p
-    class="time"
-    data-v-6c9b3303=""
-  >
-    12:00 PM
-  </p>
-</div>
-`;
