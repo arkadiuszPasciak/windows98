@@ -27,6 +27,12 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    include: ['**/*.units.ts'],
+    include: ['**/*.units.ts', '**/*.snapshots.ts'],
+    resolveSnapshotPath: (testPath, snapshotExtension) => {
+      return (
+        testPath.replace('/__snapshots__', '').replace('.ts', '') +
+        snapshotExtension
+      )
+    },
   },
 })

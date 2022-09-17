@@ -4,7 +4,7 @@ import { Nullable } from 'vitest'
 
 export const useClockStore = defineStore('clock', {
   state: () => ({
-    time: '' as Nullable<string>,
+    time: '12:00 PM' as Nullable<string>,
   }),
   actions: {
     updateTime() {
