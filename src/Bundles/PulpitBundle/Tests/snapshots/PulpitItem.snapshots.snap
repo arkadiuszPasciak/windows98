@@ -1,0 +1,22 @@
+// Vitest Snapshot v1
+
+exports[`[PulpitBundle]<Snapshots>(PulpitItem) > renders correctly component 1`] = `
+<div
+  class="PulpitItem"
+  data-v-95683558=""
+>
+  <img
+    class="icon"
+    data-v-95683558=""
+    height="32"
+    src="src/Assets/Icons/Applications/mycomputer.png"
+    width="32"
+  />
+  <p
+    class="name"
+    data-v-95683558=""
+  >
+    My Computer
+  </p>
+</div>
+`;

@@ -1,0 +1,49 @@
+// Vitest Snapshot v1
+
+exports[`[PulpitBundle]<Snapshots>(Pulpit) > renders correctly component 1`] = `
+<section
+  class="Pulpit"
+  data-v-3faf8a43=""
+>
+  
+  <div
+    class="PulpitItem"
+    data-v-3faf8a43=""
+    data-v-95683558=""
+  >
+    <img
+      class="icon"
+      data-v-95683558=""
+      height="32"
+      src="src/Assets/Icons/Applications/mycomputer.png"
+      width="32"
+    />
+    <p
+      class="name"
+      data-v-95683558=""
+    >
+      My Computer
+    </p>
+  </div>
+  <div
+    class="PulpitItem"
+    data-v-3faf8a43=""
+    data-v-95683558=""
+  >
+    <img
+      class="icon"
+      data-v-95683558=""
+      height="32"
+      src="src/Assets/Icons/Applications/recycle.png"
+      width="32"
+    />
+    <p
+      class="name"
+      data-v-95683558=""
+    >
+      Recycle
+    </p>
+  </div>
+  
+</section>
+`;
