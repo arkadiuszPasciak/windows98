@@ -1,0 +1,81 @@
+// Vitest Snapshot v1
+
+exports[`[UIBundle]<Snapshots>(UIButton) > renders correctly  component: size small and variant primary component 1`] = `
+<button
+  class="UIButton variant-primary size-small"
+  data-v-cf1bb3a9=""
+  type="button"
+>
+  
+  
+  
+  Click Me!
+  
+  
+  
+</button>
+`;
+
+exports[`[UIBundle]<Snapshots>(UIButton) > renders correctly component: size medium and variant primary 1`] = `
+<button
+  class="UIButton variant-primary size-medium"
+  data-v-cf1bb3a9=""
+  type="button"
+>
+  
+  
+  
+  Don't Click Me!
+  
+  
+  
+</button>
+`;
+
+exports[`[UIBundle]<Snapshots>(UIButton) > renders correctly component: size small and variant primary 1`] = `
+<button
+  class="UIButton variant-primary size-small"
+  data-v-cf1bb3a9=""
+  type="button"
+>
+  
+  
+  
+  Click Me!
+  
+  
+  
+</button>
+`;
+
+exports[`[UIBundle]<Snapshots>(UIButton) > renders correctly size medium and variant primary component 1`] = `
+<button
+  class="UIButton variant-primary size-medium"
+  data-v-cf1bb3a9=""
+  type="button"
+>
+  
+  
+  
+  Don't Click Me!
+  
+  
+  
+</button>
+`;
+
+exports[`[UIBundle]<Snapshots>(UIButton) > renders correctly size small and variant primary component 1`] = `
+<button
+  class="UIButton variant-primary size-small"
+  data-v-cf1bb3a9=""
+  type="button"
+>
+  
+  
+  
+  Click Me!
+  
+  
+  
+</button>
+`;

@@ -1,0 +1,41 @@
+// Vitest Snapshot v1
+
+exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: leftPrimaryWrapper like as email 1`] = `
+<div
+  class="UITextarea variant-primary label-position-left"
+  data-v-cbf41378=""
+>
+  <label
+    class="label"
+    data-v-cbf41378=""
+    for="email"
+  >
+    Email
+  </label>
+  <textarea
+    class="textarea"
+    data-v-cbf41378=""
+    id="email"
+  />
+</div>
+`;
+
+exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: topPrimaryWrapper like as address 1`] = `
+<div
+  class="UITextarea variant-primary label-position-top"
+  data-v-cbf41378=""
+>
+  <label
+    class="label"
+    data-v-cbf41378=""
+    for="address"
+  >
+    Address
+  </label>
+  <textarea
+    class="textarea"
+    data-v-cbf41378=""
+    id="address"
+  />
+</div>
+`;

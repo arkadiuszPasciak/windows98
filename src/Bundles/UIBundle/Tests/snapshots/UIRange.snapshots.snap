@@ -1,0 +1,65 @@
+// Vitest Snapshot v1
+
+exports[`[UIBundle]<Snapshots>(UIRange) > renders correctly component: horizontal with primary 1`] = `
+<div
+  class="UIRange variant-primary position-horizontal"
+  data-v-085e19e1=""
+>
+  <label
+    class="label is-start"
+    data-v-085e19e1=""
+    for="person-age"
+  >
+    Low
+  </label>
+  <!--v-if-->
+  <input
+    class="range"
+    data-v-085e19e1=""
+    id="person-age"
+    max="12"
+    min="1"
+    step="3"
+    type="range"
+  />
+  <label
+    class="label is-end"
+    data-v-085e19e1=""
+    for="person-age"
+  >
+    High
+  </label>
+</div>
+`;
+
+exports[`[UIBundle]<Snapshots>(UIRange) > renders correctly component: vertical with primary 1`] = `
+<div
+  class="UIRange variant-primary position-vertical"
+  data-v-085e19e1=""
+>
+  <label
+    class="label is-start"
+    data-v-085e19e1=""
+    for="something-number"
+  >
+    Start
+  </label>
+  <!--v-if-->
+  <input
+    class="range"
+    data-v-085e19e1=""
+    id="something-number"
+    max="20"
+    min="5"
+    step="1"
+    type="range"
+  />
+  <label
+    class="label is-end"
+    data-v-085e19e1=""
+    for="something-number"
+  >
+    End
+  </label>
+</div>
+`;

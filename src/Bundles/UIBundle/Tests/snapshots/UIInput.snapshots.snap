@@ -1,0 +1,66 @@
+// Vitest Snapshot v1
+
+exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: availableWrapper like as email 1`] = `
+<div
+  class="UIInput variant-primary label-position-left"
+  data-v-e394574e=""
+>
+  <label
+    class="label"
+    data-v-e394574e=""
+    for="main-email"
+  >
+    Email
+  </label>
+  <input
+    class="input"
+    data-v-e394574e=""
+    id="main-email"
+    type="email"
+  />
+</div>
+`;
+
+exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: disabledWrapper like as text 1`] = `
+<div
+  class="UIInput variant-primary label-position-top"
+  data-v-e394574e=""
+>
+  <label
+    class="label"
+    data-v-e394574e=""
+    for="main-first-name"
+  >
+    First name
+  </label>
+  <input
+    class="input"
+    data-v-e394574e=""
+    disabled=""
+    id="main-first-name"
+    type="text"
+  />
+</div>
+`;
+
+exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: readonlyWrapper like as password 1`] = `
+<div
+  class="UIInput variant-primary label-position-top"
+  data-v-e394574e=""
+>
+  <label
+    class="label"
+    data-v-e394574e=""
+    for="main-password"
+  >
+    Password
+  </label>
+  <input
+    class="input"
+    data-v-e394574e=""
+    id="main-password"
+    readonly=""
+    type="password"
+  />
+</div>
+`;
