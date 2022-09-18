@@ -10,12 +10,8 @@ const defaultWrapper = mount(Navigation, {
   },
 })
 
-describe('[NavigationBundle]<Components>(Navigation)', async () => {
-  it('should have class', () => {
-    expect(defaultWrapper.attributes('class')).toBe('Navigation')
-  })
-
-  it('should be visible', () => {
-    expect(defaultWrapper.isVisible()).toBe(true)
+describe('[NavigationBundle]<Snapshots>(Navigation)', async () => {
+  it('renders correctly component', () => {
+    expect(defaultWrapper.element).toMatchSnapshot()
   })
 })
