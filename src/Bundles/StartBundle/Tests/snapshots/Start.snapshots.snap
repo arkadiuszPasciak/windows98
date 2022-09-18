@@ -1,0 +1,378 @@
+// Vitest Snapshot v1
+
+exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after click button 1`] = `
+<div
+  class="Start"
+  data-v-6d095ed5=""
+>
+  <button
+    class="UIButton variant-primary size-medium button-start"
+    data-v-6d095ed5=""
+    data-v-cf1bb3a9=""
+    type="button"
+  >
+    
+    <img
+      class="button-icon"
+      data-v-6d095ed5=""
+      height="23"
+      src="src/Assets/Icons/Applications/windows.png"
+      width="23"
+    />
+    
+    
+     Start
+    
+    
+    
+  </button>
+  <div
+    class="StartPanel v-primary is-active"
+    data-v-38771fa7=""
+    data-v-6d095ed5=""
+  >
+    
+    
+    <div
+      class="StartPanelItem s-medium is-arrow"
+      data-v-6d095ed5=""
+      data-v-f765ff07=""
+    >
+      <img
+        class="icon"
+        data-v-f765ff07=""
+        height="25"
+        src="src/Assets/Icons/Applications/programs.png"
+        width="25"
+      />
+      <p
+        class="name"
+        data-v-f765ff07=""
+      >
+        Programs
+      </p>
+      <div
+        class="under-panel"
+        data-v-f765ff07=""
+      >
+        
+        <div
+          class="StartPanel v-secondary"
+          data-v-38771fa7=""
+          data-v-6d095ed5=""
+        >
+          
+          
+          
+          <div
+            class="StartPanelItem s-small is-arrow"
+            data-v-6d095ed5=""
+            data-v-f765ff07=""
+          >
+            <img
+              class="icon"
+              data-v-f765ff07=""
+              height="18"
+              src="src/Assets/Icons/Applications/programs.png"
+              width="18"
+            />
+            <p
+              class="name"
+              data-v-f765ff07=""
+            >
+              Accessories
+            </p>
+            <div
+              class="under-panel"
+              data-v-f765ff07=""
+            >
+              
+              <div
+                class="StartPanel v-secondary"
+                data-v-38771fa7=""
+                data-v-6d095ed5=""
+              >
+                
+                
+                
+                <div
+                  class="StartPanelItem s-small"
+                  data-v-6d095ed5=""
+                  data-v-f765ff07=""
+                >
+                  <img
+                    class="icon"
+                    data-v-f765ff07=""
+                    height="18"
+                    src="src/Assets/Icons/Applications/calculator.png"
+                    width="18"
+                  />
+                  <p
+                    class="name"
+                    data-v-f765ff07=""
+                  >
+                    Calculator
+                  </p>
+                  <!--v-if-->
+                </div>
+                
+                
+                
+              </div>
+              
+            </div>
+          </div>
+          
+          
+          <div
+            class="StartPanelItem s-small"
+            data-v-6d095ed5=""
+            data-v-f765ff07=""
+          >
+            <img
+              class="icon"
+              data-v-f765ff07=""
+              height="18"
+              src="src/Assets/Icons/Applications/microsoft-exchange.png"
+              width="18"
+            />
+            <p
+              class="name"
+              data-v-f765ff07=""
+            >
+              Microsoft Exchange
+            </p>
+            <div
+              class="under-panel"
+              data-v-f765ff07=""
+            >
+              
+              
+            </div>
+          </div>
+          
+          
+          <div
+            class="StartPanelItem s-small"
+            data-v-6d095ed5=""
+            data-v-f765ff07=""
+          >
+            <img
+              class="icon"
+              data-v-f765ff07=""
+              height="18"
+              src="src/Assets/Icons/Applications/ms-dos-prompt.png"
+              width="18"
+            />
+            <p
+              class="name"
+              data-v-f765ff07=""
+            >
+              MS-DOS Prompt
+            </p>
+            <div
+              class="under-panel"
+              data-v-f765ff07=""
+            >
+              
+              
+            </div>
+          </div>
+          
+          
+          
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="StartPanelItem s-medium"
+      data-v-6d095ed5=""
+      data-v-f765ff07=""
+    >
+      <img
+        class="icon"
+        data-v-f765ff07=""
+        height="25"
+        src="src/Assets/Icons/Applications/documents.png"
+        width="25"
+      />
+      <p
+        class="name"
+        data-v-f765ff07=""
+      >
+        Documents
+      </p>
+      <div
+        class="under-panel"
+        data-v-f765ff07=""
+      >
+        
+        
+      </div>
+    </div>
+    <div
+      class="StartPanelItem s-medium"
+      data-v-6d095ed5=""
+      data-v-f765ff07=""
+    >
+      <img
+        class="icon"
+        data-v-f765ff07=""
+        height="25"
+        src="src/Assets/Icons/Applications/settings.png"
+        width="25"
+      />
+      <p
+        class="name"
+        data-v-f765ff07=""
+      >
+        Settings
+      </p>
+      <div
+        class="under-panel"
+        data-v-f765ff07=""
+      >
+        
+        
+      </div>
+    </div>
+    <div
+      class="StartPanelItem s-medium"
+      data-v-6d095ed5=""
+      data-v-f765ff07=""
+    >
+      <img
+        class="icon"
+        data-v-f765ff07=""
+        height="25"
+        src="src/Assets/Icons/Applications/find.png"
+        width="25"
+      />
+      <p
+        class="name"
+        data-v-f765ff07=""
+      >
+        Find
+      </p>
+      <div
+        class="under-panel"
+        data-v-f765ff07=""
+      >
+        
+        
+      </div>
+    </div>
+    <div
+      class="StartPanelItem s-medium"
+      data-v-6d095ed5=""
+      data-v-f765ff07=""
+    >
+      <img
+        class="icon"
+        data-v-f765ff07=""
+        height="25"
+        src="src/Assets/Icons/Applications/help.png"
+        width="25"
+      />
+      <p
+        class="name"
+        data-v-f765ff07=""
+      >
+        Help
+      </p>
+      <div
+        class="under-panel"
+        data-v-f765ff07=""
+      >
+        
+        
+      </div>
+    </div>
+    <div
+      class="StartPanelItem s-medium"
+      data-v-6d095ed5=""
+      data-v-f765ff07=""
+    >
+      <img
+        class="icon"
+        data-v-f765ff07=""
+        height="25"
+        src="src/Assets/Icons/Applications/run.png"
+        width="25"
+      />
+      <p
+        class="name"
+        data-v-f765ff07=""
+      >
+        Run...
+      </p>
+      <div
+        class="under-panel"
+        data-v-f765ff07=""
+      >
+        
+        
+      </div>
+    </div>
+    <div
+      class="StartPanelItem s-medium"
+      data-v-6d095ed5=""
+      data-v-f765ff07=""
+    >
+      <img
+        class="icon"
+        data-v-f765ff07=""
+        height="25"
+        src="src/Assets/Icons/Applications/shut-down.png"
+        width="25"
+      />
+      <p
+        class="name"
+        data-v-f765ff07=""
+      >
+        Shut Down...
+      </p>
+      <div
+        class="under-panel"
+        data-v-f765ff07=""
+      >
+        
+        
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+`;
+
+exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before click button 1`] = `
+<div
+  class="Start"
+  data-v-6d095ed5=""
+>
+  <button
+    class="UIButton variant-primary size-medium button-start"
+    data-v-6d095ed5=""
+    data-v-cf1bb3a9=""
+    type="button"
+  >
+    
+    <img
+      class="button-icon"
+      data-v-6d095ed5=""
+      height="23"
+      src="src/Assets/Icons/Applications/windows.png"
+      width="23"
+    />
+    
+    
+     Start
+    
+    
+    
+  </button>
+  <!--v-if-->
+</div>
+`;
