@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`[NavigationBundle]<Snapshots>(Navigation) > renders correctly component 1`] = `
+<nav
+  class="Navigation"
+  data-v-647782e8=""
+>
+  
+  
+</nav>
+`;

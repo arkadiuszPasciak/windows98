@@ -11,6 +11,9 @@ const defaultWrapper = mount(UICheckbox, {
   },
 })
 
+// TODO Trigger click on checkbox and check type of "checked"
+// TODO Trigger click on checkbox[disabled] and check type of "checked"
+
 describe('[UIBundle]<Components>(UICheckbox)', async () => {
   it('should have classes: main and variant', () => {
     expect(defaultWrapper.attributes('class')).toBe(

@@ -16,6 +16,8 @@ const defaultWrapper = mount(UIInput, {
 const input = defaultWrapper.find('.input')
 const label = defaultWrapper.find('.label')
 
+// TODO Trigger text on input[disabled] and check value of input
+
 describe('[UIBundle]<Components>(UIInput)', async () => {
   it('should have classes: main, variant and label position class', () => {
     expect(defaultWrapper.attributes('class')).toBe(

@@ -21,10 +21,10 @@ My sandbox to improve my programming skills based on Windows 98
 - 🛹 [State & Store Management (Pinia)](https://pinia.vuejs.org/)
 - 🚩 [Localization (i18n) by @intlify](https://github.com/intlify/bundle-tools/blob/main/packages/vite-plugin-vue-i18n/README.md)
 - 🐶 [Improves your commits and more (Husky)](https://typicode.github.io/husky/)
+- ⚡ [Blazing Fast Unit Test Framework (Vitest)](https://vitest.dev/)
 - 🐛 [Helps you find and fix problems with your JavaScript (Eslint)](https://eslint.org/)
 - 🖌 [Helps you find and fix problems with your SCSS (Stylelint)](https://stylelint.io/)
 - 🖨 [Takes your code and reprints to coding standards (Prettier)](https://prettier.io/)
-- 💩 [Runs linters against staged git files (Lint-staged)](https://github.com/okonet/lint-staged)
 
 ## Quick Start
 

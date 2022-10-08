@@ -15,6 +15,9 @@ const defaultWrapper = mount(UITextarea, {
 const textarea = defaultWrapper.find('.textarea')
 const label = defaultWrapper.find('.label')
 
+// TODO Trigger text on input and check value of input
+// TODO Trigger text on input[disabled] and check value of input
+
 describe('[UIBundle]<Components>(UITextarea)', async () => {
   it('should have classes: main, variant and label position class', () => {
     expect(defaultWrapper.attributes('class')).toBe(

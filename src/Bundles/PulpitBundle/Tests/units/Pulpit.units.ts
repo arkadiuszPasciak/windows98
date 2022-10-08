@@ -1,21 +1,13 @@
-import { mount } from '@vue/test-utils'
 import { expect, it, describe } from 'vitest'
-import { createTestingPinia } from '@pinia/testing'
-import { i18n } from '@Configs/I18n/I18n.config'
-import Pulpit from '@Bundles/PulpitBundle/Components/Pulpit.vue'
+import { setActivePinia, createPinia } from 'pinia'
+import { usePulpitStore } from '@Bundles/PulpitBundle/Stores/Pulpit.stores'
+import { pulpitStoreApps } from '@Bundles/PulpitBundle/Mocks/Pulpit.mocks'
 
-const defaultWrapper = mount(Pulpit, {
-  global: {
-    plugins: [createTestingPinia(), i18n],
-  },
-})
+describe('[ClockBundle]<Stores>(usePulpitStore)', () => {
+  setActivePinia(createPinia())
+  const store = usePulpitStore()
 
-describe('[PulpitBundle]<Components>(Pulpit)', async () => {
-  it('should have class', () => {
-    expect(defaultWrapper.attributes('class')).toBe('Pulpit')
-  })
-
-  it('should be visible', () => {
-    expect(defaultWrapper.isVisible()).toBe(true)
+  it('has default apps', () => {
+    expect(store.apps).toStrictEqual(pulpitStoreApps)
   })
 })
