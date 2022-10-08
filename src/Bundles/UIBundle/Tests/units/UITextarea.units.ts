@@ -12,26 +12,11 @@ const defaultWrapper = mount(UITextarea, {
   },
 })
 
-const textarea = defaultWrapper.find('.textarea')
-const label = defaultWrapper.find('.label')
-
-// TODO Trigger text on input and check value of input
-// TODO Trigger text on input[disabled] and check value of input
-
-describe('[UIBundle]<Components>(UITextarea)', async () => {
-  it('should have classes: main, variant and label position class', () => {
-    expect(defaultWrapper.attributes('class')).toBe(
-      'UITextarea variant-primary label-position-left',
+describe('[UIBundle]<Components>(UITextarea)', () => {
+  it('should be possible to write text in textarea', async () => {
+    await defaultWrapper.find('textarea').setValue('Can I write here?')
+    expect(defaultWrapper.find('textarea').element.value).toBe(
+      'Can I write here?',
     )
-  })
-
-  it('should have attributes: id, for', () => {
-    expect(textarea.attributes('id')).toBe('comment')
-    expect(label.attributes('for')).toBe('comment')
-  })
-
-  it('should be visible: textarea and label', () => {
-    expect(textarea.isVisible()).toBe(true)
-    expect(label.isVisible()).toBe(true)
   })
 })
