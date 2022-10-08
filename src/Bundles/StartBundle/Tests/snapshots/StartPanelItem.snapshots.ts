@@ -1,13 +1,8 @@
 import { mount } from '@vue/test-utils'
 import { expect, it, describe } from 'vitest'
-import { i18n } from '@Configs/I18n/I18n.config'
 import StartPanelItem from '@Bundles/StartBundle/Components/StartPanelItem.vue'
-import { createTestingPinia } from '@pinia/testing'
 
 const sizeSmallWrapper = mount(StartPanelItem, {
-  global: {
-    plugins: [createTestingPinia(), i18n],
-  },
   props: {
     name: 'StartBundle.shut-down',
     iconName: 'shut-down',
@@ -16,9 +11,6 @@ const sizeSmallWrapper = mount(StartPanelItem, {
 })
 
 const sizeMediumWrapper = mount(StartPanelItem, {
-  global: {
-    plugins: [createTestingPinia(), i18n],
-  },
   props: {
     name: 'StartBundle.documents',
     iconName: 'documents',

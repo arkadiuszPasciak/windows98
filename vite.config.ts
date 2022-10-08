@@ -28,6 +28,7 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     include: ['**/*.units.ts', '**/*.snapshots.ts'],
+    setupFiles: ['./src/Configs/VueTestUtils.config.ts'],
     resolveSnapshotPath: (testPath, snapshotExtension) => {
       return (
         testPath.replace('/__snapshots__', '').replace('.ts', '') +
