@@ -27,7 +27,9 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "packages-check-updates": "npx npm-check-updates",
+    "packages-update": "npx npm-check-updates -u"
   },
   "dependencies": {
     "pinia": "^2.0.22",
