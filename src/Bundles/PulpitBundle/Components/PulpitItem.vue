@@ -5,6 +5,7 @@
       width="32"
       height="32"
       :src="`src/Assets/Icons/Applications/${iconName}.png`"
+      :alt="name"
     />
     <p class="name">{{ name }}</p>
   </div>

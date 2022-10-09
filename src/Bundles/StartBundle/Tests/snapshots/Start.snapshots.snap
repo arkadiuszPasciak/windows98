@@ -13,6 +13,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
   >
     
     <img
+      alt="Windows logo"
       class="button-icon"
       data-v-6d095ed5=""
       height="23"
@@ -360,6 +361,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before cl
   >
     
     <img
+      alt="Windows logo"
       class="button-icon"
       data-v-6d095ed5=""
       height="23"

@@ -11,6 +11,7 @@
           :width="23"
           :height="23"
           :src="`src/Assets/Icons/Applications/windows.png`"
+          :alt="t('StartBundle.windows-logo')"
         />
       </template>
       {{ t('StartBundle.start') }}

@@ -12,6 +12,7 @@ exports[`[PulpitBundle]<Snapshots>(Pulpit) > renders correctly component 1`] = `
     data-v-95683558=""
   >
     <img
+      alt="My Computer"
       class="icon"
       data-v-95683558=""
       height="32"
@@ -31,6 +32,7 @@ exports[`[PulpitBundle]<Snapshots>(Pulpit) > renders correctly component 1`] = `
     data-v-95683558=""
   >
     <img
+      alt="Recycle"
       class="icon"
       data-v-95683558=""
       height="32"
