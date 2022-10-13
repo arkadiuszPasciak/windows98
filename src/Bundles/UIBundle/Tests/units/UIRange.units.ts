@@ -16,35 +16,15 @@ const defaultWrapper = mount(UIRange, {
   },
 })
 
-const input = defaultWrapper.find('.range')
-const labelStart = defaultWrapper.find('.is-start')
-const labelEnd = defaultWrapper.find('.is-end')
+describe('[UIBundle]<Components>(UIRange)', () => {
+  it('should be possible to set value in range', async () => {
+    await defaultWrapper.find('input').setValue('5')
+    expect(defaultWrapper.find('input').element.value).toBe('5')
 
-describe('[UIBundle]<Components>(UIRange)', async () => {
-  it('should have classes: main, variant and position class', () => {
-    expect(defaultWrapper.attributes('class')).toBe(
-      'UIRange variant-primary position-horizontal',
-    )
-  })
+    await defaultWrapper.find('input').setValue('15')
+    expect(defaultWrapper.find('input').element.value).toBe('12')
 
-  it('should have attributes: type, id, min, max, step for', () => {
-    expect(input.attributes('type')).toBe('range')
-    expect(input.attributes('id')).toBe('person-age')
-    expect(input.attributes('min')).toBe('1')
-    expect(input.attributes('max')).toBe('12')
-    expect(input.attributes('step')).toBe('3')
-    expect(labelStart.attributes('for')).toBe('person-age')
-    expect(labelEnd.attributes('for')).toBe('person-age')
-  })
-
-  it('should be visible: input and label', () => {
-    expect(input.isVisible()).toBe(true)
-    expect(labelStart.isVisible()).toBe(true)
-    expect(labelEnd.isVisible()).toBe(true)
-  })
-
-  it('should have text for labels', () => {
-    expect(labelStart.text()).toBe('Low')
-    expect(labelEnd.text()).toBe('High')
+    await defaultWrapper.find('input').setValue('-5')
+    expect(defaultWrapper.find('input').element.value).toBe('1')
   })
 })

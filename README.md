@@ -8,6 +8,7 @@ My sandbox to improve my programming skills based on Windows 98
   - [Features](#features)
   - [Quick Start](#quick-start)
     - [Install application](#install-application)
+    - [Update packages](#update-packages)
   - [Deploy](#deploy)
     - [Node.js server](#nodejs-server)
   - [Commands](#commands)
@@ -16,7 +17,7 @@ My sandbox to improve my programming skills based on Windows 98
 ## Features
 
 - 🖼 [Get ready for a development environment that can finally catch up with you](https://vitejs.dev/)
-- 🖼 [Builds your next application with Vue 3](https://vuejs.org/)
+- 📑 [Builds your next application with Vue 3](https://vuejs.org/)
 - 🤖 [Strongly typed, object oriented, compiled language (TypeScript)](https://www.typescriptlang.org/)
 - 🛹 [State & Store Management (Pinia)](https://pinia.vuejs.org/)
 - 🚩 [Localization (i18n) by @intlify](https://github.com/intlify/bundle-tools/blob/main/packages/vite-plugin-vue-i18n/README.md)
@@ -25,6 +26,7 @@ My sandbox to improve my programming skills based on Windows 98
 - 🐛 [Helps you find and fix problems with your JavaScript (Eslint)](https://eslint.org/)
 - 🖌 [Helps you find and fix problems with your SCSS (Stylelint)](https://stylelint.io/)
 - 🖨 [Takes your code and reprints to coding standards (Prettier)](https://prettier.io/)
+- 📦 [Ppgrades your package.json dependencies to the latest versions (npm-check-updates)](https://github.com/raineorshine/npm-check-updates)
 
 ## Quick Start
 
@@ -34,6 +36,14 @@ My sandbox to improve my programming skills based on Windows 98
 - Clone this project to your computer `git clone https://github.com/arkadiuszPasciak/windows98`
 - Install dependencies `npm install`
 - Run `npm run dev` to start development server and open `http://127.0.0.1:5173/` in your browser
+
+### Update packages
+
+[npm-check-updates](https://github.com/raineorshine/npm-check-updates) is fully compatible with yarn
+
+- Run `npm run packages-check-updates` to show all packages to upgrade in `package.json`
+- Run `npm run packages-update` to upgrade all packages in `package.json`
+- Run `npm run install` to install new versions
 
 ## Deploy
 
@@ -57,10 +67,12 @@ My sandbox to improve my programming skills based on Windows 98
 - [`npm run lintfix:js`](https://eslint.org/docs/latest/user-guide/command-line-interface) to fix files `js, ts, vue`
 - [`npm run lintfix:styles`](https://stylelint.io/user-guide/usage/cli/) to fix files `scss, vue`
 - [`npm run lintfix:prettier`](https://stylelint.io/user-guide/usage/cli/) to format files `*`
-- [`npm run typecheck`](https://www.npmjs.com/package/vue-tsc) to check types
+- [`npm run typecheck`](https://www.npmjs.com/package/vue-tsc) to test types
 - [`npm run test`](https://vitest.dev/guide/cli.html#vitest) to test in the current directory
 - [`npm run test:ui`](https://vitest.dev/guide/ui.html) to test with use UI
 - [`npm run test:run`](https://vitest.dev/guide/cli.html#vitest-run) to test on single run without watch mode
+- [`npm run packages-check-updates`](https://github.com/raineorshine/npm-check-updates#installation) to show all packages to upgrade in `package.json`
+- [`npm run packages-update`](https://github.com/raineorshine/npm-check-updates#installation) to upgrade all packages in `package.json`
 
 ## Bundle structure
 

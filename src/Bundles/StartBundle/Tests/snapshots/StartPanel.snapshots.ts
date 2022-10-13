@@ -1,13 +1,8 @@
 import { mount } from '@vue/test-utils'
 import { expect, it, describe } from 'vitest'
-import { createTestingPinia } from '@pinia/testing'
-import { i18n } from '@Configs/I18n/I18n.config'
 import StartPanel from '@Bundles/StartBundle/Components/StartPanel.vue'
 
 const variantPrimaryWrapper = mount(StartPanel, {
-  global: {
-    plugins: [createTestingPinia(), i18n],
-  },
   props: {
     variant: 'primary',
   },

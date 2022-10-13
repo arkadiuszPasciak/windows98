@@ -11,17 +11,12 @@ const defaultWrapper = mount(UICheckbox, {
   },
 })
 
-// TODO Trigger click on checkbox and check type of "checked"
-// TODO Trigger click on checkbox[disabled] and check type of "checked"
+describe('[UIBundle]<Components>(UICheckbox)', () => {
+  it('should be possible to set checked in input', async () => {
+    await defaultWrapper.find('input').setValue(true)
+    expect(defaultWrapper.find('input').element.checked).toBe(true)
 
-describe('[UIBundle]<Components>(UICheckbox)', async () => {
-  it('should have classes: main and variant', () => {
-    expect(defaultWrapper.attributes('class')).toBe(
-      'UICheckbox variant-primary',
-    )
-  })
-
-  it('should have attribute type checkbox in input', () => {
-    expect(defaultWrapper.find('.input').attributes('type')).toBe('checkbox')
+    await defaultWrapper.find('input').setValue(false)
+    expect(defaultWrapper.find('input').element.checked).toBe(false)
   })
 })

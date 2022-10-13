@@ -3,8 +3,8 @@
 </template>
 
 <script setup lang="ts">
-  import HomePage from '@Views/HomePage/HomePage.vue'
   import { onBeforeMount } from 'vue'
+  import HomePage from '@Views/HomePage/HomePage.vue'
   import { useClockStore } from '@Bundles/ClockBundle/Stores/Clock.stores'
 
   const clockStore = useClockStore()
