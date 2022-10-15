@@ -6,17 +6,16 @@
   >
     <div class="header">
       <h3 class="title">{{ title }}</h3>
-      <UIButton class="button-close">
-        x
-        <!-- <template #icon-left>
+      <UIButton class="button-close" size="small">
+        <template #icon-left>
           <img
-            class="button-icon"
-            :width="23"
-            :height="23"
-            src="src of image"
-            alt="close window"
+            class="button-close-icon"
+            :width="8"
+            :height="7"
+            src="src/Assets/Icons/close-modal.svg"
+            :alt="t('UIBundle.close-window')"
           />
-        </template> -->
+        </template>
       </UIButton>
     </div>
     <div class="content">
@@ -28,6 +27,7 @@
 <script setup lang="ts">
   import { PropType } from 'vue'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import { useI18n } from 'vue-i18n'
 
   defineProps({
     variant: {
@@ -39,7 +39,11 @@
       required: true,
     },
   })
+
+  const { t } = useI18n()
 </script>
+
+<i18n src="@Bundles/UIBundle/Locales/UIBundle.locales.json"></i18n>
 
 <style lang="scss" scoped>
   @import '@Bundles/UIBundle/Styles/UIModal.styles.scss';
