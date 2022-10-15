@@ -1,6 +1,10 @@
 <template>
-  <div class="UIModal" :class="`variant-${variant}`">
-    <div class="navigation">
+  <div
+    class="UIModal"
+    :class="`variant-${variant}`"
+    :style="`width: 800px; height: 800px;`"
+  >
+    <div class="header">
       <h3 class="title">{{ title }}</h3>
       <UIButton class="button-close">
         x

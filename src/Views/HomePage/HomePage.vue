@@ -1,10 +1,13 @@
 <template>
   <div class="HomePage">
-    <Pulpit />
-    <Navigation>
-      <Start />
-      <Clock />
-    </Navigation>
+    <UIModal title="A Complete Window" />
+    <template v-if="false">
+      <Pulpit />
+      <Navigation>
+        <Start />
+        <Clock />
+      </Navigation>
+    </template>
   </div>
 </template>
 
@@ -13,6 +16,7 @@
   import Navigation from '@Bundles/NavigationBundle/Components/Navigation.vue'
   import Pulpit from '@Bundles/PulpitBundle/Components/Pulpit.vue'
   import Start from '@Bundles/StartBundle/Components/Start.vue'
+  import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
 </script>
 
 <style lang="scss" scoped>
