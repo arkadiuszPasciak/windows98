@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="UIModal"
-    :class="`variant-${variant}`"
-    :style="`width: 800px; height: 800px;`"
-  >
+  <div class="UIModal" :class="classes" :style="`width: 800px; height: 800px;`">
     <div class="header">
       <h3 class="title">{{ title }}</h3>
       <UIButton class="button-close" size="small">
@@ -29,7 +25,7 @@
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
   import { useI18n } from 'vue-i18n'
 
-  defineProps({
+  const props = defineProps({
     variant: {
       type: String as PropType<'primary'>,
       default: 'primary',
@@ -38,9 +34,18 @@
       type: String,
       required: true,
     },
+    resizeWindow: {
+      type: Boolean,
+      default: false,
+    },
   })
 
   const { t } = useI18n()
+
+  const classes = [
+    `variant-${props.variant}`,
+    `${props.resizeWindow ? 'resize-window' : ''}`,
+  ]
 </script>
 
 <i18n src="@Bundles/UIBundle/Locales/UIBundle.locales.json"></i18n>

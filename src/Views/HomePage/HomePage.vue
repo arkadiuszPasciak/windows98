@@ -1,6 +1,6 @@
 <template>
   <div class="HomePage">
-    <UIModal title="A Complete Window" />
+    <UIModal title="A Complete Window" :resize-window="true" />
     <template v-if="false">
       <Pulpit />
       <Navigation>
