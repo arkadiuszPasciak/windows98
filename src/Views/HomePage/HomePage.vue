@@ -1,6 +1,6 @@
 <template>
   <div class="HomePage">
-    <UIModal title="A Complete Window" :resize-window="true" />
+    <UITeleport />
     <template v-if="false">
       <Pulpit />
       <Navigation>
@@ -16,11 +16,12 @@
   import Navigation from '@Bundles/NavigationBundle/Components/Navigation.vue'
   import Pulpit from '@Bundles/PulpitBundle/Components/Pulpit.vue'
   import Start from '@Bundles/StartBundle/Components/Start.vue'
-  import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import UITeleport from '@Bundles/UIBundle/Components/UITeleport.vue'
 </script>
 
 <style lang="scss" scoped>
   .HomePage {
-    position: relative;
+    height: 100vh;
+    width: 100vw;
   }
 </style>

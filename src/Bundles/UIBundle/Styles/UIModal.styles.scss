@@ -37,4 +37,8 @@
     resize: both;
     overflow: auto;
   }
+
+  &.move-window {
+    position: absolute;
+  }
 }
