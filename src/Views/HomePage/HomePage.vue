@@ -1,13 +1,11 @@
 <template>
   <div class="HomePage">
-    <UITeleport />
-    <template v-if="false">
-      <Pulpit />
-      <Navigation>
-        <Start />
-        <Clock />
-      </Navigation>
-    </template>
+    <UITeleport v-if="false" />
+    <Pulpit />
+    <Navigation>
+      <Start />
+      <Clock />
+    </Navigation>
   </div>
 </template>
 
@@ -21,6 +19,7 @@
 
 <style lang="scss" scoped>
   .HomePage {
+    position: relative;
     height: 100vh;
     width: 100vw;
   }

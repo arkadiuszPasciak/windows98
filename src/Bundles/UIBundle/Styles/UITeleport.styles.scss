@@ -1,7 +1,5 @@
 .UITeleport {
-  position: relative;
-  height: 100%;
+  position: absolute;
+  height: calc(100vh - 28px);
   width: 100%;
-  overflow: hidden;
-  background-color: pink;
 }
