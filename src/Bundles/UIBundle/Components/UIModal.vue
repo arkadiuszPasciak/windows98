@@ -1,32 +1,34 @@
 <template>
   <div
+    v-if="isShowModal"
     ref="modalElement"
     class="UIModal"
     :class="classes"
-    :style="`width: 150px; top: ${positionY}px; left: ${positionX}px`"
     @mousemove="(event) => mouseMove(event)"
   >
-    <div
-      class="header"
-      :style="`cursor: ${cursorType}`"
-      @mousedown="(event) => mouseDownEvent(event)"
-      @mouseup="mouseUpEvent"
-    >
-      <h3 class="title">{{ title }}</h3>
-      <UIButton class="button-close" size="small">
-        <template #icon-left>
-          <img
-            class="button-close-icon"
-            :width="8"
-            :height="7"
-            src="src/Assets/Icons/close-modal.svg"
-            :alt="t('UIBundle.close-window')"
-          />
-        </template>
-      </UIButton>
-    </div>
-    <div class="content">
-      <slot />
+    <div class="container" :style="`width: ${width}px; height: ${height}px;`">
+      <div
+        class="header"
+        :style="`cursor: ${cursorType}`"
+        @mousedown="(event) => mouseDownEvent(event)"
+        @mouseup="mouseUpEvent"
+      >
+        <h3 class="title">{{ title }}</h3>
+        <UIButton class="button-close" size="small" @click="toggleModal(false)">
+          <template #icon-left>
+            <img
+              class="button-close-icon"
+              :width="8"
+              :height="7"
+              src="src/Assets/Icons/close-modal.svg"
+              :alt="t('UIBundle.close-window')"
+            />
+          </template>
+        </UIButton>
+      </div>
+      <div class="content">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
@@ -47,6 +49,14 @@
       type: String,
       required: true,
     },
+    width: {
+      type: Number,
+      default: 450,
+    },
+    height: {
+      type: Number,
+      default: 150,
+    },
     resizeWindow: {
       type: Boolean,
       default: false,
@@ -65,6 +75,7 @@
     `${props.moveWindow ? 'move-window' : ''}`,
   ] as Array<string>
 
+  const isShowModal = ref(true) as Ref<boolean>
   const modalElement = ref(null) as Ref<Nullable<HTMLElement>>
   const mouseState = ref(false) as Ref<boolean>
   const positionX = ref(0) as Ref<number>
@@ -75,7 +86,6 @@
     if (!modalElement.value) {
       return
     }
-    //console.log('mousedown event')
 
     cursorType.value = 'move'
     mouseState.value = true
@@ -84,7 +94,6 @@
   }
 
   const mouseUpEvent = (): void => {
-    //console.log('mouseup event')
     mouseState.value = false
     cursorType.value = 'default'
   }
@@ -93,10 +102,13 @@
     if (!mouseState.value || !modalElement.value) {
       return
     }
-    //console.log('mousemove event')
 
     modalElement.value.style.left = event.clientX + positionX.value + 'px'
     modalElement.value.style.top = event.clientY + positionY.value + 'px'
+  }
+
+  const toggleModal = (status: boolean): void => {
+    isShowModal.value = status
   }
 </script>
 

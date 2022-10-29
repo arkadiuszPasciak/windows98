@@ -1,11 +1,13 @@
 .UIModal {
-  display: grid;
-  grid-template-rows: 20px calc(100% - 16px);
-  padding: 3px;
-  min-height: 110px;
-  min-width: 190px;
-  max-width: 100%;
-  max-height: 100%;
+  .container {
+    display: grid;
+    grid-template-rows: 20px calc(100% - 16px);
+    padding: 3px;
+    min-height: 110px;
+    min-width: 190px;
+    max-width: 100%;
+    max-height: 100%;
+  }
 
   .header {
     display: flex;
@@ -24,8 +26,10 @@
   }
 
   &.variant-primary {
-    background-color: $cl-greyC0;
-    box-shadow: $border-raised-outer, $border-raised-inner;
+    .container {
+      background-color: $cl-greyC0;
+      box-shadow: $border-raised-outer, $border-raised-inner;
+    }
 
     .header {
       color: $cl-white;
@@ -40,5 +44,8 @@
 
   &.move-window {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
