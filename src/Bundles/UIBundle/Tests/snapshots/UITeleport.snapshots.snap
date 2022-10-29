@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`[UIBundle]<Snapshots>(UITeleport) > renders correctly component 1`] = `
+<div
+  class="UITeleport"
+  data-v-2e097872=""
+>
+  
+  
+</div>
+`;
