@@ -1,7 +1,7 @@
 <template>
   <div class="HomePage">
-    <UITeleport v-if="false">
-      <UIModal title="A Complete Window" :resize-window="true" />
+    <UITeleport>
+      <ShutDown />
     </UITeleport>
     <Pulpit />
     <Navigation>
@@ -17,7 +17,7 @@
   import Pulpit from '@Bundles/PulpitBundle/Components/Pulpit.vue'
   import Start from '@Bundles/StartBundle/Components/Start.vue'
   import UITeleport from '@Bundles/UIBundle/Components/UITeleport.vue'
-  import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import ShutDown from '@Bundles/ShutDownBundle/Components/ShutDown.vue'
 </script>
 
 <style lang="scss" scoped>
