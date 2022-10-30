@@ -1,15 +1,14 @@
 <template>
-  <label class="UICheckbox" :class="`variant-${variant}`">
+  <label class="UIRadio" :class="`variant-${variant}`">
     <input
       class="input"
-      type="checkbox"
+      type="radio"
+      :name="name"
       :disabled="disabled"
       :checked="checked"
     />
 
-    <span class="checkmark">
-      <i class="icon" />
-    </span>
+    <span class="radio"></span>
 
     <p v-if="$slots.default" class="text"><slot /></p>
   </label>
@@ -23,6 +22,10 @@
       type: String as PropType<'primary'>,
       default: 'primary',
     },
+    name: {
+      type: String,
+      required: true,
+    },
     disabled: {
       type: Boolean,
       default: false,
@@ -35,5 +38,5 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '@Bundles/UIBundle/Styles/UICheckbox.styles.scss';
+  @import '@Bundles/UIBundle/Styles/UIRadio.styles.scss';
 </style>
