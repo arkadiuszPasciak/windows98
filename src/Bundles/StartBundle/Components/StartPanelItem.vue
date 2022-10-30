@@ -6,7 +6,7 @@
       :height="size === 'medium' ? 25 : 18"
       :src="`src/Assets/Icons/Applications/${iconName}.png`"
     />
-    <p class="name">{{ t(name) }}</p>
+    <UIText>{{ t(name) }}</UIText>
 
     <div v-if="$slots.default" class="under-panel"><slot></slot></div>
   </div>
@@ -15,6 +15,7 @@
 <script setup lang="ts">
   import { PropType } from 'vue'
   import { useI18n } from 'vue-i18n'
+  import UIText from '@Bundles/UIBundle/Components/UIText.vue'
 
   defineProps({
     size: {

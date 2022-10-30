@@ -6,7 +6,7 @@
     :width="330"
     :height="180"
   >
-    <p class="description">{{ t('ShutDownBundle.description') }}</p>
+    <UIText class="description">{{ t('ShutDownBundle.description') }}</UIText>
     <UIRadio
       class="checkbox-shut-down"
       name="shut-down-checkbox"
@@ -25,8 +25,9 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
-  import UIRadio from '@Bundles/UIBundle/Components/UIRadio.vue'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import UIRadio from '@Bundles/UIBundle/Components/UIRadio.vue'
+  import UIText from '@Bundles/UIBundle/Components/UIText.vue'
 
   const { t } = useI18n()
 </script>

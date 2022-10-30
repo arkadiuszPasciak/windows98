@@ -20,11 +20,14 @@ exports[`[UIBundle]<Snapshots>(UICheckbox) > renders correctly component: varian
     />
   </span>
   <p
-    class="text"
+    class="UIText text"
     data-v-90a1e1a2=""
+    data-v-f0b878d5=""
   >
     
+    
     Check Me!
+    
     
   </p>
 </label>

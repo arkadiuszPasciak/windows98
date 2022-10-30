@@ -47,10 +47,13 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         width="25"
       />
       <p
-        class="name"
+        class="UIText"
+        data-v-f0b878d5=""
         data-v-f765ff07=""
       >
+        
         Programs
+        
       </p>
       <div
         class="under-panel"
@@ -78,10 +81,13 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
               width="18"
             />
             <p
-              class="name"
+              class="UIText"
+              data-v-f0b878d5=""
               data-v-f765ff07=""
             >
+              
               Accessories
+              
             </p>
             <div
               class="under-panel"
@@ -109,10 +115,13 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
                     width="18"
                   />
                   <p
-                    class="name"
+                    class="UIText"
+                    data-v-f0b878d5=""
                     data-v-f765ff07=""
                   >
+                    
                     Calculator
+                    
                   </p>
                   <!--v-if-->
                 </div>
@@ -138,10 +147,13 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
               width="18"
             />
             <p
-              class="name"
+              class="UIText"
+              data-v-f0b878d5=""
               data-v-f765ff07=""
             >
+              
               Microsoft Exchange
+              
             </p>
             <div
               class="under-panel"
@@ -166,10 +178,13 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
               width="18"
             />
             <p
-              class="name"
+              class="UIText"
+              data-v-f0b878d5=""
               data-v-f765ff07=""
             >
+              
               MS-DOS Prompt
+              
             </p>
             <div
               class="under-panel"
@@ -199,10 +214,13 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         width="25"
       />
       <p
-        class="name"
+        class="UIText"
+        data-v-f0b878d5=""
         data-v-f765ff07=""
       >
+        
         Documents
+        
       </p>
       <div
         class="under-panel"
@@ -225,10 +243,13 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         width="25"
       />
       <p
-        class="name"
+        class="UIText"
+        data-v-f0b878d5=""
         data-v-f765ff07=""
       >
+        
         Settings
+        
       </p>
       <div
         class="under-panel"
@@ -251,10 +272,13 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         width="25"
       />
       <p
-        class="name"
+        class="UIText"
+        data-v-f0b878d5=""
         data-v-f765ff07=""
       >
+        
         Find
+        
       </p>
       <div
         class="under-panel"
@@ -277,10 +301,13 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         width="25"
       />
       <p
-        class="name"
+        class="UIText"
+        data-v-f0b878d5=""
         data-v-f765ff07=""
       >
+        
         Help
+        
       </p>
       <div
         class="under-panel"
@@ -303,10 +330,13 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         width="25"
       />
       <p
-        class="name"
+        class="UIText"
+        data-v-f0b878d5=""
         data-v-f765ff07=""
       >
+        
         Run...
+        
       </p>
       <div
         class="under-panel"
@@ -329,10 +359,13 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         width="25"
       />
       <p
-        class="name"
+        class="UIText"
+        data-v-f0b878d5=""
         data-v-f765ff07=""
       >
+        
         Shut Down...
+        
       </p>
       <div
         class="under-panel"

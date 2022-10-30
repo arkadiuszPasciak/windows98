@@ -13,10 +13,13 @@ exports[`[StartBundle]<Snapshots>(StartPanelItem) > renders correctly size mediu
     width="25"
   />
   <p
-    class="name"
+    class="UIText"
+    data-v-f0b878d5=""
     data-v-f765ff07=""
   >
+    
     Documents
+    
   </p>
   <!--v-if-->
 </div>
@@ -35,10 +38,13 @@ exports[`[StartBundle]<Snapshots>(StartPanelItem) > renders correctly size small
     width="18"
   />
   <p
-    class="name"
+    class="UIText"
+    data-v-f0b878d5=""
     data-v-f765ff07=""
   >
+    
     Shut Down...
+    
   </p>
   <!--v-if-->
 </div>

@@ -1,0 +1,12 @@
+// Vitest Snapshot v1
+
+exports[`[UIBundle]<Snapshots>(UIText) > renders correctly component 1`] = `
+<p
+  class="UIText"
+  data-v-f0b878d5=""
+>
+  
+  What do you want the computer to do?
+  
+</p>
+`;

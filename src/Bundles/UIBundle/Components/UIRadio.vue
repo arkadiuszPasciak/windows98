@@ -10,12 +10,13 @@
 
     <span class="radio"></span>
 
-    <p v-if="$slots.default" class="text"><slot /></p>
+    <UIText v-if="$slots.default" class="text"><slot /></UIText>
   </label>
 </template>
 
 <script setup lang="ts">
   import { PropType } from 'vue'
+  import UIText from '@Bundles/UIBundle/Components/UIText.vue'
 
   defineProps({
     variant: {

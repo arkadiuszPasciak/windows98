@@ -16,11 +16,14 @@ exports[`[UIBundle]<Snapshots>(UIRadio) > renders correctly component: variant p
     data-v-ccc35d9d=""
   />
   <p
-    class="text"
+    class="UIText text"
     data-v-ccc35d9d=""
+    data-v-f0b878d5=""
   >
     
+    
     Check Me!
+    
     
   </p>
 </label>

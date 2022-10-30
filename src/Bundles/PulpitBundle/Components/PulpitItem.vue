@@ -7,11 +7,13 @@
       :src="`src/Assets/Icons/Applications/${iconName}.png`"
       :alt="name"
     />
-    <p class="name">{{ name }}</p>
+    <UIText class="name">{{ name }}</UIText>
   </div>
 </template>
 
 <script setup lang="ts">
+  import UIText from '@Bundles/UIBundle/Components/UIText.vue'
+
   defineProps({
     name: {
       type: String,
