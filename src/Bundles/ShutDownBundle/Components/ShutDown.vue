@@ -9,12 +9,19 @@
     <UIText class="description">{{ t('ShutDownBundle.description') }}</UIText>
     <UIRadio
       class="checkbox-shut-down"
-      name="shut-down-checkbox"
+      :name="shutDownRadioInputName"
       :checked="true"
+      :model-value="EShutDownRadioCheck.SHUT_DOWN"
+      @update:model-value="checkedRadioBoxes = $event"
     >
       {{ t('ShutDownBundle.shut-down') }}
     </UIRadio>
-    <UIRadio class="checkbox-restart" name="shut-down-checkbox">
+    <UIRadio
+      class="checkbox-restart"
+      :name="shutDownRadioInputName"
+      :model-value="EShutDownRadioCheck.RESTART"
+      @update:model-value="checkedRadioBoxes = $event"
+    >
       {{ t('ShutDownBundle.restart') }}
     </UIRadio>
     <UIButton class="button-ok" @click="triggerEvent">
@@ -25,6 +32,7 @@
 </template>
 
 <script setup lang="ts">
+  import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
@@ -34,13 +42,22 @@
     restartSystem,
     shutDownSystem,
   } from '@Bundles/ShutDownBundle/Services/ShutDown.services'
+  import {
+    EShutDownRadioCheck,
+    IShutDownRadioCheck,
+    shutDownRadioInputName,
+  } from '@Bundles/ShutDownBundle/Supports/ShutDown.supports'
 
   const { t } = useI18n()
 
-  const triggerEvent = () => {
-    shutDownSystem(window)
+  const checkedRadioBoxes = ref('shut-down') as Ref<IShutDownRadioCheck>
 
-    restartSystem(window)
+  const triggerEvent = () => {
+    if (checkedRadioBoxes.value === EShutDownRadioCheck.RESTART) {
+      restartSystem(window)
+    } else if (checkedRadioBoxes.value === EShutDownRadioCheck.SHUT_DOWN) {
+      shutDownSystem(window)
+    }
   }
 </script>
 

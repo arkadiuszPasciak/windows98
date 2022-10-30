@@ -8,6 +8,7 @@ const availableWrapper = mount(UIRadio, {
     disabled: false,
     checked: false,
     name: 'available-radio',
+    modelValue: 'restart',
   },
   slots: {
     default: 'Check Me!',
@@ -20,6 +21,7 @@ const unAvailableWrapper = mount(UIRadio, {
     disabled: true,
     checked: true,
     name: 'unavailable-radio',
+    modelValue: 'shut-down',
   },
 })
 

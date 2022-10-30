@@ -3,9 +3,11 @@
     <input
       class="input"
       type="radio"
-      :name="name"
+      :value="modelValue"
       :disabled="disabled"
       :checked="checked"
+      :name="name"
+      @input="$emit('update:modelValue', modelValue)"
     />
 
     <span class="radio"></span>
@@ -23,6 +25,10 @@
       type: String as PropType<'primary'>,
       default: 'primary',
     },
+    modelValue: {
+      type: String,
+      required: true,
+    },
     name: {
       type: String,
       required: true,
@@ -36,6 +42,8 @@
       default: false,
     },
   })
+
+  defineEmits(['update:modelValue'])
 </script>
 
 <style lang="scss" scoped>

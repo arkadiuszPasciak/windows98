@@ -10,6 +10,7 @@ exports[`[UIBundle]<Snapshots>(UIRadio) > renders correctly component: variant p
     data-v-ccc35d9d=""
     name="available-radio"
     type="radio"
+    value="restart"
   />
   <span
     class="radio"
@@ -40,6 +41,7 @@ exports[`[UIBundle]<Snapshots>(UIRadio) > renders correctly component: variant p
     disabled=""
     name="unavailable-radio"
     type="radio"
+    value="shut-down"
   />
   <span
     class="radio"
