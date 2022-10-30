@@ -17,7 +17,9 @@
     <UIRadio class="checkbox-restart" name="shut-down-checkbox">
       {{ t('ShutDownBundle.restart') }}
     </UIRadio>
-    <UIButton class="button-ok">{{ t('ShutDownBundle.ok') }}</UIButton>
+    <UIButton class="button-ok" @click="triggerEvent">
+      {{ t('ShutDownBundle.ok') }}
+    </UIButton>
     <UIButton class="button-cancel">{{ t('ShutDownBundle.cancel') }}</UIButton>
   </UIModal>
 </template>
@@ -28,8 +30,18 @@
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import UIRadio from '@Bundles/UIBundle/Components/UIRadio.vue'
   import UIText from '@Bundles/UIBundle/Components/UIText.vue'
+  import {
+    restartSystem,
+    shutDownSystem,
+  } from '@Bundles/ShutDownBundle/Services/ShutDown.services'
 
   const { t } = useI18n()
+
+  const triggerEvent = () => {
+    shutDownSystem(window)
+
+    restartSystem(window)
+  }
 </script>
 
 <i18n src="@Bundles/ShutDownBundle/Locales/ShutDown.locales.json"></i18n>
