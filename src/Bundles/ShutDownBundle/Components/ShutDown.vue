@@ -5,6 +5,8 @@
     :resize-window="false"
     :width="330"
     :height="180"
+    :modal-state="shutDownStore.modal"
+    @close-modal="closeModal"
   >
     <UIText class="description">{{ t('ShutDownBundle.description') }}</UIText>
     <UIRadio
@@ -27,7 +29,9 @@
     <UIButton class="button-ok" @click="triggerEvent">
       {{ t('ShutDownBundle.ok') }}
     </UIButton>
-    <UIButton class="button-cancel">{{ t('ShutDownBundle.cancel') }}</UIButton>
+    <UIButton class="button-cancel" @click="closeModal">
+      {{ t('ShutDownBundle.cancel') }}
+    </UIButton>
   </UIModal>
 </template>
 
@@ -42,6 +46,7 @@
     restartSystem,
     shutDownSystem,
   } from '@Bundles/ShutDownBundle/Services/ShutDown.services'
+  import { useShutDownStore } from '@Bundles/ShutDownBundle/Stores/ShutDown.stores'
   import {
     EShutDownRadioCheck,
     IShutDownRadioCheck,
@@ -50,14 +55,24 @@
 
   const { t } = useI18n()
 
+  const shutDownStore = useShutDownStore()
+
   const checkedRadioBoxes = ref('shut-down') as Ref<IShutDownRadioCheck>
+
+  const closeModal = (): void => {
+    shutDownStore.updateModal(false)
+  }
 
   const triggerEvent = () => {
     if (checkedRadioBoxes.value === EShutDownRadioCheck.RESTART) {
       restartSystem(window)
     } else if (checkedRadioBoxes.value === EShutDownRadioCheck.SHUT_DOWN) {
       shutDownSystem(window)
+    } else {
+      return
     }
+
+    closeModal()
   }
 </script>
 
