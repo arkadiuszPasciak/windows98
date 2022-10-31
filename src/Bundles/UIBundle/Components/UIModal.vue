@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="isShowModal"
+    v-if="modalState"
     ref="modalElement"
     class="UIModal"
     :class="classes"
@@ -14,7 +14,11 @@
         @mouseup="mouseUpEvent"
       >
         <h3 class="title">{{ title }}</h3>
-        <UIButton class="button-close" size="small" @click="toggleModal(false)">
+        <UIButton
+          class="button-close"
+          size="small"
+          @click="$emit('closeModal')"
+        >
           <template #icon-left>
             <img
               class="button-close-icon"
@@ -26,9 +30,7 @@
           </template>
         </UIButton>
       </div>
-      <div class="content">
-        <slot />
-      </div>
+      <slot />
     </div>
   </div>
 </template>
@@ -65,6 +67,10 @@
       type: Boolean,
       default: true,
     },
+    modalState: {
+      type: Boolean,
+      default: false,
+    },
   })
 
   const { t } = useI18n()
@@ -75,7 +81,6 @@
     `${props.moveWindow ? 'move-window' : ''}`,
   ] as Array<string>
 
-  const isShowModal = ref(true) as Ref<boolean>
   const modalElement = ref(null) as Ref<Nullable<HTMLElement>>
   const mouseState = ref(false) as Ref<boolean>
   const positionX = ref(0) as Ref<number>
@@ -107,9 +112,7 @@
     modalElement.value.style.top = event.clientY + positionY.value + 'px'
   }
 
-  const toggleModal = (status: boolean): void => {
-    isShowModal.value = status
-  }
+  defineEmits(['closeModal'])
 </script>
 
 <i18n src="@Bundles/UIBundle/Locales/UIBundle.locales.json"></i18n>

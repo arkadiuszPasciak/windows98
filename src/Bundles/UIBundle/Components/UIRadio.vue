@@ -1,15 +1,16 @@
 <template>
-  <label class="UICheckbox" :class="`variant-${variant}`">
+  <label class="UIRadio" :class="`variant-${variant}`">
     <input
       class="input"
-      type="checkbox"
+      type="radio"
+      :value="modelValue"
       :disabled="disabled"
       :checked="checked"
+      :name="name"
+      @input="$emit('update:modelValue', modelValue)"
     />
 
-    <span class="checkmark">
-      <i class="icon" />
-    </span>
+    <span class="radio"></span>
 
     <UIText v-if="$slots.default" class="text"><slot /></UIText>
   </label>
@@ -24,6 +25,14 @@
       type: String as PropType<'primary'>,
       default: 'primary',
     },
+    modelValue: {
+      type: String,
+      required: true,
+    },
+    name: {
+      type: String,
+      required: true,
+    },
     disabled: {
       type: Boolean,
       default: false,
@@ -33,8 +42,10 @@
       default: false,
     },
   })
+
+  defineEmits(['update:modelValue'])
 </script>
 
 <style lang="scss" scoped>
-  @import '@Bundles/UIBundle/Styles/UICheckbox.styles.scss';
+  @import '@Bundles/UIBundle/Styles/UIRadio.styles.scss';
 </style>

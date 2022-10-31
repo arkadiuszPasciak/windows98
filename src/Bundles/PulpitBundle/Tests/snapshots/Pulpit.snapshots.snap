@@ -20,10 +20,13 @@ exports[`[PulpitBundle]<Snapshots>(Pulpit) > renders correctly component 1`] = `
       width="32"
     />
     <p
-      class="name"
+      class="UIText name"
       data-v-95683558=""
+      data-v-f0b878d5=""
     >
+      
       My Computer
+      
     </p>
   </div>
   <div
@@ -40,10 +43,13 @@ exports[`[PulpitBundle]<Snapshots>(Pulpit) > renders correctly component 1`] = `
       width="32"
     />
     <p
-      class="name"
+      class="UIText name"
       data-v-95683558=""
+      data-v-f0b878d5=""
     >
+      
       Recycle
+      
     </p>
   </div>
   

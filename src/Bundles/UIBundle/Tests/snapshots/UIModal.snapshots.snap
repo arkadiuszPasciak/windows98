@@ -8,7 +8,7 @@ exports[`[UIBundle]<Snapshots>(UIModal) > renders correctly component 1`] = `
   <div
     class="container"
     data-v-99a75817=""
-    style="width: 450px; height: 150px;"
+    style="width: 500px; height: 300px;"
   >
     <div
       class="header"
@@ -18,7 +18,9 @@ exports[`[UIBundle]<Snapshots>(UIModal) > renders correctly component 1`] = `
       <h3
         class="title"
         data-v-99a75817=""
-      />
+      >
+        Close Program
+      </h3>
       <button
         class="UIButton variant-primary size-small button-close"
         data-v-99a75817=""
@@ -41,13 +43,8 @@ exports[`[UIBundle]<Snapshots>(UIModal) > renders correctly component 1`] = `
         
       </button>
     </div>
-    <div
-      class="content"
-      data-v-99a75817=""
-    >
-      
-      
-    </div>
+    
+    
   </div>
 </div>
 `;

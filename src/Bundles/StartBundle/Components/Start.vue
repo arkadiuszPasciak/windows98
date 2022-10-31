@@ -28,6 +28,7 @@
           :name="app.data.name"
           :icon-name="app.data.iconName"
           :class="app.items ? 'is-arrow' : ''"
+          @open-program="openProgram(app.data.name)"
         >
           <StartPanel v-if="app.items" variant="secondary">
             <template
@@ -40,6 +41,7 @@
                 :name="appSecondary.data.name"
                 :icon-name="appSecondary.data.iconName"
                 :class="appSecondary.items ? 'is-arrow' : ''"
+                @open-program="openProgram(app.data.name)"
               >
                 <StartPanel v-if="appSecondary.items" variant="secondary">
                   <template
@@ -51,6 +53,7 @@
                       size="small"
                       :name="appTertiary.data.name"
                       :icon-name="appTertiary.data.iconName"
+                      @open-program="openProgram(app.data.name)"
                     />
                   </template>
                 </StartPanel>
@@ -71,17 +74,25 @@
   import StartPanelItem from '@Bundles/StartBundle/Components/StartPanelItem.vue'
   import { useStartStore } from '@Bundles/StartBundle/Stores/Start.stores'
   import { IStartStoreApps } from '@Bundles/StartBundle/Supports/Start.supports'
+  import { useShutDownStore } from '@Bundles/ShutDownBundle/Stores/ShutDown.stores'
 
   const { t } = useI18n()
   const store = useStartStore()
 
   const apps = store.$state.apps as IStartStoreApps[]
+  const shutDownStore = useShutDownStore()
 
   const primaryPanelStatus: Ref<boolean> = ref(false)
 
   const togglePrimaryPanel = () => {
     if (apps) {
       primaryPanelStatus.value = !primaryPanelStatus.value
+    }
+  }
+
+  const openProgram = (programName: string) => {
+    if (programName === 'StartBundle.shut-down') {
+      shutDownStore.updateModal(true)
     }
   }
 </script>

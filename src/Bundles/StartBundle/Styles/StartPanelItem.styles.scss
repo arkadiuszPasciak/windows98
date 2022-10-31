@@ -33,10 +33,6 @@
     .icon {
       margin-right: 6px;
     }
-
-    .name {
-      @include font('medium', 11, 13);
-    }
   }
 
   &.is-arrow {

@@ -1,0 +1,18 @@
+{
+  "en": {
+    "ShutDownBundle.title": "Shut Down Windows",
+    "ShutDownBundle.description": "What do you want the computer to do?",
+    "ShutDownBundle.shut-down": "Shut Down",
+    "ShutDownBundle.restart": "Restart",
+    "ShutDownBundle.ok": "OK",
+    "ShutDownBundle.cancel": "Cancel"
+  },
+  "pl": {
+    "ShutDownBundle.title": "Wyłącz Windows",
+    "ShutDownBundle.description": "Co chcesz zrobić z komputerem?",
+    "ShutDownBundle.shut-down": "Wyłącz",
+    "ShutDownBundle.restart": "Zrestartuj",
+    "ShutDownBundle.ok": "Tak",
+    "ShutDownBundle.cancel": "Anuluj"
+  }
+}
