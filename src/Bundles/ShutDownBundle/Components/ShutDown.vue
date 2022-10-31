@@ -8,30 +8,39 @@
     :modal-state="shutDownStore.modal"
     @close-modal="closeModal"
   >
-    <UIText class="description">{{ t('ShutDownBundle.description') }}</UIText>
-    <UIRadio
-      class="checkbox-shut-down"
-      :name="shutDownRadioInputName"
-      :checked="true"
-      :model-value="EShutDownRadioCheck.SHUT_DOWN"
-      @update:model-value="checkedRadioBoxes = $event"
-    >
-      {{ t('ShutDownBundle.shut-down') }}
-    </UIRadio>
-    <UIRadio
-      class="checkbox-restart"
-      :name="shutDownRadioInputName"
-      :model-value="EShutDownRadioCheck.RESTART"
-      @update:model-value="checkedRadioBoxes = $event"
-    >
-      {{ t('ShutDownBundle.restart') }}
-    </UIRadio>
-    <UIButton class="button-ok" @click="triggerEvent">
-      {{ t('ShutDownBundle.ok') }}
-    </UIButton>
-    <UIButton class="button-cancel" @click="closeModal">
-      {{ t('ShutDownBundle.cancel') }}
-    </UIButton>
+    <div class="content">
+      <img
+        class="icon"
+        width="32"
+        height="32"
+        src="src/Assets/Icons/Applications/mycomputer.png"
+        alt="My computer"
+      />
+      <UIText class="description">{{ t('ShutDownBundle.description') }}</UIText>
+      <UIRadio
+        class="checkbox-shut-down"
+        :name="shutDownRadioInputName"
+        :checked="true"
+        :model-value="EShutDownRadioCheck.SHUT_DOWN"
+        @update:model-value="checkedRadioBoxes = $event"
+      >
+        {{ t('ShutDownBundle.shut-down') }}
+      </UIRadio>
+      <UIRadio
+        class="checkbox-restart"
+        :name="shutDownRadioInputName"
+        :model-value="EShutDownRadioCheck.RESTART"
+        @update:model-value="checkedRadioBoxes = $event"
+      >
+        {{ t('ShutDownBundle.restart') }}
+      </UIRadio>
+      <UIButton class="button is-ok" @click="triggerEvent">
+        {{ t('ShutDownBundle.ok') }}
+      </UIButton>
+      <UIButton class="button is-cancel" @click="closeModal">
+        {{ t('ShutDownBundle.cancel') }}
+      </UIButton>
+    </div>
   </UIModal>
 </template>
 

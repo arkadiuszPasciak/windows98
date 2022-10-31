@@ -30,9 +30,7 @@
           </template>
         </UIButton>
       </div>
-      <div class="content">
-        <slot />
-      </div>
+      <slot />
     </div>
   </div>
 </template>

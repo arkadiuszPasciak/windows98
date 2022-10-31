@@ -1,3 +1,50 @@
 // Vitest Snapshot v1
 
-exports[`[UIBundle]<Snapshots>(UIModal) > renders correctly component 1`] = `<!--v-if-->`;
+exports[`[UIBundle]<Snapshots>(UIModal) > renders correctly component 1`] = `
+<div
+  class="UIModal variant-primary move-window"
+  data-v-99a75817=""
+>
+  <div
+    class="container"
+    data-v-99a75817=""
+    style="width: 500px; height: 300px;"
+  >
+    <div
+      class="header"
+      data-v-99a75817=""
+      style="cursor: default;"
+    >
+      <h3
+        class="title"
+        data-v-99a75817=""
+      >
+        Close Program
+      </h3>
+      <button
+        class="UIButton variant-primary size-small button-close"
+        data-v-99a75817=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        <img
+          alt="Close window"
+          class="button-close-icon"
+          data-v-99a75817=""
+          height="7"
+          src="src/Assets/Icons/close-modal.svg"
+          width="8"
+        />
+        
+        
+        
+        
+        
+      </button>
+    </div>
+    
+    
+  </div>
+</div>
+`;
