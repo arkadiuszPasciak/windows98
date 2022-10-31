@@ -1,5 +1,9 @@
 <template>
-  <div class="StartPanelItem" :class="`s-${size}`">
+  <div
+    class="StartPanelItem"
+    :class="`s-${size}`"
+    @click="$emit('openProgram')"
+  >
     <img
       class="icon"
       :width="size === 'medium' ? 25 : 18"
@@ -32,6 +36,8 @@
   })
 
   const { t } = useI18n()
+
+  defineEmits(['openProgram'])
 </script>
 
 <i18n src="@Bundles/StartBundle/Locales/Start.locales.json"></i18n>
