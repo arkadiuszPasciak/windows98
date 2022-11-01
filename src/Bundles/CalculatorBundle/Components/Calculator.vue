@@ -5,7 +5,8 @@
     :resize-window="false"
     :width="195"
     :height="235"
-    :modal-state="true"
+    :modal-state="calculatorStore.modal"
+    @close-modal="closeModal"
   >
     <div class="content">
       <div class="display"></div>
@@ -33,6 +34,13 @@
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import { useCalculatorStore } from '@Bundles/CalculatorBundle/Stores/Calculator.stores'
+
+  const calculatorStore = useCalculatorStore()
+
+  const closeModal = (): void => {
+    calculatorStore.updateModal(false)
+  }
 
   const { t } = useI18n()
 </script>
