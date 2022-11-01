@@ -9,7 +9,7 @@
     @close-modal="closeModal"
   >
     <div class="content">
-      <div class="display"></div>
+      <CalculatorDisplay value="0" />
       <UIButton>7</UIButton>
       <UIButton>8</UIButton>
       <UIButton>9</UIButton>
