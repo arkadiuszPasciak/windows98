@@ -1,15 +1,16 @@
 <template>
   <div class="UIRange" :class="`variant-${variant} position-${position}`">
-    <label v-if="labelNameStart" class="label is-start" :for="id">{{
-      labelNameStart
-    }}</label>
+    <label v-if="labelNameStart" class="label is-start" :for="id">
+      {{ labelNameStart }}
+    </label>
 
     <label
       v-if="labelNameMiddle && position === 'vertical'"
       class="label is-middle"
       :for="id"
-      >{{ labelNameMiddle }}</label
     >
+      {{ labelNameMiddle }}
+    </label>
 
     <input
       :id="id"
@@ -24,9 +25,9 @@
       "
     />
 
-    <label v-if="labelNameEnd" class="label is-end" :for="id">{{
-      labelNameEnd
-    }}</label>
+    <label v-if="labelNameEnd" class="label is-end" :for="id">
+      {{ labelNameEnd }}
+    </label>
   </div>
 </template>
 
