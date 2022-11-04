@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import { isValueEqual } from '@Bundles/CalculatorBundle/Services/Calculator.services'
 
 export const useCalculatorStore = defineStore('calculator', {
   state: () => ({
@@ -10,7 +11,10 @@ export const useCalculatorStore = defineStore('calculator', {
       this.modal = status
     },
     addNumber(number: string) {
-      if (this.value.slice(0, 1) === '0' && this.value.slice(0, 2) !== '0.') {
+      if (
+        isValueEqual(this.value, '0', 'first') &&
+        !isValueEqual(this.value, '0.', 'first')
+      ) {
         this.value = number
       } else {
         this.value += number
