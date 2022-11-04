@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 export const useCalculatorStore = defineStore('calculator', {
   state: () => ({
-    modal: false as boolean,
+    modal: true as boolean,
   }),
   actions: {
     updateModal(status: boolean) {
