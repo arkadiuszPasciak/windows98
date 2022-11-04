@@ -9,21 +9,43 @@
     @close-modal="closeModal"
   >
     <div class="content">
-      <CalculatorDisplay class="display" value="0" />
-      <UIButton class="color-blue" size="calculator">7</UIButton>
-      <UIButton class="color-blue" size="calculator">8</UIButton>
-      <UIButton class="color-blue" size="calculator">9</UIButton>
+      <CalculatorDisplay class="display" :value="calculatorStore.value" />
+      <UIButton class="color-blue" size="calculator" @click="addNumber('7')">
+        7
+      </UIButton>
+      <UIButton class="color-blue" size="calculator" @click="addNumber('8')">
+        8
+      </UIButton>
+      <UIButton class="color-blue" size="calculator" @click="addNumber('9')">
+        9
+      </UIButton>
       <UIButton class="color-red" size="calculator">/</UIButton>
-      <UIButton class="color-blue" size="calculator">4</UIButton>
-      <UIButton class="color-blue" size="calculator">5</UIButton>
-      <UIButton class="color-blue" size="calculator">6</UIButton>
+      <UIButton class="color-blue" size="calculator" @click="addNumber('4')">
+        4
+      </UIButton>
+      <UIButton class="color-blue" size="calculator" @click="addNumber('5')">
+        5
+      </UIButton>
+      <UIButton class="color-blue" size="calculator" @click="addNumber('6')">
+        6
+      </UIButton>
       <UIButton class="color-red" size="calculator">*</UIButton>
-      <UIButton class="color-blue" size="calculator">1</UIButton>
-      <UIButton class="color-blue" size="calculator">2</UIButton>
-      <UIButton class="color-blue" size="calculator">3</UIButton>
+      <UIButton class="color-blue" size="calculator" @click="addNumber('1')">
+        1
+      </UIButton>
+      <UIButton class="color-blue" size="calculator" @click="addNumber('2')">
+        2
+      </UIButton>
+      <UIButton class="color-blue" size="calculator" @click="addNumber('3')">
+        3
+      </UIButton>
       <UIButton class="color-red" size="calculator">-</UIButton>
-      <UIButton class="color-blue" size="calculator">0</UIButton>
-      <UIButton class="color-blue" size="calculator">.</UIButton>
+      <UIButton class="color-blue" size="calculator" @click="addNumber('0')">
+        0
+      </UIButton>
+      <UIButton class="color-blue" size="calculator" @click="addDot()">
+        .
+      </UIButton>
       <UIButton class="color-blue" size="calculator">=</UIButton>
       <UIButton class="color-red" size="calculator">+</UIButton>
     </div>
@@ -43,8 +65,18 @@
     calculatorStore.updateModal(false)
   }
 
+  const addDot = () => {
+    calculatorStore.addDot()
+  }
+
+  const addNumber = (number: string) => {
+    calculatorStore.addNumber(number)
+  }
+
   const { t } = useI18n()
 </script>
+
+<i18n src="@Bundles/CalculatorBundle/Locales/Calculator.locales.json"></i18n>
 
 <style lang="scss" scoped>
   @import '@Bundles/CalculatorBundle/Styles/Calculator.styles.scss';
