@@ -19,7 +19,13 @@
       <UIButton class="color-blue" size="calculator" @click="addNumber('9')">
         9
       </UIButton>
-      <UIButton class="color-red" size="calculator">/</UIButton>
+      <UIButton
+        class="color-red"
+        size="calculator"
+        @click="addSign(EMathematicalSign.DIVIDE)"
+      >
+        /
+      </UIButton>
       <UIButton class="color-blue" size="calculator" @click="addNumber('4')">
         4
       </UIButton>
@@ -29,7 +35,13 @@
       <UIButton class="color-blue" size="calculator" @click="addNumber('6')">
         6
       </UIButton>
-      <UIButton class="color-red" size="calculator">*</UIButton>
+      <UIButton
+        class="color-red"
+        size="calculator"
+        @click="addSign(EMathematicalSign.MULTIPLY)"
+      >
+        *
+      </UIButton>
       <UIButton class="color-blue" size="calculator" @click="addNumber('1')">
         1
       </UIButton>
@@ -39,7 +51,13 @@
       <UIButton class="color-blue" size="calculator" @click="addNumber('3')">
         3
       </UIButton>
-      <UIButton class="color-red" size="calculator">-</UIButton>
+      <UIButton
+        class="color-red"
+        size="calculator"
+        @click="addSign(EMathematicalSign.MINUS)"
+      >
+        -
+      </UIButton>
       <UIButton class="color-blue" size="calculator" @click="addNumber('0')">
         0
       </UIButton>
@@ -47,7 +65,13 @@
         .
       </UIButton>
       <UIButton class="color-blue" size="calculator">=</UIButton>
-      <UIButton class="color-red" size="calculator">+</UIButton>
+      <UIButton
+        class="color-red"
+        size="calculator"
+        @click="addSign(EMathematicalSign.ADD)"
+      >
+        +
+      </UIButton>
     </div>
   </UIModal>
 </template>
@@ -58,6 +82,10 @@
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import { useCalculatorStore } from '@Bundles/CalculatorBundle/Stores/Calculator.stores'
+  import {
+    EMathematicalSign,
+    TMathematicalSign,
+  } from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
 
   const calculatorStore = useCalculatorStore()
 
@@ -71,6 +99,10 @@
 
   const addNumber = (number: string) => {
     calculatorStore.addNumber(number)
+  }
+
+  const addSign = (sign: TMathematicalSign) => {
+    calculatorStore.addSign(sign)
   }
 
   const { t } = useI18n()

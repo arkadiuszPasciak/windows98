@@ -1,7 +1,7 @@
 export function isValueEqual(
   value: string,
   sign: string,
-  direct: string,
+  direct: 'first' | 'last',
 ): boolean {
   if (direct === 'first') {
     return value.slice(0, sign.length) === sign ? true : false
