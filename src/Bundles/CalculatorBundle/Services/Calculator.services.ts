@@ -11,3 +11,10 @@ export function isValueEqual(
     return false
   }
 }
+
+export function isDotExist(value: string): boolean {
+  const array = value.split('')
+  const result = array.find((element) => element === '.')
+
+  return result ? true : false
+}
