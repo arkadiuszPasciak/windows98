@@ -10,14 +10,26 @@
   >
     <div class="content">
       <CalculatorDisplay class="display" :value="calculatorStore.value" />
-      <UIButton class="color-blue" size="calculator" @click="addNumber('7')">
-        7
+      <UIButton
+        class="color-blue"
+        size="calculator"
+        @click="addNumber(ECalculatorNumber.SEVEN)"
+      >
+        {{ ECalculatorNumber.SEVEN }}
       </UIButton>
-      <UIButton class="color-blue" size="calculator" @click="addNumber('8')">
-        8
+      <UIButton
+        class="color-blue"
+        size="calculator"
+        @click="addNumber(ECalculatorNumber.EIGHT)"
+      >
+        {{ ECalculatorNumber.EIGHT }}
       </UIButton>
-      <UIButton class="color-blue" size="calculator" @click="addNumber('9')">
-        9
+      <UIButton
+        class="color-blue"
+        size="calculator"
+        @click="addNumber(ECalculatorNumber.NINE)"
+      >
+        {{ ECalculatorNumber.NINE }}
       </UIButton>
       <UIButton
         class="color-red"
@@ -26,14 +38,26 @@
       >
         /
       </UIButton>
-      <UIButton class="color-blue" size="calculator" @click="addNumber('4')">
-        4
+      <UIButton
+        class="color-blue"
+        size="calculator"
+        @click="addNumber(ECalculatorNumber.FOUR)"
+      >
+        {{ ECalculatorNumber.FOUR }}
       </UIButton>
-      <UIButton class="color-blue" size="calculator" @click="addNumber('5')">
-        5
+      <UIButton
+        class="color-blue"
+        size="calculator"
+        @click="addNumber(ECalculatorNumber.FIVE)"
+      >
+        {{ ECalculatorNumber.FIVE }}
       </UIButton>
-      <UIButton class="color-blue" size="calculator" @click="addNumber('6')">
-        6
+      <UIButton
+        class="color-blue"
+        size="calculator"
+        @click="addNumber(ECalculatorNumber.SIX)"
+      >
+        {{ ECalculatorNumber.SIX }}
       </UIButton>
       <UIButton
         class="color-red"
@@ -42,14 +66,26 @@
       >
         *
       </UIButton>
-      <UIButton class="color-blue" size="calculator" @click="addNumber('1')">
-        1
+      <UIButton
+        class="color-blue"
+        size="calculator"
+        @click="addNumber(ECalculatorNumber.ONE)"
+      >
+        {{ ECalculatorNumber.ONE }}
       </UIButton>
-      <UIButton class="color-blue" size="calculator" @click="addNumber('2')">
-        2
+      <UIButton
+        class="color-blue"
+        size="calculator"
+        @click="addNumber(ECalculatorNumber.TWO)"
+      >
+        {{ ECalculatorNumber.TWO }}
       </UIButton>
-      <UIButton class="color-blue" size="calculator" @click="addNumber('3')">
-        3
+      <UIButton
+        class="color-blue"
+        size="calculator"
+        @click="addNumber(ECalculatorNumber.THREE)"
+      >
+        {{ ECalculatorNumber.THREE }}
       </UIButton>
       <UIButton
         class="color-red"
@@ -58,8 +94,12 @@
       >
         -
       </UIButton>
-      <UIButton class="color-blue" size="calculator" @click="addNumber('0')">
-        0
+      <UIButton
+        class="color-blue"
+        size="calculator"
+        @click="addNumber(ECalculatorNumber.ZERO)"
+      >
+        {{ ECalculatorNumber.ZERO }}
       </UIButton>
       <UIButton class="color-blue" size="calculator" @click="addDot()">
         .
@@ -83,6 +123,8 @@
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import { useCalculatorStore } from '@Bundles/CalculatorBundle/Stores/Calculator.stores'
   import {
+    ECalculatorNumber,
+    TCalculatorNumber,
     EMathematicalSign,
     TMathematicalSign,
   } from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
@@ -97,7 +139,7 @@
     calculatorStore.addDot()
   }
 
-  const addNumber = (number: string) => {
+  const addNumber = (number: TCalculatorNumber) => {
     calculatorStore.addNumber(number)
   }
 

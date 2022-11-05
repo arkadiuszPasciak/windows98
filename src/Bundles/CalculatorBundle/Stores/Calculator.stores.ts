@@ -4,7 +4,10 @@ import {
   isDotExist,
   isValueEqual,
 } from '@Bundles/CalculatorBundle/Services/Calculator.services'
-import { TMathematicalSign } from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
+import {
+  TMathematicalSign,
+  TCalculatorNumber,
+} from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
 
 export const useCalculatorStore = defineStore('calculator', {
   state: () => ({
@@ -18,7 +21,7 @@ export const useCalculatorStore = defineStore('calculator', {
     updateModal(status: boolean) {
       this.modal = status
     },
-    addNumber(number: string) {
+    addNumber(number: TCalculatorNumber) {
       if (
         isValueEqual(this.value, '0', 'first') &&
         !isValueEqual(this.value, '0.', 'first')
