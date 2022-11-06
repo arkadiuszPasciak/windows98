@@ -26,6 +26,10 @@ export function isDotExist(value: string): boolean {
 }
 
 export function isMathematicalSignLast(value: string): boolean {
+  if (!value) {
+    return false
+  }
+
   const lastValue = value.slice(-1)
 
   switch (lastValue) {
