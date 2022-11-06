@@ -15,6 +15,10 @@ export function isValueEqual(
 }
 
 export function isDotExist(value: string): boolean {
+  if (!value) {
+    return false
+  }
+
   const array = value.split('')
   const result = array.find((element) => element === '.')
 
