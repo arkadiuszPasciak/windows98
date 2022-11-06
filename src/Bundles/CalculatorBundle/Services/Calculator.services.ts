@@ -34,3 +34,23 @@ export function isMathematicalSignLast(value: string): boolean {
       return false
   }
 }
+
+export function summingResult(value: string): string {
+  if (!value) {
+    return 'ERROR'
+  }
+
+  const splitString = value.match(/[+-]*(\.\d+|\d+(\.\d+)?)/g) as Array<string>
+
+  if (!splitString) {
+    return 'ERROR'
+  }
+
+  let total = 0 as number
+
+  while (splitString.length) {
+    total += parseFloat(splitString.shift()!)
+  }
+
+  return String(total)
+}

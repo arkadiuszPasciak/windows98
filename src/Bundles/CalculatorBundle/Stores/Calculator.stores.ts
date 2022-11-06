@@ -3,6 +3,7 @@ import {
   isDotExist,
   isValueEqual,
   isMathematicalSignLast,
+  summingResult,
 } from '@Bundles/CalculatorBundle/Services/Calculator.services'
 import {
   TMathematicalSign,
@@ -44,6 +45,9 @@ export const useCalculatorStore = defineStore('calculator', {
       }
 
       this.value += sign
+    },
+    summResult() {
+      this.value = summingResult(this.value)
     },
   },
 })

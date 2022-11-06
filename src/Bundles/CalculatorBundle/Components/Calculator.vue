@@ -104,7 +104,9 @@
       <UIButton class="color-blue" size="calculator" @click="addDot()">
         .
       </UIButton>
-      <UIButton class="color-blue" size="calculator">=</UIButton>
+      <UIButton class="color-blue" size="calculator" @click="summResult()">
+        =
+      </UIButton>
       <UIButton
         class="color-red"
         size="calculator"
@@ -135,16 +137,20 @@
     calculatorStore.updateModal(false)
   }
 
-  const addDot = () => {
+  const addDot = (): void => {
     calculatorStore.addDot()
   }
 
-  const addNumber = (number: TCalculatorNumber) => {
+  const addNumber = (number: TCalculatorNumber): void => {
     calculatorStore.addNumber(number)
   }
 
-  const addSign = (sign: TMathematicalSign) => {
+  const addSign = (sign: TMathematicalSign): void => {
     calculatorStore.addSign(sign)
+  }
+
+  const summResult = (): void => {
+    calculatorStore.summResult()
   }
 
   const { t } = useI18n()
