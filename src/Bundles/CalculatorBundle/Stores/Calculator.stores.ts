@@ -1,8 +1,8 @@
 import { defineStore } from 'pinia'
-import { Nullable } from 'vitest'
 import {
   isDotExist,
   isValueEqual,
+  isMathematicalSignLast,
 } from '@Bundles/CalculatorBundle/Services/Calculator.services'
 import {
   TMathematicalSign,
@@ -13,9 +13,6 @@ export const useCalculatorStore = defineStore('calculator', {
   state: () => ({
     modal: true as boolean,
     value: '0' as string,
-    firstPartOfValue: '' as string,
-    secondPartOfValue: '' as string,
-    sign: null as Nullable<TMathematicalSign>,
   }),
   actions: {
     updateModal(status: boolean) {
@@ -24,7 +21,8 @@ export const useCalculatorStore = defineStore('calculator', {
     addNumber(number: TCalculatorNumber) {
       if (
         isValueEqual(this.value, '0', 'first') &&
-        !isValueEqual(this.value, '0.', 'first')
+        !isValueEqual(this.value, '0.', 'first') &&
+        this.value.length === 1
       ) {
         this.value = number
       } else {
@@ -32,7 +30,7 @@ export const useCalculatorStore = defineStore('calculator', {
       }
     },
     addDot() {
-      if (isDotExist(this.value)) {
+      if (isDotExist(this.value) || isMathematicalSignLast(this.value)) {
         return
       }
 
@@ -41,11 +39,11 @@ export const useCalculatorStore = defineStore('calculator', {
       }
     },
     addSign(sign: TMathematicalSign) {
-      if (this.value === '0' || this.value === '0.') {
+      if (this.value === '0.' || isMathematicalSignLast(this.value)) {
         return
       }
 
-      this.sign = sign
+      this.value += sign
     },
   },
 })
