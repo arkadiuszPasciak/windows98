@@ -5,7 +5,7 @@
     :resize-window="false"
     :width="195"
     :height="220"
-    :modal-state="calculatorStore.modal"
+    :modal-state="programStore.modalCalculator"
     @close-modal="closeModal"
   >
     <div class="content">
@@ -124,6 +124,7 @@
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import { useCalculatorStore } from '@Bundles/CalculatorBundle/Stores/Calculator.stores'
+  import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
   import {
     ECalculatorNumber,
     TCalculatorNumber,
@@ -132,9 +133,10 @@
   } from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
 
   const calculatorStore = useCalculatorStore()
+  const programStore = useProgramStore()
 
   const closeModal = (): void => {
-    calculatorStore.updateModal(false)
+    programStore.updateCalculatorModal(false)
   }
 
   const addDot = (): void => {

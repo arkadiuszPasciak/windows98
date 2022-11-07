@@ -12,13 +12,9 @@ import {
 
 export const useCalculatorStore = defineStore('calculator', {
   state: () => ({
-    modal: false as boolean,
     value: '0' as string,
   }),
   actions: {
-    updateModal(status: boolean) {
-      this.modal = status
-    },
     addNumber(number: TCalculatorNumber) {
       if (
         isValueEqual(this.value, '0', 'first') &&

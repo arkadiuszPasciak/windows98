@@ -74,15 +74,13 @@
   import StartPanelItem from '@Bundles/StartBundle/Components/StartPanelItem.vue'
   import { useStartStore } from '@Bundles/StartBundle/Stores/Start.stores'
   import { IStartStoreApps } from '@Bundles/StartBundle/Supports/Start.supports'
-  import { useShutDownStore } from '@Bundles/ShutDownBundle/Stores/ShutDown.stores'
-  import { useCalculatorStore } from '@Bundles/CalculatorBundle/Stores/Calculator.stores'
+  import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
 
   const { t } = useI18n()
   const store = useStartStore()
 
   const apps = store.$state.apps as IStartStoreApps[]
-  const shutDownStore = useShutDownStore()
-  const calculatorStore = useCalculatorStore()
+  const programStore = useProgramStore()
 
   const primaryPanelStatus: Ref<boolean> = ref(false)
 
@@ -95,10 +93,10 @@
   const openProgram = (programName: string): void => {
     switch (programName) {
       case 'StartBundle.shut-down':
-        shutDownStore.updateModal(true)
+        programStore.updateShutDownModal(true)
         break
       case 'StartBundle.calculator':
-        calculatorStore.updateModal(true)
+        programStore.updateCalculatorModal(true)
         break
     }
   }
