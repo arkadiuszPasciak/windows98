@@ -1,6 +1,7 @@
 <template>
   <div class="HomePage">
     <UITeleport>
+      <Calculator />
       <ShutDown />
     </UITeleport>
     <Pulpit />
@@ -12,6 +13,7 @@
 </template>
 
 <script setup lang="ts">
+  import Calculator from '@Bundles/CalculatorBundle/Components/Calculator.vue'
   import Clock from '@Bundles/ClockBundle/Components/Clock.vue'
   import Navigation from '@Bundles/NavigationBundle/Components/Navigation.vue'
   import Pulpit from '@Bundles/PulpitBundle/Components/Pulpit.vue'

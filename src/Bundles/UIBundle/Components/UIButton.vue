@@ -19,7 +19,7 @@
       default: 'primary',
     },
     size: {
-      type: String as PropType<'small' | 'medium'>,
+      type: String as PropType<'small' | 'medium' | 'calculator'>,
       default: 'medium',
     },
   })

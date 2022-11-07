@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`[CalculatorBundle]<Snapshots>(Calculator) > renders correctly component 1`] = `<!--v-if-->`;
