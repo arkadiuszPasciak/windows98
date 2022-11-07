@@ -5,7 +5,7 @@
     :resize-window="false"
     :width="330"
     :height="180"
-    :modal-state="programStore.modalCalculator"
+    :modal-state="programStore.modalShutDown"
     @close-modal="closeModal"
   >
     <div class="content">
