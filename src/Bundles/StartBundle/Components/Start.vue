@@ -41,7 +41,7 @@
                 :name="appSecondary.data.name"
                 :icon-name="appSecondary.data.iconName"
                 :class="appSecondary.items ? 'is-arrow' : ''"
-                @open-program="openProgram(app.data.name)"
+                @open-program="openProgram(appSecondary.data.name)"
               >
                 <StartPanel v-if="appSecondary.items" variant="secondary">
                   <template
@@ -53,7 +53,7 @@
                       size="small"
                       :name="appTertiary.data.name"
                       :icon-name="appTertiary.data.iconName"
-                      @open-program="openProgram(app.data.name)"
+                      @open-program="openProgram(appTertiary.data.name)"
                     />
                   </template>
                 </StartPanel>
@@ -75,12 +75,14 @@
   import { useStartStore } from '@Bundles/StartBundle/Stores/Start.stores'
   import { IStartStoreApps } from '@Bundles/StartBundle/Supports/Start.supports'
   import { useShutDownStore } from '@Bundles/ShutDownBundle/Stores/ShutDown.stores'
+  import { useCalculatorStore } from '@Bundles/CalculatorBundle/Stores/Calculator.stores'
 
   const { t } = useI18n()
   const store = useStartStore()
 
   const apps = store.$state.apps as IStartStoreApps[]
   const shutDownStore = useShutDownStore()
+  const calculatorStore = useCalculatorStore()
 
   const primaryPanelStatus: Ref<boolean> = ref(false)
 
@@ -90,9 +92,14 @@
     }
   }
 
-  const openProgram = (programName: string) => {
-    if (programName === 'StartBundle.shut-down') {
-      shutDownStore.updateModal(true)
+  const openProgram = (programName: string): void => {
+    switch (programName) {
+      case 'StartBundle.shut-down':
+        shutDownStore.updateModal(true)
+        break
+      case 'StartBundle.calculator':
+        calculatorStore.updateModal(true)
+        break
     }
   }
 </script>

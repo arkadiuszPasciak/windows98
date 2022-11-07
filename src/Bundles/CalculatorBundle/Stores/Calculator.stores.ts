@@ -12,7 +12,7 @@ import {
 
 export const useCalculatorStore = defineStore('calculator', {
   state: () => ({
-    modal: true as boolean,
+    modal: false as boolean,
     value: '0' as string,
   }),
   actions: {
