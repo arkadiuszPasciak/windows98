@@ -48,17 +48,19 @@ export function summingResult(value: string): string {
     return 'ERROR'
   }
 
-  const splitString = value.match(/[+-]*(\.\d+|\d+(\.\d+)?)/g) as Array<string>
-
-  if (!splitString) {
+  if (!isMathematicalOperation(value)) {
     return 'ERROR'
   }
 
-  let total = 0 as number
+  return String(eval(value))
+}
 
-  while (splitString.length) {
-    total += parseFloat(splitString.shift()!)
+export function isMathematicalOperation(value: string): boolean {
+  if (!value) {
+    return false
   }
 
-  return String(total)
+  const regex = /(?:(?:^|[-+_*/])(?:\s*-?\d+(\.\d+)?(?:[eE][+-]?\d+)?\s*))+$/
+
+  return regex.test(value) ? true : false
 }
