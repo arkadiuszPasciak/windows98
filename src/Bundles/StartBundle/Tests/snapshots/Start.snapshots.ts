@@ -1,17 +1,27 @@
-import { mount } from '@vue/test-utils'
-import { expect, it, describe } from 'vitest'
+import { mount, flushPromises } from '@vue/test-utils'
+import { expect, it, describe, vi } from 'vitest'
 import Start from '@Bundles/StartBundle/Components/Start.vue'
 
-const defaultWrapper = mount(Start)
-const buttonToOpenPanel = defaultWrapper.find('.button-start')
-
 describe('[StartBundle]<Snapshots>(Start)', () => {
-  it('renders correctly component before click button', () => {
-    expect(defaultWrapper.element).toMatchSnapshot()
+  it('renders correctly component before click button', async () => {
+    const wrapper = mount(Start)
+    expect(wrapper.element).toMatchSnapshot()
   })
 
   it('renders correctly component after click button', async () => {
+    const wrapper = mount(Start)
+    const buttonToOpenPanel = wrapper.find('.button-start')
+
+    await Promise.all([
+      import('@Bundles/StartBundle/Components/StartPanelItem.vue'),
+      import('@Bundles/StartBundle/Components/StartPanel.vue'),
+    ])
+
     await buttonToOpenPanel.trigger('click')
-    expect(defaultWrapper.element).toMatchSnapshot()
+
+    await flushPromises()
+    await vi.dynamicImportSettled()
+
+    expect(wrapper.element).toMatchSnapshot()
   })
 })

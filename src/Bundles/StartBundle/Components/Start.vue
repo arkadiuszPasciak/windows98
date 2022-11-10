@@ -67,14 +67,20 @@
 </template>
 
 <script setup lang="ts">
-  import { Ref, ref } from 'vue'
+  import { defineAsyncComponent, Ref, ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
-  import StartPanel from '@Bundles/StartBundle/Components/StartPanel.vue'
-  import StartPanelItem from '@Bundles/StartBundle/Components/StartPanelItem.vue'
   import { useStartStore } from '@Bundles/StartBundle/Stores/Start.stores'
   import { IStartStoreApps } from '@Bundles/StartBundle/Supports/Start.supports'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
+
+  const StartPanel = defineAsyncComponent(
+    () => import('@Bundles/StartBundle/Components/StartPanel.vue'),
+  )
+
+  const StartPanelItem = defineAsyncComponent(
+    () => import('@Bundles/StartBundle/Components/StartPanelItem.vue'),
+  )
 
   const { t } = useI18n()
   const store = useStartStore()
