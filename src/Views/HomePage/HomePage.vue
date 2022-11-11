@@ -2,6 +2,7 @@
   <div class="HomePage">
     <UITeleport>
       <Calculator />
+      <Notepad />
       <ShutDown />
     </UITeleport>
     <Pulpit />
@@ -22,6 +23,10 @@
 
   const Calculator = defineAsyncComponent(
     () => import('@Bundles/CalculatorBundle/Components/Calculator.vue'),
+  )
+
+  const Notepad = defineAsyncComponent(
+    () => import('@Bundles/NotepadBundle/Components/Notepad.vue'),
   )
 
   const ShutDown = defineAsyncComponent(

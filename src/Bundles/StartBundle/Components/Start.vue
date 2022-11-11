@@ -97,12 +97,17 @@
   }
 
   const openProgram = (programName: string): void => {
+    console.log(programName)
     switch (programName) {
       case 'StartBundle.shut-down':
         programStore.updateShutDownModal(true)
         break
       case 'StartBundle.calculator':
         programStore.updateCalculatorModal(true)
+        break
+      case 'StartBundle.notepad':
+        console.log('true')
+        programStore.updateNotepadModal(true)
         break
     }
   }

@@ -127,6 +127,31 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
                 </div>
                 
                 
+                <div
+                  class="StartPanelItem s-small"
+                  data-v-6d095ed5=""
+                  data-v-f765ff07=""
+                >
+                  <img
+                    class="icon"
+                    data-v-f765ff07=""
+                    height="18"
+                    src="src/Assets/Icons/Applications/notepad.png"
+                    width="18"
+                  />
+                  <p
+                    class="UIText"
+                    data-v-f0b878d5=""
+                    data-v-f765ff07=""
+                  >
+                    
+                    Notepad
+                    
+                  </p>
+                  <!--v-if-->
+                </div>
+                
+                
                 
               </div>
               
