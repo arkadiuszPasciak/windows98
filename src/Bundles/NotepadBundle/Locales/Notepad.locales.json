@@ -1,8 +1,10 @@
 {
   "en": {
+    "Notepad.example": "This is an example!",
     "Notepad.title": "Notepad"
   },
   "pl": {
+    "Notepad.example": "To jest przykład!",
     "Notepad.title": "Notatnik"
   }
 }

@@ -31,7 +31,7 @@
   const { t } = useI18n()
   const programStore = useProgramStore()
 
-  const modelValue = ref('This is an example!') as Ref<string>
+  const modelValue = ref(t('Notepad.example')) as Ref<string>
 
   const closeModal = (): void => {
     programStore.updateNotepadModal(false)

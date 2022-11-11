@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 export const useProgramStore = defineStore('program', {
   state: () => ({
     modalCalculator: false as boolean,
-    modalNotepad: true as boolean,
+    modalNotepad: false as boolean,
     modalShutDown: false as boolean,
   }),
   actions: {
