@@ -20,6 +20,24 @@ exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: leftPr
 </div>
 `;
 
+exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: notepadWrapper like as notepad 1`] = `
+<div
+  class="UITextarea variant-primary label-position-top type-notepad"
+  data-v-cbf41378=""
+>
+  <label
+    class="label"
+    data-v-cbf41378=""
+    for="notepad-textarea"
+  />
+  <textarea
+    class="textarea"
+    data-v-cbf41378=""
+    id="notepad-textarea"
+  />
+</div>
+`;
+
 exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: topPrimaryWrapper like as address 1`] = `
 <div
   class="UITextarea variant-primary label-position-top"
