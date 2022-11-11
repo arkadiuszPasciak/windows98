@@ -4,7 +4,7 @@
     :title="t('RunBundle.title')"
     :resize-window="false"
     :width="330"
-    :height="160"
+    :height="165"
     :modal-state="programStore.modalRun"
     @close-modal="closeModal"
   >
@@ -17,7 +17,14 @@
         alt="Run computer"
       />
       <UIText class="description">{{ t('RunBundle.description') }}</UIText>
-      <!-- TODO here will be input to write name of program  -->
+      <UIInput
+        id="run-input"
+        variant="primary"
+        class="input"
+        :model-value="modelValue"
+        :label-name="t('RunBundle.open')"
+        label-position="left"
+      />
       <UIButton class="button is-ok" @click="openProgram">
         {{ t('RunBundle.ok') }}
       </UIButton>
@@ -29,8 +36,10 @@
 </template>
 
 <script setup lang="ts">
+  import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import UIInput from '@Bundles/UIBundle/Components/UIInput.vue'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import UIText from '@Bundles/UIBundle/Components/UIText.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
@@ -45,6 +54,8 @@
   const openProgram = () => {
     closeModal()
   }
+
+  const modelValue = ref('') as Ref<string>
 </script>
 
 <i18n src="@Bundles/RunBundle/Locales/Run.locales.json"></i18n>

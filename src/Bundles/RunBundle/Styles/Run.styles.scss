@@ -2,7 +2,7 @@
   .content {
     display: grid;
     grid-template-columns: 45px 85px 80px 85px;
-    grid-template-rows: 25px 22px 20px 35px 22px;
+    grid-template-rows: 45px 21px 19px 22px;
     padding: 21px 17px 9px;
   }
 
@@ -14,15 +14,19 @@
     grid-area: 1 / 2 / 2 / 5;
   }
 
+  .input {
+    grid-area: 2 / 1 / 2 / 5;
+  }
+
   .button {
     width: 78px;
 
     &.is-ok {
-      grid-area: 5 / 2 / 6 / 3;
+      grid-area: 4 / 2 / 6 / 3;
     }
 
     &.is-cancel {
-      grid-area: 5 / 3 / 6 / 4;
+      grid-area: 4 / 3 / 6 / 4;
     }
   }
 }
