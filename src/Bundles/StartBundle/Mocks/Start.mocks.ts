@@ -19,6 +19,12 @@ export const startStoreApps = [
               iconName: 'calculator',
             },
           },
+          {
+            data: {
+              name: 'StartBundle.notepad',
+              iconName: 'notepad',
+            },
+          },
         ],
       },
       {

@@ -22,6 +22,17 @@ const topPrimaryWrapper = mount(UITextarea, {
   },
 })
 
+const notepadWrapper = mount(UITextarea, {
+  props: {
+    variant: 'primary',
+    id: 'notepad-textarea',
+    type: 'notepad',
+    modelValue: 'This is an Example!',
+    labelName: '',
+    labelPosition: 'top',
+  },
+})
+
 describe('[UIBundle]<Snapshots>(UITextarea)', async () => {
   it('renders correctly component: leftPrimaryWrapper like as email', () => {
     expect(leftPrimaryWrapper.element).toMatchSnapshot()
@@ -29,5 +40,9 @@ describe('[UIBundle]<Snapshots>(UITextarea)', async () => {
 
   it('renders correctly component: topPrimaryWrapper like as address', () => {
     expect(topPrimaryWrapper.element).toMatchSnapshot()
+  })
+
+  it('renders correctly component: notepadWrapper like as notepad', () => {
+    expect(notepadWrapper.element).toMatchSnapshot()
   })
 })

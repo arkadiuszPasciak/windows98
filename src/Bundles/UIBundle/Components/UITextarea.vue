@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="UITextarea"
-    :class="`variant-${variant} label-position-${labelPosition}`"
-  >
+  <div class="UITextarea" :class="classes">
     <label class="label" :for="id">{{ labelName }}</label>
     <textarea
       :id="id"
@@ -20,10 +17,14 @@
 <script setup lang="ts">
   import { PropType } from 'vue'
 
-  defineProps({
+  const props = defineProps({
     variant: {
       type: String as PropType<'primary'>,
       default: 'primary',
+    },
+    type: {
+      type: String as PropType<'basic' | 'notepad'>,
+      default: 'basic',
     },
     id: {
       type: String,
@@ -52,6 +53,11 @@
   })
 
   defineEmits(['update:modelValue'])
+
+  const classes = [
+    `variant-${props.variant} label-position-${props.labelPosition}`,
+    `${props.type === 'notepad' ? 'type-notepad' : ''}`,
+  ] as Array<string>
 </script>
 
 <style lang="scss" scoped>
