@@ -5,7 +5,7 @@
     :resize-window="true"
     :width="600"
     :height="450"
-    :modal-state="programStore.modalCalculator"
+    :modal-state="programStore.modalNotepad"
     @close-modal="closeModal"
   >
     <div class="content">content will soon</div>
@@ -20,7 +20,7 @@
   const programStore = useProgramStore()
 
   const closeModal = (): void => {
-    programStore.updateCalculatorModal(false)
+    programStore.updateNotepadModal(false)
   }
 
   const { t } = useI18n()
