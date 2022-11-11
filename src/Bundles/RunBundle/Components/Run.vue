@@ -13,15 +13,15 @@
         class="icon"
         width="32"
         height="32"
-        src="src/Assets/Icons/Applications/rung.png"
+        src="src/Assets/Icons/Applications/run.png"
         alt="Run computer"
       />
       <UIText class="description">{{ t('RunBundle.description') }}</UIText>
       <UIInput
         id="run-input"
+        v-model:modelValue="modelValue"
         variant="primary"
         class="input"
-        :model-value="modelValue"
         :label-name="t('RunBundle.open')"
         label-position="left"
       />
@@ -43,6 +43,7 @@
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import UIText from '@Bundles/UIBundle/Components/UIText.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
+  import { checkAndRunProgram } from '@Bundles/RunBundle/Services/Run.services'
 
   const { t } = useI18n()
   const programStore = useProgramStore()
@@ -51,8 +52,8 @@
     programStore.updateRunModal(false)
   }
 
-  const openProgram = () => {
-    closeModal()
+  const openProgram = (): void => {
+    checkAndRunProgram(modelValue.value, t)
   }
 
   const modelValue = ref('') as Ref<string>
