@@ -5,7 +5,7 @@
     :resize-window="false"
     :width="330"
     :height="180"
-    :modal-state="shutDownStore.modal"
+    :modal-state="programStore.modalShutDown"
     @close-modal="closeModal"
   >
     <div class="content">
@@ -55,7 +55,7 @@
     restartSystem,
     shutDownSystem,
   } from '@Bundles/ShutDownBundle/Services/ShutDown.services'
-  import { useShutDownStore } from '@Bundles/ShutDownBundle/Stores/ShutDown.stores'
+  import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
   import {
     EShutDownRadioCheck,
     IShutDownRadioCheck,
@@ -64,12 +64,12 @@
 
   const { t } = useI18n()
 
-  const shutDownStore = useShutDownStore()
+  const programStore = useProgramStore()
 
   const checkedRadioBoxes = ref('shut-down') as Ref<IShutDownRadioCheck>
 
   const closeModal = (): void => {
-    shutDownStore.updateModal(false)
+    programStore.updateShutDownModal(false)
   }
 
   const triggerEvent = () => {
