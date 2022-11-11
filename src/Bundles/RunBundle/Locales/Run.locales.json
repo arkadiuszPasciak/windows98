@@ -1,0 +1,16 @@
+{
+  "en": {
+    "RunBundle.title": "Run",
+    "RunBundle.description": "Type of the name of a program and Windows will open it for you",
+    "RunBundle.open": "Open:",
+    "RunBundle.ok": "OK",
+    "RunBundle.cancel": "Cancel"
+  },
+  "pl": {
+    "RunBundle.title": "Run",
+    "RunBundle.description": "Wpisz nazwę programu i Windows otworzy go dla Ciebie",
+    "RunBundle.open": "Włącz:",
+    "RunBundle.ok": "Tak",
+    "RunBundle.cancel": "Anuluj"
+  }
+}

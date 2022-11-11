@@ -1,0 +1,28 @@
+.Run {
+  .content {
+    display: grid;
+    grid-template-columns: 45px 85px 80px 85px;
+    grid-template-rows: 25px 22px 20px 35px 22px;
+    padding: 21px 17px 9px;
+  }
+
+  .icon {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .description {
+    grid-area: 1 / 2 / 2 / 5;
+  }
+
+  .button {
+    width: 78px;
+
+    &.is-ok {
+      grid-area: 5 / 2 / 6 / 3;
+    }
+
+    &.is-cancel {
+      grid-area: 5 / 3 / 6 / 4;
+    }
+  }
+}
