@@ -4,8 +4,8 @@
     :title="t('RunBundle.title')"
     :resize-window="false"
     :width="330"
-    :height="180"
-    :modal-state="programStore.modalShutDown"
+    :height="160"
+    :modal-state="programStore.modalRun"
     @close-modal="closeModal"
   >
     <div class="content">
@@ -39,7 +39,7 @@
   const programStore = useProgramStore()
 
   const closeModal = (): void => {
-    programStore.updateShutDownModal(false)
+    programStore.updateRunModal(false)
   }
 
   const openProgram = () => {
