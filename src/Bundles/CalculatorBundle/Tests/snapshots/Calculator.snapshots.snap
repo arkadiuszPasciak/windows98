@@ -1,3 +1,290 @@
 // Vitest Snapshot v1
 
-exports[`[CalculatorBundle]<Snapshots>(Calculator) > renders correctly component 1`] = `<!--v-if-->`;
+exports[`[CalculatorBundle]<Snapshots>(Calculator) > renders correctly component 1`] = `
+<div
+  class="UIModal variant-primary move-window Calculator"
+  data-v-99a75817=""
+  data-v-a7eaed9a=""
+>
+  <div
+    class="container"
+    data-v-99a75817=""
+    style="width: 195px; height: 220px;"
+  >
+    <div
+      class="header"
+      data-v-99a75817=""
+      style="cursor: default;"
+    >
+      <h3
+        class="title"
+        data-v-99a75817=""
+      >
+        Calculator
+      </h3>
+      <button
+        class="UIButton variant-primary size-small button-close"
+        data-v-99a75817=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        <img
+          alt="Close window"
+          class="button-close-icon"
+          data-v-99a75817=""
+          height="7"
+          src="src/Assets/Icons/close-modal.svg"
+          width="8"
+        />
+        
+        
+        
+        
+        
+      </button>
+    </div>
+    
+    <div
+      class="content"
+      data-v-a7eaed9a=""
+    >
+      <p
+        class="UIText CalculatorDisplay display"
+        data-v-a7eaed9a=""
+        data-v-e69f73e7=""
+        data-v-f0b878d5=""
+      >
+        
+        0
+        
+      </p>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+        7
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+        8
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+        9
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-red"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+         / 
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+        4
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+        5
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+        6
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-red"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+         * 
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+        1
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+        2
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+        3
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-red"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+         - 
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+        0
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+         . 
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-blue"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+         = 
+        
+        
+        
+      </button>
+      <button
+        class="UIButton variant-primary size-calculator color-red"
+        data-v-a7eaed9a=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        
+        
+         + 
+        
+        
+        
+      </button>
+    </div>
+    
+  </div>
+</div>
+`;
