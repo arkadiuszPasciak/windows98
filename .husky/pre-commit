@@ -2,8 +2,8 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npm run typecheck
-echo "[✓] The types are okay!"
+echo "✅ The types are okay!"
 npm run test:run
-echo "[✓] The tests are okay!"
+echo "✅ The tests are okay!"
 npx lint-staged --no-stash
-echo "[✓] The files are okay!"
+echo "✅ The files are okay!"
