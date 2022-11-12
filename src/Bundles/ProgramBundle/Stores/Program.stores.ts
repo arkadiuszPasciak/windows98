@@ -4,7 +4,7 @@ export const useProgramStore = defineStore('program', {
   state: () => ({
     modalCalculator: false as boolean,
     modalNotepad: false as boolean,
-    modalRun: true as boolean,
+    modalRun: false as boolean,
     modalShutDown: false as boolean,
   }),
   actions: {
