@@ -13,7 +13,7 @@
         class="icon"
         width="32"
         height="32"
-        src="src/Assets/Icons/Applications/run.png"
+        src="/icons/applications/run.png"
         alt="Run computer"
       />
       <UIText class="description">{{ t('RunBundle.description') }}</UIText>

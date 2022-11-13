@@ -17,7 +17,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
       class="button-icon"
       data-v-6d095ed5=""
       height="23"
-      src="src/Assets/Icons/Applications/windows.png"
+      src="/icons/applications/windows.png"
       width="23"
     />
     
@@ -43,7 +43,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         class="icon"
         data-v-f765ff07=""
         height="25"
-        src="src/Assets/Icons/Applications/folder-medium.png"
+        src="/icons/applications/folder-medium.png"
         width="25"
       />
       <p
@@ -77,7 +77,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
               class="icon"
               data-v-f765ff07=""
               height="18"
-              src="src/Assets/Icons/Applications/folder-small.png"
+              src="/icons/applications/folder-small.png"
               width="18"
             />
             <p
@@ -111,7 +111,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
                     class="icon"
                     data-v-f765ff07=""
                     height="18"
-                    src="src/Assets/Icons/Applications/calculator.png"
+                    src="/icons/applications/calculator.png"
                     width="18"
                   />
                   <p
@@ -136,7 +136,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
                     class="icon"
                     data-v-f765ff07=""
                     height="18"
-                    src="src/Assets/Icons/Applications/notepad.png"
+                    src="/icons/applications/notepad.png"
                     width="18"
                   />
                   <p
@@ -168,7 +168,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
               class="icon"
               data-v-f765ff07=""
               height="18"
-              src="src/Assets/Icons/Applications/folder-small.png"
+              src="/icons/applications/folder-small.png"
               width="18"
             />
             <p
@@ -202,7 +202,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
                     class="icon"
                     data-v-f765ff07=""
                     height="18"
-                    src="src/Assets/Icons/Applications/media-player-small.png"
+                    src="/icons/applications/media-player-small.png"
                     width="18"
                   />
                   <p
@@ -239,7 +239,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         class="icon"
         data-v-f765ff07=""
         height="25"
-        src="src/Assets/Icons/Applications/documents.png"
+        src="/icons/applications/documents.png"
         width="25"
       />
       <p
@@ -268,7 +268,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         class="icon"
         data-v-f765ff07=""
         height="25"
-        src="src/Assets/Icons/Applications/settings.png"
+        src="/icons/applications/settings.png"
         width="25"
       />
       <p
@@ -297,7 +297,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         class="icon"
         data-v-f765ff07=""
         height="25"
-        src="src/Assets/Icons/Applications/find.png"
+        src="/icons/applications/find.png"
         width="25"
       />
       <p
@@ -326,7 +326,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         class="icon"
         data-v-f765ff07=""
         height="25"
-        src="src/Assets/Icons/Applications/help.png"
+        src="/icons/applications/help.png"
         width="25"
       />
       <p
@@ -355,7 +355,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         class="icon"
         data-v-f765ff07=""
         height="25"
-        src="src/Assets/Icons/Applications/run.png"
+        src="/icons/applications/run.png"
         width="25"
       />
       <p
@@ -384,7 +384,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         class="icon"
         data-v-f765ff07=""
         height="25"
-        src="src/Assets/Icons/Applications/shut-down.png"
+        src="/icons/applications/shut-down.png"
         width="25"
       />
       <p
@@ -427,7 +427,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before cl
       class="button-icon"
       data-v-6d095ed5=""
       height="23"
-      src="src/Assets/Icons/Applications/windows.png"
+      src="/icons/applications/windows.png"
       width="23"
     />
     

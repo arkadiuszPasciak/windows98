@@ -33,7 +33,7 @@ exports[`[UIBundle]<Snapshots>(UIModal) > renders correctly component 1`] = `
           class="button-close-icon"
           data-v-99a75817=""
           height="7"
-          src="src/Assets/Icons/close-modal.svg"
+          src="/icons/close-modal.svg"
           width="8"
         />
         

@@ -13,7 +13,7 @@
         class="icon"
         width="32"
         height="32"
-        src="src/Assets/Icons/Applications/mycomputer.png"
+        src="/icons/applications/mycomputer.png"
         alt="My computer"
       />
       <UIText class="description">{{ t('ShutDownBundle.description') }}</UIText>

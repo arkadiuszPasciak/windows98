@@ -34,7 +34,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before cl
           class="button-close-icon"
           data-v-99a75817=""
           height="7"
-          src="src/Assets/Icons/close-modal.svg"
+          src="/icons/close-modal.svg"
           width="8"
         />
         
@@ -54,7 +54,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before cl
         class="icon"
         data-v-7ca490df=""
         height="32"
-        src="src/Assets/Icons/Applications/mycomputer.png"
+        src="/icons/applications/mycomputer.png"
         width="32"
       />
       <p
