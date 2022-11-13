@@ -43,7 +43,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
         class="icon"
         data-v-f765ff07=""
         height="25"
-        src="src/Assets/Icons/Applications/programs.png"
+        src="src/Assets/Icons/Applications/folder-medium.png"
         width="25"
       />
       <p
@@ -77,7 +77,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
               class="icon"
               data-v-f765ff07=""
               height="18"
-              src="src/Assets/Icons/Applications/programs.png"
+              src="src/Assets/Icons/Applications/folder-small.png"
               width="18"
             />
             <p
@@ -160,7 +160,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
           
           
           <div
-            class="StartPanelItem s-small"
+            class="StartPanelItem s-small is-arrow"
             data-v-6d095ed5=""
             data-v-f765ff07=""
           >
@@ -168,7 +168,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
               class="icon"
               data-v-f765ff07=""
               height="18"
-              src="src/Assets/Icons/Applications/microsoft-exchange.png"
+              src="src/Assets/Icons/Applications/folder-small.png"
               width="18"
             />
             <p
@@ -177,7 +177,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
               data-v-f765ff07=""
             >
               
-              Microsoft Exchange
+              Entertainment
               
             </p>
             <div
@@ -185,37 +185,41 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
               data-v-f765ff07=""
             >
               
-              
-            </div>
-          </div>
-          
-          
-          <div
-            class="StartPanelItem s-small"
-            data-v-6d095ed5=""
-            data-v-f765ff07=""
-          >
-            <img
-              class="icon"
-              data-v-f765ff07=""
-              height="18"
-              src="src/Assets/Icons/Applications/ms-dos-prompt.png"
-              width="18"
-            />
-            <p
-              class="UIText"
-              data-v-f0b878d5=""
-              data-v-f765ff07=""
-            >
-              
-              MS-DOS Prompt
-              
-            </p>
-            <div
-              class="under-panel"
-              data-v-f765ff07=""
-            >
-              
+              <div
+                class="StartPanel v-secondary"
+                data-v-38771fa7=""
+                data-v-6d095ed5=""
+              >
+                
+                
+                
+                <div
+                  class="StartPanelItem s-small"
+                  data-v-6d095ed5=""
+                  data-v-f765ff07=""
+                >
+                  <img
+                    class="icon"
+                    data-v-f765ff07=""
+                    height="18"
+                    src="src/Assets/Icons/Applications/media-player-small.png"
+                    width="18"
+                  />
+                  <p
+                    class="UIText"
+                    data-v-f0b878d5=""
+                    data-v-f765ff07=""
+                  >
+                    
+                    Media Player
+                    
+                  </p>
+                  <!--v-if-->
+                </div>
+                
+                
+                
+              </div>
               
             </div>
           </div>
