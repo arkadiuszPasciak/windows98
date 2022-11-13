@@ -3,6 +3,7 @@
     <UITeleport>
       <Calculator />
       <Notepad />
+      <Run />
       <ShutDown />
     </UITeleport>
     <Pulpit />
@@ -27,6 +28,10 @@
 
   const Notepad = defineAsyncComponent(
     () => import('@Bundles/NotepadBundle/Components/Notepad.vue'),
+  )
+
+  const Run = defineAsyncComponent(
+    () => import('@Bundles/RunBundle/Components/Run.vue'),
   )
 
   const ShutDown = defineAsyncComponent(

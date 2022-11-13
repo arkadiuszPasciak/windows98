@@ -104,10 +104,15 @@
       case 'StartBundle.calculator':
         programStore.updateCalculatorModal(true)
         break
+      case 'StartBundle.run':
+        programStore.updateRunModal(true)
+        break
       case 'StartBundle.notepad':
         programStore.updateNotepadModal(true)
         break
     }
+
+    togglePrimaryPanel()
   }
 </script>
 

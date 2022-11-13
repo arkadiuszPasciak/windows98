@@ -1,3 +1,73 @@
 // Vitest Snapshot v1
 
-exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] = `<!--v-if-->`;
+exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] = `
+<div
+  class="UIModal variant-primary resize-window move-window Notepad"
+  data-v-7632fb2e=""
+  data-v-99a75817=""
+>
+  <div
+    class="container"
+    data-v-99a75817=""
+    style="width: 600px; height: 450px;"
+  >
+    <div
+      class="header"
+      data-v-99a75817=""
+      style="cursor: default;"
+    >
+      <h3
+        class="title"
+        data-v-99a75817=""
+      >
+        Notepad
+      </h3>
+      <button
+        class="UIButton variant-primary size-small button-close"
+        data-v-99a75817=""
+        data-v-cf1bb3a9=""
+        type="button"
+      >
+        
+        <img
+          alt="Close window"
+          class="button-close-icon"
+          data-v-99a75817=""
+          height="7"
+          src="src/Assets/Icons/close-modal.svg"
+          width="8"
+        />
+        
+        
+        
+        
+        
+      </button>
+    </div>
+    
+    <div
+      class="content"
+      data-v-7632fb2e=""
+    >
+      <div
+        class="UITextarea variant-primary label-position-top type-notepad textarea"
+        data-v-7632fb2e=""
+        data-v-cbf41378=""
+        resize-window="true"
+      >
+        <label
+          class="label"
+          data-v-cbf41378=""
+          for="notepad-textarea"
+        />
+        <textarea
+          class="textarea"
+          data-v-cbf41378=""
+          id="notepad-textarea"
+        />
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
