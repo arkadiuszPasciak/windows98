@@ -5,7 +5,7 @@
     :resize-window="false"
     :width="330"
     :height="180"
-    :modal-state="programStore.modalShutDown"
+    :modal-state="programStore.modalMediaPlayer"
     @close-modal="closeModal"
   >
     <div class="content">here will be content</div>
@@ -22,7 +22,7 @@
   const programStore = useProgramStore()
 
   const closeModal = (): void => {
-    programStore.updateShutDownModal(false)
+    programStore.updateMediaPlayerModal(false)
   }
 </script>
 

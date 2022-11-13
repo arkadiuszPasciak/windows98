@@ -2,6 +2,7 @@
   <div class="HomePage">
     <UITeleport>
       <Calculator />
+      <MediaPlayer />
       <Notepad />
       <Run />
       <ShutDown />
@@ -24,6 +25,10 @@
 
   const Calculator = defineAsyncComponent(
     () => import('@Bundles/CalculatorBundle/Components/Calculator.vue'),
+  )
+
+  const MediaPlayer = defineAsyncComponent(
+    () => import('@Bundles/MediaPlayerBundle/Components/MediaPlayer.vue'),
   )
 
   const Notepad = defineAsyncComponent(
