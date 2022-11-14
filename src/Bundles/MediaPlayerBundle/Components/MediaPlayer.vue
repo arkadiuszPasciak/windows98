@@ -10,6 +10,8 @@
   >
     <div class="content">
       <MediaPlayerVideo src="https://youtu.be/IW7Rqwwth84" />
+      <MediaPlayerControls />
+      <MediaPlayerInformation />
     </div>
   </UIModal>
 </template>
@@ -17,6 +19,8 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import MediaPlayerControls from '@Bundles/MediaPlayerBundle/Components/MediaPlayerControls.vue'
+  import MediaPlayerInformation from '@Bundles/MediaPlayerBundle/Components/MediaPlayerInformation.vue'
   import MediaPlayerVideo from '@Bundles/MediaPlayerBundle/Components/MediaPlayerVideo.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
 
