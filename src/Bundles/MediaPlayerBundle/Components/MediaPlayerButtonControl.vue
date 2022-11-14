@@ -1,9 +1,9 @@
 <template>
   <button
-    class="MediaPlayerControlButton"
+    class="MediaPlayerButtonControl"
     :class="`type-${type}`"
     type="button"
-    :aria-label="t(`MediaPlayer.control-button.${type}`)"
+    :aria-label="t(`MediaPlayer.button-control.${type}`)"
   />
 </template>
 
@@ -13,7 +13,7 @@
 
   defineProps({
     type: {
-      type: String as PropType<'play' | 'pauza' | 'stop'>,
+      type: String as PropType<'play' | 'pauza' | 'stop' | 'mute'>,
       required: true,
     },
   })
@@ -24,5 +24,5 @@
 <i18n src="@Bundles/MediaPlayerBundle/Locales/MediaPlayer.locales.json"></i18n>
 
 <style lang="scss" scoped>
-  @import '@Bundles/MediaPlayerBundle/Styles/MediaPlayerControlButton.styles.scss';
+  @import '@Bundles/MediaPlayerBundle/Styles/MediaPlayerButtonControl.styles.scss';
 </style>

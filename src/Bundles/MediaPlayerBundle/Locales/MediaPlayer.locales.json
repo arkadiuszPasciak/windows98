@@ -1,14 +1,14 @@
 {
   "en": {
     "MediaPlayer.title": "Media Player",
-    "MediaPlayer.control-button.pauza": "Pauza",
-    "MediaPlayer.control-button.play": "Play",
-    "MediaPlayer.control-button.stop": "Stop"
+    "MediaPlayer.button-control.pauza": "Pauza",
+    "MediaPlayer.button-control.play": "Play",
+    "MediaPlayer.button-control.stop": "Stop"
   },
   "pl": {
     "MediaPlayer.title": "Media Player",
-    "MediaPlayer.control-button.pauza": "Przerwa",
-    "MediaPlayer.control-button.play": "Graj",
-    "MediaPlayer.control-button.stop": "Zatrzymaj"
+    "MediaPlayer.button-control.pauza": "Przerwa",
+    "MediaPlayer.button-control.play": "Graj",
+    "MediaPlayer.button-control.stop": "Zatrzymaj"
   }
 }
