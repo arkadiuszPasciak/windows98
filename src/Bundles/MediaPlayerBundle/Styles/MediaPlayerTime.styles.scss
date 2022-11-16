@@ -1,4 +1,9 @@
 .MediaPlayerTime {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  color: $cl-white;
+  @include font('medium', 11, 19);
+
+  .slash {
+    margin: 0 3px;
+  }
 }

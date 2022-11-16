@@ -1,7 +1,7 @@
 <template>
   <div class="MediaPlayerTime">
     <p class="current-time">{{ currentTime }}</p>
-    <span>/</span>
+    <span class="slash">/</span>
     <p class="max-time">{{ maxTime }}</p>
   </div>
 </template>

@@ -4,7 +4,7 @@
     :title="t('MediaPlayer.title')"
     :resize-window="false"
     :width="330"
-    :height="180"
+    :height="400"
     :modal-state="programStore.modalMediaPlayer"
     @close-modal="closeModal"
   >

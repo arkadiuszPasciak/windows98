@@ -1,5 +1,6 @@
 <template>
   <div class="MediaPlayerControls">
+    <MediaPlayerProgress />
     <MediaPlayerButtonControl type="play" />
     <MediaPlayerButtonControl type="pauza" />
     <MediaPlayerButtonControl type="stop" />
