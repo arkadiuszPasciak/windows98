@@ -1,10 +1,14 @@
 <template>
   <div class="MediaPlayerControls">
     <MediaPlayerProgress class="progress" />
-    <MediaPlayerButtonControl class="button-play" type="play" />
-    <MediaPlayerButtonControl class="button-pauza" type="pauza" />
-    <MediaPlayerButtonControl class="button-stop" type="stop" />
-    <MediaPlayerButtonControl class="button-mute" type="mute" />
+    <MediaPlayerButtonControl class="button-play" type="play" :active="true" />
+    <MediaPlayerButtonControl
+      class="button-pauza"
+      type="pauza"
+      :active="true"
+    />
+    <MediaPlayerButtonControl class="button-stop" type="stop" :active="true" />
+    <MediaPlayerButtonControl class="button-mute" type="mute" :active="true" />
     <MediaPlayerVolumeControl class="volume-control" />
   </div>
 </template>
