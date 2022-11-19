@@ -4,7 +4,7 @@
   height: 60px;
   padding: 5px;
   grid-template-columns: repeat(3, 30px) auto 30px 50px;
-  grid-template-rows: repeat(2, 25px);
+  grid-template-rows: 25px 22px;
 
   .progress {
     grid-area: 1 / 1 / 2 / 7;
@@ -15,6 +15,6 @@
   }
 
   .volume-control {
-    grid-area: 2 / 6 / 4 / 7;
+    grid-area: 2 /6 /3 / 6;
   }
 }
