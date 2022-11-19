@@ -9,7 +9,7 @@
     @close-modal="closeModal"
   >
     <div class="content">
-      <MediaPlayerVideo src="https://youtu.be/IW7Rqwwth84" />
+      <MediaPlayerVideo :src="mediaPlayerStore.videoSrc" />
       <MediaPlayerControls />
       <MediaPlayerInformation />
     </div>
@@ -23,10 +23,12 @@
   import MediaPlayerInformation from '@Bundles/MediaPlayerBundle/Components/MediaPlayerInformation.vue'
   import MediaPlayerVideo from '@Bundles/MediaPlayerBundle/Components/MediaPlayerVideo.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
+  import { useMediaPlayerStore } from '@Bundles/MediaPlayerBundle/Stores/MediaPlayer.stores'
 
   const { t } = useI18n()
 
   const programStore = useProgramStore()
+  const mediaPlayerStore = useMediaPlayerStore()
 
   const closeModal = (): void => {
     programStore.updateMediaPlayerModal(false)
