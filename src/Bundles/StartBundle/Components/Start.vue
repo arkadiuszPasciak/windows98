@@ -98,17 +98,20 @@
 
   const openProgram = (programName: string): void => {
     switch (programName) {
-      case 'StartBundle.shut-down':
-        programStore.updateShutDownModal(true)
-        break
       case 'StartBundle.calculator':
         programStore.updateCalculatorModal(true)
+        break
+      case 'StartBundle.notepad':
+        programStore.updateNotepadModal(true)
         break
       case 'StartBundle.run':
         programStore.updateRunModal(true)
         break
-      case 'StartBundle.notepad':
-        programStore.updateNotepadModal(true)
+      case 'StartBundle.settings':
+        programStore.updateSettingsModal(true)
+        break
+      case 'StartBundle.shut-down':
+        programStore.updateShutDownModal(true)
         break
     }
 

@@ -5,6 +5,7 @@ export const useProgramStore = defineStore('program', {
     modalCalculator: false as boolean,
     modalNotepad: false as boolean,
     modalRun: false as boolean,
+    modalSettings: false as boolean,
     modalShutDown: false as boolean,
   }),
   actions: {
@@ -16,6 +17,9 @@ export const useProgramStore = defineStore('program', {
     },
     updateRunModal(status: boolean): void {
       this.modalRun = status
+    },
+    updateSettingsModal(status: boolean): void {
+      this.modalSettings = status
     },
     updateShutDownModal(status: boolean): void {
       this.modalShutDown = status
