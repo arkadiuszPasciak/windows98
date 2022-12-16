@@ -34,8 +34,9 @@ My sandbox to improve my programming skills based on Windows 98
 
 - This project using `npm` as package manager.
 - Clone this project to your computer `git clone https://github.com/arkadiuszPasciak/windows98`
+- Set node version on `18.12.1`
 - Install dependencies `npm install`
-- Run `npm run dev` to start development server and open `http://127.0.0.1:5173/` in your browser
+- Run `npm run dev` to start development server and open `http://localhost:5173/` in your browser
 
 ### Update packages
 
