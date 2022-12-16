@@ -37,7 +37,6 @@
     "vue-i18n": "^9.2.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.3.0",
     "@intlify/vite-plugin-vue-i18n": "^6.0.3",
     "@pinia/testing": "^0.0.14",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
@@ -46,8 +45,6 @@
     "@vitest/ui": "^0.25.8",
     "@vue/eslint-config-typescript": "^11.0.2",
     "@vue/test-utils": "^2.2.6",
-    "commitlint-config-jira": "^1.6.4",
-    "commitlint-plugin-jira-rules": "^1.6.4",
     "cypress": "^12.1.0",
     "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0",
