@@ -8,7 +8,7 @@ const defaultWrapper = mount(Settings, {
     plugins: [
       createTestingPinia({
         initialState: {
-          program: { modalRun: true },
+          program: { modalSettings: true },
         },
       }),
     ],

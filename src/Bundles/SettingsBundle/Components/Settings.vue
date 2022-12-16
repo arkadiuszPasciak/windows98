@@ -5,7 +5,7 @@
     :resize-window="false"
     :width="335"
     :height="415"
-    :modal-state="programStore.modalRun"
+    :modal-state="programStore.modalSettings"
     @close-modal="closeModal"
   >
     <div class="content">
@@ -23,7 +23,7 @@
   const programStore = useProgramStore()
 
   const closeModal = (): void => {
-    programStore.updateRunModal(false)
+    programStore.updateSettingsModal(false)
   }
 </script>
 
