@@ -9,7 +9,7 @@
     @close-modal="closeModal"
   >
     <div class="content">
-      <!-- ... here will be content -->
+      <LanguageSwitcher />
     </div>
   </UIModal>
 </template>
@@ -17,6 +17,7 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import LanguageSwitcher from '@Bundles/LanguageBundle/Components/LanguageSwitcher.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
 
   const { t } = useI18n()

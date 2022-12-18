@@ -1,0 +1,23 @@
+// Vitest Snapshot v1
+
+exports[`[LanguageBundle]<Snapshots>(LanguageSwitcher) > renders correctly component 1`] = `
+<select
+  class="LanguageSwitcher"
+  data-v-56cc1592=""
+>
+  
+  <option
+    data-v-56cc1592=""
+    value="en"
+  >
+    English
+  </option>
+  <option
+    data-v-56cc1592=""
+    value="pl"
+  >
+    Polish
+  </option>
+  
+</select>
+`;
