@@ -1,0 +1,9 @@
+.UISelect {
+  position: relative;
+  height: 21px;
+  background: $cl-white url('/icons/select-button.svg') no-repeat top 2px right
+    2px;
+  box-shadow: $border-field-inner, $border-field-outer;
+  padding: 5px 25px 5px 5px;
+  @include font('medium', 11, 13);
+}

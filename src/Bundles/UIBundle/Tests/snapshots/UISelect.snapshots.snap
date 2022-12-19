@@ -1,0 +1,27 @@
+// Vitest Snapshot v1
+
+exports[`[UIBundle]<Snapshots>(UISelect) > renders correctly component 1`] = `
+<select
+  class="UISelect variant-undefined"
+  data-v-d3c68ad1=""
+  id="ui-select-test"
+  name="ui-select-test"
+>
+  
+  <option
+    class="option"
+    data-v-d3c68ad1=""
+    value="en"
+  >
+    English
+  </option>
+  <option
+    class="option"
+    data-v-d3c68ad1=""
+    value="pl"
+  >
+    Polish
+  </option>
+  
+</select>
+`;

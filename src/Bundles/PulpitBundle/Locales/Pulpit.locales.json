@@ -4,7 +4,7 @@
     "PulpitBundle.recycle": "Recycle"
   },
   "pl": {
-    "PulpitBundle.accessories": "Mój Komputer",
-    "PulpitBundle.calculator": "Recyckling"
+    "PulpitBundle.my-computer": "Mój Komputer",
+    "PulpitBundle.recycle": "Recyckling"
   }
 }

@@ -49,7 +49,31 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
       class="content"
       data-v-0f754a09=""
     >
-      <!-- ... here will be content -->
+      <select
+        class="UISelect variant-undefined LanguageSwitcher"
+        data-v-0f754a09=""
+        data-v-56cc1592=""
+        data-v-d3c68ad1=""
+        id="languages-option"
+        name="languages-option"
+      >
+        
+        <option
+          class="option"
+          data-v-d3c68ad1=""
+          value="en"
+        >
+          English
+        </option>
+        <option
+          class="option"
+          data-v-d3c68ad1=""
+          value="pl"
+        >
+          Polish
+        </option>
+        
+      </select>
     </div>
     
   </div>
