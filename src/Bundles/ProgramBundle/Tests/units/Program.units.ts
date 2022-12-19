@@ -55,6 +55,18 @@ describe('[ProgramBundle]<Stores>(useProgramStore)', () => {
     expect(store.modalRun).equal(false)
   })
 
+  it('turns on and off Settings', () => {
+    expect(store.modalSettings).equal(false)
+
+    store.updateSettingsModal(true)
+
+    expect(store.modalSettings).equal(true)
+
+    store.updateSettingsModal(false)
+
+    expect(store.modalSettings).equal(false)
+  })
+
   it('turns on and off ShutDown', () => {
     expect(store.modalShutDown).equal(false)
 

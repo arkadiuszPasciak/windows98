@@ -101,14 +101,14 @@
       case 'StartBundle.calculator':
         programStore.updateCalculatorModal(true)
         break
-      case 'StartBundle.media-player':
-        programStore.updateMediaPlayerModal(true)
-        break
       case 'StartBundle.notepad':
         programStore.updateNotepadModal(true)
         break
       case 'StartBundle.run':
         programStore.updateRunModal(true)
+        break
+      case 'StartBundle.settings':
+        programStore.updateSettingsModal(true)
         break
       case 'StartBundle.shut-down':
         programStore.updateShutDownModal(true)
