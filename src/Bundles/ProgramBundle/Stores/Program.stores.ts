@@ -3,8 +3,7 @@ import { defineStore } from 'pinia'
 export const useProgramStore = defineStore('program', {
   state: () => ({
     modalCalculator: false as boolean,
-    // TODO before merge to master change to false
-    modalMediaPlayer: true as boolean,
+    modalMediaPlayer: false as boolean,
     modalNotepad: false as boolean,
     modalRun: false as boolean,
     modalSettings: false as boolean,
