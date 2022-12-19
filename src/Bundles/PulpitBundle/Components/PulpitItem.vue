@@ -4,7 +4,7 @@
       class="icon"
       width="32"
       height="32"
-      :src="`src/Assets/Icons/Applications/${iconName}.png`"
+      :src="`/icons/applications/${iconName}.png`"
       :alt="name"
     />
     <UIText class="name">{{ name }}</UIText>

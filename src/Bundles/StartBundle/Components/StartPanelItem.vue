@@ -8,7 +8,7 @@
       class="icon"
       :width="size === 'medium' ? 25 : 18"
       :height="size === 'medium' ? 25 : 18"
-      :src="`src/Assets/Icons/Applications/${iconName}.png`"
+      :src="`/icons/applications/${iconName}.png`"
     />
     <UIText>{{ t(name) }}</UIText>
 

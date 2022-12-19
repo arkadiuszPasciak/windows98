@@ -24,7 +24,7 @@
               class="button-close-icon"
               :width="8"
               :height="7"
-              src="src/Assets/Icons/close-modal.svg"
+              src="/icons/close-modal.svg"
               :alt="t('UIBundle.close-window')"
             />
           </template>
