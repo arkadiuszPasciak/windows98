@@ -10,7 +10,7 @@ exports[`[PulpitBundle]<Snapshots>(PulpitItem) > renders correctly component 1`]
     class="icon"
     data-v-95683558=""
     height="32"
-    src="src/Assets/Icons/Applications/mycomputer.png"
+    src="/icons/applications/mycomputer.png"
     width="32"
   />
   <p

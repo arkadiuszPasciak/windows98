@@ -4,13 +4,13 @@ export const startStoreApps = [
   {
     data: {
       name: 'StartBundle.programs',
-      iconName: 'programs',
+      iconName: 'folder-medium',
     },
     items: [
       {
         data: {
           name: 'StartBundle.accessories',
-          iconName: 'programs',
+          iconName: 'folder-small',
         },
         items: [
           {
@@ -29,15 +29,17 @@ export const startStoreApps = [
       },
       {
         data: {
-          name: 'StartBundle.microsoft-exchange',
-          iconName: 'microsoft-exchange',
+          name: 'StartBundle.entertainment',
+          iconName: 'folder-small',
         },
-      },
-      {
-        data: {
-          name: 'StartBundle.ms-dos-prompt',
-          iconName: 'ms-dos-prompt',
-        },
+        items: [
+          {
+            data: {
+              name: 'StartBundle.media-player',
+              iconName: 'media-player-small',
+            },
+          },
+        ],
       },
     ],
   },

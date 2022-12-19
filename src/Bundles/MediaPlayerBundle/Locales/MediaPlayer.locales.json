@@ -1,0 +1,16 @@
+{
+  "en": {
+    "MediaPlayer.title": "Media Player",
+    "MediaPlayer.button-control.mute": "Mute",
+    "MediaPlayer.button-control.pauza": "Pauza",
+    "MediaPlayer.button-control.play": "Play",
+    "MediaPlayer.button-control.stop": "Stop"
+  },
+  "pl": {
+    "MediaPlayer.title": "Media Player",
+    "MediaPlayer.button-control.mute": "Wycisz",
+    "MediaPlayer.button-control.pauza": "Przerwa",
+    "MediaPlayer.button-control.play": "Graj",
+    "MediaPlayer.button-control.stop": "Zatrzymaj"
+  }
+}

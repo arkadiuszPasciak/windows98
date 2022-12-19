@@ -19,7 +19,9 @@
       default: 'primary',
     },
     size: {
-      type: String as PropType<'small' | 'medium' | 'calculator'>,
+      type: String as PropType<
+        'small' | 'medium' | 'calculator' | 'media-player'
+      >,
       default: 'medium',
     },
   })
