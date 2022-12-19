@@ -1,10 +1,10 @@
 {
   "en": {
-    "Language.en": "English",
-    "Language.pl": "Polish"
+    "Language.english": "English",
+    "Language.polish": "Polish"
   },
   "pl": {
-    "Language.en": "Angielski",
-    "Language.pl": "Polski"
+    "Language.english": "Angielski",
+    "Language.polish": "Polski"
   }
 }

@@ -11,16 +11,17 @@
     <option
       v-for="option in options"
       :key="`${id}-${option}`"
-      :value="option"
+      :value="option.value"
       class="option"
     >
-      {{ option }}
+      {{ option.name }}
     </option>
   </select>
 </template>
 
 <script setup lang="ts">
   import { computed, PropType } from 'vue'
+  import { TUISelectPropsObject } from '@Bundles/UIBundle/Supports/UISelect.supports'
 
   const props = defineProps({
     variant: {
@@ -44,7 +45,7 @@
       required: true,
     },
     options: {
-      type: Array,
+      type: Object as PropType<TUISelectPropsObject>,
       required: true,
     },
   })
@@ -59,8 +60,6 @@
       emit('update:modelValue', value)
     },
   })
-
-  console.log(props)
 </script>
 
 <style lang="scss" scoped>
