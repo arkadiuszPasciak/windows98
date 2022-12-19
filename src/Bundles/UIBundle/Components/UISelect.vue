@@ -14,13 +14,14 @@
       :value="option.value"
       class="option"
     >
-      {{ option.name }}
+      {{ t(option.name) }}
     </option>
   </select>
 </template>
 
 <script setup lang="ts">
   import { computed, PropType } from 'vue'
+  import { useI18n } from 'vue-i18n'
   import { TUISelectPropsObject } from '@Bundles/UIBundle/Supports/UISelect.supports'
 
   const props = defineProps({
@@ -50,6 +51,8 @@
     },
   })
 
+  const { t } = useI18n()
+
   const emit = defineEmits(['update:modelValue'])
 
   const value = computed({
@@ -61,6 +64,8 @@
     },
   })
 </script>
+
+<i18n src="@Bundles/LanguageBundle/Locales/Language.locales.json"></i18n>
 
 <style lang="scss" scoped>
   @import '@Bundles/UIBundle/Styles/UISelect.styles.scss';

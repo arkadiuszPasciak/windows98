@@ -13,14 +13,14 @@ exports[`[UIBundle]<Snapshots>(UISelect) > renders correctly component 1`] = `
     data-v-d3c68ad1=""
     value="en"
   >
-    Language.english
+    English
   </option>
   <option
     class="option"
     data-v-d3c68ad1=""
     value="pl"
   >
-    Language.polish
+    Polish
   </option>
   
 </select>

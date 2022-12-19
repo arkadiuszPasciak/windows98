@@ -14,14 +14,14 @@ exports[`[LanguageBundle]<Snapshots>(LanguageSwitcher) > renders correctly compo
     data-v-d3c68ad1=""
     value="en"
   >
-    Language.english
+    English
   </option>
   <option
     class="option"
     data-v-d3c68ad1=""
     value="pl"
   >
-    Language.polish
+    Polish
   </option>
   
 </select>
