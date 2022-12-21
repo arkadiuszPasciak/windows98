@@ -9,7 +9,7 @@
         type="button"
         @click="setActiveTab(id)"
       >
-        {{ tab.title }}
+        {{ t(tab.title) }}
       </button>
     </div>
     <div class="content">
@@ -26,6 +26,7 @@
 
 <script setup lang="ts">
   import { PropType, Ref, ref } from 'vue'
+  import { useI18n } from 'vue-i18n'
   import { TUITabsProps } from '@Bundles/UIBundle/Supports/UITabs.supports'
 
   defineProps({
@@ -34,6 +35,8 @@
       required: true,
     },
   })
+
+  const { t } = useI18n()
 
   const activeIndex = ref(0) as Ref<number>
 
@@ -45,6 +48,8 @@
     activeIndex.value = id
   }
 </script>
+
+<i18n src="@Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>
 
 <style lang="scss" scoped>
   @import '@Bundles/UIBundle/Styles/UITabs.styles.scss';

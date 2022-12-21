@@ -22,7 +22,7 @@ exports[`[UIBundle]<Snapshots>(UITabs) > renders correctly component 1`] = `
       data-v-39833990=""
       type="button"
     >
-      Display
+      General
     </button>
     
   </div>

@@ -6,11 +6,11 @@ import { TUITabsProps } from '@Bundles/UIBundle/Supports/UITabs.supports'
 
 const tabs = [
   {
-    title: 'General',
+    title: 'Settings.general',
     component: UIText,
   },
   {
-    title: 'Display',
+    title: 'Settings.general',
     component: UIText,
   },
 ] as TUITabsProps

@@ -1,7 +1,7 @@
 <template>
   <UIModal
     class="Settings"
-    :title="t('SettingsBundle.title')"
+    :title="t('Settings.title')"
     :resize-window="false"
     :width="335"
     :height="415"
@@ -25,7 +25,7 @@
 
   const tabs = [
     {
-      title: 'General',
+      title: 'Settings.general',
       component: SettingsGeneral,
     },
   ] as TUITabsProps

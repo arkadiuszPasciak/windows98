@@ -55,8 +55,7 @@ describe('[ProgramBundle]<Stores>(useProgramStore)', () => {
   })
 
   it('turns on and off Settings', () => {
-    // TODO change to false before merge to master
-    expect(store.modalSettings).equal(true)
+    expect(store.modalSettings).equal(false)
 
     store.updateSettingsModal(true)
 
