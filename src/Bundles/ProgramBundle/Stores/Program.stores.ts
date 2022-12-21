@@ -6,7 +6,8 @@ export const useProgramStore = defineStore('program', {
     modalMediaPlayer: false as boolean,
     modalNotepad: false as boolean,
     modalRun: false as boolean,
-    modalSettings: false as boolean,
+    // TODO change to false before merge to master
+    modalSettings: true as boolean,
     modalShutDown: false as boolean,
   }),
   actions: {

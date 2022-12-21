@@ -1,0 +1,23 @@
+.UITabs {
+  height: calc(100% - 28px);
+  margin: 5px;
+
+  .tab {
+    padding: 5px;
+    box-shadow: $border-raised-outer, $border-raised-inner;
+    @include font('medium', 10, 10);
+
+    &.active {
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  .contents {
+    position: relative;
+    z-index: 2;
+    top: -2px;
+    box-shadow: $border-raised-outer, $border-raised-inner;
+    height: inherit;
+  }
+}
