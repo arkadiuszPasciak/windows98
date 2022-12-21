@@ -3,7 +3,6 @@
 exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`] = `
 <div
   class="UIModal variant-primary move-window Settings"
-  data-v-0f754a09=""
   data-v-99a75817=""
 >
   <div
@@ -46,34 +45,59 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
     </div>
     
     <div
-      class="content"
-      data-v-0f754a09=""
+      class="UITabs"
+      data-v-39833990=""
     >
-      <select
-        class="UISelect variant-undefined LanguageSwitcher"
-        data-v-0f754a09=""
-        data-v-56cc1592=""
-        data-v-d3c68ad1=""
-        id="languages-option"
-        name="languages-option"
+      <div
+        class="tabs"
+        data-v-39833990=""
       >
         
-        <option
-          class="option"
-          data-v-d3c68ad1=""
-          value="en"
+        <button
+          class="tab active"
+          data-v-39833990=""
+          type="button"
         >
-          English
-        </option>
-        <option
-          class="option"
-          data-v-d3c68ad1=""
-          value="pl"
-        >
-          Polish
-        </option>
+          General
+        </button>
         
-      </select>
+      </div>
+      <div
+        class="content"
+        data-v-39833990=""
+      >
+        
+        <div
+          class="SettingsGeneral content-tab active"
+          data-v-39833990=""
+        >
+          <select
+            class="UISelect variant-undefined LanguageSwitcher"
+            data-v-56cc1592=""
+            data-v-d3c68ad1=""
+            id="languages-option"
+            name="languages-option"
+          >
+            
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="en"
+            >
+              English
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="pl"
+            >
+              Polish
+            </option>
+            
+          </select>
+        </div>
+        
+      </div>
     </div>
     
   </div>

@@ -1,8 +1,10 @@
 {
   "en": {
-    "SettingsBundle.title": "Settings"
+    "Settings.general": "General",
+    "Settings.title": "Settings"
   },
   "pl": {
-    "SettingsBundle.title": "Ustawienia"
+    "Settings.general": "Ogólne",
+    "Settings.title": "Ustawienia"
   }
 }
