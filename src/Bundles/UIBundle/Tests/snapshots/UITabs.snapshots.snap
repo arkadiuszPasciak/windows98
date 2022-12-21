@@ -31,22 +31,14 @@ exports[`[UIBundle]<Snapshots>(UITabs) > renders correctly component 1`] = `
     data-v-39833990=""
   >
     
-    <p
-      class="UIText content-tab active"
+    <anonymous-stub
+      class="content-tab active"
       data-v-39833990=""
-      data-v-f0b878d5=""
-    >
-      
-      
-    </p>
-    <p
-      class="UIText content-tab"
+    />
+    <anonymous-stub
+      class="content-tab"
       data-v-39833990=""
-      data-v-f0b878d5=""
-    >
-      
-      
-    </p>
+    />
     
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import { expect, it, describe } from 'vitest'
 import UITabs from '@Bundles/UIBundle/Components/UITabs.vue'
 import UIText from '@Bundles/UIBundle/Components/UIText.vue'
@@ -15,7 +15,7 @@ const tabs = [
   },
 ] as TUITabsProps
 
-const defaultWrapper = mount(UITabs, {
+const defaultWrapper = shallowMount(UITabs, {
   props: {
     tabs: tabs,
   },
