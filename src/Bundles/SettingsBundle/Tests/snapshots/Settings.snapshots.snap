@@ -54,7 +54,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
       >
         
         <button
-          class="tab"
+          class="tab active"
           data-v-39833990=""
           type="button"
         >
@@ -63,17 +63,16 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
         
       </div>
       <div
-        class="contents"
+        class="content"
         data-v-39833990=""
       >
         
         <div
-          class="content"
+          class="SettingsGeneral content-tab active"
           data-v-39833990=""
         >
           <select
             class="UISelect variant-undefined LanguageSwitcher"
-            data-v-39833990=""
             data-v-56cc1592=""
             data-v-d3c68ad1=""
             id="languages-option"

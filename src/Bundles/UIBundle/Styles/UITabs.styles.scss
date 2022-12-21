@@ -13,11 +13,21 @@
     }
   }
 
-  .contents {
+  .content {
     position: relative;
     z-index: 2;
     top: -2px;
     box-shadow: $border-raised-outer, $border-raised-inner;
-    height: inherit;
+    height: calc(100% - 21px);
+  }
+
+  .content-tab {
+    &:not(.active) {
+      display: none;
+    }
+
+    &:has(.active) {
+      display: block;
+    }
   }
 }

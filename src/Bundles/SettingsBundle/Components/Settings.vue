@@ -16,7 +16,7 @@
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import UITabs from '@Bundles/UIBundle/Components/UITabs.vue'
-  import LanguageSwitcher from '@Bundles/LanguageBundle/Components/LanguageSwitcher.vue'
+  import SettingsGeneral from '@Bundles/SettingsBundle/Components/SettingsGeneral.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
   import { TUITabsProps } from '@Bundles/UIBundle/Supports/UITabs.supports'
 
@@ -26,7 +26,7 @@
   const tabs = [
     {
       title: 'General',
-      component: LanguageSwitcher,
+      component: SettingsGeneral,
     },
   ] as TUITabsProps
 
