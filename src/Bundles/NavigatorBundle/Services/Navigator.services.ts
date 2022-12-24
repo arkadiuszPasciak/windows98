@@ -3,8 +3,13 @@ import {
   iOSPlatformsRegex,
   macosPlatforms,
   windowsPlatforms,
+  linuxPlatforms,
+  linuxPlatformsRegex,
 } from '@Bundles/NavigatorBundle/Configs/Navigator.configs'
-import { EOperatingSystems } from '@Bundles/NavigatorBundle/Supports/Navigator.supports'
+import {
+  EOperatingSystems,
+  TDevices,
+} from '@Bundles/NavigatorBundle/Supports/Navigator.supports'
 import { Nullable } from 'vitest'
 
 export function checkPlatformUserAgent(
@@ -30,8 +35,36 @@ export function getOperatingSystem(window: Window): Nullable<string> {
     return EOperatingSystems.MAC_OS
   } else if (windowsPlatforms.includes(platform)) {
     return EOperatingSystems.WINDOWS
-  } else if (/Linux/.test(platform)) {
+  } else if (
+    checkPlatformUserAgent(window, linuxPlatformsRegex) ||
+    linuxPlatforms.includes(platform)
+  ) {
     return EOperatingSystems.LINUX
+  }
+
+  return null
+}
+
+export function getDeviceType(window: Window): Nullable<TDevices> {
+  const platform =
+    window.navigator.userAgent.platform || window.navigator.platform
+
+  if (
+    checkPlatformUserAgent(window, iOSPlatformsRegex) ||
+    checkPlatformUserAgent(window, androidPlatformsRegex)
+  ) {
+    return 'mobile'
+  } else if (
+    macosPlatforms.includes(platform) ||
+    windowsPlatforms.includes(platform)
+  ) {
+    return 'desktop'
+  }
+
+  if (window.innerWidth > 768) {
+    return 'desktop'
+  } else if (window.innerWidth < 768) {
+    return 'mobile'
   }
 
   return null

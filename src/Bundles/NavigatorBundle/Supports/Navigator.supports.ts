@@ -21,6 +21,8 @@ export type TAndroidPlatforms = 'Android'
 
 export type TIOSPlatforms = 'iPhone' | 'iPad' | 'iPod'
 
+export type TLinuxPlatforms = 'Linux x86_64' | 'Linux armv7l' | 'Linux armv8l'
+
 export type TMacOSPlatforms =
   | 'Macintosh'
   | 'MacIntel'
@@ -35,3 +37,5 @@ export type TAllPlatforms =
   | TIOSPlatforms
   | TMacOSPlatforms
   | TWindowsPlatforms
+
+export type TDevices = 'mobile' | 'desktop'
