@@ -36,7 +36,14 @@ export type TAllPlatforms =
   | TUnixPlatforms
   | TWindowsPlatforms
 
+export type TBrowsers = 'Chrome' | 'Firefox' | 'Safari' | 'Opera' | 'Edge'
+
 export type TDevices = 'mobile' | 'desktop'
+
+export interface IBrowser {
+  name: TBrowsers
+  regex: RegExp
+}
 
 export interface IPlatform {
   name: TAllPlatforms

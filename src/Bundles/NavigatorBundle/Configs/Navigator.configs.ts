@@ -1,4 +1,7 @@
-import { IPlatform } from '@Bundles/NavigatorBundle/Supports/Navigator.supports'
+import {
+  IPlatform,
+  IBrowser,
+} from '@Bundles/NavigatorBundle/Supports/Navigator.supports'
 
 export const operationSystems = [
   { name: 'Windows 3.11', regex: /Win16/ },
@@ -30,6 +33,14 @@ export const operationSystems = [
   { name: 'BeOS', regex: /BeOS/ },
   { name: 'OS/2', regex: /OS\/2/ },
 ] as Array<IPlatform>
+
+export const browsers = [
+  { name: 'Chrome', regex: /chrome|chromium|crios/i },
+  { name: 'Firefox', regex: /firefox|fxios/i },
+  { name: 'Safari', regex: /safari/i },
+  { name: 'Opera', regex: /opr\//i },
+  { name: 'Edge', regex: /edg/i },
+] as Array<IBrowser>
 
 export const mobileOperationsRegex =
   /iphone|ipad|ipod|android|blackberry|opera mini|iemobile/i as RegExp

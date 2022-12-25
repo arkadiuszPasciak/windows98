@@ -97,9 +97,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
           >
             Browser:
           </h3>
-          <p>
-            ... here will be system name
-          </p>
+          <p />
         </div>
         <div
           class="SettingsLanguages content-tab"

@@ -23,8 +23,6 @@ exports[`[SettingsBundle]<Snapshots>(SettingsGeneral) > renders correctly compon
   >
     Browser:
   </h3>
-  <p>
-    ... here will be system name
-  </p>
+  <p />
 </div>
 `;

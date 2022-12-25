@@ -7,21 +7,23 @@
     <p>{{ operatingSystem }}</p>
 
     <h3 class="title">{{ t('Settings.browser') }}:</h3>
-    <p>... here will be system name</p>
+    <p>{{ browserName }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import {
-    checkTypeDevice,
+    getBrowserName,
+    getTypeDevice,
     getOperatingSystem,
   } from '@Bundles/NavigatorBundle/Services/Navigator.services'
 
   const { t } = useI18n()
 
-  const deviceType = checkTypeDevice(window)
+  const deviceType = getTypeDevice(window)
   const operatingSystem = getOperatingSystem(window)
+  const browserName = getBrowserName(window)
 </script>
 
 <i18n src="@Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>
