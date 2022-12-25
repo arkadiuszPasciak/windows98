@@ -21,9 +21,11 @@
 
   const { t } = useI18n()
 
-  const deviceType = getTypeDevice(window)
-  const operatingSystem = getOperatingSystem(window)
-  const browserName = getBrowserName(window)
+  const userAgent = window.navigator.userAgent ?? null
+
+  const deviceType = getTypeDevice(userAgent)
+  const operatingSystem = getOperatingSystem(userAgent)
+  const browserName = getBrowserName(userAgent)
 </script>
 
 <i18n src="@Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>

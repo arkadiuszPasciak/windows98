@@ -12,9 +12,7 @@ import {
 } from '@Bundles/NavigatorBundle/Supports/Navigator.supports'
 import { Nullable } from 'vitest'
 
-export function getOperatingSystem(window: Window): Nullable<TAllPlatforms> {
-  const userAgent = window.navigator.userAgent ?? null
-
+export function getOperatingSystem(userAgent: string): Nullable<TAllPlatforms> {
   if (!userAgent || !operationSystems) {
     return null
   }
@@ -30,9 +28,7 @@ export function getOperatingSystem(window: Window): Nullable<TAllPlatforms> {
   return null
 }
 
-export function getBrowserName(window: Window): Nullable<TBrowsers> {
-  const userAgent = window.navigator.userAgent ?? null
-
+export function getBrowserName(userAgent: string): Nullable<TBrowsers> {
   if (!userAgent || !browsers) {
     return null
   }
@@ -48,14 +44,17 @@ export function getBrowserName(window: Window): Nullable<TBrowsers> {
   return null
 }
 
-export function getTypeDevice(window: Window): Nullable<TDevices> {
-  if (!window || !mobileOperationsRegex) {
+export function getTypeDevice(userAgent: string): Nullable<TDevices> {
+  if (!userAgent || !mobileOperationsRegex) {
     return null
   }
 
   const isMobile = mobileOperationsRegex.test(
     window.navigator.userAgent.toLowerCase(),
   )
+
+  console.log(userAgent)
+  console.log(isMobile)
 
   return isMobile ? 'mobile' : 'desktop'
 }
