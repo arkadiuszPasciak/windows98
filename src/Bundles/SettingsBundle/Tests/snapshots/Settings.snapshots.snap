@@ -60,6 +60,13 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
         >
           General
         </button>
+        <button
+          class="tab"
+          data-v-39833990=""
+          type="button"
+        >
+          Languages
+        </button>
         
       </div>
       <div
@@ -69,6 +76,33 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
         
         <div
           class="SettingsGeneral content-tab active"
+          data-v-39833990=""
+        >
+          <h3
+            class="title"
+          >
+            Device:
+          </h3>
+          <p>
+            Mobile
+          </p>
+          <h3
+            class="title"
+          >
+            Operation system:
+          </h3>
+          <p />
+          <h3
+            class="title"
+          >
+            Browser:
+          </h3>
+          <p>
+            ... here will be system name
+          </p>
+        </div>
+        <div
+          class="SettingsLanguages content-tab"
           data-v-39833990=""
         >
           <select

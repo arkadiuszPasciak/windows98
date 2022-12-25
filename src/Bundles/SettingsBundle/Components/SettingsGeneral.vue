@@ -1,7 +1,7 @@
 <template>
   <div class="SettingsGeneral">
     <h3 class="title">{{ t('Settings.device') }}:</h3>
-    <p>{{ t(`Settings.${deviceType}`) }}</p>
+    <p>{{ t(`Settings.mobile`) }}</p>
 
     <h3 class="title">{{ t('Settings.operation-system') }}:</h3>
     <p>{{ operatingSystem }}</p>
@@ -13,16 +13,11 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import {
-    getOperatingSystem,
-    getDeviceType,
-  } from '@Bundles/NavigatorBundle/Services/Navigator.services'
+  import { getOperatingSystem } from '@Bundles/NavigatorBundle/Services/Navigator.services'
 
   const { t } = useI18n()
 
   const operatingSystem = getOperatingSystem(window)
-
-  const deviceType = getDeviceType(window)
 </script>
 
 <i18n src="@Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>

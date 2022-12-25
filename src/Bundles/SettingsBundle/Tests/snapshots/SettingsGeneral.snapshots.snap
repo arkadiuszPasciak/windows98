@@ -4,29 +4,27 @@ exports[`[SettingsBundle]<Snapshots>(SettingsGeneral) > renders correctly compon
 <div
   class="SettingsGeneral"
 >
-  <select
-    class="UISelect variant-undefined LanguageSwitcher"
-    data-v-56cc1592=""
-    data-v-d3c68ad1=""
-    id="languages-option"
-    name="languages-option"
+  <h3
+    class="title"
   >
-    
-    <option
-      class="option"
-      data-v-d3c68ad1=""
-      value="en"
-    >
-      English
-    </option>
-    <option
-      class="option"
-      data-v-d3c68ad1=""
-      value="pl"
-    >
-      Polish
-    </option>
-    
-  </select>
+    Device:
+  </h3>
+  <p>
+    Mobile
+  </p>
+  <h3
+    class="title"
+  >
+    Operation system:
+  </h3>
+  <p />
+  <h3
+    class="title"
+  >
+    Browser:
+  </h3>
+  <p>
+    ... here will be system name
+  </p>
 </div>
 `;
