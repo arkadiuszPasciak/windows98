@@ -30,3 +30,6 @@ export const operationSystems = [
   { name: 'BeOS', regex: /BeOS/ },
   { name: 'OS/2', regex: /OS\/2/ },
 ] as Array<IPlatform>
+
+export const mobileOperationsRegex =
+  /iphone|ipad|ipod|android|blackberry|opera mini|iemobile/i as RegExp

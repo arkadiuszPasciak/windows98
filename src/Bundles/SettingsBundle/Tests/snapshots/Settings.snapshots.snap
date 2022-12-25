@@ -84,7 +84,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
             Device:
           </h3>
           <p>
-            Mobile
+            Desktop
           </p>
           <h3
             class="title"
