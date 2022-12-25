@@ -49,12 +49,7 @@ export function getTypeDevice(userAgent: string): Nullable<TDevices> {
     return null
   }
 
-  const isMobile = mobileOperationsRegex.test(
-    window.navigator.userAgent.toLowerCase(),
-  )
-
-  console.log(userAgent)
-  console.log(isMobile)
+  const isMobile = mobileOperationsRegex.test(userAgent.toLowerCase())
 
   return isMobile ? 'mobile' : 'desktop'
 }
