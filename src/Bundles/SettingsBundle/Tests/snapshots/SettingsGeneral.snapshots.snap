@@ -5,9 +5,10 @@ exports[`[SettingsBundle]<Snapshots>(SettingsGeneral) > renders correctly compon
   class="SettingsGeneral"
   data-v-40e21cf7=""
 >
-  <div
+  <img
     class="image"
     data-v-40e21cf7=""
+    src="icons/windows-settings.svg"
   />
   <h3
     class="title"
