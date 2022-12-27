@@ -3,26 +3,47 @@
 exports[`[SettingsBundle]<Snapshots>(SettingsGeneral) > renders correctly component 1`] = `
 <div
   class="SettingsGeneral"
+  data-v-40e21cf7=""
 >
+  <div
+    class="image"
+    data-v-40e21cf7=""
+  />
   <h3
     class="title"
+    data-v-40e21cf7=""
   >
     Device:
   </h3>
-  <p>
+  <p
+    class="text"
+    data-v-40e21cf7=""
+  >
     Desktop
   </p>
   <h3
     class="title"
+    data-v-40e21cf7=""
   >
     Operation system:
   </h3>
-  <p />
+  <p
+    class="text"
+    data-v-40e21cf7=""
+  >
+    undefined
+  </p>
   <h3
     class="title"
+    data-v-40e21cf7=""
   >
     Browser:
   </h3>
-  <p />
+  <p
+    class="text"
+    data-v-40e21cf7=""
+  >
+    undefined
+  </p>
 </div>
 `;

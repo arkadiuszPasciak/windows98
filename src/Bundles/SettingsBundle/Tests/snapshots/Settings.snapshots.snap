@@ -77,27 +77,48 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
         <div
           class="SettingsGeneral content-tab active"
           data-v-39833990=""
+          data-v-40e21cf7=""
         >
+          <div
+            class="image"
+            data-v-40e21cf7=""
+          />
           <h3
             class="title"
+            data-v-40e21cf7=""
           >
             Device:
           </h3>
-          <p>
+          <p
+            class="text"
+            data-v-40e21cf7=""
+          >
             Desktop
           </p>
           <h3
             class="title"
+            data-v-40e21cf7=""
           >
             Operation system:
           </h3>
-          <p />
+          <p
+            class="text"
+            data-v-40e21cf7=""
+          >
+            undefined
+          </p>
           <h3
             class="title"
+            data-v-40e21cf7=""
           >
             Browser:
           </h3>
-          <p />
+          <p
+            class="text"
+            data-v-40e21cf7=""
+          >
+            undefined
+          </p>
         </div>
         <div
           class="SettingsLanguages content-tab"

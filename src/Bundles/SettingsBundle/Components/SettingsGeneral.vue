@@ -1,13 +1,16 @@
 <template>
   <div class="SettingsGeneral">
+    <div class="image"></div>
     <h3 class="title">{{ t('Settings.device') }}:</h3>
-    <p>{{ t(`Settings.${deviceType}`) }}</p>
+    <p class="text">
+      {{ deviceType ? t(`Settings.${deviceType}`) : 'undefined' }}
+    </p>
 
     <h3 class="title">{{ t('Settings.operation-system') }}:</h3>
-    <p>{{ operatingSystem }}</p>
+    <p class="text">{{ operatingSystem ?? 'undefined' }}</p>
 
     <h3 class="title">{{ t('Settings.browser') }}:</h3>
-    <p>{{ browserName }}</p>
+    <p class="text">{{ browserName ?? 'undefined' }}</p>
   </div>
 </template>
 
@@ -30,4 +33,6 @@
 
 <i18n src="@Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  @import '@Bundles/SettingsBundle/Styles/SettingsGeneral.styles.scss';
+</style>
