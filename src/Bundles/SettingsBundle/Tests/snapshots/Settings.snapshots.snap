@@ -82,7 +82,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
           <img
             class="image"
             data-v-40e21cf7=""
-            src="icons/windows-settings.svg"
+            src="/icons/windows-settings.svg"
           />
           <h3
             class="title"

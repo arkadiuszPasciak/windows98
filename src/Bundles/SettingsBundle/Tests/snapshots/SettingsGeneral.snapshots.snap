@@ -8,7 +8,7 @@ exports[`[SettingsBundle]<Snapshots>(SettingsGeneral) > renders correctly compon
   <img
     class="image"
     data-v-40e21cf7=""
-    src="icons/windows-settings.svg"
+    src="/icons/windows-settings.svg"
   />
   <h3
     class="title"

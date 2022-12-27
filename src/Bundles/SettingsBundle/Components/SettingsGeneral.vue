@@ -1,6 +1,6 @@
 <template>
   <div class="SettingsGeneral">
-    <img class="image" src="icons/windows-settings.svg" />
+    <img class="image" src="/icons/windows-settings.svg" />
     <h3 class="title">{{ t('Settings.device') }}:</h3>
     <p class="text">
       {{ deviceType ? t(`Settings.${deviceType}`) : 'undefined' }}
