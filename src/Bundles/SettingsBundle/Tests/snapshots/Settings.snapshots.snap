@@ -60,6 +60,13 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
         >
           General
         </button>
+        <button
+          class="tab"
+          data-v-39833990=""
+          type="button"
+        >
+          Languages
+        </button>
         
       </div>
       <div
@@ -69,6 +76,53 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
         
         <div
           class="SettingsGeneral content-tab active"
+          data-v-39833990=""
+          data-v-40e21cf7=""
+        >
+          <img
+            class="image"
+            data-v-40e21cf7=""
+            src="/icons/windows-settings.svg"
+          />
+          <h3
+            class="title"
+            data-v-40e21cf7=""
+          >
+            Device:
+          </h3>
+          <p
+            class="text"
+            data-v-40e21cf7=""
+          >
+            Desktop
+          </p>
+          <h3
+            class="title"
+            data-v-40e21cf7=""
+          >
+            Operation system:
+          </h3>
+          <p
+            class="text"
+            data-v-40e21cf7=""
+          >
+            undefined
+          </p>
+          <h3
+            class="title"
+            data-v-40e21cf7=""
+          >
+            Browser:
+          </h3>
+          <p
+            class="text"
+            data-v-40e21cf7=""
+          >
+            undefined
+          </p>
+        </div>
+        <div
+          class="SettingsLanguages content-tab"
           data-v-39833990=""
         >
           <select

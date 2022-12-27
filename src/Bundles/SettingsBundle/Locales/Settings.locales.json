@@ -1,10 +1,22 @@
 {
   "en": {
+    "Settings.browser": "Browser",
+    "Settings.desktop": "Desktop",
+    "Settings.device": "Device",
     "Settings.general": "General",
+    "Settings.languages": "Languages",
+    "Settings.mobile": "Mobile",
+    "Settings.operation-system": "Operation system",
     "Settings.title": "Settings"
   },
   "pl": {
+    "Settings.browser": "Przeglądarka",
+    "Settings.desktop": "Pulpit",
+    "Settings.device": "Urządzenie",
     "Settings.general": "Ogólne",
+    "Settings.languages": "Języki",
+    "Settings.mobile": "Mobilny",
+    "Settings.operation-system": "System operacyjny",
     "Settings.title": "Ustawienia"
   }
 }

@@ -3,30 +3,48 @@
 exports[`[SettingsBundle]<Snapshots>(SettingsGeneral) > renders correctly component 1`] = `
 <div
   class="SettingsGeneral"
+  data-v-40e21cf7=""
 >
-  <select
-    class="UISelect variant-undefined LanguageSwitcher"
-    data-v-56cc1592=""
-    data-v-d3c68ad1=""
-    id="languages-option"
-    name="languages-option"
+  <img
+    class="image"
+    data-v-40e21cf7=""
+    src="/icons/windows-settings.svg"
+  />
+  <h3
+    class="title"
+    data-v-40e21cf7=""
   >
-    
-    <option
-      class="option"
-      data-v-d3c68ad1=""
-      value="en"
-    >
-      English
-    </option>
-    <option
-      class="option"
-      data-v-d3c68ad1=""
-      value="pl"
-    >
-      Polish
-    </option>
-    
-  </select>
+    Device:
+  </h3>
+  <p
+    class="text"
+    data-v-40e21cf7=""
+  >
+    Desktop
+  </p>
+  <h3
+    class="title"
+    data-v-40e21cf7=""
+  >
+    Operation system:
+  </h3>
+  <p
+    class="text"
+    data-v-40e21cf7=""
+  >
+    undefined
+  </p>
+  <h3
+    class="title"
+    data-v-40e21cf7=""
+  >
+    Browser:
+  </h3>
+  <p
+    class="text"
+    data-v-40e21cf7=""
+  >
+    undefined
+  </p>
 </div>
 `;
