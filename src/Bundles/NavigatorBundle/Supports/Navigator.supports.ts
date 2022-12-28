@@ -1,3 +1,5 @@
+import { Nullable } from 'vitest'
+
 export type TLinuxPlatforms = 'Linux x86_64' | 'Linux armv7l' | 'Linux armv8l'
 
 export type TMacOSPlatforms = 'Mac OS X' | 'Mac OS'
@@ -48,4 +50,18 @@ export interface IBrowser {
 export interface IPlatform {
   name: TAllPlatforms
   regex: RegExp
+}
+
+export interface IDevices {
+  name: TDevices
+  regex: RegExp
+}
+
+export interface IUserAgent {
+  browserNames: Array<IBrowser>
+  devicesNames: Array<IDevices>
+  operationSystems: Array<IPlatform>
+  getBrowserName(userAgent: string): Nullable<TBrowsers>
+  getOperatingSystem(userAgent: string): Nullable<TAllPlatforms>
+  getTypeDevice(userAgent: string): Nullable<TDevices>
 }
