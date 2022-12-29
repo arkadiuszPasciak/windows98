@@ -1,6 +1,7 @@
 import {
   IPlatform,
   IBrowser,
+  IDevices,
 } from '@Bundles/NavigatorBundle/Supports/Navigator.supports'
 
 export const operationSystems = [
@@ -34,7 +35,7 @@ export const operationSystems = [
   { name: 'OS/2', regex: /OS\/2/ },
 ] as Array<IPlatform>
 
-export const browsers = [
+export const browserNames = [
   { name: 'Chrome', regex: /chrome|chromium|crios/i },
   { name: 'Firefox', regex: /firefox|fxios/i },
   { name: 'Safari', regex: /safari/i },
@@ -42,5 +43,13 @@ export const browsers = [
   { name: 'Edge', regex: /edg/i },
 ] as Array<IBrowser>
 
-export const mobileOperationsRegex =
-  /iphone|ipad|ipod|android|blackberry|opera mini|iemobile/i as RegExp
+export const devicesNames = [
+  {
+    name: 'mobile',
+    regex: /iphone|ipad|ipod|android|blackberry|opera mini|iemobile/i,
+  },
+  {
+    name: 'desktop',
+    regex: /Win|Windows|OpenBSD|SunOS|Linux|X11|Mac|Mac OS X/i,
+  },
+] as Array<IDevices>

@@ -26,7 +26,7 @@ My sandbox to improve my programming skills based on Windows 98
 - 🐛 [Helps you find and fix problems with your JavaScript (Eslint)](https://eslint.org/)
 - 🖌 [Helps you find and fix problems with your SCSS (Stylelint)](https://stylelint.io/)
 - 🖨 [Takes your code and reprints to coding standards (Prettier)](https://prettier.io/)
-- 📦 [Ppgrades your package.json dependencies to the latest versions (npm-check-updates)](https://github.com/raineorshine/npm-check-updates)
+- 📦 [Upgrades your package.json dependencies to the latest versions (npm-check-updates)](https://github.com/raineorshine/npm-check-updates)
 
 ## Quick Start
 
