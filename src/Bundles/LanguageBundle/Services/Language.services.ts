@@ -11,3 +11,7 @@ export function mountLanguageVersionByStorage(): Nullable<string> {
 
   return LocalStorage.getItem(localStorageNames.LANGUAGE)
 }
+
+export function setLanguageVersionInStorage(language: string): void {
+  LocalStorage.setItem(localStorageNames.LANGUAGE, language)
+}
