@@ -1,6 +1,6 @@
 import { Nullable } from 'vitest'
 
-export type TStorageName = 'languages' | 'theme'
+export type TStorageName = 'language' | 'theme'
 
 export interface IBaseStorage {
   storage: Storage
@@ -9,4 +9,9 @@ export interface IBaseStorage {
   isItemExist(name: TStorageName): boolean
   removeItem(name: TStorageName): void
   setItem(name: TStorageName, value: string): void
+}
+
+export interface ILocalStorageNames {
+  LANGUAGE: TStorageName
+  THEME: TStorageName
 }
