@@ -1,6 +1,6 @@
 <template>
   <UISelect
-    id="languages-option"
+    id="languages"
     :model-value="$i18n.locale"
     class="LanguageSwitcher"
     :options="languagesOptions"

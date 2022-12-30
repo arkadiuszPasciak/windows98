@@ -5,8 +5,8 @@ exports[`[LanguageBundle]<Snapshots>(LanguageSwitcher) > renders correctly compo
   class="UISelect variant-undefined LanguageSwitcher"
   data-v-56cc1592=""
   data-v-d3c68ad1=""
-  id="languages-option"
-  name="languages-option"
+  id="languages"
+  name="languages"
 >
   
   <option
