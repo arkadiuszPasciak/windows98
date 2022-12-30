@@ -9,9 +9,31 @@ export function mountLanguageVersionByStorage(): Nullable<string> {
     return null
   }
 
+  const language = LocalStorage.getItem(localStorageNames.LANGUAGE)
+
+  if (!language) {
+    return null
+  }
+
+  updateLangAttribute(language)
+
   return LocalStorage.getItem(localStorageNames.LANGUAGE)
 }
 
 export function setLanguageVersionInStorage(language: string): void {
   LocalStorage.setItem(localStorageNames.LANGUAGE, language)
+}
+
+export function updateLangAttribute(language: string): void {
+  if (!document || !language) {
+    return
+  }
+
+  const element = document.querySelector('html')
+
+  if (!element) {
+    return
+  }
+
+  element.setAttribute('lang', language)
 }
