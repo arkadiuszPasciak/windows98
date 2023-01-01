@@ -1,7 +1,7 @@
 <template>
   <UISelect
     id="themes"
-    model-value="dark"
+    :model-value="themeValue"
     class="ThemeSwitcher"
     :options="themeOptions"
     @update:model-value="update($event)"
@@ -14,8 +14,11 @@
   import {
     updateThemeClass,
     setThemeColorInStorage,
+    getThemeColorFromStorage,
   } from '@Bundles/ThemeBundle/Services/Theme.services'
   import { TThemes } from '@Bundles/ThemeBundle/Supports/Theme.supports'
+
+  const themeValue = getThemeColorFromStorage()
 
   const update = (event: TThemes) => {
     updateThemeClass(event)

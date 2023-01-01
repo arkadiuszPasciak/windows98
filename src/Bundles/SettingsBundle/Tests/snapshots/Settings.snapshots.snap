@@ -160,16 +160,16 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
             <option
               class="option"
               data-v-d3c68ad1=""
-              value="dark"
+              value="light"
             >
-              Dark
+              Light
             </option>
             <option
               class="option"
               data-v-d3c68ad1=""
-              value="light"
+              value="dark"
             >
-              Light
+              Dark
             </option>
             
           </select>
