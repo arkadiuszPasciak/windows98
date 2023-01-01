@@ -6,6 +6,8 @@ export function mountLanguageVersionByStorage(): Nullable<string> {
   const isExist = LocalStorage.isItemExist(localStorageNames.LANGUAGE)
 
   if (!isExist) {
+    updateLangAttribute('en')
+
     return null
   }
 

@@ -3,7 +3,7 @@ export enum EThemes {
   LIGHT = 'light',
 }
 
-type TThemes = EThemes.DARK | EThemes.LIGHT
+export type TThemes = EThemes.DARK | EThemes.LIGHT
 
 export interface IThemeOptions {
   value: TThemes
