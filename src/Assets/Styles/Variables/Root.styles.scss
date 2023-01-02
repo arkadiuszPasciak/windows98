@@ -1,0 +1,15 @@
+:root.theme-light {
+  --background-color: #{$cl-greyC0};
+  --box-shadow-raised: #{$border-raised-outer}, #{$border-raised-inner};
+  --box-shadow-sunken: #{$border-sunken-outer}, #{$border-sunken-inner};
+  --text-color: #{$cl-black22};
+}
+
+:root.theme-dark {
+  --background-color: #{$cl-grey3b};
+  --box-shadow-raised: #{$border-raised-outer-dark},
+    #{$border-raised-inner-dark};
+  --box-shadow-sunken: #{$border-sunken-outer-dark},
+    #{$border-sunken-inner-dark};
+  --text-color: #{$cl-grey9b};
+}

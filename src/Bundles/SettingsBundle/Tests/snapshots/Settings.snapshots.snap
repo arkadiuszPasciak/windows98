@@ -22,7 +22,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
         Settings
       </h3>
       <button
-        class="UIButton variant-primary size-small button-close"
+        class="UIButton size-small button-close"
         data-v-99a75817=""
         data-v-cf1bb3a9=""
         type="button"

@@ -6,7 +6,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component after cli
   data-v-6d095ed5=""
 >
   <button
-    class="UIButton variant-primary size-medium button-start"
+    class="UIButton size-medium button-start"
     data-v-6d095ed5=""
     data-v-cf1bb3a9=""
     type="button"
@@ -416,7 +416,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before cl
   data-v-6d095ed5=""
 >
   <button
-    class="UIButton variant-primary size-medium button-start"
+    class="UIButton size-medium button-start"
     data-v-6d095ed5=""
     data-v-cf1bb3a9=""
     type="button"

@@ -2,9 +2,10 @@
 
 exports[`[UIBundle]<Snapshots>(UIButton) > renders correctly component: size medium and variant primary 1`] = `
 <button
-  class="UIButton variant-primary size-medium"
+  class="UIButton size-medium"
   data-v-cf1bb3a9=""
   type="button"
+  variant="primary"
 >
   
   
@@ -18,9 +19,10 @@ exports[`[UIBundle]<Snapshots>(UIButton) > renders correctly component: size med
 
 exports[`[UIBundle]<Snapshots>(UIButton) > renders correctly component: size small and variant primary 1`] = `
 <button
-  class="UIButton variant-primary size-small"
+  class="UIButton size-small"
   data-v-cf1bb3a9=""
   type="button"
+  variant="primary"
 >
   
   
