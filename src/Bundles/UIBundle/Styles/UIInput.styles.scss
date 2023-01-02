@@ -2,16 +2,7 @@
   .input,
   .label {
     @include font('medium', 11, 14);
-  }
-
-  .input {
-    padding: 3px 4px;
-    height: 21px;
-    width: 100%;
-
-    &:focus {
-      outline: none;
-    }
+    color: var(--text-color);
   }
 
   &.label-position-left {
@@ -34,27 +25,27 @@
     }
   }
 
-  &.variant-primary {
-    .input,
-    .label {
-      color: $cl-black22;
+  .input {
+    padding: 3px 4px;
+    height: 21px;
+    width: 100%;
+    box-shadow: var(--border-field);
+    background-color: var(--background-color);
+
+    &:focus {
+      outline: none;
     }
 
-    .input {
-      box-shadow: $border-field-inner, $border-field-outer;
-      background-color: $cl-white;
+    &:disabled,
+    &:read-only {
+      background-color: var(--background-color);
+    }
 
-      &:disabled,
-      &:read-only {
-        background-color: $cl-greyC0;
-      }
-
-      &:disabled,
-      &:disabled + .label,
-      &[readonly],
-      &[readonly] + .label {
-        color: $cl-grey80;
-      }
+    &:disabled,
+    &:disabled + .label,
+    &[readonly],
+    &[readonly] + .label {
+      opacity: 0.8;
     }
   }
 }

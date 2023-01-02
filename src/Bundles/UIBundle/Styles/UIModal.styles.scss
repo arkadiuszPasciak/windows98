@@ -22,7 +22,7 @@
 
   &.variant-primary {
     .container {
-      background-color: $cl-greyC0;
+      background-color: var(--background-color);
       box-shadow: $border-raised-outer, $border-raised-inner;
     }
 

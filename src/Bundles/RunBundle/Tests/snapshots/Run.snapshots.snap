@@ -67,7 +67,7 @@ exports[`[RunBundle]<Snapshots>(Run) > renders correctly component 1`] = `
         
       </p>
       <div
-        class="UIInput variant-primary label-position-left input"
+        class="UIInput label-position-left input"
         data-v-00dd9280=""
         data-v-e394574e=""
       >

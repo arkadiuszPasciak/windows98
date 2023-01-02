@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="UIInput"
-    :class="`variant-${variant} label-position-${labelPosition}`"
-  >
+  <div class="UIInput" :class="`label-position-${labelPosition}`">
     <label class="label" :for="id">{{ labelName }}</label>
     <input
       :id="id"
@@ -22,10 +19,6 @@
   import { PropType } from 'vue'
 
   defineProps({
-    variant: {
-      type: String as PropType<'primary'>,
-      defaut: 'primary',
-    },
     type: {
       type: String as PropType<'text' | 'password' | 'email'>,
       default: 'text',
