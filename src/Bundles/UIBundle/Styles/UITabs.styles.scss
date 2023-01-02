@@ -4,7 +4,6 @@
 
   .tab {
     padding: 5px;
-    box-shadow: $border-raised-outer, $border-raised-inner;
     @include font('medium', 10, 10);
 
     &.active {
@@ -17,8 +16,13 @@
     position: relative;
     z-index: 2;
     top: -2px;
-    box-shadow: $border-raised-outer, $border-raised-inner;
     height: calc(100% - 21px);
+  }
+
+  .tab,
+  .content {
+    box-shadow: var(--box-shadow-raised);
+    color: var(--text-color);
   }
 
   .content-tab {

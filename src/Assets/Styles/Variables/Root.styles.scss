@@ -1,5 +1,6 @@
 :root.theme-light {
   --background-color: #{$cl-greyC0};
+  --background-color-white: #{$cl-white};
   --border-field: #{$border-field-inner}, #{$border-field-outer};
   --box-shadow-raised: #{$border-raised-outer}, #{$border-raised-inner};
   --box-shadow-sunken: #{$border-sunken-outer}, #{$border-sunken-inner};
@@ -8,6 +9,7 @@
 
 :root.theme-dark {
   --background-color: #{$cl-grey3b};
+  --background-color-white: #{$cl-grey3b};
   --border-field: #{$border-field-inner-dark}, #{$border-field-outer-dark};
   --box-shadow-raised: #{$border-raised-outer-dark},
     #{$border-raised-inner-dark};
