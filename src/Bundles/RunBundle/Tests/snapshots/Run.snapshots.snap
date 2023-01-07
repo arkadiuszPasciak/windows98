@@ -2,7 +2,7 @@
 
 exports[`[RunBundle]<Snapshots>(Run) > renders correctly component 1`] = `
 <div
-  class="UIModal variant-primary move-window Run"
+  class="UIModal move-window Run"
   data-v-00dd9280=""
   data-v-99a75817=""
 >
@@ -23,7 +23,7 @@ exports[`[RunBundle]<Snapshots>(Run) > renders correctly component 1`] = `
         Run
       </h3>
       <button
-        class="UIButton variant-primary size-small button-close"
+        class="UIButton size-small button-close"
         data-v-99a75817=""
         data-v-cf1bb3a9=""
         type="button"
@@ -67,7 +67,7 @@ exports[`[RunBundle]<Snapshots>(Run) > renders correctly component 1`] = `
         
       </p>
       <div
-        class="UIInput variant-primary label-position-left input"
+        class="UIInput label-position-left input"
         data-v-00dd9280=""
         data-v-e394574e=""
       >
@@ -86,7 +86,7 @@ exports[`[RunBundle]<Snapshots>(Run) > renders correctly component 1`] = `
         />
       </div>
       <button
-        class="UIButton variant-primary size-medium button is-ok"
+        class="UIButton size-medium button is-ok"
         data-v-00dd9280=""
         data-v-cf1bb3a9=""
         type="button"
@@ -100,7 +100,7 @@ exports[`[RunBundle]<Snapshots>(Run) > renders correctly component 1`] = `
         
       </button>
       <button
-        class="UIButton variant-primary size-medium button is-cancel"
+        class="UIButton size-medium button is-cancel"
         data-v-00dd9280=""
         data-v-cf1bb3a9=""
         type="button"

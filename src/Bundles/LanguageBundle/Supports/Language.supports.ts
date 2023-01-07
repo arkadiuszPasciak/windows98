@@ -3,7 +3,9 @@ export enum ELanguagesLocales {
   POLISH = 'pl',
 }
 
-type TLanguagesLocal = ELanguagesLocales.ENGLISH | ELanguagesLocales.POLISH
+export type TLanguagesLocal =
+  | ELanguagesLocales.ENGLISH
+  | ELanguagesLocales.POLISH
 
 interface ILanguageLocal {
   value: TLanguagesLocal

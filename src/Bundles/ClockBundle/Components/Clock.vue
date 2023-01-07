@@ -12,7 +12,7 @@
   const store = useClockStore()
   const time = ref(store.$state.time) as Ref<Nullable<string>>
 
-  const updateTime = () => {
+  const updateTime = (): void => {
     store.updateTime()
 
     if (time.value !== store.$state.time) {

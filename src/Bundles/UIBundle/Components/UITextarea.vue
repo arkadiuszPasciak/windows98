@@ -18,10 +18,6 @@
   import { PropType } from 'vue'
 
   const props = defineProps({
-    variant: {
-      type: String as PropType<'primary'>,
-      default: 'primary',
-    },
     type: {
       type: String as PropType<'basic' | 'notepad'>,
       default: 'basic',
@@ -55,7 +51,7 @@
   defineEmits(['update:modelValue'])
 
   const classes = [
-    `variant-${props.variant} label-position-${props.labelPosition}`,
+    `label-position-${props.labelPosition}`,
     `${props.type === 'notepad' ? 'type-notepad' : ''}`,
   ] as Array<string>
 </script>

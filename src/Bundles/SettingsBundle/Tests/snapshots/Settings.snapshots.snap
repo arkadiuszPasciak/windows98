@@ -2,7 +2,7 @@
 
 exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`] = `
 <div
-  class="UIModal variant-primary move-window Settings"
+  class="UIModal move-window Settings"
   data-v-99a75817=""
 >
   <div
@@ -22,7 +22,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
         Settings
       </h3>
       <button
-        class="UIButton variant-primary size-small button-close"
+        class="UIButton size-small button-close"
         data-v-99a75817=""
         data-v-cf1bb3a9=""
         type="button"
@@ -129,8 +129,8 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
             class="UISelect variant-undefined LanguageSwitcher"
             data-v-56cc1592=""
             data-v-d3c68ad1=""
-            id="languages-option"
-            name="languages-option"
+            id="languages"
+            name="languages"
           >
             
             <option
@@ -146,6 +146,30 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               value="pl"
             >
               Polish
+            </option>
+            
+          </select>
+          <select
+            class="UISelect variant-undefined ThemeSwitcher"
+            data-v-6a01b610=""
+            data-v-d3c68ad1=""
+            id="themes"
+            name="themes"
+          >
+            
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="light"
+            >
+              Light
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="dark"
+            >
+              Dark
             </option>
             
           </select>

@@ -2,7 +2,7 @@
 
 exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] = `
 <div
-  class="UIModal variant-primary resize-window move-window Notepad"
+  class="UIModal resize-window move-window Notepad"
   data-v-7632fb2e=""
   data-v-99a75817=""
 >
@@ -23,7 +23,7 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
         Notepad
       </h3>
       <button
-        class="UIButton variant-primary size-small button-close"
+        class="UIButton size-small button-close"
         data-v-99a75817=""
         data-v-cf1bb3a9=""
         type="button"
@@ -50,7 +50,7 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
       data-v-7632fb2e=""
     >
       <div
-        class="UITextarea variant-primary label-position-top type-notepad textarea"
+        class="UITextarea label-position-top type-notepad textarea"
         data-v-7632fb2e=""
         data-v-cbf41378=""
         resize-window="true"

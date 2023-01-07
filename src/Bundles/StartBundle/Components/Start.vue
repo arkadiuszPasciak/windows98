@@ -90,7 +90,7 @@
 
   const primaryPanelStatus: Ref<boolean> = ref(false)
 
-  const togglePrimaryPanel = () => {
+  const togglePrimaryPanel = (): void => {
     if (apps) {
       primaryPanelStatus.value = !primaryPanelStatus.value
     }

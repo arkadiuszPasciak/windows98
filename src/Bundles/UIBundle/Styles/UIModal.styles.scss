@@ -6,6 +6,8 @@
     max-width: 100%;
     max-height: 100%;
     margin: auto;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow-raised);
   }
 
   .header {
@@ -14,22 +16,12 @@
     align-items: center;
     height: 20px;
     padding: 3px 2px 3px 3px;
+    color: var(--text-color-2);
+    background: var(--background-color-modal-header);
   }
 
   .title {
     @include font('bold', 11, 13);
-  }
-
-  &.variant-primary {
-    .container {
-      background-color: $cl-greyC0;
-      box-shadow: $border-raised-outer, $border-raised-inner;
-    }
-
-    .header {
-      color: $cl-white;
-      background: linear-gradient(90deg, $cl-blue000, $cl-blue10);
-    }
   }
 
   &.resize-window {

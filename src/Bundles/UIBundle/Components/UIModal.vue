@@ -36,17 +36,13 @@
 </template>
 
 <script setup lang="ts">
-  import { PropType, Ref, ref } from 'vue'
+  import { Ref, ref } from 'vue'
   import { Nullable } from 'vitest'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
   import { ICursorType } from '@Bundles/UIBundle/Supports/UIModal.supports'
 
   const props = defineProps({
-    variant: {
-      type: String as PropType<'primary'>,
-      default: 'primary',
-    },
     title: {
       type: String,
       required: true,
@@ -76,7 +72,6 @@
   const { t } = useI18n()
 
   const classes = [
-    `variant-${props.variant}`,
     `${props.resizeWindow ? 'resize-window' : ''}`,
     `${props.moveWindow ? 'move-window' : ''}`,
   ] as Array<string>

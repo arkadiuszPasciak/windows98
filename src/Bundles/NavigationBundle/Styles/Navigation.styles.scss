@@ -2,8 +2,8 @@
   display: flex;
   width: 100vw;
   height: 28px;
-  background-color: $cl-greyC0;
-  border-top: 1px solid $cl-white;
-  outline: 1px solid $cl-greyDF;
+  background-color: var(--background-color);
+  border-top: 1px solid var(--border-color-navigation);
+  outline: 1px solid var(--background-color);
   padding: 3px;
 }

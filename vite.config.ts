@@ -35,5 +35,6 @@ export default defineConfig({
         snapshotExtension
       )
     },
+    outputDiffMaxSize: 50000,
   },
 })

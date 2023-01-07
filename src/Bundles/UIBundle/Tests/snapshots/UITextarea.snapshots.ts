@@ -4,7 +4,6 @@ import UITextarea from '@Bundles/UIBundle/Components/UITextarea.vue'
 
 const leftPrimaryWrapper = mount(UITextarea, {
   props: {
-    variant: 'primary',
     id: 'email',
     modelValue: 'your email...',
     labelName: 'Email',
@@ -14,7 +13,6 @@ const leftPrimaryWrapper = mount(UITextarea, {
 
 const topPrimaryWrapper = mount(UITextarea, {
   props: {
-    variant: 'primary',
     id: 'address',
     modelValue: 'your address..',
     labelName: 'Address',
@@ -24,7 +22,6 @@ const topPrimaryWrapper = mount(UITextarea, {
 
 const notepadWrapper = mount(UITextarea, {
   props: {
-    variant: 'primary',
     id: 'notepad-textarea',
     type: 'notepad',
     modelValue: 'This is an Example!',

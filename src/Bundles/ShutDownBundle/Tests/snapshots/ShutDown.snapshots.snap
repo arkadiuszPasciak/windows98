@@ -2,7 +2,7 @@
 
 exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before click button 1`] = `
 <div
-  class="UIModal variant-primary move-window ShutDown"
+  class="UIModal move-window ShutDown"
   data-v-7ca490df=""
   data-v-99a75817=""
 >
@@ -23,7 +23,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before cl
         Shut Down Windows
       </h3>
       <button
-        class="UIButton variant-primary size-small button-close"
+        class="UIButton size-small button-close"
         data-v-99a75817=""
         data-v-cf1bb3a9=""
         type="button"
@@ -123,7 +123,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before cl
         </p>
       </label>
       <button
-        class="UIButton variant-primary size-medium button is-ok"
+        class="UIButton size-medium button is-ok"
         data-v-7ca490df=""
         data-v-cf1bb3a9=""
         type="button"
@@ -137,7 +137,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before cl
         
       </button>
       <button
-        class="UIButton variant-primary size-medium button is-cancel"
+        class="UIButton size-medium button is-cancel"
         data-v-7ca490df=""
         data-v-cf1bb3a9=""
         type="button"

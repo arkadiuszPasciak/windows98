@@ -20,7 +20,6 @@
       <UIInput
         id="run-input"
         v-model:modelValue="modelValue"
-        variant="primary"
         class="input"
         :label-name="t('RunBundle.open')"
         label-position="left"

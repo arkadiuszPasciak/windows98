@@ -2,8 +2,9 @@
 
 exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: availableWrapper like as email 1`] = `
 <div
-  class="UIInput variant-primary label-position-left"
+  class="UIInput label-position-left"
   data-v-e394574e=""
+  variant="primary"
 >
   <label
     class="label"
@@ -23,8 +24,9 @@ exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: available
 
 exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: disabledWrapper like as text 1`] = `
 <div
-  class="UIInput variant-primary label-position-top"
+  class="UIInput label-position-top"
   data-v-e394574e=""
+  variant="primary"
 >
   <label
     class="label"
@@ -45,8 +47,9 @@ exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: disabledW
 
 exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: readonlyWrapper like as password 1`] = `
 <div
-  class="UIInput variant-primary label-position-top"
+  class="UIInput label-position-top"
   data-v-e394574e=""
+  variant="primary"
 >
   <label
     class="label"

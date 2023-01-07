@@ -2,14 +2,7 @@
   .textarea,
   .label {
     @include font('medium', 11, 14);
-  }
-
-  .textarea {
-    padding: 3px 4px;
-
-    &:focus {
-      outline: none;
-    }
+    color: var(--text-color);
   }
 
   &.label-position-left {
@@ -28,6 +21,28 @@
     }
   }
 
+  .textarea {
+    padding: 3px 4px;
+    box-shadow: var(--border-field);
+    background-color: var(--background-color-white);
+
+    &:disabled,
+    &:read-only {
+      background-color: var(--background-color-white);
+    }
+
+    &:disabled,
+    &:disabled + .label,
+    &[readonly],
+    &[readonly] + .label {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
   &.type-notepad {
     .textarea {
       width: 100%;
@@ -36,30 +51,6 @@
       letter-spacing: 1px;
       padding: 5px;
       resize: none;
-    }
-  }
-
-  &.variant-primary {
-    .textarea,
-    .label {
-      color: $cl-black22;
-    }
-
-    .textarea {
-      box-shadow: $border-field-inner, $border-field-outer;
-      background-color: $cl-white;
-
-      &:disabled,
-      &:read-only {
-        background-color: $cl-greyC0;
-      }
-
-      &:disabled,
-      &:disabled + .label,
-      &[readonly],
-      &[readonly] + .label {
-        color: $cl-grey80;
-      }
     }
   }
 }
