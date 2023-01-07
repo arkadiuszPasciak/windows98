@@ -20,7 +20,7 @@
 
   const themeValue = getThemeColorFromStorage()
 
-  const update = (event: TThemes) => {
+  const update = (event: TThemes): void => {
     updateThemeClass(event)
     setThemeColorInStorage(event)
   }

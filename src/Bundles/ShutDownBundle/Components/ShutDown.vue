@@ -72,7 +72,7 @@
     programStore.updateShutDownModal(false)
   }
 
-  const triggerEvent = () => {
+  const triggerEvent = (): void => {
     if (checkedRadioBoxes.value === EShutDownRadioCheck.RESTART) {
       restartSystem(window)
     } else if (checkedRadioBoxes.value === EShutDownRadioCheck.SHUT_DOWN) {
