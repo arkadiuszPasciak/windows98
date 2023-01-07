@@ -11,6 +11,7 @@
   --box-shadow-sunken: #{$border-sunken-outer}, #{$border-sunken-inner};
   --text-color: #{$cl-black22};
   --text-color-2: #{$cl-white};
+  --border-color-navigation: #{$cl-white};
 }
 
 :root.theme-dark {
@@ -28,4 +29,5 @@
     #{$border-sunken-inner-dark};
   --text-color: #{$cl-grey9b};
   --text-color-2: #{$cl-grey9b};
+  --border-color-navigation: #{$cl-grey8b};
 }
