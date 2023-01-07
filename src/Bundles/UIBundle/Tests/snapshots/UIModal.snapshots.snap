@@ -2,7 +2,7 @@
 
 exports[`[UIBundle]<Snapshots>(UIModal) > renders correctly component 1`] = `
 <div
-  class="UIModal variant-primary move-window"
+  class="UIModal move-window"
   data-v-99a75817=""
 >
   <div

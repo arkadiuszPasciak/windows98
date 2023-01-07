@@ -2,7 +2,7 @@
 
 exports[`[CalculatorBundle]<Snapshots>(Calculator) > renders correctly component 1`] = `
 <div
-  class="UIModal variant-primary move-window Calculator"
+  class="UIModal move-window Calculator"
   data-v-99a75817=""
   data-v-a7eaed9a=""
 >

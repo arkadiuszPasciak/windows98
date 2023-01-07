@@ -1,19 +1,31 @@
 :root.theme-light {
   --background-color: #{$cl-greyC0};
   --background-color-white: #{$cl-white};
+  --background-color-modal-header: linear-gradient(
+    90deg,
+    #{$cl-blue000},
+    #{$cl-blue10}
+  );
   --border-field: #{$border-field-inner}, #{$border-field-outer};
   --box-shadow-raised: #{$border-raised-outer}, #{$border-raised-inner};
   --box-shadow-sunken: #{$border-sunken-outer}, #{$border-sunken-inner};
   --text-color: #{$cl-black22};
+  --text-color-2: #{$cl-white};
 }
 
 :root.theme-dark {
   --background-color: #{$cl-grey3b};
   --background-color-white: #{$cl-grey3b};
+  --background-color-modal-header: linear-gradient(
+    90deg,
+    #{$cl-blue33},
+    #{$cl-blue0f}
+  );
   --border-field: #{$border-field-inner-dark}, #{$border-field-outer-dark};
   --box-shadow-raised: #{$border-raised-outer-dark},
     #{$border-raised-inner-dark};
   --box-shadow-sunken: #{$border-sunken-outer-dark},
     #{$border-sunken-inner-dark};
   --text-color: #{$cl-grey9b};
+  --text-color-2: #{$cl-grey9b};
 }

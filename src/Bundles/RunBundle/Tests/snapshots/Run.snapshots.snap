@@ -2,7 +2,7 @@
 
 exports[`[RunBundle]<Snapshots>(Run) > renders correctly component 1`] = `
 <div
-  class="UIModal variant-primary move-window Run"
+  class="UIModal move-window Run"
   data-v-00dd9280=""
   data-v-99a75817=""
 >

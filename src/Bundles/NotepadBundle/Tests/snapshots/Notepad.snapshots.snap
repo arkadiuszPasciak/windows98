@@ -2,7 +2,7 @@
 
 exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] = `
 <div
-  class="UIModal variant-primary resize-window move-window Notepad"
+  class="UIModal resize-window move-window Notepad"
   data-v-7632fb2e=""
   data-v-99a75817=""
 >

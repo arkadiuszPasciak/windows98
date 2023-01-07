@@ -2,7 +2,7 @@
 
 exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`] = `
 <div
-  class="UIModal variant-primary move-window Settings"
+  class="UIModal move-window Settings"
   data-v-99a75817=""
 >
   <div
