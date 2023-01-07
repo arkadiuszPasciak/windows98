@@ -50,7 +50,7 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
       data-v-7632fb2e=""
     >
       <div
-        class="UITextarea variant-primary label-position-top type-notepad textarea"
+        class="UITextarea label-position-top type-notepad textarea"
         data-v-7632fb2e=""
         data-v-cbf41378=""
         resize-window="true"

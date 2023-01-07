@@ -30,7 +30,7 @@
     height: 21px;
     width: 100%;
     box-shadow: var(--border-field);
-    background-color: var(--background-color);
+    background-color: var(--background-color-white);
 
     &:focus {
       outline: none;
@@ -38,7 +38,7 @@
 
     &:disabled,
     &:read-only {
-      background-color: var(--background-color);
+      background-color: var(--background-color-white);
     }
 
     &:disabled,

@@ -2,7 +2,7 @@
 
 exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: leftPrimaryWrapper like as email 1`] = `
 <div
-  class="UITextarea variant-primary label-position-left"
+  class="UITextarea label-position-left"
   data-v-cbf41378=""
 >
   <label
@@ -22,7 +22,7 @@ exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: leftPr
 
 exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: notepadWrapper like as notepad 1`] = `
 <div
-  class="UITextarea variant-primary label-position-top type-notepad"
+  class="UITextarea label-position-top type-notepad"
   data-v-cbf41378=""
 >
   <label
@@ -40,7 +40,7 @@ exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: notepa
 
 exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: topPrimaryWrapper like as address 1`] = `
 <div
-  class="UITextarea variant-primary label-position-top"
+  class="UITextarea label-position-top"
   data-v-cbf41378=""
 >
   <label
