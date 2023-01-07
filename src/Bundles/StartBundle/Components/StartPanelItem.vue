@@ -10,7 +10,7 @@
       :height="size === 'medium' ? 25 : 18"
       :src="`/icons/applications/${iconName}.png`"
     />
-    <UIText>{{ t(name) }}</UIText>
+    <UIText class="name">{{ t(name) }}</UIText>
 
     <div v-if="$slots.default" class="under-panel"><slot></slot></div>
   </div>

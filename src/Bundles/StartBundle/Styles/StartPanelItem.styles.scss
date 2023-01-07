@@ -5,26 +5,26 @@
   cursor: pointer;
   padding: 5px;
 
-  &:hover {
-    @include hover {
-      background-color: $cl-blue33;
-
-      & > .name {
-        color: $cl-white;
-      }
-
-      & > .under-panel {
-        display: block;
-      }
-    }
-  }
-
   .name {
     color: $cl-black;
   }
 
   .under-panel {
     display: none;
+  }
+
+  &:hover {
+    @include hover {
+      background-color: $cl-blue33;
+
+      & > .name {
+        color: var(--text-color-2);
+      }
+
+      & > .under-panel {
+        display: block;
+      }
+    }
   }
 
   &.s-medium {
