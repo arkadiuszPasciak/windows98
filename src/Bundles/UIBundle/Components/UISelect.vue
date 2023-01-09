@@ -67,6 +67,7 @@
 
 <i18n src="@Bundles/LanguageBundle/Locales/Language.locales.json"></i18n>
 <i18n src="@Bundles/ThemeBundle/Locales/Theme.locales.json"></i18n>
+<i18n src="@Bundles/DateBundle/Locales/Date.locales.json"></i18n>
 
 <style lang="scss" scoped>
   @import '@Bundles/UIBundle/Styles/UISelect.styles.scss';

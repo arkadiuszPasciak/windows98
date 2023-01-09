@@ -1,0 +1,30 @@
+{
+  "en": {
+    "Date.january": "January",
+    "Date.february": "February",
+    "Date.march": "March",
+    "Date.april": "April",
+    "Date.may": "May",
+    "Date.june": "June",
+    "Date.july": "July",
+    "Date.august": "August",
+    "Date.september": "September",
+    "Date.october": "October",
+    "Date.november": "November",
+    "Date.december": "December"
+  },
+  "pl": {
+    "Date.january": "Styczeń",
+    "Date.february": "Luty",
+    "Date.march": "Marzec",
+    "Date.april": "Kwiecień",
+    "Date.may": "Maj",
+    "Date.june": "Czerwiec",
+    "Date.july": "Lipiec",
+    "Date.august": "Sierpień",
+    "Date.september": "Wrzesień",
+    "Date.october": "Październik",
+    "Date.november": "Listopad",
+    "Date.december": "Grudzień"
+  }
+}
