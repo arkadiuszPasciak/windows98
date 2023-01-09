@@ -4,7 +4,6 @@ exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: available
 <div
   class="UIInput label-position-left"
   data-v-e394574e=""
-  variant="primary"
 >
   <label
     class="label"
@@ -26,7 +25,6 @@ exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: disabledW
 <div
   class="UIInput label-position-top"
   data-v-e394574e=""
-  variant="primary"
 >
   <label
     class="label"
@@ -45,11 +43,27 @@ exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: disabledW
 </div>
 `;
 
+exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: numberWrapper like as number 1`] = `
+<div
+  class="UIInput"
+  data-v-e394574e=""
+>
+  <!--v-if-->
+  <input
+    class="input"
+    data-v-e394574e=""
+    id="year-switcher"
+    max="2000"
+    min="1950"
+    type="number"
+  />
+</div>
+`;
+
 exports[`[UIBundle]<Snapshots>(UIInput) > renders correctly component: readonlyWrapper like as password 1`] = `
 <div
   class="UIInput label-position-top"
   data-v-e394574e=""
-  variant="primary"
 >
   <label
     class="label"

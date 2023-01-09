@@ -1,6 +1,9 @@
 <template>
-  <div class="UIInput" :class="`label-position-${labelPosition}`">
-    <label class="label" :for="id">{{ labelName }}</label>
+  <div
+    class="UIInput"
+    :class="labelName ? `label-position-${labelPosition}` : ''"
+  >
+    <label v-if="labelName" class="label" :for="id">{{ labelName }}</label>
     <input
       :id="id"
       class="input"
@@ -8,6 +11,8 @@
       :disabled="disabled"
       :readonly="readonly"
       :value="modelValue"
+      :min="min"
+      :max="max"
       @input="
         $emit('update:modelValue', ($event.target as HTMLInputElement).value)
       "
@@ -20,7 +25,7 @@
 
   defineProps({
     type: {
-      type: String as PropType<'text' | 'password' | 'email'>,
+      type: String as PropType<'text' | 'password' | 'email' | 'number'>,
       default: 'text',
     },
     id: {
@@ -41,11 +46,21 @@
     },
     labelName: {
       type: String,
-      required: true,
+      required: false,
     },
     labelPosition: {
       type: String as PropType<'top' | 'left'>,
       default: 'top',
+    },
+    min: {
+      type: Number,
+      required: false,
+      default: undefined,
+    },
+    max: {
+      type: Number,
+      required: false,
+      default: undefined,
     },
   })
 

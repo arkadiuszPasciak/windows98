@@ -227,6 +227,21 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
             </option>
             
           </select>
+          <div
+            class="UIInput"
+            data-v-b9c2b439=""
+            data-v-e394574e=""
+          >
+            <!--v-if-->
+            <input
+              class="input"
+              data-v-e394574e=""
+              id="year-switcher"
+              max="2050"
+              min="1950"
+              type="number"
+            />
+          </div>
         </div>
         <div
           class="SettingsLanguages content-tab"
