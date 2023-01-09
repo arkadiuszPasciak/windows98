@@ -65,6 +65,13 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
           data-v-39833990=""
           type="button"
         >
+          Date & Time
+        </button>
+        <button
+          class="tab"
+          data-v-39833990=""
+          type="button"
+        >
           Languages
         </button>
         
@@ -120,6 +127,106 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
           >
             undefined
           </p>
+        </div>
+        <div
+          class="SettingsDateTime content-tab"
+          data-v-39833990=""
+          data-v-b9c2b439=""
+        >
+          <select
+            class="UISelect variant-undefined MonthSwitcher"
+            data-v-b9c2b439=""
+            data-v-d3c68ad1=""
+            id="date-months"
+            name="date-months"
+          >
+            
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="jan"
+            >
+              January
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="feb"
+            >
+              February
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="mar"
+            >
+              March
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="apr"
+            >
+              April
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="may"
+            >
+              May
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="jun"
+            >
+              June
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="jul"
+            >
+              July
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="aug"
+            >
+              August
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="sep"
+            >
+              September
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="oct"
+            >
+              October
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="nov"
+            >
+              November
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="dec"
+            >
+              December
+            </option>
+            
+          </select>
         </div>
         <div
           class="SettingsLanguages content-tab"

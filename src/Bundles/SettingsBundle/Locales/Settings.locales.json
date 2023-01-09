@@ -1,6 +1,7 @@
 {
   "en": {
     "Settings.browser": "Browser",
+    "Settings.date-time": "Date & Time",
     "Settings.desktop": "Desktop",
     "Settings.device": "Device",
     "Settings.general": "General",
@@ -11,6 +12,7 @@
   },
   "pl": {
     "Settings.browser": "Przeglądarka",
+    "Settings.date-time": "Data & Czas",
     "Settings.desktop": "Pulpit",
     "Settings.device": "Urządzenie",
     "Settings.general": "Ogólne",
