@@ -11,7 +11,14 @@
     "Date.september": "September",
     "Date.october": "October",
     "Date.november": "November",
-    "Date.december": "December"
+    "Date.december": "December",
+    "Date.shortcut-monday": "M",
+    "Date.shortcut-tuesday": "T",
+    "Date.shortcut-wednesday": "W",
+    "Date.shortcut-thursday": "T",
+    "Date.shortcut-friday": "F",
+    "Date.shortcut-saturday": "S",
+    "Date.shortcut-sunday": "S"
   },
   "pl": {
     "Date.january": "Styczeń",
@@ -25,6 +32,13 @@
     "Date.september": "Wrzesień",
     "Date.october": "Październik",
     "Date.november": "Listopad",
-    "Date.december": "Grudzień"
+    "Date.december": "Grudzień",
+    "Date.shortcut-monday": "P",
+    "Date.shortcut-tuesday": "W",
+    "Date.shortcut-wednesday": "Ś",
+    "Date.shortcut-thursday": "C",
+    "Date.shortcut-friday": "P",
+    "Date.shortcut-saturday": "S",
+    "Date.shortcut-sunday": "N"
   }
 }

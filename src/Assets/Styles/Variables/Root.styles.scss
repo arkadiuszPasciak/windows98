@@ -11,8 +11,11 @@
   --border-field: #{$border-field-inner}, #{$border-field-outer};
   --box-shadow-raised: #{$border-raised-outer}, #{$border-raised-inner};
   --box-shadow-sunken: #{$border-sunken-outer}, #{$border-sunken-inner};
+
   --text-color: #{$cl-black22};
   --text-color-2: #{$cl-white};
+  --text-color-3: #{$cl-greyb5};
+
   --border-color-navigation: #{$cl-white};
 }
 
@@ -31,7 +34,9 @@
     #{$border-raised-inner-dark};
   --box-shadow-sunken: #{$border-sunken-outer-dark},
     #{$border-sunken-inner-dark};
+
   --text-color: #{$cl-grey9b};
   --text-color-2: #{$cl-grey9b};
+  --text-color-3: #{$cl-black};
   --border-color-navigation: #{$cl-grey8b};
 }

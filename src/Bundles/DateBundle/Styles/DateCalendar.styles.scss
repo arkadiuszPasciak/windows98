@@ -1,0 +1,27 @@
+.DateCalendar {
+  width: 160px;
+  height: 145px;
+  box-shadow: var(--border-field);
+  padding: 2px;
+  @include font('medium', 12, 20);
+  text-align: center;
+  background-color: var(--background-color-white);
+
+  .heading {
+    display: grid;
+    height: 20px;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: $cl-grey80;
+    color: var(--text-color-3);
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    .content-item {
+      height: 20px;
+    }
+  }
+}
