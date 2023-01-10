@@ -134,7 +134,8 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
           data-v-b9c2b439=""
         >
           <select
-            class="UISelect variant-undefined MonthSwitcher"
+            class="UISelect variant-undefined DateMonthSwitcher"
+            data-v-4c307dbf=""
             data-v-b9c2b439=""
             data-v-d3c68ad1=""
             id="date-months"
@@ -228,7 +229,8 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
             
           </select>
           <div
-            class="UIInput"
+            class="UIInput DateYearSwitcher"
+            data-v-04f77c22=""
             data-v-b9c2b439=""
             data-v-e394574e=""
           >

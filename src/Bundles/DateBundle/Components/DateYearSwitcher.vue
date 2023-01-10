@@ -2,6 +2,7 @@
 <template>
   <UIInput
     id="year-switcher"
+    class="DateYearSwitcher"
     type="number"
     model-value="2000"
     :min="1950"
@@ -13,7 +14,6 @@
   import UIInput from '@Bundles/UIBundle/Components/UIInput.vue'
 </script>
 
-<!-- TODO set styles with design -->
-<!-- <style lang="scss" scoped>
-  @import '@Bundles/DateBundle/Styles/YearSwitcher.styles.scss';
-</style> -->
+<style lang="scss" scoped>
+  @import '@Bundles/DateBundle/Styles/DateYearSwitcher.styles.scss';
+</style>

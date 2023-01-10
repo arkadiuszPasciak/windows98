@@ -2,8 +2,8 @@
 <template>
   <UISelect
     id="date-months"
+    class="DateMonthSwitcher"
     :model-value="listOfMonths[0].value"
-    class="MonthSwitcher"
     :options="listOfMonths"
   />
 </template>
@@ -15,7 +15,6 @@
 
 <i18n src="@Bundles/DateBundle/Locales/Date.locales.json"></i18n>
 
-<!-- TODO set styles with design -->
-<!-- <style lang="scss" scoped>
-  @import '@Bundles/DateBundle/Styles/DateSwitcher.styles.scss';
-</style> -->
+<style lang="scss" scoped>
+  @import '@Bundles/DateBundle/Styles/DateMonthSwitcher.styles.scss';
+</style>
