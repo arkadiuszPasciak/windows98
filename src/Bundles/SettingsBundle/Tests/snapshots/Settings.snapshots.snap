@@ -134,10 +134,21 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
           data-v-b9c2b439=""
         >
           <div
-            class="DateSettings"
+            class="UIFrame DateSettings"
             data-v-92ee2ed7=""
             data-v-b9c2b439=""
+            data-v-ff9b8841=""
           >
+            <p
+              class="UIText title"
+              data-v-f0b878d5=""
+              data-v-ff9b8841=""
+            >
+              
+              Date
+              
+            </p>
+            
             <select
               class="UISelect variant-undefined DateMonthSwitcher"
               data-v-4c307dbf=""
@@ -521,6 +532,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
                 
               </div>
             </div>
+            
           </div>
         </div>
         <div

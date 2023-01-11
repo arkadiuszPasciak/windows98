@@ -17,6 +17,8 @@
   --text-color-3: #{$cl-greyb5};
 
   --border-color-navigation: #{$cl-white};
+  --border-color-frame-1: rgba(255, 255, 255, 0.7);
+  --border-color-frame-2: #{$cl-grey96};
 }
 
 :root.theme-dark {
@@ -38,5 +40,8 @@
   --text-color: #{$cl-grey9b};
   --text-color-2: #{$cl-grey9b};
   --text-color-3: #{$cl-black};
+
   --border-color-navigation: #{$cl-grey8b};
+  --border-color-frame-1: transparent;
+  --border-color-frame-2: #{$cl-grey96};
 }

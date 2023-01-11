@@ -18,7 +18,8 @@
     "Date.shortcut-thursday": "T",
     "Date.shortcut-friday": "F",
     "Date.shortcut-saturday": "S",
-    "Date.shortcut-sunday": "S"
+    "Date.shortcut-sunday": "S",
+    "Date.title-date": "Date"
   },
   "pl": {
     "Date.january": "Styczeń",
@@ -39,6 +40,7 @@
     "Date.shortcut-thursday": "C",
     "Date.shortcut-friday": "P",
     "Date.shortcut-saturday": "S",
-    "Date.shortcut-sunday": "N"
+    "Date.shortcut-sunday": "N",
+    "Date.title-date": "Data"
   }
 }
