@@ -1,9 +1,8 @@
-<!-- TODO add update model value @update:model-value=""  -->
 <template>
   <UISelect
     id="date-months"
     class="DateMonthSwitcher"
-    :model-value="listOfMonths[0].value"
+    :model-value="monthName ?? listOfMonths[5].value"
     :options="listOfMonths"
   />
 </template>
@@ -11,6 +10,10 @@
 <script setup lang="ts">
   import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
   import { listOfMonths } from '@Bundles/DateBundle/Mocks/Date.mocks'
+  import { getMonthName } from '@Bundles/DateBundle/Services/Date.services'
+
+  const date = new Date()
+  const monthName = getMonthName(date)
 </script>
 
 <i18n src="@Bundles/DateBundle/Locales/Date.locales.json"></i18n>
