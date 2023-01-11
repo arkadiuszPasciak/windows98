@@ -1,6 +1,29 @@
 import { expect, it, describe } from 'vitest'
-import { getMonthName } from '@Bundles/DateBundle/Services/Date.services'
+import {
+  getFullYear,
+  getMonthName,
+} from '@Bundles/DateBundle/Services/Date.services'
 import { EMonths } from '@Bundles/DateBundle/Supports/Date.supports'
+
+describe('[DateBundle]<Services>(getFullYear)', () => {
+  it('should return 1874', () => {
+    const year = new Date(1874, 1)
+
+    expect(getFullYear(year)).toBe(1874)
+  })
+
+  it('should return 1994', () => {
+    const year = new Date(1994, 1)
+
+    expect(getFullYear(year)).toBe(1994)
+  })
+
+  it('should return 2000', () => {
+    const year = new Date(2000, 1)
+
+    expect(getFullYear(year)).toBe(2000)
+  })
+})
 
 describe('[DateBundle]<Services>(getMonthName)', () => {
   it('should return jan', () => {

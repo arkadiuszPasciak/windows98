@@ -154,6 +154,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               data-v-4c307dbf=""
               data-v-92ee2ed7=""
               data-v-d3c68ad1=""
+              disabled=""
               id="date-months"
               name="date-months"
             >
@@ -254,6 +255,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               <input
                 class="input"
                 data-v-e394574e=""
+                disabled=""
                 id="year-switcher"
                 max="2050"
                 min="1950"

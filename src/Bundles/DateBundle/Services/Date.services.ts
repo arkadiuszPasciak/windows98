@@ -1,6 +1,20 @@
 import { EMonths, TMonths } from '@Bundles/DateBundle/Supports/Date.supports'
 import { Nullable } from 'vitest'
 
+export function getFullYear(date: Date): Nullable<number> {
+  if (!date) {
+    return null
+  }
+
+  const year = date.getFullYear()
+
+  if (!year) {
+    return null
+  }
+
+  return year
+}
+
 export function getMonthName(date: Date): Nullable<TMonths> {
   if (!date) {
     return null

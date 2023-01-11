@@ -4,6 +4,7 @@
     class="DateMonthSwitcher"
     :model-value="monthName ?? listOfMonths[5].value"
     :options="listOfMonths"
+    :disabled="true"
   />
 </template>
 
