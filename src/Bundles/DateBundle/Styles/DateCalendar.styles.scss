@@ -7,7 +7,7 @@
   text-align: center;
   background-color: var(--background-color-white);
 
-  .heading {
+  .week-days {
     display: grid;
     height: 20px;
     grid-template-columns: repeat(7, 1fr);
@@ -15,13 +15,18 @@
     color: var(--text-color-3);
   }
 
-  .content {
+  .days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr);
+  }
 
-    .content-item {
-      height: 20px;
+  .day {
+    height: 20px;
+
+    &.is-active {
+      color: $cl-white;
+      background-color: $cl-blue000;
     }
   }
 }

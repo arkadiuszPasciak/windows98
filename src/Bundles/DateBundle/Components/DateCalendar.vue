@@ -1,21 +1,21 @@
 <template>
   <div class="DateCalendar">
-    <div class="heading">
+    <div class="week-days">
       <div
         v-for="item in shortcutDaysOfWeek"
         :key="`shortcut-days-of-week-${item}`"
-        class="heading-item"
+        class="week"
       >
         {{ t(item) }}
       </div>
     </div>
 
-    <div class="content">
+    <div class="days">
       <button
         v-for="item in 30"
         :key="`days-of-months-${item}`"
         type="button"
-        class="content-item"
+        class="day"
       >
         {{ item }}
       </button>

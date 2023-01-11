@@ -1,15 +1,11 @@
 <template>
   <div class="SettingsDateTime">
-    <DateMonthSwitcher />
-    <DateYearSwitcher />
-    <DateCalendar />
+    <DateSettings />
   </div>
 </template>
 
 <script setup lang="ts">
-  import DateMonthSwitcher from '@Bundles/DateBundle/Components/DateMonthSwitcher.vue'
-  import DateYearSwitcher from '@Bundles/DateBundle/Components/DateYearSwitcher.vue'
-  import DateCalendar from '@Bundles/DateBundle/Components/DateCalendar.vue'
+  import DateSettings from '@Bundles/DateBundle/Components/DateSettings.vue'
 </script>
 
 <style lang="scss" scoped>
