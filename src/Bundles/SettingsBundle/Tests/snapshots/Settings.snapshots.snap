@@ -325,6 +325,11 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
                   class="day"
                   data-v-4e49242e=""
                   type="button"
+                />
+                <button
+                  class="day"
+                  data-v-4e49242e=""
+                  type="button"
                 >
                   1
                 </button>
@@ -399,7 +404,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
                   11
                 </button>
                 <button
-                  class="day"
+                  class="day is-active"
                   data-v-4e49242e=""
                   type="button"
                 >
@@ -530,6 +535,13 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
                   type="button"
                 >
                   30
+                </button>
+                <button
+                  class="day"
+                  data-v-4e49242e=""
+                  type="button"
+                >
+                  31
                 </button>
                 
               </div>

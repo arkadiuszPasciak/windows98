@@ -12,12 +12,13 @@
 
     <div class="days">
       <button
-        v-for="item in 30"
-        :key="`days-of-months-${item}`"
+        v-for="item in calendarDays"
+        :key="`days-of-months-${item.value}`"
         type="button"
         class="day"
+        :class="item.status === 'active' ? 'is-active' : ''"
       >
-        {{ item }}
+        {{ item.value }}
       </button>
     </div>
   </div>
@@ -26,8 +27,11 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import { shortcutDaysOfWeek } from '@Bundles/DateBundle/Mocks/Date.mocks'
+  import { currentCalendar } from '@Bundles/DateBundle/Services/Date.services'
 
   const { t } = useI18n()
+
+  const calendarDays = currentCalendar.generateDays()
 </script>
 
 <i18n src="@Bundles/DateBundle/Locales/Date.locales.json"></i18n>
