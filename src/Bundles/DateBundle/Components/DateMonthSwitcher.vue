@@ -2,19 +2,17 @@
   <UISelect
     id="date-months"
     class="DateMonthSwitcher"
-    :model-value="monthName ?? listOfMonths[5].value"
+    :model-value="calculatorStore.month ?? listOfMonths[0].value"
     :options="listOfMonths"
-    :disabled="true"
   />
 </template>
 
 <script setup lang="ts">
   import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
   import { listOfMonths } from '@Bundles/DateBundle/Mocks/Date.mocks'
-  import { getMonthName } from '@Bundles/DateBundle/Services/Date.services'
+  import { useCalendarStore } from '@Bundles/DateBundle/Stores/Calendar.stores'
 
-  const date = new Date()
-  const monthName = getMonthName(date)
+  const calculatorStore = useCalendarStore()
 </script>
 
 <i18n src="@Bundles/DateBundle/Locales/Date.locales.json"></i18n>

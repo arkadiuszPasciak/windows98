@@ -154,7 +154,6 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               data-v-4c307dbf=""
               data-v-92ee2ed7=""
               data-v-d3c68ad1=""
-              disabled=""
               id="date-months"
               name="date-months"
             >
@@ -162,106 +161,90 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="jan"
+                value="0"
               >
                 January
               </option>
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="feb"
+                value="1"
               >
                 February
               </option>
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="mar"
+                value="2"
               >
                 March
               </option>
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="apr"
+                value="3"
               >
                 April
               </option>
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="may"
+                value="4"
               >
                 May
               </option>
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="jun"
+                value="5"
               >
                 June
               </option>
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="jul"
+                value="6"
               >
                 July
               </option>
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="aug"
+                value="7"
               >
                 August
               </option>
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="sep"
+                value="8"
               >
                 September
               </option>
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="oct"
+                value="9"
               >
                 October
               </option>
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="nov"
+                value="10"
               >
                 November
               </option>
               <option
                 class="option"
                 data-v-d3c68ad1=""
-                value="dec"
+                value="11"
               >
                 December
               </option>
               
             </select>
-            <div
-              class="UIInput DateYearSwitcher"
-              data-v-04f77c22=""
-              data-v-92ee2ed7=""
-              data-v-e394574e=""
-            >
-              <!--v-if-->
-              <input
-                class="input"
-                data-v-e394574e=""
-                disabled=""
-                id="year-switcher"
-                max="2050"
-                min="1950"
-                type="number"
-              />
-            </div>
+            <!--v-if-->
             <div
               class="DateCalendar"
               data-v-4e49242e=""
@@ -316,235 +299,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
                 </div>
                 
               </div>
-              <div
-                class="days"
-                data-v-4e49242e=""
-              >
-                
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                />
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  1
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  2
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  3
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  4
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  5
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  6
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  7
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  8
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  9
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  10
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  11
-                </button>
-                <button
-                  class="day is-active"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  12
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  13
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  14
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  15
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  16
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  17
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  18
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  19
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  20
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  21
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  22
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  23
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  24
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  25
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  26
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  27
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  28
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  29
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  30
-                </button>
-                <button
-                  class="day"
-                  data-v-4e49242e=""
-                  type="button"
-                >
-                  31
-                </button>
-                
-              </div>
+              <!--v-if-->
             </div>
             
           </div>

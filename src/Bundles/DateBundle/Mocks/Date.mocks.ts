@@ -2,51 +2,51 @@ import { IListOfMonths } from '@Bundles/DateBundle/Supports/Date.supports'
 
 export const listOfMonths = [
   {
-    value: 'jan',
+    value: 0,
     name: 'Date.january',
   },
   {
-    value: 'feb',
+    value: 1,
     name: 'Date.february',
   },
   {
-    value: 'mar',
+    value: 2,
     name: 'Date.march',
   },
   {
-    value: 'apr',
+    value: 3,
     name: 'Date.april',
   },
   {
-    value: 'may',
+    value: 4,
     name: 'Date.may',
   },
   {
-    value: 'jun',
+    value: 5,
     name: 'Date.june',
   },
   {
-    value: 'jul',
+    value: 6,
     name: 'Date.july',
   },
   {
-    value: 'aug',
+    value: 7,
     name: 'Date.august',
   },
   {
-    value: 'sep',
+    value: 8,
     name: 'Date.september',
   },
   {
-    value: 'oct',
+    value: 9,
     name: 'Date.october',
   },
   {
-    value: 'nov',
+    value: 10,
     name: 'Date.november',
   },
   {
-    value: 'dec',
+    value: 11,
     name: 'Date.december',
   },
 ] as Array<IListOfMonths>

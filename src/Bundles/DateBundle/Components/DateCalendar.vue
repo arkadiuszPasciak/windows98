@@ -10,9 +10,9 @@
       </div>
     </div>
 
-    <div class="days">
+    <div v-if="calculatorStore?.calendar" class="days">
       <button
-        v-for="item in calendarDays"
+        v-for="item in calculatorStore.calendar"
         :key="`days-of-months-${item.value}`"
         type="button"
         class="day"
@@ -27,11 +27,16 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import { shortcutDaysOfWeek } from '@Bundles/DateBundle/Mocks/Date.mocks'
-  import { currentCalendar } from '@Bundles/DateBundle/Services/Date.services'
+  import { useCalendarStore } from '@Bundles/DateBundle/Stores/Calendar.stores'
+  import { onBeforeMount } from 'vue'
 
   const { t } = useI18n()
 
-  const calendarDays = currentCalendar.generateDays()
+  const calculatorStore = useCalendarStore()
+
+  onBeforeMount(() => {
+    calculatorStore.generateCurrentCalendar(new Date())
+  })
 </script>
 
 <i18n src="@Bundles/DateBundle/Locales/Date.locales.json"></i18n>
