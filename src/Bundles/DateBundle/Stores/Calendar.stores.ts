@@ -7,11 +7,15 @@ export const useCalendarStore = defineStore('calendar', {
     year: null as null | number,
     month: null as null | number,
   }),
+
   actions: {
     generateCurrentCalendar(date: Date): void {
       const calendar = new Calendar(date)
+      const days = calendar.generateDays()
 
-      this.calendar = calendar.generateDays()
+      if (this.calendar !== days) {
+        this.calendar = days
+      }
 
       if (this.year !== calendar.year) {
         this.year = calendar.year
@@ -28,6 +32,16 @@ export const useCalendarStore = defineStore('calendar', {
       }
 
       const date = new Date(this.year, month)
+
+      this.generateCurrentCalendar(date)
+    },
+
+    changeCalendarByYear(year: number): void {
+      if (!this.month) {
+        return
+      }
+
+      const date = new Date(year, this.month)
 
       this.generateCurrentCalendar(date)
     },

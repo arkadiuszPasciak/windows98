@@ -14,7 +14,7 @@ export class Calendar {
   }
 
   private getFirstDayMonth(): number {
-    return new Date(this.year, this.year, 1).getDay()
+    return new Date(this.year, this.month, 1).getDay()
   }
 
   private getLastDateMonth(): number {

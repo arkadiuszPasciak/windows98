@@ -12,8 +12,8 @@
 
     <div v-if="calculatorStore?.calendar" class="days">
       <button
-        v-for="item in calculatorStore.calendar"
-        :key="`days-of-months-${item.value}`"
+        v-for="(item, index) in calculatorStore.calendar"
+        :key="`days-of-months-${index}`"
         type="button"
         class="day"
         :class="item.status === 'active' ? 'is-active' : ''"
