@@ -4,6 +4,7 @@
     class="DateMonthSwitcher"
     :model-value="calculatorStore.month ?? listOfMonths[0].value"
     :options="listOfMonths"
+    @update:model-value="calculatorStore.changeCalendarByMonth($event)"
   />
 </template>
 

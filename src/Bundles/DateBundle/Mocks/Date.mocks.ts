@@ -52,11 +52,11 @@ export const listOfMonths = [
 ] as Array<IListOfMonths>
 
 export const shortcutDaysOfWeek = [
+  'Date.shortcut-sunday',
   'Date.shortcut-monday',
   'Date.shortcut-tuesday',
   'Date.shortcut-wednesday',
   'Date.shortcut-thursday',
   'Date.shortcut-friday',
   'Date.shortcut-saturday',
-  'Date.shortcut-sunday',
 ] as Array<string>

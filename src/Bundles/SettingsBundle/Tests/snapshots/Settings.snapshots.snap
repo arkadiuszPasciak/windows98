@@ -259,6 +259,12 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
                   class="week"
                   data-v-4e49242e=""
                 >
+                  S
+                </div>
+                <div
+                  class="week"
+                  data-v-4e49242e=""
+                >
                   M
                 </div>
                 <div
@@ -284,12 +290,6 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
                   data-v-4e49242e=""
                 >
                   F
-                </div>
-                <div
-                  class="week"
-                  data-v-4e49242e=""
-                >
-                  S
                 </div>
                 <div
                   class="week"
