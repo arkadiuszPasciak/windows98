@@ -1,20 +1,28 @@
 <template>
-  <UIInput
-    v-if="calculatorStore?.year"
-    id="year-switcher"
-    class="CalendarYearSwitcher"
-    type="number"
-    :model-value="calculatorStore.year"
-    :min="1950"
-    :max="2050"
-  />
+  <div class="CalendarYearSwitcher">
+    <UIText class="year">{{ calculatorStore.year }}</UIText>
+    <UIButton class="button increase" size="small" @click="increase" />
+    <UIButton class="button decrease" size="small" @click="decrease" />
+  </div>
 </template>
 
 <script setup lang="ts">
-  import UIInput from '@Bundles/UIBundle/Components/UIInput.vue'
+  import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import UIText from '@Bundles/UIBundle/Components/UIText.vue'
   import { useCalendarStore } from '@Bundles/CalendarBundle/Stores/Calendar.stores'
+  import { EYearChangeMethod } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
 
   const calculatorStore = useCalendarStore()
+
+  const increase = (): void => {
+    calculatorStore.changeNumberOfYear(EYearChangeMethod.INCREASE)
+    calculatorStore.changeCalendarByYear()
+  }
+
+  const decrease = (): void => {
+    calculatorStore.changeNumberOfYear(EYearChangeMethod.DECREASE)
+    calculatorStore.changeCalendarByYear()
+  }
 </script>
 
 <style lang="scss" scoped>

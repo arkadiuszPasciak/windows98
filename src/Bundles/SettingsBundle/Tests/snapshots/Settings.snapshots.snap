@@ -244,7 +244,47 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               </option>
               
             </select>
-            <!--v-if-->
+            <div
+              class="CalendarYearSwitcher"
+              data-v-9351c3bb=""
+              data-v-ca14cfec=""
+            >
+              <p
+                class="UIText year"
+                data-v-ca14cfec=""
+                data-v-f0b878d5=""
+              >
+                
+                
+                
+              </p>
+              <button
+                class="UIButton size-small button increase"
+                data-v-ca14cfec=""
+                data-v-cf1bb3a9=""
+                type="button"
+              >
+                
+                
+                
+                
+                
+                
+              </button>
+              <button
+                class="UIButton size-small button decrease"
+                data-v-ca14cfec=""
+                data-v-cf1bb3a9=""
+                type="button"
+              >
+                
+                
+                
+                
+                
+                
+              </button>
+            </div>
             <div
               class="CalendarView"
               data-v-4334b8a6=""

@@ -31,3 +31,12 @@ export interface IListOfMonths {
   value: TMonths
   name: string
 }
+
+export enum EYearChangeMethod {
+  INCREASE = 'increase',
+  DECREASE = 'decrease',
+}
+
+export type TYearChangeMethod =
+  | EYearChangeMethod.DECREASE
+  | EYearChangeMethod.INCREASE

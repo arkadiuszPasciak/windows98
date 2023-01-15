@@ -1,5 +1,9 @@
 import { defineStore } from 'pinia'
 import { Calendar } from '@Bundles/CalendarBundle/Services/Calendar.services'
+import {
+  EYearChangeMethod,
+  TYearChangeMethod,
+} from '@Bundles/CalendarBundle/Supports/Calendar.supports'
 
 export const useCalendarStore = defineStore('calendar', {
   state: () => ({
@@ -36,14 +40,28 @@ export const useCalendarStore = defineStore('calendar', {
       this.generateCurrentCalendar(date)
     },
 
-    changeCalendarByYear(year: number): void {
-      if (!this.month) {
+    changeCalendarByYear(): void {
+      if ((!this.month && this.month !== 0) || !this.year) {
         return
       }
 
-      const date = new Date(year, this.month)
+      const date = new Date(this.year, this.month)
 
       this.generateCurrentCalendar(date)
+    },
+
+    changeNumberOfYear(method: TYearChangeMethod) {
+      if (!this.year || !method) {
+        return
+      }
+
+      if (method === EYearChangeMethod.INCREASE) {
+        this.year += 1
+      }
+
+      if (method === EYearChangeMethod.DECREASE) {
+        this.year -= 1
+      }
     },
   },
 })
