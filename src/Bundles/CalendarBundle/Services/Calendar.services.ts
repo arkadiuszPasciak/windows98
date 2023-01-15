@@ -1,3 +1,5 @@
+import { ICalendarDays } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
+
 export class Calendar {
   private date: Date
   public year: number
@@ -21,8 +23,8 @@ export class Calendar {
     return new Date(this.year, this.month + 1, 0).getDate()
   }
 
-  public generateDays(): any {
-    const days = []
+  public generateDays(): Array<ICalendarDays> {
+    const days = [] as Array<ICalendarDays>
 
     for (let index = this.firstDayMonth; index > 0; index--) {
       days.push({
@@ -39,7 +41,7 @@ export class Calendar {
 
       days.push({
         status: isToday ? 'active' : 'normal',
-        value: index,
+        value: String(index),
       })
     }
 

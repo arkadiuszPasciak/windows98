@@ -40,3 +40,14 @@ export enum EYearChangeMethod {
 export type TYearChangeMethod =
   | EYearChangeMethod.DECREASE
   | EYearChangeMethod.INCREASE
+
+export enum ECalendarStatusDay {
+  ACTIVE = 'active',
+  INACTIVE = 'inactive',
+  NORMAL = 'normal',
+}
+
+export interface ICalendarDays {
+  status: 'active' | 'inactive' | 'normal'
+  value: string
+}

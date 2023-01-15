@@ -16,7 +16,7 @@
         :key="`days-of-months-${index}`"
         type="button"
         class="day"
-        :class="item.status === 'active' ? 'is-active' : ''"
+        :class="item.status === ECalendarStatusDay.ACTIVE ? 'is-active' : ''"
       >
         {{ item.value }}
       </button>
@@ -25,10 +25,11 @@
 </template>
 
 <script setup lang="ts">
+  import { onBeforeMount } from 'vue'
   import { useI18n } from 'vue-i18n'
   import { shortcutDaysOfWeek } from '@Bundles/CalendarBundle/Mocks/Calendar.mocks'
   import { useCalendarStore } from '@Bundles/CalendarBundle/Stores/Calendar.stores'
-  import { onBeforeMount } from 'vue'
+  import { ECalendarStatusDay } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
 
   const { t } = useI18n()
 
