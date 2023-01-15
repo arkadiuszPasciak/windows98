@@ -1,5 +1,5 @@
 interface IUISelectPropsObject {
-  value: string
+  value: string | number
   name: string
 }
 

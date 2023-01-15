@@ -1,10 +1,7 @@
 import { Nullable } from 'vitest'
-import {
-  IBaseStorage,
-  TStorageName,
-} from '@Bundles/StorageBundle/Supports/Storage.supports'
+import { TStorageName } from '@Bundles/StorageBundle/Supports/Storage.supports'
 
-class BaseStorage implements IBaseStorage {
+class BaseStorage {
   readonly storage: Storage
 
   constructor(storage: Storage) {

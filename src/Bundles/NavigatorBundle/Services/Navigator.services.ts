@@ -10,11 +10,10 @@ import {
   TBrowsers,
   TAllPlatforms,
   TDevices,
-  IUserAgent,
 } from '@Bundles/NavigatorBundle/Supports/Navigator.supports'
 import { Nullable } from 'vitest'
 
-class UserAgent implements IUserAgent {
+class UserAgent {
   readonly browserNames: Array<IBrowser>
   readonly devicesNames: Array<IDevices>
   readonly operationSystems: Array<IPlatform>

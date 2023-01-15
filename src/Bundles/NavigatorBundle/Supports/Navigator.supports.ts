@@ -56,12 +56,3 @@ export interface IDevices {
   name: TDevices
   regex: RegExp
 }
-
-export interface IUserAgent {
-  browserNames: Array<IBrowser>
-  devicesNames: Array<IDevices>
-  operationSystems: Array<IPlatform>
-  getBrowserName(userAgent: string): Nullable<TBrowsers>
-  getOperatingSystem(userAgent: string): Nullable<TAllPlatforms>
-  getTypeDevice(userAgent: string): Nullable<TDevices>
-}

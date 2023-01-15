@@ -16,6 +16,7 @@
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import UITabs from '@Bundles/UIBundle/Components/UITabs.vue'
+  import SettingsDateTime from '@Bundles/SettingsBundle/Components/SettingsDateTime.vue'
   import SettingsGeneral from '@Bundles/SettingsBundle/Components/SettingsGeneral.vue'
   import SettingsLanguages from '@Bundles/SettingsBundle/Components/SettingsLanguages.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
@@ -28,6 +29,10 @@
     {
       title: 'Settings.general',
       component: SettingsGeneral,
+    },
+    {
+      title: 'Settings.date-time',
+      component: SettingsDateTime,
     },
     {
       title: 'Settings.languages',

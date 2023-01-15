@@ -65,6 +65,13 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
           data-v-39833990=""
           type="button"
         >
+          Date & Time
+        </button>
+        <button
+          class="tab"
+          data-v-39833990=""
+          type="button"
+        >
           Languages
         </button>
         
@@ -120,6 +127,222 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
           >
             undefined
           </p>
+        </div>
+        <div
+          class="SettingsDateTime content-tab"
+          data-v-39833990=""
+          data-v-b9c2b439=""
+        >
+          <div
+            class="UIFrame CalendarSettings"
+            data-v-9351c3bb=""
+            data-v-b9c2b439=""
+            data-v-ff9b8841=""
+          >
+            <p
+              class="UIText title"
+              data-v-f0b878d5=""
+              data-v-ff9b8841=""
+            >
+              
+              Calendar
+              
+            </p>
+            
+            <select
+              class="UISelect variant-undefined CalendarMonthSwitcher"
+              data-v-0ce71445=""
+              data-v-9351c3bb=""
+              data-v-d3c68ad1=""
+              id="date-months"
+              name="date-months"
+            >
+              
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="0"
+              >
+                January
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="1"
+              >
+                February
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="2"
+              >
+                March
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="3"
+              >
+                April
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="4"
+              >
+                May
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="5"
+              >
+                June
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="6"
+              >
+                July
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="7"
+              >
+                August
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="8"
+              >
+                September
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="9"
+              >
+                October
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="10"
+              >
+                November
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="11"
+              >
+                December
+              </option>
+              
+            </select>
+            <div
+              class="CalendarYearSwitcher"
+              data-v-9351c3bb=""
+              data-v-ca14cfec=""
+            >
+              <p
+                class="UIText year"
+                data-v-ca14cfec=""
+                data-v-f0b878d5=""
+              >
+                
+                
+                
+              </p>
+              <button
+                class="UIButton size-small button increase"
+                data-v-ca14cfec=""
+                data-v-cf1bb3a9=""
+                type="button"
+              >
+                
+                
+                
+                
+                
+                
+              </button>
+              <button
+                class="UIButton size-small button decrease"
+                data-v-ca14cfec=""
+                data-v-cf1bb3a9=""
+                type="button"
+              >
+                
+                
+                
+                
+                
+                
+              </button>
+            </div>
+            <div
+              class="CalendarView"
+              data-v-4334b8a6=""
+              data-v-9351c3bb=""
+            >
+              <div
+                class="week-days"
+                data-v-4334b8a6=""
+              >
+                
+                <div
+                  class="week"
+                  data-v-4334b8a6=""
+                >
+                  S
+                </div>
+                <div
+                  class="week"
+                  data-v-4334b8a6=""
+                >
+                  M
+                </div>
+                <div
+                  class="week"
+                  data-v-4334b8a6=""
+                >
+                  T
+                </div>
+                <div
+                  class="week"
+                  data-v-4334b8a6=""
+                >
+                  W
+                </div>
+                <div
+                  class="week"
+                  data-v-4334b8a6=""
+                >
+                  T
+                </div>
+                <div
+                  class="week"
+                  data-v-4334b8a6=""
+                >
+                  F
+                </div>
+                <div
+                  class="week"
+                  data-v-4334b8a6=""
+                >
+                  S
+                </div>
+                
+              </div>
+              <!--v-if-->
+            </div>
+            
+          </div>
         </div>
         <div
           class="SettingsLanguages content-tab"
