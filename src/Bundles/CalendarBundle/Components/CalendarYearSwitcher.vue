@@ -2,7 +2,7 @@
   <UIInput
     v-if="calculatorStore?.year"
     id="year-switcher"
-    class="DateYearSwitcher"
+    class="CalendarYearSwitcher"
     type="number"
     :model-value="calculatorStore.year"
     :min="1950"
@@ -12,11 +12,11 @@
 
 <script setup lang="ts">
   import UIInput from '@Bundles/UIBundle/Components/UIInput.vue'
-  import { useCalendarStore } from '@Bundles/DateBundle/Stores/Calendar.stores'
+  import { useCalendarStore } from '@Bundles/CalendarBundle/Stores/Calendar.stores'
 
   const calculatorStore = useCalendarStore()
 </script>
 
 <style lang="scss" scoped>
-  @import '@Bundles/DateBundle/Styles/DateYearSwitcher.styles.scss';
+  @import '@Bundles/CalendarBundle/Styles/CalendarYearSwitcher.styles.scss';
 </style>

@@ -134,8 +134,8 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
           data-v-b9c2b439=""
         >
           <div
-            class="UIFrame DateSettings"
-            data-v-92ee2ed7=""
+            class="UIFrame CalendarSettings"
+            data-v-9351c3bb=""
             data-v-b9c2b439=""
             data-v-ff9b8841=""
           >
@@ -145,14 +145,14 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               data-v-ff9b8841=""
             >
               
-              Date
+              Calendar
               
             </p>
             
             <select
-              class="UISelect variant-undefined DateMonthSwitcher"
-              data-v-4c307dbf=""
-              data-v-92ee2ed7=""
+              class="UISelect variant-undefined CalendarMonthSwitcher"
+              data-v-0ce71445=""
+              data-v-9351c3bb=""
               data-v-d3c68ad1=""
               id="date-months"
               name="date-months"
@@ -246,54 +246,54 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
             </select>
             <!--v-if-->
             <div
-              class="DateCalendar"
-              data-v-4e49242e=""
-              data-v-92ee2ed7=""
+              class="CalendarView"
+              data-v-4334b8a6=""
+              data-v-9351c3bb=""
             >
               <div
                 class="week-days"
-                data-v-4e49242e=""
+                data-v-4334b8a6=""
               >
                 
                 <div
                   class="week"
-                  data-v-4e49242e=""
+                  data-v-4334b8a6=""
                 >
                   S
                 </div>
                 <div
                   class="week"
-                  data-v-4e49242e=""
+                  data-v-4334b8a6=""
                 >
                   M
                 </div>
                 <div
                   class="week"
-                  data-v-4e49242e=""
+                  data-v-4334b8a6=""
                 >
                   T
                 </div>
                 <div
                   class="week"
-                  data-v-4e49242e=""
+                  data-v-4334b8a6=""
                 >
                   W
                 </div>
                 <div
                   class="week"
-                  data-v-4e49242e=""
+                  data-v-4334b8a6=""
                 >
                   T
                 </div>
                 <div
                   class="week"
-                  data-v-4e49242e=""
+                  data-v-4334b8a6=""
                 >
                   F
                 </div>
                 <div
                   class="week"
-                  data-v-4e49242e=""
+                  data-v-4334b8a6=""
                 >
                   S
                 </div>

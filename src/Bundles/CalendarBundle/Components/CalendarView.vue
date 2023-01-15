@@ -1,5 +1,5 @@
 <template>
-  <div class="DateCalendar">
+  <div class="CalendarView">
     <div class="week-days">
       <div
         v-for="item in shortcutDaysOfWeek"
@@ -26,8 +26,8 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import { shortcutDaysOfWeek } from '@Bundles/DateBundle/Mocks/Date.mocks'
-  import { useCalendarStore } from '@Bundles/DateBundle/Stores/Calendar.stores'
+  import { shortcutDaysOfWeek } from '@Bundles/CalendarBundle/Mocks/Calendar.mocks'
+  import { useCalendarStore } from '@Bundles/CalendarBundle/Stores/Calendar.stores'
   import { onBeforeMount } from 'vue'
 
   const { t } = useI18n()
@@ -39,8 +39,8 @@
   })
 </script>
 
-<i18n src="@Bundles/DateBundle/Locales/Date.locales.json"></i18n>
+<i18n src="@Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
 
 <style lang="scss" scoped>
-  @import '@Bundles/DateBundle/Styles/DateCalendar.styles.scss';
+  @import '@Bundles/CalendarBundle/Styles/CalendarView.styles.scss';
 </style>

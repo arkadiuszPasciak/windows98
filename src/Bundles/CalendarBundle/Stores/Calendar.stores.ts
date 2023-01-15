@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { Calendar } from '@Bundles/DateBundle/Services/Date.services'
+import { Calendar } from '@Bundles/CalendarBundle/Services/Calendar.services'
 
 export const useCalendarStore = defineStore('calendar', {
   state: () => ({

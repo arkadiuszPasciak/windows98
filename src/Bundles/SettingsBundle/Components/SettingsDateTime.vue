@@ -1,11 +1,11 @@
 <template>
   <div class="SettingsDateTime">
-    <DateSettings />
+    <CalendarSettings />
   </div>
 </template>
 
 <script setup lang="ts">
-  import DateSettings from '@Bundles/DateBundle/Components/DateSettings.vue'
+  import CalendarSettings from '@Bundles/CalendarBundle/Components/CalendarSettings.vue'
 </script>
 
 <style lang="scss" scoped>

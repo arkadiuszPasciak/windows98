@@ -1,7 +1,7 @@
 <template>
   <UISelect
     id="date-months"
-    class="DateMonthSwitcher"
+    class="CalendarMonthSwitcher"
     :model-value="calculatorStore.month ?? listOfMonths[0].value"
     :options="listOfMonths"
     @update:model-value="calculatorStore.changeCalendarByMonth($event)"
@@ -10,14 +10,14 @@
 
 <script setup lang="ts">
   import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
-  import { listOfMonths } from '@Bundles/DateBundle/Mocks/Date.mocks'
-  import { useCalendarStore } from '@Bundles/DateBundle/Stores/Calendar.stores'
+  import { listOfMonths } from '@Bundles/CalendarBundle/Mocks/Calendar.mocks'
+  import { useCalendarStore } from '@Bundles/CalendarBundle/Stores/Calendar.stores'
 
   const calculatorStore = useCalendarStore()
 </script>
 
-<i18n src="@Bundles/DateBundle/Locales/Date.locales.json"></i18n>
+<i18n src="@Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
 
 <style lang="scss" scoped>
-  @import '@Bundles/DateBundle/Styles/DateMonthSwitcher.styles.scss';
+  @import '@Bundles/CalendarBundle/Styles/CalendarMonthSwitcher.styles.scss';
 </style>
