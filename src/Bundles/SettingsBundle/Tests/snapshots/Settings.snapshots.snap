@@ -8,7 +8,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
   <div
     class="container"
     data-v-99a75817=""
-    style="width: 335px; height: 415px;"
+    style="width: 420px; height: 415px;"
   >
     <div
       class="header"

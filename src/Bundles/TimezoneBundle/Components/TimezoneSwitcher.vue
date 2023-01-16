@@ -1,9 +1,8 @@
-<!-- @update:model-value="" -->
 <template>
   <UISelect
     id="timezones"
     class="TimezoneSwitcher"
-    :model-value="timezones[0].value"
+    :model-value="timezone ?? timezones[6].value"
     :options="timezones"
   />
 </template>
@@ -11,6 +10,9 @@
 <script setup lang="ts">
   import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
   import { timezones } from '@Bundles/TimezoneBundle/Mocks/Timezone.mocks'
+  import { getTimezone } from '@Bundles/TimezoneBundle/Services/Timezone.services'
+
+  const timezone = getTimezone(new Date())
 </script>
 
 <style lang="scss" scoped>

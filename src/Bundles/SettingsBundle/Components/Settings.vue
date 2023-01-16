@@ -3,7 +3,7 @@
     class="Settings"
     :title="t('Settings.title')"
     :resize-window="false"
-    :width="335"
+    :width="420"
     :height="415"
     :modal-state="programStore.modalSettings"
     @close-modal="closeModal"
