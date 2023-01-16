@@ -1,4 +1,4 @@
 export interface ITimezones {
-  utc: number
+  value: number
   name: string
 }
