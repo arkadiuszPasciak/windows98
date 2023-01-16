@@ -3,11 +3,12 @@ import { Calendar } from '@Bundles/CalendarBundle/Services/Calendar.services'
 import {
   EYearChangeMethod,
   TYearChangeMethod,
+  ICalendarDays,
 } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
 
 export const useCalendarStore = defineStore('calendar', {
   state: () => ({
-    calendar: null as null | any,
+    calendar: null as null | Array<ICalendarDays>,
     year: null as null | number,
     month: null as null | number,
   }),

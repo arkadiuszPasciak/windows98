@@ -2,7 +2,7 @@
   <UISelect
     id="timezones"
     class="TimezoneSwitcher"
-    :model-value="timezone ?? timezones[6].value"
+    :model-value="currentTimezone ?? timezones[6].value"
     :options="timezones"
   />
 </template>
@@ -12,7 +12,7 @@
   import { timezones } from '@Bundles/TimezoneBundle/Mocks/Timezone.mocks'
   import { getTimezone } from '@Bundles/TimezoneBundle/Services/Timezone.services'
 
-  const timezone = getTimezone(new Date())
+  const currentTimezone = getTimezone(new Date())
 </script>
 
 <style lang="scss" scoped>
