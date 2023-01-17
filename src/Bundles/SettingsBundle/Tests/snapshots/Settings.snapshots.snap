@@ -8,7 +8,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
   <div
     class="container"
     data-v-99a75817=""
-    style="width: 335px; height: 415px;"
+    style="width: 420px; height: 415px;"
   >
     <div
       class="header"
@@ -343,6 +343,192 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
             </div>
             
           </div>
+          <select
+            class="UISelect variant-undefined TimezoneSwitcher"
+            data-v-8f4e71f6=""
+            data-v-b9c2b439=""
+            data-v-d3c68ad1=""
+            id="timezones"
+            name="timezones"
+          >
+            
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-12"
+            >
+              GMT-12 International Date Line West (IDLW)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-11"
+            >
+              GMT-11 Nome Time (NT)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-10"
+            >
+              GMT-10 Hawaii Standard Time (HST)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-9"
+            >
+              GMT-9 Alaska Standard Time (AKST)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-8"
+            >
+              GMT-8 Pacific Standard Time (PST)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-7"
+            >
+              GMT-7 Mountain Standard Time (MST)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-6"
+            >
+              GMT-6 Central Standard Time (CST)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-5"
+            >
+              GMT-5 Eastern Standard Time (EST)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-4"
+            >
+              GMT-4 Atlantic Standard Time (AST)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-3"
+            >
+              GMT-3 Argentina Time (ART)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-2"
+            >
+              GMT-2 Azores Time (AT)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="-1"
+            >
+              GMT-1 West Africa Time (WAT)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="0"
+            >
+              GMT+0 Greenwich Mean Time (GMT)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="1"
+            >
+              GMT+1 Central European Time (CET)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="2"
+            >
+              GMT+2 Eastern European Time (EET)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="3"
+            >
+              GMT+3 Moscow Time (MSK)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="4"
+            >
+              GMT+4 Armenia Time (AMT)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="5"
+            >
+              GMT+5 Pakistan Standard Time (PKT)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="6"
+            >
+              GMT+6 Omsk Time (OMSK)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="7"
+            >
+              GMT+7 Kranoyask Time (KRAT)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="8"
+            >
+              GMT+8 China Standard Time (CST)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="9"
+            >
+              GMT+9 Japan Standard Time (JST)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="10"
+            >
+              GMT+10 Eastern Australia Standard Time (AEST)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="11"
+            >
+              GMT+11 Sakhalin Time (SAKT)
+            </option>
+            <option
+              class="option"
+              data-v-d3c68ad1=""
+              value="12"
+            >
+              GMT+12 New Zealand Standard Time (NZST)
+            </option>
+            
+          </select>
         </div>
         <div
           class="SettingsLanguages content-tab"

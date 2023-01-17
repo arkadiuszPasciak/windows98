@@ -1,5 +1,6 @@
 .SettingsDateTime {
   display: grid;
-  grid-template-columns: 201px;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: 1fr 1fr;
   padding: 5px;
 }
