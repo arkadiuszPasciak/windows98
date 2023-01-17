@@ -1,5 +1,6 @@
 {
   "en": {
+    "TimezoneBundle.title": "Timezone",
     "TimezoneBundle.time-12": "GMT-12 International Date Line West (IDLW)",
     "TimezoneBundle.time-11": "GMT-11 Nome Time (NT)",
     "TimezoneBundle.time-10": "GMT-10 Hawaii Standard Time (HST)",
@@ -27,6 +28,7 @@
     "TimezoneBundle.time+12": "GMT+12 New Zealand Standard Time (NZST)"
   },
   "pl": {
+    "TimezoneBundle.title": "Strefa czasowa",
     "TimezoneBundle.time-12": "GMT-12 Międzynarodowa linia zmiany daty (IDLW)",
     "TimezoneBundle.time-11": "GMT-11 Nome Czas (NT)",
     "TimezoneBundle.time-10": "GMT-10 Hawaje Czas Standardowy (HST)",
