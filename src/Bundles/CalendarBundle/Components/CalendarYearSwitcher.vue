@@ -10,17 +10,17 @@
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
   import UIText from '@Bundles/UIBundle/Components/UIText.vue'
   import { useCalendarStore } from '@Bundles/CalendarBundle/Stores/Calendar.stores'
-  import { EYearChangeMethod } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
+  import { ECalendarYearChangeMethod } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
 
   const calculatorStore = useCalendarStore()
 
   const increase = (): void => {
-    calculatorStore.changeNumberOfYear(EYearChangeMethod.INCREASE)
+    calculatorStore.changeNumberOfYear(ECalendarYearChangeMethod.INCREASE)
     calculatorStore.changeCalendarByYear()
   }
 
   const decrease = (): void => {
-    calculatorStore.changeNumberOfYear(EYearChangeMethod.DECREASE)
+    calculatorStore.changeNumberOfYear(ECalendarYearChangeMethod.DECREASE)
     calculatorStore.changeCalendarByYear()
   }
 </script>

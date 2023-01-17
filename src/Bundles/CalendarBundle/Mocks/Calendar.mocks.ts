@@ -1,6 +1,6 @@
 import { IListOfMonths } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
 
-export const listOfMonths = [
+export const MListOfMonths = [
   {
     value: 0,
     name: 'CalendarBundle.january',
@@ -51,7 +51,7 @@ export const listOfMonths = [
   },
 ] as Array<IListOfMonths>
 
-export const shortcutDaysOfWeek = [
+export const MShortcutDaysOfWeek = [
   'CalendarBundle.shortcut-sunday',
   'CalendarBundle.shortcut-monday',
   'CalendarBundle.shortcut-tuesday',

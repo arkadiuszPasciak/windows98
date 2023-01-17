@@ -1,7 +1,7 @@
 <template>
   <UIModal
     class="Calculator"
-    :title="t('Calculator.title')"
+    :title="t('CalculatorBundle.title')"
     :resize-window="false"
     :width="195"
     :height="220"
