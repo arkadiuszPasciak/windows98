@@ -9,7 +9,7 @@
   },
   "homepage": "https://github.com/arkadiuszPasciak/windows98#readme",
   "engines": {
-    "node": "18.x"
+    "node": "18.12.0"
   },
   "scripts": {
     "prepare": "husky install",

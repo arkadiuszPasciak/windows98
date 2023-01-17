@@ -1,4 +1,4 @@
-import { ITimezones } from '@Bundles/TimezoneBundle/supports/Timezone.supports'
+import { ITimezones } from '@Bundles/TimezoneBundle/Supports/Timezone.supports'
 
 export const timezones = [
   {
