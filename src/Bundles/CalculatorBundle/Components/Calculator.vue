@@ -34,7 +34,7 @@
       <UIButton
         class="color-red"
         size="calculator"
-        @click="addSign(EMathematicalSign.DIVIDE)"
+        @click="addSign(ECalculatorSign.DIVIDE)"
       >
         /
       </UIButton>
@@ -62,7 +62,7 @@
       <UIButton
         class="color-red"
         size="calculator"
-        @click="addSign(EMathematicalSign.MULTIPLY)"
+        @click="addSign(ECalculatorSign.MULTIPLY)"
       >
         *
       </UIButton>
@@ -90,7 +90,7 @@
       <UIButton
         class="color-red"
         size="calculator"
-        @click="addSign(EMathematicalSign.MINUS)"
+        @click="addSign(ECalculatorSign.MINUS)"
       >
         -
       </UIButton>
@@ -110,7 +110,7 @@
       <UIButton
         class="color-red"
         size="calculator"
-        @click="addSign(EMathematicalSign.ADD)"
+        @click="addSign(ECalculatorSign.ADD)"
       >
         +
       </UIButton>
@@ -128,8 +128,8 @@
   import {
     ECalculatorNumber,
     TCalculatorNumber,
-    EMathematicalSign,
-    TMathematicalSign,
+    ECalculatorSign,
+    TCalculatorSign,
   } from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
 
   const calculatorStore = useCalculatorStore()
@@ -147,7 +147,7 @@
     calculatorStore.addNumber(number)
   }
 
-  const addSign = (sign: TMathematicalSign): void => {
+  const addSign = (sign: TCalculatorSign): void => {
     calculatorStore.addSign(sign)
   }
 

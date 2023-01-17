@@ -1,4 +1,4 @@
-import { EMathematicalSign } from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
+import { ECalculatorSign } from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
 
 export function isValueEqual(
   value: string,
@@ -33,10 +33,10 @@ export function isMathematicalSignLast(value: string): boolean {
   const lastValue = value.slice(-1)
 
   switch (lastValue) {
-    case EMathematicalSign.ADD:
-    case EMathematicalSign.DIVIDE:
-    case EMathematicalSign.MINUS:
-    case EMathematicalSign.MULTIPLY:
+    case ECalculatorSign.ADD:
+    case ECalculatorSign.DIVIDE:
+    case ECalculatorSign.MINUS:
+    case ECalculatorSign.MULTIPLY:
       return true
     default:
       return false
