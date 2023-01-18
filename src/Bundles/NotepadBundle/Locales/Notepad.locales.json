@@ -1,10 +1,10 @@
 {
   "en": {
-    "Notepad.example": "This is an example!",
-    "Notepad.title": "Notepad"
+    "NotepadBundle.example": "This is an example!",
+    "NotepadBundle.title": "Notepad"
   },
   "pl": {
-    "Notepad.example": "To jest przykład!",
-    "Notepad.title": "Notatnik"
+    "NotepadBundle.example": "To jest przykład!",
+    "NotepadBundle.title": "Notatnik"
   }
 }
