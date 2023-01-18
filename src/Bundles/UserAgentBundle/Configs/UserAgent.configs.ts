@@ -1,8 +1,8 @@
 import {
-  IPlatform,
-  IBrowser,
-  IDevices,
-} from '@Bundles/NavigatorBundle/Supports/Navigator.supports'
+  IUserAgentPlatform,
+  IUserAgentBrowser,
+  IUserAgentDevices,
+} from '@Bundles/UserAgentBundle/Supports/UserAgent.supports'
 
 export const operationSystems = [
   { name: 'Windows 3.11', regex: /Win16/ },
@@ -33,7 +33,7 @@ export const operationSystems = [
   { name: 'UNIX', regex: /UNIX/ },
   { name: 'BeOS', regex: /BeOS/ },
   { name: 'OS/2', regex: /OS\/2/ },
-] as Array<IPlatform>
+] as Array<IUserAgentPlatform>
 
 export const browserNames = [
   { name: 'Chrome', regex: /chrome|chromium|crios/i },
@@ -41,7 +41,7 @@ export const browserNames = [
   { name: 'Safari', regex: /safari/i },
   { name: 'Opera', regex: /opr\//i },
   { name: 'Edge', regex: /edg/i },
-] as Array<IBrowser>
+] as Array<IUserAgentBrowser>
 
 export const devicesNames = [
   {
@@ -52,4 +52,4 @@ export const devicesNames = [
     name: 'desktop',
     regex: /Win|Windows|OpenBSD|SunOS|Linux|X11|Mac|Mac OS X/i,
   },
-] as Array<IDevices>
+] as Array<IUserAgentDevices>

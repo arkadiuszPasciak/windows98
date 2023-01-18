@@ -2,26 +2,26 @@ import {
   operationSystems,
   devicesNames,
   browserNames,
-} from '@Bundles/NavigatorBundle/Configs/Navigator.configs'
+} from '@Bundles/UserAgentBundle/Configs/UserAgent.configs'
 import {
-  IPlatform,
-  IDevices,
-  IBrowser,
-  TBrowsers,
-  TAllPlatforms,
-  TDevices,
-} from '@Bundles/NavigatorBundle/Supports/Navigator.supports'
+  IUserAgentPlatform,
+  IUserAgentDevices,
+  IUserAgentBrowser,
+  TUserAgentBrowsers,
+  TUserAgentAllPlatforms,
+  TUserAgentDevices,
+} from '@Bundles/UserAgentBundle/Supports/UserAgent.supports'
 import { Nullable } from 'vitest'
 
 class UserAgent {
-  readonly browserNames: Array<IBrowser>
-  readonly devicesNames: Array<IDevices>
-  readonly operationSystems: Array<IPlatform>
+  readonly browserNames: Array<IUserAgentBrowser>
+  readonly devicesNames: Array<IUserAgentDevices>
+  readonly operationSystems: Array<IUserAgentPlatform>
 
   constructor(
-    browserNames: Array<IBrowser>,
-    devicesNames: Array<IDevices>,
-    operationSystems: Array<IPlatform>,
+    browserNames: Array<IUserAgentBrowser>,
+    devicesNames: Array<IUserAgentDevices>,
+    operationSystems: Array<IUserAgentPlatform>,
   ) {
     this.browserNames = browserNames
     this.devicesNames = devicesNames
@@ -43,15 +43,17 @@ class UserAgent {
     return null
   }
 
-  public getBrowserName(userAgent: string): Nullable<TBrowsers> {
+  public getBrowserName(userAgent: string): Nullable<TUserAgentBrowsers> {
     return this.getName(userAgent, this.browserNames)
   }
 
-  public getOperatingSystem(userAgent: string): Nullable<TAllPlatforms> {
+  public getOperatingSystem(
+    userAgent: string,
+  ): Nullable<TUserAgentAllPlatforms> {
     return this.getName(userAgent, this.operationSystems)
   }
 
-  public getTypeDevice(userAgent: string): Nullable<TDevices> {
+  public getTypeDevice(userAgent: string): Nullable<TUserAgentDevices> {
     const result = this.getName(userAgent, this.devicesNames)
 
     if (!result) {
@@ -68,7 +70,9 @@ const userAgentObject = new UserAgent(
   operationSystems,
 )
 
-export function getBrowserName(userAgent: string): Nullable<TBrowsers> {
+export function getBrowserName(
+  userAgent: string,
+): Nullable<TUserAgentBrowsers> {
   if (!userAgent) {
     return null
   }
@@ -76,7 +80,9 @@ export function getBrowserName(userAgent: string): Nullable<TBrowsers> {
   return userAgentObject.getBrowserName(userAgent)
 }
 
-export function getOperatingSystem(userAgent: string): Nullable<TAllPlatforms> {
+export function getOperatingSystem(
+  userAgent: string,
+): Nullable<TUserAgentAllPlatforms> {
   if (!userAgent) {
     return null
   }
@@ -84,7 +90,7 @@ export function getOperatingSystem(userAgent: string): Nullable<TAllPlatforms> {
   return userAgentObject.getOperatingSystem(userAgent)
 }
 
-export function getTypeDevice(userAgent: string): Nullable<TDevices> {
+export function getTypeDevice(userAgent: string): Nullable<TUserAgentDevices> {
   if (!userAgent) {
     return null
   }

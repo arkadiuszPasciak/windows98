@@ -1,4 +1,6 @@
-export const navigatorUserAgentMocks = {
+import { IUserAgentMocks } from '@Bundles/UserAgentBundle/Supports/UserAgent.supports'
+
+export const MUserAgentMocks = {
   chromeMacOSXDesktop:
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
   safariIOSMobile:
@@ -9,4 +11,4 @@ export const navigatorUserAgentMocks = {
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54',
   operaLinuxDesktop:
     'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 OPR/96.0.4640.0',
-}
+} as IUserAgentMocks
