@@ -1,12 +1,12 @@
-import { TLanguagesLocales } from '@Bundles/LanguageBundle/Supports/Language.supports'
+import { ILanguageLocales } from '@Bundles/LanguageBundle/Supports/Language.supports'
 
-export const languagesOptions = [
+export const MLanguageOptions = [
   {
     value: 'en',
-    name: 'Language.english',
+    name: 'LanguageBundle.english',
   },
   {
     value: 'pl',
-    name: 'Language.polish',
+    name: 'LanguageBundle.polish',
   },
-] as TLanguagesLocales
+] as Array<ILanguageLocales>
