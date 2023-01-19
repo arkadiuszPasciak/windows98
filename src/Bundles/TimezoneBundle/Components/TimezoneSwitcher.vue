@@ -3,8 +3,8 @@
     <UISelect
       id="timezones"
       class="select"
-      :model-value="currentTimezone ?? timezones[6].value"
-      :options="timezones"
+      :model-value="currentTimezone ?? MTimezones[6].value"
+      :options="MTimezones"
     />
   </UIFrame>
 </template>
@@ -13,7 +13,7 @@
   import { useI18n } from 'vue-i18n'
   import UIFrame from '@Bundles/UIBundle/Components/UIFrame.vue'
   import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
-  import { timezones } from '@Bundles/TimezoneBundle/Mocks/Timezone.mocks'
+  import { MTimezones } from '@Bundles/TimezoneBundle/Mocks/Timezone.mocks'
   import { getTimezone } from '@Bundles/TimezoneBundle/Services/Timezone.services'
 
   const currentTimezone = getTimezone(new Date())

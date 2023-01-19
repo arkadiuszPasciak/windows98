@@ -1,6 +1,6 @@
 import { IStartStoreApps } from '@Bundles/StartBundle/Supports/Start.supports'
 
-export const startStoreApps = [
+export const MStartStoreApps = [
   {
     data: {
       name: 'StartBundle.programs',

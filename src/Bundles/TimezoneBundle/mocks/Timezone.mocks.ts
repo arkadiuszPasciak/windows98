@@ -1,6 +1,6 @@
 import { ITimezones } from '@Bundles/TimezoneBundle/Supports/Timezone.supports'
 
-export const timezones = [
+export const MTimezones = [
   {
     value: -12,
     name: 'TimezoneBundle.time-12',
