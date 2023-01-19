@@ -20,7 +20,7 @@
     getBrowserName,
     getTypeDevice,
     getOperatingSystem,
-  } from '@Bundles/NavigatorBundle/Services/Navigator.services'
+  } from '@Bundles/UserAgentBundle/Services/UserAgent.services'
 
   const { t } = useI18n()
 

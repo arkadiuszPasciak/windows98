@@ -1,6 +1,6 @@
 export type TStorageName = 'language' | 'theme'
 
-export interface ILocalStorageNames {
+export interface IStorageNames {
   LANGUAGE: TStorageName
   THEME: TStorageName
 }

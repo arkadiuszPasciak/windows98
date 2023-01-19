@@ -1,10 +1,10 @@
 {
   "en": {
-    "Language.english": "English",
-    "Language.polish": "Polish"
+    "LanguageBundle.english": "English",
+    "LanguageBundle.polish": "Polish"
   },
   "pl": {
-    "Language.english": "Angielski",
-    "Language.polish": "Polski"
+    "LanguageBundle.english": "Angielski",
+    "LanguageBundle.polish": "Polski"
   }
 }

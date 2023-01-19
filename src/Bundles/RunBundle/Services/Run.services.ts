@@ -22,6 +22,10 @@ export function checkAndRunProgram(value: string, t: VueI18nTranslation): void {
       store.updateRunModal(true)
       store.updateRunModal(false)
       break
+    case t('RunBundle.program.settings'):
+      store.updateSettingsModal(true)
+      store.updateRunModal(false)
+      break
     case t('RunBundle.program.shut-down'):
       store.updateShutDownModal(true)
       store.updateRunModal(false)

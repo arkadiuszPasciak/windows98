@@ -1,8 +1,8 @@
 import { defineStore } from 'pinia'
 import { Calendar } from '@Bundles/CalendarBundle/Services/Calendar.services'
 import {
-  EYearChangeMethod,
-  TYearChangeMethod,
+  ECalendarYearChangeMethod,
+  TCalendarYearChangeMethod,
   ICalendarDays,
 } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
 
@@ -51,16 +51,16 @@ export const useCalendarStore = defineStore('calendar', {
       this.generateCurrentCalendar(date)
     },
 
-    changeNumberOfYear(method: TYearChangeMethod) {
+    changeNumberOfYear(method: TCalendarYearChangeMethod) {
       if (!this.year || !method) {
         return
       }
 
-      if (method === EYearChangeMethod.INCREASE) {
+      if (method === ECalendarYearChangeMethod.INCREASE) {
         this.year += 1
       }
 
-      if (method === EYearChangeMethod.DECREASE) {
+      if (method === ECalendarYearChangeMethod.DECREASE) {
         this.year -= 1
       }
     },

@@ -6,7 +6,7 @@ import {
   summingResult,
 } from '@Bundles/CalculatorBundle/Services/Calculator.services'
 import {
-  TMathematicalSign,
+  TCalculatorSign,
   TCalculatorNumber,
 } from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
 
@@ -35,7 +35,7 @@ export const useCalculatorStore = defineStore('calculator', {
         this.value += '.'
       }
     },
-    addSign(sign: TMathematicalSign) {
+    addSign(sign: TCalculatorSign) {
       if (this.value === '0.' || isMathematicalSignLast(this.value)) {
         return
       }

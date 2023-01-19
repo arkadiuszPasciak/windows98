@@ -3,14 +3,14 @@
     id="themes"
     :model-value="themeValue"
     class="ThemeSwitcher"
-    :options="themeOptions"
+    :options="MThemeOptions"
     @update:model-value="update($event)"
   />
 </template>
 
 <script setup lang="ts">
   import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
-  import { themeOptions } from '@Bundles/ThemeBundle/Mocks/Theme.mocks'
+  import { MThemeOptions } from '@Bundles/ThemeBundle/Mocks/Theme.mocks'
   import {
     updateThemeClass,
     setThemeColorInStorage,

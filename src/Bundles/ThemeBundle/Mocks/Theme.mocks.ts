@@ -1,12 +1,12 @@
 import { IThemeOptions } from '@Bundles/ThemeBundle/Supports/Theme.supports'
 
-export const themeOptions = [
+export const MThemeOptions = [
   {
     value: 'light',
-    name: 'Theme.light',
+    name: 'ThemeBundle.light',
   },
   {
     value: 'dark',
-    name: 'Theme.dark',
+    name: 'ThemeBundle.dark',
   },
 ] as Array<IThemeOptions>

@@ -23,15 +23,15 @@ export type TCalculatorNumber =
   | ECalculatorNumber.EIGHT
   | ECalculatorNumber.NINE
 
-export enum EMathematicalSign {
+export enum ECalculatorSign {
   ADD = '+',
   MINUS = '-',
   MULTIPLY = '*',
   DIVIDE = '/',
 }
 
-export type TMathematicalSign =
-  | EMathematicalSign.ADD
-  | EMathematicalSign.MINUS
-  | EMathematicalSign.MULTIPLY
-  | EMathematicalSign.DIVIDE
+export type TCalculatorSign =
+  | ECalculatorSign.ADD
+  | ECalculatorSign.MINUS
+  | ECalculatorSign.MULTIPLY
+  | ECalculatorSign.DIVIDE

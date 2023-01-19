@@ -1,4 +1,4 @@
-export enum EMonths {
+export enum ECalendarMonths {
   JANUARY = 0,
   FEBRUARY = 1,
   MARCH = 2,
@@ -13,33 +13,33 @@ export enum EMonths {
   DECEMEBER = 11,
 }
 
-export type TMonths =
-  | EMonths.JANUARY
-  | EMonths.FEBRUARY
-  | EMonths.MARCH
-  | EMonths.APRIL
-  | EMonths.MAY
-  | EMonths.JUNE
-  | EMonths.JULY
-  | EMonths.AUGUST
-  | EMonths.SEPTEMBER
-  | EMonths.OCTOBER
-  | EMonths.NOVEMBER
-  | EMonths.DECEMEBER
+export type TCalendarMonths =
+  | ECalendarMonths.JANUARY
+  | ECalendarMonths.FEBRUARY
+  | ECalendarMonths.MARCH
+  | ECalendarMonths.APRIL
+  | ECalendarMonths.MAY
+  | ECalendarMonths.JUNE
+  | ECalendarMonths.JULY
+  | ECalendarMonths.AUGUST
+  | ECalendarMonths.SEPTEMBER
+  | ECalendarMonths.OCTOBER
+  | ECalendarMonths.NOVEMBER
+  | ECalendarMonths.DECEMEBER
 
 export interface IListOfMonths {
-  value: TMonths
+  value: TCalendarMonths
   name: string
 }
 
-export enum EYearChangeMethod {
+export enum ECalendarYearChangeMethod {
   INCREASE = 'increase',
   DECREASE = 'decrease',
 }
 
-export type TYearChangeMethod =
-  | EYearChangeMethod.DECREASE
-  | EYearChangeMethod.INCREASE
+export type TCalendarYearChangeMethod =
+  | ECalendarYearChangeMethod.DECREASE
+  | ECalendarYearChangeMethod.INCREASE
 
 export enum ECalendarStatusDay {
   ACTIVE = 'active',

@@ -1,9 +1,9 @@
 import { defineStore } from 'pinia'
 import { IPulpitStoreApps } from '@Bundles/PulpitBundle/Supports/Pulpit.supports'
-import { pulpitStoreApps } from '@Bundles/PulpitBundle/Mocks/Pulpit.mocks'
+import { MPulpitStoreApps } from '@Bundles/PulpitBundle/Mocks/Pulpit.mocks'
 
 export const usePulpitStore = defineStore('pulpit', {
   state: () => ({
-    apps: pulpitStoreApps as IPulpitStoreApps[],
+    apps: MPulpitStoreApps as IPulpitStoreApps[],
   }),
 })

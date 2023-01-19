@@ -1,7 +1,7 @@
 <template>
   <UIModal
     class="Notepad"
-    :title="t('Notepad.title')"
+    :title="t('NotepadBundle.title')"
     :resize-window="true"
     :width="600"
     :height="450"
@@ -31,7 +31,7 @@
   const { t } = useI18n()
   const programStore = useProgramStore()
 
-  const modelValue = ref(t('Notepad.example')) as Ref<string>
+  const modelValue = ref(t('NotepadBundle.example')) as Ref<string>
 
   const closeModal = (): void => {
     programStore.updateNotepadModal(false)

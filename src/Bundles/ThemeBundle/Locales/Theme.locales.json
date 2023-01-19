@@ -1,10 +1,10 @@
 {
   "en": {
-    "Theme.dark": "Dark",
-    "Theme.light": "Light"
+    "ThemeBundle.dark": "Dark",
+    "ThemeBundle.light": "Light"
   },
   "pl": {
-    "Theme.dark": "Ciemny",
-    "Theme.light": "Jasny"
+    "ThemeBundle.dark": "Ciemny",
+    "ThemeBundle.light": "Jasny"
   }
 }

@@ -1,7 +1,7 @@
 import { Nullable } from 'vitest'
-import { IGetTimeClock } from '@Bundles/ClockBundle/Supports/Clock.supports'
+import { IClockGetTime } from '@Bundles/ClockBundle/Supports/Clock.supports'
 
-export function getTimeClock(params: IGetTimeClock): Nullable<string> {
+export function getTimeClock(params: IClockGetTime): Nullable<string> {
   if (!params) {
     return null
   }

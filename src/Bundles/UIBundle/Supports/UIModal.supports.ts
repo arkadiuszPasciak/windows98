@@ -1,1 +1,1 @@
-export type ICursorType = 'default' | 'move'
+export type IUIModalCursorType = 'default' | 'move'

@@ -8,6 +8,7 @@
     "RunBundle.program.calculator": "calculator",
     "RunBundle.program.notepad": "notepad",
     "RunBundle.program.run": "run",
+    "RunBundle.program.settings": "settings",
     "RunBundle.program.shut-down": "shut down"
   },
   "pl": {
@@ -19,6 +20,7 @@
     "RunBundle.program.calculator": "kalkulator",
     "RunBundle.program.notepad": "notatnik",
     "RunBundle.program.run": "włącz",
+    "RunBundle.program.settings": "ustawienia",
     "RunBundle.program.shut-down": "wyłącz"
   }
 }

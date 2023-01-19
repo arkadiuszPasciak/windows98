@@ -40,7 +40,7 @@
   import { Nullable } from 'vitest'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
-  import { ICursorType } from '@Bundles/UIBundle/Supports/UIModal.supports'
+  import { IUIModalCursorType } from '@Bundles/UIBundle/Supports/UIModal.supports'
 
   const props = defineProps({
     title: {
@@ -80,7 +80,7 @@
   const mouseState = ref(false) as Ref<boolean>
   const positionX = ref(0) as Ref<number>
   const positionY = ref(0) as Ref<number>
-  const cursorType = ref('default') as Ref<ICursorType>
+  const cursorType = ref('default') as Ref<IUIModalCursorType>
 
   const mouseDownEvent = (event: MouseEvent): void => {
     if (!modalElement.value) {

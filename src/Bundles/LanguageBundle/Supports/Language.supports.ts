@@ -1,15 +1,13 @@
-export enum ELanguagesLocales {
+export enum ELanguageLocales {
   ENGLISH = 'en',
   POLISH = 'pl',
 }
 
-export type TLanguagesLocal =
-  | ELanguagesLocales.ENGLISH
-  | ELanguagesLocales.POLISH
+export type TLanguageLocales =
+  | ELanguageLocales.ENGLISH
+  | ELanguageLocales.POLISH
 
-interface ILanguageLocal {
-  value: TLanguagesLocal
+export interface ILanguageLocales {
+  value: TLanguageLocales
   name: string
 }
-
-export type TLanguagesLocales = Array<ILanguageLocal>

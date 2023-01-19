@@ -3,7 +3,7 @@
     id="languages"
     :model-value="$i18n.locale"
     class="LanguageSwitcher"
-    :options="languagesOptions"
+    :options="MLanguageOptions"
     @update:model-value="
       ;($i18n.locale = $event),
         setLanguageVersionInStorage($event),
@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
   import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
-  import { languagesOptions } from '@Bundles/LanguageBundle/Mocks/Language.mocks'
+  import { MLanguageOptions } from '@Bundles/LanguageBundle/Mocks/Language.mocks'
   import {
     setLanguageVersionInStorage,
     updateLangAttribute,

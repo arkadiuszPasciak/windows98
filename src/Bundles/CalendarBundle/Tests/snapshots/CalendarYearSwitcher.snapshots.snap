@@ -1,0 +1,44 @@
+// Vitest Snapshot v1
+
+exports[`[CalendarBundle]<Snapshots>(CalendarYearSwitcher) > renders correctly component 1`] = `
+<div
+  class="CalendarYearSwitcher"
+  data-v-ca14cfec=""
+>
+  <p
+    class="UIText year"
+    data-v-ca14cfec=""
+    data-v-f0b878d5=""
+  >
+    
+    
+    
+  </p>
+  <button
+    class="UIButton size-small button increase"
+    data-v-ca14cfec=""
+    data-v-cf1bb3a9=""
+    type="button"
+  >
+    
+    
+    
+    
+    
+    
+  </button>
+  <button
+    class="UIButton size-small button decrease"
+    data-v-ca14cfec=""
+    data-v-cf1bb3a9=""
+    type="button"
+  >
+    
+    
+    
+    
+    
+    
+  </button>
+</div>
+`;
