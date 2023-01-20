@@ -9,6 +9,7 @@
     @close-modal="closeModal"
   >
     <div class="content">
+      <FileDownload />
       <UITextarea
         id="notepad-textarea"
         type="notepad"
@@ -26,6 +27,7 @@
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import UITextarea from '@Bundles/UIBundle/Components/UITextarea.vue'
+  import FileDownload from '@Bundles/FileBundle/Components/FileDownload.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
 
   const { t } = useI18n()

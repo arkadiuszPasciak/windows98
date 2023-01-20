@@ -50,6 +50,98 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
       data-v-7632fb2e=""
     >
       <div
+        class="UIModal FileDownload"
+        data-v-222cbca2=""
+        data-v-7632fb2e=""
+        data-v-99a75817=""
+      >
+        <div
+          class="container"
+          data-v-99a75817=""
+          style="width: 300px; height: 225px;"
+        >
+          <div
+            class="header"
+            data-v-99a75817=""
+            style="cursor: default;"
+          >
+            <h3
+              class="title"
+              data-v-99a75817=""
+            >
+              Download as
+            </h3>
+            <button
+              class="UIButton size-small button-close"
+              data-v-99a75817=""
+              data-v-cf1bb3a9=""
+              type="button"
+            >
+              
+              <img
+                alt="Close window"
+                class="button-close-icon"
+                data-v-99a75817=""
+                height="7"
+                src="/icons/close-modal.svg"
+                width="8"
+              />
+              
+              
+              
+              
+              
+            </button>
+          </div>
+          
+          <div
+            class="content"
+            data-v-222cbca2=""
+          >
+            <div
+              class="UIInput label-position-left"
+              data-v-222cbca2=""
+              data-v-e394574e=""
+            >
+              <label
+                class="label"
+                data-v-e394574e=""
+                for="file-download-in"
+              >
+                Download in
+              </label>
+              <input
+                class="input"
+                data-v-e394574e=""
+                disabled=""
+                id="file-download-in"
+                type="text"
+              />
+            </div>
+            <div
+              class="UIInput label-position-left"
+              data-v-222cbca2=""
+              data-v-e394574e=""
+            >
+              <label
+                class="label"
+                data-v-e394574e=""
+                for="file-download-name"
+              >
+                File name
+              </label>
+              <input
+                class="input"
+                data-v-e394574e=""
+                id="file-download-name"
+                type="text"
+              />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div
         class="UITextarea label-position-top type-notepad textarea"
         data-v-7632fb2e=""
         data-v-cbf41378=""

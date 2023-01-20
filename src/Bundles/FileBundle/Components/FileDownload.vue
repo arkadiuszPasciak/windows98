@@ -1,18 +1,27 @@
 <template>
   <UIModal
     class="FileDownload"
-    :title="t('NotepadBundle.title-download')"
+    :title="t('FileBundle.title-download')"
     :resize-window="false"
+    :move-window="false"
     :width="300"
-    :height="300"
+    :height="225"
     :modal-state="state"
     @close-modal="closeModal"
   >
     <div class="content">
       <UIInput
-        id="notepad-file-name"
+        id="file-download-in"
+        :model-value="t('FileBundle.downloads')"
+        :label-name="t('FileBundle.download-in')"
+        label-position="left"
+        :disabled="true"
+      />
+
+      <UIInput
+        id="file-download-name"
         :model-value="inputModelValue"
-        :label-name="t('NotepadBundle.file-name')"
+        :label-name="t('FileBundle.file-name')"
         label-position="left"
       />
     </div>
@@ -27,8 +36,8 @@
 
   const { t } = useI18n()
 
-  const state = ref(false) as Ref<boolean>
-  const inputModelValue = ref(t('NotepadBundle.untitled')) as Ref<string>
+  const state = ref(true) as Ref<boolean>
+  const inputModelValue = ref(t('FileBundle.untitled')) as Ref<string>
 
   const closeModal = (): void => {
     state.value = false
