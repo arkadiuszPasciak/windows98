@@ -1,0 +1,12 @@
+{
+  "en": {
+    "FileBundle.untitled": "Untitled",
+    "FileBundle.file-name": "File name",
+    "FileBundle.title-download": "Download as"
+  },
+  "pl": {
+    "FileBundle.untitled": "Bez tytuły",
+    "FileBundle.file-name": "Nazwa pliku",
+    "FileBundle.title-download": "Pobierz jako"
+  }
+}
