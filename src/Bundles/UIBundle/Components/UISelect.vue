@@ -69,6 +69,7 @@
 <i18n src="@Bundles/ThemeBundle/Locales/Theme.locales.json"></i18n>
 <i18n src="@Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
 <i18n src="@Bundles/TimezoneBundle/Locales/Timezone.locales.json"></i18n>
+<i18n src="@Bundles/FileBundle/Locales/File.locales.json"></i18n>
 
 <style lang="scss" scoped>
   @import '@Bundles/UIBundle/Styles/UISelect.styles.scss';

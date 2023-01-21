@@ -24,6 +24,16 @@
         :label-name="t('FileBundle.file-name')"
         label-position="left"
       />
+
+      <UISelect
+        id="file-types"
+        :options="MFilesTextTypes"
+        :model-value="MFilesTextTypes[0].value"
+      />
+
+      <UIButton>{{ t('FileBundle.download') }}</UIButton>
+
+      <UIButton @click="closeModal">{{ t('FileBundle.cancel') }}</UIButton>
     </div>
   </UIModal>
 </template>
@@ -31,8 +41,11 @@
 <script setup lang="ts">
   import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
+  import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
   import UIInput from '@Bundles/UIBundle/Components/UIInput.vue'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
+  import { MFilesTextTypes } from '@Bundles/FileBundle/Mocks/File.mocks'
 
   const { t } = useI18n()
 

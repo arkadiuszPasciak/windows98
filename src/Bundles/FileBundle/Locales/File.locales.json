@@ -1,16 +1,26 @@
 {
   "en": {
+    "FileBundle.cancel": "Cancel",
+    "FileBundle.download": "Download",
     "FileBundle.downloads": "Downloads",
     "FileBundle.download-in": "Download in",
     "FileBundle.file-name": "File name",
     "FileBundle.untitled": "Untitled",
+    "FileBundle.text-csv": "CSV Document (*.csv)",
+    "FileBundle.text-doc": "Word Document (*.doc)",
+    "FileBundle.text-txt": "Text Document (*.txt)",
     "FileBundle.title-download": "Download as"
   },
   "pl": {
+    "FileBundle.cancel": "Cancel",
+    "FileBundle.download": "Pobierz",
     "FileBundle.downloads": "Pobrane",
     "FileBundle.download-in": "Pobierz do",
     "FileBundle.file-name": "Nazwa pliku",
     "FileBundle.untitled": "Bez tytuły",
+    "FileBundle.text-csv": "CSV Dokument (*.csv)",
+    "FileBundle.text-doc": "Word Dokument (*.doc)",
+    "FileBundle.text-txt": "Tekst Dokument (*.txt)",
     "FileBundle.title-download": "Pobierz jako"
   }
 }

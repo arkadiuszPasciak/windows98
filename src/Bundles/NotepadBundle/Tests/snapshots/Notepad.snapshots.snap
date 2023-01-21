@@ -137,6 +137,65 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
                 type="text"
               />
             </div>
+            <select
+              class="UISelect variant-undefined"
+              data-v-222cbca2=""
+              data-v-d3c68ad1=""
+              id="file-types"
+              name="file-types"
+            >
+              
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="text/txt;charset=utf-8;"
+              >
+                Text Document (*.txt)
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="text/doc;charset=utf-8;"
+              >
+                Word Document (*.doc)
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="text/csv;charset=utf-8;"
+              >
+                CSV Document (*.csv)
+              </option>
+              
+            </select>
+            <button
+              class="UIButton size-medium"
+              data-v-222cbca2=""
+              data-v-cf1bb3a9=""
+              type="button"
+            >
+              
+              
+              
+              Download
+              
+              
+              
+            </button>
+            <button
+              class="UIButton size-medium"
+              data-v-222cbca2=""
+              data-v-cf1bb3a9=""
+              type="button"
+            >
+              
+              
+              
+              Cancel
+              
+              
+              
+            </button>
           </div>
           
         </div>
