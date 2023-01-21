@@ -1,37 +1,30 @@
 <template>
   <UIModal
-    class="FileDownload"
-    :title="t('FileBundle.title-download')"
+    class="FileSave"
+    :title="t('FileBundle.title-save')"
     :resize-window="false"
     :move-window="false"
-    :width="300"
-    :height="225"
+    :width="320"
+    :height="100"
     :modal-state="state"
     @close-modal="closeModal"
   >
     <div class="content">
       <UIInput
-        id="file-download-in"
-        :model-value="t('FileBundle.downloads')"
-        :label-name="t('FileBundle.download-in')"
-        label-position="left"
-        :disabled="true"
-      />
-
-      <UIInput
-        id="file-download-name"
+        id="file-save-name"
+        class="input"
         :model-value="inputModelValue"
         :label-name="t('FileBundle.file-name')"
         label-position="left"
       />
+
+      <UIButton>{{ t('FileBundle.save') }}</UIButton>
 
       <UISelect
         id="file-types"
         :options="MFilesTextTypes"
         :model-value="MFilesTextTypes[0].value"
       />
-
-      <UIButton>{{ t('FileBundle.download') }}</UIButton>
 
       <UIButton @click="closeModal">{{ t('FileBundle.cancel') }}</UIButton>
     </div>
@@ -60,5 +53,5 @@
 <i18n src="@Bundles/FileBundle/Locales/File.locales.json"></i18n>
 
 <style lang="scss" scoped>
-  @import '@Bundles/FileBundle/Styles/File.styles.scss';
+  @import '@Bundles/FileBundle/Styles/FileSave.styles.scss';
 </style>
