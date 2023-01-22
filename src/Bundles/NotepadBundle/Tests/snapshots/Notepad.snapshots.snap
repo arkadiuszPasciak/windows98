@@ -108,7 +108,7 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
                 data-v-e394574e=""
                 for="file-save-name"
               >
-                File name
+                File name:
               </label>
               <input
                 class="input"
@@ -131,37 +131,49 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
               
               
             </button>
-            <select
-              class="UISelect variant-undefined"
+            <div
+              class="UISelect label-position-left select"
               data-v-119c719c=""
               data-v-d3c68ad1=""
-              id="file-types"
-              name="file-types"
             >
-              
-              <option
-                class="option"
+              <label
+                class="label"
                 data-v-d3c68ad1=""
-                value="text/txt;charset=utf-8;"
+                for="file-types"
               >
-                Text Document (*.txt)
-              </option>
-              <option
-                class="option"
+                Save as type:
+              </label>
+              <select
+                class="select"
                 data-v-d3c68ad1=""
-                value="text/doc;charset=utf-8;"
+                id="file-types"
+                name="file-types"
               >
-                Word Document (*.doc)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="text/csv;charset=utf-8;"
-              >
-                CSV Document (*.csv)
-              </option>
-              
-            </select>
+                
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="text/txt;charset=utf-8;"
+                >
+                  Text Document (*.txt)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="text/doc;charset=utf-8;"
+                >
+                  Word Document (*.doc)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="text/csv;charset=utf-8;"
+                >
+                  CSV Document (*.csv)
+                </option>
+                
+              </select>
+            </div>
             <button
               class="UIButton size-medium"
               data-v-119c719c=""

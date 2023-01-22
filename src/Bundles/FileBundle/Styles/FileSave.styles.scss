@@ -1,11 +1,19 @@
 .FileSave {
   position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 
   .content {
     display: grid;
     grid-template-rows: repeat(2, 20px);
     grid-template-columns: 75% 25%;
-    gap: 4px;
+    gap: 8px 0;
     padding: 15px 5px;
+  }
+
+  .select,
+  .input {
+    grid-template-columns: 70px 150px;
   }
 }

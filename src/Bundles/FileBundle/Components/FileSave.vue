@@ -22,8 +22,11 @@
 
       <UISelect
         id="file-types"
+        class="select"
         :options="MFilesTextTypes"
         :model-value="MFilesTextTypes[0].value"
+        :label-name="t('FileBundle.save-as-type')"
+        label-position="left"
       />
 
       <UIButton @click="closeModal">{{ t('FileBundle.cancel') }}</UIButton>

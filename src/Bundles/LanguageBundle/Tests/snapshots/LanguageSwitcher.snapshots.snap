@@ -1,28 +1,34 @@
 // Vitest Snapshot v1
 
 exports[`[LanguageBundle]<Snapshots>(LanguageSwitcher) > renders correctly component 1`] = `
-<select
-  class="UISelect variant-undefined LanguageSwitcher"
+<div
+  class="UISelect LanguageSwitcher"
   data-v-56cc1592=""
   data-v-d3c68ad1=""
-  id="languages"
-  name="languages"
 >
-  
-  <option
-    class="option"
+  <!--v-if-->
+  <select
+    class="select"
     data-v-d3c68ad1=""
-    value="en"
+    id="languages"
+    name="languages"
   >
-    English
-  </option>
-  <option
-    class="option"
-    data-v-d3c68ad1=""
-    value="pl"
-  >
-    Polish
-  </option>
-  
-</select>
+    
+    <option
+      class="option"
+      data-v-d3c68ad1=""
+      value="en"
+    >
+      English
+    </option>
+    <option
+      class="option"
+      data-v-d3c68ad1=""
+      value="pl"
+    >
+      Polish
+    </option>
+    
+  </select>
+</div>
 `;

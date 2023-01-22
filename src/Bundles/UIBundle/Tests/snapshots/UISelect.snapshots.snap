@@ -1,27 +1,77 @@
 // Vitest Snapshot v1
 
-exports[`[UIBundle]<Snapshots>(UISelect) > renders correctly component 1`] = `
-<select
-  class="UISelect variant-undefined"
+exports[`[UIBundle]<Snapshots>(UISelect) > renders correctly component with label position left 1`] = `
+<div
+  class="UISelect label-position-left"
   data-v-d3c68ad1=""
-  id="ui-select-test"
-  name="ui-select-test"
 >
-  
-  <option
-    class="option"
+  <label
+    class="label"
     data-v-d3c68ad1=""
-    value="en"
+    for="ui-select-test"
   >
-    English
-  </option>
-  <option
-    class="option"
+    Languages
+  </label>
+  <select
+    class="select"
     data-v-d3c68ad1=""
-    value="pl"
+    id="ui-select-test"
+    name="ui-select-test"
   >
-    Polish
-  </option>
-  
-</select>
+    
+    <option
+      class="option"
+      data-v-d3c68ad1=""
+      value="en"
+    >
+      English
+    </option>
+    <option
+      class="option"
+      data-v-d3c68ad1=""
+      value="pl"
+    >
+      Polish
+    </option>
+    
+  </select>
+</div>
+`;
+
+exports[`[UIBundle]<Snapshots>(UISelect) > renders correctly component with label position top 1`] = `
+<div
+  class="UISelect label-position-top"
+  data-v-d3c68ad1=""
+>
+  <label
+    class="label"
+    data-v-d3c68ad1=""
+    for="ui-select-test"
+  >
+    Themes
+  </label>
+  <select
+    class="select"
+    data-v-d3c68ad1=""
+    id="ui-select-test"
+    name="ui-select-test"
+  >
+    
+    <option
+      class="option"
+      data-v-d3c68ad1=""
+      value="en"
+    >
+      English
+    </option>
+    <option
+      class="option"
+      data-v-d3c68ad1=""
+      value="pl"
+    >
+      Polish
+    </option>
+    
+  </select>
+</div>
 `;

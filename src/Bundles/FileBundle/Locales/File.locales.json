@@ -1,9 +1,10 @@
 {
   "en": {
     "FileBundle.cancel": "Cancel",
-    "FileBundle.file-name": "File name",
+    "FileBundle.file-name": "File name:",
     "FileBundle.untitled": "Untitled",
     "FileBundle.save": "Save",
+    "FileBundle.save-as-type": "Save as type:",
     "FileBundle.text-csv": "CSV Document (*.csv)",
     "FileBundle.text-doc": "Word Document (*.doc)",
     "FileBundle.text-txt": "Text Document (*.txt)",
@@ -11,9 +12,10 @@
   },
   "pl": {
     "FileBundle.cancel": "Cancel",
-    "FileBundle.file-name": "Nazwa pliku",
-    "FileBundle.untitled": "Bez tytuły",
+    "FileBundle.file-name": "Nazwa pliku:",
+    "FileBundle.untitled": "Bez_tytuły",
     "FileBundle.save": "Zapisz",
+    "FileBundle.save-as-type": "Zapisz jako typ:",
     "FileBundle.text-csv": "CSV Dokument (*.csv)",
     "FileBundle.text-doc": "Word Dokument (*.doc)",
     "FileBundle.text-txt": "Tekst Dokument (*.txt)",
