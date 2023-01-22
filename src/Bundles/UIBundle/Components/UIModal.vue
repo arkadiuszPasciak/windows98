@@ -30,6 +30,11 @@
           </template>
         </UIButton>
       </div>
+
+      <div v-if="$slots.options" class="options">
+        <slot name="options" />
+      </div>
+
       <slot />
     </div>
   </div>

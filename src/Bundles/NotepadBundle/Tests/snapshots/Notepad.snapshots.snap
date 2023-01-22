@@ -44,6 +44,20 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
         
       </button>
     </div>
+    <div
+      class="options"
+      data-v-99a75817=""
+    >
+      
+      <button
+        class="option"
+        data-v-7632fb2e=""
+        type="button"
+      >
+        Save
+      </button>
+      
+    </div>
     
     <div
       class="content"
@@ -93,6 +107,7 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
               
             </button>
           </div>
+          <!--v-if-->
           
           <div
             class="content"
@@ -198,11 +213,7 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
         data-v-cbf41378=""
         resize-window="true"
       >
-        <label
-          class="label"
-          data-v-cbf41378=""
-          for="notepad-textarea"
-        />
+        <!--v-if-->
         <textarea
           class="textarea"
           data-v-cbf41378=""

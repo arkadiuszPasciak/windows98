@@ -8,6 +8,12 @@
     :modal-state="programStore.modalNotepad"
     @close-modal="closeModal"
   >
+    <template #options>
+      <button class="option" type="button">
+        {{ t('NotepadBundle.save') }}
+      </button>
+    </template>
+
     <div class="content">
       <FileSave />
       <UITextarea

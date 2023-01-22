@@ -1,6 +1,6 @@
 <template>
   <div class="UITextarea" :class="classes">
-    <label class="label" :for="id">{{ labelName }}</label>
+    <label v-if="labelName" class="label" :for="id">{{ labelName }}</label>
     <textarea
       :id="id"
       class="textarea"

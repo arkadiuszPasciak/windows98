@@ -1,10 +1,12 @@
 {
   "en": {
     "NotepadBundle.example": "This is an example!",
+    "NotepadBundle.save": "Save",
     "NotepadBundle.title": "Notepad"
   },
   "pl": {
     "NotepadBundle.example": "To jest przykład!",
+    "NotepadBundle.save": "Zapisz",
     "NotepadBundle.title": "Notatnik"
   }
 }

@@ -43,6 +43,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
         
       </button>
     </div>
+    <!--v-if-->
     
     <div
       class="UITabs"

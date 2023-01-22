@@ -2,11 +2,18 @@
   .content {
     padding: 2px;
     width: 100%;
-    height: calc(100% - 20px);
+    height: calc(100% - 40px);
   }
 
   .textarea {
     width: 100%;
     height: 100%;
+  }
+
+  .option {
+    @include font('medium', 11, 14);
+    color: var(--text-color);
+    padding: 0 5px;
+    cursor: pointer;
   }
 }

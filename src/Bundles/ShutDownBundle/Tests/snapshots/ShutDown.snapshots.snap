@@ -44,6 +44,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before cl
         
       </button>
     </div>
+    <!--v-if-->
     
     <div
       class="content"

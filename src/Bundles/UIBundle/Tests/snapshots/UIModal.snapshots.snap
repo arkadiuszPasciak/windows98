@@ -43,6 +43,7 @@ exports[`[UIBundle]<Snapshots>(UIModal) > renders correctly component 1`] = `
         
       </button>
     </div>
+    <!--v-if-->
     
     
   </div>

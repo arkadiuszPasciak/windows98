@@ -44,6 +44,7 @@ exports[`[CalculatorBundle]<Snapshots>(Calculator) > renders correctly component
         
       </button>
     </div>
+    <!--v-if-->
     
     <div
       class="content"

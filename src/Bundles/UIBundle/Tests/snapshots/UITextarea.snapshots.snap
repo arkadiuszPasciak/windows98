@@ -25,11 +25,7 @@ exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: notepa
   class="UITextarea label-position-top type-notepad"
   data-v-cbf41378=""
 >
-  <label
-    class="label"
-    data-v-cbf41378=""
-    for="notepad-textarea"
-  />
+  <!--v-if-->
   <textarea
     class="textarea"
     data-v-cbf41378=""
