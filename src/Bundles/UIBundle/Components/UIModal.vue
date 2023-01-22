@@ -83,7 +83,7 @@
   const cursorType = ref('default') as Ref<IUIModalCursorType>
 
   const mouseDownEvent = (event: MouseEvent): void => {
-    if (!modalElement.value) {
+    if (!modalElement.value || !props.moveWindow) {
       return
     }
 
@@ -94,12 +94,16 @@
   }
 
   const mouseUpEvent = (): void => {
+    if (!props.moveWindow) {
+      return
+    }
+
     mouseState.value = false
     cursorType.value = 'default'
   }
 
   const mouseMove = (event: MouseEvent): void => {
-    if (!mouseState.value || !modalElement.value) {
+    if (!mouseState.value || !modalElement.value || !props.moveWindow) {
       return
     }
 
