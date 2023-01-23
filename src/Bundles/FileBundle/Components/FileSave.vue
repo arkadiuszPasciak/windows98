@@ -6,19 +6,19 @@
     :move-window="false"
     :width="320"
     :height="100"
-    :modal-state="state"
-    @close-modal="closeModal"
+    :modal-state="modalState"
+    @close-modal="$emit('closeModal')"
   >
     <div class="content">
       <UIInput
         id="file-save-name"
         class="input"
-        :model-value="inputModelValue"
+        :model-value="fileNameModelValue"
         :label-name="t('FileBundle.file-name')"
         label-position="left"
       />
 
-      <UIButton>{{ t('FileBundle.save') }}</UIButton>
+      <UIButton @click="saveFile">{{ t('FileBundle.save') }}</UIButton>
 
       <UISelect
         id="file-types"
@@ -29,7 +29,9 @@
         label-position="left"
       />
 
-      <UIButton @click="closeModal">{{ t('FileBundle.cancel') }}</UIButton>
+      <UIButton @click="$emit('closeModal')">
+        {{ t('FileBundle.cancel') }}
+      </UIButton>
     </div>
   </UIModal>
 </template>
@@ -43,13 +45,21 @@
   import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
   import { MFilesTextTypes } from '@Bundles/FileBundle/Mocks/File.mocks'
 
+  defineProps({
+    modalState: {
+      type: Boolean,
+      required: true,
+    },
+  })
+
+  defineEmits(['closeModal'])
+
   const { t } = useI18n()
 
-  const state = ref(true) as Ref<boolean>
-  const inputModelValue = ref(t('FileBundle.untitled')) as Ref<string>
+  const fileNameModelValue = ref(t('FileBundle.untitled')) as Ref<string>
 
-  const closeModal = (): void => {
-    state.value = false
+  const saveFile = () => {
+    console.log(123)
   }
 </script>
 
