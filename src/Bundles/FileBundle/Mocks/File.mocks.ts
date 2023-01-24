@@ -13,4 +13,8 @@ export const MFilesTextTypes = [
     value: 'text/csv;charset=utf-8;',
     name: 'FileBundle.text-csv',
   },
+  {
+    value: 'text/rtf;charset=utf-8;',
+    name: 'FileBundle.text-rtf',
+  },
 ] as Array<IFilesTextTypes>
