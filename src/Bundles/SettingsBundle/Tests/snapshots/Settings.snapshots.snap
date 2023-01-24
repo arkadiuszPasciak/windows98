@@ -43,6 +43,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
         
       </button>
     </div>
+    <!--v-if-->
     
     <div
       class="UITabs"
@@ -149,101 +150,107 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               
             </p>
             
-            <select
-              class="UISelect variant-undefined CalendarMonthSwitcher"
+            <div
+              class="UISelect CalendarMonthSwitcher"
               data-v-0ce71445=""
               data-v-9351c3bb=""
               data-v-d3c68ad1=""
-              id="date-months"
-              name="date-months"
             >
-              
-              <option
-                class="option"
+              <!--v-if-->
+              <select
+                class="select"
                 data-v-d3c68ad1=""
-                value="0"
+                id="date-months"
+                name="date-months"
               >
-                January
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="1"
-              >
-                February
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="2"
-              >
-                March
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="3"
-              >
-                April
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="4"
-              >
-                May
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="5"
-              >
-                June
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="6"
-              >
-                July
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="7"
-              >
-                August
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="8"
-              >
-                September
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="9"
-              >
-                October
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="10"
-              >
-                November
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="11"
-              >
-                December
-              </option>
-              
-            </select>
+                
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="0"
+                >
+                  January
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="1"
+                >
+                  February
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="2"
+                >
+                  March
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="3"
+                >
+                  April
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="4"
+                >
+                  May
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="5"
+                >
+                  June
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="6"
+                >
+                  July
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="7"
+                >
+                  August
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="8"
+                >
+                  September
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="9"
+                >
+                  October
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="10"
+                >
+                  November
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="11"
+                >
+                  December
+                </option>
+                
+              </select>
+            </div>
             <div
               class="CalendarYearSwitcher"
               data-v-9351c3bb=""
@@ -359,191 +366,197 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               
             </p>
             
-            <select
-              class="UISelect variant-undefined select"
+            <div
+              class="UISelect select"
               data-v-8f4e71f6=""
               data-v-d3c68ad1=""
-              id="timezones"
-              name="timezones"
             >
-              
-              <option
-                class="option"
+              <!--v-if-->
+              <select
+                class="select"
                 data-v-d3c68ad1=""
-                value="-12"
+                id="timezones"
+                name="timezones"
               >
-                GMT-12 International Date Line West (IDLW)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="-11"
-              >
-                GMT-11 Nome Time (NT)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="-10"
-              >
-                GMT-10 Hawaii Standard Time (HST)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="-9"
-              >
-                GMT-9 Alaska Standard Time (AKST)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="-8"
-              >
-                GMT-8 Pacific Standard Time (PST)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="-7"
-              >
-                GMT-7 Mountain Standard Time (MST)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="-6"
-              >
-                GMT-6 Central Standard Time (CST)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="-5"
-              >
-                GMT-5 Eastern Standard Time (EST)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="-4"
-              >
-                GMT-4 Atlantic Standard Time (AST)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="-3"
-              >
-                GMT-3 Argentina Time (ART)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="-2"
-              >
-                GMT-2 Azores Time (AT)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="-1"
-              >
-                GMT-1 West Africa Time (WAT)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="0"
-              >
-                GMT+0 Greenwich Mean Time (GMT)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="1"
-              >
-                GMT+1 Central European Time (CET)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="2"
-              >
-                GMT+2 Eastern European Time (EET)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="3"
-              >
-                GMT+3 Moscow Time (MSK)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="4"
-              >
-                GMT+4 Armenia Time (AMT)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="5"
-              >
-                GMT+5 Pakistan Standard Time (PKT)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="6"
-              >
-                GMT+6 Omsk Time (OMSK)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="7"
-              >
-                GMT+7 Kranoyask Time (KRAT)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="8"
-              >
-                GMT+8 China Standard Time (CST)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="9"
-              >
-                GMT+9 Japan Standard Time (JST)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="10"
-              >
-                GMT+10 Eastern Australia Standard Time (AEST)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="11"
-              >
-                GMT+11 Sakhalin Time (SAKT)
-              </option>
-              <option
-                class="option"
-                data-v-d3c68ad1=""
-                value="12"
-              >
-                GMT+12 New Zealand Standard Time (NZST)
-              </option>
-              
-            </select>
+                
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-12"
+                >
+                  GMT-12 International Date Line West (IDLW)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-11"
+                >
+                  GMT-11 Nome Time (NT)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-10"
+                >
+                  GMT-10 Hawaii Standard Time (HST)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-9"
+                >
+                  GMT-9 Alaska Standard Time (AKST)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-8"
+                >
+                  GMT-8 Pacific Standard Time (PST)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-7"
+                >
+                  GMT-7 Mountain Standard Time (MST)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-6"
+                >
+                  GMT-6 Central Standard Time (CST)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-5"
+                >
+                  GMT-5 Eastern Standard Time (EST)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-4"
+                >
+                  GMT-4 Atlantic Standard Time (AST)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-3"
+                >
+                  GMT-3 Argentina Time (ART)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-2"
+                >
+                  GMT-2 Azores Time (AT)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="-1"
+                >
+                  GMT-1 West Africa Time (WAT)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="0"
+                >
+                  GMT+0 Greenwich Mean Time (GMT)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="1"
+                >
+                  GMT+1 Central European Time (CET)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="2"
+                >
+                  GMT+2 Eastern European Time (EET)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="3"
+                >
+                  GMT+3 Moscow Time (MSK)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="4"
+                >
+                  GMT+4 Armenia Time (AMT)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="5"
+                >
+                  GMT+5 Pakistan Standard Time (PKT)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="6"
+                >
+                  GMT+6 Omsk Time (OMSK)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="7"
+                >
+                  GMT+7 Kranoyask Time (KRAT)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="8"
+                >
+                  GMT+8 China Standard Time (CST)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="9"
+                >
+                  GMT+9 Japan Standard Time (JST)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="10"
+                >
+                  GMT+10 Eastern Australia Standard Time (AEST)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="11"
+                >
+                  GMT+11 Sakhalin Time (SAKT)
+                </option>
+                <option
+                  class="option"
+                  data-v-d3c68ad1=""
+                  value="12"
+                >
+                  GMT+12 New Zealand Standard Time (NZST)
+                </option>
+                
+              </select>
+            </div>
             
           </div>
         </div>
@@ -551,54 +564,66 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
           class="SettingsLanguages content-tab"
           data-v-39833990=""
         >
-          <select
-            class="UISelect variant-undefined LanguageSwitcher"
+          <div
+            class="UISelect LanguageSwitcher"
             data-v-56cc1592=""
             data-v-d3c68ad1=""
-            id="languages"
-            name="languages"
           >
-            
-            <option
-              class="option"
+            <!--v-if-->
+            <select
+              class="select"
               data-v-d3c68ad1=""
-              value="en"
+              id="languages"
+              name="languages"
             >
-              English
-            </option>
-            <option
-              class="option"
-              data-v-d3c68ad1=""
-              value="pl"
-            >
-              Polish
-            </option>
-            
-          </select>
-          <select
-            class="UISelect variant-undefined ThemeSwitcher"
+              
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="en"
+              >
+                English
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="pl"
+              >
+                Polish
+              </option>
+              
+            </select>
+          </div>
+          <div
+            class="UISelect ThemeSwitcher"
             data-v-6a01b610=""
             data-v-d3c68ad1=""
-            id="themes"
-            name="themes"
           >
-            
-            <option
-              class="option"
+            <!--v-if-->
+            <select
+              class="select"
               data-v-d3c68ad1=""
-              value="light"
+              id="themes"
+              name="themes"
             >
-              Light
-            </option>
-            <option
-              class="option"
-              data-v-d3c68ad1=""
-              value="dark"
-            >
-              Dark
-            </option>
-            
-          </select>
+              
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="light"
+              >
+                Light
+              </option>
+              <option
+                class="option"
+                data-v-d3c68ad1=""
+                value="dark"
+              >
+                Dark
+              </option>
+              
+            </select>
+          </div>
         </div>
         
       </div>

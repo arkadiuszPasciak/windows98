@@ -6,7 +6,7 @@
   }
 
   &.label-position-left {
-    display: flex;
+    display: grid;
     align-items: center;
 
     .label {
@@ -37,14 +37,7 @@
     }
 
     &:disabled,
-    &:read-only {
-      background-color: var(--background-color-white);
-    }
-
-    &:disabled,
-    &:disabled + .label,
-    &[readonly],
-    &[readonly] + .label {
+    &:disabled + .label {
       opacity: 0.8;
     }
   }

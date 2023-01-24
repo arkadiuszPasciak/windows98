@@ -1,22 +1,27 @@
 <template>
-  <select
-    :id="id"
-    v-model="value"
+  <div
     class="UISelect"
-    :class="`variant-${variant}`"
-    :name="id"
-    :disabled="disabled"
-    :required="required"
+    :class="props.labelName ? `label-position-${labelPosition}` : ''"
   >
-    <option
-      v-for="option in options"
-      :key="`${id}-${option}`"
-      :value="option.value"
-      class="option"
+    <label v-if="labelName" class="label" :for="id">{{ labelName }}</label>
+    <select
+      :id="id"
+      v-model="value"
+      class="select"
+      :name="id"
+      :disabled="disabled"
+      :required="required"
     >
-      {{ t(option.name) }}
-    </option>
-  </select>
+      <option
+        v-for="option in options"
+        :key="`${id}-${option}`"
+        :value="option.value"
+        class="option"
+      >
+        {{ t(option.name) }}
+      </option>
+    </select>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -25,10 +30,6 @@
   import { TUISelectPropsObject } from '@Bundles/UIBundle/Supports/UISelect.supports'
 
   const props = defineProps({
-    variant: {
-      type: String as PropType<'primary'>,
-      defaut: 'primary',
-    },
     id: {
       type: String,
       required: true,
@@ -48,6 +49,14 @@
     options: {
       type: Object as PropType<TUISelectPropsObject>,
       required: true,
+    },
+    labelName: {
+      type: String,
+      required: false,
+    },
+    labelPosition: {
+      type: String as PropType<'top' | 'left'>,
+      default: 'top',
     },
   })
 
@@ -69,6 +78,7 @@
 <i18n src="@Bundles/ThemeBundle/Locales/Theme.locales.json"></i18n>
 <i18n src="@Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
 <i18n src="@Bundles/TimezoneBundle/Locales/Timezone.locales.json"></i18n>
+<i18n src="@Bundles/FileBundle/Locales/File.locales.json"></i18n>
 
 <style lang="scss" scoped>
   @import '@Bundles/UIBundle/Styles/UISelect.styles.scss';
