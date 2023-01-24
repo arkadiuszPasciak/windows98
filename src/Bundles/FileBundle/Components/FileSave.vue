@@ -12,8 +12,8 @@
     <div class="content">
       <UIInput
         id="file-save-name"
+        v-model:modelValue="fileNameModelValue"
         class="input"
-        :model-value="fileNameModelValue"
         :label-name="t('FileBundle.file-name')"
         label-position="left"
       />
@@ -22,9 +22,9 @@
 
       <UISelect
         id="file-types"
+        v-model:model-value="selectTextTypeModelValue"
         class="select"
         :options="MFilesTextTypes"
-        :model-value="MFilesTextTypes[0].value"
         :label-name="t('FileBundle.save-as-type')"
         label-position="left"
       />
@@ -44,10 +44,19 @@
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
   import { MFilesTextTypes } from '@Bundles/FileBundle/Mocks/File.mocks'
+  import { saveFileOnUserDisk } from '@Bundles/FileBundle/Services/File.services'
+  import {
+    EFileTextTypes,
+    TFileTextTypes,
+  } from '@Bundles/FileBundle/Supports/File.supports'
 
-  defineProps({
+  const props = defineProps({
     modalState: {
       type: Boolean,
+      required: true,
+    },
+    contentValue: {
+      type: String,
       required: true,
     },
   })
@@ -58,8 +67,16 @@
 
   const fileNameModelValue = ref(t('FileBundle.untitled')) as Ref<string>
 
-  const saveFile = () => {
-    console.log(123)
+  const selectTextTypeModelValue = ref(
+    MFilesTextTypes[0].value,
+  ) as Ref<TFileTextTypes>
+
+  const saveFile = (): void => {
+    saveFileOnUserDisk(
+      props.contentValue,
+      fileNameModelValue.value,
+      EFileTextTypes.TXT,
+    )
   }
 </script>
 

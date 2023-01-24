@@ -1,12 +1,12 @@
-// 'text/csv;charset=utf-8;'
+import { TFileTextTypes } from '@Bundles/FileBundle/Supports/File.supports'
 
-export function downloadData(
+export function saveFileOnUserDisk(
   content: string,
   filename: string,
-  type = 'text/txt;charset=utf-8;',
-) {
-  const blob = new Blob([content], { type })
-  const link = document.createElement('a')
+  type: TFileTextTypes,
+): void {
+  const blob = new Blob([content], { type }) as Blob
+  const link = document.createElement('a') as HTMLAnchorElement
 
   link.href = window.URL.createObjectURL(blob)
   link.setAttribute('download', filename)

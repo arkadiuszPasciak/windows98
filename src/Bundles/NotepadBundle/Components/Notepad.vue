@@ -18,13 +18,14 @@
       <FileSave
         class="file-save"
         :modal-state="notepadStore.modalSave"
+        :content-value="textareaValue"
         @close-modal="closeSaveModal"
       />
       <UITextarea
         id="notepad-textarea"
+        v-model:model-value="textareaValue"
         type="notepad"
         class="textarea"
-        :model-value="modelValue"
         label-name=""
         :resize-window="true"
         :disabled="notepadStore.modalSave === true"
@@ -47,7 +48,7 @@
   const programStore = useProgramStore()
   const notepadStore = useNotepadStore()
 
-  const modelValue = ref(t('NotepadBundle.example')) as Ref<string>
+  const textareaValue = ref(t('NotepadBundle.example')) as Ref<string>
 
   const closeModal = (): void => {
     programStore.updateNotepadModal(false)
