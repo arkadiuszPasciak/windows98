@@ -13,7 +13,6 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "update:packages": "npx npm-check-updates",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -25,7 +24,6 @@
     "lintfix:prettier": "prettier --write --list-different .",
     "typecheck": "vue-tsc --noEmit",
     "test": "vitest",
-    "test:ui": "vitest --ui",
     "test:run": "vitest run",
     "cypress:open": "cypress open",
     "packages-check-updates": "npx npm-check-updates",
@@ -42,7 +40,6 @@
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "@vitejs/plugin-vue": "^3.2.0",
-    "@vitest/ui": "^0.28.1",
     "@vue/eslint-config-typescript": "^11.0.2",
     "@vue/test-utils": "^2.2.7",
     "cypress": "^12.4.0",

@@ -12,6 +12,10 @@
       <button class="option" type="button" @click="openSaveModal">
         {{ t('NotepadBundle.save') }}
       </button>
+
+      <button class="option" type="button" @click="openFile">
+        {{ t('NotepadBundle.open') }}
+      </button>
     </template>
 
     <div class="content">
@@ -60,6 +64,10 @@
 
   const closeSaveModal = (): void => {
     notepadStore.updateSaveModal(false)
+  }
+
+  const openFile = (): void => {
+    console.log('test123')
   }
 </script>
 
