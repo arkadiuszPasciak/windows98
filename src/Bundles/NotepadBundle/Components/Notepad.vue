@@ -13,7 +13,7 @@
         {{ t('NotepadBundle.save') }}
       </button>
 
-      <FileOpen>
+      <FileOpen v-model:text-file-value="textFileValue">
         <button class="option" type="button">
           {{ t('NotepadBundle.open') }}
         </button>
@@ -41,7 +41,7 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, Ref } from 'vue'
+  import { ref, Ref, watch } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import UITextarea from '@Bundles/UIBundle/Components/UITextarea.vue'
@@ -56,6 +56,7 @@
   const notepadStore = useNotepadStore()
 
   const textareaValue = ref(t('NotepadBundle.example')) as Ref<string>
+  const textFileValue = ref(null) as Ref<null | string>
 
   const closeModal = (): void => {
     programStore.updateNotepadModal(false)
@@ -68,6 +69,12 @@
   const closeSaveModal = (): void => {
     notepadStore.updateSaveModal(false)
   }
+
+  watch(textFileValue, async (newValue) => {
+    if (newValue) {
+      textareaValue.value = newValue
+    }
+  })
 </script>
 
 <i18n src="@Bundles/NotepadBundle/Locales/Notepad.locales.json"></i18n>

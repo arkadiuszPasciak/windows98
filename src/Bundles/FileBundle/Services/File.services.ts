@@ -15,7 +15,7 @@ export function saveFileOnUserDisk(
   document.body.removeChild(link)
 }
 
-export async function openFileFromUserDisk(
+export async function openTextFileFromUserDisk(
   event: Event,
 ): Promise<null | string | ArrayBuffer> {
   if (!event) {

@@ -15,7 +15,9 @@
 <script setup lang="ts">
   import { ref, Ref } from 'vue'
   import { Nullable } from 'vitest'
-  import { openFileFromUserDisk } from '@Bundles/FileBundle/Services/File.services'
+  import { openTextFileFromUserDisk } from '@Bundles/FileBundle/Services/File.services'
+
+  const emits = defineEmits(['update:textFileValue'])
 
   const input = ref(null) as Ref<Nullable<HTMLInputElement>>
 
@@ -28,9 +30,9 @@
   }
 
   const readFile = async (event: Event): Promise<void> => {
-    const result = await openFileFromUserDisk(event)
+    const result = await openTextFileFromUserDisk(event)
 
-    console.log(result)
+    emits('update:textFileValue', result)
   }
 </script>
 
