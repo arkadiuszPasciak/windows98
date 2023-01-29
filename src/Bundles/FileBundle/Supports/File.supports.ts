@@ -15,3 +15,5 @@ export interface IFilesTextTypes {
   value: TFileTextTypes
   name: string
 }
+
+export type TFileTextFileReader = string | ArrayBuffer | null

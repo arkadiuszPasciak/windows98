@@ -1,4 +1,7 @@
-import { TFileTextTypes } from '@Bundles/FileBundle/Supports/File.supports'
+import {
+  TFileTextTypes,
+  TFileTextFileReader,
+} from '@Bundles/FileBundle/Supports/File.supports'
 
 export function saveFileOnUserDisk(
   content: string,
@@ -13,4 +16,42 @@ export function saveFileOnUserDisk(
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)
+}
+
+export async function openTextFileFromUserDisk(
+  event: Event,
+): Promise<TFileTextFileReader> {
+  if (!event) {
+    return null
+  }
+
+  const target = event.target as HTMLInputElement
+
+  if (!target) {
+    return null
+  }
+
+  const file: File = (target.files as FileList)[0]
+
+  if (!file) {
+    return null
+  }
+
+  const promise = new Promise((resolve) => {
+    const reader = new FileReader() as FileReader
+
+    reader.onload = (): void => {
+      resolve(reader.result)
+    }
+
+    reader.readAsText(file)
+  }) as Promise<TFileTextFileReader>
+
+  let result = null as TFileTextFileReader
+
+  await promise.then((value: TFileTextFileReader) => {
+    result = value
+  })
+
+  return result ?? null
 }
