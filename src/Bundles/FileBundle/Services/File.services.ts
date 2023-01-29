@@ -1,4 +1,3 @@
-import { Nullable } from 'vitest'
 import { TFileTextTypes } from '@Bundles/FileBundle/Supports/File.supports'
 
 export function saveFileOnUserDisk(
@@ -16,7 +15,9 @@ export function saveFileOnUserDisk(
   document.body.removeChild(link)
 }
 
-export function openFileFromUserDisk(event: Event): Nullable<any> {
+export async function openFileFromUserDisk(
+  event: Event,
+): Promise<null | string | ArrayBuffer> {
   if (!event) {
     return null
   }
@@ -33,9 +34,21 @@ export function openFileFromUserDisk(event: Event): Nullable<any> {
     return null
   }
 
-  const reader = new FileReader() as FileReader
+  const promise = new Promise((resolve) => {
+    const reader = new FileReader() as FileReader
 
-  const test = reader.readAsText(file)
+    reader.onload = () => {
+      resolve(reader.result)
+    }
 
-  return test
+    reader.readAsText(file)
+  })
+
+  let result = null
+
+  await promise.then((value) => {
+    result = value
+  })
+
+  return result ?? null
 }

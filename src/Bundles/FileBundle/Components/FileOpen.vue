@@ -13,8 +13,9 @@
 </template>
 
 <script setup lang="ts">
-  import { Nullable } from 'vite-node'
   import { ref, Ref } from 'vue'
+  import { Nullable } from 'vitest'
+  import { openFileFromUserDisk } from '@Bundles/FileBundle/Services/File.services'
 
   const input = ref(null) as Ref<Nullable<HTMLInputElement>>
 
@@ -26,8 +27,10 @@
     input.value.click()
   }
 
-  const readFile = (event: Event): void => {
-    console.log(event)
+  const readFile = async (event: Event): Promise<void> => {
+    const result = await openFileFromUserDisk(event)
+
+    console.log(result)
   }
 </script>
 
