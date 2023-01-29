@@ -13,9 +13,11 @@
         {{ t('NotepadBundle.save') }}
       </button>
 
-      <button class="option" type="button" @click="openFile">
-        {{ t('NotepadBundle.open') }}
-      </button>
+      <FileOpen>
+        <button class="option" type="button">
+          {{ t('NotepadBundle.open') }}
+        </button>
+      </FileOpen>
     </template>
 
     <div class="content">
@@ -43,6 +45,7 @@
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import UITextarea from '@Bundles/UIBundle/Components/UITextarea.vue'
+  import FileOpen from '@Bundles/FileBundle/Components/FileOpen.vue'
   import FileSave from '@Bundles/FileBundle/Components/FileSave.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
   import { useNotepadStore } from '@Bundles/NotepadBundle/Stores/Notepad.stores'
@@ -64,10 +67,6 @@
 
   const closeSaveModal = (): void => {
     notepadStore.updateSaveModal(false)
-  }
-
-  const openFile = (): void => {
-    console.log('test123')
   }
 </script>
 

@@ -56,13 +56,31 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
       >
         Save
       </button>
-      <button
-        class="option"
+      <div
+        class="FileOpen"
         data-v-7632fb2e=""
-        type="button"
+        data-v-d06489ec=""
       >
-        Open
-      </button>
+        <div
+          class="open-file"
+          data-v-d06489ec=""
+        >
+          
+          <button
+            class="option"
+            data-v-7632fb2e=""
+            type="button"
+          >
+            Open
+          </button>
+          
+        </div>
+        <input
+          class="read-file"
+          data-v-d06489ec=""
+          type="file"
+        />
+      </div>
       
     </div>
     
