@@ -10,14 +10,6 @@
     height: 100%;
   }
 
-  .option {
-    @include font('medium', 11, 14);
-    color: var(--text-color);
-    padding: 0 5px;
-    cursor: pointer;
-    margin-right: 5px;
-  }
-
   .file-save {
     z-index: 2;
   }

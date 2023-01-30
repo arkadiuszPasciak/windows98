@@ -31,9 +31,9 @@
         </UIButton>
       </div>
 
-      <div v-if="$slots.options" class="options">
+      <UIModalNavigation v-if="$slots.options">
         <slot name="options" />
-      </div>
+      </UIModalNavigation>
 
       <slot />
     </div>
@@ -45,6 +45,7 @@
   import { Nullable } from 'vitest'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import UIModalNavigation from '@Bundles/UIBundle/Components/UIModalNavigation.vue'
   import { IUIModalCursorType } from '@Bundles/UIBundle/Supports/UIModal.supports'
 
   const props = defineProps({

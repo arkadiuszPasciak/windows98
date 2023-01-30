@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`[UIBundle]<Snapshots>(UIModalNavigation) > renders correctly component 1`] = `
+<div
+  class="UIModalNavigation"
+  data-v-9a70d424=""
+>
+  
+  <p>
+    This is a default slot!
+  </p>
+  
+</div>
+`;

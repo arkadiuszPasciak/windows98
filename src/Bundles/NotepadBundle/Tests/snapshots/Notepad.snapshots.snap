@@ -45,16 +45,21 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
       </button>
     </div>
     <div
-      class="options"
+      class="UIModalNavigation"
       data-v-99a75817=""
+      data-v-9a70d424=""
     >
       
+      
       <button
-        class="option"
+        class="UIModalNavigationItem"
+        data-v-0ff8e3f7=""
         data-v-7632fb2e=""
         type="button"
       >
+        
         Save
+        
       </button>
       <div
         class="FileOpen"
@@ -67,11 +72,14 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
         >
           
           <button
-            class="option"
+            class="UIModalNavigationItem"
+            data-v-0ff8e3f7=""
             data-v-7632fb2e=""
             type="button"
           >
+            
             Open
+            
           </button>
           
         </div>
@@ -81,6 +89,7 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
           type="file"
         />
       </div>
+      
       
     </div>
     
