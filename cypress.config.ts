@@ -6,9 +6,10 @@ export default defineConfig({
       framework: 'vue',
       bundler: 'vite',
     },
+    specPattern: 'src/Bundles/**/Tests/components/*.components.ts',
   },
 
   e2e: {
-    specPattern: './src/Bundles/**/Tests/e2e/*.e2e.ts',
+    specPattern: 'src/Bundles/**/Tests/e2e/*.e2e.ts',
   },
 })
