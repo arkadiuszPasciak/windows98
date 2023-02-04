@@ -25,13 +25,39 @@ export type TCalculatorNumber =
 
 export enum ECalculatorSign {
   ADD = '+',
+  DIVIDE = '/',
+  DOT = '.',
   MINUS = '-',
   MULTIPLY = '*',
-  DIVIDE = '/',
+  RESULT = '=',
 }
 
 export type TCalculatorSign =
   | ECalculatorSign.ADD
+  | ECalculatorSign.DIVIDE
+  | ECalculatorSign.DOT
   | ECalculatorSign.MINUS
   | ECalculatorSign.MULTIPLY
-  | ECalculatorSign.DIVIDE
+  | ECalculatorSign.RESULT
+
+export enum ECalculatorButton {
+  DOT = 'dot',
+  NUMBER = 'number',
+  RESULT = 'result',
+  SIGN = 'sign',
+}
+
+export type TCalculatorButton =
+  | ECalculatorButton.DOT
+  | ECalculatorButton.NUMBER
+  | ECalculatorButton.RESULT
+  | ECalculatorButton.SIGN
+
+export type TCalculatorButtonContent = TCalculatorSign | TCalculatorNumber
+
+export interface ICalculatorButtons {
+  type: TCalculatorButton
+  content: TCalculatorButtonContent
+  testAttribute: string
+  color: 'color-blue' | 'color-red'
+}
