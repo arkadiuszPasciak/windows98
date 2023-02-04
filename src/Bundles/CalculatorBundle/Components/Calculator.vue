@@ -13,6 +13,7 @@
       <UIButton
         class="color-blue"
         size="calculator"
+        :data-test="`calculator-button-${ECalculatorNumber.SEVEN}`"
         @click="addNumber(ECalculatorNumber.SEVEN)"
       >
         {{ ECalculatorNumber.SEVEN }}
@@ -144,6 +145,7 @@
   }
 
   const addNumber = (number: TCalculatorNumber): void => {
+    console.log('component button')
     calculatorStore.addNumber(number)
   }
 

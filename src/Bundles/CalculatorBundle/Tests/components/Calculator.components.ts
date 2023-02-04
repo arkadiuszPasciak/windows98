@@ -9,10 +9,11 @@ describe('[CalculatorBundle]<Components>(Calculator)', () => {
       global: {
         plugins: [
           createTestingPinia({
+            createSpy: cy.spy,
             initialState: {
               program: { modalCalculator: true },
             },
-            createSpy: cy.spy,
+            stubActions: false,
           }),
         ],
       },
@@ -21,5 +22,7 @@ describe('[CalculatorBundle]<Components>(Calculator)', () => {
 
   it('should have element and class', () => {
     cy.get('div.Calculator')
+
+    cy.get('[data-test="calculator-button-7"]').click()
   })
 })

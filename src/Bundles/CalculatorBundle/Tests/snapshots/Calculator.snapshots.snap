@@ -62,6 +62,7 @@ exports[`[CalculatorBundle]<Snapshots>(Calculator) > renders correctly component
       </p>
       <button
         class="UIButton size-calculator color-blue"
+        data-test="calculator-button-7"
         data-v-a7eaed9a=""
         data-v-cf1bb3a9=""
         type="button"
