@@ -18,6 +18,7 @@ exports[`[StartBundle]<Snapshots>(Start) > renders correctly component before cl
     >
       <h3
         class="title"
+        data-test="modal-header-title"
         data-v-99a75817=""
       >
         Shut Down Windows

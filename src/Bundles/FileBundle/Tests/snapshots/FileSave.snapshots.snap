@@ -18,6 +18,7 @@ exports[`[FileBundle]<Snapshots>(FileSave) > renders correctly component 1`] = `
     >
       <h3
         class="title"
+        data-test="modal-header-title"
         data-v-99a75817=""
       >
         Save as

@@ -1,5 +1,7 @@
 <template>
-  <UIText class="CalculatorDisplay">{{ calculatorStore.value }}</UIText>
+  <UIText class="CalculatorDisplay" data-test="calculator-display">
+    {{ calculatorStore.value }}
+  </UIText>
 </template>
 
 <script setup lang="ts">

@@ -13,7 +13,7 @@
         @mousedown="(event) => mouseDownEvent(event)"
         @mouseup="mouseUpEvent"
       >
-        <h3 class="title">{{ title }}</h3>
+        <h3 class="title" data-test="modal-header-title">{{ title }}</h3>
         <UIButton
           class="button-close"
           size="small"
