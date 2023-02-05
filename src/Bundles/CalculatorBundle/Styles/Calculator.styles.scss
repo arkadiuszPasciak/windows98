@@ -1,21 +1,5 @@
 .Calculator {
   .content {
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 35px repeat(3, 30px);
-    padding: 13px 10px 10px;
-    gap: 1px;
-  }
-
-  .color-blue {
-    color: $cl-blue00;
-  }
-
-  .color-red {
-    color: $cl-red;
-  }
-
-  .display {
-    grid-area: 1 / 1 / 2 / 5;
+    padding: 13px 22px 10px;
   }
 }

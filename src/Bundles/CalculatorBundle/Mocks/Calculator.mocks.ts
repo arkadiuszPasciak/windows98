@@ -5,7 +5,7 @@ import {
   ICalculatorButtons,
 } from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
 
-export const calculatorButtons = [
+export const MCalculatorButtons = [
   {
     type: ECalculatorButton.NUMBER,
     content: ECalculatorNumber.SEVEN,

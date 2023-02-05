@@ -16,7 +16,6 @@ export const useCalculatorStore = defineStore('calculator', {
   }),
   actions: {
     addNumber(number: TCalculatorNumber) {
-      console.log('store add number')
       if (
         isValueEqual(this.value, '0', 'first') &&
         !isValueEqual(this.value, '0.', 'first') &&

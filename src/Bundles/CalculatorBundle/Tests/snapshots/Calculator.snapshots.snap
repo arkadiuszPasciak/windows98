@@ -51,7 +51,7 @@ exports[`[CalculatorBundle]<Snapshots>(Calculator) > renders correctly component
       data-v-a7eaed9a=""
     >
       <p
-        class="UIText CalculatorDisplay display"
+        class="UIText CalculatorDisplay"
         data-v-a7eaed9a=""
         data-v-e69f73e7=""
         data-v-f0b878d5=""
@@ -60,231 +60,286 @@ exports[`[CalculatorBundle]<Snapshots>(Calculator) > renders correctly component
         0
         
       </p>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-test="calculator-button-7"
+      <div
+        class="CalculatorKeyboard"
+        data-v-040e8049=""
         data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
       >
         
         
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-7"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          7
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-8"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          8
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-9"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          9
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-red"
+          data-test="calculator-button-/"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          /
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-4"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          4
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-5"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          5
+          
+          
+          
+        </button>
+        
         
-        7
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-        8
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-        9
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-red"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-         / 
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-        4
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-        5
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-        6
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-red"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-         * 
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-        1
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-        2
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-        3
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-red"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-         - 
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-        0
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-         . 
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-blue"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-         = 
-        
-        
-        
-      </button>
-      <button
-        class="UIButton size-calculator color-red"
-        data-v-a7eaed9a=""
-        data-v-cf1bb3a9=""
-        type="button"
-      >
-        
-        
-        
-         + 
-        
-        
-        
-      </button>
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-6"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          6
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-red"
+          data-test="calculator-button-*"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          *
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-1"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          1
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-2"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          2
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-3"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          3
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-red"
+          data-test="calculator-button--"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          -
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-0"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          0
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-."
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          .
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-blue"
+          data-test="calculator-button-="
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          =
+          
+          
+          
+        </button>
+        
+        
+        <button
+          class="UIButton size-calculator color-red"
+          data-test="calculator-button-+"
+          data-v-040e8049=""
+          data-v-cf1bb3a9=""
+          type="button"
+        >
+          
+          
+          
+          +
+          
+          
+          
+        </button>
+        
+        
+      </div>
     </div>
     
   </div>
