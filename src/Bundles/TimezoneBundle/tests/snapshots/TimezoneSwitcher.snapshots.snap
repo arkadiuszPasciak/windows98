@@ -8,6 +8,7 @@ exports[`[TimezoneBundle]<Snapshots>(TimezoneSwitcher) > renders correctly compo
 >
   <p
     class="UIText title"
+    data-test="frame-title-timezone"
     data-v-f0b878d5=""
     data-v-ff9b8841=""
   >

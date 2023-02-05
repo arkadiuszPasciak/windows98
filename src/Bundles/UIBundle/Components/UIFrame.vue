@@ -1,6 +1,12 @@
 <template>
   <div class="UIFrame">
-    <UIText v-if="title" class="title">{{ title }}</UIText>
+    <UIText
+      v-if="title"
+      class="title"
+      :data-test="`frame-title-${title}`.toLowerCase()"
+    >
+      {{ title }}
+    </UIText>
     <slot />
   </div>
 </template>

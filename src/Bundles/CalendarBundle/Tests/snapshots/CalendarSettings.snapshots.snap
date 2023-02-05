@@ -8,6 +8,7 @@ exports[`[CalendarBundle]<Snapshots>(CalendarSettings) > renders correctly compo
 >
   <p
     class="UIText title"
+    data-test="frame-title-calendar"
     data-v-f0b878d5=""
     data-v-ff9b8841=""
   >

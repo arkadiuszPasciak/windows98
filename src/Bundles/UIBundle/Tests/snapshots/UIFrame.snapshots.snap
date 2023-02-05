@@ -7,6 +7,7 @@ exports[`[UIBundle]<Snapshots>(UIFrame) > renders correctly component 1`] = `
 >
   <p
     class="UIText title"
+    data-test="frame-title-date & time"
     data-v-f0b878d5=""
     data-v-ff9b8841=""
   >
