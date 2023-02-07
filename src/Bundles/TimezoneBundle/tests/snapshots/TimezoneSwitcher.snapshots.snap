@@ -25,6 +25,7 @@ exports[`[TimezoneBundle]<Snapshots>(TimezoneSwitcher) > renders correctly compo
     <!--v-if-->
     <select
       class="select"
+      data-test="ui-select-timezones"
       data-v-d3c68ad1=""
       id="timezones"
       name="timezones"

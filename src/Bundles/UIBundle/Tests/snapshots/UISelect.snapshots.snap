@@ -14,6 +14,7 @@ exports[`[UIBundle]<Snapshots>(UISelect) > renders correctly component with labe
   </label>
   <select
     class="select"
+    data-test="ui-select-ui-select-test"
     data-v-d3c68ad1=""
     id="ui-select-test"
     name="ui-select-test"
@@ -52,6 +53,7 @@ exports[`[UIBundle]<Snapshots>(UISelect) > renders correctly component with labe
   </label>
   <select
     class="select"
+    data-test="ui-select-ui-select-test"
     data-v-d3c68ad1=""
     id="ui-select-test"
     name="ui-select-test"

@@ -26,6 +26,7 @@ exports[`[CalendarBundle]<Snapshots>(CalendarSettings) > renders correctly compo
     <!--v-if-->
     <select
       class="select"
+      data-test="ui-select-date-months"
       data-v-d3c68ad1=""
       id="date-months"
       name="date-months"

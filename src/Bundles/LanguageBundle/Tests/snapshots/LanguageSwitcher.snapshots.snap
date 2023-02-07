@@ -9,6 +9,7 @@ exports[`[LanguageBundle]<Snapshots>(LanguageSwitcher) > renders correctly compo
   <!--v-if-->
   <select
     class="select"
+    data-test="ui-select-languages"
     data-v-d3c68ad1=""
     id="languages"
     name="languages"

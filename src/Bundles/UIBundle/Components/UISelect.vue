@@ -9,6 +9,7 @@
       v-model="value"
       class="select"
       :name="id"
+      :data-test="`ui-select-${id}`"
       :disabled="disabled"
       :required="required"
     >

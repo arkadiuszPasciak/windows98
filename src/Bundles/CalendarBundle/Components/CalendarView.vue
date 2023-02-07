@@ -10,13 +10,20 @@
       </div>
     </div>
 
-    <div v-if="calculatorStore?.calendar" class="days">
+    <div
+      v-if="calculatorStore?.calendar"
+      class="days"
+      data-test="calendar-view-days"
+    >
       <button
         v-for="(item, index) in calculatorStore.calendar"
         :key="`days-of-months-${index}`"
         type="button"
         class="day"
-        :class="item.status === ECalendarStatusDay.ACTIVE ? 'is-active' : ''"
+        :class="[
+          `is-${item.status}`,
+          `${item.status === ECalendarStatusDay.ACTIVE ? 'is-normal' : ''}`,
+        ]"
       >
         {{ item.value }}
       </button>

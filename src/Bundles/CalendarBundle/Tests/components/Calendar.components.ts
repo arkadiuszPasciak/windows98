@@ -1,6 +1,30 @@
 import { createTestingPinia } from '@pinia/testing'
 import CalendarSettings from '@Bundles/CalendarBundle/Components/CalendarSettings.vue'
 
+const elements = {
+  calendarDaysView: '[data-test="calendar-view-days"]',
+  selectDateMonths: '[data-test="ui-select-date-months"]',
+  optionSelected: '[data-test="ui-select-date-months"] > option:selected',
+}
+
+function changeSelectAndCheckComponent(
+  month: string,
+  inActiveDays: number,
+  days: number,
+) {
+  cy.get(elements.selectDateMonths).select(month)
+
+  cy.get(elements.optionSelected).should('have.text', month)
+
+  cy.get(elements.calendarDaysView)
+    .find('.day.is-inactive')
+    .should('have.length', inActiveDays)
+
+  cy.get(elements.calendarDaysView)
+    .find('.day.is-normal')
+    .should('have.length', days)
+}
+
 describe('[CalendarBundle]<Components>(Calendar)', async () => {
   beforeEach(() => {
     cy.viewport(200, 240)
@@ -26,52 +50,28 @@ describe('[CalendarBundle]<Components>(Calendar)', async () => {
   })
 
   it('selects months', () => {
-    cy.get('select').select('January')
+    changeSelectAndCheckComponent('January', 0, 31)
 
-    cy.get('select > option:selected').should('have.text', 'January')
+    changeSelectAndCheckComponent('February', 3, 28)
 
-    cy.get('select').select('February')
+    changeSelectAndCheckComponent('March', 3, 31)
 
-    cy.get('select > option:selected').should('have.text', 'February')
+    changeSelectAndCheckComponent('April', 6, 30)
 
-    cy.get('select').select('March')
+    changeSelectAndCheckComponent('May', 1, 31)
 
-    cy.get('select > option:selected').should('have.text', 'March')
+    changeSelectAndCheckComponent('June', 4, 30)
 
-    cy.get('select').select('April')
+    changeSelectAndCheckComponent('July', 6, 31)
 
-    cy.get('select > option:selected').should('have.text', 'April')
+    changeSelectAndCheckComponent('August', 2, 31)
 
-    cy.get('select').select('May')
+    changeSelectAndCheckComponent('September', 5, 30)
 
-    cy.get('select > option:selected').should('have.text', 'May')
+    changeSelectAndCheckComponent('October', 0, 31)
 
-    cy.get('select').select('June')
+    changeSelectAndCheckComponent('November', 3, 30)
 
-    cy.get('select > option:selected').should('have.text', 'June')
-
-    cy.get('select').select('July')
-
-    cy.get('select > option:selected').should('have.text', 'July')
-
-    cy.get('select').select('August')
-
-    cy.get('select > option:selected').should('have.text', 'August')
-
-    cy.get('select').select('September')
-
-    cy.get('select > option:selected').should('have.text', 'September')
-
-    cy.get('select').select('October')
-
-    cy.get('select > option:selected').should('have.text', 'October')
-
-    cy.get('select').select('November')
-
-    cy.get('select > option:selected').should('have.text', 'November')
-
-    cy.get('select').select('December')
-
-    cy.get('select > option:selected').should('have.text', 'December')
+    changeSelectAndCheckComponent('December', 5, 31)
   })
 })

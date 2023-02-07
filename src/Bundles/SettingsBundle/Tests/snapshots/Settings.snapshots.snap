@@ -161,6 +161,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               <!--v-if-->
               <select
                 class="select"
+                data-test="ui-select-date-months"
                 data-v-d3c68ad1=""
                 id="date-months"
                 name="date-months"
@@ -377,6 +378,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               <!--v-if-->
               <select
                 class="select"
+                data-test="ui-select-timezones"
                 data-v-d3c68ad1=""
                 id="timezones"
                 name="timezones"
@@ -575,6 +577,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
             <!--v-if-->
             <select
               class="select"
+              data-test="ui-select-languages"
               data-v-d3c68ad1=""
               id="languages"
               name="languages"
@@ -605,6 +608,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
             <!--v-if-->
             <select
               class="select"
+              data-test="ui-select-themes"
               data-v-d3c68ad1=""
               id="themes"
               name="themes"

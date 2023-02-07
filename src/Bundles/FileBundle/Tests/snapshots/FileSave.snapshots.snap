@@ -98,6 +98,7 @@ exports[`[FileBundle]<Snapshots>(FileSave) > renders correctly component 1`] = `
         </label>
         <select
           class="select"
+          data-test="ui-select-file-types"
           data-v-d3c68ad1=""
           id="file-types"
           name="file-types"
