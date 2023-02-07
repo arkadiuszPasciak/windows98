@@ -1,10 +1,17 @@
 import { createTestingPinia } from '@pinia/testing'
 import CalendarSettings from '@Bundles/CalendarBundle/Components/CalendarSettings.vue'
+import {
+  ECalendarYearChangeMethod,
+  TCalendarYearChangeMethod,
+} from '@Bundles/CalendarBundle/Supports/Calendar.supports'
 
 const elements = {
   calendarDaysView: '[data-test="calendar-view-days"]',
   selectDateMonths: '[data-test="ui-select-date-months"]',
   optionSelected: '[data-test="ui-select-date-months"] > option:selected',
+  buttonYear: (method: TCalendarYearChangeMethod) =>
+    `[data-test="calendar-year-switcher-${method}"]`,
+  showYear: '[data-test="calendar-year-switcher-year"]',
 }
 
 function changeSelectAndCheckComponent(
@@ -15,6 +22,25 @@ function changeSelectAndCheckComponent(
   cy.get(elements.selectDateMonths).select(month)
 
   cy.get(elements.optionSelected).should('have.text', month)
+
+  cy.get(elements.calendarDaysView)
+    .find('.day.is-inactive')
+    .should('have.length', inActiveDays)
+
+  cy.get(elements.calendarDaysView)
+    .find('.day.is-normal')
+    .should('have.length', days)
+}
+
+function changeYearAndCheckComponent(
+  year: string,
+  method: TCalendarYearChangeMethod,
+  inActiveDays: number,
+  days: number,
+) {
+  cy.get(elements.buttonYear(method)).click()
+
+  cy.get(elements.showYear).should('have.text', year)
 
   cy.get(elements.calendarDaysView)
     .find('.day.is-inactive')
@@ -73,5 +99,28 @@ describe('[CalendarBundle]<Components>(Calendar)', async () => {
     changeSelectAndCheckComponent('November', 3, 30)
 
     changeSelectAndCheckComponent('December', 5, 31)
+  })
+
+  it('selects years', () => {
+    changeYearAndCheckComponent(
+      '2024',
+      ECalendarYearChangeMethod.INCREASE,
+      4,
+      29,
+    )
+
+    changeYearAndCheckComponent(
+      '2023',
+      ECalendarYearChangeMethod.DECREASE,
+      3,
+      28,
+    )
+
+    changeYearAndCheckComponent(
+      '2022',
+      ECalendarYearChangeMethod.DECREASE,
+      2,
+      28,
+    )
   })
 })

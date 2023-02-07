@@ -261,6 +261,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
             >
               <p
                 class="UIText year"
+                data-test="calendar-year-switcher-year"
                 data-v-ca14cfec=""
                 data-v-f0b878d5=""
               >
@@ -270,6 +271,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               </p>
               <button
                 class="UIButton size-small button increase"
+                data-test="calendar-year-switcher-increase"
                 data-v-ca14cfec=""
                 data-v-cf1bb3a9=""
                 type="button"
@@ -283,6 +285,7 @@ exports[`[SettingsBundle]<Snapshots>(Settings) > renders correctly component 1`]
               </button>
               <button
                 class="UIButton size-small button decrease"
+                data-test="calendar-year-switcher-decrease"
                 data-v-ca14cfec=""
                 data-v-cf1bb3a9=""
                 type="button"
