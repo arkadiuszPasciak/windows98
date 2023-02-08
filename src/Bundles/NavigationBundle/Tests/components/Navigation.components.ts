@@ -2,6 +2,8 @@ import Navigation from '@Bundles/NavigationBundle/Components/Navigation.vue'
 
 describe('[NavigationBundle]<Components>(Navigation)', () => {
   before(() => {
+    cy.viewport(500, 28)
+
     cy.mount(Navigation)
   })
 
