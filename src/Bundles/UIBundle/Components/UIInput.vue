@@ -3,10 +3,18 @@
     class="UIInput"
     :class="labelName ? `label-position-${labelPosition}` : ''"
   >
-    <label v-if="labelName" class="label" :for="id">{{ labelName }}</label>
+    <label
+      v-if="labelName"
+      class="label"
+      :data-test="`ui-input-label-${id}`"
+      :for="id"
+    >
+      {{ labelName }}
+    </label>
     <input
       :id="id"
       class="input"
+      :data-test="`ui-input-${id}`"
       :type="type"
       :disabled="disabled"
       :readonly="readonly"

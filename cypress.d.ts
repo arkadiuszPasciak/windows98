@@ -1,7 +1,7 @@
 import { mount } from 'cypress/vue'
-
-type MountParams = Parameters<typeof mount>
-type OptionsParam = MountParams[1]
+import { MountingOptions } from '@vue/test-utils'
+import { Store } from 'pinia'
+import { Component } from '@vue/test-utils'
 
 declare global {
   namespace Cypress {
@@ -12,8 +12,8 @@ declare global {
        * @param options Options passed to Vue Test Utils
        */
       mount(
-        component: any,
-        options?: OptionsParam & { store?: Store },
+        component: Component,
+        options?: MountingOptions & { store?: Store },
       ): Chainable<any>
     }
   }

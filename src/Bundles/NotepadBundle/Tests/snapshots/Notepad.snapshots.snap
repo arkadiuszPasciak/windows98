@@ -69,6 +69,7 @@ exports[`[NotepadBundle]<Snapshots>(Notepad) > renders correctly component 1`] =
       >
         <div
           class="open-file"
+          data-test="file-open-button"
           data-v-d06489ec=""
         >
           

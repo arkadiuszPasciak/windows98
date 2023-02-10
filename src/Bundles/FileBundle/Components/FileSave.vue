@@ -18,13 +18,16 @@
         label-position="left"
       />
 
-      <UIButton @click="saveFile">{{ t('FileBundle.save') }}</UIButton>
+      <UIButton data-test="file-save-button-save" @click="saveFile">
+        {{ t('FileBundle.save') }}
+      </UIButton>
 
       <UISelect
         id="file-types"
         v-model:model-value="selectTextTypeModelValue"
         class="select"
         :options="MFilesTextTypes"
+        data-test="file-save-button-cancel"
         :label-name="t('FileBundle.save-as-type')"
         label-position="left"
       />

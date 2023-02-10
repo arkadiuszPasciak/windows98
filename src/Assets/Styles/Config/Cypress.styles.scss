@@ -8,3 +8,14 @@ body,
 .CalendarSettings {
   background-color: var(--background-color);
 }
+
+.cypress-button-small {
+  @include font('medium', 11, 14);
+  color: var(--text-color);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.FileSave {
+  position: static !important;
+}

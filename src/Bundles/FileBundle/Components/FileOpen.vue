@@ -1,6 +1,6 @@
 <template>
   <div class="FileOpen">
-    <div class="open-file" @click="openFile">
+    <div class="open-file" data-test="file-open-button" @click="openFile">
       <slot />
     </div>
     <input

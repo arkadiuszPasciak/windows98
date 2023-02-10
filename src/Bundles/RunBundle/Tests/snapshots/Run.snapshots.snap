@@ -75,6 +75,7 @@ exports[`[RunBundle]<Snapshots>(Run) > renders correctly component 1`] = `
       >
         <label
           class="label"
+          data-test="ui-input-label-run-input"
           data-v-e394574e=""
           for="run-input"
         >
@@ -82,6 +83,7 @@ exports[`[RunBundle]<Snapshots>(Run) > renders correctly component 1`] = `
         </label>
         <input
           class="input"
+          data-test="ui-input-run-input"
           data-v-e394574e=""
           id="run-input"
           type="text"

@@ -17,3 +17,10 @@ export interface IFilesTextTypes {
 }
 
 export type TFileTextFileReader = string | ArrayBuffer | null
+
+export interface IFilesElements {
+  labelFileSaveName: string
+  labelFileTypes: string
+  selectTypeFile: string
+  optionSelected: string
+}
