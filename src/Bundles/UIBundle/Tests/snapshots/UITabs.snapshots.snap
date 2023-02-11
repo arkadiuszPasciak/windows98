@@ -12,6 +12,7 @@ exports[`[UIBundle]<Snapshots>(UITabs) > renders correctly component 1`] = `
     
     <button
       class="tab active"
+      data-test="ui-tabs-button-0"
       data-v-39833990=""
       type="button"
     >
@@ -19,6 +20,7 @@ exports[`[UIBundle]<Snapshots>(UITabs) > renders correctly component 1`] = `
     </button>
     <button
       class="tab"
+      data-test="ui-tabs-button-1"
       data-v-39833990=""
       type="button"
     >
