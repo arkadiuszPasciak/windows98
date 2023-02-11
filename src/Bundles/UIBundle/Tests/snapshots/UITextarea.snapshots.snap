@@ -7,6 +7,7 @@ exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: leftPr
 >
   <label
     class="label"
+    data-test="ui-textarea-label-email"
     data-v-cbf41378=""
     for="email"
   >
@@ -14,6 +15,7 @@ exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: leftPr
   </label>
   <textarea
     class="textarea"
+    data-test="ui-textarea-email"
     data-v-cbf41378=""
     id="email"
   />
@@ -28,6 +30,7 @@ exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: notepa
   <!--v-if-->
   <textarea
     class="textarea"
+    data-test="ui-textarea-notepad-textarea"
     data-v-cbf41378=""
     id="notepad-textarea"
   />
@@ -41,6 +44,7 @@ exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: topPri
 >
   <label
     class="label"
+    data-test="ui-textarea-label-address"
     data-v-cbf41378=""
     for="address"
   >
@@ -48,6 +52,7 @@ exports[`[UIBundle]<Snapshots>(UITextarea) > renders correctly component: topPri
   </label>
   <textarea
     class="textarea"
+    data-test="ui-textarea-address"
     data-v-cbf41378=""
     id="address"
   />

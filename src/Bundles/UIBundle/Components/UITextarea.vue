@@ -1,12 +1,20 @@
 <template>
   <div class="UITextarea" :class="classes">
-    <label v-if="labelName" class="label" :for="id">{{ labelName }}</label>
+    <label
+      v-if="labelName"
+      class="label"
+      :data-test="`ui-textarea-label-${id}`"
+      :for="id"
+    >
+      {{ labelName }}
+    </label>
     <textarea
       :id="id"
       class="textarea"
       :value="modelValue"
       :disabled="disabled"
       :readonly="readonly"
+      :data-test="`ui-textarea-${id}`"
       @input="
         $emit('update:modelValue', ($event.target as HTMLInputElement).value)
       "

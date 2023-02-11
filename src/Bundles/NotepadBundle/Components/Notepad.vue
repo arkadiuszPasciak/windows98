@@ -9,7 +9,10 @@
     @close-modal="closeModal"
   >
     <template #options>
-      <UIModalNavigationItem @click="openSaveModal">
+      <UIModalNavigationItem
+        data-test="notepad-save-file"
+        @click="openSaveModal"
+      >
         {{ t('NotepadBundle.save') }}
       </UIModalNavigationItem>
 

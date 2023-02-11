@@ -1,6 +1,5 @@
 import FileSave from '@Bundles/FileBundle/Components/FileSave.vue'
 import { FileSaveComponentTesting } from '@Bundles/FileBundle/Services/File.services'
-import { method } from 'cypress/types/bluebird'
 
 const methods = new FileSaveComponentTesting()
 

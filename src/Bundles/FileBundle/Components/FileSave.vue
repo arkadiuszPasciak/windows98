@@ -27,12 +27,14 @@
         v-model:model-value="selectTextTypeModelValue"
         class="select"
         :options="MFilesTextTypes"
-        data-test="file-save-button-cancel"
         :label-name="t('FileBundle.save-as-type')"
         label-position="left"
       />
 
-      <UIButton @click="$emit('closeModal')">
+      <UIButton
+        data-test="file-save-button-cancel"
+        @click="$emit('closeModal')"
+      >
         {{ t('FileBundle.cancel') }}
       </UIButton>
     </div>
