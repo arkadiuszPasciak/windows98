@@ -7,18 +7,29 @@
       :disabled="disabled"
       :checked="checked"
       :name="name"
+      :data-test="generateDataTestName('input', name, modelValue)"
       @input="$emit('update:modelValue', modelValue)"
     />
 
-    <span class="radio"></span>
+    <span
+      class="radio"
+      :data-test="generateDataTestName('icon', name, modelValue)"
+    ></span>
 
-    <UIText v-if="$slots.default" class="text"><slot /></UIText>
+    <UIText
+      v-if="$slots.default"
+      class="text"
+      :data-test="generateDataTestName('label', name, modelValue)"
+    >
+      <slot />
+    </UIText>
   </label>
 </template>
 
 <script setup lang="ts">
   import { PropType } from 'vue'
   import UIText from '@Bundles/UIBundle/Components/UIText.vue'
+  import { generateDataTestName } from '@Bundles/UIBundle/Services/UIRadio.services'
 
   defineProps({
     variant: {

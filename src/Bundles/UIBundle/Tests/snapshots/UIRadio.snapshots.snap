@@ -7,6 +7,7 @@ exports[`[UIBundle]<Snapshots>(UIRadio) > renders correctly component: variant p
 >
   <input
     class="input"
+    data-test="ui-radio-input-available-radio-restart"
     data-v-ccc35d9d=""
     name="available-radio"
     type="radio"
@@ -14,10 +15,12 @@ exports[`[UIBundle]<Snapshots>(UIRadio) > renders correctly component: variant p
   />
   <span
     class="radio"
+    data-test="ui-radio-icon-available-radio-restart"
     data-v-ccc35d9d=""
   />
   <p
     class="UIText text"
+    data-test="ui-radio-label-available-radio-restart"
     data-v-ccc35d9d=""
     data-v-f0b878d5=""
   >
@@ -37,6 +40,7 @@ exports[`[UIBundle]<Snapshots>(UIRadio) > renders correctly component: variant p
 >
   <input
     class="input"
+    data-test="ui-radio-input-unavailable-radio-shut-down"
     data-v-ccc35d9d=""
     disabled=""
     name="unavailable-radio"
@@ -45,6 +49,7 @@ exports[`[UIBundle]<Snapshots>(UIRadio) > renders correctly component: variant p
   />
   <span
     class="radio"
+    data-test="ui-radio-icon-unavailable-radio-shut-down"
     data-v-ccc35d9d=""
   />
   <!--v-if-->
