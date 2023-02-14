@@ -1,28 +1,34 @@
 <template>
-  <label class="UICheckbox" :class="`variant-${variant}`">
+  <label class="UICheckbox">
     <input
       class="input"
       type="checkbox"
       :disabled="disabled"
       :checked="checked"
+      :data-test="`ui-checkbox-input-${id}`"
     />
 
-    <span class="checkmark">
+    <span class="checkmark" :data-test="`ui-checkbox-checkmark-${id}`">
       <i class="icon" />
     </span>
 
-    <UIText v-if="$slots.default" class="text"><slot /></UIText>
+    <UIText
+      v-if="$slots.default"
+      :data-test="`ui-checkbox-text-${id}`"
+      class="text"
+    >
+      <slot />
+    </UIText>
   </label>
 </template>
 
 <script setup lang="ts">
-  import { PropType } from 'vue'
   import UIText from '@Bundles/UIBundle/Components/UIText.vue'
 
   defineProps({
-    variant: {
-      type: String as PropType<'primary'>,
-      default: 'primary',
+    id: {
+      type: String,
+      required: true,
     },
     disabled: {
       type: Boolean,
