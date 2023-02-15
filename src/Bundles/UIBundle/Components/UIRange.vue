@@ -1,5 +1,5 @@
 <template>
-  <div class="UIRange" :class="`variant-${variant} position-${position}`">
+  <div class="UIRange" :class="`position-${position}`">
     <label v-if="labelNameStart" class="label is-start" :for="id">
       {{ labelNameStart }}
     </label>
@@ -35,10 +35,6 @@
   import { PropType } from 'vue'
 
   defineProps({
-    variant: {
-      type: String as PropType<'primary'>,
-      default: 'primary',
-    },
     id: {
       type: String,
       required: true,
