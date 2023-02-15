@@ -17,6 +17,7 @@
         <UIButton
           class="button-close"
           size="small"
+          data-test="ui-modal-button-close"
           @click="$emit('closeModal')"
         >
           <template #icon-left>
