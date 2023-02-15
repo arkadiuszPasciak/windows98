@@ -1,5 +1,5 @@
 <template>
-  <label class="UIRadio" :class="`variant-${variant}`">
+  <label class="UIRadio">
     <input
       class="input"
       type="radio"
@@ -27,15 +27,10 @@
 </template>
 
 <script setup lang="ts">
-  import { PropType } from 'vue'
   import UIText from '@Bundles/UIBundle/Components/UIText.vue'
   import { generateDataTestName } from '@Bundles/UIBundle/Services/UIRadio.services'
 
   defineProps({
-    variant: {
-      type: String as PropType<'primary'>,
-      default: 'primary',
-    },
     modelValue: {
       type: String,
       required: true,
