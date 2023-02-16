@@ -26,6 +26,7 @@
     "test": "vitest",
     "test:run": "vitest run",
     "cypress:open": "cypress open",
+    "cypress:run": "cypress run --component --browser chrome",
     "packages-check-updates": "npx npm-check-updates",
     "packages-update": "npx npm-check-updates -u"
   },

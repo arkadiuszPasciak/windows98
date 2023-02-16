@@ -11,6 +11,7 @@ My sandbox to improve my programming skills based on Windows 98
     - [Update packages](#update-packages)
   - [Deploy](#deploy)
     - [Node.js server](#nodejs-server)
+  - [Testing](#testing)
   - [Commands](#commands)
   - [Bundle Structure](#bundle-structure)
 
@@ -23,6 +24,7 @@ My sandbox to improve my programming skills based on Windows 98
 - 🚩 [Localization (i18n) by @intlify](https://github.com/intlify/bundle-tools/blob/main/packages/vite-plugin-vue-i18n/README.md)
 - 🐶 [Improves your commits and more (Husky)](https://typicode.github.io/husky/)
 - ⚡ [Blazing Fast Unit Test Framework (Vitest)](https://vitest.dev/)
+- 🔬 [Fast, easy and reliable web testing for any applications or components that run in a browser (Cypress)](https://www.cypress.io/)
 - 🐛 [Helps you find and fix problems with your JavaScript (Eslint)](https://eslint.org/)
 - 🖌 [Helps you find and fix problems with your SCSS (Stylelint)](https://stylelint.io/)
 - 🖨 [Takes your code and reprints to coding standards (Prettier)](https://prettier.io/)
@@ -45,6 +47,32 @@ My sandbox to improve my programming skills based on Windows 98
 - Run `npm run packages-check-updates` to show all packages to upgrade in `package.json`
 - Run `npm run packages-update` to upgrade all packages in `package.json`
 - Run `npm run install` to install new versions
+
+## Testing
+
+### Cypress Testing
+
+We use [Cypress Testing](https://www.cypress.io/) to test components
+
+The files are in Bundles in catalog `Tests/components`, example:
+
+```
+@Bundles/ExampleBundle/Tests/components/Example.components.ts
+```
+
+Commands are `npm run cypress:open` and `npm run cypress:run` - [more information here](#Commands)
+
+### Vitest Testing
+
+We use [Vitest Testing](https://vitest.dev/) to test JavaScript/TypeScript code
+
+The files are in Bundles in catalog `Tests/units`, example:
+
+```
+@Bundles/ExampleBundle/Tests/units/Example.units.ts
+```
+
+Commands are `npm run test` and `npm run test:run` - [more information here](#Commands)
 
 ## Deploy
 
@@ -70,8 +98,9 @@ My sandbox to improve my programming skills based on Windows 98
 - [`npm run lintfix:prettier`](https://stylelint.io/user-guide/usage/cli/) to format files `*`
 - [`npm run typecheck`](https://www.npmjs.com/package/vue-tsc) to test types
 - [`npm run test`](https://vitest.dev/guide/cli.html#vitest) to test in the current directory
-- [`npm run test:ui`](https://vitest.dev/guide/ui.html) to test with use UI
 - [`npm run test:run`](https://vitest.dev/guide/cli.html#vitest-run) to test on single run without watch mode
+- [`npm run cypress:open`](https://docs.cypress.io/guides/guides/command-line#cypress-open) to open Cypress CLI
+- [`npm run cypress:run`](https://docs.cypress.io/guides/guides/command-line#cypress-run) to test all Cypress Component Testing
 - [`npm run packages-check-updates`](https://github.com/raineorshine/npm-check-updates#installation) to show all packages to upgrade in `package.json`
 - [`npm run packages-update`](https://github.com/raineorshine/npm-check-updates#installation) to upgrade all packages in `package.json`
 
