@@ -9,14 +9,17 @@
     @close-modal="closeModal"
   >
     <template #options>
-      <button class="option" type="button" @click="openSaveModal">
+      <UIModalNavigationItem
+        data-test="notepad-save-file"
+        @click="openSaveModal"
+      >
         {{ t('NotepadBundle.save') }}
-      </button>
+      </UIModalNavigationItem>
 
       <FileOpen v-model:text-file-value="textFileValue">
-        <button class="option" type="button">
+        <UIModalNavigationItem>
           {{ t('NotepadBundle.open') }}
-        </button>
+        </UIModalNavigationItem>
       </FileOpen>
     </template>
 
@@ -44,6 +47,7 @@
   import { ref, Ref, watch } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import UIModalNavigationItem from '@Bundles/UIBundle/Components/UIModalNavigationItem.vue'
   import UITextarea from '@Bundles/UIBundle/Components/UITextarea.vue'
   import FileOpen from '@Bundles/FileBundle/Components/FileOpen.vue'
   import FileSave from '@Bundles/FileBundle/Components/FileSave.vue'

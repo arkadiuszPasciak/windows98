@@ -1,16 +1,14 @@
 <template>
-  <UIText class="CalculatorDisplay">{{ value }}</UIText>
+  <UIText class="CalculatorDisplay" data-test="calculator-display">
+    {{ calculatorStore.value }}
+  </UIText>
 </template>
 
 <script setup lang="ts">
   import UIText from '@Bundles/UIBundle/Components/UIText.vue'
+  import { useCalculatorStore } from '@Bundles/CalculatorBundle/Stores/Calculator.stores'
 
-  defineProps({
-    value: {
-      type: String,
-      required: true,
-    },
-  })
+  const calculatorStore = useCalculatorStore()
 </script>
 
 <style lang="scss" scoped>

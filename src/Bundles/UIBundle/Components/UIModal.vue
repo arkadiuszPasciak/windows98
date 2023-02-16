@@ -13,10 +13,11 @@
         @mousedown="(event) => mouseDownEvent(event)"
         @mouseup="mouseUpEvent"
       >
-        <h3 class="title">{{ title }}</h3>
+        <h3 class="title" data-test="modal-header-title">{{ title }}</h3>
         <UIButton
           class="button-close"
           size="small"
+          data-test="ui-modal-button-close"
           @click="$emit('closeModal')"
         >
           <template #icon-left>
@@ -31,9 +32,9 @@
         </UIButton>
       </div>
 
-      <div v-if="$slots.options" class="options">
+      <UIModalNavigation v-if="$slots.options">
         <slot name="options" />
-      </div>
+      </UIModalNavigation>
 
       <slot />
     </div>
@@ -45,6 +46,7 @@
   import { Nullable } from 'vitest'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import UIModalNavigation from '@Bundles/UIBundle/Components/UIModalNavigation.vue'
   import { IUIModalCursorType } from '@Bundles/UIBundle/Supports/UIModal.supports'
 
   const props = defineProps({

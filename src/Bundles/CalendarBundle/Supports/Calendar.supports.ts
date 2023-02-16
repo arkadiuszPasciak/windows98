@@ -51,3 +51,11 @@ export interface ICalendarDays {
   status: 'active' | 'inactive' | 'normal'
   value: string
 }
+
+export interface ICalendarElements {
+  calendarDaysView: string
+  selectDateMonths: string
+  optionSelected: string
+  buttonYear: (method: TCalendarYearChangeMethod) => string
+  showYear: string
+}

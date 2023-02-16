@@ -3,12 +3,20 @@
     class="UISelect"
     :class="props.labelName ? `label-position-${labelPosition}` : ''"
   >
-    <label v-if="labelName" class="label" :for="id">{{ labelName }}</label>
+    <label
+      v-if="labelName"
+      class="label"
+      :data-test="`ui-select-label-${id}`"
+      :for="id"
+    >
+      {{ labelName }}
+    </label>
     <select
       :id="id"
       v-model="value"
       class="select"
       :name="id"
+      :data-test="`ui-select-${id}`"
       :disabled="disabled"
       :required="required"
     >

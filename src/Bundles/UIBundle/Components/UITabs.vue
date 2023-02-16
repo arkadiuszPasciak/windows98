@@ -7,6 +7,7 @@
         class="tab"
         :class="id === activeIndex ? 'active' : ''"
         type="button"
+        :data-test="`ui-tabs-button-${id}`"
         @click="setActiveTab(id)"
       >
         {{ t(tab.title) }}

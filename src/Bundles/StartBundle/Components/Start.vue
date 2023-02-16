@@ -2,6 +2,7 @@
   <div class="Start">
     <UIButton
       class="button-start"
+      data-test="start-button-open"
       :disabled="!apps ? true : false"
       @click="togglePrimaryPanel"
     >

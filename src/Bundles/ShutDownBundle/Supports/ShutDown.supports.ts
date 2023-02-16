@@ -7,4 +7,4 @@ export type IShutDownRadioCheck =
   | EShutDownRadioCheck.SHUT_DOWN
   | EShutDownRadioCheck.RESTART
 
-export const shutDownRadioInputName = 'shut-down-radio-inputs'
+export const shutDownRadioInputName = 'shut-down'

@@ -1,8 +1,20 @@
 <template>
   <div class="CalendarYearSwitcher">
-    <UIText class="year">{{ calculatorStore.year }}</UIText>
-    <UIButton class="button increase" size="small" @click="increase" />
-    <UIButton class="button decrease" size="small" @click="decrease" />
+    <UIText class="year" data-test="calendar-year-switcher-year">
+      {{ calculatorStore.year }}
+    </UIText>
+    <UIButton
+      class="button increase"
+      size="small"
+      data-test="calendar-year-switcher-increase"
+      @click="increase"
+    />
+    <UIButton
+      class="button decrease"
+      size="small"
+      data-test="calendar-year-switcher-decrease"
+      @click="decrease"
+    />
   </div>
 </template>
 

@@ -18,7 +18,9 @@
         label-position="left"
       />
 
-      <UIButton @click="saveFile">{{ t('FileBundle.save') }}</UIButton>
+      <UIButton data-test="file-save-button-save" @click="saveFile">
+        {{ t('FileBundle.save') }}
+      </UIButton>
 
       <UISelect
         id="file-types"
@@ -29,7 +31,10 @@
         label-position="left"
       />
 
-      <UIButton @click="$emit('closeModal')">
+      <UIButton
+        data-test="file-save-button-cancel"
+        @click="$emit('closeModal')"
+      >
         {{ t('FileBundle.cancel') }}
       </UIButton>
     </div>

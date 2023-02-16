@@ -15,8 +15,11 @@
         height="32"
         src="/icons/applications/mycomputer.png"
         alt="My computer"
+        data-test="shut-down-icon"
       />
-      <UIText class="description">{{ t('ShutDownBundle.description') }}</UIText>
+      <UIText class="description" data-test="shut-down-description">
+        {{ t('ShutDownBundle.description') }}
+      </UIText>
       <UIRadio
         class="checkbox-shut-down"
         :name="shutDownRadioInputName"
@@ -34,10 +37,18 @@
       >
         {{ t('ShutDownBundle.restart') }}
       </UIRadio>
-      <UIButton class="button is-ok" @click="triggerEvent">
+      <UIButton
+        class="button is-ok"
+        data-test="shut-down-button-ok"
+        @click="triggerEvent"
+      >
         {{ t('ShutDownBundle.ok') }}
       </UIButton>
-      <UIButton class="button is-cancel" @click="closeModal">
+      <UIButton
+        class="button is-cancel"
+        data-test="shut-down-button-cancel"
+        @click="closeModal"
+      >
         {{ t('ShutDownBundle.cancel') }}
       </UIButton>
     </div>

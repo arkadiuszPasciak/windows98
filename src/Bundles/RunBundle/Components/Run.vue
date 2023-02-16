@@ -15,8 +15,11 @@
         height="32"
         src="/icons/applications/run.png"
         alt="Run computer"
+        data-test="run-icon"
       />
-      <UIText class="description">{{ t('RunBundle.description') }}</UIText>
+      <UIText class="description" data-test="run-description">
+        {{ t('RunBundle.description') }}
+      </UIText>
       <UIInput
         id="run-input"
         v-model:modelValue="modelValue"
@@ -24,10 +27,18 @@
         :label-name="t('RunBundle.open')"
         label-position="left"
       />
-      <UIButton class="button is-ok" @click="openProgram">
+      <UIButton
+        class="button is-ok"
+        data-test="run-button-ok"
+        @click="openProgram"
+      >
         {{ t('RunBundle.ok') }}
       </UIButton>
-      <UIButton class="button is-cancel" @click="closeModal">
+      <UIButton
+        class="button is-cancel"
+        data-test="run-button-cancel"
+        @click="closeModal"
+      >
         {{ t('RunBundle.cancel') }}
       </UIButton>
     </div>
