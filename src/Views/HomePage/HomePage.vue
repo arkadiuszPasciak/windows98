@@ -11,6 +11,7 @@
     <Pulpit />
     <Navigation>
       <Start />
+      <AudioButton />
       <Clock />
     </Navigation>
   </div>
@@ -18,6 +19,7 @@
 
 <script setup lang="ts">
   import { defineAsyncComponent } from 'vue'
+  import AudioButton from '@Bundles/AudioBundle/Components/AudioButton.vue'
   import Clock from '@Bundles/ClockBundle/Components/Clock.vue'
   import Navigation from '@Bundles/NavigationBundle/Components/Navigation.vue'
   import Pulpit from '@Bundles/PulpitBundle/Components/Pulpit.vue'
