@@ -1,6 +1,7 @@
 <template>
   <button class="AudioButton" type="button" @click="getMedia">
     <img
+      class="image"
       :src="`/icons/audio-button${status ? '' : '-off'}.png`"
       :alt="t('AudioBundle.button-description')"
       width="16"
