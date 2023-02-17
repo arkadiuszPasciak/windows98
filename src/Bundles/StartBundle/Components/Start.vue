@@ -114,6 +114,9 @@
       case 'StartBundle.shut-down':
         programStore.updateShutDownModal(true)
         break
+      case 'StartBundle.tic-tac-toe':
+        programStore.updateTicTacToeModal(true)
+        break
     }
 
     togglePrimaryPanel()

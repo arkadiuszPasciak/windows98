@@ -1,0 +1,8 @@
+{
+  "en": {
+    "TicTacToeBundle.title": "Tic Tac Toe"
+  },
+  "pl": {
+    "TicTacToeBundle.title": "Kółko i krzyżyk"
+  }
+}

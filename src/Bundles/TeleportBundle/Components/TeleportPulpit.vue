@@ -6,6 +6,7 @@
     <Run />
     <Settings />
     <ShutDown />
+    <TicTacToe />
   </TeleportGrid>
 </template>
 
@@ -35,6 +36,10 @@
 
   const ShutDown = defineAsyncComponent(
     () => import('@Bundles/ShutDownBundle/Components/ShutDown.vue'),
+  )
+
+  const TicTacToe = defineAsyncComponent(
+    () => import('@Bundles/TicTacToeBundle/Components/TicTacToe.vue'),
   )
 </script>
 

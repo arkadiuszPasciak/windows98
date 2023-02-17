@@ -9,7 +9,8 @@
     "RunBundle.program.notepad": "notepad",
     "RunBundle.program.run": "run",
     "RunBundle.program.settings": "settings",
-    "RunBundle.program.shut-down": "shut down"
+    "RunBundle.program.shut-down": "shut down",
+    "RunBundle.program.tic-tac-toe": "tic tac toe"
   },
   "pl": {
     "RunBundle.title": "Run",
@@ -21,6 +22,7 @@
     "RunBundle.program.notepad": "notatnik",
     "RunBundle.program.run": "włącz",
     "RunBundle.program.settings": "ustawienia",
-    "RunBundle.program.shut-down": "wyłącz"
+    "RunBundle.program.shut-down": "wyłącz",
+    "RunBundle.program.tic-tac-toe": "kółko i krzyżyk"
   }
 }

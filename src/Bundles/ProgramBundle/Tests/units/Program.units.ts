@@ -77,4 +77,16 @@ describe('[ProgramBundle]<Stores>(useProgramStore)', () => {
 
     expect(store.modalShutDown).equal(false)
   })
+
+  it('turns on and off TicTacToe', () => {
+    expect(store.modalTicTacToe).equal(false)
+
+    store.updateTicTacToeModal(true)
+
+    expect(store.modalTicTacToe).equal(true)
+
+    store.updateTicTacToeModal(false)
+
+    expect(store.modalTicTacToe).equal(false)
+  })
 })

@@ -30,6 +30,10 @@ export function checkAndRunProgram(value: string, t: VueI18nTranslation): void {
       store.updateShutDownModal(true)
       store.updateRunModal(false)
       break
+    case t('RunBundle.program.tic-tac-toe'):
+      store.updateShutDownModal(true)
+      store.updateRunModal(false)
+      break
     default:
       return
   }
