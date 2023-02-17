@@ -1,0 +1,10 @@
+.TicTacToeChoosePlayer {
+  display: grid;
+  grid-template-columns: 40px 40px 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  .description {
+    grid-area: 1 / 1 / 2 / 4;
+    margin-bottom: 5px;
+  }
+}

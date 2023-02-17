@@ -1,8 +1,10 @@
 {
   "en": {
+    "TicTacToeBundle.choose-player": "Choose a player",
     "TicTacToeBundle.title": "Tic Tac Toe"
   },
   "pl": {
+    "TicTacToeBundle.choose-player": "Wybierz gracza",
     "TicTacToeBundle.title": "Kółko i krzyżyk"
   }
 }
