@@ -1,5 +1,5 @@
 <template>
-  <nav class="Navigation">
+  <nav class="NavigationGrid">
     <slot />
   </nav>
 </template>
@@ -7,5 +7,5 @@
 <script setup lang="ts"></script>
 
 <style lang="scss" scoped>
-  @import '@Bundles/NavigationBundle/Styles/Navigation.styles.scss';
+  @import '@Bundles/NavigationBundle/Styles/NavigationGrid.styles.scss';
 </style>

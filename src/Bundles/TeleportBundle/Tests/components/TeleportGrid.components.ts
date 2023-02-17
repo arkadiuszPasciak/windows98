@@ -1,16 +1,16 @@
-import UITeleport from '@Bundles/UIBundle/Components/UITeleport.vue'
+import TeleportGrid from '@/Bundles/TeleportBundle/Components/TeleportGrid.vue'
 
-describe('[UIBundle]<Components>(UITeleport)', async () => {
+describe('[TeleportBundle]<Components>(TeleportGrid)', async () => {
   it('renders correctly component', () => {
     cy.viewport(100, 100)
 
-    cy.mount(UITeleport, {
+    cy.mount(TeleportGrid, {
       slots: {
         default: '<div class="test-teleport">teleport</div>',
       },
     })
 
-    cy.get('div.UITeleport')
+    cy.get('div.TeleportGrid')
 
     cy.get('div.test-teleport').contains('teleport')
   })

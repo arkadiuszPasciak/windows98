@@ -1,5 +1,5 @@
 <template>
-  <div class="UITeleport">
+  <div class="TeleportGrid">
     <slot />
   </div>
 </template>
@@ -7,5 +7,5 @@
 <script setup lang="ts"></script>
 
 <style lang="scss" scoped>
-  @import '@Bundles/UIBundle/Styles/UITeleport.styles.scss';
+  @import '@Bundles/TeleportBundle/Styles/TeleportGrid.styles.scss';
 </style>
