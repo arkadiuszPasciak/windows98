@@ -1,0 +1,10 @@
+.TicTacToeChooseDimension {
+  display: grid;
+  grid-template-columns: repeat(3, 45px) 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  .title {
+    grid-area: 1 / 1 / 2 / 5;
+    margin-bottom: 5px;
+  }
+}

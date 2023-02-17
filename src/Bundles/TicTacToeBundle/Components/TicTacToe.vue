@@ -11,6 +11,7 @@
     <div class="content">
       <TicTacToeEnterYourName />
       <TicTacToeChoosePlayer />
+      <TicTacToeChooseDimension />
     </div>
   </UIModal>
 </template>
@@ -18,6 +19,7 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import TicTacToeChooseDimension from '@Bundles/TicTacToeBundle/Components/TicTacToeChooseDimension.vue'
   import TicTacToeChoosePlayer from '@Bundles/TicTacToeBundle/Components/TicTacToeChoosePlayer.vue'
   import TicTacToeEnterYourName from '@Bundles/TicTacToeBundle/Components/TicTacToeEnterYourName.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
