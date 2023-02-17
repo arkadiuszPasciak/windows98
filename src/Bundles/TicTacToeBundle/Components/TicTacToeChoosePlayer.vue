@@ -1,6 +1,6 @@
 <template>
   <div class="TicTacToeChoosePlayer">
-    <UIText class="description" data-test="tic-tac-toe-choose-player">
+    <UIText class="title">
       {{ t('TicTacToeBundle.choose-player') }}
     </UIText>
     <UIRadio
