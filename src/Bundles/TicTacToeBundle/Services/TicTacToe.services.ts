@@ -3,6 +3,7 @@ import {
   ETicTacToeRadioPlayer,
   TTicTacToeRadioDimension,
   TTicTacToeRadioPlayer,
+  ETicTacToeValidationError,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
 
 export class TicTacToe {
@@ -24,17 +25,17 @@ export class TicTacToe {
 
   private validateUserName(userName: string) {
     if (!userName || typeof userName !== 'string') {
-      throw new Error('user name is empty!')
+      throw new Error(ETicTacToeValidationError.USER_NAME_EMPTY)
     }
 
     if (userName.length > 20) {
-      throw new Error('user name is too long!')
+      throw new Error(ETicTacToeValidationError.USER_NAME_TOO_LONG)
     }
   }
 
   private validatePlayerType(playerType: TTicTacToeRadioPlayer) {
     if (!playerType || typeof playerType !== 'string') {
-      throw new Error('player type is undefined')
+      throw new Error(ETicTacToeValidationError.PLAYER_TYPE_UNDEFINED)
     }
 
     switch (playerType) {
@@ -42,13 +43,13 @@ export class TicTacToe {
       case ETicTacToeRadioPlayer.PLAYER_O:
         return
       default:
-        throw new Error('player type is undefined')
+        throw new Error(ETicTacToeValidationError.PLAYER_TYPE_UNDEFINED)
     }
   }
 
   private validateDimensionType(dimensionType: TTicTacToeRadioDimension) {
     if (!dimensionType || typeof dimensionType !== 'string') {
-      throw new Error('dimension type is undefined')
+      throw new Error(ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED)
     }
 
     switch (dimensionType) {
@@ -57,7 +58,7 @@ export class TicTacToe {
       case ETicTacToeRadioDimension.NINE_X_NINE:
         return
       default:
-        throw new Error('dimension type is undefined')
+        throw new Error(ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED)
     }
   }
 }

@@ -17,3 +17,10 @@ export type TTicTacToeRadioDimension =
 export type TTicTacToeRadioPlayer =
   | ETicTacToeRadioPlayer.PLAYER_X
   | ETicTacToeRadioPlayer.PLAYER_O
+
+export enum ETicTacToeValidationError {
+  DIMENSION_TYPE_UNDEFINED = 'error.dimension-type.undefined',
+  USER_NAME_EMPTY = 'error.user-name.empty',
+  USER_NAME_TOO_LONG = 'error.user-name.too-long',
+  PLAYER_TYPE_UNDEFINED = 'error.player-type.undefined',
+}
