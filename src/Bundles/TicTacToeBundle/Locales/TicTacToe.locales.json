@@ -4,6 +4,7 @@
     "TicTacToeBundle.choose-player": "Choose a player",
     "TicTacToeBundle.enter-your-name": "Enter your name",
     "TicTacToeBundle.default-player": "Default player",
+    "TicTacToeBundle.start": "Start",
     "TicTacToeBundle.title": "Tic Tac Toe"
   },
   "pl": {
@@ -11,6 +12,7 @@
     "TicTacToeBundle.choose-player": "Wybierz gracza",
     "TicTacToeBundle.enter-your-name": "Wprowadź swoje imię",
     "TicTacToeBundle.default-player": "Domyślny gracz",
+    "TicTacToeBundle.start": "Rozpocznij",
     "TicTacToeBundle.title": "Kółko i krzyżyk"
   }
 }
