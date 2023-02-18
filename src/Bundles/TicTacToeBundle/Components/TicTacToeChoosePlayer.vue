@@ -8,7 +8,7 @@
       :name="choosePlayerRadioInputName"
       :checked="true"
       :model-value="ETicTacToeRadioPlayer.PLAYER_X"
-      @update:model-value="checkedRadioBoxes = $event"
+      @update:model-value="ticTacToeStore.playerType = $event"
     >
       x
     </UIRadio>
@@ -16,7 +16,7 @@
       class="radio-player-o"
       :name="choosePlayerRadioInputName"
       :model-value="ETicTacToeRadioPlayer.PLAYER_O"
-      @update:model-value="checkedRadioBoxes = $event"
+      @update:model-value="ticTacToeStore.playerType = $event"
     >
       o
     </UIRadio>
@@ -24,19 +24,16 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIRadio from '@Bundles/UIBundle/Components/UIRadio.vue'
   import UIText from '@Bundles/UIBundle/Components/UIText.vue'
-  import {
-    ETicTacToeRadioPlayer,
-    TTicTacToeRadioPlayer,
-  } from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
+  import { ETicTacToeRadioPlayer } from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
+  import { useTicTacToeStore } from '@Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
 
   const { t } = useI18n()
 
   const choosePlayerRadioInputName = 'tic-tac-toc-choose-player-radio-input'
-  const checkedRadioBoxes = ref('player-x') as Ref<TTicTacToeRadioPlayer>
+  const ticTacToeStore = useTicTacToeStore()
 </script>
 
 <i18n src="@Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>

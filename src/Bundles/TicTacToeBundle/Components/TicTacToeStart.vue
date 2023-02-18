@@ -3,7 +3,7 @@
     <TicTacToeEnterYourName />
     <TicTacToeChoosePlayer />
     <TicTacToeChooseDimension />
-    <UIButton class="button">
+    <UIButton class="button" @click="ticTacToeStore.validateStartData">
       {{ t('TicTacToeBundle.start') }}
     </UIButton>
   </div>
@@ -15,8 +15,11 @@
   import TicTacToeChooseDimension from '@Bundles/TicTacToeBundle/Components/TicTacToeChooseDimension.vue'
   import TicTacToeChoosePlayer from '@Bundles/TicTacToeBundle/Components/TicTacToeChoosePlayer.vue'
   import TicTacToeEnterYourName from '@Bundles/TicTacToeBundle/Components/TicTacToeEnterYourName.vue'
+  import { useTicTacToeStore } from '@Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
 
   const { t } = useI18n()
+
+  const ticTacToeStore = useTicTacToeStore()
 </script>
 
 <i18n src="@Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
