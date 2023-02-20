@@ -22,27 +22,7 @@
   const ticTacToeStore = useTicTacToeStore()
 
   const onSubmit = (event: any) => {
-    event.preventDefault()
-
-    if (!event.target) {
-      return
-    }
-
-    const formData = new FormData(event.target)
-
-    console.log(formData)
-
-    const playerNameValue = formData.get(
-      'tic-tac-toe-enter-your-name',
-    ) as string
-
-    const choosePlayerValue = formData.get(
-      'tic-tac-toc-choose-player',
-    ) as string
-
-    const chooseDimensionValue = formData.get(
-      'tic-tac-toc-choose-dimension',
-    ) as string
+    ticTacToeStore.submitForm(event)
   }
 </script>
 

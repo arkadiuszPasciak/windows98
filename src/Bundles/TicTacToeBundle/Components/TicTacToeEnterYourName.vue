@@ -1,8 +1,8 @@
 <template>
   <div class="TicTacToeEnterYourName">
     <UIInput
-      id="tic-tac-toe-enter-your-name"
-      v-model:modelValue="ticTacToeStore.userName"
+      :id="ETicTacToeInputNames.ENTER_YOUR_NAME"
+      v-model:modelValue="modelValue"
       class="input"
       :label-name="t('TicTacToeBundle.enter-your-name')"
       label-position="top"
@@ -11,18 +11,14 @@
 </template>
 
 <script setup lang="ts">
-  import { onMounted } from 'vue'
+  import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import { useTicTacToeStore } from '@Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
   import UIInput from '@Bundles/UIBundle/Components/UIInput.vue'
+  import { ETicTacToeInputNames } from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
 
   const { t } = useI18n()
 
-  const ticTacToeStore = useTicTacToeStore()
-
-  onMounted(() => {
-    ticTacToeStore.userName = t('TicTacToeBundle.default-player')
-  })
+  const modelValue = ref(t('TicTacToeBundle.default-player')) as Ref<string>
 </script>
 
 <i18n src="@Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>

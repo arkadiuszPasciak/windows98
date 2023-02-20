@@ -16,6 +16,12 @@ export enum ETicTacToeValidationError {
   PLAYER_TYPE_UNDEFINED = 'error.player-type.undefined',
 }
 
+export enum ETicTacToeInputNames {
+  CHOOSE_DIMENSION = 'tic-tac-toc-choose-dimension',
+  CHOOSE_PLAYER = 'tic-tac-toc-choose-player',
+  ENTER_YOUR_NAME = 'tic-tac-toe-enter-your-name',
+}
+
 export interface ITicTacToeFieldsValues {
   playerNameValue: string
   choosePlayerValue: TTicTacToeRadioPlayer

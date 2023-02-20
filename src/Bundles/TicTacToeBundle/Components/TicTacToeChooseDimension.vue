@@ -5,26 +5,26 @@
     </UIText>
     <UIRadio
       class="radio-dimension-3x3"
-      :name="chooseDimensionRadioInputName"
+      :name="ETicTacToeInputNames.CHOOSE_DIMENSION"
       :checked="true"
       :model-value="ETicTacToeRadioDimension.THREE_X_THREE"
-      @update:model-value="ticTacToeStore.dimensionType = $event"
+      @update:model-value="($event) => (checkedRadioBoxes = $event)"
     >
       3 x 3
     </UIRadio>
     <UIRadio
       class="radio-dimension-6x6"
-      :name="chooseDimensionRadioInputName"
+      :name="ETicTacToeInputNames.CHOOSE_DIMENSION"
       :model-value="ETicTacToeRadioDimension.SIX_X_SIX"
-      @update:model-value="ticTacToeStore.dimensionType = $event"
+      @update:model-value="($event) => (checkedRadioBoxes = $event)"
     >
       6 x 6
     </UIRadio>
     <UIRadio
       class="radio-dimension-9x9"
-      :name="chooseDimensionRadioInputName"
+      :name="ETicTacToeInputNames.CHOOSE_DIMENSION"
       :model-value="ETicTacToeRadioDimension.NINE_X_NINE"
-      @update:model-value="ticTacToeStore.dimensionType = $event"
+      @update:model-value="($event) => (checkedRadioBoxes = $event)"
     >
       9 x 9
     </UIRadio>
@@ -32,16 +32,18 @@
 </template>
 
 <script setup lang="ts">
+  import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIRadio from '@Bundles/UIBundle/Components/UIRadio.vue'
   import UIText from '@Bundles/UIBundle/Components/UIText.vue'
-  import { ETicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
-  import { useTicTacToeStore } from '@Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
+  import {
+    ETicTacToeInputNames,
+    ETicTacToeRadioDimension,
+    TTicTacToeRadioDimension,
+  } from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
 
   const { t } = useI18n()
-
-  const chooseDimensionRadioInputName = 'tic-tac-toc-choose-dimension'
-  const ticTacToeStore = useTicTacToeStore()
+  const checkedRadioBoxes = ref('3x3') as Ref<TTicTacToeRadioDimension>
 </script>
 
 <i18n src="@Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
