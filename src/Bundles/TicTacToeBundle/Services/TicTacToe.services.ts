@@ -2,9 +2,13 @@ import {
   ETicTacToeRadioDimension,
   ETicTacToeRadioPlayer,
   ETicTacToeValidationError,
-  ITicTacToeFieldsValues,
+  ETicTacToeValidateStatusType,
+  ETicTacToeValidationSuccess,
   TTicTacToeRadioDimension,
   TTicTacToeRadioPlayer,
+  TTicTacToeValidationError,
+  ITicTacToeValidateStatus,
+  ITicTacToeValidateFields,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
 
 export class TicTacToe {
@@ -18,23 +22,23 @@ export class TicTacToe {
         return null
       }
 
-      this.validateStartData(
-        formData.playerNameValue,
-        formData.choosePlayerValue,
-        formData.chooseDimensionValue,
-      )
+      const validateFields = this.validateStartData(formData)
+
+      return validateFields
     }
   }
 
-  private getFormData(eventTarget: EventTarget) {
+  private getFormData(
+    eventTarget: EventTarget,
+  ): ITicTacToeValidateFields | null {
     if (eventTarget instanceof HTMLFormElement) {
       const formData = new FormData(eventTarget)
 
       const fields = {
-        playerNameValue: formData.get('tic-tac-toe-enter-your-name'),
-        choosePlayerValue: formData.get('tic-tac-toc-choose-player'),
-        chooseDimensionValue: formData.get('tic-tac-toc-choose-dimension'),
-      } as ITicTacToeFieldsValues
+        userName: formData.get('tic-tac-toe-enter-your-name'),
+        playerType: formData.get('tic-tac-toc-choose-player'),
+        dimensionType: formData.get('tic-tac-toc-choose-dimension'),
+      } as ITicTacToeValidateFields
 
       return fields
     } else {
@@ -43,34 +47,42 @@ export class TicTacToe {
   }
 
   private validateStartData(
-    userName: string | null,
-    playerType: TTicTacToeRadioPlayer,
-    dimensionType: TTicTacToeRadioDimension,
-  ): void {
+    fields: ITicTacToeValidateFields,
+  ): ITicTacToeValidateStatus {
     try {
-      this.validateUserName(userName)
+      this.validateUserName(fields.userName)
 
-      this.validatePlayerType(playerType)
+      this.validatePlayerType(fields.playerType)
 
-      this.validateDimensionType(dimensionType)
+      this.validateDimensionType(fields.dimensionType)
+
+      return {
+        type: ETicTacToeValidateStatusType.SUCCESS,
+        code: ETicTacToeValidationSuccess.FIELDS_ARE_OKAY,
+        fields: fields,
+      }
     } catch (error) {
-      console.log(error)
+      return {
+        type: ETicTacToeValidateStatusType.ERROR,
+        code: error as TTicTacToeValidationError,
+        fields: null,
+      }
     }
   }
 
-  private validateUserName(userName: string | null) {
+  private validateUserName(userName: string): void {
     if (!userName || typeof userName !== 'string') {
-      throw new Error(ETicTacToeValidationError.USER_NAME_EMPTY)
+      throw ETicTacToeValidationError.USER_NAME_EMPTY
     }
 
     if (userName.length > 20) {
-      throw new Error(ETicTacToeValidationError.USER_NAME_TOO_LONG)
+      throw ETicTacToeValidationError.USER_NAME_TOO_LONG
     }
   }
 
-  private validatePlayerType(playerType: TTicTacToeRadioPlayer) {
+  private validatePlayerType(playerType: TTicTacToeRadioPlayer): void {
     if (!playerType || typeof playerType !== 'string') {
-      throw new Error(ETicTacToeValidationError.PLAYER_TYPE_UNDEFINED)
+      throw ETicTacToeValidationError.PLAYER_TYPE_UNDEFINED
     }
 
     switch (playerType) {
@@ -78,13 +90,13 @@ export class TicTacToe {
       case ETicTacToeRadioPlayer.PLAYER_O:
         return
       default:
-        throw new Error(ETicTacToeValidationError.PLAYER_TYPE_UNDEFINED)
+        throw ETicTacToeValidationError.PLAYER_TYPE_UNDEFINED
     }
   }
 
-  private validateDimensionType(dimensionType: TTicTacToeRadioDimension) {
+  private validateDimensionType(dimensionType: TTicTacToeRadioDimension): void {
     if (!dimensionType || typeof dimensionType !== 'string') {
-      throw new Error(ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED)
+      throw ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED
     }
 
     switch (dimensionType) {
@@ -93,7 +105,7 @@ export class TicTacToe {
       case ETicTacToeRadioDimension.NINE_X_NINE:
         return
       default:
-        throw new Error(ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED)
+        throw ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED
     }
   }
 }

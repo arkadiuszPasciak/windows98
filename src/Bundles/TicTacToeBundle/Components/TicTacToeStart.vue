@@ -1,5 +1,9 @@
 <template>
-  <form class="TicTacToeStart" @submit="($event) => onSubmit($event)">
+  <form
+    v-if="ticTacToeStore.isStartValidate"
+    class="TicTacToeStart"
+    @submit="($event) => onSubmit($event)"
+  >
     <TicTacToeEnterYourName />
     <TicTacToeChoosePlayer />
     <TicTacToeChooseDimension />
@@ -21,7 +25,7 @@
 
   const ticTacToeStore = useTicTacToeStore()
 
-  const onSubmit = (event: any) => {
+  const onSubmit = (event: Event): void => {
     ticTacToeStore.submitForm(event)
   }
 </script>

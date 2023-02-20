@@ -9,6 +9,10 @@ export enum ETicTacToeRadioPlayer {
   PLAYER_O = 'player-o',
 }
 
+export enum ETicTacToeValidationSuccess {
+  FIELDS_ARE_OKAY = 'success.fields-are-okay',
+}
+
 export enum ETicTacToeValidationError {
   DIMENSION_TYPE_UNDEFINED = 'error.dimension-type.undefined',
   USER_NAME_EMPTY = 'error.user-name.empty',
@@ -22,10 +26,34 @@ export enum ETicTacToeInputNames {
   ENTER_YOUR_NAME = 'tic-tac-toe-enter-your-name',
 }
 
-export interface ITicTacToeFieldsValues {
-  playerNameValue: string
-  choosePlayerValue: TTicTacToeRadioPlayer
-  chooseDimensionValue: TTicTacToeRadioDimension
+export type TTicTacToeValidationError =
+  | ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED
+  | ETicTacToeValidationError.USER_NAME_EMPTY
+  | ETicTacToeValidationError.USER_NAME_TOO_LONG
+  | ETicTacToeValidationError.PLAYER_TYPE_UNDEFINED
+
+export type TTicTacToeValidationSuccess =
+  ETicTacToeValidationSuccess.FIELDS_ARE_OKAY
+
+export enum ETicTacToeValidateStatusType {
+  SUCCESS = 'SUCCESS',
+  ERROR = 'ERROR',
+}
+
+export type TTicTacToeValidateStatusType =
+  | ETicTacToeValidateStatusType.SUCCESS
+  | ETicTacToeValidateStatusType.ERROR
+
+export interface ITicTacToeValidateFields {
+  userName: string
+  playerType: ETicTacToeRadioPlayer
+  dimensionType: ETicTacToeRadioDimension
+}
+
+export interface ITicTacToeValidateStatus {
+  type: TTicTacToeValidateStatusType
+  code: TTicTacToeValidationSuccess | TTicTacToeValidationError
+  fields: ITicTacToeValidateFields | null
 }
 
 export type TTicTacToeRadioDimension =
