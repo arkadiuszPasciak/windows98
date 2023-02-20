@@ -10,6 +10,7 @@
   >
     <div class="content">
       <TicTacToeFormStart />
+      <TicTacToeGame />
     </div>
   </UIModal>
 </template>
@@ -18,6 +19,7 @@
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import TicTacToeFormStart from '@Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue'
+  import TicTacToeGame from '@Bundles/TicTacToeBundle/Components/TicTacToeGame.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
 
   const { t } = useI18n()
