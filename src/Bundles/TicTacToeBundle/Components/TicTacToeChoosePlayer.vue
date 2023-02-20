@@ -32,7 +32,7 @@
     ETicTacToeInputNames,
     ETicTacToeRadioPlayer,
     TTicTacToeRadioPlayer,
-  } from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
+  } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
   const { t } = useI18n()
   const checkedRadioBoxes = ref('player-x') as Ref<TTicTacToeRadioPlayer>

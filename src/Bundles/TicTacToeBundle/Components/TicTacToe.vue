@@ -17,7 +17,7 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
-  import TicTacToeFormStart from '@/Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue'
+  import TicTacToeFormStart from '@Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
 
   const { t } = useI18n()

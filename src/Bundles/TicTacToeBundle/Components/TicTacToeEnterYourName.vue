@@ -14,7 +14,7 @@
   import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIInput from '@Bundles/UIBundle/Components/UIInput.vue'
-  import { ETicTacToeInputNames } from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
+  import { ETicTacToeInputNames } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
   const { t } = useI18n()
 

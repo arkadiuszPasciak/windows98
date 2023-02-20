@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { TicTacToe } from '@Bundles/TicTacToeBundle/Services/TicTacToe.services'
+import { TicTacToeFormStart } from '@Bundles/TicTacToeBundle/Services/TicTacToeFormStart.services'
 import {
   ETicTacToeRadioDimension,
   ETicTacToeRadioPlayer,
@@ -8,9 +8,9 @@ import {
   TTicTacToeRadioDimension,
   TTicTacToeRadioPlayer,
   TTicTacToeValidationError,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
+} from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
-const ticTacToe = new TicTacToe()
+const ticTacToeFormStart = new TicTacToeFormStart()
 
 export const useTicTacToeStore = defineStore('tic-tac-toe', {
   state: () => ({
@@ -28,14 +28,13 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
     submitForm(event: Event): void {
       this.clearErrorState()
 
-      const formStatus = ticTacToe.submitForm(event)
+      const formStatus = ticTacToeFormStart.submitForm(event)
 
       if (!formStatus) {
         return
       }
 
       if (formStatus.type === ETicTacToeValidateStatusType.SUCCESS) {
-        console.log('success!')
         if (!formStatus.fields) {
           return
         }
@@ -44,7 +43,6 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
 
         this.isStartValidate = false
       } else if (formStatus.type === ETicTacToeValidateStatusType.ERROR) {
-        console.log('error!')
         this.setErrorState(formStatus.code as TTicTacToeValidationError)
       }
     },

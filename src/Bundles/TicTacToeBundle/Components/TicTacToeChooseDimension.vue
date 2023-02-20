@@ -40,7 +40,7 @@
     ETicTacToeInputNames,
     ETicTacToeRadioDimension,
     TTicTacToeRadioDimension,
-  } from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
+  } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
   const { t } = useI18n()
   const checkedRadioBoxes = ref('3x3') as Ref<TTicTacToeRadioDimension>

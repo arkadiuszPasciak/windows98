@@ -1,4 +1,4 @@
-import TeleportGrid from '@/Bundles/TeleportBundle/Components/TeleportGrid.vue'
+import TeleportGrid from '@Bundles/TeleportBundle/Components/TeleportGrid.vue'
 
 describe('[TeleportBundle]<Components>(TeleportGrid)', async () => {
   it('renders correctly component', () => {

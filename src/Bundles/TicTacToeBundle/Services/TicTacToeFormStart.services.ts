@@ -2,16 +2,16 @@ import {
   ETicTacToeRadioDimension,
   ETicTacToeRadioPlayer,
   ETicTacToeValidationError,
-  ETicTacToeValidateStatusType,
   ETicTacToeValidationSuccess,
+  ETicTacToeValidateStatusType,
+  ITicTacToeValidateFields,
+  ITicTacToeValidateStatus,
   TTicTacToeRadioDimension,
   TTicTacToeRadioPlayer,
   TTicTacToeValidationError,
-  ITicTacToeValidateStatus,
-  ITicTacToeValidateFields,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToe.supports'
+} from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
-export class TicTacToe {
+export class TicTacToeFormStart {
   public submitForm(event: Event) {
     event.preventDefault()
 
@@ -46,27 +46,18 @@ export class TicTacToe {
     }
   }
 
-  private validateStartData(
-    fields: ITicTacToeValidateFields,
-  ): ITicTacToeValidateStatus {
-    try {
-      this.validateUserName(fields.userName)
+  private validateDimensionType(dimensionType: TTicTacToeRadioDimension): void {
+    if (!dimensionType || typeof dimensionType !== 'string') {
+      throw ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED
+    }
 
-      this.validatePlayerType(fields.playerType)
-
-      this.validateDimensionType(fields.dimensionType)
-
-      return {
-        type: ETicTacToeValidateStatusType.SUCCESS,
-        code: ETicTacToeValidationSuccess.FIELDS_ARE_OKAY,
-        fields: fields,
-      }
-    } catch (error) {
-      return {
-        type: ETicTacToeValidateStatusType.ERROR,
-        code: error as TTicTacToeValidationError,
-        fields: null,
-      }
+    switch (dimensionType) {
+      case ETicTacToeRadioDimension.THREE_X_THREE:
+      case ETicTacToeRadioDimension.SIX_X_SIX:
+      case ETicTacToeRadioDimension.NINE_X_NINE:
+        return
+      default:
+        throw ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED
     }
   }
 
@@ -94,18 +85,27 @@ export class TicTacToe {
     }
   }
 
-  private validateDimensionType(dimensionType: TTicTacToeRadioDimension): void {
-    if (!dimensionType || typeof dimensionType !== 'string') {
-      throw ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED
-    }
+  private validateStartData(
+    fields: ITicTacToeValidateFields,
+  ): ITicTacToeValidateStatus {
+    try {
+      this.validateUserName(fields.userName)
 
-    switch (dimensionType) {
-      case ETicTacToeRadioDimension.THREE_X_THREE:
-      case ETicTacToeRadioDimension.SIX_X_SIX:
-      case ETicTacToeRadioDimension.NINE_X_NINE:
-        return
-      default:
-        throw ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED
+      this.validatePlayerType(fields.playerType)
+
+      this.validateDimensionType(fields.dimensionType)
+
+      return {
+        type: ETicTacToeValidateStatusType.SUCCESS,
+        code: ETicTacToeValidationSuccess.FIELDS_ARE_OKAY,
+        fields: fields,
+      }
+    } catch (error) {
+      return {
+        type: ETicTacToeValidateStatusType.ERROR,
+        code: error as TTicTacToeValidationError,
+        fields: null,
+      }
     }
   }
 }

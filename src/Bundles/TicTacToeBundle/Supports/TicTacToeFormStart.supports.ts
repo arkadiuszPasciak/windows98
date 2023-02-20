@@ -1,3 +1,9 @@
+export enum ETicTacToeInputNames {
+  CHOOSE_DIMENSION = 'tic-tac-toc-choose-dimension',
+  CHOOSE_PLAYER = 'tic-tac-toc-choose-player',
+  ENTER_YOUR_NAME = 'tic-tac-toe-enter-your-name',
+}
+
 export enum ETicTacToeRadioDimension {
   THREE_X_THREE = '3x3',
   SIX_X_SIX = '6x6',
@@ -9,10 +15,6 @@ export enum ETicTacToeRadioPlayer {
   PLAYER_O = 'player-o',
 }
 
-export enum ETicTacToeValidationSuccess {
-  FIELDS_ARE_OKAY = 'success.fields-are-okay',
-}
-
 export enum ETicTacToeValidationError {
   DIMENSION_TYPE_UNDEFINED = 'error.dimension-type.undefined',
   USER_NAME_EMPTY = 'error.user-name.empty',
@@ -20,29 +22,14 @@ export enum ETicTacToeValidationError {
   PLAYER_TYPE_UNDEFINED = 'error.player-type.undefined',
 }
 
-export enum ETicTacToeInputNames {
-  CHOOSE_DIMENSION = 'tic-tac-toc-choose-dimension',
-  CHOOSE_PLAYER = 'tic-tac-toc-choose-player',
-  ENTER_YOUR_NAME = 'tic-tac-toe-enter-your-name',
-}
-
-export type TTicTacToeValidationError =
-  | ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED
-  | ETicTacToeValidationError.USER_NAME_EMPTY
-  | ETicTacToeValidationError.USER_NAME_TOO_LONG
-  | ETicTacToeValidationError.PLAYER_TYPE_UNDEFINED
-
-export type TTicTacToeValidationSuccess =
-  ETicTacToeValidationSuccess.FIELDS_ARE_OKAY
-
 export enum ETicTacToeValidateStatusType {
   SUCCESS = 'SUCCESS',
   ERROR = 'ERROR',
 }
 
-export type TTicTacToeValidateStatusType =
-  | ETicTacToeValidateStatusType.SUCCESS
-  | ETicTacToeValidateStatusType.ERROR
+export enum ETicTacToeValidationSuccess {
+  FIELDS_ARE_OKAY = 'success.fields-are-okay',
+}
 
 export interface ITicTacToeValidateFields {
   userName: string
@@ -55,6 +42,19 @@ export interface ITicTacToeValidateStatus {
   code: TTicTacToeValidationSuccess | TTicTacToeValidationError
   fields: ITicTacToeValidateFields | null
 }
+
+export type TTicTacToeValidationError =
+  | ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED
+  | ETicTacToeValidationError.USER_NAME_EMPTY
+  | ETicTacToeValidationError.USER_NAME_TOO_LONG
+  | ETicTacToeValidationError.PLAYER_TYPE_UNDEFINED
+
+export type TTicTacToeValidateStatusType =
+  | ETicTacToeValidateStatusType.SUCCESS
+  | ETicTacToeValidateStatusType.ERROR
+
+export type TTicTacToeValidationSuccess =
+  ETicTacToeValidationSuccess.FIELDS_ARE_OKAY
 
 export type TTicTacToeRadioDimension =
   | ETicTacToeRadioDimension.THREE_X_THREE
