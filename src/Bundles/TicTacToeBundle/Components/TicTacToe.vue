@@ -9,7 +9,7 @@
     @close-modal="closeModal"
   >
     <div class="content">
-      <TicTacToeStart />
+      <TicTacToeFormStart />
     </div>
   </UIModal>
 </template>
@@ -17,7 +17,7 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
-  import TicTacToeStart from '@Bundles/TicTacToeBundle/Components/TicTacToeStart.vue'
+  import TicTacToeFormStart from '@/Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
 
   const { t } = useI18n()

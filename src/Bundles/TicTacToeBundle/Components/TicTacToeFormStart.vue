@@ -1,7 +1,7 @@
 <template>
   <form
     v-if="ticTacToeStore.isStartValidate"
-    class="TicTacToeStart"
+    class="TicTacToeFormStart"
     @submit="($event) => onSubmit($event)"
   >
     <TicTacToeEnterYourName />
@@ -33,5 +33,5 @@
 <i18n src="@Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
 
 <style lang="scss" scoped>
-  @import '@Bundles/TicTacToeBundle/Styles/TicTacToeStart.styles.scss';
+  @import '@Bundles/TicTacToeBundle/Styles/TicTacToeFormStart.styles.scss';
 </style>
