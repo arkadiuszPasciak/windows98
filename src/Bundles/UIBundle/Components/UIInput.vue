@@ -21,6 +21,7 @@
       :value="modelValue"
       :min="min"
       :max="max"
+      :name="id"
       @input="
         $emit('update:modelValue', ($event.target as HTMLInputElement).value)
       "

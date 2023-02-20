@@ -17,12 +17,14 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
       ETicTacToeRadioDimension.THREE_X_THREE as TTicTacToeRadioDimension,
   }),
   actions: {
-    validateStartData() {
-      ticTacToe.validateStartData(
-        this.userName,
-        this.playerType,
-        this.dimensionType,
-      )
+    submitForm(event: Event) {
+      try {
+        ticTacToe.submitForm(event)
+
+        console.log('here will be switch to game')
+      } catch (error) {
+        console.log('error')
+      }
     },
   },
 })

@@ -40,8 +40,7 @@
 
   const { t } = useI18n()
 
-  const chooseDimensionRadioInputName =
-    'tic-tac-toc-choose-dimension-radio-input'
+  const chooseDimensionRadioInputName = 'tic-tac-toc-choose-dimension'
   const ticTacToeStore = useTicTacToeStore()
 </script>
 

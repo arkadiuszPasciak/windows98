@@ -32,7 +32,7 @@
 
   const { t } = useI18n()
 
-  const choosePlayerRadioInputName = 'tic-tac-toc-choose-player-radio-input'
+  const choosePlayerRadioInputName = 'tic-tac-toc-choose-player'
   const ticTacToeStore = useTicTacToeStore()
 </script>
 

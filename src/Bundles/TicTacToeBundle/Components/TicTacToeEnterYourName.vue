@@ -1,7 +1,7 @@
 <template>
   <div class="TicTacToeEnterYourName">
     <UIInput
-      id="run-input"
+      id="tic-tac-toe-enter-your-name"
       v-model:modelValue="ticTacToeStore.userName"
       class="input"
       :label-name="t('TicTacToeBundle.enter-your-name')"
