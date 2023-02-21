@@ -21,11 +21,15 @@
   import TicTacToeFormStart from '@Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue'
   import TicTacToeGame from '@Bundles/TicTacToeBundle/Components/TicTacToeGame.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
+  import { useTicTacToeStore } from '@Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
 
   const { t } = useI18n()
   const programStore = useProgramStore()
+  const ticTacToeStore = useTicTacToeStore()
 
   const closeModal = (): void => {
+    ticTacToeStore.restartGame()
+
     programStore.updateTicTacToeModal(false)
   }
 </script>

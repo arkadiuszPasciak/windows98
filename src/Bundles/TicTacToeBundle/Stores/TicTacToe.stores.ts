@@ -70,5 +70,9 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
         this.dimensionType = fields.dimensionType
       }
     },
+
+    restartGame() {
+      this.isStartValidate = true
+    },
   },
 })
