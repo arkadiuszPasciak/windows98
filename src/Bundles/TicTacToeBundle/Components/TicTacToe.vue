@@ -3,8 +3,7 @@
     class="TicTacToe"
     :title="t('TicTacToeBundle.title')"
     :resize-window="false"
-    :width="195"
-    :height="220"
+    :width="300"
     :modal-state="programStore.modalTicTacToe"
     @close-modal="closeModal"
   >

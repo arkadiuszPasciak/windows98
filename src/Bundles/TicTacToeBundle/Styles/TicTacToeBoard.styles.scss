@@ -1,0 +1,9 @@
+.TicTacToeBoard {
+  display: grid;
+  justify-content: center;
+
+  .field {
+    text-align: center;
+    @include font('medium', 12, 30);
+  }
+}
