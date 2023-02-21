@@ -15,10 +15,7 @@
   import { PropType } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIFrame from '@Bundles/UIBundle/Components/UIFrame.vue'
-  import {
-    setColorByPlayerType,
-    setSignByPlayerType,
-  } from '@Bundles/TicTacToeBundle/Services/TicTacToePlayers.services'
+  import { TicTacToePlayers } from '@Bundles/TicTacToeBundle/Services/TicTacToePlayers.services'
   import { TTicTacToeRadioPlayer } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
   import { ETicTacToePlayerType } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
@@ -34,6 +31,8 @@
   })
 
   const { t } = useI18n()
+
+  const { setColorByPlayerType, setSignByPlayerType } = new TicTacToePlayers()
 
   const signs = {
     computer: setSignByPlayerType(
