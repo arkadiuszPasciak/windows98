@@ -3,8 +3,8 @@
     class="MediaPlayer"
     :title="t('MediaPlayer.title')"
     :resize-window="false"
-    :width="330"
-    :height="275"
+    width="330px"
+    height="275px"
     :modal-state="programStore.modalMediaPlayer"
     @close-modal="closeModal"
   >

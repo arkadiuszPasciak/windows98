@@ -1,6 +1,7 @@
 .TicTacToeBoard {
   display: grid;
   justify-content: center;
+  gap: 1px;
 
   .field {
     text-align: center;

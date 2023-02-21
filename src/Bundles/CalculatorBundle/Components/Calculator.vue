@@ -3,8 +3,8 @@
     class="Calculator"
     :title="t('CalculatorBundle.title')"
     :resize-window="false"
-    :width="195"
-    :height="220"
+    width="195px"
+    height="220px"
     :modal-state="programStore.modalCalculator"
     @close-modal="closeModal"
   >

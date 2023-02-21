@@ -3,8 +3,8 @@
     class="Run"
     :title="t('RunBundle.title')"
     :resize-window="false"
-    :width="330"
-    :height="165"
+    width="330px"
+    height="165px"
     :modal-state="programStore.modalRun"
     @close-modal="closeModal"
   >

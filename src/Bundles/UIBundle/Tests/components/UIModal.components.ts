@@ -7,8 +7,8 @@ describe('[UIBundle]<Components>(UIModal)', async () => {
     cy.mount(UIModal, {
       props: {
         title: 'Name of application',
-        width: 500,
-        height: 300,
+        width: `500px`,
+        height: `300px`,
         modalState: true,
       },
       slots: {

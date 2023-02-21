@@ -3,8 +3,8 @@
     class="ShutDown"
     :title="t('ShutDownBundle.title')"
     :resize-window="false"
-    :width="330"
-    :height="180"
+    width="330px"
+    height="180px"
     :modal-state="programStore.modalShutDown"
     @close-modal="closeModal"
   >
