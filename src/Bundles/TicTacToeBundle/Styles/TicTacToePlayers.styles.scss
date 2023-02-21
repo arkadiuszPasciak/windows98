@@ -1,0 +1,13 @@
+.TicTacToePlayers {
+  display: flex;
+
+  .player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 10px 5px;
+    margin: 6px;
+    @include font('bold', 17, 17);
+  }
+}
