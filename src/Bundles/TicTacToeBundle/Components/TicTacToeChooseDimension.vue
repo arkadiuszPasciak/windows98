@@ -12,7 +12,7 @@
     >
       3 x 3
     </UIRadio>
-    <UIRadio
+    <!-- <UIRadio
       class="radio-dimension-6x6"
       :name="ETicTacToeInputNames.CHOOSE_DIMENSION"
       :model-value="ETicTacToeRadioDimension.SIX_X_SIX"
@@ -27,7 +27,7 @@
       @update:model-value="($event) => (checkedRadioBoxes = $event)"
     >
       9 x 9
-    </UIRadio>
+    </UIRadio> -->
   </div>
 </template>
 
