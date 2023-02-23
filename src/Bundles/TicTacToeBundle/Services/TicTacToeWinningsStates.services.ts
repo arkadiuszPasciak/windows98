@@ -1,6 +1,15 @@
 import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
+import { TTicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
-export class TicTacToeWinningStates extends TicTacToeBoard {
+export class TicTacToeWinningStates {
+  private readonly dimension: TTicTacToeRadioDimension
+  private readonly TicTacToeBoardService: TicTacToeBoard
+
+  constructor(dimension: TTicTacToeRadioDimension) {
+    this.dimension = dimension
+    this.TicTacToeBoardService = new TicTacToeBoard(this.dimension)
+  }
+
   public getAllWiningStates(): Array<number[]> {
     const columns = this.getColumnsWinningStates()
     const diagonals = this.getDiagonalsWinningStates()
@@ -18,13 +27,17 @@ export class TicTacToeWinningStates extends TicTacToeBoard {
 
       do {
         array.push(fieldIndex)
-        fieldIndex += this.amountOfRows
-      } while (fieldIndex <= this.amountOfFields)
+        fieldIndex += this.TicTacToeBoardService.amountOfRows
+      } while (fieldIndex <= this.TicTacToeBoardService.amountOfFields)
 
       return array
     }
 
-    for (let index = 1; index <= this.amountOfColumns; index++) {
+    for (
+      let index = 1;
+      index <= this.TicTacToeBoardService.amountOfColumns;
+      index++
+    ) {
       array.push(calculateColumns(index))
     }
 
@@ -50,7 +63,7 @@ export class TicTacToeWinningStates extends TicTacToeBoard {
 
     const calculateRows = (field: number): Array<number> => {
       const array = []
-      const fieldIndexMax = field + this.amountOfRows
+      const fieldIndexMax = field + this.TicTacToeBoardService.amountOfRows
       let fieldIndex = field
 
       do {
@@ -63,8 +76,8 @@ export class TicTacToeWinningStates extends TicTacToeBoard {
 
     for (
       let index = 1;
-      index < this.amountOfFields;
-      index += this.amountOfRows
+      index < this.TicTacToeBoardService.amountOfFields;
+      index += this.TicTacToeBoardService.amountOfRows
     ) {
       array.push(calculateRows(index))
     }
