@@ -10,10 +10,6 @@ import {
   TTicTacToeRadioPlayer,
   TTicTacToeValidationError,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
-import {
-  ETicTacToePlayerType,
-  TTicTacToePlayerType,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export const useTicTacToeStore = defineStore('tic-tac-toe', {
   state: () => ({
@@ -27,7 +23,6 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
       code: '' as string,
     },
     isStartValidate: true as boolean,
-    nowMove: ETicTacToePlayerType.USER as TTicTacToePlayerType,
     services: {
       TicTacToeGame: new TicTacToeGame(ETicTacToeRadioDimension.THREE_X_THREE),
       TicTacToeFormStart: new TicTacToeFormStart(),
@@ -91,12 +86,9 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
     makeMove(event: Event): void {
       this.services.TicTacToeGame.makeMove(
         event,
-        this.nowMove,
         this.playerType,
         this.computerType,
       )
-
-      this.nowMove = this.services.TicTacToeGame.changePlayer(this.nowMove)
     },
   },
 })

@@ -11,6 +11,7 @@
       :key="index"
       class="field"
       size="tic-tac-toe"
+      :data-field="index"
       @click="($event) => clickButton($event)"
     />
   </div>

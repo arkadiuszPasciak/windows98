@@ -1,26 +1,28 @@
+import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
 import { TicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Services/TicTacToeWinningsStates.services'
 import {
   ETicTacToeRadioPlayer,
   TTicTacToeRadioDimension,
   TTicTacToeRadioPlayer,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
-import {
-  ETicTacToePlayerType,
-  TTicTacToePlayerType,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export class TicTacToeGame {
   private readonly dimension: TTicTacToeRadioDimension
+  private readonly TicTacToeBoardService: TicTacToeBoard
   private readonly TicTacToeWinningStatesService: TicTacToeWinningStates
+  private board: Array<string>
 
   constructor(dimension: TTicTacToeRadioDimension) {
     this.dimension = dimension
     this.TicTacToeWinningStatesService = new TicTacToeWinningStates(
       this.dimension,
     )
+    this.TicTacToeBoardService = new TicTacToeBoard(this.dimension)
+    this.board = this.TicTacToeBoardService.board
   }
 
   public checkWinner() {
+    // TODO make a check winner
     const winningStates =
       this.TicTacToeWinningStatesService.getAllWiningStates()
 
@@ -37,25 +39,15 @@ export class TicTacToeGame {
     // return null
   }
 
-  public changePlayer(player: TTicTacToePlayerType): TTicTacToePlayerType {
-    if (player === ETicTacToePlayerType.COMPUTER) {
-      return ETicTacToePlayerType.USER
-    } else {
-      return ETicTacToePlayerType.COMPUTER
-    }
-  }
-
   public makeMove(
     event: Event,
-    nowMove: TTicTacToePlayerType,
     playerType: TTicTacToeRadioPlayer,
     computerType: TTicTacToeRadioPlayer,
   ): void {
-    if (nowMove === ETicTacToePlayerType.COMPUTER) {
-      this.makeComputerMove(event, computerType)
-    } else if (nowMove === ETicTacToePlayerType.USER) {
-      this.makePlayerMove(event, playerType)
-    }
+    this.makePlayerMove(event, playerType)
+
+    // TODO make a computer move
+    // this.makeComputerMove(event, computerType)
   }
 
   private makeComputerMove(
@@ -78,5 +70,10 @@ export class TicTacToeGame {
 
     eventTarget.textContent = sign
     eventTarget.setAttribute('disabled', 'true')
+
+    const dataField = (Number(eventTarget.getAttribute('data-field')) -
+      1) as number
+
+    this.board[dataField] = sign
   }
 }
