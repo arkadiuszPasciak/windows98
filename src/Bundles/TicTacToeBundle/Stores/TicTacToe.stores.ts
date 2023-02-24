@@ -10,6 +10,12 @@ import {
   TTicTacToeRadioPlayer,
   TTicTacToeValidationError,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+import {
+  ETicTacToeStatusGame,
+  TTicTacToeCheckStatusGame,
+  TTicTacToeStatusGameDraw,
+  TTicTacToeStatusGameWinner,
+} from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 
 export const useTicTacToeStore = defineStore('tic-tac-toe', {
   state: () => ({
@@ -27,6 +33,7 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
       TicTacToeGame: new TicTacToeGame(ETicTacToeRadioDimension.THREE_X_THREE),
       TicTacToeFormStart: new TicTacToeFormStart(),
     },
+    statusGame: ETicTacToeStatusGame.PLAYING,
   }),
   actions: {
     submitForm(event: Event): void {
@@ -81,14 +88,24 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
 
     restartGame(): void {
       this.isStartValidate = true
+      this.statusGame = ETicTacToeStatusGame.PLAYING
     },
 
     makeMove(event: Event): void {
-      this.services.TicTacToeGame.makeMove(
-        event,
-        this.playerType,
-        this.computerType,
-      )
+      if (this.statusGame !== ETicTacToeStatusGame.PLAYING) {
+        return
+      }
+
+      try {
+        this.services.TicTacToeGame.makeMove(
+          event,
+          this.playerType,
+          this.computerType,
+        )
+      } catch (error) {
+        // TODO show result of game
+        console.log('error', error)
+      }
     },
   },
 })

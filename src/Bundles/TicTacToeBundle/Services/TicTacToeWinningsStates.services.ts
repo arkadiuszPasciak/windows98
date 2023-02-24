@@ -2,12 +2,14 @@ import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard
 import { TTicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 export class TicTacToeWinningStates {
+  public readonly winningStates: Array<number[]>
   private readonly dimension: TTicTacToeRadioDimension
   private readonly TicTacToeBoardService: TicTacToeBoard
 
   constructor(dimension: TTicTacToeRadioDimension) {
     this.dimension = dimension
     this.TicTacToeBoardService = new TicTacToeBoard(this.dimension)
+    this.winningStates = this.getAllWiningStates()
   }
 
   public getAllWiningStates(): Array<number[]> {

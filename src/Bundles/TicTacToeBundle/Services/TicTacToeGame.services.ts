@@ -1,4 +1,5 @@
 import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
+import { TicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Services/TicTacToeCheckStatusGame.services'
 import { TicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Services/TicTacToeWinningsStates.services'
 import {
   ETicTacToeRadioPlayer,
@@ -9,34 +10,18 @@ import {
 export class TicTacToeGame {
   private readonly dimension: TTicTacToeRadioDimension
   private readonly TicTacToeBoardService: TicTacToeBoard
+  private readonly TicTacToeCheckStatusGameService: TicTacToeCheckStatusGame
   private readonly TicTacToeWinningStatesService: TicTacToeWinningStates
-  private board: Array<string>
+  private currentBoard: Array<string>
 
   constructor(dimension: TTicTacToeRadioDimension) {
     this.dimension = dimension
     this.TicTacToeWinningStatesService = new TicTacToeWinningStates(
       this.dimension,
     )
+    this.TicTacToeCheckStatusGameService = new TicTacToeCheckStatusGame()
     this.TicTacToeBoardService = new TicTacToeBoard(this.dimension)
-    this.board = this.TicTacToeBoardService.board
-  }
-
-  public checkWinner() {
-    // TODO make a check winner
-    const winningStates =
-      this.TicTacToeWinningStatesService.getAllWiningStates()
-
-    // for (const combo of combos) {
-    //   const [a, b, c] = combo
-    //   if (
-    //     squares[a] &&
-    //     squares[a] === squares[b] &&
-    //     squares[a] === squares[c]
-    //   ) {
-    //     return squares[a]
-    //   }
-    // }
-    // return null
+    this.currentBoard = this.TicTacToeBoardService.currentBoard
   }
 
   public makeMove(
@@ -45,6 +30,17 @@ export class TicTacToeGame {
     computerType: TTicTacToeRadioPlayer,
   ): void {
     this.makePlayerMove(event, playerType)
+
+    const checkStatusGame =
+      this.TicTacToeCheckStatusGameService.checkStatusGame(
+        'x',
+        this.TicTacToeWinningStatesService.winningStates,
+        this.currentBoard,
+      )
+
+    if (checkStatusGame) {
+      throw checkStatusGame
+    }
 
     // TODO make a computer move
     // this.makeComputerMove(event, computerType)
@@ -74,6 +70,6 @@ export class TicTacToeGame {
     const dataField = (Number(eventTarget.getAttribute('data-field')) -
       1) as number
 
-    this.board[dataField] = sign
+    this.currentBoard[dataField] = sign
   }
 }

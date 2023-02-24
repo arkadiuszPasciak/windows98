@@ -9,14 +9,14 @@ export class TicTacToeBoard {
   public amountOfFields: number
   public amountOfColumns: number
   public amountOfRows: number
-  public board: Array<string>
+  public currentBoard: Array<string>
 
   constructor(dimension: TTicTacToeRadioDimension) {
     this.dimension = dimension
     this.amountOfFields = this.getAmountOfFields()
     this.amountOfColumns = this.getAmountOfColumns()
     this.amountOfRows = this.getAmountOfRows()
-    this.board = this.getFieldsOfBoard()
+    this.currentBoard = this.getFieldsOfBoard()
   }
 
   public getAmountOfFields(): number {
