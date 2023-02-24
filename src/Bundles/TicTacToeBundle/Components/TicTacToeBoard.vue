@@ -11,7 +11,7 @@
       :key="index"
       class="field"
       size="tic-tac-toe"
-      @click="($event) => ticTacToeStore.makeMove($event)"
+      @click="($event) => clickButton($event)"
     />
   </div>
 </template>
@@ -30,11 +30,19 @@
     },
   })
 
-  const { amountOfColumns, amountOfFields, amountOfRows } = new TicTacToeBoard(
-    props.dimensionType,
-  )
+  const {
+    amountOfColumns,
+    amountOfFields,
+    amountOfRows,
+    setColorByTextContent,
+  } = new TicTacToeBoard(props.dimensionType)
 
   const ticTacToeStore = useTicTacToeStore()
+
+  const clickButton = (event: Event): void => {
+    ticTacToeStore.makeMove(event)
+    setColorByTextContent(event)
+  }
 </script>
 
 <style lang="scss" scoped>

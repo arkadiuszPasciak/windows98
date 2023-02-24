@@ -5,6 +5,6 @@
 
   .field {
     text-align: center;
-    @include font('medium', 12, 30);
+    @include font('bold', 12, 30);
   }
 }
