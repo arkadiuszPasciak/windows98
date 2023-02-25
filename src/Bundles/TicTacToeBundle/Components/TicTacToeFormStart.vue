@@ -1,6 +1,6 @@
 <template>
   <form
-    v-if="ticTacToeStore.isStartValidate"
+    v-if="ticTacToeStore.form.status"
     class="TicTacToeFormStart"
     @submit="($event) => onSubmit($event)"
   >

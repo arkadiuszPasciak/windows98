@@ -6,36 +6,41 @@ import {
   ETicTacToeRadioPlayer,
   ETicTacToeValidateStatusType,
   ITicTacToeValidateFields,
-  TTicTacToeRadioDimension,
-  TTicTacToeRadioPlayer,
   TTicTacToeValidationError,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 import {
   ETicTacToeStatusGame,
   TTicTacToeCheckStatusGame,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+import { ITicTacToeStoreState } from '@Bundles/TicTacToeBundle/Supports/TicTacToeStore.supports'
 
 export const useTicTacToeStore = defineStore('tic-tac-toe', {
-  state: () => ({
-    userName: '' as string,
-    computerType: ETicTacToeRadioPlayer.PLAYER_O as TTicTacToeRadioPlayer,
-    playerType: ETicTacToeRadioPlayer.PLAYER_X as TTicTacToeRadioPlayer,
-    dimensionType:
-      ETicTacToeRadioDimension.THREE_X_THREE as TTicTacToeRadioDimension,
-    errorState: {
-      state: false as boolean,
-      code: '' as string,
-    },
-    isStartValidate: true as boolean,
-    services: {
-      TicTacToeGame: new TicTacToeGame(ETicTacToeRadioDimension.THREE_X_THREE),
-      TicTacToeFormStart: new TicTacToeFormStart(),
-    },
-    game: {
-      status: ETicTacToeStatusGame.PLAYING as TTicTacToeCheckStatusGame,
-      scoreModal: false as boolean,
-    },
-  }),
+  state: () =>
+    ({
+      form: {
+        data: {
+          computerType: ETicTacToeRadioPlayer.PLAYER_O,
+          dimensionType: ETicTacToeRadioDimension.THREE_X_THREE,
+          playerType: ETicTacToeRadioPlayer.PLAYER_X,
+          userName: '',
+        },
+        errorState: {
+          state: false,
+          code: null,
+        },
+        status: true,
+      },
+      game: {
+        status: ETicTacToeStatusGame.PLAYING,
+        scoreModal: false,
+      },
+      services: {
+        TicTacToeGame: new TicTacToeGame(
+          ETicTacToeRadioDimension.THREE_X_THREE,
+        ),
+        TicTacToeFormStart: new TicTacToeFormStart(),
+      },
+    } as ITicTacToeStoreState),
   actions: {
     submitForm(event: Event): void {
       this.clearErrorState()
@@ -53,43 +58,43 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
 
         this.updateGameData(formStatus.fields)
 
-        this.isStartValidate = false
+        this.form.status = false
       } else if (formStatus.type === ETicTacToeValidateStatusType.ERROR) {
         this.setErrorState(formStatus.code as TTicTacToeValidationError)
       }
     },
 
     clearErrorState(): void {
-      this.errorState.state = false
-      this.errorState.code = ''
+      this.form.errorState.state = false
+      this.form.errorState.code = null
     },
 
     setErrorState(errorCode: TTicTacToeValidationError): void {
-      this.errorState.state = true
-      this.errorState.code = errorCode
+      this.form.errorState.state = true
+      this.form.errorState.code = errorCode
     },
 
     updateGameData(fields: ITicTacToeValidateFields): void {
-      if (this.userName !== fields.userName) {
-        this.userName = fields.userName
+      if (this.form.data.userName !== fields.userName) {
+        this.form.data.userName = fields.userName
       }
 
-      if (this.playerType !== fields.playerType) {
-        this.playerType = fields.playerType
+      if (this.form.data.playerType !== fields.playerType) {
+        this.form.data.playerType = fields.playerType
       }
 
-      if (this.playerType === ETicTacToeRadioPlayer.PLAYER_O) {
-        this.computerType = ETicTacToeRadioPlayer.PLAYER_X
+      if (this.form.data.playerType === ETicTacToeRadioPlayer.PLAYER_O) {
+        this.form.data.computerType = ETicTacToeRadioPlayer.PLAYER_X
       }
 
-      if (this.dimensionType !== fields.dimensionType) {
-        this.dimensionType = fields.dimensionType
+      if (this.form.data.dimensionType !== fields.dimensionType) {
+        this.form.data.dimensionType = fields.dimensionType
       }
     },
 
     restartGame(): void {
       this.game.scoreModal = false
-      this.isStartValidate = true
+      this.form.status = true
       this.game.status = ETicTacToeStatusGame.PLAYING
       this.services.TicTacToeGame = new TicTacToeGame(
         ETicTacToeRadioDimension.THREE_X_THREE,
@@ -104,8 +109,8 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
       try {
         this.services.TicTacToeGame.makeMove(
           event,
-          this.playerType,
-          this.computerType,
+          this.form.data.playerType,
+          this.form.data.computerType,
         )
       } catch (status) {
         this.game.status = status as TTicTacToeCheckStatusGame

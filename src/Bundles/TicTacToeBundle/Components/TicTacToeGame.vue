@@ -1,11 +1,11 @@
 <template>
-  <div v-if="!ticTacToeStore.isStartValidate" class="TicTacToeGame">
+  <div v-if="!ticTacToeStore.form.status" class="TicTacToeGame">
     <TicTacToePlayers
-      :user-name="ticTacToeStore.userName"
-      :user-sign="ticTacToeStore.playerType"
+      :user-name="ticTacToeStore.form.data.userName"
+      :user-sign="ticTacToeStore.form.data.playerType"
     />
 
-    <TicTacToeBoard :dimension-type="ticTacToeStore.dimensionType" />
+    <TicTacToeBoard :dimension-type="ticTacToeStore.form.data.dimensionType" />
   </div>
 </template>
 

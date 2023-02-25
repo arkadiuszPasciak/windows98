@@ -15,7 +15,7 @@
           getDescriptionByScoreResult(
             t,
             ticTacToeStore.game.status,
-            ticTacToeStore.userName,
+            ticTacToeStore.form.data.userName,
           )
         }}
       </UIText>
