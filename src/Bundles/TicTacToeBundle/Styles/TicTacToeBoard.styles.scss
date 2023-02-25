@@ -3,6 +3,11 @@
   justify-content: center;
   gap: 1px;
 
+  &.is-blocked {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
   .field {
     text-align: center;
     @include font('bold', 12, 30);

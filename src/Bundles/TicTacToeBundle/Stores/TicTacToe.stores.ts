@@ -13,8 +13,6 @@ import {
 import {
   ETicTacToeStatusGame,
   TTicTacToeCheckStatusGame,
-  TTicTacToeStatusGameDraw,
-  TTicTacToeStatusGameWinner,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 
 export const useTicTacToeStore = defineStore('tic-tac-toe', {
@@ -33,7 +31,7 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
       TicTacToeGame: new TicTacToeGame(ETicTacToeRadioDimension.THREE_X_THREE),
       TicTacToeFormStart: new TicTacToeFormStart(),
     },
-    statusGame: ETicTacToeStatusGame.PLAYING,
+    statusGame: ETicTacToeStatusGame.PLAYING as TTicTacToeCheckStatusGame,
   }),
   actions: {
     submitForm(event: Event): void {
@@ -89,6 +87,9 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
     restartGame(): void {
       this.isStartValidate = true
       this.statusGame = ETicTacToeStatusGame.PLAYING
+      this.services.TicTacToeGame = new TicTacToeGame(
+        ETicTacToeRadioDimension.THREE_X_THREE,
+      )
     },
 
     makeMove(event: Event): void {
@@ -102,9 +103,10 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
           this.playerType,
           this.computerType,
         )
-      } catch (error) {
+      } catch (status) {
         // TODO show result of game
-        console.log('error', error)
+        this.statusGame = status as TTicTacToeCheckStatusGame
+        console.log('error', status)
       }
     },
   },

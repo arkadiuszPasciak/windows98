@@ -1,6 +1,11 @@
 <template>
   <div
     class="TicTacToeBoard"
+    :class="
+      ticTacToeStore.statusGame !== ETicTacToeStatusGame.PLAYING
+        ? 'is-blocked'
+        : ''
+    "
     :style="{
       'grid-template-columns': `repeat(${amountOfColumns}, 30px)`,
       'grid-template-rows': `repeat(${amountOfRows}, 30px)`,
@@ -23,6 +28,7 @@
   import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
   import { useTicTacToeStore } from '@Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
   import { TTicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+  import { ETicTacToeStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 
   const props = defineProps({
     dimensionType: {
