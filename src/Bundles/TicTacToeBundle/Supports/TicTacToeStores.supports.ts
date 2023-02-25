@@ -2,13 +2,14 @@ import { Nullable } from 'vitest'
 import { TicTacToeFormStart } from '@Bundles/TicTacToeBundle/Services/TicTacToeFormStart.services'
 import { TicTacToeGame } from '@Bundles/TicTacToeBundle/Services/TicTacToeGame.services'
 import {
+  ITicTacToeValidateFields,
   TTicTacToeRadioDimension,
   TTicTacToeRadioPlayer,
   TTicTacToeValidationError,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 import { TTicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 
-export interface ITicTacToeStoreState {
+export interface ITicTacToeStoresState {
   form: {
     data: {
       computerType: TTicTacToeRadioPlayer
@@ -30,4 +31,13 @@ export interface ITicTacToeStoreState {
     TicTacToeGame: TicTacToeGame
     TicTacToeFormStart: TicTacToeFormStart
   }
+}
+
+export interface ITicTacToeStoresActions extends ITicTacToeStoresState {
+  clearErrorState(): void
+  updateGameData(fields: ITicTacToeValidateFields): void
+  makeMove(event: Event): void
+  restartGame(): void
+  setErrorState(errorCode: TTicTacToeValidationError): void
+  submitForm(event: Event): void
 }

@@ -5,14 +5,16 @@ import {
   ETicTacToeRadioDimension,
   ETicTacToeRadioPlayer,
   ETicTacToeValidateStatusType,
-  ITicTacToeValidateFields,
   TTicTacToeValidationError,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 import {
   ETicTacToeStatusGame,
   TTicTacToeCheckStatusGame,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
-import { ITicTacToeStoreState } from '@Bundles/TicTacToeBundle/Supports/TicTacToeStore.supports'
+import {
+  ITicTacToeStoresState,
+  ITicTacToeStoresActions,
+} from '@/Bundles/TicTacToeBundle/Supports/TicTacToeStores.supports'
 
 export const useTicTacToeStore = defineStore('tic-tac-toe', {
   state: () =>
@@ -40,9 +42,63 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
         ),
         TicTacToeFormStart: new TicTacToeFormStart(),
       },
-    } as ITicTacToeStoreState),
+    } as ITicTacToeStoresState),
   actions: {
-    submitForm(event: Event): void {
+    clearErrorState() {
+      this.form.errorState.state = false
+      this.form.errorState.code = null
+    },
+
+    updateGameData(fields) {
+      if (this.form.data.userName !== fields.userName) {
+        this.form.data.userName = fields.userName
+      }
+
+      if (this.form.data.playerType !== fields.playerType) {
+        this.form.data.playerType = fields.playerType
+      }
+
+      if (this.form.data.playerType === ETicTacToeRadioPlayer.PLAYER_O) {
+        this.form.data.computerType = ETicTacToeRadioPlayer.PLAYER_X
+      }
+
+      if (this.form.data.dimensionType !== fields.dimensionType) {
+        this.form.data.dimensionType = fields.dimensionType
+      }
+    },
+
+    makeMove(event) {
+      if (this.game.status !== ETicTacToeStatusGame.PLAYING) {
+        return
+      }
+
+      try {
+        this.services.TicTacToeGame.makeMove(
+          event,
+          this.form.data.playerType,
+          this.form.data.computerType,
+        )
+      } catch (status) {
+        this.game.status = status as TTicTacToeCheckStatusGame
+        this.game.scoreModal = true
+      }
+    },
+
+    restartGame() {
+      this.game.scoreModal = false
+      this.form.status = true
+      this.game.status = ETicTacToeStatusGame.PLAYING
+      this.services.TicTacToeGame = new TicTacToeGame(
+        ETicTacToeRadioDimension.THREE_X_THREE,
+      )
+    },
+
+    setErrorState(errorCode) {
+      this.form.errorState.state = true
+      this.form.errorState.code = errorCode
+    },
+
+    submitForm(event) {
       this.clearErrorState()
 
       const formStatus = this.services.TicTacToeFormStart.submitForm(event)
@@ -63,59 +119,5 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
         this.setErrorState(formStatus.code as TTicTacToeValidationError)
       }
     },
-
-    clearErrorState(): void {
-      this.form.errorState.state = false
-      this.form.errorState.code = null
-    },
-
-    setErrorState(errorCode: TTicTacToeValidationError): void {
-      this.form.errorState.state = true
-      this.form.errorState.code = errorCode
-    },
-
-    updateGameData(fields: ITicTacToeValidateFields): void {
-      if (this.form.data.userName !== fields.userName) {
-        this.form.data.userName = fields.userName
-      }
-
-      if (this.form.data.playerType !== fields.playerType) {
-        this.form.data.playerType = fields.playerType
-      }
-
-      if (this.form.data.playerType === ETicTacToeRadioPlayer.PLAYER_O) {
-        this.form.data.computerType = ETicTacToeRadioPlayer.PLAYER_X
-      }
-
-      if (this.form.data.dimensionType !== fields.dimensionType) {
-        this.form.data.dimensionType = fields.dimensionType
-      }
-    },
-
-    restartGame(): void {
-      this.game.scoreModal = false
-      this.form.status = true
-      this.game.status = ETicTacToeStatusGame.PLAYING
-      this.services.TicTacToeGame = new TicTacToeGame(
-        ETicTacToeRadioDimension.THREE_X_THREE,
-      )
-    },
-
-    makeMove(event: Event): void {
-      if (this.game.status !== ETicTacToeStatusGame.PLAYING) {
-        return
-      }
-
-      try {
-        this.services.TicTacToeGame.makeMove(
-          event,
-          this.form.data.playerType,
-          this.form.data.computerType,
-        )
-      } catch (status) {
-        this.game.status = status as TTicTacToeCheckStatusGame
-        this.game.scoreModal = true
-      }
-    },
-  },
+  } as ITicTacToeStoresActions,
 })
