@@ -2,7 +2,7 @@
   <div
     class="TicTacToeBoard"
     :class="
-      ticTacToeStore.statusGame !== ETicTacToeStatusGame.PLAYING
+      ticTacToeStore.game.status !== ETicTacToeStatusGame.PLAYING
         ? 'is-blocked'
         : ''
     "

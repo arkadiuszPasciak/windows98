@@ -31,7 +31,10 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
       TicTacToeGame: new TicTacToeGame(ETicTacToeRadioDimension.THREE_X_THREE),
       TicTacToeFormStart: new TicTacToeFormStart(),
     },
-    statusGame: ETicTacToeStatusGame.PLAYING as TTicTacToeCheckStatusGame,
+    game: {
+      status: ETicTacToeStatusGame.PLAYING as TTicTacToeCheckStatusGame,
+      scoreModal: false as boolean,
+    },
   }),
   actions: {
     submitForm(event: Event): void {
@@ -85,15 +88,16 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
     },
 
     restartGame(): void {
+      this.game.scoreModal = false
       this.isStartValidate = true
-      this.statusGame = ETicTacToeStatusGame.PLAYING
+      this.game.status = ETicTacToeStatusGame.PLAYING
       this.services.TicTacToeGame = new TicTacToeGame(
         ETicTacToeRadioDimension.THREE_X_THREE,
       )
     },
 
     makeMove(event: Event): void {
-      if (this.statusGame !== ETicTacToeStatusGame.PLAYING) {
+      if (this.game.status !== ETicTacToeStatusGame.PLAYING) {
         return
       }
 
@@ -104,9 +108,8 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
           this.computerType,
         )
       } catch (status) {
-        // TODO show result of game
-        this.statusGame = status as TTicTacToeCheckStatusGame
-        console.log('error', status)
+        this.game.status = status as TTicTacToeCheckStatusGame
+        this.game.scoreModal = true
       }
     },
   },

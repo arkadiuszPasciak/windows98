@@ -65,17 +65,15 @@ export class TicTacToeGame {
   private makeComputerMove(computerType: TTicTacToeRadioPlayer): void {
     const cells = [] as Array<number>
 
-    for (let index = 0; index < 9; index++) {
-      if (this.currentBoard[index] === '') {
+    for (let index = 1; index <= 9; index++) {
+      if (this.currentBoard[index - 1] === '') {
         cells.push(index)
       }
     }
 
-    console.log(cells, 'cells')
-
     const randomNumber = Math.floor(Math.random() * cells.length) as number
 
-    this.updateFieldOnBoardByComputer(cells[randomNumber] - 1, computerType)
+    this.updateFieldOnBoardByComputer(cells[randomNumber], computerType)
   }
 
   private makePlayerMove(
