@@ -6,6 +6,8 @@ import {
   TTicTacToeRadioDimension,
   TTicTacToeRadioPlayer,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+import { TTicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+import { Nullable } from 'vitest'
 
 export class TicTacToeGame {
   private readonly dimension: TTicTacToeRadioDimension
@@ -31,37 +33,62 @@ export class TicTacToeGame {
   ): void {
     this.makePlayerMove(event, playerType)
 
-    const checkStatusGame =
-      this.TicTacToeCheckStatusGameService.checkStatusGame(
-        'x',
-        this.TicTacToeWinningStatesService.winningStates,
-        this.currentBoard,
-      )
+    const isPlayerWin = this.checkStatusGame(playerType)
 
-    if (checkStatusGame) {
-      throw checkStatusGame
+    if (isPlayerWin) {
+      throw isPlayerWin
     }
 
-    // TODO make a computer move
-    // this.makeComputerMove(event, computerType)
+    this.makeComputerMove(computerType)
+
+    const isComputerWin = this.checkStatusGame(computerType)
+
+    if (isComputerWin) {
+      throw isComputerWin
+    }
   }
 
-  private makeComputerMove(
-    event: Event,
-    computerType: TTicTacToeRadioPlayer,
-  ): void {
-    this.updateFieldOnBoard(event, computerType)
+  private checkStatusGame(
+    playerType: TTicTacToeRadioPlayer,
+  ): Nullable<TTicTacToeCheckStatusGame> {
+    const sign = playerType === ETicTacToeRadioPlayer.PLAYER_O ? 'o' : 'x'
+
+    const statusGame = this.TicTacToeCheckStatusGameService.checkStatusGame(
+      sign,
+      this.TicTacToeWinningStatesService.winningStates,
+      this.currentBoard,
+    )
+
+    return statusGame
+  }
+
+  private makeComputerMove(computerType: TTicTacToeRadioPlayer): void {
+    const cells = [] as Array<number>
+
+    for (let index = 0; index < 9; index++) {
+      if (this.currentBoard[index] === '') {
+        cells.push(index)
+      }
+    }
+
+    console.log(cells, 'cells')
+
+    const randomNumber = Math.floor(Math.random() * cells.length) as number
+
+    this.updateFieldOnBoardByComputer(cells[randomNumber] - 1, computerType)
   }
 
   private makePlayerMove(
     event: Event,
     playerType: TTicTacToeRadioPlayer,
   ): void {
-    this.updateFieldOnBoard(event, playerType)
+    this.updateFieldOnBoardByPlayer(event, playerType)
   }
 
-  private updateFieldOnBoard(event: Event, type: TTicTacToeRadioPlayer): void {
-    const eventTarget = event.target as HTMLButtonElement
+  private updateFieldOnBoard(
+    eventTarget: HTMLButtonElement,
+    type: TTicTacToeRadioPlayer,
+  ): void {
     const sign = type === ETicTacToeRadioPlayer.PLAYER_O ? 'o' : 'x'
 
     eventTarget.textContent = sign
@@ -71,5 +98,25 @@ export class TicTacToeGame {
       1) as number
 
     this.currentBoard[dataField] = sign
+  }
+
+  private updateFieldOnBoardByComputer(
+    fieldNumber: number,
+    computerType: TTicTacToeRadioPlayer,
+  ): void {
+    const eventTarget = document.querySelector(
+      `button[data-field="${fieldNumber}"]`,
+    ) as HTMLButtonElement
+
+    this.updateFieldOnBoard(eventTarget, computerType)
+  }
+
+  private updateFieldOnBoardByPlayer(
+    event: Event,
+    playerType: TTicTacToeRadioPlayer,
+  ): void {
+    const eventTarget = event.target as HTMLButtonElement
+
+    this.updateFieldOnBoard(eventTarget, playerType)
   }
 }
