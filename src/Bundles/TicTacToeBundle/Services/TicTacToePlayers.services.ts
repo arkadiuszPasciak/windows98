@@ -12,6 +12,18 @@ import {
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export class TicTacToePlayers {
+  public setColorByPlayerType(
+    playerType: TTicTacToePlayerSign,
+  ): TTicTacToePlayerColor {
+    switch (playerType) {
+      case ETicTacToePlayerSign.PLAYER_X:
+        return ETicTacToePlayerColor.RED
+      case ETicTacToePlayerSign.PLAYER_O:
+      default:
+        return ETicTacToePlayerColor.BLUE
+    }
+  }
+
   public setSignByPlayerType(
     playerType: TTicTacToePlayerType,
     signType: TTicTacToeRadioPlayer,
@@ -33,17 +45,5 @@ export class TicTacToePlayers {
     }
 
     return ETicTacToePlayerSign.PLAYER_O
-  }
-
-  public setColorByPlayerType(
-    playerType: TTicTacToePlayerSign,
-  ): TTicTacToePlayerColor {
-    switch (playerType) {
-      case ETicTacToePlayerSign.PLAYER_X:
-        return ETicTacToePlayerColor.RED
-      case ETicTacToePlayerSign.PLAYER_O:
-      default:
-        return ETicTacToePlayerColor.BLUE
-    }
   }
 }
