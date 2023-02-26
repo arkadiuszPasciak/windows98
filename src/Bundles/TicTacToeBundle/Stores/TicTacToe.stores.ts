@@ -14,7 +14,7 @@ import {
 import {
   ITicTacToeStoresState,
   ITicTacToeStoresActions,
-} from '@/Bundles/TicTacToeBundle/Supports/TicTacToeStores.supports'
+} from '@Bundles/TicTacToeBundle/Supports/TicTacToeStores.supports'
 
 export const useTicTacToeStore = defineStore('tic-tac-toe', {
   state: () =>
