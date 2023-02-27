@@ -8,6 +8,7 @@ import {
 
 const { validateDimensionType, validateUserName, validatePlayerType } =
   Reflect.construct(TicTacToeFormStart, []) as any
+// TODO make an interface
 
 describe('[TicTacToeBundle]<Services>(TicTacToeFormStart)', () => {
   it('should work method validateDimensionType', async () => {
@@ -65,4 +66,5 @@ describe('[TicTacToeBundle]<Services>(TicTacToeFormStart)', () => {
       validatePlayerType(ETicTacToeRadioPlayer.PLAYER_O),
     ).not.toThrow()
   })
+  // TODO make rest tests
 })
