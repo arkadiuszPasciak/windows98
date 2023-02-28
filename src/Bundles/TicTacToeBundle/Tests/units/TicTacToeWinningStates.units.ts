@@ -1,6 +1,6 @@
 import { expect, it, describe } from 'vitest'
-import { MTicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Mocks/TicTacToeWinningsStates.mocks'
-import { TicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Services/TicTacToeWinningsStates.services'
+import { MTicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Mocks/TicTacToeWinningStates.mocks'
+import { TicTacToeWinningStates } from '@/Bundles/TicTacToeBundle/Services/TicTacToeWinningStates.services'
 import { ETicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 const ticTacToeWinningStates3x3Service = new TicTacToeWinningStates(

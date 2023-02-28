@@ -1,6 +1,6 @@
 import { expect, it, describe } from 'vitest'
 import { MTicTacToeCurrentBoard3x3 } from '@Bundles/TicTacToeBundle/Mocks/TicTacToeBoard.mocks'
-import { MTicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Mocks/TicTacToeWinningsStates.mocks'
+import { MTicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Mocks/TicTacToeWinningStates.mocks'
 import { TicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Services/TicTacToeCheckStatusGame.services'
 import { ETicTacToeStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 import { ETicTacToePlayerSign } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
