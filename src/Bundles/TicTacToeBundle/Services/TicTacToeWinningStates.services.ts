@@ -9,10 +9,10 @@ export class TicTacToeWinningStates {
   constructor(dimension: TTicTacToeRadioDimension) {
     this.dimension = dimension
     this.TicTacToeBoardService = new TicTacToeBoard(this.dimension)
-    this.winningStates = this.getAllWiningStates()
+    this.winningStates = this.getAllWinningStates()
   }
 
-  public getAllWiningStates(): Array<number[]> {
+  public getAllWinningStates(): Array<number[]> {
     const columns = this.getColumnsWinningStates()
     const diagonals = this.getDiagonalsWinningStates()
     const rows = this.getRowsWinningStates()

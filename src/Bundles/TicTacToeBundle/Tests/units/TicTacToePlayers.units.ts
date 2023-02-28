@@ -10,6 +10,24 @@ import {
 const ticTacToePlayersService = new TicTacToePlayers()
 
 describe('[TicTacToeBundle]<Services>(TicTacToePlayers)', () => {
+  it('checks method setColorByPlayerType', async () => {
+    const playerX = expect(
+      ticTacToePlayersService.setColorByPlayerType(
+        ETicTacToePlayerSign.PLAYER_X,
+      ),
+    )
+
+    playerX.toBe(ETicTacToePlayerColor.RED)
+
+    const playerO = expect(
+      ticTacToePlayersService.setColorByPlayerType(
+        ETicTacToePlayerSign.PLAYER_O,
+      ),
+    )
+
+    playerO.toBe(ETicTacToePlayerColor.BLUE)
+  })
+
   it('checks method setSignByPlayerType', async () => {
     const computerPlayerO = expect(
       ticTacToePlayersService.setSignByPlayerType(
@@ -46,23 +64,5 @@ describe('[TicTacToeBundle]<Services>(TicTacToePlayers)', () => {
     )
 
     userPlayerX.toBe(ETicTacToePlayerSign.PLAYER_X)
-  })
-
-  it('checks method setSignByPlayerType', async () => {
-    const playerX = expect(
-      ticTacToePlayersService.setColorByPlayerType(
-        ETicTacToePlayerSign.PLAYER_X,
-      ),
-    )
-
-    playerX.toBe(ETicTacToePlayerColor.RED)
-
-    const playerO = expect(
-      ticTacToePlayersService.setColorByPlayerType(
-        ETicTacToePlayerSign.PLAYER_O,
-      ),
-    )
-
-    playerO.toBe(ETicTacToePlayerColor.BLUE)
   })
 })
