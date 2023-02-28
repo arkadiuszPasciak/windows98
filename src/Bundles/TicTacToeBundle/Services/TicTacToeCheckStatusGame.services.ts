@@ -41,7 +41,7 @@ export class TicTacToeCheckStatusGame {
     if (isDraw) {
       return ETicTacToeStatusGame.DRAW
     } else {
-      null
+      return null
     }
   }
 

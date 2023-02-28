@@ -5,10 +5,73 @@ import { TicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Services/TicT
 import { ETicTacToeStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 import { ETicTacToePlayerSign } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
-const ticTacToeCheckStatusGame3x3 = new TicTacToeCheckStatusGame()
+const ticTacToeCheckStatusGame3x3 = Reflect.construct(
+  TicTacToeCheckStatusGame,
+  [],
+) as any
 
 describe('[TicTacToeBundle]<Services>(TicTacToeCheckStatusGame)', () => {
-  it('checks method checkStatusGame', async () => {
+  test('method checkDraw', async () => {
+    const drawFirst = ticTacToeCheckStatusGame3x3.checkDraw(
+      MTicTacToeCurrentBoard3x3.DRAW_1,
+    )
+
+    expect(drawFirst).toBe(ETicTacToeStatusGame.DRAW)
+
+    const drawSecond = ticTacToeCheckStatusGame3x3.checkDraw(
+      MTicTacToeCurrentBoard3x3.DRAW_2,
+    )
+
+    expect(drawSecond).toBe(ETicTacToeStatusGame.DRAW)
+
+    const nullFirst = ticTacToeCheckStatusGame3x3.checkDraw(
+      MTicTacToeCurrentBoard3x3.ROW_1(ETicTacToePlayerSign.PLAYER_X),
+    )
+
+    expect(nullFirst).toBe(null)
+
+    const nullSecond = ticTacToeCheckStatusGame3x3.checkDraw(
+      MTicTacToeCurrentBoard3x3.COLUMN_1(ETicTacToePlayerSign.PLAYER_X),
+    )
+
+    expect(nullSecond).toBe(null)
+  })
+
+  test('method checkWinner', async () => {
+    const winnerFirst = ticTacToeCheckStatusGame3x3.checkWinner(
+      ETicTacToePlayerSign.PLAYER_X,
+      MTicTacToeWinningStates.THREE_X_THREE,
+      MTicTacToeCurrentBoard3x3.ROW_1(ETicTacToePlayerSign.PLAYER_X),
+    )
+
+    expect(winnerFirst).toBe(ETicTacToeStatusGame.WINNER_X)
+
+    const winnerSecond = ticTacToeCheckStatusGame3x3.checkWinner(
+      ETicTacToePlayerSign.PLAYER_O,
+      MTicTacToeWinningStates.THREE_X_THREE,
+      MTicTacToeCurrentBoard3x3.COLUMN_1(ETicTacToePlayerSign.PLAYER_O),
+    )
+
+    expect(winnerSecond).toBe(ETicTacToeStatusGame.WINNER_O)
+
+    const nullFirst = ticTacToeCheckStatusGame3x3.checkWinner(
+      ETicTacToePlayerSign.PLAYER_O,
+      MTicTacToeWinningStates.THREE_X_THREE,
+      MTicTacToeCurrentBoard3x3.DRAW_1,
+    )
+
+    expect(nullFirst).toBe(null)
+
+    const nullSecond = ticTacToeCheckStatusGame3x3.checkWinner(
+      ETicTacToePlayerSign.PLAYER_O,
+      MTicTacToeWinningStates.THREE_X_THREE,
+      MTicTacToeCurrentBoard3x3.DRAW_2,
+    )
+
+    expect(nullSecond).toBe(null)
+  })
+
+  test('method checkStatusGame', async () => {
     const columnFirst = ticTacToeCheckStatusGame3x3.checkStatusGame(
       ETicTacToePlayerSign.PLAYER_O,
       MTicTacToeWinningStates.THREE_X_THREE,
