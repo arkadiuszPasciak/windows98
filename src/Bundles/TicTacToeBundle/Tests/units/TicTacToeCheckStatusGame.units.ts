@@ -3,53 +3,54 @@ import { MTicTacToeCurrentBoard3x3 } from '@Bundles/TicTacToeBundle/Mocks/TicTac
 import { MTicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Mocks/TicTacToeWinningsStates.mocks'
 import { TicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Services/TicTacToeCheckStatusGame.services'
 import { ETicTacToeStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+import { ETicTacToePlayerSign } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 const ticTacToeCheckStatusGame3x3 = new TicTacToeCheckStatusGame()
 
 describe('[TicTacToeBundle]<Services>(TicTacToeCheckStatusGame)', () => {
   it('checks method checkStatusGame', async () => {
     const columnFirst = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'o',
+      ETicTacToePlayerSign.PLAYER_O,
       MTicTacToeWinningStates.THREE_X_THREE,
-      MTicTacToeCurrentBoard3x3.COLUMN_1('o'),
+      MTicTacToeCurrentBoard3x3.COLUMN_1(ETicTacToePlayerSign.PLAYER_O),
     )
 
     expect(columnFirst).toBe(ETicTacToeStatusGame.WINNER_O)
 
     const columnSecond = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'x',
+      ETicTacToePlayerSign.PLAYER_X,
       MTicTacToeWinningStates.THREE_X_THREE,
-      MTicTacToeCurrentBoard3x3.COLUMN_2('x'),
+      MTicTacToeCurrentBoard3x3.COLUMN_2(ETicTacToePlayerSign.PLAYER_X),
     )
 
     expect(columnSecond).toBe(ETicTacToeStatusGame.WINNER_X)
 
     const columnThird = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'o',
+      ETicTacToePlayerSign.PLAYER_O,
       MTicTacToeWinningStates.THREE_X_THREE,
-      MTicTacToeCurrentBoard3x3.COLUMN_3('o'),
+      MTicTacToeCurrentBoard3x3.COLUMN_3(ETicTacToePlayerSign.PLAYER_O),
     )
 
     expect(columnThird).toBe(ETicTacToeStatusGame.WINNER_O)
 
     const diagonalFirst = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'x',
+      ETicTacToePlayerSign.PLAYER_X,
       MTicTacToeWinningStates.THREE_X_THREE,
-      MTicTacToeCurrentBoard3x3.DIAGONAL_1('x'),
+      MTicTacToeCurrentBoard3x3.DIAGONAL_1(ETicTacToePlayerSign.PLAYER_X),
     )
 
     expect(diagonalFirst).toBe(ETicTacToeStatusGame.WINNER_X)
 
     const diagonalSecond = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'o',
+      ETicTacToePlayerSign.PLAYER_O,
       MTicTacToeWinningStates.THREE_X_THREE,
-      MTicTacToeCurrentBoard3x3.DIAGONAL_2('o'),
+      MTicTacToeCurrentBoard3x3.DIAGONAL_2(ETicTacToePlayerSign.PLAYER_O),
     )
 
     expect(diagonalSecond).toBe(ETicTacToeStatusGame.WINNER_O)
 
     const drawFirst = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'x',
+      ETicTacToePlayerSign.PLAYER_X,
       MTicTacToeWinningStates.THREE_X_THREE,
       MTicTacToeCurrentBoard3x3.DRAW_1,
     )
@@ -57,7 +58,7 @@ describe('[TicTacToeBundle]<Services>(TicTacToeCheckStatusGame)', () => {
     expect(drawFirst).toBe(ETicTacToeStatusGame.DRAW)
 
     const drawSecond = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'o',
+      ETicTacToePlayerSign.PLAYER_O,
       MTicTacToeWinningStates.THREE_X_THREE,
       MTicTacToeCurrentBoard3x3.DRAW_2,
     )
@@ -65,31 +66,31 @@ describe('[TicTacToeBundle]<Services>(TicTacToeCheckStatusGame)', () => {
     expect(drawSecond).toBe(ETicTacToeStatusGame.DRAW)
 
     const rowFirst = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'x',
+      ETicTacToePlayerSign.PLAYER_X,
       MTicTacToeWinningStates.THREE_X_THREE,
-      MTicTacToeCurrentBoard3x3.ROW_1('x'),
+      MTicTacToeCurrentBoard3x3.ROW_1(ETicTacToePlayerSign.PLAYER_X),
     )
 
     expect(rowFirst).toBe(ETicTacToeStatusGame.WINNER_X)
 
     const rowSecond = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'o',
+      ETicTacToePlayerSign.PLAYER_O,
       MTicTacToeWinningStates.THREE_X_THREE,
-      MTicTacToeCurrentBoard3x3.ROW_2('o'),
+      MTicTacToeCurrentBoard3x3.ROW_2(ETicTacToePlayerSign.PLAYER_O),
     )
 
     expect(rowSecond).toBe(ETicTacToeStatusGame.WINNER_O)
 
     const rowThird = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'x',
+      ETicTacToePlayerSign.PLAYER_X,
       MTicTacToeWinningStates.THREE_X_THREE,
-      MTicTacToeCurrentBoard3x3.ROW_3('x'),
+      MTicTacToeCurrentBoard3x3.ROW_3(ETicTacToePlayerSign.PLAYER_X),
     )
 
     expect(rowThird).toBe(ETicTacToeStatusGame.WINNER_X)
 
     const noScoreFirst = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'o',
+      ETicTacToePlayerSign.PLAYER_O,
       MTicTacToeWinningStates.THREE_X_THREE,
       MTicTacToeCurrentBoard3x3.NO_SCORE_1,
     )
@@ -97,7 +98,7 @@ describe('[TicTacToeBundle]<Services>(TicTacToeCheckStatusGame)', () => {
     expect(noScoreFirst).toBe(null)
 
     const noScoreSecond = ticTacToeCheckStatusGame3x3.checkStatusGame(
-      'x',
+      ETicTacToePlayerSign.PLAYER_X,
       MTicTacToeWinningStates.THREE_X_THREE,
       MTicTacToeCurrentBoard3x3.NO_SCORE_2,
     )

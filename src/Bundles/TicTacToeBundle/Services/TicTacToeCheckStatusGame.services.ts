@@ -5,10 +5,14 @@ import {
   TTicTacToeStatusGameDraw,
   TTicTacToeStatusGameWinner,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+import {
+  ETicTacToePlayerSign,
+  TTicTacToePlayerSign,
+} from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export class TicTacToeCheckStatusGame {
   public checkStatusGame(
-    player: 'o' | 'x',
+    player: TTicTacToePlayerSign,
     winningStates: Array<number[]>,
     currentlyBoard: Array<string>,
   ): Nullable<TTicTacToeCheckStatusGame> {
@@ -42,7 +46,7 @@ export class TicTacToeCheckStatusGame {
   }
 
   private checkWinner(
-    player: 'x' | 'o',
+    player: TTicTacToePlayerSign,
     winningStates: Array<number[]>,
     currentlyBoard: Array<string>,
   ): Nullable<TTicTacToeStatusGameWinner> {
@@ -54,7 +58,7 @@ export class TicTacToeCheckStatusGame {
         currentlyBoard[b - 1] === player &&
         currentlyBoard[c - 1] === player
       ) {
-        return player === 'x'
+        return player === ETicTacToePlayerSign.PLAYER_X
           ? ETicTacToeStatusGame.WINNER_X
           : ETicTacToeStatusGame.WINNER_O
       }

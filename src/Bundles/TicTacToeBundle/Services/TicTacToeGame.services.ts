@@ -1,4 +1,8 @@
 import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
+import {
+  ETicTacToePlayerSign,
+  TTicTacToePlayerSign,
+} from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 import { TicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Services/TicTacToeCheckStatusGame.services'
 import { TicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Services/TicTacToeWinningsStates.services'
 import {
@@ -51,7 +55,7 @@ export class TicTacToeGame {
   private checkStatusGame(
     playerType: TTicTacToeRadioPlayer,
   ): Nullable<TTicTacToeCheckStatusGame> {
-    const sign = playerType === ETicTacToeRadioPlayer.PLAYER_O ? 'o' : 'x'
+    const sign = this.getSign(playerType)
 
     const statusGame = this.TicTacToeCheckStatusGameService.checkStatusGame(
       sign,
@@ -87,7 +91,7 @@ export class TicTacToeGame {
     eventTarget: HTMLButtonElement,
     type: TTicTacToeRadioPlayer,
   ): void {
-    const sign = type === ETicTacToeRadioPlayer.PLAYER_O ? 'o' : 'x'
+    const sign = this.getSign(type)
 
     eventTarget.textContent = sign
     eventTarget.setAttribute('disabled', 'true')
@@ -116,5 +120,11 @@ export class TicTacToeGame {
     const eventTarget = event.target as HTMLButtonElement
 
     this.updateFieldOnBoard(eventTarget, playerType)
+  }
+
+  private getSign(playerType: TTicTacToeRadioPlayer): TTicTacToePlayerSign {
+    return playerType === ETicTacToeRadioPlayer.PLAYER_O
+      ? ETicTacToePlayerSign.PLAYER_O
+      : ETicTacToePlayerSign.PLAYER_X
   }
 }

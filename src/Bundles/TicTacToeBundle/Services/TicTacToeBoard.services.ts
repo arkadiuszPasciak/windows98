@@ -3,6 +3,7 @@ import {
   ETicTacToePlayerColor,
   TTicTacToePlayerColor,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
+import { ETicTacToePlayerSign } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export class TicTacToeBoard {
   public dimension: TTicTacToeRadioDimension
@@ -27,10 +28,10 @@ export class TicTacToeBoard {
     let colorStyle = null as null | TTicTacToePlayerColor
 
     switch (textContent) {
-      case 'x':
+      case ETicTacToePlayerSign.PLAYER_X:
         colorStyle = ETicTacToePlayerColor.RED
         break
-      case 'o':
+      case ETicTacToePlayerSign.PLAYER_O:
         colorStyle = ETicTacToePlayerColor.BLUE
         break
     }

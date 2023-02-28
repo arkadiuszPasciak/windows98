@@ -12,22 +12,26 @@
     >
       3 x 3
     </UIRadio>
-    <!-- <UIRadio
-      class="radio-dimension-6x6"
-      :name="ETicTacToeInputNames.CHOOSE_DIMENSION"
-      :model-value="ETicTacToeRadioDimension.SIX_X_SIX"
-      @update:model-value="($event) => (checkedRadioBoxes = $event)"
-    >
-      6 x 6
-    </UIRadio>
-    <UIRadio
-      class="radio-dimension-9x9"
-      :name="ETicTacToeInputNames.CHOOSE_DIMENSION"
-      :model-value="ETicTacToeRadioDimension.NINE_X_NINE"
-      @update:model-value="($event) => (checkedRadioBoxes = $event)"
-    >
-      9 x 9
-    </UIRadio> -->
+
+    <!-- improve 6x6 and 9x9 in the future -->
+    <template v-if="false">
+      <UIRadio
+        class="radio-dimension-6x6"
+        :name="ETicTacToeInputNames.CHOOSE_DIMENSION"
+        :model-value="ETicTacToeRadioDimension.SIX_X_SIX"
+        @update:model-value="($event) => (checkedRadioBoxes = $event)"
+      >
+        6 x 6
+      </UIRadio>
+      <UIRadio
+        class="radio-dimension-9x9"
+        :name="ETicTacToeInputNames.CHOOSE_DIMENSION"
+        :model-value="ETicTacToeRadioDimension.NINE_X_NINE"
+        @update:model-value="($event) => (checkedRadioBoxes = $event)"
+      >
+        9 x 9
+      </UIRadio>
+    </template>
   </div>
 </template>
 

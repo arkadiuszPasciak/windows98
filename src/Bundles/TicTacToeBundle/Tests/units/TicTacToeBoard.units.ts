@@ -1,4 +1,5 @@
 import { expect, it, describe } from 'vitest'
+import { MTicTacToeLengthOfBoard } from '@Bundles/TicTacToeBundle/Mocks/TicTacToeBoard.mocks'
 import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
 import { ETicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
@@ -20,17 +21,9 @@ describe('[TicTacToeBundle]<Services>(TicTacToeBoard)', () => {
 
     expect(ticTacToeBoard3x3.amountOfRows).toBe(3)
 
-    expect(ticTacToeBoard3x3.currentBoard).toStrictEqual([
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-    ])
+    expect(ticTacToeBoard3x3.currentBoard).toStrictEqual(
+      MTicTacToeLengthOfBoard.THREE_X_THREE,
+    )
 
     expect(ticTacToeBoard3x3.columnAndRow).toStrictEqual(['3', '3'])
 
@@ -46,44 +39,9 @@ describe('[TicTacToeBundle]<Services>(TicTacToeBoard)', () => {
 
     expect(ticTacToeBoard6x6.amountOfRows).toBe(6)
 
-    expect(ticTacToeBoard6x6.currentBoard).toStrictEqual([
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-    ])
+    expect(ticTacToeBoard6x6.currentBoard).toStrictEqual(
+      MTicTacToeLengthOfBoard.SIX_X_SIX,
+    )
 
     expect(ticTacToeBoard6x6.columnAndRow).toStrictEqual(['6', '6'])
 
@@ -97,89 +55,9 @@ describe('[TicTacToeBundle]<Services>(TicTacToeBoard)', () => {
 
     expect(ticTacToeBoard9x9.amountOfRows).toBe(9)
 
-    expect(ticTacToeBoard9x9.currentBoard).toStrictEqual([
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-      '',
-    ])
+    expect(ticTacToeBoard9x9.currentBoard).toStrictEqual(
+      MTicTacToeLengthOfBoard.NINE_X_NINE,
+    )
 
     expect(ticTacToeBoard9x9.columnAndRow).toStrictEqual(['9', '9'])
 
