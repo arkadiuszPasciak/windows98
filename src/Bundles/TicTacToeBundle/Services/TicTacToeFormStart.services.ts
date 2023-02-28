@@ -1,9 +1,10 @@
+import { Nullable } from 'vitest'
 import {
   ETicTacToeRadioDimension,
   ETicTacToeRadioPlayer,
+  ETicTacToeValidateStatusType,
   ETicTacToeValidationError,
   ETicTacToeValidationSuccess,
-  ETicTacToeValidateStatusType,
   ITicTacToeValidateFields,
   ITicTacToeValidateStatus,
   TTicTacToeRadioDimension,
@@ -30,7 +31,7 @@ export class TicTacToeFormStart {
 
   private getFormData(
     eventTarget: EventTarget,
-  ): ITicTacToeValidateFields | null {
+  ): Nullable<ITicTacToeValidateFields> {
     if (eventTarget instanceof HTMLFormElement) {
       const formData = new FormData(eventTarget)
 

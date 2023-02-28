@@ -1,17 +1,17 @@
+import { Nullable } from 'vitest'
 import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
-import {
-  ETicTacToePlayerSign,
-  TTicTacToePlayerSign,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 import { TicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Services/TicTacToeCheckStatusGame.services'
 import { TicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Services/TicTacToeWinningsStates.services'
+import { TTicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 import {
   ETicTacToeRadioPlayer,
   TTicTacToeRadioDimension,
   TTicTacToeRadioPlayer,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
-import { TTicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
-import { Nullable } from 'vitest'
+import {
+  ETicTacToePlayerSign,
+  TTicTacToePlayerSign,
+} from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export class TicTacToeGame {
   private readonly dimension: TTicTacToeRadioDimension

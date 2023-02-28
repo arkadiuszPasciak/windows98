@@ -4,11 +4,11 @@ import {
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 import {
   ETicTacToePlayerColor,
-  ETicTacToePlayerType,
   ETicTacToePlayerSign,
+  ETicTacToePlayerType,
   TTicTacToePlayerColor,
-  TTicTacToePlayerType,
   TTicTacToePlayerSign,
+  TTicTacToePlayerType,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export class TicTacToePlayers {

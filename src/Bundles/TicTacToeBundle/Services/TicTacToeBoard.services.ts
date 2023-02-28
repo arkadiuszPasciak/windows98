@@ -2,8 +2,8 @@ import { TTicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicT
 import {
   ETicTacToePlayerColor,
   TTicTacToePlayerColor,
+  ETicTacToePlayerSign,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
-import { ETicTacToePlayerSign } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export class TicTacToeBoard {
   public dimension: TTicTacToeRadioDimension

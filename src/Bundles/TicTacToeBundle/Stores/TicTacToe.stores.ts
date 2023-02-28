@@ -2,15 +2,15 @@ import { defineStore } from 'pinia'
 import { TicTacToeFormStart } from '@Bundles/TicTacToeBundle/Services/TicTacToeFormStart.services'
 import { TicTacToeGame } from '@Bundles/TicTacToeBundle/Services/TicTacToeGame.services'
 import {
+  ETicTacToeStatusGame,
+  TTicTacToeCheckStatusGame,
+} from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+import {
   ETicTacToeRadioDimension,
   ETicTacToeRadioPlayer,
   ETicTacToeValidateStatusType,
   TTicTacToeValidationError,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
-import {
-  ETicTacToeStatusGame,
-  TTicTacToeCheckStatusGame,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 import {
   ITicTacToeStoresState,
   ITicTacToeStoresActions,

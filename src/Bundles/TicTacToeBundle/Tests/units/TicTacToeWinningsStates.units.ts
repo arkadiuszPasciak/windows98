@@ -1,7 +1,7 @@
 import { expect, it, describe } from 'vitest'
-import { ETicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 import { MTicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Mocks/TicTacToeWinningsStates.mocks'
 import { TicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Services/TicTacToeWinningsStates.services'
+import { ETicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 const ticTacToeWinningStates3x3Service = new TicTacToeWinningStates(
   ETicTacToeRadioDimension.THREE_X_THREE,

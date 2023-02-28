@@ -1,11 +1,11 @@
 import { expect, it, describe } from 'vitest'
 import { TicTacToePlayers } from '@Bundles/TicTacToeBundle/Services/TicTacToePlayers.services'
+import { ETicTacToeRadioPlayer } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 import {
   ETicTacToePlayerColor,
   ETicTacToePlayerType,
   ETicTacToePlayerSign,
 } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
-import { ETicTacToeRadioPlayer } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 const ticTacToePlayersService = new TicTacToePlayers()
 
