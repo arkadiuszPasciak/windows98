@@ -7,7 +7,7 @@
     <TicTacToeEnterYourName />
     <TicTacToeChoosePlayer />
     <TicTacToeChooseDimension />
-    <UIButton class="button" type="submit">
+    <UIButton class="button" type="submit" data-test="tic-tac-toe-form-button">
       {{ t('TicTacToeBundle.start') }}
     </UIButton>
   </form>
