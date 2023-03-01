@@ -16,6 +16,7 @@
             t,
             ticTacToeStore.game.status,
             ticTacToeStore.form.data.userName,
+            ticTacToeStore.form.data.playerType,
           )
         }}
       </UIText>

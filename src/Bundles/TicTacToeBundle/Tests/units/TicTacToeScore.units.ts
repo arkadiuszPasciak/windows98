@@ -1,6 +1,7 @@
 import { expect, it, describe } from 'vitest'
 import { TicTacToeScore } from '@Bundles/TicTacToeBundle/Services/TicTacToeScore.services'
 import { ETicTacToeStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+import { ETicTacToeRadioPlayer } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 const { getDescriptionByScoreResult } = new TicTacToeScore()
 
@@ -14,6 +15,7 @@ describe('[TicTacToeBundle]<Services>(TicTacToeScore)', () => {
       translate,
       ETicTacToeStatusGame.DRAW,
       'Arkadiusz',
+      ETicTacToeRadioPlayer.PLAYER_O,
     )
 
     expect(draw).toBe('TicTacToeBundle.draw')
@@ -22,6 +24,7 @@ describe('[TicTacToeBundle]<Services>(TicTacToeScore)', () => {
       translate,
       ETicTacToeStatusGame.WINNER_O,
       'Arkadiusz',
+      ETicTacToeRadioPlayer.PLAYER_O,
     )
 
     expect(winnerO).toBe('TicTacToeBundle.player-has-won')
@@ -30,6 +33,7 @@ describe('[TicTacToeBundle]<Services>(TicTacToeScore)', () => {
       translate,
       ETicTacToeStatusGame.WINNER_X,
       'Arkadiusz',
+      ETicTacToeRadioPlayer.PLAYER_X,
     )
 
     expect(winnerX).toBe('TicTacToeBundle.player-has-won')
@@ -40,6 +44,7 @@ describe('[TicTacToeBundle]<Services>(TicTacToeScore)', () => {
       // @ts-ignore
       'undefined',
       'Arkadiusz',
+      ETicTacToeRadioPlayer.PLAYER_O,
     )
 
     expect(undefinedScore).toBe('TicTacToeBundle.score-undefined')
