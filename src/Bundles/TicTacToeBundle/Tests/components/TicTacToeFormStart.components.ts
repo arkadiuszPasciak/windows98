@@ -1,6 +1,9 @@
 import { createTestingPinia } from '@pinia/testing'
 import TicTacToeFormStart from '@Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue'
+import TicTacToeEnterYourNameTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeEnterYourNameTesting.services'
 import { ETicTacToePlayerSign } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
+
+const TicTacToeEnterYourNameTestingService = new TicTacToeEnterYourNameTesting()
 
 describe('[TicTacToeBundle]<Components>(TicTacToeFormStart)', () => {
   it('renders correctly component and send form', () => {
@@ -19,12 +22,8 @@ describe('[TicTacToeBundle]<Components>(TicTacToeFormStart)', () => {
 
     cy.get('form.TicTacToeFormStart')
 
-    cy.get('[data-test="ui-input-tic-tac-toe-enter-your-name"]')
-      .clear()
-      .type('Arkadiusz')
-      .should('have.value', 'Arkadiusz')
-
-    cy.get('[data-test="ui-input-label-tic-tac-toe-enter-your-name"]').contains(
+    TicTacToeEnterYourNameTestingService.checkInputField(
+      'Arkadiusz',
       'Enter your name',
     )
 
