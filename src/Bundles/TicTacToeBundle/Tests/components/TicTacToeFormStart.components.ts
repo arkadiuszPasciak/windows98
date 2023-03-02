@@ -1,8 +1,11 @@
 import { createTestingPinia } from '@pinia/testing'
 import TicTacToeFormStart from '@Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue'
+import TicTacToeChooseDimensionTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeChooseDimensionTesting.services'
 import TicTacToeEnterYourNameTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeEnterYourNameTesting.services'
 import { ETicTacToePlayerSign } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
+const TicTacToeChooseDimensionTestingService =
+  new TicTacToeChooseDimensionTesting()
 const TicTacToeEnterYourNameTestingService = new TicTacToeEnterYourNameTesting()
 
 describe('[TicTacToeBundle]<Components>(TicTacToeFormStart)', () => {
@@ -37,13 +40,7 @@ describe('[TicTacToeBundle]<Components>(TicTacToeFormStart)', () => {
       `[data-test="ui-radio-label-tic-tac-toc-choose-player-player-${ETicTacToePlayerSign.PLAYER_O}"]`,
     ).contains(ETicTacToePlayerSign.PLAYER_O)
 
-    cy.get('[data-test="ui-radio-input-tic-tac-toc-choose-dimension-3x3"]')
-      .click()
-      .should('be.checked')
-
-    cy.get(
-      '[data-test="ui-radio-label-tic-tac-toc-choose-dimension-3x3"]',
-    ).contains(' 3 x 3 ')
+    TicTacToeChooseDimensionTestingService.checkInputRadio3x3()
 
     cy.get(`button.UIButton[data-test="tic-tac-toe-form-button"]`)
       .contains('Start')
