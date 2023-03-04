@@ -1,6 +1,6 @@
 import { createTestingPinia } from '@pinia/testing'
 import TicTacToeGame from '@Bundles/TicTacToeBundle/Components/TicTacToeGame.vue'
-import { TicTacToeGameTesting } from '@Bundles/TicTacToeBundle/Services/TicTacToeGameTesting.services'
+import TicTacToeGameTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeGameTesting.services'
 
 const TicTacToeGameTestingService = new TicTacToeGameTesting()
 

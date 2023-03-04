@@ -1,4 +1,4 @@
-export class TicTacToeGameTesting {
+export default class TicTacToeGameTesting {
   public clickAutomaticallyToEndGame(): void {
     let index = 1 as number
     let isBlock = false as boolean
@@ -10,9 +10,9 @@ export class TicTacToeGameTesting {
       if (isBoardBlock) {
         isBlock = true
         return
+      } else {
+        this.clickOnAvailableField()
       }
-
-      this.clickOnAvailableField()
     }
   }
 
@@ -34,7 +34,7 @@ export class TicTacToeGameTesting {
       }
 
       for (let index = 1; index <= 9; index++) {
-        if (currentFields[index - 1].textContent === '') {
+        if (currentFields[index].textContent === '') {
           availableFields.push(index)
         }
       }
