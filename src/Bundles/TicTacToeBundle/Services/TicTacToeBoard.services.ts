@@ -1,9 +1,4 @@
 import { TTicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
-import {
-  ETicTacToePlayerColor,
-  TTicTacToePlayerColor,
-  ETicTacToePlayerSign,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export class TicTacToeBoard {
   public dimension: TTicTacToeRadioDimension
@@ -20,27 +15,6 @@ export class TicTacToeBoard {
     this.amountOfFields = this.getAmountOfFields()
     this.amountOfRows = this.getAmountOfRows()
     this.currentBoard = this.getFieldsOfBoard()
-  }
-
-  public setColorByTextContent(event: Event): void {
-    const eventTarget = event.target as HTMLButtonElement
-    const textContent = eventTarget.textContent
-    let colorStyle = null as null | TTicTacToePlayerColor
-
-    switch (textContent) {
-      case ETicTacToePlayerSign.PLAYER_X:
-        colorStyle = ETicTacToePlayerColor.RED
-        break
-      case ETicTacToePlayerSign.PLAYER_O:
-        colorStyle = ETicTacToePlayerColor.BLUE
-        break
-    }
-
-    if (!colorStyle) {
-      return
-    }
-
-    eventTarget.style.color = colorStyle
   }
 
   private getAmountOfColumns(): number {

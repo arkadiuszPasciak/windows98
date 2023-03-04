@@ -11,5 +11,13 @@
   .field {
     text-align: center;
     @include font('bold', 12, 30);
+
+    &.is-player-x {
+      color: $cl-red;
+    }
+
+    &.is-player-o {
+      color: $cl-blue00;
+    }
   }
 }

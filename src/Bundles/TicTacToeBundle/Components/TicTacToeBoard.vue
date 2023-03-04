@@ -37,18 +37,14 @@
     },
   })
 
-  const {
-    amountOfColumns,
-    amountOfFields,
-    amountOfRows,
-    setColorByTextContent,
-  } = new TicTacToeBoard(props.dimensionType)
+  const { amountOfColumns, amountOfFields, amountOfRows } = new TicTacToeBoard(
+    props.dimensionType,
+  )
 
   const ticTacToeStore = useTicTacToeStore()
 
   const clickButton = (event: Event): void => {
     ticTacToeStore.makeMove(event)
-    setColorByTextContent(event)
   }
 </script>
 

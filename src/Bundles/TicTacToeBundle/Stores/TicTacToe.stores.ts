@@ -88,6 +88,8 @@ export const useTicTacToeStore = defineStore('tic-tac-toe', {
       this.game.scoreModal = false
       this.form.status = true
       this.game.status = ETicTacToeStatusGame.PLAYING
+      this.form.data.computerType = ETicTacToeRadioPlayer.PLAYER_O
+      this.form.data.playerType = ETicTacToeRadioPlayer.PLAYER_X
       this.services.TicTacToeGame = new TicTacToeGame(
         ETicTacToeRadioDimension.THREE_X_THREE,
       )

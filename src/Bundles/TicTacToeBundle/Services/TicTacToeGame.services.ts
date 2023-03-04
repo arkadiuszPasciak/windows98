@@ -95,6 +95,7 @@ export class TicTacToeGame {
 
     eventTarget.textContent = sign
     eventTarget.setAttribute('disabled', 'true')
+    eventTarget.classList.add(`is-${type}`)
 
     const dataField = (Number(eventTarget.getAttribute('data-field')) -
       1) as number
