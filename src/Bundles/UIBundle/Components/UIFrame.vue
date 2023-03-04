@@ -1,5 +1,5 @@
 <template>
-  <div class="UIFrame">
+  <div class="UIFrame" :data-test="`ui-frame-${title?.toLowerCase()}`">
     <UIText
       v-if="title"
       class="title"

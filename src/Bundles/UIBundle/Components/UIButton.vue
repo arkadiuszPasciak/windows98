@@ -12,7 +12,7 @@
   defineProps({
     size: {
       type: String as PropType<
-        'small' | 'medium' | 'calculator' | 'media-player'
+        'small' | 'medium' | 'calculator' | 'media-player' | 'tic-tac-toe'
       >,
       default: 'medium',
     },

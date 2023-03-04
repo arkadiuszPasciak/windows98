@@ -3,8 +3,8 @@
     class="Notepad"
     :title="t('NotepadBundle.title')"
     :resize-window="true"
-    :width="600"
-    :height="450"
+    width="600px"
+    height="450px"
     :modal-state="programStore.modalNotepad"
     @close-modal="closeModal"
   >

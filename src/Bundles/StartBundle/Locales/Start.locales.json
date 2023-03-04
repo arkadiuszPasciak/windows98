@@ -5,15 +5,17 @@
     "StartBundle.documents": "Documents",
     "StartBundle.entertainment": "Entertainment",
     "StartBundle.find": "Find",
+    "StartBundle.games": "Games",
     "StartBundle.help": "Help",
-    "StartBundle.windows-logo": "Windows logo",
     "StartBundle.media-player": "Media Player",
     "StartBundle.notepad": "Notepad",
     "StartBundle.programs": "Programs",
     "StartBundle.run": "Run...",
     "StartBundle.settings": "Settings",
     "StartBundle.shut-down": "Shut Down...",
-    "StartBundle.start": "Start"
+    "StartBundle.start": "Start",
+    "StartBundle.tic-tac-toe": "Tic Tac Toe",
+    "StartBundle.windows-logo": "Windows logo"
   },
   "pl": {
     "StartBundle.accessories": "Akcesoria",
@@ -21,14 +23,16 @@
     "StartBundle.documents": "Dokumenty",
     "StartBundle.entertainment": "Rozrywka",
     "StartBundle.find": "Znajdź",
+    "StartBundle.games": "Gry",
     "StartBundle.help": "Pomoc",
-    "StartBundle.windows-logo": "Windows logo",
     "StartBundle.media-player": "Media Player",
     "StartBundle.notepad": "Notatnik",
     "StartBundle.programs": "Programy",
     "StartBundle.run": "Włącz...",
     "StartBundle.settings": "Ustawienia",
     "StartBundle.shut-down": "Wyłącz...",
-    "StartBundle.start": "Start"
+    "StartBundle.start": "Start",
+    "StartBundle.tic-tac-toe": "Kółko i krzyżyk",
+    "StartBundle.windows-logo": "Windows logo"
   }
 }

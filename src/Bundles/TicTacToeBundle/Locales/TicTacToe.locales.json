@@ -1,0 +1,30 @@
+{
+  "en": {
+    "TicTacToeBundle.choose-dimension": "Choose a dimension of the field",
+    "TicTacToeBundle.choose-player": "Choose a player",
+    "TicTacToeBundle.computer": "Computer",
+    "TicTacToeBundle.default-player": "Default player",
+    "TicTacToeBundle.draw": "Draw!",
+    "TicTacToeBundle.enter-your-name": "Enter your name",
+    "TicTacToeBundle.new-game": "New game",
+    "TicTacToeBundle.player-has-won": "{name} has won!",
+    "TicTacToeBundle.start": "Start",
+    "TicTacToeBundle.score": "Score",
+    "TicTacToeBundle.score-undefined": "Score is undefined",
+    "TicTacToeBundle.title": "Tic Tac Toe"
+  },
+  "pl": {
+    "TicTacToeBundle.choose-dimension": "Wybierz wymiar planszy",
+    "TicTacToeBundle.choose-player": "Wybierz gracza",
+    "TicTacToeBundle.computer": "Komputer",
+    "TicTacToeBundle.default-player": "Domyślny gracz",
+    "TicTacToeBundle.draw": "Remis!",
+    "TicTacToeBundle.enter-your-name": "Wprowadź swoje imię",
+    "TicTacToeBundle.new-game": "Nowa gra",
+    "TicTacToeBundle.player-has-won": "{name} wygrał!",
+    "TicTacToeBundle.start": "Rozpocznij",
+    "TicTacToeBundle.score": "Wynik",
+    "TicTacToeBundle.score-undefined": "Wynik jest niezdefiniowany",
+    "TicTacToeBundle.title": "Kółko i krzyżyk"
+  }
+}

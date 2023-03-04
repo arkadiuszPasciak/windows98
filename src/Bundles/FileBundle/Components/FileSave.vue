@@ -4,8 +4,8 @@
     :title="t('FileBundle.title-save')"
     :resize-window="false"
     :move-window="false"
-    :width="320"
-    :height="100"
+    width="320px"
+    height="100px"
     :modal-state="modalState"
     @close-modal="$emit('closeModal')"
   >

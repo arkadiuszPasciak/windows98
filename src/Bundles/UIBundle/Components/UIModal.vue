@@ -6,7 +6,7 @@
     :class="classes"
     @mousemove="(event) => mouseMove(event)"
   >
-    <div class="container" :style="`width: ${width}px; height: ${height}px;`">
+    <div class="container" :style="{ width: `${width}`, height: `${height}` }">
       <div
         class="header"
         :style="`cursor: ${cursorType}`"
@@ -55,12 +55,12 @@
       required: true,
     },
     width: {
-      type: Number,
-      default: 450,
+      type: String,
+      default: `450px`,
     },
     height: {
-      type: Number,
-      default: 150,
+      type: String,
+      default: `150px`,
     },
     resizeWindow: {
       type: Boolean,

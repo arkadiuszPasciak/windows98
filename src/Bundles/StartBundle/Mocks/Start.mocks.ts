@@ -41,6 +41,20 @@ export const MStartStoreApps = [
           },
         ],
       },
+      {
+        data: {
+          name: 'StartBundle.games',
+          iconName: 'folder-small',
+        },
+        items: [
+          {
+            data: {
+              name: 'StartBundle.tic-tac-toe',
+              iconName: 'tic-tac-toe',
+            },
+          },
+        ],
+      },
     ],
   },
   {
