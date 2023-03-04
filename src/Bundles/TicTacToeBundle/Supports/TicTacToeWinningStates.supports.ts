@@ -1,3 +1,6 @@
 export interface ITicTacToeWinningStates {
-  THREE_X_THREE: Array<number[]>
+  ALL: Array<number[]>
+  COLUMNS: Array<number[]>
+  DIAGONALS: Array<number[]>
+  ROWS: Array<number[]>
 }

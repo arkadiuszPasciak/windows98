@@ -53,5 +53,13 @@ describe('[TicTacToeBundle]<Components>(TicTacToe)', () => {
     cy.get('form.TicTacToeFormStart').should('not.exist')
 
     TicTacToeGameTestingService.clickAutomaticallyToEndGame()
+
+    cy.get('div.TicTacToeScore')
+
+    cy.get('button.UIButton').contains('New game').click()
+
+    cy.get('div.TicTacToeScore').should('not.exist')
+
+    cy.get('form.TicTacToeFormStart')
   })
 })
