@@ -8,13 +8,16 @@
     :modal-state="programStore.modalDocumentation"
     @close-modal="closeModal"
   >
-    <div class="content">content</div>
+    <div class="content">
+      <DocumentationNavigation />
+    </div>
   </UIModal>
 </template>
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
+  import DocumentationNavigation from '@Bundles/DocumentationBundle/Components/DocumentationNavigation.vue'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
 
   const { t } = useI18n()

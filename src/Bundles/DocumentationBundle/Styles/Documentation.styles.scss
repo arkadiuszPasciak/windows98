@@ -1,3 +1,9 @@
 .Documentation {
-  color: $cl-red;
+  .content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    height: calc(100% - 20px);
+    padding: 5px;
+  }
 }
