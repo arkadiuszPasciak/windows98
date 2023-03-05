@@ -18,6 +18,18 @@ describe('[ProgramBundle]<Stores>(useProgramStore)', () => {
     expect(store.modalCalculator).equal(false)
   })
 
+  it('turns on and off Documentation', () => {
+    expect(store.modalDocumentation).equal(false)
+
+    store.updateDocumentationModal(true)
+
+    expect(store.modalDocumentation).equal(true)
+
+    store.updateDocumentationModal(false)
+
+    expect(store.modalDocumentation).equal(false)
+  })
+
   it('turns on and off Media Player', () => {
     expect(store.modalMediaPlayer).equal(false)
 

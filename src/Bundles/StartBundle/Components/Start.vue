@@ -102,6 +102,9 @@
       case 'StartBundle.calculator':
         programStore.updateCalculatorModal(true)
         break
+      case 'StartBundle.documentation':
+        programStore.updateDocumentationModal(true)
+        break
       case 'StartBundle.notepad':
         programStore.updateNotepadModal(true)
         break

@@ -2,7 +2,7 @@
   "en": {
     "StartBundle.accessories": "Accessories",
     "StartBundle.calculator": "Calculator",
-    "StartBundle.documents": "Documents",
+    "StartBundle.documentation": "Documentation",
     "StartBundle.entertainment": "Entertainment",
     "StartBundle.find": "Find",
     "StartBundle.games": "Games",
@@ -20,7 +20,7 @@
   "pl": {
     "StartBundle.accessories": "Akcesoria",
     "StartBundle.calculator": "Kalkulator",
-    "StartBundle.documents": "Dokumenty",
+    "StartBundle.documentation": "Dokumentacja",
     "StartBundle.entertainment": "Rozrywka",
     "StartBundle.find": "Znajdź",
     "StartBundle.games": "Gry",
