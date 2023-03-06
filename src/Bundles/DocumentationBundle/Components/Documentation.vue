@@ -10,6 +10,7 @@
   >
     <div class="content">
       <DocumentationNavigation />
+      <DocumentationContent />
     </div>
   </UIModal>
 </template>
@@ -17,6 +18,7 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
+  import DocumentationContent from '@Bundles/DocumentationBundle/Components/DocumentationContent.vue'
   import DocumentationNavigation from '@Bundles/DocumentationBundle/Components/DocumentationNavigation.vue'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
 
