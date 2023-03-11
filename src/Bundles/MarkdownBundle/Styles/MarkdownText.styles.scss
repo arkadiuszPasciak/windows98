@@ -1,0 +1,9 @@
+p {
+  @include font('medium', 12, 18);
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+strong {
+  font-family: $font-ms-sans-serif-bold;
+}

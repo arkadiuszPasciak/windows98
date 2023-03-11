@@ -1,0 +1,14 @@
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul,
+ol {
+  @include font('medium', 12, 15);
+  margin-left: 20px;
+  padding-left: 20px;
+}

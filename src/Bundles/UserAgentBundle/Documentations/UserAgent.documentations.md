@@ -33,6 +33,12 @@ Unordered list:
 
 `one line code`
 
+```html
+<div class="test">
+  <span>123</span>
+</div>
+```
+
 ```ts
 const typescript = 'few lines typescript code' as string
 ```
