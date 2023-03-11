@@ -1,0 +1,70 @@
+.Markdown {
+  .markdown-content {
+    h1 {
+      @include font('bold', 24, 36);
+    }
+
+    h2 {
+      @include font('bold', 22, 34);
+    }
+
+    h3 {
+      @include font('bold', 20, 32);
+    }
+
+    h4 {
+      @include font('bold', 18, 30);
+    }
+
+    h5 {
+      @include font('bold', 16, 28);
+    }
+
+    h6 {
+      @include font('bold', 14, 26);
+    }
+
+    p,
+    a {
+      @include font('medium', 12, 18);
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: $cl-blue00;
+    }
+
+    strong {
+      font-family: $font-ms-sans-serif-bold;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    ul,
+    ol {
+      @include font('medium', 12, 15);
+      margin-left: 20px;
+      padding-left: 20px;
+    }
+
+    hr {
+      border-color: var(--text-color);
+    }
+
+    & > h1,
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6,
+    & > p {
+      color: var(--text-color);
+    }
+  }
+}

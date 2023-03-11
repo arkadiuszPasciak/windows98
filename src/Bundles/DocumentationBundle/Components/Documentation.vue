@@ -3,8 +3,8 @@
     class="Documentation"
     :title="t('DocumentationBundle.title')"
     :resize-window="false"
-    width="600px"
-    height="400px"
+    width="700px"
+    height="500px"
     :modal-state="programStore.modalDocumentation"
     @close-modal="closeModal"
   >

@@ -1,13 +1,24 @@
 import { defineConfig } from 'vitest/config'
-import vue from '@vitejs/plugin-vue'
+import Vue from '@vitejs/plugin-vue'
 import * as path from 'path'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import eslintPlugin from 'vite-plugin-eslint'
 import tsconfigPaths from 'vite-tsconfig-paths'
+import Markdown from 'vite-plugin-vue-markdown'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), VueI18nPlugin({}), eslintPlugin(), tsconfigPaths()],
+  plugins: [
+    Vue({
+      include: [/\.vue$/, /\.md$/], // <--
+    }),
+    Markdown({
+      wrapperClasses: 'markdown-content',
+    }),
+    VueI18nPlugin({}),
+    eslintPlugin(),
+    tsconfigPaths(),
+  ],
   resolve: {
     alias: {
       '~@': path.resolve(__dirname, './src'),
