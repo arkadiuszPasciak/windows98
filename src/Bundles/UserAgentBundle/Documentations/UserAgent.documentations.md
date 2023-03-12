@@ -31,8 +31,6 @@ Unordered list:
 - third item
 - fourth item
 
-`one line code`
-
 ```html
 <div class="test">
   <span>123</span>
