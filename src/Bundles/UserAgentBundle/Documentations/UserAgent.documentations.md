@@ -55,6 +55,11 @@ const typescript = 'few lines typescript code' as string
 }
 ```
 
+| Name      | Description                             |
+| --------- | --------------------------------------- |
+| `label`   | Use this slot to set the label          |
+| `default` | Use this slot to set the textarea value |
+
 lines
 
 ---
