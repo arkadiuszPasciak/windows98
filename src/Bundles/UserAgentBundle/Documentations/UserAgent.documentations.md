@@ -1,70 +1,31 @@
 ---
 title: UserAgentBundle
-description: UserAgentDocumentations.description
+description: DocumentationBundle.description
+description_content: UserAgentBundle.description-content
+services: DocumentationBundle.services
+services_content_1: UserAgentBundle.services-content-1
+services_content_2: UserAgentBundle.services-content-2
+services_content_3: UserAgentBundle.services-content-3
 ---
 
 # {{ title }}
 
 ## {{ t(description) }}
 
-### h3
+<p v-html="t(description_content)" />
 
-#### h4
-
-##### h5
-
-###### h6
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
-
-Order list
-
-1. First item
-2. Second item
-3. Third item
-4. Fourth Item
-
-Unordered list:
-
-- first item
-- second item
-- third item
-- fourth item
-
-```html
-<div class="test">
-  <span>123</span>
-</div>
+```
+window.navigator.userAgent
 ```
 
-```ts
-const typescript = 'few lines typescript code' as string
-```
+## {{ t(services) }}
 
-```scss
-.header {
-  color: $test-scss;
-}
-```
+- {{ t(services_content_1) }}
+- {{ t(services_content_2) }}
+- {{ t(services_content_3) }}
 
-```json
-{
-  "test": "test json"
-}
-```
-
-| Name      | Description                             |
-| --------- | --------------------------------------- |
-| `label`   | Use this slot to set the label          |
-| `default` | Use this slot to set the textarea value |
-
-lines
-
----
-
-link [Duck Duck Go](https://duckduckgo.com)
-
-<i18n src="@Bundles/UserAgentBundle/Locales/UserAgentDocumentations.locales.json"></i18n>
+<i18n src="@Bundles/DocumentationBundle/Locales/Documentation.locales.json"></i18n>
+<i18n src="@Bundles/UserAgentBundle/Locales/UserAgent.locales.json"></i18n>
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'

@@ -9,6 +9,8 @@ ol {
 ul,
 ol {
   @include font('medium', 12, 15);
+  color: var(--text-color-1);
+  margin-bottom: 10px;
   margin-left: 20px;
   padding-left: 20px;
 }

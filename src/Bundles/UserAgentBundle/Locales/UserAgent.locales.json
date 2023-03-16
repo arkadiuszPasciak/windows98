@@ -1,0 +1,14 @@
+{
+  "en": {
+    "UserAgentBundle.description-content": "The Bundle responsible for a object <a href='https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent'>UserAgent</a> located in a object <b>Window</b>",
+    "UserAgentBundle.services-content-1": "get browser name",
+    "UserAgentBundle.services-content-2": "get operating system name",
+    "UserAgentBundle.services-content-3": "get type of device"
+  },
+  "pl": {
+    "UserAgentBundle.description-content": "Bundle odpowiedzialny za obsługę obiektu <a href='https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent'>UserAgent</a> znajdującego się w obiekcie <b>Window</b>",
+    "UserAgentBundle.services-content-1": "zdobądz nazwę przeglądarki",
+    "UserAgentBundle.services-content-2": "zdobądz nazwę systemu operacyjnego",
+    "UserAgentBundle.services-content-3": "zdobądz nazwę typu urządzenia"
+  }
+}

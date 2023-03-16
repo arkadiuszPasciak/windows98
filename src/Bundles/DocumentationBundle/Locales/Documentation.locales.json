@@ -1,10 +1,14 @@
 {
   "en": {
+    "DocumentationBundle.description": "Description",
     "DocumentationBundle.title": "Documentation",
-    "DocumentationBundle.icon-description": "Documentation icon"
+    "DocumentationBundle.icon-description": "Documentation icon",
+    "DocumentationBundle.services": "Services"
   },
   "pl": {
+    "DocumentationBundle.description": "Opis",
     "DocumentationBundle.title": "Dokumentacja",
-    "DocumentationBundle.icon-description": "Ikona dokumentacji"
+    "DocumentationBundle.icon-description": "Ikona dokumentacji",
+    "DocumentationBundle.services": "Usługi"
   }
 }
