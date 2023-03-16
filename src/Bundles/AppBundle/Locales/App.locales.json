@@ -1,0 +1,18 @@
+{
+  "en": {
+    "AppBundle.description-content": "The Bundle responsible for creating the <a href='https://vuejs.org/guide/essentials/application.html#creating-a-vue-application'>Vue Application</a>",
+    "AppBundle.services-content-1": "creating the application",
+    "AppBundle.services-content-2": "creating the pinia in the application",
+    "AppBundle.services-content-3": "creating the i18n in the application",
+    "AppBundle.services-content-4": "setting global variables and functions before mounting application",
+    "AppBundle.services-content-5": "mounting the application"
+  },
+  "pl": {
+    "AppBundle.description-content": "Bundle odpowiedzialny za tworzenie the <a href='https://vuejs.org/guide/essentials/application.html#creating-a-vue-application'>Aplikacji Vue</a>",
+    "AppBundle.services-content-1": "tworzenie aplikacji",
+    "AppBundle.services-content-2": "tworzenie pinia w aplikacji",
+    "AppBundle.services-content-3": "tworzenie i18n w aplikacji",
+    "AppBundle.services-content-4": "ustawienie globalnych zmiennych i funkcji przed zamontowaniem aplikacji",
+    "AppBundle.services-content-5": "montowanie aplikacji"
+  }
+}
