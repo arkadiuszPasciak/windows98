@@ -3,9 +3,10 @@ import AudioDocumentation from '@Bundles/AudioBundle/Documentations/Audio.docume
 import CalculatorDocumentation from '@Bundles/CalculatorBundle/Documentations/Calculator.documentations.md'
 import CalendarDocumentation from '@Bundles/CalendarBundle/Documentations/Calendar.documentations.md'
 import ClockDocumentation from '@Bundles/ClockBundle/Documentations/Clock.documentations.md'
+import DocumentationDocumentation from '@Bundles/DocumentationBundle/Documentations/Documentation.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
-export const testFirst = ClockDocumentation
+export const testFirst = DocumentationDocumentation
 
 export const documentations = {
   AppDocumentation,
@@ -13,5 +14,6 @@ export const documentations = {
   CalculatorDocumentation,
   CalendarDocumentation,
   ClockDocumentation,
+  DocumentationDocumentation,
   UserAgentDocumentation,
 }
