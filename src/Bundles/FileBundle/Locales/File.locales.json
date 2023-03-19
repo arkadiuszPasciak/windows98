@@ -1,10 +1,13 @@
 {
   "en": {
     "FileBundle.cancel": "Cancel",
+    "FileBundle.description-content": "The Bundle responsible for manage of <b>files</b>",
     "FileBundle.file-name": "File name:",
     "FileBundle.untitled": "Untitled",
     "FileBundle.save": "Save",
     "FileBundle.save-as-type": "Save as type:",
+    "FileBundle.services-content-1": "save a file on user disk",
+    "FileBundle.services-content-2": "open a text file from user disk",
     "FileBundle.text-csv": "CSV Document (*.csv)",
     "FileBundle.text-doc": "Word Document (*.doc)",
     "FileBundle.text-rtf": "Rich text format (*.rtf)",
@@ -13,10 +16,13 @@
   },
   "pl": {
     "FileBundle.cancel": "Cancel",
+    "FileBundle.description-content": "Bundle odpowiedzialny za zarządzanie <b>plikami</b>",
     "FileBundle.file-name": "Nazwa pliku:",
     "FileBundle.untitled": "Bez_tytuły",
     "FileBundle.save": "Zapisz",
     "FileBundle.save-as-type": "Zapisz jako typ:",
+    "FileBundle.services-content-1": "zapisywanie plików na dysku użytkownika",
+    "FileBundle.services-content-2": "odtwórz plik tekstowy z dysku użytkownika",
     "FileBundle.text-csv": "CSV Dokument (*.csv)",
     "FileBundle.text-doc": "Word Dokument (*.doc)",
     "FileBundle.text-rtf": "Wzbogacony format tekstowy (*.rtf)",
