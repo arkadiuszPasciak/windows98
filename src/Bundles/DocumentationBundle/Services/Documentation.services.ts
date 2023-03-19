@@ -5,9 +5,10 @@ import CalendarDocumentation from '@Bundles/CalendarBundle/Documentations/Calend
 import ClockDocumentation from '@Bundles/ClockBundle/Documentations/Clock.documentations.md'
 import DocumentationDocumentation from '@Bundles/DocumentationBundle/Documentations/Documentation.documentations.md'
 import FileDocumentation from '@Bundles/FileBundle/Documentations/File.documentations.md'
+import LanguageDocumentation from '@Bundles/LanguageBundle/Documentations/Language.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
-export const testFirst = FileDocumentation
+export const testFirst = LanguageDocumentation
 
 export const documentations = {
   AppDocumentation,
@@ -17,5 +18,6 @@ export const documentations = {
   ClockDocumentation,
   DocumentationDocumentation,
   FileDocumentation,
+  LanguageDocumentation,
   UserAgentDocumentation,
 }
