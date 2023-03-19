@@ -1,8 +1,12 @@
 {
   "en": {
-    "AudioBundle.button-description": "Button to turn on/off sound"
+    "AudioBundle.button-description": "Button to turn on/off sound",
+    "AudioBundle.description-content": "The Bundle responsible for manage the audio in the application",
+    "AudioBundle.services-content-1": "turn on/off the audio in the app"
   },
   "pl": {
-    "AudioBundle.button-description": "Przycisk włączania/wyłączania dźwięku"
+    "AudioBundle.button-description": "Przycisk włączania/wyłączania dźwięku",
+    "AudioBundle.description-content": "Bundle odpowiedzialny za zarządzanie dźwiekiem w aplikacji",
+    "AudioBundle.services-content-1": "włącz i wyłącz dźwięk"
   }
 }
