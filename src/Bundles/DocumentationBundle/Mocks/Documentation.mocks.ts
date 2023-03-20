@@ -13,10 +13,11 @@ import LanguageDocumentation from '@Bundles/LanguageBundle/Documentations/Langua
 import MarkdownDocumentation from '@Bundles/MarkdownBundle/Documentations/Markdown.documentations.md'
 import MediaPlayerDocumentation from '@Bundles/MediaPlayerBundle/Documentations/MediaPlayer.documentations.md'
 import NavigationDocumentation from '@Bundles/NavigationBundle/Documentations/Navigation.documentations.md'
+import NotepadDocumentation from '@Bundles/NotepadBundle/Documentations/Notepad.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
 // TODO delete this after set dynamic component
-export const testFirst = NavigationDocumentation
+export const testFirst = NotepadDocumentation
 
 export const MDocumentations = [
   {
@@ -65,7 +66,7 @@ export const MDocumentations = [
   },
   {
     name: EDocumentationBundles.NOTEPAD_BUNDLE,
-    component: '',
+    component: NotepadDocumentation,
   },
   {
     name: EDocumentationBundles.PROGRAM_BUNDLE,

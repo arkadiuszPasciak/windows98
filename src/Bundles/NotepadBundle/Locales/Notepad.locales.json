@@ -1,14 +1,26 @@
 {
   "en": {
+    "NotepadBundle.description-content": "The Bundle is the program notepad",
     "NotepadBundle.example": "This is an example!",
     "NotepadBundle.open": "Open",
     "NotepadBundle.save": "Save",
+    "NotepadBundle.services-content-1": "write text in the field",
+    "NotepadBundle.services-content-2": "save a text file in the user disk",
+    "NotepadBundle.services-content-3": "change name of file before save",
+    "NotepadBundle.services-content-4": "change type of file before save",
+    "NotepadBundle.services-content-5": "load text from the user disk to field",
     "NotepadBundle.title": "Notepad"
   },
   "pl": {
+    "NotepadBundle.description-content": "The Bundle jest to program notepad",
     "NotepadBundle.example": "To jest przykład!",
     "NotepadBundle.open": "Otwórz",
     "NotepadBundle.save": "Zapisz",
+    "NotepadBundle.services-content-1": "pisanie tekstu w polu",
+    "NotepadBundle.services-content-2": "zapisywanie tekstu na dysku użytkownika",
+    "NotepadBundle.services-content-3": "zmiana nazwy pliku przed zapisaniem",
+    "NotepadBundle.services-content-4": "zmiana typu pliku przed zapisaniem",
+    "NotepadBundle.services-content-5": "ładowanie tekstu z dysku uytkownika do pola",
     "NotepadBundle.title": "Notatnik"
   }
 }
