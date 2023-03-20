@@ -1,16 +1,16 @@
 <template>
   <div class="DocumentationNavigation">
     <DocumentationNavigationItem
-      v-for="bundle in MDocumentationNavigationList"
+      v-for="bundle in MDocumentations"
       :key="`bundles-${bundle}`"
-      :name="bundle"
+      :name="bundle.name"
     />
   </div>
 </template>
 
 <script setup lang="ts">
   import DocumentationNavigationItem from '@Bundles/DocumentationBundle/Components/DocumentationNavigationItem.vue'
-  import { MDocumentationNavigationList } from '@Bundles/DocumentationBundle/Mocks/DocumentationNavigation'
+  import { MDocumentations } from '@Bundles/DocumentationBundle/Mocks/Documentation.mocks'
 </script>
 
 <style lang="scss" scoped>

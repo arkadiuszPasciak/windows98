@@ -1,10 +1,15 @@
+import { Component } from 'vue'
+
 export enum EDocumentationBundles {
   APP_BUNDLE = 'AppBundle',
   AUDIO_BUNDLE = 'AudioBundle',
   CALCULATOR_BUNDLE = 'CalculatorBundle',
+  CALENDAR_BUNDLE = 'CalendarBundle',
+  CLOCK_BUNDLE = 'ClockBundle',
   DOCUMENTATION_BUNDLE = 'DocumentationBundle',
   FILE_BUNDLE = 'FileBundle',
   LANGUAGE_BUNDLE = 'LanguageBundle',
+  MARKDOWN_BUNDLE = 'MarkdownBundle',
   MEDIA_PLAYER_BUNDLE = 'MediaPlayerBundle',
   NAVIGATION_BUNDLE = 'NavigationBundle',
   NOTEPAD_BUNDLE = 'NotepadBundle',
@@ -23,13 +28,21 @@ export enum EDocumentationBundles {
   USER_AGENT_BUNDLE = 'UserAgentBundle',
 }
 
+export interface IDocumentationsBundles {
+  name: TDocumentationBundles
+  component: Component | ''
+}
+
 export type TDocumentationBundles =
   | EDocumentationBundles.APP_BUNDLE
   | EDocumentationBundles.AUDIO_BUNDLE
   | EDocumentationBundles.CALCULATOR_BUNDLE
+  | EDocumentationBundles.CALENDAR_BUNDLE
+  | EDocumentationBundles.CLOCK_BUNDLE
   | EDocumentationBundles.DOCUMENTATION_BUNDLE
   | EDocumentationBundles.FILE_BUNDLE
   | EDocumentationBundles.LANGUAGE_BUNDLE
+  | EDocumentationBundles.MARKDOWN_BUNDLE
   | EDocumentationBundles.MEDIA_PLAYER_BUNDLE
   | EDocumentationBundles.NAVIGATION_BUNDLE
   | EDocumentationBundles.NOTEPAD_BUNDLE

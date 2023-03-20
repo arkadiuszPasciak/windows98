@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
   import Markdown from '@Bundles/MarkdownBundle/Components/Markdown.vue'
-  import { testFirst } from '@Bundles/DocumentationBundle/Services/Documentation.services'
+  import { testFirst } from '@Bundles/DocumentationBundle/Mocks/Documentation.mocks'
 </script>
 
 <style lang="scss" scoped>
