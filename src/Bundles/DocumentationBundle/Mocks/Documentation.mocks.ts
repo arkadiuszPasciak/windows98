@@ -11,10 +11,11 @@ import DocumentationDocumentation from '@Bundles/DocumentationBundle/Documentati
 import FileDocumentation from '@Bundles/FileBundle/Documentations/File.documentations.md'
 import LanguageDocumentation from '@Bundles/LanguageBundle/Documentations/Language.documentations.md'
 import MarkdownDocumentation from '@Bundles/MarkdownBundle/Documentations/Markdown.documentations.md'
+import MediaPlayerDocumentation from '@Bundles/MediaPlayerBundle/Documentations/MediaPlayer.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
 // TODO delete this after set dynamic component
-export const testFirst = MarkdownDocumentation
+export const testFirst = MediaPlayerDocumentation
 
 export const MDocumentations = [
   {
@@ -55,7 +56,7 @@ export const MDocumentations = [
   },
   {
     name: EDocumentationBundles.MEDIA_PLAYER_BUNDLE,
-    component: '',
+    component: MediaPlayerDocumentation,
   },
   {
     name: EDocumentationBundles.NAVIGATION_BUNDLE,
