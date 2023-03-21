@@ -14,10 +14,11 @@ import MarkdownDocumentation from '@Bundles/MarkdownBundle/Documentations/Markdo
 import MediaPlayerDocumentation from '@Bundles/MediaPlayerBundle/Documentations/MediaPlayer.documentations.md'
 import NavigationDocumentation from '@Bundles/NavigationBundle/Documentations/Navigation.documentations.md'
 import NotepadDocumentation from '@Bundles/NotepadBundle/Documentations/Notepad.documentations.md'
+import ProgramDocumentation from '@Bundles/ProgramBundle/Documentations/Program.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
 // TODO delete this after set dynamic component
-export const testFirst = NotepadDocumentation
+export const testFirst = ProgramDocumentation
 
 export const MDocumentations = [
   {
@@ -70,7 +71,7 @@ export const MDocumentations = [
   },
   {
     name: EDocumentationBundles.PROGRAM_BUNDLE,
-    component: '',
+    component: ProgramDocumentation,
   },
   {
     name: EDocumentationBundles.PULPIT_BUNDLE,
