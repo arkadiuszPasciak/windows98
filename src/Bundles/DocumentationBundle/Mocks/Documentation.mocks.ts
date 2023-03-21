@@ -15,10 +15,11 @@ import MediaPlayerDocumentation from '@Bundles/MediaPlayerBundle/Documentations/
 import NavigationDocumentation from '@Bundles/NavigationBundle/Documentations/Navigation.documentations.md'
 import NotepadDocumentation from '@Bundles/NotepadBundle/Documentations/Notepad.documentations.md'
 import ProgramDocumentation from '@Bundles/ProgramBundle/Documentations/Program.documentations.md'
+import PulpitDocumentation from '@Bundles/PulpitBundle/Documentations/Pulpit.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
 // TODO delete this after set dynamic component
-export const testFirst = ProgramDocumentation
+export const testFirst = PulpitDocumentation
 
 export const MDocumentations = [
   {
@@ -75,7 +76,7 @@ export const MDocumentations = [
   },
   {
     name: EDocumentationBundles.PULPIT_BUNDLE,
-    component: '',
+    component: PulpitDocumentation,
   },
   {
     name: EDocumentationBundles.RUN_BUNDLE,
