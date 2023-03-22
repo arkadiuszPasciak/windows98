@@ -20,10 +20,11 @@ import RunDocumentation from '@Bundles/RunBundle/Documentations/Run.documentatio
 import SettingsDocumentation from '@Bundles/SettingsBundle/Documentations/Settings.documentations.md'
 import ShutDownDocumentation from '@Bundles/ShutDownBundle/Documentations/ShutDown.documentations.md'
 import StartDocumentation from '@Bundles/StartBundle/Documentations/Start.documentations.md'
+import StorageDocumentation from '@Bundles/StorageBundle/Documentations/Storage.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
 // TODO delete this after set dynamic component
-export const testFirst = StartDocumentation
+export const testFirst = StorageDocumentation
 
 export const MDocumentations = [
   {
@@ -100,7 +101,7 @@ export const MDocumentations = [
   },
   {
     name: EDocumentationBundles.STORAGE_BUNDLE,
-    component: '',
+    component: StorageDocumentation,
   },
   {
     name: EDocumentationBundles.TELEPORT_BUNDLE,
