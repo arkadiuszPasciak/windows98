@@ -18,10 +18,11 @@ import ProgramDocumentation from '@Bundles/ProgramBundle/Documentations/Program.
 import PulpitDocumentation from '@Bundles/PulpitBundle/Documentations/Pulpit.documentations.md'
 import RunDocumentation from '@Bundles/RunBundle/Documentations/Run.documentations.md'
 import SettingsDocumentation from '@Bundles/SettingsBundle/Documentations/Settings.documentations.md'
+import ShutDownDocumentation from '@Bundles/ShutDownBundle/Documentations/ShutDown.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
 // TODO delete this after set dynamic component
-export const testFirst = SettingsDocumentation
+export const testFirst = ShutDownDocumentation
 
 export const MDocumentations = [
   {
@@ -90,7 +91,7 @@ export const MDocumentations = [
   },
   {
     name: EDocumentationBundles.SHUT_DOWN_BUNDLE,
-    component: '',
+    component: ShutDownDocumentation,
   },
   {
     name: EDocumentationBundles.START_BUNDLE,
