@@ -4,6 +4,7 @@
     "TicTacToeBundle.choose-player": "Choose a player",
     "TicTacToeBundle.computer": "Computer",
     "TicTacToeBundle.default-player": "Default player",
+    "TicTacToeBundle.description-content": "The Bundle is program tic tac toe",
     "TicTacToeBundle.draw": "Draw!",
     "TicTacToeBundle.enter-your-name": "Enter your name",
     "TicTacToeBundle.new-game": "New game",
@@ -11,6 +12,12 @@
     "TicTacToeBundle.start": "Start",
     "TicTacToeBundle.score": "Score",
     "TicTacToeBundle.score-undefined": "Score is undefined",
+    "TicTacToeBundle.services-content-1": "enter name of the player",
+    "TicTacToeBundle.services-content-2": "choose sign of the player",
+    "TicTacToeBundle.services-content-3": "choose dimension of the field",
+    "TicTacToeBundle.services-content-4": "start game with computer",
+    "TicTacToeBundle.services-content-5": "modal with result message",
+    "TicTacToeBundle.services-content-6": "restart game",
     "TicTacToeBundle.title": "Tic Tac Toe"
   },
   "pl": {
@@ -18,6 +25,7 @@
     "TicTacToeBundle.choose-player": "Wybierz gracza",
     "TicTacToeBundle.computer": "Komputer",
     "TicTacToeBundle.default-player": "Domyślny gracz",
+    "TicTacToeBundle.description-content": "Bundle jest programem tic tac toe",
     "TicTacToeBundle.draw": "Remis!",
     "TicTacToeBundle.enter-your-name": "Wprowadź swoje imię",
     "TicTacToeBundle.new-game": "Nowa gra",
@@ -25,6 +33,12 @@
     "TicTacToeBundle.start": "Rozpocznij",
     "TicTacToeBundle.score": "Wynik",
     "TicTacToeBundle.score-undefined": "Wynik jest niezdefiniowany",
+    "TicTacToeBundle.services-content-1": "wpisz nazwę użytkownika",
+    "TicTacToeBundle.services-content-2": "wybierz znak dla użytkownika",
+    "TicTacToeBundle.services-content-3": "wybierz wielkość pola dla gry",
+    "TicTacToeBundle.services-content-4": "rozpocznij grę z komputerem",
+    "TicTacToeBundle.services-content-5": "wyświetl modal z wynikem gry",
+    "TicTacToeBundle.services-content-6": "zrestartuj grę",
     "TicTacToeBundle.title": "Kółko i krzyżyk"
   }
 }
