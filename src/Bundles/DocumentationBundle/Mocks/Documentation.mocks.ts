@@ -21,10 +21,11 @@ import SettingsDocumentation from '@Bundles/SettingsBundle/Documentations/Settin
 import ShutDownDocumentation from '@Bundles/ShutDownBundle/Documentations/ShutDown.documentations.md'
 import StartDocumentation from '@Bundles/StartBundle/Documentations/Start.documentations.md'
 import StorageDocumentation from '@Bundles/StorageBundle/Documentations/Storage.documentations.md'
+import TeleportDocumentation from '@Bundles/TeleportBundle/Documentations/Teleport.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
 // TODO delete this after set dynamic component
-export const testFirst = StorageDocumentation
+export const testFirst = TeleportDocumentation
 
 export const MDocumentations = [
   {
@@ -105,7 +106,7 @@ export const MDocumentations = [
   },
   {
     name: EDocumentationBundles.TELEPORT_BUNDLE,
-    component: '',
+    component: TeleportDocumentation,
   },
   {
     name: EDocumentationBundles.THEME_BUNDLE,
