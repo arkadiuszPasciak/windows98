@@ -30,7 +30,7 @@ export enum EDocumentationBundles {
 
 export interface IDocumentationsBundles {
   name: TDocumentationBundles
-  component: Component | ''
+  component: Component
 }
 
 export type TDocumentationBundles =
