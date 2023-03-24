@@ -24,10 +24,11 @@ import StorageDocumentation from '@Bundles/StorageBundle/Documentations/Storage.
 import TeleportDocumentation from '@Bundles/TeleportBundle/Documentations/Teleport.documentations.md'
 import ThemeDocumentation from '@Bundles/ThemeBundle/Documentations/Theme.documentations.md'
 import TicTacToeDocumentation from '@Bundles/TicTacToeBundle/Documentations/TicTacToe.documentations.md'
+import TimezoneDocumentation from '@Bundles/TimezoneBundle/Documentations/Timezone.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
 // TODO delete this after set dynamic component
-export const testFirst = TicTacToeDocumentation
+export const testFirst = TimezoneDocumentation
 
 export const MDocumentations = [
   {
@@ -120,7 +121,7 @@ export const MDocumentations = [
   },
   {
     name: EDocumentationBundles.TIMEZONE_BUNDLE,
-    component: '',
+    component: TimezoneDocumentation,
   },
   {
     name: EDocumentationBundles.UI_BUNDLE,
