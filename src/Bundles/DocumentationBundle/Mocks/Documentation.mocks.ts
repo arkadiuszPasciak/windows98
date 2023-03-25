@@ -28,9 +28,6 @@ import TimezoneDocumentation from '@Bundles/TimezoneBundle/Documentations/Timezo
 import UIBundleDocumentation from '@Bundles/UIBundle/Documentations/UIBundle.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
-// TODO delete this after set dynamic component
-export const testFirst = UIBundleDocumentation
-
 export const MDocumentations = [
   {
     name: EDocumentationBundles.APP_BUNDLE,
