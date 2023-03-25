@@ -1,16 +1,20 @@
 {
   "en": {
     "MediaPlayer.title": "Media Player",
+    "MediaPlayerBundle.description-content": "Work in progress",
     "MediaPlayer.button-control.mute": "Mute",
     "MediaPlayer.button-control.pauza": "Pauza",
     "MediaPlayer.button-control.play": "Play",
-    "MediaPlayer.button-control.stop": "Stop"
+    "MediaPlayer.button-control.stop": "Stop",
+    "MediaPlayerBundle.services-content-1": "Work in progress"
   },
   "pl": {
     "MediaPlayer.title": "Media Player",
+    "MediaPlayerBundle.description-content": "W trakcie pracy",
     "MediaPlayer.button-control.mute": "Wycisz",
     "MediaPlayer.button-control.pauza": "Przerwa",
     "MediaPlayer.button-control.play": "Graj",
-    "MediaPlayer.button-control.stop": "Zatrzymaj"
+    "MediaPlayer.button-control.stop": "Zatrzymaj",
+    "MediaPlayerBundle.services-content-1": "W trakcie pracy"
   }
 }

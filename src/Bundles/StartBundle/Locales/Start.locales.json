@@ -1,8 +1,9 @@
 {
   "en": {
     "StartBundle.accessories": "Accessories",
+    "StartBundle.description-content": "The Bundle is program Start",
     "StartBundle.calculator": "Calculator",
-    "StartBundle.documents": "Documents",
+    "StartBundle.documentation": "Documentation",
     "StartBundle.entertainment": "Entertainment",
     "StartBundle.find": "Find",
     "StartBundle.games": "Games",
@@ -11,6 +12,7 @@
     "StartBundle.notepad": "Notepad",
     "StartBundle.programs": "Programs",
     "StartBundle.run": "Run...",
+    "StartBundle.services-content-1": "show order list of all programs",
     "StartBundle.settings": "Settings",
     "StartBundle.shut-down": "Shut Down...",
     "StartBundle.start": "Start",
@@ -20,7 +22,8 @@
   "pl": {
     "StartBundle.accessories": "Akcesoria",
     "StartBundle.calculator": "Kalkulator",
-    "StartBundle.documents": "Dokumenty",
+    "StartBundle.description-content": "Bundle jest programem Start",
+    "StartBundle.documentation": "Dokumentacja",
     "StartBundle.entertainment": "Rozrywka",
     "StartBundle.find": "Znajdź",
     "StartBundle.games": "Gry",
@@ -29,6 +32,7 @@
     "StartBundle.notepad": "Notatnik",
     "StartBundle.programs": "Programy",
     "StartBundle.run": "Włącz...",
+    "StartBundle.services-content-1": "pokazywanie listy wszystkich programów",
     "StartBundle.settings": "Ustawienia",
     "StartBundle.shut-down": "Wyłącz...",
     "StartBundle.start": "Start",

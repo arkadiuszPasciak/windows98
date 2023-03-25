@@ -1,0 +1,10 @@
+{
+  "en": {
+    "MarkdownBundle.description-content": "The Bundle responsible for generate html from markdown files",
+    "MarkdownBundle.services-content-1": "generate html from markdown files"
+  },
+  "pl": {
+    "MarkdownBundle.description-content": "The Bundle odpowiedzialny za generowanie html z plików markdown",
+    "MarkdownBundle.services-content-1": "generowanie html z plików markdown"
+  }
+}

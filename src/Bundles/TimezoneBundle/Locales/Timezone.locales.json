@@ -1,5 +1,8 @@
 {
   "en": {
+    "TimezoneBundle.description-content": "The Bundle responsible for timezone in a object <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date'>Date</a>",
+    "TimezoneBundle.services-content-1": "get the current timezone of user",
+    "TimezoneBundle.services-content-2": "show list of the timezone name",
     "TimezoneBundle.title": "Timezone",
     "TimezoneBundle.time-12": "GMT-12 International Date Line West (IDLW)",
     "TimezoneBundle.time-11": "GMT-11 Nome Time (NT)",
@@ -28,6 +31,9 @@
     "TimezoneBundle.time+12": "GMT+12 New Zealand Standard Time (NZST)"
   },
   "pl": {
+    "TimezoneBundle.description-content": "Bundle odpowiedzialny za strefę czasowa z obiektu <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date'>Date</a>",
+    "TimezoneBundle.services-content-1": "uzyskaj aktualną strefę czasową użytkownika",
+    "TimezoneBundle.services-content-2": "pokaż listę stref czasowych",
     "TimezoneBundle.title": "Strefa czasowa",
     "TimezoneBundle.time-12": "GMT-12 Międzynarodowa linia zmiany daty (IDLW)",
     "TimezoneBundle.time-11": "GMT-11 Nome Czas (NT)",

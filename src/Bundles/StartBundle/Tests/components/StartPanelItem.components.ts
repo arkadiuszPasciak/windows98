@@ -47,15 +47,15 @@ describe('[StartBundle]<Components>(StartPanelItem)', () => {
         ],
       },
       props: {
-        name: 'StartBundle.documents',
-        iconName: 'documents',
+        name: 'StartBundle.documentation',
+        iconName: 'documentation',
         size: 'medium',
       },
     })
 
     cy.get('div.StartPanelItem.s-medium')
 
-    cy.get('p.UIText.name').contains('Documents')
+    cy.get('p.UIText.name').contains('Documentation')
 
     const icon = cy.get('.icon')
 
@@ -63,6 +63,6 @@ describe('[StartBundle]<Components>(StartPanelItem)', () => {
 
     icon.should('have.attr', 'height', '25')
 
-    icon.should('have.attr', 'src', '/icons/applications/documents.png')
+    icon.should('have.attr', 'src', '/icons/applications/documentation.png')
   })
 })

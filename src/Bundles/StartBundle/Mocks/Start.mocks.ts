@@ -59,8 +59,8 @@ export const MStartStoreApps = [
   },
   {
     data: {
-      name: 'StartBundle.documents',
-      iconName: 'documents',
+      name: 'StartBundle.documentation',
+      iconName: 'documentation',
     },
   },
   {
