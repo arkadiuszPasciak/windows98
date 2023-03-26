@@ -61,7 +61,7 @@
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
   import UIRadio from '@Bundles/UIBundle/Components/UIRadio.vue'
-  import UIText from '@Bundles/UIBundle/Components/UIText.vue'
+  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
   import {
     restartSystem,
     shutDownSystem,

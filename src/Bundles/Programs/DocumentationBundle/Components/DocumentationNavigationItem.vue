@@ -20,7 +20,7 @@
 <script setup lang="ts">
   import { PropType } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIText from '@Bundles/UIBundle/Components/UIText.vue'
+  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
   import { TDocumentationBundles } from '@Bundles/DocumentationBundle/Supports/DocumentationNavigation.supports'
   import { useDocumentationStore } from '@Bundles/DocumentationBundle/Stores/Documentation.stores'
 

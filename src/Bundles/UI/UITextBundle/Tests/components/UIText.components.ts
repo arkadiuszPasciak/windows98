@@ -1,4 +1,4 @@
-import UIText from '@Bundles/UIBundle/Components/UIText.vue'
+import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
 
 describe('[UIBundle]<Components>(UIText)', async () => {
   it('renders correctly component', () => {

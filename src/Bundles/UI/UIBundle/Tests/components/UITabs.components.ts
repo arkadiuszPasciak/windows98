@@ -1,6 +1,6 @@
 import { Component, h } from 'vue'
 import UITabs from '@Bundles/UIBundle/Components/UITabs.vue'
-import UIText from '@Bundles/UIBundle/Components/UIText.vue'
+import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
 import { TUITabsProps } from '@Bundles/UIBundle/Supports/UITabs.supports'
 
 const firstComponent = (): Component => {

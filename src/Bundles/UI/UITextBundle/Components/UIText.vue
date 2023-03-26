@@ -6,4 +6,8 @@
 
 <script setup lang="ts"></script>
 
-<style lang="scss" scoped src="@Bundles/UIBundle/Styles/UIText.styles.scss" />
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/UITextBundle/Styles/UIText.styles.scss"
+/>

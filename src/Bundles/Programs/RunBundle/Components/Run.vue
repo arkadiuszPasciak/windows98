@@ -51,7 +51,7 @@
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
   import UIInput from '@Bundles/UIBundle/Components/UIInput.vue'
   import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
-  import UIText from '@Bundles/UIBundle/Components/UIText.vue'
+  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
   import { checkAndRunProgram } from '@Bundles/RunBundle/Services/Run.services'
 

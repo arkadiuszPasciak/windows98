@@ -27,7 +27,7 @@
   import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIRadio from '@Bundles/UIBundle/Components/UIRadio.vue'
-  import UIText from '@Bundles/UIBundle/Components/UIText.vue'
+  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
   import {
     ETicTacToeInputNames,
     ETicTacToeRadioPlayer,

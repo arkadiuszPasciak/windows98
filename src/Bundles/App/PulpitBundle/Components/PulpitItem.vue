@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-  import UIText from '@Bundles/UIBundle/Components/UIText.vue'
+  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
 
   defineProps({
     name: {
