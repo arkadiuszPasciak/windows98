@@ -13,6 +13,8 @@
   })
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/MediaPlayerBundle/Styles/MediaPlayerVideo.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerVideo.styles.scss"
+/>

@@ -7,6 +7,8 @@
 
 <script setup lang="ts"></script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/MediaPlayerBundle/Styles/MediaPlayerProgress.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerProgress.styles.scss"
+/>

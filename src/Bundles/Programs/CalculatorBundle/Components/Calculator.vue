@@ -33,6 +33,8 @@
 
 <i18n src="@Bundles/CalculatorBundle/Locales/Calculator.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/CalculatorBundle/Styles/Calculator.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/CalculatorBundle/Styles/Calculator.styles.scss"
+/>

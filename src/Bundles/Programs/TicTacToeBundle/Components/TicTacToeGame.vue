@@ -17,6 +17,8 @@
   const ticTacToeStore = useTicTacToeStore()
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/TicTacToeBundle/Styles/TicTacToeGame.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/TicTacToeBundle/Styles/TicTacToeGame.styles.scss"
+/>

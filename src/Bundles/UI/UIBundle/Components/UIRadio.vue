@@ -52,6 +52,4 @@
   defineEmits(['update:modelValue'])
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/UIBundle/Styles/UIRadio.styles.scss';
-</style>
+<style lang="scss" scoped src="@Bundles/UIBundle/Styles/UIRadio.styles.scss" />

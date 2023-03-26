@@ -52,6 +52,4 @@
 
 <i18n src="@Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/UIBundle/Styles/UITabs.styles.scss';
-</style>
+<style lang="scss" scoped src="@Bundles/UIBundle/Styles/UITabs.styles.scss" />

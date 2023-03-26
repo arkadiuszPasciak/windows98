@@ -23,6 +23,8 @@
 
 <i18n src="@Bundles/LanguageBundle/Locales/Language.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/LanguageBundle/Styles/LanguageSwitcher.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/LanguageBundle/Styles/LanguageSwitcher.styles.scss"
+/>

@@ -4,6 +4,4 @@
 
 <script setup lang="ts"></script>
 
-<style lang="scss">
-  @import '@Bundles/MarkdownBundle/Styles/Markdown.styles.scss';
-</style>
+<style lang="scss" src="@Bundles/MarkdownBundle/Styles/Markdown.styles.scss" />

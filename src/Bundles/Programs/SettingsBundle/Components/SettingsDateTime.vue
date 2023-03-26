@@ -10,6 +10,8 @@
   import TimezoneSwitcher from '@Bundles/TimezoneBundle/Components/TimezoneSwitcher.vue'
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/SettingsBundle/Styles/SettingsDateTime.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/SettingsBundle/Styles/SettingsDateTime.styles.scss"
+/>

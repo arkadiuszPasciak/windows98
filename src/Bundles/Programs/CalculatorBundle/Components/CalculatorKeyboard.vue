@@ -73,6 +73,8 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/CalculatorBundle/Styles/CalculatorKeyboard.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/CalculatorBundle/Styles/CalculatorKeyboard.styles.scss"
+/>

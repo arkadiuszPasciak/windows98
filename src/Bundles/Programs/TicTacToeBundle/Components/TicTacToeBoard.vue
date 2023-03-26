@@ -48,6 +48,8 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/TicTacToeBundle/Styles/TicTacToeBoard.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/TicTacToeBundle/Styles/TicTacToeBoard.styles.scss"
+/>

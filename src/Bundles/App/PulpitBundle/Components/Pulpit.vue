@@ -24,6 +24,8 @@
 
 <i18n src="@Bundles/PulpitBundle/Locales/Pulpit.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/PulpitBundle/Styles/Pulpit.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/PulpitBundle/Styles/Pulpit.styles.scss"
+/>

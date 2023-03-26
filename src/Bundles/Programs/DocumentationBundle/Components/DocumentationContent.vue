@@ -22,6 +22,8 @@
   const store = useDocumentationStore()
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/DocumentationBundle/Styles/DocumentationContent.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/DocumentationBundle/Styles/DocumentationContent.styles.scss"
+/>

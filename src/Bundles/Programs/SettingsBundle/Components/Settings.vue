@@ -47,4 +47,4 @@
 
 <i18n src="@Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped />

@@ -6,6 +6,8 @@
 
 <script setup lang="ts"></script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/NavigationBundle/Styles/NavigationGrid.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/NavigationBundle/Styles/NavigationGrid.styles.scss"
+/>

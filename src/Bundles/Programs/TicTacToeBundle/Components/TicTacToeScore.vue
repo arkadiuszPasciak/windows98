@@ -48,6 +48,8 @@
 
 <i18n src="@Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/TicTacToeBundle/Styles/TicTacToeScore.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/TicTacToeBundle/Styles/TicTacToeScore.styles.scss"
+/>

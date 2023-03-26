@@ -15,6 +15,8 @@
   })
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/StartBundle/Styles/StartPanel.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/StartBundle/Styles/StartPanel.styles.scss"
+/>

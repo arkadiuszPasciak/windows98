@@ -22,6 +22,8 @@
 
 <i18n src="@Bundles/TimezoneBundle/Locales/Timezone.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/TimezoneBundle/Styles/TimezoneSwitcher.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/TimezoneBundle/Styles/TimezoneSwitcher.styles.scss"
+/>

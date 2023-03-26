@@ -10,4 +10,4 @@
   import ThemeSwitcher from '@Bundles/ThemeBundle/Components/ThemeSwitcher.vue'
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped />

@@ -98,6 +98,8 @@
 
 <i18n src="@Bundles/ShutDownBundle/Locales/ShutDown.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/ShutDownBundle/Styles/ShutDown.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/ShutDownBundle/Styles/ShutDown.styles.scss"
+/>

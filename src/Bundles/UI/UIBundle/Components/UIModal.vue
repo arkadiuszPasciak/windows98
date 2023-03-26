@@ -123,6 +123,4 @@
 
 <i18n src="@Bundles/UIBundle/Locales/UIBundle.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/UIBundle/Styles/UIModal.styles.scss';
-</style>
+<style lang="scss" scoped src="@Bundles/UIBundle/Styles/UIModal.styles.scss" />

@@ -71,6 +71,4 @@
 
 <i18n src="@Bundles/RunBundle/Locales/Run.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/RunBundle/Styles/Run.styles.scss';
-</style>
+<style lang="scss" scoped src="@Bundles/RunBundle/Styles/Run.styles.scss" />

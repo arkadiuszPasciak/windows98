@@ -37,6 +37,8 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/CalendarBundle/Styles/CalendarYearSwitcher.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/CalendarBundle/Styles/CalendarYearSwitcher.styles.scss"
+/>

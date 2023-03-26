@@ -18,6 +18,8 @@
 
 <i18n src="@Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/CalendarBundle/Styles/CalendarSettings.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/CalendarBundle/Styles/CalendarSettings.styles.scss"
+/>

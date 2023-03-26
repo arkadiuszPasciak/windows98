@@ -10,6 +10,8 @@
   import MediaPlayerTime from '@Bundles/MediaPlayerBundle/Components/MediaPlayerTime.vue'
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/MediaPlayerBundle/Styles/MediaPlayerInformation.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerInformation.styles.scss"
+/>

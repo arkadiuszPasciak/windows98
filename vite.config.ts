@@ -17,15 +17,15 @@ export default defineConfig({
     }),
     VueI18nPlugin({}),
     eslintPlugin(),
-    tsconfigPaths(),
+    tsconfigPaths({ loose: true }),
   ],
-  // css: {
-  //   preprocessorOptions: {
-  //     scss: {
-  //       additionalData: `@import './src/Assets/Styles/Config/config.styles.scss';`,
-  //     },
-  //   },
-  // },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import './src/Assets/Styles/Config/config.styles.scss';`,
+      },
+    },
+  },
   test: {
     globals: true,
     environment: 'jsdom',

@@ -64,6 +64,8 @@
   ] as Array<string>
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/UIBundle/Styles/UITextarea.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/UIBundle/Styles/UITextarea.styles.scss"
+/>

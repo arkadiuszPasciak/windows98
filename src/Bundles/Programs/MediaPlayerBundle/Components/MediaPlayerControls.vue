@@ -19,6 +19,8 @@
   import MediaPlayerProgress from '@Bundles/MediaPlayerBundle/Components/MediaPlayerProgress.vue'
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/MediaPlayerBundle/Styles/MediaPlayerControls.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerControls.styles.scss"
+/>

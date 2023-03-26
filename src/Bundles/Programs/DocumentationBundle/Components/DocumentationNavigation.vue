@@ -13,6 +13,8 @@
   import { MDocumentations } from '@Bundles/DocumentationBundle/Mocks/Documentation.mocks'
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/DocumentationBundle/Styles/DocumentationNavigation.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/DocumentationBundle/Styles/DocumentationNavigation.styles.scss"
+/>

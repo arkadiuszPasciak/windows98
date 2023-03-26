@@ -42,6 +42,8 @@
 
 <i18n src="@Bundles/StartBundle/Locales/Start.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/StartBundle/Styles/StartPanelItem.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/StartBundle/Styles/StartPanelItem.styles.scss"
+/>

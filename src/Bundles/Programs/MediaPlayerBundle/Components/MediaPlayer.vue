@@ -37,6 +37,8 @@
 
 <i18n src="@Bundles/MediaPlayerBundle/Locales/MediaPlayer.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/MediaPlayerBundle/Styles/MediaPlayer.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayer.styles.scss"
+/>

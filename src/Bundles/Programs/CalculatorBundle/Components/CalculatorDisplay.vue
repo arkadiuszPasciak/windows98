@@ -11,6 +11,8 @@
   const calculatorStore = useCalculatorStore()
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/CalculatorBundle/Styles/CalculatorDisplay.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/CalculatorBundle/Styles/CalculatorDisplay.styles.scss"
+/>

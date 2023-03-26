@@ -4,6 +4,8 @@
 
 <script setup lang="ts"></script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/UIBundle/Styles/UIModalNavigationItem.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/UIBundle/Styles/UIModalNavigationItem.styles.scss"
+/>

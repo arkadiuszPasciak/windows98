@@ -36,6 +36,8 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/FileBundle/Styles/FileOpen.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/FileBundle/Styles/FileOpen.styles.scss"
+/>

@@ -27,6 +27,4 @@
   })
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/ClockBundle/Styles/Clock.styles.scss';
-</style>
+<style lang="scss" scoped src="@Bundles/ClockBundle/Styles/Clock.styles.scss" />

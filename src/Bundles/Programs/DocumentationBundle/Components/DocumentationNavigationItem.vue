@@ -43,6 +43,8 @@
 <i18n src="@Bundles/DocumentationBundle/Locales/Documentation.locales.json">
 </i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/DocumentationBundle/Styles/DocumentationNavigationItem.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/DocumentationBundle/Styles/DocumentationNavigationItem.styles.scss"
+/>

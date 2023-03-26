@@ -6,6 +6,8 @@
 
 <script setup lang="ts"></script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/TeleportBundle/Styles/TeleportGrid.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/TeleportBundle/Styles/TeleportGrid.styles.scss"
+/>

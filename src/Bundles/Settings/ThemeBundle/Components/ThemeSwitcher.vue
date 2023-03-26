@@ -28,6 +28,8 @@
 
 <i18n src="@Bundles/ThemeBundle/Locales/Theme.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/ThemeBundle/Styles/ThemeSwitcher.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/ThemeBundle/Styles/ThemeSwitcher.styles.scss"
+/>

@@ -26,6 +26,8 @@
 
 <i18n src="@Bundles/AudioBundle/Locales/Audio.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/AudioBundle/Styles/AudioButton.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/AudioBundle/Styles/AudioButton.styles.scss"
+/>

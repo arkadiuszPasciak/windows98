@@ -87,6 +87,8 @@
 
 <i18n src="@Bundles/FileBundle/Locales/File.locales.json"></i18n>
 
-<style lang="scss" scoped>
-  @import '@Bundles/FileBundle/Styles/FileSave.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/FileBundle/Styles/FileSave.styles.scss"
+/>

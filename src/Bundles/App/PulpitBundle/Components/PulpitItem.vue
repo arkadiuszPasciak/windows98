@@ -26,6 +26,8 @@
   })
 </script>
 
-<style lang="scss" scoped>
-  @import '@Bundles/PulpitBundle/Styles/PulpitItem.styles.scss';
-</style>
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/PulpitBundle/Styles/PulpitItem.styles.scss"
+/>
