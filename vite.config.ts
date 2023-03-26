@@ -19,22 +19,13 @@ export default defineConfig({
     eslintPlugin(),
     tsconfigPaths(),
   ],
-  resolve: {
-    alias: {
-      '~@': path.resolve(__dirname, './src'),
-      '@Assets': path.resolve(__dirname, './src/Assets'),
-      '@Bundles': path.resolve(__dirname, './src/Bundles'),
-      '@Config': path.resolve(__dirname, './src/Config'),
-      '@Views': path.resolve(__dirname, './src/Views'),
-    },
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import '@Assets/Styles/Config/config.styles.scss';`,
-      },
-    },
-  },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: `@import './src/Assets/Styles/Config/config.styles.scss';`,
+  //     },
+  //   },
+  // },
   test: {
     globals: true,
     environment: 'jsdom',

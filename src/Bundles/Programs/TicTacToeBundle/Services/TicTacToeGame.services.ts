@@ -1,7 +1,7 @@
 import { Nullable } from 'vitest'
 import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
 import { TicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Services/TicTacToeCheckStatusGame.services'
-import { TicTacToeWinningStates } from '@/Bundles/TicTacToeBundle/Services/TicTacToeWinningStates.services'
+import { TicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Services/TicTacToeWinningStates.services'
 import { TTicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 import {
   ETicTacToeRadioPlayer,

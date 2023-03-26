@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",
@@ -22,7 +23,13 @@
     "paths": {
       "@/*": ["*"],
       "@Assets/*": ["Assets/*"],
-      "@Bundles/*": ["Bundles/*"],
+      "@Bundles/*": [
+        "Bundles/App/*",
+        "Bundles/Programs/*",
+        "Bundles/Settings/*",
+        "Bundles/UI/*",
+        "Bundles/Window/*"
+      ],
       "@Configs/*": ["Configs/*"],
       "@Views/*": ["Views/*"]
     }
