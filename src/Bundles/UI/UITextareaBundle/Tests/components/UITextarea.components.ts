@@ -1,6 +1,6 @@
-import UITextarea from '@Bundles/UIBundle/Components/UITextarea.vue'
+import UITextarea from '@Bundles/UITextareaBundle/Components/UITextarea.vue'
 
-describe('[UIBundle]<Components>(UITextarea)', async () => {
+describe('[UITextareaBundle]<Components>(UITextarea)', async () => {
   it('renders correctly component: leftPrimaryWrapper like as comment', () => {
     cy.viewport(180, 40)
 

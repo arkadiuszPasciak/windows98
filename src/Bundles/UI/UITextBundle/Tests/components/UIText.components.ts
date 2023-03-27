@@ -1,6 +1,6 @@
 import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
 
-describe('[UIBundle]<Components>(UIText)', async () => {
+describe('[UITextBundle]<Components>(UIText)', async () => {
   it('renders correctly component', () => {
     cy.viewport(300, 77)
 

@@ -1,6 +1,6 @@
 import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
 
-describe('[UIBundle]<Components>(UIModal)', async () => {
+describe('[UIModalBundle]<Components>(UIModal)', async () => {
   it('renders correctly component', () => {
     cy.viewport(500, 300)
 

@@ -1,6 +1,6 @@
 import UIModalNavigationItem from '@Bundles/UIModalBundle/Components/UIModalNavigationItem.vue'
 
-describe('[UIBundle]<Components>(UIModalNavigationItem)', async () => {
+describe('[UIModalBundle]<Components>(UIModalNavigationItem)', async () => {
   it('renders correctly component', () => {
     cy.mount(UIModalNavigationItem, {
       slots: {

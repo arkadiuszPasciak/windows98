@@ -48,7 +48,7 @@
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
   import UIModalNavigationItem from '@Bundles/UIModalBundle/Components/UIModalNavigationItem.vue'
-  import UITextarea from '@Bundles/UIBundle/Components/UITextarea.vue'
+  import UITextarea from '@Bundles/UITextareaBundle/Components/UITextarea.vue'
   import FileOpen from '@Bundles/FileBundle/Components/FileOpen.vue'
   import FileSave from '@Bundles/FileBundle/Components/FileSave.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
