@@ -67,5 +67,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/UIBundleTextarea/Styles/UITextarea.styles.scss"
+  src="@Bundles/UITextareaBundle/Styles/UITextarea.styles.scss"
 />

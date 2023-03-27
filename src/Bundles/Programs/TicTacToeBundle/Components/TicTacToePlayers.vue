@@ -14,7 +14,7 @@
 <script setup lang="ts">
   import { PropType } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIFrame from '@Bundles/UIBundle/Components/UIFrame.vue'
+  import UIFrame from '@Bundles/UIFrameBundle/Components/UIFrame.vue'
   import { TicTacToePlayers } from '@Bundles/TicTacToeBundle/Services/TicTacToePlayers.services'
   import { TTicTacToeRadioPlayer } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
   import { ETicTacToePlayerType } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'

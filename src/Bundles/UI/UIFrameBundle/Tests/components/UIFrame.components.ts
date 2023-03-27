@@ -1,4 +1,4 @@
-import UIFrame from '@Bundles/UIBundle/Components/UIFrame.vue'
+import UIFrame from '@Bundles/UIFrameBundle/Components/UIFrame.vue'
 
 describe('[UIBundle]<Components>(UIFrame)', async () => {
   it('renders correctly component', () => {

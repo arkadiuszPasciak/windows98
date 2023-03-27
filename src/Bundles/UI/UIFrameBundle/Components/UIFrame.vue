@@ -22,4 +22,8 @@
   })
 </script>
 
-<style lang="scss" scoped src="@Bundles/UIBundle/Styles/UIFrame.styles.scss" />
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/UIFrameBundle/Styles/UIFrame.styles.scss"
+/>
