@@ -15,12 +15,12 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
-  import UITabs from '@Bundles/UIBundle/Components/UITabs.vue'
+  import UITabs from '@Bundles/UITabsBundle/Components/UITabs.vue'
   import SettingsDateTime from '@Bundles/SettingsBundle/Components/SettingsDateTime.vue'
   import SettingsGeneral from '@Bundles/SettingsBundle/Components/SettingsGeneral.vue'
   import SettingsLanguages from '@Bundles/SettingsBundle/Components/SettingsLanguages.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
-  import { TUITabsProps } from '@Bundles/UIBundle/Supports/UITabs.supports'
+  import { TUITabsProps } from '@Bundles/UITabsBundle/Supports/UITabs.supports'
 
   const { t } = useI18n()
   const programStore = useProgramStore()

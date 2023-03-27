@@ -28,7 +28,7 @@
 <script setup lang="ts">
   import { PropType, Ref, ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import { TUITabsProps } from '@Bundles/UIBundle/Supports/UITabs.supports'
+  import { TUITabsProps } from '@Bundles/UITabsBundle/Supports/UITabs.supports'
 
   defineProps({
     tabs: {
@@ -52,4 +52,8 @@
 
 <i18n src="@Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>
 
-<style lang="scss" scoped src="@Bundles/UIBundle/Styles/UITabs.styles.scss" />
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/UITabsBundle/Styles/UITabs.styles.scss"
+/>
