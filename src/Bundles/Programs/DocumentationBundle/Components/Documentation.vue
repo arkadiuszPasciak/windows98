@@ -20,7 +20,7 @@
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
   import DocumentationContent from '@Bundles/DocumentationBundle/Components/DocumentationContent.vue'
   import DocumentationNavigation from '@Bundles/DocumentationBundle/Components/DocumentationNavigation.vue'
-  import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
 
   const { t } = useI18n()
   const programStore = useProgramStore()

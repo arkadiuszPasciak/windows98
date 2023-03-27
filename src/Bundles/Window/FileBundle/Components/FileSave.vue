@@ -46,7 +46,7 @@
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
   import UIInput from '@Bundles/UIBundle/Components/UIInput.vue'
-  import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
   import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
   import { MFilesTextTypes } from '@Bundles/FileBundle/Mocks/File.mocks'
   import { saveFileOnUserDisk } from '@Bundles/FileBundle/Services/File.services'

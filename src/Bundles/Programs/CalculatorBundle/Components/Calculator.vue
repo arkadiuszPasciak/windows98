@@ -19,7 +19,7 @@
   import { useI18n } from 'vue-i18n'
   import CalculatorDisplay from '@Bundles/CalculatorBundle/Components/CalculatorDisplay.vue'
   import CalculatorKeyboard from '@Bundles/CalculatorBundle/Components/CalculatorKeyboard.vue'
-  import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
 
   const programStore = useProgramStore()

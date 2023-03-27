@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
   import UITabs from '@Bundles/UIBundle/Components/UITabs.vue'
   import SettingsDateTime from '@Bundles/SettingsBundle/Components/SettingsDateTime.vue'
   import SettingsGeneral from '@Bundles/SettingsBundle/Components/SettingsGeneral.vue'

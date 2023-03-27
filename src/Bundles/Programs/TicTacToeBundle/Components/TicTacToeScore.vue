@@ -31,7 +31,7 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
-  import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
   import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
   import { TicTacToeScore } from '@Bundles/TicTacToeBundle/Services/TicTacToeScore.services'
   import { useTicTacToeStore } from '@Bundles/TicTacToeBundle/Stores/TicTacToe.stores'

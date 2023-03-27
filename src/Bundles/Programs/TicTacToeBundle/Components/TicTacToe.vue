@@ -18,7 +18,7 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
   import TicTacToeGame from '@Bundles/TicTacToeBundle/Components/TicTacToeGame.vue'
   import TicTacToeScore from '@Bundles/TicTacToeBundle/Components/TicTacToeScore.vue'
   import TicTacToeFormStart from '@Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue'

@@ -1,4 +1,4 @@
-import UIModal from '@Bundles/UIBundle/Components/UIModal.vue'
+import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
 
 describe('[UIBundle]<Components>(UIModal)', async () => {
   it('renders correctly component', () => {

@@ -46,8 +46,8 @@
   import { Nullable } from 'vitest'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
-  import UIModalNavigation from '@Bundles/UIBundle/Components/UIModalNavigation.vue'
-  import { IUIModalCursorType } from '@Bundles/UIBundle/Supports/UIModal.supports'
+  import UIModalNavigation from '@Bundles/UIModalBundle/Components/UIModalNavigation.vue'
+  import { TUIModalCursor } from '@Bundles/UIModalBundle/Supports/UIModal.supports'
 
   const props = defineProps({
     title: {
@@ -87,7 +87,7 @@
   const mouseState = ref(false) as Ref<boolean>
   const positionX = ref(0) as Ref<number>
   const positionY = ref(0) as Ref<number>
-  const cursorType = ref('default') as Ref<IUIModalCursorType>
+  const cursorType = ref('default') as Ref<TUIModalCursor>
 
   const mouseDownEvent = (event: MouseEvent): void => {
     if (!modalElement.value || !props.moveWindow) {
@@ -121,6 +121,10 @@
   defineEmits(['closeModal'])
 </script>
 
-<i18n src="@Bundles/UIBundle/Locales/UIBundle.locales.json"></i18n>
+<i18n src="@Bundles/UIModalBundle/Locales/UIModal.locales.json"></i18n>
 
-<style lang="scss" scoped src="@Bundles/UIBundle/Styles/UIModal.styles.scss" />
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/UIModalBundle/Styles/UIModal.styles.scss"
+/>

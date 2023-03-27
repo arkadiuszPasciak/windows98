@@ -7,5 +7,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/UIBundle/Styles/UIModalNavigationItem.styles.scss"
+  src="@Bundles/UIModalBundle/Styles/UIModalNavigationItem.styles.scss"
 />
