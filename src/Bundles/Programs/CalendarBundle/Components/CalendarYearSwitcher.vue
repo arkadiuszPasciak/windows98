@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-  import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
   import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
   import { useCalendarStore } from '@Bundles/CalendarBundle/Stores/Calendar.stores'
   import { ECalendarYearChangeMethod } from '@Bundles/CalendarBundle/Supports/Calendar.supports'

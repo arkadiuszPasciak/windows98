@@ -26,7 +26,7 @@
               :width="8"
               :height="7"
               src="/icons/close-modal.svg"
-              :alt="t('UIBundle.close-window')"
+              :alt="t('UIModalBundle.close-window')"
             />
           </template>
         </UIButton>
@@ -45,7 +45,7 @@
   import { Ref, ref } from 'vue'
   import { Nullable } from 'vitest'
   import { useI18n } from 'vue-i18n'
-  import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
   import UIModalNavigation from '@Bundles/UIModalBundle/Components/UIModalNavigation.vue'
   import { TUIModalCursor } from '@Bundles/UIModalBundle/Supports/UIModal.supports'
 

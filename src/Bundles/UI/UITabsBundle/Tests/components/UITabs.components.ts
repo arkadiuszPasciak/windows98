@@ -36,7 +36,7 @@ const tabs = [
   },
 ] as TUITabsProps
 
-describe('[UIBundle]<Components>(UITabs)', async () => {
+describe('[UITabsBundle]<Components>(UITabs)', async () => {
   it('renders correctly component', () => {
     cy.viewport(400, 100)
 

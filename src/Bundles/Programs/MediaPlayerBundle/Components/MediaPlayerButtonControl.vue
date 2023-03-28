@@ -10,7 +10,7 @@
 <script setup lang="ts">
   import { PropType } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
 
   const props = defineProps({
     type: {

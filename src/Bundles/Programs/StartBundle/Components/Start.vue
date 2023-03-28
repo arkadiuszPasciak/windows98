@@ -70,7 +70,7 @@
 <script setup lang="ts">
   import { defineAsyncComponent, Ref, ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
   import { useStartStore } from '@Bundles/StartBundle/Stores/Start.stores'
   import { IStartStoreApps } from '@Bundles/StartBundle/Supports/Start.supports'
   import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'

@@ -48,7 +48,7 @@
 <script setup lang="ts">
   import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
   import UIInput from '@Bundles/UIBundle/Components/UIInput.vue'
   import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
   import UIText from '@Bundles/UITextBundle/Components/UIText.vue'

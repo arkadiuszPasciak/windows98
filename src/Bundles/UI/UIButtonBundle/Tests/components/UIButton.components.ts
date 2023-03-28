@@ -1,6 +1,6 @@
-import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
 
-describe('[UIBundle]<Components>(UIButton)', async () => {
+describe('[UIButtonBundle]<Components>(UIButton)', async () => {
   it('renders correctly component: size medium and variant primary', () => {
     cy.viewport(75, 23)
 

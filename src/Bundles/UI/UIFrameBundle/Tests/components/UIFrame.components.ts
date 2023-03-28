@@ -1,6 +1,6 @@
 import UIFrame from '@Bundles/UIFrameBundle/Components/UIFrame.vue'
 
-describe('[UIBundle]<Components>(UIFrame)', async () => {
+describe('[UIFrameBundle]<Components>(UIFrame)', async () => {
   it('renders correctly component', () => {
     cy.viewport(300, 77)
 

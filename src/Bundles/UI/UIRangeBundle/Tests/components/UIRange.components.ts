@@ -1,6 +1,6 @@
 import UIRange from '@Bundles/UIRangeBundle/Components/UIRange.vue'
 
-describe('[UIBundle]<Components>(UIRange)', async () => {
+describe('[UIRangeBundle]<Components>(UIRange)', async () => {
   it('renders correctly component horizontal', () => {
     cy.viewport(185, 19)
     cy.mount(UIRange, {

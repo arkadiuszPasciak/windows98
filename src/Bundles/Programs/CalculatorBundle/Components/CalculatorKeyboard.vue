@@ -45,7 +45,7 @@
 </template>
 
 <script setup lang="ts">
-  import UIButton from '@Bundles/UIBundle/Components/UIButton.vue'
+  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
   import { useCalculatorStore } from '@Bundles/CalculatorBundle/Stores/Calculator.stores'
   import {
     ECalculatorButton,

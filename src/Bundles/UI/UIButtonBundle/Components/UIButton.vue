@@ -19,4 +19,8 @@
   })
 </script>
 
-<style lang="scss" scoped src="@Bundles/UIBundle/Styles/UIButton.styles.scss" />
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/UIButtonBundle/Styles/UIButton.styles.scss"
+/>
