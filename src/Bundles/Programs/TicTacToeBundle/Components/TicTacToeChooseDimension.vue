@@ -38,7 +38,7 @@
 <script setup lang="ts">
   import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIRadio from '@Bundles/UIBundle/Components/UIRadio.vue'
+  import UIRadio from '@Bundles/UIRadioBundle/Components/UIRadio.vue'
   import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
   import {
     ETicTacToeInputNames,

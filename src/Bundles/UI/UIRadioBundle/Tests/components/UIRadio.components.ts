@@ -1,6 +1,6 @@
-import UIRadio from '@Bundles/UIBundle/Components/UIRadio.vue'
+import UIRadio from '@Bundles/UIRadioBundle/Components/UIRadio.vue'
 
-describe('[UIBundle]<Components>(UIRadio)', async () => {
+describe('[UIRadioBundle]<Components>(UIRadio)', async () => {
   it('renders correctly component: variant primary, disabled false and checked false', () => {
     cy.viewport(70, 15)
 

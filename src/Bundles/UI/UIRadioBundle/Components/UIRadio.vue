@@ -28,7 +28,7 @@
 
 <script setup lang="ts">
   import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
-  import { generateDataTestName } from '@Bundles/UIBundle/Services/UIRadio.services'
+  import { generateDataTestName } from '@Bundles/UIRadioBundle/Services/UIRadio.services'
 
   defineProps({
     modelValue: {
@@ -52,4 +52,8 @@
   defineEmits(['update:modelValue'])
 </script>
 
-<style lang="scss" scoped src="@Bundles/UIBundle/Styles/UIRadio.styles.scss" />
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/UIRadioBundle/Styles/UIRadio.styles.scss"
+/>
