@@ -47,7 +47,7 @@
   import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
   import UIInput from '@Bundles/UIInputBundle/Components/UIInput.vue'
   import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
-  import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
+  import UISelect from '@Bundles/UISelectBundle/Components/UISelect.vue'
   import { MFilesTextTypes } from '@Bundles/FileBundle/Mocks/File.mocks'
   import { saveFileOnUserDisk } from '@Bundles/FileBundle/Services/File.services'
   import {

@@ -1,8 +1,8 @@
-import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
+import UISelect from '@Bundles/UISelectBundle/Components/UISelect.vue'
 import { MLanguageOptions } from '@Bundles/LanguageBundle/Mocks/Language.mocks'
 import { MThemeOptions } from '@Bundles/ThemeBundle/Mocks/Theme.mocks'
 
-describe('[UIBundle]<Components>(UISelect)', async () => {
+describe('[UISelectBundle]<Components>(UISelect)', async () => {
   it('renders correctly component with label position top', () => {
     cy.viewport(100, 45)
 

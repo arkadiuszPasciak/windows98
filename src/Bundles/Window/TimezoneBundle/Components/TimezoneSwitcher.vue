@@ -12,7 +12,7 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import UIFrame from '@Bundles/UIFrameBundle/Components/UIFrame.vue'
-  import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
+  import UISelect from '@Bundles/UISelectBundle/Components/UISelect.vue'
   import { MTimezones } from '@Bundles/TimezoneBundle/Mocks/Timezone.mocks'
   import { getTimezone } from '@Bundles/TimezoneBundle/Services/Timezone.services'
 

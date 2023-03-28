@@ -25,7 +25,7 @@ import TeleportDocumentation from '@Bundles/TeleportBundle/Documentations/Telepo
 import ThemeDocumentation from '@Bundles/ThemeBundle/Documentations/Theme.documentations.md'
 import TicTacToeDocumentation from '@Bundles/TicTacToeBundle/Documentations/TicTacToe.documentations.md'
 import TimezoneDocumentation from '@Bundles/TimezoneBundle/Documentations/Timezone.documentations.md'
-import UIBundleDocumentation from '@Bundles/UIBundle/Documentations/UIBundle.documentations.md'
+import UISelectBundleDocumentation from '@Bundles/UISelectBundle/Documentations/UISelect.documentations.md'
 import UserAgentDocumentation from '@Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
 export const MDocumentations = [
@@ -123,7 +123,7 @@ export const MDocumentations = [
   },
   {
     name: EDocumentationBundles.UI_BUNDLE,
-    component: UIBundleDocumentation,
+    component: UISelectBundleDocumentation,
   },
   {
     name: EDocumentationBundles.USER_AGENT_BUNDLE,

@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-  import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
+  import UISelect from '@Bundles/UISelectBundle/Components/UISelect.vue'
   import { MListOfMonths } from '@Bundles/CalendarBundle/Mocks/Calendar.mocks'
   import { useCalendarStore } from '@Bundles/CalendarBundle/Stores/Calendar.stores'
 

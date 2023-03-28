@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-  import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
+  import UISelect from '@Bundles/UISelectBundle/Components/UISelect.vue'
   import { MThemeOptions } from '@Bundles/ThemeBundle/Mocks/Theme.mocks'
   import {
     updateThemeClass,

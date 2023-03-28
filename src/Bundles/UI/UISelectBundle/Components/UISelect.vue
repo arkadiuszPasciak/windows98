@@ -35,7 +35,7 @@
 <script setup lang="ts">
   import { computed, PropType } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import { TUISelectPropsObject } from '@Bundles/UIBundle/Supports/UISelect.supports'
+  import { TUISelectPropsObject } from '@Bundles/UISelectBundle/Supports/UISelect.supports'
 
   const props = defineProps({
     id: {
@@ -88,4 +88,8 @@
 <i18n src="@Bundles/TimezoneBundle/Locales/Timezone.locales.json"></i18n>
 <i18n src="@Bundles/FileBundle/Locales/File.locales.json"></i18n>
 
-<style lang="scss" scoped src="@Bundles/UIBundle/Styles/UISelect.styles.scss" />
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/UISelectBundle/Styles/UISelect.styles.scss"
+/>

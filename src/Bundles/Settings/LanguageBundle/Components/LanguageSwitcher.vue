@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-  import UISelect from '@Bundles/UIBundle/Components/UISelect.vue'
+  import UISelect from '@Bundles/UISelectBundle/Components/UISelect.vue'
   import { MLanguageOptions } from '@Bundles/LanguageBundle/Mocks/Language.mocks'
   import {
     setLanguageVersionInStorage,
