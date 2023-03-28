@@ -76,4 +76,8 @@
   defineEmits(['update:modelValue'])
 </script>
 
-<style lang="scss" scoped src="@Bundles/UIBundle/Styles/UIInput.styles.scss" />
+<style
+  lang="scss"
+  scoped
+  src="@Bundles/UIInputBundle/Styles/UIInput.styles.scss"
+/>

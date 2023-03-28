@@ -1,6 +1,6 @@
-import UIInput from '@Bundles/UIBundle/Components/UIInput.vue'
+import UIInput from '@Bundles/UIInputBundle/Components/UIInput.vue'
 
-describe('[UIBundle]<Components>(UIInput)', async () => {
+describe('[UIInputBundle]<Components>(UIInput)', async () => {
   it('renders correctly component: availableWrapper like as email', () => {
     cy.viewport(130, 35)
 
