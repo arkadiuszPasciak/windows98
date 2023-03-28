@@ -44,5 +44,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/UIBundle/Styles/UICheckbox.styles.scss"
+  src="@Bundles/UICheckboxBundle/Styles/UICheckbox.styles.scss"
 />

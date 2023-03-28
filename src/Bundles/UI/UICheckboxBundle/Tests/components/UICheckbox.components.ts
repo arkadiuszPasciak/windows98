@@ -1,6 +1,6 @@
-import UICheckbox from '@Bundles/UIBundle/Components/UICheckbox.vue'
+import UICheckbox from '@Bundles/UICheckboxBundle/Components/UICheckbox.vue'
 
-describe('[UIBundle]<Components>(UICheckbox)', async () => {
+describe('[UICheckboxBundle]<Components>(UICheckbox)', async () => {
   it('renders correctly component: variant primary, disabled false and checked false', () => {
     cy.viewport(130, 35)
 
