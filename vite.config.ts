@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitest/config'
 import Vue from '@vitejs/plugin-vue'
-import * as path from 'path'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import eslintPlugin from 'vite-plugin-eslint'
 import tsconfigPaths from 'vite-tsconfig-paths'
