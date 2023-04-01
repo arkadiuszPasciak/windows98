@@ -1,8 +1,5 @@
 import { createTestingPinia } from '@pinia/testing'
 import TicTacToeGame from '@Bundles/TicTacToeBundle/Components/TicTacToeGame.vue'
-import TicTacToeGameTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeGameTesting.services'
-
-const TicTacToeGameTestingService = new TicTacToeGameTesting()
 
 describe('[TicTacToeBundle]<Components>(TicTacToeGame)', () => {
   it('renders correctly component', () => {
@@ -28,7 +25,5 @@ describe('[TicTacToeBundle]<Components>(TicTacToeGame)', () => {
         ],
       },
     })
-
-    TicTacToeGameTestingService.clickAutomaticallyToEndGame()
   })
 })
