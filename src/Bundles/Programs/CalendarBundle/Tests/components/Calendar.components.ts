@@ -9,6 +9,10 @@ describe('[CalendarBundle]<Components>(Calendar)', async () => {
   beforeEach(() => {
     cy.viewport(200, 240)
 
+    const date = new Date(2023, 1, 1).getTime()
+
+    cy.clock(date)
+
     cy.mount(CalendarSettings, {
       global: {
         plugins: [
