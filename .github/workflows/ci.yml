@@ -1,6 +1,7 @@
 name: CI
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -19,7 +20,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18.12
+          node-version: 18.12.0
 
       - name: Install dependencies
         run: npm install
