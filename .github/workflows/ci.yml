@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.12
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Type-check with vue-tsc
+        run: npm run typecheck
+
+      - name: Lint with ESLint
+        run: npm run lint:js
+
+      - name: Lint with Prettier
+        run: npm run lint:prettier
+
+      - name: Lint with Stylelint
+        run: npm run lint:styles
+
+      - name: Run Vitest tests
+        run: npm run test:run
+
+      - name: Run Cypress tests
+        run: npm run cypress:run
+        env:
+          CYPRESS_BASE_URL: http://localhost:3000
