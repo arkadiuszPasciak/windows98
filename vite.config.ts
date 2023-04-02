@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitest/config'
 import Vue from '@vitejs/plugin-vue'
-import * as path from 'path'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import eslintPlugin from 'vite-plugin-eslint'
 import tsconfigPaths from 'vite-tsconfig-paths'
@@ -17,21 +16,12 @@ export default defineConfig({
     }),
     VueI18nPlugin({}),
     eslintPlugin(),
-    tsconfigPaths(),
+    tsconfigPaths({ loose: true }),
   ],
-  resolve: {
-    alias: {
-      '~@': path.resolve(__dirname, './src'),
-      '@Assets': path.resolve(__dirname, './src/Assets'),
-      '@Bundles': path.resolve(__dirname, './src/Bundles'),
-      '@Config': path.resolve(__dirname, './src/Config'),
-      '@Views': path.resolve(__dirname, './src/Views'),
-    },
-  },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import '@Assets/Styles/Config/config.styles.scss';`,
+        additionalData: `@import './src/Assets/Styles/Config/config.styles.scss';`,
       },
     },
   },
