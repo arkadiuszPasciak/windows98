@@ -1,46 +1,140 @@
 name: CI
-
-on:
-  workflow_dispatch:
+'on':
+  workflow_dispatch: null
   push:
     branches:
       - master
   pull_request:
     branches:
       - master
-
 jobs:
+  type-check:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        node:
+          - 18.12.0
+    steps:
+      - name: Checkout Commit
+        uses: actions/checkout@v2.7.0
+      - name: 'Install Node.js ${{ matrix.node }}'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '${{ matrix.node }}'
+      - name: Check types
+        run: npm run typecheck
+  eslint-lint:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        node:
+          - 18.12.0
+    needs:
+      - type-check
+    steps:
+      - name: Checkout Commit
+        uses: actions/checkout@v2.7.0
+      - name: 'Install Node.js ${{ matrix.node }}'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '${{ matrix.node }}'
+      - name: Lint with ESLint
+        run: 'npm run lint:js'
+  prettier-lint:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        node:
+          - 18.12.0
+    needs:
+      - type-check
+    steps:
+      - name: Checkout Commit
+        uses: actions/checkout@v2.7.0
+      - name: 'Install Node.js ${{ matrix.node }}'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '${{ matrix.node }}'
+      - name: Lint with Prettier
+        run: 'npm run lint:prettier'
+  stylelint-lint:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        node:
+          - 18.12.0
+    needs:
+      - type-check
+    steps:
+      - name: Checkout Commit
+        uses: actions/checkout@v2.7.0
+      - name: 'Install Node.js ${{ matrix.node }}'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '${{ matrix.node }}'
+      - name: Lint with Stylelint
+        run: 'npm run lint:styles'
   build:
     runs-on: macos-latest
-
+    strategy:
+      matrix:
+        node:
+          - 18.12.0
+    needs:
+      - type-check
+      - eslint-lint
+      - prettier-lint
+      - stylelint-lint
     steps:
       - name: Checkout code
         uses: actions/checkout@v2.7.0
-
-      - name: Install Node.js
+      - name: 'Install Node.js ${{ matrix.node }}'
         uses: actions/setup-node@v3
         with:
-          node-version: 18.12.0
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Type-check with vue-tsc
-        run: npm run typecheck
-
-      - name: Lint with ESLint
-        run: npm run lint:js
-
-      - name: Lint with Prettier
-        run: npm run lint:prettier
-
-      - name: Lint with Stylelint
-        run: npm run lint:styles
-
+          node-version: '${{ matrix.node }}'
+      - name: Build Application
+        run: npm run build
+  vitest-tests:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        node:
+          - 18.12.0
+    needs:
+      - type-check
+      - eslint-lint
+      - prettier-lint
+      - stylelint-lint
+      - build
+    steps:
+      - name: Checkout Commit
+        uses: actions/checkout@v2.7.0
+      - name: 'Install Node.js ${{ matrix.node }}'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '${{ matrix.node }}'
       - name: Run Vitest tests
-        run: npm run test:run
-
+        run: 'npm run test:run'
+  cypress-tests:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        node:
+          - 18.12.0
+    needs:
+      - type-check
+      - eslint-lint
+      - prettier-lint
+      - stylelint-lint
+      - build
+    steps:
+      - name: Checkout Commit
+        uses: actions/checkout@v2.7.0
+      - name: 'Install Node.js ${{ matrix.node }}'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '${{ matrix.node }}'
       - name: Run Cypress tests
-        run: npm run cypress:run
+        run: 'npm run cypress:run'
         env:
-          CYPRESS_BASE_URL: http://localhost:3000
+          CYPRESS_BASE_URL: 'http://localhost:3000'
