@@ -81,7 +81,6 @@ jobs:
         node:
           - 18.12.0
     needs:
-      - type-check
       - eslint-lint
       - prettier-lint
       - stylelint-lint
@@ -101,10 +100,6 @@ jobs:
         node:
           - 18.12.0
     needs:
-      - type-check
-      - eslint-lint
-      - prettier-lint
-      - stylelint-lint
       - build
     steps:
       - name: Checkout Commit
@@ -122,11 +117,7 @@ jobs:
         node:
           - 18.12.0
     needs:
-      - type-check
-      - eslint-lint
-      - prettier-lint
-      - stylelint-lint
-      - build
+      - vitest-tests
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v2.7.0
