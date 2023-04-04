@@ -8,12 +8,37 @@ name: CI
     branches:
       - master
 jobs:
+  install-cache:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        node-version: [18.12.0]
+    steps:
+      - name: Checkout Commit
+        uses: actions/checkout@v2.7.0
+      - name: 'Install Node.js ${{ matrix.node }}'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '${{ matrix.node }}'
+      - name: Cache npm dependencies
+        uses: actions/cache@v3
+        id: cache-dependencies
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
+      - name: Install Dependencies
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+        run: npm install --force --non-interactive
+
   type-check:
     runs-on: macos-latest
     strategy:
       matrix:
         node:
           - 18.12.0
+    needs:
+      - install-cache
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v2.7.0
@@ -23,6 +48,7 @@ jobs:
           node-version: '${{ matrix.node }}'
       - name: Check types
         run: npm run typecheck
+
   eslint-lint:
     runs-on: macos-latest
     strategy:
@@ -40,6 +66,7 @@ jobs:
           node-version: '${{ matrix.node }}'
       - name: Lint with ESLint
         run: 'npm run lint:js'
+
   prettier-lint:
     runs-on: macos-latest
     strategy:
@@ -57,6 +84,7 @@ jobs:
           node-version: '${{ matrix.node }}'
       - name: Lint with Prettier
         run: 'npm run lint:prettier'
+
   stylelint-lint:
     runs-on: macos-latest
     strategy:
@@ -74,7 +102,8 @@ jobs:
           node-version: '${{ matrix.node }}'
       - name: Lint with Stylelint
         run: 'npm run lint:styles'
-  build:
+
+  vitest-tests:
     runs-on: macos-latest
     strategy:
       matrix:
@@ -85,23 +114,6 @@ jobs:
       - prettier-lint
       - stylelint-lint
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2.7.0
-      - name: 'Install Node.js ${{ matrix.node }}'
-        uses: actions/setup-node@v3
-        with:
-          node-version: '${{ matrix.node }}'
-      - name: Build Application
-        run: npm run build
-  vitest-tests:
-    runs-on: macos-latest
-    strategy:
-      matrix:
-        node:
-          - 18.12.0
-    needs:
-      - build
-    steps:
       - name: Checkout Commit
         uses: actions/checkout@v2.7.0
       - name: 'Install Node.js ${{ matrix.node }}'
@@ -110,6 +122,25 @@ jobs:
           node-version: '${{ matrix.node }}'
       - name: Run Vitest tests
         run: 'npm run test:run'
+
+  build:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        node:
+          - 18.12.0
+    needs:
+      - build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2.7.0
+      - name: 'Install Node.js ${{ matrix.node }}'
+        uses: actions/setup-node@v3
+        with:
+          node-version: '${{ matrix.node }}'
+      - name: Build Application
+        run: npm run build
+
   cypress-tests:
     runs-on: macos-latest
     strategy:
