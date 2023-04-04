@@ -46,6 +46,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '${{ matrix.node }}'
+      - name: Restore npm dependencies
+        uses: actions/cache@v3
+        id: cache-dependencies
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
       - name: Check types
         run: npm run typecheck
 
@@ -64,6 +71,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '${{ matrix.node }}'
+      - name: Restore npm dependencies
+        uses: actions/cache@v3
+        id: cache-dependencies
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
       - name: Lint with ESLint
         run: 'npm run lint:js'
 
@@ -82,6 +96,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '${{ matrix.node }}'
+      - name: Restore npm dependencies
+        uses: actions/cache@v3
+        id: cache-dependencies
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
       - name: Lint with Prettier
         run: 'npm run lint:prettier'
 
@@ -100,6 +121,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '${{ matrix.node }}'
+      - name: Restore npm dependencies
+        uses: actions/cache@v3
+        id: cache-dependencies
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
       - name: Lint with Stylelint
         run: 'npm run lint:styles'
 
@@ -120,6 +148,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '${{ matrix.node }}'
+      - name: Restore npm dependencies
+        uses: actions/cache@v3
+        id: cache-dependencies
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
       - name: Run Vitest tests
         run: 'npm run test:run'
 
@@ -138,6 +173,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '${{ matrix.node }}'
+      - name: Restore npm dependencies
+        uses: actions/cache@v3
+        id: cache-dependencies
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
       - name: Build Application
         run: npm run build
 
@@ -156,6 +198,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '${{ matrix.node }}'
+      - name: Restore npm dependencies
+        uses: actions/cache@v3
+        id: cache-dependencies
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-node-
       - name: Run Cypress tests
         run: 'npm run cypress:run'
         env:
