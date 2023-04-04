@@ -130,7 +130,7 @@ jobs:
         node:
           - 18.12.0
     needs:
-      - build
+      - vitest-tests
     steps:
       - name: Checkout code
         uses: actions/checkout@v2.7.0
@@ -148,7 +148,7 @@ jobs:
         node:
           - 18.12.0
     needs:
-      - vitest-tests
+      - build
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v2.7.0
