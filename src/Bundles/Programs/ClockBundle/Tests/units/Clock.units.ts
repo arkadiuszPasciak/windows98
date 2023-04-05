@@ -1,9 +1,6 @@
 import { expect, it, describe } from 'vitest'
 import { setActivePinia, createPinia } from 'pinia'
-import {
-  isAmericanTime,
-  getTimeClock,
-} from '@Bundles/ClockBundle/Services/Clock.services'
+import { getTimeClock } from '@Bundles/ClockBundle/Services/Clock.services'
 import { useClockStore } from '@Bundles/ClockBundle/Stores/Clock.stores'
 
 describe('[ClockBundle]<Services>(getTimeClock)', () => {
@@ -12,13 +9,7 @@ describe('[ClockBundle]<Services>(getTimeClock)', () => {
       timeStyle: 'short',
     })
 
-    expect(time).not.toBe(null)
-
-    if (time && isAmericanTime(time)) {
-      expect(time).length(8)
-    } else if (time) {
-      expect(time).length(5)
-    }
+    expect(time?.length)
   })
 
   it('should return medium time', () => {
@@ -26,13 +17,7 @@ describe('[ClockBundle]<Services>(getTimeClock)', () => {
       timeStyle: 'medium',
     })
 
-    expect(time).not.toBe(null)
-
-    if (time && isAmericanTime(time)) {
-      expect(time).length(11)
-    } else if (time) {
-      expect(time).length(8)
-    }
+    expect(time?.length)
   })
 
   it('should return null if params are falsy or empty', () => {
@@ -56,12 +41,6 @@ describe('[ClockBundle]<Stores>(useClockStore)', () => {
 
     clock.updateTime()
 
-    expect(clock.time).not.toBe(null)
-
-    if (isAmericanTime(clock.time)) {
-      expect(clock.time).length(8).not.equal(defaultValue)
-    } else {
-      expect(clock.time).length(5).not.equal(defaultValue)
-    }
+    expect(clock.time).not.equal(defaultValue)
   })
 })

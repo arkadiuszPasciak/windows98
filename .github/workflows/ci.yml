@@ -1,12 +1,14 @@
 name: CI
-'on':
-  workflow_dispatch: null
-  push:
-    branches:
-      - master
+
+on:
   pull_request:
     branches:
       - master
+
+concurrency:
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
+
 jobs:
   install-cache:
     runs-on: macos-latest
