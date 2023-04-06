@@ -1,0 +1,13 @@
+name: Manual-Actions-Workflow
+
+on: workflow_dispatch
+jobs:
+  manual:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Commit
+        uses: actions/checkout@v2.7.0
+
+      - name: Say something
+        run: echo "Hello, I have been manually triggered!"
