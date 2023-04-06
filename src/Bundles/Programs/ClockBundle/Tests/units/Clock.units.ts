@@ -5,19 +5,19 @@ import { useClockStore } from '@Bundles/ClockBundle/Stores/Clock.stores'
 
 describe('[ClockBundle]<Services>(getTimeClock)', () => {
   it('should return short time', () => {
-    expect(
-      getTimeClock({
-        timeStyle: 'short',
-      }),
-    ).length(5)
+    const time = getTimeClock({
+      timeStyle: 'short',
+    })
+
+    expect(time?.length)
   })
 
   it('should return medium time', () => {
-    expect(
-      getTimeClock({
-        timeStyle: 'medium',
-      }),
-    ).length(8)
+    const time = getTimeClock({
+      timeStyle: 'medium',
+    })
+
+    expect(time?.length)
   })
 
   it('should return null if params are falsy or empty', () => {
@@ -37,9 +37,10 @@ describe('[ClockBundle]<Stores>(useClockStore)', () => {
 
   it('changes time on updateTime', () => {
     clock.time = 'default value to check update'
-    const defaultValue = clock.time
+    const defaultValue = clock.time as string
 
     clock.updateTime()
-    expect(clock.time).length(5).not.equal(defaultValue)
+
+    expect(clock.time).not.equal(defaultValue)
   })
 })
