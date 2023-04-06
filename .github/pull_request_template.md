@@ -29,3 +29,5 @@
 - [ ] I have updated the documentation accordingly.
 - [ ] I have added tests to cover my changes.
 - [ ] All new and existing tests passed.
+
+[![Manual Trigger](https://github.com/<username>/<repository>/actions/workflows/manual.yml/badge.svg)](https://github.com/<username>/<repository>/actions/workflows/manual.yml)

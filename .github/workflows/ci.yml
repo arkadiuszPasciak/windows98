@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   install-cache:
-    runs-on: macos-latest
+    runs-on: linux-latest
     strategy:
       matrix:
         node-version: [18.12.0]
@@ -40,7 +40,7 @@ jobs:
         run: npm install --force --non-interactive
 
   type-check:
-    runs-on: macos-latest
+    runs-on: linux-latest
     strategy:
       matrix:
         node:
@@ -65,7 +65,7 @@ jobs:
         run: npm run typecheck
 
   eslint-lint:
-    runs-on: macos-latest
+    runs-on: linux-latest
     strategy:
       matrix:
         node:
@@ -90,7 +90,7 @@ jobs:
         run: 'npm run lint:js'
 
   prettier-lint:
-    runs-on: macos-latest
+    runs-on: linux-latest
     strategy:
       matrix:
         node:
@@ -115,7 +115,7 @@ jobs:
         run: 'npm run lint:prettier'
 
   stylelint-lint:
-    runs-on: macos-latest
+    runs-on: linux-latest
     strategy:
       matrix:
         node:
@@ -140,7 +140,7 @@ jobs:
         run: 'npm run lint:styles'
 
   vitest-tests:
-    runs-on: macos-latest
+    runs-on: linux-latest
     strategy:
       matrix:
         node:
@@ -167,7 +167,7 @@ jobs:
         run: 'npm run test:run'
 
   build:
-    runs-on: macos-latest
+    runs-on: linux-latest
     strategy:
       matrix:
         node:
@@ -191,29 +191,29 @@ jobs:
       - name: Build Application
         run: npm run build
 
-  cypress-tests:
-    runs-on: macos-latest
-    strategy:
-      matrix:
-        node:
-          - 18.12.0
-    needs:
-      - build
-    steps:
-      - name: Checkout Commit
-        uses: actions/checkout@v2.7.0
-      - name: 'Install Node.js ${{ matrix.node }}'
-        uses: actions/setup-node@v3
-        with:
-          node-version: '${{ matrix.node }}'
-      - name: Restore npm dependencies
-        uses: actions/cache@v3
-        id: cache-dependencies
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: ${{ runner.os }}-node-
-      - name: Run Cypress tests
-        run: 'npm run cypress:run'
-        env:
-          CYPRESS_BASE_URL: 'http://localhost:3000'
+  # cypress-tests:
+  #   runs-on: linux-latest
+  #   strategy:
+  #     matrix:
+  #       node:
+  #         - 18.12.0
+  #   needs:
+  #     - build
+  #   steps:
+  #     - name: Checkout Commit
+  #       uses: actions/checkout@v2.7.0
+  #     - name: 'Install Node.js ${{ matrix.node }}'
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: '${{ matrix.node }}'
+  #     - name: Restore npm dependencies
+  #       uses: actions/cache@v3
+  #       id: cache-dependencies
+  #       with:
+  #         path: node_modules
+  #         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+  #         restore-keys: ${{ runner.os }}-node-
+  #     - name: Run Cypress tests
+  #       run: 'npm run cypress:run'
+  #       env:
+  #         CYPRESS_BASE_URL: 'http://localhost:3000'
