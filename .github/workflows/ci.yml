@@ -7,10 +7,6 @@ on:
         description: 'Why are you running manually?'
         required: true
 
-concurrency:
-  group: ${{ github.head_ref }}
-  cancel-in-progress: true
-
 jobs:
   install-cache:
     runs-on: ubuntu-latest
