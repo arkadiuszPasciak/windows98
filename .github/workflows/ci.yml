@@ -30,13 +30,13 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
-      - name: Cache Cypress cache
-        uses: actions/cache@v2
+      - name: Cache Cypress binary
+        id: cache-cypress-binary
+        uses: actions/cache@v3
         with:
-          path: /home/runner/.cache/Cypress
-          key: ${{ runner.os }}-cypress-${{ hashFiles('**/cypress.json') }}
-          restore-keys: |
-            ${{ runner.os }}-cypress-
+          path: ~/.cache/Cypress
+          key: cypress-binary-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: cypress-binary-
       - name: Install Dependencies
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: npm install --force --non-interactive
@@ -215,6 +215,13 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
+      - name: Restore Cypress binary
+        id: cache-cypress-binary
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-binary-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: cypress-binary-
       - name: Run Cypress tests
         run: 'npm run cypress:run'
         env:
