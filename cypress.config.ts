@@ -12,4 +12,6 @@ export default defineConfig({
   e2e: {
     specPattern: 'src/Bundles/**/**/Tests/e2e/*.e2e.ts',
   },
+
+  video: false,
 })

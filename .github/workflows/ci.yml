@@ -222,7 +222,8 @@ jobs:
           path: ~/.cache/Cypress
           key: cypress-binary-${{ hashFiles('**/package-lock.json') }}
           restore-keys: cypress-binary-
-      - name: Run Cypress tests
-        run: 'npm run cypress:run'
-        env:
-          CYPRESS_BASE_URL: 'http://localhost:3000'
+      - name: Run Cypress test
+        uses: cypress-io/github-action@v5
+        with:
+          component: true
+          command: npm run cypress:run
