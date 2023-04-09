@@ -193,7 +193,7 @@ jobs:
       - name: Build Application
         run: npm run build
 
-  cypress-tests:
+  cypress-component-tests:
     runs-on: ubuntu-latest
     strategy:
       matrix:
