@@ -26,9 +26,13 @@ describe('[UIRadioBundle]<Components>(UIRadio)', async () => {
       .should('have.prop', 'checked', false)
       .should('have.prop', 'disabled', false)
 
-    cy.get('[data-test="ui-radio-input-available-radio-restart"]')
-      .check()
-      .should('have.prop', 'checked', true)
+    cy.get('label').click()
+
+    cy.get('[data-test="ui-radio-input-available-radio-restart"]').should(
+      'have.prop',
+      'checked',
+      true,
+    )
 
     cy.get('[data-test="ui-radio-icon-available-radio-restart"]').should(
       'have.class',
