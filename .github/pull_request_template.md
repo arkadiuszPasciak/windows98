@@ -1,4 +1,4 @@
-[![CI](https://github.com/arkadiuszPasciak/windows98/actions/workflows/ci.yml/badge.svg)](https://github.com/arkadiuszPasciak/windows98/actions/workflows/ci.yml)
+[![CI/CD](https://github.com/arkadiuszPasciak/windows98/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/arkadiuszPasciak/windows98/actions/workflows/ci-cd.yml)
 
 ### ❓ Type of change
 
