@@ -158,6 +158,20 @@ npm run cypress:open
 
 Command is used to `execute` your project's Component Testing or End-to-End (E2E) tests once using Cypress, a popular testing framework. This command runs the cypress:run script defined in your `package.json` file, which typically configures Cypress to perform `a single run` of your test files, located in a dedicated test directory or following a specific naming convention. By running this command, you can quickly validate the functionality and user experience of your project's components and features, ensuring overall quality and reliability without continuous test execution.
 
-<!-- TODO
-1. add docs commands
- -->
+## [VuePress](https://v2.vuepress.vuejs.org/)
+
+### docs:run
+
+Command is a handy script associated with VuePress that launches a local development server for your documentation. This command enables you to preview and edit your documentation in a live environment with hot-reloading features, allowing you to see changes in real-time as you modify your content. It is a valuable tool for developers working with VuePress, simplifying the process of crafting and updating documentation pages.
+
+```bash
+npm run docs:run
+```
+
+### docs:build
+
+Command is a useful script in VuePress projects that generates a production-ready version of your documentation. By executing this command, VuePress compiles and optimizes your documentation files into static assets, ensuring they are ready for deployment to a live server. This command is essential for developers working with VuePress, as it ensures an efficient, high-performance documentation website for end-users.
+
+```bash
+npm run docs:build
+```
