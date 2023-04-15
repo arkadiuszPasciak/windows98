@@ -3,7 +3,24 @@ import type { NavbarConfig } from '@vuepress/theme-default'
 const navbarConfig: NavbarConfig = [
   {
     text: 'Guide',
-    link: '/guide/',
+    children: [
+      {
+        text: 'Manual Installation',
+        link: '/guide/manual-installation.html',
+      },
+      {
+        text: 'Building for Production',
+        link: '/guide/building-for-production.html',
+      },
+      {
+        text: 'Run a Development Server',
+        link: '/guide/run-a-development-server.html',
+      },
+      {
+        text: 'Preview a Production Server',
+        link: '/guide/preview-a-production-server.html',
+      },
+    ],
   },
   {
     text: 'Features',

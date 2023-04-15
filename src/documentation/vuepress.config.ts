@@ -4,8 +4,7 @@ import sidebarConfig from './.vuepress/configs/sidebar.config'
 
 export default defineUserConfig({
   lang: 'en-GB',
-  title: 'Hello VuePress',
-  description: 'Just playing around',
+  title: 'Windows98',
   theme: defaultTheme({
     navbar: navbarConfig,
     sidebar: sidebarConfig,

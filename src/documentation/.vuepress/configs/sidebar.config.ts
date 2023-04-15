@@ -5,7 +5,6 @@ const sidebarConfig: SidebarConfig = {
     {
       text: 'Guide',
       children: [
-        '/guide/index.md',
         '/guide/manual-installation.md',
         '/guide/building-for-production.md',
         '/guide/run-a-development-server.md',
