@@ -2,7 +2,7 @@
 
 #### Requirements
 
-[Node.js v18.12.0](https://nodejs.org/en) and [npm 8.19.2](https://www.npmjs.com/) installed and setted on your system
+[Node.js v18.12.0](https://nodejs.org/en) and [npm 8.19.2](https://www.npmjs.com/) installed and setted on your system.
 
 #### Steps
 

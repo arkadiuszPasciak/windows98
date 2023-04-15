@@ -9,6 +9,7 @@ const sidebarConfig: SidebarConfig = {
         '/guide/manual-installation.md',
         '/guide/building-for-production.md',
         '/guide/run-a-development-server.md',
+        '/guide/preview-a-production-server.md',
       ],
     },
   ],
