@@ -4,7 +4,11 @@ const sidebarConfig: SidebarConfig = {
   '/guide/': [
     {
       text: 'Guide',
-      children: ['/guide/index.md', '/guide/manual-installation.md'],
+      children: [
+        '/guide/index.md',
+        '/guide/manual-installation.md',
+        '/guide/building-for-production.md',
+      ],
     },
   ],
   '/reference/': [
