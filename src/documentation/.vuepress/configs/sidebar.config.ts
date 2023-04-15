@@ -13,10 +13,32 @@ const sidebarConfig: SidebarConfig = {
       ],
     },
   ],
+  '/features': [
+    {
+      text: 'Features',
+      link: '/features',
+      children: [
+        '/features/vite.html',
+        '/features/vue-3.html',
+        '/features/typescript.html',
+        '/features/scss.html',
+        '/features/pinia.html',
+        '/features/intlify.html',
+        '/features/vitest.html',
+        '/features/cypress.html',
+        '/features/husky.html',
+        '/features/lint-staged.html',
+        '/features/vue-tsc.html',
+        '/features/eslint.html',
+        '/features/stylelint.html',
+        '/features/prettier.html',
+        '/features/vue-press.html',
+      ],
+    },
+  ],
   '/reference/': [
     {
       text: 'Reference',
-      collapsible: true,
       children: ['/reference/cli.md'],
     },
   ],
