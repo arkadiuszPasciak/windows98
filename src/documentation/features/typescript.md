@@ -1,3 +1,5 @@
 # [TypeScript](https://www.typescriptlang.org/)
 
+## Description
+
 TypeScript is a statically-typed superset of JavaScript developed by [Microsoft](https://www.microsoft.com/), aimed at enhancing the developer experience and catching errors early during development. By introducing optional static typing, TypeScript allows developers to define and enforce types for variables, functions, and classes, resulting in more robust and maintainable code. TypeScript also incorporates modern JavaScript features, such as async/await and decorators, and provides additional constructs like interfaces and namespaces. TypeScript code is transpiled to standard JavaScript, ensuring compatibility with various browsers and execution environments. Its powerful type system and tooling integration make TypeScript a popular choice for large-scale and complex web applications.
