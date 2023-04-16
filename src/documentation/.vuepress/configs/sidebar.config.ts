@@ -44,7 +44,7 @@ const sidebarConfig: SidebarConfig = {
   '/config/': [
     {
       text: 'Config',
-      children: ['/config/github.md'],
+      children: ['/config/husky.md', '/config/github.md'],
     },
   ],
 }

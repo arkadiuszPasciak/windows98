@@ -4,6 +4,8 @@
 
 Special directory used to store GitHub-specific configuration files and workflows. It helps organize and manage various GitHub features, such as issue and pull request templates, contributing guidelines, and GitHub Actions workflows. By centralizing these configurations in the `.github` folder, developers can maintain a clean and organized repository structure while leveraging GitHub's platform-specific features to enhance collaboration, automate tasks, and streamline the development process.
 
+`@/.github/*`
+
 ## Files
 
 ### [Pull Request Template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
