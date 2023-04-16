@@ -41,6 +41,12 @@ const sidebarConfig: SidebarConfig = {
       children: ['/reference/cli.md'],
     },
   ],
+  '/config/': [
+    {
+      text: 'Config',
+      children: ['/config/github.md'],
+    },
+  ],
 }
 
 export default sidebarConfig

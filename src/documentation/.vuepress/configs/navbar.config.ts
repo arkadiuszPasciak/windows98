@@ -97,6 +97,15 @@ const navbarConfig: NavbarConfig = [
       },
     ],
   },
+  {
+    text: 'Config',
+    children: [
+      {
+        text: 'GitHub',
+        link: '/config/github.html',
+      },
+    ],
+  },
 ]
 
 export default navbarConfig
