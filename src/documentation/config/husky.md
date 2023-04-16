@@ -8,7 +8,7 @@ The directory in the application typically contains configuration files for the 
 
 ## Files
 
-### Pre Commit
+### [Pre Commit](https://typicode.github.io/husky/#/?id=create-a-hook)
 
 `@/.husky/pre-commit`
 
@@ -22,7 +22,7 @@ In this specific example, the pre-commit script runs:
 
 If any of these tests fail, the commit will be prevented and an error message will be displayed.
 
-### Configuration Husky
+### [Configuration Husky](https://typicode.github.io/husky/#/?id=install)
 
 `@/.husky/_/husky.sh`
 
