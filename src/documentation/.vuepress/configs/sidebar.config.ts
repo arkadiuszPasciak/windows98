@@ -38,13 +38,7 @@ const sidebarConfig: SidebarConfig = {
   '/reference/': [
     {
       text: 'Reference',
-      children: ['/reference/cli.md'],
-    },
-  ],
-  '/config/': [
-    {
-      text: 'Config',
-      children: ['/config/husky.md', '/config/github.md'],
+      children: ['/reference/cli.md', '/reference/config.md'],
     },
   ],
 }

@@ -95,18 +95,9 @@ const navbarConfig: NavbarConfig = [
         text: 'CLI',
         link: '/reference/cli.html',
       },
-    ],
-  },
-  {
-    text: 'Config',
-    children: [
       {
-        text: 'Husky',
-        link: '/config/husky.html',
-      },
-      {
-        text: 'GitHub',
-        link: '/config/github.html',
+        text: 'Config',
+        link: '/reference/config.html',
       },
     ],
   },
