@@ -96,6 +96,10 @@ const navbarConfig: NavbarConfig = [
         link: '/reference/cli.html',
       },
       {
+        text: 'CI/CD',
+        link: '/reference/ci-cd.html',
+      },
+      {
         text: 'Config',
         link: '/reference/config.html',
       },

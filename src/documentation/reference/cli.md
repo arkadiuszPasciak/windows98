@@ -1,4 +1,4 @@
-# Command Line Interface
+# CLI
 
 ## [npm](https://www.npmjs.com/)
 

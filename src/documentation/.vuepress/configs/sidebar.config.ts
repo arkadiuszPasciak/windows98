@@ -38,7 +38,11 @@ const sidebarConfig: SidebarConfig = {
   '/reference/': [
     {
       text: 'Reference',
-      children: ['/reference/cli.md', '/reference/config.md'],
+      children: [
+        '/reference/cli.md',
+        '/reference/ci-cd.md',
+        '/reference/config.md',
+      ],
     },
   ],
 }
