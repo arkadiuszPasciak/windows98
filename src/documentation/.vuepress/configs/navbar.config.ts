@@ -100,6 +100,10 @@ const navbarConfig: NavbarConfig = [
         link: '/reference/ci-cd.html',
       },
       {
+        text: 'Git Hooks',
+        link: '/reference/git-hooks.html',
+      },
+      {
         text: 'Config',
         link: '/reference/config.html',
       },

@@ -41,6 +41,7 @@ const sidebarConfig: SidebarConfig = {
       children: [
         '/reference/cli.md',
         '/reference/ci-cd.md',
+        '/reference/git-hooks.md',
         '/reference/config.md',
       ],
     },

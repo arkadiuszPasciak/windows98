@@ -4,9 +4,9 @@ This Continuous Integration (CI) / Continuous Delivery (CD) workflow is designed
 
 ## [Feature Branch](https://resources.github.com/ci-cd/)
 
-This CI/CD workflow ensures that your codebase remains consistent, well-structured, and thoroughly tested, streamlining the development process and enhancing collaboration within your team.
-
 `@/.github/workflows/ci-cd.yml`
+
+This CI/CD workflow ensures that your codebase remains consistent, well-structured, and thoroughly tested, streamlining the development process and enhancing collaboration within your team.
 
 ### Environment Variables
 
