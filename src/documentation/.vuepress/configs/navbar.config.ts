@@ -104,6 +104,10 @@ const navbarConfig: NavbarConfig = [
         link: '/reference/ide-vscode.html',
       },
       {
+        text: 'Internationalization',
+        link: '/reference/internationalization.html',
+      },
+      {
         text: 'Linters',
         link: '/reference/linters.html',
       },

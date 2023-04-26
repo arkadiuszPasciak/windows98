@@ -42,6 +42,7 @@ const sidebarConfig: SidebarConfig = {
         '/reference/cli.md',
         '/reference/ci-cd.md',
         '/reference/ide-vscode.md',
+        '/reference/internationalization.md',
         '/reference/linters.md',
         '/reference/testing.md',
         '/reference/git-hooks.md',
