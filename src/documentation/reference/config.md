@@ -15,14 +15,3 @@ Special directory used to store GitHub-specific configuration files and workflow
 `@/.github/pull_request_template.md`
 
 GitHub-specific configuration file that provides a predefined structure and guidelines for creating new pull requests. By defining a template, maintainers can ensure that contributors follow a consistent format when submitting changes, making it easier to review and manage contributions. The template can include prompts for providing a description of the changes, relevant issue numbers, testing steps, and any additional information that might be required. When a contributor creates a new pull request, the content of the pull_request_template.md file will be automatically pre-filled in the description field, encouraging adherence to the established conventions and fostering a more efficient and organized collaboration process.
-
-##### Environment Variables:
-
-1. `VERCEL_ORG_ID`: Connects the Vercel organization to GitHub.
-2. `VERCEL_PROJECT_ID`: Identifies the specific Vercel project.
-
-##### Jobs:
-
-1. `deploy-production`: Deploys the production branch using Vercel
-
-<br>
