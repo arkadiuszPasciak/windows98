@@ -108,6 +108,10 @@ const navbarConfig: NavbarConfig = [
         link: '/reference/linters.html',
       },
       {
+        text: 'Testing',
+        link: '/reference/testing.html',
+      },
+      {
         text: 'Git Hooks',
         link: '/reference/git-hooks.html',
       },
