@@ -1,6 +1,6 @@
 # Run a Development Server
 
-#### Steps
+## Steps
 
 1. Start the development server by running the following command:
 

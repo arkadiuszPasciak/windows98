@@ -1,9 +1,7 @@
-import type { NavbarConfig } from '@vuepress/theme-default'
-
-const navbarConfig: NavbarConfig = [
+const navbarConfig = [
   {
     text: 'Guide',
-    children: [
+    items: [
       {
         text: 'Manual Installation',
         link: '/guide/manual-installation.html',
@@ -24,7 +22,7 @@ const navbarConfig: NavbarConfig = [
   },
   {
     text: 'Features',
-    children: [
+    items: [
       {
         text: 'Vite',
         link: '/features/vite.html',
@@ -89,8 +87,7 @@ const navbarConfig: NavbarConfig = [
   },
   {
     text: 'Reference',
-    link: '/reference',
-    children: [
+    items: [
       {
         text: 'CLI',
         link: '/reference/cli.html',
@@ -100,7 +97,7 @@ const navbarConfig: NavbarConfig = [
         link: '/reference/ci-cd.html',
       },
       {
-        text: 'IDE / VSCode',
+        text: 'IDE/VSCode',
         link: '/reference/ide-vscode.html',
       },
       {
@@ -118,10 +115,6 @@ const navbarConfig: NavbarConfig = [
       {
         text: 'Git Hooks',
         link: '/reference/git-hooks.html',
-      },
-      {
-        text: 'Config',
-        link: '/reference/config.html',
       },
     ],
   },

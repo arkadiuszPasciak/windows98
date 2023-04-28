@@ -1,6 +1,6 @@
 # Building for Production
 
-#### Steps
+## Steps
 
 1. Build your project for production by running the following command.
 

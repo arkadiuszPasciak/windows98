@@ -1,6 +1,6 @@
 # Preview a Production Server
 
-#### Steps
+## Steps
 
 1. [Build your project for production by running this command](/guide/building-for-production.html)
 

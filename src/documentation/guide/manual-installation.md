@@ -1,10 +1,10 @@
 # Manual Installation
 
-#### Requirements
+## Requirements
 
 [Node.js v18.12.0](https://nodejs.org/en) and [npm 8.19.2](https://www.npmjs.com/) installed and setted on your system.
 
-#### Steps
+## Steps
 
 1. Ensure you have the required Node.js version installed. To check your current Node.js version, run the following command in your terminal:
 
