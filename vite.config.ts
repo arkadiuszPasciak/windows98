@@ -7,6 +7,7 @@ import Markdown from 'vite-plugin-vue-markdown'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  publicDir: 'src/app/Public',
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/], // <--
