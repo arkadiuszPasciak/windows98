@@ -29,9 +29,9 @@
     "cypress:run": "cypress run --component --browser chrome",
     "packages-check-updates": "npx npm-check-updates",
     "packages-update": "npx npm-check-updates -u",
-    "docs:dev": "vitepress dev src/documentation",
-    "docs:build": "vitepress build src/documentation",
-    "docs:preview": "vitepress preview src/documentation"
+    "docs:dev": "vitepress dev src/docs",
+    "docs:build": "vitepress build src/docs",
+    "docs:preview": "vitepress preview src/docs"
   },
   "dependencies": {
     "pinia": "^2.0.33",
