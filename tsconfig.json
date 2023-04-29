@@ -19,7 +19,7 @@
       "cypress",
       "node"
     ],
-    "baseUrl": "./src/",
+    "baseUrl": "./src/app",
     "paths": {
       "@/*": ["*"],
       "@Assets/*": ["Assets/*"],

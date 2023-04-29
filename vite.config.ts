@@ -7,7 +7,17 @@ import Markdown from 'vite-plugin-vue-markdown'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  publicDir: 'src/app/Public',
+  build: {
+    outDir: '../../dist',
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import './src/app/Assets/Styles/Config/config.styles.scss';`,
+      },
+    },
+  },
+  publicDir: 'Public',
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/], // <--
@@ -19,18 +29,12 @@ export default defineConfig({
     eslintPlugin(),
     tsconfigPaths({ loose: true }),
   ],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import './src/Assets/Styles/Config/config.styles.scss';`,
-      },
-    },
-  },
+  root: 'src/app',
   test: {
     globals: true,
     environment: 'jsdom',
     include: ['**/*.units.ts', '**/*.snapshots.ts'],
-    setupFiles: ['./src/Configs/VueTestUtils.config.ts'],
+    setupFiles: ['Configs/VueTestUtils.config.ts'],
     resolveSnapshotPath: (testPath, snapshotExtension) => {
       return (
         testPath.replace('/__snapshots__', '').replace('.ts', '') +
