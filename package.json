@@ -28,7 +28,10 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --component --browser chrome",
     "packages-check-updates": "npx npm-check-updates",
-    "packages-update": "npx npm-check-updates -u"
+    "packages-update": "npx npm-check-updates -u",
+    "docs:dev": "vitepress dev src/documentation",
+    "docs:build": "vitepress build src/documentation",
+    "docs:preview": "vitepress preview src/documentation"
   },
   "dependencies": {
     "pinia": "^2.0.33",
@@ -63,6 +66,7 @@
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-vue-markdown": "^0.22.4",
     "vite-tsconfig-paths": "^4.0.7",
+    "vitepress": "^1.0.0-alpha.74",
     "vitest": "^0.29.8",
     "vue-tsc": "^1.2"
   }
