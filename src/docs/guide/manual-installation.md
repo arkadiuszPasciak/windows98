@@ -2,7 +2,7 @@
 
 ## Requirements
 
-[Node.js v18.12.0](https://nodejs.org/en) and [npm 8.19.2](https://www.npmjs.com/) installed and setted on your system.
+[Node.js v18.16.0](https://nodejs.org/en) and [npm 9.5.1](https://www.npmjs.com/) installed and setted on your system.
 
 ## Steps
 
@@ -12,7 +12,7 @@
 node --version
 ```
 
-If you don't have the required version (18.12.0) or need to switch to it, you can use a Node.js version manager like nvm to manage multiple Node.js versions. You can find the installation guide for nvm at https://github.com/nvm-sh/nvm#installing-and-updating.
+If you don't have the required version (18.16.0) or need to switch to it, you can use a Node.js version manager like nvm to manage multiple Node.js versions. You can find the installation guide for nvm at https://github.com/nvm-sh/nvm#installing-and-updating.
 
 2. Clone the repository to your local machine:
 

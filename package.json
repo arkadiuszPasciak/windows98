@@ -9,7 +9,7 @@
   },
   "homepage": "https://github.com/arkadiuszPasciak/windows98#readme",
   "engines": {
-    "node": "18.12.0"
+    "node": "18.16.0"
   },
   "scripts": {
     "app:build": "vite build",

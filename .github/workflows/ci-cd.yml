@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.12.0]
+        node-version: [18.16.0]
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
@@ -50,7 +50,7 @@ jobs:
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - install-cache
     steps:
@@ -75,7 +75,7 @@ jobs:
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - type-check
     steps:
@@ -100,7 +100,7 @@ jobs:
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - type-check
     steps:
@@ -125,7 +125,7 @@ jobs:
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - type-check
     steps:
@@ -150,7 +150,7 @@ jobs:
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - eslint-lint
       - prettier-lint
@@ -177,7 +177,7 @@ jobs:
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - vitest-tests
     steps:
@@ -202,7 +202,7 @@ jobs:
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - build
     steps:
