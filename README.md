@@ -44,14 +44,14 @@ I hope that this project will bring back fond memories of using the original Win
 - Clone this project to your computer `git clone https://github.com/arkadiuszPasciak/windows98`
 - Set node version on `18.12.1`
 - Install dependencies `npm install`
-- Run `npm run dev` to start development server and open `http://localhost:5173/` in your browser
+- Run `npm run app:dev` to start development server and open `http://localhost:5173/` in your browser
 
 ### Update packages
 
 [npm-check-updates](https://github.com/raineorshine/npm-check-updates) is fully compatible with yarn
 
-- Run `npm run packages-check-updates` to show all packages to upgrade in `package.json`
-- Run `npm run packages-update` to upgrade all packages in `package.json`
+- Run `npm run npm:check-updates` to show all packages to upgrade in `package.json`
+- Run `npm run npm:check-packages` to upgrade all packages in `package.json`
 - Run `npm run install` to install new versions
 
 ## Testing
@@ -78,13 +78,13 @@ The files are in Bundles in catalog `Tests/units`, example:
 @Bundles/ExampleBundle/Tests/units/Example.units.ts
 ```
 
-Commands are `npm run test` and `npm run test:run` - [more information here](#Commands)
+Commands are `npm run vitest:dev` and `npm run vitest:run` - [more information here](#Commands)
 
 ## Deploy
 
 ### Node.js server
 
-- Run `npm run build` to build the project
+- Run `npm run app:build` to build the project
 - Serve `dist/index.html` file
   Checkout the [deployment documentation](https://vitejs.dev/guide/build.html).
 
@@ -93,22 +93,22 @@ Commands are `npm run test` and `npm run test:run` - [more information here](#Co
 - [`npm install`](https://docs.npmjs.com/cli/v6/commands/npm-install) to install the project
 - [`npm run prepare`](https://typicode.github.io/husky/#/?id=install) to install the husky. It's automatically after `npm install`
 - [`npm update:packages`](https://www.npmjs.com/package/npm-check-updates) to update npm packages
-- [`npm run dev`](https://vitejs.dev/guide/#command-line-interface) to start dev server
-- [`npm run build`](https://vitejs.dev/guide/#command-line-interface) to build for productin
-- [`npm run preview`](https://vitejs.dev/guide/#command-line-interface) to start preview production build
+- [`npm run app:dev`](https://vitejs.dev/guide/#command-line-interface) to start dev server
+- [`npm run app:build`](https://vitejs.dev/guide/#command-line-interface) to build for productin
+- [`npm run app:preview`](https://vitejs.dev/guide/#command-line-interface) to start preview production build
 - [`npm run lint:js`](https://eslint.org/docs/latest/user-guide/command-line-interface) to show files `js, ts, vue` to lint
 - [`npm run lint:styles`](https://stylelint.io/user-guide/usage/cli/) to show files `scss, vue` to lint
 - [`npm run lint:prettier`](https://stylelint.io/user-guide/usage/cli/) to show files `*` to format
 - [`npm run lintfix:js`](https://eslint.org/docs/latest/user-guide/command-line-interface) to fix files `js, ts, vue`
 - [`npm run lintfix:styles`](https://stylelint.io/user-guide/usage/cli/) to fix files `scss, vue`
 - [`npm run lintfix:prettier`](https://stylelint.io/user-guide/usage/cli/) to format files `*`
-- [`npm run typecheck`](https://www.npmjs.com/package/vue-tsc) to test types
-- [`npm run test`](https://vitest.dev/guide/cli.html#vitest) to test in the current directory
-- [`npm run test:run`](https://vitest.dev/guide/cli.html#vitest-run) to test on single run without watch mode
+- [`npm run lint:types`](https://www.npmjs.com/package/vue-tsc) to test types
+- [`npm run vitest:dev`](https://vitest.dev/guide/cli.html#vitest) to test in the current directory
+- [`npm run vitest:run`](https://vitest.dev/guide/cli.html#vitest-run) to test on single run without watch mode
 - [`npm run cypress:open`](https://docs.cypress.io/guides/guides/command-line#cypress-open) to open Cypress CLI
 - [`npm run cypress:run`](https://docs.cypress.io/guides/guides/command-line#cypress-run) to test all Cypress Component Testing
-- [`npm run packages-check-updates`](https://github.com/raineorshine/npm-check-updates#installation) to show all packages to upgrade in `package.json`
-- [`npm run packages-update`](https://github.com/raineorshine/npm-check-updates#installation) to upgrade all packages in `package.json`
+- [`npm run npm:check-updates`](https://github.com/raineorshine/npm-check-updates#installation) to show all packages to upgrade in `package.json`
+- [`npm run npm:update-packages`](https://github.com/raineorshine/npm-check-updates#installation) to upgrade all packages in `package.json`
 
 ## Bundle structure
 

@@ -22,7 +22,7 @@ npm run prepare
 
 ### packages:check-updates
 
-Command is used to run the npm-check-update tool, which `scans` your project's package.json file for `outdated dependencies` and displays a list of `available updates`. This command runs the packages-check-updates script defined in your `package.json` file, which typically invokes the npm-check-update utility to identify and report packages that have newer versions available. By executing this command, you can stay informed about package updates, ensuring that your project remains up-to-date with the latest improvements and security fixes from the dependency ecosystem.
+Command is used to run the npm-check-update tool, which `scans` your project's package.json file for `outdated dependencies` and displays a list of `available updates`. This command runs the npm:check-updates script defined in your `package.json` file, which typically invokes the npm-check-update utility to identify and report packages that have newer versions available. By executing this command, you can stay informed about package updates, ensuring that your project remains up-to-date with the latest improvements and security fixes from the dependency ecosystem.
 
 ```bash
 npm run packages:check-updates
@@ -38,38 +38,38 @@ npm run packages:update
 
 ## [Vite](https://vitejs.dev/)
 
-### dev
-
-Command is used to start `a local development server` using Vite for your project. This command runs the `dev` script defined in your `package.json` file, which typically executes the Vite server with hot module replacement (HMR) enabled. As you make changes to your code, the development server will automatically reload the affected modules, providing a seamless and efficient development experience without requiring a full page refresh.
-
-```bash
-npm run dev
-```
-
-### build
+### app:build
 
 Command is used to generate a production-ready version of your project using Vite. This command runs the `build` script defined in your `package.json` file, which typically triggers Vite's bundling and optimization process. The output is a set of optimized, minified files in a `/dist` directory, ready to be deployed to a hosting environment for optimal performance and reduced load times.
 
 ```bash
-npm run build
+npm run app:build
 ```
 
-### preview
+### app:dev
 
-Command is used to launch a local server to `preview` your production-built project using Vite. This command runs the preview script defined in your `package.json` file, which typically starts a Vite server with the contents of the dist directory after running npm run build. The preview command allows you to test and verify `the production version` of your project in a local environment, ensuring optimal performance and functionality before deployment.
+Command is used to start `a local development server` using Vite for your project. This command runs the `dev` script defined in your `package.json` file, which typically executes the Vite server with hot module replacement (HMR) enabled. As you make changes to your code, the development server will automatically reload the affected modules, providing a seamless and efficient development experience without requiring a full page refresh.
 
 ```bash
-npm run preview
+npm run app:dev
+```
+
+### app:preview
+
+Command is used to launch a local server to `preview` your production-built project using Vite. This command runs the preview script defined in your `package.json` file, which typically starts a Vite server with the contents of the dist directory after running `npm run app:build`. The preview command allows you to test and verify `the production version` of your project in a local environment, ensuring optimal performance and functionality before deployment.
+
+```bash
+npm run app:preview
 ```
 
 ## [vue-tsc](https://www.npmjs.com/package/vue-tsc)
 
-### typecheck
+### lint:types
 
 Command is used to perform `TypeScript` type checking in your Vue project using the `vue-tsc` compiler. This command runs the typecheck script defined in your `package.json` file, which typically invokes vue-tsc to analyze your code and report any type errors or inconsistencies. By running this command, you can ensure that your Vue components and TypeScript code adhere to the defined types, helping to maintain code quality and prevent runtime errors.
 
 ```bash
-npm run typecheck
+npm run lint:types
 ```
 
 ## [ESLint](https://eslint.org)
@@ -128,20 +128,20 @@ npm run lintfix:prettier
 
 ## [Vitest](https://vitest.dev/)
 
-### test
+### vitest:dev
 
 Command is used to run your project's `unit tests` using Vitest, a testing framework optimized for Vite projects. This command runs the test script defined in your `package.json` file, which typically configures Vitest to execute your test files, located in a dedicated test directory or following a specific naming convention. By running this command, you can validate the functionality of individual units of your code, ensuring they work correctly and helping to maintain overall code quality and reliability in your project.
 
 ```bash
-npm run test
+npm run vitest:dev
 ```
 
-### test:run
+### vitest:run
 
 Command is used to execute your project's unit tests once using Vitest, a testing framework optimized for Vite projects. This command runs the test:run script defined in your package.json file, which typically configures Vitest to perform a single run of your test files, located in a dedicated test directory or following a specific naming convention. By running this command, you can quickly validate the functionality of individual units of your code, ensuring they work correctly and helping to maintain overall code quality and reliability in your project without continuous test execution.
 
 ```bash
-npm run test:run
+npm run vitest:run
 ```
 
 ## [Cypress](https://www.cypress.io/)

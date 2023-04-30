@@ -68,7 +68,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Check types
-        run: npm run typecheck
+        run: npm run lint:types
 
   eslint-lint:
     runs-on: ubuntu-latest
@@ -170,7 +170,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Run Vitest tests
-        run: 'npm run test:run'
+        run: 'npm run vitest:run'
 
   build:
     runs-on: ubuntu-latest
@@ -195,7 +195,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Build Application
-        run: npm run build
+        run: npm run app:build
 
   cypress-component-tests:
     runs-on: ubuntu-latest

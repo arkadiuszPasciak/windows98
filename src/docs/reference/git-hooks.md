@@ -10,8 +10,8 @@ Pre-commit Git hooks in Husky are custom scripts that automatically execute befo
 
 In this specific example, the pre-commit script runs:
 
-1. `npm run typecheck` command to perform type checking
-2. `npm run test:run` to run unit tests
+1. `npm run lint:types` command to perform type checking
+2. `npm run vitest:run` to run unit tests
 3. `npx lint-staged --no-stash` to run linting on staged files.
 
 If any of these tests fail, the commit will be prevented and an error message will be displayed.
