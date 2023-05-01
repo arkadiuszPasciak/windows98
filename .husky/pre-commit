@@ -5,5 +5,5 @@ npm run lint:types
 echo "✅ The types are okay!"
 npm run vitest:run
 echo "✅ The tests are okay!"
-npx lint-staged --no-stash
+npm run lint:staged
 echo "✅ The files are okay!"
