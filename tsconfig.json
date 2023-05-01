@@ -19,21 +19,21 @@
       "cypress",
       "node"
     ],
-    "baseUrl": "./src/app",
+    "baseUrl": "./src",
     "paths": {
       "@/*": ["*"],
-      "@Assets/*": ["Assets/*"],
+      "@Assets/*": ["app/Assets/*"],
       "@Bundles/*": [
-        "Bundles/App/*",
-        "Bundles/Programs/*",
-        "Bundles/Settings/*",
-        "Bundles/UI/*",
-        "Bundles/Window/*"
+        "app/Bundles/App/*",
+        "app/Bundles/Programs/*",
+        "app/Bundles/Settings/*",
+        "app/Bundles/UI/*",
+        "app/Bundles/Window/*"
       ],
-      "@Configs/*": ["Configs/*"],
-      "@Views/*": ["Views/*"]
+      "@Configs/*": ["app/Configs/*"],
+      "@Views/*": ["app/Views/*"]
     }
   },
   "include": ["./src", "cypress.d.ts", "./cypress"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["src/configs/*.config.js"]
 }

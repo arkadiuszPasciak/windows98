@@ -1,5 +1,5 @@
 import { mount } from 'cypress/vue'
-import { i18n } from '@/Configs/I18n.config'
+import { i18n } from '@/configs/i18n.config'
 import '@Assets/Styles/General/Base.styles.scss'
 import '@Assets/Styles/Config/Cypress.styles.scss'
 

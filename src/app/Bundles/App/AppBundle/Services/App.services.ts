@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { i18n } from '@Configs/I18n.config'
+import { i18n } from '@/configs/i18n.config'
 import App from '@Bundles/AppBundle/Components/App.vue'
 
-export function mountApp(): void {
+export default function mountApp(): void {
   const app = createApp(App)
   const pinia = createPinia()
 

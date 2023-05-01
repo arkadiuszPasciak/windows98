@@ -1,5 +1,5 @@
 import { config } from '@vue/test-utils'
-import { i18n } from '@Configs/I18n.config'
+import { i18n } from '@/configs/i18n.config'
 
 const plugins = {
   intlify: i18n,

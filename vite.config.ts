@@ -4,6 +4,7 @@ import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import eslintPlugin from 'vite-plugin-eslint'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import Markdown from 'vite-plugin-vue-markdown'
+import vitestConfig from './src/configs/vitest.config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -32,17 +33,5 @@ export default defineConfig({
     tsconfigPaths({ loose: true }),
   ],
   root: 'src/app',
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    include: ['**/*.units.ts', '**/*.snapshots.ts'],
-    setupFiles: ['Configs/VueTestUtils.config.ts'],
-    resolveSnapshotPath: (testPath, snapshotExtension) => {
-      return (
-        testPath.replace('/__snapshots__', '').replace('.ts', '') +
-        snapshotExtension
-      )
-    },
-    outputDiffMaxSize: 50000,
-  },
+  test: vitestConfig,
 })
