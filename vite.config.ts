@@ -26,7 +26,9 @@ export default defineConfig({
       wrapperClasses: 'markdown-content',
     }),
     VueI18nPlugin({}),
-    eslintPlugin(),
+    eslintPlugin({
+      overrideConfigFile: './src/configs/eslint.config.js',
+    }),
     tsconfigPaths({ loose: true }),
   ],
   root: 'src/app',
