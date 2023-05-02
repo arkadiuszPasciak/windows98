@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-import { i18n } from '@/configs/i18n.config'
+import { i18n } from '@CONFIGS/i18n.config'
 import App from '@APP|Bundles/AppBundle/Components/App.vue'
 
 export default function mountApp(): void {
