@@ -36,6 +36,6 @@
       "@DOCS/*": ["docs/*"]
     }
   },
-  "include": ["./src", "cypress.d.ts", "./cypress"],
+  "include": ["./src", "./cypress"],
   "exclude": ["src/configs/*.config.js"]
 }
