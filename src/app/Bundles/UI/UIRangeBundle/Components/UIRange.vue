@@ -79,5 +79,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/UIRangeBundle/Styles/UIRange.styles.scss"
+  src="@APP|Bundles/UIRangeBundle/Styles/UIRange.styles.scss"
 />

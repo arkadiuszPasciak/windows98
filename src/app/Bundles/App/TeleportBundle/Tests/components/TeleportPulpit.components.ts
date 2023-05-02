@@ -1,5 +1,5 @@
 import { createTestingPinia } from '@pinia/testing'
-import TeleportPulpit from '@Bundles/TeleportBundle/Components/TeleportPulpit.vue'
+import TeleportPulpit from '@APP|Bundles/TeleportBundle/Components/TeleportPulpit.vue'
 
 describe('[TeleportBundle]<Components>(TeleportPulpit)', async () => {
   it('renders correctly component and turn on/off modal calculator', () => {

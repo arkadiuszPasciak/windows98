@@ -1,4 +1,4 @@
-import { ILanguageLocales } from '@Bundles/LanguageBundle/Supports/Language.supports'
+import { ILanguageLocales } from '@APP|Bundles/LanguageBundle/Supports/Language.supports'
 
 export const MLanguageOptions = [
   {

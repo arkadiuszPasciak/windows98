@@ -1,5 +1,5 @@
-import TicTacToeChoosePlayer from '@Bundles/TicTacToeBundle/Components/TicTacToeChoosePlayer.vue'
-import TicTacToeChoosePlayerTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeChoosePlayerTesting.services'
+import TicTacToeChoosePlayer from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeChoosePlayer.vue'
+import TicTacToeChoosePlayerTesting from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeChoosePlayerTesting.services'
 
 const TicTacToeChoosePlayerTestingService = new TicTacToeChoosePlayerTesting()
 

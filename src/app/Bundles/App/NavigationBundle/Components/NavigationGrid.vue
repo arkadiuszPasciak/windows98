@@ -9,5 +9,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/NavigationBundle/Styles/NavigationGrid.styles.scss"
+  src="@APP|Bundles/NavigationBundle/Styles/NavigationGrid.styles.scss"
 />

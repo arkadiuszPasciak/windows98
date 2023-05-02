@@ -1,6 +1,6 @@
 import { createTestingPinia } from '@pinia/testing'
-import Notepad from '@Bundles/NotepadBundle/Components/Notepad.vue'
-import { FileSaveComponentTesting } from '@Bundles/FileBundle/Services/File.services'
+import Notepad from '@APP|Bundles/NotepadBundle/Components/Notepad.vue'
+import { FileSaveComponentTesting } from '@APP|Bundles/FileBundle/Services/File.services'
 
 const methods = new FileSaveComponentTesting()
 

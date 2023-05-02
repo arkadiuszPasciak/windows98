@@ -1,5 +1,5 @@
-import TicTacToeEnterYourName from '@Bundles/TicTacToeBundle/Components/TicTacToeEnterYourName.vue'
-import TicTacToeEnterYourNameTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeEnterYourNameTesting.services'
+import TicTacToeEnterYourName from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeEnterYourName.vue'
+import TicTacToeEnterYourNameTesting from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeEnterYourNameTesting.services'
 
 const TicTacToeEnterYourNameTestingService = new TicTacToeEnterYourNameTesting()
 

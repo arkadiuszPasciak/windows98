@@ -44,16 +44,16 @@
 <script setup lang="ts">
   import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIInput from '@Bundles/UIInputBundle/Components/UIInput.vue'
-  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
-  import UISelect from '@Bundles/UISelectBundle/Components/UISelect.vue'
-  import { MFilesTextTypes } from '@Bundles/FileBundle/Mocks/File.mocks'
-  import { saveFileOnUserDisk } from '@Bundles/FileBundle/Services/File.services'
+  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
+  import UIInput from '@APP|Bundles/UIInputBundle/Components/UIInput.vue'
+  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
+  import UISelect from '@APP|Bundles/UISelectBundle/Components/UISelect.vue'
+  import { MFilesTextTypes } from '@APP|Bundles/FileBundle/Mocks/File.mocks'
+  import { saveFileOnUserDisk } from '@APP|Bundles/FileBundle/Services/File.services'
   import {
     EFileTextTypes,
     TFileTextTypes,
-  } from '@Bundles/FileBundle/Supports/File.supports'
+  } from '@APP|Bundles/FileBundle/Supports/File.supports'
 
   const props = defineProps({
     modalState: {
@@ -85,10 +85,10 @@
   }
 </script>
 
-<i18n src="@Bundles/FileBundle/Locales/File.locales.json"></i18n>
+<i18n src="@APP|Bundles/FileBundle/Locales/File.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/FileBundle/Styles/FileSave.styles.scss"
+  src="@APP|Bundles/FileBundle/Styles/FileSave.styles.scss"
 />

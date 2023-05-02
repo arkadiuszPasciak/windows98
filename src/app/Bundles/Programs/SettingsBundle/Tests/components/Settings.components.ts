@@ -1,5 +1,5 @@
 import { createTestingPinia } from '@pinia/testing'
-import Settings from '@Bundles/SettingsBundle/Components/Settings.vue'
+import Settings from '@APP|Bundles/SettingsBundle/Components/Settings.vue'
 
 describe('[SettingsBundle]<Components>(Settings)', () => {
   beforeEach(() => {

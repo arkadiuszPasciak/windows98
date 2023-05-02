@@ -1,5 +1,5 @@
-import TimezoneSwitcher from '@Bundles/TimezoneBundle/Components/TimezoneSwitcher.vue'
-import { TimezoneComponentTesting } from '@Bundles/TimezoneBundle/Services/Timezone.services'
+import TimezoneSwitcher from '@APP|Bundles/TimezoneBundle/Components/TimezoneSwitcher.vue'
+import { TimezoneComponentTesting } from '@APP|Bundles/TimezoneBundle/Services/Timezone.services'
 
 const methods = new TimezoneComponentTesting()
 

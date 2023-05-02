@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
+  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
 
   defineProps({
     title: {
@@ -25,5 +25,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/UIFrameBundle/Styles/UIFrame.styles.scss"
+  src="@APP|Bundles/UIFrameBundle/Styles/UIFrame.styles.scss"
 />

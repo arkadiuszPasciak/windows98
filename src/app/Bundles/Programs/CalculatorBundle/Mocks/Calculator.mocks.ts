@@ -3,7 +3,7 @@ import {
   ECalculatorNumber,
   ECalculatorSign,
   ICalculatorButtons,
-} from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
+} from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
 
 export const MCalculatorButtons = [
   {

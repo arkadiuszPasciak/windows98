@@ -63,7 +63,7 @@ We use [Cypress Testing](https://www.cypress.io/) to test components
 The files are in Bundles in catalog `Tests/components`, example:
 
 ```
-@Bundles/ExampleBundle/Tests/components/Example.components.ts
+@APP|Bundles/ExampleBundle/Tests/components/Example.components.ts
 ```
 
 Commands are `npm run cypress:open` and `npm run cypress:run` - [more information here](#Commands)
@@ -75,7 +75,7 @@ We use [Vitest Testing](https://vitest.dev/) to test JavaScript/TypeScript code
 The files are in Bundles in catalog `Tests/units`, example:
 
 ```
-@Bundles/ExampleBundle/Tests/units/Example.units.ts
+@APP|Bundles/ExampleBundle/Tests/units/Example.units.ts
 ```
 
 Commands are `npm run vitest:dev` and `npm run vitest:run` - [more information here](#Commands)

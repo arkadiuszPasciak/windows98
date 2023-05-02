@@ -1,4 +1,4 @@
-import { TTicTacToePlayerSign } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
+import { TTicTacToePlayerSign } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export interface ITicTacToeCurrentBoard3x3 {
   COLUMN_1: (player: TTicTacToePlayerSign) => Array<string>

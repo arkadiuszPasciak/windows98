@@ -70,12 +70,12 @@
 <script setup lang="ts">
   import { Ref, ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
-  import { useStartStore } from '@Bundles/StartBundle/Stores/Start.stores'
-  import { IStartStoreApps } from '@Bundles/StartBundle/Supports/Start.supports'
-  import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
-  import StartPanel from '@Bundles/StartBundle/Components/StartPanel.vue'
-  import StartPanelItem from '@Bundles/StartBundle/Components/StartPanelItem.vue'
+  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
+  import { useStartStore } from '@APP|Bundles/StartBundle/Stores/Start.stores'
+  import { IStartStoreApps } from '@APP|Bundles/StartBundle/Supports/Start.supports'
+  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
+  import StartPanel from '@APP|Bundles/StartBundle/Components/StartPanel.vue'
+  import StartPanelItem from '@APP|Bundles/StartBundle/Components/StartPanelItem.vue'
 
   const { t } = useI18n()
   const store = useStartStore()
@@ -120,6 +120,10 @@
   }
 </script>
 
-<i18n src="@Bundles/StartBundle/Locales/Start.locales.json"></i18n>
+<i18n src="@APP|Bundles/StartBundle/Locales/Start.locales.json"></i18n>
 
-<style lang="scss" scoped src="@Bundles/StartBundle/Styles/Start.styles.scss" />
+<style
+  lang="scss"
+  scoped
+  src="@APP|Bundles/StartBundle/Styles/Start.styles.scss"
+/>

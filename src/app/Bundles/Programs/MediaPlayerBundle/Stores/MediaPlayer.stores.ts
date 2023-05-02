@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { mediaPlayerVideos } from '@Bundles/MediaPlayerBundle/Mocks/MediaPlayer.mocks'
+import { mediaPlayerVideos } from '@APP|Bundles/MediaPlayerBundle/Mocks/MediaPlayer.mocks'
 
 export const useMediaPlayerStore = defineStore('media-player', {
   state: () => ({

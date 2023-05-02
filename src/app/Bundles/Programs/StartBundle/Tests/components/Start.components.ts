@@ -1,5 +1,5 @@
 import { createTestingPinia } from '@pinia/testing'
-import Start from '@Bundles/StartBundle/Components/Start.vue'
+import Start from '@APP|Bundles/StartBundle/Components/Start.vue'
 
 describe('[StartBundle]<Components>(Start)', () => {
   beforeEach(() => {

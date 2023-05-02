@@ -1,4 +1,4 @@
-import UIRange from '@Bundles/UIRangeBundle/Components/UIRange.vue'
+import UIRange from '@APP|Bundles/UIRangeBundle/Components/UIRange.vue'
 
 describe('[UIRangeBundle]<Components>(UIRange)', async () => {
   it('renders correctly component horizontal', () => {

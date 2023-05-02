@@ -46,13 +46,13 @@
 <script setup lang="ts">
   import { ref, Ref, watch } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
-  import UIModalNavigationItem from '@Bundles/UIModalBundle/Components/UIModalNavigationItem.vue'
-  import UITextarea from '@Bundles/UITextareaBundle/Components/UITextarea.vue'
-  import FileOpen from '@Bundles/FileBundle/Components/FileOpen.vue'
-  import FileSave from '@Bundles/FileBundle/Components/FileSave.vue'
-  import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
-  import { useNotepadStore } from '@Bundles/NotepadBundle/Stores/Notepad.stores'
+  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
+  import UIModalNavigationItem from '@APP|Bundles/UIModalBundle/Components/UIModalNavigationItem.vue'
+  import UITextarea from '@APP|Bundles/UITextareaBundle/Components/UITextarea.vue'
+  import FileOpen from '@APP|Bundles/FileBundle/Components/FileOpen.vue'
+  import FileSave from '@APP|Bundles/FileBundle/Components/FileSave.vue'
+  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
+  import { useNotepadStore } from '@APP|Bundles/NotepadBundle/Stores/Notepad.stores'
 
   const { t } = useI18n()
 
@@ -81,10 +81,10 @@
   })
 </script>
 
-<i18n src="@Bundles/NotepadBundle/Locales/Notepad.locales.json"></i18n>
+<i18n src="@APP|Bundles/NotepadBundle/Locales/Notepad.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/NotepadBundle/Styles/Notepad.styles.scss"
+  src="@APP|Bundles/NotepadBundle/Styles/Notepad.styles.scss"
 />

@@ -1,5 +1,5 @@
 import { createTestingPinia } from '@pinia/testing'
-import ShutDown from '@Bundles/ShutDownBundle/Components/ShutDown.vue'
+import ShutDown from '@APP|Bundles/ShutDownBundle/Components/ShutDown.vue'
 
 describe('[ShutDownBundle]<Components>(ShutDown)', () => {
   beforeEach(() => {

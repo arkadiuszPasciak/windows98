@@ -1,4 +1,4 @@
-import { ITicTacToeWinningStates } from '@Bundles/TicTacToeBundle/Supports/TicTacToeWinningStates.supports'
+import { ITicTacToeWinningStates } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeWinningStates.supports'
 
 export const MTicTacToeWinningStates3x3 = {
   ALL: [

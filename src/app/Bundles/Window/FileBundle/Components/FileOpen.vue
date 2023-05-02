@@ -15,7 +15,7 @@
 <script setup lang="ts">
   import { ref, Ref } from 'vue'
   import { Nullable } from 'vitest'
-  import { openTextFileFromUserDisk } from '@Bundles/FileBundle/Services/File.services'
+  import { openTextFileFromUserDisk } from '@APP|Bundles/FileBundle/Services/File.services'
 
   const emits = defineEmits(['update:textFileValue'])
 
@@ -39,5 +39,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/FileBundle/Styles/FileOpen.styles.scss"
+  src="@APP|Bundles/FileBundle/Styles/FileOpen.styles.scss"
 />

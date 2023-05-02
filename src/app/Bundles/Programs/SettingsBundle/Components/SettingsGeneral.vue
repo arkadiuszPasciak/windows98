@@ -34,7 +34,7 @@
     getBrowserName,
     getTypeDevice,
     getOperatingSystem,
-  } from '@Bundles/UserAgentBundle/Services/UserAgent.services'
+  } from '@APP|Bundles/UserAgentBundle/Services/UserAgent.services'
 
   const { t } = useI18n()
 
@@ -45,10 +45,10 @@
   const browserName = getBrowserName(userAgent)
 </script>
 
-<i18n src="@Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>
+<i18n src="@APP|Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/SettingsBundle/Styles/SettingsGeneral.styles.scss"
+  src="@APP|Bundles/SettingsBundle/Styles/SettingsGeneral.styles.scss"
 />

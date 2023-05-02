@@ -10,5 +10,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerProgress.styles.scss"
+  src="@APP|Bundles/MediaPlayerBundle/Styles/MediaPlayerProgress.styles.scss"
 />

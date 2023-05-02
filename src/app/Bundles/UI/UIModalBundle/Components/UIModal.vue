@@ -45,9 +45,9 @@
   import { Ref, ref } from 'vue'
   import { Nullable } from 'vitest'
   import { useI18n } from 'vue-i18n'
-  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIModalNavigation from '@Bundles/UIModalBundle/Components/UIModalNavigation.vue'
-  import { TUIModalCursor } from '@Bundles/UIModalBundle/Supports/UIModal.supports'
+  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
+  import UIModalNavigation from '@APP|Bundles/UIModalBundle/Components/UIModalNavigation.vue'
+  import { TUIModalCursor } from '@APP|Bundles/UIModalBundle/Supports/UIModal.supports'
 
   const props = defineProps({
     title: {
@@ -121,10 +121,10 @@
   defineEmits(['closeModal'])
 </script>
 
-<i18n src="@Bundles/UIModalBundle/Locales/UIModal.locales.json"></i18n>
+<i18n src="@APP|Bundles/UIModalBundle/Locales/UIModal.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/UIModalBundle/Styles/UIModal.styles.scss"
+  src="@APP|Bundles/UIModalBundle/Styles/UIModal.styles.scss"
 />

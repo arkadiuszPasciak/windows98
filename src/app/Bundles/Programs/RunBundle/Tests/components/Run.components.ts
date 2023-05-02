@@ -1,5 +1,5 @@
 import { createTestingPinia } from '@pinia/testing'
-import Run from '@Bundles/RunBundle/Components/Run.vue'
+import Run from '@APP|Bundles/RunBundle/Components/Run.vue'
 
 describe('[RunBundle]<Components>(Run)', () => {
   beforeEach(() => {

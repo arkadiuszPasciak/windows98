@@ -1,4 +1,4 @@
-import { IPulpitStoreApps } from '@Bundles/PulpitBundle/Supports/Pulpit.supports'
+import { IPulpitStoreApps } from '@APP|Bundles/PulpitBundle/Supports/Pulpit.supports'
 
 export const MPulpitStoreApps = [
   {

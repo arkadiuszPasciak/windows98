@@ -1,4 +1,4 @@
-import UICheckbox from '@Bundles/UICheckboxBundle/Components/UICheckbox.vue'
+import UICheckbox from '@APP|Bundles/UICheckboxBundle/Components/UICheckbox.vue'
 
 describe('[UICheckboxBundle]<Components>(UICheckbox)', async () => {
   it('renders correctly component: variant primary, disabled false and checked false', () => {

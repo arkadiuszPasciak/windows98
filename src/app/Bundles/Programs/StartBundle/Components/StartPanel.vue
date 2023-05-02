@@ -18,5 +18,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/StartBundle/Styles/StartPanel.styles.scss"
+  src="@APP|Bundles/StartBundle/Styles/StartPanel.styles.scss"
 />

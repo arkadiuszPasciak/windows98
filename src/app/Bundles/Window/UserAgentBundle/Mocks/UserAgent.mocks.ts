@@ -1,4 +1,4 @@
-import { IUserAgentMocks } from '@Bundles/UserAgentBundle/Supports/UserAgent.supports'
+import { IUserAgentMocks } from '@APP|Bundles/UserAgentBundle/Supports/UserAgent.supports'
 
 export const MUserAgentMocks = {
   chromeMacOSXDesktop:

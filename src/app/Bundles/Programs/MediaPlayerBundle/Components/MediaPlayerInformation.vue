@@ -6,12 +6,12 @@
 </template>
 
 <script setup lang="ts">
-  import MediaPlayerStatus from '@Bundles/MediaPlayerBundle/Components/MediaPlayerStatus.vue'
-  import MediaPlayerTime from '@Bundles/MediaPlayerBundle/Components/MediaPlayerTime.vue'
+  import MediaPlayerStatus from '@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerStatus.vue'
+  import MediaPlayerTime from '@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerTime.vue'
 </script>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerInformation.styles.scss"
+  src="@APP|Bundles/MediaPlayerBundle/Styles/MediaPlayerInformation.styles.scss"
 />

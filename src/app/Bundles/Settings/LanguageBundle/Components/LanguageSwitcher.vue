@@ -13,18 +13,18 @@
 </template>
 
 <script setup lang="ts">
-  import UISelect from '@Bundles/UISelectBundle/Components/UISelect.vue'
-  import { MLanguageOptions } from '@Bundles/LanguageBundle/Mocks/Language.mocks'
+  import UISelect from '@APP|Bundles/UISelectBundle/Components/UISelect.vue'
+  import { MLanguageOptions } from '@APP|Bundles/LanguageBundle/Mocks/Language.mocks'
   import {
     setLanguageVersionInStorage,
     updateLangAttribute,
-  } from '@Bundles/LanguageBundle/Services/Language.services'
+  } from '@APP|Bundles/LanguageBundle/Services/Language.services'
 </script>
 
-<i18n src="@Bundles/LanguageBundle/Locales/Language.locales.json"></i18n>
+<i18n src="@APP|Bundles/LanguageBundle/Locales/Language.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/LanguageBundle/Styles/LanguageSwitcher.styles.scss"
+  src="@APP|Bundles/LanguageBundle/Styles/LanguageSwitcher.styles.scss"
 />

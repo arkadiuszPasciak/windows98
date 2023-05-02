@@ -4,11 +4,11 @@ import {
   isValueEqual,
   isMathematicalSignLast,
   summingResult,
-} from '@Bundles/CalculatorBundle/Services/Calculator.services'
+} from '@APP|Bundles/CalculatorBundle/Services/Calculator.services'
 import {
   TCalculatorSign,
   TCalculatorNumber,
-} from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
+} from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
 
 export const useCalculatorStore = defineStore('calculator', {
   state: () => ({

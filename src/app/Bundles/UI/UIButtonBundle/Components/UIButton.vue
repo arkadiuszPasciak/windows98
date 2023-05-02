@@ -22,5 +22,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/UIButtonBundle/Styles/UIButton.styles.scss"
+  src="@APP|Bundles/UIButtonBundle/Styles/UIButton.styles.scss"
 />

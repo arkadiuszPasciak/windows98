@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
+  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
 
   defineProps({
     name: {
@@ -29,5 +29,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/PulpitBundle/Styles/PulpitItem.styles.scss"
+  src="@APP|Bundles/PulpitBundle/Styles/PulpitItem.styles.scss"
 />

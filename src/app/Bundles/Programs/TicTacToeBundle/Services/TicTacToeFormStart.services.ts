@@ -10,7 +10,7 @@ import {
   TTicTacToeRadioDimension,
   TTicTacToeRadioPlayer,
   TTicTacToeValidationError,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 export class TicTacToeFormStart {
   public submitForm(event: Event) {

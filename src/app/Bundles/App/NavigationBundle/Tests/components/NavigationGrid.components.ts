@@ -1,4 +1,4 @@
-import NavigationGrid from '@Bundles/NavigationBundle/Components/NavigationGrid.vue'
+import NavigationGrid from '@APP|Bundles/NavigationBundle/Components/NavigationGrid.vue'
 
 describe('[NavigationBundle]<Components>(NavigationGrid)', () => {
   it('renders correctly component', () => {

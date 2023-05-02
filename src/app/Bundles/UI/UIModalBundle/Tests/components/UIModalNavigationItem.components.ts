@@ -1,4 +1,4 @@
-import UIModalNavigationItem from '@Bundles/UIModalBundle/Components/UIModalNavigationItem.vue'
+import UIModalNavigationItem from '@APP|Bundles/UIModalBundle/Components/UIModalNavigationItem.vue'
 
 describe('[UIModalBundle]<Components>(UIModalNavigationItem)', async () => {
   it('renders correctly component', () => {

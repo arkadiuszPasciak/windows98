@@ -1,6 +1,9 @@
-import { localStorageNames } from '@Bundles/StorageBundle/Configs/Storage.configs'
-import { LocalStorage } from '@Bundles/StorageBundle/Services/Storage.services'
-import { EThemes, TThemes } from '@Bundles/ThemeBundle/Supports/Theme.supports'
+import { localStorageNames } from '@APP|Bundles/StorageBundle/Configs/Storage.configs'
+import { LocalStorage } from '@APP|Bundles/StorageBundle/Services/Storage.services'
+import {
+  EThemes,
+  TThemes,
+} from '@APP|Bundles/ThemeBundle/Supports/Theme.supports'
 import { Nullable } from 'vitest'
 
 export function getThemeColorFromStorage(): TThemes {

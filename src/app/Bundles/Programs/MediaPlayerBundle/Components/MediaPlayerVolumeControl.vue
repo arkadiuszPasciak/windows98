@@ -19,5 +19,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerVolumeControl.styles.scss"
+  src="@APP|Bundles/MediaPlayerBundle/Styles/MediaPlayerVolumeControl.styles.scss"
 />

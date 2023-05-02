@@ -22,5 +22,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerTime.styles.scss"
+  src="@APP|Bundles/MediaPlayerBundle/Styles/MediaPlayerTime.styles.scss"
 />

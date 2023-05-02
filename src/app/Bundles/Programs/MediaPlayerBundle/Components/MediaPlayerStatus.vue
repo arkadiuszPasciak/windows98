@@ -14,5 +14,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerStatus.styles.scss"
+  src="@APP|Bundles/MediaPlayerBundle/Styles/MediaPlayerStatus.styles.scss"
 />

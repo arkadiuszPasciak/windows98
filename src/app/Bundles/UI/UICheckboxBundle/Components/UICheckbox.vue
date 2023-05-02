@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
+  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
 
   defineProps({
     id: {
@@ -44,5 +44,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/UICheckboxBundle/Styles/UICheckbox.styles.scss"
+  src="@APP|Bundles/UICheckboxBundle/Styles/UICheckbox.styles.scss"
 />

@@ -1,6 +1,6 @@
-import ThemeSwitcher from '@Bundles/ThemeBundle/Components/ThemeSwitcher.vue'
-import { EStorageNames } from '@Bundles/StorageBundle/Supports/Storage.supports'
-import { EThemes } from '@Bundles/ThemeBundle/Supports/Theme.supports'
+import ThemeSwitcher from '@APP|Bundles/ThemeBundle/Components/ThemeSwitcher.vue'
+import { EStorageNames } from '@APP|Bundles/StorageBundle/Supports/Storage.supports'
+import { EThemes } from '@APP|Bundles/ThemeBundle/Supports/Theme.supports'
 
 describe('[ThemeBundle]<Components>(ThemeSwitcher)', () => {
   beforeEach(() => {

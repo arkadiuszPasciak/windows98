@@ -1,6 +1,6 @@
-import TicTacToePlayers from '@Bundles/TicTacToeBundle/Components/TicTacToePlayers.vue'
-import { ETicTacToeRadioPlayer } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
-import { ETicTacToePlayerSign } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
+import TicTacToePlayers from '@APP|Bundles/TicTacToeBundle/Components/TicTacToePlayers.vue'
+import { ETicTacToeRadioPlayer } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+import { ETicTacToePlayerSign } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 describe('[TicTacToeBundle]<Components>(TicTacToePlayers)', () => {
   it('renders correctly component with userName Arkadiusz and userSign PLAYER_O', () => {

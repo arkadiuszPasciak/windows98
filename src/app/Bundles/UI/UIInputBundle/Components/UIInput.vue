@@ -79,5 +79,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/UIInputBundle/Styles/UIInput.styles.scss"
+  src="@APP|Bundles/UIInputBundle/Styles/UIInput.styles.scss"
 />

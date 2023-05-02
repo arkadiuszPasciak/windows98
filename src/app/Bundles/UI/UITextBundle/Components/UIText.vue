@@ -9,5 +9,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/UITextBundle/Styles/UIText.styles.scss"
+  src="@APP|Bundles/UITextBundle/Styles/UIText.styles.scss"
 />

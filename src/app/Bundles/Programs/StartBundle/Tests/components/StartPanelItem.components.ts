@@ -1,5 +1,5 @@
 import { createTestingPinia } from '@pinia/testing'
-import StartPanelItem from '@Bundles/StartBundle/Components/StartPanelItem.vue'
+import StartPanelItem from '@APP|Bundles/StartBundle/Components/StartPanelItem.vue'
 
 describe('[StartBundle]<Components>(StartPanelItem)', () => {
   it('should have element and class', () => {

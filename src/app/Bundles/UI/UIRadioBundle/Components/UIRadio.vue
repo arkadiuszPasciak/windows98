@@ -27,8 +27,8 @@
 </template>
 
 <script setup lang="ts">
-  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
-  import { generateDataTestName } from '@Bundles/UIRadioBundle/Services/UIRadio.services'
+  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
+  import { generateDataTestName } from '@APP|Bundles/UIRadioBundle/Services/UIRadio.services'
 
   defineProps({
     modelValue: {
@@ -55,5 +55,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/UIRadioBundle/Styles/UIRadio.styles.scss"
+  src="@APP|Bundles/UIRadioBundle/Styles/UIRadio.styles.scss"
 />

@@ -1,4 +1,4 @@
-import FileOpen from '@Bundles/FileBundle/Components/FileOpen.vue'
+import FileOpen from '@APP|Bundles/FileBundle/Components/FileOpen.vue'
 
 describe('[FileBundle]<Components>(FileOpen)', () => {
   beforeEach(() => {

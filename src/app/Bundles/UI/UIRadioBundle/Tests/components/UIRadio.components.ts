@@ -1,4 +1,4 @@
-import UIRadio from '@Bundles/UIRadioBundle/Components/UIRadio.vue'
+import UIRadio from '@APP|Bundles/UIRadioBundle/Components/UIRadio.vue'
 
 describe('[UIRadioBundle]<Components>(UIRadio)', async () => {
   it('renders correctly component: variant primary, disabled false and checked false', () => {

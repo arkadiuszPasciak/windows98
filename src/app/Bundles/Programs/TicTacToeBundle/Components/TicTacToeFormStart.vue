@@ -15,11 +15,11 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
-  import TicTacToeChoosePlayer from '@Bundles/TicTacToeBundle/Components/TicTacToeChoosePlayer.vue'
-  import TicTacToeChooseDimension from '@Bundles/TicTacToeBundle/Components/TicTacToeChooseDimension.vue'
-  import TicTacToeEnterYourName from '@Bundles/TicTacToeBundle/Components/TicTacToeEnterYourName.vue'
-  import { useTicTacToeStore } from '@Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
+  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
+  import TicTacToeChoosePlayer from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeChoosePlayer.vue'
+  import TicTacToeChooseDimension from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeChooseDimension.vue'
+  import TicTacToeEnterYourName from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeEnterYourName.vue'
+  import { useTicTacToeStore } from '@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
 
   const { t } = useI18n()
 
@@ -30,10 +30,10 @@
   }
 </script>
 
-<i18n src="@Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
+<i18n src="@APP|Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/TicTacToeBundle/Styles/TicTacToeFormStart.styles.scss"
+  src="@APP|Bundles/TicTacToeBundle/Styles/TicTacToeFormStart.styles.scss"
 />

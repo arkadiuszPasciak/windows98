@@ -4,11 +4,11 @@ import {
   TTicTacToeCheckStatusGame,
   TTicTacToeStatusGameDraw,
   TTicTacToeStatusGameWinner,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 import {
   ETicTacToePlayerSign,
   TTicTacToePlayerSign,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export class TicTacToeCheckStatusGame {
   public checkStatusGame(

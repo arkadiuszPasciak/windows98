@@ -1,4 +1,4 @@
-import { ECalculatorSign } from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
+import { ECalculatorSign } from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
 
 export function isValueEqual(
   value: string,

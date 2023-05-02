@@ -1,4 +1,4 @@
-import AudioButton from '@Bundles/AudioBundle/Components/AudioButton.vue'
+import AudioButton from '@APP|Bundles/AudioBundle/Components/AudioButton.vue'
 
 describe('[AudioBundle]<Components>(AudioButton)', () => {
   it('renders correctly component and turn on/off active class', () => {

@@ -1,13 +1,13 @@
 import { Nullable } from 'vitest'
-import { TicTacToeFormStart } from '@Bundles/TicTacToeBundle/Services/TicTacToeFormStart.services'
-import { TicTacToeGame } from '@Bundles/TicTacToeBundle/Services/TicTacToeGame.services'
-import { TTicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+import { TicTacToeFormStart } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeFormStart.services'
+import { TicTacToeGame } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeGame.services'
+import { TTicTacToeCheckStatusGame } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 import {
   ITicTacToeValidateFields,
   TTicTacToeRadioDimension,
   TTicTacToeRadioPlayer,
   TTicTacToeValidationError,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 export interface ITicTacToeStoresState {
   form: {

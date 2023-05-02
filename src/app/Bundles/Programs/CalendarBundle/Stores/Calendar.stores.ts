@@ -1,10 +1,10 @@
 import { defineStore } from 'pinia'
-import { Calendar } from '@Bundles/CalendarBundle/Services/Calendar.services'
+import { Calendar } from '@APP|Bundles/CalendarBundle/Services/Calendar.services'
 import {
   ECalendarYearChangeMethod,
   TCalendarYearChangeMethod,
   ICalendarDays,
-} from '@Bundles/CalendarBundle/Supports/Calendar.supports'
+} from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
 
 export const useCalendarStore = defineStore('calendar', {
   state: () => ({

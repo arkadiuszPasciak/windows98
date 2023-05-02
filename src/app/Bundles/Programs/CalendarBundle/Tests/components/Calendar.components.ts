@@ -1,7 +1,7 @@
 import { createTestingPinia } from '@pinia/testing'
-import CalendarSettings from '@Bundles/CalendarBundle/Components/CalendarSettings.vue'
-import { CalendarComponentTesting } from '@Bundles/CalendarBundle/Services/Calendar.services'
-import { ECalendarYearChangeMethod } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
+import CalendarSettings from '@APP|Bundles/CalendarBundle/Components/CalendarSettings.vue'
+import { CalendarComponentTesting } from '@APP|Bundles/CalendarBundle/Services/Calendar.services'
+import { ECalendarYearChangeMethod } from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
 
 const methods = new CalendarComponentTesting()
 

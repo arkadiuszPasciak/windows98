@@ -1,5 +1,5 @@
 import { createTestingPinia } from '@pinia/testing'
-import SettingsDateTime from '@Bundles/SettingsBundle/Components/SettingsDateTime.vue'
+import SettingsDateTime from '@APP|Bundles/SettingsBundle/Components/SettingsDateTime.vue'
 
 describe('[SettingsBundle]<Components>(SettingsDateTime)', () => {
   beforeEach(() => {

@@ -1,5 +1,5 @@
 import { createTestingPinia } from '@pinia/testing'
-import Pulpit from '@Bundles/PulpitBundle/Components/Pulpit.vue'
+import Pulpit from '@APP|Bundles/PulpitBundle/Components/Pulpit.vue'
 
 describe('[PulpitBundle]<Components>(Pulpit)', async () => {
   beforeEach(() => {

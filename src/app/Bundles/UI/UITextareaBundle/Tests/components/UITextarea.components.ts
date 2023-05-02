@@ -1,4 +1,4 @@
-import UITextarea from '@Bundles/UITextareaBundle/Components/UITextarea.vue'
+import UITextarea from '@APP|Bundles/UITextareaBundle/Components/UITextarea.vue'
 
 describe('[UITextareaBundle]<Components>(UITextarea)', async () => {
   it('renders correctly component: leftPrimaryWrapper like as comment', () => {

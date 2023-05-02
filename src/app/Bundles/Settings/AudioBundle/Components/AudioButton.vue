@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import { muteAllSound } from '@Bundles/AudioBundle/Services/Audio.services'
+  import { muteAllSound } from '@APP|Bundles/AudioBundle/Services/Audio.services'
   import { ref, Ref } from 'vue'
 
   const { t } = useI18n()
@@ -24,10 +24,10 @@
   }
 </script>
 
-<i18n src="@Bundles/AudioBundle/Locales/Audio.locales.json"></i18n>
+<i18n src="@APP|Bundles/AudioBundle/Locales/Audio.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/AudioBundle/Styles/AudioButton.styles.scss"
+  src="@APP|Bundles/AudioBundle/Styles/AudioButton.styles.scss"
 />

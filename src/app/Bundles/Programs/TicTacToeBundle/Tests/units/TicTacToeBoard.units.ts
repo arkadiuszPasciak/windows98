@@ -1,7 +1,7 @@
 import { expect, it, describe } from 'vitest'
-import { MTicTacToeLengthOfBoard } from '@Bundles/TicTacToeBundle/Mocks/TicTacToeBoard.mocks'
-import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
-import { ETicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+import { MTicTacToeLengthOfBoard } from '@APP|Bundles/TicTacToeBundle/Mocks/TicTacToeBoard.mocks'
+import { TicTacToeBoard } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
+import { ETicTacToeRadioDimension } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 const ticTacToeBoard3x3 = new TicTacToeBoard(
   ETicTacToeRadioDimension.THREE_X_THREE,

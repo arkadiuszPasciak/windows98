@@ -1,6 +1,6 @@
-import LanguageSwitcher from '@Bundles/LanguageBundle/Components/LanguageSwitcher.vue'
-import { ELanguageLocales } from '@Bundles/LanguageBundle/Supports/Language.supports'
-import { EStorageNames } from '@Bundles/StorageBundle/Supports/Storage.supports'
+import LanguageSwitcher from '@APP|Bundles/LanguageBundle/Components/LanguageSwitcher.vue'
+import { ELanguageLocales } from '@APP|Bundles/LanguageBundle/Supports/Language.supports'
+import { EStorageNames } from '@APP|Bundles/StorageBundle/Supports/Storage.supports'
 
 describe('[LanguageBundle]<Components>(LanguageSwitcher)', () => {
   beforeEach(() => {

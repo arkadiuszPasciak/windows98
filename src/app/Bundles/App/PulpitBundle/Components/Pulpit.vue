@@ -13,19 +13,19 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import PulpitItem from '@Bundles/PulpitBundle/Components/PulpitItem.vue'
-  import { usePulpitStore } from '@Bundles/PulpitBundle/Stores/Pulpit.stores'
-  import { IPulpitStoreApps } from '@Bundles/PulpitBundle/Supports/Pulpit.supports'
+  import PulpitItem from '@APP|Bundles/PulpitBundle/Components/PulpitItem.vue'
+  import { usePulpitStore } from '@APP|Bundles/PulpitBundle/Stores/Pulpit.stores'
+  import { IPulpitStoreApps } from '@APP|Bundles/PulpitBundle/Supports/Pulpit.supports'
 
   const { t } = useI18n()
   const store = usePulpitStore()
   const apps = store.$state.apps as IPulpitStoreApps[]
 </script>
 
-<i18n src="@Bundles/PulpitBundle/Locales/Pulpit.locales.json"></i18n>
+<i18n src="@APP|Bundles/PulpitBundle/Locales/Pulpit.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/PulpitBundle/Styles/Pulpit.styles.scss"
+  src="@APP|Bundles/PulpitBundle/Styles/Pulpit.styles.scss"
 />

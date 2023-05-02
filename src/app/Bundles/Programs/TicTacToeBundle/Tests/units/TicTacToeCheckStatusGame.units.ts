@@ -1,9 +1,9 @@
 import { expect, describe } from 'vitest'
-import { MTicTacToeCurrentBoard3x3 } from '@Bundles/TicTacToeBundle/Mocks/TicTacToeBoard.mocks'
-import { MTicTacToeWinningStates3x3 } from '@Bundles/TicTacToeBundle/Mocks/TicTacToeWinningStates.mocks'
-import { TicTacToeCheckStatusGame } from '@Bundles/TicTacToeBundle/Services/TicTacToeCheckStatusGame.services'
-import { ETicTacToeStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
-import { ETicTacToePlayerSign } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
+import { MTicTacToeCurrentBoard3x3 } from '@APP|Bundles/TicTacToeBundle/Mocks/TicTacToeBoard.mocks'
+import { MTicTacToeWinningStates3x3 } from '@APP|Bundles/TicTacToeBundle/Mocks/TicTacToeWinningStates.mocks'
+import { TicTacToeCheckStatusGame } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeCheckStatusGame.services'
+import { ETicTacToeStatusGame } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+import { ETicTacToePlayerSign } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 const ticTacToeCheckStatusGame3x3 = Reflect.construct(
   TicTacToeCheckStatusGame,

@@ -18,12 +18,12 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
-  import TicTacToeGame from '@Bundles/TicTacToeBundle/Components/TicTacToeGame.vue'
-  import TicTacToeScore from '@Bundles/TicTacToeBundle/Components/TicTacToeScore.vue'
-  import TicTacToeFormStart from '@Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue'
-  import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
-  import { useTicTacToeStore } from '@Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
+  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
+  import TicTacToeGame from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeGame.vue'
+  import TicTacToeScore from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeScore.vue'
+  import TicTacToeFormStart from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue'
+  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
+  import { useTicTacToeStore } from '@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
 
   const { t } = useI18n()
   const programStore = useProgramStore()
@@ -36,10 +36,10 @@
   }
 </script>
 
-<i18n src="@Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
+<i18n src="@APP|Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/TicTacToeBundle/Styles/TicTacToe.styles.scss"
+  src="@APP|Bundles/TicTacToeBundle/Styles/TicTacToe.styles.scss"
 />

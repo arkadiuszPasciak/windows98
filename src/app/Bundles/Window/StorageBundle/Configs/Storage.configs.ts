@@ -1,4 +1,4 @@
-import { IStorageNames } from '@Bundles/StorageBundle/Supports/Storage.supports'
+import { IStorageNames } from '@APP|Bundles/StorageBundle/Supports/Storage.supports'
 
 export const localStorageNames = {
   LANGUAGE: 'language',

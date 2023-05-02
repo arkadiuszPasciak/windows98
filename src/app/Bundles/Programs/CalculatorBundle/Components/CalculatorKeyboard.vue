@@ -45,14 +45,14 @@
 </template>
 
 <script setup lang="ts">
-  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
-  import { useCalculatorStore } from '@Bundles/CalculatorBundle/Stores/Calculator.stores'
+  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
+  import { useCalculatorStore } from '@APP|Bundles/CalculatorBundle/Stores/Calculator.stores'
   import {
     ECalculatorButton,
     TCalculatorNumber,
     TCalculatorSign,
-  } from '@Bundles/CalculatorBundle/Supports/Calculator.supports'
-  import { MCalculatorButtons } from '@Bundles/CalculatorBundle/Mocks/Calculator.mocks'
+  } from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
+  import { MCalculatorButtons } from '@APP|Bundles/CalculatorBundle/Mocks/Calculator.mocks'
 
   const calculatorStore = useCalculatorStore()
 
@@ -76,5 +76,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/CalculatorBundle/Styles/CalculatorKeyboard.styles.scss"
+  src="@APP|Bundles/CalculatorBundle/Styles/CalculatorKeyboard.styles.scss"
 />

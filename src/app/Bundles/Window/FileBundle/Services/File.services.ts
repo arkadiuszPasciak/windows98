@@ -2,7 +2,7 @@ import {
   IFilesElements,
   TFileTextTypes,
   TFileTextFileReader,
-} from '@Bundles/FileBundle/Supports/File.supports'
+} from '@APP|Bundles/FileBundle/Supports/File.supports'
 
 export function saveFileOnUserDisk(
   content: string,

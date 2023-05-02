@@ -4,7 +4,7 @@ import {
   isMathematicalSignLast,
   summingResult,
   isMathematicalOperation,
-} from '@Bundles/CalculatorBundle/Services/Calculator.services'
+} from '@APP|Bundles/CalculatorBundle/Services/Calculator.services'
 
 describe('[CalculatorBundle]<Services>(isDotExist)', () => {
   it('should return false', () => {

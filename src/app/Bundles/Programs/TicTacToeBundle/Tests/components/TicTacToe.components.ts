@@ -1,9 +1,9 @@
 import { createTestingPinia } from '@pinia/testing'
-import TicTacToe from '@Bundles/TicTacToeBundle/Components/TicTacToe.vue'
-import TicTacToeChooseDimensionTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeChooseDimensionTesting.services'
-import TicTacToeChoosePlayerTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeChoosePlayerTesting.services'
-import TicTacToeEnterYourNameTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeEnterYourNameTesting.services'
-import TicTacToeGameTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeGameTesting.services'
+import TicTacToe from '@APP|Bundles/TicTacToeBundle/Components/TicTacToe.vue'
+import TicTacToeChooseDimensionTesting from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeChooseDimensionTesting.services'
+import TicTacToeChoosePlayerTesting from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeChoosePlayerTesting.services'
+import TicTacToeEnterYourNameTesting from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeEnterYourNameTesting.services'
+import TicTacToeGameTesting from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeGameTesting.services'
 
 const TicTacToeChooseDimensionTestingService =
   new TicTacToeChooseDimensionTesting()

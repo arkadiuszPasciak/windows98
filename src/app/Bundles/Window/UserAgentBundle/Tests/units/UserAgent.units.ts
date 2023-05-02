@@ -3,8 +3,8 @@ import {
   getBrowserName,
   getTypeDevice,
   getOperatingSystem,
-} from '@Bundles/UserAgentBundle/Services/UserAgent.services'
-import { MUserAgentMocks } from '@Bundles/UserAgentBundle/Mocks/UserAgent.mocks'
+} from '@APP|Bundles/UserAgentBundle/Services/UserAgent.services'
+import { MUserAgentMocks } from '@APP|Bundles/UserAgentBundle/Mocks/UserAgent.mocks'
 
 describe('[UserAgentBundle]<Services>(getBrowserName)', () => {
   it('should return browser name', () => {

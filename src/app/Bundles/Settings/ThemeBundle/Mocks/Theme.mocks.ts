@@ -1,7 +1,7 @@
 import {
   EThemes,
   IThemeOptions,
-} from '@Bundles/ThemeBundle/Supports/Theme.supports'
+} from '@APP|Bundles/ThemeBundle/Supports/Theme.supports'
 
 export const MThemeOptions = [
   {

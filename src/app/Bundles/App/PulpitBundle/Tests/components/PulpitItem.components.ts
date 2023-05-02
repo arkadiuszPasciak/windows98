@@ -1,4 +1,4 @@
-import PulpitItem from '@Bundles/PulpitBundle/Components/PulpitItem.vue'
+import PulpitItem from '@APP|Bundles/PulpitBundle/Components/PulpitItem.vue'
 
 describe('[PulpitBundle]<Components>(PulpitItem)', async () => {
   beforeEach(() => {

@@ -22,8 +22,8 @@ services_content_4: CalendarBundle.services-content-4
 - {{ t(services_content_3) }}
 - {{ t(services_content_4) }}
 
-<i18n src="@Bundles/DocumentationBundle/Locales/Documentation.locales.json"></i18n>
-<i18n src="@Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
+<i18n src="@APP|Bundles/DocumentationBundle/Locales/Documentation.locales.json"></i18n>
+<i18n src="@APP|Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'

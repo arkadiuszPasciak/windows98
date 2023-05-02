@@ -22,16 +22,18 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"],
-      "@Assets/*": ["app/Assets/*"],
-      "@Bundles/*": [
+      "@APP/*": ["app/*"],
+      "@APP|Assets/*": ["app/Assets/*"],
+      "@APP|Bundles/*": [
         "app/Bundles/App/*",
         "app/Bundles/Programs/*",
         "app/Bundles/Settings/*",
         "app/Bundles/UI/*",
         "app/Bundles/Window/*"
       ],
-      "@Configs/*": ["app/Configs/*"],
-      "@Views/*": ["app/Views/*"]
+      "@APP|Views/*": ["app/Views/*"],
+      "@CONFIGS/*": ["configs/*"],
+      "@DOCS/*": ["docs/*"]
     }
   },
   "include": ["./src", "cypress.d.ts", "./cypress"],

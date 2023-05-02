@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import {
   TDocumentationBundles,
   EDocumentationBundles,
-} from '@Bundles/DocumentationBundle//Supports/DocumentationNavigation.supports'
+} from '@APP|Bundles/DocumentationBundle//Supports/DocumentationNavigation.supports'
 
 export const useDocumentationStore = defineStore('documentation', {
   state: () => ({

@@ -8,18 +8,18 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import CalendarMonthSwitcher from '@Bundles/CalendarBundle/Components/CalendarMonthSwitcher.vue'
-  import CalendarYearSwitcher from '@Bundles/CalendarBundle/Components/CalendarYearSwitcher.vue'
-  import CalendarView from '@Bundles/CalendarBundle/Components/CalendarView.vue'
-  import UIFrame from '@Bundles/UIFrameBundle/Components/UIFrame.vue'
+  import CalendarMonthSwitcher from '@APP|Bundles/CalendarBundle/Components/CalendarMonthSwitcher.vue'
+  import CalendarYearSwitcher from '@APP|Bundles/CalendarBundle/Components/CalendarYearSwitcher.vue'
+  import CalendarView from '@APP|Bundles/CalendarBundle/Components/CalendarView.vue'
+  import UIFrame from '@APP|Bundles/UIFrameBundle/Components/UIFrame.vue'
 
   const { t } = useI18n()
 </script>
 
-<i18n src="@Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
+<i18n src="@APP|Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/CalendarBundle/Styles/CalendarSettings.styles.scss"
+  src="@APP|Bundles/CalendarBundle/Styles/CalendarSettings.styles.scss"
 />

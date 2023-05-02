@@ -1,7 +1,7 @@
 import { expect, it, describe } from 'vitest'
 import { setActivePinia, createPinia } from 'pinia'
-import { getTimeClock } from '@Bundles/ClockBundle/Services/Clock.services'
-import { useClockStore } from '@Bundles/ClockBundle/Stores/Clock.stores'
+import { getTimeClock } from '@APP|Bundles/ClockBundle/Services/Clock.services'
+import { useClockStore } from '@APP|Bundles/ClockBundle/Stores/Clock.stores'
 
 describe('[ClockBundle]<Services>(getTimeClock)', () => {
   it('should return short time', () => {

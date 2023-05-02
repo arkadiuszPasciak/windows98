@@ -1,7 +1,7 @@
 import {
   ICalendarDays,
   IListOfMonths,
-} from '@Bundles/CalendarBundle/Supports/Calendar.supports'
+} from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
 
 export const MListOfMonths = [
   {

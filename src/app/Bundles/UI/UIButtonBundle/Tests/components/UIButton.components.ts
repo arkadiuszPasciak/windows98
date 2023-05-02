@@ -1,4 +1,4 @@
-import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
+import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
 
 describe('[UIButtonBundle]<Components>(UIButton)', async () => {
   it('renders correctly component: size medium and variant primary', () => {

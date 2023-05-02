@@ -1,5 +1,5 @@
-import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
-import { TTicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+import { TicTacToeBoard } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
+import { TTicTacToeRadioDimension } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 export class TicTacToeWinningStates {
   public readonly winningStates: Array<number[]>

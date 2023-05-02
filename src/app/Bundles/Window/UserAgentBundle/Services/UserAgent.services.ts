@@ -2,7 +2,7 @@ import {
   operationSystems,
   devicesNames,
   browserNames,
-} from '@Bundles/UserAgentBundle/Configs/UserAgent.configs'
+} from '@APP|Bundles/UserAgentBundle/Configs/UserAgent.configs'
 import {
   IUserAgentPlatform,
   IUserAgentDevices,
@@ -10,7 +10,7 @@ import {
   TUserAgentBrowsers,
   TUserAgentAllPlatforms,
   TUserAgentDevices,
-} from '@Bundles/UserAgentBundle/Supports/UserAgent.supports'
+} from '@APP|Bundles/UserAgentBundle/Supports/UserAgent.supports'
 import { Nullable } from 'vitest'
 
 class UserAgent {

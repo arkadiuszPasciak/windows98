@@ -17,10 +17,10 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
-  import DocumentationContent from '@Bundles/DocumentationBundle/Components/DocumentationContent.vue'
-  import DocumentationNavigation from '@Bundles/DocumentationBundle/Components/DocumentationNavigation.vue'
-  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
+  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
+  import DocumentationContent from '@APP|Bundles/DocumentationBundle/Components/DocumentationContent.vue'
+  import DocumentationNavigation from '@APP|Bundles/DocumentationBundle/Components/DocumentationNavigation.vue'
+  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
 
   const { t } = useI18n()
   const programStore = useProgramStore()
@@ -30,11 +30,11 @@
   }
 </script>
 
-<i18n src="@Bundles/DocumentationBundle/Locales/Documentation.locales.json">
+<i18n src="@APP|Bundles/DocumentationBundle/Locales/Documentation.locales.json">
 </i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/DocumentationBundle/Styles/Documentation.styles.scss"
+  src="@APP|Bundles/DocumentationBundle/Styles/Documentation.styles.scss"
 />

@@ -1,5 +1,5 @@
-import FileSave from '@Bundles/FileBundle/Components/FileSave.vue'
-import { FileSaveComponentTesting } from '@Bundles/FileBundle/Services/File.services'
+import FileSave from '@APP|Bundles/FileBundle/Components/FileSave.vue'
+import { FileSaveComponentTesting } from '@APP|Bundles/FileBundle/Services/File.services'
 
 const methods = new FileSaveComponentTesting()
 

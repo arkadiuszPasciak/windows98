@@ -26,22 +26,22 @@
 <script setup lang="ts">
   import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIRadio from '@Bundles/UIRadioBundle/Components/UIRadio.vue'
-  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
+  import UIRadio from '@APP|Bundles/UIRadioBundle/Components/UIRadio.vue'
+  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
   import {
     ETicTacToeInputNames,
     ETicTacToeRadioPlayer,
     TTicTacToeRadioPlayer,
-  } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+  } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
   const { t } = useI18n()
   const checkedRadioBoxes = ref('player-x') as Ref<TTicTacToeRadioPlayer>
 </script>
 
-<i18n src="@Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
+<i18n src="@APP|Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/TicTacToeBundle/Styles/TicTacToeChoosePlayer.styles.scss"
+  src="@APP|Bundles/TicTacToeBundle/Styles/TicTacToeChoosePlayer.styles.scss"
 />

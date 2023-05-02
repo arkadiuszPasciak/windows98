@@ -9,5 +9,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/UIModalBundle/Styles/UIModalNavigation.styles.scss"
+  src="@APP|Bundles/UIModalBundle/Styles/UIModalNavigation.styles.scss"
 />

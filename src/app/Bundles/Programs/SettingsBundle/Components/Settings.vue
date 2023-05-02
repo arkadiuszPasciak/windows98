@@ -14,13 +14,13 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
-  import UITabs from '@Bundles/UITabsBundle/Components/UITabs.vue'
-  import SettingsDateTime from '@Bundles/SettingsBundle/Components/SettingsDateTime.vue'
-  import SettingsGeneral from '@Bundles/SettingsBundle/Components/SettingsGeneral.vue'
-  import SettingsLanguages from '@Bundles/SettingsBundle/Components/SettingsLanguages.vue'
-  import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
-  import { TUITabsProps } from '@Bundles/UITabsBundle/Supports/UITabs.supports'
+  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
+  import UITabs from '@APP|Bundles/UITabsBundle/Components/UITabs.vue'
+  import SettingsDateTime from '@APP|Bundles/SettingsBundle/Components/SettingsDateTime.vue'
+  import SettingsGeneral from '@APP|Bundles/SettingsBundle/Components/SettingsGeneral.vue'
+  import SettingsLanguages from '@APP|Bundles/SettingsBundle/Components/SettingsLanguages.vue'
+  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
+  import { TUITabsProps } from '@APP|Bundles/UITabsBundle/Supports/UITabs.supports'
 
   const { t } = useI18n()
   const programStore = useProgramStore()
@@ -45,6 +45,6 @@
   }
 </script>
 
-<i18n src="@Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>
+<i18n src="@APP|Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>
 
 <style lang="scss" scoped />

@@ -1,7 +1,7 @@
 import { createTestingPinia } from '@pinia/testing'
-import TicTacToeScore from '@Bundles/TicTacToeBundle/Components/TicTacToeScore.vue'
-import { ETicTacToeStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
-import { ETicTacToeRadioPlayer } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+import TicTacToeScore from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeScore.vue'
+import { ETicTacToeStatusGame } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+import { ETicTacToeRadioPlayer } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 describe('[TicTacToeBundle]<Components>(TicTacToeScore)', () => {
   it('renders correctly component and user has won', () => {

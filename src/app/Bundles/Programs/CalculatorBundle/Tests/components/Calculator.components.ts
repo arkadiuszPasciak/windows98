@@ -1,5 +1,5 @@
 import { createTestingPinia } from '@pinia/testing'
-import Calculator from '@Bundles/CalculatorBundle/Components/Calculator.vue'
+import Calculator from '@APP|Bundles/CalculatorBundle/Components/Calculator.vue'
 
 describe('[CalculatorBundle]<Components>(Calculator)', () => {
   beforeEach(() => {

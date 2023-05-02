@@ -1,5 +1,5 @@
-import TicTacToeChooseDimension from '@Bundles/TicTacToeBundle/Components/TicTacToeChooseDimension.vue'
-import TicTacToeChooseDimensionTesting from '@Bundles/TicTacToeBundle/Services/TicTacToeChooseDimensionTesting.services'
+import TicTacToeChooseDimension from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeChooseDimension.vue'
+import TicTacToeChooseDimensionTesting from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeChooseDimensionTesting.services'
 
 const TicTacToeChooseDimensionTestingService =
   new TicTacToeChooseDimensionTesting()

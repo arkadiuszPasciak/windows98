@@ -11,19 +11,19 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import UIFrame from '@Bundles/UIFrameBundle/Components/UIFrame.vue'
-  import UISelect from '@Bundles/UISelectBundle/Components/UISelect.vue'
-  import { MTimezones } from '@Bundles/TimezoneBundle/Mocks/Timezone.mocks'
-  import { getTimezone } from '@Bundles/TimezoneBundle/Services/Timezone.services'
+  import UIFrame from '@APP|Bundles/UIFrameBundle/Components/UIFrame.vue'
+  import UISelect from '@APP|Bundles/UISelectBundle/Components/UISelect.vue'
+  import { MTimezones } from '@APP|Bundles/TimezoneBundle/Mocks/Timezone.mocks'
+  import { getTimezone } from '@APP|Bundles/TimezoneBundle/Services/Timezone.services'
 
   const currentTimezone = getTimezone(new Date())
   const { t } = useI18n()
 </script>
 
-<i18n src="@Bundles/TimezoneBundle/Locales/Timezone.locales.json"></i18n>
+<i18n src="@APP|Bundles/TimezoneBundle/Locales/Timezone.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/TimezoneBundle/Styles/TimezoneSwitcher.styles.scss"
+  src="@APP|Bundles/TimezoneBundle/Styles/TimezoneSwitcher.styles.scss"
 />

@@ -2,11 +2,11 @@ import { VueI18nTranslation } from 'vue-i18n'
 import {
   ETicTacToeStatusGame,
   TTicTacToeCheckStatusGame,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 import {
   ETicTacToeRadioPlayer,
   TTicTacToeRadioPlayer,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 export class TicTacToeScore {
   public getDescriptionByScoreResult(

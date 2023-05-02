@@ -1,7 +1,7 @@
 import { flushPromises, mount } from '@vue/test-utils'
 import { expect, it, describe, vi } from 'vitest'
 import { createTestingPinia } from '@pinia/testing'
-import Start from '@Bundles/StartBundle/Components/Start.vue'
+import Start from '@APP|Bundles/StartBundle/Components/Start.vue'
 
 describe('[StartBundle]<Components>(Start)', () => {
   it('should open or close panel on click', async () => {
@@ -13,8 +13,8 @@ describe('[StartBundle]<Components>(Start)', () => {
     const buttonToOpenPanel = defaultWrapper.find('.button-start')
 
     await Promise.all([
-      import('@Bundles/StartBundle/Components/StartPanelItem.vue'),
-      import('@Bundles/StartBundle/Components/StartPanel.vue'),
+      import('@APP|Bundles/StartBundle/Components/StartPanelItem.vue'),
+      import('@APP|Bundles/StartBundle/Components/StartPanel.vue'),
     ])
     expect(defaultWrapper.find('.StartPanel').exists()).not.toBeTruthy()
 

@@ -19,10 +19,10 @@
 </template>
 
 <script setup lang="ts">
-  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
-  import { useCalendarStore } from '@Bundles/CalendarBundle/Stores/Calendar.stores'
-  import { ECalendarYearChangeMethod } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
+  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
+  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
+  import { useCalendarStore } from '@APP|Bundles/CalendarBundle/Stores/Calendar.stores'
+  import { ECalendarYearChangeMethod } from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
 
   const calculatorStore = useCalendarStore()
 
@@ -40,5 +40,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/CalendarBundle/Styles/CalendarYearSwitcher.styles.scss"
+  src="@APP|Bundles/CalendarBundle/Styles/CalendarYearSwitcher.styles.scss"
 />

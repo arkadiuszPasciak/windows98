@@ -9,12 +9,12 @@
 </template>
 
 <script setup lang="ts">
-  import DocumentationNavigationItem from '@Bundles/DocumentationBundle/Components/DocumentationNavigationItem.vue'
-  import { MDocumentations } from '@Bundles/DocumentationBundle/Mocks/Documentation.mocks'
+  import DocumentationNavigationItem from '@APP|Bundles/DocumentationBundle/Components/DocumentationNavigationItem.vue'
+  import { MDocumentations } from '@APP|Bundles/DocumentationBundle/Mocks/Documentation.mocks'
 </script>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/DocumentationBundle/Styles/DocumentationNavigation.styles.scss"
+  src="@APP|Bundles/DocumentationBundle/Styles/DocumentationNavigation.styles.scss"
 />

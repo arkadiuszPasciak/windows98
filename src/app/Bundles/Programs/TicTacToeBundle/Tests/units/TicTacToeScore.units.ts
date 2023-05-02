@@ -1,7 +1,7 @@
 import { expect, it, describe } from 'vitest'
-import { TicTacToeScore } from '@Bundles/TicTacToeBundle/Services/TicTacToeScore.services'
-import { ETicTacToeStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
-import { ETicTacToeRadioPlayer } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+import { TicTacToeScore } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeScore.services'
+import { ETicTacToeStatusGame } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+import { ETicTacToeRadioPlayer } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 const { getDescriptionByScoreResult } = new TicTacToeScore()
 

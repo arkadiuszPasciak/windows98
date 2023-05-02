@@ -1,4 +1,4 @@
-import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
+import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
 import { VueI18nTranslation } from 'vue-i18n'
 
 export function checkAndRunProgram(value: string, t: VueI18nTranslation): void {

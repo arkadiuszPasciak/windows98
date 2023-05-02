@@ -1,5 +1,5 @@
 import { Nullable } from 'vitest'
-import { ITimezoneElements } from '@Bundles/TimezoneBundle/Supports/Timezone.supports'
+import { ITimezoneElements } from '@APP|Bundles/TimezoneBundle/Supports/Timezone.supports'
 
 export function getTimezone(date: Date): Nullable<number> {
   if (!date) {

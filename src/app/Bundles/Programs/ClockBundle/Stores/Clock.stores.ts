@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { getTimeClock } from '@Bundles/ClockBundle/Services/Clock.services'
+import { getTimeClock } from '@APP|Bundles/ClockBundle/Services/Clock.services'
 import { Nullable } from 'vitest'
 
 export const useClockStore = defineStore('clock', {

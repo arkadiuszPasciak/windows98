@@ -1,4 +1,4 @@
-import UIInput from '@Bundles/UIInputBundle/Components/UIInput.vue'
+import UIInput from '@APP|Bundles/UIInputBundle/Components/UIInput.vue'
 
 describe('[UIInputBundle]<Components>(UIInput)', async () => {
   it('renders correctly component: availableWrapper like as email', () => {

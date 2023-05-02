@@ -10,7 +10,7 @@
 <script setup lang="ts">
   import { PropType } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
+  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
 
   const props = defineProps({
     type: {
@@ -31,10 +31,12 @@
   ] as Array<string>
 </script>
 
-<i18n src="@Bundles/MediaPlayerBundle/Locales/MediaPlayer.locales.json"></i18n>
+<i18n
+  src="@APP|Bundles/MediaPlayerBundle/Locales/MediaPlayer.locales.json"
+></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerButtonControl.styles.scss"
+  src="@APP|Bundles/MediaPlayerBundle/Styles/MediaPlayerButtonControl.styles.scss"
 />

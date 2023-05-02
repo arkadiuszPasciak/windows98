@@ -9,9 +9,9 @@
 </template>
 
 <script setup lang="ts">
-  import NavigationPulpit from '@Bundles/NavigationBundle/Components/NavigationPulpit.vue'
-  import Pulpit from '@Bundles/PulpitBundle/Components/Pulpit.vue'
-  import TeleportPulpit from '@Bundles/TeleportBundle/Components/TeleportPulpit.vue'
+  import NavigationPulpit from '@APP|Bundles/NavigationBundle/Components/NavigationPulpit.vue'
+  import Pulpit from '@APP|Bundles/PulpitBundle/Components/Pulpit.vue'
+  import TeleportPulpit from '@APP|Bundles/TeleportBundle/Components/TeleportPulpit.vue'
 </script>
 
 <style lang="scss" scoped>

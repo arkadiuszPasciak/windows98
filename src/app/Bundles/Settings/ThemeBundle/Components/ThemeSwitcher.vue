@@ -9,14 +9,14 @@
 </template>
 
 <script setup lang="ts">
-  import UISelect from '@Bundles/UISelectBundle/Components/UISelect.vue'
-  import { MThemeOptions } from '@Bundles/ThemeBundle/Mocks/Theme.mocks'
+  import UISelect from '@APP|Bundles/UISelectBundle/Components/UISelect.vue'
+  import { MThemeOptions } from '@APP|Bundles/ThemeBundle/Mocks/Theme.mocks'
   import {
     updateThemeClass,
     setThemeColorInStorage,
     getThemeColorFromStorage,
-  } from '@Bundles/ThemeBundle/Services/Theme.services'
-  import { TThemes } from '@Bundles/ThemeBundle/Supports/Theme.supports'
+  } from '@APP|Bundles/ThemeBundle/Services/Theme.services'
+  import { TThemes } from '@APP|Bundles/ThemeBundle/Supports/Theme.supports'
 
   const themeValue = getThemeColorFromStorage()
 
@@ -26,10 +26,10 @@
   }
 </script>
 
-<i18n src="@Bundles/ThemeBundle/Locales/Theme.locales.json"></i18n>
+<i18n src="@APP|Bundles/ThemeBundle/Locales/Theme.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/ThemeBundle/Styles/ThemeSwitcher.styles.scss"
+  src="@APP|Bundles/ThemeBundle/Styles/ThemeSwitcher.styles.scss"
 />

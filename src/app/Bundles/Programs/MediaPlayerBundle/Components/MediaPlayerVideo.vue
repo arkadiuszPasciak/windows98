@@ -16,5 +16,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerVideo.styles.scss"
+  src="@APP|Bundles/MediaPlayerBundle/Styles/MediaPlayerVideo.styles.scss"
 />

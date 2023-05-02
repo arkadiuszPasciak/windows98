@@ -1,11 +1,11 @@
 import { expect, it, describe } from 'vitest'
-import { TicTacToePlayers } from '@Bundles/TicTacToeBundle/Services/TicTacToePlayers.services'
-import { ETicTacToeRadioPlayer } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+import { TicTacToePlayers } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToePlayers.services'
+import { ETicTacToeRadioPlayer } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 import {
   ETicTacToePlayerColor,
   ETicTacToePlayerType,
   ETicTacToePlayerSign,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 const ticTacToePlayersService = new TicTacToePlayers()
 

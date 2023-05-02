@@ -14,13 +14,13 @@
 </template>
 
 <script setup lang="ts">
-  import MediaPlayerButtonControl from '@Bundles/MediaPlayerBundle/Components/MediaPlayerButtonControl.vue'
-  import MediaPlayerVolumeControl from '@Bundles/MediaPlayerBundle/Components/MediaPlayerVolumeControl.vue'
-  import MediaPlayerProgress from '@Bundles/MediaPlayerBundle/Components/MediaPlayerProgress.vue'
+  import MediaPlayerButtonControl from '@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerButtonControl.vue'
+  import MediaPlayerVolumeControl from '@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerVolumeControl.vue'
+  import MediaPlayerProgress from '@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerProgress.vue'
 </script>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/MediaPlayerBundle/Styles/MediaPlayerControls.styles.scss"
+  src="@APP|Bundles/MediaPlayerBundle/Styles/MediaPlayerControls.styles.scss"
 />

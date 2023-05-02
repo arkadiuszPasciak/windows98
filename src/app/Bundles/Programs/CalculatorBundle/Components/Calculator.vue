@@ -17,10 +17,10 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import CalculatorDisplay from '@Bundles/CalculatorBundle/Components/CalculatorDisplay.vue'
-  import CalculatorKeyboard from '@Bundles/CalculatorBundle/Components/CalculatorKeyboard.vue'
-  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
-  import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
+  import CalculatorDisplay from '@APP|Bundles/CalculatorBundle/Components/CalculatorDisplay.vue'
+  import CalculatorKeyboard from '@APP|Bundles/CalculatorBundle/Components/CalculatorKeyboard.vue'
+  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
+  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
 
   const programStore = useProgramStore()
 
@@ -31,10 +31,12 @@
   const { t } = useI18n()
 </script>
 
-<i18n src="@Bundles/CalculatorBundle/Locales/Calculator.locales.json"></i18n>
+<i18n
+  src="@APP|Bundles/CalculatorBundle/Locales/Calculator.locales.json"
+></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/CalculatorBundle/Styles/Calculator.styles.scss"
+  src="@APP|Bundles/CalculatorBundle/Styles/Calculator.styles.scss"
 />

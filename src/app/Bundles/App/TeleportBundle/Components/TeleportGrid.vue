@@ -9,5 +9,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/TeleportBundle/Styles/TeleportGrid.styles.scss"
+  src="@APP|Bundles/TeleportBundle/Styles/TeleportGrid.styles.scss"
 />

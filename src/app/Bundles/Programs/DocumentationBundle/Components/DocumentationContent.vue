@@ -15,9 +15,9 @@
 </template>
 
 <script setup lang="ts">
-  import Markdown from '@Bundles/MarkdownBundle/Components/Markdown.vue'
-  import { MDocumentations } from '@Bundles/DocumentationBundle/Mocks/Documentation.mocks'
-  import { useDocumentationStore } from '@Bundles/DocumentationBundle/Stores/Documentation.stores'
+  import Markdown from '@APP|Bundles/MarkdownBundle/Components/Markdown.vue'
+  import { MDocumentations } from '@APP|Bundles/DocumentationBundle/Mocks/Documentation.mocks'
+  import { useDocumentationStore } from '@APP|Bundles/DocumentationBundle/Stores/Documentation.stores'
 
   const store = useDocumentationStore()
 </script>
@@ -25,5 +25,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/DocumentationBundle/Styles/DocumentationContent.styles.scss"
+  src="@APP|Bundles/DocumentationBundle/Styles/DocumentationContent.styles.scss"
 />

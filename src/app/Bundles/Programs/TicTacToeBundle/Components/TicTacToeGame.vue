@@ -10,9 +10,9 @@
 </template>
 
 <script setup lang="ts">
-  import TicTacToeBoard from '@Bundles/TicTacToeBundle/Components/TicTacToeBoard.vue'
-  import TicTacToePlayers from '@Bundles/TicTacToeBundle/Components/TicTacToePlayers.vue'
-  import { useTicTacToeStore } from '@Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
+  import TicTacToeBoard from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeBoard.vue'
+  import TicTacToePlayers from '@APP|Bundles/TicTacToeBundle/Components/TicTacToePlayers.vue'
+  import { useTicTacToeStore } from '@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
 
   const ticTacToeStore = useTicTacToeStore()
 </script>
@@ -20,5 +20,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/TicTacToeBundle/Styles/TicTacToeGame.styles.scss"
+  src="@APP|Bundles/TicTacToeBundle/Styles/TicTacToeGame.styles.scss"
 />

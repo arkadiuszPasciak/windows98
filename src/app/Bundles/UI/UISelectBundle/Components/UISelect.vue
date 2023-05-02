@@ -35,7 +35,7 @@
 <script setup lang="ts">
   import { computed, PropType } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import { TUISelectPropsObject } from '@Bundles/UISelectBundle/Supports/UISelect.supports'
+  import { TUISelectPropsObject } from '@APP|Bundles/UISelectBundle/Supports/UISelect.supports'
 
   const props = defineProps({
     id: {
@@ -82,14 +82,14 @@
   })
 </script>
 
-<i18n src="@Bundles/LanguageBundle/Locales/Language.locales.json"></i18n>
-<i18n src="@Bundles/ThemeBundle/Locales/Theme.locales.json"></i18n>
-<i18n src="@Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
-<i18n src="@Bundles/TimezoneBundle/Locales/Timezone.locales.json"></i18n>
-<i18n src="@Bundles/FileBundle/Locales/File.locales.json"></i18n>
+<i18n src="@APP|Bundles/LanguageBundle/Locales/Language.locales.json"></i18n>
+<i18n src="@APP|Bundles/ThemeBundle/Locales/Theme.locales.json"></i18n>
+<i18n src="@APP|Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
+<i18n src="@APP|Bundles/TimezoneBundle/Locales/Timezone.locales.json"></i18n>
+<i18n src="@APP|Bundles/FileBundle/Locales/File.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/UISelectBundle/Styles/UISelect.styles.scss"
+  src="@APP|Bundles/UISelectBundle/Styles/UISelect.styles.scss"
 />

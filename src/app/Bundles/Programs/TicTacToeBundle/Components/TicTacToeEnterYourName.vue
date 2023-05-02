@@ -13,18 +13,18 @@
 <script setup lang="ts">
   import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIInput from '@Bundles/UIInputBundle/Components/UIInput.vue'
-  import { ETicTacToeInputNames } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+  import UIInput from '@APP|Bundles/UIInputBundle/Components/UIInput.vue'
+  import { ETicTacToeInputNames } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
   const { t } = useI18n()
 
   const modelValue = ref(t('TicTacToeBundle.default-player')) as Ref<string>
 </script>
 
-<i18n src="@Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
+<i18n src="@APP|Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/TicTacToeBundle/Styles/TicTacToeEnterYourName.styles.scss"
+  src="@APP|Bundles/TicTacToeBundle/Styles/TicTacToeEnterYourName.styles.scss"
 />

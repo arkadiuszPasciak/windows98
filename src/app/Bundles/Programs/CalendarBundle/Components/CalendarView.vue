@@ -34,9 +34,9 @@
 <script setup lang="ts">
   import { onBeforeMount } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import { MShortcutDaysOfWeek } from '@Bundles/CalendarBundle/Mocks/Calendar.mocks'
-  import { useCalendarStore } from '@Bundles/CalendarBundle/Stores/Calendar.stores'
-  import { ECalendarStatusDay } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
+  import { MShortcutDaysOfWeek } from '@APP|Bundles/CalendarBundle/Mocks/Calendar.mocks'
+  import { useCalendarStore } from '@APP|Bundles/CalendarBundle/Stores/Calendar.stores'
+  import { ECalendarStatusDay } from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
 
   const { t } = useI18n()
 
@@ -47,10 +47,10 @@
   })
 </script>
 
-<i18n src="@Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
+<i18n src="@APP|Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/CalendarBundle/Styles/CalendarView.styles.scss"
+  src="@APP|Bundles/CalendarBundle/Styles/CalendarView.styles.scss"
 />

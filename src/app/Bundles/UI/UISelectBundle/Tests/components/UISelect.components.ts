@@ -1,6 +1,6 @@
-import UISelect from '@Bundles/UISelectBundle/Components/UISelect.vue'
-import { MLanguageOptions } from '@Bundles/LanguageBundle/Mocks/Language.mocks'
-import { MThemeOptions } from '@Bundles/ThemeBundle/Mocks/Theme.mocks'
+import UISelect from '@APP|Bundles/UISelectBundle/Components/UISelect.vue'
+import { MLanguageOptions } from '@APP|Bundles/LanguageBundle/Mocks/Language.mocks'
+import { MThemeOptions } from '@APP|Bundles/ThemeBundle/Mocks/Theme.mocks'
 
 describe('[UISelectBundle]<Components>(UISelect)', async () => {
   it('renders correctly component with label position top', () => {

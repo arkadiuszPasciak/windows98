@@ -48,12 +48,12 @@
 <script setup lang="ts">
   import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIInput from '@Bundles/UIInputBundle/Components/UIInput.vue'
-  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
-  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
-  import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
-  import { checkAndRunProgram } from '@Bundles/RunBundle/Services/Run.services'
+  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
+  import UIInput from '@APP|Bundles/UIInputBundle/Components/UIInput.vue'
+  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
+  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
+  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
+  import { checkAndRunProgram } from '@APP|Bundles/RunBundle/Services/Run.services'
 
   const { t } = useI18n()
   const programStore = useProgramStore()
@@ -69,6 +69,6 @@
   const modelValue = ref('') as Ref<string>
 </script>
 
-<i18n src="@Bundles/RunBundle/Locales/Run.locales.json"></i18n>
+<i18n src="@APP|Bundles/RunBundle/Locales/Run.locales.json"></i18n>
 
-<style lang="scss" scoped src="@Bundles/RunBundle/Styles/Run.styles.scss" />
+<style lang="scss" scoped src="@APP|Bundles/RunBundle/Styles/Run.styles.scss" />

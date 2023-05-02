@@ -5,8 +5,8 @@
 </template>
 
 <script setup lang="ts">
-  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
-  import { useCalculatorStore } from '@Bundles/CalculatorBundle/Stores/Calculator.stores'
+  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
+  import { useCalculatorStore } from '@APP|Bundles/CalculatorBundle/Stores/Calculator.stores'
 
   const calculatorStore = useCalculatorStore()
 </script>
@@ -14,5 +14,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/CalculatorBundle/Styles/CalculatorDisplay.styles.scss"
+  src="@APP|Bundles/CalculatorBundle/Styles/CalculatorDisplay.styles.scss"
 />

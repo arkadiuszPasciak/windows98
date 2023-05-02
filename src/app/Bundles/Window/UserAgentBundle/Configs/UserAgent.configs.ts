@@ -2,7 +2,7 @@ import {
   IUserAgentPlatform,
   IUserAgentBrowser,
   IUserAgentDevices,
-} from '@Bundles/UserAgentBundle/Supports/UserAgent.supports'
+} from '@APP|Bundles/UserAgentBundle/Supports/UserAgent.supports'
 
 export const operationSystems = [
   { name: 'Windows 3.11', regex: /Win16/ },

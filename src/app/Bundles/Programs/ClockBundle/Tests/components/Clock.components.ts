@@ -1,5 +1,5 @@
 import { createTestingPinia } from '@pinia/testing'
-import Clock from '@Bundles/ClockBundle/Components/Clock.vue'
+import Clock from '@APP|Bundles/ClockBundle/Components/Clock.vue'
 
 describe('[ClockBundle]<Components>(Clock)', () => {
   beforeEach(() => {

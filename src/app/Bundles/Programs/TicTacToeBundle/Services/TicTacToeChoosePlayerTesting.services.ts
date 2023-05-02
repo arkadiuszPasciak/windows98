@@ -1,7 +1,7 @@
 import {
   ETicTacToePlayerSign,
   TTicTacToePlayerSign,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export default class TicTacToeChoosePlayerTesting {
   public checkInputRadioPlayerO(): void {

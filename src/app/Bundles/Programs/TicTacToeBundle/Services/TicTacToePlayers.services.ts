@@ -1,7 +1,7 @@
 import {
   ETicTacToeRadioPlayer,
   TTicTacToeRadioPlayer,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 import {
   ETicTacToePlayerColor,
   ETicTacToePlayerSign,
@@ -9,7 +9,7 @@ import {
   TTicTacToePlayerColor,
   TTicTacToePlayerSign,
   TTicTacToePlayerType,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export class TicTacToePlayers {
   public setColorByPlayerType(

@@ -1,5 +1,5 @@
 import { Nullable } from 'vitest'
-import { TStorageName } from '@Bundles/StorageBundle/Supports/Storage.supports'
+import { TStorageName } from '@APP|Bundles/StorageBundle/Supports/Storage.supports'
 
 class BaseStorage {
   readonly storage: Storage

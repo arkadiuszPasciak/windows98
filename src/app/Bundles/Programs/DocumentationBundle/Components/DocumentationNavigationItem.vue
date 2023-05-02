@@ -20,9 +20,9 @@
 <script setup lang="ts">
   import { PropType } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
-  import { TDocumentationBundles } from '@Bundles/DocumentationBundle/Supports/DocumentationNavigation.supports'
-  import { useDocumentationStore } from '@Bundles/DocumentationBundle/Stores/Documentation.stores'
+  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
+  import { TDocumentationBundles } from '@APP|Bundles/DocumentationBundle/Supports/DocumentationNavigation.supports'
+  import { useDocumentationStore } from '@APP|Bundles/DocumentationBundle/Stores/Documentation.stores'
 
   defineProps({
     name: {
@@ -40,11 +40,11 @@
   }
 </script>
 
-<i18n src="@Bundles/DocumentationBundle/Locales/Documentation.locales.json">
+<i18n src="@APP|Bundles/DocumentationBundle/Locales/Documentation.locales.json">
 </i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/DocumentationBundle/Styles/DocumentationNavigationItem.styles.scss"
+  src="@APP|Bundles/DocumentationBundle/Styles/DocumentationNavigationItem.styles.scss"
 />

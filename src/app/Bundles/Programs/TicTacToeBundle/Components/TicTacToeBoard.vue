@@ -24,11 +24,11 @@
 
 <script setup lang="ts">
   import { PropType } from 'vue'
-  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
-  import { TicTacToeBoard } from '@Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
-  import { useTicTacToeStore } from '@Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
-  import { ETicTacToeStatusGame } from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
-  import { TTicTacToeRadioDimension } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
+  import { TicTacToeBoard } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeBoard.services'
+  import { useTicTacToeStore } from '@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
+  import { ETicTacToeStatusGame } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+  import { TTicTacToeRadioDimension } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
   const props = defineProps({
     dimensionType: {
@@ -51,5 +51,5 @@
 <style
   lang="scss"
   scoped
-  src="@Bundles/TicTacToeBundle/Styles/TicTacToeBoard.styles.scss"
+  src="@APP|Bundles/TicTacToeBundle/Styles/TicTacToeBoard.styles.scss"
 />

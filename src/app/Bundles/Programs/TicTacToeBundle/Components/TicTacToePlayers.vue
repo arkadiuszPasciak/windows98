@@ -14,10 +14,10 @@
 <script setup lang="ts">
   import { PropType } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIFrame from '@Bundles/UIFrameBundle/Components/UIFrame.vue'
-  import { TicTacToePlayers } from '@Bundles/TicTacToeBundle/Services/TicTacToePlayers.services'
-  import { TTicTacToeRadioPlayer } from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
-  import { ETicTacToePlayerType } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
+  import UIFrame from '@APP|Bundles/UIFrameBundle/Components/UIFrame.vue'
+  import { TicTacToePlayers } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToePlayers.services'
+  import { TTicTacToeRadioPlayer } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+  import { ETicTacToePlayerType } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
   const props = defineProps({
     userName: {
@@ -48,10 +48,10 @@
   }
 </script>
 
-<i18n src="@Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
+<i18n src="@APP|Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/TicTacToeBundle/Styles/TicTacToePlayers.styles.scss"
+  src="@APP|Bundles/TicTacToeBundle/Styles/TicTacToePlayers.styles.scss"
 />

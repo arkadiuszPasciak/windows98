@@ -6,12 +6,12 @@
 </template>
 
 <script setup lang="ts">
-  import CalendarSettings from '@Bundles/CalendarBundle/Components/CalendarSettings.vue'
-  import TimezoneSwitcher from '@Bundles/TimezoneBundle/Components/TimezoneSwitcher.vue'
+  import CalendarSettings from '@APP|Bundles/CalendarBundle/Components/CalendarSettings.vue'
+  import TimezoneSwitcher from '@APP|Bundles/TimezoneBundle/Components/TimezoneSwitcher.vue'
 </script>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/SettingsBundle/Styles/SettingsDateTime.styles.scss"
+  src="@APP|Bundles/SettingsBundle/Styles/SettingsDateTime.styles.scss"
 />

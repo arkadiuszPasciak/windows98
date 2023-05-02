@@ -58,20 +58,20 @@
 <script setup lang="ts">
   import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIButton from '@Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIModal from '@Bundles/UIModalBundle/Components/UIModal.vue'
-  import UIRadio from '@Bundles/UIRadioBundle/Components/UIRadio.vue'
-  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
+  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
+  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
+  import UIRadio from '@APP|Bundles/UIRadioBundle/Components/UIRadio.vue'
+  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
   import {
     restartSystem,
     shutDownSystem,
-  } from '@Bundles/ShutDownBundle/Services/ShutDown.services'
-  import { useProgramStore } from '@Bundles/ProgramBundle/Stores/Program.stores'
+  } from '@APP|Bundles/ShutDownBundle/Services/ShutDown.services'
+  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
   import {
     EShutDownRadioCheck,
     IShutDownRadioCheck,
     shutDownRadioInputName,
-  } from '@Bundles/ShutDownBundle/Supports/ShutDown.supports'
+  } from '@APP|Bundles/ShutDownBundle/Supports/ShutDown.supports'
 
   const { t } = useI18n()
 
@@ -96,10 +96,10 @@
   }
 </script>
 
-<i18n src="@Bundles/ShutDownBundle/Locales/ShutDown.locales.json"></i18n>
+<i18n src="@APP|Bundles/ShutDownBundle/Locales/ShutDown.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/ShutDownBundle/Styles/ShutDown.styles.scss"
+  src="@APP|Bundles/ShutDownBundle/Styles/ShutDown.styles.scss"
 />

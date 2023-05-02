@@ -4,9 +4,9 @@ import {
   MDaysOfMonth,
   MDaysOfMonth2,
   MDaysOfMonth3,
-} from '@Bundles/CalendarBundle/Mocks/Calendar.mocks'
-import { useCalendarStore } from '@Bundles/CalendarBundle/Stores/Calendar.stores'
-import { ECalendarYearChangeMethod } from '@Bundles/CalendarBundle/Supports/Calendar.supports'
+} from '@APP|Bundles/CalendarBundle/Mocks/Calendar.mocks'
+import { useCalendarStore } from '@APP|Bundles/CalendarBundle/Stores/Calendar.stores'
+import { ECalendarYearChangeMethod } from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
 
 setActivePinia(createPinia())
 const store = useCalendarStore()

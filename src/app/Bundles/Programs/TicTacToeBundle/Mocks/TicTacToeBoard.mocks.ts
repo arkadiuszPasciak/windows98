@@ -1,8 +1,8 @@
 import {
   ITicTacToeCurrentBoard3x3,
   ITicTacToeLengthOfBoard,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeBoard.supports'
-import { ETicTacToePlayerSign } from '@Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeBoard.supports'
+import { ETicTacToePlayerSign } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports'
 
 export const MTicTacToeCurrentBoard3x3 = {
   COLUMN_1: (player) => [player, '', '', player, '', '', player, '', ''],

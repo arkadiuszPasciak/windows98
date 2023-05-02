@@ -1,20 +1,20 @@
 import { defineStore } from 'pinia'
-import { TicTacToeFormStart } from '@Bundles/TicTacToeBundle/Services/TicTacToeFormStart.services'
-import { TicTacToeGame } from '@Bundles/TicTacToeBundle/Services/TicTacToeGame.services'
+import { TicTacToeFormStart } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeFormStart.services'
+import { TicTacToeGame } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeGame.services'
 import {
   ETicTacToeStatusGame,
   TTicTacToeCheckStatusGame,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports'
 import {
   ETicTacToeRadioDimension,
   ETicTacToeRadioPlayer,
   ETicTacToeValidateStatusType,
   TTicTacToeValidationError,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 import {
   ITicTacToeStoresState,
   ITicTacToeStoresActions,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeStores.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeStores.supports'
 
 export const useTicTacToeStore = defineStore('tic-tac-toe', {
   state: () =>

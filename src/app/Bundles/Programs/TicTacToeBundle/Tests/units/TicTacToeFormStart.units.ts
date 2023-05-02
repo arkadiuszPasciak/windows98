@@ -1,5 +1,5 @@
 import { expect, it, describe } from 'vitest'
-import { TicTacToeFormStart } from '@Bundles/TicTacToeBundle/Services/TicTacToeFormStart.services'
+import { TicTacToeFormStart } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeFormStart.services'
 import {
   ETicTacToeRadioDimension,
   ETicTacToeRadioPlayer,
@@ -7,7 +7,7 @@ import {
   ETicTacToeValidationError,
   ETicTacToeValidationSuccess,
   ITicTacToeValidateFields,
-} from '@Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+} from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
 const testingService = Reflect.construct(TicTacToeFormStart, []) as any
 

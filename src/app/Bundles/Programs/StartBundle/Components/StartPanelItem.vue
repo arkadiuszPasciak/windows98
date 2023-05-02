@@ -19,7 +19,7 @@
 <script setup lang="ts">
   import { PropType } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import UIText from '@Bundles/UITextBundle/Components/UIText.vue'
+  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
 
   defineProps({
     size: {
@@ -40,10 +40,10 @@
   defineEmits(['openProgram'])
 </script>
 
-<i18n src="@Bundles/StartBundle/Locales/Start.locales.json"></i18n>
+<i18n src="@APP|Bundles/StartBundle/Locales/Start.locales.json"></i18n>
 
 <style
   lang="scss"
   scoped
-  src="@Bundles/StartBundle/Styles/StartPanelItem.styles.scss"
+  src="@APP|Bundles/StartBundle/Styles/StartPanelItem.styles.scss"
 />
