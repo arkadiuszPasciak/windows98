@@ -61,7 +61,6 @@
     "stylelint": "^15.6.1",
     "stylelint-config-recommended-scss": "^11.0.0",
     "stylelint-config-recommended-vue": "^1.4.0",
-    "stylelint-prettier": "^3.0.0",
     "typescript": "^5.0.4",
     "vite": "^4.3.4",
     "vite-plugin-eslint": "^1.8.1",

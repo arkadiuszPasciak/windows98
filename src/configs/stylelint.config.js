@@ -1,5 +1,4 @@
 module.exports = {
-  plugins: ['stylelint-prettier'],
   overrides: [
     {
       files: ['*.scss', '**/*.scss'],
@@ -16,8 +15,6 @@ module.exports = {
     },
   ],
   rules: {
-    'prettier/prettier': true,
-    'string-quotes': 'single',
     'color-hex-length': 'long',
     'at-rule-no-unknown': null,
     'no-empty-source': null,
