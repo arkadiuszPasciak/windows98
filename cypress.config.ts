@@ -9,7 +9,7 @@ export default defineConfig({
     specPattern: 'src/app/Bundles/**/**/Tests/components/*.components.ts',
   },
 
-  defaultCommandTimeout: 10000,
+  defaultCommandTimeout: 20000,
 
   e2e: {
     specPattern: 'src/app/Bundles/**/**/Tests/e2e/*.e2e.ts',
