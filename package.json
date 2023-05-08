@@ -31,7 +31,7 @@
     "npm:check-updates": "npx npm-check-updates",
     "npm:update-packages": "npx npm-check-updates -u",
     "prepare": "husky install",
-    "vitest:dev": "vitest",
+    "vitest:dev": "vitest ",
     "vitest:run": "vitest run"
   },
   "dependencies": {
