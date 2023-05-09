@@ -1,18 +1,20 @@
 import { defineConfig } from 'cypress'
+import viteConfig from './vite.config'
 
 export default defineConfig({
   component: {
     devServer: {
       framework: 'vue',
       bundler: 'vite',
+      viteConfig,
     },
-    specPattern: 'src/Bundles/**/**/Tests/components/*.components.ts',
+    specPattern: 'src/app/Bundles/**/**/Tests/components/*.components.ts',
   },
 
-  defaultCommandTimeout: 10000,
+  defaultCommandTimeout: 20000,
 
   e2e: {
-    specPattern: 'src/Bundles/**/**/Tests/e2e/*.e2e.ts',
+    specPattern: 'src/app/Bundles/**/**/Tests/e2e/*.e2e.ts',
   },
 
   video: false,

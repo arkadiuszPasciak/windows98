@@ -4,9 +4,21 @@ import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import eslintPlugin from 'vite-plugin-eslint'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import Markdown from 'vite-plugin-vue-markdown'
+import vitestConfig from './src/configs/vitest.config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    outDir: '../../dist',
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import './src/app/Assets/Styles/Config/config.styles.scss';`,
+      },
+    },
+  },
+  publicDir: 'Public',
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/], // <--
@@ -14,28 +26,14 @@ export default defineConfig({
     Markdown({
       wrapperClasses: 'markdown-content',
     }),
-    VueI18nPlugin({}),
-    eslintPlugin(),
+    VueI18nPlugin({
+      strictMessage: false,
+    }),
+    eslintPlugin({
+      overrideConfigFile: './src/configs/eslint.config.js',
+    }),
     tsconfigPaths({ loose: true }),
   ],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import './src/Assets/Styles/Config/config.styles.scss';`,
-      },
-    },
-  },
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    include: ['**/*.units.ts', '**/*.snapshots.ts'],
-    setupFiles: ['./src/Configs/VueTestUtils.config.ts'],
-    resolveSnapshotPath: (testPath, snapshotExtension) => {
-      return (
-        testPath.replace('/__snapshots__', '').replace('.ts', '') +
-        snapshotExtension
-      )
-    },
-    outputDiffMaxSize: 50000,
-  },
+  root: 'src/app',
+  test: vitestConfig,
 })

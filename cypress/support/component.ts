@@ -1,7 +1,7 @@
 import { mount } from 'cypress/vue'
-import { i18n } from '@/Configs/I18n.config'
-import '@Assets/Styles/General/Base.styles.scss'
-import '@Assets/Styles/Config/Cypress.styles.scss'
+import { i18n } from '@CONFIGS/i18n.config'
+import '@APP|Assets/Styles/General/Base.styles.scss'
+import '@APP|Assets/Styles/Config/Cypress.styles.scss'
 
 Cypress.Commands.add('mount', (component, options = {}) => {
   // Setup options object

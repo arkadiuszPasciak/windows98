@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.12.0]
+        node-version: [18.16.0]
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
@@ -50,7 +50,7 @@ jobs:
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - install-cache
     steps:
@@ -68,14 +68,14 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Check types
-        run: npm run typecheck
+        run: npm run lint:types
 
   eslint-lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - type-check
     steps:
@@ -100,7 +100,7 @@ jobs:
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - type-check
     steps:
@@ -125,7 +125,7 @@ jobs:
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - type-check
     steps:
@@ -150,7 +150,7 @@ jobs:
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - eslint-lint
       - prettier-lint
@@ -170,14 +170,14 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Run Vitest tests
-        run: 'npm run test:run'
+        run: 'npm run vitest:run'
 
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - vitest-tests
     steps:
@@ -195,14 +195,14 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Build Application
-        run: npm run build
+        run: npm run app:build
 
   cypress-component-tests:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node:
-          - 18.12.0
+          - 18.16.0
     needs:
       - build
     steps:
