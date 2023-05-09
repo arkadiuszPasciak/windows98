@@ -2,7 +2,7 @@ import AudioButton from '@APP|Bundles/AudioBundle/Components/AudioButton.vue'
 
 describe('[AudioBundle]<Components>(AudioButton)', () => {
   it('renders correctly component and turn on/off active class', () => {
-    cy.viewport(16, 16)
+    cy.viewport(100, 100)
 
     cy.mount(AudioButton)
 
