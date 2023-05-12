@@ -5,6 +5,7 @@ import eslintPlugin from 'vite-plugin-eslint'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import Markdown from 'vite-plugin-vue-markdown'
 import vitestConfig from './src/configs/vitest.config'
+import { isEnvironment, EEnvironment } from './src/configs/environment.config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,7 +19,9 @@ export default defineConfig({
       },
     },
   },
-  publicDir: 'Public',
+  publicDir: isEnvironment(EEnvironment.TEST, process.env.NODE_ENV)
+    ? 'src/app/Public'
+    : 'Public',
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/], // <--
