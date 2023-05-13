@@ -5,20 +5,26 @@ import eslintPlugin from 'vite-plugin-eslint'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import Markdown from 'vite-plugin-vue-markdown'
 import vitestConfig from './src/configs/vitest.config'
+import { isEnvironment, EEnvironment } from './src/configs/environment.config'
+import { getPathMain } from './src/configs/path.config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
-    outDir: '../../dist',
+    outDir: getPathMain('dist'),
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import './src/app/Assets/Styles/Config/config.styles.scss';`,
+        additionalData: `@import '${getPathMain(
+          'src/app/Assets/Styles/Config/config.styles.scss',
+        )}';`,
       },
     },
   },
-  publicDir: 'Public',
+  publicDir: isEnvironment(EEnvironment.TEST, process.env.NODE_ENV)
+    ? getPathMain('src/app/Public')
+    : 'Public',
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/], // <--
@@ -30,7 +36,7 @@ export default defineConfig({
       strictMessage: false,
     }),
     eslintPlugin({
-      overrideConfigFile: './src/configs/eslint.config.js',
+      overrideConfigFile: getPathMain('src/configs/eslint.config.js'),
     }),
     tsconfigPaths({ loose: true }),
   ],

@@ -1,125 +1,76 @@
 # Windows98
 
-My sandbox to improve my programming skills based on Windows 98 :)
+Welcome to **Windows98**, a creative endeavor where I am re-building the look and feel of Windows98 right in your browser. This project is more than just a nostalgic trip down memory lane, it serves as my personal sandbox for refining and improving my programming skills.
 
-Welcome to the Windows 98 project! This project aims to recreate the classic operating system, [Windows 98](https://en.wikipedia.org/wiki/Windows_98), using modern technologies. Windows 98 was a groundbreaking operating system that set the standard for personal computing in the late 90s.
+## Technologies
 
-However, with the advancement of technology, it has become obsolete and unsupported by [Microsoft](https://www.microsoft.com/en-gb). With this project, we seek to bring back the nostalgia and functionality of this classic operating system while using modern programming tools and techniques. My goal is to create a stable and functional operating system that can be most similiar to the original. This documentation aims to provide you with all the necessary information to use, contribute, and improve the Windows 98 project.
+This project utilizes an array of modern web technologies and tools:
 
-I hope that this project will bring back fond memories of using the original Windows 98 and inspire you to contribute to the development of this project.
+- The project is bundled with [Vite](https://vitejs.dev/), a next-generation frontend tooling.
+- It's built on the [Vue 3](https://v3.vuejs.org/) framework, using [TypeScript](https://www.typescriptlang.org/) for static type checking.
+- Styling is crafted with [SCSS](https://sass-lang.com/), a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
+- State management is handled using [Pinia](https://pinia.esm.dev/), an intuitive and type safe store for Vue.
+- Comprehensive testing is performed with [Cypress](https://www.cypress.io/) and [Vitest](https://vitest.dev/).
+- Internationalization is achieved through [vue-i18n](https://kazupon.github.io/vue-i18n/).
+- Types are checked using [vue-tsc](https://github.com/johnsoncodehk/volar#using).
+- Linting tools include [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [Stylelint](https://stylelint.io/), and [lint-staged](https://github.com/okonet/lint-staged).
+- Git hooks are modified with [Husky](https://typicode.github.io/husky/#/).
+- Continuous Integration and Continuous Deployment (CI/CD) is managed with [GitHub Actions](https://github.com/features/actions).
+- Documentation is created with [Vitepress](https://vitepress.vuejs.org/).
+- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) is used to keep packages updated.
 
-## Table of Contents
+Feel free to explore the project, provide feedback, and contribute if you're interested. Enjoy the trip back to Windows98, right in your browser!
 
-- [Windows98](#windows98)
-  - [Features](#features)
-  - [Quick Start](#quick-start)
-    - [Install application](#install-application)
-    - [Update packages](#update-packages)
-  - [Deploy](#deploy)
-    - [Node.js server](#nodejs-server)
-  - [Testing](#testing)
-  - [Commands](#commands)
-  - [Bundle Structure](#bundle-structure)
+## Documentation
 
-## Features
-
-- 🖼 [Get ready for a development environment that can finally catch up with you](https://vitejs.dev/)
-- 📑 [Builds your next application with Vue 3](https://vuejs.org/)
-- 🤖 [Strongly typed, object oriented, compiled language (TypeScript)](https://www.typescriptlang.org/)
-- 🛹 [State & Store Management (Pinia)](https://pinia.vuejs.org/)
-- 🚩 [Localization (i18n) by @intlify](https://github.com/intlify/bundle-tools/blob/main/packages/vite-plugin-vue-i18n/README.md)
-- 🐶 [Improves your commits and more (Husky)](https://typicode.github.io/husky/)
-- ⚡ [Blazing Fast Unit Test Framework (Vitest)](https://vitest.dev/)
-- 🔬 [Fast, easy and reliable web testing for any applications or components that run in a browser (Cypress)](https://www.cypress.io/)
-- 🐛 [Helps you find and fix problems with your JavaScript (Eslint)](https://eslint.org/)
-- 🖌 [Helps you find and fix problems with your SCSS (Stylelint)](https://stylelint.io/)
-- 🖨 [Takes your code and reprints to coding standards (Prettier)](https://prettier.io/)
-- 📦 [Upgrades your package.json dependencies to the latest versions (npm-check-updates)](https://github.com/raineorshine/npm-check-updates)
+- [Windows98 Documentation]()
+  - Guide
+    - [Manual Installation]()
+    - [Building for Production]()
+    - [Run a Development Server]()
+    - [Preview a Production Server]()
+  - References
+    - [CLI]()
+    - [Config]()
+    - [Features]()
+    - [Git hooks]()
+    - [IDE/VSCode]()
+    - [Internationalization]()
+    - [License]()
+    - [Linters]()
+    - [SRC Structure]()
+    - [Testing]()
 
 ## Quick Start
 
-### Install application
+1. Ensure you have Node.js v18.16.0 installed. If not, download and install it from https://nodejs.org/en/download/. If you have a different version of Node.js installed, you can use Node Version Manager (NVM) to switch between versions. To install NVM, follow the instructions at https://github.com/nvm-sh/nvm#installing-and-updating. Once installed, use nvm install 18.16.0 to install Node.js v18.16.0 and nvm use 18.16.0 to switch to it.
 
-- This project using `npm` as package manager.
-- Clone this project to your computer `git clone https://github.com/arkadiuszPasciak/windows98`
-- Set node version on `18.12.1`
-- Install dependencies `npm install`
-- Run `npm run app:dev` to start development server and open `http://localhost:5173/` in your browser
+2. Clone the repository by running.
 
-### Update packages
-
-[npm-check-updates](https://github.com/raineorshine/npm-check-updates) is fully compatible with yarn
-
-- Run `npm run npm:check-updates` to show all packages to upgrade in `package.json`
-- Run `npm run npm:check-packages` to upgrade all packages in `package.json`
-- Run `npm run install` to install new versions
-
-## Testing
-
-### Cypress Testing
-
-We use [Cypress Testing](https://www.cypress.io/) to test components
-
-The files are in Bundles in catalog `Tests/components`, example:
-
-```
-@APP|Bundles/ExampleBundle/Tests/components/Example.components.ts
+```bash
+git clone https://github.com/arkadiuszPasciak/windows98.git
 ```
 
-Commands are `npm run cypress:open` and `npm run cypress:run` - [more information here](#Commands)
+3. Navigate to the cloned directory.
 
-### Vitest Testing
-
-We use [Vitest Testing](https://vitest.dev/) to test JavaScript/TypeScript code
-
-The files are in Bundles in catalog `Tests/units`, example:
-
-```
-@APP|Bundles/ExampleBundle/Tests/units/Example.units.ts
+```bash
+cd windows98
 ```
 
-Commands are `npm run vitest:dev` and `npm run vitest:run` - [more information here](#Commands)
+4. Install the required dependencies.
 
-## Deploy
-
-### Node.js server
-
-- Run `npm run app:build` to build the project
-- Serve `dist/index.html` file
-  Checkout the [deployment documentation](https://vitejs.dev/guide/build.html).
-
-## Commands
-
-- [`npm install`](https://docs.npmjs.com/cli/v6/commands/npm-install) to install the project
-- [`npm run prepare`](https://typicode.github.io/husky/#/?id=install) to install the husky. It's automatically after `npm install`
-- [`npm update:packages`](https://www.npmjs.com/package/npm-check-updates) to update npm packages
-- [`npm run app:dev`](https://vitejs.dev/guide/#command-line-interface) to start dev server
-- [`npm run app:build`](https://vitejs.dev/guide/#command-line-interface) to build for productin
-- [`npm run app:preview`](https://vitejs.dev/guide/#command-line-interface) to start preview production build
-- [`npm run lint:js`](https://eslint.org/docs/latest/user-guide/command-line-interface) to show files `js, ts, vue` to lint
-- [`npm run lint:styles`](https://stylelint.io/user-guide/usage/cli/) to show files `scss, vue` to lint
-- [`npm run lint:prettier`](https://stylelint.io/user-guide/usage/cli/) to show files `*` to format
-- [`npm run lintfix:js`](https://eslint.org/docs/latest/user-guide/command-line-interface) to fix files `js, ts, vue`
-- [`npm run lintfix:styles`](https://stylelint.io/user-guide/usage/cli/) to fix files `scss, vue`
-- [`npm run lintfix:prettier`](https://stylelint.io/user-guide/usage/cli/) to format files `*`
-- [`npm run lint:types`](https://www.npmjs.com/package/vue-tsc) to test types
-- [`npm run vitest:dev`](https://vitest.dev/guide/cli.html#vitest) to test in the current directory
-- [`npm run vitest:run`](https://vitest.dev/guide/cli.html#vitest-run) to test on single run without watch mode
-- [`npm run cypress:open`](https://docs.cypress.io/guides/guides/command-line#cypress-open) to open Cypress CLI
-- [`npm run cypress:run`](https://docs.cypress.io/guides/guides/command-line#cypress-run) to test all Cypress Component Testing
-- [`npm run npm:check-updates`](https://github.com/raineorshine/npm-check-updates#installation) to show all packages to upgrade in `package.json`
-- [`npm run npm:update-packages`](https://github.com/raineorshine/npm-check-updates#installation) to upgrade all packages in `package.json`
-
-## Bundle structure
-
+```bash
+npm install
 ```
-Components
-Locales
-Mocks
-Services
-Stores
-Styles
-Supports
-Tests
-└── units
+
+5. Start the development mode.
+
+```bash
+npm run app:dev
 ```
+
+Now you can access the application in your browser at http://localhost:5173. Enjoy!
+
+## License
+
+This project is licensed under the MIT [license](src/docs/reference/license.md).
