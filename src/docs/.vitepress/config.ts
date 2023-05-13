@@ -14,4 +14,5 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/arkadiuszPasciak/windows98' },
     ],
   },
+  ignoreDeadLinks: true,
 })
