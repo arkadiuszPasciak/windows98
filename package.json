@@ -18,8 +18,8 @@
     "docs:build": "vitepress build src/docs",
     "docs:dev": "vitepress dev src/docs",
     "docs:preview": "vitepress preview src/docs",
-    "cypress:open": "NODE_ENV=test cypress open",
-    "cypress:run": "NODE_ENV=test cypress run --component --browser chrome",
+    "cypress:open": "NODE_ENV=test cypress open --config-file ./src/configs/cypress.config.ts",
+    "cypress:run": "NODE_ENV=test cypress run --config-file ./src/configs/cypress.config.ts --component --browser chrome",
     "lint:js": "eslint -c ./src/configs/eslint.config.js --ext \".ts,.js,.vue\" .",
     "lint:prettier": "prettier --config ./src/configs/prettier.config.js --check .",
     "lint:staged": "npx lint-staged --config ./src/configs/lint-staged.config.js --no-stash",
@@ -31,7 +31,7 @@
     "npm:check-updates": "npx npm-check-updates",
     "npm:update-packages": "npx npm-check-updates -u",
     "prepare": "husky install",
-    "vitest:dev": "vitest ",
+    "vitest:dev": "vitest",
     "vitest:run": "vitest run"
   },
   "dependencies": {
