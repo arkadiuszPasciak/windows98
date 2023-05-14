@@ -25,6 +25,12 @@ export const MStartStoreApps = [
               iconName: 'notepad',
             },
           },
+          {
+            data: {
+              name: 'StartBundle.timer',
+              iconName: 'timer',
+            },
+          },
         ],
       },
       {

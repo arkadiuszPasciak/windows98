@@ -17,6 +17,7 @@
     "StartBundle.shut-down": "Shut Down...",
     "StartBundle.start": "Start",
     "StartBundle.tic-tac-toe": "Tic Tac Toe",
+    "StartBundle.timer": "Timer",
     "StartBundle.windows-logo": "Windows logo"
   },
   "pl": {
@@ -37,6 +38,7 @@
     "StartBundle.shut-down": "Wyłącz...",
     "StartBundle.start": "Start",
     "StartBundle.tic-tac-toe": "Kółko i krzyżyk",
+    "StartBundle.timer": "Minutnik",
     "StartBundle.windows-logo": "Windows logo"
   }
 }

@@ -114,6 +114,9 @@
       case 'StartBundle.tic-tac-toe':
         programStore.updateTicTacToeModal(true)
         break
+      case 'StartBundle.timer':
+        programStore.updateTimerModal(true)
+        break
     }
 
     togglePrimaryPanel()
