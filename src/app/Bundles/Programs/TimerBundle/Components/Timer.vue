@@ -8,13 +8,17 @@
     :modal-state="programStore.modalTimer"
     @close-modal="closeModal"
   >
-    <div class="content">...content</div>
+    <div class="content">
+      <TimerDisplay />
+    </div>
   </UIModal>
 </template>
 
 <script setup lang="ts">
+  // https://cdn.windowsreport.com/wp-content/uploads/2016/11/cook-timer-windows.png
   import { useI18n } from 'vue-i18n'
   import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
+  import TimerDisplay from '@APP|Bundles/TimerBundle/Components/TimerDisplay.vue'
   import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
 
   const { t } = useI18n()
