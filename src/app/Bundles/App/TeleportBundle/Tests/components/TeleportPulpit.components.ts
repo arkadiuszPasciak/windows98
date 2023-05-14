@@ -176,4 +176,29 @@ describe('[TeleportBundle]<Components>(TeleportPulpit)', async () => {
 
     cy.get('div.UIModal.TicTacToe').should('not.exist')
   })
+
+  it('renders correctly component and turn on/off modal timer', () => {
+    cy.viewport(330, 180)
+
+    cy.mount(TeleportPulpit, {
+      global: {
+        plugins: [
+          createTestingPinia({
+            createSpy: cy.spy,
+            initialState: {
+              program: { modalTimer: true },
+            },
+            stubActions: false,
+          }),
+        ],
+      },
+    })
+
+    cy.get('div.TeleportGrid.TeleportPulpit')
+    cy.get('div.UIModal.Timer')
+
+    cy.get('[data-test="ui-modal-button-close"]').click()
+
+    cy.get('div.UIModal.Timer').should('not.exist')
+  })
 })

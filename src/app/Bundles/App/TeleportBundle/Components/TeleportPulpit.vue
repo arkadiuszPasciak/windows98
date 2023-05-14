@@ -8,6 +8,7 @@
     <Settings />
     <ShutDown />
     <TicTacToe />
+    <Timer />
   </TeleportGrid>
 </template>
 
@@ -46,6 +47,10 @@
 
   const TicTacToe = defineAsyncComponent(
     () => import('@APP|Bundles/TicTacToeBundle/Components/TicTacToe.vue'),
+  )
+
+  const Timer = defineAsyncComponent(
+    () => import('@APP|Bundles/TimerBundle/Components/Timer.vue'),
   )
 </script>
 
