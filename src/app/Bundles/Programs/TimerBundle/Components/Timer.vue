@@ -9,6 +9,7 @@
     @close-modal="closeModal"
   >
     <div class="content">
+      <TimerPresets />
       <TimerDisplay />
     </div>
   </UIModal>
@@ -19,6 +20,7 @@
   import { useI18n } from 'vue-i18n'
   import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
   import TimerDisplay from '@APP|Bundles/TimerBundle/Components/TimerDisplay.vue'
+  import TimerPresets from '@APP|Bundles/TimerBundle/Components/TimerPresets.vue'
   import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
 
   const { t } = useI18n()

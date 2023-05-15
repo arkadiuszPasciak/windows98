@@ -1,8 +1,20 @@
 {
   "en": {
+    "TimerBundle.presets.custom": "Custom",
+    "TimerBundle.presets.fifteen-minutes": "15 min",
+    "TimerBundle.presets.five-minutes": "5 min",
+    "TimerBundle.presets.ten-minutes": "10 min",
+    "TimerBundle.presets.three-minutes": "3 min",
+    "TimerBundle.presets.title": "Presets",
     "TimerBundle.title": "Timer"
   },
   "pl": {
+    "TimerBundle.presets.custom": "Niestandardowe",
+    "TimerBundle.presets.fifteen-minutes": "15 min",
+    "TimerBundle.presets.five-minutes": "5 min",
+    "TimerBundle.presets.ten-minutes": "10 min",
+    "TimerBundle.presets.three-minutes": "3 min",
+    "TimerBundle.presets.title": "Presety",
     "TimerBundle.title": "Minutnik"
   }
 }
