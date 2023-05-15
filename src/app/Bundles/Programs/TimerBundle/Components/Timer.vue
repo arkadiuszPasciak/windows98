@@ -10,7 +10,16 @@
   >
     <div class="content">
       <TimerPresets />
+
       <TimerDisplay />
+
+      <UIButton class="button is-start">
+        {{ t('TimerBundle.button.start') }}
+      </UIButton>
+
+      <UIButton class="button is-reset">
+        {{ t('TimerBundle.button.reset') }}
+      </UIButton>
     </div>
   </UIModal>
 </template>
@@ -18,6 +27,7 @@
 <script setup lang="ts">
   // https://cdn.windowsreport.com/wp-content/uploads/2016/11/cook-timer-windows.png
   import { useI18n } from 'vue-i18n'
+  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
   import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
   import TimerDisplay from '@APP|Bundles/TimerBundle/Components/TimerDisplay.vue'
   import TimerPresets from '@APP|Bundles/TimerBundle/Components/TimerPresets.vue'

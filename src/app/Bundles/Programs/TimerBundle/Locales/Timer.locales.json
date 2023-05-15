@@ -1,5 +1,8 @@
 {
   "en": {
+    "TimerBundle.button.reset": "Reset",
+    "TimerBundle.button.start": "Start",
+    "TimerBundle.button.stop": "Stop",
     "TimerBundle.presets.custom": "Custom",
     "TimerBundle.presets.fifteen-minutes": "15 min",
     "TimerBundle.presets.five-minutes": "5 min",
@@ -9,6 +12,9 @@
     "TimerBundle.title": "Timer"
   },
   "pl": {
+    "TimerBundle.button.reset": "Reset",
+    "TimerBundle.button.start": "Start",
+    "TimerBundle.button.stop": "Stop",
     "TimerBundle.presets.custom": "Niestandardowe",
     "TimerBundle.presets.fifteen-minutes": "15 min",
     "TimerBundle.presets.five-minutes": "5 min",
