@@ -22,4 +22,8 @@
   }
 </script>
 
-<style lang="scss" scoped />
+<style
+  lang="scss"
+  scoped
+  src="@APP|Bundles/TimerBundle/Styles/TimerMinutesSwitcher.styles.scss"
+/>

@@ -1,10 +1,11 @@
 .TimerDisplay {
+  grid-area: 3 / 1 / 5 / 3;
   background-color: var(--background-color-white);
   max-width: 203px;
   width: 100%;
   padding: 5px;
   box-shadow: var(--border-field);
-  @include font('bold', 40, 44);
+  @include font('bold', 39, 44);
   letter-spacing: 3px;
   color: var(--text-color);
 }

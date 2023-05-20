@@ -1,5 +1,13 @@
-.Run {
+.Timer {
   .content {
     display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 75px 30px 25px 25px;
+    padding: 0 10px 10px;
+  }
+
+  .button {
+    max-width: 80px;
+    justify-self: flex-end;
   }
 }
