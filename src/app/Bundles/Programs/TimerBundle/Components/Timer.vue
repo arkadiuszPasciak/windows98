@@ -11,6 +11,12 @@
     <div class="content">
       <TimerPresets />
 
+      <TimerHoursSwitcher />
+
+      <TimerMinutesSwitcher />
+
+      <TimerSecondsSwitcher />
+
       <TimerDisplay />
 
       <UIButton class="button is-start">
@@ -30,7 +36,10 @@
   import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
   import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
   import TimerDisplay from '@APP|Bundles/TimerBundle/Components/TimerDisplay.vue'
+  import TimerHoursSwitcher from '@APP|Bundles/TimerBundle/Components/TimerHoursSwitcher.vue'
+  import TimerMinutesSwitcher from '@APP|Bundles/TimerBundle/Components/TimerMinutesSwitcher.vue'
   import TimerPresets from '@APP|Bundles/TimerBundle/Components/TimerPresets.vue'
+  import TimerSecondsSwitcher from '@APP|Bundles/TimerBundle/Components/TimerSecondsSwitcher.vue'
   import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
 
   const { t } = useI18n()
