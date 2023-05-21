@@ -19,8 +19,14 @@
 
       <TimerDisplay />
 
-      <UIButton class="button is-start">
-        {{ t('TimerBundle.button.start') }}
+      <UIButton class="button is-start" @click="timerStore.startTime">
+        <template v-if="timerStore.status">
+          {{ t('TimerBundle.button.stop') }}
+        </template>
+
+        <template v-else>
+          {{ t('TimerBundle.button.start') }}
+        </template>
       </UIButton>
 
       <UIButton class="button is-reset">
@@ -41,9 +47,13 @@
   import TimerPresets from '@APP|Bundles/TimerBundle/Components/TimerPresets.vue'
   import TimerSecondsSwitcher from '@APP|Bundles/TimerBundle/Components/TimerSecondsSwitcher.vue'
   import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
+  import { useTimerStore } from '@APP|Bundles/TimerBundle/Stores/Timer.stores'
 
   const { t } = useI18n()
+
   const programStore = useProgramStore()
+
+  const timerStore = useTimerStore()
 
   const closeModal = (): void => {
     programStore.updateTimerModal(false)

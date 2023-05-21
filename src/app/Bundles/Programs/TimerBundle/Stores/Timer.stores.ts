@@ -50,5 +50,8 @@ export const useTimerStore = defineStore('timer', {
 
       this.presets = presets
     },
+    startTime(): void {
+      this.status = !this.status
+    },
   },
 })
