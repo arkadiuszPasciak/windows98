@@ -6,6 +6,7 @@
       :name="preset.name"
       :checked="preset.checked"
       :model-value="store.presets"
+      :disabled="store.disabled.presets"
       @update:model-value="store.updatePresets($event)"
     >
       {{ t(preset.text) }}

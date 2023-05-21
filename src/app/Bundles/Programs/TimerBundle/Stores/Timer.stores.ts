@@ -21,6 +21,10 @@ export const useTimerStore = defineStore('timer', {
       minutes: 0 as number,
       seconds: 0 as number,
     },
+    disabled: {
+      presets: false,
+      switcher: false,
+    },
   }),
   actions: {
     changeTimeSwitcher(
@@ -52,6 +56,11 @@ export const useTimerStore = defineStore('timer', {
     },
     startTime(): void {
       this.status = !this.status
+
+      this.changeDisabledTime(this.status)
+    },
+    changeDisabledTime(status: boolean): void {
+      this.disabled.presets = status
     },
   },
 })
