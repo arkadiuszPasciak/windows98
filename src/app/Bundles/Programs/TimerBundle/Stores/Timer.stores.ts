@@ -5,20 +5,28 @@ import {
   TTimerSwitcherMethod,
   TTimerSwitcherType,
 } from '@APP|Bundles/TimerBundle/Supports/TimerSwitcher.supports'
+import {
+  TTimerPresetsRadioCheck,
+  ETimerPresetsRadioCheck,
+} from '@APP|Bundles/TimerBundle/Supports/TimerPresets.supports'
 
 const TimerService = new Timer()
 
 export const useTimerStore = defineStore('timer', {
   state: () => ({
+    presets: ETimerPresetsRadioCheck.THREE_MINUTES as TTimerPresetsRadioCheck,
     status: false,
     switcher: {
-      hours: 0,
-      minutes: 0,
-      seconds: 0,
+      hours: 0 as number,
+      minutes: 0 as number,
+      seconds: 0 as number,
     },
   }),
   actions: {
-    changeTimeSwitcher(method: TTimerSwitcherMethod, type: TTimerSwitcherType) {
+    changeTimeSwitcher(
+      method: TTimerSwitcherMethod,
+      type: TTimerSwitcherType,
+    ): void {
       if (!method || !type) {
         return
       }
@@ -34,6 +42,13 @@ export const useTimerStore = defineStore('timer', {
       } else if (method === ETimerSwitcherMethod.DECREASE) {
         this.switcher[type] -= 1
       }
+    },
+    updatePresets(presets: TTimerPresetsRadioCheck): void {
+      if (!presets) {
+        return
+      }
+
+      this.presets = presets
     },
   },
 })

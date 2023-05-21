@@ -5,8 +5,8 @@
       :key="`time-presets-${id}`"
       :name="preset.name"
       :checked="preset.checked"
-      :model-value="preset.modelValue"
-      @update:model-value="checkedRadioBoxes = $event"
+      :model-value="store.presets"
+      @update:model-value="store.updatePresets($event)"
     >
       {{ t(preset.text) }}
     </UIRadio>
@@ -14,16 +14,15 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, Ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIFrame from '@APP|Bundles/UIFrameBundle/Components/UIFrame.vue'
   import UIRadio from '@APP|Bundles/UIRadioBundle/Components/UIRadio.vue'
   import { MTimerPresets } from '@APP|Bundles/TimerBundle/Mocks/TimerPresets.mocks'
-  import { TTimerPresetsRadioCheck } from '@APP|Bundles/TimerBundle/Supports/TimerPresets.supports'
+  import { useTimerStore } from '@APP|Bundles/TimerBundle/Stores/Timer.stores'
 
   const { t } = useI18n()
 
-  const checkedRadioBoxes = ref('3 min') as Ref<TTimerPresetsRadioCheck>
+  const store = useTimerStore()
 </script>
 
 <i18n src="@APP|Bundles/TimerBundle/Locales/Timer.locales.json"></i18n>
