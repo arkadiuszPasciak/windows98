@@ -3,22 +3,35 @@
     class="TimerHoursSwitcher"
     :input="{ id: 'timer-hours-stepper' }"
     :field-modification="false"
-    :model-value="0"
+    :model-value="store.switcher.hours"
     @increase="increase"
     @decrease="decrease"
-    @value="0"
+    @value="store.switcher.hours"
   />
 </template>
 
 <script setup lang="ts">
   import UIStepper from '@APP|Bundles/UIStepperBundle/Components/UIStepper.vue'
+  import { useTimerStore } from '@APP|Bundles/TimerBundle/Stores/Timer.stores'
+  import {
+    ETimerSwitcherMethod,
+    ETimerSwitcherType,
+  } from '@APP|Bundles/TimerBundle/Supports/TimerSwitcher.supports'
+
+  const store = useTimerStore()
 
   const increase = (): void => {
-    console.log('increase')
+    store.changeTimeSwitcher(
+      ETimerSwitcherMethod.INCREASE,
+      ETimerSwitcherType.HOURS,
+    )
   }
 
   const decrease = (): void => {
-    console.log('decrease')
+    store.changeTimeSwitcher(
+      ETimerSwitcherMethod.DECREASE,
+      ETimerSwitcherType.HOURS,
+    )
   }
 </script>
 
