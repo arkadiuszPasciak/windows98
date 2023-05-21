@@ -4,7 +4,7 @@
     :title="t('TimerBundle.title')"
     :resize-window="false"
     width="330px"
-    height="190px"
+    height="225px"
     :modal-state="programStore.modalTimer"
     @close-modal="closeModal"
   >
