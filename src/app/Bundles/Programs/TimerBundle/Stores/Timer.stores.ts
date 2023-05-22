@@ -72,5 +72,13 @@ export const useTimerStore = defineStore('timer', {
         this.disabled.switcher = true
       }
     },
+    resetTime(): void {
+      this.switcher.seconds = 0
+      this.switcher.minutes = 0
+      this.switcher.hours = 0
+    },
+    resetValues(): void {
+      this.resetTime()
+    },
   },
 })

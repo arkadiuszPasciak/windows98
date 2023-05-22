@@ -20,16 +20,18 @@
       <TimerDisplay />
 
       <UIButton class="button is-start" @click="timerStore.startTime">
-        <template v-if="timerStore.status">
-          {{ t('TimerBundle.button.stop') }}
-        </template>
-
-        <template v-else>
-          {{ t('TimerBundle.button.start') }}
-        </template>
+        {{
+          timerStore.status
+            ? t('TimerBundle.button.stop')
+            : t('TimerBundle.button.start')
+        }}
       </UIButton>
 
-      <UIButton class="button is-reset" :disabled="timerStore.status">
+      <UIButton
+        class="button is-reset"
+        :disabled="timerStore.status"
+        @click="timerStore.resetValues"
+      >
         {{ t('TimerBundle.button.reset') }}
       </UIButton>
     </div>
