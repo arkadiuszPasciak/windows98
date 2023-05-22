@@ -23,7 +23,7 @@ export const useTimerStore = defineStore('timer', {
     },
     disabled: {
       presets: false,
-      switcher: false,
+      switcher: true,
     },
   }),
   actions: {
@@ -52,6 +52,8 @@ export const useTimerStore = defineStore('timer', {
         return
       }
 
+      this.showSwitcherByCustomPreset(presets)
+
       this.presets = presets
     },
     startTime(): void {
@@ -62,6 +64,13 @@ export const useTimerStore = defineStore('timer', {
     changeDisabledTime(status: boolean): void {
       this.disabled.presets = status
       this.disabled.switcher = status
+    },
+    showSwitcherByCustomPreset(presets: TTimerPresetsRadioCheck): void {
+      if (presets === ETimerPresetsRadioCheck.CUSTOM_MINUTES) {
+        this.disabled.switcher = false
+      } else if (!this.disabled.switcher) {
+        this.disabled.switcher = true
+      }
     },
   },
 })

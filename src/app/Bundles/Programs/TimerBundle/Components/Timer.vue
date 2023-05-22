@@ -29,7 +29,7 @@
         </template>
       </UIButton>
 
-      <UIButton class="button is-reset">
+      <UIButton class="button is-reset" :disabled="timerStore.status">
         {{ t('TimerBundle.button.reset') }}
       </UIButton>
     </div>

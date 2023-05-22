@@ -5,7 +5,7 @@
       :key="`time-presets-${id}`"
       :name="preset.name"
       :checked="preset.checked"
-      :model-value="store.presets"
+      :model-value="preset.modelValue"
       :disabled="store.disabled.presets"
       @update:model-value="store.updatePresets($event)"
     >

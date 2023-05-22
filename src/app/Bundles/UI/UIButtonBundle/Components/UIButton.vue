@@ -1,5 +1,10 @@
 <template>
-  <button class="UIButton" :class="`size-${size}`" type="button">
+  <button
+    class="UIButton"
+    :class="`size-${size}`"
+    type="button"
+    :disabled="disabled"
+  >
     <slot name="icon-left"></slot>
     <slot></slot>
     <slot name="icon-right"></slot>
@@ -15,6 +20,10 @@
         'small' | 'medium' | 'calculator' | 'media-player' | 'tic-tac-toe'
       >,
       default: 'medium',
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
     },
   })
 </script>

@@ -16,6 +16,7 @@
     <UIButton
       class="button increase"
       size="small"
+      :disabled="disabled ?? false"
       :data-test="`${input.id}-increase`"
       @click="increase"
     />
@@ -23,6 +24,7 @@
     <UIButton
       class="button decrease"
       size="small"
+      :disabled="disabled ?? false"
       :data-test="`${input.id}-decrease`"
       @click="decrease"
     />
