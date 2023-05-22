@@ -1,10 +1,11 @@
 <template>
-  <div class="UIStepper">
+  <div class="UIStepper" :class="disabled ? 'is-disabled' : ''">
     <UIInput
       v-if="fieldModification"
       :id="input.id"
       v-model:modelValue="value"
       class="input"
+      :disabled="disabled ?? false"
       :data-test="`${input.id}-input`"
     />
 
@@ -40,6 +41,7 @@
     }
     fieldModification: boolean
     modelValue: number
+    disabled?: boolean
   }
 
   interface UIStepperEmits {

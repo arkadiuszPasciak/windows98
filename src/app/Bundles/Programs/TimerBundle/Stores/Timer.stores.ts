@@ -31,7 +31,7 @@ export const useTimerStore = defineStore('timer', {
       method: TTimerSwitcherMethod,
       type: TTimerSwitcherType,
     ): void {
-      if (!method || !type) {
+      if (!method || !type || this.disabled.switcher) {
         return
       }
 
@@ -61,6 +61,7 @@ export const useTimerStore = defineStore('timer', {
     },
     changeDisabledTime(status: boolean): void {
       this.disabled.presets = status
+      this.disabled.switcher = status
     },
   },
 })

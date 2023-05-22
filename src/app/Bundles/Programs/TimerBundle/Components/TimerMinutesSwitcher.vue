@@ -4,6 +4,7 @@
     :input="{ id: 'timer-minutes-stepper' }"
     :field-modification="false"
     :model-value="store.switcher.minutes"
+    :disabled="store.disabled.switcher"
     @increase="increase"
     @decrease="decrease"
     @value="store.switcher.minutes"
