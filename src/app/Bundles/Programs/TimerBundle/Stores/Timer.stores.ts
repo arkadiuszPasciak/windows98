@@ -25,6 +25,11 @@ export const useTimerStore = defineStore('timer', {
       presets: false,
       switcher: true,
     },
+    time: {
+      hours: 0 as number,
+      minutes: 0 as number,
+      seconds: 0 as number,
+    },
   }),
   actions: {
     changeTimeSwitcher(
@@ -76,6 +81,10 @@ export const useTimerStore = defineStore('timer', {
       this.switcher.seconds = 0
       this.switcher.minutes = 0
       this.switcher.hours = 0
+
+      this.time.seconds = 0
+      this.time.minutes = 0
+      this.time.hours = 0
     },
     resetValues(): void {
       this.resetTime()

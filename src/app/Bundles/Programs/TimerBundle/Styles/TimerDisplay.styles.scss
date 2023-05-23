@@ -1,4 +1,5 @@
 .TimerDisplay {
+  display: flex;
   grid-area: 3/1/4/7;
   justify-self: center;
   background-color: var(--background-color-white);
@@ -9,4 +10,9 @@
   @include font('bold', 39, 44);
   letter-spacing: 3px;
   color: var(--text-color);
+  user-select: none;
+
+  .time {
+    width: 55px;
+  }
 }
