@@ -1,15 +1,18 @@
 <template>
   <p class="TimerDisplay" data-test="timer-display">
     <span class="time">
-      {{ timerStore.time.hours }}{{ showSecondZero(timerStore.time.hours) }}
+      {{ showZeroBeforeSingleNumber(timerStore.time.hours)
+      }}{{ timerStore.time.hours }}
     </span>
     <span class="colon">:</span>
     <span class="time">
-      {{ timerStore.time.minutes }}{{ showSecondZero(timerStore.time.minutes) }}
+      {{ showZeroBeforeSingleNumber(timerStore.time.minutes)
+      }}{{ timerStore.time.minutes }}
     </span>
     <span class="colon">:</span>
     <span class="time">
-      {{ timerStore.time.seconds }}{{ showSecondZero(timerStore.time.seconds) }}
+      {{ showZeroBeforeSingleNumber(timerStore.time.seconds)
+      }}{{ timerStore.time.seconds }}
     </span>
   </p>
 </template>
@@ -18,7 +21,7 @@
   import { useTimerStore } from '@APP|Bundles/TimerBundle/Stores/Timer.stores'
   import TimerDisplay from '@APP|Bundles/TimerBundle/Services/TimerDisplay.services'
 
-  const { showSecondZero } = new TimerDisplay()
+  const { showZeroBeforeSingleNumber } = new TimerDisplay()
 
   const timerStore = useTimerStore()
 </script>
