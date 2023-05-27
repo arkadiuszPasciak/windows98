@@ -22,11 +22,7 @@ export class Timer {
 
     return true
   }
-  public isTimerFinish(
-    hours: number,
-    minutes: number,
-    seconds: number,
-  ): boolean {
+  public isTimerZero(hours: number, minutes: number, seconds: number): boolean {
     return hours === 0 && minutes === 0 && seconds === 0 ? true : false
   }
   public decreaseHoursInTimer(

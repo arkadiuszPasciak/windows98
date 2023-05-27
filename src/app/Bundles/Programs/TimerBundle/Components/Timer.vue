@@ -21,7 +21,15 @@
 
       <TimerDisplay />
 
-      <UIButton class="button is-start" @click="timerStore.startTime">
+      <UIButton
+        class="button is-start"
+        :disabled="
+          timerStore.time.seconds === 0 &&
+          timerStore.time.minutes === 0 &&
+          timerStore.time.seconds === 0
+        "
+        @click="timerStore.startTime"
+      >
         {{
           timerStore.status
             ? t('TimerBundle.button.stop')
@@ -41,7 +49,6 @@
 </template>
 
 <script setup lang="ts">
-  // https://cdn.windowsreport.com/wp-content/uploads/2016/11/cook-timer-windows.png
   import { useI18n } from 'vue-i18n'
   import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
   import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'

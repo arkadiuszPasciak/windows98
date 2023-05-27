@@ -11,7 +11,7 @@ import {
 } from '@APP|Bundles/TimerBundle/Supports/TimerPresets.supports'
 
 const {
-  isTimerFinish,
+  isTimerZero,
   decreaseHoursInTimer,
   decreaseMinutesInTimer,
   verifySwitcherTime,
@@ -39,6 +39,7 @@ export const useTimerStore = defineStore('timer', {
     modal: {
       status: false as boolean,
     },
+    interval: null as NodeJS.Timeout | null,
   }),
   actions: {
     changeTimeSwitcher(
@@ -96,7 +97,11 @@ export const useTimerStore = defineStore('timer', {
 
       this.changeDisabledTime(this.status)
 
-      this.countTimer()
+      if (this.status) {
+        this.countTimer()
+      } else {
+        this.clearTimerInterval()
+      }
     },
     changeDisabledTime(status: boolean): void {
       this.disabled.presets = status
@@ -127,14 +132,15 @@ export const useTimerStore = defineStore('timer', {
       this.resetTime()
     },
     countTimer(): void {
-      const interval = setInterval(() => {
+      this.interval = setInterval(() => {
         if (
-          isTimerFinish(this.time.hours, this.time.minutes, this.time.seconds)
+          isTimerZero(this.time.hours, this.time.minutes, this.time.seconds)
         ) {
-          clearInterval(interval)
+          this.clearTimerInterval()
+
           this.status = !this.status
           this.changeDisabledTime(this.status)
-          this.resetValues()
+          this.resetTime()
           this.updateModalMessage(true)
           return
         }
@@ -158,6 +164,11 @@ export const useTimerStore = defineStore('timer', {
           this.time.seconds--
         }
       }, 1000)
+    },
+    clearTimerInterval(): void {
+      if (this.interval) {
+        clearInterval(this.interval)
+      }
     },
     updateModalMessage(status: boolean): void {
       this.modal.status = status
