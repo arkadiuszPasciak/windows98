@@ -1,14 +1,11 @@
 import { defineStore } from 'pinia'
 import { Timer } from '@APP|Bundles/TimerBundle/Services/Timer.services'
+import { ETimerSwitcherMethod } from '@APP|Bundles/TimerBundle/Supports/TimerSwitcher.supports'
+import { ETimerPresetsRadioCheck } from '@APP|Bundles/TimerBundle/Supports/TimerPresets.supports'
 import {
-  ETimerSwitcherMethod,
-  TTimerSwitcherMethod,
-  TTimerSwitcherType,
-} from '@APP|Bundles/TimerBundle/Supports/TimerSwitcher.supports'
-import {
-  TTimerPresetsRadioCheck,
-  ETimerPresetsRadioCheck,
-} from '@APP|Bundles/TimerBundle/Supports/TimerPresets.supports'
+  ITimerStoresActions,
+  ITimerStoresState,
+} from '@APP|Bundles/TimerBundle/Supports/TimerStores.supports'
 
 const {
   isTimerZero,
@@ -19,33 +16,35 @@ const {
 } = new Timer()
 
 export const useTimerStore = defineStore('timer', {
-  state: () => ({
-    presets: ETimerPresetsRadioCheck.THREE_MINUTES as TTimerPresetsRadioCheck,
-    status: false,
-    switcher: {
-      hours: 0 as number,
-      minutes: 0 as number,
-      seconds: 0 as number,
-    },
-    disabled: {
-      presets: false,
-      switcher: true,
-    },
-    time: {
-      hours: 0 as number,
-      minutes: 3 as number,
-      seconds: 0 as number,
-    },
-    modal: {
-      status: false as boolean,
-    },
-    interval: null as NodeJS.Timeout | null,
-  }),
+  state: () =>
+    ({
+      disabled: {
+        presets: false,
+        switcher: true,
+      },
+      interval: null,
+      modal: {
+        status: false,
+      },
+      presets: ETimerPresetsRadioCheck.THREE_MINUTES,
+      status: false,
+      switcher: {
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
+      },
+      time: {
+        hours: 0,
+        minutes: 3,
+        seconds: 0,
+      },
+    } as ITimerStoresState),
   actions: {
-    changeTimeSwitcher(
-      method: TTimerSwitcherMethod,
-      type: TTimerSwitcherType,
-    ): void {
+    changeDisabledTime(status) {
+      this.disabled.presets = status
+      this.disabled.switcher = status
+    },
+    changeTimeSwitcher(method, type) {
       if (!method || !type || this.disabled.switcher) {
         return
       }
@@ -64,74 +63,7 @@ export const useTimerStore = defineStore('timer', {
         this.time[type] -= 1
       }
     },
-    updatePresets(presets: TTimerPresetsRadioCheck): void {
-      if (!presets) {
-        return
-      }
-
-      this.showSwitcherByCustomPreset(presets)
-
-      this.presets = presets
-
-      const updateMinutes = updateDisplayTimesBySwitcher(presets)
-      this.updateTimeByDefaultPresets(updateMinutes)
-    },
-    updateTimeByDefaultPresets(updateMinutes: null | number): void {
-      if (updateMinutes === null) {
-        this.showTimeByCustomPreset()
-        return
-      }
-
-      if (this.time.seconds !== 0) {
-        this.time.seconds = 0
-      }
-
-      if (this.time.hours !== 0) {
-        this.time.hours = 0
-      }
-
-      this.time.minutes = updateMinutes
-    },
-    startTime(): void {
-      this.status = !this.status
-
-      this.changeDisabledTime(this.status)
-
-      if (this.status) {
-        this.countTimer()
-      } else {
-        this.clearTimerInterval()
-      }
-    },
-    changeDisabledTime(status: boolean): void {
-      this.disabled.presets = status
-      this.disabled.switcher = status
-    },
-    showTimeByCustomPreset(): void {
-      this.time.seconds = this.switcher.seconds
-      this.time.minutes = this.switcher.minutes
-      this.time.hours = this.switcher.hours
-    },
-    showSwitcherByCustomPreset(presets: TTimerPresetsRadioCheck): void {
-      if (presets === ETimerPresetsRadioCheck.CUSTOM_MINUTES) {
-        this.disabled.switcher = false
-      } else if (!this.disabled.switcher) {
-        this.disabled.switcher = true
-      }
-    },
-    resetTime(): void {
-      this.switcher.seconds = 0
-      this.switcher.minutes = 0
-      this.switcher.hours = 0
-
-      this.time.seconds = 0
-      this.time.minutes = 0
-      this.time.hours = 0
-    },
-    resetValues(): void {
-      this.resetTime()
-    },
-    countTimer(): void {
+    countTimer() {
       this.interval = setInterval(() => {
         if (
           isTimerZero(this.time.hours, this.time.minutes, this.time.seconds)
@@ -165,13 +97,73 @@ export const useTimerStore = defineStore('timer', {
         }
       }, 1000)
     },
-    clearTimerInterval(): void {
+    clearTimerInterval() {
       if (this.interval) {
         clearInterval(this.interval)
       }
     },
-    updateModalMessage(status: boolean): void {
+    updateModalMessage(status) {
       this.modal.status = status
     },
-  },
+    updatePresets(presets) {
+      if (!presets) {
+        return
+      }
+
+      this.showSwitcherByCustomPreset(presets)
+
+      this.presets = presets
+
+      const updateMinutes = updateDisplayTimesBySwitcher(presets)
+      this.updateTimeByDefaultPresets(updateMinutes)
+    },
+    updateTimeByDefaultPresets(updateMinutes) {
+      if (updateMinutes === null) {
+        this.showTimeByCustomPreset()
+        return
+      }
+
+      if (this.time.seconds !== 0) {
+        this.time.seconds = 0
+      }
+
+      if (this.time.hours !== 0) {
+        this.time.hours = 0
+      }
+
+      this.time.minutes = updateMinutes
+    },
+    resetTime() {
+      this.switcher.seconds = 0
+      this.switcher.minutes = 0
+      this.switcher.hours = 0
+
+      this.time.seconds = 0
+      this.time.minutes = 0
+      this.time.hours = 0
+    },
+    startTime() {
+      this.status = !this.status
+
+      this.changeDisabledTime(this.status)
+
+      if (this.status) {
+        this.countTimer()
+      } else {
+        this.clearTimerInterval()
+      }
+    },
+    showSwitcherByCustomPreset(presets) {
+      if (presets === ETimerPresetsRadioCheck.CUSTOM_MINUTES) {
+        this.disabled.switcher = false
+      } else if (!this.disabled.switcher) {
+        this.disabled.switcher = true
+      }
+    },
+    showTimeByCustomPreset() {
+      this.time.seconds = this.switcher.seconds
+      this.time.minutes = this.switcher.minutes
+      this.time.hours = this.switcher.hours
+    },
+  } as ITimerStoresActions,
 })

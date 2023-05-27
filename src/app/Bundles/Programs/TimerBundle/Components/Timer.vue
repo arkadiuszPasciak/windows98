@@ -40,7 +40,7 @@
       <UIButton
         class="button is-reset"
         :disabled="timerStore.status"
-        @click="timerStore.resetValues"
+        @click="timerStore.resetTime"
       >
         {{ t('TimerBundle.button.reset') }}
       </UIButton>
