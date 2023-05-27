@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { Timer } from '@APP|Bundles/TimerBundle/Services/Timer.services'
+import Timer from '@APP|Bundles/TimerBundle/Services/Timer.services'
 import { ETimerSwitcherMethod } from '@APP|Bundles/TimerBundle/Supports/TimerSwitcher.supports'
 import { ETimerPresetsRadioCheck } from '@APP|Bundles/TimerBundle/Supports/TimerPresets.supports'
 import {

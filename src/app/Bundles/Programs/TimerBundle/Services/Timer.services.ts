@@ -7,24 +7,7 @@ import {
   ETimerPresetsRadioCheck,
 } from '@APP|Bundles/TimerBundle/Supports/TimerPresets.supports'
 
-export class Timer {
-  public verifySwitcherTime(
-    time: number,
-    method: TTimerSwitcherMethod,
-  ): boolean {
-    if (time === 59 && method === ETimerSwitcherMethod.INCREASE) {
-      return false
-    }
-
-    if (time === 0 && method === ETimerSwitcherMethod.DECREASE) {
-      return false
-    }
-
-    return true
-  }
-  public isTimerZero(hours: number, minutes: number, seconds: number): boolean {
-    return hours === 0 && minutes === 0 && seconds === 0 ? true : false
-  }
+export default class Timer {
   public decreaseHoursInTimer(
     hours: number,
     minutes: number,
@@ -51,5 +34,22 @@ export class Timer {
       default:
         return null
     }
+  }
+  public isTimerZero(hours: number, minutes: number, seconds: number): boolean {
+    return hours === 0 && minutes === 0 && seconds === 0 ? true : false
+  }
+  public verifySwitcherTime(
+    time: number,
+    method: TTimerSwitcherMethod,
+  ): boolean {
+    if (time === 59 && method === ETimerSwitcherMethod.INCREASE) {
+      return false
+    }
+
+    if (time === 0 && method === ETimerSwitcherMethod.DECREASE) {
+      return false
+    }
+
+    return true
   }
 }
