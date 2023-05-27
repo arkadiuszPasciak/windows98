@@ -1,9 +1,17 @@
 .Timer {
   .content {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(6, 50px);
     grid-template-rows: 75px 30px 50px 35px;
     padding: 0 10px 10px;
+
+    &.is-disabled {
+      & > *:not(.UIModal.TimerModal) {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    }
   }
 
   .button {

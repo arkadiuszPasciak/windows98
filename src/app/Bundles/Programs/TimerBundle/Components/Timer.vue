@@ -8,7 +8,9 @@
     :modal-state="programStore.modalTimer"
     @close-modal="closeModal"
   >
-    <div class="content">
+    <div class="content" :class="timerStore.modal.status ? 'is-disabled' : ''">
+      <TimerModal />
+
       <TimerPresets />
 
       <TimerHoursSwitcher />
@@ -46,6 +48,7 @@
   import TimerDisplay from '@APP|Bundles/TimerBundle/Components/TimerDisplay.vue'
   import TimerHoursSwitcher from '@APP|Bundles/TimerBundle/Components/TimerHoursSwitcher.vue'
   import TimerMinutesSwitcher from '@APP|Bundles/TimerBundle/Components/TimerMinutesSwitcher.vue'
+  import TimerModal from '@APP|Bundles/TimerBundle/Components/TimerModal.vue'
   import TimerPresets from '@APP|Bundles/TimerBundle/Components/TimerPresets.vue'
   import TimerSecondsSwitcher from '@APP|Bundles/TimerBundle/Components/TimerSecondsSwitcher.vue'
   import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'

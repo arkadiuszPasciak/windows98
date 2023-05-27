@@ -36,6 +36,9 @@ export const useTimerStore = defineStore('timer', {
       minutes: 3 as number,
       seconds: 0 as number,
     },
+    modal: {
+      status: false as boolean,
+    },
   }),
   actions: {
     changeTimeSwitcher(
@@ -129,8 +132,10 @@ export const useTimerStore = defineStore('timer', {
           isTimerFinish(this.time.hours, this.time.minutes, this.time.seconds)
         ) {
           clearInterval(interval)
-
-          console.log('interval is clean', interval)
+          this.status = !this.status
+          this.changeDisabledTime(this.status)
+          this.resetValues()
+          this.updateModalMessage(true)
           return
         }
 
@@ -153,6 +158,9 @@ export const useTimerStore = defineStore('timer', {
           this.time.seconds--
         }
       }, 1000)
+    },
+    updateModalMessage(status: boolean): void {
+      this.modal.status = status
     },
   },
 })
