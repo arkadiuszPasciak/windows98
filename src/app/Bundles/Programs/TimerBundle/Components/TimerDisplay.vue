@@ -1,16 +1,16 @@
 <template>
-  <p class="TimerDisplay" data-test="timer-display">
-    <span class="time">
+  <p class="TimerDisplay">
+    <span class="time" data-test="timer-display-hours">
       {{ showZeroBeforeSingleNumber(timerStore.time.hours)
       }}{{ timerStore.time.hours }}
     </span>
     <span class="colon">:</span>
-    <span class="time">
+    <span class="time" data-test="timer-display-minutes">
       {{ showZeroBeforeSingleNumber(timerStore.time.minutes)
       }}{{ timerStore.time.minutes }}
     </span>
     <span class="colon">:</span>
-    <span class="time">
+    <span class="time" data-test="timer-display-seconds">
       {{ showZeroBeforeSingleNumber(timerStore.time.seconds)
       }}{{ timerStore.time.seconds }}
     </span>

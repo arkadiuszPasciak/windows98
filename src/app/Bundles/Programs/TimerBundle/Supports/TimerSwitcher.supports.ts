@@ -9,6 +9,12 @@ export enum ETimerSwitcherType {
   SECONDS = 'seconds',
 }
 
+export interface ITimerSwitcherType {
+  hours: string
+  minutes: string
+  seconds: string
+}
+
 export type TTimerSwitcherMethod = ETimerSwitcherMethod
 
 export type TTimerSwitcherType = ETimerSwitcherType
