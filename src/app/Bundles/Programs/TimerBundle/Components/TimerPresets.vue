@@ -7,6 +7,7 @@
       :checked="preset.checked"
       :model-value="preset.modelValue"
       :disabled="store.disabled.presets"
+      :data-test="`timer-presets-${id + 1}`"
       @update:model-value="store.updatePresets($event)"
     >
       {{ t(preset.text) }}
