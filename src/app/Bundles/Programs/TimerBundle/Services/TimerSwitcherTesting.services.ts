@@ -9,10 +9,6 @@ export default class TimerSwitcherTesting {
     this.id = `timer-${type}`
   }
 
-  public checkComponent(): void {
-    this.checkMainClass()
-  }
-
   public checkMainClass(): void {
     const nameClass = this.type.charAt(0).toUpperCase() + this.type.slice(1)
     cy.get(`div.UIStepper.Timer${nameClass}Switcher`)

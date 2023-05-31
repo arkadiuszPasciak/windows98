@@ -1,17 +1,17 @@
 import { createTestingPinia } from '@pinia/testing'
-import TimerHoursSwitcher from '@APP|Bundles/TimerBundle/Components/TimerHoursSwitcher.vue'
+import TimerSecondsSwitcher from '@APP|Bundles/TimerBundle/Components/TimerSecondsSwitcher.vue'
 import TimerSwitcherTesting from '@APP|Bundles/TimerBundle/Services/TimerSwitcherTesting.services'
 import { ETimerSwitcherType } from '@APP|Bundles/TimerBundle/Supports/TimerSwitcher.supports'
 
 const TimerSwitcherTestingService = new TimerSwitcherTesting(
-  ETimerSwitcherType.HOURS,
+  ETimerSwitcherType.SECONDS,
 )
 
-describe('[TimerBundle]<Components>(TimerHoursSwitcher)', () => {
+describe('[TimerBundle]<Components>(TimerSecondsSwitcher)', () => {
   it('renders correctly component and check below zero value', () => {
     cy.viewport(205, 55)
 
-    cy.mount(TimerHoursSwitcher, {
+    cy.mount(TimerSecondsSwitcher, {
       global: {
         plugins: [
           createTestingPinia({
@@ -22,7 +22,7 @@ describe('[TimerBundle]<Components>(TimerHoursSwitcher)', () => {
                   switcher: false,
                 },
                 switcher: {
-                  hours: 0,
+                  seconds: 0,
                 },
               },
             },
@@ -38,7 +38,7 @@ describe('[TimerBundle]<Components>(TimerHoursSwitcher)', () => {
   it('renders correctly component and check above fifty-nine value', () => {
     cy.viewport(205, 55)
 
-    cy.mount(TimerHoursSwitcher, {
+    cy.mount(TimerSecondsSwitcher, {
       global: {
         plugins: [
           createTestingPinia({
@@ -49,7 +49,7 @@ describe('[TimerBundle]<Components>(TimerHoursSwitcher)', () => {
                   switcher: false,
                 },
                 switcher: {
-                  hours: 59,
+                  seconds: 59,
                 },
               },
             },
