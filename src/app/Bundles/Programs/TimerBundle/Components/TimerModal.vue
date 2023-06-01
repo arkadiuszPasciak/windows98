@@ -12,7 +12,7 @@
     <div class="content">
       <UIText>{{ t('TimerBundle.description-modal') }}</UIText>
 
-      <UIButton @click="closeModal">
+      <UIButton data-test="timer-modal-button" @click="closeModal">
         {{ t('TimerBundle.close') }}
       </UIButton>
     </div>
