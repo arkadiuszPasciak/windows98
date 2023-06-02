@@ -28,6 +28,7 @@
           timerStore.time.minutes === 0 &&
           timerStore.time.seconds === 0
         "
+        data-test="timer-button-start"
         @click="timerStore.startTime"
       >
         {{
@@ -40,6 +41,7 @@
       <UIButton
         class="button is-reset"
         :disabled="timerStore.status"
+        data-test="timer-button-reset"
         @click="timerStore.resetTime"
       >
         {{ t('TimerBundle.button.reset') }}
