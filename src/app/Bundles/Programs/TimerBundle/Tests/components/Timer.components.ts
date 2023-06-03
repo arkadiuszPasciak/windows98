@@ -25,5 +25,13 @@ describe('[TimerBundle]<Components>(Timer)', () => {
     TimerTestingService.checkComponent()
 
     TimerTestingService.switchPresetsAndCheckTime()
+
+    TimerTestingService.increaseAndDecreaseHoursBySwitcher()
+
+    TimerTestingService.increaseAndDecreaseMinutesBySwitcher()
+
+    TimerTestingService.increaseAndDecreaseSecondsBySwitcher()
+
+    TimerTestingService.resetTimeAndCheckTimes()
   })
 })

@@ -7,15 +7,22 @@ import {
 export default class TimerSwitcherTesting {
   private type: TTimerSwitcherType
   private id: string
+  private mainNameClass: string
 
   constructor(type: TTimerSwitcherType) {
     this.type = type
     this.id = `timer-${type}`
+    this.mainNameClass = `Timer${
+      this.type.charAt(0).toUpperCase() + this.type.slice(1)
+    }Switcher`
   }
 
   public checkMainClass(): void {
-    const nameClass = this.type.charAt(0).toUpperCase() + this.type.slice(1)
-    cy.get(`div.UIStepper.Timer${nameClass}Switcher`)
+    cy.get(`div.UIStepper.${this.mainNameClass}`)
+  }
+
+  public isDisabled(): void {
+    cy.get(`div.UIStepper.${this.mainNameClass}.is-disabled`)
   }
 
   public increaseNumber(): void {
