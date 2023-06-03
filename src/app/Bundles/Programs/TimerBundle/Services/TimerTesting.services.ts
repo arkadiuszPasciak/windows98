@@ -6,6 +6,7 @@ import {
   ETimerSwitcherType,
   ETimerSwitcherMethod,
 } from '@APP|Bundles/TimerBundle/Supports/TimerSwitcher.supports'
+import TimerModalTesting from '@APP|Bundles/TimerBundle/Services/TimerModalTesting.services'
 
 const TimerPresetsTestingService = new TimerPresetsTesting()
 const TimerDisplayTestingService = new TimerDisplayTesting()
@@ -14,6 +15,7 @@ const TimerSwitcherTestingService = {
   minutes: new TimerSwitcherTesting(ETimerSwitcherType.MINUTES),
   seconds: new TimerSwitcherTesting(ETimerSwitcherType.SECONDS),
 }
+const TimerModalTestingService = new TimerModalTesting()
 
 export default class TimerTesting {
   public checkComponent(): void {
@@ -222,5 +224,34 @@ export default class TimerTesting {
     TimerSwitcherTestingService.seconds.checkInputValue('0')
 
     cy.get(`[data-test="timer-button-start"]`).should('have.attr', 'disabled')
+  }
+
+  public setTimeAndStart(): void {
+    TimerSwitcherTestingService.seconds.changeNumberAndCheckInput(
+      ETimerSwitcherMethod.INCREASE,
+      '1',
+    )
+
+    TimerSwitcherTestingService.seconds.changeNumberAndCheckInput(
+      ETimerSwitcherMethod.INCREASE,
+      '2',
+    )
+
+    TimerSwitcherTestingService.seconds.changeNumberAndCheckInput(
+      ETimerSwitcherMethod.INCREASE,
+      '3',
+    )
+
+    cy.get(`[data-test="timer-button-start"]`).click()
+
+    cy.get(`[data-test="timer-button-start"]`).click()
+
+    cy.get(`[data-test="timer-button-start"]`).click()
+
+    cy.wait(500).get('div.UIModal.TimerModal')
+
+    TimerModalTestingService.clickButton()
+
+    cy.get('div.UIModal.TimerModal').should('not.exist')
   }
 }
