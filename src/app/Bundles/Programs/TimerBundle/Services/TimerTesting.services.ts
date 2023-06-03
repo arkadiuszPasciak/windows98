@@ -1,16 +1,19 @@
 import TimerDisplayTesting from '@APP|Bundles/TimerBundle/Services/TimerDisplayTesting.services'
 import TimerPresetsTesting from '@APP|Bundles/TimerBundle/Services/TimerPresetsTesting.services'
-// import TimerSwitcherTesting from '@APP|Bundles/TimerBundle/Services/TimerSwitcherTesting.services'
+import TimerSwitcherTesting from '@APP|Bundles/TimerBundle/Services/TimerSwitcherTesting.services'
 import { ETimerPresetsRadioCheck } from '@APP|Bundles/TimerBundle/Supports/TimerPresets.supports'
-// import { ETimerSwitcherType } from '@APP|Bundles/TimerBundle/Supports/TimerSwitcher.supports'
+import {
+  ETimerSwitcherType,
+  ETimerSwitcherMethod,
+} from '@APP|Bundles/TimerBundle/Supports/TimerSwitcher.supports'
 
 const TimerPresetsTestingService = new TimerPresetsTesting()
 const TimerDisplayTestingService = new TimerDisplayTesting()
-// const TimerSwitcherTestingService = {
-//   hours: new TimerSwitcherTesting(ETimerSwitcherType.HOURS),
-//   minutes: new TimerSwitcherTesting(ETimerSwitcherType.MINUTES),
-//   seconds: new TimerSwitcherTesting(ETimerSwitcherType.SECONDS),
-// }
+const TimerSwitcherTestingService = {
+  hours: new TimerSwitcherTesting(ETimerSwitcherType.HOURS),
+  minutes: new TimerSwitcherTesting(ETimerSwitcherType.MINUTES),
+  seconds: new TimerSwitcherTesting(ETimerSwitcherType.SECONDS),
+}
 
 export default class TimerTesting {
   public checkComponent(): void {
@@ -25,9 +28,7 @@ export default class TimerTesting {
       ETimerPresetsRadioCheck.FIVE_MINUTES,
     )
     TimerDisplayTestingService.checkTime({
-      hours: '00',
       minutes: '05',
-      seconds: '00',
     })
 
     TimerPresetsTestingService.clickRadioInput(
@@ -35,9 +36,7 @@ export default class TimerTesting {
       ETimerPresetsRadioCheck.TEN_MINUTES,
     )
     TimerDisplayTestingService.checkTime({
-      hours: '00',
       minutes: '10',
-      seconds: '00',
     })
 
     TimerPresetsTestingService.clickRadioInput(
@@ -45,9 +44,7 @@ export default class TimerTesting {
       ETimerPresetsRadioCheck.FIFTEEN_MINUTES,
     )
     TimerDisplayTestingService.checkTime({
-      hours: '00',
       minutes: '15',
-      seconds: '00',
     })
 
     TimerPresetsTestingService.clickRadioInput(
@@ -55,26 +52,41 @@ export default class TimerTesting {
       ETimerPresetsRadioCheck.THREE_MINUTES,
     )
     TimerDisplayTestingService.checkTime({
-      hours: '00',
       minutes: '03',
-      seconds: '00',
     })
 
     TimerPresetsTestingService.clickRadioInput(
       5,
       ETimerPresetsRadioCheck.CUSTOM_MINUTES,
     )
-    TimerDisplayTestingService.checkTime({
-      hours: '00',
-      minutes: '00',
-      seconds: '00',
-    })
+    TimerDisplayTestingService.checkTime({})
   }
 
-  // public switchCustomTimeAndCheckTime(): void {
-  //   // TimerSwitcherTestingService.hours.
-  //   console.log('123')
-  // }
+  public switchCustomTimeAndCheckTime(): void {
+    TimerSwitcherTestingService.hours.changeNumberAndCheckInput(
+      ETimerSwitcherMethod.INCREASE,
+      '1',
+    )
+    TimerDisplayTestingService.checkTime({
+      hours: '01',
+    })
+
+    TimerSwitcherTestingService.hours.changeNumberAndCheckInput(
+      ETimerSwitcherMethod.INCREASE,
+      '2',
+    )
+    TimerDisplayTestingService.checkTime({
+      hours: '02',
+    })
+
+    TimerSwitcherTestingService.hours.changeNumberAndCheckInput(
+      ETimerSwitcherMethod.DECREASE,
+      '1',
+    )
+    TimerDisplayTestingService.checkTime({
+      hours: '01',
+    })
+  }
 
   public checkMainClass(): void {
     cy.get('div.UIModal.Timer')

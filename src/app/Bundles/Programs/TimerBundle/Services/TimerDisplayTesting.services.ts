@@ -4,14 +4,18 @@ export default class TimerDisplayTesting {
   public checkComponent(): void {
     this.checkMainClass()
 
-    this.checkTime({ hours: '00', minutes: '03', seconds: '00' })
+    this.checkTime({ minutes: '03' })
 
     this.checkColons()
   }
   public checkMainClass(): void {
     cy.get('p.TimerDisplay')
   }
-  public checkTime({ hours, minutes, seconds }: ITimerSwitcherType): void {
+  public checkTime({
+    hours = '00',
+    minutes = '00',
+    seconds = '00',
+  }: ITimerSwitcherType): void {
     cy.get('[data-test="timer-display-hours"]').should('have.text', hours)
 
     cy.get('[data-test="timer-display-minutes"]').should('have.text', minutes)
