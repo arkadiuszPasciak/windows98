@@ -1,10 +1,15 @@
-.CalendarYearSwitcher {
+.UIStepper {
   display: grid;
   grid-template-columns: 50px 20px;
   grid-template-rows: 10px 10px;
   width: 70px;
 
-  .year {
+  &.is-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .field {
     grid-area: 1 / 1 / 3 / 2;
     background-color: var(--background-color-white);
     width: 50px;

@@ -56,7 +56,7 @@ describe('[UIRadioBundle]<Components>(UIRadio)', async () => {
       },
     })
 
-    cy.get('.UIRadio')
+    cy.get('.UIRadio.is-disabled')
 
     cy.get('[data-test="ui-radio-input-unavailable-radio-shut-down"]')
       .should('have.class', 'input')

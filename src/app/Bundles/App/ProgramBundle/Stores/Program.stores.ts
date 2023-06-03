@@ -10,6 +10,7 @@ export const useProgramStore = defineStore('program', {
     modalSettings: false as boolean,
     modalShutDown: false as boolean,
     modalTicTacToe: false as boolean,
+    modalTimer: false as boolean,
   }),
   actions: {
     updateCalculatorModal(status: boolean): void {
@@ -35,6 +36,9 @@ export const useProgramStore = defineStore('program', {
     },
     updateTicTacToeModal(status: boolean): void {
       this.modalTicTacToe = status
+    },
+    updateTimerModal(status: boolean): void {
+      this.modalTimer = status
     },
   },
 })

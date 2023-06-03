@@ -101,4 +101,16 @@ describe('[ProgramBundle]<Stores>(useProgramStore)', () => {
 
     expect(store.modalTicTacToe).equal(false)
   })
+
+  it('turns on and off Timer', () => {
+    expect(store.modalTimer).equal(false)
+
+    store.updateTimerModal(true)
+
+    expect(store.modalTimer).equal(true)
+
+    store.updateTimerModal(false)
+
+    expect(store.modalTimer).equal(false)
+  })
 })

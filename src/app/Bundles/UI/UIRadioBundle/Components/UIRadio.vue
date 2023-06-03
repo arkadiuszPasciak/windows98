@@ -1,5 +1,5 @@
 <template>
-  <label class="UIRadio">
+  <label class="UIRadio" :class="disabled ? 'is-disabled' : ''">
     <input
       class="input"
       type="radio"

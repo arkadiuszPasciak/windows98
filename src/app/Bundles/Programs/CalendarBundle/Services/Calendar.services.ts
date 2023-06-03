@@ -62,8 +62,8 @@ export class CalendarComponentTesting {
       selectDateMonths: '[data-test="ui-select-date-months"]',
       optionSelected: '[data-test="ui-select-date-months"] > option:selected',
       buttonYear: (method: TCalendarYearChangeMethod) =>
-        `[data-test="calendar-year-switcher-${method}"]`,
-      showYear: '[data-test="calendar-year-switcher-year"]',
+        `[data-test="calendar-year-stepper-${method}"]`,
+      showYear: '[data-test="calendar-year-stepper-input"]',
     }
   }
 

@@ -1,26 +1,17 @@
 <template>
-  <div class="CalendarYearSwitcher">
-    <UIText class="year" data-test="calendar-year-switcher-year">
-      {{ calculatorStore.year }}
-    </UIText>
-    <UIButton
-      class="button increase"
-      size="small"
-      data-test="calendar-year-switcher-increase"
-      @click="increase"
-    />
-    <UIButton
-      class="button decrease"
-      size="small"
-      data-test="calendar-year-switcher-decrease"
-      @click="decrease"
-    />
-  </div>
+  <UIStepper
+    class="CalendarYearSwitcher"
+    :input="{ id: 'calendar-year-stepper' }"
+    :field-modification="false"
+    :model-value="calculatorStore.year ?? 1900"
+    @increase="increase"
+    @decrease="decrease"
+    @value="calculatorStore.year"
+  />
 </template>
 
 <script setup lang="ts">
-  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
+  import UIStepper from '@APP|Bundles/UIStepperBundle/Components/UIStepper.vue'
   import { useCalendarStore } from '@APP|Bundles/CalendarBundle/Stores/Calendar.stores'
   import { ECalendarYearChangeMethod } from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
 
@@ -37,8 +28,4 @@
   }
 </script>
 
-<style
-  lang="scss"
-  scoped
-  src="@APP|Bundles/CalendarBundle/Styles/CalendarYearSwitcher.styles.scss"
-/>
+<style lang="scss" scoped />
