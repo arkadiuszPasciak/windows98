@@ -8,9 +8,11 @@ export default class TimerDisplayTesting {
 
     this.checkColons()
   }
+
   public checkMainClass(): void {
     cy.get('p.TimerDisplay')
   }
+
   public checkTime({
     hours = '00',
     minutes = '00',
@@ -22,6 +24,7 @@ export default class TimerDisplayTesting {
 
     cy.get('[data-test="timer-display-seconds"]').should('have.text', seconds)
   }
+
   public checkColons(): void {
     cy.get('[data-test="timer-display-hours"]').next().should('have.text', ':')
 

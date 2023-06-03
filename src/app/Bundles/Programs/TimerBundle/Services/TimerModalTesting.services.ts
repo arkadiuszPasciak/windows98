@@ -10,6 +10,7 @@ export default class TimerModalTesting {
 
     this.checkMainClass(false)
   }
+
   public checkMainClass(exist: boolean): void {
     cy.get('div.UIModal.TimerModal').should(`${exist ? 'exist' : 'not.exist'}`)
   }

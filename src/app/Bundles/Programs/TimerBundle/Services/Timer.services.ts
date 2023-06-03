@@ -15,9 +15,11 @@ export default class Timer {
   ): boolean {
     return hours >= 1 && minutes === 0 && seconds === 0 ? true : false
   }
+
   public decreaseMinutesInTimer(minutes: number, seconds: number): boolean {
     return seconds === 0 && minutes >= 1 ? true : false
   }
+
   public updateDisplayTimesBySwitcher(
     presets: TTimerPresetsRadioCheck,
   ): null | number {
@@ -35,9 +37,11 @@ export default class Timer {
         return null
     }
   }
+
   public isTimerZero(hours: number, minutes: number, seconds: number): boolean {
     return hours === 0 && minutes === 0 && seconds === 0 ? true : false
   }
+
   public verifySwitcherTime(
     time: number,
     method: TTimerSwitcherMethod,
