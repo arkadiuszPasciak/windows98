@@ -36,7 +36,7 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, Ref } from 'vue'
+  import { ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIRadio from '@APP|Bundles/UIRadioBundle/Components/UIRadio.vue'
   import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
@@ -47,7 +47,9 @@
   } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
 
   const { t } = useI18n()
-  const checkedRadioBoxes = ref('3x3') as Ref<TTicTacToeRadioDimension>
+  const checkedRadioBoxes = ref<TTicTacToeRadioDimension>(
+    ETicTacToeRadioDimension.THREE_X_THREE,
+  )
 </script>
 
 <i18n src="@APP|Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>

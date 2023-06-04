@@ -44,7 +44,7 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, Ref, watch } from 'vue'
+  import { ref, watch } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
   import UIModalNavigationItem from '@APP|Bundles/UIModalBundle/Components/UIModalNavigationItem.vue'
@@ -59,8 +59,8 @@
   const programStore = useProgramStore()
   const notepadStore = useNotepadStore()
 
-  const textareaValue = ref(t('NotepadBundle.example')) as Ref<string>
-  const textFileValue = ref(null) as Ref<null | string>
+  const textareaValue = ref<string>(t('NotepadBundle.example'))
+  const textFileValue = ref<null | string>(null)
 
   const closeModal = (): void => {
     programStore.updateNotepadModal(false)

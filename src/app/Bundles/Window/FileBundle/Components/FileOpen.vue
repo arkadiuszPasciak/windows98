@@ -13,13 +13,13 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, Ref } from 'vue'
+  import { ref } from 'vue'
   import { Nullable } from 'vitest'
   import { openTextFileFromUserDisk } from '@APP|Bundles/FileBundle/Services/File.services'
 
   const emits = defineEmits(['update:textFileValue'])
 
-  const input = ref(null) as Ref<Nullable<HTMLInputElement>>
+  const input = ref<Nullable<HTMLInputElement>>(null)
 
   const openFile = (): void => {
     if (!input?.value) {

@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, Ref } from 'vue'
+  import { ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
   import UIInput from '@APP|Bundles/UIInputBundle/Components/UIInput.vue'
@@ -66,7 +66,7 @@
     checkAndRunProgram(modelValue.value, t)
   }
 
-  const modelValue = ref('') as Ref<string>
+  const modelValue = ref<string>('')
 </script>
 
 <i18n src="@APP|Bundles/RunBundle/Locales/Run.locales.json"></i18n>
