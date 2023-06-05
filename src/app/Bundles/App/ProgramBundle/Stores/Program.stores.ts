@@ -1,44 +1,49 @@
 import { defineStore } from 'pinia'
+import {
+  IProgramStoresActions,
+  IProgramStoresState,
+} from '@APP|Bundles/ProgramBundle/Supports/ProgramStores.supports'
 
 export const useProgramStore = defineStore('program', {
-  state: () => ({
-    modalCalculator: false as boolean,
-    modalDocumentation: false as boolean,
-    modalMediaPlayer: false as boolean,
-    modalNotepad: false as boolean,
-    modalRun: false as boolean,
-    modalSettings: false as boolean,
-    modalShutDown: false as boolean,
-    modalTicTacToe: false as boolean,
-    modalTimer: false as boolean,
-  }),
+  state: () =>
+    ({
+      modalCalculator: false,
+      modalDocumentation: false,
+      modalMediaPlayer: false,
+      modalNotepad: false,
+      modalRun: false,
+      modalSettings: false,
+      modalShutDown: false,
+      modalTicTacToe: false,
+      modalTimer: false,
+    } as IProgramStoresState),
   actions: {
-    updateCalculatorModal(status: boolean): void {
+    updateCalculatorModal(status) {
       this.modalCalculator = status
     },
-    updateDocumentationModal(status: boolean): void {
+    updateDocumentationModal(status) {
       this.modalDocumentation = status
     },
-    updateMediaPlayerModal(status: boolean): void {
+    updateMediaPlayerModal(status) {
       this.modalMediaPlayer = status
     },
-    updateNotepadModal(status: boolean): void {
+    updateNotepadModal(status) {
       this.modalNotepad = status
     },
-    updateRunModal(status: boolean): void {
+    updateRunModal(status) {
       this.modalRun = status
     },
-    updateSettingsModal(status: boolean): void {
+    updateSettingsModal(status) {
       this.modalSettings = status
     },
-    updateShutDownModal(status: boolean): void {
+    updateShutDownModal(status) {
       this.modalShutDown = status
     },
-    updateTicTacToeModal(status: boolean): void {
+    updateTicTacToeModal(status) {
       this.modalTicTacToe = status
     },
-    updateTimerModal(status: boolean): void {
+    updateTimerModal(status) {
       this.modalTimer = status
     },
-  },
+  } as IProgramStoresActions,
 })
