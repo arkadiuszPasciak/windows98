@@ -1,21 +1,31 @@
 import { defineStore } from 'pinia'
 import { Calculator } from '@APP|Bundles/CalculatorBundle/Services/Calculator.services'
+import { ECalculatorDirect } from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
 import {
-  TCalculatorSign,
-  TCalculatorNumber,
-} from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
+  ICalculatorStoresActions,
+  ICalculatorStoresState,
+} from '@APP|Bundles/CalculatorBundle/Supports/CalculatorStores.supports'
 
 const CalculatorService = new Calculator()
 
 export const useCalculatorStore = defineStore('calculator', {
-  state: () => ({
-    value: '0' as string,
-  }),
+  state: () =>
+    ({
+      value: '0',
+    } as ICalculatorStoresState),
   actions: {
-    addNumber(number: TCalculatorNumber) {
+    addNumber(number) {
       if (
-        CalculatorService.isValueEqual(this.value, '0', 'first') &&
-        !CalculatorService.isValueEqual(this.value, '0.', 'first') &&
+        CalculatorService.isValueEqual(
+          this.value,
+          '0',
+          ECalculatorDirect.FIRST,
+        ) &&
+        !CalculatorService.isValueEqual(
+          this.value,
+          '0.',
+          ECalculatorDirect.FIRST,
+        ) &&
         this.value.length === 1
       ) {
         this.value = number
@@ -31,11 +41,13 @@ export const useCalculatorStore = defineStore('calculator', {
         return
       }
 
-      if (!CalculatorService.isValueEqual(this.value, '.', 'last')) {
+      if (
+        !CalculatorService.isValueEqual(this.value, '.', ECalculatorDirect.LAST)
+      ) {
         this.value += '.'
       }
     },
-    addSign(sign: TCalculatorSign) {
+    addSign(sign) {
       if (
         this.value === '0.' ||
         CalculatorService.isMathematicalSignLast(this.value)
@@ -48,5 +60,5 @@ export const useCalculatorStore = defineStore('calculator', {
     summResult() {
       this.value = CalculatorService.summingResult(this.value)
     },
-  },
+  } as ICalculatorStoresActions,
 })

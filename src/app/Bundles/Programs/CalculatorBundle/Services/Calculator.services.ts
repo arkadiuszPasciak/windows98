@@ -1,17 +1,22 @@
-import { ECalculatorSign } from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
+import {
+  ECalculatorSign,
+  ECalculatorDirect,
+  TCalculatorDirect,
+} from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
 
 export class Calculator {
   public isValueEqual(
     value: string,
     sign: string,
-    direct: 'first' | 'last',
+    direct: TCalculatorDirect,
   ): boolean {
-    if (direct === 'first') {
-      return value.slice(0, sign.length) === sign ? true : false
-    } else if (direct === 'last') {
-      return value.slice(-1) === sign ? true : false
-    } else {
-      return false
+    switch (direct) {
+      case ECalculatorDirect.FIRST:
+        return value.slice(0, sign.length) === sign ? true : false
+      case ECalculatorDirect.LAST:
+        return value.slice(-1) === sign ? true : false
+      default:
+        return false
     }
   }
 

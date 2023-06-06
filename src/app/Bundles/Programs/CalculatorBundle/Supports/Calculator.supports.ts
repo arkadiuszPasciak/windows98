@@ -40,7 +40,12 @@ export enum ECalculatorButtonColor {
 
 export type TCalculatorButtonColor = ECalculatorButtonColor
 
-export enum ECalculatorDirection {}
+export enum ECalculatorDirect {
+  FIRST = 'first',
+  LAST = 'last',
+}
+
+export type TCalculatorDirect = ECalculatorDirect
 
 export type TCalculatorButtonContent = TCalculatorSign | TCalculatorNumber
 
