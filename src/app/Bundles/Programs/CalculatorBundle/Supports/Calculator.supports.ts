@@ -11,17 +11,7 @@ export enum ECalculatorNumber {
   NINE = '9',
 }
 
-export type TCalculatorNumber =
-  | ECalculatorNumber.ZERO
-  | ECalculatorNumber.ONE
-  | ECalculatorNumber.TWO
-  | ECalculatorNumber.THREE
-  | ECalculatorNumber.FOUR
-  | ECalculatorNumber.FIVE
-  | ECalculatorNumber.SIX
-  | ECalculatorNumber.SEVEN
-  | ECalculatorNumber.EIGHT
-  | ECalculatorNumber.NINE
+export type TCalculatorNumber = ECalculatorNumber
 
 export enum ECalculatorSign {
   ADD = '+',
@@ -32,13 +22,7 @@ export enum ECalculatorSign {
   RESULT = '=',
 }
 
-export type TCalculatorSign =
-  | ECalculatorSign.ADD
-  | ECalculatorSign.DIVIDE
-  | ECalculatorSign.DOT
-  | ECalculatorSign.MINUS
-  | ECalculatorSign.MULTIPLY
-  | ECalculatorSign.RESULT
+export type TCalculatorSign = ECalculatorSign
 
 export enum ECalculatorButton {
   DOT = 'dot',
@@ -47,11 +31,16 @@ export enum ECalculatorButton {
   SIGN = 'sign',
 }
 
-export type TCalculatorButton =
-  | ECalculatorButton.DOT
-  | ECalculatorButton.NUMBER
-  | ECalculatorButton.RESULT
-  | ECalculatorButton.SIGN
+export type TCalculatorButton = ECalculatorButton
+
+export enum ECalculatorButtonColor {
+  BLUE = 'color-blue',
+  RED = 'color-red',
+}
+
+export type TCalculatorButtonColor = ECalculatorButtonColor
+
+export enum ECalculatorDirection {}
 
 export type TCalculatorButtonContent = TCalculatorSign | TCalculatorNumber
 
@@ -59,5 +48,5 @@ export interface ICalculatorButtons {
   type: TCalculatorButton
   content: TCalculatorButtonContent
   testAttribute: string
-  color: 'color-blue' | 'color-red'
+  color: TCalculatorButtonColor
 }

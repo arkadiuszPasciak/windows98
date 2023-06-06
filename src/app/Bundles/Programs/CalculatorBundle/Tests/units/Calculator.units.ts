@@ -1,65 +1,62 @@
 import { expect, it, describe } from 'vitest'
-import {
-  isDotExist,
-  isMathematicalSignLast,
-  summingResult,
-  isMathematicalOperation,
-} from '@APP|Bundles/CalculatorBundle/Services/Calculator.services'
+import { Calculator } from '@APP|Bundles/CalculatorBundle/Services/Calculator.services'
+
+const CalculatorService = new Calculator()
 
 describe('[CalculatorBundle]<Services>(isDotExist)', () => {
   it('should return false', () => {
-    expect(isDotExist('')).toBe(false)
+    expect(CalculatorService.isDotExist('')).toBe(false)
 
-    expect(isDotExist('12345')).toBe(false)
+    expect(CalculatorService.isDotExist('12345')).toBe(false)
   })
 
   it('should return true', () => {
-    expect(isDotExist('123.45')).toBe(true)
+    expect(CalculatorService.isDotExist('123.45')).toBe(true)
   })
 })
 
 describe('[CalculatorBundle]<Services>(isMathematicalSignLast)', () => {
   it('should return false', () => {
-    expect(isMathematicalSignLast('')).toBe(false)
+    expect(CalculatorService.isMathematicalSignLast('')).toBe(false)
 
-    expect(isMathematicalSignLast('1234$')).toBe(false)
+    expect(CalculatorService.isMathematicalSignLast('1234$')).toBe(false)
   })
 
   it('should return true', () => {
-    expect(isMathematicalSignLast('1234+')).toBe(true)
+    expect(CalculatorService.isMathematicalSignLast('1234+')).toBe(true)
 
-    expect(isMathematicalSignLast('1234/')).toBe(true)
+    expect(CalculatorService.isMathematicalSignLast('1234/')).toBe(true)
 
-    expect(isMathematicalSignLast('1234-')).toBe(true)
+    expect(CalculatorService.isMathematicalSignLast('1234-')).toBe(true)
 
-    expect(isMathematicalSignLast('1234*')).toBe(true)
+    expect(CalculatorService.isMathematicalSignLast('1234*')).toBe(true)
   })
 })
 
 describe('[CalculatorBundle]<Services>(summingResult)', () => {
   it('should return false', () => {
-    expect(summingResult('')).toBe('ERROR')
+    expect(CalculatorService.summingResult('')).toBe('ERROR')
 
-    expect(summingResult('abcde')).toBe('ERROR')
+    expect(CalculatorService.summingResult('abcde')).toBe('ERROR')
 
-    expect(summingResult('!@^)("')).toBe('ERROR')
+    expect(CalculatorService.summingResult('!@^)("')).toBe('ERROR')
   })
 
   it('should return true', () => {
-    expect(summingResult('1+2-5*8/2')).toBe('-17')
+    expect(CalculatorService.summingResult('1+2-5*8/2')).toBe('-17')
   })
 })
 
 describe('[CalculatorBundle]<Services>(isMathematicalOperation)', () => {
   it('should return false', () => {
-    expect(isMathematicalOperation('')).toBe(false)
+    expect(CalculatorService.isMathematicalOperation('')).toBe(false)
 
-    expect(isMathematicalOperation('abcde')).toBe(false)
+    expect(CalculatorService.isMathematicalOperation('abcde')).toBe(false)
 
-    expect(isMathematicalOperation('!@^)("')).toBe(false)
+    expect(CalculatorService.isMathematicalOperation('!@^)("')).toBe(false)
   })
 
   it('should return true', () => {
-    expect(isMathematicalOperation('1+2-5*8/2')).toBe(true)
+    expect(CalculatorService.isMathematicalOperation('1+2-5*8/2')).toBe(true)
   })
 })
