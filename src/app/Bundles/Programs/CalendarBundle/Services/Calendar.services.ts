@@ -1,8 +1,4 @@
-import {
-  ICalendarElements,
-  ICalendarDays,
-  TCalendarYearChangeMethod,
-} from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
+import { ICalendarDays } from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
 
 export class Calendar {
   private date: Date
@@ -17,14 +13,6 @@ export class Calendar {
     this.month = this.date.getMonth()
     this.firstDayMonth = this.getFirstDayMonth()
     this.lastDateMonth = this.getLastDateMonth()
-  }
-
-  private getFirstDayMonth(): number {
-    return new Date(this.year, this.month, 1).getDay()
-  }
-
-  private getLastDateMonth(): number {
-    return new Date(this.year, this.month + 1, 0).getDate()
   }
 
   public generateDays(): Array<ICalendarDays> {
@@ -51,54 +39,12 @@ export class Calendar {
 
     return days
   }
-}
 
-export class CalendarComponentTesting {
-  public elements: ICalendarElements
-
-  constructor() {
-    this.elements = {
-      calendarDaysView: '[data-test="calendar-view-days"]',
-      selectDateMonths: '[data-test="ui-select-date-months"]',
-      optionSelected: '[data-test="ui-select-date-months"] > option:selected',
-      buttonYear: (method: TCalendarYearChangeMethod) =>
-        `[data-test="calendar-year-stepper-${method}"]`,
-      showYear: '[data-test="calendar-year-stepper-input"]',
-    }
+  private getFirstDayMonth(): number {
+    return new Date(this.year, this.month, 1).getDay()
   }
 
-  private checkCalendarDays(inActiveDays: number, days: number) {
-    cy.get(this.elements.calendarDaysView)
-      .find('.day.is-inactive')
-      .should('have.length', inActiveDays)
-
-    cy.get(this.elements.calendarDaysView)
-      .find('.day.is-normal')
-      .should('have.length', days)
-  }
-
-  public changeSelectAndCheckComponent(
-    month: string,
-    inActiveDays: number,
-    days: number,
-  ) {
-    cy.get(this.elements.selectDateMonths).select(month)
-
-    cy.get(this.elements.optionSelected).should('have.text', month)
-
-    this.checkCalendarDays(inActiveDays, days)
-  }
-
-  public changeYearAndCheckComponent(
-    year: string,
-    method: TCalendarYearChangeMethod,
-    inActiveDays: number,
-    days: number,
-  ) {
-    cy.get(this.elements.buttonYear(method)).click()
-
-    cy.get(this.elements.showYear).should('have.text', year)
-
-    this.checkCalendarDays(inActiveDays, days)
+  private getLastDateMonth(): number {
+    return new Date(this.year, this.month + 1, 0).getDate()
   }
 }

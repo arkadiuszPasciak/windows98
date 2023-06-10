@@ -1,9 +1,9 @@
 import {
   ICalendarDays,
-  IListOfMonths,
+  ICalendarMonths,
 } from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
 
-export const MListOfMonths = [
+export const MCalendarMonths = [
   {
     value: 0,
     name: 'CalendarBundle.january',
@@ -52,9 +52,9 @@ export const MListOfMonths = [
     value: 11,
     name: 'CalendarBundle.december',
   },
-] as Array<IListOfMonths>
+] as Array<ICalendarMonths>
 
-export const MShortcutDaysOfWeek = [
+export const MCalendarShortcutDays = [
   'CalendarBundle.shortcut-sunday',
   'CalendarBundle.shortcut-monday',
   'CalendarBundle.shortcut-tuesday',
@@ -64,7 +64,7 @@ export const MShortcutDaysOfWeek = [
   'CalendarBundle.shortcut-saturday',
 ] as Array<string>
 
-export const MDaysOfMonth = [
+export const MCalendarDays = [
   { status: 'inactive', value: '' },
   { status: 'inactive', value: '' },
   { status: 'inactive', value: '' },
@@ -104,7 +104,7 @@ export const MDaysOfMonth = [
   { status: 'normal', value: '31' },
 ] as Array<ICalendarDays>
 
-export const MDaysOfMonth2 = [
+export const MCalendarDays2 = [
   { status: 'inactive', value: '' },
   { status: 'inactive', value: '' },
   { status: 'inactive', value: '' },
@@ -140,7 +140,7 @@ export const MDaysOfMonth2 = [
   { status: 'normal', value: '30' },
 ] as Array<ICalendarDays>
 
-export const MDaysOfMonth3 = [
+export const MCalendarDays3 = [
   { status: 'normal', value: '1' },
   { status: 'normal', value: '2' },
   { status: 'normal', value: '3' },
