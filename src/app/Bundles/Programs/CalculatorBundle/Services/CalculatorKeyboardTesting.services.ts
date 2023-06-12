@@ -7,32 +7,37 @@ import {
   TCalculatorNumber,
   TCalculatorSign,
 } from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
+import Testing from '@APP|Bundles/TestingBundle/Services/Testing.services'
 
-export default class CalculatorKeyboardTesting {
+export default class CalculatorKeyboardTesting extends Testing {
   public elements: ICalculatorKeyboardElements
 
   constructor() {
-    this.elements = {
-      button: {
-        zero: this.generateDataAttribute(ECalculatorNumber.ZERO),
-        one: this.generateDataAttribute(ECalculatorNumber.ONE),
-        two: this.generateDataAttribute(ECalculatorNumber.TWO),
-        three: this.generateDataAttribute(ECalculatorNumber.THREE),
-        four: this.generateDataAttribute(ECalculatorNumber.FOUR),
-        five: this.generateDataAttribute(ECalculatorNumber.FIVE),
-        six: this.generateDataAttribute(ECalculatorNumber.SIX),
-        seven: this.generateDataAttribute(ECalculatorNumber.SEVEN),
-        eight: this.generateDataAttribute(ECalculatorNumber.EIGHT),
-        nine: this.generateDataAttribute(ECalculatorNumber.NINE),
-        add: this.generateDataAttribute(ECalculatorSign.ADD),
-        divide: this.generateDataAttribute(ECalculatorSign.DIVIDE),
-        dot: this.generateDataAttribute(ECalculatorSign.DOT),
-        minus: this.generateDataAttribute(ECalculatorSign.MINUS),
-        multiply: this.generateDataAttribute(ECalculatorSign.MULTIPLY),
-        result: this.generateDataAttribute(ECalculatorSign.RESULT),
-      },
-      main: 'div.CalculatorKeyboard',
-    }
+    super({
+      mainClassName: 'div.CalculatorKeyboard',
+      viewportHeight: 200,
+      viewportWidth: 200,
+    }),
+      (this.elements = {
+        button: {
+          zero: this.generateDataAttribute(ECalculatorNumber.ZERO),
+          one: this.generateDataAttribute(ECalculatorNumber.ONE),
+          two: this.generateDataAttribute(ECalculatorNumber.TWO),
+          three: this.generateDataAttribute(ECalculatorNumber.THREE),
+          four: this.generateDataAttribute(ECalculatorNumber.FOUR),
+          five: this.generateDataAttribute(ECalculatorNumber.FIVE),
+          six: this.generateDataAttribute(ECalculatorNumber.SIX),
+          seven: this.generateDataAttribute(ECalculatorNumber.SEVEN),
+          eight: this.generateDataAttribute(ECalculatorNumber.EIGHT),
+          nine: this.generateDataAttribute(ECalculatorNumber.NINE),
+          add: this.generateDataAttribute(ECalculatorSign.ADD),
+          divide: this.generateDataAttribute(ECalculatorSign.DIVIDE),
+          dot: this.generateDataAttribute(ECalculatorSign.DOT),
+          minus: this.generateDataAttribute(ECalculatorSign.MINUS),
+          multiply: this.generateDataAttribute(ECalculatorSign.MULTIPLY),
+          result: this.generateDataAttribute(ECalculatorSign.RESULT),
+        },
+      })
   }
 
   public testComponent(): void {
@@ -40,13 +45,9 @@ export default class CalculatorKeyboardTesting {
 
     this.renderComponent()
 
-    this.checkMainElement()
+    this.checkComponentElements()
 
     this.clickAllButtons()
-  }
-
-  public checkMainElement(): void {
-    cy.get(this.elements.main)
   }
 
   public clickButton(
@@ -105,10 +106,6 @@ export default class CalculatorKeyboardTesting {
         ],
       },
     })
-  }
-
-  private setViewport(): void {
-    cy.viewport(200, 200)
   }
 
   private generateDataAttribute(

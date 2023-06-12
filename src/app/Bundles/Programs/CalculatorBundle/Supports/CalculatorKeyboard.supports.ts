@@ -17,5 +17,4 @@ export interface ICalculatorKeyboardElements {
     multiply: string
     result: string
   }
-  main: string
 }
