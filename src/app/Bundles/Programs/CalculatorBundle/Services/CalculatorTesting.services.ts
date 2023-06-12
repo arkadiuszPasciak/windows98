@@ -2,18 +2,19 @@ import { createTestingPinia } from '@pinia/testing'
 import Calculator from '@APP|Bundles/CalculatorBundle/Components/Calculator.vue'
 import CalculatorKeyboardTesting from '@APP|Bundles/CalculatorBundle/Services/CalculatorKeyboardTesting.services'
 import CalculatorDisplayTesting from '@APP|Bundles/CalculatorBundle/Services/CalculatorDisplayTesting.services'
+import Testing from '@APP|Bundles/TestingBundle/Services/Testing.services'
 
 const CalculatorDisplayTestingService = new CalculatorDisplayTesting()
 const CalculatorKeyboardTestingService = new CalculatorKeyboardTesting()
 
-export default class CalculatorTesting {
-  public elements: any
-
+export default class CalculatorTesting extends Testing {
   constructor() {
-    this.elements = {
-      mainClass: 'div.Calculator',
-      modalTitle: '[data-test="modal-header-title"]',
-    }
+    super({
+      mainClassName: 'div.UIModal.Calculator',
+      modalTitleText: 'Calculator',
+      viewportHeight: 220,
+      viewportWidth: 190,
+    })
   }
 
   public calculateMathematicalOperation(): void {
@@ -108,17 +109,7 @@ export default class CalculatorTesting {
 
     this.renderComponent()
 
-    this.checkMainElement()
-
-    this.checkModalTitle()
-  }
-
-  private checkMainElement(): void {
-    cy.get(this.elements.mainClass).should('exist')
-  }
-
-  private checkModalTitle(): void {
-    cy.get(this.elements.modalTitle).should('have.text', 'Calculator')
+    this.checkComponentElements()
   }
 
   private clickButtonAndCheckValue(button: string, value: string): void {
@@ -140,9 +131,5 @@ export default class CalculatorTesting {
         ],
       },
     })
-  }
-
-  private setViewport(): void {
-    cy.viewport(190, 220)
   }
 }
