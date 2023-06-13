@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-  import { Ref, ref } from 'vue'
+  import { ref } from 'vue'
   import { Nullable } from 'vitest'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
@@ -83,11 +83,11 @@
     `${props.moveWindow ? 'move-window' : ''}`,
   ] as Array<string>
 
-  const modalElement = ref(null) as Ref<Nullable<HTMLElement>>
-  const mouseState = ref(false) as Ref<boolean>
-  const positionX = ref(0) as Ref<number>
-  const positionY = ref(0) as Ref<number>
-  const cursorType = ref('default') as Ref<TUIModalCursor>
+  const modalElement = ref<Nullable<HTMLElement>>(null)
+  const mouseState = ref<boolean>(false)
+  const positionX = ref<number>(0)
+  const positionY = ref<number>(0)
+  const cursorType = ref<TUIModalCursor>('default')
 
   const mouseDownEvent = (event: MouseEvent): void => {
     if (!modalElement.value || !props.moveWindow) {

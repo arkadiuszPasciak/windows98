@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-  import { PropType, Ref, ref } from 'vue'
+  import { PropType, ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import { TUITabsProps } from '@APP|Bundles/UITabsBundle/Supports/UITabs.supports'
 
@@ -39,7 +39,7 @@
 
   const { t } = useI18n()
 
-  const activeIndex = ref(0) as Ref<number>
+  const activeIndex = ref<number>(0)
 
   const setActiveTab = (id: number): void => {
     if (activeIndex.value === id) {

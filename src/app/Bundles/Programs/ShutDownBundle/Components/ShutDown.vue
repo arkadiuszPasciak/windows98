@@ -56,7 +56,7 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, Ref } from 'vue'
+  import { ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
   import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
@@ -77,7 +77,9 @@
 
   const programStore = useProgramStore()
 
-  const checkedRadioBoxes = ref('shut-down') as Ref<IShutDownRadioCheck>
+  const checkedRadioBoxes = ref<IShutDownRadioCheck>(
+    EShutDownRadioCheck.SHUT_DOWN,
+  )
 
   const closeModal = (): void => {
     programStore.updateShutDownModal(false)

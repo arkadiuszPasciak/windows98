@@ -1,24 +1,31 @@
 import { defineStore } from 'pinia'
+import { Calculator } from '@APP|Bundles/CalculatorBundle/Services/Calculator.services'
+import { ECalculatorDirect } from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
 import {
-  isDotExist,
-  isValueEqual,
-  isMathematicalSignLast,
-  summingResult,
-} from '@APP|Bundles/CalculatorBundle/Services/Calculator.services'
-import {
-  TCalculatorSign,
-  TCalculatorNumber,
-} from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
+  ICalculatorStoresActions,
+  ICalculatorStoresState,
+} from '@APP|Bundles/CalculatorBundle/Supports/CalculatorStores.supports'
+
+const CalculatorService = new Calculator()
 
 export const useCalculatorStore = defineStore('calculator', {
-  state: () => ({
-    value: '0' as string,
-  }),
+  state: () =>
+    ({
+      value: '0',
+    } as ICalculatorStoresState),
   actions: {
-    addNumber(number: TCalculatorNumber) {
+    addNumber(number) {
       if (
-        isValueEqual(this.value, '0', 'first') &&
-        !isValueEqual(this.value, '0.', 'first') &&
+        CalculatorService.isValueEqual(
+          this.value,
+          '0',
+          ECalculatorDirect.FIRST,
+        ) &&
+        !CalculatorService.isValueEqual(
+          this.value,
+          '0.',
+          ECalculatorDirect.FIRST,
+        ) &&
         this.value.length === 1
       ) {
         this.value = number
@@ -27,23 +34,31 @@ export const useCalculatorStore = defineStore('calculator', {
       }
     },
     addDot() {
-      if (isDotExist(this.value) || isMathematicalSignLast(this.value)) {
+      if (
+        CalculatorService.isDotExist(this.value) ||
+        CalculatorService.isMathematicalSignLast(this.value)
+      ) {
         return
       }
 
-      if (!isValueEqual(this.value, '.', 'last')) {
+      if (
+        !CalculatorService.isValueEqual(this.value, '.', ECalculatorDirect.LAST)
+      ) {
         this.value += '.'
       }
     },
-    addSign(sign: TCalculatorSign) {
-      if (this.value === '0.' || isMathematicalSignLast(this.value)) {
+    addSign(sign) {
+      if (
+        this.value === '0.' ||
+        CalculatorService.isMathematicalSignLast(this.value)
+      ) {
         return
       }
 
       this.value += sign
     },
     summResult() {
-      this.value = summingResult(this.value)
+      this.value = CalculatorService.summingResult(this.value)
     },
-  },
+  } as ICalculatorStoresActions,
 })

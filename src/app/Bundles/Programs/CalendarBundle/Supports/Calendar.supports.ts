@@ -27,7 +27,7 @@ export type TCalendarMonths =
   | ECalendarMonths.NOVEMBER
   | ECalendarMonths.DECEMEBER
 
-export interface IListOfMonths {
+export interface ICalendarMonths {
   value: TCalendarMonths
   name: string
 }

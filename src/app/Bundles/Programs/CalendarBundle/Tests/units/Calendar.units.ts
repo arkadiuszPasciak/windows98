@@ -1,9 +1,9 @@
 import { expect, it, describe } from 'vitest'
 import { setActivePinia, createPinia } from 'pinia'
 import {
-  MDaysOfMonth,
-  MDaysOfMonth2,
-  MDaysOfMonth3,
+  MCalendarDays,
+  MCalendarDays2,
+  MCalendarDays3,
 } from '@APP|Bundles/CalendarBundle/Mocks/Calendar.mocks'
 import { useCalendarStore } from '@APP|Bundles/CalendarBundle/Stores/Calendar.stores'
 import { ECalendarYearChangeMethod } from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
@@ -15,7 +15,7 @@ describe('[CalendarBundle]<Stores>(useCalendarStore)', () => {
   it('generates calendar', async () => {
     await store.generateCurrentCalendar(new Date(2022, 0))
 
-    expect(store.calendar).toStrictEqual(MDaysOfMonth)
+    expect(store.calendar).toStrictEqual(MCalendarDays)
     expect(store.month).toBe(0)
     expect(store.year).toBe(2022)
   })
@@ -23,7 +23,7 @@ describe('[CalendarBundle]<Stores>(useCalendarStore)', () => {
   it('changes calendar by month', async () => {
     await store.changeCalendarByMonth(5)
 
-    expect(store.calendar).toStrictEqual(MDaysOfMonth2)
+    expect(store.calendar).toStrictEqual(MCalendarDays2)
     expect(store.month).toBe(5)
     expect(store.year).toBe(2022)
   })
@@ -32,7 +32,7 @@ describe('[CalendarBundle]<Stores>(useCalendarStore)', () => {
     store.year = 1980
     await store.changeCalendarByYear()
 
-    expect(store.calendar).toStrictEqual(MDaysOfMonth3)
+    expect(store.calendar).toStrictEqual(MCalendarDays3)
     expect(store.month).toBe(5)
     expect(store.year).toBe(1980)
   })

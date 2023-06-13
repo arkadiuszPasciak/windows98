@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, Ref } from 'vue'
+  import { ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
   import UIInput from '@APP|Bundles/UIInputBundle/Components/UIInput.vue'
@@ -70,11 +70,9 @@
 
   const { t } = useI18n()
 
-  const fileNameModelValue = ref(t('FileBundle.untitled')) as Ref<string>
+  const fileNameModelValue = ref<string>(t('FileBundle.untitled'))
 
-  const selectTextTypeModelValue = ref(
-    MFilesTextTypes[0].value,
-  ) as Ref<TFileTextTypes>
+  const selectTextTypeModelValue = ref<TFileTextTypes>(MFilesTextTypes[0].value)
 
   const saveFile = (): void => {
     saveFileOnUserDisk(

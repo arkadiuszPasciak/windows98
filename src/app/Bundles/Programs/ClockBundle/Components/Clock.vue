@@ -5,12 +5,12 @@
 </template>
 
 <script setup lang="ts">
-  import { ref, Ref, onBeforeUnmount } from 'vue'
+  import { ref, onBeforeUnmount } from 'vue'
   import { Nullable } from 'vitest'
   import { useClockStore } from '@APP|Bundles/ClockBundle/Stores/Clock.stores'
 
   const store = useClockStore()
-  const time = ref(store.$state.time) as Ref<Nullable<string>>
+  const time = ref<Nullable<string>>(store.$state.time)
 
   const updateTime = (): void => {
     store.updateTime()

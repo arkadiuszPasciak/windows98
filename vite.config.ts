@@ -17,7 +17,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `@import '${getPathMain(
-          'src/app/Assets/Styles/Config/config.styles.scss',
+          'src/app/Assets/Styles/Config/Config.styles.scss',
         )}';`,
       },
     },

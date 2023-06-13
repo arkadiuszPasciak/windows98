@@ -13,10 +13,10 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
   import { muteAllSound } from '@APP|Bundles/AudioBundle/Services/Audio.services'
-  import { ref, Ref } from 'vue'
+  import { ref } from 'vue'
 
   const { t } = useI18n()
-  const status = ref(true) as Ref<boolean>
+  const status = ref<boolean>(true)
 
   const getMedia = () => {
     status.value = !status.value

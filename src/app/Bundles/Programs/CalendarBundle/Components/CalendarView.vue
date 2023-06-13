@@ -2,7 +2,7 @@
   <div class="CalendarView">
     <div class="week-days">
       <div
-        v-for="item in MShortcutDaysOfWeek"
+        v-for="item in MCalendarShortcutDays"
         :key="`shortcut-days-of-week-${item}`"
         class="week"
       >
@@ -34,7 +34,7 @@
 <script setup lang="ts">
   import { onBeforeMount } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import { MShortcutDaysOfWeek } from '@APP|Bundles/CalendarBundle/Mocks/Calendar.mocks'
+  import { MCalendarShortcutDays } from '@APP|Bundles/CalendarBundle/Mocks/Calendar.mocks'
   import { useCalendarStore } from '@APP|Bundles/CalendarBundle/Stores/Calendar.stores'
   import { ECalendarStatusDay } from '@APP|Bundles/CalendarBundle/Supports/Calendar.supports'
 

@@ -68,7 +68,7 @@
 </template>
 
 <script setup lang="ts">
-  import { Ref, ref } from 'vue'
+  import { ref } from 'vue'
   import { useI18n } from 'vue-i18n'
   import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
   import { useStartStore } from '@APP|Bundles/StartBundle/Stores/Start.stores'
@@ -83,7 +83,7 @@
   const apps = store.$state.apps as IStartStoreApps[]
   const programStore = useProgramStore()
 
-  const primaryPanelStatus: Ref<boolean> = ref(false)
+  const primaryPanelStatus = ref<boolean>(false)
 
   const togglePrimaryPanel = (): void => {
     if (apps) {
