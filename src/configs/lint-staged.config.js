@@ -1,5 +1,5 @@
 module.exports = {
-  '**/*.{js,ts,vue}': ['npm run lintfix:js'],
-  '**/*.{scss,vue}': ['npm run lintfix:styles'],
-  '*': ['npm run lintfix:prettier'],
+  '**/*.{js,ts,vue}': ['pnpm run lintfix:js'],
+  '**/*.{scss,vue}': ['pnpm run lintfix:styles'],
+  '*': ['pnpm run lintfix:prettier'],
 }

@@ -43,7 +43,7 @@ jobs:
           restore-keys: cypress-binary-
       - name: Install Dependencies
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
-        run: npm install --force --non-interactive
+        run: pnpm install --force --non-interactive
 
   type-check:
     runs-on: ubuntu-latest
@@ -68,7 +68,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Check types
-        run: npm run lint:types
+        run: pnpm run lint:types
 
   eslint-lint:
     runs-on: ubuntu-latest
@@ -93,7 +93,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Lint with ESLint
-        run: 'npm run lint:js'
+        run: 'pnpm run lint:js'
 
   prettier-lint:
     runs-on: ubuntu-latest
@@ -118,7 +118,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Lint with Prettier
-        run: 'npm run lint:prettier'
+        run: 'pnpm run lint:prettier'
 
   stylelint-lint:
     runs-on: ubuntu-latest
@@ -143,7 +143,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Lint with Stylelint
-        run: 'npm run lint:styles'
+        run: 'pnpm run lint:styles'
 
   vitest-tests:
     runs-on: ubuntu-latest
@@ -170,7 +170,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Run Vitest tests
-        run: 'npm run vitest:run'
+        run: 'pnpm run vitest:run'
 
   build:
     runs-on: ubuntu-latest
@@ -195,7 +195,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Build Application
-        run: npm run app:build
+        run: pnpm run app:build
 
   cypress-component-tests:
     runs-on: ubuntu-latest
@@ -230,7 +230,7 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           component: true
-          command: npm run cypress:run
+          command: pnpm run cypress:run
 
   deploy-preview:
     runs-on: ubuntu-latest
@@ -239,7 +239,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3.5.0
       - name: Install Vercel CLI
-        run: npm install --global vercel@latest
+        run: pnpm install --global vercel@latest
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
       - name: Build Project Artifacts
