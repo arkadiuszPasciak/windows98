@@ -27,19 +27,21 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '${{ matrix.node }}'
+      - name: Install pnpm
+        run: npm install -g pnpm
       - name: Cache npm dependencies
         uses: actions/cache@v3
         id: cache-dependencies
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Cache Cypress binary
         id: cache-cypress-binary
         uses: actions/cache@v3
         with:
           path: ~/.cache/Cypress
-          key: cypress-binary-${{ hashFiles('**/package-lock.json') }}
+          key: cypress-binary-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: cypress-binary-
       - name: Install Dependencies
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
@@ -65,7 +67,7 @@ jobs:
         id: cache-dependencies
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Check types
         run: pnpm run lint:types
@@ -90,7 +92,7 @@ jobs:
         id: cache-dependencies
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Lint with ESLint
         run: 'pnpm run lint:js'
@@ -115,7 +117,7 @@ jobs:
         id: cache-dependencies
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Lint with Prettier
         run: 'pnpm run lint:prettier'
@@ -140,7 +142,7 @@ jobs:
         id: cache-dependencies
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Lint with Stylelint
         run: 'pnpm run lint:styles'
@@ -167,7 +169,7 @@ jobs:
         id: cache-dependencies
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Run Vitest tests
         run: 'pnpm run vitest:run'
@@ -192,7 +194,7 @@ jobs:
         id: cache-dependencies
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Build Application
         run: pnpm run app:build
@@ -217,14 +219,14 @@ jobs:
         id: cache-dependencies
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-node-
       - name: Restore Cypress binary
         id: cache-cypress-binary
         uses: actions/cache@v3
         with:
           path: ~/.cache/Cypress
-          key: cypress-binary-${{ hashFiles('**/package-lock.json') }}
+          key: cypress-binary-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: cypress-binary-
       - name: Run Cypress test
         uses: cypress-io/github-action@v5
