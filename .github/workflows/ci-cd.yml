@@ -26,7 +26,7 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8
-      - name: Install Node.js ${{ matrix.node }}'
+      - name: Install Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
@@ -53,10 +53,11 @@ jobs:
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
-      - name: 'Install Node.js ${{ matrix.node }}'
+      - name: Install Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: '${{ matrix.node }}'
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: Restore npm dependencies
         uses: actions/cache@v3
         id: cache-dependencies
@@ -78,10 +79,11 @@ jobs:
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
-      - name: 'Install Node.js ${{ matrix.node }}'
+      - name: Install Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: '${{ matrix.node }}'
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: Restore npm dependencies
         uses: actions/cache@v3
         id: cache-dependencies
@@ -103,10 +105,11 @@ jobs:
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
-      - name: 'Install Node.js ${{ matrix.node }}'
+      - name: Install Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: '${{ matrix.node }}'
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: Restore npm dependencies
         uses: actions/cache@v3
         id: cache-dependencies
@@ -128,10 +131,11 @@ jobs:
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
-      - name: 'Install Node.js ${{ matrix.node }}'
+      - name: Install Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: '${{ matrix.node }}'
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: Restore npm dependencies
         uses: actions/cache@v3
         id: cache-dependencies
@@ -155,10 +159,11 @@ jobs:
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
-      - name: 'Install Node.js ${{ matrix.node }}'
+      - name: Install Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: '${{ matrix.node }}'
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: Restore npm dependencies
         uses: actions/cache@v3
         id: cache-dependencies
@@ -180,10 +185,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3.5.0
-      - name: 'Install Node.js ${{ matrix.node }}'
+      - name: Install Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: '${{ matrix.node }}'
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: Restore npm dependencies
         uses: actions/cache@v3
         id: cache-dependencies
@@ -205,10 +211,11 @@ jobs:
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
-      - name: 'Install Node.js ${{ matrix.node }}'
+      - name: Install Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: '${{ matrix.node }}'
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: Restore npm dependencies
         uses: actions/cache@v3
         id: cache-dependencies
