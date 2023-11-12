@@ -18,6 +18,8 @@ jobs:
 
       - name: Run pnpm setup
         run: pnpm setup
+        env:
+          SHELL: /bin/bash
 
       - name: Install Vercel CLI
         run: pnpm add --global vercel@latest
