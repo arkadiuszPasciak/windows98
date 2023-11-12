@@ -23,19 +23,14 @@ jobs:
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
-      - name: 'Install Node.js ${{ matrix.node }}'
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Install Node.js ${{ matrix.node }}'
         uses: actions/setup-node@v3
         with:
-          node-version: '${{ matrix.node }}'
-      - name: Install pnpm
-        run: npm install -g pnpm
-      - name: Cache npm dependencies
-        uses: actions/cache@v3
-        id: cache-dependencies
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: ${{ runner.os }}-node-
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: Cache Cypress binary
         id: cache-cypress-binary
         uses: actions/cache@v3
@@ -45,7 +40,7 @@ jobs:
           restore-keys: cypress-binary-
       - name: Install Dependencies
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
-        run: pnpm install --force --non-interactive
+        run: pnpm install
 
   type-check:
     runs-on: ubuntu-latest
