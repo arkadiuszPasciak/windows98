@@ -23,33 +23,53 @@ jobs:
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
+
       - name: 'Install Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pnpm-store
+            node_modules
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+
       - name: Install PNPM
         run: npm install -g pnpm
+
       - name: Install Dependencies
         run: pnpm install
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
   type-check:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.16.0]
-    needs:
-      - install-cache
+    needs: install-cache
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
+
       - name: 'Install Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pnpm-store
+            node_modules
+          key: ${{ needs.install-cache.outputs.cache-key }}
+
       - name: Install PNPM
         run: npm install -g pnpm
-      - name: Install Dependencies
-        run: pnpm install
+
       - name: Check types
         run: pnpm run lint:types
 
@@ -58,19 +78,27 @@ jobs:
     strategy:
       matrix:
         node-version: [18.16.0]
-    needs:
-      - type-check
+    needs: type-check
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
+
       - name: 'Install Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pnpm-store
+            node_modules
+          key: ${{ needs.install-cache.outputs.cache-key }}
+
       - name: Install PNPM
         run: npm install -g pnpm
-      - name: Install Dependencies
-        run: pnpm install
+
       - name: Lint with ESLint
         run: pnpm run lint:js
 
@@ -79,19 +107,27 @@ jobs:
     strategy:
       matrix:
         node-version: [18.16.0]
-    needs:
-      - type-check
+    needs: type-check
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
+
       - name: 'Install Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pnpm-store
+            node_modules
+          key: ${{ needs.install-cache.outputs.cache-key }}
+
       - name: Install PNPM
         run: npm install -g pnpm
-      - name: Install Dependencies
-        run: pnpm install
+
       - name: Lint with Prettier
         run: pnpm run lint:prettier
 
@@ -100,19 +136,27 @@ jobs:
     strategy:
       matrix:
         node-version: [18.16.0]
-    needs:
-      - type-check
+    needs: type-check
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
+
       - name: 'Install Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pnpm-store
+            node_modules
+          key: ${{ needs.install-cache.outputs.cache-key }}
+
       - name: Install PNPM
         run: npm install -g pnpm
-      - name: Install Dependencies
-        run: pnpm install
+
       - name: Lint with Stylelint
         run: pnpm run lint:styles
 
@@ -121,21 +165,27 @@ jobs:
     strategy:
       matrix:
         node-version: [18.16.0]
-    needs:
-      - eslint-lint
-      - prettier-lint
-      - stylelint-lint
+    needs: [eslint-lint, prettier-lint, stylelint-lint]
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
+
       - name: 'Install Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pnpm-store
+            node_modules
+          key: ${{ needs.install-cache.outputs.cache-key }}
+
       - name: Install PNPM
         run: npm install -g pnpm
-      - name: Install Dependencies
-        run: pnpm install
+
       - name: Run Vitest tests
         run: pnpm run vitest:run
 
@@ -144,19 +194,27 @@ jobs:
     strategy:
       matrix:
         node-version: [18.16.0]
-    needs:
-      - vitest-tests
+    needs: vitest-tests
     steps:
       - name: Checkout code
         uses: actions/checkout@v3.5.0
+
       - name: 'Install Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pnpm-store
+            node_modules
+          key: ${{ needs.install-cache.outputs.cache-key }}
+
       - name: Install PNPM
         run: npm install -g pnpm
-      - name: Install Dependencies
-        run: pnpm install
+
       - name: Build Application
         run: pnpm run app:build
 
@@ -165,19 +223,27 @@ jobs:
     strategy:
       matrix:
         node-version: [18.16.0]
-    needs:
-      - build
+    needs: build
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
+
       - name: 'Install Node.js ${{ matrix.node-version }}'
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Cache pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pnpm-store
+            node_modules
+          key: ${{ needs.install-cache.outputs.cache-key }}
+
       - name: Install PNPM
         run: npm install -g pnpm
-      - name: Install Dependencies
-        run: pnpm install
+
       - name: Run Cypress test
         uses: cypress-io/github-action@v5
         with:
@@ -186,17 +252,21 @@ jobs:
 
   deploy-preview:
     runs-on: ubuntu-latest
-    needs:
-      - cypress-component-tests
+    needs: cypress-component-tests
     steps:
       - uses: actions/checkout@v3.5.0
+
       - name: Install PNPM
         run: npm install -g pnpm
+
       - name: Install Vercel CLI
         run: pnpm add --global vercel@latest
+
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+
       - name: Build Project Artifacts
         run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
