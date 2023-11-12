@@ -98,10 +98,14 @@ jobs:
           path: |
             ~/.pnpm-store
             node_modules
-          key: ${{ needs.install-cache.outputs.cache-key }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: Install PNPM
         run: npm install -g pnpm
+
+      - name: Install Dependencies
+        run: pnpm install
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with ESLint
         run: pnpm run lint:js
@@ -127,10 +131,14 @@ jobs:
           path: |
             ~/.pnpm-store
             node_modules
-          key: ${{ needs.install-cache.outputs.cache-key }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: Install PNPM
         run: npm install -g pnpm
+
+      - name: Install Dependencies
+        run: pnpm install
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with Prettier
         run: pnpm run lint:prettier
@@ -156,10 +164,14 @@ jobs:
           path: |
             ~/.pnpm-store
             node_modules
-          key: ${{ needs.install-cache.outputs.cache-key }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: Install PNPM
         run: npm install -g pnpm
+
+      - name: Install Dependencies
+        run: pnpm install
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with Stylelint
         run: pnpm run lint:styles
@@ -185,10 +197,14 @@ jobs:
           path: |
             ~/.pnpm-store
             node_modules
-          key: ${{ needs.install-cache.outputs.cache-key }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: Install PNPM
         run: npm install -g pnpm
+
+      - name: Install Dependencies
+        run: pnpm install
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Run Vitest tests
         run: pnpm run vitest:run
@@ -214,10 +230,14 @@ jobs:
           path: |
             ~/.pnpm-store
             node_modules
-          key: ${{ needs.install-cache.outputs.cache-key }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: Install PNPM
         run: npm install -g pnpm
+
+      - name: Install Dependencies
+        run: pnpm install
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Build Application
         run: pnpm run app:build
@@ -243,10 +263,14 @@ jobs:
           path: |
             ~/.pnpm-store
             node_modules
-          key: ${{ needs.install-cache.outputs.cache-key }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: Install PNPM
         run: npm install -g pnpm
+
+      - name: Install Dependencies
+        run: pnpm install
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Run Cypress test
         uses: cypress-io/github-action@v5
