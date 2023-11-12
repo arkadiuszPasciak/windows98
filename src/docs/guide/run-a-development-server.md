@@ -5,7 +5,7 @@
 1. Start the development server by running the following command:
 
 ```bash
-npm run app:dev
+pnpm run app:dev
 ```
 
 This command will execute the dev script defined in your `package.json` file. Vite will start the development server and display the local URL in your terminal (usually [http://localhost:3000](http://localhost:3000)).

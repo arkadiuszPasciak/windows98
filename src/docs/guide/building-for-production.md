@@ -5,7 +5,7 @@
 1. Build your project for production by running the following command.
 
 ```bash
-npm run app:build
+pnpm run app:build
 ```
 
 This command will execute the build script defined in your `package.json` file. Vite will generate an optimized production build and output the static files to the `dist` folder.

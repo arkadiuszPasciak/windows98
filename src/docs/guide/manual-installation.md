@@ -2,7 +2,7 @@
 
 ## Requirements
 
-[Node.js v18.16.0](https://nodejs.org/en) and [npm 9.5.1](https://www.npmjs.com/) installed and setted on your system.
+[Node.js v18.16.0](https://nodejs.org/en) and [pnpm 8.10.2](https://pnpm.io/) installed and setted on your system.
 
 ## Steps
 
@@ -24,7 +24,7 @@ cd windows98
 3. Install the project dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 This command reads the package.json file and installs the necessary dependencies, including Vite and other required packages.

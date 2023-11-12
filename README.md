@@ -17,7 +17,6 @@ This project utilizes an array of modern web technologies and tools:
 - Git hooks are modified with [Husky](https://typicode.github.io/husky/#/).
 - Continuous Integration and Continuous Deployment (CI/CD) is managed with [GitHub Actions](https://github.com/features/actions).
 - Documentation is created with [Vitepress](https://vitepress.vuejs.org/).
-- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) is used to keep packages updated.
 
 Feel free to explore the project, provide feedback, and contribute if you're interested. Enjoy the trip back to Windows98, right in your browser!
 
@@ -60,13 +59,13 @@ cd windows98
 4. Install the required dependencies.
 
 ```bash
-npm install
+pnpm install
 ```
 
 5. Start the development mode.
 
 ```bash
-npm run app:dev
+pnpm run app:dev
 ```
 
 Now you can access the application in your browser at http://localhost:5173. Enjoy!

@@ -28,8 +28,6 @@
     "lintfix:js": "eslint -c ./src/configs/eslint.config.js --fix --ext \".ts,.js,.vue\" .",
     "lintfix:prettier": "prettier --config ./src/configs/prettier.config.js --write --list-different .",
     "lintfix:styles": "stylelint --config ./src/configs/stylelint.config.js **/*.{scss,vue} --fix",
-    "npm:check-updates": "npx npm-check-updates",
-    "npm:update-packages": "npx npm-check-updates -u",
     "prepare": "husky install",
     "vitest:dev": "vitest",
     "vitest:run": "vitest run"
@@ -42,6 +40,7 @@
   "devDependencies": {
     "@intlify/unplugin-vue-i18n": "^0.11.0",
     "@pinia/testing": "^0.1.2",
+    "@types/node": "^20.9.0",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
     "@vitejs/plugin-vue": "^4.2.3",
