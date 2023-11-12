@@ -46,7 +46,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+      - name: Install PNPM
+        run: npm install -g pnpm
       - name: Check types
         run: pnpm run lint:types
 
@@ -64,7 +65,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+      - name: Install PNPM
+        run: npm install -g pnpm
       - name: Lint with ESLint
         run: pnpm run lint:js
 
@@ -82,7 +84,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+      - name: Install PNPM
+        run: npm install -g pnpm
       - name: Lint with Prettier
         run: pnpm run lint:prettier
 
@@ -100,7 +103,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+      - name: Install PNPM
+        run: npm install -g pnpm
       - name: Lint with Stylelint
         run: pnpm run lint:styles
 
@@ -120,7 +124,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+      - name: Install PNPM
+        run: npm install -g pnpm
       - name: Run Vitest tests
         run: pnpm run vitest:run
 
@@ -138,7 +143,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+      - name: Install PNPM
+        run: npm install -g pnpm
       - name: Build Application
         run: pnpm run app:build
 
@@ -156,7 +162,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+      - name: Install PNPM
+        run: npm install -g pnpm
       - name: Run Cypress test
         uses: cypress-io/github-action@v5
         with:
@@ -169,6 +176,8 @@ jobs:
       - cypress-component-tests
     steps:
       - uses: actions/checkout@v3.5.0
+      - name: Install PNPM
+        run: npm install -g pnpm
       - name: Install Vercel CLI
         run: pnpm add --global vercel@latest
       - name: Pull Vercel Environment Information
