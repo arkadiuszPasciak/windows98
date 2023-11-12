@@ -69,6 +69,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install PNPM
         run: npm install -g pnpm
+      - name: Install Dependencies
+        run: pnpm install
       - name: Lint with ESLint
         run: pnpm run lint:js
 
@@ -88,6 +90,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install PNPM
         run: npm install -g pnpm
+      - name: Install Dependencies
+        run: pnpm install
       - name: Lint with Prettier
         run: pnpm run lint:prettier
 
@@ -107,6 +111,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install PNPM
         run: npm install -g pnpm
+      - name: Install Dependencies
+        run: pnpm install
       - name: Lint with Stylelint
         run: pnpm run lint:styles
 
@@ -128,6 +134,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install PNPM
         run: npm install -g pnpm
+      - name: Install Dependencies
+        run: pnpm install
       - name: Run Vitest tests
         run: pnpm run vitest:run
 
@@ -147,6 +155,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install PNPM
         run: npm install -g pnpm
+      - name: Install Dependencies
+        run: pnpm install
       - name: Build Application
         run: pnpm run app:build
 
@@ -166,6 +176,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install PNPM
         run: npm install -g pnpm
+      - name: Install Dependencies
+        run: pnpm install
       - name: Run Cypress test
         uses: cypress-io/github-action@v5
         with:
