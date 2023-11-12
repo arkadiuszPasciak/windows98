@@ -9,5 +9,7 @@
   "editor.formatOnSaveMode": "file",
   "files.autoSave": "onFocusChange",
   "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single"
+  "typescript.preferences.quoteStyle": "single",
+  "stylelint.packageManager": "pnpm",
+  "npm.packageManager": "pnpm"
 }

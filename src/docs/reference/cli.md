@@ -50,24 +50,6 @@ Command is used to perform `TypeScript` type checking in your Vue project using 
 pnpm run lint:types
 ```
 
-## [ESLint](https://eslint.org)
-
-### lint:js
-
-Command is used to run ESLint on your Vue and TypeScript files in order to `check` for code style and syntax issues. This command runs the lint:js script defined in your `package.json` file, which typically configures ESLint to analyze your project's .vue and .ts files. By executing this command, you can identify and fix potential code inconsistencies, maintain code quality, and adhere to best practices across your project.
-
-```bash
-pnpm run lint:js
-```
-
-### lintfix:js
-
-Command is used to run ESLint on your Vue and TypeScript files, `checking` for code style and syntax issues while automatically `fixing` any fixable problems. This command runs the lintfix:js script defined in your `package.json` file, which typically configures ESLint to analyze and correct your project's .vue and .ts files. By executing this command, you can streamline the process of maintaining code quality, ensuring consistency, and adhering to best practices across your project.
-
-```bash
-pnpm run lintfix:js
-```
-
 ## [Stylelint](https://stylelint.io)
 
 ### lint:styles

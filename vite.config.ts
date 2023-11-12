@@ -36,7 +36,9 @@ export default defineConfig({
       strictMessage: false,
     }),
     eslintPlugin({
-      overrideConfigFile: getPathMain('src/configs/eslint.config.js'),
+      overrideConfigFile: getPathMain(
+        'core/linters/eslint/configs/eslint.config.js',
+      ),
     }),
     tsconfigPaths({ loose: true }),
   ],
