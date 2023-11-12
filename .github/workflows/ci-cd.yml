@@ -65,10 +65,14 @@ jobs:
           path: |
             ~/.pnpm-store
             node_modules
-          key: ${{ needs.install-cache.outputs.cache-key }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: Install PNPM
         run: npm install -g pnpm
+
+      - name: Install Dependencies
+        run: pnpm install
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Check types
         run: pnpm run lint:types
