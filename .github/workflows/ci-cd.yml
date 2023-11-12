@@ -287,6 +287,9 @@ jobs:
       - name: Install PNPM
         run: npm install -g pnpm
 
+      - name: Run pnpm setup
+        run: pnpm setup
+
       - name: Install Vercel CLI
         run: pnpm add --global vercel@latest
 
