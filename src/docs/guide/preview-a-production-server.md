@@ -7,7 +7,7 @@
 2. Start the production preview server by running the following command:
 
 ```bash
-npm run app:preview
+pnpm run app:preview
 ```
 
 Vite will start a local server to preview the production build, and display the local URL in your terminal (usually [http://localhost:5000](http://localhost:5000)).
