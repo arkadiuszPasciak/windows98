@@ -1,0 +1,18 @@
+{
+  "author": "Arkadiusz Paściak",
+  "description": "Prettier configuration for Windows 98 project",
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  },
+  "engines": {
+    "node": "18.16.0"
+  },
+  "license": "MIT",
+  "name": "@windows98/prettier",
+  "packageManager": "pnpm@8.10.2",
+  "scripts": {
+    "lint:prettier": "prettier --config ./configs/prettier.config.js --check ../../../.",
+    "lintfix:prettier": "prettier --config ./configs/prettier.config.js --write --list-different ../../../."
+  },
+  "version": "1.0"
+}

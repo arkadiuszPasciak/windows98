@@ -141,7 +141,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with Prettier
-        run: pnpm run lint:prettier
+        run: pnpm --filter @windows98/prettier run lintfix:prettier
 
   stylelint-lint:
     runs-on: ubuntu-latest
