@@ -50,24 +50,6 @@ Command is used to perform `TypeScript` type checking in your Vue project using 
 pnpm run lint:types
 ```
 
-## [Stylelint](https://stylelint.io)
-
-### lint:styles
-
-Command is used to run Stylelint on your Vue and SCSS files in order to `check` for CSS-related code style and syntax issues. This command runs the lint:stylelint script defined in your `package.json` file, which typically configures Stylelint to analyze your project's .vue and .scss files. By executing this command, you can identify and fix potential styling inconsistencies, maintain code quality, and ensure that your project adheres to CSS best practices.
-
-```bash
-pnpm run lint:styles
-```
-
-### lintfix:styles
-
-Command is used to run Stylelint on your Vue and SCSS files, `checking` for CSS-related code style and syntax issues while automatically `fixing` any fixable problems. This command runs the lintfix:stylelint script defined in your `package.json` file, which typically configures Stylelint to analyze and correct your project's .vue and .scss files. By executing this command, you can streamline the process of maintaining styling consistency, ensuring code quality, and adhering to CSS best practices across your project.
-
-```bash
-pnpm run lintfix:styles
-```
-
 ## [Vitest](https://vitest.dev/)
 
 ### vitest:dev

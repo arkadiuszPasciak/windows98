@@ -174,7 +174,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with Stylelint
-        run: pnpm run lint:styles
+        run: pnpm --filter @windows98/stylelint run lint:styles
 
   vitest-tests:
     runs-on: ubuntu-latest
