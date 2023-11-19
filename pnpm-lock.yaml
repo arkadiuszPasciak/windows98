@@ -42,9 +42,6 @@ importers:
       jsdom:
         specifier: ^22.1.0
         version: 22.1.0
-      lint-staged:
-        specifier: ^13.2.2
-        version: 13.3.0
       postcss-html:
         specifier: ^1.5.0
         version: 1.5.0
@@ -99,6 +96,12 @@ importers:
       eslint-plugin-vue:
         specifier: ^9.14.1
         version: 9.18.1(eslint@8.53.0)
+
+  core/linters/lint-staged:
+    devDependencies:
+      lint-staged:
+        specifier: ^13.2.2
+        version: 13.3.0
 
   core/linters/prettier:
     devDependencies:

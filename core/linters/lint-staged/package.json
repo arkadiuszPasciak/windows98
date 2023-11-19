@@ -1,0 +1,17 @@
+{
+  "author": "Arkadiusz Paściak",
+  "description": "Lint-staged configuration for Windows 98 project",
+  "devDependencies": {
+    "lint-staged": "^13.2.2"
+  },
+  "engines": {
+    "node": "18.16.0"
+  },
+  "license": "MIT",
+  "name": "@windows98/lint-staged",
+  "packageManager": "pnpm@8.10.2",
+  "scripts": {
+    "lint:staged": "lint-staged --config ./configs/lint-staged.config.js"
+  },
+  "version": "1.0"
+}
