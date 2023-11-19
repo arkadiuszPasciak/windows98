@@ -42,12 +42,6 @@ importers:
       jsdom:
         specifier: ^22.1.0
         version: 22.1.0
-      postcss-html:
-        specifier: ^1.5.0
-        version: 1.5.0
-      postcss-scss:
-        specifier: ^4.0.6
-        version: 4.0.9(postcss@8.4.31)
       sass:
         specifier: ^1.62.1
         version: 1.69.5
@@ -68,7 +62,7 @@ importers:
         version: 4.2.1(typescript@5.2.2)(vite@4.5.0)
       vitepress:
         specifier: ^1.0.0-beta.1
-        version: 1.0.0-rc.25(@algolia/client-search@4.20.0)(@types/node@20.9.0)(postcss@8.4.31)(sass@1.69.5)(search-insights@2.10.0)(typescript@5.2.2)
+        version: 1.0.0-rc.25(@algolia/client-search@4.20.0)(@types/node@20.9.0)(sass@1.69.5)(search-insights@2.10.0)(typescript@5.2.2)
       vitest:
         specifier: ^0.31.4
         version: 0.31.4(jsdom@22.1.0)(sass@1.69.5)
@@ -111,6 +105,12 @@ importers:
 
   core/linters/stylelint:
     devDependencies:
+      postcss-html:
+        specifier: ^1.5.0
+        version: 1.5.0
+      postcss-scss:
+        specifier: ^4.0.6
+        version: 4.0.9(postcss@8.4.31)
       stylelint:
         specifier: ^15.6.3
         version: 15.11.0(typescript@5.2.2)
@@ -4846,7 +4846,7 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vitepress@1.0.0-rc.25(@algolia/client-search@4.20.0)(@types/node@20.9.0)(postcss@8.4.31)(sass@1.69.5)(search-insights@2.10.0)(typescript@5.2.2):
+  /vitepress@1.0.0-rc.25(@algolia/client-search@4.20.0)(@types/node@20.9.0)(sass@1.69.5)(search-insights@2.10.0)(typescript@5.2.2):
     resolution: {integrity: sha512-1dqWiHNThNrVZ08ixmfEDBEH+764KOgnev9oXga/x6cN++Vb9pnuu8p3K6DQP+KZrYcG+WiX7jxal0iSNpAWuQ==}
     hasBin: true
     peerDependencies:
@@ -4868,7 +4868,6 @@ packages:
       focus-trap: 7.5.4
       mark.js: 8.11.1
       minisearch: 6.2.0
-      postcss: 8.4.31
       shiki: 0.14.5
       vite: 4.5.0(@types/node@20.9.0)(sass@1.69.5)
       vue: 3.3.8(typescript@5.2.2)
