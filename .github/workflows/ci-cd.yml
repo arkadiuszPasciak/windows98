@@ -75,7 +75,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Check types
-        run: pnpm run lint:types
+        run: pnpm --filter @windows98/tsc run lint:types
 
   eslint-lint:
     runs-on: ubuntu-latest

@@ -40,16 +40,6 @@ Command is used to launch a local server to `preview` your production-built proj
 pnpm run app:preview
 ```
 
-## [vue-tsc](https://www.npmjs.com/package/vue-tsc)
-
-### lint:types
-
-Command is used to perform `TypeScript` type checking in your Vue project using the `vue-tsc` compiler. This command runs the typecheck script defined in your `package.json` file, which typically invokes vue-tsc to analyze your code and report any type errors or inconsistencies. By running this command, you can ensure that your Vue components and TypeScript code adhere to the defined types, helping to maintain code quality and prevent runtime errors.
-
-```bash
-pnpm run lint:types
-```
-
 ## [Vitest](https://vitest.dev/)
 
 ### vitest:dev
