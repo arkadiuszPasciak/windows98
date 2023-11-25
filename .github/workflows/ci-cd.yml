@@ -251,48 +251,51 @@ jobs:
         run: pnpm run app:build
 
   cypress-component-tests:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.16.0]
-    needs: build
-    steps:
-      - name: Checkout Commit
-        uses: actions/checkout@v3.5.0
+  runs-on: ubuntu-latest
+  strategy:
+    matrix:
+      node-version: [18.16.0]
+  needs: build
+  steps:
+    - name: Checkout Commit
+      uses: actions/checkout@v3.5.0
 
-      - name: Install Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
+    - name: Install Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
 
-      - name: Restore pnpm dependencies
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.pnpm-store
-            node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+    - name: Restore pnpm dependencies
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.pnpm-store
+          node_modules
+        key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
-      - name: Restore Cypress binary
-        id: cache-cypress-binary
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/Cypress
-          key: cypress-binary-${{ hashFiles('**/pnpm-lock.json') }}
-          restore-keys: cypress-binary-
+    - name: Restore Cypress binary
+      id: cache-cypress-binary
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/Cypress
+        key: cypress-binary-${{ hashFiles('**/pnpm-lock.json') }}
+        restore-keys: cypress-binary-
 
-      - name: Install PNPM
-        run: npm install -g pnpm
+    - name: Install PNPM
+      run: npm install -g pnpm
 
-      - name: Install Dependencies
-        run: pnpm install
-        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+    - name: Install Dependencies
+      run: pnpm install
+      if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
-      - name: Run Cypress test
-        uses: cypress-io/github-action@v5
-        with:
-          component: true
-          command: pnpm run cypress:run
+    - name: Install Cypress
+      run: npm install cypress
+
+    - name: Run Cypress test
+      uses: cypress-io/github-action@v5
+      with:
+        component: true
+        command: pnpm run cypress:run
 
   deploy-preview:
     runs-on: ubuntu-latest
