@@ -37,12 +37,20 @@ jobs:
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
+      - name: Cache Cypress binary
+        id: cache-cypress-binary
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-binary-${{ hashFiles('**/pnpm-lock.json') }}
+          restore-keys: cypress-binary-
+
       - name: Install PNPM
         run: npm install -g pnpm
 
       - name: Install Dependencies
-        run: pnpm install
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
+        run: pnpm install
 
   type-check:
     runs-on: ubuntu-latest
@@ -59,7 +67,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -75,7 +83,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Check types
-        run: pnpm run lint:types
+        run: pnpm --filter @windows98/tsc run lint:types
 
   eslint-lint:
     runs-on: ubuntu-latest
@@ -92,7 +100,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -108,7 +116,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with ESLint
-        run: pnpm run lint:js
+        run: pnpm --filter @windows98/eslint run lintfix:js
 
   prettier-lint:
     runs-on: ubuntu-latest
@@ -125,7 +133,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -141,7 +149,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with Prettier
-        run: pnpm run lint:prettier
+        run: pnpm --filter @windows98/prettier run lintfix:prettier
 
   stylelint-lint:
     runs-on: ubuntu-latest
@@ -158,7 +166,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -174,7 +182,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with Stylelint
-        run: pnpm run lint:styles
+        run: pnpm --filter @windows98/stylelint run lint:styles
 
   vitest-tests:
     runs-on: ubuntu-latest
@@ -191,7 +199,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -224,7 +232,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -257,7 +265,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -265,12 +273,27 @@ jobs:
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
+      - name: Restore Cypress binary
+        id: cache-cypress-binary
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-binary-${{ hashFiles('**/pnpm-lock.json') }}
+          restore-keys: cypress-binary-
+
       - name: Install PNPM
         run: npm install -g pnpm
 
       - name: Install Dependencies
         run: pnpm install
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
+
+      - name: Install Cypress
+        run: pnpm install -w cypress
+
+      - name: Install Cypress binary
+        run: npx cypress install
+        if: steps.cache-cypress-binary.outputs.cache-hit != 'true'
 
       - name: Run Cypress test
         uses: cypress-io/github-action@v5
@@ -291,7 +314,7 @@ jobs:
         run: pnpm install
 
       - name: Install Vercel CLI Locally
-        run: pnpm add vercel@latest
+        run: pnpm add -w vercel@latest
 
       - name: Pull Vercel Environment Information
         run: npx vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}

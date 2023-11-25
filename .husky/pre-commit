@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm run lint:types
+pnpm --filter @windows98/tsc run lint:types
 echo "✅ The types are okay!"
 pnpm run vitest:run
 echo "✅ The tests are okay!"
-pnpm run lint:staged
+pnpm --filter @windows98/lint-staged run lint:staged  
 echo "✅ The files are okay!"
