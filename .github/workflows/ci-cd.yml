@@ -42,7 +42,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.cache/Cypress
-          key: cypress-binary-${{ hashFiles('**/package-lock.json') }}
+          key: cypress-binary-${{ hashFiles('**/pnpm-lock.json') }}
           restore-keys: cypress-binary-
 
       - name: Install PNPM
@@ -278,7 +278,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.cache/Cypress
-          key: cypress-binary-${{ hashFiles('**/package-lock.json') }}
+          key: cypress-binary-${{ hashFiles('**/pnpm-lock.json') }}
           restore-keys: cypress-binary-
 
       - name: Install PNPM
