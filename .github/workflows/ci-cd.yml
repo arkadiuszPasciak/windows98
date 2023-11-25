@@ -29,24 +29,28 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies and Cypress binary
+      - name: Cache pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
             ~/.pnpm-store
-            ~/.cache/Cypress
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+
+      - name: Cache Cypress binary
+        id: cache-cypress-binary
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-binary-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: cypress-binary-
 
       - name: Install PNPM
         run: npm install -g pnpm
 
       - name: Install Dependencies
-        run: pnpm install
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
-
-      - name: Install Cypress
-        run: npx cypress install
+        run: pnpm install
 
   type-check:
     runs-on: ubuntu-latest
@@ -63,7 +67,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -96,7 +100,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -129,7 +133,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -162,7 +166,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -195,7 +199,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -228,7 +232,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
@@ -261,13 +265,21 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Restore pnpm dependencies
         uses: actions/cache@v3
         with:
           path: |
             ~/.pnpm-store
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+
+      - name: Restore Cypress binary
+        id: cache-cypress-binary
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-binary-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: cypress-binary-
 
       - name: Install PNPM
         run: npm install -g pnpm
