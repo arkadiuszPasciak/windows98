@@ -29,11 +29,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Cache pnpm dependencies
+      - name: Cache pnpm dependencies and Cypress binary
         uses: actions/cache@v3
         with:
           path: |
             ~/.pnpm-store
+            ~/.cache/Cypress
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
