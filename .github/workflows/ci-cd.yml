@@ -291,6 +291,10 @@ jobs:
       - name: Install Cypress
         run: pnpm install -w cypress
 
+      - name: Install Cypress binary
+        run: npx cypress install
+        if: steps.cache-cypress-binary.outputs.cache-hit != 'true'
+
       - name: Run Cypress test
         uses: cypress-io/github-action@v5
         with:
