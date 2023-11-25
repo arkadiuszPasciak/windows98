@@ -289,7 +289,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Install Cypress
-        run: npm install cypress
+        run: pnpm install cypress
 
       - name: Run Cypress test
         uses: cypress-io/github-action@v5
