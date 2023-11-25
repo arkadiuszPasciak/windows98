@@ -45,6 +45,9 @@ jobs:
         run: pnpm install
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
+      - name: Install Cypress
+        run: npx cypress install
+
   type-check:
     runs-on: ubuntu-latest
     strategy:
