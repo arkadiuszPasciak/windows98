@@ -10,7 +10,7 @@ export default defineConfig({
     },
     indexHtmlFile: 'src/support/component-index.html',
     supportFile: 'src/support/component.ts',
-    specPattern: 
+    specPattern:
       '../../../src/app/Bundles/**/**/Tests/components/*.components.ts',
   },
 
