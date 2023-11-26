@@ -1,0 +1,18 @@
+{
+  "author": "Arkadiusz Paściak",
+  "description": "Cypress configuration for Windows 98 project",
+  "devDependencies": {
+    "cypress": "^12.13.0"
+  },
+  "engines": {
+    "node": "18.16.0"
+  },
+  "license": "MIT",
+  "name": "@windows98/cypress",
+  "packageManager": "pnpm@8.10.2",
+  "scripts": {
+    "test:integration:open": "NODE_ENV=test cypress open --config-file ./configs/cypress.config.ts",
+    "test:integration:run": "NODE_ENV=test cypress run --config-file ./configs/cypress.config.ts --component --browser chrome"
+  },
+  "version": "1.0"
+}

@@ -18,8 +18,6 @@
     "docs:build": "vitepress build src/docs",
     "docs:dev": "vitepress dev src/docs",
     "docs:preview": "vitepress preview src/docs",
-    "cypress:open": "NODE_ENV=test cypress open --config-file ./src/configs/cypress.config.ts",
-    "cypress:run": "NODE_ENV=test cypress run --config-file ./src/configs/cypress.config.ts --component --browser chrome",
     "prepare": "husky install",
     "vitest:dev": "vitest",
     "vitest:run": "vitest run"
@@ -35,7 +33,6 @@
     "@types/node": "^20.9.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/test-utils": "^2.3.2",
-    "cypress": "^12.13.0",
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
     "sass": "^1.62.1",

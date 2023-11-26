@@ -13,12 +13,7 @@
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,
-    "types": [
-      "@intlify/unplugin-vue-i18n/messages",
-      "vite/client",
-      "cypress",
-      "node"
-    ],
+    "types": ["@intlify/unplugin-vue-i18n/messages", "vite/client", "node"],
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"],
@@ -36,6 +31,6 @@
       "@DOCS/*": ["docs/*"]
     }
   },
-  "include": ["./src", "./cypress"],
+  "include": ["./src", "./cypress", "./core/tests/cypress"],
   "exclude": ["src/configs/*.config.js"]
 }
