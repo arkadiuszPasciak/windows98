@@ -1,0 +1,16 @@
+@mixin ui-range-thumb($position: 'horizontal') {
+	@if $position == 'horizontal' {
+	  background-image: url('~@/Assets/Icons/indicator-horizontal.svg');
+	  transform: translateY(-8px);
+	}
+  
+	@if $position == 'vertical' {
+	  background-image: url('~@/Assets/Icons/indicator-rectangle-horizontal.svg');
+	  transform: translateY(-10px);
+	}
+  
+	-webkit-appearance: none;
+	height: 21px;
+	width: 11px;
+}
+ 

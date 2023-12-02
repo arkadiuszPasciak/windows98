@@ -1,0 +1,22 @@
+:root.theme-light {
+	--background-color: #{$cl-greyC0};
+	--background-color-white: #{$cl-white};
+	--background-color-modal-header: linear-gradient(
+	  90deg,
+	  #{$cl-blue000},
+	  #{$cl-blue10}
+	);
+	--background-color-pulpit: #{$cl-blue007};
+  
+	--border-field: #{$border-field-inner}, #{$border-field-outer};
+	--box-shadow-raised: #{$border-raised-outer}, #{$border-raised-inner};
+	--box-shadow-sunken: #{$border-sunken-outer}, #{$border-sunken-inner};
+  
+	--text-color: #{$cl-black22};
+	--text-color-2: #{$cl-white};
+	--text-color-3: #{$cl-greyb5};
+  
+	--border-color-navigation: #{$cl-white};
+	--border-color-frame-1: rgba(255, 255, 255, 0.7);
+	--border-color-frame-2: #{$cl-grey96};
+}
