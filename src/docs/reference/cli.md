@@ -58,20 +58,6 @@ Command is used to execute your project's unit tests once using Vitest, a testin
 pnpm run vitest:run
 ```
 
-## [Cypress](https://www.cypress.io/)
-
-### cypress:open
-
-Command is used to `launch` the Cypress interactive test runner for `developing` and `debugging` your Component Testing or End-to-End (E2E) tests. This command runs the cypress:open script defined in your `package.json` file, which typically starts the Cypress application, providing a user-friendly interface for running and observing your tests in real-time. By executing this command, you can efficiently develop, modify, and troubleshoot your Component Testing or E2E tests, ensuring a high-quality and reliable user experience for your project.
-
-```bash
-pnpm run cypress:open
-```
-
-### cypress:run
-
-Command is used to `execute` your project's Component Testing or End-to-End (E2E) tests once using Cypress, a popular testing framework. This command runs the cypress:run script defined in your `package.json` file, which typically configures Cypress to perform `a single run` of your test files, located in a dedicated test directory or following a specific naming convention. By running this command, you can quickly validate the functionality and user experience of your project's components and features, ensuring overall quality and reliability without continuous test execution.
-
 ## [VuePress](https://v2.vuepress.vuejs.org/)
 
 ### docs:run

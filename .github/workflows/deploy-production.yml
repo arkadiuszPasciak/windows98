@@ -20,7 +20,7 @@ jobs:
         run: pnpm install
 
       - name: Install Vercel CLI Locally
-        run: pnpm add vercel@latest
+        run: pnpm add -w vercel@latest
 
       - name: Pull Vercel Environment Information
         run: npx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}

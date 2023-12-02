@@ -299,7 +299,7 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           component: true
-          command: pnpm run cypress:run
+          command: pnpm --filter @windows98/cypress run test:integration:run
 
   deploy-preview:
     runs-on: ubuntu-latest

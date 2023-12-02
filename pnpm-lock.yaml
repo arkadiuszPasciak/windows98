@@ -33,9 +33,6 @@ importers:
       '@vue/test-utils':
         specifier: ^2.3.2
         version: 2.4.1(vue@3.3.8)
-      cypress:
-        specifier: ^12.13.0
-        version: 12.17.4
       husky:
         specifier: ^8.0.3
         version: 8.0.3
@@ -123,6 +120,12 @@ importers:
       vue-tsc:
         specifier: ^1.6
         version: 1.8.22(typescript@5.2.2)
+
+  core/tests/cypress:
+    devDependencies:
+      cypress:
+        specifier: ^12.13.0
+        version: 12.17.4
 
 packages:
 
