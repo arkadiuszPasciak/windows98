@@ -64,6 +64,8 @@ importers:
         specifier: ^0.31.4
         version: 0.31.4(jsdom@22.1.0)(sass@1.69.5)
 
+  core/design-system: {}
+
   core/linters/eslint:
     devDependencies:
       '@typescript-eslint/eslint-plugin':
