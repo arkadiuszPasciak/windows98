@@ -1,24 +1,24 @@
 :root.theme-dark {
-	--background-color: #{$cl-grey3b};
-	--background-color-white: #{$cl-grey3b};
-	--background-color-modal-header: linear-gradient(
-	  90deg,
-	  #{$cl-blue33},
-	  #{$cl-blue0f}
-	);
-	--background-color-pulpit: #{$cl-black};
-  
-	--border-field: #{$border-field-inner-dark}, #{$border-field-outer-dark};
-	--box-shadow-raised: #{$border-raised-outer-dark},
-	  #{$border-raised-inner-dark};
-	--box-shadow-sunken: #{$border-sunken-outer-dark},
-	  #{$border-sunken-inner-dark};
-  
-	--text-color: #{$cl-grey9b};
-	--text-color-2: #{$cl-grey9b};
-	--text-color-3: #{$cl-black};
-  
-	--border-color-navigation: #{$cl-grey8b};
-	--border-color-frame-1: transparent;
-	--border-color-frame-2: #{$cl-grey96};
+  --background-color: #{$cl-grey3b};
+  --background-color-white: #{$cl-grey3b};
+  --background-color-modal-header: linear-gradient(
+    90deg,
+    #{$cl-blue33},
+    #{$cl-blue0f}
+  );
+  --background-color-pulpit: #{$cl-black};
+
+  --border-field: #{$border-field-inner-dark}, #{$border-field-outer-dark};
+  --box-shadow-raised: #{$border-raised-outer-dark},
+    #{$border-raised-inner-dark};
+  --box-shadow-sunken: #{$border-sunken-outer-dark},
+    #{$border-sunken-inner-dark};
+
+  --text-color: #{$cl-grey9b};
+  --text-color-2: #{$cl-grey9b};
+  --text-color-3: #{$cl-black};
+
+  --border-color-navigation: #{$cl-grey8b};
+  --border-color-frame-1: transparent;
+  --border-color-frame-2: #{$cl-grey96};
 }

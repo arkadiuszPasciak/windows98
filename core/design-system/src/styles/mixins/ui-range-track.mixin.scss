@@ -1,9 +1,9 @@
 @mixin ui-range-track($position: 'horizontal') {
-	width: 100%;
-	height: 2px;
-	box-sizing: border-box;
-	background-color: $cl-black;
-	border-right: 1px solid $cl-grey80;
-	border-bottom: 1px solid $cl-grey80;
-	box-shadow: $border-range-inner, $border-range-outer;
+  width: 100%;
+  height: 2px;
+  box-sizing: border-box;
+  background-color: $cl-black;
+  border-right: 1px solid $cl-grey80;
+  border-bottom: 1px solid $cl-grey80;
+  box-shadow: $border-range-inner, $border-range-outer;
 }
