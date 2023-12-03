@@ -7,8 +7,6 @@ import Markdown from 'vite-plugin-vue-markdown'
 import vitestConfig from './src/configs/vitest.config'
 import { isEnvironment, EEnvironment } from './src/configs/environment.config'
 import { getPathMain } from './src/configs/path.config'
-import copy from 'rollup-plugin-copy'
-import { PluginOption } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -44,9 +42,6 @@ export default defineConfig({
       ),
     }),
     tsconfigPaths({ loose: true }),
-    copy({
-      targets: [{ src: 'core/design-system/src/fonts/*', dest: 'dist/public' }],
-    }) as PluginOption,
   ],
   root: 'src/app',
   test: vitestConfig,
