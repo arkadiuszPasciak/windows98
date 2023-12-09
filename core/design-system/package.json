@@ -1,0 +1,11 @@
+{
+  "author": "Arkadiusz Paściak",
+  "description": "Design System for Windows 98 project",
+  "engines": {
+    "node": "18.16.0"
+  },
+  "license": "MIT",
+  "name": "@windows98/design-system",
+  "packageManager": "pnpm@8.10.2",
+  "version": "1.0"
+}
