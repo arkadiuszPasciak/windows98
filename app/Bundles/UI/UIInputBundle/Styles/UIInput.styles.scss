@@ -1,0 +1,44 @@
+.UIInput {
+  .input,
+  .label {
+    @include font('medium', 11, 14);
+    color: var(--text-color);
+  }
+
+  &.label-position-left {
+    display: grid;
+    align-items: center;
+
+    .label {
+      margin-right: 6px;
+    }
+  }
+
+  &.label-position-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 200px;
+
+    .label {
+      margin-bottom: 5px;
+    }
+  }
+
+  .input {
+    padding: 3px 4px;
+    height: 21px;
+    width: 100%;
+    box-shadow: var(--border-field);
+    background-color: var(--background-color-white);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:disabled,
+    &:disabled + .label {
+      opacity: 0.8;
+    }
+  }
+}

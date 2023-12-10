@@ -1,0 +1,49 @@
+.UIRadio {
+  display: flex;
+
+  &:hover {
+    @include hover {
+      cursor: pointer;
+    }
+  }
+
+  &.is-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/icons/radio.svg') center center no-repeat;
+    height: 12px;
+    width: 12px;
+
+    &::after {
+      content: none;
+      width: 4px;
+      height: 4px;
+      background: url('/icons/radio-checked.svg') center center no-repeat;
+    }
+  }
+
+  .text {
+    margin-left: 6px;
+  }
+
+  .input {
+    width: 1px;
+    height: 1px;
+
+    &[disabled] {
+      pointer-events: none;
+    }
+
+    &:checked {
+      & + .radio::after {
+        content: '';
+      }
+    }
+  }
+}

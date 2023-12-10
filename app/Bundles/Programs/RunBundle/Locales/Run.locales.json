@@ -1,0 +1,32 @@
+{
+  "en": {
+    "RunBundle.description-content": "The Bundle is the program Run",
+    "RunBundle.title": "Run",
+    "RunBundle.description": "Type of the name of a program and Windows will open it for you",
+    "RunBundle.open": "Open:",
+    "RunBundle.ok": "OK",
+    "RunBundle.cancel": "Cancel",
+    "RunBundle.program.calculator": "calculator",
+    "RunBundle.program.notepad": "notepad",
+    "RunBundle.program.run": "run",
+    "RunBundle.program.settings": "settings",
+    "RunBundle.program.shut-down": "shut down",
+    "RunBundle.program.tic-tac-toe": "tic tac toe",
+    "RunBundle.services-content-1": "run program by writing its name"
+  },
+  "pl": {
+    "RunBundle.description-content": "Bundle jest to program Run",
+    "RunBundle.title": "Run",
+    "RunBundle.description": "Wpisz nazwę programu i Windows otworzy go dla Ciebie",
+    "RunBundle.open": "Włącz:",
+    "RunBundle.ok": "Tak",
+    "RunBundle.cancel": "Anuluj",
+    "RunBundle.program.calculator": "kalkulator",
+    "RunBundle.program.notepad": "notatnik",
+    "RunBundle.program.run": "włącz",
+    "RunBundle.program.settings": "ustawienia",
+    "RunBundle.program.shut-down": "wyłącz",
+    "RunBundle.program.tic-tac-toe": "kółko i krzyżyk",
+    "RunBundle.services-content-1": "uruchom program przez wpisanie jego nazwy"
+  }
+}

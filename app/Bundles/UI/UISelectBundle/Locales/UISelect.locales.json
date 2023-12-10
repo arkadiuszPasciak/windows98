@@ -1,0 +1,10 @@
+{
+  "en": {
+    "UISelectBundle.description-content": "The Bundle responsible for UI components",
+    "UISelectBundle.services-content-1": "this bundle will be divide into smaller bundles"
+  },
+  "pl": {
+    "UISelectBundle.description-content": "Bundle odpowiedzialny za UI komponenty",
+    "UISelectBundle.services-content-1": "ten bundle będzie dzielony na mniejsze bundle"
+  }
+}

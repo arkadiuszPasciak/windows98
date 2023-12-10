@@ -1,0 +1,35 @@
+{
+  "name": "@windows98/app",
+  "version": "1.0",
+  "description": "Application for Windows 98",
+  "author": "Arkadiusz Paściak",
+  "engines": {
+    "node": "18.16.0"
+  },
+  "scripts": {
+    "app:build": "vite build --config ./configs/vite.config.ts",
+    "app:dev": "vite --config ./configs/vite.config.ts",
+    "app:preview": "vite preview --config ./configs/vite.config.ts",
+    "vitest:dev": "vitest -c ./configs/vite.config.ts",
+    "vitest:run": "vitest run -c ./configs/vite.config.ts"
+  },
+  "dependencies": {
+    "pinia": "^2.1.3",
+    "vue": "^3.3.4",
+    "vue-i18n": "^9.2.2"
+  },
+  "devDependencies": {
+    "@intlify/unplugin-vue-i18n": "^0.11.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.62.1",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-vue-markdown": "^0.23.5",
+    "vite-tsconfig-paths": "^4.2.0",
+    "jsdom": "^22.1.0",
+    "vitest": "^0.31.4",
+    "@pinia/testing": "^0.1.2",
+    "@vue/test-utils": "^2.3.2"
+  }
+}

@@ -1,0 +1,8 @@
+pre {
+  @include font('medium', 12, 18);
+  font-style: italic;
+  background-color: var(--background-color-pulpit);
+  color: var(--text-color-2);
+  margin-bottom: 10px;
+  padding: 5px;
+}

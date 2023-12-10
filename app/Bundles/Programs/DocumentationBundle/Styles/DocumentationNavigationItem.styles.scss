@@ -1,0 +1,25 @@
+.DocumentationNavigationItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 1px;
+  cursor: pointer;
+
+  .text {
+    padding: 1px;
+  }
+
+  &.is-active {
+    cursor: not-allowed;
+
+    .text {
+      background-color: $cl-blue33;
+      color: $cl-white;
+      border: 1px dotted $cl-white;
+    }
+  }
+
+  .icon {
+    margin-right: 5px;
+  }
+}

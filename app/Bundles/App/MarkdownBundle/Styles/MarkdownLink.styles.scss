@@ -1,0 +1,5 @@
+a {
+  @include font('medium', 12, 18);
+  color: $cl-blue00;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,32 @@
+h1 {
+  @include font('bold', 24, 36);
+}
+
+h2 {
+  @include font('bold', 22, 34);
+}
+
+h3 {
+  @include font('bold', 20, 32);
+}
+
+h4 {
+  @include font('bold', 18, 30);
+}
+
+h5 {
+  @include font('bold', 16, 28);
+}
+
+h6 {
+  @include font('bold', 14, 26);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+}

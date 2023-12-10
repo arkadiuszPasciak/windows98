@@ -1,0 +1,5 @@
+.MediaPlayerStatus {
+  color: $cl-white;
+  @include font('medium', 11, 19);
+  text-transform: capitalize;
+}

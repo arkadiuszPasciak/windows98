@@ -1,0 +1,4 @@
+.UIText {
+  @include font('medium', 11, 13);
+  color: var(--text-color);
+}

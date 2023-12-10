@@ -1,0 +1,15 @@
+.PulpitItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+
+  .icon {
+    margin-bottom: 6px;
+  }
+
+  .name {
+    color: var(--text-color-2);
+  }
+}

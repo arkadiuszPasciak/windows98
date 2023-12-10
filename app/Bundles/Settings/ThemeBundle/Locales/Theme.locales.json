@@ -1,0 +1,20 @@
+{
+  "en": {
+    "ThemeBundle.dark": "Dark",
+    "ThemeBundle.description-content": "The Bundle responsible for manage of languages",
+    "ThemeBundle.light": "Light",
+    "ThemeBundle.services-content-1": "change theme",
+    "ThemeBundle.services-content-2": "mount theme version by data in local storage",
+    "ThemeBundle.services-content-3": "set theme version in local storage",
+    "ThemeBundle.services-content-4": "update main class in body"
+  },
+  "pl": {
+    "ThemeBundle.dark": "Ciemny",
+    "ThemeBundle.description-content": "Bundle odpowiedzialny za zarządzanie tłem",
+    "ThemeBundle.light": "Jasny",
+    "ThemeBundle.services-content-1": "zmień tło",
+    "ThemeBundle.services-content-2": "zamontuj wersję tła z danych w local storage",
+    "ThemeBundle.services-content-3": "ustaw wersje tła w local storage",
+    "ThemeBundle.services-content-4": "zaaktualizuj główną klasę w body"
+  }
+}
