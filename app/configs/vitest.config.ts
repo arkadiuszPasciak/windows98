@@ -9,7 +9,6 @@ const vitestConfig = {
   environment: 'jsdom',
   setupFiles: [getPathMain('app/configs/vue-test-utils.config.ts')],
   include: ['../../**/*.units.ts'],
-
 } as VitestConfigInterface['test']
 
 export default vitestConfig

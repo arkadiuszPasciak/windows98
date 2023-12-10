@@ -5,7 +5,10 @@ import eslintPlugin from 'vite-plugin-eslint'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import Markdown from 'vite-plugin-vue-markdown'
 import vitestConfig from './vitest.config'
-import { isEnvironment, EEnvironment } from '../../src/configs/environment.config'
+import {
+  isEnvironment,
+  EEnvironment,
+} from '../../src/configs/environment.config'
 import { getPathMain } from '../../src/configs/path.config'
 
 // https://vitejs.dev/config/
