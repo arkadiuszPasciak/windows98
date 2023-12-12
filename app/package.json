@@ -1,6 +1,6 @@
 {
   "name": "@windows98/app",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Application for Windows 98",
   "author": "Arkadiusz Paściak",
   "engines": {
