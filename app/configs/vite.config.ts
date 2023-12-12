@@ -4,9 +4,12 @@ import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import eslintPlugin from 'vite-plugin-eslint'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import Markdown from 'vite-plugin-vue-markdown'
-import vitestConfig from './src/configs/vitest.config'
-import { isEnvironment, EEnvironment } from './src/configs/environment.config'
-import { getPathMain } from './src/configs/path.config'
+import vitestConfig from './vitest.config'
+import {
+  isEnvironment,
+  EEnvironment,
+} from '../../src/configs/environment.config'
+import { getPathMain } from '../../src/configs/path.config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -24,7 +27,7 @@ export default defineConfig({
     },
   },
   publicDir: isEnvironment(EEnvironment.TEST, process.env.NODE_ENV)
-    ? getPathMain('src/app/Public')
+    ? getPathMain('app/Public')
     : 'Public',
   plugins: [
     Vue({
@@ -43,6 +46,5 @@ export default defineConfig({
     }),
     tsconfigPaths({ loose: true }),
   ],
-  root: 'src/app',
   test: vitestConfig,
 })

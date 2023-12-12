@@ -13,24 +13,21 @@
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,
-    "types": ["@intlify/unplugin-vue-i18n/messages", "vite/client", "node"],
-    "baseUrl": "./src",
+    "types": ["node"],
+    "baseUrl": "./app",
     "paths": {
       "@/*": ["*"],
       "@APP/*": ["app/*"],
-      "@APP|Assets/*": ["app/Assets/*"],
       "@APP|Bundles/*": [
-        "app/Bundles/App/*",
-        "app/Bundles/Programs/*",
-        "app/Bundles/Settings/*",
-        "app/Bundles/UI/*",
-        "app/Bundles/Window/*"
+        "Bundles/App/*",
+        "Bundles/Programs/*",
+        "Bundles/Settings/*",
+        "Bundles/UI/*",
+        "Bundles/Window/*"
       ],
-      "@APP|Views/*": ["app/Views/*"],
-      "@CONFIGS/*": ["configs/*"],
-      "@DOCS/*": ["docs/*"]
+      "@APP|Views/*": ["Views/*"]
     }
   },
-  "include": ["./src", "./cypress", "./core/tests/cypress"],
+  "include": ["./src", "./core/tests/cypress", "./app"],
   "exclude": ["src/configs/*.config.js"]
 }

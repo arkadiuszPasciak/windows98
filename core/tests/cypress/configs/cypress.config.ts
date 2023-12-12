@@ -1,5 +1,5 @@
 import { defineConfig } from 'cypress'
-import viteConfig from '../../../../vite.config'
+import viteConfig from '../../../../app/configs/vite.config'
 
 export default defineConfig({
   component: {
@@ -10,8 +10,7 @@ export default defineConfig({
     },
     indexHtmlFile: 'src/support/component-index.html',
     supportFile: 'src/support/component.ts',
-    specPattern:
-      '../../../src/app/Bundles/**/**/Tests/components/*.components.ts',
+    specPattern: '../../../app/Bundles/**/**/Tests/components/*.components.ts',
   },
 
   defaultCommandTimeout: 20000,
