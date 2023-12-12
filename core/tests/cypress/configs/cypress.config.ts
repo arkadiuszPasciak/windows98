@@ -10,8 +10,7 @@ export default defineConfig({
     },
     indexHtmlFile: 'src/support/component-index.html',
     supportFile: 'src/support/component.ts',
-    specPattern:
-      '../../../app/Bundles/**/**/Tests/components/*.components.ts',
+    specPattern: '../../../app/Bundles/**/**/Tests/components/*.components.ts',
   },
 
   defaultCommandTimeout: 20000,
