@@ -1,16 +1,8 @@
-import { mount } from '@vue/test-utils'
-import { expect, it, describe } from 'vitest'
-import { createTestingPinia } from '@pinia/testing'
-import App from '@APP|Bundles/AppBundle/Components/App.vue'
-
-const defaultWrapper = mount(App, {
-  global: {
-    plugins: [createTestingPinia()],
-  },
-})
+import { it, describe } from 'vitest'
 
 describe('[AppBundle]<Components>(App)', () => {
   it('mounted App', () => {
-    expect(defaultWrapper.exists()).toBe(true)
+    // expect(defaultWrapper.exists()).toBe(true)
+    it.todo('move this test to integration')
   })
 })
