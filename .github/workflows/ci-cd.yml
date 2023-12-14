@@ -215,7 +215,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Run Vitest tests
-        run: pnpm run --filter @windows98/app vitest:run
+        run: pnpm run --filter @windows98/vitest test:unit:run
 
   build:
     runs-on: ubuntu-latest
