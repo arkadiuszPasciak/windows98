@@ -1,0 +1,11 @@
+{
+  "ShutDownBundle.title": "Wyłącz Windows",
+  "ShutDownBundle.description": "Co chcesz zrobić z komputerem?",
+  "ShutDownBundle.description-content": "Bundle jest programem shut down",
+  "ShutDownBundle.shut-down": "Wyłącz",
+  "ShutDownBundle.restart": "Zrestartuj",
+  "ShutDownBundle.ok": "Tak",
+  "ShutDownBundle.cancel": "Anuluj",
+  "ShutDownBundle.services-content-1": "wyłączenie aplikacji",
+  "ShutDownBundle.services-content-2": "zrestartowanie aplikacji"
+}

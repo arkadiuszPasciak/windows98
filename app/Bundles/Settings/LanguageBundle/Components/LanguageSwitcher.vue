@@ -21,8 +21,6 @@
   } from '@APP|Bundles/LanguageBundle/Services/Language.services'
 </script>
 
-<i18n src="@APP|Bundles/LanguageBundle/Locales/Language.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

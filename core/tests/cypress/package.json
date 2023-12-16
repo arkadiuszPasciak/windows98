@@ -2,6 +2,7 @@
   "author": "Arkadiusz Paściak",
   "description": "Cypress configuration for Windows 98 project",
   "devDependencies": {
+    "@windows98/i18n": "workspace:*",
     "cypress": "^12.13.0",
     "typescript": "^5.0.4",
     "pinia": "^2.1.3",

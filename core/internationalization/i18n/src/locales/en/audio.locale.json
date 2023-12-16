@@ -1,0 +1,5 @@
+{
+  "AudioBundle.button-description": "Button to turn on/off sound",
+  "AudioBundle.description-content": "The Bundle responsible for manage the audio in the application",
+  "AudioBundle.services-content-1": "turn on/off the audio in the app"
+}

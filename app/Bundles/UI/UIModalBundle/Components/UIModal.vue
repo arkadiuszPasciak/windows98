@@ -121,8 +121,6 @@
   defineEmits(['closeModal'])
 </script>
 
-<i18n src="@APP|Bundles/UIModalBundle/Locales/UIModal.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

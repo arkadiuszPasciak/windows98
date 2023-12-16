@@ -82,12 +82,6 @@
   })
 </script>
 
-<i18n src="@APP|Bundles/LanguageBundle/Locales/Language.locales.json"></i18n>
-<i18n src="@APP|Bundles/ThemeBundle/Locales/Theme.locales.json"></i18n>
-<i18n src="@APP|Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
-<i18n src="@APP|Bundles/TimezoneBundle/Locales/Timezone.locales.json"></i18n>
-<i18n src="@APP|Bundles/FileBundle/Locales/File.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

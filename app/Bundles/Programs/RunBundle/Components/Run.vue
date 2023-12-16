@@ -69,6 +69,4 @@
   const modelValue = ref<string>('')
 </script>
 
-<i18n src="@APP|Bundles/RunBundle/Locales/Run.locales.json"></i18n>
-
 <style lang="scss" scoped src="@APP|Bundles/RunBundle/Styles/Run.styles.scss" />

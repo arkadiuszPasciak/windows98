@@ -20,8 +20,6 @@
   const { t } = useI18n()
 </script>
 
-<i18n src="@APP|Bundles/TimezoneBundle/Locales/Timezone.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

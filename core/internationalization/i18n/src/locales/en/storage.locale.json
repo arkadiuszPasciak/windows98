@@ -1,0 +1,5 @@
+{
+  "StorageBundle.description-content": "The Bundle responsible for a object <a href='https://developer.mozilla.org/en-US/docs/Web/API/Storage'>Storage</a> located in a object <b>Window</b>",
+  "StorageBundle.services-content-1": "manage localStorage",
+  "StorageBundle.services-content-2": "manage sessionStorage"
+}

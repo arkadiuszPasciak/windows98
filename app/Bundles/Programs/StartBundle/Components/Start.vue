@@ -123,8 +123,6 @@
   }
 </script>
 
-<i18n src="@APP|Bundles/StartBundle/Locales/Start.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

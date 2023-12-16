@@ -81,8 +81,6 @@
   })
 </script>
 
-<i18n src="@APP|Bundles/NotepadBundle/Locales/Notepad.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

@@ -1,0 +1,21 @@
+{
+  "TicTacToeBundle.choose-dimension": "Choose a dimension of the field",
+  "TicTacToeBundle.choose-player": "Choose a player",
+  "TicTacToeBundle.computer": "Computer",
+  "TicTacToeBundle.default-player": "Default player",
+  "TicTacToeBundle.description-content": "The Bundle is program tic tac toe",
+  "TicTacToeBundle.draw": "Draw!",
+  "TicTacToeBundle.enter-your-name": "Enter your name",
+  "TicTacToeBundle.new-game": "New game",
+  "TicTacToeBundle.player-has-won": "{name} has won!",
+  "TicTacToeBundle.start": "Start",
+  "TicTacToeBundle.score": "Score",
+  "TicTacToeBundle.score-undefined": "Score is undefined",
+  "TicTacToeBundle.services-content-1": "enter name of the player",
+  "TicTacToeBundle.services-content-2": "choose sign of the player",
+  "TicTacToeBundle.services-content-3": "choose dimension of the field",
+  "TicTacToeBundle.services-content-4": "start game with computer",
+  "TicTacToeBundle.services-content-5": "modal with result message",
+  "TicTacToeBundle.services-content-6": "restart game",
+  "TicTacToeBundle.title": "Tic Tac Toe"
+}
