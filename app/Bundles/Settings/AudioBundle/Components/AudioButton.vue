@@ -24,8 +24,6 @@
   }
 </script>
 
-<i18n src="@APP|Bundles/AudioBundle/Locales/Audio.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

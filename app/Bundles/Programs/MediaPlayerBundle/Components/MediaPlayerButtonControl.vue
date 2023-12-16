@@ -31,10 +31,6 @@
   ] as Array<string>
 </script>
 
-<i18n
-  src="@APP|Bundles/MediaPlayerBundle/Locales/MediaPlayer.locales.json"
-></i18n>
-
 <style
   lang="scss"
   scoped

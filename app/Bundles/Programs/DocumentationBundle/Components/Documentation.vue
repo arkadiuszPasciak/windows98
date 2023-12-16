@@ -30,9 +30,6 @@
   }
 </script>
 
-<i18n src="@APP|Bundles/DocumentationBundle/Locales/Documentation.locales.json">
-</i18n>
-
 <style
   lang="scss"
   scoped

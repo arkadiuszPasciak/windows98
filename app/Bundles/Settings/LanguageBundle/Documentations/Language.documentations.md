@@ -22,9 +22,6 @@ services_content_4: LanguageBundle.services-content-4
 - {{ t(services_content_3) }}
 - {{ t(services_content_4) }}
 
-<i18n src="@APP|Bundles/DocumentationBundle/Locales/Documentation.locales.json"></i18n>
-<i18n src="@APP|Bundles/LanguageBundle/Locales/Language.locales.json"></i18n>
-
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 

@@ -16,8 +16,6 @@
   const calculatorStore = useCalendarStore()
 </script>
 
-<i18n src="@APP|Bundles/CalendarBundle/Locales/Calendar.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

@@ -26,8 +26,6 @@
   }
 </script>
 
-<i18n src="@APP|Bundles/ThemeBundle/Locales/Theme.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

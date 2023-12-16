@@ -22,8 +22,6 @@
   const apps = store.$state.apps as IPulpitStoreApps[]
 </script>
 
-<i18n src="@APP|Bundles/PulpitBundle/Locales/Pulpit.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

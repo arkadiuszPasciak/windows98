@@ -45,6 +45,4 @@
   }
 </script>
 
-<i18n src="@APP|Bundles/SettingsBundle/Locales/Settings.locales.json"></i18n>
-
 <style lang="scss" scoped />

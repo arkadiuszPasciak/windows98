@@ -21,8 +21,6 @@
   const modelValue = ref<string>(t('TicTacToeBundle.default-player'))
 </script>
 
-<i18n src="@APP|Bundles/TicTacToeBundle/Locales/TicTacToe.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

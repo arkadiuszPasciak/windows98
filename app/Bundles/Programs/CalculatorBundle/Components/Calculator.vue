@@ -31,10 +31,6 @@
   const { t } = useI18n()
 </script>
 
-<i18n
-  src="@APP|Bundles/CalculatorBundle/Locales/Calculator.locales.json"
-></i18n>
-
 <style
   lang="scss"
   scoped

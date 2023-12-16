@@ -98,8 +98,6 @@
   }
 </script>
 
-<i18n src="@APP|Bundles/ShutDownBundle/Locales/ShutDown.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped

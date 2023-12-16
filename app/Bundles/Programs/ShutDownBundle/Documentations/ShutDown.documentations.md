@@ -18,9 +18,6 @@ services_content_2: ShutDownBundle.services-content-2
 - {{ t(services_content_1) }}
 - {{ t(services_content_2) }}
 
-<i18n src="@APP|Bundles/DocumentationBundle/Locales/Documentation.locales.json"></i18n>
-<i18n src="@APP|Bundles/ShutDownBundle/Locales/ShutDown.locales.json"></i18n>
-
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 

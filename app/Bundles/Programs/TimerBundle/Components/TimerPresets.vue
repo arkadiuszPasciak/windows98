@@ -27,8 +27,6 @@
   const store = useTimerStore()
 </script>
 
-<i18n src="@APP|Bundles/TimerBundle/Locales/Timer.locales.json"></i18n>
-
 <style
   lang="scss"
   scoped
