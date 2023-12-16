@@ -27,7 +27,6 @@ import uiSelectPL from './ui-select.locale.json'
 import type { I18nLocaleSkeleton } from '../../types/locale-skeleton.type'
 
 const localesPL: I18nLocaleSkeleton = {
-  translation: {
     ...appPL,
     ...audioPL,
     ...calculatorPL,
@@ -54,7 +53,6 @@ const localesPL: I18nLocaleSkeleton = {
     ...timezonePL,
     ...uiModalPL,
     ...uiSelectPL,
-  },
 }
 
 export default localesPL

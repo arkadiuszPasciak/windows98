@@ -1,5 +1,6 @@
 packages:
   - app
   - core/design-system
+  - core/internationalization/*
   - core/linters/*
   - core/tests/*

@@ -43,6 +43,9 @@ importers:
       '@vue/test-utils':
         specifier: ^2.3.2
         version: 2.4.1(vue@3.3.8)
+      '@windows98/i18n':
+        specifier: workspace:*
+        version: link:../core/internationalization/i18n
       jsdom:
         specifier: ^22.1.0
         version: 22.1.0
@@ -72,9 +75,9 @@ importers:
 
   core/internationalization/i18n:
     devDependencies:
-      i18next:
-        specifier: ^23.7.11
-        version: 23.7.11
+      vue-i18n:
+        specifier: ^9.2.2
+        version: 9.6.5(vue@3.3.8)
 
   core/linters/eslint:
     devDependencies:
@@ -135,6 +138,9 @@ importers:
 
   core/tests/cypress:
     devDependencies:
+      '@windows98/i18n':
+        specifier: workspace:*
+        version: link:../../internationalization/i18n
       cypress:
         specifier: ^12.13.0
         version: 12.17.4
@@ -214,13 +220,6 @@ packages:
     hasBin: true
     dependencies:
       '@babel/types': 7.23.3
-
-  /@babel/runtime@7.23.6:
-    resolution: {integrity: sha512-zHd0eUrf5GZoOWVCXp6koAKQTfZV07eit6bGPmJgnZdnSAvvZee6zniW2XMF7Cmc4ISOOnPy3QaSiIJGJkVEDQ==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.14.0
-    dev: true
 
   /@babel/types@7.23.3:
     resolution: {integrity: sha512-OZnvoH2l8PK5eUvEcUyCt/sXgr/h+UWpVuBbOljwcrAgUl6lpchoQ++PHGyQy1AtYnVA6CEq3y5xeEI10brpXw==}
@@ -2671,12 +2670,6 @@ packages:
     hasBin: true
     dev: true
 
-  /i18next@23.7.11:
-    resolution: {integrity: sha512-A/vOkw8vY99YHU9A1Td3I1dcTiYaPnwBWzrpVzfXUXSYgogK3cmBcmop/0cnXPc6QpUWIyqaugKNxRUEZVk9Nw==}
-    dependencies:
-      '@babel/runtime': 7.23.6
-    dev: true
-
   /iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
     engines: {node: '>=0.10.0'}
@@ -3748,10 +3741,6 @@ packages:
     dependencies:
       indent-string: 5.0.0
       strip-indent: 4.0.0
-    dev: true
-
-  /regenerator-runtime@0.14.0:
-    resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
     dev: true
 
   /request-progress@3.0.0:

@@ -1,8 +1,8 @@
 import { config } from '@vue/test-utils'
-import { i18n } from '../../src/configs/i18n.config'
+import vueI18n from '@windows98/i18n/configs/vue.config'
 
 const plugins = {
-  intlify: i18n,
+  intlify: vueI18n,
 }
 
 config.global.plugins = [plugins.intlify]
