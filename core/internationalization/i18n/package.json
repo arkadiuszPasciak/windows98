@@ -1,0 +1,12 @@
+{
+  "name": "@windows98/i18n",
+  "version": "1.0.0",
+  "description": "I18n configuration for Windows 98",
+  "author": "Arkadiusz Paściak",
+  "engines": {
+    "node": "18.16.0"
+  },
+  "devDependencies": {
+    "i18next": "^23.7.11"
+  }
+}

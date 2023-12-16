@@ -1,0 +1,12 @@
+{
+  "NotepadBundle.description-content": "The Bundle is the program notepad",
+  "NotepadBundle.example": "This is an example!",
+  "NotepadBundle.open": "Open",
+  "NotepadBundle.save": "Save",
+  "NotepadBundle.services-content-1": "write text in the field",
+  "NotepadBundle.services-content-2": "save a text file in the user disk",
+  "NotepadBundle.services-content-3": "change name of file before save",
+  "NotepadBundle.services-content-4": "change type of file before save",
+  "NotepadBundle.services-content-5": "load text from the user disk to field",
+  "NotepadBundle.title": "Notepad"
+}

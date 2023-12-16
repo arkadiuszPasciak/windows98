@@ -1,0 +1,12 @@
+{
+  "NotepadBundle.description-content": "The Bundle jest to program notepad",
+  "NotepadBundle.example": "To jest przykład!",
+  "NotepadBundle.open": "Otwórz",
+  "NotepadBundle.save": "Zapisz",
+  "NotepadBundle.services-content-1": "pisanie tekstu w polu",
+  "NotepadBundle.services-content-2": "zapisywanie tekstu na dysku użytkownika",
+  "NotepadBundle.services-content-3": "zmiana nazwy pliku przed zapisaniem",
+  "NotepadBundle.services-content-4": "zmiana typu pliku przed zapisaniem",
+  "NotepadBundle.services-content-5": "ładowanie tekstu z dysku uytkownika do pola",
+  "NotepadBundle.title": "Notatnik"
+}

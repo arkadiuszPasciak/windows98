@@ -1,0 +1,10 @@
+{
+  "CalculatorBundle.description-content": "The Bundle is the program <b>calculator</b>",
+  "CalculatorBundle.services-content-1": "adding numbers",
+  "CalculatorBundle.services-content-2": "subtracting numbers",
+  "CalculatorBundle.services-content-3": "dividing numbers",
+  "CalculatorBundle.services-content-4": "multiply numbers",
+  "CalculatorBundle.services-content-5": "adding a dot in number",
+  "CalculatorBundle.services-content-6": "calculating summary",
+  "CalculatorBundle.title": "Calculator"
+}

@@ -1,0 +1,9 @@
+{
+  "ThemeBundle.dark": "Dark",
+  "ThemeBundle.description-content": "The Bundle responsible for manage of languages",
+  "ThemeBundle.light": "Light",
+  "ThemeBundle.services-content-1": "change theme",
+  "ThemeBundle.services-content-2": "mount theme version by data in local storage",
+  "ThemeBundle.services-content-3": "set theme version in local storage",
+  "ThemeBundle.services-content-4": "update main class in body"
+}

@@ -1,0 +1,6 @@
+{
+  "UserAgentBundle.description-content": "The Bundle responsible for a object <a href='https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent'>UserAgent</a> located in a object <b>Window</b>",
+  "UserAgentBundle.services-content-1": "get browser name",
+  "UserAgentBundle.services-content-2": "get operating system name",
+  "UserAgentBundle.services-content-3": "get type of device"
+}

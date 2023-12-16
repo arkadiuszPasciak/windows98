@@ -1,0 +1,8 @@
+{
+  "DocumentationBundle.description": "Opis",
+  "DocumentationBundle.description-content": "Bundle odpowiedzialny za pokazywanie <b>dokumentacji</b>",
+  "DocumentationBundle.title": "Dokumentacja",
+  "DocumentationBundle.icon-description": "Ikona dokumentacji",
+  "DocumentationBundle.services": "Usługi",
+  "DocumentationBundle.services-content-1": "pokazywanie dokumentacji bundli"
+}

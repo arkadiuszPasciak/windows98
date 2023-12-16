@@ -1,0 +1,9 @@
+{
+  "ThemeBundle.dark": "Ciemny",
+  "ThemeBundle.description-content": "Bundle odpowiedzialny za zarządzanie tłem",
+  "ThemeBundle.light": "Jasny",
+  "ThemeBundle.services-content-1": "zmień tło",
+  "ThemeBundle.services-content-2": "zamontuj wersję tła z danych w local storage",
+  "ThemeBundle.services-content-3": "ustaw wersje tła w local storage",
+  "ThemeBundle.services-content-4": "zaaktualizuj główną klasę w body"
+}
