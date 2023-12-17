@@ -1,0 +1,9 @@
+{
+  "name": "@windows98/toolkit",
+  "version": "1.0.0",
+  "description": "Curated set of tools and utilities for efficient software development",
+  "author": "Arkadiusz Paściak",
+  "engines": {
+    "node": "18.16.0"
+  }
+}

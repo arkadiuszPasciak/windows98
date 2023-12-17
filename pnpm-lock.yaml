@@ -178,6 +178,8 @@ importers:
         specifier: ^0.31.4
         version: 0.31.4(jsdom@22.1.0)(sass@1.69.5)
 
+  core/toolkit: {}
+
 packages:
 
   /@aashutoshrathi/word-wrap@1.2.6:
