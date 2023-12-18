@@ -180,6 +180,12 @@ importers:
 
   core/toolkit: {}
 
+  micro-services:
+    devDependencies:
+      '@windows98/toolkit':
+        specifier: workspace:*
+        version: link:../core/toolkit
+
 packages:
 
   /@aashutoshrathi/word-wrap@1.2.6:

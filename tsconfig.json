@@ -28,6 +28,6 @@
       "@APP|Views/*": ["Views/*"]
     }
   },
-  "include": ["./src", "./core/tests/cypress", "./app"],
+  "include": ["./src", "./core/tests/cypress", "./app", "./micro-services"],
   "exclude": ["src/configs/*.config.js"]
 }
