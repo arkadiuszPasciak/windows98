@@ -20,6 +20,7 @@
     "@intlify/unplugin-vue-i18n": "^0.11.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "@windows98/i18n": "workspace:*",
+    "@windows98/micro-services": "workspace:*",
     "sass": "^1.62.1",
     "typescript": "^5.0.4",
     "vite": "^4.3.9",
