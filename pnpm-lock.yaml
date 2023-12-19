@@ -188,6 +188,9 @@ importers:
       '@windows98/toolkit':
         specifier: workspace:*
         version: link:../core/toolkit
+      '@windows98/vitest':
+        specifier: workspace:*
+        version: link:../core/tests/vitest
 
 packages:
 

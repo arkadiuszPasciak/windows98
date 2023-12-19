@@ -1,45 +1,51 @@
-// @TODO - write tests for user-agent services
+import { it, describe, vi } from '@windows98/vitest/node_modules/vitest'
+import UserAgentService from '../../src/domain/services/user-agent.service'
+import {
+  MUserAgentBrowserNames,
+  MUserAgentDeviceTypes,
+  MUserAgentOperationSystems,
+} from '../mocks/user-agent.mock'
 
-// import { it, describe } from 'vitest'
-// import {
-//   getBrowserName,
-//   getTypeDevice,
-//   getOperatingSystem,
-// } from '@APP|Bundles/UserAgentBundle/Services/UserAgent.services'
-// import { MUserAgentMocks } from '@APP|Bundles/UserAgentBundle/Mocks/UserAgent.mocks'
+describe('[MicroServices]<UserAgent>(UserAgentService)', () => {
+  it.each(MUserAgentBrowserNames)('should return browser name', (browser) => {
+    vi.stubGlobal('navigator', {
+      userAgent: browser.userAgent,
+    })
 
-// describe('[UserAgentBundle]<Services>(getBrowserName)', () => {
-//   it('should return browser name', () => {
-//     const chrome = getBrowserName(MUserAgentMocks.chromeMacOSXDesktop)
-//     const safari = getBrowserName(MUserAgentMocks.safariIOSMobile)
-//     const firefox = getBrowserName(MUserAgentMocks.firefoxAndroidDesktop)
+    const userAgentService = new UserAgentService()
+    const browserName = userAgentService.getBrowserName()
 
-//     expect(chrome).equal('Chrome')
-//     expect(safari).equal('Safari')
-//     expect(firefox).equal('Firefox')
-//   })
-// })
+    expect(browserName).equal(browser.expected)
 
-// describe('[UserAgentBundle]<Services>(getTypeDevice)', () => {
-//   it('should return type of device', () => {
-//     const desktop = getTypeDevice(MUserAgentMocks.chromeMacOSXDesktop)
-//     const mobile = getTypeDevice(MUserAgentMocks.safariIOSMobile)
+    vi.restoreAllMocks()
+  })
 
-//     expect(desktop).equal('desktop')
-//     expect(mobile).equal('mobile')
-//   })
-// })
+  it.each(MUserAgentDeviceTypes)('should return device type', (device) => {
+    vi.stubGlobal('navigator', {
+      userAgent: device.userAgent,
+    })
 
-// describe('[UserAgentBundle]<Services>(getOperatingSystem)', () => {
-//   it('should return type of device', () => {
-//     const macOSX = getOperatingSystem(MUserAgentMocks.chromeMacOSXDesktop)
-//     const iOS = getOperatingSystem(MUserAgentMocks.safariIOSMobile)
-//     const windows = getOperatingSystem(MUserAgentMocks.edgeWindowsDesktop)
-//     const linux = getOperatingSystem(MUserAgentMocks.operaLinuxDesktop)
+    const userAgentService = new UserAgentService()
+    const deviceType = userAgentService.getTypeDevice()
 
-//     expect(macOSX).equal('Mac OS X')
-//     expect(iOS).equal('iOS')
-//     expect(windows).equal('Windows NT 4.0')
-//     expect(linux).equal('Linux')
-//   })
-// })
+    expect(deviceType).equal(device.expected)
+
+    vi.restoreAllMocks()
+  })
+
+  it.each(MUserAgentOperationSystems)(
+    'should return operation system',
+    (operationSystem) => {
+      vi.stubGlobal('navigator', {
+        userAgent: operationSystem.userAgent,
+      })
+
+      const userAgentService = new UserAgentService()
+      const operationSystemName = userAgentService.getOperatingSystem()
+
+      expect(operationSystemName).equal(operationSystem.expected)
+
+      vi.restoreAllMocks()
+    },
+  )
+})

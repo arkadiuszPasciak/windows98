@@ -1,4 +1,9 @@
 import type { IUserAgentMocks } from '../models/mock.model'
+import type {
+  IUserAgentBrowserNames,
+  IUserAgentDeviceTypes,
+  IUserAgentOperationSystems,
+} from '../models/mock.model'
 
 export const MUserAgentMocks: IUserAgentMocks = {
   chromeMacOSXDesktop:
@@ -12,3 +17,48 @@ export const MUserAgentMocks: IUserAgentMocks = {
   operaLinuxDesktop:
     'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 OPR/96.0.4640.0',
 }
+
+export const MUserAgentBrowserNames: IUserAgentBrowserNames = [
+  {
+    userAgent: MUserAgentMocks.chromeMacOSXDesktop,
+    expected: 'Chrome',
+  },
+  {
+    userAgent: MUserAgentMocks.firefoxAndroidDesktop,
+    expected: 'Firefox',
+  },
+  {
+    userAgent: MUserAgentMocks.safariIOSMobile,
+    expected: 'Safari',
+  },
+]
+
+export const MUserAgentDeviceTypes: IUserAgentDeviceTypes = [
+  {
+    userAgent: MUserAgentMocks.chromeMacOSXDesktop,
+    expected: 'desktop',
+  },
+  {
+    userAgent: MUserAgentMocks.safariIOSMobile,
+    expected: 'mobile',
+  },
+]
+
+export const MUserAgentOperationSystems: IUserAgentOperationSystems = [
+  {
+    userAgent: MUserAgentMocks.chromeMacOSXDesktop,
+    expected: 'Mac OS X',
+  },
+  {
+    userAgent: MUserAgentMocks.safariIOSMobile,
+    expected: 'iOS',
+  },
+  {
+    userAgent: MUserAgentMocks.edgeWindowsDesktop,
+    expected: 'Windows NT 4.0',
+  },
+  {
+    userAgent: MUserAgentMocks.operaLinuxDesktop,
+    expected: 'Linux',
+  },
+]
