@@ -5,4 +5,5 @@ packages:
   - core/linters/*
   - core/tests/*
   - core/toolkit
+  - micro-apps
   - micro-services

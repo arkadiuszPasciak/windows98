@@ -183,6 +183,15 @@ importers:
 
   core/toolkit: {}
 
+  micro-apps:
+    devDependencies:
+      '@windows98/toolkit':
+        specifier: workspace:*
+        version: link:../core/toolkit
+      '@windows98/vitest':
+        specifier: workspace:*
+        version: link:../core/tests/vitest
+
   micro-services:
     devDependencies:
       '@windows98/toolkit':
