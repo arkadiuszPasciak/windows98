@@ -6,7 +6,9 @@ import type { TUserAgentBrowsers } from '../models/browser.model'
 import type { TUserAgentAllPlatforms } from '../models/platform.model'
 
 export default class UserAgentService implements UserAgentServiceContract {
-  constructor(private readonly userAgentRepository = new UserAgentRepository) {}
+  constructor(
+    private readonly userAgentRepository = new UserAgentRepository(),
+  ) {}
 
   public getBrowserName(userAgent: string): Maybe<TUserAgentBrowsers> {
     return this.userAgentRepository.getBrowserName(userAgent)
