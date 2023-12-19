@@ -10,15 +10,15 @@ export default class UserAgentService implements UserAgentServiceContract {
     private readonly userAgentRepository = new UserAgentRepository(),
   ) {}
 
-  public getBrowserName(userAgent: string): Maybe<TUserAgentBrowsers> {
-    return this.userAgentRepository.getBrowserName(userAgent)
+  public getBrowserName(): Maybe<TUserAgentBrowsers> {
+    return this.userAgentRepository.getBrowserName()
   }
 
-  public getOperatingSystem(userAgent: string): Maybe<TUserAgentAllPlatforms> {
-    return this.userAgentRepository.getOperatingSystem(userAgent)
+  public getOperatingSystem(): Maybe<TUserAgentAllPlatforms> {
+    return this.userAgentRepository.getOperatingSystem()
   }
 
-  public getTypeDevice(userAgent: string): Maybe<TUserAgentDevices> {
-    return this.userAgentRepository.getTypeDevice(userAgent)
+  public getTypeDevice(): Maybe<TUserAgentDevices> {
+    return this.userAgentRepository.getTypeDevice()
   }
 }

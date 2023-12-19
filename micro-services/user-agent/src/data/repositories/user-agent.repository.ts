@@ -24,9 +24,12 @@ export default class UserAgentRepository
   ) {}
 
   private getName<ArrayType extends { regex: RegExp; name: string }>(
-    userAgent: string,
     listOfTypes: Array<ArrayType>,
   ): Maybe<ArrayType['name']> {
+    const userAgent = window.navigator.userAgent
+
+    if (!userAgent) return null
+
     for (const id in listOfTypes) {
       const system = listOfTypes[id]
 
@@ -38,21 +41,15 @@ export default class UserAgentRepository
     return null
   }
 
-  public getBrowserName(userAgent: string): Maybe<TUserAgentBrowsers> {
-    return this.getName(userAgent, this.browserNames)
+  public getBrowserName(): Maybe<TUserAgentBrowsers> {
+    return this.getName(this.browserNames)
   }
 
-  public getOperatingSystem(userAgent: string): Maybe<TUserAgentAllPlatforms> {
-    return this.getName(userAgent, this.operationSystems)
+  public getOperatingSystem(): Maybe<TUserAgentAllPlatforms> {
+    return this.getName(this.operationSystems)
   }
 
-  public getTypeDevice(userAgent: string): Maybe<TUserAgentDevices> {
-    const result = this.getName(userAgent, this.devicesNames)
-
-    if (!result) {
-      return null
-    }
-
-    return result
+  public getTypeDevice(): Maybe<TUserAgentDevices> {
+    return this.getName(this.devicesNames)
   }
 }

@@ -17,7 +17,7 @@ export default interface UserAgentRepositoryContract {
   readonly devicesNames: Array<IUserAgentDevices>
   readonly operationSystems: Array<IUserAgentPlatform>
 
-  getBrowserName(userAgent: string): Maybe<TUserAgentBrowsers>
-  getOperatingSystem(userAgent: string): Maybe<TUserAgentAllPlatforms>
-  getTypeDevice(userAgent: string): Maybe<TUserAgentDevices>
+  getBrowserName(): Maybe<TUserAgentBrowsers>
+  getOperatingSystem(): Maybe<TUserAgentAllPlatforms>
+  getTypeDevice(): Maybe<TUserAgentDevices>
 }
