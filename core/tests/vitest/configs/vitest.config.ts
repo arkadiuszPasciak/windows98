@@ -6,6 +6,6 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    include: ['../../../**/*.units.ts'],
+    include: ['../../../**/*.units.ts', '../../../**/*.unit.ts'],
   },
 })

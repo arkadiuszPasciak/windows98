@@ -46,6 +46,9 @@ importers:
       '@windows98/i18n':
         specifier: workspace:*
         version: link:../core/internationalization/i18n
+      '@windows98/micro-services':
+        specifier: workspace:*
+        version: link:../micro-services
       jsdom:
         specifier: ^22.1.0
         version: 22.1.0
@@ -177,6 +180,17 @@ importers:
       vitest:
         specifier: ^0.31.4
         version: 0.31.4(jsdom@22.1.0)(sass@1.69.5)
+
+  core/toolkit: {}
+
+  micro-services:
+    devDependencies:
+      '@windows98/toolkit':
+        specifier: workspace:*
+        version: link:../core/toolkit
+      '@windows98/vitest':
+        specifier: workspace:*
+        version: link:../core/tests/vitest
 
 packages:
 

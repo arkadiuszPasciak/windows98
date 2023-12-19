@@ -30,19 +30,10 @@
 
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n'
-  import {
-    getBrowserName,
-    getTypeDevice,
-    getOperatingSystem,
-  } from '@APP|Bundles/UserAgentBundle/Services/UserAgent.services'
+  import useSettingsGeneral from '@APP|Bundles/SettingsBundle/composables/use-settings-general'
 
   const { t } = useI18n()
-
-  const userAgent = window.navigator.userAgent ?? null
-
-  const deviceType = getTypeDevice(userAgent)
-  const operatingSystem = getOperatingSystem(userAgent)
-  const browserName = getBrowserName(userAgent)
+  const { browserName, operatingSystem, deviceType } = useSettingsGeneral()
 </script>
 
 <style

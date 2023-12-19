@@ -26,7 +26,6 @@ import ThemeDocumentation from '@APP|Bundles/ThemeBundle/Documentations/Theme.do
 import TicTacToeDocumentation from '@APP|Bundles/TicTacToeBundle/Documentations/TicTacToe.documentations.md'
 import TimezoneDocumentation from '@APP|Bundles/TimezoneBundle/Documentations/Timezone.documentations.md'
 import UISelectBundleDocumentation from '@APP|Bundles/UISelectBundle/Documentations/UISelect.documentations.md'
-import UserAgentDocumentation from '@APP|Bundles/UserAgentBundle/Documentations/UserAgent.documentations.md'
 
 export const MDocumentations = [
   {
@@ -124,9 +123,5 @@ export const MDocumentations = [
   {
     name: EDocumentationBundles.UI_BUNDLE,
     component: UISelectBundleDocumentation,
-  },
-  {
-    name: EDocumentationBundles.USER_AGENT_BUNDLE,
-    component: UserAgentDocumentation,
   },
 ] as Array<IDocumentationsBundles>

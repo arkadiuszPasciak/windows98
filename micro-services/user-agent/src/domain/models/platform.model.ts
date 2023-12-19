@@ -39,34 +39,7 @@ export type TUserAgentAllPlatforms =
   | TUserAgentUnixPlatforms
   | TUserAgentWindowsPlatforms
 
-export type TUserAgentBrowsers =
-  | 'Chrome'
-  | 'Firefox'
-  | 'Safari'
-  | 'Opera'
-  | 'Edge'
-
-export type TUserAgentDevices = 'mobile' | 'desktop'
-
-export interface IUserAgentBrowser {
-  name: TUserAgentBrowsers
-  regex: RegExp
-}
-
 export interface IUserAgentPlatform {
   name: TUserAgentAllPlatforms
   regex: RegExp
-}
-
-export interface IUserAgentDevices {
-  name: TUserAgentDevices
-  regex: RegExp
-}
-
-export interface IUserAgentMocks {
-  chromeMacOSXDesktop: string
-  safariIOSMobile: string
-  firefoxAndroidDesktop: string
-  edgeWindowsDesktop: string
-  operaLinuxDesktop: string
 }
