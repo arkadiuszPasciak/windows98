@@ -25,7 +25,6 @@ export enum EDocumentationBundles {
   TIC_TAC_TOE_BUNDLE = 'TicTacToeBundle',
   TIMEZONE_BUNDLE = 'TimezoneBundle',
   UI_BUNDLE = 'UIBundle',
-  USER_AGENT_BUNDLE = 'UserAgentBundle',
 }
 
 export interface IDocumentationsBundles {
@@ -58,4 +57,3 @@ export type TDocumentationBundles =
   | EDocumentationBundles.TIC_TAC_TOE_BUNDLE
   | EDocumentationBundles.TIMEZONE_BUNDLE
   | EDocumentationBundles.UI_BUNDLE
-  | EDocumentationBundles.USER_AGENT_BUNDLE
