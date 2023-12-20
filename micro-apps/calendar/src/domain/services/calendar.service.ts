@@ -4,7 +4,7 @@ import type { CalendarServiceContract } from '../contracts/service.contract'
 import type { Maybe } from '@windows98/toolkit/src/types'
 import type { ICalendarDays } from '../models/days.model'
 
-export class CalendarService implements CalendarServiceContract {
+export default class CalendarService implements CalendarServiceContract {
   @observable
   calendar: Maybe<Array<ICalendarDays>> = null
   year: Maybe<number> = null
