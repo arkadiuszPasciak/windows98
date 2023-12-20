@@ -1,9 +1,8 @@
-import { ICalendarDays } from '../models/days.model';
+import { ICalendarDays } from '../models/days.model'
 
 export default interface CalendarRepositoryContract {
-	getFullYear(): number;
-	getMonth(): number;
-	generateDays(): Array<ICalendarDays>;
-	getFirstDayMonth(): number;
-	getLastDateMonth(): number;
+  year: number
+  month: number
+
+  generateDays(): Array<ICalendarDays>
 }
