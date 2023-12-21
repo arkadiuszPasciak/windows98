@@ -22,7 +22,7 @@
         class="day"
         :class="[
           `is-${item.status}`,
-          `${item.status === "active" ? 'is-normal' : ''}`,
+          `${item.status === 'active' ? 'is-normal' : ''}`,
         ]"
       >
         {{ item.value }}

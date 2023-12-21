@@ -1,12 +1,15 @@
 <template>
-	<UIFrame class="CalendarWrapper" :title="translation.title">
-	  <MonthSwitcher />
-	  <YearSwitcher />
-	  <Days />
-	</UIFrame>
-  </template>
+	<Observer>
+		<UIFrame class="CalendarWrapper" :title="translation.title">
+			<MonthSwitcher />
+			<YearSwitcher />
+			<Days />
+		</UIFrame>
+	</Observer>
+</template>
   
 <script setup lang="ts">
+	import { Observer } from 'mobx-vue-lite'
   	import UIFrame from '@APP|Bundles/UIFrameBundle/Components/UIFrame.vue'
 	import Days from '../days/days.vue'
 	import YearSwitcher from '../year-switcher/year-switcher.vue'
