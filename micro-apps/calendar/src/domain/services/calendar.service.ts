@@ -15,7 +15,7 @@ export default class CalendarService implements CalendarServiceContract {
   }
 
   @action
-  generateCurrentCalendar(date: Date): void {
+  generateCurrentCalendar(date: Date = new Date()): void {
     const calendar = new CalendarRepository(date)
     const days = calendar.generateDays()
 
