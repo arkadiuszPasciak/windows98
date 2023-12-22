@@ -1,25 +1,25 @@
 import useCalendar from '../../composables/use-calendar.composable'
 
 export default function useYearSwitcher() {
-	const { calendarService } = useCalendar()
+  const { calendarService } = useCalendar()
 
-	const increaseYear = () => {
-		calendarService.increaseYear()
+  const increaseYear = () => {
+    calendarService.increaseYear()
 
-		calendarService.changeCalendarByYear()
-	}
+    calendarService.changeCalendarByYear()
+  }
 
-	const decreaseYear = () => {
-		calendarService.decreaseYear()
+  const decreaseYear = () => {
+    calendarService.decreaseYear()
 
-		calendarService.changeCalendarByYear()
-	}
+    calendarService.changeCalendarByYear()
+  }
 
-	const year = calendarService.year
+  const year = calendarService.year
 
-	return {
-		increaseYear,
-		decreaseYear,
-		year,
-	}
+  return {
+    increaseYear,
+    decreaseYear,
+    year,
+  }
 }

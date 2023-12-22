@@ -1,12 +1,9 @@
 <template>
-	<CalendarWrapper />
-  </template>
-  
+  <CalendarWrapper />
+</template>
+
 <script setup lang="ts">
-  	import CalendarWrapper from '../features/wrapper/wrapper.vue'
+  import CalendarWrapper from '../features/wrapper/wrapper.vue'
 </script>
-  
-<style
-	lang="scss"
-	scoped
-/>
+
+<style lang="scss" scoped />

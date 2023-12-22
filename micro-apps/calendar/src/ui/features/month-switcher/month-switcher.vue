@@ -12,15 +12,7 @@
   import UISelect from '@APP|Bundles/UISelectBundle/Components/UISelect.vue'
   import useMonthSwitcher from './use-month-switcher.composable'
 
-  const {
-    changeCalendarByMonth,
-		month,
-		selectMonths
-  } = useMonthSwitcher()
+  const { changeCalendarByMonth, month, selectMonths } = useMonthSwitcher()
 </script>
 
-<style
-  lang="scss"
-  scoped
-  src="./month-switcher.style.scss"
-/>
+<style lang="scss" scoped src="./month-switcher.style.scss" />

@@ -10,11 +10,7 @@
       </div>
     </div>
 
-    <div
-      v-if="calendar"
-      class="days"
-      data-test="calendar-view-days"
-    >
+    <div v-if="calendar" class="days" data-test="calendar-view-days">
       <button
         v-for="(item, index) in calendar"
         :key="`days-of-months-${index}`"
@@ -37,8 +33,4 @@
   const { calendar, shortcutDays } = useDays()
 </script>
 
-<style
-  lang="scss"
-  scoped
-  src="./days.styles.scss"
-/>
+<style lang="scss" scoped src="./days.styles.scss" />
