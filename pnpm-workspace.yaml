@@ -6,5 +6,5 @@ packages:
   - core/tests/*
   - core/toolkit
   - micro-apps
-  - micro-services
   - mother-frontend
+  - mother-frontend/micro-services
