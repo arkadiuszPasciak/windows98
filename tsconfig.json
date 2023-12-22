@@ -32,8 +32,7 @@
     "./src",
     "./core/tests/cypress",
     "./app",
-    "./micro-services",
-    "./micro-apps"
+    "./mother-frontend"
   ],
   "exclude": ["src/configs/*.config.js"]
 }

@@ -7,4 +7,5 @@ packages:
   - core/toolkit
   - micro-apps
   - mother-frontend
+  - mother-frontend/micro-apps
   - mother-frontend/micro-services
