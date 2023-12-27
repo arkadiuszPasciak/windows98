@@ -9,7 +9,8 @@
 </template>
 
 <script setup lang="ts">
-  import UISelect from '@APP|Bundles/UISelectBundle/Components/UISelect.vue'
+  import UISelect from '@windows98/app/Bundles/UI/UISelectBundle/Components/UISelect.vue'
+
   import useMonthSwitcher from './use-month-switcher.composable'
 
   const { changeCalendarByMonth, month, selectMonths } = useMonthSwitcher()

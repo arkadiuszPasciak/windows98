@@ -5,5 +5,8 @@
   "author": "Arkadiusz Paściak",
   "engines": {
     "node": "18.16.0"
+  },
+  "devDependencies": {
+    "@windows98/app": "workspace:*"
   }
 }

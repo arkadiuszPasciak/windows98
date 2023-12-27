@@ -58,7 +58,7 @@ export default function useMonthSwitcher() {
     },
   ]
 
-  const month = calendarService.month
+  const month = calendarService.month as number
 
   return {
     changeCalendarByMonth,

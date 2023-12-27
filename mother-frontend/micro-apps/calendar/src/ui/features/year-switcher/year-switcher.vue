@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-  import UIStepper from '../../../../../../app/Bundles/UI/UIStepperBundle/Components/UIStepper.vue'
+  import UIStepper from '@windows98/app/Bundles/UI/UISteperBundle/Components/UIStepper.vue'
   import useYearSwitcher from './use-year-switcher.composable'
 
   const { increaseYear, decreaseYear, year } = useYearSwitcher()
