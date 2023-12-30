@@ -1,0 +1,24 @@
+{
+  "name": "@windows98/mother-frontend",
+  "version": "1.0.0",
+  "description": "Mother frontend for Windows 98",
+  "author": "Arkadiusz Paściak",
+  "engines": {
+    "node": "18.16.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "4.2.3",
+    "@windows98/i18n": "workspace:*",
+    "@windows98/toolkit": "workspace:*",
+    "jsdom": "^22.1.0",
+    "mobx": "6.12.0",
+    "mobx-vue-lite": "0.4.1",
+    "sass": "1.62.1",
+    "typescript": "5.0.4",
+    "vite": "4.3.9",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.31.4",
+    "vue": "3.3.4",
+    "vue-i18n": "9.2.2"
+  }
+}

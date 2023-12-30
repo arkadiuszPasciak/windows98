@@ -5,4 +5,7 @@ packages:
   - core/linters/*
   - core/tests/*
   - core/toolkit
-  - micro-services
+  - micro-apps
+  - mother-frontend
+  - mother-frontend/micro-apps
+  - mother-frontend/micro-services

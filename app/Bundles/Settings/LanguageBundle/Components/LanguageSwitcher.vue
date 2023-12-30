@@ -1,11 +1,11 @@
 <template>
   <UISelect
     id="languages"
-    :model-value="$i18n.locale"
+    :model-value="i18n.locale.value"
     class="LanguageSwitcher"
     :options="MLanguageOptions"
     @update:model-value="
-      ;($i18n.locale = $event),
+      ;(i18n.locale.value = $event),
         setLanguageVersionInStorage($event),
         updateLangAttribute($event)
     "
@@ -19,6 +19,9 @@
     setLanguageVersionInStorage,
     updateLangAttribute,
   } from '@APP|Bundles/LanguageBundle/Services/Language.services'
+  import { useI18n } from 'vue-i18n';
+
+  const i18n = useI18n()
 </script>
 
 <style

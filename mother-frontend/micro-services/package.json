@@ -5,9 +5,5 @@
   "author": "Arkadiusz Paściak",
   "engines": {
     "node": "18.16.0"
-  },
-  "devDependencies": {
-    "@windows98/toolkit": "workspace:*",
-    "@windows98/vitest": "workspace:*"
   }
 }

@@ -1,4 +1,4 @@
-import { it, describe, vi } from '@windows98/vitest/node_modules/vitest'
+import { expect, it, describe, vi } from 'vitest'
 import UserAgentService from '../../src/domain/services/user-agent.service'
 import {
   MUserAgentBrowserNames,

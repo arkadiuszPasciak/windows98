@@ -1,0 +1,12 @@
+{
+  "name": "@windows98/micro-apps",
+  "version": "1.0.0",
+  "description": "Micro apps for Windows 98",
+  "author": "Arkadiusz Paściak",
+  "engines": {
+    "node": "18.16.0"
+  },
+  "devDependencies": {
+    "@windows98/app": "workspace:*"
+  }
+}
