@@ -19,7 +19,7 @@
     setLanguageVersionInStorage,
     updateLangAttribute,
   } from '@APP|Bundles/LanguageBundle/Services/Language.services'
-  import { useI18n } from 'vue-i18n';
+  import { useI18n } from 'vue-i18n'
 
   const i18n = useI18n()
 </script>
