@@ -23,7 +23,7 @@
     "types": ["vite/client"],
 
     /* Experimental */
-    "experimentalDecorators": true,
+    "experimentalDecorators": true
   },
   "include": ["@bundler/src/**/*", "@bundler/module.config.d.ts", "calendar"],
   "exclude": ["node_modules"],
