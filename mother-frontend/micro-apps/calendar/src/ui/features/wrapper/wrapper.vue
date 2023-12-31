@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
   import { Observer } from 'mobx-vue-lite'
-  import UIFrame from '@APP|Bundles/UIFrameBundle/Components/UIFrame.vue'
+  import UIFrame from '@windows98/app/Bundles/UI/UIFrameBundle/Components/UIFrame.vue'
   import Days from '../days/days.vue'
   import YearSwitcher from '../year-switcher/year-switcher.vue'
   import MonthSwitcher from '../month-switcher/month-switcher.vue'

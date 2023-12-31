@@ -190,6 +190,9 @@ importers:
       '@vitejs/plugin-vue':
         specifier: 4.5.2
         version: 4.5.2(vite@5.0.8)(vue@3.4.3)
+      '@windows98/app':
+        specifier: workspace:*
+        version: link:../../app
       '@windows98/i18n':
         specifier: workspace:*
         version: link:../../core/internationalization/i18n

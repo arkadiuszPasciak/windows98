@@ -1,4 +1,5 @@
 {
+  "extends": "../../tsconfig.paths.json",
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -18,9 +19,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": ["vite/client"],
   },
-  "include": ["@bundler/src/**/*", "calendar"],
+  "include": ["@bundler/src/**/*", "@bundler/module.config.d.ts", "calendar"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

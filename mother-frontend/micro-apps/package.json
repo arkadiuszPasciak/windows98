@@ -5,6 +5,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "4.5.2",
+    "@windows98/app": "workspace:*",
     "@windows98/i18n": "workspace:*",
     "@windows98/toolkit": "workspace:*",
     "mobx": "6.12.0",
