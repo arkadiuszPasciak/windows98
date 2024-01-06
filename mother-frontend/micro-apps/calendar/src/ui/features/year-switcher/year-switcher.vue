@@ -6,7 +6,7 @@
     :model-value="year ?? 1900"
     @increase="increaseYear"
     @decrease="decreaseYear"
-    @value="year"
+    @value="(year as number)"
   />
 </template>
 
