@@ -10,6 +10,6 @@ export default function useTest(): UseTestHook {
 
   return {
     count,
-    setCountByOne
+    setCountByOne,
   }
 }

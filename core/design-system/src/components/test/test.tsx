@@ -2,7 +2,7 @@ import useTest from './use-test.hook'
 import './test.scss'
 
 export default function Test(): JSX.Element {
-  const { count, setCountByOne} = useTest()
+  const { count, setCountByOne } = useTest()
 
   return (
     <>
@@ -16,9 +16,7 @@ export default function Test(): JSX.Element {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCountByOne()}>
-          count is {count}
-        </button>
+        <button onClick={() => setCountByOne()}>count is {count}</button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>

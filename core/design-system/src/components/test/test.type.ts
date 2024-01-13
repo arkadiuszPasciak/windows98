@@ -1,4 +1,4 @@
 export default interface UseTestHook {
-	count: number
-    setCountByOne: () => void
+  count: number
+  setCountByOne: () => void
 }
