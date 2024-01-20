@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/experimental-ct-react';
+import { defineConfig, devices } from '@playwright/experimental-ct-react'
 
 export default defineConfig({
   testDir: '../../src/components',
@@ -27,4 +27,4 @@ export default defineConfig({
       use: { ...devices['Desktop Safari'] },
     },
   ],
-});
+})
