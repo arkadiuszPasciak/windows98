@@ -1,1 +1,1 @@
-export * from './components/test/test.wc'
+export * from './components/test'
