@@ -79,6 +79,12 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
+      '@playwright/experimental-ct-react':
+        specifier: ^1.41.1
+        version: 1.41.1(@types/node@20.9.0)(vite@5.0.8)
+      '@types/node':
+        specifier: ^20.9.0
+        version: 20.9.0
       '@types/react':
         specifier: ^18.2.43
         version: 18.2.47
@@ -1336,6 +1342,43 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
+    dev: true
+
+  /@playwright/experimental-ct-core@1.41.1(@types/node@20.9.0):
+    resolution: {integrity: sha512-d7PxESV29x6W9RYs0mhkXmxr+6FfTbg2Tm/WJZlhgbIP+OLv79uJ8hl8ERsiBBFtH88sR+WmxHBMiZRpfpa6Fw==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      playwright: 1.41.1
+      playwright-core: 1.41.1
+      vite: 4.5.0(@types/node@20.9.0)
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - terser
+    dev: true
+
+  /@playwright/experimental-ct-react@1.41.1(@types/node@20.9.0)(vite@5.0.8):
+    resolution: {integrity: sha512-Ht04RKD/4J69EPHOR4iAWtsOkkqswxonkcEEhniTNflGn30SoPyNww72LJECDrls+7AJayflJf4qe/cK1Ao/ug==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      '@playwright/experimental-ct-core': 1.41.1(@types/node@20.9.0)
+      '@vitejs/plugin-react': 4.2.1(vite@5.0.8)
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - vite
     dev: true
 
   /@rollup/pluginutils@4.2.1:
@@ -3507,6 +3550,14 @@ packages:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
 
+  /fsevents@2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
   /fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -4778,6 +4829,22 @@ packages:
       jsonc-parser: 3.2.0
       mlly: 1.4.2
       pathe: 1.1.1
+    dev: true
+
+  /playwright-core@1.41.1:
+    resolution: {integrity: sha512-/KPO5DzXSMlxSX77wy+HihKGOunh3hqndhqeo/nMxfigiKzogn8kfL0ZBDu0L1RKgan5XHCPmn6zXd2NUJgjhg==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dev: true
+
+  /playwright@1.41.1:
+    resolution: {integrity: sha512-gdZAWG97oUnbBdRL3GuBvX3nDDmUOuqzV/D24dytqlKt+eI5KbwusluZRGljx1YoJKZ2NRPaeWiFTeGZO7SosQ==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      playwright-core: 1.41.1
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: true
 
   /postcss-html@1.5.0:
