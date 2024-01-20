@@ -7,6 +7,15 @@
   "engines": {
     "node": "18.16.0"
   },
+  "main": "./@bundler/dist/index.umd.cjs",
+  "module": "./@bundler/dist/index.js",
+  "types": "./@bundler/dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./@bundler/dist/index.js",
+      "require": "./@bundler/dist/index.umd.cjs"
+    }
+  },
   "license": "MIT",
   "packageManager": "pnpm@8.10.2",
   "scripts": {
