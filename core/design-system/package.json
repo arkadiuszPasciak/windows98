@@ -22,6 +22,8 @@
     "dev": "vite @bundler",
     "build": "vite build @bundler",
     "preview": "vite preview @bundler",
+    "test:unit:run": "vitest run -c ./@test/vitest/vitest.config.ts",
+    "test:unit:watch": "vitest -c ./@test/vitest/vitest.config.ts",
     "test:integration:run": "playwright test -c ./@test/playwright/playwright-ct.config.ts",
     "test:integration:watch": "playwright test -c ./@test/playwright/playwright-ct.config.ts --ui"
   },
@@ -38,6 +40,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vite-plugin-css-injected-by-js": "^3.3.1",
-    "vite-plugin-dts": "^3.7.0"
+    "vite-plugin-dts": "^3.7.0",
+    "vitest": "1.2.1"
   }
 }
