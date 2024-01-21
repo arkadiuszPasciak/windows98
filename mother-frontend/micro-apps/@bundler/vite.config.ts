@@ -7,7 +7,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @import '@windows98/design-system/configs/index.config.scss';
+          @import '@windows98/design-system/index.config.scss';
         `,
       },
     },

@@ -1,5 +1,5 @@
 <template>
-  <UIStepper
+  <!-- <UIStepper
     class="CalendarYearSwitcher"
     :input="{ id: 'calendar-year-stepper' }"
     :field-modification="false"
@@ -7,14 +7,14 @@
     @increase="increaseYear"
     @decrease="decreaseYear"
     @value="year as number"
-  />
+  /> -->
 </template>
 
 <script setup lang="ts">
-  import UIStepper from '@windows98/app/Bundles/UI/UIStepperBundle/Components/UIStepper.vue'
-  import useYearSwitcher from './use-year-switcher.composable'
+  // import UIStepper from '@windows98/app/Bundles/UI/UIStepperBundle/Components/UIStepper.vue'
+  // import useYearSwitcher from './use-year-switcher.composable'
 
-  const { increaseYear, decreaseYear, year } = useYearSwitcher()
+  // const { increaseYear, decreaseYear, year } = useYearSwitcher()
 </script>
 
 <style lang="scss" scoped />
