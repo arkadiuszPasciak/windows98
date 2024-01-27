@@ -7,18 +7,11 @@
   "engines": {
     "node": "18.16.0"
   },
-  "main": "./@bundler/dist/index.umd.cjs",
-  "module": "./@bundler/dist/index.js",
-  "types": "./@bundler/dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./@bundler/dist/index.js",
-      "require": "./@bundler/dist/index.umd.cjs"
-    },
-    "./base.config.css": "./src/styles/configs/base.config.css",
-    "./index.config.scss": "./src/styles/configs/index.config.scss",
-    "./reset.config.css": "./src/styles/configs/reset.config.css"
-  },
+  "main": "@bundler/dist/index.umd.js",
+  "types": "@bundler/dist/index.d.ts",
+  "files": [
+    "@bundler/dist"
+  ],
   "license": "MIT",
   "packageManager": "pnpm@8.10.2",
   "scripts": {
@@ -30,7 +23,7 @@
     "test:integration:run": "playwright test -c ./@test/playwright/playwright-ct.config.ts",
     "test:integration:watch": "playwright test -c ./@test/playwright/playwright-ct.config.ts --ui"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -40,6 +33,8 @@
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vite-plugin-css-injected-by-js": "^3.3.1",
