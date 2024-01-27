@@ -25,7 +25,7 @@
     /* Experimental */
     "experimentalDecorators": true
   },
-  "include": ["@bundler/src/**/*", "@bundler/module.config.d.ts", "calendar"],
+  "include": ["@bundler/src/**/*", "calendar"],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
