@@ -1,7 +1,7 @@
 import useTest from './use-test.hook'
 import styles from './test.module.scss'
 
-export default function Test(): JSX.Element {
+export function Test(): JSX.Element {
   const { count, setCountByOne } = useTest()
 
   return (

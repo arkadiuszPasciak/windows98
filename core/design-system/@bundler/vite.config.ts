@@ -5,6 +5,7 @@ import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   build: {
+    copyPublicDir: false,
     lib: {
       entry: '../src/index.ts',
       name: 'design-system',
@@ -25,5 +26,9 @@ export default defineConfig({
       },
     },
   },
-  plugins: [cssInjectedByJsPlugin(), dts(), react()],
+  plugins: [
+    cssInjectedByJsPlugin(), 
+    dts({ include: ['../src']}),
+    react()
+  ],
 })
