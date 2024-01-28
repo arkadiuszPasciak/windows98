@@ -1,11 +1,10 @@
-// import Calendar from '../../calendar/src/ui/views/calendar.view.vue'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import '@windows98/design-system/base.config.css'
-import { Test } from '@windows98/design-system'
+import { DSText } from '@windows98/design-system'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Test></Test>
+    <DSText id='hello-world' text="Hello world!" />
   </React.StrictMode>,
 )
