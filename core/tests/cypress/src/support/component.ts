@@ -1,7 +1,6 @@
 import { mount } from 'cypress/vue'
 import vueI18n from '@windows98/i18n/configs/vue.config'
-// @TODO - replace with import "@windows98/design-system" in the next commit
-import '../../../../design-system/src/styles/configs/base.config.css'
+import '@windows98/design-system/base.config.css'
 import '../styles/cypress.style.scss'
 
 Cypress.Commands.add('mount', (component, options = {}) => {

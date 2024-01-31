@@ -17,7 +17,10 @@
     ".": {
       "import": "./@bundler/dist/index.js",
       "require": "./@bundler/dist/index.umd.cjs"
-    }
+    },
+    "./base.config.css": "./src/styles/configs/base.config.css",
+    "./index.config.css": "./src/styles/configs/index.config.scss",
+    "./reset.config.css": "./src/styles/configs/reset.config.css"
   },
   "license": "MIT",
   "packageManager": "pnpm@8.10.2",

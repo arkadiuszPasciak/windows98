@@ -1,5 +1,4 @@
 import mountApp from '@APP|Bundles/AppBundle/Services/App.services'
-// @TODO - replace with import "@windows98/design-system" when app will have own workspace
-import '../core/design-system/src/styles/configs/base.config.css'
+import '@windows98/design-system/base.config.css'
 
 mountApp()
