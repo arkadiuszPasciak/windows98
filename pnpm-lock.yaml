@@ -177,6 +177,9 @@ importers:
 
   core/tests/cypress:
     devDependencies:
+      '@windows98/design-system':
+        specifier: workspace:*
+        version: link:../../design-system
       '@windows98/i18n':
         specifier: workspace:*
         version: link:../../internationalization/i18n
