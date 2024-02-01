@@ -1,8 +1,8 @@
 <template>
   <!-- <UIFrame class="CalendarWrapper" :title="translation.title"> -->
-    <MonthSwitcher />
-    <YearSwitcher />
-    <Days />
+  <MonthSwitcher />
+  <YearSwitcher />
+  <Days />
   <!-- </UIFrame> -->
 </template>
 

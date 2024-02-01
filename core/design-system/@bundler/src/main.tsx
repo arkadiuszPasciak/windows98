@@ -6,6 +6,6 @@ import '../../src/styles/configs/base.config.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <DSText id='hello-world' text='Hello World' />
+    <DSText id="hello-world" text="Hello World" />
   </React.StrictMode>,
 )

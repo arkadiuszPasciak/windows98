@@ -17,10 +17,10 @@ export default defineConfig({
       external: ['react'],
       output: {
         globals: {
-          react: "react",
-          "react-dom": "reactDOM",
+          react: 'react',
+          'react-dom': 'reactDOM',
         },
-      }
+      },
     },
   },
   css: {
@@ -32,9 +32,5 @@ export default defineConfig({
       },
     },
   },
-  plugins: [
-    cssInjectedByJsPlugin(), 
-    dts({ include: ['../src']}),
-    react()
-  ],
+  plugins: [cssInjectedByJsPlugin(), dts({ include: ['../src'] }), react()],
 })

@@ -22,7 +22,7 @@ export default defineConfig({
         // @TODO - replace with import "@windows98/design-system" when app will have own workspace
         additionalData: `@import '${getPathMain(
           'core/design-system/src/styles/configs/index.config.scss',
-        )}';`
+        )}';`,
       },
     },
   },
