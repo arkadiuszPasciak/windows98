@@ -19,9 +19,10 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `
-          @import '@windows98/design-system/index.config.scss';
-        `,
+        // @TODO - replace with import "@windows98/design-system" when app will have own workspace
+        additionalData: `@import '${getPathMain(
+          'core/design-system/src/styles/configs/index.config.scss',
+        )}';`
       },
     },
   },
