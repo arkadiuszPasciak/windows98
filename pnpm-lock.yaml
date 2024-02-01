@@ -39,6 +39,9 @@ importers:
       '@vue/test-utils':
         specifier: ^2.3.2
         version: 2.4.1(vue@3.3.8)
+      '@windows98/design-system':
+        specifier: workspace:*
+        version: link:../core/design-system
       '@windows98/i18n':
         specifier: workspace:*
         version: link:../core/internationalization/i18n
