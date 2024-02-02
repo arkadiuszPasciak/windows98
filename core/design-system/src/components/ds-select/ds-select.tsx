@@ -1,6 +1,6 @@
 import { useState, ChangeEvent } from 'react';
 import type { DSSelectProps } from './ds-select.type';
-import './UISelect.styles.scss';
+import styles from './DSSelect.module.scss';
 
 export default function DSSelect({
   id,
@@ -17,10 +17,12 @@ export default function DSSelect({
     setValue(event.target.value);
   };
 
+  const labelClass = labelName ? `label-position-${labelPosition}` : ''
+
   return (
-    <div className={`UISelect ${labelName ? `label-position-${labelPosition}` : ''}`}>
+    <div className={`${styles['DSSelect']} ${styles[labelClass]}`}>
       {labelName && (
-        <label className="label" data-test={`ui-select-label-${id}`} htmlFor={id}>
+        <label className={styles['label']} data-test={`ui-select-label-${id}`} htmlFor={id}>
           {labelName}
         </label>
       )}
@@ -28,14 +30,14 @@ export default function DSSelect({
         id={id}
         value={value}
         onChange={handleChange}
-        className="select"
+        className={styles['select']}
         name={id}
         data-test={`ui-select-${id}`}
         disabled={disabled}
         required={required}
       >
         {options.map((option) => (
-          <option key={`${id}-${option.value}`} value={option.value} className="option">
+          <option key={`${id}-${option.value}`} value={option.value} className={styles['option']}>
             {option.name}
           </option>
         ))}
