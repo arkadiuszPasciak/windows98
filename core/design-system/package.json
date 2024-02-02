@@ -1,11 +1,54 @@
 {
-  "author": "Arkadiusz Paściak",
+  "name": "@windows98/design-system",
   "description": "Design System for Windows 98 project",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
   "engines": {
     "node": "18.16.0"
   },
+  "main": "@bundler/dist/index.umd.cjs",
+  "module": "@bundler/dist/index.js",
+  "types": "@bundler/dist/index.d.ts",
+  "files": [
+    "@bundler/dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./@bundler/dist/index.js",
+      "require": "./@bundler/dist/index.umd.cjs"
+    },
+    "./base.config.css": "./src/styles/configs/base.config.css",
+    "./index.config.css": "./src/styles/configs/index.config.scss",
+    "./reset.config.css": "./src/styles/configs/reset.config.css"
+  },
   "license": "MIT",
-  "name": "@windows98/design-system",
   "packageManager": "pnpm@8.10.2",
-  "version": "1.0.0"
+  "scripts": {
+    "dev": "vite @bundler",
+    "build": "vite build @bundler",
+    "preview": "vite preview @bundler",
+    "test:unit:run": "vitest run -c ./@test/vitest/vitest.config.ts",
+    "test:unit:watch": "vitest -c ./@test/vitest/vitest.config.ts",
+    "test:integration:run": "playwright test -c ./@test/playwright/playwright-ct.config.ts",
+    "test:integration:watch": "playwright test -c ./@test/playwright/playwright-ct.config.ts --ui"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@playwright/experimental-ct-react": "^1.41.1",
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-css-injected-by-js": "^3.3.1",
+    "vite-plugin-dts": "^3.7.0",
+    "vitest": "1.2.1"
+  }
 }
