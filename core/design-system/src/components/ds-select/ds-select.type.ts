@@ -4,11 +4,9 @@ export interface DSSelectProps {
 	labelName?: string;
 	labelPosition?: 'top' | 'left';
 	modelValue: string | number;
-	options: Array<DSSelectOption>;
+	options: {
+		value: string | number;
+		name: string;
+	}[]
 	required?: boolean;
-}
-
-export interface DSSelectOption {
-	value: string | number;
-	name: string;
 }

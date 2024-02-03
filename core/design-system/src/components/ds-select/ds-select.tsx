@@ -15,24 +15,35 @@ export function DSSelect({
   const labelClass = labelName ? `label-position-${labelPosition}` : ''
 
   return (
-    <div className={`${styles['DSSelect']} ${styles[labelClass]}`}>
+    <div
+      className={`${styles['DSSelect']} ${styles[labelClass]}`}
+    >
       {labelName && (
-        <label className={styles['label']} data-test={`ui-select-label-${id}`} htmlFor={id}>
+        <label
+          className={styles['label']}
+          data-testid={`ds-select-label-${id}`}
+          htmlFor={id}
+        >
           {labelName}
         </label>
       )}
       <select
-        id={id}
-        value={value}
-        onChange={handleChange}
         className={styles['select']}
-        name={id}
-        data-test={`ui-select-${id}`}
+        data-testid={`ds-select-select-${id}`}
         disabled={disabled}
+        id={id}
+        name={id}
+        onChange={handleChange}
         required={required}
+        value={value}
       >
-        {options.map((option) => (
-          <option key={`${id}-${option.value}`} value={option.value} className={styles['option']}>
+        {options.map((option, idOption) => (
+          <option
+            className={styles['option']}
+            data-testid={`ds-select-option-${id}-${idOption}`}
+            key={`${id}-${option.value}`}
+            value={option.value}
+          >
             {option.name}
           </option>
         ))}
