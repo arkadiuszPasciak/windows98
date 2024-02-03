@@ -1,4 +1,4 @@
-import { useState, ChangeEvent } from 'react';
+import useDSSelect from './use-ds-select.hook';
 import type { DSSelectProps } from './ds-select.type';
 import styles from './DSSelect.module.scss';
 
@@ -11,12 +11,7 @@ export default function DSSelect({
   labelName,
   labelPosition = 'top',
 }: DSSelectProps) {
-  const [value, setValue] = useState(modelValue);
-
-  const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    setValue(event.target.value);
-  };
-
+  const { value, handleChange } = useDSSelect(modelValue);
   const labelClass = labelName ? `label-position-${labelPosition}` : ''
 
   return (
