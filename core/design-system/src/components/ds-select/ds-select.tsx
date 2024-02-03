@@ -2,7 +2,7 @@ import useDSSelect from './use-ds-select.hook';
 import type { DSSelectProps } from './ds-select.type';
 import styles from './DSSelect.module.scss';
 
-export default function DSSelect({
+export function DSSelect({
   id,
   required = false,
   disabled = false,
