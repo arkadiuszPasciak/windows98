@@ -21,8 +21,7 @@
 }
 
 .label {
-	// @TODO - resolve problem with scss in playwright
-	// @include font('medium', 11, 14);
+	@include font('medium', 11, 14);
 	color: var(--text-color);
   }
 
@@ -34,7 +33,6 @@
 	box-shadow: var(--border-field);
 	padding: 5px 25px 5px 5px;
 	color: var(--text-color);
-	// @TODO - resolve problem with scss in playwright
-	// @include font('medium', 11, 13);
+	@include font('medium', 11, 13);
 }
   

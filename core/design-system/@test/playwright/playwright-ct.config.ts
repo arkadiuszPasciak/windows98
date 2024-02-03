@@ -12,6 +12,17 @@ export default defineConfig({
   use: {
     trace: 'on-first-retry',
     ctPort: 3100,
+    ctViteConfig: {
+      css: {
+        preprocessorOptions: {
+          scss: {
+            additionalData: `
+              @import '../../../src/styles/configs/index.config.scss';
+            `,
+          },
+        },
+      },
+    },
   },
   projects: [
     {
