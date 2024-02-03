@@ -1,6 +1,6 @@
 import { DSSelectOption } from './ds-select.type'
 
-export const MDSSelectOptions: Array<DSSelectOption> = [
+export const DSSelectOptions: Array<DSSelectOption> = [
 	{
 		value: 'de',
 		name: 'Deutsch',

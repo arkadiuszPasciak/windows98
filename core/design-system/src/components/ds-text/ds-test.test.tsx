@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/experimental-ct-react'
-import { DSText, DsTextProps } from './index'
+import { DSText, DSTextProps } from './index'
 
-const testProps: DsTextProps = {
+const testProps: DSTextProps = {
   id: 'hello-world',
   text: 'Hello World',
 }

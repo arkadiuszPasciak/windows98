@@ -1,11 +1,11 @@
 export interface DSSelectProps {
-	id: string;
-	required?: boolean;
 	disabled?: boolean;
-	modelValue: string | number;
-	options: Array<DSSelectOption>;
+	id: string;
 	labelName?: string;
 	labelPosition?: 'top' | 'left';
+	modelValue: string | number;
+	options: Array<DSSelectOption>;
+	required?: boolean;
 }
 
 export interface DSSelectOption {
