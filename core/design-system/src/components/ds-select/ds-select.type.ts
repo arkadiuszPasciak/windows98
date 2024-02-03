@@ -3,10 +3,12 @@ export interface DSSelectProps {
 	required?: boolean;
 	disabled?: boolean;
 	modelValue: string | number;
-	options: {
-	  value: string | number;
-	  name: string;
-	}[]
+	options: Array<DSSelectOption>;
 	labelName?: string;
 	labelPosition?: 'top' | 'left';
+}
+
+export interface DSSelectOption {
+	value: string | number;
+	name: string;
 }
