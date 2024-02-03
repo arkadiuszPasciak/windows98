@@ -24,6 +24,11 @@ const defaultSelect: DSSelectProps = {
   required: true,
 }
 
+const disabledSelect: DSSelectProps = {
+  ...defaultSelect,
+  disabled: true
+}
+
 test.use({ viewport: { width: 500, height: 500 } })
 
 test.describe('DSSelect', () => {
@@ -72,4 +77,24 @@ test.describe('DSSelect', () => {
     await select.selectOption('pl')
 		await expect(select).toHaveValue('pl')
 	})
+
+  test('does not allow selection when disabled', async ({ mount }) => {
+    const component = await mount(
+      <DSSelect
+        disabled={disabledSelect.disabled}
+        id={disabledSelect.id}
+        labelName={disabledSelect.labelName}
+        labelPosition={disabledSelect.labelPosition}
+        modelValue={disabledSelect.modelValue}
+        options={disabledSelect.options}
+        required={disabledSelect.required}
+      />,
+    )
+
+    const select = await component.getByTestId(`ds-select-select-${defaultSelect.id}`)
+  
+    const isEnabled = await select.isEnabled();
+
+    await expect(isEnabled).toBe(false)
+  })
 })
