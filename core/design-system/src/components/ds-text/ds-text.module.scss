@@ -1,4 +1,5 @@
 .DSText {
-  @include font('medium', 11, 13);
+  // @TODO - resolve problem with scss in playwright
+  // @include font('medium', 11, 13);
   color: var(--text-color);
 }

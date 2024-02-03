@@ -1,6 +1,6 @@
 import useDSSelect from './use-ds-select.hook';
 import type { DSSelectProps } from './ds-select.type';
-import styles from './DSSelect.module.scss';
+import styles from './ds-select.module.scss';
 
 export function DSSelect({
   id,
