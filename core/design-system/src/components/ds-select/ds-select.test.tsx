@@ -91,10 +91,10 @@ test.describe('DSSelect', () => {
       />,
     )
 
-    const select = await component.getByTestId(`ds-select-select-${defaultSelect.id}`)
+    const select = await component.getByTestId(`ds-select-select-${disabledSelect.id}`)
   
-    const isEnabled = await select.isEnabled();
+    const isDisabled = await select.isDisabled();
 
-    await expect(isEnabled).toBe(false)
+    await expect(isDisabled).toBe(true)
   })
 })
