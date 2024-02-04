@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/experimental-ct-react'
-import { DSSelect, DSSelectProps } from './index'
+import { DSSelect, type DSSelectProps } from './index'
 
 const defaultSelect: DSSelectProps = {
   disabled: false,
