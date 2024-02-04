@@ -1,5 +1,7 @@
+import { Wrapper } from '../modules/wrapper/wrapper'
+
 export function CalendarView() {
   return (
-	<p>Calendar view</p>
+    <Wrapper />
   )
 }
