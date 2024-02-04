@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/experimental-ct-react'
 import { DSIcon, type DSIconProps } from './index'
 
 const defaultIcon: DSIconProps = {
-	name: 'selectButton',
+	name: 'select-button',
 }
 
 test.use({ viewport: { width: 500, height: 500 } })
