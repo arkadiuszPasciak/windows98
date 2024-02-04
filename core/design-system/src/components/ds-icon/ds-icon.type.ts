@@ -1,5 +1,5 @@
 export type DSIconIcons = {
-	[key in DSIconNames]: () => JSX.Element;
+	[key in DSIconNames]: JSX.Element;
 }
 
 export type DSIconNames = 'selectButton'
