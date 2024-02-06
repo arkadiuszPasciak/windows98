@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { DSSelectOption } from '@windows98/design-system';
+import { ReactEventHandler } from 'react';
 
 const selectMonths: Array<DSSelectOption> = [
   {
@@ -53,15 +54,15 @@ const selectMonths: Array<DSSelectOption> = [
 ]
 
 export default function useMonthSwitcher() {
-  const [month, setMonth] = useState<number>(Number(selectMonths[0].value));
+  const [month, setMonth] = useState<number | string>(selectMonths[0].value);
 
-  const changeCalendarByMonth = (value: number): void => {
-    setMonth(value)
-    console.log(value)
-  }
+  const handleSelectChange: ReactEventHandler<HTMLSelectElement> = (event) => {
+    const selectedValue = event.currentTarget.value;
+    setMonth(selectedValue)
+  };
 
   return {
-    changeCalendarByMonth,
+    handleSelectChange,
     month,
     selectMonths,
   }

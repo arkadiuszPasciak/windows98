@@ -3,8 +3,7 @@ import useMonthSwitcher from './use-month-switcher.hook'
 
 const MonthSwitcher = () => {
   const {
-    // @TODO add handler in ds-select
-    // changeCalendarByMonth,
+    handleSelectChange,
     month,
     selectMonths
   } = useMonthSwitcher()
@@ -14,6 +13,7 @@ const MonthSwitcher = () => {
       id="month-switcher"
       modelValue={month}
       options={selectMonths}
+      onSelect={handleSelectChange}
     />
   );
 };
