@@ -1,3 +1,5 @@
+import { ReactEventHandler } from 'react';
+
 export interface DSSelectProps {
 	disabled?: boolean;
 	id: string;
@@ -6,6 +8,7 @@ export interface DSSelectProps {
 	modelValue: string | number;
 	options: Array<DSSelectOption>
 	required?: boolean;
+	onSelect: ReactEventHandler<HTMLSelectElement>;
 }
 
 export interface DSSelectOption {

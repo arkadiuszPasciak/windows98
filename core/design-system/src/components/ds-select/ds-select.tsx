@@ -11,9 +11,15 @@ export function DSSelect({
   options,
   labelName,
   labelPosition = 'top',
+  onSelect,
 }: DSSelectProps) {
   const { value, handleChange } = useDSSelect(modelValue);
   const labelClass = labelName ? `label-position-${labelPosition}` : ''
+
+  const handleOptionValue = (value: React.ChangeEvent<HTMLSelectElement>): void => {
+    handleChange(value)
+    onSelect(value)
+  }
 
   return (
     <div
@@ -34,7 +40,7 @@ export function DSSelect({
         disabled={disabled}
         id={id}
         name={id}
-        onChange={handleChange}
+        onChange={handleOptionValue}
         required={required}
         value={value}
       >
