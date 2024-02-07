@@ -22,6 +22,7 @@ const defaultSelect: DSSelectProps = {
     },
   ],
   required: true,
+  onSelect: () => {}
 }
 
 const disabledSelect: DSSelectProps = {
@@ -42,6 +43,7 @@ test.describe('DSSelect', () => {
         modelValue={defaultSelect.modelValue}
         options={defaultSelect.options}
         required={defaultSelect.required}
+        onSelect={defaultSelect.onSelect}
       />,
     )
 
@@ -65,6 +67,7 @@ test.describe('DSSelect', () => {
         modelValue={defaultSelect.modelValue}
         options={defaultSelect.options}
         required={defaultSelect.required}
+        onSelect={defaultSelect.onSelect}
       />,
     )
 
@@ -92,6 +95,7 @@ test.describe('DSSelect', () => {
         modelValue={disabledSelect.modelValue}
         options={disabledSelect.options}
         required={disabledSelect.required}
+        onSelect={disabledSelect.onSelect}
       />,
     )
 
