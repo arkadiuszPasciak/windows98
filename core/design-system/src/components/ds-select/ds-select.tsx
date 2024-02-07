@@ -1,7 +1,7 @@
-import useDSSelect from './use-ds-select.hook';
+import useDSSelect from './use-ds-select.hook'
 import { DSIcon } from '../../index'
-import type { DSSelectProps } from './ds-select.type';
-import styles from './ds-select.module.scss';
+import type { DSSelectProps } from './ds-select.type'
+import styles from './ds-select.module.scss'
 
 export function DSSelect({
   id,
@@ -13,18 +13,18 @@ export function DSSelect({
   labelPosition = 'top',
   onSelect,
 }: DSSelectProps) {
-  const { value, handleChange } = useDSSelect(modelValue);
+  const { value, handleChange } = useDSSelect(modelValue)
   const labelClass = labelName ? `label-position-${labelPosition}` : ''
 
-  const handleOptionValue = (value: React.ChangeEvent<HTMLSelectElement>): void => {
+  const handleOptionValue = (
+    value: React.ChangeEvent<HTMLSelectElement>,
+  ): void => {
     handleChange(value)
     onSelect(value)
   }
 
   return (
-    <div
-      className={`${styles['DSSelect']} ${styles[labelClass]}`}
-    >
+    <div className={`${styles['DSSelect']} ${styles[labelClass]}`}>
       {labelName && (
         <label
           className={styles['label']}
@@ -57,5 +57,5 @@ export function DSSelect({
       </select>
       <DSIcon name="select-button" />
     </div>
-  );
-};
+  )
+}

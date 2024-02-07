@@ -9,10 +9,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
   outputDir: './test-results',
-  reporter: [
-    ['list'],
-    ['json', {  outputFile: './test-results/results.json' }]
-  ],
+  reporter: [['list'], ['json', { outputFile: './test-results/results.json' }]],
   use: {
     trace: 'on-first-retry',
     ctPort: 3100,

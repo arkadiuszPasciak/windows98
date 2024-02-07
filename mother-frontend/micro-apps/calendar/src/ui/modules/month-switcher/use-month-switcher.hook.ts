@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { DSSelectOption } from '@windows98/design-system';
-import { ReactEventHandler } from 'react';
+import { useState } from 'react'
+import { DSSelectOption } from '@windows98/design-system'
+import { ReactEventHandler } from 'react'
 
 const selectMonths: Array<DSSelectOption> = [
   {
@@ -54,12 +54,12 @@ const selectMonths: Array<DSSelectOption> = [
 ]
 
 export default function useMonthSwitcher() {
-  const [month, setMonth] = useState<number | string>(selectMonths[0].value);
+  const [month, setMonth] = useState<number | string>(selectMonths[0].value)
 
   const handleSelectChange: ReactEventHandler<HTMLSelectElement> = (event) => {
-    const selectedValue = event.currentTarget.value;
+    const selectedValue = event.currentTarget.value
     setMonth(selectedValue)
-  };
+  }
 
   return {
     handleSelectChange,
@@ -67,4 +67,3 @@ export default function useMonthSwitcher() {
     selectMonths,
   }
 }
-

@@ -26,7 +26,7 @@ const defaultSelect: DSSelectProps = {
 
 const disabledSelect: DSSelectProps = {
   ...defaultSelect,
-  disabled: true
+  disabled: true,
 }
 
 test.use({ viewport: { width: 500, height: 500 } })
@@ -46,15 +46,17 @@ test.describe('DSSelect', () => {
     )
 
     const label = await component.getByText(defaultSelect.labelName!)
-    const select = await component.getByTestId(`ds-select-select-${defaultSelect.id}`)
-    
+    const select = await component.getByTestId(
+      `ds-select-select-${defaultSelect.id}`,
+    )
+
     await expect(component).toBeVisible()
     await expect(label).toBeVisible()
-		await expect(select).toBeVisible()
+    await expect(select).toBeVisible()
   })
 
-  test("selects an option", async ({ mount }) => {
-		const component = await mount(
+  test('selects an option', async ({ mount }) => {
+    const component = await mount(
       <DSSelect
         disabled={defaultSelect.disabled}
         id={defaultSelect.id}
@@ -66,17 +68,19 @@ test.describe('DSSelect', () => {
       />,
     )
 
-		const select = await component.getByTestId(`ds-select-select-${defaultSelect.id}`)
+    const select = await component.getByTestId(
+      `ds-select-select-${defaultSelect.id}`,
+    )
 
     await select.selectOption('de')
-		await expect(select).toHaveValue('de')
+    await expect(select).toHaveValue('de')
 
     await select.selectOption('en')
-		await expect(select).toHaveValue('en')
+    await expect(select).toHaveValue('en')
 
     await select.selectOption('pl')
-		await expect(select).toHaveValue('pl')
-	})
+    await expect(select).toHaveValue('pl')
+  })
 
   test('does not allow selection when disabled', async ({ mount }) => {
     const component = await mount(
@@ -91,9 +95,11 @@ test.describe('DSSelect', () => {
       />,
     )
 
-    const select = await component.getByTestId(`ds-select-select-${disabledSelect.id}`)
-  
-    const isDisabled = await select.isDisabled();
+    const select = await component.getByTestId(
+      `ds-select-select-${disabledSelect.id}`,
+    )
+
+    const isDisabled = await select.isDisabled()
 
     await expect(isDisabled).toBe(true)
   })
