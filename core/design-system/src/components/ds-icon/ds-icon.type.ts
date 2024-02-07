@@ -5,5 +5,6 @@ export type DSIconIcons = {
 export type DSIconNames = 'select-button'
 
 export interface DSIconProps {
+  className?: string
   name: DSIconNames
 }

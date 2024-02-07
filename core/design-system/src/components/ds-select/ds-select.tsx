@@ -14,7 +14,6 @@ export function DSSelect({
   onSelect,
 }: DSSelectProps) {
   const { value, handleChange } = useDSSelect(modelValue)
-  const labelClass = labelName ? `label-position-${labelPosition}` : ''
 
   const handleOptionValue = (
     value: React.ChangeEvent<HTMLSelectElement>,
@@ -24,7 +23,7 @@ export function DSSelect({
   }
 
   return (
-    <div className={`${styles['DSSelect']} ${styles[labelClass]}`}>
+    <div className={`${styles[labelName ? `label-position-${labelPosition}` : '']}`}>
       {labelName && (
         <label
           className={styles['label']}
@@ -55,7 +54,10 @@ export function DSSelect({
           </option>
         ))}
       </select>
-      <DSIcon name="select-button" />
+      <DSIcon
+        className={styles['arrow']}
+        name="select-button"
+      />
     </div>
   )
 }

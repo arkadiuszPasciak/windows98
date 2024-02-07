@@ -5,6 +5,6 @@ const icons: DSIconIcons = {
   'select-button': <DSIconSelectButton />,
 }
 
-export function DSIcon({ name }: DSIconProps) {
-  return <>{icons[name]}</>
+export function DSIcon({ className, name }: DSIconProps) {
+  return <span className={className ?? undefined}>{icons[name]}</span>
 }
