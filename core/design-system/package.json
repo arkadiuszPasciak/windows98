@@ -19,14 +19,18 @@
       "require": "./@bundler/dist/index.umd.cjs"
     },
     "./base.config.css": "./src/styles/configs/base.config.css",
-    "./index.config.css": "./src/styles/configs/index.config.scss",
-    "./reset.config.css": "./src/styles/configs/reset.config.css"
+    "./index.config.scss": "./src/styles/configs/index.config.scss",
+    "./reset.config.css": "./src/styles/configs/reset.config.css",
+    "./variables.config.css": "./@bundler/dist/styles/variables.config.css"
   },
   "license": "MIT",
   "packageManager": "pnpm@8.10.2",
   "scripts": {
     "dev": "vite @bundler",
-    "build": "vite build @bundler",
+    "build": "pnpm run build:components && pnpm run build:styles",
+    "build:components": "vite build @bundler",
+    "build:styles": "pnpm run build:styles:variables",
+    "build:styles:variables": "sass ./src/styles/configs/variables.config.scss ./@bundler/dist/styles/variables.config.css --style=compressed",
     "preview": "vite preview @bundler",
     "test:unit:run": "vitest run -c ./@test/vitest/vitest.config.ts",
     "test:unit:watch": "vitest -c ./@test/vitest/vitest.config.ts",
@@ -45,6 +49,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sass": "^1.70.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vite-plugin-css-injected-by-js": "^3.3.1",
