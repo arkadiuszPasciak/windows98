@@ -5,6 +5,7 @@ export function DSButtonArrow({
 	ariaLabel,
 	direction,
 	disabled,
+	id,
 	onClick,
 	size
 }: DSButtonArrowProps) {
@@ -16,6 +17,7 @@ export function DSButtonArrow({
 				${styles[`arrow-${direction}`]}
 				${styles[`size-${size}`]}
 			`}
+			data-testid={`ds-button-arrow-${id}`}
 			disabled={disabled}
 			type="button"
 			onClick={onClick}

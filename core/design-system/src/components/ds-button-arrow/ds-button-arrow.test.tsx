@@ -5,6 +5,7 @@ const defaultButton: DSButtonArrowProps = {
   ariaLabel: 'Test Button',
   direction: 'top',
   disabled: false,
+  id: 'test-button',
   size: 'medium',
   onClick: () => {}
 }
@@ -23,6 +24,7 @@ test.describe('DSButtonArrow', () => {
         ariaLabel={defaultButton.ariaLabel}
         direction={defaultButton.direction}
         disabled={defaultButton.disabled}
+		id={defaultButton.id}
         size={defaultButton.size}
         onClick={defaultButton.onClick}
       />,
@@ -39,6 +41,7 @@ test.describe('DSButtonArrow', () => {
         ariaLabel={defaultButton.ariaLabel}
         direction={defaultButton.direction}
         disabled={defaultButton.disabled}
+		id={defaultButton.id}
         size={defaultButton.size}
         onClick={() => { clicked = true }}
       />,
@@ -55,6 +58,7 @@ test.describe('DSButtonArrow', () => {
         ariaLabel={disabledButton.ariaLabel}
         direction={disabledButton.direction}
         disabled={disabledButton.disabled}
+		id={defaultButton.id}
         size={disabledButton.size}
         onClick={() => {}}
       />,
