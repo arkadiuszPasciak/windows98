@@ -5,33 +5,7 @@
 	width: 70px;
 }
 
-.button {
-	position: relative;
-	width: 20px;
-	height: 10px;
-
-	&::after {
-		content: '';
-		display: block;
-		border-left: 3px solid transparent;
-		border-right: 3px solid transparent;
-	}
-}
-
-.button-decrease {
-	&::after {
-		border-top: 3px solid var(--text-color);
-	}
-}
-
-.button-increase {
-	&::after {
-		border-bottom: 3px solid var(--text-color);
-	}
-}
-
 .state-disabled {
 	opacity: 0.5;
 	pointer-events: none;
 }
-  

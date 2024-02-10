@@ -2,6 +2,7 @@ import { DSText } from '../../index';
 import { DSStepperProps } from './ds-stepper.type';
 import styles from './ds-stepper.module.scss';
 import { useDSStepper } from './use-ds-stepper.hook';
+import { DSButtonArrow } from '../../index'
 
 export function DSStepper({
   id,
@@ -18,20 +19,28 @@ export function DSStepper({
   } = useDSStepper({modelValue, onIncrease, onDecrease, onValueChange})
 
   return (
-    <div className={`${styles['ds-stepper']} ${disabled ? styles['state-disabled'] : ''}`}>
+    <div className={`
+      ${styles['ds-stepper']}
+      ${disabled ? styles['state-disabled'] : ''}
+      `}
+    >
 	    <DSText text={String(value)} id={id} />
 
-      <button
-        className={`${styles['button']} ${styles['button-increase']}`}
+      <DSButtonArrow
+        ariaLabel="Increase"
+        direction="top"
         disabled={disabled}
-        data-testid={`${id}-increase`}
+        id={id}
+        size="small"
         onClick={handleIncrease}
       />
 
-      <button
-        className={`${styles['button']} ${styles['button-decrease']}`}
+      <DSButtonArrow
+        ariaLabel="Decrease"
+        direction="bottom" 
         disabled={disabled}
-        data-testid={`${id}-decrease`}
+        id={id}
+        size="small"
         onClick={handleDecrease}
       />
     </div>

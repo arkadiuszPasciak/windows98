@@ -17,7 +17,7 @@ export function DSButtonArrow({
 				${styles[`arrow-${direction}`]}
 				${styles[`size-${size}`]}
 			`}
-			data-testid={`ds-button-arrow-${id}`}
+			data-testid={`ds-button-arrow-${id}-${direction}`}
 			disabled={disabled}
 			type="button"
 			onClick={onClick}
