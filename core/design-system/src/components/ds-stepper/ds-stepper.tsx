@@ -1,6 +1,6 @@
 import { DSText } from '../../index';
 import { DSStepperProps } from './ds-stepper.type';
-import './DSStepper.styles.scss';
+import styles from './ds-stepper.module.scss';
 import { useDSStepper } from './use-ds-stepper.hook';
 
 export function DSStepper({
@@ -18,24 +18,22 @@ export function DSStepper({
   } = useDSStepper({modelValue, onIncrease, onDecrease, onValueChange})
 
   return (
-    <div className={`DSStepper ${disabled ? 'is-disabled' : ''}`}>
+    <div className={`${styles['ds-stepper']} ${disabled ? styles['state-disabled'] : ''}`}>
 	    <DSText text={String(value)} id={id} />
 
       <button
-        className="button increase"
+        className={`${styles['button']} ${styles['button-increase']}`}
         disabled={disabled}
-        data-test={`${id}-increase`}
+        data-testid={`${id}-increase`}
         onClick={handleIncrease}
       />
 
       <button
-        className="button decrease"
+        className={`${styles['button']} ${styles['button-decrease']}`}
         disabled={disabled}
-        data-test={`${id}-decrease`}
+        data-testid={`${id}-decrease`}
         onClick={handleDecrease}
       />
     </div>
-  );
-};
-
-export default DSStepper;
+  )
+}
