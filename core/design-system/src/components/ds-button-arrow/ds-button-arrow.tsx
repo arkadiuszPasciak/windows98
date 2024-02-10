@@ -1,11 +1,5 @@
 import { DSIcon } from '../..';
-
-interface DSButtonArrowProps {
-	ariaLabel: string
-	direction: 'top' | 'bottom'
-	disabled: boolean
-	size: 'small' | 'medium'
-}
+import type { DSButtonArrowProps } from './ds-button-arrow.type';
 
 export function DSButtonArrow({
 	ariaLabel,
