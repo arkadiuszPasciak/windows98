@@ -1,15 +1,7 @@
 import { useState, useEffect } from 'react';
 import { DSText } from '../../index';
+import { DSStepperProps } from './ds-stepper.type';
 import './DSStepper.styles.scss';
-
-interface DSStepperProps {
-  id: string
-  modelValue: number
-  disabled?: boolean
-  onIncrease: () => void
-  onDecrease: () => void
-  onValueChange: (value: number) => void
-}
 
 export function DSStepper({
   id,
