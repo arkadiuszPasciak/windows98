@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/experimental-ct-react'
 import { DSStepper, type DSStepperProps } from './index'
+import { DSStepperStories } from './ds-stepper.stories'
 
 const defaultStepper: DSStepperProps = {
   id: 'stepper',
@@ -7,7 +8,6 @@ const defaultStepper: DSStepperProps = {
   disabled: false,
   onIncrease: () => {},
   onDecrease: () => {},
-  onValueChange: () => {}
 }
 
 const disabledStepper: DSStepperProps = {
@@ -30,7 +30,7 @@ test.describe('DSStepper', () => {
   })
 
   test('increases value', async ({ mount }) => {
-    const component = await mount(<DSStepper {...defaultStepper} />)
+    const component = await mount(<DSStepperStories />)
 
     const increaseButton = await component.getByTestId(`ds-button-arrow-${defaultStepper.id}-top`)
 
@@ -42,13 +42,13 @@ test.describe('DSStepper', () => {
   })
 
   test('decreases value', async ({ mount }) => {
-    const component = await mount(<DSStepper {...defaultStepper} />)
+    const component = await mount(<DSStepperStories />)
 
-	const decreaseButton = await component.getByTestId(`ds-button-arrow-${defaultStepper.id}-bottom`)
+	  const decreaseButton = await component.getByTestId(`ds-button-arrow-${defaultStepper.id}-bottom`)
 
     await decreaseButton.click()
 
-	const value = await component.getByTestId(`ds-text-${defaultStepper.id}`)
+	  const value = await component.getByTestId(`ds-text-${defaultStepper.id}`)
 
     await expect(value).toHaveText('-1')
   })
@@ -57,7 +57,7 @@ test.describe('DSStepper', () => {
     const component = await mount(<DSStepper {...disabledStepper} />)
 
     const increaseButton = await component.getByTestId(`ds-button-arrow-${defaultStepper.id}-top`)
-	const decreaseButton = await component.getByTestId(`ds-button-arrow-${defaultStepper.id}-bottom`)
+	  const decreaseButton = await component.getByTestId(`ds-button-arrow-${defaultStepper.id}-bottom`)
 
     const isIncreaseDisabled = await increaseButton.isDisabled()
     const isDecreaseDisabled = await decreaseButton.isDisabled()
