@@ -9,14 +9,13 @@ export function DSStepper({
   modelValue,
   disabled = false,
   onIncrease,
-  onDecrease,
-  onValueChange
+  onDecrease
 }: DSStepperProps) {
   const {
     value,
     handleIncrease,
     handleDecrease
-  } = useDSStepper({modelValue, onIncrease, onDecrease, onValueChange})
+  } = useDSStepper({modelValue, onIncrease, onDecrease})
 
   return (
     <div className={`

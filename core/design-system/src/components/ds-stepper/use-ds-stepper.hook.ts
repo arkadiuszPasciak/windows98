@@ -4,18 +4,13 @@ import type { UseDSStepperProps } from './ds-stepper.type';
 export function useDSStepper({
 	modelValue,
 	onIncrease,
-	onDecrease,
-	onValueChange
+	onDecrease
 }: UseDSStepperProps) {
 	const [value, setValue] = useState(modelValue)
 
 	useEffect(() => {
 		setValue(modelValue)
 	}, [modelValue])
-
-	useEffect(() => {
-		if (onValueChange) onValueChange(value)
-	}, [value, onValueChange])
 
 	const handleIncrease = (): void => {
 		if (onIncrease) onIncrease()
