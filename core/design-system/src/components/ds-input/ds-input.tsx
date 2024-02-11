@@ -1,18 +1,6 @@
 import { ChangeEvent, useState } from 'react';
 import styles from './ds-input.module.scss';
-
-interface DSInputProps {
-	type?: 'text' | 'password' | 'email' | 'number';
-	id: string;
-	disabled?: boolean;
-	readonly?: boolean;
-	modelValue: string | number;
-	labelName?: string;
-	labelPosition?: 'top' | 'left';
-	min?: number;
-	max?: number;
-	onChange: (value: string | number) => void;
-}
+import type { DSInputProps } from './ds-input.type';
 
 export function DSInput({
   type = 'text',
