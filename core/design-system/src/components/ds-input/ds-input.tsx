@@ -9,36 +9,41 @@ export function DSInput({
   readonly = false,
   initialValue = '',
   labelName,
-  labelPosition = 'top',
+  wrapperLayout = 'vertical',
   min,
   max,
   onChange,
 }: DSInputProps) {
     const { value, handleInputChange } = useDSInput({initialValue, onChange});
 
+	const mainID = `ds-input-${id}`;
+
 	return (
-		<div className={`${styles['UIInput']} ${labelName ? `label-position-${labelPosition}` : ''}`}>
+		<div
+			className={`${styles[`wrapper-${wrapperLayout}`]}`}
+			data-testid={mainID}
+		>
 			{labelName && (
 				<label
-				className={styles['label']}
-				data-testid={`ui-input-label-${id}`}
-				htmlFor={id}
+					className={styles['label']}
+					data-testid={`ds-input-label-${id}`}
+					htmlFor={mainID}
 				>
-				{labelName}
+					{labelName}
 				</label>
 			)}
-			
+
 			<input
-				id={id}
+				id={mainID}
 				className={styles['input']}
-				data-testid={`ui-input-${id}`}
+				data-testid={`ds-input-input-${id}`}
 				type={type}
 				disabled={disabled}
 				readOnly={readonly}
 				value={value}
 				min={min ?? undefined}
 				max={max ?? undefined}
-				name={id}
+				name={mainID}
 				onChange={handleInputChange}
 			/>
 		</div>

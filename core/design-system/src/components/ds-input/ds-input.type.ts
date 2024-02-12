@@ -5,7 +5,7 @@ export interface DSInputProps {
 	readonly?: boolean;
 	initialValue: string | number;
 	labelName?: string;
-	labelPosition?: 'top' | 'left';
+	wrapperLayout?: 'horizontal' | 'vertical';
 	min?: number;
 	max?: number;
 	onChange: (value: string | number) => void;
