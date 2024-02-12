@@ -1,15 +1,7 @@
-import { useState } from 'react'
-import { DSStepper } from '../../src'
+import { DSInputStories } from '../../src/components/ds-input/ds-input.stories'
 
 export function TestComponent(): JSX.Element {
-	const [value, setValue] = useState(0)
-
 	return (
-		<DSStepper
-			id="test"
-			modelValue={value}
-			onIncrease={() => setValue(value + 1)}
-			onDecrease={() => setValue(value - 1)}
-		/>
-  	)	
+		<DSInputStories />
+  	)
 }
