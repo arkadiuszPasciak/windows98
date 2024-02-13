@@ -8,7 +8,7 @@ export interface DSInputProps {
 	wrapperLayout?: 'horizontal' | 'vertical';
 	min?: number;
 	max?: number;
-	onChange: (value: string | number) => void;
+	onChange?: (value: string | number) => void;
 }
 
 export interface UseDSInputProps {
