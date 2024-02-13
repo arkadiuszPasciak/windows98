@@ -1,4 +1,4 @@
-import { DSText } from '../../index';
+import { DSInput } from '../../index';
 import { DSStepperProps } from './ds-stepper.type';
 import styles from './ds-stepper.module.scss';
 import { useDSStepper } from './use-ds-stepper.hook';
@@ -23,7 +23,11 @@ export function DSStepper({
       ${disabled ? styles['state-disabled'] : ''}
       `}
     >
-	    <DSText text={String(value)} id={id} />
+	    <DSInput
+        id={`stepper-${id}`}
+        initialValue={value} 
+        readonly={true}
+      />
 
       <DSButtonArrow
         ariaLabel="Increase"
