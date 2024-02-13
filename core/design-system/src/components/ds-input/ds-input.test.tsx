@@ -17,6 +17,11 @@ const disabledInput: DSInputProps = {
   disabled: true,
 }
 
+const readOnlyInput: DSInputProps = {
+	...defaultInput,
+  	readonly: true,
+}
+
 test.use({ viewport: { width: 500, height: 500 } })
 
 test.describe('DSInput', () => {
@@ -49,5 +54,15 @@ test.describe('DSInput', () => {
     const isInputDisabled = await inputElement.isDisabled()
 
     await expect(isInputDisabled).toBe(true)
+  })
+
+  test('does not allow input when readonly', async ({ mount }) => {
+    const component = await mount(<DSInput {...readOnlyInput} />)
+
+    const inputElement = await component.getByTestId(`ds-input-input-${defaultInput.id}`)
+
+	const isInputReadonly = await inputElement.getAttribute('readonly') !== null;
+
+    await expect(isInputReadonly).toBe(true)
   })
 })
