@@ -1,11 +1,10 @@
-import MonthSwitcher from '../month-switcher/month-switcher'
+import { MonthSwitcher } from '../month-switcher/month-switcher'
+import { YearSwitcher } from '../year-switcher/year-switcher'
 import styles from './wrapper.module.scss'
 
 // TODO
 // 1. add component:
 {/* <UIFrame class="CalendarWrapper" :title="translation.title"> -->
-<MonthSwitcher />
-<YearSwitcher />
 <Days />
 </UIFrame> */}
 // 2. init domain here
@@ -17,6 +16,7 @@ export function Wrapper() {
   return (
     <div className={styles.wrapper}>
       <MonthSwitcher />
+      <YearSwitcher />
     </div>
   )
 }

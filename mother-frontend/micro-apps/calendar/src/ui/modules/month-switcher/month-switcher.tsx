@@ -1,7 +1,7 @@
 import { DSSelect } from '@windows98/design-system'
 import useMonthSwitcher from './use-month-switcher.hook'
 
-const MonthSwitcher = () => {
+export function MonthSwitcher() {
   const { handleSelectChange, month, selectMonths } = useMonthSwitcher()
 
   return (
@@ -13,5 +13,3 @@ const MonthSwitcher = () => {
     />
   )
 }
-
-export default MonthSwitcher
