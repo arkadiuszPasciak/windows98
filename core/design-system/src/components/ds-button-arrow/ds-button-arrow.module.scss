@@ -1,0 +1,53 @@
+.ds-button-arrow {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	box-shadow: var(--box-shadow-raised);
+	padding: 1px;
+
+	@include hover {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		border-left: 3px solid transparent;
+		border-right: 3px solid transparent;
+	}
+
+	&:disabled {
+	  pointer-events: none;
+	  opacity: 0.5;
+	}
+  
+	&:not(:disabled):active {
+	  box-shadow: var(--box-shadow-sunken);
+	}
+}
+
+.arrow-bottom {
+	&::after {
+	  border-top: 3px solid var(--text-color);
+	}
+}
+
+.arrow-top {
+	&::after {
+	  border-bottom: 3px solid var(--text-color);
+	}
+}
+
+.size-small {
+	width: 20px;
+    height: 10px;
+}
+
+.size-medium {
+	width: 16px;
+	height: 17px;
+}
