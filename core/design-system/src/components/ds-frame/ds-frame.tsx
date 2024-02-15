@@ -1,10 +1,5 @@
 import { DSText } from '../../index';
-
-interface DSFrameProps {
-	title?: string
-  	children: React.ReactNode
-	id: string
-}
+import type { DSFrameProps } from './ds-frame.type';
 
 export function DSFrame({ title, children, id }: DSFrameProps) {
   return (
