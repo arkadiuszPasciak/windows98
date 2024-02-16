@@ -5,6 +5,7 @@ import { useDSStepper } from './use-ds-stepper.hook';
 import { DSButtonArrow } from '../../index'
 
 export function DSStepper({
+  className = '',
   id,
   modelValue,
   disabled = false,
@@ -19,8 +20,9 @@ export function DSStepper({
 
   return (
     <div className={`
-      ${styles['ds-stepper']}
-      ${disabled ? styles['state-disabled'] : ''}
+        ${styles['ds-stepper']}
+        ${disabled ? styles['state-disabled'] : ''}
+        ${className}
       `}
     >
 	    <DSInput

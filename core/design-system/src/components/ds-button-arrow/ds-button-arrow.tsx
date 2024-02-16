@@ -3,6 +3,7 @@ import styles from './ds-button-arrow.module.scss'
 
 export function DSButtonArrow({
 	ariaLabel,
+	className = '',
 	direction,
 	disabled,
 	id,
@@ -16,6 +17,7 @@ export function DSButtonArrow({
 				${styles['ds-button-arrow']}
 				${styles[`arrow-${direction}`]}
 				${styles[`size-${size}`]}
+				${className}
 			`}
 			data-testid={`ds-button-arrow-${id}-${direction}`}
 			disabled={disabled}

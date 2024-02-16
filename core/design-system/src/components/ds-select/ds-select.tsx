@@ -4,6 +4,7 @@ import type { DSSelectProps } from './ds-select.type'
 import styles from './ds-select.module.scss'
 
 export function DSSelect({
+  className = '',
   id,
   required = false,
   disabled = false,
@@ -23,7 +24,7 @@ export function DSSelect({
   }
 
   return (
-    <div className={`${styles[labelName ? `label-position-${labelPosition}` : '']}`}>
+    <div className={`${styles[labelName ? `label-position-${labelPosition}` : '']} ${className}`}>
       {labelName && (
         <label
           className={styles['label']}
