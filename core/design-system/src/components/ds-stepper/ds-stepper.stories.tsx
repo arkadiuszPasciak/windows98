@@ -4,12 +4,15 @@ import { DSStepper } from './index'
 export function DSStepperStories(): JSX.Element {
 	const [value, setValue] = useState<number>(0)
 
+	const increaseValue = (): void => setValue(value + 1)
+	const decreaseValue = (): void => setValue(value - 1)
+
 	return (
 		<DSStepper
-			id="stepper"
+			id="id"
 			modelValue={value}
-			onIncrease={() => setValue(value + 1)}
-			onDecrease={() => setValue(value - 1)}
+			onIncrease={increaseValue}
+			onDecrease={decreaseValue}
 		/>
   	)
 }

@@ -3,7 +3,7 @@ import { DSStepper, type DSStepperProps } from './index'
 import { DSStepperStories } from './ds-stepper.stories'
 
 const defaultStepper: DSStepperProps = {
-  id: 'stepper',
+  id: 'id',
   modelValue: 0,
   disabled: false,
   onIncrease: () => {},
@@ -36,9 +36,9 @@ test.describe('DSStepper', () => {
 
     await increaseButton.click()
 
-    const value = await component.getByTestId(`ds-text-${defaultStepper.id}`)
+    const value = await component.getByTestId(`ds-input-input-stepper-${defaultStepper.id}`)
 
-    await expect(value).toHaveText('1')
+    await expect(value).toHaveValue('1')
   })
 
   test('decreases value', async ({ mount }) => {
@@ -48,9 +48,9 @@ test.describe('DSStepper', () => {
 
     await decreaseButton.click()
 
-	  const value = await component.getByTestId(`ds-text-${defaultStepper.id}`)
+	  const value = await component.getByTestId(`ds-input-input-stepper-${defaultStepper.id}`)
 
-    await expect(value).toHaveText('-1')
+    await expect(value).toHaveValue('-1')
   })
 
   test('does not allow increase or decrease when disabled', async ({ mount }) => {
