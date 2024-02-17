@@ -1,4 +1,5 @@
 import { DSFrame } from '@windows98/design-system'
+import { Days } from '../days/days'
 import { MonthSwitcher } from '../month-switcher/month-switcher'
 import { YearSwitcher } from '../year-switcher/year-switcher'
 import styles from './wrapper.module.scss'
@@ -18,6 +19,7 @@ export function Wrapper() {
     >
       <MonthSwitcher />
       <YearSwitcher />
+      <Days />
     </DSFrame>
   )
 }
