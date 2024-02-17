@@ -8,16 +8,6 @@ export default function useDays() {
 
   const calendar = calendarService.calendar
 
-  const shortcutDays: Array<string> = [
-    t('CalendarBundle.shortcut-sunday'),
-    t('CalendarBundle.shortcut-monday'),
-    t('CalendarBundle.shortcut-tuesday'),
-    t('CalendarBundle.shortcut-wednesday'),
-    t('CalendarBundle.shortcut-thursday'),
-    t('CalendarBundle.shortcut-friday'),
-    t('CalendarBundle.shortcut-saturday'),
-  ]
-
   onBeforeMount(() => {
     calendarService.generateCurrentCalendar()
   })

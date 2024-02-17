@@ -1,8 +1,10 @@
 {
   "author": "Arkadiusz Paściak",
   "dependencies": {
+    "i18next": "^23.8.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-i18next": "^14.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
@@ -14,7 +16,6 @@
     "@windows98/toolkit": "workspace:*",
     "mobx": "6.12.0",
     "mobx-react-lite": "4.0.4",
-    "react-i18next": "^14.0.1",
     "sass": "1.62.1",
     "typescript": "5.2.2",
     "vite": "5.0.8"

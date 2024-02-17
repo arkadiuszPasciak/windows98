@@ -1,15 +1,5 @@
 <template>
   <div class="CalendarDays">
-    <div class="week-days">
-      <div
-        v-for="(day, id) in shortcutDays"
-        :key="`shortcut-days-of-week-${id}`"
-        class="week"
-      >
-        {{ day }}
-      </div>
-    </div>
-
     <div v-if="calendar" class="days" data-test="calendar-view-days">
       <button
         v-for="(item, index) in calendar"
