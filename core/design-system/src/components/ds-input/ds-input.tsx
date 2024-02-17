@@ -3,6 +3,7 @@ import type { DSInputProps } from './ds-input.type';
 import { useDSInput } from './use-ds-input.hook';
 
 export function DSInput({
+  className = '',
   type = 'text',
   id,
   disabled = false,
@@ -20,7 +21,7 @@ export function DSInput({
 
 	return (
 		<div
-			className={`${styles[`wrapper-${wrapperLayout}`]}`}
+			className={`${styles[`wrapper-${wrapperLayout}`]} ${className}`}
 			data-testid={mainID}
 		>
 			{labelName && (

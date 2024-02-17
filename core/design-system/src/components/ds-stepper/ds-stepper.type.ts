@@ -1,4 +1,6 @@
-export interface DSStepperProps {
+import type { DSDefaultProps } from '../../types/component.type'
+
+export interface DSStepperProps extends DSDefaultProps {
 	disabled?: boolean
 	id: string
 	modelValue: number

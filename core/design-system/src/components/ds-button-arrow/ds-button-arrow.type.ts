@@ -1,6 +1,7 @@
-import { MouseEvent } from 'react';
+import type { MouseEvent } from 'react'
+import type { DSDefaultProps } from '../../types/component.type'
 
-export interface DSButtonArrowProps {
+export interface DSButtonArrowProps extends DSDefaultProps {
 	ariaLabel: string
 	direction: 'top' | 'bottom'
 	disabled: boolean
