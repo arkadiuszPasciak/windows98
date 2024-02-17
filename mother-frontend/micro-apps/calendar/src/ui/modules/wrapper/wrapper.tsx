@@ -1,21 +1,18 @@
 import { DSFrame } from '@windows98/design-system'
+import { useWrapper } from './use-wrapper.hook'
 import { Days } from '../days/days'
 import { MonthSwitcher } from '../month-switcher/month-switcher'
 import { YearSwitcher } from '../year-switcher/year-switcher'
 import styles from './wrapper.module.scss'
 
-// TODO
-// 2. init domain here
-// import useWrapper from './use-wrapper.composable'
-// const { initCalendar, translation } = useWrapper()
-// initCalendar()
-
 export function Wrapper() {
+  const { title } = useWrapper()
+
   return (
     <DSFrame
       className={styles.wrapper}
       id="calculator"
-      title="translation.title"
+      title={title}
     >
       <MonthSwitcher />
       <YearSwitcher />
