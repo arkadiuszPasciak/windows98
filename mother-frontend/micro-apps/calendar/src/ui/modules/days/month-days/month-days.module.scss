@@ -1,0 +1,15 @@
+.week-days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+
+.day {
+	height: 20px;
+	@include font('medium', 12, 20);
+}
+
+.day-active {
+	color: $cl-white;
+	background-color: $cl-blue000;
+}

@@ -1,13 +1,17 @@
 import { useDays } from '../use-days.hook'
+import styles from './month-days.module.scss'
 
 export function MonthDays() {
 	const { monthDays } = useDays()
 
 	return monthDays && (
-		<div className="month-days" data-test="calendar-view-days">
+		<div className={styles['month-days']} data-test="calendar-view-days">
 			{monthDays.map((day, id) => (
 				<button
-					className={`day ${day.status === 'active' ? 'is-normal' : ''}`}
+					className={`
+						${styles['day']}
+						${day.status === 'active' ? styles['day-active'] : ''}
+					`}
 					data-test={`calendar-month-days-day-${id}`}
 					type="button"
 				>
