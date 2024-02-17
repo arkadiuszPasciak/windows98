@@ -22,7 +22,7 @@ export function useDays() {
   )
 
   return {
+    monthDays: calendarService.calendar,
     weekDays: dictionary.weekDays,
-	monthDays: calendarService.calendar,
   }
 }
