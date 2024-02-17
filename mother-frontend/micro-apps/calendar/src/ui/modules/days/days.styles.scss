@@ -7,14 +7,6 @@
   text-align: center;
   background-color: var(--background-color-white);
 
-  .week-days {
-    display: grid;
-    height: 20px;
-    grid-template-columns: repeat(7, 1fr);
-    background-color: $cl-grey80;
-    color: var(--text-color-3);
-  }
-
   .days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
