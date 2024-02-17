@@ -1,12 +1,12 @@
-import { useWeekDays } from './use-week-days.hook'
+import { useDays } from '../use-days.hook'
 import styles from './week-days.module.scss'
 
 export function WeekDays() {
-	const { dictionary } = useWeekDays()
+	const { weekDays } = useDays()
 
 	return (
 		<div className={styles['week-days']}>
-			{dictionary.map((day, id) => (
+			{weekDays.map((day, id) => (
 				<span className={styles['day']} data-testid={`calendar-week-days-day-${id}`}>
 					{day}
 				</span>
