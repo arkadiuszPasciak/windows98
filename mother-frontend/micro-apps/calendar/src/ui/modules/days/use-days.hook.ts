@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
-import useCalendar from '../../composables/use-calendar.composable'
+import useCalendar from '../../hooks/use-calendar.hook'
 
 export function useDays() {
   const { calendarService } = useCalendar()

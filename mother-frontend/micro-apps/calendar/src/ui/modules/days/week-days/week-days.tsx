@@ -7,7 +7,11 @@ export function WeekDays() {
 	return (
 		<div className={styles['week-days']}>
 			{weekDays.map((day, id) => (
-				<span className={styles['day']} data-testid={`calendar-week-days-day-${id}`}>
+				<span
+					className={styles['day']}
+					data-testid={`calendar-week-days-day-${id}`}
+					key={id}
+				>
 					{day}
 				</span>
 			))}

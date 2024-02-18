@@ -14,6 +14,7 @@ export function MonthDays() {
 					`}
 					data-test={`calendar-month-days-day-${id}`}
 					type="button"
+					key={id}
 				>
 					{day.value}
 				</button>
