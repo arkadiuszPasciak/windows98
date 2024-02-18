@@ -53,6 +53,8 @@ export default class CalendarService implements CalendarServiceContract {
     if (!this.year) return
 
     this.year += 1
+
+    this.changeCalendarByYear()
   }
 
   @action
@@ -60,6 +62,8 @@ export default class CalendarService implements CalendarServiceContract {
     if (!this.year) return
 
     this.year -= 1
+
+    this.changeCalendarByYear()
   }
 }
 
