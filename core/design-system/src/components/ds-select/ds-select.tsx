@@ -11,7 +11,6 @@ export function DSSelect({
   modelValue,
   options,
   labelName,
-  labelPosition = 'top',
   onSelect,
 }: DSSelectProps) {
   const { value, handleChange } = useDSSelect(modelValue)
@@ -24,7 +23,7 @@ export function DSSelect({
   }
 
   return (
-    <div className={`${styles[labelName ? `label-position-${labelPosition}` : '']} ${className}`}>
+    <div className={`${styles['wrapper']} ${className}`}>
       {labelName && (
         <label
           className={styles['label']}
