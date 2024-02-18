@@ -21,6 +21,8 @@ export function useDays() {
     [t],
   )
 
+  console.log(calendarService.calendar)
+
   return {
     monthDays: calendarService.calendar,
     weekDays: dictionary.weekDays,

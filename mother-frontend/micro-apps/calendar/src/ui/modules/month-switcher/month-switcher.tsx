@@ -1,7 +1,8 @@
+import { observer } from 'mobx-react-lite'
 import { DSSelect } from '@windows98/design-system'
 import useMonthSwitcher from './use-month-switcher.hook'
 
-export function MonthSwitcher() {
+export const MonthSwitcher = observer(() =>  {
   const { handleSelectChange, month, months } = useMonthSwitcher()
 
   return (
@@ -12,4 +13,4 @@ export function MonthSwitcher() {
       onSelect={handleSelectChange}
     />
   )
-}
+})

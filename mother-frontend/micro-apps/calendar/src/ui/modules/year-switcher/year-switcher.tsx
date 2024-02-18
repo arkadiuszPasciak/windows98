@@ -1,6 +1,7 @@
+import { observer } from 'mobx-react-lite'
 import { DSStepper } from '@windows98/design-system';
 
-export function YearSwitcher() {
+export const YearSwitcher = observer(() => {
   	return (
 		<DSStepper
 			id="calendar-year"
@@ -9,4 +10,4 @@ export function YearSwitcher() {
 			onDecrease={() => {}}
 		/>
 	)
-}
+})

@@ -1,7 +1,8 @@
 import { useDays } from '../use-days.hook'
 import styles from './month-days.module.scss'
+import { observer } from 'mobx-react-lite'
 
-export function MonthDays() {
+export const MonthDays = observer(() => {
 	const { monthDays } = useDays()
 
 	return monthDays && (
@@ -21,4 +22,4 @@ export function MonthDays() {
 			))}
 		</div>
 	)
-}
+})
