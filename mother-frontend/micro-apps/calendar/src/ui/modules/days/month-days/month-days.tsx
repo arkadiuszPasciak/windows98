@@ -6,7 +6,7 @@ export const MonthDays = observer(() => {
 	const { monthDays } = useDays()
 
 	return monthDays && (
-		<div className={styles['month-days']} data-test="calendar-view-days">
+		<div className={styles['month-days']} data-testid="calendar-view-days">
 			{monthDays.map((day, id) => (
 				<button
 					className={`
