@@ -1,13 +1,13 @@
-import { useMemo, useState, type ReactEventHandler } from 'react'
+import { useMemo, type ReactEventHandler } from 'react'
+import useCalendar from '../../hooks/use-calendar.hook'
 import { useTranslation } from 'react-i18next'
 
 export default function useMonthSwitcher() {
   const { t } = useTranslation()
-  const [month, setMonth] = useState<number | string>('')
+  const { calendarService } = useCalendar()
 
   const handleSelectChange: ReactEventHandler<HTMLSelectElement> = (event) => {
-    const selectedValue = event.currentTarget.value
-    setMonth(selectedValue)
+    calendarService.changeCalendarByMonth(Number(event.currentTarget.value))
   }
 
   const dictionary = useMemo(
@@ -68,7 +68,7 @@ export default function useMonthSwitcher() {
 
   return {
     handleSelectChange,
-    month,
+    month: calendarService.month ?? dictionary.months[0].value,
     months: dictionary.months,
   }
 }
