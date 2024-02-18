@@ -9,6 +9,7 @@ const vueI18n = createI18n({
   fallbackLocale: 'en',
   legacy: false,
   // @TODO - add proper typing
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
 } as any)
 
