@@ -1,9 +1,10 @@
-import CalendarService from '../../domain/services/calendar.service'
+import { useContext } from 'react'
+import { DomainContext } from '../context/domain.context'
 
 export default function useCalendar() {
-  const calendarService = new CalendarService()
+  const store = useContext(DomainContext)
 
   return {
-    calendarService,
+    calendarService: store,
   }
 }
