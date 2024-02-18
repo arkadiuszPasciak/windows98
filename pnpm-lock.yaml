@@ -235,8 +235,11 @@ importers:
 
   mother-frontend/micro-apps:
     dependencies:
+      '@windows98/i18n':
+        specifier: workspace:*
+        version: link:../../core/internationalization/i18n
       i18next:
-        specifier: ^23.8.2
+        specifier: 23.8.2
         version: 23.8.2
       react:
         specifier: 18.2.0
@@ -245,7 +248,7 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       react-i18next:
-        specifier: ^14.0.5
+        specifier: 14.0.5
         version: 14.0.5(i18next@23.8.2)(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@types/react':
@@ -263,9 +266,6 @@ importers:
       '@windows98/design-system':
         specifier: workspace:*
         version: link:../../core/design-system
-      '@windows98/i18n':
-        specifier: workspace:*
-        version: link:../../core/internationalization/i18n
       '@windows98/toolkit':
         specifier: workspace:*
         version: link:../../core/toolkit
