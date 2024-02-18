@@ -15,51 +15,51 @@ export default function useMonthSwitcher() {
       months: [
         {
           value: 0,
-          name: t('CalendarBundle.january'),
+          name: t('calendar.month-switcher.january'),
         },
         {
           value: 1,
-          name: t('CalendarBundle.february'),
+          name: t('calendar.month-switcher.february'),
         },
         {
           value: 2,
-          name: t('CalendarBundle.march'),
+          name: t('calendar.month-switcher.march'),
         },
         {
           value: 3,
-          name: t('CalendarBundle.april'),
+          name: t('calendar.month-switcher.april'),
         },
         {
           value: 4,
-          name: t('CalendarBundle.may'),
+          name: t('calendar.month-switcher.may'),
         },
         {
           value: 5,
-          name: t('CalendarBundle.june'),
+          name: t('calendar.month-switcher.june'),
         },
         {
           value: 6,
-          name: t('CalendarBundle.july'),
+          name: t('calendar.month-switcher.july'),
         },
         {
           value: 7,
-          name: t('CalendarBundle.august'),
+          name: t('calendar.month-switcher.august'),
         },
         {
           value: 8,
-          name: t('CalendarBundle.september'),
+          name: t('calendar.month-switcher.september'),
         },
         {
           value: 9,
-          name: t('CalendarBundle.october'),
+          name: t('calendar.month-switcher.october'),
         },
         {
           value: 10,
-          name: t('CalendarBundle.november'),
+          name: t('calendar.month-switcher.november'),
         },
         {
           value: 11,
-          name: t('CalendarBundle.december'),
+          name: t('calendar.month-switcher.december'),
         },
       ]
     }),

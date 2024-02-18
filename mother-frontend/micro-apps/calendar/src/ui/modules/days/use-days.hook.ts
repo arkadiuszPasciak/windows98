@@ -9,13 +9,13 @@ export function useDays() {
   const dictionary = useMemo(
     () => ({
       weekDays: [
-        t('CalendarBundle.shortcut-sunday'),
-        t('CalendarBundle.shortcut-monday'),
-        t('CalendarBundle.shortcut-tuesday'),
-        t('CalendarBundle.shortcut-wednesday'),
-        t('CalendarBundle.shortcut-thursday'),
-        t('CalendarBundle.shortcut-friday'),
-        t('CalendarBundle.shortcut-saturday'),
+        t('calendar.days.sunday'),
+        t('calendar.days.monday'),
+        t('calendar.days.tuesday'),
+        t('calendar.days.wednesday'),
+        t('calendar.days.thursday'),
+        t('calendar.days.friday'),
+        t('calendar.days.saturday'),
       ],
     }),
     [t],

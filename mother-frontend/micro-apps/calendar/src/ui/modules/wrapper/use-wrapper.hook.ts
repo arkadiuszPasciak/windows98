@@ -12,7 +12,7 @@ export function useWrapper() {
 
   const dictionary = useMemo(
     () => ({
-      title: t('CalendarBundle.title'),
+      title: t('calendar.wrapper.title'),
     }),
     [t],
   )
