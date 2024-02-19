@@ -8,5 +8,8 @@ export default function mountApp(): void {
   const pinia = createPinia()
 
   app.use(pinia)
+  // @TODO - add proper typing
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   app.use(vueI18n).mount('#app')
 }

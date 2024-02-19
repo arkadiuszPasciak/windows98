@@ -1,3 +1,7 @@
+.wrapper {
+  position: relative;
+}
+
 .label {
   @include font('medium', 11, 14);
   color: var(--text-color);
@@ -5,6 +9,7 @@
 
 .select {
   height: 21px;
+  width: 100%;
   background: var(--background-color-white) url('/icons/select-button.svg')
     no-repeat top 2px right 2px;
   box-shadow: var(--border-field);
@@ -14,7 +19,7 @@
 }
 
 .arrow {
-  position: relative;
-  right: 18px;
-  top: 3px;
+  position: absolute;
+  right: 1px;
+  top: 2px;
 }

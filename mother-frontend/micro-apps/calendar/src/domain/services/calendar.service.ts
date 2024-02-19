@@ -1,4 +1,4 @@
-import { observable, action, makeObservable } from 'mobx'
+import { observable, action, makeAutoObservable } from 'mobx'
 import CalendarRepository from '../../data/repositories/calendar.repository'
 import type { CalendarServiceContract } from '../contracts/service.contract'
 import type { Maybe } from '@windows98/toolkit/src/types'
@@ -11,7 +11,7 @@ export default class CalendarService implements CalendarServiceContract {
   month: Maybe<number> = null
 
   constructor() {
-    makeObservable(this)
+    makeAutoObservable(this)
   }
 
   @action
@@ -53,6 +53,8 @@ export default class CalendarService implements CalendarServiceContract {
     if (!this.year) return
 
     this.year += 1
+
+    this.changeCalendarByYear()
   }
 
   @action
@@ -60,5 +62,9 @@ export default class CalendarService implements CalendarServiceContract {
     if (!this.year) return
 
     this.year -= 1
+
+    this.changeCalendarByYear()
   }
 }
+
+export const calendarService = new CalendarService()

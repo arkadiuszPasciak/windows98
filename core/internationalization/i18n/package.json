@@ -7,6 +7,8 @@
     "node": "18.16.0"
   },
   "devDependencies": {
-    "vue-i18n": "^9.2.2"
+    "i18next": "23.8.2",
+    "react-i18next": "14.0.5",
+    "vue-i18n": "9.2.2"
   }
 }

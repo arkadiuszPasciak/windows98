@@ -1,0 +1,12 @@
+.week-days {
+	display: grid;
+	height: 20px;
+	grid-template-columns: repeat(7, 1fr);
+	background-color: $cl-grey80;
+	color: var(--text-color-3);
+}
+
+.day {
+	height: 20px;
+	@include font('medium', 12, 20);
+}

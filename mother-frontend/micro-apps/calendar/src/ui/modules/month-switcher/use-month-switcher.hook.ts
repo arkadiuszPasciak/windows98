@@ -1,69 +1,74 @@
-import { useState } from 'react'
-import { DSSelectOption } from '@windows98/design-system'
-import { ReactEventHandler } from 'react'
-
-const selectMonths: Array<DSSelectOption> = [
-  {
-    value: 0,
-    name: 'CalendarBundle.january',
-  },
-  {
-    value: 1,
-    name: 'CalendarBundle.february',
-  },
-  {
-    value: 2,
-    name: 'CalendarBundle.march',
-  },
-  {
-    value: 3,
-    name: 'CalendarBundle.april',
-  },
-  {
-    value: 4,
-    name: 'CalendarBundle.may',
-  },
-  {
-    value: 5,
-    name: 'CalendarBundle.june',
-  },
-  {
-    value: 6,
-    name: 'CalendarBundle.july',
-  },
-  {
-    value: 7,
-    name: 'CalendarBundle.august',
-  },
-  {
-    value: 8,
-    name: 'CalendarBundle.september',
-  },
-  {
-    value: 9,
-    name: 'CalendarBundle.october',
-  },
-  {
-    value: 10,
-    name: 'CalendarBundle.november',
-  },
-  {
-    value: 11,
-    name: 'CalendarBundle.december',
-  },
-]
+import { useMemo, type ReactEventHandler } from 'react'
+import useCalendar from '../../hooks/use-calendar.hook'
+import { useTranslation } from 'react-i18next'
 
 export default function useMonthSwitcher() {
-  const [month, setMonth] = useState<number | string>(selectMonths[0].value)
+  const { t } = useTranslation()
+  const { calendarService } = useCalendar()
 
   const handleSelectChange: ReactEventHandler<HTMLSelectElement> = (event) => {
-    const selectedValue = event.currentTarget.value
-    setMonth(selectedValue)
+    calendarService.changeCalendarByMonth(Number(event.currentTarget.value))
   }
+
+  const dictionary = useMemo(
+    () => ({
+      months: [
+        {
+          value: 0,
+          name: t('calendar.month-switcher.january'),
+        },
+        {
+          value: 1,
+          name: t('calendar.month-switcher.february'),
+        },
+        {
+          value: 2,
+          name: t('calendar.month-switcher.march'),
+        },
+        {
+          value: 3,
+          name: t('calendar.month-switcher.april'),
+        },
+        {
+          value: 4,
+          name: t('calendar.month-switcher.may'),
+        },
+        {
+          value: 5,
+          name: t('calendar.month-switcher.june'),
+        },
+        {
+          value: 6,
+          name: t('calendar.month-switcher.july'),
+        },
+        {
+          value: 7,
+          name: t('calendar.month-switcher.august'),
+        },
+        {
+          value: 8,
+          name: t('calendar.month-switcher.september'),
+        },
+        {
+          value: 9,
+          name: t('calendar.month-switcher.october'),
+        },
+        {
+          value: 10,
+          name: t('calendar.month-switcher.november'),
+        },
+        {
+          value: 11,
+          name: t('calendar.month-switcher.december'),
+        },
+      ]
+    }),
+    [t],
+  )
 
   return {
     handleSelectChange,
-    month,
-    selectMonths,
+    month: calendarService.month ?? dictionary.months[0].value,
+    months: dictionary.months,
   }
 }
