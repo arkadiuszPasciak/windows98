@@ -27,4 +27,21 @@ test.describe('calendar', () => {
       await expect(select).toHaveValue(String(index))
     }
   })
+
+  test('selects years', async ({ mount }) => {
+    const component = await mount(<CalendarView />)
+    const input = await component.getByTestId('ds-input-input-stepper-calendar-year')
+    const increaseYear = await component.getByTestId('ds-button-arrow-calendar-year-top')
+    const decreaseYear = await component.getByTestId('ds-button-arrow-calendar-year-bottom')
+
+    await expect(input).toHaveValue('2024')
+
+    await increaseYear.click()
+
+    await expect(input).toHaveValue('2025')
+
+    await decreaseYear.click()
+
+    await expect(input).toHaveValue('2024')
+  })
 })
