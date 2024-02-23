@@ -30,18 +30,41 @@ test.describe('calendar', () => {
 
   test('selects years', async ({ mount }) => {
     const component = await mount(<CalendarView />)
+
+    const today = new Date();
+    let year = today.getFullYear();
+
     const input = await component.getByTestId('ds-input-input-stepper-calendar-year')
     const increaseYear = await component.getByTestId('ds-button-arrow-calendar-year-top')
     const decreaseYear = await component.getByTestId('ds-button-arrow-calendar-year-bottom')
 
-    await expect(input).toHaveValue('2024')
+    await expect(input).toHaveValue(String(year))
 
     await increaseYear.click()
 
-    await expect(input).toHaveValue('2025')
+    await expect(input).toHaveValue(String(year += 1))
 
     await decreaseYear.click()
 
-    await expect(input).toHaveValue('2024')
+    await expect(input).toHaveValue(String(year -= 1))
+  })
+
+  test('generates correct amount of days', async ({ mount }) => {
+    const component = await mount(<CalendarView />)
+  
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+  
+    for (let day = 1; day < daysInMonth + 1; day++) {
+      const dayElement = await component.getByTestId(`calendar-month-days-day-${day}`)
+      await expect(dayElement).toBeVisible()
+    }
+  
+    for (let noMoreDay = daysInMonth + 1; noMoreDay <= 31; noMoreDay++) {
+      const noMoreDayElement = await component.getByTestId(`calendar-month-days-day-${noMoreDay}`)
+      await expect(noMoreDayElement).toHaveCount(0)
+    }
   })
 })
