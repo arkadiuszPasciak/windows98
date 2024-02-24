@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/experimental-ct-react'
 
 export default defineConfig({
-  testDir: '../../calendar/tests/integrations/',
+  testDir: '../../calendar/tests/',
   snapshotDir: './snapshots',
   timeout: 10 * 1000,
   fullyParallel: true,
