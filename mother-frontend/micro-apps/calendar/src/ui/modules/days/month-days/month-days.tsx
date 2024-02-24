@@ -7,19 +7,29 @@ export const MonthDays = observer(() => {
 
 	return monthDays && (
 		<div className={styles['month-days']} data-testid="calendar-view-days">
-			{monthDays.map((day, id) => (
-				<button
-					className={`
-						${styles['day']}
-						${day.status === 'active' ? styles['day-active'] : ''}
-					`}
-					data-test={`calendar-month-days-day-${id}`}
-					type="button"
+            {monthDays.map((day, id) => (
+                day.value === '' ? 
+                <span
+					className={styles['day']}
+					data-testid={`calendar-month-days-empty-${id}`}
 					key={id}
 				>
-					{day.value}
-				</button>
-			))}
+				</span>
+				
+				:
+
+                <button
+                    className={`
+                        ${styles['day']}
+                        ${day.status === 'active' ? styles['day-active'] : ''}
+                    `}
+                    data-testid={`calendar-month-days-day-${day.value}`}
+                    type="button"
+                    key={id}
+                >
+                    {day.value}
+                </button>
+            ))}
 		</div>
 	)
 })
