@@ -7,7 +7,7 @@ export function useWrapper() {
   const { calendarService } = useCalendar()
 
   useEffect(() => {
-    calendarService.generateCurrentCalendar();
+    calendarService.generateCalendar();
   }, []);
 
   const dictionary = useMemo(

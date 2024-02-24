@@ -1,23 +1,37 @@
 import { ICalendarDays } from '../../domain/models/days.model'
 import CalendarRepositoryContract from '../../domain/contracts/repository.contract'
+import type { Maybe } from '@windows98/toolkit/src/types'
 
 export default class CalendarRepository implements CalendarRepositoryContract {
-  private date: Date
-  private firstDayMonth: number
-  private lastDateMonth: number
-  public year: number
-  public month: number
+  private date: Maybe<Date>
+  private firstDayMonth: Maybe<number>
+  private lastDateMonth: Maybe<number>
+  public year: Maybe<number>
+  public month: Maybe<number>
+  public days: Maybe<Array<ICalendarDays>>
 
-  constructor(date?: Date) {
-    this.date = date ? date : new Date()
-    this.year = this.date.getFullYear()
-    this.month = this.date.getMonth()
-    this.firstDayMonth = this.getFirstDayMonth()
-    this.lastDateMonth = this.getLastDateMonth()
+  constructor() {
+    this.date = null
+    this.year = null
+    this.month = null
+    this.days = null
+    this.firstDayMonth = null
+    this.lastDateMonth = null
   }
 
-  public generateDays(): Array<ICalendarDays> {
+  public initCalendar(date: Maybe<Date>): void {
+    this.getDate(date)
+    this.getFullYear()
+    this.getMonth()
+    this.getFirstDayMonth()
+    this.getLastDateMonth()
+    this.generateDays()
+  }
+
+  public generateDays(): void {
     const days = [] as Array<ICalendarDays>
+    
+    if (!this.date || !this.firstDayMonth || !this.lastDateMonth) throw new Error('Date not found')
 
     for (let index = this.firstDayMonth; index > 0; index--) {
       days.push({
@@ -38,14 +52,34 @@ export default class CalendarRepository implements CalendarRepositoryContract {
       })
     }
 
-    return days
+    this.days = days
   }
 
-  private getFirstDayMonth(): number {
-    return new Date(this.year, this.month, 1).getDay()
+  private getDate(date: Maybe<Date>): void {
+    this.date = date ? date : new Date()
   }
 
-  private getLastDateMonth(): number {
-    return new Date(this.year, this.month + 1, 0).getDate()
+  private getFullYear(): void {
+    if (!this.date) throw new Error('Date not found')
+
+    this.year = this.date.getFullYear()
+  }
+
+  private getMonth(): void {
+    if (!this.date) throw new Error('Date not found')
+
+    this.month = this.date.getMonth()
+  }
+
+  private getFirstDayMonth(): void {
+    if (!this.year || !this.month) throw new Error('Date not found')
+
+    this.firstDayMonth = new Date(this.year, this.month, 1).getDay()
+  }
+
+  private getLastDateMonth(): void {
+    if (!this.year || !this.month) throw new Error('Date not found')
+
+    this.lastDateMonth = new Date(this.year, this.month + 1, 0).getDate()
   }
 }

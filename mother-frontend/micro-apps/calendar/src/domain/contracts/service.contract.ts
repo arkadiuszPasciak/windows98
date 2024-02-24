@@ -6,7 +6,7 @@ export interface CalendarServiceContract {
   year: Maybe<number>
   month: Maybe<number>
 
-  generateCurrentCalendar(date: Date): void
+  generateCalendar(date?: Date): void
   changeCalendarByYear(): void
   changeCalendarByMonth(month: number): void
   increaseYear(): void
