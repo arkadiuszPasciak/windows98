@@ -21,7 +21,8 @@
     "mobx-react-lite": "4.0.4",
     "sass": "1.62.1",
     "typescript": "5.2.2",
-    "vite": "5.0.8"
+    "vite": "5.0.8",
+    "vitest": "1.2.1"
   },
   "engines": {
     "node": "18.16.0"
@@ -31,8 +32,10 @@
     "dev": "vite @bundler",
     "build": "vite build @bundler",
     "preview": "vite preview @bundler",
-    "test:integration:run": "playwright test -c ./@test/playwright/playwright-ct.config.ts",
-    "test:integration:watch": "playwright test -c ./@test/playwright/playwright-ct.config.ts --ui"
+    "test:ui:run": "playwright test -c ./@test/playwright/playwright-ct.config.ts",
+    "test:ui:watch": "playwright test -c ./@test/playwright/playwright-ct.config.ts --ui",
+    "test:unit:run": "vitest run -c ./@test/vitest/vitest.config.ts",
+    "test:unit:watch": "vitest -c ./@test/vitest/vitest.config.ts"
   },
   "type": "module",
   "version": "1.0.0"
