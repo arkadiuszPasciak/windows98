@@ -1,11 +1,24 @@
 {
   "author": "Arkadiusz Paściak",
+  "main": "@bundler/dist/index.umd.cjs",
+  "module": "@bundler/dist/index.js",
+  "types": "@bundler/dist/@bundles/src/wc/index.wc.d.ts",
+  "files": [
+    "@bundler/dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./@bundler/dist/index.js",
+      "require": "./@bundler/dist/index.umd.cjs"
+    }
+  },
   "peerDependencies": {
     "@windows98/i18n": "workspace:*",
     "i18next": "23.8.2",
     "react-i18next": "14.0.5"
   },
   "dependencies": {
+    "@r2wc/react-to-web-component": "^2.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -22,6 +35,8 @@
     "sass": "1.62.1",
     "typescript": "5.2.2",
     "vite": "5.0.8",
+    "vite-plugin-css-injected-by-js": "^3.3.1",
+    "vite-plugin-dts": "^3.7.0",
     "vitest": "1.2.1"
   },
   "engines": {
