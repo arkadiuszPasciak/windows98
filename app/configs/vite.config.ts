@@ -31,7 +31,12 @@ export default defineConfig({
     : 'Public',
   plugins: [
     Vue({
-      include: [/\.vue$/, /\.md$/], // <--
+      include: [/\.vue$/, /\.md$/],
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag.includes('ma-')
+        }
+      }
     }),
     Markdown({
       wrapperClasses: 'markdown-content',
