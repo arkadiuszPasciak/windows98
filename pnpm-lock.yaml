@@ -45,6 +45,9 @@ importers:
       '@windows98/i18n':
         specifier: workspace:*
         version: link:../core/internationalization/i18n
+      '@windows98/micro-apps':
+        specifier: workspace:*
+        version: link:../mother-frontend/micro-apps
       '@windows98/micro-services':
         specifier: workspace:*
         version: link:../mother-frontend/micro-services
@@ -235,6 +238,9 @@ importers:
 
   mother-frontend/micro-apps:
     dependencies:
+      '@r2wc/react-to-web-component':
+        specifier: ^2.0.3
+        version: 2.0.3(react-dom@18.2.0)(react@18.2.0)
       '@windows98/i18n':
         specifier: workspace:*
         version: link:../../core/internationalization/i18n
@@ -287,6 +293,12 @@ importers:
       vite:
         specifier: 5.0.8
         version: 5.0.8(@types/node@20.9.0)(sass@1.62.1)
+      vite-plugin-css-injected-by-js:
+        specifier: ^3.3.1
+        version: 3.3.1(vite@5.0.8)
+      vite-plugin-dts:
+        specifier: ^3.7.0
+        version: 3.7.0(@types/node@20.9.0)(typescript@5.2.2)(vite@5.0.8)
       vitest:
         specifier: 1.2.1
         version: 1.2.1(@types/node@20.9.0)(sass@1.62.1)
@@ -1460,6 +1472,21 @@ packages:
       - terser
       - vite
     dev: true
+
+  /@r2wc/core@1.0.1:
+    resolution: {integrity: sha512-3Q/IEvGoJ8E+wy8Y6vo+Hot35z89Ei0Ghr7WAhprxz1LhuCAaA2BIYXY8GjaCvJLGhiOLuiPMWb8DKfbrUzEMg==}
+    dev: false
+
+  /@r2wc/react-to-web-component@2.0.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-nlDJ0LHiWLG/EFB5tBtA+9KLF2oMBeDSAXL08NUzAuj/ac+V0NkMl/RvCFdDFnyrPQqpzpD9uOvOY2E5IFpdCQ==}
+    peerDependencies:
+      react: ^18.0.0
+      react-dom: ^18.0.0
+    dependencies:
+      '@r2wc/core': 1.0.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /@rollup/pluginutils@4.2.1:
     resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
