@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 import react from '@vitejs/plugin-react'
 import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
-import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   build: {
@@ -15,14 +15,22 @@ export default defineConfig({
     emptyOutDir: true,
     sourcemap: true,
     rollupOptions: {
-      external: ['react', 'react-dom', '@windows98/i18n', 'i18next', 'react-i18next'],
+      external: [
+        'i18next',
+        'react',
+        'react-dom',
+        'react-i18next',
+        'mobx',
+        'mobx-react-lite',
+      ],
       output: {
         globals: {
+          i18next: 'i18next',
           react: 'react',
           'react-dom': 'reactDOM',
-          '@windows98/i18n': 'i18nInit',
           'react-i18next': 'reactI18next',
-          i18next: 'i18next',
+          'mobx': 'mobx',
+          'mobx-react-lite': 'mobxReactLite',
         },
       },
     },
@@ -36,5 +44,9 @@ export default defineConfig({
       },
     },
   },
-  plugins: [cssInjectedByJsPlugin(), dts({ include: ['src/wc'] }), react()],
+  plugins: [
+    cssInjectedByJsPlugin(),
+    dts({ include: ['src/wc'] }),
+    react()
+  ],
 })
