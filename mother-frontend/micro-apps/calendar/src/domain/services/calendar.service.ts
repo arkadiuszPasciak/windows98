@@ -17,7 +17,7 @@ export default class CalendarService implements CalendarServiceContract {
 
   @action
   generateCalendar(date?: Date): void {
-    this.calendarRepository.initCalendar(date || undefined)
+    this.calendarRepository.initCalendar(date || null)
 
     this.calendar = this.calendarRepository.days
     this.year = this.calendarRepository.year
