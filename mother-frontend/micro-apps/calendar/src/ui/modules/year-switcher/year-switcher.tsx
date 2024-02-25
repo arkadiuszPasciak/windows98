@@ -5,7 +5,7 @@ import useYearSwitcher from './use-year-switcher.hook';
 export const YearSwitcher = observer(() => {
 	const { decreaseYear, increaseYear, year } = useYearSwitcher()
 
-  	return (
+  	return year && (
 		<DSStepper
 			id="calendar-year"
 			modelValue={year}
