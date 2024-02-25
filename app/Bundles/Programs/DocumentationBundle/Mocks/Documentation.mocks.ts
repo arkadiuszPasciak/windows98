@@ -5,7 +5,6 @@ import {
 import AppDocumentation from '@APP|Bundles/AppBundle/Documentations/App.documentations.md'
 import AudioDocumentation from '@APP|Bundles/AudioBundle/Documentations/Audio.documentations.md'
 import CalculatorDocumentation from '@APP|Bundles/CalculatorBundle/Documentations/Calculator.documentations.md'
-import CalendarDocumentation from '@APP|Bundles/CalendarBundle/Documentations/Calendar.documentations.md'
 import ClockDocumentation from '@APP|Bundles/ClockBundle/Documentations/Clock.documentations.md'
 import DocumentationDocumentation from '@APP|Bundles/DocumentationBundle/Documentations/Documentation.documentations.md'
 import FileDocumentation from '@APP|Bundles/FileBundle/Documentations/File.documentations.md'
@@ -39,10 +38,6 @@ export const MDocumentations = [
   {
     name: EDocumentationBundles.CALCULATOR_BUNDLE,
     component: CalculatorDocumentation,
-  },
-  {
-    name: EDocumentationBundles.CALENDAR_BUNDLE,
-    component: CalendarDocumentation,
   },
   {
     name: EDocumentationBundles.CLOCK_BUNDLE,

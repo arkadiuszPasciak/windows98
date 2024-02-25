@@ -4,7 +4,6 @@ export enum EDocumentationBundles {
   APP_BUNDLE = 'AppBundle',
   AUDIO_BUNDLE = 'AudioBundle',
   CALCULATOR_BUNDLE = 'CalculatorBundle',
-  CALENDAR_BUNDLE = 'CalendarBundle',
   CLOCK_BUNDLE = 'ClockBundle',
   DOCUMENTATION_BUNDLE = 'DocumentationBundle',
   FILE_BUNDLE = 'FileBundle',
@@ -36,7 +35,6 @@ export type TDocumentationBundles =
   | EDocumentationBundles.APP_BUNDLE
   | EDocumentationBundles.AUDIO_BUNDLE
   | EDocumentationBundles.CALCULATOR_BUNDLE
-  | EDocumentationBundles.CALENDAR_BUNDLE
   | EDocumentationBundles.CLOCK_BUNDLE
   | EDocumentationBundles.DOCUMENTATION_BUNDLE
   | EDocumentationBundles.FILE_BUNDLE
