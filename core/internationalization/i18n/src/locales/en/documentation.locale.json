@@ -1,8 +1,0 @@
-{
-  "DocumentationBundle.description": "Description",
-  "DocumentationBundle.description-content": "The Bundle is reponsible for show the <b>documentation</b>",
-  "DocumentationBundle.title": "Documentation",
-  "DocumentationBundle.icon-description": "Documentation icon",
-  "DocumentationBundle.services": "Services",
-  "DocumentationBundle.services-content-1": "showing documentation of bundles"
-}

@@ -3,7 +3,6 @@ import audioEN from './audio.locale.json'
 import calculatorEN from './calculator.locale.json'
 import calendarEN from './calendar.locale.json'
 import clockEN from './clock.locale.json'
-import documentationEN from './documentation.locale.json'
 import fileEN from './file.locale.json'
 import languageEN from './language.locale.json'
 import markdownEN from './markdown.locale.json'
@@ -31,7 +30,6 @@ const localesEN: I18nLocaleSkeleton = {
   ...audioEN,
   ...calculatorEN,
   ...calendarEN,
-  ...documentationEN,
   ...fileEN,
   ...languageEN,
   ...clockEN,

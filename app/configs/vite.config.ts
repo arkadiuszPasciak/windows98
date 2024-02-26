@@ -3,7 +3,6 @@ import Vue from '@vitejs/plugin-vue'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import eslintPlugin from 'vite-plugin-eslint'
 import tsconfigPaths from 'vite-tsconfig-paths'
-import Markdown from 'vite-plugin-vue-markdown'
 import vitestConfig from './vitest.config'
 import {
   isEnvironment,
@@ -31,15 +30,12 @@ export default defineConfig({
     : 'Public',
   plugins: [
     Vue({
-      include: [/\.vue$/, /\.md$/],
+      include: [/\.vue$/],
       template: {
         compilerOptions: {
           isCustomElement: (tag) => tag.includes('ma-')
         }
       }
-    }),
-    Markdown({
-      wrapperClasses: 'markdown-content',
     }),
     VueI18nPlugin({
       strictMessage: false,
