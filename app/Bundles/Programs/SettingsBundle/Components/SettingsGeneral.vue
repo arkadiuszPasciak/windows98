@@ -1,10 +1,5 @@
 <template>
   <div class="SettingsGeneral">
-    <img
-      class="image"
-      data-test="settings-general-image"
-      src="/icons/windows-settings.svg"
-    />
     <h3 class="title" data-test="settings-general-device-title">
       {{ t('Settings.device') }}:
     </h3>
