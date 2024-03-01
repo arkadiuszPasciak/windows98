@@ -15,8 +15,8 @@
   "name": "@windows98/stylelint",
   "packageManager": "pnpm@8.10.2",
   "scripts": {
-    "lint:styles": "stylelint --config ./configs/stylelint.config.js ../../../**/*.{scss,vue}",
-    "lintfix:styles": "stylelint --config ./configs/stylelint.config.js ../../../**/*.{scss,vue} --fix"
+    "lint:styles": "stylelint --config ./configs/stylelint.config.js ../../../app/Bundles/**/*.{scss,vue}",
+    "lintfix:styles": "stylelint --config ./configs/stylelint.config.js ../../../app/Bundles/**/*.{scss,vue} --fix"
   },
   "version": "1.0"
 }
