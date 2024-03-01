@@ -4,7 +4,8 @@ import { it, describe } from 'vitest'
 // import Start from '@APP|Bundles/StartBundle/Components/Start.vue'
 
 describe('[StartBundle]<Components>(Start)', () => {
-  it('should open or close panel on click', async () => {
+  it.todo('should open or close panel on click', async () => {
+    // move this test to e2e
     // const defaultWrapper = mount(Start, {
     //   global: {
     //     plugins: [createTestingPinia()],
@@ -16,7 +17,7 @@ describe('[StartBundle]<Components>(Start)', () => {
     //   import('@APP|Bundles/StartBundle/Components/StartPanelItem.vue'),
     //   import('@APP|Bundles/StartBundle/Components/StartPanel.vue'),
     // ])
-    // expect(defaultWrapper.find('.StartPanel').exists()).not.toBeTruthy()
+  // expect(defaultWrapper.find('.StartPanel').exists()).not.toBeTruthy()
 
     // await buttonToOpenPanel.trigger('click')
 
@@ -26,6 +27,5 @@ describe('[StartBundle]<Components>(Start)', () => {
     // expect(defaultWrapper.find('.StartPanel').exists()).toBeTruthy()
     // await buttonToOpenPanel.trigger('click')
     // expect(defaultWrapper.find('.StartPanel').exists()).not.toBeTruthy()
-    it.todo('move this test to integration')
   })
 })
