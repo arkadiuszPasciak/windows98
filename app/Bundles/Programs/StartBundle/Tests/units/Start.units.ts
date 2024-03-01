@@ -12,18 +12,14 @@ describe('[StartBundle]<Components>(Start)', () => {
     //   },
     // })
     // const buttonToOpenPanel = defaultWrapper.find('.button-start')
-
     // await Promise.all([
     //   import('@APP|Bundles/StartBundle/Components/StartPanelItem.vue'),
     //   import('@APP|Bundles/StartBundle/Components/StartPanel.vue'),
     // ])
-  // expect(defaultWrapper.find('.StartPanel').exists()).not.toBeTruthy()
-
+    // expect(defaultWrapper.find('.StartPanel').exists()).not.toBeTruthy()
     // await buttonToOpenPanel.trigger('click')
-
     // await flushPromises()
     // await vi.dynamicImportSettled()
-
     // expect(defaultWrapper.find('.StartPanel').exists()).toBeTruthy()
     // await buttonToOpenPanel.trigger('click')
     // expect(defaultWrapper.find('.StartPanel').exists()).not.toBeTruthy()
