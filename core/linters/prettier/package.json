@@ -11,8 +11,8 @@
   "name": "@windows98/prettier",
   "packageManager": "pnpm@8.10.2",
   "scripts": {
-    "lint:prettier": "prettier --config ./configs/prettier.config.js --check ../../../.",
-    "lintfix:prettier": "prettier --config ./configs/prettier.config.js --write --list-different ../../../."
+    "lint:prettier": "prettier --config ./configs/prettier.config.js --check ../../../app/Bundles/.",
+    "lintfix:prettier": "prettier --config ./configs/prettier.config.js --write --list-different ../../../app/Bundles/."
   },
   "version": "1.0"
 }
