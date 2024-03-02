@@ -6,21 +6,16 @@ Welcome to **Windows98**, a creative endeavor where I am re-building the look an
 
 This project utilizes an array of modern web technologies and tools:
 
-- The project is bundled with [Vite](https://vitejs.dev/), a next-generation frontend tooling.
-- It's built on the [Vue 3](https://v3.vuejs.org/) framework, using [TypeScript](https://www.typescriptlang.org/) for static type checking.
-- Styling is crafted with [SCSS](https://sass-lang.com/), a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).
-- State management is handled using [Pinia](https://pinia.esm.dev/), an intuitive and type safe store for Vue.
-- Comprehensive testing is performed with [Cypress](https://www.cypress.io/) and [Vitest](https://vitest.dev/).
-- Internationalization is achieved through [vue-i18n](https://kazupon.github.io/vue-i18n/).
-- Types are checked using [vue-tsc](https://github.com/johnsoncodehk/volar#using).
-- Linting tools include [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [Stylelint](https://stylelint.io/), and [lint-staged](https://github.com/okonet/lint-staged).
-- Git hooks are modified with [Husky](https://typicode.github.io/husky/#/).
-- Continuous Integration and Continuous Deployment (CI/CD) is managed with [GitHub Actions](https://github.com/features/actions).
-- Documentation is created with [Vitepress](https://vitepress.vuejs.org/).
+1. `@windows98/app` - This is the main application. Previously, it was developed using Vue 3 with Pinia. Now, its components have been divided among other workspaces.
+2. `@windows98/design-system` - This is a library of React components used in micro-apps.
+3. `@windows98/micro-apps` - These are React applications with MobX. They are built as web components and used within the main app.
+4. `@windows98/micro-services` - These are TypeScript classes with logic that is exported to the main app.
+5. `@windows98/toolkit` - This includes utilities, types, and other common elements.
+6. `@windows98/i18n` - This contains all locales and tools for the application.
 
-Feel free to explore the project, provide feedback, and contribute if you're interested. Enjoy the trip back to Windows98, right in your browser!
+Feel free to explore the project, provide feedback. Enjoy the trip back to Windows98, right in your browser!
 
-## Documentation
+## Documentation WIP
 
 - [Windows98 Documentation]()
   - Guide
@@ -60,6 +55,12 @@ cd windows98
 
 ```bash
 pnpm install
+```
+
+3. Navigate to the app directory.
+
+```bash
+cd app
 ```
 
 5. Start the development mode.
