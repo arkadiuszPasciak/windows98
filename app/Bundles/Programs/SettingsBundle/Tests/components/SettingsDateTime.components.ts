@@ -20,10 +20,6 @@ describe('[SettingsBundle]<Components>(SettingsDateTime)', () => {
   it('should have elements and classes', () => {
     cy.get('div.SettingsDateTime')
 
-    cy.get('div.UIFrame.CalendarSettings')
-
-    cy.get('[data-test="frame-title-calendar"]').contains('Calendar')
-
     cy.get('div.UIFrame.TimezoneSwitcher')
 
     cy.get('[data-test="frame-title-timezone"]').contains('Timezone')

@@ -8,7 +8,6 @@ export const useProgramStore = defineStore('program', {
   state: () =>
     ({
       modalCalculator: false,
-      modalDocumentation: false,
       modalMediaPlayer: false,
       modalNotepad: false,
       modalRun: false,
@@ -20,9 +19,6 @@ export const useProgramStore = defineStore('program', {
   actions: {
     updateCalculatorModal(status) {
       this.modalCalculator = status
-    },
-    updateDocumentationModal(status) {
-      this.modalDocumentation = status
     },
     updateMediaPlayerModal(status) {
       this.modalMediaPlayer = status

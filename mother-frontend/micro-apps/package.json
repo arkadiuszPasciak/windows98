@@ -1,13 +1,27 @@
 {
   "author": "Arkadiusz Paściak",
+  "main": "@bundler/build/index.umd.cjs",
+  "module": "@bundler/build/index.js",
+  "types": "@bundler/build/@bundles/src/wc/index.wc.d.ts",
+  "files": [
+    "@bundler/build"
+  ],
+  "exports": {
+    ".": {
+      "import": "./@bundler/build/index.js",
+      "require": "./@bundler/build/index.umd.cjs"
+    }
+  },
   "peerDependencies": {
-    "@windows98/i18n": "workspace:*",
     "i18next": "23.8.2",
+    "mobx": "6.12.0",
+    "mobx-react-lite": "4.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-i18next": "14.0.5"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@r2wc/react-to-web-component": "^2.0.3"
   },
   "devDependencies": {
     "@playwright/experimental-ct-react": "^1.41.1",
@@ -16,12 +30,13 @@
     "@vitejs/plugin-react": "^4.2.1",
     "@windows98/app": "workspace:*",
     "@windows98/design-system": "workspace:*",
+    "@windows98/i18n": "workspace:*",
     "@windows98/toolkit": "workspace:*",
-    "mobx": "6.12.0",
-    "mobx-react-lite": "4.0.4",
     "sass": "1.62.1",
     "typescript": "5.2.2",
     "vite": "5.0.8",
+    "vite-plugin-css-injected-by-js": "^3.3.1",
+    "vite-plugin-dts": "^3.7.0",
     "vitest": "1.2.1"
   },
   "engines": {

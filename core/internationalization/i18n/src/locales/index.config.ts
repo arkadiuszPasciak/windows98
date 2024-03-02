@@ -17,13 +17,11 @@ const locales = {
 export const localesReact = {
   en: {
     translation: {
-      ...localesEN,
       ...localesMicroAppsEN
     }
   },
   pl: {
     translation: {
-      ...localesPL,
       ...localesMicroAppsPL
     }
   },

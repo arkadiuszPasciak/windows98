@@ -14,6 +14,6 @@ export default function useYearSwitcher() {
   return {
     decreaseYear,
     increaseYear,
-    year: calendarService.year ?? 1900,
+    year: calendarService.year,
   }
 }

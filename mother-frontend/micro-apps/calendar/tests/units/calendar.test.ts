@@ -10,14 +10,14 @@ describe('CalendarService', () => {
     expect(calendarService.month).toBeNull()
   })
 
-  test('generateCurrentCalendar', () => {
-    calendarService.generateCurrentCalendar(new Date(2022, 1, 1))
+  test('generateCalendar', () => {
+    calendarService.generateCalendar(new Date(2022, 1, 1))
     expect(calendarService.year).toBe(2022)
     expect(calendarService.month).toBe(1)
   })
 
   test('changeCalendarByYear', () => {
-	calendarService.generateCurrentCalendar(new Date(2021, 1, 1))
+	  calendarService.generateCalendar(new Date(2021, 1, 1))
     calendarService.changeCalendarByYear()
 
     expect(calendarService.year).toBe(2021)
@@ -25,7 +25,7 @@ describe('CalendarService', () => {
   })
 
   test('changeCalendarByMonth', () => {
-	calendarService.generateCurrentCalendar(new Date(2022, 2, 1))
+	  calendarService.generateCalendar(new Date(2022, 2, 1))
     calendarService.changeCalendarByMonth(2)
 
     expect(calendarService.year).toBe(2022)
@@ -33,14 +33,14 @@ describe('CalendarService', () => {
   })
 
   test('increaseYear', () => {
-    calendarService.generateCurrentCalendar(new Date(2022, 2, 1))
+    calendarService.generateCalendar(new Date(2022, 2, 1))
     calendarService.increaseYear()
 
     expect(calendarService.year).toBe(2023)
   })
 
   test('decreaseYear', () => {
-    calendarService.generateCurrentCalendar(new Date(2022, 2, 1))
+    calendarService.generateCalendar(new Date(2022, 2, 1))
     calendarService.decreaseYear()
 
     expect(calendarService.year).toBe(2021)

@@ -16,8 +16,8 @@
   "name": "@windows98/eslint",
   "packageManager": "pnpm@8.10.2",
   "scripts": {
-    "lint:js": "eslint -c ./configs/eslint.config.js --ext \".ts,.js,.vue\" ../../../.",
-    "lintfix:js": "eslint -c ./configs/eslint.config.js --fix --ext \".ts,.js,.vue\" ../../../."
+    "lint:js": "eslint -c ./configs/eslint.config.js --ext \".ts,.js,.vue\" ../../../app/.",
+    "lintfix:js": "eslint -c ./configs/eslint.config.js --fix --ext \".ts,.js,.vue\" ../../../app/."
   },
   "version": "1.0"
 }

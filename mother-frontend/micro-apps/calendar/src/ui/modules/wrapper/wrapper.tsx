@@ -5,9 +5,12 @@ import { Days } from '../days/days'
 import { MonthSwitcher } from '../month-switcher/month-switcher'
 import { YearSwitcher } from '../year-switcher/year-switcher'
 import styles from './wrapper.module.scss'
+import { useSyncLang } from '../../hooks/use-sync-lang.hook'
 
 export const Wrapper = observer(() => {
   const { title } = useWrapper()
+
+  useSyncLang()
 
   return (
     <DSFrame

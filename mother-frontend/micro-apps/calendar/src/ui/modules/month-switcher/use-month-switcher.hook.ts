@@ -68,7 +68,7 @@ export default function useMonthSwitcher() {
 
   return {
     handleSelectChange,
-    month: calendarService.month ?? dictionary.months[0].value,
+    month: calendarService.month,
     months: dictionary.months,
   }
 }

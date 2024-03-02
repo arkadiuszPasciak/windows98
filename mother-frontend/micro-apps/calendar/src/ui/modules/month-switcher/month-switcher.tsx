@@ -5,7 +5,7 @@ import useMonthSwitcher from './use-month-switcher.hook'
 export const MonthSwitcher = observer(() =>  {
   const { handleSelectChange, month, months } = useMonthSwitcher()
 
-  return (
+  return month !== null && (
     <DSSelect
       id="month-switcher"
       modelValue={month}

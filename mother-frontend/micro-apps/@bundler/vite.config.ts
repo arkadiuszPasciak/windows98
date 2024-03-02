@@ -1,17 +1,37 @@
 import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 import react from '@vitejs/plugin-react'
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 
 export default defineConfig({
   build: {
+    copyPublicDir: false,
+    lib: {
+      entry: 'src/wc/index.wc.ts',
+      name: 'micro-apps',
+      fileName: 'index',
+      formats: ['es', 'umd']
+    },
     emptyOutDir: true,
+    outDir: 'build',
     sourcemap: true,
     rollupOptions: {
-      external: ['@windows98/i18n', 'i18next', 'react-i18next'],
+      external: [
+        'i18next',
+        'react',
+        'react-dom',
+        'react-i18next',
+        'mobx',
+        'mobx-react-lite',
+      ],
       output: {
         globals: {
-          '@windows98/i18n': 'i18nInit',
-          'react-i18next': 'reactI18next',
           i18next: 'i18next',
+          react: 'react',
+          'react-dom': 'reactDOM',
+          'react-i18next': 'reactI18next',
+          'mobx': 'mobx',
+          'mobx-react-lite': 'mobxReactLite',
         },
       },
     },
@@ -25,5 +45,9 @@ export default defineConfig({
       },
     },
   },
-  plugins: [react()],
+  plugins: [
+    cssInjectedByJsPlugin(),
+    dts({ include: ['src/wc'] }),
+    react()
+  ],
 })

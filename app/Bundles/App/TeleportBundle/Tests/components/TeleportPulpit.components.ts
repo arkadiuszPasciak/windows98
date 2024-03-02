@@ -11,14 +11,6 @@ describe('[TeleportBundle]<Components>(TeleportPulpit)', async () => {
     })
   })
 
-  it('renders correctly component and turn on/off modal documentation', () => {
-    TeleportPulpitTestingService.testComponent({
-      name: 'Documentation',
-      width: 700,
-      height: 500,
-    })
-  })
-
   it('renders correctly component and turn on/off modal notepad', () => {
     TeleportPulpitTestingService.testComponent({
       name: 'Notepad',

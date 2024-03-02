@@ -9,21 +9,19 @@ export default class CalendarService implements CalendarServiceContract {
   calendar: Maybe<Array<ICalendarDays>> = null
   year: Maybe<number> = null
   month: Maybe<number> = null
+  calendarRepository: CalendarRepository = new CalendarRepository()
 
   constructor() {
     makeAutoObservable(this)
   }
 
   @action
-  generateCurrentCalendar(date: Date = new Date()): void {
-    const calendar = new CalendarRepository(date)
-    const days = calendar.generateDays()
+  generateCalendar(date?: Date): void {
+    this.calendarRepository.initCalendar(date || null)
 
-    if (this.calendar !== days) this.calendar = days
-
-    if (this.year !== calendar.year) this.year = calendar.year
-
-    if (this.month !== calendar.month) this.month = calendar.month
+    this.calendar = this.calendarRepository.days
+    this.year = this.calendarRepository.year
+    this.month = this.calendarRepository.month
   }
 
   @action
@@ -34,7 +32,7 @@ export default class CalendarService implements CalendarServiceContract {
 
     const date = new Date(this.year, this.month)
 
-    this.generateCurrentCalendar(date)
+    this.generateCalendar(date)
   }
 
   @action
@@ -45,7 +43,7 @@ export default class CalendarService implements CalendarServiceContract {
 
     const date = new Date(this.year, month)
 
-    this.generateCurrentCalendar(date)
+    this.generateCalendar(date)
   }
 
   @action

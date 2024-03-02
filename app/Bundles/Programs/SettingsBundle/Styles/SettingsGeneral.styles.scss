@@ -1,15 +1,8 @@
 .SettingsGeneral {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 20px);
   padding: 15px;
-
-  .image {
-    grid-area: 1 / 1 / 7 / 2;
-    width: 110px;
-    height: 80px;
-    margin: 20px auto 0;
-  }
 
   .title,
   .text {
