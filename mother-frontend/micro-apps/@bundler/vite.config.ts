@@ -13,6 +13,7 @@ export default defineConfig({
       formats: ['es', 'umd']
     },
     emptyOutDir: true,
+    outDir: 'build',
     sourcemap: true,
     rollupOptions: {
       external: [
