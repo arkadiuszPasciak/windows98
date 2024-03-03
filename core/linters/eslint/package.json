@@ -9,7 +9,8 @@
     "eslint-plugin-vue": "9.22.0"
   },
   "exports": {
-    "./base": "./src/configs/base.config.js"
+    "./base": "./src/configs/base.config.js",
+    "./typescript": "./src/configs/typescript.config.js"
   },
   "peerDependencies": {
     "eslint": "8.57.0"
