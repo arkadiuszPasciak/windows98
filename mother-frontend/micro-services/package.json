@@ -7,7 +7,11 @@
     "node": "18.16.0"
   },
   "devDependencies": {
+    "@windows98/eslint-config": "workspace:*",
     "@windows98/toolkit": "workspace:*",
     "vitest": "^0.31.4"
+  },
+  "scripts": {
+    "lint:js": "eslint --config ./@linter/eslint.config.js . --ext .js"
   }
 }

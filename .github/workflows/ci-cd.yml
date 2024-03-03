@@ -116,7 +116,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with ESLint
-        run: pnpm --filter @windows98/eslint run lintfix:js
+        run: pnpm --filter @windows98/eslint-config run lintfix:js
 
   prettier-lint:
     runs-on: ubuntu-latest

@@ -8,15 +8,21 @@
     "eslint": "8.57.0",
     "eslint-plugin-vue": "9.22.0"
   },
+  "exports": {
+    "./base": "./src/configs/base.config.js"
+  },
+  "peerDependencies": {
+    "eslint": "8.57.0"
+  },
   "engines": {
     "node": "18.16.0"
   },
   "license": "MIT",
-  "name": "@windows98/eslint",
+  "name": "@windows98/eslint-config",
   "packageManager": "pnpm@8.10.2",
   "scripts": {
     "lint:js": "eslint -c ./configs/eslint.config.js --ext \".ts,.js,.vue\" ../../../app/.",
     "lintfix:js": "eslint -c ./configs/eslint.config.js --fix --ext \".ts,.js,.vue\" ../../../app/."
   },
-  "version": "1.0"
+  "version": "1.0.0"
 }

@@ -296,6 +296,9 @@ importers:
 
   mother-frontend/micro-services:
     devDependencies:
+      '@windows98/eslint-config':
+        specifier: workspace:*
+        version: link:../../core/linters/eslint
       '@windows98/toolkit':
         specifier: workspace:*
         version: link:../../core/toolkit
