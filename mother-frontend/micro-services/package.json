@@ -12,6 +12,7 @@
     "vitest": "^0.31.4"
   },
   "scripts": {
-    "lint:js": "eslint --config ./@linter/eslint.config.js . --ext .js"
+    "lint:js": "eslint --config ./@linter/eslint.config.js . --ext \".ts, .js\"",
+    "lintfix:js": "eslint --config ./@linter/eslint.config.js . --fix --ext \".ts, .js\""
   }
 }

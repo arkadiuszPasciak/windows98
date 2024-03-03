@@ -1,16 +1,16 @@
-import type { Maybe } from '@windows98/toolkit/src/types'
+import type { Maybe } from "@windows98/toolkit/src/types"
 import type {
-  TUserAgentDevices,
-  IUserAgentDevices,
-} from '../models/device.model'
+	TUserAgentDevices,
+	IUserAgentDevices,
+} from "../models/device.model"
 import type {
-  IUserAgentBrowser,
-  TUserAgentBrowsers,
-} from '../models/browser.model'
+	IUserAgentBrowser,
+	TUserAgentBrowsers,
+} from "../models/browser.model"
 import type {
-  TUserAgentAllPlatforms,
-  IUserAgentPlatform,
-} from '../models/platform.model'
+	TUserAgentAllPlatforms,
+	IUserAgentPlatform,
+} from "../models/platform.model"
 
 export default interface UserAgentRepositoryContract {
   readonly browserNames: Array<IUserAgentBrowser>

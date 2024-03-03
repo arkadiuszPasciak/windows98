@@ -1,51 +1,51 @@
-import { expect, it, describe, vi } from 'vitest'
-import UserAgentService from '../../src/domain/services/user-agent.service'
+import { expect, it, describe, vi } from "vitest"
+import UserAgentService from "../../src/domain/services/user-agent.service"
 import {
-  MUserAgentBrowserNames,
-  MUserAgentDeviceTypes,
-  MUserAgentOperationSystems,
-} from '../mocks/user-agent.mock'
+	MUserAgentBrowserNames,
+	MUserAgentDeviceTypes,
+	MUserAgentOperationSystems,
+} from "../mocks/user-agent.mock"
 
-describe('[MicroServices]<UserAgent>(UserAgentService)', () => {
-  it.each(MUserAgentBrowserNames)('should return browser name', (browser) => {
-    vi.stubGlobal('navigator', {
-      userAgent: browser.userAgent,
-    })
+describe("[MicroServices]<UserAgent>(UserAgentService)", () => {
+	it.each(MUserAgentBrowserNames)("should return browser name", (browser) => {
+		vi.stubGlobal("navigator", {
+			userAgent: browser.userAgent,
+		})
 
-    const userAgentService = new UserAgentService()
-    const browserName = userAgentService.getBrowserName()
+		const userAgentService = new UserAgentService()
+		const browserName = userAgentService.getBrowserName()
 
-    expect(browserName).equal(browser.expected)
+		expect(browserName).equal(browser.expected)
 
-    vi.restoreAllMocks()
-  })
+		vi.restoreAllMocks()
+	})
 
-  it.each(MUserAgentDeviceTypes)('should return device type', (device) => {
-    vi.stubGlobal('navigator', {
-      userAgent: device.userAgent,
-    })
+	it.each(MUserAgentDeviceTypes)("should return device type", (device) => {
+		vi.stubGlobal("navigator", {
+			userAgent: device.userAgent,
+		})
 
-    const userAgentService = new UserAgentService()
-    const deviceType = userAgentService.getTypeDevice()
+		const userAgentService = new UserAgentService()
+		const deviceType = userAgentService.getTypeDevice()
 
-    expect(deviceType).equal(device.expected)
+		expect(deviceType).equal(device.expected)
 
-    vi.restoreAllMocks()
-  })
+		vi.restoreAllMocks()
+	})
 
-  it.each(MUserAgentOperationSystems)(
-    'should return operation system',
-    (operationSystem) => {
-      vi.stubGlobal('navigator', {
-        userAgent: operationSystem.userAgent,
-      })
+	it.each(MUserAgentOperationSystems)(
+		"should return operation system",
+		(operationSystem) => {
+			vi.stubGlobal("navigator", {
+				userAgent: operationSystem.userAgent,
+			})
 
-      const userAgentService = new UserAgentService()
-      const operationSystemName = userAgentService.getOperatingSystem()
+			const userAgentService = new UserAgentService()
+			const operationSystemName = userAgentService.getOperatingSystem()
 
-      expect(operationSystemName).equal(operationSystem.expected)
+			expect(operationSystemName).equal(operationSystem.expected)
 
-      vi.restoreAllMocks()
-    },
-  )
+			vi.restoreAllMocks()
+		},
+	)
 })

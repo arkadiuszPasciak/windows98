@@ -1,3 +1,3 @@
 module.exports = {
-	extends: ["@windows98/eslint-config/base"],
+	extends: ["@windows98/eslint-config/typescript"],
 }
