@@ -1,1 +1,1 @@
-export type I18nLanguageTypes = 'en' | 'pl'
+export type I18nLanguageTypes = "en" | "pl"

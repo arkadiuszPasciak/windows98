@@ -1,7 +1,7 @@
-import calendarPL from './calendar.locale.json'
+import calendarPL from "./calendar.locale.json"
 
 const localesMicroAppsPL= {
-  ...calendarPL,
+	...calendarPL,
 }
 
 export default localesMicroAppsPL
