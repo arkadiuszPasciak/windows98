@@ -6,10 +6,13 @@
     "@typescript-eslint/parser": "7.1.0",
     "@vue/eslint-config-typescript": "12.0.0",
     "eslint": "8.57.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-vue": "9.22.0"
   },
   "exports": {
     "./base": "./src/configs/base.config.js",
+    "./react": "./src/configs/react.config.js",
     "./typescript": "./src/configs/typescript.config.js"
   },
   "peerDependencies": {

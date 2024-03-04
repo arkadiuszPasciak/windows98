@@ -9,6 +9,7 @@ module.exports = {
 	],
 	ignorePatterns: [
 		".cache",
+		"build",
 		"dist",
 		"node_modules",
 		"test-results",
