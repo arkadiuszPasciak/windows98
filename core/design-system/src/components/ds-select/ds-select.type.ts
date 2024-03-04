@@ -1,11 +1,11 @@
-import type { ReactEventHandler } from 'react'
-import type { DSDefaultProps } from '../../types/component.type'
+import type { ReactEventHandler } from "react"
+import type { DSDefaultProps } from "../../types/component.type"
 
 export interface DSSelectProps extends DSDefaultProps {
   disabled?: boolean
   id: string
   labelName?: string
-  labelPosition?: 'top' | 'left'
+  labelPosition?: "top" | "left"
   modelValue: string | number
   options: Array<DSSelectOption>
   required?: boolean

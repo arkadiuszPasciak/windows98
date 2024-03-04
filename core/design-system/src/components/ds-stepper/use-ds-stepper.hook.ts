@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import type { UseDSStepperProps } from './ds-stepper.type';
+import { useState, useEffect } from "react"
+import type { UseDSStepperProps } from "./ds-stepper.type"
 
 export function useDSStepper({
 	modelValue,
