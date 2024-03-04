@@ -11,5 +11,8 @@
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
   "stylelint.packageManager": "pnpm",
-  "npm.packageManager": "pnpm"
+  "npm.packageManager": "pnpm",
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
