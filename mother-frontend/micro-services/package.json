@@ -6,13 +6,14 @@
   "engines": {
     "node": "18.16.0"
   },
+  "type": "module",
   "devDependencies": {
     "@windows98/eslint-config": "workspace:*",
     "@windows98/toolkit": "workspace:*",
     "vitest": "^0.31.4"
   },
   "scripts": {
-    "lint:js": "eslint --config ./@linter/eslint.config.js . --ext \".ts, .js\"",
-    "lintfix:js": "eslint --config ./@linter/eslint.config.js . --fix --ext \".ts, .js\""
+    "lint:js": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
+    "lintfix:js": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\""
   }
 }
