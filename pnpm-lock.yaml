@@ -117,6 +117,9 @@ importers:
 
   core/internationalization/i18n:
     devDependencies:
+      '@windows98/eslint-config':
+        specifier: workspace:^
+        version: link:../../linters/eslint
       i18next:
         specifier: 23.8.2
         version: 23.8.2
