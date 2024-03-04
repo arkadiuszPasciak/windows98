@@ -1,20 +1,21 @@
-import { useEffect } from 'react'
-import { useTranslation } from 'react-i18next'
+import { useEffect } from "react"
+import { useTranslation } from "react-i18next"
 
 // @TODO It's temporary solution, I need to figure out how to sync lang with more than one micro-app
 export function useSyncLang() {
-  const { i18n } = useTranslation()
+	const { i18n } = useTranslation()
 
-  	useEffect(() => {
+	useEffect(() => {
 		const htmlLang = document.documentElement.lang
 
 		if (htmlLang) i18n.changeLanguage(htmlLang)
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	useEffect(() => {
 		const htmlLangObserver = new MutationObserver((mutations) => {
-		mutations.forEach((mutation) => {
-			if (mutation.type === 'attributes' && mutation.attributeName === 'lang') {
+			mutations.forEach((mutation) => {
+				if (mutation.type === "attributes" && mutation.attributeName === "lang") {
 					i18n.changeLanguage((mutation.target as HTMLElement).lang)
 				}
 			})

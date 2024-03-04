@@ -1,4 +1,4 @@
 export interface ICalendarDays {
-  status: 'active' | 'inactive' | 'normal'
+  status: "active" | "inactive" | "normal"
   value: string
 }
