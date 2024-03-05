@@ -13,7 +13,8 @@
   "exports": {
     "./base": "./src/configs/base.config.js",
     "./react": "./src/configs/react.config.js",
-    "./typescript": "./src/configs/typescript.config.js"
+    "./typescript": "./src/configs/typescript.config.js",
+    "./vue": "./src/configs/vue.config.js"
   },
   "peerDependencies": {
     "eslint": "8.57.0"
