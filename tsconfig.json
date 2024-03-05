@@ -34,5 +34,5 @@
     "./app",
     "./mother-frontend/micro-services"
   ],
-  "exclude": ["src/configs/*.config.js"]
+  "exclude": ["**/*.cjs"]
 }
