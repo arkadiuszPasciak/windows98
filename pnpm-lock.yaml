@@ -133,6 +133,12 @@ importers:
         specifier: 9.2.2
         version: 9.2.2(vue@3.4.21)
 
+  core/linters:
+    devDependencies:
+      '@windows98/eslint-config':
+        specifier: workspace:*
+        version: link:eslint
+
   core/linters/eslint:
     devDependencies:
       '@typescript-eslint/eslint-plugin':

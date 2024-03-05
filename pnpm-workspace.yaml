@@ -2,6 +2,7 @@ packages:
   - app
   - core/design-system
   - core/internationalization/*
+  - core/linters
   - core/linters/*
   - core/tests/*
   - core/toolkit
