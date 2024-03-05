@@ -1,1 +1,1 @@
-export type TUIModalCursor = 'default' | 'move'
+export type TUIModalCursor = "default" | "move"

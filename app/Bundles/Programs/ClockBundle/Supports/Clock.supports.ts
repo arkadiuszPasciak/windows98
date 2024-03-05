@@ -1,3 +1,3 @@
 export interface IClockGetTime {
-  timeStyle: Intl.DateTimeFormatOptions['timeStyle']
+  timeStyle: Intl.DateTimeFormatOptions["timeStyle"]
 }

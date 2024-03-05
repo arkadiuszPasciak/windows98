@@ -25,55 +25,55 @@
       @input="
         $emit('update:modelValue', ($event.target as HTMLInputElement).value)
       "
-    />
+    >
   </div>
 </template>
 
 <script setup lang="ts">
-  import { PropType } from 'vue'
+import { PropType } from "vue"
 
-  defineProps({
-    type: {
-      type: String as PropType<'text' | 'password' | 'email' | 'number'>,
-      default: 'text',
-    },
-    id: {
-      type: String,
-      required: true,
-    },
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
-    readonly: {
-      type: Boolean,
-      default: false,
-    },
-    modelValue: {
-      type: [String, Number],
-      required: true,
-    },
-    labelName: {
-      type: String,
-      required: false,
-    },
-    labelPosition: {
-      type: String as PropType<'top' | 'left'>,
-      default: 'top',
-    },
-    min: {
-      type: Number,
-      required: false,
-      default: undefined,
-    },
-    max: {
-      type: Number,
-      required: false,
-      default: undefined,
-    },
-  })
+defineProps({
+	type: {
+		type: String as PropType<"text" | "password" | "email" | "number">,
+		default: "text",
+	},
+	id: {
+		type: String,
+		required: true,
+	},
+	disabled: {
+		type: Boolean,
+		default: false,
+	},
+	readonly: {
+		type: Boolean,
+		default: false,
+	},
+	modelValue: {
+		type: [String, Number],
+		required: true,
+	},
+	labelName: {
+		type: String,
+		required: false,
+	},
+	labelPosition: {
+		type: String as PropType<"top" | "left">,
+		default: "top",
+	},
+	min: {
+		type: Number,
+		required: false,
+		default: undefined,
+	},
+	max: {
+		type: Number,
+		required: false,
+		default: undefined,
+	},
+})
 
-  defineEmits(['update:modelValue'])
+defineEmits(["update:modelValue"])
 </script>
 
 <style

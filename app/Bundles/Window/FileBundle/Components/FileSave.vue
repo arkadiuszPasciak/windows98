@@ -18,7 +18,10 @@
         label-position="left"
       />
 
-      <UIButton data-test="file-save-button-save" @click="saveFile">
+      <UIButton
+        data-test="file-save-button-save"
+        @click="saveFile"
+      >
         {{ t('FileBundle.save') }}
       </UIButton>
 
@@ -42,45 +45,45 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIInput from '@APP|Bundles/UIInputBundle/Components/UIInput.vue'
-  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
-  import UISelect from '@APP|Bundles/UISelectBundle/Components/UISelect.vue'
-  import { MFilesTextTypes } from '@APP|Bundles/FileBundle/Mocks/File.mocks'
-  import { saveFileOnUserDisk } from '@APP|Bundles/FileBundle/Services/File.services'
-  import {
-    EFileTextTypes,
-    TFileTextTypes,
-  } from '@APP|Bundles/FileBundle/Supports/File.supports'
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import UIInput from "@APP|Bundles/UIInputBundle/Components/UIInput.vue"
+import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
+import UISelect from "@APP|Bundles/UISelectBundle/Components/UISelect.vue"
+import { MFilesTextTypes } from "@APP|Bundles/FileBundle/Mocks/File.mocks"
+import { saveFileOnUserDisk } from "@APP|Bundles/FileBundle/Services/File.services"
+import {
+	EFileTextTypes,
+	TFileTextTypes,
+} from "@APP|Bundles/FileBundle/Supports/File.supports"
 
-  const props = defineProps({
-    modalState: {
-      type: Boolean,
-      required: true,
-    },
-    contentValue: {
-      type: String,
-      required: true,
-    },
-  })
+const props = defineProps({
+	modalState: {
+		type: Boolean,
+		required: true,
+	},
+	contentValue: {
+		type: String,
+		required: true,
+	},
+})
 
-  defineEmits(['closeModal'])
+defineEmits(["closeModal"])
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  const fileNameModelValue = ref<string>(t('FileBundle.untitled'))
+const fileNameModelValue = ref<string>(t("FileBundle.untitled"))
 
-  const selectTextTypeModelValue = ref<TFileTextTypes>(MFilesTextTypes[0].value)
+const selectTextTypeModelValue = ref<TFileTextTypes>(MFilesTextTypes[0].value)
 
-  const saveFile = (): void => {
-    saveFileOnUserDisk(
-      props.contentValue,
-      fileNameModelValue.value,
-      EFileTextTypes.TXT,
-    )
-  }
+const saveFile = (): void => {
+	saveFileOnUserDisk(
+		props.contentValue,
+		fileNameModelValue.value,
+		EFileTextTypes.TXT,
+	)
+}
 </script>
 
 <style

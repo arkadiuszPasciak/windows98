@@ -42,6 +42,9 @@ importers:
       '@windows98/design-system':
         specifier: workspace:*
         version: link:../core/design-system
+      '@windows98/eslint-config':
+        specifier: workspace:^
+        version: link:../core/linters/eslint
       '@windows98/i18n':
         specifier: workspace:*
         version: link:../core/internationalization/i18n
@@ -118,7 +121,7 @@ importers:
   core/internationalization/i18n:
     devDependencies:
       '@windows98/eslint-config':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../../linters/eslint
       i18next:
         specifier: 23.8.2

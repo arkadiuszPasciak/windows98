@@ -11,18 +11,18 @@
 </template>
 
 <script setup lang="ts">
-  import UIStepper from '@APP|Bundles/UIStepperBundle/Components/UIStepper.vue'
-  import { useUIStepperTestingStore } from '@APP|Bundles/UIStepperBundle/Stores/UIStepperTesting.stores'
+import UIStepper from "@APP|Bundles/UIStepperBundle/Components/UIStepper.vue"
+import { useUIStepperTestingStore } from "@APP|Bundles/UIStepperBundle/Stores/UIStepperTesting.stores"
 
-  const uiStepperTestingStore = useUIStepperTestingStore()
+const uiStepperTestingStore = useUIStepperTestingStore()
 
-  const increase = (): void => {
-    uiStepperTestingStore.increaseValue()
-  }
+const increase = (): void => {
+	uiStepperTestingStore.increaseValue()
+}
 
-  const decrease = (): void => {
-    uiStepperTestingStore.decreaseValue()
-  }
+const decrease = (): void => {
+	uiStepperTestingStore.decreaseValue()
+}
 </script>
 
 <style lang="scss" scoped />

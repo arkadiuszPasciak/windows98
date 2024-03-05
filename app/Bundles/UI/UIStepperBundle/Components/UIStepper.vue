@@ -1,5 +1,8 @@
 <template>
-  <div class="UIStepper" :class="disabled ? 'is-disabled' : ''">
+  <div
+    class="UIStepper"
+    :class="disabled ? 'is-disabled' : ''"
+  >
     <UIInput
       v-if="fieldModification"
       :id="input.id"
@@ -9,7 +12,11 @@
       :data-test="`${input.id}-input`"
     />
 
-    <UIText v-else class="field" :data-test="`${input.id}-input`">
+    <UIText
+      v-else
+      class="field"
+      :data-test="`${input.id}-input`"
+    >
       {{ value }}
     </UIText>
 
@@ -32,10 +39,10 @@
 </template>
 
 <script setup lang="ts">
-  import { computed } from 'vue'
-  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIInput from '@APP|Bundles/UIInputBundle/Components/UIInput.vue'
-  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
+import { computed } from "vue"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import UIInput from "@APP|Bundles/UIInputBundle/Components/UIInput.vue"
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
 
   interface UIStepperProps {
     input: {
@@ -47,31 +54,31 @@
   }
 
   interface UIStepperEmits {
-    (e: 'increase'): void
-    (e: 'decrease'): void
-    (e: 'value', value: number): void
+    (e: "increase"): void
+    (e: "decrease"): void
+    (e: "value", value: number): void
   }
 
-  const props = defineProps<UIStepperProps>()
+const props = defineProps<UIStepperProps>()
 
-  const emit = defineEmits<UIStepperEmits>()
+const emit = defineEmits<UIStepperEmits>()
 
-  const value = computed({
-    get() {
-      return props.modelValue
-    },
-    set(value) {
-      emit('value', value)
-    },
-  })
+const value = computed({
+	get() {
+		return props.modelValue
+	},
+	set(value) {
+		emit("value", value)
+	},
+})
 
-  const increase = (): void => {
-    emit('increase')
-  }
+const increase = (): void => {
+	emit("increase")
+}
 
-  const decrease = (): void => {
-    emit('decrease')
-  }
+const decrease = (): void => {
+	emit("decrease")
+}
 </script>
 
 <style

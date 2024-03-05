@@ -1,14 +1,17 @@
 <template>
-  <UIText class="CalculatorDisplay" data-test="calculator-display">
+  <UIText
+    class="CalculatorDisplay"
+    data-test="calculator-display"
+  >
     {{ calculatorStore.value }}
   </UIText>
 </template>
 
 <script setup lang="ts">
-  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
-  import { useCalculatorStore } from '@APP|Bundles/CalculatorBundle/Stores/Calculator.stores'
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
+import { useCalculatorStore } from "@APP|Bundles/CalculatorBundle/Stores/Calculator.stores"
 
-  const calculatorStore = useCalculatorStore()
+const calculatorStore = useCalculatorStore()
 </script>
 
 <style

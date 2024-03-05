@@ -13,7 +13,7 @@
           :height="23"
           src="/icons/applications/windows.png"
           :alt="t('StartBundle.windows-logo')"
-        />
+        >
       </template>
       {{ t('StartBundle.start') }}
     </UIButton>
@@ -23,7 +23,10 @@
       variant="primary"
       :class="primaryPanelStatus ? 'is-active' : ''"
     >
-      <template v-for="(app, id) in apps" :key="`start-primary-item-${id}`">
+      <template
+        v-for="(app, id) in apps"
+        :key="`start-primary-item-${id}`"
+      >
         <StartPanelItem
           size="medium"
           :name="app.data.name"
@@ -31,7 +34,10 @@
           :class="app.items ? 'is-arrow' : ''"
           @open-program="openProgram(app.data.name)"
         >
-          <StartPanel v-if="app.items" variant="secondary">
+          <StartPanel
+            v-if="app.items"
+            variant="secondary"
+          >
             <template
               v-for="(appSecondary, idSecondary) in app.items"
               :key="`start-primary-item-${idSecondary}`"
@@ -44,7 +50,10 @@
                 :class="appSecondary.items ? 'is-arrow' : ''"
                 @open-program="openProgram(appSecondary.data.name)"
               >
-                <StartPanel v-if="appSecondary.items" variant="secondary">
+                <StartPanel
+                  v-if="appSecondary.items"
+                  variant="secondary"
+                >
                   <template
                     v-for="(appTertiary, idTertiary) in appSecondary.items"
                     :key="`start-primary-item-${idTertiary}`"
@@ -68,56 +77,56 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
-  import { useStartStore } from '@APP|Bundles/StartBundle/Stores/Start.stores'
-  import { IStartStoreApps } from '@APP|Bundles/StartBundle/Supports/Start.supports'
-  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
-  import StartPanel from '@APP|Bundles/StartBundle/Components/StartPanel.vue'
-  import StartPanelItem from '@APP|Bundles/StartBundle/Components/StartPanelItem.vue'
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import { useStartStore } from "@APP|Bundles/StartBundle/Stores/Start.stores"
+import { IStartStoreApps } from "@APP|Bundles/StartBundle/Supports/Start.supports"
+import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
+import StartPanel from "@APP|Bundles/StartBundle/Components/StartPanel.vue"
+import StartPanelItem from "@APP|Bundles/StartBundle/Components/StartPanelItem.vue"
 
-  const { t } = useI18n()
-  const store = useStartStore()
+const { t } = useI18n()
+const store = useStartStore()
 
-  const apps = store.$state.apps as IStartStoreApps[]
-  const programStore = useProgramStore()
+const apps = store.$state.apps as IStartStoreApps[]
+const programStore = useProgramStore()
 
-  const primaryPanelStatus = ref<boolean>(false)
+const primaryPanelStatus = ref<boolean>(false)
 
-  const togglePrimaryPanel = (): void => {
-    if (apps) {
-      primaryPanelStatus.value = !primaryPanelStatus.value
-    }
-  }
+const togglePrimaryPanel = (): void => {
+	if (apps) {
+		primaryPanelStatus.value = !primaryPanelStatus.value
+	}
+}
 
-  const openProgram = (programName: string): void => {
-    switch (programName) {
-      case 'StartBundle.calculator':
-        programStore.updateCalculatorModal(true)
-        break
-      case 'StartBundle.notepad':
-        programStore.updateNotepadModal(true)
-        break
-      case 'StartBundle.run':
-        programStore.updateRunModal(true)
-        break
-      case 'StartBundle.settings':
-        programStore.updateSettingsModal(true)
-        break
-      case 'StartBundle.shut-down':
-        programStore.updateShutDownModal(true)
-        break
-      case 'StartBundle.tic-tac-toe':
-        programStore.updateTicTacToeModal(true)
-        break
-      case 'StartBundle.timer':
-        programStore.updateTimerModal(true)
-        break
-    }
+const openProgram = (programName: string): void => {
+	switch (programName) {
+	case "StartBundle.calculator":
+		programStore.updateCalculatorModal(true)
+		break
+	case "StartBundle.notepad":
+		programStore.updateNotepadModal(true)
+		break
+	case "StartBundle.run":
+		programStore.updateRunModal(true)
+		break
+	case "StartBundle.settings":
+		programStore.updateSettingsModal(true)
+		break
+	case "StartBundle.shut-down":
+		programStore.updateShutDownModal(true)
+		break
+	case "StartBundle.tic-tac-toe":
+		programStore.updateTicTacToeModal(true)
+		break
+	case "StartBundle.timer":
+		programStore.updateTimerModal(true)
+		break
+	}
 
-    togglePrimaryPanel()
-  }
+	togglePrimaryPanel()
+}
 </script>
 
 <style

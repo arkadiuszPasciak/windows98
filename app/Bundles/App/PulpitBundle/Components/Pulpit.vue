@@ -12,14 +12,14 @@
 </template>
 
 <script setup lang="ts">
-  import { useI18n } from 'vue-i18n'
-  import PulpitItem from '@APP|Bundles/PulpitBundle/Components/PulpitItem.vue'
-  import { usePulpitStore } from '@APP|Bundles/PulpitBundle/Stores/Pulpit.stores'
-  import { IPulpitStoreApps } from '@APP|Bundles/PulpitBundle/Supports/Pulpit.supports'
+import { useI18n } from "vue-i18n"
+import PulpitItem from "@APP|Bundles/PulpitBundle/Components/PulpitItem.vue"
+import { usePulpitStore } from "@APP|Bundles/PulpitBundle/Stores/Pulpit.stores"
+import { IPulpitStoreApps } from "@APP|Bundles/PulpitBundle/Supports/Pulpit.supports"
 
-  const { t } = useI18n()
-  const store = usePulpitStore()
-  const apps = store.$state.apps as IPulpitStoreApps[]
+const { t } = useI18n()
+const store = usePulpitStore()
+const apps = store.$state.apps as IPulpitStoreApps[]
 </script>
 
 <style

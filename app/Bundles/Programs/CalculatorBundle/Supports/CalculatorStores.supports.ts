@@ -1,7 +1,7 @@
 import {
-  TCalculatorSign,
-  TCalculatorNumber,
-} from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
+	TCalculatorSign,
+	TCalculatorNumber,
+} from "@APP|Bundles/CalculatorBundle/Supports/Calculator.supports"
 
 export interface ICalculatorStoresState {
   value: string

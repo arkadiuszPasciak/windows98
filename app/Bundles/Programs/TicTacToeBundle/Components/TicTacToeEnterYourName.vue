@@ -11,14 +11,14 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  import UIInput from '@APP|Bundles/UIInputBundle/Components/UIInput.vue'
-  import { ETicTacToeInputNames } from '@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports'
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
+import UIInput from "@APP|Bundles/UIInputBundle/Components/UIInput.vue"
+import { ETicTacToeInputNames } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  const modelValue = ref<string>(t('TicTacToeBundle.default-player'))
+const modelValue = ref<string>(t("TicTacToeBundle.default-player"))
 </script>
 
 <style

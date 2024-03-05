@@ -1,6 +1,6 @@
 export enum ELanguageLocales {
-  ENGLISH = 'en',
-  POLISH = 'pl',
+  ENGLISH = "en",
+  POLISH = "pl",
 }
 
 export type TLanguageLocales =

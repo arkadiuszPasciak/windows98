@@ -16,8 +16,11 @@
         src="/icons/applications/run.png"
         alt="Run computer"
         data-test="run-icon"
-      />
-      <UIText class="description" data-test="run-description">
+      >
+      <UIText
+        class="description"
+        data-test="run-description"
+      >
         {{ t('RunBundle.description') }}
       </UIText>
       <UIInput
@@ -46,27 +49,27 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIInput from '@APP|Bundles/UIInputBundle/Components/UIInput.vue'
-  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
-  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
-  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
-  import { checkAndRunProgram } from '@APP|Bundles/RunBundle/Services/Run.services'
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import UIInput from "@APP|Bundles/UIInputBundle/Components/UIInput.vue"
+import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
+import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
+import { checkAndRunProgram } from "@APP|Bundles/RunBundle/Services/Run.services"
 
-  const { t } = useI18n()
-  const programStore = useProgramStore()
+const { t } = useI18n()
+const programStore = useProgramStore()
 
-  const closeModal = (): void => {
-    programStore.updateRunModal(false)
-  }
+const closeModal = (): void => {
+	programStore.updateRunModal(false)
+}
 
-  const openProgram = (): void => {
-    checkAndRunProgram(modelValue.value, t)
-  }
+const openProgram = (): void => {
+	checkAndRunProgram(modelValue.value, t)
+}
 
-  const modelValue = ref<string>('')
+const modelValue = ref<string>("")
 </script>
 
 <style lang="scss" scoped src="@APP|Bundles/RunBundle/Styles/Run.styles.scss" />

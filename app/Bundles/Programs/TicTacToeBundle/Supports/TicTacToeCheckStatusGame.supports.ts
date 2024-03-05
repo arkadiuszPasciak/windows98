@@ -1,8 +1,8 @@
 export enum ETicTacToeStatusGame {
-  DRAW = 'status-game.draw',
-  PLAYING = 'status-game.playing',
-  WINNER_O = 'status-game.winner-o',
-  WINNER_X = 'status-game.winner-x',
+  DRAW = "status-game.draw",
+  PLAYING = "status-game.playing",
+  WINNER_O = "status-game.winner-o",
+  WINNER_X = "status-game.winner-x",
 }
 
 export type TTicTacToeCheckStatusGame =

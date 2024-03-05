@@ -1,12 +1,12 @@
 export enum ETimerSwitcherMethod {
-  DECREASE = 'decrease',
-  INCREASE = 'increase',
+  DECREASE = "decrease",
+  INCREASE = "increase",
 }
 
 export enum ETimerSwitcherType {
-  HOURS = 'hours',
-  MINUTES = 'minutes',
-  SECONDS = 'seconds',
+  HOURS = "hours",
+  MINUTES = "minutes",
+  SECONDS = "seconds",
 }
 
 export interface ITimerSwitcherType {

@@ -1,5 +1,10 @@
 <template>
-  <button class="UIModalNavigationItem" type="button"><slot /></button>
+  <button
+    class="UIModalNavigationItem"
+    type="button"
+  >
+    <slot />
+  </button>
 </template>
 
 <script setup lang="ts"></script>

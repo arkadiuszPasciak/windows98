@@ -33,53 +33,53 @@
 </template>
 
 <script setup lang="ts">
-  import { computed, PropType } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  import { TUISelectPropsObject } from '@APP|Bundles/UISelectBundle/Supports/UISelect.supports'
+import { computed, PropType } from "vue"
+import { useI18n } from "vue-i18n"
+import { TUISelectPropsObject } from "@APP|Bundles/UISelectBundle/Supports/UISelect.supports"
 
-  const props = defineProps({
-    id: {
-      type: String,
-      required: true,
-    },
-    required: {
-      type: Boolean,
-      default: false,
-    },
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
-    modelValue: {
-      type: [String, Number],
-      required: true,
-    },
-    options: {
-      type: Object as PropType<TUISelectPropsObject>,
-      required: true,
-    },
-    labelName: {
-      type: String,
-      required: false,
-    },
-    labelPosition: {
-      type: String as PropType<'top' | 'left'>,
-      default: 'top',
-    },
-  })
+const props = defineProps({
+	id: {
+		type: String,
+		required: true,
+	},
+	required: {
+		type: Boolean,
+		default: false,
+	},
+	disabled: {
+		type: Boolean,
+		default: false,
+	},
+	modelValue: {
+		type: [String, Number],
+		required: true,
+	},
+	options: {
+		type: Object as PropType<TUISelectPropsObject>,
+		required: true,
+	},
+	labelName: {
+		type: String,
+		required: false,
+	},
+	labelPosition: {
+		type: String as PropType<"top" | "left">,
+		default: "top",
+	},
+})
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  const emit = defineEmits(['update:modelValue'])
+const emit = defineEmits(["update:modelValue"])
 
-  const value = computed({
-    get() {
-      return props.modelValue
-    },
-    set(value) {
-      emit('update:modelValue', value)
-    },
-  })
+const value = computed({
+	get() {
+		return props.modelValue
+	},
+	set(value) {
+		emit("update:modelValue", value)
+	},
+})
 </script>
 
 <style

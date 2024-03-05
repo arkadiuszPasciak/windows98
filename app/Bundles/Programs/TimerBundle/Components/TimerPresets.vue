@@ -1,5 +1,8 @@
 <template>
-  <UIFrame class="TimerPresets" :title="t('TimerBundle.presets.title')">
+  <UIFrame
+    class="TimerPresets"
+    :title="t('TimerBundle.presets.title')"
+  >
     <UIRadio
       v-for="(preset, id) in MTimerPresets"
       :key="`time-presets-${id}`"
@@ -16,15 +19,15 @@
 </template>
 
 <script setup lang="ts">
-  import { useI18n } from 'vue-i18n'
-  import UIFrame from '@APP|Bundles/UIFrameBundle/Components/UIFrame.vue'
-  import UIRadio from '@APP|Bundles/UIRadioBundle/Components/UIRadio.vue'
-  import { MTimerPresets } from '@APP|Bundles/TimerBundle/Mocks/TimerPresets.mocks'
-  import { useTimerStore } from '@APP|Bundles/TimerBundle/Stores/Timer.stores'
+import { useI18n } from "vue-i18n"
+import UIFrame from "@APP|Bundles/UIFrameBundle/Components/UIFrame.vue"
+import UIRadio from "@APP|Bundles/UIRadioBundle/Components/UIRadio.vue"
+import { MTimerPresets } from "@APP|Bundles/TimerBundle/Mocks/TimerPresets.mocks"
+import { useTimerStore } from "@APP|Bundles/TimerBundle/Stores/Timer.stores"
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  const store = useTimerStore()
+const store = useTimerStore()
 </script>
 
 <style

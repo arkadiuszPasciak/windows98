@@ -1,8 +1,8 @@
 import {
-  TTimerSwitcherMethod,
-  TTimerSwitcherType,
-} from '@APP|Bundles/TimerBundle/Supports/TimerSwitcher.supports'
-import { TTimerPresetsRadioCheck } from '@APP|Bundles/TimerBundle/Supports/TimerPresets.supports'
+	TTimerSwitcherMethod,
+	TTimerSwitcherType,
+} from "@APP|Bundles/TimerBundle/Supports/TimerSwitcher.supports"
+import { TTimerPresetsRadioCheck } from "@APP|Bundles/TimerBundle/Supports/TimerPresets.supports"
 
 interface ITimerTimes {
   hours: number

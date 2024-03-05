@@ -16,8 +16,11 @@
         src="/icons/applications/mycomputer.png"
         alt="My computer"
         data-test="shut-down-icon"
-      />
-      <UIText class="description" data-test="shut-down-description">
+      >
+      <UIText
+        class="description"
+        data-test="shut-down-description"
+      >
         {{ t('ShutDownBundle.description') }}
       </UIText>
       <UIRadio
@@ -56,46 +59,46 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
-  import UIRadio from '@APP|Bundles/UIRadioBundle/Components/UIRadio.vue'
-  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
-  import {
-    restartSystem,
-    shutDownSystem,
-  } from '@APP|Bundles/ShutDownBundle/Services/ShutDown.services'
-  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
-  import {
-    EShutDownRadioCheck,
-    IShutDownRadioCheck,
-    shutDownRadioInputName,
-  } from '@APP|Bundles/ShutDownBundle/Supports/ShutDown.supports'
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
+import UIRadio from "@APP|Bundles/UIRadioBundle/Components/UIRadio.vue"
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
+import {
+	restartSystem,
+	shutDownSystem,
+} from "@APP|Bundles/ShutDownBundle/Services/ShutDown.services"
+import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
+import {
+	EShutDownRadioCheck,
+	IShutDownRadioCheck,
+	shutDownRadioInputName,
+} from "@APP|Bundles/ShutDownBundle/Supports/ShutDown.supports"
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  const programStore = useProgramStore()
+const programStore = useProgramStore()
 
-  const checkedRadioBoxes = ref<IShutDownRadioCheck>(
-    EShutDownRadioCheck.SHUT_DOWN,
-  )
+const checkedRadioBoxes = ref<IShutDownRadioCheck>(
+	EShutDownRadioCheck.SHUT_DOWN,
+)
 
-  const closeModal = (): void => {
-    programStore.updateShutDownModal(false)
-  }
+const closeModal = (): void => {
+	programStore.updateShutDownModal(false)
+}
 
-  const triggerEvent = (): void => {
-    if (checkedRadioBoxes.value === EShutDownRadioCheck.RESTART) {
-      restartSystem(window)
-    } else if (checkedRadioBoxes.value === EShutDownRadioCheck.SHUT_DOWN) {
-      shutDownSystem(window)
-    } else {
-      return
-    }
+const triggerEvent = (): void => {
+	if (checkedRadioBoxes.value === EShutDownRadioCheck.RESTART) {
+		restartSystem(window)
+	} else if (checkedRadioBoxes.value === EShutDownRadioCheck.SHUT_DOWN) {
+		shutDownSystem(window)
+	} else {
+		return
+	}
 
-    closeModal()
-  }
+	closeModal()
+}
 </script>
 
 <style

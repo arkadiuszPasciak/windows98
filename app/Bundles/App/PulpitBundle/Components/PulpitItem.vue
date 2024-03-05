@@ -6,24 +6,26 @@
       height="32"
       :src="`/icons/applications/${iconName}.png`"
       :alt="name"
-    />
-    <UIText class="name">{{ name }}</UIText>
+    >
+    <UIText class="name">
+      {{ name }}
+    </UIText>
   </div>
 </template>
 
 <script setup lang="ts">
-  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
 
-  defineProps({
-    name: {
-      type: String,
-      required: true,
-    },
-    iconName: {
-      type: String,
-      required: true,
-    },
-  })
+defineProps({
+	name: {
+		type: String,
+		required: true,
+	},
+	iconName: {
+		type: String,
+		required: true,
+	},
+})
 </script>
 
 <style
