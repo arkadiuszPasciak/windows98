@@ -14,7 +14,6 @@ In this specific file, the "recommendations" array includes three recommended ex
 
 1. [Vue.volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 2. [stylelint.vscode-stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
-3. [rvest.vs-code-prettier-eslint](https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint)
 
 ## [Settings](https://code.visualstudio.com/docs/getstarted/settings)
 

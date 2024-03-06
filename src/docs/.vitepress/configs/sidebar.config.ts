@@ -82,10 +82,6 @@ const sidebarConfig = [
         link: '/features/stylelint.html',
       },
       {
-        text: 'Prettier',
-        link: '/features/prettier.html',
-      },
-      {
         text: 'VuePress',
         link: '/features/vue-press.html',
       },

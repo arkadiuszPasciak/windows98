@@ -5,5 +5,4 @@ module.exports = {
 	"../../../app/**/*.{scss,vue}": [
 		"pnpm --filter @windows98/stylelint run lintfix:styles",
 	],
-	"../../../app/*": ["pnpm --filter @windows98/prettier run lintfix:prettier"],
 }

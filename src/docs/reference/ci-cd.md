@@ -18,12 +18,11 @@ This CI/CD workflow ensures that your codebase remains consistent, well-structur
 1. `install-cache`: Installs Node.js and caches Cypress dependencies.
 2. `type-check`: Performs type checking for TypeScript and Vue files.
 3. `eslint-lint`: Lints TypeScript and Vue files using ESLint.
-4. `prettier-lint`: Lints all files using Prettier.
-5. `stylelint-lint`: Lints SCSS and Vue files using Stylelint.
-6. `vitest-tests`: Runs all unit tests using Vitest.
-7. `build`: Builds the application for production.
-8. `cypress-component-tests`: Executes component testing with Cypress.
-9. `deploy-preview`: Deploys the feature branch using Vercel for preview.
+4. `stylelint-lint`: Lints SCSS and Vue files using Stylelint.
+5. `vitest-tests`: Runs all unit tests using Vitest.
+6. `build`: Builds the application for production.
+7. `cypress-component-tests`: Executes component testing with Cypress.
+8. `deploy-preview`: Deploys the feature branch using Vercel for preview.
 
 ## [Deploy Production](https://vercel.com/docs/concepts/deployments/git)
 
