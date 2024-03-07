@@ -3,6 +3,6 @@ module.exports = {
 		"pnpm --filter @windows98/eslint-config run lintfix:js",
 	],
 	"../../../app/**/*.{scss,vue}": [
-		"pnpm --filter @windows98/stylelint run lintfix:styles",
+		"pnpm --filter @windows98/stylelint-config run lintfix:styles",
 	],
 }
