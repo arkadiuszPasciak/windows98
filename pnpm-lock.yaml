@@ -54,12 +54,18 @@ importers:
       '@windows98/micro-services':
         specifier: workspace:*
         version: link:../mother-frontend/micro-services
+      '@windows98/stylelint-config':
+        specifier: workspace:*
+        version: link:../core/linters/stylelint
       jsdom:
         specifier: ^22.1.0
         version: 22.1.0
       sass:
         specifier: ^1.62.1
         version: 1.69.5
+      stylelint:
+        specifier: 16.2.1
+        version: 16.2.1(typescript@5.2.2)
       typescript:
         specifier: ^5.0.4
         version: 5.2.2
