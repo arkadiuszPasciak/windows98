@@ -80,6 +80,13 @@ importers:
         version: 0.31.4(jsdom@22.1.0)(sass@1.69.5)
 
   core/design-system:
+    dependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
     devDependencies:
       '@playwright/experimental-ct-react':
         specifier: ^1.41.1
@@ -99,15 +106,12 @@ importers:
       '@windows98/eslint-config':
         specifier: workspace:*
         version: link:../linters/eslint
+      '@windows98/linters':
+        specifier: workspace:*
+        version: link:../linters
       '@windows98/stylelint-config':
         specifier: workspace:*
         version: link:../linters/stylelint
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
       sass:
         specifier: ^1.70.0
         version: 1.70.0
