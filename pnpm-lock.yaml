@@ -139,12 +139,18 @@ importers:
       '@windows98/eslint-config':
         specifier: workspace:*
         version: link:../../linters/eslint
+      '@windows98/linters':
+        specifier: workspace:*
+        version: link:../../linters
       i18next:
         specifier: 23.8.2
         version: 23.8.2
       react-i18next:
         specifier: 14.0.5
         version: 14.0.5(i18next@23.8.2)(react-dom@18.2.0)(react@18.2.0)
+      typescript:
+        specifier: 5.4.2
+        version: 5.4.2
       vue-i18n:
         specifier: 9.2.2
         version: 9.2.2(vue@3.4.21)
@@ -261,6 +267,12 @@ importers:
       '@windows98/eslint-config':
         specifier: workspace:*
         version: link:../linters/eslint
+      '@windows98/linters':
+        specifier: workspace:*
+        version: link:../linters
+      typescript:
+        specifier: 5.4.2
+        version: 5.4.2
 
   mother-frontend/micro-apps:
     dependencies:
@@ -2480,7 +2492,7 @@ packages:
     dependencies:
       '@vue/compiler-ssr': 3.4.21
       '@vue/shared': 3.4.21
-      vue: 3.4.21
+      vue: 3.4.21(typescript@5.4.2)
     dev: true
 
   /@vue/shared@3.3.8:
@@ -2504,7 +2516,7 @@ packages:
         optional: true
     dependencies:
       js-beautify: 1.14.9
-      vue: 3.4.21
+      vue: 3.4.21(typescript@5.4.2)
       vue-component-type-helpers: 1.8.4
     dev: true
 
@@ -5526,7 +5538,7 @@ packages:
         optional: true
     dependencies:
       '@vue/devtools-api': 6.5.1
-      vue: 3.4.21
+      vue: 3.4.21(typescript@5.4.2)
       vue-demi: 0.14.6(vue@3.4.21)
     dev: true
 
@@ -7529,7 +7541,7 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
-      vue: 3.4.21
+      vue: 3.4.21(typescript@5.4.2)
     dev: true
 
   /vue-eslint-parser@9.4.2(eslint@8.57.0):
@@ -7560,7 +7572,7 @@ packages:
       '@intlify/shared': 9.2.2
       '@intlify/vue-devtools': 9.2.2
       '@vue/devtools-api': 6.5.1
-      vue: 3.4.21
+      vue: 3.4.21(typescript@5.4.2)
     dev: true
 
   /vue-i18n@9.6.5(vue@3.3.8):
@@ -7632,7 +7644,7 @@ packages:
       '@vue/shared': 3.3.8
       typescript: 5.2.2
 
-  /vue@3.4.21:
+  /vue@3.4.21(typescript@5.4.2):
     resolution: {integrity: sha512-5hjyV/jLEIKD/jYl4cavMcnzKwjMKohureP8ejn3hhEjwhWIhWeuzL2kJAjzl/WyVsgPY56Sy4Z40C3lVshxXA==}
     peerDependencies:
       typescript: '*'
@@ -7645,6 +7657,7 @@ packages:
       '@vue/runtime-dom': 3.4.21
       '@vue/server-renderer': 3.4.21(vue@3.4.21)
       '@vue/shared': 3.4.21
+      typescript: 5.4.2
     dev: true
 
   /w3c-xmlserializer@4.0.0:

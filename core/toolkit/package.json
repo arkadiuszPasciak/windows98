@@ -8,10 +8,13 @@
   },
   "type": "module",
   "devDependencies": {
-    "@windows98/eslint-config": "workspace:*"
+    "@windows98/eslint-config": "workspace:*",
+    "@windows98/linters": "workspace:*",
+    "typescript": "5.4.2"
   },
   "scripts": {
     "lint:js": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
-    "lintfix:js": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\""
+    "lintfix:js": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
+    "lint:types:run": "tsc"
   }
 }
