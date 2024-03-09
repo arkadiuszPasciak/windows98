@@ -258,8 +258,6 @@ importers:
         specifier: workspace:*
         version: link:../linters/eslint
 
-  mother-frontend: {}
-
   mother-frontend/micro-apps:
     dependencies:
       '@r2wc/react-to-web-component':
