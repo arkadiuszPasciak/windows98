@@ -1,16 +1,19 @@
 {
-  	"name": "@windows98/linters",
-  	"version": "1.0.0",
-  	"description": "Linters",
-  	"author": "Arkadiusz Paściak",
-  	"engines": {
-    	"node": "18.16.0"
-  	},
-  	"scripts": {
-    	"lint:js": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
-    	"lintfix:js": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\""
-  	},
-  	"devDependencies": {
-    	"@windows98/eslint-config": "workspace:*"
-  	}
+	"name": "@windows98/linters",
+	"version": "1.0.0",
+	"description": "Linters",
+	"author": "Arkadiusz Paściak",
+	"engines": {
+		"node": "18.16.0"
+	},
+	"exports": {
+		"./ts-config/base": "./src/configs/ts-config/base.config.json"
+	},
+	"scripts": {
+		"lint:js": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
+		"lintfix:js": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\""
+	},
+	"devDependencies": {
+		"@windows98/eslint-config": "workspace:*"
+	}
 }

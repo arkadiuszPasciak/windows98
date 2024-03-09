@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"isolatedModules": false,
+		"useDefineForClassFields": true,
+		"lib": [
+			"esnext",
+			"dom"
+		],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "esnext"
+	},
+	"exclude": [
+		"build",
+		"dist",
+		"node_modules"
+	]
+}
