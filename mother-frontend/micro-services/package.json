@@ -9,11 +9,14 @@
   "type": "module",
   "devDependencies": {
     "@windows98/eslint-config": "workspace:*",
+    "@windows98/linters": "workspace:*",
     "@windows98/toolkit": "workspace:*",
+    "typescript": "5.4.2",
     "vitest": "^0.31.4"
   },
   "scripts": {
     "lint:js": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
-    "lintfix:js": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\""
+    "lintfix:js": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
+    "lint:types:run": "tsc --noEmit"
   }
 }
