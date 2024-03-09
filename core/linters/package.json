@@ -15,5 +15,8 @@
 	},
 	"devDependencies": {
 		"@windows98/eslint-config": "workspace:*"
+	},
+	"peerDependencies": {
+		"typescript": "5.4.2"
 	}
 }
