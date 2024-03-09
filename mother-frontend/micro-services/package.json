@@ -17,6 +17,6 @@
   "scripts": {
     "lint:js": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
     "lintfix:js": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
-    "lint:types:run": "tsc --noEmit"
+    "lint:types:run": "tsc"
   }
 }
