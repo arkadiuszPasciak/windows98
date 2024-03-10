@@ -57,6 +57,9 @@ importers:
       '@windows98/stylelint-config':
         specifier: workspace:*
         version: link:../core/linters/stylelint
+      cypress:
+        specifier: 12.17.4
+        version: 12.17.4
       jsdom:
         specifier: ^22.1.0
         version: 22.1.0
@@ -3273,7 +3276,7 @@ packages:
       process: 0.11.10
       proxy-from-env: 1.0.0
       request-progress: 3.0.0
-      semver: 7.5.4
+      semver: 7.6.0
       supports-color: 8.1.1
       tmp: 0.2.1
       untildify: 4.0.0

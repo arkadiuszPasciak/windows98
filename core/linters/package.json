@@ -8,6 +8,8 @@
 	},
 	"exports": {
 		"./ts-config/base": "./src/configs/ts-config/base.config.json",
+		"./ts-config/cypress": "./src/configs/ts-config/cypress.config.json",
+		"./ts-config/node": "./src/configs/ts-config/react.config.json",
 		"./ts-config/react": "./src/configs/ts-config/react.config.json",
 		"./ts-config/vite": "./src/configs/ts-config/vite.config.json",
 		"./ts-config/vue": "./src/configs/ts-config/vue.config.json"
