@@ -9,7 +9,8 @@
 	"exports": {
 		"./ts-config/base": "./src/configs/ts-config/base.config.json",
 		"./ts-config/react": "./src/configs/ts-config/react.config.json",
-		"./ts-config/vite": "./src/configs/ts-config/vite.config.json"
+		"./ts-config/vite": "./src/configs/ts-config/vite.config.json",
+		"./ts-config/vue": "./src/configs/ts-config/vue.config.json"
 	},
 	"scripts": {
 		"lint:js": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",

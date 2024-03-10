@@ -4,8 +4,7 @@
 		"jsx": "react-jsx",
 		"types": [
 			"@types/react",
-			"@types/react-dom",
-			"vite/client"
+			"@types/react-dom"
 		]
 	}
 }
