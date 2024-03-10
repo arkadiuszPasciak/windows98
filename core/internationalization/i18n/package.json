@@ -15,8 +15,8 @@
     "vue-i18n": "9.2.2"
   },
   "scripts": {
+    "lint:code:fix": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
     "lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
-    "lintfix:js": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
     "lint:types:run": "tsc"
   }
 }

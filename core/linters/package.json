@@ -15,8 +15,8 @@
 		"./ts-config/vue": "./src/configs/ts-config/vue.config.json"
 	},
 	"scripts": {
-		"lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
-		"lintfix:js": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\""
+		"lint:code:fix": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
+		"lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\""
 	},
 	"devDependencies": {
 		"@windows98/eslint-config": "workspace:*"

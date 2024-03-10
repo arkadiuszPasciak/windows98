@@ -19,9 +19,5 @@
   "license": "MIT",
   "name": "@windows98/stylelint-config",
   "packageManager": "pnpm@8.10.2",
-  "scripts": {
-    "lint:styles": "pnpx stylelint --config ./configs/stylelint.config.js ../../../app/Bundles/**/*.{scss}",
-    "lintfix:styles": "pnpx stylelint --config ./configs/stylelint.config.js ../../../app/Bundles/**/*.{scss} --fix"
-  },
   "version": "1.0.0"
 }
