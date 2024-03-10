@@ -1,5 +1,6 @@
 {
 	"extends": [
+		"@windows98/linters/ts-config/cypress",
 		"@windows98/linters/ts-config/vue",
 		"@windows98/linters/ts-config/vite",
 	],
@@ -28,6 +29,7 @@
 		}
 	},
 	"include": [
-		"./**/*"
+		"./**/*",
+		"./configs/cypress.config.d.ts"
 	]
 }

@@ -33,6 +33,7 @@
     "@windows98/micro-services": "workspace:*",
     "@windows98/linters": "workspace:*",
     "@windows98/stylelint-config": "workspace:*",
+    "cypress": "12.17.4",
     "jsdom": "^22.1.0",
     "sass": "^1.62.1",
     "stylelint": "16.2.1",
