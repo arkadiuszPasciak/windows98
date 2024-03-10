@@ -24,8 +24,8 @@
       :class="primaryPanelStatus ? 'is-active' : ''"
     >
       <template
-        v-for="(app, _id) in apps"
-        :key="`start-primary-item-${id}`"
+        v-for="(app) in apps"
+        :key="`start-primary-item-${app}`"
       >
         <StartPanelItem
           size="medium"
@@ -39,8 +39,8 @@
             variant="secondary"
           >
             <template
-              v-for="(appSecondary, _idSecondary) in app.items"
-              :key="`start-primary-item-${idSecondary}`"
+              v-for="(appSecondary) in app.items"
+              :key="`start-primary-item-${appSecondary}`"
             >
               <StartPanelItem
                 v-if="appSecondary.data"
@@ -55,8 +55,8 @@
                   variant="secondary"
                 >
                   <template
-                    v-for="(appTertiary, _idTertiary) in appSecondary.items"
-                    :key="`start-primary-item-${idTertiary}`"
+                    v-for="(appTertiary) in appSecondary.items"
+                    :key="`start-primary-item-${appTertiary}`"
                   >
                     <StartPanelItem
                       v-if="appTertiary"

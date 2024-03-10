@@ -15,7 +15,7 @@
     "vitest": "^0.31.4"
   },
   "scripts": {
-    "lint:js": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
+    "lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
     "lintfix:js": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
     "lint:types:run": "tsc"
   }

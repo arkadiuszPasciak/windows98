@@ -10,7 +10,7 @@
     "app:build": "vite build --config ./configs/vite.config.ts",
     "app:dev": "vite --config ./configs/vite.config.ts",
     "app:preview": "vite preview --config ./configs/vite.config.ts",
-    "lint:js": "eslint -c ./@linter/eslint.config.cjs --ext \".ts,.js,.vue\" .",
+    "lint:code:run": "eslint -c ./@linter/eslint.config.cjs --ext \".ts,.js,.vue\" .",
     "lintfix:js": "eslint -c ./@linter/eslint.config.cjs --fix --ext \".ts,.js,.vue\" .",
     "lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"Bundles/**/*.scss\"",
     "lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"Bundles/**/*.scss\" --fix",

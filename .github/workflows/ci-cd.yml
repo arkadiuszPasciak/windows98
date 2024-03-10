@@ -83,7 +83,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Check types
-        run: pnpm --filter @windows98/tsc run lint:types
+        run: pnpm --filter @windows98/ci-cd run lint:types:run:all
 
   eslint-lint:
     runs-on: ubuntu-latest
@@ -116,7 +116,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with ESLint
-        run: pnpm --filter @windows98/eslint-config run lintfix:js
+        run: pnpm --filter @windows98/ci-cd run lint:code:run:all
 
   stylelint-lint:
     runs-on: ubuntu-latest
