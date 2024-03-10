@@ -7,6 +7,9 @@ echo "✅ The types are okay!"
 pnpm --filter @windows98/ci-cd run lint:code:run:all
 echo "✅ The code is okay!"
 
+pnpm --filter @windows98/ci-cd run lint:styles:run:all
+echo "✅ The styles are okay!"
+
 pnpm --filter @windows98/vitest run test:unit:run
 echo "✅ The tests are okay!"
 

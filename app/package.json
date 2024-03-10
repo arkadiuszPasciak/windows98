@@ -12,8 +12,8 @@
     "app:preview": "vite preview --config ./configs/vite.config.ts",
     "lint:code:fix": "eslint -c ./@linter/eslint.config.cjs --fix --ext \".ts,.js,.vue\" .",
     "lint:code:run": "eslint -c ./@linter/eslint.config.cjs --ext \".ts,.js,.vue\" .",
-    "lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"Bundles/**/*.scss\"",
     "lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"Bundles/**/*.scss\" --fix",
+    "lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"Bundles/**/*.scss\"",
     "lint:types:run": "vue-tsc --noEmit"
   },
   "dependencies": {
