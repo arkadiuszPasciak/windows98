@@ -7,6 +7,7 @@
 		"node": "18.16.0"
 	},
 	"exports": {
+		"./lint-staged/code": "./src/configs/lint-staged/code.config.cjs",
 		"./ts-config/base": "./src/configs/ts-config/base.config.json",
 		"./ts-config/cypress": "./src/configs/ts-config/cypress.config.json",
 		"./ts-config/node": "./src/configs/ts-config/react.config.json",
@@ -22,6 +23,7 @@
 		"@windows98/eslint-config": "workspace:*"
 	},
 	"peerDependencies": {
+		"lint-staged": "15.2.2",
 		"typescript": "5.4.2"
 	}
 }
