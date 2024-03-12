@@ -11,12 +11,14 @@
     "@windows98/eslint-config": "workspace:*",
     "@windows98/linters": "workspace:*",
     "@windows98/toolkit": "workspace:*",
+    "lint-staged": "15.2.2",
     "typescript": "5.4.2",
     "vitest": "^0.31.4"
   },
   "scripts": {
     "lint:code:fix": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
     "lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
+    "lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
     "lint:types:run": "tsc"
   }
 }
