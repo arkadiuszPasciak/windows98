@@ -10,6 +10,7 @@
     "@windows98/eslint-config": "workspace:*",
     "@windows98/linters": "workspace:*",
     "i18next": "23.8.2",
+    "lint-staged": "15.2.2",
     "react-i18next": "14.0.5",
     "typescript": "5.4.2",
     "vue-i18n": "9.2.2"
@@ -17,6 +18,7 @@
   "scripts": {
     "lint:code:fix": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
     "lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
+    "lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
     "lint:types:run": "tsc"
   }
 }

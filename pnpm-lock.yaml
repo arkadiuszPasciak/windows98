@@ -153,6 +153,9 @@ importers:
       i18next:
         specifier: 23.8.2
         version: 23.8.2
+      lint-staged:
+        specifier: 15.2.2
+        version: 15.2.2
       react-i18next:
         specifier: 14.0.5
         version: 14.0.5(i18next@23.8.2)(react-dom@18.2.0)(react@18.2.0)
@@ -269,6 +272,9 @@ importers:
       '@windows98/linters':
         specifier: workspace:*
         version: link:../linters
+      lint-staged:
+        specifier: 15.2.2
+        version: 15.2.2
       typescript:
         specifier: 5.4.2
         version: 5.4.2
