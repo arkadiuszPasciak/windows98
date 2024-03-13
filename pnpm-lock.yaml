@@ -63,6 +63,9 @@ importers:
       jsdom:
         specifier: ^22.1.0
         version: 22.1.0
+      lint-staged:
+        specifier: 15.2.2
+        version: 15.2.2
       sass:
         specifier: ^1.62.1
         version: 1.69.5

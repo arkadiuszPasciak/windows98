@@ -12,6 +12,7 @@
     "app:preview": "vite preview --config ./configs/vite.config.ts",
     "lint:code:fix": "eslint -c ./@linter/eslint.config.cjs --fix --ext \".ts,.js,.vue\" .",
     "lint:code:run": "eslint -c ./@linter/eslint.config.cjs --ext \".ts,.js,.vue\" .",
+    "lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
     "lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"Bundles/**/*.scss\" --fix",
     "lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"Bundles/**/*.scss\"",
     "lint:types:run": "vue-tsc --noEmit"
@@ -35,6 +36,7 @@
     "@windows98/stylelint-config": "workspace:*",
     "cypress": "12.17.4",
     "jsdom": "^22.1.0",
+    "lint-staged": "15.2.2",
     "sass": "^1.62.1",
     "stylelint": "16.2.1",
     "typescript": "^5.0.4",
