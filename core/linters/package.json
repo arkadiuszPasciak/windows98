@@ -22,6 +22,7 @@
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs"
 	},
 	"devDependencies": {
+		"eslint": "8.57.0",
 		"@windows98/eslint-config": "workspace:*"
 	},
 	"peerDependencies": {
