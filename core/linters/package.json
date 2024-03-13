@@ -18,7 +18,8 @@
 	},
 	"scripts": {
 		"lint:code:fix": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
-		"lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\""
+		"lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
+		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs"
 	},
 	"devDependencies": {
 		"@windows98/eslint-config": "workspace:*"
