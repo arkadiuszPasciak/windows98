@@ -13,6 +13,5 @@ echo "✅ The styles are okay!"
 pnpm --filter @windows98/vitest run test:unit:run
 echo "✅ The tests are okay!"
 
-# TODO lint-staged
-# pnpm --filter @windows98/lint-staged run lint:staged  
-# echo "✅ The files are okay!"
+pnpm --filter @windows98/ci-cd run lint:staged:fix:all 
+echo "✅ The files are okay!"
