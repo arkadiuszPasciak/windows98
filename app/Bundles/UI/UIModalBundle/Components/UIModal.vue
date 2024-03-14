@@ -6,14 +6,22 @@
     :class="classes"
     @mousemove="(event) => mouseMove(event)"
   >
-    <div class="container" :style="{ width: `${width}`, height: `${height}` }">
+    <div
+      class="container"
+      :style="{ width: `${width}`, height: `${height}` }"
+    >
       <div
         class="header"
         :style="`cursor: ${cursorType}`"
         @mousedown="(event) => mouseDownEvent(event)"
         @mouseup="mouseUpEvent"
       >
-        <h3 class="title" data-test="modal-header-title">{{ title }}</h3>
+        <h3
+          class="title"
+          data-test="modal-header-title"
+        >
+          {{ title }}
+        </h3>
         <UIButton
           class="button-close"
           size="small"
@@ -27,7 +35,7 @@
               :height="7"
               src="/icons/close-modal.svg"
               :alt="t('UIModalBundle.close-window')"
-            />
+            >
           </template>
         </UIButton>
       </div>
@@ -42,83 +50,83 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue'
-  import { Nullable } from 'vitest'
-  import { useI18n } from 'vue-i18n'
-  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIModalNavigation from '@APP|Bundles/UIModalBundle/Components/UIModalNavigation.vue'
-  import { TUIModalCursor } from '@APP|Bundles/UIModalBundle/Supports/UIModal.supports'
+import { ref } from "vue"
+import { Nullable } from "vitest"
+import { useI18n } from "vue-i18n"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import UIModalNavigation from "@APP|Bundles/UIModalBundle/Components/UIModalNavigation.vue"
+import { TUIModalCursor } from "@APP|Bundles/UIModalBundle/Supports/UIModal.supports"
 
-  const props = defineProps({
-    title: {
-      type: String,
-      required: true,
-    },
-    width: {
-      type: String,
-      default: `450px`,
-    },
-    height: {
-      type: String,
-      default: `150px`,
-    },
-    resizeWindow: {
-      type: Boolean,
-      default: false,
-    },
-    moveWindow: {
-      type: Boolean,
-      default: true,
-    },
-    modalState: {
-      type: Boolean,
-      default: false,
-    },
-  })
+const props = defineProps({
+	title: {
+		type: String,
+		required: true,
+	},
+	width: {
+		type: String,
+		default: "450px",
+	},
+	height: {
+		type: String,
+		default: "150px",
+	},
+	resizeWindow: {
+		type: Boolean,
+		default: false,
+	},
+	moveWindow: {
+		type: Boolean,
+		default: true,
+	},
+	modalState: {
+		type: Boolean,
+		default: false,
+	},
+})
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  const classes = [
-    `${props.resizeWindow ? 'resize-window' : ''}`,
-    `${props.moveWindow ? 'move-window' : ''}`,
-  ] as Array<string>
+const classes = [
+	`${props.resizeWindow ? "resize-window" : ""}`,
+	`${props.moveWindow ? "move-window" : ""}`,
+] as Array<string>
 
-  const modalElement = ref<Nullable<HTMLElement>>(null)
-  const mouseState = ref<boolean>(false)
-  const positionX = ref<number>(0)
-  const positionY = ref<number>(0)
-  const cursorType = ref<TUIModalCursor>('default')
+const modalElement = ref<Nullable<HTMLElement>>(null)
+const mouseState = ref<boolean>(false)
+const positionX = ref<number>(0)
+const positionY = ref<number>(0)
+const cursorType = ref<TUIModalCursor>("default")
 
-  const mouseDownEvent = (event: MouseEvent): void => {
-    if (!modalElement.value || !props.moveWindow) {
-      return
-    }
+const mouseDownEvent = (event: MouseEvent): void => {
+	if (!modalElement.value || !props.moveWindow) {
+		return
+	}
 
-    cursorType.value = 'move'
-    mouseState.value = true
-    positionX.value = modalElement.value.offsetLeft - event.clientX
-    positionY.value = modalElement.value.offsetTop - event.clientY
-  }
+	cursorType.value = "move"
+	mouseState.value = true
+	positionX.value = modalElement.value.offsetLeft - event.clientX
+	positionY.value = modalElement.value.offsetTop - event.clientY
+}
 
-  const mouseUpEvent = (): void => {
-    if (!props.moveWindow) {
-      return
-    }
+const mouseUpEvent = (): void => {
+	if (!props.moveWindow) {
+		return
+	}
 
-    mouseState.value = false
-    cursorType.value = 'default'
-  }
+	mouseState.value = false
+	cursorType.value = "default"
+}
 
-  const mouseMove = (event: MouseEvent): void => {
-    if (!mouseState.value || !modalElement.value || !props.moveWindow) {
-      return
-    }
+const mouseMove = (event: MouseEvent): void => {
+	if (!mouseState.value || !modalElement.value || !props.moveWindow) {
+		return
+	}
 
-    modalElement.value.style.left = event.clientX + positionX.value + 'px'
-    modalElement.value.style.top = event.clientY + positionY.value + 'px'
-  }
+	modalElement.value.style.left = event.clientX + positionX.value + "px"
+	modalElement.value.style.top = event.clientY + positionY.value + "px"
+}
 
-  defineEmits(['closeModal'])
+defineEmits(["closeModal"])
 </script>
 
 <style

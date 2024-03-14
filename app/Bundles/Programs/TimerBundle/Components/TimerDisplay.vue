@@ -1,16 +1,25 @@
 <template>
   <p class="TimerDisplay">
-    <span class="time" data-test="timer-display-hours">
+    <span
+      class="time"
+      data-test="timer-display-hours"
+    >
       {{ showZeroBeforeSingleNumber(timerStore.time.hours)
       }}{{ timerStore.time.hours }}
     </span>
     <span class="colon">:</span>
-    <span class="time" data-test="timer-display-minutes">
+    <span
+      class="time"
+      data-test="timer-display-minutes"
+    >
       {{ showZeroBeforeSingleNumber(timerStore.time.minutes)
       }}{{ timerStore.time.minutes }}
     </span>
     <span class="colon">:</span>
-    <span class="time" data-test="timer-display-seconds">
+    <span
+      class="time"
+      data-test="timer-display-seconds"
+    >
       {{ showZeroBeforeSingleNumber(timerStore.time.seconds)
       }}{{ timerStore.time.seconds }}
     </span>
@@ -18,12 +27,12 @@
 </template>
 
 <script setup lang="ts">
-  import { useTimerStore } from '@APP|Bundles/TimerBundle/Stores/Timer.stores'
-  import TimerDisplay from '@APP|Bundles/TimerBundle/Services/TimerDisplay.services'
+import { useTimerStore } from "@APP|Bundles/TimerBundle/Stores/Timer.stores"
+import TimerDisplay from "@APP|Bundles/TimerBundle/Services/TimerDisplay.services"
 
-  const { showZeroBeforeSingleNumber } = new TimerDisplay()
+const { showZeroBeforeSingleNumber } = new TimerDisplay()
 
-  const timerStore = useTimerStore()
+const timerStore = useTimerStore()
 </script>
 
 <style

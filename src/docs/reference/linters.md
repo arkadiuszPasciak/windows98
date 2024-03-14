@@ -10,12 +10,6 @@ Lint, or a linter, is a tool that analyzes source code to identify potential err
 
 ESLint is a widely used JavaScript linter that identifies and reports problematic patterns in the code. It is highly configurable and supports custom rules, enabling developers to enforce project-specific coding standards and best practices.
 
-#### [Prettier](https://prettier.io/)
-
-`@/.prettierrc.js`
-
-Prettier is an opinionated code formatter that automatically formats code according to a set of predefined rules. It supports JavaScript, TypeScript, HTML, CSS, and more. By using Prettier, we ensure that our code is consistently formatted, improving readability and reducing unnecessary debates over code styling.
-
 #### [Stylelint](https://stylelint.io/)
 
 `@/.stylelintrc.js`

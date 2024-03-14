@@ -2,21 +2,22 @@
   "author": "Arkadiusz Paściak",
   "description": "Stylelint configuration for Windows 98 project",
   "devDependencies": {
-    "postcss-html": "^1.5.0",
-    "postcss-scss": "^4.0.6",
-    "stylelint": "^15.6.3",
-    "stylelint-config-recommended-scss": "^12.0.0",
-    "stylelint-config-recommended-vue": "^1.4.0"
+    "postcss-html": "1.6.0",
+    "postcss-scss": "4.0.9",
+    "stylelint-config-recommended-scss": "14.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "16.2.1"
   },
   "engines": {
     "node": "18.16.0"
   },
-  "license": "MIT",
-  "name": "@windows98/stylelint",
-  "packageManager": "pnpm@8.10.2",
-  "scripts": {
-    "lint:styles": "stylelint --config ./configs/stylelint.config.js ../../../app/Bundles/**/*.{scss,vue}",
-    "lintfix:styles": "stylelint --config ./configs/stylelint.config.js ../../../app/Bundles/**/*.{scss,vue} --fix"
+  "exports": {
+    "./css": "./src/configs/css.config.js",
+    "./scss": "./src/configs/scss.config.js"
   },
-  "version": "1.0"
+  "license": "MIT",
+  "name": "@windows98/stylelint-config",
+  "packageManager": "pnpm@8.10.2",
+  "version": "1.0.0"
 }

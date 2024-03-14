@@ -9,35 +9,42 @@
       :width="size === 'medium' ? 25 : 18"
       :height="size === 'medium' ? 25 : 18"
       :src="`/icons/applications/${iconName}.png`"
-    />
-    <UIText class="name">{{ t(name) }}</UIText>
+    >
+    <UIText class="name">
+      {{ t(name) }}
+    </UIText>
 
-    <div v-if="$slots.default" class="under-panel"><slot></slot></div>
+    <div
+      v-if="$slots.default"
+      class="under-panel"
+    >
+      <slot />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-  import { PropType } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
+import { PropType } from "vue"
+import { useI18n } from "vue-i18n"
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
 
-  defineProps({
-    size: {
-      type: String as PropType<'small' | 'medium'>,
-    },
-    name: {
-      type: String,
-      required: true,
-    },
-    iconName: {
-      type: String,
-      required: true,
-    },
-  })
+defineProps({
+	size: {
+		type: String as PropType<"small" | "medium">,
+	},
+	name: {
+		type: String,
+		required: true,
+	},
+	iconName: {
+		type: String,
+		required: true,
+	},
+})
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  defineEmits(['openProgram'])
+defineEmits(["openProgram"])
 </script>
 
 <style

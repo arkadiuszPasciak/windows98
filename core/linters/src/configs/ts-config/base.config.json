@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"allowImportingTsExtensions": true,
+		"allowJs": true,
+		"experimentalDecorators": true,
+		"isolatedModules": false,
+		"useDefineForClassFields": true,
+		"lib": [
+			"esnext",
+			"dom"
+		],
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"noEmit": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "esnext"
+	},
+	"exclude": [
+		"build",
+		"dist",
+		"node_modules"
+	]
+}

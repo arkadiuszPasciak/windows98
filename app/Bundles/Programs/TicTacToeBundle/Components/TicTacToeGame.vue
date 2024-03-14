@@ -1,5 +1,8 @@
 <template>
-  <div v-if="!ticTacToeStore.form.status" class="TicTacToeGame">
+  <div
+    v-if="!ticTacToeStore.form.status"
+    class="TicTacToeGame"
+  >
     <TicTacToePlayers
       :user-name="ticTacToeStore.form.data.userName"
       :user-sign="ticTacToeStore.form.data.playerType"
@@ -10,11 +13,11 @@
 </template>
 
 <script setup lang="ts">
-  import TicTacToeBoard from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeBoard.vue'
-  import TicTacToePlayers from '@APP|Bundles/TicTacToeBundle/Components/TicTacToePlayers.vue'
-  import { useTicTacToeStore } from '@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
+import TicTacToeBoard from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeBoard.vue"
+import TicTacToePlayers from "@APP|Bundles/TicTacToeBundle/Components/TicTacToePlayers.vue"
+import { useTicTacToeStore } from "@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores"
 
-  const ticTacToeStore = useTicTacToeStore()
+const ticTacToeStore = useTicTacToeStore()
 </script>
 
 <style

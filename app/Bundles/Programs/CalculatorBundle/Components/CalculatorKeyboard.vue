@@ -1,6 +1,9 @@
 <template>
   <div class="CalculatorKeyboard">
-    <template v-for="button in MCalculatorButtons" :key="button.testAttribute">
+    <template
+      v-for="button in MCalculatorButtons"
+      :key="button.testAttribute"
+    >
       <UIButton
         v-if="button.type === ECalculatorButton.NUMBER"
         :class="button.color"
@@ -45,32 +48,32 @@
 </template>
 
 <script setup lang="ts">
-  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
-  import { useCalculatorStore } from '@APP|Bundles/CalculatorBundle/Stores/Calculator.stores'
-  import {
-    ECalculatorButton,
-    TCalculatorNumber,
-    TCalculatorSign,
-  } from '@APP|Bundles/CalculatorBundle/Supports/Calculator.supports'
-  import { MCalculatorButtons } from '@APP|Bundles/CalculatorBundle/Mocks/Calculator.mocks'
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import { useCalculatorStore } from "@APP|Bundles/CalculatorBundle/Stores/Calculator.stores"
+import {
+	ECalculatorButton,
+	TCalculatorNumber,
+	TCalculatorSign,
+} from "@APP|Bundles/CalculatorBundle/Supports/Calculator.supports"
+import { MCalculatorButtons } from "@APP|Bundles/CalculatorBundle/Mocks/Calculator.mocks"
 
-  const calculatorStore = useCalculatorStore()
+const calculatorStore = useCalculatorStore()
 
-  const addDot = (): void => {
-    calculatorStore.addDot()
-  }
+const addDot = (): void => {
+	calculatorStore.addDot()
+}
 
-  const addNumber = (number: TCalculatorNumber): void => {
-    calculatorStore.addNumber(number)
-  }
+const addNumber = (number: TCalculatorNumber): void => {
+	calculatorStore.addNumber(number)
+}
 
-  const addSign = (sign: TCalculatorSign): void => {
-    calculatorStore.addSign(sign)
-  }
+const addSign = (sign: TCalculatorSign): void => {
+	calculatorStore.addSign(sign)
+}
 
-  const summResult = (): void => {
-    calculatorStore.summResult()
-  }
+const summResult = (): void => {
+	calculatorStore.summResult()
+}
 </script>
 
 <style

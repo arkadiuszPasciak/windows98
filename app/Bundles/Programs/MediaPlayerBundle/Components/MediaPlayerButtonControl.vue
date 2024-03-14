@@ -8,27 +8,27 @@
 </template>
 
 <script setup lang="ts">
-  import { PropType } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
+import { PropType } from "vue"
+import { useI18n } from "vue-i18n"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
 
-  const props = defineProps({
-    type: {
-      type: String as PropType<'play' | 'pauza' | 'stop' | 'mute'>,
-      required: true,
-    },
-    active: {
-      type: Boolean,
-      required: true,
-    },
-  })
+const props = defineProps({
+	type: {
+		type: String as PropType<"play" | "pauza" | "stop" | "mute">,
+		required: true,
+	},
+	active: {
+		type: Boolean,
+		required: true,
+	},
+})
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  const classes = [
-    `type-${props.type}`,
-    `${props.active ? 'active' : ''}`,
-  ] as Array<string>
+const classes = [
+	`type-${props.type}`,
+	`${props.active ? "active" : ""}`,
+] as Array<string>
 </script>
 
 <style

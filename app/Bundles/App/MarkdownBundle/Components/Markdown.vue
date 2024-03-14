@@ -1,5 +1,7 @@
 <template>
-  <div class="Markdown"><slot /></div>
+  <div class="Markdown">
+    <slot />
+  </div>
 </template>
 
 <script setup lang="ts"></script>

@@ -1,11 +1,11 @@
 packages:
   - app
+  - core/ci-cd
   - core/design-system
   - core/internationalization/*
+  - core/linters
   - core/linters/*
   - core/tests/*
   - core/toolkit
   - micro-apps
-  - mother-frontend
-  - mother-frontend/micro-apps
-  - mother-frontend/micro-services
+  - mother-frontend/*

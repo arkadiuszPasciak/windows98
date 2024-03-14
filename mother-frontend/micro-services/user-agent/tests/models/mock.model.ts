@@ -1,7 +1,7 @@
-import type { MUserAgentMocks } from '../mocks/user-agent.mock'
-import type { TUserAgentBrowsers } from '../../src/domain/models/browser.model'
-import type { TUserAgentDevices } from '../../src/domain/models/device.model'
-import type { TUserAgentAllPlatforms } from '../../src/domain/models/platform.model'
+import type { MUserAgentMocks } from "../mocks/user-agent.mock"
+import type { TUserAgentBrowsers } from "../../src/domain/models/browser.model"
+import type { TUserAgentDevices } from "../../src/domain/models/device.model"
+import type { TUserAgentAllPlatforms } from "../../src/domain/models/platform.model"
 
 export interface IUserAgentMocks {
   chromeMacOSXDesktop: string

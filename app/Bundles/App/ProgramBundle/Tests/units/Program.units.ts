@@ -1,104 +1,104 @@
-import { expect, it, describe } from 'vitest'
-import { setActivePinia, createPinia } from 'pinia'
-import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
+import { expect, it, describe } from "vitest"
+import { setActivePinia, createPinia } from "pinia"
+import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
 
 setActivePinia(createPinia())
 const store = useProgramStore()
 
-describe('[ProgramBundle]<Stores>(useProgramStore)', () => {
-  it('turns on and off Calculator', () => {
-    expect(store.modalCalculator).equal(false)
+describe("[ProgramBundle]<Stores>(useProgramStore)", () => {
+	it("turns on and off Calculator", () => {
+		expect(store.modalCalculator).equal(false)
 
-    store.updateCalculatorModal(true)
+		store.updateCalculatorModal(true)
 
-    expect(store.modalCalculator).equal(true)
+		expect(store.modalCalculator).equal(true)
 
-    store.updateCalculatorModal(false)
+		store.updateCalculatorModal(false)
 
-    expect(store.modalCalculator).equal(false)
-  })
+		expect(store.modalCalculator).equal(false)
+	})
 
-  it('turns on and off Media Player', () => {
-    expect(store.modalMediaPlayer).equal(false)
+	it("turns on and off Media Player", () => {
+		expect(store.modalMediaPlayer).equal(false)
 
-    store.updateMediaPlayerModal(true)
+		store.updateMediaPlayerModal(true)
 
-    expect(store.modalMediaPlayer).equal(true)
+		expect(store.modalMediaPlayer).equal(true)
 
-    store.updateMediaPlayerModal(false)
+		store.updateMediaPlayerModal(false)
 
-    expect(store.modalMediaPlayer).equal(false)
-  })
+		expect(store.modalMediaPlayer).equal(false)
+	})
 
-  it('turns on and off Notepad', () => {
-    expect(store.modalNotepad).equal(false)
+	it("turns on and off Notepad", () => {
+		expect(store.modalNotepad).equal(false)
 
-    store.updateNotepadModal(true)
+		store.updateNotepadModal(true)
 
-    expect(store.modalNotepad).equal(true)
+		expect(store.modalNotepad).equal(true)
 
-    store.updateNotepadModal(false)
+		store.updateNotepadModal(false)
 
-    expect(store.modalNotepad).equal(false)
-  })
+		expect(store.modalNotepad).equal(false)
+	})
 
-  it('turns on and off Run', () => {
-    expect(store.modalRun).equal(false)
+	it("turns on and off Run", () => {
+		expect(store.modalRun).equal(false)
 
-    store.updateRunModal(true)
+		store.updateRunModal(true)
 
-    expect(store.modalRun).equal(true)
+		expect(store.modalRun).equal(true)
 
-    store.updateRunModal(false)
+		store.updateRunModal(false)
 
-    expect(store.modalRun).equal(false)
-  })
+		expect(store.modalRun).equal(false)
+	})
 
-  it('turns on and off Settings', () => {
-    expect(store.modalSettings).equal(false)
+	it("turns on and off Settings", () => {
+		expect(store.modalSettings).equal(false)
 
-    store.updateSettingsModal(true)
+		store.updateSettingsModal(true)
 
-    expect(store.modalSettings).equal(true)
+		expect(store.modalSettings).equal(true)
 
-    store.updateSettingsModal(false)
+		store.updateSettingsModal(false)
 
-    expect(store.modalSettings).equal(false)
-  })
+		expect(store.modalSettings).equal(false)
+	})
 
-  it('turns on and off ShutDown', () => {
-    expect(store.modalShutDown).equal(false)
+	it("turns on and off ShutDown", () => {
+		expect(store.modalShutDown).equal(false)
 
-    store.updateShutDownModal(true)
+		store.updateShutDownModal(true)
 
-    expect(store.modalShutDown).equal(true)
+		expect(store.modalShutDown).equal(true)
 
-    store.updateShutDownModal(false)
+		store.updateShutDownModal(false)
 
-    expect(store.modalShutDown).equal(false)
-  })
+		expect(store.modalShutDown).equal(false)
+	})
 
-  it('turns on and off TicTacToe', () => {
-    expect(store.modalTicTacToe).equal(false)
+	it("turns on and off TicTacToe", () => {
+		expect(store.modalTicTacToe).equal(false)
 
-    store.updateTicTacToeModal(true)
+		store.updateTicTacToeModal(true)
 
-    expect(store.modalTicTacToe).equal(true)
+		expect(store.modalTicTacToe).equal(true)
 
-    store.updateTicTacToeModal(false)
+		store.updateTicTacToeModal(false)
 
-    expect(store.modalTicTacToe).equal(false)
-  })
+		expect(store.modalTicTacToe).equal(false)
+	})
 
-  it('turns on and off Timer', () => {
-    expect(store.modalTimer).equal(false)
+	it("turns on and off Timer", () => {
+		expect(store.modalTimer).equal(false)
 
-    store.updateTimerModal(true)
+		store.updateTimerModal(true)
 
-    expect(store.modalTimer).equal(true)
+		expect(store.modalTimer).equal(true)
 
-    store.updateTimerModal(false)
+		store.updateTimerModal(false)
 
-    expect(store.modalTimer).equal(false)
-  })
+		expect(store.modalTimer).equal(false)
+	})
 })

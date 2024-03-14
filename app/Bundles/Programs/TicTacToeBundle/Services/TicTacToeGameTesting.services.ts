@@ -1,73 +1,73 @@
 export default class TicTacToeGameTesting {
-  public clickAutomaticallyToEndGame(): void {
-    let index = 1 as number
-    let isBlock = false as boolean
+	public clickAutomaticallyToEndGame(): void {
+		let index = 1 as number
+		let isBlock = false as boolean
 
-    while (index <= 9 && !isBlock) {
-      index++
-      const isBoardBlock = this.isBoardBlocked()
+		while (index <= 9 && !isBlock) {
+			index++
+			const isBoardBlock = this.isBoardBlocked()
 
-      if (isBoardBlock) {
-        isBlock = true
-        return
-      } else {
-        this.clickOnAvailableField()
-      }
-    }
-  }
+			if (isBoardBlock) {
+				isBlock = true
+				return
+			} else {
+				this.clickOnAvailableField()
+			}
+		}
+	}
 
-  private clickOnAvailableField(): void {
-    cy.document().then((document: Document) => {
-      const availableFields = [] as Array<number>
-      const currentFields = document.querySelectorAll(
-        '.UIButton',
-      ) as NodeListOf<HTMLButtonElement>
+	private clickOnAvailableField(): void {
+		cy.document().then((document: Document) => {
+			const availableFields = [] as Array<number>
+			const currentFields = document.querySelectorAll(
+				".UIButton",
+			) as NodeListOf<HTMLButtonElement>
 
-      if (!currentFields || !currentFields.length) {
-        return
-      }
+			if (!currentFields || !currentFields.length) {
+				return
+			}
 
-      const gameBoard = this.getGameBoardElement(document)
+			const gameBoard = this.getGameBoardElement(document)
 
-      if (gameBoard) {
-        return
-      }
+			if (gameBoard) {
+				return
+			}
 
-      for (let index = 1; index <= 9; index++) {
-        if (currentFields[index].textContent === '') {
-          availableFields.push(index)
-        }
-      }
+			for (let index = 1; index <= 9; index++) {
+				if (currentFields[index].textContent === "") {
+					availableFields.push(index)
+				}
+			}
 
-      const randomNumber = Math.floor(
-        Math.random() * availableFields.length,
-      ) as number
+			const randomNumber = Math.floor(
+				Math.random() * availableFields.length,
+			) as number
 
-      cy.get(
-        `.TicTacToeBoard > .UIButton[data-field="${availableFields[randomNumber]}"]`,
-      ).click()
-    })
-  }
+			cy.get(
+				`.TicTacToeBoard > .UIButton[data-field="${availableFields[randomNumber]}"]`,
+			).click()
+		})
+	}
 
-  private getGameBoardElement(document: Document): boolean {
-    const gameBoard = document.querySelector(
-      'div.TicTacToeBoard.is-blocked',
-    ) as Element
+	private getGameBoardElement(document: Document): boolean {
+		const gameBoard = document.querySelector(
+			"div.TicTacToeBoard.is-blocked",
+		) as Element
 
-    return gameBoard ? true : false
-  }
+		return gameBoard ? true : false
+	}
 
-  private isBoardBlocked(): boolean {
-    let isBlock = false
+	private isBoardBlocked(): boolean {
+		let isBlock = false
 
-    cy.document().then((document: Document) => {
-      const gameBoard = this.getGameBoardElement(document)
+		cy.document().then((document: Document) => {
+			const gameBoard = this.getGameBoardElement(document)
 
-      if (gameBoard) {
-        isBlock = true
-      }
-    })
+			if (gameBoard) {
+				isBlock = true
+			}
+		})
 
-    return isBlock
-  }
+		return isBlock
+	}
 }

@@ -1,5 +1,8 @@
 <template>
-  <div class="UITextarea" :class="classes">
+  <div
+    class="UITextarea"
+    :class="classes"
+  >
     <label
       v-if="labelName"
       class="label"
@@ -23,45 +26,45 @@
 </template>
 
 <script setup lang="ts">
-  import { PropType } from 'vue'
+import { PropType } from "vue"
 
-  const props = defineProps({
-    type: {
-      type: String as PropType<'basic' | 'notepad'>,
-      default: 'basic',
-    },
-    id: {
-      type: String,
-      required: true,
-    },
-    disabled: {
-      type: Boolean,
-      default: false,
-    },
-    readonly: {
-      type: Boolean,
-      default: false,
-    },
-    modelValue: {
-      type: String,
-      required: true,
-    },
-    labelName: {
-      type: String,
-      required: true,
-    },
-    labelPosition: {
-      type: String as PropType<'top' | 'left'>,
-      default: 'top',
-    },
-  })
+const props = defineProps({
+	type: {
+		type: String as PropType<"basic" | "notepad">,
+		default: "basic",
+	},
+	id: {
+		type: String,
+		required: true,
+	},
+	disabled: {
+		type: Boolean,
+		default: false,
+	},
+	readonly: {
+		type: Boolean,
+		default: false,
+	},
+	modelValue: {
+		type: String,
+		required: true,
+	},
+	labelName: {
+		type: String,
+		required: true,
+	},
+	labelPosition: {
+		type: String as PropType<"top" | "left">,
+		default: "top",
+	},
+})
 
-  defineEmits(['update:modelValue'])
+defineEmits(["update:modelValue"])
 
-  const classes = [
-    `label-position-${props.labelPosition}`,
-    `${props.type === 'notepad' ? 'type-notepad' : ''}`,
-  ] as Array<string>
+const classes = [
+	`label-position-${props.labelPosition}`,
+	`${props.type === "notepad" ? "type-notepad" : ""}`,
+] as Array<string>
 </script>
 
 <style

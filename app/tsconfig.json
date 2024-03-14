@@ -1,0 +1,35 @@
+{
+	"extends": [
+		"@windows98/linters/ts-config/cypress",
+		"@windows98/linters/ts-config/vue",
+		"@windows98/linters/ts-config/vite",
+	],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": [
+				"*"
+			],
+			"@APP/*": [
+				"app/*"
+			],
+			"@APP|Bundles/*": [
+				"Bundles/App/*",
+				"Bundles/Programs/*",
+				"Bundles/Settings/*",
+				"Bundles/UI/*",
+				"Bundles/Window/*"
+			],
+			"@APP|Views/*": [
+				"Views/*"
+			],
+			"vue-i18n": [
+				"./node_modules/vue-i18n/dist/vue-i18n.d.ts"
+			]
+		}
+	},
+	"include": [
+		"./**/*",
+		"./configs/cypress.config.d.ts"
+	]
+}

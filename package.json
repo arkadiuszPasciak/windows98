@@ -15,7 +15,6 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@types/node": "^20.9.0",
     "husky": "^8.0.3"
   }
 }

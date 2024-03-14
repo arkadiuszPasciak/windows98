@@ -1,5 +1,5 @@
-import type { Maybe } from '@windows98/toolkit/src/types'
-import type { ICalendarDays } from '../models/days.model'
+import type { Maybe } from "@windows98/toolkit/src/types"
+import type { ICalendarDays } from "../models/days.model"
 
 export interface CalendarServiceContract {
   calendar: Maybe<Array<ICalendarDays>>

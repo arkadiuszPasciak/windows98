@@ -41,7 +41,9 @@ jobs:
         id: cache-cypress-binary
         uses: actions/cache@v3
         with:
-          path: ~/.cache/Cypress
+          path: |
+            ~/.cache/Cypress
+            /home/runner/.cache/Cypress
           key: cypress-binary-${{ hashFiles('**/pnpm-lock.json') }}
           restore-keys: cypress-binary-
 
@@ -83,7 +85,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Check types
-        run: pnpm --filter @windows98/tsc run lint:types
+        run: pnpm --filter @windows98/ci-cd run lint:types:run:all
 
   eslint-lint:
     runs-on: ubuntu-latest
@@ -116,40 +118,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with ESLint
-        run: pnpm --filter @windows98/eslint run lintfix:js
-
-  prettier-lint:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.16.0]
-    needs: type-check
-    steps:
-      - name: Checkout Commit
-        uses: actions/checkout@v3.5.0
-
-      - name: Install Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Restore pnpm dependencies
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.pnpm-store
-            node_modules
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-
-      - name: Install PNPM
-        run: npm install -g pnpm
-
-      - name: Install Dependencies
-        run: pnpm install
-        if: steps.cache-dependencies.outputs.cache-hit != 'true'
-
-      - name: Lint with Prettier
-        run: pnpm --filter @windows98/prettier run lintfix:prettier
+        run: pnpm --filter @windows98/ci-cd run lint:code:run:all
 
   stylelint-lint:
     runs-on: ubuntu-latest
@@ -182,14 +151,14 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with Stylelint
-        run: pnpm --filter @windows98/stylelint run lint:styles
+        run: pnpm --filter @windows98/ci-cd run lint:styles:run:all
 
   vitest-tests:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [18.16.0]
-    needs: [eslint-lint, prettier-lint, stylelint-lint]
+    needs: [eslint-lint, stylelint-lint]
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3.5.0
@@ -277,7 +246,9 @@ jobs:
         id: cache-cypress-binary
         uses: actions/cache@v3
         with:
-          path: ~/.cache/Cypress
+          path: |
+            ~/.cache/Cypress
+            /home/runner/.cache/Cypress
           key: cypress-binary-${{ hashFiles('**/pnpm-lock.json') }}
           restore-keys: cypress-binary-
 

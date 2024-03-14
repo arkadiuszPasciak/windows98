@@ -1,9 +1,9 @@
 export enum ETimerPresetsRadioCheck {
-  THREE_MINUTES = '3 min',
-  FIVE_MINUTES = '5 min',
-  TEN_MINUTES = '10 min',
-  FIFTEEN_MINUTES = '15 min',
-  CUSTOM_MINUTES = 'custom',
+  THREE_MINUTES = "3 min",
+  FIVE_MINUTES = "5 min",
+  TEN_MINUTES = "10 min",
+  FIFTEEN_MINUTES = "15 min",
+  CUSTOM_MINUTES = "custom",
 }
 
 export type TTimerPresetsRadioCheck = ETimerPresetsRadioCheck
@@ -15,4 +15,4 @@ export interface ITimerPresets {
   text: string
 }
 
-export const timerPresetsRadioInputName = 'timer-presets'
+export const timerPresetsRadioInputName = "timer-presets"

@@ -1,30 +1,35 @@
 <template>
   <div class="Clock">
-    <p v-if="time" class="time">{{ time }}</p>
+    <p
+      v-if="time"
+      class="time"
+    >
+      {{ time }}
+    </p>
   </div>
 </template>
 
 <script setup lang="ts">
-  import { ref, onBeforeUnmount } from 'vue'
-  import { Nullable } from 'vitest'
-  import { useClockStore } from '@APP|Bundles/ClockBundle/Stores/Clock.stores'
+import { ref, onBeforeUnmount } from "vue"
+import { Nullable } from "vitest"
+import { useClockStore } from "@APP|Bundles/ClockBundle/Stores/Clock.stores"
 
-  const store = useClockStore()
-  const time = ref<Nullable<string>>(store.$state.time)
+const store = useClockStore()
+const time = ref<Nullable<string>>(store.$state.time)
 
-  const updateTime = (): void => {
-    store.updateTime()
+const updateTime = (): void => {
+	store.updateTime()
 
-    if (time.value !== store.$state.time) {
-      time.value = store.$state.time
-    }
-  }
+	if (time.value !== store.$state.time) {
+		time.value = store.$state.time
+	}
+}
 
-  const interval = setInterval(updateTime, 1000)
+const interval = setInterval(updateTime, 1000)
 
-  onBeforeUnmount(() => {
-    clearInterval(interval)
-  })
+onBeforeUnmount(() => {
+	clearInterval(interval)
+})
 </script>
 
 <style

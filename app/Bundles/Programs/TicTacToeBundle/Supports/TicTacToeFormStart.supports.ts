@@ -1,34 +1,34 @@
 export enum ETicTacToeInputNames {
-  CHOOSE_DIMENSION = 'tic-tac-toc-choose-dimension',
-  CHOOSE_PLAYER = 'tic-tac-toc-choose-player',
-  ENTER_YOUR_NAME = 'tic-tac-toe-enter-your-name',
+  CHOOSE_DIMENSION = "tic-tac-toc-choose-dimension",
+  CHOOSE_PLAYER = "tic-tac-toc-choose-player",
+  ENTER_YOUR_NAME = "tic-tac-toe-enter-your-name",
 }
 
 export enum ETicTacToeRadioDimension {
-  THREE_X_THREE = '3x3',
-  SIX_X_SIX = '6x6',
-  NINE_X_NINE = '9x9',
+  THREE_X_THREE = "3x3",
+  SIX_X_SIX = "6x6",
+  NINE_X_NINE = "9x9",
 }
 
 export enum ETicTacToeRadioPlayer {
-  PLAYER_X = 'player-x',
-  PLAYER_O = 'player-o',
+  PLAYER_X = "player-x",
+  PLAYER_O = "player-o",
 }
 
 export enum ETicTacToeValidationError {
-  DIMENSION_TYPE_UNDEFINED = 'error.dimension-type.undefined',
-  USER_NAME_EMPTY = 'error.user-name.empty',
-  USER_NAME_TOO_LONG = 'error.user-name.too-long',
-  PLAYER_TYPE_UNDEFINED = 'error.player-type.undefined',
+  DIMENSION_TYPE_UNDEFINED = "error.dimension-type.undefined",
+  USER_NAME_EMPTY = "error.user-name.empty",
+  USER_NAME_TOO_LONG = "error.user-name.too-long",
+  PLAYER_TYPE_UNDEFINED = "error.player-type.undefined",
 }
 
 export enum ETicTacToeValidateStatusType {
-  SUCCESS = 'SUCCESS',
-  ERROR = 'ERROR',
+  SUCCESS = "SUCCESS",
+  ERROR = "ERROR",
 }
 
 export enum ETicTacToeValidationSuccess {
-  FIELDS_ARE_OKAY = 'success.fields-are-okay',
+  FIELDS_ARE_OKAY = "success.fields-are-okay",
 }
 
 export interface ITicTacToeValidateFields {

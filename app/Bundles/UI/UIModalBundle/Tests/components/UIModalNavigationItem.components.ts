@@ -1,16 +1,16 @@
-import UIModalNavigationItem from '@APP|Bundles/UIModalBundle/Components/UIModalNavigationItem.vue'
+import UIModalNavigationItem from "@APP|Bundles/UIModalBundle/Components/UIModalNavigationItem.vue"
 
-describe('[UIModalBundle]<Components>(UIModalNavigationItem)', async () => {
-  it('renders correctly component', () => {
-    cy.mount(UIModalNavigationItem, {
-      slots: {
-        default: 'Menu',
-      },
-    })
+describe("[UIModalBundle]<Components>(UIModalNavigationItem)", async () => {
+	it("renders correctly component", () => {
+		cy.mount(UIModalNavigationItem, {
+			slots: {
+				default: "Menu",
+			},
+		})
 
-    const button = cy.get('button.UIModalNavigationItem')
+		const button = cy.get("button.UIModalNavigationItem")
 
-    button.contains('Menu')
-    button.should('have.attr', 'type', 'button')
-  })
+		button.contains("Menu")
+		button.should("have.attr", "type", "button")
+	})
 })

@@ -6,8 +6,20 @@
   "engines": {
     "node": "18.16.0"
   },
+  "type": "module",
   "devDependencies": {
+    "eslint": "8.57.0",
+    "@windows98/eslint-config": "workspace:*",
+    "@windows98/linters": "workspace:*",
     "@windows98/toolkit": "workspace:*",
-    "vitest": "^0.31.4"
+    "lint-staged": "15.2.2",
+    "typescript": "5.4.2",
+    "vitest": "1.3.1"
+  },
+  "scripts": {
+    "lint:code:fix": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
+    "lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
+    "lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
+    "lint:types:run": "tsc"
   }
 }

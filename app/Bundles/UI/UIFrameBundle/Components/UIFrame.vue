@@ -1,5 +1,8 @@
 <template>
-  <div class="UIFrame" :data-test="`ui-frame-${title?.toLowerCase()}`">
+  <div
+    class="UIFrame"
+    :data-test="`ui-frame-${title?.toLowerCase()}`"
+  >
     <UIText
       v-if="title"
       class="title"
@@ -12,14 +15,14 @@
 </template>
 
 <script setup lang="ts">
-  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
 
-  defineProps({
-    title: {
-      type: String,
-      required: false,
-    },
-  })
+defineProps({
+	title: {
+		type: String,
+		required: false,
+	},
+})
 </script>
 
 <style

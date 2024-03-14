@@ -1,6 +1,11 @@
 <template>
   <div class="MediaPlayerVolumeControl">
-    <progress id="progress-bar" class="progress" value="0" min="0"></progress>
+    <progress
+      id="progress-bar"
+      class="progress"
+      value="0"
+      min="0"
+    />
     <input
       id="volume"
       class="input"
@@ -10,7 +15,7 @@
       max="1"
       min="0"
       step="0.01"
-    />
+    >
   </div>
 </template>
 

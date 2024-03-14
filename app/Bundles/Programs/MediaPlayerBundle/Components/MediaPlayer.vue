@@ -17,22 +17,22 @@
 </template>
 
 <script setup lang="ts">
-  import { useI18n } from 'vue-i18n'
-  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
-  import MediaPlayerControls from '@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerControls.vue'
-  import MediaPlayerInformation from '@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerInformation.vue'
-  import MediaPlayerVideo from '@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerVideo.vue'
-  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
-  import { useMediaPlayerStore } from '@APP|Bundles/MediaPlayerBundle/Stores/MediaPlayer.stores'
+import { useI18n } from "vue-i18n"
+import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
+import MediaPlayerControls from "@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerControls.vue"
+import MediaPlayerInformation from "@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerInformation.vue"
+import MediaPlayerVideo from "@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerVideo.vue"
+import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
+import { useMediaPlayerStore } from "@APP|Bundles/MediaPlayerBundle/Stores/MediaPlayer.stores"
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  const programStore = useProgramStore()
-  const mediaPlayerStore = useMediaPlayerStore()
+const programStore = useProgramStore()
+const mediaPlayerStore = useMediaPlayerStore()
 
-  const closeModal = (): void => {
-    programStore.updateMediaPlayerModal(false)
-  }
+const closeModal = (): void => {
+	programStore.updateMediaPlayerModal(false)
+}
 </script>
 
 <style

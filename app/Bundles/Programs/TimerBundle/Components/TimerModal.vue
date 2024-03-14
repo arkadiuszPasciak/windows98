@@ -12,7 +12,10 @@
     <div class="content">
       <UIText>{{ t('TimerBundle.description-modal') }}</UIText>
 
-      <UIButton data-test="timer-modal-button" @click="closeModal">
+      <UIButton
+        data-test="timer-modal-button"
+        @click="closeModal"
+      >
         {{ t('TimerBundle.close') }}
       </UIButton>
     </div>
@@ -20,19 +23,19 @@
 </template>
 
 <script setup lang="ts">
-  import { useI18n } from 'vue-i18n'
-  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
-  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
-  import { useTimerStore } from '@APP|Bundles/TimerBundle/Stores/Timer.stores'
+import { useI18n } from "vue-i18n"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
+import { useTimerStore } from "@APP|Bundles/TimerBundle/Stores/Timer.stores"
 
-  const timerStore = useTimerStore()
+const timerStore = useTimerStore()
 
-  const closeModal = (): void => {
-    timerStore.updateModalMessage(false)
-  }
+const closeModal = (): void => {
+	timerStore.updateModalMessage(false)
+}
 
-  const { t } = useI18n()
+const { t } = useI18n()
 </script>
 
 <style

@@ -1,22 +1,26 @@
 <template>
   <div class="MediaPlayerTime">
-    <p class="current-time">{{ currentTime }}</p>
+    <p class="current-time">
+      {{ currentTime }}
+    </p>
     <span class="slash">/</span>
-    <p class="max-time">{{ maxTime }}</p>
+    <p class="max-time">
+      {{ maxTime }}
+    </p>
   </div>
 </template>
 
 <script setup lang="ts">
-  defineProps({
-    currentTime: {
-      type: String,
-      required: true,
-    },
-    maxTime: {
-      type: String,
-      required: true,
-    },
-  })
+defineProps({
+	currentTime: {
+		type: String,
+		required: true,
+	},
+	maxTime: {
+		type: String,
+		required: true,
+	},
+})
 </script>
 
 <style

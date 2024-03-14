@@ -29,21 +29,21 @@
 </template>
 
 <script setup lang="ts">
-  import { useI18n } from 'vue-i18n'
-  import UIButton from '@APP|Bundles/UIButtonBundle/Components/UIButton.vue'
-  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
-  import UIText from '@APP|Bundles/UITextBundle/Components/UIText.vue'
-  import { TicTacToeScore } from '@APP|Bundles/TicTacToeBundle/Services/TicTacToeScore.services'
-  import { useTicTacToeStore } from '@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
+import { useI18n } from "vue-i18n"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
+import { TicTacToeScore } from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeScore.services"
+import { useTicTacToeStore } from "@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores"
 
-  const ticTacToeStore = useTicTacToeStore()
-  const { t } = useI18n()
+const ticTacToeStore = useTicTacToeStore()
+const { t } = useI18n()
 
-  const { getDescriptionByScoreResult } = new TicTacToeScore()
+const { getDescriptionByScoreResult } = new TicTacToeScore()
 
-  const closeModal = () => {
-    ticTacToeStore.restartGame()
-  }
+const closeModal = () => {
+	ticTacToeStore.restartGame()
+}
 </script>
 
 <style

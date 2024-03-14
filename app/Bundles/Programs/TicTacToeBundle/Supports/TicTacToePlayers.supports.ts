@@ -1,16 +1,16 @@
 export enum ETicTacToePlayerColor {
-  BLUE = '#0000ff',
-  RED = '#fe0000',
+  BLUE = "#0000ff",
+  RED = "#fe0000",
 }
 
 export enum ETicTacToePlayerType {
-  COMPUTER = 'computer',
-  USER = 'user',
+  COMPUTER = "computer",
+  USER = "user",
 }
 
 export enum ETicTacToePlayerSign {
-  PLAYER_O = 'o',
-  PLAYER_X = 'x',
+  PLAYER_O = "o",
+  PLAYER_X = "x",
 }
 
 export type TTicTacToePlayerColor =

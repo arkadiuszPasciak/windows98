@@ -1,0 +1,32 @@
+{
+	"name": "@windows98/linters",
+	"version": "1.0.0",
+	"description": "Linters",
+	"author": "Arkadiusz Paściak",
+	"engines": {
+		"node": "18.16.0"
+	},
+	"exports": {
+		"./lint-staged/code": "./src/configs/lint-staged/code.config.cjs",
+		"./lint-staged/styles": "./src/configs/lint-staged/styles.config.cjs",
+		"./ts-config/base": "./src/configs/ts-config/base.config.json",
+		"./ts-config/cypress": "./src/configs/ts-config/cypress.config.json",
+		"./ts-config/node": "./src/configs/ts-config/react.config.json",
+		"./ts-config/react": "./src/configs/ts-config/react.config.json",
+		"./ts-config/vite": "./src/configs/ts-config/vite.config.json",
+		"./ts-config/vue": "./src/configs/ts-config/vue.config.json"
+	},
+	"scripts": {
+		"lint:code:fix": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
+		"lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
+		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs"
+	},
+	"devDependencies": {
+		"eslint": "8.57.0",
+		"@windows98/eslint-config": "workspace:*"
+	},
+	"peerDependencies": {
+		"lint-staged": "15.2.2",
+		"typescript": "5.4.2"
+	}
+}

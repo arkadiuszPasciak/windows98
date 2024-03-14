@@ -17,23 +17,23 @@
 </template>
 
 <script setup lang="ts">
-  import { useI18n } from 'vue-i18n'
-  import UIModal from '@APP|Bundles/UIModalBundle/Components/UIModal.vue'
-  import TicTacToeGame from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeGame.vue'
-  import TicTacToeScore from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeScore.vue'
-  import TicTacToeFormStart from '@APP|Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue'
-  import { useProgramStore } from '@APP|Bundles/ProgramBundle/Stores/Program.stores'
-  import { useTicTacToeStore } from '@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores'
+import { useI18n } from "vue-i18n"
+import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
+import TicTacToeGame from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeGame.vue"
+import TicTacToeScore from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeScore.vue"
+import TicTacToeFormStart from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue"
+import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
+import { useTicTacToeStore } from "@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores"
 
-  const { t } = useI18n()
-  const programStore = useProgramStore()
-  const ticTacToeStore = useTicTacToeStore()
+const { t } = useI18n()
+const programStore = useProgramStore()
+const ticTacToeStore = useTicTacToeStore()
 
-  const closeModal = (): void => {
-    ticTacToeStore.restartGame()
+const closeModal = (): void => {
+	ticTacToeStore.restartGame()
 
-    programStore.updateTicTacToeModal(false)
-  }
+	programStore.updateTicTacToeModal(false)
+}
 </script>
 
 <style

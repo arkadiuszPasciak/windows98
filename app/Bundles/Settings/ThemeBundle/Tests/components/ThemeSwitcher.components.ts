@@ -1,49 +1,49 @@
-import ThemeSwitcher from '@APP|Bundles/ThemeBundle/Components/ThemeSwitcher.vue'
-import { EStorageNames } from '@APP|Bundles/StorageBundle/Supports/Storage.supports'
-import { EThemes } from '@APP|Bundles/ThemeBundle/Supports/Theme.supports'
+import ThemeSwitcher from "@APP|Bundles/ThemeBundle/Components/ThemeSwitcher.vue"
+import { EStorageNames } from "@APP|Bundles/StorageBundle/Supports/Storage.supports"
+import { EThemes } from "@APP|Bundles/ThemeBundle/Supports/Theme.supports"
 
-describe('[ThemeBundle]<Components>(ThemeSwitcher)', () => {
-  beforeEach(() => {
-    cy.viewport(80, 30)
+describe("[ThemeBundle]<Components>(ThemeSwitcher)", () => {
+	beforeEach(() => {
+		cy.viewport(80, 30)
 
-    cy.mount(ThemeSwitcher)
-  })
+		cy.mount(ThemeSwitcher)
+	})
 
-  it('should have element, class and change theme', () => {
-    cy.get('div.UISelect.ThemeSwitcher')
+	it("should have element, class and change theme", () => {
+		cy.get("div.UISelect.ThemeSwitcher")
 
-    cy.get('[data-test="ui-select-themes"]').select('Dark')
+		cy.get("[data-test=\"ui-select-themes\"]").select("Dark")
 
-    cy.get('[data-test="ui-select-themes"] > option:selected').should(
-      'have.text',
-      'Dark',
-    )
+		cy.get("[data-test=\"ui-select-themes\"] > option:selected").should(
+			"have.text",
+			"Dark",
+		)
 
-    cy.get('html').should('have.class', 'theme-dark')
+		cy.get("html").should("have.class", "theme-dark")
 
-    cy.getAllLocalStorage().then((result: Cypress.StorageByOrigin) => {
-      expect(result).to.deep.equal({
-        'http://localhost:5173': {
-          [EStorageNames.THEME]: EThemes.DARK,
-        },
-      })
-    })
+		cy.getAllLocalStorage().then((result: Cypress.StorageByOrigin) => {
+			expect(result).to.deep.equal({
+				"http://localhost:5173": {
+					[EStorageNames.THEME]: EThemes.DARK,
+				},
+			})
+		})
 
-    cy.get('[data-test="ui-select-themes"]').select('Light')
+		cy.get("[data-test=\"ui-select-themes\"]").select("Light")
 
-    cy.get('[data-test="ui-select-themes"] > option:selected').should(
-      'have.text',
-      'Light',
-    )
+		cy.get("[data-test=\"ui-select-themes\"] > option:selected").should(
+			"have.text",
+			"Light",
+		)
 
-    cy.getAllLocalStorage().then((result: Cypress.StorageByOrigin) => {
-      expect(result).to.deep.equal({
-        'http://localhost:5173': {
-          [EStorageNames.THEME]: EThemes.LIGHT,
-        },
-      })
-    })
+		cy.getAllLocalStorage().then((result: Cypress.StorageByOrigin) => {
+			expect(result).to.deep.equal({
+				"http://localhost:5173": {
+					[EStorageNames.THEME]: EThemes.LIGHT,
+				},
+			})
+		})
 
-    cy.get('html').should('have.class', 'theme-light')
-  })
+		cy.get("html").should("have.class", "theme-light")
+	})
 })

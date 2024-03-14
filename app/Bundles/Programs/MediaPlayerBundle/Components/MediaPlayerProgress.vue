@@ -1,7 +1,19 @@
 <template>
   <div class="MediaPlayerProgress">
-    <progress id="progress-bar" class="progress" value="0" min="0"></progress>
-    <input id="seek" class="input" value="0" min="0" type="range" step="1" />
+    <progress
+      id="progress-bar"
+      class="progress"
+      value="0"
+      min="0"
+    />
+    <input
+      id="seek"
+      class="input"
+      value="0"
+      min="0"
+      type="range"
+      step="1"
+    >
   </div>
 </template>
 

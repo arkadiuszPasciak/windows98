@@ -26,28 +26,28 @@
 </template>
 
 <script setup lang="ts">
-  import { PropType, ref } from 'vue'
-  import { useI18n } from 'vue-i18n'
-  import { TUITabsProps } from '@APP|Bundles/UITabsBundle/Supports/UITabs.supports'
+import { PropType, ref } from "vue"
+import { useI18n } from "vue-i18n"
+import { TUITabsProps } from "@APP|Bundles/UITabsBundle/Supports/UITabs.supports"
 
-  defineProps({
-    tabs: {
-      type: Object as PropType<TUITabsProps>,
-      required: true,
-    },
-  })
+defineProps({
+	tabs: {
+		type: Object as PropType<TUITabsProps>,
+		required: true,
+	},
+})
 
-  const { t } = useI18n()
+const { t } = useI18n()
 
-  const activeIndex = ref<number>(0)
+const activeIndex = ref<number>(0)
 
-  const setActiveTab = (id: number): void => {
-    if (activeIndex.value === id) {
-      return
-    }
+const setActiveTab = (id: number): void => {
+	if (activeIndex.value === id) {
+		return
+	}
 
-    activeIndex.value = id
-  }
+	activeIndex.value = id
+}
 </script>
 
 <style
