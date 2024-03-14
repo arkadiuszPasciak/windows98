@@ -41,7 +41,9 @@ jobs:
         id: cache-cypress-binary
         uses: actions/cache@v3
         with:
-          path: ~/.cache/Cypress
+          path: |
+            ~/.cache/Cypress
+            /home/runner/.cache/Cypress
           key: cypress-binary-${{ hashFiles('**/pnpm-lock.json') }}
           restore-keys: cypress-binary-
 
@@ -244,7 +246,9 @@ jobs:
         id: cache-cypress-binary
         uses: actions/cache@v3
         with:
-          path: ~/.cache/Cypress
+          path: |
+            ~/.cache/Cypress
+            /home/runner/.cache/Cypress
           key: cypress-binary-${{ hashFiles('**/pnpm-lock.json') }}
           restore-keys: cypress-binary-
 
