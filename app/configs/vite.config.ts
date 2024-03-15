@@ -5,8 +5,8 @@ import tsconfigPaths from "vite-tsconfig-paths"
 import {
 	isEnvironment,
 	EEnvironment,
-} from "../../src/configs/environment.config"
-import { getPathMain } from "../../src/configs/path.config"
+} from "./environment.config"
+import { getPathMain } from "./path.config"
 
 export default defineConfig({
 	build: {

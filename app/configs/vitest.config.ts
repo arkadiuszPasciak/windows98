@@ -1,5 +1,5 @@
 import { UserConfig as VitestConfigInterface } from "vitest/config"
-import { getPathMain } from "../../src/configs/path.config"
+import { getPathMain } from "./path.config"
 
 const vitestConfig = {
 	globals: true,
