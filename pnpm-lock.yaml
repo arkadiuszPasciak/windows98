@@ -93,6 +93,8 @@ importers:
 
   core/ci-cd: {}
 
+  core/configs: {}
+
   core/design-system:
     dependencies:
       react:

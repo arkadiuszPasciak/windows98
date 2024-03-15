@@ -1,0 +1,9 @@
+{
+	"name": "@windows98/configs",
+	"version": "1.0.0",
+	"description": "Common configuration for workspaces",
+	"author": "Arkadiusz Paściak",
+	"engines": {
+		"node": "18.16.0"
+	}
+}
