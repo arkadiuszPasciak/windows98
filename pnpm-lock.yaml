@@ -123,6 +123,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^4.2.1
         version: 4.2.1(vite@5.1.6)
+      '@windows98/configs':
+        specifier: workspace:*
+        version: link:../configs
       '@windows98/eslint-config':
         specifier: workspace:*
         version: link:../linters/eslint
@@ -397,6 +400,9 @@ importers:
 
   mother-frontend/micro-services:
     devDependencies:
+      '@windows98/configs':
+        specifier: workspace:*
+        version: link:../../core/configs
       '@windows98/eslint-config':
         specifier: workspace:*
         version: link:../../core/linters/eslint
