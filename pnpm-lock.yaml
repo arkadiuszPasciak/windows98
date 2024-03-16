@@ -36,11 +36,14 @@ importers:
       '@vue/test-utils':
         specifier: ^2.3.2
         version: 2.4.4(vue@3.3.8)
+      '@windows98/configs':
+        specifier: workspace:*
+        version: link:../core/configs
       '@windows98/design-system':
         specifier: workspace:*
         version: link:../core/design-system
       '@windows98/eslint-config':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../core/linters/eslint
       '@windows98/i18n':
         specifier: workspace:*
