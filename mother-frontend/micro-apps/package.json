@@ -30,6 +30,7 @@
     "@types/react-dom": "18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
     "@windows98/app": "workspace:*",
+    "@windows98/configs": "workspace:*",
     "@windows98/design-system": "workspace:*",
     "@windows98/eslint-config": "workspace:*",
     "@windows98/i18n": "workspace:*",
@@ -61,8 +62,8 @@
     "lint:types:run": "tsc",
     "test:ui:run": "playwright test -c ./@test/playwright/playwright-ct.config.ts",
     "test:ui:watch": "playwright test -c ./@test/playwright/playwright-ct.config.ts --ui",
-    "test:unit:run": "vitest run -c ./@test/vitest/vitest.config.ts",
-    "test:unit:watch": "vitest -c ./@test/vitest/vitest.config.ts"
+    "test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
+    "test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js"
   },
   "type": "module",
   "version": "1.0.0"

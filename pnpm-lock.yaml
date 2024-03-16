@@ -93,7 +93,11 @@ importers:
 
   core/ci-cd: {}
 
-  core/configs: {}
+  core/configs:
+    devDependencies:
+      vitest:
+        specifier: 1.3.1
+        version: 1.3.1(jsdom@22.1.0)
 
   core/design-system:
     dependencies:
@@ -342,6 +346,9 @@ importers:
       '@windows98/app':
         specifier: workspace:*
         version: link:../../app
+      '@windows98/configs':
+        specifier: workspace:*
+        version: link:../../core/configs
       '@windows98/design-system':
         specifier: workspace:*
         version: link:../../core/design-system
