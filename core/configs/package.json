@@ -1,9 +1,16 @@
 {
-	"name": "@windows98/configs",
-	"version": "1.0.0",
-	"description": "Common configuration for workspaces",
 	"author": "Arkadiusz Paściak",
+	"description": "Tests",
+	"devDependencies": {
+		"vitest": "1.3.1"
+	},
 	"engines": {
 		"node": "18.16.0"
-	}
+	},
+	"exports": {
+		"./vitest/shared": "./src/configs/vitest/shared.config.mjs"
+	},
+	"name": "@windows98/configs",
+	"types": "src/types/declarations.d.ts",
+	"version": "1.0.0"
 }
