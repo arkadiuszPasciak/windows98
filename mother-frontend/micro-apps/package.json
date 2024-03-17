@@ -60,8 +60,8 @@
     "lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"calendar/**/*.scss\" --fix",
     "lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"calendar/**/*.scss\"",
     "lint:types:run": "tsc",
-    "test:ui:run": "playwright test -c ./@test/playwright/playwright-ct.config.ts",
-    "test:ui:watch": "playwright test -c ./@test/playwright/playwright-ct.config.ts --ui",
+    "test:ui:run": "playwright test -c ./@test/playwright/playwright-ct.config.mjs",
+    "test:ui:watch": "playwright test -c ./@test/playwright/playwright-ct.config.mjs --ui",
     "test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
     "test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js"
   },
