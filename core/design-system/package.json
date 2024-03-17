@@ -40,8 +40,8 @@
     "preview": "vite preview @bundler",
     "test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
     "test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js",
-    "test:integration:run": "playwright test -c ./@test/playwright/playwright-ct.config.ts",
-    "test:integration:watch": "playwright test -c ./@test/playwright/playwright-ct.config.ts --ui"
+    "test:ui:run": "playwright test -c ./@test/playwright/playwright-ct.config.mjs",
+    "test:ui:watch": "playwright test -c ./@test/playwright/playwright-ct.config.mjs --ui"
   },
   "peerDependencies": {
     "react": "^18.2.0",
