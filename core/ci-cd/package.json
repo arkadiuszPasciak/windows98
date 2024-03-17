@@ -46,6 +46,12 @@
     "lint:types:run:i18n": "pnpm --filter @windows98/i18n run lint:types:run",
     "lint:types:run:micro-apps": "pnpm --filter @windows98/micro-apps run lint:types:run",
     "lint:types:run:micro-services": "pnpm --filter @windows98/micro-services run lint:types:run",
-    "lint:types:run:toolkit": "pnpm --filter @windows98/toolkit run lint:types:run"
+    "lint:types:run:toolkit": "pnpm --filter @windows98/toolkit run lint:types:run",
+    "test:unit:run:all": "pnpm run test:unit:run:app && pnpm run test:unit:run:design-system && pnpm run test:unit:run:micro-apps && pnpm run test:unit:run:micro-services && pnpm run test:unit:run:toolkit",
+    "test:unit:run:app": "pnpm --filter @windows98/app run test:unit:run",
+    "test:unit:run:design-system": "pnpm --filter @windows98/design-system run test:unit:run",
+    "test:unit:run:micro-apps": "pnpm --filter @windows98/micro-apps run test:unit:run",
+    "test:unit:run:micro-services": "pnpm --filter @windows98/micro-services run test:unit:run",
+    "test:unit:run:toolkit": "pnpm --filter @windows98/toolkit run test:unit:run"
   }
 }
