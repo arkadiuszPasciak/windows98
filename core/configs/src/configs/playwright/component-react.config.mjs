@@ -9,21 +9,6 @@ export default defineConfig({
 	workers: process.env.CI ? 1 : undefined,
 	outputDir: "./test-results",
 	reporter: [["list"], ["json", { outputFile: "./test-results/results.json" }]],
-	use: {
-		trace: "on-first-retry",
-		ctPort: 3100,
-		ctViteConfig: {
-			css: {
-				preprocessorOptions: {
-					scss: {
-						additionalData: `
-							@import '@windows98/design-system/index.config.scss';
-						`,
-					},
-				},
-			},
-		},
-	},
 	projects: [
 		{
 			name: "chromium",
