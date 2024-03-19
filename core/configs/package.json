@@ -1,0 +1,18 @@
+{
+	"author": "Arkadiusz Paściak",
+	"description": "Tests",
+	"engines": {
+		"node": "18.16.0"
+	},
+	"exports": {
+		"./playwright/component-react": "./src/configs/playwright/component-react.config.mjs",
+		"./vitest/shared": "./src/configs/vitest/shared.config.mjs"
+	},
+	"name": "@windows98/configs",
+	"peerDependencies": {
+		"@playwright/experimental-ct-react": "1.42.1",
+		"vitest": "1.3.1"
+	},
+	"types": "src/types/declarations.d.ts",
+	"version": "1.0.0"
+}

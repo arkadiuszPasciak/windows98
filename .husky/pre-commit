@@ -10,7 +10,7 @@ echo "✅ The code is okay!"
 pnpm --filter @windows98/ci-cd run lint:styles:run:all
 echo "✅ The styles are okay!"
 
-pnpm --filter @windows98/vitest run test:unit:run
+pnpm --filter @windows98/ci-cd run test:unit:run:all
 echo "✅ The tests are okay!"
 
 pnpm --filter @windows98/ci-cd run lint:staged:fix:all 
