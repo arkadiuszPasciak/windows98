@@ -2,7 +2,8 @@ module.exports = {
 	extends: [
 		"./typescript.config.js",
 		"plugin:react/recommended",
-		"plugin:react-hooks/recommended"
+		"plugin:react-hooks/recommended",
+		"plugin:react/jsx-runtime"
 	],
 	parserOptions: {
 		ecmaFeatures: {
@@ -11,7 +12,7 @@ module.exports = {
 	},
 	settings: {
 		react: {
-			version: "detect",
+			version: "18.2.0",
 		},
 	},
 	plugins: [
