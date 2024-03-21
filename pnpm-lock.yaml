@@ -53,10 +53,10 @@ importers:
         version: link:../core/linters
       '@windows98/micro-apps':
         specifier: workspace:*
-        version: link:../mother-frontend/micro-apps
+        version: link:../micro-apps
       '@windows98/micro-services':
         specifier: workspace:*
-        version: link:../mother-frontend/micro-services
+        version: link:../micro-services
       '@windows98/stylelint-config':
         specifier: workspace:*
         version: link:../core/linters/stylelint
@@ -304,7 +304,7 @@ importers:
         specifier: 1.3.1
         version: 1.3.1(@types/node@20.9.0)(sass@1.70.0)
 
-  mother-frontend/micro-apps:
+  micro-apps:
     dependencies:
       '@r2wc/react-to-web-component':
         specifier: ^2.0.3
@@ -342,28 +342,28 @@ importers:
         version: 4.2.1(vite@5.1.6)
       '@windows98/app':
         specifier: workspace:*
-        version: link:../../app
+        version: link:../app
       '@windows98/configs':
         specifier: workspace:*
-        version: link:../../core/configs
+        version: link:../core/configs
       '@windows98/design-system':
         specifier: workspace:*
-        version: link:../../core/design-system
+        version: link:../core/design-system
       '@windows98/eslint-config':
         specifier: workspace:*
-        version: link:../../core/linters/eslint
+        version: link:../core/linters/eslint
       '@windows98/i18n':
         specifier: workspace:*
-        version: link:../../core/internationalization/i18n
+        version: link:../core/internationalization/i18n
       '@windows98/linters':
         specifier: workspace:*
-        version: link:../../core/linters
+        version: link:../core/linters
       '@windows98/stylelint-config':
         specifier: workspace:*
-        version: link:../../core/linters/stylelint
+        version: link:../core/linters/stylelint
       '@windows98/toolkit':
         specifier: workspace:*
-        version: link:../../core/toolkit
+        version: link:../core/toolkit
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -392,20 +392,20 @@ importers:
         specifier: 1.3.1
         version: 1.3.1(sass@1.62.1)
 
-  mother-frontend/micro-services:
+  micro-services:
     devDependencies:
       '@windows98/configs':
         specifier: workspace:*
-        version: link:../../core/configs
+        version: link:../core/configs
       '@windows98/eslint-config':
         specifier: workspace:*
-        version: link:../../core/linters/eslint
+        version: link:../core/linters/eslint
       '@windows98/linters':
         specifier: workspace:*
-        version: link:../../core/linters
+        version: link:../core/linters
       '@windows98/toolkit':
         specifier: workspace:*
-        version: link:../../core/toolkit
+        version: link:../core/toolkit
       eslint:
         specifier: 8.57.0
         version: 8.57.0
