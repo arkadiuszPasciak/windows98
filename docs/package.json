@@ -11,6 +11,8 @@
     "@storybook/react": "8.0.2",
     "@storybook/react-vite": "8.0.2",
     "@storybook/test": "8.0.2",
+    "@types/react": "18.2.43",
+    "@types/react-dom": "18.2.17",
     "@windows98/linters": "workspace:*",
     "prop-types": "15.8.1",
     "storybook": "8.0.2",
