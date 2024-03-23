@@ -345,9 +345,15 @@ importers:
       '@types/react-dom':
         specifier: 18.2.17
         version: 18.2.17
+      '@windows98/eslint-config':
+        specifier: workspace:*
+        version: link:../core/linters/eslint
       '@windows98/linters':
         specifier: workspace:*
         version: link:../core/linters
+      eslint:
+        specifier: 8.57.0
+        version: 8.57.0
       prop-types:
         specifier: 15.8.1
         version: 15.8.1
