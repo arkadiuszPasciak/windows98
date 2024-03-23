@@ -10,10 +10,11 @@ const preview: Preview = {
     },
     storySort: {
       order: [
-        'Windows98',
+        "Introduction",
+        "Installation"
       ],
     },
-    viewMode: 'docs',
+    viewMode: "docs",
   },
 }
 
