@@ -1,0 +1,25 @@
+{
+  "author": "Arkadiusz Paściak",
+  "description": "This workspace uses Storybook, an open-source tool for developing UI components in isolation. It helps to build, document, and test React components interactively.",
+  "devDependencies": {
+    "@chromatic-com/storybook": "1.2.25",
+    "@storybook/addon-essentials": "8.0.2",
+    "@storybook/addon-interactions": "8.0.2",
+    "@storybook/addon-links": "8.0.2",
+    "@storybook/addon-onboarding": "8.0.2",
+    "@storybook/blocks": "8.0.2",
+    "@storybook/react": "8.0.2",
+    "@storybook/react-vite": "8.0.2",
+    "@storybook/test": "8.0.2",
+    "prop-types": "15.8.1",
+    "storybook": "8.0.2"
+  },
+  "main": ".storybook/main.ts",
+  "name": "@windows98/docs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build"
+  },
+  "version": "1.0.0"
+}
