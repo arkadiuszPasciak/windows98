@@ -11,15 +11,17 @@
     "@storybook/react": "8.0.2",
     "@storybook/react-vite": "8.0.2",
     "@storybook/test": "8.0.2",
+    "@windows98/linters": "workspace:*",
     "prop-types": "15.8.1",
-    "storybook": "8.0.2"
+    "storybook": "8.0.2",
+    "typescript": "5.4.2"
   },
   "main": ".storybook/main.ts",
   "name": "@windows98/docs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "storybook build",
     "dev": "storybook dev -p 6006",
-    "build": "storybook build"
+    "lint:types:run": "tsc"
   },
   "version": "1.0.0"
 }

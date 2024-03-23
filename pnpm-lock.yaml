@@ -122,10 +122,10 @@ importers:
         version: 20.9.0
       '@types/react':
         specifier: ^18.2.43
-        version: 18.2.47
+        version: 18.2.43
       '@types/react-dom':
         specifier: ^18.2.17
-        version: 18.2.18
+        version: 18.2.17
       '@vitejs/plugin-react':
         specifier: ^4.2.1
         version: 4.2.1(vite@5.1.6)
@@ -205,6 +205,12 @@ importers:
         specifier: 5.4.2
         version: 5.4.2
     devDependencies:
+      '@types/react':
+        specifier: 18.2.43
+        version: 18.2.43
+      '@types/react-dom':
+        specifier: 18.2.17
+        version: 18.2.17
       '@windows98/eslint-config':
         specifier: workspace:*
         version: link:eslint
@@ -333,12 +339,24 @@ importers:
       '@storybook/test':
         specifier: 8.0.2
         version: 8.0.2
+      '@types/react':
+        specifier: 18.2.43
+        version: 18.2.43
+      '@types/react-dom':
+        specifier: 18.2.17
+        version: 18.2.17
+      '@windows98/linters':
+        specifier: workspace:*
+        version: link:../core/linters
       prop-types:
         specifier: 15.8.1
         version: 15.8.1
       storybook:
         specifier: 8.0.2
         version: 8.0.2(react-dom@18.2.0)(react@18.2.0)
+      typescript:
+        specifier: 5.4.2
+        version: 5.4.2
 
   micro-apps:
     dependencies:
@@ -3788,22 +3806,8 @@ packages:
       '@types/react': 18.2.43
     dev: true
 
-  /@types/react-dom@18.2.18:
-    resolution: {integrity: sha512-TJxDm6OfAX2KJWJdMEVTwWke5Sc/E/RlnPGvGfS0W7+6ocy2xhDVQVh/KvC2Uf7kACs+gDytdusDSdWfWkaNzw==}
-    dependencies:
-      '@types/react': 18.2.47
-    dev: true
-
   /@types/react@18.2.43:
     resolution: {integrity: sha512-nvOV01ZdBdd/KW6FahSbcNplt2jCJfyWdTos61RYHV+FVv5L/g9AOX1bmbVcWcLFL8+KHQfh1zVIQrud6ihyQA==}
-    dependencies:
-      '@types/prop-types': 15.7.11
-      '@types/scheduler': 0.16.8
-      csstype: 3.1.3
-    dev: true
-
-  /@types/react@18.2.47:
-    resolution: {integrity: sha512-xquNkkOirwyCgoClNk85BjP+aqnIS+ckAJ8i37gAbDs14jfW/J23f2GItAf33oiUPQnqNMALiFeoM9Y5mbjpVQ==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
