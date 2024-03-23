@@ -20,7 +20,7 @@
     "lint:code:run:all": "pnpm run lint:code:run:app && pnpm run lint:code:run:design-system && pnpm run lint:code:run:docs && pnpm run lint:code:run:i18n && pnpm run lint:code:run:micro-apps && pnpm run lint:code:run:micro-services && pnpm run lint:code:run:toolkit",
     "lint:code:run:app": "pnpm --filter @windows98/app run lint:code:run",
     "lint:code:run:design-system": "pnpm --filter @windows98/design-system run lint:code:run",
-    "lint:code:run:docs": "pnpm --filter @windows98/docs run lint:code:fix",
+    "lint:code:run:docs": "pnpm --filter @windows98/docs run lint:code:run",
     "lint:code:run:i18n": "pnpm --filter @windows98/i18n run lint:code:run",
     "lint:code:run:linters": "pnpm --filter @windows98/linters run lint:code:run",
     "lint:code:run:micro-apps": "pnpm --filter @windows98/micro-apps run lint:code:run",

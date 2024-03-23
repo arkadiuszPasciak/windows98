@@ -8,6 +8,12 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    storySort: {
+      order: [
+        'Windows98',
+      ],
+    },
+    viewMode: 'docs',
   },
 }
 
