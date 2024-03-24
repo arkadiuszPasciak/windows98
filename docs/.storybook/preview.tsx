@@ -1,7 +1,15 @@
 import DocumentationTemplate from '../src/configs/documentation-template.mdx';
 import type { Preview } from "@storybook/react"
+import "@windows98/design-system/variables.config.css"
 
 const preview: Preview = {
+  decorators: [
+    (Story) => {
+      document.documentElement.classList.add('theme-light');
+
+      return <Story />;
+    },
+  ],
   parameters: {
     controls: {
       matchers: {
