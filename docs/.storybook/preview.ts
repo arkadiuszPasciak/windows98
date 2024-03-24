@@ -1,3 +1,4 @@
+import DocumentationTemplate from '../src/configs/documentation-template.mdx';
 import type { Preview } from "@storybook/react"
 
 const preview: Preview = {
@@ -7,6 +8,9 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
+    },
+    docs: {
+      page: DocumentationTemplate,
     },
     storySort: {
       order: [

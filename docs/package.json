@@ -14,6 +14,7 @@
     "@storybook/test": "8.0.4",
     "@types/react": "18.2.43",
     "@types/react-dom": "18.2.17",
+    "@windows98/design-system": "workspace:*",
     "@windows98/eslint-config": "workspace:*",
     "@windows98/linters": "workspace:*",
     "eslint": "8.57.0",

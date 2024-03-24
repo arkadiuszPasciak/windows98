@@ -348,6 +348,9 @@ importers:
       '@types/react-dom':
         specifier: 18.2.17
         version: 18.2.17
+      '@windows98/design-system':
+        specifier: workspace:*
+        version: link:../core/design-system
       '@windows98/eslint-config':
         specifier: workspace:*
         version: link:../core/linters/eslint
