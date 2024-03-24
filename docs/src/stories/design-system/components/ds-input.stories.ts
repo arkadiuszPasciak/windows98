@@ -53,7 +53,7 @@ const meta: Meta<typeof DSInput> = {
 	},
 	component: DSInput,
 	tags: ["autodocs"],
-	title: "Design System/Component/DSInput"
+	title: "Design System/Components/DSInput"
 }
 
 export default meta

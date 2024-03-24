@@ -15,7 +15,7 @@ const meta: Meta<typeof DSFrame> = {
 	},
 	component: DSFrame,
 	tags: ["autodocs"],
-	title: "Design System/Component/DSFrame"
+	title: "Design System/Components/DSFrame"
 }
 
 export default meta
