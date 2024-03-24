@@ -357,6 +357,9 @@ importers:
       '@windows98/linters':
         specifier: workspace:*
         version: link:../core/linters
+      '@windows98/micro-apps':
+        specifier: workspace:*
+        version: link:../micro-apps
       eslint:
         specifier: 8.57.0
         version: 8.57.0

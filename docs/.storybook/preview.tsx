@@ -1,6 +1,7 @@
 import DocumentationTemplate from '../src/configs/documentation-template.mdx';
 import type { Preview } from "@storybook/react"
 import "@windows98/design-system/variables.config.css"
+import "@windows98/micro-apps"
 
 const preview: Preview = {
   decorators: [

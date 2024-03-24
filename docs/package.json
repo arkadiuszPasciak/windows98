@@ -17,6 +17,7 @@
     "@windows98/design-system": "workspace:*",
     "@windows98/eslint-config": "workspace:*",
     "@windows98/linters": "workspace:*",
+    "@windows98/micro-apps": "workspace:*",
     "eslint": "8.57.0",
     "lint-staged": "15.2.2",
     "prop-types": "15.8.1",
