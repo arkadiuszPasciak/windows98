@@ -37,6 +37,7 @@
     "lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"src/**/*.scss\" --fix",
     "lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"src/**/*.scss\"",
     "lint:types:run": "tsc",
+    "prepare": "panda codegen --config ./@styles/panda.config.ts",
     "preview": "vite preview @bundler",
     "test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
     "test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js",
@@ -48,7 +49,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "eslint": "8.57.0",
+    "@pandacss/dev": "^0.36.1",
     "@playwright/experimental-ct-react": "1.42.1",
     "@types/node": "^20.9.0",
     "@types/react": "^18.2.43",
@@ -58,6 +59,7 @@
     "@windows98/eslint-config": "workspace:*",
     "@windows98/linters": "workspace:*",
     "@windows98/stylelint-config": "workspace:*",
+    "eslint": "8.57.0",
     "lint-staged": "15.2.2",
     "sass": "^1.70.0",
     "stylelint": "16.2.1",
