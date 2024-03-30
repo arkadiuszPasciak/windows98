@@ -23,6 +23,8 @@
 	},
 	"devDependencies": {
 		"eslint": "8.57.0",
+		"@types/react": "18.2.43",
+		"@types/react-dom": "18.2.17",
 		"@windows98/eslint-config": "workspace:*"
 	},
 	"peerDependencies": {

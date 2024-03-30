@@ -8,5 +8,6 @@ packages:
   - core/linters/*
   - core/tests/*
   - core/toolkit
+  - docs
   - micro-apps
   - micro-services
