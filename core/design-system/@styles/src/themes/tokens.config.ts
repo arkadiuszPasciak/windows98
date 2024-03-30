@@ -3,10 +3,9 @@ import type { Config } from "@pandacss/dev"
 export const customTokens: Config["theme"] = {
 	tokens: {
 		colors: {
-			"grey": {
-				25: {
-					value: "#dfdfdf"
-				}
+			grey: {
+				25: { value: "#dfdfdf" },
+				100: { value: "#b5b5b5" }
 			},
 			// "grey-25": {
 			// 	value: "#dfdfdf"
@@ -14,9 +13,9 @@ export const customTokens: Config["theme"] = {
 			"grey-50": {
 				value: "#c0c0c0"
 			},
-			"grey-100": {
-				value: "#b5b5b5"
-			},
+			// "grey-100": {
+			// 	value: "#b5b5b5"
+			// },
 			"grey-200": {
 				value: "#a9a9a9"
 			},
@@ -35,9 +34,12 @@ export const customTokens: Config["theme"] = {
 			"grey-700": {
 				value: "#3b3b3b"
 			},
-			"black-800": {
-				value: "#222222"
+			black: {
+				800: { value: "#222222" },
 			},
+			// "black-800": {
+			// 	value: "#222222"
+			// },
 			"black-900": {
 				value: "#0a0a0a"
 			},
@@ -65,9 +67,12 @@ export const customTokens: Config["theme"] = {
 			"red-500": {
 				value: "#fe0000"
 			},
-			"white-1000": {
-				value: "#ffffff"
+			white: {
+				1000: { value: "#ffffff" },
 			}
+			// "white-1000": {
+			// 	value: "#ffffff"
+			// }
 		}
 	}
 }
