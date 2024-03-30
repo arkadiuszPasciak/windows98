@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
 const meta: Meta = {
-	title: "Micro Apps/Components/MACalendar",
+	title: "Micro Apps/Custom Elements/MACalendar",
 }
 
 export default meta
