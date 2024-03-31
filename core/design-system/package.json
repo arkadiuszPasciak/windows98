@@ -31,6 +31,7 @@
     "build:components": "vite build @bundler",
     "build:styles": "pnpm run build:styles:variables",
     "build:styles:variables": "sass ./src/styles/configs/variables.config.scss ./@bundler/build/styles/variables.config.css --style=compressed",
+    "build:style": "panda cssgen --config ./@styles/panda.config.ts --outfile ./@styles/src/index.css",
     "lint:code:fix": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
     "lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
     "lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",

@@ -1,7 +1,7 @@
-import { DSInputStories } from '../../src/components/ds-input/ds-input.stories'
+import { DSText } from "../../src"
 
 export function TestComponent(): JSX.Element {
 	return (
-		<DSInputStories />
-  	)
+		<DSText text="Lorem ipsum" id="lorem-ipsum" />
+	)
 }
