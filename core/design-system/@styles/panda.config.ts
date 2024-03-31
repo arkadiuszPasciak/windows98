@@ -18,7 +18,7 @@ export default defineConfig({
 	separator: "-",
 	strictTokens: true,
 	theme: {
-		...customTokens,
-		...customSemanticTokens
+		tokens: customTokens,
+		semanticTokens: customSemanticTokens
 	}
 })
