@@ -7,13 +7,14 @@ import {
 export default defineConfig({
 	clean: true,
 	cwd: "./@styles",
+	eject: true,
 	include: [
 		"./src/components/**/*.ts"
 	],
 	jsxFramework: "react",
 	minify: true,
 	outdir: "./@styles/src/styled-system",
-	preflight: true,
+	preflight: false,
 	prefix: "ds",
 	separator: "-",
 	strictTokens: true,
