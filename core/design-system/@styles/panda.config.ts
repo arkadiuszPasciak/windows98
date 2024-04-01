@@ -7,7 +7,7 @@ import {
 export default defineConfig({
 	clean: true,
 	cwd: "./@styles",
-	eject: true,
+	eject: false,
 	include: [
 		"./src/components/**/*.ts"
 	],
