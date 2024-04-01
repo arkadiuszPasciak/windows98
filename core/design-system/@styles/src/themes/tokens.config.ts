@@ -32,5 +32,22 @@ export const customTokens = defineTokens({
 		white: {
 			1000: { value: "#ffffff" },
 		}
-	}
+	},
+	fonts: {
+		bold: { value: "MSSansSerifBold, sans-serif" },
+		medium: { value: "MSSansSerifMedium, sans-serif" },
+	},
+	fontSizes: {
+		sm: { value: "10px" },
+		md: { value: "12px" },
+		lg: { value: "14px" },
+		xl: { value: "16px" },
+	},
+	fontWeights: {
+		normal: { value: "400" },
+	},
+	lineHeights: {
+		one: { value: "1" },
+		normal: { value: "1.2" },
+	},
 })
