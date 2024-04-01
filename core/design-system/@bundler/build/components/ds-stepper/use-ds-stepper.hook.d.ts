@@ -1,4 +1,4 @@
-import type { UseDSStepperProps } from './ds-stepper.type';
+import type { UseDSStepperProps } from "./ds-stepper.type";
 export declare function useDSStepper({ modelValue, onIncrease, onDecrease }: UseDSStepperProps): {
     value: number;
     handleIncrease: () => void;

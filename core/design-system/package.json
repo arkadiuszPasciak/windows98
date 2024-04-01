@@ -20,6 +20,7 @@
     },
     "./base.config.css": "./src/styles/configs/base.config.css",
     "./index.config.scss": "./src/styles/configs/index.config.scss",
+    "./index.css": "./@styles/src/index.css",
     "./reset.config.css": "./src/styles/configs/reset.config.css",
     "./variables.config.css": "./@bundler/build/styles/variables.config.css"
   },

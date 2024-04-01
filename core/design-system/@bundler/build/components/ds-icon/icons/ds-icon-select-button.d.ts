@@ -1,1 +1,1 @@
-export declare function DSIconSelectButton(): import("react/jsx-runtime").JSX.Element;
+export declare function DSIconSelectButton(): import("react").JSX.Element;
