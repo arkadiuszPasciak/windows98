@@ -4,7 +4,7 @@
   "description": "CI/CD configuration for Windows 98",
   "author": "Arkadiusz Paściak",
   "engines": {
-    "node": "18.16.0"
+    "node": "20.12.0"
   },
   "type": "module",
   "scripts": {

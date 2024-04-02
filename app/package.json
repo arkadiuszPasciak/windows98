@@ -4,12 +4,12 @@
   "description": "Application for Windows 98",
   "author": "Arkadiusz Paściak",
   "engines": {
-    "node": "18.16.0"
+    "node": "20.12.0"
   },
   "scripts": {
-    "app:build": "vite build --config ./configs/vite.config.ts",
-    "app:dev": "vite --config ./configs/vite.config.ts",
-    "app:preview": "vite preview --config ./configs/vite.config.ts",
+    "app:build": "vite build --config ./configs/vite.config.mts",
+    "app:dev": "vite --config ./configs/vite.config.mts",
+    "app:preview": "vite preview --config ./configs/vite.config.mts",
     "lint:code:fix": "eslint -c ./@linter/eslint.config.cjs --fix --ext \".ts,.js,.vue\" .",
     "lint:code:run": "eslint -c ./@linter/eslint.config.cjs --ext \".ts,.js,.vue\" .",
     "lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
