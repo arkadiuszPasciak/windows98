@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "type": "module",
   "engines": {
-    "node": "18.16.0"
+    "node": "20.12.0"
   },
   "main": "@bundler/build/index.umd.cjs",
   "module": "@bundler/build/index.js",

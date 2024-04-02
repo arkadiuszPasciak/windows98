@@ -2,7 +2,7 @@
 	"author": "Arkadiusz Paściak",
 	"description": "Tests",
 	"engines": {
-		"node": "18.16.0"
+		"node": "20.12.0"
 	},
 	"exports": {
 		"./playwright/component-react": "./src/configs/playwright/component-react.config.mjs",

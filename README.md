@@ -37,7 +37,7 @@ Feel free to explore the project, provide feedback. Enjoy the trip back to Windo
 
 ## Quick Start
 
-1. Ensure you have Node.js v18.16.0 installed. If not, download and install it from https://nodejs.org/en/download/. If you have a different version of Node.js installed, you can use Node Version Manager (NVM) to switch between versions. To install NVM, follow the instructions at https://github.com/nvm-sh/nvm#installing-and-updating. Once installed, use nvm install 18.16.0 to install Node.js v18.16.0 and nvm use 18.16.0 to switch to it.
+1. Ensure you have Node.js v20.12.0 installed. If not, download and install it from https://nodejs.org/en/download/. If you have a different version of Node.js installed, you can use Node Version Manager (NVM) to switch between versions. To install NVM, follow the instructions at https://github.com/nvm-sh/nvm#installing-and-updating. Once installed, use nvm install 20.12.0 to install Node.js v20.12.0 and nvm use 20.12.0 to switch to it.
 
 2. Clone the repository by running.
 
