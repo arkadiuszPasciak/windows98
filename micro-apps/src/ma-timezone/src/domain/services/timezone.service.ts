@@ -14,13 +14,13 @@ export default class TimezoneService implements TimezoneServicesContract {
 	}
 
 	@action
-	public getTimezones(): void {
+	public generateTimezones(): void {
 		const timezones = this.timezoneRepository.getTimezones()
 
 		this.timezonesValuePairs = this.mapTimezonesToValuePairs(timezones)
 	}
 
-	private generateI18nKey(timezone: number): string {
+	private createI18nKey(timezone: number): string {
 		return `ma-timezone.time.${timezone}`
 	}
 
@@ -28,7 +28,7 @@ export default class TimezoneService implements TimezoneServicesContract {
 		return timezones.map((timezone) => {
 			return {
 				value: timezone,
-				label: this.generateI18nKey(timezone)
+				label: this.createI18nKey(timezone)
 			}
 		})
 	}
