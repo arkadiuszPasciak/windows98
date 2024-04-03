@@ -6,7 +6,7 @@ import type { ICalendarDays } from "../models/days.model"
 
 export default class CalendarService implements CalendarServiceContract {
 	@observable
-		calendar: Maybe<Array<ICalendarDays>> = null
+	calendar: Maybe<Array<ICalendarDays>> = null
 	year: Maybe<number> = null
 	month: Maybe<number> = null
 	calendarRepository: CalendarRepository = new CalendarRepository()
