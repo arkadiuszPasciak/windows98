@@ -33,3 +33,5 @@ export default class TimezoneService implements TimezoneServicesContract {
 		})
 	}
 }
+
+export const timezoneService = new TimezoneService()
