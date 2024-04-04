@@ -18,5 +18,5 @@ export default defineConfig({
 			},
 		},
 	},
-	testDir: "../../calendar/tests/",
+	testDir: "../../src/",
 })
