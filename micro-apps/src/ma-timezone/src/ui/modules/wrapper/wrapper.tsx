@@ -8,7 +8,7 @@ export const Wrapper = observer(() => {
 
 	return (
 		<DSFrame
-			id="calculator"
+			id="timezone"
 			title={title}
 		>
 			<TimezoneSwitcher />
