@@ -26,6 +26,9 @@ module.exports = {
 		indent: [
 			"error",
 			"tab",
+			{
+				"ignoredNodes": ["PropertyDefinition"]
+			}
 		],
 		"jsx-quotes": [
 			"error",
