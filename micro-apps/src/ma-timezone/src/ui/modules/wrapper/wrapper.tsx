@@ -1,7 +1,9 @@
+import { observer } from 'mobx-react-lite'
 import { DSFrame } from "@windows98/design-system"
 import { useWrapper } from "./use-wrapper.hook"
+import { TimezoneSwitcher } from '../timezone-switcher/timezone-switcher'
 
-export const Wrapper = () => {
+export const Wrapper = observer(() => {
 	const { title } = useWrapper()
 
 	return (
@@ -9,7 +11,7 @@ export const Wrapper = () => {
 			id="calculator"
 			title={title}
 		>
-			<p>ma-timezone</p>
+			<TimezoneSwitcher />
 		</DSFrame>
 	)
-}
+})

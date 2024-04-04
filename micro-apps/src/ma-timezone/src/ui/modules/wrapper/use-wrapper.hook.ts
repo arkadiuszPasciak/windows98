@@ -1,6 +1,6 @@
 import { useEffect, useMemo } from "react"
 import { useTranslation } from "react-i18next"
-import useTimezone from '../../hooks/use-timezone.hook'
+import useTimezone from "../../hooks/use-timezone.hook"
 
 export function useWrapper() {
 	const { t } = useTranslation()
