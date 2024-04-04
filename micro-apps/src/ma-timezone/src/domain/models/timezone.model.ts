@@ -1,4 +1,4 @@
-enum ETimezone {
+export enum ETimezone {
 	INTERNATIONAL_DATE_LINE_WEST = -12,
 	NOME_TIME = -11,
 	HAWAII_STANDARD_TIME = -10,
