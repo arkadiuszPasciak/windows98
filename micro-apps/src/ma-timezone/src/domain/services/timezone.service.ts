@@ -21,7 +21,7 @@ export default class TimezoneService implements TimezoneServicesContract {
 	}
 
 	private createI18nKey(timezone: number): string {
-		return `ma-timezone.time.${timezone}`
+		return `ma-timezone.stepper.${timezone}`
 	}
 
 	private mapTimezonesToValuePairs(timezones: Array<TTimezoneValues>): Array<ITimezoneValuePairs> {
