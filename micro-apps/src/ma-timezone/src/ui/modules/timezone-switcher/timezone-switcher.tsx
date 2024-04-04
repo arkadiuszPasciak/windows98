@@ -7,7 +7,7 @@ export const TimezoneSwitcher = observer(() => {
 
 	return dictionary?.timezones && (
 		<DSSelect
-			id="month-switcher"
+			id="timezone-switcher"
 			modelValue={dictionary.timezones[0].value}
 			options={dictionary.timezones}
 			onSelect={() => { }}
