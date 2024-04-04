@@ -1,16 +1,10 @@
 <template>
   <div class="SettingsDateTime">
     <ma-calendar />
-    <TimezoneSwitcher />
+    <ma-timezone />
   </div>
 </template>
 
-<script setup lang="ts">
-import TimezoneSwitcher from "@APP|Bundles/TimezoneBundle/Components/TimezoneSwitcher.vue"
-</script>
+<script setup lang="ts"></script>
 
-<style
-  lang="scss"
-  scoped
-  src="@APP|Bundles/SettingsBundle/Styles/SettingsDateTime.styles.scss"
-/>
+<style lang="scss" scoped src="@APP|Bundles/SettingsBundle/Styles/SettingsDateTime.styles.scss" />
