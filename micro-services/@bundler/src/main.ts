@@ -1,1 +1,1 @@
-// here will be micro services exported for build
+export * from "../../src/ms-user-agent/src/index"
