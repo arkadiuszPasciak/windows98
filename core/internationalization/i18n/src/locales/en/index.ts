@@ -20,7 +20,6 @@ import teleportEN from "./teleport.locale.json"
 import themeEN from "./theme.locale.json"
 import ticTacToeEN from "./tic-tac-toe.locale.json"
 import timerEN from "./timer.locale.json"
-import timezoneEN from "./timezone.locale.json"
 import uiModalEN from "./ui-modal.locale.json"
 import uiSelectEN from "./ui-select.locale.json"
 import type { I18nLocaleSkeleton } from "../../types/locale-skeleton.type"
@@ -48,7 +47,6 @@ const localesEN: I18nLocaleSkeleton = {
 	...themeEN,
 	...ticTacToeEN,
 	...timerEN,
-	...timezoneEN,
 	...uiModalEN,
 	...uiSelectEN,
 }
