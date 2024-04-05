@@ -15,51 +15,51 @@ export default function useMonthSwitcher() {
 			months: [
 				{
 					value: 0,
-					name: t("calendar.month-switcher.january"),
+					name: t("ma-calendar.month-switcher.january"),
 				},
 				{
 					value: 1,
-					name: t("calendar.month-switcher.february"),
+					name: t("ma-calendar.month-switcher.february"),
 				},
 				{
 					value: 2,
-					name: t("calendar.month-switcher.march"),
+					name: t("ma-calendar.month-switcher.march"),
 				},
 				{
 					value: 3,
-					name: t("calendar.month-switcher.april"),
+					name: t("ma-calendar.month-switcher.april"),
 				},
 				{
 					value: 4,
-					name: t("calendar.month-switcher.may"),
+					name: t("ma-calendar.month-switcher.may"),
 				},
 				{
 					value: 5,
-					name: t("calendar.month-switcher.june"),
+					name: t("ma-calendar.month-switcher.june"),
 				},
 				{
 					value: 6,
-					name: t("calendar.month-switcher.july"),
+					name: t("ma-calendar.month-switcher.july"),
 				},
 				{
 					value: 7,
-					name: t("calendar.month-switcher.august"),
+					name: t("ma-calendar.month-switcher.august"),
 				},
 				{
 					value: 8,
-					name: t("calendar.month-switcher.september"),
+					name: t("ma-calendar.month-switcher.september"),
 				},
 				{
 					value: 9,
-					name: t("calendar.month-switcher.october"),
+					name: t("ma-calendar.month-switcher.october"),
 				},
 				{
 					value: 10,
-					name: t("calendar.month-switcher.november"),
+					name: t("ma-calendar.month-switcher.november"),
 				},
 				{
 					value: 11,
-					name: t("calendar.month-switcher.december"),
+					name: t("ma-calendar.month-switcher.december"),
 				},
 			]
 		}),

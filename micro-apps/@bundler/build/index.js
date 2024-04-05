@@ -134,35 +134,35 @@ function Br(a, t = {}) {
   return pt(a, t, { mount: mt, update: ht, unmount: yt });
 }
 const xt = {
-  days: {
-    monday: "M",
-    tuesday: "T",
-    wednesday: "W",
-    thursday: "T",
-    friday: "F",
-    saturday: "S",
-    sunday: "S"
-  },
-  "month-switcher": {
-    january: "January",
-    february: "February",
-    march: "March",
-    april: "April",
-    may: "May",
-    june: "June",
-    july: "July",
-    august: "August",
-    september: "September",
-    october: "October",
-    november: "November",
-    december: "December"
-  },
-  wrapper: {
-    title: "Calendar"
+  "ma-calendar": {
+    days: {
+      monday: "M",
+      tuesday: "T",
+      wednesday: "W",
+      thursday: "T",
+      friday: "F",
+      saturday: "S",
+      sunday: "S"
+    },
+    "month-switcher": {
+      january: "January",
+      february: "February",
+      march: "March",
+      april: "April",
+      may: "May",
+      june: "June",
+      july: "July",
+      august: "August",
+      september: "September",
+      october: "October",
+      november: "November",
+      december: "December"
+    },
+    wrapper: {
+      title: "Calendar"
+    }
   }
 }, vt = {
-  calendar: xt
-}, gt = {
   "ma-timezone": {
     stepper: {
       0: "GMT+0 Greenwich Mean Time (GMT)",
@@ -195,39 +195,39 @@ const xt = {
       title: "Timezone"
     }
   }
+}, gt = {
+  ...xt,
+  ...vt
 }, _t = {
-  ...vt,
-  ...gt
-}, wt = {
-  days: {
-    monday: "P",
-    tuesday: "W",
-    wednesday: "Ś",
-    thursday: "C",
-    friday: "P",
-    saturday: "S",
-    sunday: "N"
-  },
-  "month-switcher": {
-    january: "Styczeń",
-    february: "Luty",
-    march: "Marzec",
-    april: "Kwiecień",
-    may: "Maj",
-    june: "Czerwiec",
-    july: "Lipiec",
-    august: "Sierpień",
-    september: "Wrzesień",
-    october: "Październik",
-    november: "Listopad",
-    december: "Grudzień"
-  },
-  wrapper: {
-    title: "Kalendarz"
+  "ma-calendar": {
+    days: {
+      monday: "P",
+      tuesday: "W",
+      wednesday: "Ś",
+      thursday: "C",
+      friday: "P",
+      saturday: "S",
+      sunday: "N"
+    },
+    "month-switcher": {
+      january: "Styczeń",
+      february: "Luty",
+      march: "Marzec",
+      april: "Kwiecień",
+      may: "Maj",
+      june: "Czerwiec",
+      july: "Lipiec",
+      august: "Sierpień",
+      september: "Wrzesień",
+      october: "Październik",
+      november: "Listopad",
+      december: "Grudzień"
+    },
+    wrapper: {
+      title: "Kalendarz"
+    }
   }
-}, St = {
-  calendar: wt
-}, Tt = {
+}, wt = {
   "ma-timezone": {
     stepper: {
       0: "GMT+0 Uniwersynalny Czas (GMT)",
@@ -260,29 +260,57 @@ const xt = {
       title: "Strefa czasowa"
     }
   }
-}, kt = {
-  ...St,
-  ...Tt
-}, jt = {
+}, St = {
+  ..._t,
+  ...wt
+}, Tt = {
   en: {
     translation: {
-      ..._t
+      ...gt
     }
   },
   pl: {
     translation: {
-      ...kt
+      ...St
     }
   }
 };
-async function Mt() {
+async function kt() {
   await nt.use(ot).init({
-    resources: jt,
+    resources: Tt,
     lng: "en",
     fallbackLng: "en"
   });
 }
 var Rr = { exports: {} }, Pe = {};
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+var Pr;
+function jt() {
+  if (Pr)
+    return Pe;
+  Pr = 1;
+  var a = oe, t = Symbol.for("react.element"), o = Symbol.for("react.fragment"), f = Object.prototype.hasOwnProperty, u = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, v = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function x(S, m, j) {
+    var y, p = {}, g = null, R = null;
+    j !== void 0 && (g = "" + j), m.key !== void 0 && (g = "" + m.key), m.ref !== void 0 && (R = m.ref);
+    for (y in m)
+      f.call(m, y) && !v.hasOwnProperty(y) && (p[y] = m[y]);
+    if (S && S.defaultProps)
+      for (y in m = S.defaultProps, m)
+        p[y] === void 0 && (p[y] = m[y]);
+    return { $$typeof: t, type: S, key: g, ref: R, props: p, _owner: u.current };
+  }
+  return Pe.Fragment = o, Pe.jsx = x, Pe.jsxs = x, Pe;
+}
+var $e = {};
 /**
  * @license React
  * react-jsx-runtime.development.js
@@ -292,9 +320,9 @@ var Rr = { exports: {} }, Pe = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var Pr;
-function Rt() {
-  return Pr || (Pr = 1, process.env.NODE_ENV !== "production" && function() {
+var $r;
+function Mt() {
+  return $r || ($r = 1, process.env.NODE_ENV !== "production" && function() {
     var a = oe, t = Symbol.for("react.element"), o = Symbol.for("react.portal"), f = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), v = Symbol.for("react.profiler"), x = Symbol.for("react.provider"), S = Symbol.for("react.context"), m = Symbol.for("react.forward_ref"), j = Symbol.for("react.suspense"), y = Symbol.for("react.suspense_list"), p = Symbol.for("react.memo"), g = Symbol.for("react.lazy"), R = Symbol.for("react.offscreen"), P = Symbol.iterator, $ = "@@iterator";
     function F(e) {
       if (e === null || typeof e != "object")
@@ -876,40 +904,12 @@ Check the top-level render call using <` + n + ">.");
       return Oe(e, r, n, !1);
     }
     var _r = gr, wr = vr;
-    Pe.Fragment = f, Pe.jsx = _r, Pe.jsxs = wr;
-  }()), Pe;
+    $e.Fragment = f, $e.jsx = _r, $e.jsxs = wr;
+  }()), $e;
 }
-var $e = {};
-/**
- * @license React
- * react-jsx-runtime.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-var $r;
-function Et() {
-  if ($r)
-    return $e;
-  $r = 1;
-  var a = oe, t = Symbol.for("react.element"), o = Symbol.for("react.fragment"), f = Object.prototype.hasOwnProperty, u = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, v = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function x(S, m, j) {
-    var y, p = {}, g = null, R = null;
-    j !== void 0 && (g = "" + j), m.key !== void 0 && (g = "" + m.key), m.ref !== void 0 && (R = m.ref);
-    for (y in m)
-      f.call(m, y) && !v.hasOwnProperty(y) && (p[y] = m[y]);
-    if (S && S.defaultProps)
-      for (y in m = S.defaultProps, m)
-        p[y] === void 0 && (p[y] = m[y]);
-    return { $$typeof: t, type: S, key: g, ref: R, props: p, _owner: u.current };
-  }
-  return $e.Fragment = o, $e.jsx = x, $e.jsxs = x, $e;
-}
-process.env.NODE_ENV === "production" ? Rr.exports = Et() : Rr.exports = Rt();
+process.env.NODE_ENV === "production" ? Rr.exports = jt() : Rr.exports = Mt();
 var M = Rr.exports;
-class Ct {
+class Rt {
   constructor() {
     A(this, "date");
     A(this, "firstDayMonth");
@@ -964,17 +964,17 @@ class Ct {
     this.lastDateMonth = new Date(this.year, this.month + 1, 0).getDate();
   }
 }
-var Ot = Object.defineProperty, Dt = Object.getOwnPropertyDescriptor, le = (a, t, o, f) => {
-  for (var u = f > 1 ? void 0 : f ? Dt(t, o) : t, v = a.length - 1, x; v >= 0; v--)
+var Et = Object.defineProperty, Ct = Object.getOwnPropertyDescriptor, le = (a, t, o, f) => {
+  for (var u = f > 1 ? void 0 : f ? Ct(t, o) : t, v = a.length - 1, x; v >= 0; v--)
     (x = a[v]) && (u = (f ? x(t, o, u) : x(u)) || u);
-  return f && u && Ot(t, o, u), u;
+  return f && u && Et(t, o, u), u;
 };
 class ae {
   constructor() {
     A(this, "calendar", null);
     A(this, "year", null);
     A(this, "month", null);
-    A(this, "calendarRepository", new Ct());
+    A(this, "calendarRepository", new Rt());
     Wr(this);
   }
   generateCalendar(t) {
@@ -1039,7 +1039,7 @@ var Er = { exports: {} }, Le = {};
  * LICENSE file in the root directory of this source tree.
  */
 var zr;
-function Pt() {
+function Ot() {
   return zr || (zr = 1, process.env.NODE_ENV !== "production" && function() {
     var a = oe, t = Symbol.for("react.element"), o = Symbol.for("react.portal"), f = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), v = Symbol.for("react.profiler"), x = Symbol.for("react.provider"), S = Symbol.for("react.context"), m = Symbol.for("react.forward_ref"), j = Symbol.for("react.suspense"), y = Symbol.for("react.suspense_list"), p = Symbol.for("react.memo"), g = Symbol.for("react.lazy"), R = Symbol.for("react.offscreen"), P = Symbol.iterator, $ = "@@iterator";
     function F(e) {
@@ -1636,7 +1636,7 @@ var ze = {};
  * LICENSE file in the root directory of this source tree.
  */
 var Nr;
-function $t() {
+function Dt() {
   if (Nr)
     return ze;
   Nr = 1;
@@ -1653,7 +1653,7 @@ function $t() {
   }
   return ze.Fragment = o, ze.jsx = x, ze.jsxs = x, ze;
 }
-process.env.NODE_ENV === "production" ? Er.exports = $t() : Er.exports = Pt();
+process.env.NODE_ENV === "production" ? Er.exports = Dt() : Er.exports = Ot();
 var k = Er.exports;
 const kr = {
   "theme-light": "_theme-light_qp7ji_16",
@@ -1690,11 +1690,11 @@ function Ar({
     }
   );
 }
-const zt = "_frame_hpida_96", Nt = "_title_hpida_104", Fr = {
+const Pt = "_frame_hpida_96", $t = "_title_hpida_104", Fr = {
   "theme-light": "_theme-light_hpida_16",
   "theme-dark": "_theme-dark_hpida_36",
-  frame: zt,
-  title: Nt
+  frame: Pt,
+  title: $t
 };
 function Kr({
   children: a,
@@ -1709,7 +1709,7 @@ function Kr({
       "data-testid": `ds-frame-${o}`,
       children: [
         f && /* @__PURE__ */ k.jsx(
-          Qt,
+          Zt,
           {
             className: Fr.title,
             text: f,
@@ -1721,7 +1721,7 @@ function Kr({
     }
   );
 }
-function At() {
+function zt() {
   return /* @__PURE__ */ k.jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", width: "16", height: "17", fill: "none", children: [
     /* @__PURE__ */ k.jsx(
       "path",
@@ -1771,24 +1771,24 @@ function At() {
     )
   ] });
 }
-const Ft = {
-  "select-button": /* @__PURE__ */ k.jsx(At, {})
+const Nt = {
+  "select-button": /* @__PURE__ */ k.jsx(zt, {})
 };
-function It({
+function At({
   className: a = "",
   name: t
 }) {
-  return /* @__PURE__ */ k.jsx("span", { className: a, children: Ft[t] });
+  return /* @__PURE__ */ k.jsx("span", { className: a, children: Nt[t] });
 }
-const Gt = "_input_e0ixd_111", Lt = "_label_e0ixd_112", jr = {
+const Ft = "_input_e0ixd_111", It = "_label_e0ixd_112", jr = {
   "theme-light": "_theme-light_e0ixd_16",
   "theme-dark": "_theme-dark_e0ixd_36",
   "wrapper-horizontal": "_wrapper-horizontal_e0ixd_96",
   "wrapper-vertical": "_wrapper-vertical_e0ixd_102",
-  input: Gt,
-  label: Lt
+  input: Ft,
+  label: It
 };
-function Vt({ initialValue: a, onChange: t }) {
+function Gt({ initialValue: a, onChange: t }) {
   const [o, f] = Cr(a);
   return ne(() => {
     f(a);
@@ -1797,7 +1797,7 @@ function Vt({ initialValue: a, onChange: t }) {
     f(v), t && t(v);
   } };
 }
-function Wt({
+function Lt({
   className: a = "",
   type: t = "text",
   id: o,
@@ -1810,7 +1810,7 @@ function Wt({
   max: j,
   onChange: y
 }) {
-  const { value: p, handleInputChange: g } = Vt({ initialValue: v, onChange: y }), R = `ds-input-${o}`;
+  const { value: p, handleInputChange: g } = Gt({ initialValue: v, onChange: y }), R = `ds-input-${o}`;
   return /* @__PURE__ */ k.jsxs(
     "div",
     {
@@ -1846,7 +1846,7 @@ function Wt({
     }
   );
 }
-function Yt(a) {
+function Vt(a) {
   const [t, o] = Cr(a);
   return {
     value: t,
@@ -1855,13 +1855,13 @@ function Yt(a) {
     }
   };
 }
-const Bt = "_wrapper_1id5f_96", qt = "_label_1id5f_100", Ut = "_select_1id5f_105", Kt = "_arrow_1id5f_115", Ne = {
+const Wt = "_wrapper_1id5f_96", Yt = "_label_1id5f_100", Bt = "_select_1id5f_105", qt = "_arrow_1id5f_115", Ne = {
   "theme-light": "_theme-light_1id5f_16",
   "theme-dark": "_theme-dark_1id5f_36",
-  wrapper: Bt,
-  label: qt,
-  select: Ut,
-  arrow: Kt
+  wrapper: Wt,
+  label: Yt,
+  select: Bt,
+  arrow: qt
 };
 function Jr({
   className: a = "",
@@ -1873,7 +1873,7 @@ function Jr({
   labelName: x,
   onSelect: S
 }) {
-  const { value: m, handleChange: j } = Yt(u), y = (p) => {
+  const { value: m, handleChange: j } = Vt(u), y = (p) => {
     j(p), S(p);
   };
   return /* @__PURE__ */ k.jsxs("div", { className: `${Ne.wrapper} ${a}`, children: [
@@ -1910,7 +1910,7 @@ function Jr({
       }
     ),
     /* @__PURE__ */ k.jsx(
-      It,
+      At,
       {
         className: Ne.arrow,
         name: "select-button"
@@ -1924,7 +1924,7 @@ const Ir = {
   "ds-stepper": "_ds-stepper_p8wyg_96",
   "state-disabled": "_state-disabled_p8wyg_111"
 };
-function Jt({
+function Ut({
   modelValue: a,
   onIncrease: t,
   onDecrease: o
@@ -1938,7 +1938,7 @@ function Jt({
     o && o();
   } };
 }
-function Ht({
+function Kt({
   className: a = "",
   id: t,
   modelValue: o,
@@ -1950,7 +1950,7 @@ function Ht({
     value: x,
     handleIncrease: S,
     handleDecrease: m
-  } = Jt({ modelValue: o, onIncrease: u, onDecrease: v });
+  } = Ut({ modelValue: o, onIncrease: u, onDecrease: v });
   return /* @__PURE__ */ k.jsxs(
     "div",
     {
@@ -1961,7 +1961,7 @@ function Ht({
       `,
       children: [
         /* @__PURE__ */ k.jsx(
-          Wt,
+          Lt,
           {
             id: `stepper-${t}`,
             initialValue: x,
@@ -1994,12 +1994,12 @@ function Ht({
     }
   );
 }
-const Zt = "_DSText_pg4yx_96", Xt = {
+const Jt = "_DSText_pg4yx_96", Ht = {
   "theme-light": "_theme-light_pg4yx_16",
   "theme-dark": "_theme-dark_pg4yx_36",
-  DSText: Zt
+  DSText: Jt
 };
-function Qt({
+function Zt({
   className: a = "",
   id: t,
   text: o
@@ -2007,7 +2007,7 @@ function Qt({
   return /* @__PURE__ */ k.jsx(
     "p",
     {
-      className: `${Xt.DSText} ${a}`,
+      className: `${Ht.DSText} ${a}`,
       "data-testid": `ds-text-${t}`,
       children: o
     }
@@ -2018,14 +2018,14 @@ function We() {
     calendarService: Vr(Ur)
   };
 }
-function ea() {
+function Xt() {
   const { t: a } = ie(), { calendarService: t } = We();
   return ne(() => {
     t.generateCalendar();
   }, []), {
     title: Ae(
       () => ({
-        title: a("calendar.wrapper.title")
+        title: a("ma-calendar.wrapper.title")
       }),
       [a]
     ).title
@@ -2035,13 +2035,13 @@ function Hr() {
   const { calendarService: a } = We(), { t } = ie(), o = Ae(
     () => ({
       weekDays: [
-        t("calendar.days.sunday"),
-        t("calendar.days.monday"),
-        t("calendar.days.tuesday"),
-        t("calendar.days.wednesday"),
-        t("calendar.days.thursday"),
-        t("calendar.days.friday"),
-        t("calendar.days.saturday")
+        t("ma-calendar.days.sunday"),
+        t("ma-calendar.days.monday"),
+        t("ma-calendar.days.tuesday"),
+        t("ma-calendar.days.wednesday"),
+        t("ma-calendar.days.thursday"),
+        t("ma-calendar.days.friday"),
+        t("ma-calendar.days.saturday")
       ]
     }),
     [t]
@@ -2051,12 +2051,12 @@ function Hr() {
     weekDays: o.weekDays
   };
 }
-const ra = "_day_1v33v_104", Gr = {
+const Qt = "_day_1v33v_104", Gr = {
   "theme-light": "_theme-light_1v33v_16",
   "theme-dark": "_theme-dark_1v33v_36",
   "week-days": "_week-days_1v33v_96",
-  day: ra
-}, ta = te(() => {
+  day: Qt
+}, ea = te(() => {
   const { weekDays: a } = Hr();
   return /* @__PURE__ */ M.jsx("div", { className: Gr["week-days"], children: a.map((t, o) => /* @__PURE__ */ M.jsx(
     "span",
@@ -2067,13 +2067,13 @@ const ra = "_day_1v33v_104", Gr = {
     },
     o
   )) });
-}), aa = "_day_12et3_102", Ve = {
+}), ra = "_day_12et3_102", Ve = {
   "theme-light": "_theme-light_12et3_16",
   "theme-dark": "_theme-dark_12et3_36",
   "month-days": "_month-days_12et3_96",
-  day: aa,
+  day: ra,
   "day-active": "_day-active_12et3_107"
-}, na = te(() => {
+}, ta = te(() => {
   const { monthDays: a } = Hr();
   return a && /* @__PURE__ */ M.jsx("div", { className: Ve["month-days"], "data-testid": "calendar-view-days", children: a.map((t, o) => t.value === "" ? /* @__PURE__ */ M.jsx(
     "span",
@@ -2095,15 +2095,15 @@ const ra = "_day_1v33v_104", Gr = {
     },
     o
   )) });
-}), oa = "_days_1xeii_96", ia = {
+}), aa = "_days_1xeii_96", na = {
   "theme-light": "_theme-light_1xeii_16",
   "theme-dark": "_theme-dark_1xeii_36",
-  days: oa
-}, sa = () => /* @__PURE__ */ M.jsxs("div", { className: ia.days, children: [
-  /* @__PURE__ */ M.jsx(ta, {}),
-  /* @__PURE__ */ M.jsx(na, {})
+  days: aa
+}, oa = () => /* @__PURE__ */ M.jsxs("div", { className: na.days, children: [
+  /* @__PURE__ */ M.jsx(ea, {}),
+  /* @__PURE__ */ M.jsx(ta, {})
 ] });
-function la() {
+function ia() {
   const { t: a } = ie(), { calendarService: t } = We(), o = (u) => {
     t.changeCalendarByMonth(Number(u.currentTarget.value));
   }, f = Ae(
@@ -2111,51 +2111,51 @@ function la() {
       months: [
         {
           value: 0,
-          name: a("calendar.month-switcher.january")
+          name: a("ma-calendar.month-switcher.january")
         },
         {
           value: 1,
-          name: a("calendar.month-switcher.february")
+          name: a("ma-calendar.month-switcher.february")
         },
         {
           value: 2,
-          name: a("calendar.month-switcher.march")
+          name: a("ma-calendar.month-switcher.march")
         },
         {
           value: 3,
-          name: a("calendar.month-switcher.april")
+          name: a("ma-calendar.month-switcher.april")
         },
         {
           value: 4,
-          name: a("calendar.month-switcher.may")
+          name: a("ma-calendar.month-switcher.may")
         },
         {
           value: 5,
-          name: a("calendar.month-switcher.june")
+          name: a("ma-calendar.month-switcher.june")
         },
         {
           value: 6,
-          name: a("calendar.month-switcher.july")
+          name: a("ma-calendar.month-switcher.july")
         },
         {
           value: 7,
-          name: a("calendar.month-switcher.august")
+          name: a("ma-calendar.month-switcher.august")
         },
         {
           value: 8,
-          name: a("calendar.month-switcher.september")
+          name: a("ma-calendar.month-switcher.september")
         },
         {
           value: 9,
-          name: a("calendar.month-switcher.october")
+          name: a("ma-calendar.month-switcher.october")
         },
         {
           value: 10,
-          name: a("calendar.month-switcher.november")
+          name: a("ma-calendar.month-switcher.november")
         },
         {
           value: 11,
-          name: a("calendar.month-switcher.december")
+          name: a("ma-calendar.month-switcher.december")
         }
       ]
     }),
@@ -2167,8 +2167,8 @@ function la() {
     months: f.months
   };
 }
-const fa = te(() => {
-  const { handleSelectChange: a, month: t, months: o } = la();
+const sa = te(() => {
+  const { handleSelectChange: a, month: t, months: o } = ia();
   return t !== null && /* @__PURE__ */ M.jsx(
     Jr,
     {
@@ -2179,7 +2179,7 @@ const fa = te(() => {
     }
   );
 });
-function ca() {
+function la() {
   const { calendarService: a } = We();
   return {
     decreaseYear: () => {
@@ -2191,10 +2191,10 @@ function ca() {
     year: a.year
   };
 }
-const da = te(() => {
-  const { decreaseYear: a, increaseYear: t, year: o } = ca();
+const fa = te(() => {
+  const { decreaseYear: a, increaseYear: t, year: o } = la();
   return o && /* @__PURE__ */ M.jsx(
-    Ht,
+    Kt,
     {
       id: "calendar-year",
       modelValue: o,
@@ -2202,12 +2202,12 @@ const da = te(() => {
       onDecrease: a
     }
   );
-}), ua = "_wrapper_s3u64_96", pa = {
+}), ca = "_wrapper_s3u64_96", da = {
   "theme-light": "_theme-light_s3u64_16",
   "theme-dark": "_theme-dark_s3u64_36",
-  wrapper: ua
+  wrapper: ca
 };
-function ba() {
+function ua() {
   const { i18n: a } = ie();
   ne(() => {
     const t = document.documentElement.lang;
@@ -2223,35 +2223,35 @@ function ba() {
     };
   }, [a]);
 }
-const ma = te(() => {
-  const { title: a } = ea();
-  return ba(), /* @__PURE__ */ M.jsxs(
+const pa = te(() => {
+  const { title: a } = Xt();
+  return ua(), /* @__PURE__ */ M.jsxs(
     Kr,
     {
-      className: pa.wrapper,
+      className: da.wrapper,
       id: "calculator",
       title: a,
       children: [
+        /* @__PURE__ */ M.jsx(sa, {}),
         /* @__PURE__ */ M.jsx(fa, {}),
-        /* @__PURE__ */ M.jsx(da, {}),
-        /* @__PURE__ */ M.jsx(sa, {})
+        /* @__PURE__ */ M.jsx(oa, {})
       ]
     }
   );
-}), ha = () => /* @__PURE__ */ M.jsx(Ur.Provider, { value: qr, children: /* @__PURE__ */ M.jsx(ma, {}) });
-class ya {
+}), ba = () => /* @__PURE__ */ M.jsx(Ur.Provider, { value: qr, children: /* @__PURE__ */ M.jsx(pa, {}) });
+class ma {
   getTimezones() {
     return [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   }
 }
-var xa = Object.defineProperty, va = Object.getOwnPropertyDescriptor, Zr = (a, t, o, f) => {
-  for (var u = f > 1 ? void 0 : f ? va(t, o) : t, v = a.length - 1, x; v >= 0; v--)
+var ha = Object.defineProperty, ya = Object.getOwnPropertyDescriptor, Zr = (a, t, o, f) => {
+  for (var u = f > 1 ? void 0 : f ? ya(t, o) : t, v = a.length - 1, x; v >= 0; v--)
     (x = a[v]) && (u = (f ? x(t, o, u) : x(u)) || u);
-  return f && u && xa(t, o, u), u;
+  return f && u && ha(t, o, u), u;
 };
 class Or {
   constructor() {
-    A(this, "timezoneRepository", new ya());
+    A(this, "timezoneRepository", new ma());
     A(this, "timezonesValuePairs", null);
     Wr(this);
   }
@@ -2281,7 +2281,7 @@ function et() {
     timezoneService: Vr(Qr)
   };
 }
-function ga() {
+function xa() {
   const { t: a } = ie(), { timezoneService: t } = et();
   return ne(() => {
     t.generateTimezones();
@@ -2294,7 +2294,7 @@ function ga() {
     ).title
   };
 }
-function _a() {
+function va() {
   const { t: a } = ie(), { timezoneService: t } = et();
   return {
     dictionary: Ae(
@@ -2311,8 +2311,8 @@ function _a() {
     )
   };
 }
-const wa = te(() => {
-  const { dictionary: a } = _a();
+const ga = te(() => {
+  const { dictionary: a } = va();
   return (a == null ? void 0 : a.timezones) && /* @__PURE__ */ M.jsx(
     Jr,
     {
@@ -2323,19 +2323,19 @@ const wa = te(() => {
       }
     }
   );
-}), Sa = te(() => {
-  const { title: a } = ga();
+}), _a = te(() => {
+  const { title: a } = xa();
   return /* @__PURE__ */ M.jsx(
     Kr,
     {
       id: "timezone",
       title: a,
-      children: /* @__PURE__ */ M.jsx(wa, {})
+      children: /* @__PURE__ */ M.jsx(ga, {})
     }
   );
-}), Ta = () => /* @__PURE__ */ M.jsx(Qr.Provider, { value: Xr, children: /* @__PURE__ */ M.jsx(Sa, {}) }), ka = Br(ha);
-customElements.define("ma-calendar", ka);
-const ja = Br(Ta);
-customElements.define("ma-timezone", ja);
-Mt();
+}), wa = () => /* @__PURE__ */ M.jsx(Qr.Provider, { value: Xr, children: /* @__PURE__ */ M.jsx(_a, {}) }), Sa = Br(ba);
+customElements.define("ma-calendar", Sa);
+const Ta = Br(wa);
+customElements.define("ma-timezone", Ta);
+kt();
 //# sourceMappingURL=index.js.map
