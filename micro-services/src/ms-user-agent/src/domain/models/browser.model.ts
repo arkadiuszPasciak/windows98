@@ -1,11 +1,11 @@
-export type TUserAgentBrowsers =
+export type TBrowserName =
   | "Chrome"
   | "Firefox"
   | "Safari"
   | "Opera"
   | "Edge"
 
-export interface IUserAgentBrowser {
-  name: TUserAgentBrowsers
+export interface IBrowserName {
+  name: TBrowserName
   regex: RegExp
 }
