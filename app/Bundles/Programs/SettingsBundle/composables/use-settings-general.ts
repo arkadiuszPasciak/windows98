@@ -1,4 +1,4 @@
-import { UserAgentMicroServices } from "@windows98/micro-services/user-agent"
+import { UserAgentMicroServices } from "@windows98/micro-services/src/ms-user-agent"
 
 export default function useSettingsGeneral() {
 	const userAgentMicroServices = new UserAgentMicroServices()
