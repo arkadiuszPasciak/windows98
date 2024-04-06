@@ -1,5 +1,5 @@
 import { expect, it, describe, vi } from "vitest"
-import UserAgentService from "../../src/domain/services/user-agent.service"
+import BrowserEnvService from "../../src/domain/services/browser-env.service"
 
 export const MUserAgentMocks = {
 	chromeMacOSXDesktop:
@@ -59,27 +59,27 @@ export const MUserAgentOperationSystems = [
 	},
 ]
 
-describe("[MicroServices]<UserAgent>(UserAgentService)", () => {
-	it.each(MUserAgentBrowserNames)("should return browser name", (browser) => {
+describe("[MicroServices]<BrowserEnv>(BrowserEnvService)", () => {
+	it.each(MUserAgentBrowserNames)("getBrowserName()", (browser) => {
 		vi.stubGlobal("navigator", {
 			userAgent: browser.userAgent,
 		})
 
-		const userAgentService = new UserAgentService()
-		const browserName = userAgentService.getBrowserName()
+		const browserEnvService = new BrowserEnvService()
+		const browserName = browserEnvService.getBrowserName()
 
 		expect(browserName).equal(browser.expected)
 
 		vi.restoreAllMocks()
 	})
 
-	it.each(MUserAgentDeviceTypes)("should return device type", (device) => {
+	it.each(MUserAgentDeviceTypes)("getDeviceType()", (device) => {
 		vi.stubGlobal("navigator", {
 			userAgent: device.userAgent,
 		})
 
-		const userAgentService = new UserAgentService()
-		const deviceType = userAgentService.getTypeDevice()
+		const browserEnvService = new BrowserEnvService()
+		const deviceType = browserEnvService.getDeviceType()
 
 		expect(deviceType).equal(device.expected)
 
@@ -87,14 +87,14 @@ describe("[MicroServices]<UserAgent>(UserAgentService)", () => {
 	})
 
 	it.each(MUserAgentOperationSystems)(
-		"should return operation system",
+		"getOperationSystem()",
 		(operationSystem) => {
 			vi.stubGlobal("navigator", {
 				userAgent: operationSystem.userAgent,
 			})
 
-			const userAgentService = new UserAgentService()
-			const operationSystemName = userAgentService.getOperatingSystem()
+			const browserEnvService = new BrowserEnvService()
+			const operationSystemName = browserEnvService.getOperationSystem()
 
 			expect(operationSystemName).equal(operationSystem.expected)
 

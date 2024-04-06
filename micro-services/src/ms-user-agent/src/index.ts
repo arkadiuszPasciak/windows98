@@ -1,1 +1,1 @@
-export { default as MSUserAgent } from "./domain/services/user-agent.service"
+export { default as MSBrowserEnv } from "./domain/services/browser-env.service"
