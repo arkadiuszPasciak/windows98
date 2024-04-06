@@ -1,10 +1,10 @@
 import type { Maybe } from "@windows98/toolkit/src/types"
-import type { TUserAgentDevices } from "../models/device.model"
-import type { TUserAgentBrowsers } from "../models/browser.model"
-import type { TUserAgentAllPlatforms } from "../models/platform.model"
+import type { TBrowserName } from "../models/browser.model"
+import type { TDevices } from '../models/device.model'
+import type { TOperationSystemAll } from '../models/operation.model'
 
-export default interface UserAgentServiceContract {
-  getBrowserName(): Maybe<TUserAgentBrowsers>
-  getOperatingSystem(): Maybe<TUserAgentAllPlatforms>
-  getTypeDevice(): Maybe<TUserAgentDevices>
+export default interface BrowserEnvServiceContract {
+  getBrowserName(): Maybe<TBrowserName>
+  getDeviceType(): Maybe<TDevices>
+  getOperationSystem(): Maybe<TOperationSystemAll>
 }

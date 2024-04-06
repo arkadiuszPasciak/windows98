@@ -1,6 +1,6 @@
-export type TUserAgentDevices = "mobile" | "desktop"
+export type TDevices = "mobile" | "desktop"
 
-export interface IUserAgentDevices {
-  name: TUserAgentDevices
+export interface IDevicesRegex {
+  name: TDevices
   regex: RegExp
 }

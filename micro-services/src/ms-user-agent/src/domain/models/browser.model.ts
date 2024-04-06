@@ -5,7 +5,7 @@ export type TBrowserName =
   | "Opera"
   | "Edge"
 
-export interface IBrowserName {
+export interface IBrowserNameRegex {
   name: TBrowserName
   regex: RegExp
 }

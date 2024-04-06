@@ -1,9 +1,9 @@
-import type { IBrowserName, TBrowserName } from '../../domain/models/browser.model';
+import type { IBrowserNameRegex, TBrowserName } from '../../domain/models/browser.model';
 import type BrowserEnvRepositoryContract from '../../domain/contracts/repository.contract';
 
 export default class BrowserNameRepository implements BrowserEnvRepositoryContract<TBrowserName> {
 	constructor(
-		private readonly browserNames: Array<IBrowserName> = [
+		private readonly browserNames: Array<IBrowserNameRegex> = [
 			{ name: "Chrome", regex: /chrome|chromium|crios/i },
 			{ name: "Firefox", regex: /firefox|fxios/i },
 			{ name: "Safari", regex: /safari/i },
