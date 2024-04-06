@@ -1,1 +1,1 @@
-export * from "../../src/ms-user-agent/src/index"
+export * from "../../src/ms-browser-env/src/index"

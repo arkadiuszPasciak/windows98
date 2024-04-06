@@ -1,5 +1,5 @@
-import type BrowserEnvRepositoryContract from '../../domain/contracts/repository.contract';
-import type { IOperationSystemRegex, TOperationSystemAll } from '../../domain/models/operation.model';
+import type BrowserEnvRepositoryContract from "../../domain/contracts/repository.contract"
+import type { IOperationSystemRegex, TOperationSystemAll } from "../../domain/models/operation.model"
 
 export default class OperationSystemRepository implements BrowserEnvRepositoryContract<TOperationSystemAll> {
 	constructor(

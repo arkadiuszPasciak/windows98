@@ -1,5 +1,5 @@
-import type BrowserEnvRepositoryContract from '../../domain/contracts/repository.contract';
-import type { IScreenInformation } from '../../domain/models/screen.model';
+import type BrowserEnvRepositoryContract from "../../domain/contracts/repository.contract"
+import type { IScreenInformation } from "../../domain/models/screen.model"
 
 export default class ScreenRepository implements BrowserEnvRepositoryContract<IScreenInformation> {
 	public get() {

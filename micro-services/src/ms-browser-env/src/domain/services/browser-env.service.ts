@@ -1,8 +1,8 @@
-import type BrowserEnvServiceContract from '../contracts/service.contract'
+import type BrowserEnvServiceContract from "../contracts/service.contract"
 import BrowserNameRepository from "../../data/repositories/browser-name.repository"
-import DeviceTypeRepository from '../../data/repositories/device-type.repository'
-import OperationSystemRepository from '../../data/repositories/operation-system.repository'
-import ScreenRepository from '../../data/repositories/screen.repository'
+import DeviceTypeRepository from "../../data/repositories/device-type.repository"
+import OperationSystemRepository from "../../data/repositories/operation-system.repository"
+import ScreenRepository from "../../data/repositories/screen.repository"
 
 export default class BrowserEnvService implements BrowserEnvServiceContract {
 	constructor(
