@@ -1,4 +1,4 @@
-import { expect, it, describe, vi } from "vitest"
+import { expect, it, describe, vi, test } from "vitest"
 import BrowserEnvService from "../../src/domain/services/browser-env.service"
 
 export const MUserAgentMocks = {
@@ -101,4 +101,15 @@ describe("[MicroServices]<BrowserEnv>(BrowserEnvService)", () => {
 			vi.restoreAllMocks()
 		},
 	)
+
+	test("getScreenInformation()", () => {
+		const browserEnvService = new BrowserEnvService()
+		const screenInformation = browserEnvService.getScreenInformation()
+
+		expect(screenInformation).toMatchObject({
+			colorDepth: expect.any(Number),
+			height: expect.any(Number),
+			width: expect.any(Number),
+		})
+	})
 })
