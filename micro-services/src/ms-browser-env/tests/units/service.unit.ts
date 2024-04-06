@@ -40,7 +40,7 @@ export const MUserAgentDeviceTypes = [
 	},
 ]
 
-export const MUserAgentOperationSystems = [
+export const MUserAgentOperatingSystems = [
 	{
 		userAgent: MUserAgentMocks.chromeMacOSXDesktop,
 		expected: "Mac OS X",
@@ -86,17 +86,17 @@ describe("[MicroServices]<BrowserEnv>(BrowserEnvService)", () => {
 		vi.restoreAllMocks()
 	})
 
-	it.each(MUserAgentOperationSystems)(
-		"getOperationSystem()",
-		(operationSystem) => {
+	it.each(MUserAgentOperatingSystems)(
+		"getOperatingSystem()",
+		(operatingSystem) => {
 			vi.stubGlobal("navigator", {
-				userAgent: operationSystem.userAgent,
+				userAgent: operatingSystem.userAgent,
 			})
 
 			const browserEnvService = new BrowserEnvService()
-			const operationSystemName = browserEnvService.getOperationSystem()
+			const operatingSystemName = browserEnvService.getOperatingSystem()
 
-			expect(operationSystemName).equal(operationSystem.expected)
+			expect(operatingSystemName).equal(operatingSystem.expected)
 
 			vi.restoreAllMocks()
 		},
@@ -104,9 +104,9 @@ describe("[MicroServices]<BrowserEnv>(BrowserEnvService)", () => {
 
 	test("getScreenInformation()", () => {
 		const browserEnvService = new BrowserEnvService()
-		const screenInformation = browserEnvService.getScreenInformation()
+		const screenInformating = browserEnvService.getScreenInformation()
 
-		expect(screenInformation).toMatchObject({
+		expect(screenInformating).toMatchObject({
 			colorDepth: expect.any(Number),
 			height: expect.any(Number),
 			width: expect.any(Number),

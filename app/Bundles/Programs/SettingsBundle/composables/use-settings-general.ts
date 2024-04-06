@@ -5,7 +5,7 @@ export default function useSettingsGeneral() {
 
 	const browserName = msBrowserEnv.getBrowserName()
 	const deviceType = msBrowserEnv.getDeviceType()
-	const operatingSystem = msBrowserEnv.getOperationSystem()
+	const operatingSystem = msBrowserEnv.getOperatingSystem()
 
 	return {
 		browserName,

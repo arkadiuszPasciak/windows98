@@ -1,9 +1,9 @@
 import type BrowserEnvRepositoryContract from "../../domain/contracts/repository.contract"
-import type { IOperationSystemRegex, TOperationSystemAll } from "../../domain/models/operation.model"
+import type { IOperatingSystemRegex, TOperatingSystemAll } from "../../domain/models/operating.model"
 
-export default class OperationSystemRepository implements BrowserEnvRepositoryContract<TOperationSystemAll> {
+export default class OperatingSystemRepository implements BrowserEnvRepositoryContract<TOperatingSystemAll> {
 	constructor(
-		private readonly operationSystems: Array<IOperationSystemRegex> = [
+		private readonly operatingSystems: Array<IOperatingSystemRegex> = [
 			{ name: "Windows 3.11", regex: /Win16/ },
 			{ name: "Windows 95", regex: /(Windows 95|Win95|Windows_95)/ },
 			{ name: "Windows ME", regex: /(Win 9x 4.90|Windows ME)/ },
@@ -40,8 +40,8 @@ export default class OperationSystemRepository implements BrowserEnvRepositoryCo
 
 		if (!userAgent) return null
 
-		for (const id in this.operationSystems) {
-			const system = this.operationSystems[id]
+		for (const id in this.operatingSystems) {
+			const system = this.operatingSystems[id]
 
 			if (system.regex.test(userAgent)) {
 				return system.name
