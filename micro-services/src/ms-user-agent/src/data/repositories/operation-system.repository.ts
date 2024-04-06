@@ -35,7 +35,7 @@ export default class OperationSystemRepository implements BrowserEnvRepositoryCo
 		]
 	) { }
 
-	public getName() {
+	public get() {
 		const userAgent = window.navigator.userAgent
 
 		if (!userAgent) return null

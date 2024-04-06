@@ -16,14 +16,14 @@ export default class BrowserEnvService implements BrowserEnvServiceContract {
 	) { }
 
 	public getBrowserName(): Maybe<TBrowserName> {
-		return this.browserNameRepository.getName()
+		return this.browserNameRepository.get()
 	}
 
 	public getDeviceType(): Maybe<TDevices> {
-		return this.deviceTypeRepository.getName()
+		return this.deviceTypeRepository.get()
 	}
 
 	public getOperationSystem(): Maybe<TOperationSystemAll> {
-		return this.operationSystemRepository.getName()
+		return this.operationSystemRepository.get()
 	}
 }

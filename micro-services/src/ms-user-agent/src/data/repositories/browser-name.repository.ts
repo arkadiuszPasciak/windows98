@@ -12,7 +12,7 @@ export default class BrowserNameRepository implements BrowserEnvRepositoryContra
 		],
 	) { }
 
-	public getName() {
+	public get() {
 		const userAgent = window.navigator.userAgent
 
 		if (!userAgent) return null
