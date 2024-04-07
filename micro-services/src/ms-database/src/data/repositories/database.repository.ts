@@ -30,7 +30,7 @@ export class DatabaseRepository implements DatabaseRepositoryContract {
 			throw new Error("Database not open")
 		}
 
-		const transaction = this.database.transaction(this.storeName, mode)
+		const transaction: IDBTransaction = this.database.transaction(this.storeName, mode)
 		return transaction.objectStore(this.storeName)
 	}
 
