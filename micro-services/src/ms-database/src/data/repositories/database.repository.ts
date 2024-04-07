@@ -11,7 +11,7 @@ export class DatabaseRepository implements DatabaseRepositoryContract {
 
 	async open(): Promise<void> {
 		return new Promise((resolve, reject) => {
-			const request = indexedDB.open(this.databaseName)
+			const request = window.indexedDB.open(this.databaseName)
 
 			request.onerror = () => reject(request.error)
 			request.onsuccess = () => {
