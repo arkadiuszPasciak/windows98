@@ -5,6 +5,12 @@ export default defineConfig({
 	build: {
 		copyPublicDir: false,
 		emptyOutDir: true,
+		lib: {
+			entry: "src/main.ts",
+			name: "micro-services",
+			fileName: "index",
+			formats: ["es", "umd"]
+		},
 		outDir: "build",
 		sourcemap: true,
 	},

@@ -1,4 +1,4 @@
-import { MSBrowserEnv } from "@windows98/micro-services/@bundler/src/main"
+import { MSBrowserEnv } from "@windows98/micro-services"
 
 export default function useSettingsGeneral() {
 	const msBrowserEnv = new MSBrowserEnv()

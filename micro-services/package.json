@@ -1,5 +1,17 @@
 {
   "name": "@windows98/micro-services",
+  "main": "@bundler/build/index.umd.cjs",
+  "module": "@bundler/build/index.js",
+  "types": "@bundler/build/@bundles/src/wc/index.wc.d.ts",
+  "files": [
+    "@bundler/build"
+  ],
+  "exports": {
+    ".": {
+      "import": "./@bundler/build/index.js",
+      "require": "./@bundler/build/index.umd.cjs"
+    }
+  },
   "version": "1.0.0",
   "description": "Micro services for Windows 98",
   "author": "Arkadiusz Paściak",
