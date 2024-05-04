@@ -6,7 +6,7 @@ export default defineConfig({
 		copyPublicDir: false,
 		emptyOutDir: true,
 		lib: {
-			entry: "src/main.ts",
+			entry: "../src/index.ts",
 			name: "micro-services",
 			fileName: "index",
 			formats: ["es", "umd"]

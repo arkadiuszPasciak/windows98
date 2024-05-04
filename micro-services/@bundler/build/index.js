@@ -135,11 +135,6 @@ class w {
       };
     });
   }
-  getStore(e) {
-    if (!this.database)
-      throw new Error("Database not open");
-    return this.database.transaction(this.storeName, e).objectStore(this.storeName);
-  }
   async add(e) {
     this.getStore("readwrite").add(e);
   }
@@ -151,6 +146,11 @@ class w {
   }
   async delete(e) {
     this.getStore("readwrite").delete(e);
+  }
+  getStore(e) {
+    if (!this.database)
+      throw new Error("Database not open");
+    return this.database.transaction(this.storeName, e).objectStore(this.storeName);
   }
 }
 class p {
