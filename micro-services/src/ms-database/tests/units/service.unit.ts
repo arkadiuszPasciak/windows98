@@ -1,5 +1,5 @@
 import { beforeEach, expect, it, describe, vi } from "vitest"
-import { DatabaseService } from "../../src/domain/services/database.service"
+import DatabaseService from "../../src/domain/services/database.service"
 
 describe("[MicroServices]<Database>(DatabaseService)", () => {
 	let databaseService: DatabaseService

@@ -9,7 +9,7 @@ export class DatabaseRepository implements DatabaseRepositoryContract {
 		private storeName: string
 	) { }
 
-	async open(): Promise<void> {
+	public async open(): Promise<void> {
 		return new Promise((resolve, reject) => {
 			const request = window.indexedDB.open(this.databaseName)
 
@@ -23,15 +23,6 @@ export class DatabaseRepository implements DatabaseRepositoryContract {
 				this.database.createObjectStore(this.storeName)
 			}
 		})
-	}
-
-	private getStore(mode: IDBTransactionMode): IDBObjectStore {
-		if (!this.database) {
-			throw new Error("Database not open")
-		}
-
-		const transaction: IDBTransaction = this.database.transaction(this.storeName, mode)
-		return transaction.objectStore(this.storeName)
 	}
 
 	public async add<T>(item: T): Promise<void> {
@@ -48,5 +39,14 @@ export class DatabaseRepository implements DatabaseRepositoryContract {
 
 	public async delete(key: IDBValidKey): Promise<void> {
 		this.getStore("readwrite").delete(key)
+	}
+
+	private getStore(mode: IDBTransactionMode): IDBObjectStore {
+		if (!this.database) {
+			throw new Error("Database not open")
+		}
+
+		const transaction: IDBTransaction = this.database.transaction(this.storeName, mode)
+		return transaction.objectStore(this.storeName)
 	}
 }
