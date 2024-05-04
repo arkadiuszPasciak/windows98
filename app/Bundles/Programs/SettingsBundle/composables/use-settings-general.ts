@@ -1,11 +1,11 @@
-import { UserAgentMicroServices } from "@windows98/micro-services/user-agent"
+import { MSBrowserEnv } from "@windows98/micro-services"
 
 export default function useSettingsGeneral() {
-	const userAgentMicroServices = new UserAgentMicroServices()
+	const msBrowserEnv = new MSBrowserEnv()
 
-	const browserName = userAgentMicroServices.getBrowserName()
-	const deviceType = userAgentMicroServices.getTypeDevice()
-	const operatingSystem = userAgentMicroServices.getOperatingSystem()
+	const browserName = msBrowserEnv.getBrowserName()
+	const deviceType = msBrowserEnv.getDeviceType()
+	const operatingSystem = msBrowserEnv.getOperatingSystem()
 
 	return {
 		browserName,
