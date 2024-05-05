@@ -1,7 +1,7 @@
+import { Time } from "../time/time"
+
 export const Wrapper = (): JSX.Element => {
 	return (
-		<>
-			<p>content</p>
-		</>
+		<Time />
 	)
 }
