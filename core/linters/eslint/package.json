@@ -6,14 +6,15 @@
     "eslint-plugin-react": "7.34.2",
     "eslint-plugin-react-hooks": "4.6.2",
     "eslint-plugin-vue": "9.26.0",
+    "globals": "15.4.0",
     "typescript": "5.4.5",
     "typescript-eslint": "7.13.0"
   },
   "exports": {
-    "./base": "./src/configs/base.config.js",
-    "./react": "./src/configs/react.config.js",
-    "./typescript": "./src/configs/typescript.config.js",
-    "./vue": "./src/configs/vue.config.js"
+    "./base": "./src/configs/base.config.mjs",
+    "./react": "./src/configs/react.config.mjs",
+    "./typescript": "./src/configs/typescript.config.mjs",
+    "./vue": "./src/configs/vue.config.mjs"
   },
   "peerDependencies": {
     "eslint": "8.57.0"
