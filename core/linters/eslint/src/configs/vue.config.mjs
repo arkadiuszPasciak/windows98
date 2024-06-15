@@ -1,6 +1,3 @@
-// TODO import my own typescript rules
-// TODO check is typescript working in vue files
-
 import eslintVuePlugin from "eslint-plugin-vue"
 
 export default [
