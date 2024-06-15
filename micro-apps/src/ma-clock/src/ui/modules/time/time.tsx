@@ -7,7 +7,7 @@ export const Time = observer(() => {
 
 	return time && (
 		<DSText
-			id="clock-time"
+			id="time-short"
 			text={time}
 		/>
 	)

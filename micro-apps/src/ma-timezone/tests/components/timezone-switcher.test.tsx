@@ -110,7 +110,6 @@ test.describe("[ma-timezone]: timezone-switcher", () => {
 		]
 
 		for (let index = 0; index <= (timezones.length - 1); index++) {
-			console.log(timezones[index].label, timezones[index].value)
 			await select.selectOption(timezones[index].label)
 			await expect(select).toHaveValue(String(timezones[index].value))
 		}
