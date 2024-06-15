@@ -11,10 +11,7 @@
     "typescript-eslint": "7.13.0"
   },
   "exports": {
-    "./base": "./src/configs/base.config.mjs",
-    "./react": "./src/configs/react.config.mjs",
-    "./typescript": "./src/configs/typescript.config.mjs",
-    "./vue": "./src/configs/vue.config.mjs"
+    "./index": "./src/configs/index.config.mjs"
   },
   "peerDependencies": {
     "eslint": "8.57.0"
