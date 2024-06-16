@@ -5,7 +5,7 @@ import eslintReactHooksPlugin from "eslint-plugin-react-hooks"
 export default [
 	{
 		...eslintReactPlugin.configs.recommended,
-		...eslintReactPlugin.configs['jsx-runtime'],
+		...eslintReactPlugin.configs["jsx-runtime"],
 		...eslintReactHooksPlugin.configs.recommended,
 		files: [
 			"**/*.tsx",
