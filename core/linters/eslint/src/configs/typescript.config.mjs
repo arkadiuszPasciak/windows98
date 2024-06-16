@@ -1,12 +1,5 @@
 import tseslint from "typescript-eslint"
 
-export default tseslint.config(
-	{
-		...tseslint.configs.recommended,
-		files: [
-			"**/*.ts",
-			"**/*.tsx"
-		],
-	},
-
-)
+export default [
+	...tseslint.configs.recommended,
+]
