@@ -19,11 +19,11 @@ export default [
 		],
 		languageOptions: {
 			ecmaVersion: "latest",
-			globals: [
+			globals: {
 				...globals.browser,
 				...globals.es2024,
 				...globals.node,
-			],
+			},
 			sourceType: "module",
 		},
 		rules: {
