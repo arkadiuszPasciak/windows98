@@ -8,7 +8,8 @@
     "eslint-plugin-vue": "9.26.0",
     "globals": "15.4.0",
     "typescript": "5.4.5",
-    "typescript-eslint": "7.13.0"
+    "typescript-eslint": "7.13.0",
+    "vue-eslint-parser": "^9.4.3"
   },
   "exports": {
     "./index": "./src/configs/index.config.mjs"
