@@ -1,8 +1,13 @@
-export default interface CalculatorServiceContract {
-	value: string
+import type { ECalculatorDirect } from "../models"
 
-	addNumber(number: number): void
-	addDot(): void
-	addSign(): void
-	summResult(): void
+export interface CalculatorServiceContract {
+	isValueEqual(
+		value: string,
+		sign: string,
+		direct: ECalculatorDirect,
+	): boolean
+	isDotExist(value: string): boolean
+	isMathematicalSignLast(value: string): boolean
+	summResult(value: string): string
+	isMathematicalOperation(value: string): boolean
 }
