@@ -3,6 +3,6 @@ export default interface CalculatorDomainContract {
 
 	addNumber(number: number): void
 	addDot(): void
-	addSign(): void
+	addSign(sign: string): void
 	summResult(): void
 }

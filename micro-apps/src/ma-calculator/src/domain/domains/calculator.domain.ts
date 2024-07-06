@@ -1,0 +1,63 @@
+import {
+	observable,
+	action,
+	makeAutoObservable,
+} from "mobx"
+import {
+	CalculatorService,
+} from "../services"
+import {
+	ECalculatorDirect,
+} from "../models"
+import CalculatorDomainContract from "../contracts/domain.contract"
+
+export class CalculatorDomain implements CalculatorDomainContract {
+	@observable value = "0"
+	private calculatorService = new CalculatorService()
+
+	constructor() {
+		makeAutoObservable(this)
+	}
+
+	@action addNumber(number: number) {
+		if (
+			this.calculatorService.isValueEqual(this.value, "0", ECalculatorDirect.FIRST) &&
+			!this.calculatorService.isValueEqual(this.value, "0.", ECalculatorDirect.FIRST) &&
+			this.value.length === 1
+		) {
+			this.value = String(number)
+		} else {
+			this.value += String(number)
+		}
+	}
+
+	@action addDot() {
+		if (
+			this.calculatorService.isDotExist(this.value) ||
+			this.calculatorService.isMathematicalSignLast(this.value)
+		) {
+			return
+		}
+
+		if (!this.calculatorService.isValueEqual(this.value, ".", ECalculatorDirect.LAST)) {
+			this.value += "."
+		}
+	}
+
+	@action addSign(sign: string) {
+		if (
+			this.value === "0." ||
+			this.calculatorService.isMathematicalSignLast(this.value)
+		) {
+			return
+		}
+
+		this.value += sign
+	}
+
+	@action summResult() {
+		this.value = this.calculatorService.summResult(this.value)
+	}
+}
+
+export const calculatorDomain = new CalculatorDomain()
