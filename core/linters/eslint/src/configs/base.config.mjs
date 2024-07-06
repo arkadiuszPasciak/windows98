@@ -16,6 +16,7 @@ export default [
 			"**/*.mts",
 			"**/*.ts",
 			"**/*.tsx",
+			"**/*.vue",
 		],
 		languageOptions: {
 			ecmaVersion: "latest",

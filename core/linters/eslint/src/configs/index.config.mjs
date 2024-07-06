@@ -8,5 +8,5 @@ export default tseslint.config(
 	...eslintBaseConfig,
 	...eslintTypescriptConfig,
 	// ...eslintReactConfig,
-	// ...eslintVueConfig
+	...eslintVueConfig
 )
