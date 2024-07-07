@@ -14,14 +14,17 @@ import {
 import CalculatorDomainContract from "../contracts/domain.contract"
 
 export class CalculatorDomain implements CalculatorDomainContract {
-	@observable value = "0"
-	private calculatorService = new CalculatorService()
+	@observable
+	public value = "0"
+	private calculatorService: CalculatorService = new CalculatorService()
 
 	constructor() {
 		makeAutoObservable(this)
+
 	}
 
-	@action addNumber(number: ECalculatorNumber) {
+	@action
+	public addNumber = (number: ECalculatorNumber) => {
 		if (
 			this.calculatorService.isValueEqual(this.value, "0", ECalculatorDirect.FIRST) &&
 			!this.calculatorService.isValueEqual(this.value, "0.", ECalculatorDirect.FIRST) &&
@@ -33,7 +36,8 @@ export class CalculatorDomain implements CalculatorDomainContract {
 		}
 	}
 
-	@action addDot() {
+	@action
+	public addDot = () => {
 		if (
 			this.calculatorService.isDotExist(this.value) ||
 			this.calculatorService.isMathematicalSignLast(this.value)
@@ -46,7 +50,8 @@ export class CalculatorDomain implements CalculatorDomainContract {
 		}
 	}
 
-	@action addSymbol(symbol: ECalculatorSymbol) {
+	@action
+	public addSymbol = (symbol: ECalculatorSymbol) => {
 		if (
 			this.value === "0." ||
 			this.calculatorService.isMathematicalSignLast(this.value)
@@ -57,7 +62,8 @@ export class CalculatorDomain implements CalculatorDomainContract {
 		this.value += symbol
 	}
 
-	@action summResult() {
+	@action
+	public summResult = () => {
 		this.value = this.calculatorService.summResult(this.value)
 	}
 }
