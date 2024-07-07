@@ -17,8 +17,8 @@ import { PropType } from "vue"
 defineProps({
 	size: {
 		type: String as PropType<
-        "small" | "medium" | "calculator" | "media-player" | "tic-tac-toe"
-      >,
+      "small" | "medium" | "media-player" | "tic-tac-toe"
+    >,
 		default: "medium",
 	},
 	disabled: {
@@ -28,8 +28,4 @@ defineProps({
 })
 </script>
 
-<style
-  lang="scss"
-  scoped
-  src="@APP|Bundles/UIButtonBundle/Styles/UIButton.styles.scss"
-/>
+<style lang="scss" scoped src="@APP|Bundles/UIButtonBundle/Styles/UIButton.styles.scss" />

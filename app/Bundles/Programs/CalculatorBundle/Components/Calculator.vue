@@ -8,17 +8,12 @@
     :modal-state="programStore.modalCalculator"
     @close-modal="closeModal"
   >
-    <div class="content">
-      <CalculatorDisplay />
-      <CalculatorKeyboard />
-    </div>
+    <ma-calculator />
   </UIModal>
 </template>
 
 <script setup lang="ts">
 import { useI18n } from "vue-i18n"
-import CalculatorDisplay from "@APP|Bundles/CalculatorBundle/Components/CalculatorDisplay.vue"
-import CalculatorKeyboard from "@APP|Bundles/CalculatorBundle/Components/CalculatorKeyboard.vue"
 import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
 import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
 
@@ -30,9 +25,3 @@ const closeModal = (): void => {
 
 const { t } = useI18n()
 </script>
-
-<style
-  lang="scss"
-  scoped
-  src="@APP|Bundles/CalculatorBundle/Styles/Calculator.styles.scss"
-/>
