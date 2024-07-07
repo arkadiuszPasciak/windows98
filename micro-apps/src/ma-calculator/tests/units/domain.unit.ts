@@ -1,5 +1,6 @@
 import { expect, describe, it, beforeEach } from "vitest"
 import { CalculatorDomain } from "../../src/domain/domains"
+import { ECalculatorSymbol } from "../../src/domain/models"
 
 describe("CalculatorDomain", () => {
 	let calculatorDomain: CalculatorDomain
@@ -38,13 +39,13 @@ describe("CalculatorDomain", () => {
 	describe("addSign", () => {
 		it("should add a mathematical sign to the value", () => {
 			calculatorDomain.value = "123"
-			calculatorDomain.addSign("+")
+			calculatorDomain.addSymbol(ECalculatorSymbol.ADD)
 			expect(calculatorDomain.value).toBe("123+")
 		})
 
 		it("should not add a sign if the last character is a sign", () => {
 			calculatorDomain.value = "123+"
-			calculatorDomain.addSign("-")
+			calculatorDomain.addSymbol(ECalculatorSymbol.MINUS)
 			expect(calculatorDomain.value).toBe("123+")
 		})
 	})

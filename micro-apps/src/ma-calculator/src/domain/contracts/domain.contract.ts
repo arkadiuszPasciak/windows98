@@ -1,8 +1,10 @@
+import type { ECalculatorNumber, ECalculatorSymbol } from "../models"
+
 export default interface CalculatorDomainContract {
 	value: string
 
-	addNumber(number: number): void
+	addNumber(number: ECalculatorNumber): void
 	addDot(): void
-	addSign(sign: string): void
+	addSymbol(symbol: ECalculatorSymbol): void
 	summResult(): void
 }

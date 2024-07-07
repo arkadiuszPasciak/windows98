@@ -8,6 +8,8 @@ import {
 } from "../services"
 import {
 	ECalculatorDirect,
+	ECalculatorNumber,
+	ECalculatorSymbol,
 } from "../models"
 import CalculatorDomainContract from "../contracts/domain.contract"
 
@@ -19,7 +21,7 @@ export class CalculatorDomain implements CalculatorDomainContract {
 		makeAutoObservable(this)
 	}
 
-	@action addNumber(number: number) {
+	@action addNumber(number: ECalculatorNumber) {
 		if (
 			this.calculatorService.isValueEqual(this.value, "0", ECalculatorDirect.FIRST) &&
 			!this.calculatorService.isValueEqual(this.value, "0.", ECalculatorDirect.FIRST) &&
@@ -44,7 +46,7 @@ export class CalculatorDomain implements CalculatorDomainContract {
 		}
 	}
 
-	@action addSign(sign: string) {
+	@action addSymbol(symbol: ECalculatorSymbol) {
 		if (
 			this.value === "0." ||
 			this.calculatorService.isMathematicalSignLast(this.value)
@@ -52,7 +54,7 @@ export class CalculatorDomain implements CalculatorDomainContract {
 			return
 		}
 
-		this.value += sign
+		this.value += symbol
 	}
 
 	@action summResult() {
