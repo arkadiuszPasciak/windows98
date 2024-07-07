@@ -9,7 +9,7 @@ export const Screen: FunctionComponent = observer(() => {
 	return (
 		<span
 			className={styles.screen}
-			id="ma-calculator-screen"
+			data-testid="ma-calculator-screen"
 		>
 			{value ?? "ERROR"}
 		</span>
