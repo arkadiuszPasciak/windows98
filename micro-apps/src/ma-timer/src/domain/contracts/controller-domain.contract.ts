@@ -1,10 +1,10 @@
-export default interface TimerControllerDomainContract {
-	increaseSeconds(seconds: number): void
-	decreaseSeconds(seconds: number): void
+export interface TimerControllerDomainContract {
+	increaseSeconds(): void
+	decreaseSeconds(): void
 
-	increaseMinutes(minutes: number): void
-	decreaseMinutes(minutes: number): void
+	increaseMinutes(): void
+	decreaseMinutes(): void
 
-	increaseHours(hours: number): void
-	decreaseHours(hours: number): void
+	increaseHours(): void
+	decreaseHours(): void
 }

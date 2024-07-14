@@ -1,18 +1,16 @@
 import type {
 	ETimerStatus,
+	ETimerTime,
 	ITimerTime,
 } from "../models"
 
-export default interface TimerDomainContract {
+export interface TimerDomainContract {
 	time: ITimerTime
 	status: ETimerStatus
 
-	setTime(time: ITimerTime): void
-	setSeconds(time: number): void
-	setMinutes(time: number): void
-	setHours(time: number): void
+	addTime(unit: ETimerTime, number: number): void
+	subtractTime(unit: ETimerTime, number: number): void
+	setTime(unit: ETimerTime, number: number): void
 
-	start(): void
-	stop(): void
-	reset(): void
+	setStatus(status: ETimerStatus): void
 }

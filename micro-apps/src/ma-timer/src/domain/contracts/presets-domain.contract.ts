@@ -2,8 +2,8 @@ import type {
 	ETimerPresets,
 } from "../models"
 
-export default interface TimerPresetsDomainContract {
+export interface TimerPresetsDomainContract {
 	preset: ETimerPresets
 
-	setTimeByPreset(preset: ETimerPresets): void
+	setPreset(preset: ETimerPresets): void
 }
