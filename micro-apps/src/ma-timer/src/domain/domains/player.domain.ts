@@ -1,10 +1,10 @@
-import { makeAutoObservable } from 'mobx';
+import { makeAutoObservable } from "mobx"
 import type {
 	TimerDomainContract,
 	TimerPlayerDomainContract,
-} from '../contracts';
-import { ETimerStatus } from '../models';
-import type { Maybe } from '@windows98/toolkit/src/types';
+} from "../contracts"
+import { ETimerStatus } from "../models"
+import type { Maybe } from "@windows98/toolkit/src/types"
 
 export class TimerPlayerDomain implements TimerPlayerDomainContract {
 	private timerDomain: TimerDomainContract

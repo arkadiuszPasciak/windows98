@@ -7,7 +7,7 @@ import type {
 } from "../contracts"
 import { ETimerTime } from "../models"
 
-export default class TimerControllerDomain implements TimerControllerDomainContract {
+export class TimerControllerDomain implements TimerControllerDomainContract {
 	private timerDomain: TimerDomainContract
 
 	constructor(timerDomain: TimerDomainContract) {

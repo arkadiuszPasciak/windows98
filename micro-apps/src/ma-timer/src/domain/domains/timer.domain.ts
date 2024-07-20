@@ -8,14 +8,14 @@ import {
 	type ITimerTime,
 } from "../models"
 
-export default class TimerDomain implements TimerDomainContract {
+export class TimerDomain implements TimerDomainContract {
 	public time: ITimerTime = {
 		seconds: 0,
 		minutes: 0,
 		hours: 0,
 	}
 
-	public status: ETimerStatus = ETimerStatus.RESTART
+	public status: ETimerStatus = ETimerStatus.RESET
 
 	constructor() {
 		makeAutoObservable(this)

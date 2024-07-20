@@ -8,7 +8,7 @@ import {
 } from "../models"
 import { TimerDomainContract } from "../contracts"
 
-export default class TimerPresetsDomain implements TimerPresetsDomainContract {
+export class TimerPresetsDomain implements TimerPresetsDomainContract {
 	public preset: ETimerPresets = ETimerPresets.THREE_MINUTES
 	private timerDomain: TimerDomainContract
 	private presetTimes: Record<ETimerPresets, number> = {
