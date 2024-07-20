@@ -1,3 +1,4 @@
+import { Screen } from "../screen"
 import type { FunctionComponent } from "react"
 
 export const Wrapper: FunctionComponent = () => {
@@ -5,7 +6,7 @@ export const Wrapper: FunctionComponent = () => {
 		<div
 			data-testid="ma-timer-wrapper"
 		>
-			test wrapper
+			<Screen />
 		</div>
 	)
 }
