@@ -6,8 +6,8 @@ export enum ETimerTime {
 
 export enum ETimerStatus {
 	PLAY = "play",
-	PAUSE = "pause",
-	RESTART = "restart"
+	STOP = "stop",
+	RESET = "reset"
 }
 
 export interface ITimerTime extends Record<ETimerTime, number> { }
