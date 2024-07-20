@@ -1,14 +1,21 @@
 import {
 	makeAutoObservable,
 } from "mobx"
-import { TimerDomainContract } from "../contracts"
+import { TimerControllerDomainContract, TimerDomainContract, TimerPlayerDomainContract, TimerPresetsDomainContract } from "../contracts"
 import {
 	ETimerStatus,
 	ETimerTime,
 	type ITimerTime,
 } from "../models"
+import { TimerControllerDomain } from './controller.domain'
+import { TimerPlayerDomain } from './player.domain'
+import { TimerPresetsDomain } from './presets.domain'
 
 export class TimerDomain implements TimerDomainContract {
+	public controllerDomain: TimerControllerDomainContract
+	public playerDomain: TimerPlayerDomainContract
+	public presetsDomain: TimerPresetsDomainContract
+
 	public time: ITimerTime = {
 		seconds: 0,
 		minutes: 0,
@@ -19,7 +26,12 @@ export class TimerDomain implements TimerDomainContract {
 
 	constructor() {
 		makeAutoObservable(this)
+
+		this.controllerDomain = new TimerControllerDomain(this)
+		this.playerDomain = new TimerPlayerDomain(this)
+		this.presetsDomain = new TimerPresetsDomain(this)
 	}
+
 
 	public addTime(unit: ETimerTime, number: number): void {
 		this.time[unit] += number
@@ -37,3 +49,5 @@ export class TimerDomain implements TimerDomainContract {
 		this.status = status
 	}
 }
+
+export const timerDomain = new TimerDomain()

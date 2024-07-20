@@ -1,4 +1,4 @@
 import { createContext } from "react"
-import { TimerDomainRoot } from "../../domain/domains"
+import { timerDomain } from "../../domain/domains"
 
-export const TimerDomainContext = createContext(TimerDomainRoot)
+export const TimerDomainContext = createContext(timerDomain)

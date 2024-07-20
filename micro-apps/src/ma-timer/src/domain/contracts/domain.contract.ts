@@ -1,3 +1,4 @@
+import { TimerControllerDomainContract, TimerPlayerDomainContract, TimerPresetsDomainContract } from '.'
 import type {
 	ETimerStatus,
 	ETimerTime,
@@ -5,6 +6,10 @@ import type {
 } from "../models"
 
 export interface TimerDomainContract {
+	controllerDomain: TimerControllerDomainContract
+	playerDomain: TimerPlayerDomainContract
+	presetsDomain: TimerPresetsDomainContract
+
 	time: ITimerTime
 	status: ETimerStatus
 

@@ -1,1 +1,1 @@
-export * from "./root.domain"
+export * from "./timer.domain"
