@@ -1,4 +1,4 @@
-import { TimerControllerDomainContract, TimerPlayerDomainContract, TimerPresetsDomainContract } from '.'
+import { TimerControllerDomainContract, TimerPlayerDomainContract, TimerPresetsDomainContract } from "."
 import type {
 	ETimerStatus,
 	ETimerTime,

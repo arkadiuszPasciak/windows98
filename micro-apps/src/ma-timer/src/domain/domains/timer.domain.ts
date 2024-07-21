@@ -7,9 +7,9 @@ import {
 	ETimerTime,
 	type ITimerTime,
 } from "../models"
-import { TimerControllerDomain } from './controller.domain'
-import { TimerPlayerDomain } from './player.domain'
-import { TimerPresetsDomain } from './presets.domain'
+import { TimerControllerDomain } from "./controller.domain"
+import { TimerPlayerDomain } from "./player.domain"
+import { TimerPresetsDomain } from "./presets.domain"
 
 export class TimerDomain implements TimerDomainContract {
 	public controllerDomain: TimerControllerDomainContract

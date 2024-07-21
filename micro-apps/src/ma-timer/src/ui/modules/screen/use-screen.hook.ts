@@ -1,4 +1,4 @@
-import { useTimer } from '../../hooks';
+import { useTimer } from "../../hooks"
 import { addZeroBeforeNumber } from "@windows98/toolkit"
 
 export function useScreen() {
