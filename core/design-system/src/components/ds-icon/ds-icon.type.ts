@@ -4,7 +4,7 @@ export type DSIconIcons = {
   [key in DSIconNames]: JSX.Element
 }
 
-export type DSIconNames = "select-button"
+export type DSIconNames = "select-button" | "radio"
 
 export interface DSIconProps extends DSDefaultProps {
   name: DSIconNames
