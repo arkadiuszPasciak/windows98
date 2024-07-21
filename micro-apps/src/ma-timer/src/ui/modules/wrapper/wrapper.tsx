@@ -1,4 +1,4 @@
-import { Controller } from '../controller/controller'
+import { Controller } from '../controller'
 import { Screen } from "../screen"
 import type { FunctionComponent } from "react"
 
