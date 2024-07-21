@@ -15,7 +15,7 @@ export class TimerPlayerDomain implements TimerPlayerDomainContract {
 		makeAutoObservable(this)
 	}
 
-	start(): void {
+	public start = (): void => {
 		this.timerDomain.setStatus(ETimerStatus.PLAY)
 
 		this.interval = setInterval(() => {
@@ -47,19 +47,19 @@ export class TimerPlayerDomain implements TimerPlayerDomainContract {
 		}, 1000)
 	}
 
-	stop(): void {
+	public stop = (): void => {
 		this.timerDomain.setStatus(ETimerStatus.STOP)
 
 		this.clearTimerInterval()
 	}
 
-	reset(): void {
+	public reset = (): void => {
 		this.timerDomain.setStatus(ETimerStatus.RESET)
 
 		this.clearTimerInterval()
 	}
 
-	private clearTimerInterval(): void {
+	private clearTimerInterval = (): void => {
 		if (this.interval) clearInterval(this.interval)
 	}
 }

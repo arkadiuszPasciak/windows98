@@ -32,20 +32,19 @@ export class TimerDomain implements TimerDomainContract {
 		this.presetsDomain = new TimerPresetsDomain(this)
 	}
 
-
-	public addTime(unit: ETimerTime, number: number): void {
+	public addTime = (unit: ETimerTime, number: number): void => {
 		this.time[unit] += number
 	}
 
-	public subtractTime(unit: ETimerTime, number: number): void {
+	public subtractTime = (unit: ETimerTime, number: number): void => {
 		this.time[unit] -= number
 	}
 
-	public setTime(unit: ETimerTime, number: number): void {
+	public setTime = (unit: ETimerTime, number: number): void => {
 		this.time[unit] = number
 	}
 
-	public setStatus(status: ETimerStatus): void {
+	public setStatus = (status: ETimerStatus): void => {
 		this.status = status
 	}
 }

@@ -24,7 +24,7 @@ export class TimerPresetsDomain implements TimerPresetsDomainContract {
 		makeAutoObservable(this)
 	}
 
-	public setPreset(preset: ETimerPresets): void {
+	public setPreset = (preset: ETimerPresets): void => {
 		this.setPresetStatus(preset)
 
 		this.resetSecondsAndHours()
@@ -32,15 +32,15 @@ export class TimerPresetsDomain implements TimerPresetsDomainContract {
 		this.setMinutes(preset)
 	}
 
-	private setMinutes(preset: ETimerPresets): void {
+	private setMinutes = (preset: ETimerPresets): void => {
 		this.timerDomain.setTime(ETimerTime.MINUTES, this.presetTimes[preset])
 	}
 
-	private setPresetStatus(preset: ETimerPresets): void {
+	private setPresetStatus = (preset: ETimerPresets): void => {
 		if (this.preset !== preset) this.preset = preset
 	}
 
-	private resetSecondsAndHours(): void {
+	private resetSecondsAndHours = (): void => {
 		if (this.timerDomain.time.seconds !== 0) this.timerDomain.setTime(ETimerTime.SECONDS, 0)
 		if (this.timerDomain.time.hours !== 0) this.timerDomain.setTime(ETimerTime.HOURS, 0)
 	}
