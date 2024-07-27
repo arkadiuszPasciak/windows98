@@ -2,7 +2,7 @@ import styles from "./ds-radio.module.scss"
 import { DSText } from "../../index"
 import { useDSRadio } from './use-ds-radio.hook'
 import type { DSRadioProps } from './ds-radio.type'
-import { DSIconRadioSVG } from '../ds-icon/icons/ds-icon-radio.svg'
+import { DSIconRadioSVG } from '../ds-icon/ds-icon-radio.svg'
 
 export const DSRadio = (
 	{
@@ -36,22 +36,16 @@ export const DSRadio = (
 				data-testid={`${id}-radio-input`}
 				disabled={isDisabled}
 				name={name}
-				onChange={handleChange}
 				type="radio"
-				value={name}
+				value={id}
+				onClick={handleChange}
 			/>
 
 			<span
 				className={styles.icon}
 				data-testid={`${id}-radio-icon`}
 			>
-				{value && (
-					<DSIconRadioSVG />
-				)}
-
-				{!value && (
-					<DSIconRadioSVG />
-				)}
+				<DSIconRadioSVG isChecked={value} />
 			</span>
 
 			{

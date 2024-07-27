@@ -17,8 +17,6 @@ const disabledRadioProps: DSRadioProps = {
 	state: State.DISABLED,
 }
 
-
-
 test.use({ viewport: { width: 500, height: 500 } })
 
 test.describe('DSRadio', () => {
