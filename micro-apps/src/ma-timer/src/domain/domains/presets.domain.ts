@@ -30,6 +30,8 @@ export class TimerPresetsDomain implements TimerPresetsDomainContract {
 		this.resetSecondsAndHours()
 
 		this.setMinutes(preset)
+
+		console.log(this.preset)
 	}
 
 	private setMinutes = (preset: ETimerPresets): void => {
