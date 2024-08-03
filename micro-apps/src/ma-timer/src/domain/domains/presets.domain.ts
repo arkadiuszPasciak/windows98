@@ -9,7 +9,7 @@ import {
 import { TimerDomainContract } from "../contracts"
 
 export class TimerPresetsDomain implements TimerPresetsDomainContract {
-	public preset: ETimerPresets = ETimerPresets.THREE_MINUTES
+	public preset: ETimerPresets = ETimerPresets.CUSTOM_MINUTES
 	private timerDomain: TimerDomainContract
 	private presetTimes: Record<ETimerPresets, number> = {
 		[ETimerPresets.CUSTOM_MINUTES]: 0,
@@ -31,7 +31,6 @@ export class TimerPresetsDomain implements TimerPresetsDomainContract {
 
 		this.setMinutes(preset)
 
-		console.log(this.preset)
 	}
 
 	private setMinutes = (preset: ETimerPresets): void => {

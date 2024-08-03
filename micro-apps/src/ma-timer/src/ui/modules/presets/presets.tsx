@@ -2,9 +2,11 @@ import { DSRadio } from "@windows98/design-system"
 import type { FunctionComponent } from "react"
 import { usePresets } from './use-presets.hook'
 import styles from "./presets.module.scss"
+import { observer } from "mobx-react-lite"
 
-export const Presets: FunctionComponent = () => {
+export const Presets: FunctionComponent = observer(() => {
 	const {
+		disabled,
 		presets,
 	} = usePresets()
 
@@ -15,18 +17,18 @@ export const Presets: FunctionComponent = () => {
 		>
 			{presets.map((preset) => (
 				<DSRadio
-					key={preset.id}
+					initialChecked={preset.initialChecked}
+					disabled={disabled}
 					id={preset.id}
-					initialValue={preset.initialValue}
+					key={preset.id}
 					name="ma-timer-presets"
-					state={preset.state}
+					onChange={preset.setPreset}
 					text={{
 						content: preset.content,
 						visible: true,
 					}}
-					onChange={() => preset.onChange}
 				/>
 			))}
 		</div>
 	)
-}
+})
