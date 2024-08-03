@@ -1,19 +1,16 @@
-import type { State } from "@windows98/toolkit";
 import { DSDefaultProps } from "../../types/component.type";
 export interface DSRadioProps extends DSDefaultProps {
     id: string;
-    initialValue: boolean;
     name: string;
-    state: State;
-    checked?: boolean;
+    initialChecked: boolean;
     text: {
         content: string;
         visible: boolean;
     };
-    onChange: (value: boolean) => void;
+    disabled?: boolean;
+    onChange: () => void;
 }
 export interface UseDSRadioProps {
-    initialValue: DSRadioProps["initialValue"];
+    initialChecked: DSRadioProps["initialChecked"];
     onChange: DSRadioProps["onChange"];
-    state: State;
 }

@@ -1,30 +1,23 @@
-import { State } from "@windows98/toolkit"
-import { useEffect, useState } from "react"
-import type { UseDSRadioProps } from "./ds-radio.type"
+import { useEffect, useState } from 'react'
+import { UseDSRadioProps } from './ds-radio.type'
 
-export function useDSRadio({
-	initialValue,
-	onChange,
-	state,
-}: UseDSRadioProps) {
-	const [value, setValue] = useState<boolean>(initialValue)
+export function useDSRadio({ initialChecked, onChange }: UseDSRadioProps) {
+	const [checked, setChecked] = useState<boolean>(initialChecked)
 
 	useEffect(() => {
-		setValue(initialValue)
-	}, [initialValue, setValue])
+		setChecked(initialChecked)
+	}, [initialChecked])
 
-	const handleChange = (): void => {
-		const newValue: boolean = !value
-		setValue(newValue)
+	const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
+		if (onChange) {
+			onChange()
+		}
 
-		if (onChange) onChange(newValue)
+		setChecked(event.target.checked)
 	}
 
-	const isDisabled: boolean = state === State.DISABLED
-
 	return {
-		isDisabled,
+		checked,
 		handleChange,
-		value,
 	}
 }
