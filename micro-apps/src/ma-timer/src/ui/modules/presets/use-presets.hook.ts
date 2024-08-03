@@ -1,4 +1,4 @@
-import { useMemo } from "react"
+import { useMemo, useState } from "react"
 import { useTimer } from '../../hooks'
 import { ETimerPresets, ETimerStatus } from '../../../domain/models'
 import { useTranslation } from 'react-i18next'
@@ -6,46 +6,54 @@ import { useTranslation } from 'react-i18next'
 export const usePresets = () => {
 	const { t } = useTranslation()
 	const { timerDomain } = useTimer()
+	const [
+		selectedPreset,
+		setSelectedPreset,
+	] = useState<ETimerPresets>(timerDomain.presetsDomain.preset)
 
 	const presets = useMemo(() => {
 		return [
 			{
-				initialChecked: false,
+				preset: ETimerPresets.THREE_MINUTES,
 				content: t("ma-timer.presets.three-minutes"),
 				id: "ma-timer-preset-3-min",
-				setPreset: () => timerDomain.presetsDomain.setPreset(ETimerPresets.THREE_MINUTES),
 			},
 			{
-				initialChecked: false,
+				preset: ETimerPresets.FIVE_MINUTES,
 				content: t("ma-timer.presets.five-minutes"),
 				id: "ma-timer-preset-5-min",
-				setPreset: () => timerDomain.presetsDomain.setPreset(ETimerPresets.FIVE_MINUTES),
 			},
 			{
-				initialChecked: false,
+				preset: ETimerPresets.TEN_MINUTES,
 				content: t("ma-timer.presets.ten-minutes"),
 				id: "ma-timer-preset-10-min",
-				setPreset: () => timerDomain.presetsDomain.setPreset(ETimerPresets.TEN_MINUTES),
 			},
 			{
-				initialChecked: false,
+				preset: ETimerPresets.FIFTEEN_MINUTES,
 				content: t("ma-timer.presets.fifteen-minutes"),
 				id: "ma-timer-preset-15-min",
-				setPreset: () => timerDomain.presetsDomain.setPreset(ETimerPresets.FIFTEEN_MINUTES),
 			},
 			{
-				initialChecked: true,
+				preset: ETimerPresets.CUSTOM_MINUTES,
 				content: t("ma-timer.presets.custom"),
 				id: "ma-timer-preset-custom",
-				setPreset: () => timerDomain.presetsDomain.setPreset(ETimerPresets.CUSTOM_MINUTES),
 			},
 		]
 	}, [t, timerDomain.presetsDomain.preset])
 
+	const setPreset = (preset: ETimerPresets): void => {
+		if (disabled) return
+
+		timerDomain.presetsDomain.setPreset(preset)
+		setSelectedPreset(preset)
+	}
+
 	const disabled = timerDomain.status === ETimerStatus.PLAY ? true : false
 
 	return {
-		presets,
 		disabled,
+		presets,
+		setPreset,
+		selectedPreset,
 	}
 }

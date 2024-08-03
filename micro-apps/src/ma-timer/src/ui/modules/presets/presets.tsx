@@ -8,6 +8,8 @@ export const Presets: FunctionComponent = observer(() => {
 	const {
 		disabled,
 		presets,
+		selectedPreset,
+		setPreset,
 	} = usePresets()
 
 	return (
@@ -17,12 +19,12 @@ export const Presets: FunctionComponent = observer(() => {
 		>
 			{presets.map((preset) => (
 				<DSRadio
-					initialChecked={preset.initialChecked}
+					initialChecked={preset.preset === selectedPreset}
 					disabled={disabled}
 					id={preset.id}
 					key={preset.id}
 					name="ma-timer-presets"
-					onChange={preset.setPreset}
+					onChange={() => setPreset(preset.preset)}
 					text={{
 						content: preset.content,
 						visible: true,
