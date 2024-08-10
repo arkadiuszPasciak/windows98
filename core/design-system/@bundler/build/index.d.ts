@@ -1,3 +1,4 @@
+export * from "./components/ds-button";
 export * from "./components/ds-button-arrow";
 export * from "./components/ds-frame";
 export * from "./components/ds-icon";
