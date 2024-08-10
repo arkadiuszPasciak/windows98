@@ -5,6 +5,7 @@
     "start": "Start",
     "stop": "Stop",
     "presets": {
+      "title": "Ustawienia",
       "three-minutes": "3 min",
       "five-minutes": "5 min",
       "ten-minutes": "10 min",
