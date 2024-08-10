@@ -50,10 +50,13 @@ export const usePresets = () => {
 
 	const disabled = timerDomain.status === ETimerStatus.PLAY ? true : false
 
+	const title = t("ma-timer.presets.title")
+
 	return {
 		disabled,
 		presets,
 		setPreset,
 		selectedPreset,
+		title,
 	}
 }

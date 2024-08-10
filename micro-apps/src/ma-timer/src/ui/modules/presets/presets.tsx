@@ -1,4 +1,4 @@
-import { DSRadio } from "@windows98/design-system"
+import { DSFrame, DSRadio } from "@windows98/design-system"
 import type { FunctionComponent } from "react"
 import { usePresets } from './use-presets.hook'
 import styles from "./presets.module.scss"
@@ -10,12 +10,15 @@ export const Presets: FunctionComponent = observer(() => {
 		presets,
 		selectedPreset,
 		setPreset,
+		title,
 	} = usePresets()
 
 	return (
-		<div
+		<DSFrame
 			className={styles.presets}
 			data-testid="ma-timer-presets"
+			id="ma-timer-presets"
+			title={title}
 		>
 			{presets.map((preset) => (
 				<DSRadio
@@ -31,6 +34,6 @@ export const Presets: FunctionComponent = observer(() => {
 					}}
 				/>
 			))}
-		</div>
+		</DSFrame>
 	)
 })
