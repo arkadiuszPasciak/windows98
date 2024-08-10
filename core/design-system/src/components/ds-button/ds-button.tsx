@@ -14,7 +14,7 @@ export const DSButton = ({
 	return (
 		<button
 			aria-label={!isTextVisible ? text : undefined}
-			className={`${styles.DSButton} ${styles[`size-${size}`]}`}
+			className={`${styles["ds-button"]} ${styles[`size-${size}`]}`}
 			type="button"
 			disabled={disabled}
 			onClick={onClick}
