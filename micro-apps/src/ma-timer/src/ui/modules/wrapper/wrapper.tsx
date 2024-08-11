@@ -1,4 +1,5 @@
 import { Controller } from '../controller'
+import { Player } from '../player'
 import { Presets } from '../presets'
 import { Screen } from "../screen"
 import type { FunctionComponent } from "react"
@@ -11,6 +12,7 @@ export const Wrapper: FunctionComponent = () => {
 			<Presets />
 			<Controller />
 			<Screen />
+			<Player />
 		</div>
 	)
 }

@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react"
-import { useTimer } from '../../hooks'
-import { ETimerPresets, ETimerStatus } from '../../../domain/models'
-import { useTranslation } from 'react-i18next'
+import { useTimer } from "../../hooks"
+import { ETimerPresets, ETimerStatus } from "../../../domain/models"
+import { useTranslation } from "react-i18next"
 
 export const usePresets = () => {
 	const { t } = useTranslation()
@@ -39,7 +39,7 @@ export const usePresets = () => {
 				id: "ma-timer-preset-custom",
 			},
 		]
-	}, [t, timerDomain.presetsDomain.preset])
+	}, [t])
 
 	const setPreset = (preset: ETimerPresets): void => {
 		if (disabled) return
