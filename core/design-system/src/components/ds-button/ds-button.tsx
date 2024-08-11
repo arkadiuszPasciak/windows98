@@ -7,6 +7,7 @@ export const DSButton = ({
 	disabled = false,
 	onClick,
 	text,
+	id,
 	isTextVisible = true,
 	iconLeft,
 	iconRight,
@@ -15,6 +16,7 @@ export const DSButton = ({
 		<button
 			aria-label={!isTextVisible ? text : undefined}
 			className={`${styles["ds-button"]} ${styles[`size-${size}`]}`}
+			data-testid={`${id}-button`}
 			type="button"
 			disabled={disabled}
 			onClick={onClick}
