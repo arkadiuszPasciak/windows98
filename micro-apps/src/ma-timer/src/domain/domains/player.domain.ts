@@ -57,9 +57,16 @@ export class TimerPlayerDomain implements TimerPlayerDomainContract {
 		this.timerDomain.setStatus(ETimerStatus.RESET)
 
 		this.clearTimerInterval()
+		this.restartTime()
 	}
 
 	private clearTimerInterval = (): void => {
 		if (this.interval) clearInterval(this.interval)
+	}
+
+	private restartTime = (): void => {
+		this.timerDomain.time.hours = 0
+		this.timerDomain.time.minutes = 0
+		this.timerDomain.time.seconds = 0
 	}
 }
