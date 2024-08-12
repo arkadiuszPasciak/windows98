@@ -4,6 +4,7 @@ import type { DSButtonProps } from "./ds-button.type"
 
 const defaultButton: DSButtonProps = {
 	text: "Click Me",
+	id: "open-modal",
 	onClick: () => { },
 }
 
