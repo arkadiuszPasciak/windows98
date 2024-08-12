@@ -58,6 +58,7 @@
     "@windows98/eslint-config": "workspace:*",
     "@windows98/linters": "workspace:*",
     "@windows98/stylelint-config": "workspace:*",
+    "@windows98/toolkit": "workspace:*",
     "lint-staged": "15.2.2",
     "sass": "^1.70.0",
     "stylelint": "16.2.1",

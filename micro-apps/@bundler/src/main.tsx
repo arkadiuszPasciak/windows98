@@ -6,15 +6,15 @@ import { CalendarView } from "../../src/ma-calendar/src/ui/views/calendar.view"
 import i18nInit from "@windows98/i18n/configs/react.config"
 import { TimezoneView } from '../../src/ma-timezone/src/ui/views/timezone.view'
 import { CalculatorView } from '../../src/ma-calculator/src/ui/views'
+import { TimerView } from '../../src/ma-timer/src/ui/views'
 
 i18nInit().then(() => {
 	ReactDOM.createRoot(document.getElementById("root")!).render(
 		<React.StrictMode>
-			<React.StrictMode>
-				<CalendarView />
-				<TimezoneView />
-				<CalculatorView />
-			</React.StrictMode>,
-		</React.StrictMode>,
+			<CalendarView />
+			<TimezoneView />
+			<CalculatorView />
+			<TimerView />
+		</React.StrictMode>
 	)
 })

@@ -1,2 +1,2 @@
-export { DSIcon } from './ds-icon.tsx';
-export * from './ds-icon.type.ts';
+export * from "./ds-icon-radio.svg";
+export * from "./ds-icon-select-button.svg";

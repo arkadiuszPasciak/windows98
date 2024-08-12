@@ -1,7 +1,7 @@
 import useDSSelect from './use-ds-select.hook'
-import { DSIcon } from '../../index'
 import type { DSSelectProps } from './ds-select.type'
 import styles from './ds-select.module.scss'
+import { DSIconSelectButton } from '../ds-icon/ds-icon-select-button.svg'
 
 export function DSSelect({
   className = '',
@@ -54,10 +54,11 @@ export function DSSelect({
           </option>
         ))}
       </select>
-      <DSIcon
+      <span
         className={styles['arrow']}
-        name="select-button"
-      />
+      >
+        <DSIconSelectButton />
+      </span>
     </div>
   )
 }

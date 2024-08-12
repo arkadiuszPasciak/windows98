@@ -1,6 +1,6 @@
 import { ICalendarDays } from "../../domain/models/days.model"
 import CalendarRepositoryContract from "../../domain/contracts/repository.contract"
-import type { Maybe } from "@windows98/toolkit/src/types"
+import type { Maybe } from "@windows98/toolkit"
 
 export default class CalendarRepository implements CalendarRepositoryContract {
 	private date: Maybe<Date>
@@ -30,7 +30,7 @@ export default class CalendarRepository implements CalendarRepositoryContract {
 
 	public generateDays(): void {
 		const days = [] as Array<ICalendarDays>
-    
+
 		if (this.date === null || this.firstDayMonth === null || this.lastDateMonth === null) throw new Error("Date not found")
 
 		for (let index = this.firstDayMonth; index > 0; index--) {
@@ -42,9 +42,9 @@ export default class CalendarRepository implements CalendarRepositoryContract {
 
 		for (let index = 1; index <= this.lastDateMonth; index++) {
 			const isToday =
-        index === this.date.getDate() &&
-        this.month === new Date().getMonth() &&
-        this.year === new Date().getFullYear()
+				index === this.date.getDate() &&
+				this.month === new Date().getMonth() &&
+				this.year === new Date().getFullYear()
 
 			days.push({
 				status: isToday ? "active" : "normal",
