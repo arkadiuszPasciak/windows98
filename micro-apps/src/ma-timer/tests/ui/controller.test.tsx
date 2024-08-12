@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/experimental-ct-react"
 import { TimerView } from "../../src/ui/views/timer.view"
 
 test.describe("Controller", () => {
-	test("should interact with controller", async ({ mount }) => {
+	test("should interact with buttons to increase or decrease hours, minutes and seconds", async ({ mount }) => {
 		const component = await mount(<TimerView />)
 
 		const hoursUpButton = component.getByTestId("ds-button-arrow-hours-top")

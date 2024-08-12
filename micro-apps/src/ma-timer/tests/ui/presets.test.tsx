@@ -45,7 +45,7 @@ const presets = [
 ]
 
 test.describe("Presets", () => {
-	test("should interact with presets and update time", async ({ mount }) => {
+	test("should interact with presets 3 minutes, 5 minutes, 10 minutes, 15 minutes and custom", async ({ mount }) => {
 		const component = await mount(<TimerView />)
 
 		for (const preset of presets) {
