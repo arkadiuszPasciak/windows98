@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import { UseDSRadioProps } from './ds-radio.type'
+import { useEffect, useState } from "react"
+import { UseDSRadioProps } from "./ds-radio.type"
 
 export function useDSRadio({ initialChecked, onChange }: UseDSRadioProps) {
 	const [checked, setChecked] = useState<boolean>(initialChecked)

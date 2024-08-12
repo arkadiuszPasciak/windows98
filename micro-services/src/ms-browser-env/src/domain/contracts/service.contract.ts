@@ -1,4 +1,4 @@
-import type { Maybe } from "@windows98/toolkit/src/types"
+import type { Maybe } from "@windows98/toolkit"
 import type { TBrowserName } from "../models/browser.model"
 import type { TDevices } from "../models/device.model"
 import type { TOperatingSystemAll } from "../models/operating.model"

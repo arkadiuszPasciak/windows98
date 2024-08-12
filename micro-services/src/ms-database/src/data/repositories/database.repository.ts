@@ -1,4 +1,4 @@
-import type { Maybe } from "@windows98/toolkit/src/types"
+import type { Maybe } from "@windows98/toolkit"
 import type { DatabaseRepositoryContract } from "../../domain/contracts/repository.contract"
 
 export class DatabaseRepository implements DatabaseRepositoryContract {
