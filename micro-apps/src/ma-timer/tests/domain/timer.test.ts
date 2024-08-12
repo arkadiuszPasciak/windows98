@@ -3,7 +3,7 @@ import { TimerDomain } from "../../src/domain/domains"
 import {
 	ETimerStatus,
 	ETimerTime,
-} from '../../src/domain/models'
+} from "../../src/domain/models"
 
 describe("TimerDomain", () => {
 	const timerDomain = new TimerDomain()

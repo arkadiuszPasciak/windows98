@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest"
 import { TimerDomain, TimerPlayerDomain } from "../../src/domain/domains"
-import { ETimerStatus } from '../../src/domain/models'
+import { ETimerStatus } from "../../src/domain/models"
 
 describe("TimerPlayerDomain", () => {
 	const timerDomain = new TimerDomain()
