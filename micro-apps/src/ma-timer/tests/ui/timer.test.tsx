@@ -9,12 +9,12 @@ test.describe("Timer", () => {
 		await customPreset.click()
 
 		const secondsUpButton = component.getByTestId("ds-button-arrow-seconds-top")
-		for (let index = 0; index < 10; index++) {
+		for (let index = 0; index < 5; index++) {
 			await secondsUpButton.click()
 		}
 
 		const screenSeconds = component.getByTestId("ma-timer-screen-seconds")
-		await expect(screenSeconds, "Screen should display 10 seconds after increasing 10 times").toHaveText("10")
+		await expect(screenSeconds, "Screen should display 5 seconds after increasing 5 times").toHaveText("05")
 
 		const startStopButton = component.getByTestId("ma-timer-player-start-and-stop-button")
 		await startStopButton.click()
@@ -27,9 +27,8 @@ test.describe("Timer", () => {
 		await startStopButton.click()
 		await expect(startStopButton, "Button should display 'Stop' after restarting the timer").toHaveText("Stop")
 
-		await page.waitForTimeout(10000)
-		await expect(component.getByTestId("ma-timer-screen-seconds"), "Seconds should be 00 after timer finishes").toHaveText("00")
-		await expect(component.getByTestId("ma-timer-screen-minutes"), "Minutes should be 00 after timer finishes").toHaveText("00")
-		await expect(component.getByTestId("ma-timer-screen-hours"), "Hours should be 00 after timer finishes").toHaveText("00")
+		await expect(component.getByTestId("ma-timer-screen-seconds"), "Seconds should be 00 after timer finishes").toHaveText("00", { timeout: 10000 })
+		await expect(component.getByTestId("ma-timer-screen-minutes"), "Minutes should be 00 after timer finishes").toHaveText("00", { timeout: 10000 })
+		await expect(component.getByTestId("ma-timer-screen-hours"), "Hours should be 00 after timer finishes").toHaveText("00", { timeout: 10000 })
 	})
 })

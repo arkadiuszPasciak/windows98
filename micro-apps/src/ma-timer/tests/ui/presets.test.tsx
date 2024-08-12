@@ -48,17 +48,17 @@ test.describe("Presets", () => {
 	test("should interact with presets 3 minutes, 5 minutes, 10 minutes, 15 minutes and custom", async ({ mount }) => {
 		const component = await mount(<TimerView />)
 
+		const hours = component.getByTestId("ma-timer-screen-hours")
+		const minutes = component.getByTestId("ma-timer-screen-minutes")
+		const seconds = component.getByTestId("ma-timer-screen-seconds")
+
 		for (const preset of presets) {
 			const presetElement = component.getByTestId(preset.dataTestId)
 			await presetElement.click()
 
-			const hours = component.getByTestId("ma-timer-screen-hours")
-			const minutes = component.getByTestId("ma-timer-screen-minutes")
-			const seconds = component.getByTestId("ma-timer-screen-seconds")
-
-			await expect(hours).toHaveValue(preset.expectTime.hours)
-			await expect(minutes).toHaveValue(preset.expectTime.minutes)
-			await expect(seconds).toHaveValue(preset.expectTime.seconds)
+			await expect(hours).toHaveText(preset.expectTime.hours)
+			await expect(minutes).toHaveText(preset.expectTime.minutes)
+			await expect(seconds).toHaveText(preset.expectTime.seconds)
 		}
 	})
 })
