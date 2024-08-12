@@ -16,22 +16,22 @@ export const usePresets = () => {
 			{
 				preset: ETimerPresets.THREE_MINUTES,
 				content: t("ma-timer.presets.three-minutes"),
-				id: "ma-timer-preset-3-min",
+				id: "ma-timer-preset-3-minutes",
 			},
 			{
 				preset: ETimerPresets.FIVE_MINUTES,
 				content: t("ma-timer.presets.five-minutes"),
-				id: "ma-timer-preset-5-min",
+				id: "ma-timer-preset-5-minutes",
 			},
 			{
 				preset: ETimerPresets.TEN_MINUTES,
 				content: t("ma-timer.presets.ten-minutes"),
-				id: "ma-timer-preset-10-min",
+				id: "ma-timer-preset-10-minutes",
 			},
 			{
 				preset: ETimerPresets.FIFTEEN_MINUTES,
 				content: t("ma-timer.presets.fifteen-minutes"),
-				id: "ma-timer-preset-15-min",
+				id: "ma-timer-preset-15-minutes",
 			},
 			{
 				preset: ETimerPresets.CUSTOM_MINUTES,
