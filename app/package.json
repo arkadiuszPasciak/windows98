@@ -25,14 +25,12 @@
     "vue-i18n": "^9.2.2"
   },
   "devDependencies": {
-    "eslint": "8.57.0",
     "@intlify/unplugin-vue-i18n": "^0.11.0",
     "@pinia/testing": "^0.1.2",
     "@vitejs/plugin-vue": "5.0.4",
     "@vue/test-utils": "^2.3.2",
     "@windows98/configs": "workspace:*",
     "@windows98/design-system": "workspace:*",
-    "@windows98/eslint-config": "workspace:*",
     "@windows98/i18n": "workspace:*",
     "@windows98/micro-apps": "workspace:*",
     "@windows98/micro-services": "workspace:*",

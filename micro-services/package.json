@@ -20,8 +20,6 @@
   },
   "type": "module",
   "devDependencies": {
-    "eslint": "8.57.0",
-    "@windows98/eslint-config": "workspace:*",
     "@windows98/configs": "workspace:*",
     "@windows98/linters": "workspace:*",
     "@windows98/toolkit": "workspace:*",

@@ -7,8 +7,6 @@
     "node": "20.12.0"
   },
   "devDependencies": {
-    "eslint": "8.57.0",
-    "@windows98/eslint-config": "workspace:*",
     "@windows98/linters": "workspace:*",
     "i18next": "23.8.2",
     "lint-staged": "15.2.2",
