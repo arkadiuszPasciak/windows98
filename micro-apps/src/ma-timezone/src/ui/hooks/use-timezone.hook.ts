@@ -1,7 +1,7 @@
 import { useContext } from "react"
-import { DomainContext } from "../context/domain.context"
+import { DomainContext } from "../context"
 
-export default function useTimezone() {
+export function useTimezone() {
 	const store = useContext(DomainContext)
 
 	return {

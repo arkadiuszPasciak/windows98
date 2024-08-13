@@ -1,11 +1,10 @@
-import { observable, action, makeAutoObservable } from "mobx"
-import TimezoneRepository from "../../data/repositories/timezone.repository"
-import type { ITimezoneValuePairs, TTimezoneValues } from "../models/timezone.model"
+import { makeAutoObservable } from "mobx"
+import { TimezoneRepository } from "../../data/repositories"
+import type { ITimezoneValuePairs, TTimezoneValues } from "../models"
 import type { Maybe } from "@windows98/toolkit"
-import TimezoneServicesContract from "../contracts/service.contract"
+import type { TimezoneDomainContract } from "../contracts"
 
-export default class TimezoneService implements TimezoneServicesContract {
-	@observable
+export class TimezoneDomain implements TimezoneDomainContract {
 	timezoneRepository: TimezoneRepository = new TimezoneRepository()
 	timezonesValuePairs: Maybe<Array<ITimezoneValuePairs>> = null
 
@@ -13,7 +12,6 @@ export default class TimezoneService implements TimezoneServicesContract {
 		makeAutoObservable(this)
 	}
 
-	@action
 	public generateTimezones(): void {
 		const timezones = this.timezoneRepository.getTimezones()
 
@@ -34,4 +32,4 @@ export default class TimezoneService implements TimezoneServicesContract {
 	}
 }
 
-export const timezoneService = new TimezoneService()
+export const timezoneDomain = new TimezoneDomain()

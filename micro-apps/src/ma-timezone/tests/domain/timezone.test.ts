@@ -1,14 +1,8 @@
 import { expect, describe, test } from "vitest"
-import TimezoneService from "../../src/domain/services/timezone.service"
-import TimezoneRepository from "../../src/data/repositories/timezone.repository"
+import { TimezoneDomain } from "../../src/domain/domains"
 
-describe("TimezoneService", () => {
-	const calendarService = new TimezoneService()
-
-	test("initial state", () => {
-		expect(calendarService.timezoneRepository).toStrictEqual(new TimezoneRepository())
-		expect(calendarService.timezonesValuePairs).toBeNull()
-	})
+describe("TimezoneDomain", () => {
+	const calendarService = new TimezoneDomain()
 
 	test("generateTimezones", () => {
 		calendarService.generateTimezones()

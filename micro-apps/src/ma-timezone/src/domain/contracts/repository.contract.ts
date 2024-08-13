@@ -1,5 +1,5 @@
-import type { TTimezoneValues } from "../models/timezone.model"
+import type { TTimezoneValues } from "../models"
 
-export default interface TimezoneRepositoryContract {
+export interface TimezoneRepositoryContract {
 	getTimezones(): Array<TTimezoneValues>
 }
