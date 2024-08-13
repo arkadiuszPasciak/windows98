@@ -1,11 +1,10 @@
-import { observable, action, makeAutoObservable } from "mobx"
-import CalendarRepository from "../../data/repositories/calendar.repository"
-import type { CalendarServiceContract } from "../contracts/service.contract"
+import { makeAutoObservable } from "mobx"
+import { CalendarRepository } from "../../data/repositories"
+import type { CalendarDomainContract } from "../contracts"
 import type { Maybe } from "@windows98/toolkit"
-import type { ICalendarDays } from "../models/days.model"
+import type { ICalendarDays } from "../models"
 
-export default class CalendarService implements CalendarServiceContract {
-	@observable
+export class CalendarDomain implements CalendarDomainContract {
 	calendar: Maybe<Array<ICalendarDays>> = null
 	year: Maybe<number> = null
 	month: Maybe<number> = null
@@ -15,7 +14,6 @@ export default class CalendarService implements CalendarServiceContract {
 		makeAutoObservable(this)
 	}
 
-	@action
 	generateCalendar(date?: Date): void {
 		this.calendarRepository.initCalendar(date || null)
 
@@ -24,7 +22,6 @@ export default class CalendarService implements CalendarServiceContract {
 		this.month = this.calendarRepository.month
 	}
 
-	@action
 	changeCalendarByYear(): void {
 		if ((!this.month && this.month !== 0) || !this.year) {
 			return
@@ -35,7 +32,6 @@ export default class CalendarService implements CalendarServiceContract {
 		this.generateCalendar(date)
 	}
 
-	@action
 	changeCalendarByMonth(month: number): void {
 		if (!this.year) {
 			return
@@ -46,7 +42,6 @@ export default class CalendarService implements CalendarServiceContract {
 		this.generateCalendar(date)
 	}
 
-	@action
 	increaseYear(): void {
 		if (!this.year) return
 
@@ -55,7 +50,6 @@ export default class CalendarService implements CalendarServiceContract {
 		this.changeCalendarByYear()
 	}
 
-	@action
 	decreaseYear(): void {
 		if (!this.year) return
 
@@ -65,4 +59,4 @@ export default class CalendarService implements CalendarServiceContract {
 	}
 }
 
-export const calendarService = new CalendarService()
+export const calendarDomain = new CalendarDomain()

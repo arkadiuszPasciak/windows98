@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/experimental-ct-react"
 import { CalendarView } from "../../src/ui/views/calendar.view"
 
-test.describe("Calendar: month-switcher", () => {
+test.describe("Month switcher", () => {
 	test("select month", async ({ mount }) => {
 		const component = await mount(<CalendarView />)
 		const select = await component.getByTestId("ds-select-select-month-switcher")
@@ -10,7 +10,7 @@ test.describe("Calendar: month-switcher", () => {
 
 		for (let index = 0; index <= 11; index++) {
 			await select.selectOption(months[index])
-			await expect(select).toHaveValue(String(index))
+			await expect(select, "select element has the correct value after selecting a month").toHaveValue(String(index))
 		}
 	})
 })

@@ -1,10 +1,10 @@
 import { useContext } from "react"
-import { DomainContext } from "../context/domain.context"
+import { DomainContext } from "../context"
 
-export default function useCalendar() {
+export function useCalendar() {
 	const store = useContext(DomainContext)
 
 	return {
-		calendarService: store,
+		calendarDomain: store,
 	}
 }

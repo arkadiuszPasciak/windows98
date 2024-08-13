@@ -1,19 +1,19 @@
-import useCalendar from "../../hooks/use-calendar.hook"
+import { useCalendar } from "../../hooks"
 
 export default function useYearSwitcher() {
-	const { calendarService } = useCalendar()
+	const { calendarDomain } = useCalendar()
 
 	const decreaseYear = (): void => {
-		calendarService.decreaseYear()
+		calendarDomain.decreaseYear()
 	}
 
 	const increaseYear = (): void => {
-		calendarService.increaseYear()
+		calendarDomain.increaseYear()
 	}
 
 	return {
 		decreaseYear,
 		increaseYear,
-		year: calendarService.year,
+		year: calendarDomain.year,
 	}
 }

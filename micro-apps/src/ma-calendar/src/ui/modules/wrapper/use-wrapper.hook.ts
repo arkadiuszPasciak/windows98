@@ -1,13 +1,13 @@
 import { useEffect, useMemo } from "react"
 import { useTranslation } from "react-i18next"
-import useCalendar from "../../hooks/use-calendar.hook"
+import { useCalendar } from "../../hooks"
 
 export function useWrapper() {
 	const { t } = useTranslation()
-	const { calendarService } = useCalendar()
+	const { calendarDomain } = useCalendar()
 
 	useEffect(() => {
-		calendarService.generateCalendar()
+		calendarDomain.generateCalendar()
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 

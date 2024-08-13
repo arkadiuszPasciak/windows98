@@ -1,4 +1,4 @@
 import { createContext } from "react"
-import { calendarService } from "../../domain/services/calendar.service"
+import { calendarDomain } from "../../domain/domains"
 
-export const DomainContext = createContext(calendarService)
+export const DomainContext = createContext(calendarDomain)

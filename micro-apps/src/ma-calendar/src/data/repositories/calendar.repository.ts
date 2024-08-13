@@ -1,8 +1,8 @@
-import { ICalendarDays } from "../../domain/models/days.model"
-import CalendarRepositoryContract from "../../domain/contracts/repository.contract"
+import type { ICalendarDays } from "../../domain/models"
+import type { CalendarRepositoryContract } from "../../domain/contracts"
 import type { Maybe } from "@windows98/toolkit"
 
-export default class CalendarRepository implements CalendarRepositoryContract {
+export class CalendarRepository implements CalendarRepositoryContract {
 	private date: Maybe<Date>
 	private firstDayMonth: Maybe<number>
 	private lastDateMonth: Maybe<number>
