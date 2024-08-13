@@ -2,20 +2,19 @@
   "author": "Arkadiusz Paściak",
   "description": "ESLint configuration for Windows 98 project",
   "devDependencies": {
-    "@eslint/js": "9.5.0",
-    "eslint-plugin-react": "7.34.2",
-    "eslint-plugin-react-hooks": "4.6.2",
-    "eslint-plugin-vue": "9.26.0",
-    "globals": "15.4.0",
+    "@eslint/js": "9.9.0",
+    "eslint-plugin-react": "7.35.0",
+    "eslint-plugin-vue": "9.27.0",
+    "globals": "15.9.0",
     "typescript": "5.4.5",
-    "typescript-eslint": "7.13.0",
-    "vue-eslint-parser": "^9.4.3"
+    "typescript-eslint": "8.1.0",
+    "vue-eslint-parser": "9.4.3"
   },
   "exports": {
     "./index": "./src/configs/index.config.mjs"
   },
   "peerDependencies": {
-    "eslint": "9.5.0"
+    "eslint": "9.9.0"
   },
   "engines": {
     "node": "20.12.0"

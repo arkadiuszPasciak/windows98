@@ -7,6 +7,6 @@ import eslintVueConfig from "./vue.config.mjs"
 export default tseslint.config(
 	...eslintBaseConfig,
 	...eslintTypescriptConfig,
-	// ...eslintReactConfig,
+	...eslintReactConfig,
 	...eslintVueConfig
 )
