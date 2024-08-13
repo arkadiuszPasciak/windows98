@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite"
 import { DSSelect } from "@windows98/design-system"
-import useTimezoneSwitcher from "./use-timezone-switcher.hook"
+import { useTimezoneSwitcher } from "./use-timezone-switcher.hook"
 
 export const TimezoneSwitcher = observer(() => {
 	const { dictionary } = useTimezoneSwitcher()

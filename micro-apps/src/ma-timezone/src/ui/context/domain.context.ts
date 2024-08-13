@@ -1,4 +1,4 @@
 import { createContext } from "react"
-import { timezoneService } from "../../domain/services/timezone.service"
+import { timezoneDomain } from "../../domain/domains"
 
-export const DomainContext = createContext(timezoneService)
+export const DomainContext = createContext(timezoneDomain)

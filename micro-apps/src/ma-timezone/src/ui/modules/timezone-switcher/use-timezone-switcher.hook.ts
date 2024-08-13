@@ -1,8 +1,8 @@
 import { useMemo } from "react"
-import useTimezone from "../../hooks/use-timezone.hook"
+import { useTimezone } from "../../hooks"
 import { useTranslation } from "react-i18next"
 
-export default function useTimezoneSwitcher() {
+export function useTimezoneSwitcher() {
 	const { t } = useTranslation()
 	const { timezoneService } = useTimezone()
 

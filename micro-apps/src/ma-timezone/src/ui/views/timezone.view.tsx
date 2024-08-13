@@ -1,10 +1,10 @@
-import { DomainContext } from "../context/domain.context"
-import { Wrapper } from "../modules/wrapper/wrapper"
-import { timezoneService } from "../../domain/services/timezone.service"
+import { DomainContext } from "../context"
+import { Wrapper } from "../modules/wrapper"
+import { timezoneDomain } from "../../domain/domains"
 
 export const TimezoneView = () => {
 	return (
-		<DomainContext.Provider value={timezoneService}>
+		<DomainContext.Provider value={timezoneDomain}>
 			<Wrapper />
 		</DomainContext.Provider>
 	)

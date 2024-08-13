@@ -1,8 +1,8 @@
 import { useContext } from "react"
-import { CalculatorDomainContext } from "../context/domain.context"
+import { DomainContext } from "../context"
 
 export function useCalculator() {
-	const store = useContext(CalculatorDomainContext)
+	const store = useContext(DomainContext)
 
 	return {
 		calculatorDomain: store,

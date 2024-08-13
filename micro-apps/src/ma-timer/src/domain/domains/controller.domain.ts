@@ -18,8 +18,6 @@ export class TimerControllerDomain implements TimerControllerDomainContract {
 	public increaseSeconds = (): void => {
 		if (this.timerDomain.time.seconds === 59) return
 
-		console.log(this)
-
 		this.timerDomain.addTime(ETimerTime.SECONDS, 1)
 	}
 
