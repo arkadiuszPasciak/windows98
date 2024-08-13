@@ -1,6 +1,6 @@
 import type { ECalculatorNumber, ECalculatorSymbol } from "../models"
 
-export default interface CalculatorDomainContract {
+export interface CalculatorDomainContract {
 	value: string
 
 	addNumber(number: ECalculatorNumber): void

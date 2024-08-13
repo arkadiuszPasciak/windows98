@@ -1,8 +1,8 @@
 import { useContext } from "react"
-import { TimerDomainContext } from "../context/domain.context"
+import { DomainContext } from "../context"
 
 export function useTimer() {
-	const timerDomain = useContext(TimerDomainContext)
+	const timerDomain = useContext(DomainContext)
 
 	return {
 		timerDomain,

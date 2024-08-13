@@ -1,6 +1,4 @@
 import {
-	observable,
-	action,
 	makeAutoObservable,
 } from "mobx"
 import {
@@ -11,10 +9,9 @@ import {
 	ECalculatorNumber,
 	ECalculatorSymbol,
 } from "../models"
-import CalculatorDomainContract from "../contracts/domain.contract"
+import { CalculatorDomainContract } from "../contracts"
 
 export class CalculatorDomain implements CalculatorDomainContract {
-	@observable
 	public value = "0"
 	private calculatorService: CalculatorService = new CalculatorService()
 
@@ -23,7 +20,6 @@ export class CalculatorDomain implements CalculatorDomainContract {
 
 	}
 
-	@action
 	public addNumber = (number: ECalculatorNumber) => {
 		if (
 			this.calculatorService.isValueEqual(this.value, "0", ECalculatorDirect.FIRST) &&
@@ -36,7 +32,6 @@ export class CalculatorDomain implements CalculatorDomainContract {
 		}
 	}
 
-	@action
 	public addDot = () => {
 		if (
 			this.calculatorService.isDotExist(this.value) ||
@@ -50,7 +45,6 @@ export class CalculatorDomain implements CalculatorDomainContract {
 		}
 	}
 
-	@action
 	public addSymbol = (symbol: ECalculatorSymbol) => {
 		if (
 			this.value === "0." ||
@@ -62,7 +56,6 @@ export class CalculatorDomain implements CalculatorDomainContract {
 		this.value += symbol
 	}
 
-	@action
 	public summResult = () => {
 		this.value = this.calculatorService.summResult(this.value)
 	}
