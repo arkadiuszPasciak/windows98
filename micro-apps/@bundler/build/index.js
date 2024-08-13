@@ -1,12 +1,12 @@
 (function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_wc6ff_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_wc6ff_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper_wc6ff_96{display:grid;row-gap:15px;padding:13px 22px 10px;background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1hx69_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1hx69_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._screen_1hx69_96{background-color:var(--background-color-white);color:var(--text-color);width:100%;height:20px;padding:5px;text-align:right;box-shadow:var(--border-field);font:400 11px/13px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_uzbrq_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_uzbrq_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._keypad_uzbrq_96{display:grid;justify-content:center;grid-template-rows:repeat(3,30px);grid-template-columns:repeat(4,35px);gap:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_9arum_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_9arum_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._button_9arum_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);width:35px;height:30px}@media (hover: hover){._button_9arum_96{cursor:pointer}}._button_9arum_96:disabled{pointer-events:none;opacity:.5}._button_9arum_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._primary_9arum_122{color:#00f}._secondary_9arum_126{color:#fe0000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1v33v_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1v33v_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._week-days_1v33v_96{display:grid;height:20px;grid-template-columns:repeat(7,1fr);background-color:gray;color:var(--text-color-3)}._day_1v33v_104{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_12et3_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_12et3_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._month-days_12et3_96{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(6,1fr)}._day_12et3_102{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}._day-active_12et3_107{color:#fff;background-color:navy}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1xeii_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1xeii_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._days_1xeii_96{width:160px;height:145px;box-shadow:var(--border-field);padding:2px;text-align:center;background-color:var(--background-color-white)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_s3u64_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_s3u64_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper_s3u64_96{display:grid;grid-template-columns:90px 70px;background-color:var(--background-color);gap:10px 0;max-width:180px;width:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_15w9q_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_15w9q_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._controller_15w9q_96{display:flex;justify-content:center;align-items:center;column-gap:15px;margin-bottom:15px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_covgd_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_covgd_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._player_covgd_96{display:flex;column-gap:20px;justify-content:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_2r2rz_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_2r2rz_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._presets_2r2rz_96{display:flex;justify-content:center;align-items:center;gap:8px;grid-area:1/1/2/7;margin-right:0;margin-left:0}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_ddbl8_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_ddbl8_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._screen_ddbl8_96{display:flex;grid-area:3/1/4/7;justify-self:center;background-color:var(--background-color-white);max-width:203px;width:100%;height:48px;padding:5px;box-shadow:var(--border-field);font:400 39px/44px MSSansSerifBold,sans-serif;letter-spacing:3px;color:var(--text-color);-webkit-user-select:none;user-select:none;margin:0 auto 15px}._time_ddbl8_113{width:55px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1h4hz_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1h4hz_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper_1h4hz_96{background-color:var(--background-color);padding:0 10px 10px;max-width:385px;width:100%}')),document.head.appendChild(o)}}catch(f){console.error("vite-plugin-css-injected-by-js",f)}})();
 var Ot = Object.defineProperty;
-var $t = (t, r, l) => r in t ? Ot(t, r, { enumerable: !0, configurable: !0, writable: !0, value: l }) : t[r] = l;
-var R = (t, r, l) => ($t(t, typeof r != "symbol" ? r + "" : r, l), l);
+var $t = (t, r, c) => r in t ? Ot(t, r, { enumerable: !0, configurable: !0, writable: !0, value: c }) : t[r] = c;
+var S = (t, r, c) => ($t(t, typeof r != "symbol" ? r + "" : r, c), c);
 import o, { createContext, useContext, useState, useEffect, useMemo } from "react";
 import require$$0 from "react-dom";
 import i18next from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
-import { makeAutoObservable, observable, action } from "mobx";
+import { makeAutoObservable } from "mobx";
 import { observer } from "mobx-react-lite";
 var createRoot, m = require$$0;
 if (process.env.NODE_ENV === "production")
@@ -22,7 +22,7 @@ else {
     }
   };
 }
-var j = Object.defineProperty, x = (t, r, l) => r in t ? j(t, r, { enumerable: !0, configurable: !0, writable: !0, value: l }) : t[r] = l, b = (t, r, l) => (x(t, typeof r != "symbol" ? r + "" : r, l), l);
+var j = Object.defineProperty, x = (t, r, c) => r in t ? j(t, r, { enumerable: !0, configurable: !0, writable: !0, value: c }) : t[r] = c, b = (t, r, c) => (x(t, typeof r != "symbol" ? r + "" : r, c), c);
 const C = {
   stringify: (t) => t,
   parse: (t) => t
@@ -35,13 +35,13 @@ const C = {
 }, N$1 = {
   stringify: (t) => t.name,
   parse: (t, r) => {
-    const l = (() => {
+    const c = (() => {
       if (typeof window < "u" && t in window)
         return window[t];
       if (typeof global < "u" && t in global)
         return global[t];
     })();
-    return typeof l == "function" ? l.bind(r) : void 0;
+    return typeof c == "function" ? c.bind(r) : void 0;
   }
 }, P = {
   stringify: (t) => JSON.stringify(t),
@@ -53,57 +53,57 @@ const C = {
   function: N$1,
   json: P
 }, A$1 = Symbol.for("r2wc.render"), h = Symbol.for("r2wc.connected"), p = Symbol.for("r2wc.context"), i$1 = Symbol.for("r2wc.props");
-function z$1(t, r, l) {
-  var d, y, E;
+function z$1(t, r, c) {
+  var d, E, M;
   r.props || (r.props = t.propTypes ? Object.keys(t.propTypes) : []);
-  const k = (Array.isArray(r.props) ? r.props.slice() : Object.keys(r.props)).filter((M) => M !== "container"), F = {}, D = {}, Y = {};
-  for (const M of k) {
-    F[M] = Array.isArray(r.props) ? "string" : r.props[M];
-    const U = J(M);
-    D[M] = U, Y[U] = M;
+  const $ = (Array.isArray(r.props) ? r.props.slice() : Object.keys(r.props)).filter((k) => k !== "container"), F = {}, R = {}, H = {};
+  for (const k of $) {
+    F[k] = Array.isArray(r.props) ? "string" : r.props[k];
+    const U = J(k);
+    R[k] = U, H[U] = k;
   }
   class L extends HTMLElement {
     constructor() {
-      super(), b(this, d, !0), b(this, y), b(this, E, {}), b(this, "container"), r.shadow ? this.container = this.attachShadow({
+      super(), b(this, d, !0), b(this, E), b(this, M, {}), b(this, "container"), r.shadow ? this.container = this.attachShadow({
         mode: r.shadow
       }) : this.container = this, this[i$1].container = this.container;
-      for (const U of k) {
-        const G = D[U], Q = this.getAttribute(G), ae = F[U], ie = w[ae];
+      for (const U of $) {
+        const Y = R[U], Q = this.getAttribute(Y), ae = F[U], ie = w[ae];
         Q && ie != null && ie.parse && (this[i$1][U] = ie.parse(Q, this));
       }
     }
     static get observedAttributes() {
-      return Object.keys(Y);
+      return Object.keys(H);
     }
     connectedCallback() {
       this[h] = !0, this[A$1]();
     }
     disconnectedCallback() {
-      this[h] = !1, this[p] && l.unmount(this[p]), delete this[p];
+      this[h] = !1, this[p] && c.unmount(this[p]), delete this[p];
     }
-    attributeChangedCallback(U, G, Q) {
-      const ae = Y[U], ie = F[ae], Z = w[ie];
+    attributeChangedCallback(U, Y, Q) {
+      const ae = H[U], ie = F[ae], Z = w[ie];
       ae in F && Z != null && Z.parse && (this[i$1][ae] = Z.parse(Q, this), this[A$1]());
     }
-    [(d = h, y = p, E = i$1, A$1)]() {
-      this[h] && (this[p] ? l.update(this[p], this[i$1]) : this[p] = l.mount(
+    [(d = h, E = p, M = i$1, A$1)]() {
+      this[h] && (this[p] ? c.update(this[p], this[i$1]) : this[p] = c.mount(
         this.container,
         t,
         this[i$1]
       ));
     }
   }
-  for (const M of k) {
-    const U = D[M], G = F[M];
-    Object.defineProperty(L.prototype, M, {
+  for (const k of $) {
+    const U = R[k], Y = F[k];
+    Object.defineProperty(L.prototype, k, {
       enumerable: !0,
       configurable: !0,
       get() {
-        return this[i$1][M];
+        return this[i$1][k];
       },
       set(Q) {
-        this[i$1][M] = Q;
-        const ae = w[G];
+        this[i$1][k] = Q;
+        const ae = w[Y];
         if (ae != null && ae.stringify) {
           const ie = ae.stringify(Q);
           this.getAttribute(U) !== ie && this.setAttribute(U, ie);
@@ -116,15 +116,15 @@ function z$1(t, r, l) {
 function J(t = "") {
   return t.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
 }
-function f(t, r, l) {
-  const d = createRoot(t), y = o.createElement(r, l);
-  return d.render(y), {
+function f(t, r, c) {
+  const d = createRoot(t), E = o.createElement(r, c);
+  return d.render(E), {
     root: d,
     ReactComponent: r
   };
 }
-function i({ root: t, ReactComponent: r }, l) {
-  const d = o.createElement(r, l);
+function i({ root: t, ReactComponent: r }, c) {
+  const d = o.createElement(r, c);
   t.render(d);
 }
 function a$1({ root: t }) {
@@ -329,18 +329,18 @@ function requireReactJsxRuntime_production_min() {
   if (hasRequiredReactJsxRuntime_production_min)
     return reactJsxRuntime_production_min;
   hasRequiredReactJsxRuntime_production_min = 1;
-  var t = o, r = Symbol.for("react.element"), l = Symbol.for("react.fragment"), d = Object.prototype.hasOwnProperty, y = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, E = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function k(F, D, Y) {
-    var L, M = {}, U = null, G = null;
-    Y !== void 0 && (U = "" + Y), D.key !== void 0 && (U = "" + D.key), D.ref !== void 0 && (G = D.ref);
-    for (L in D)
-      d.call(D, L) && !E.hasOwnProperty(L) && (M[L] = D[L]);
+  var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.fragment"), d = Object.prototype.hasOwnProperty, E = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, M = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function $(F, R, H) {
+    var L, k = {}, U = null, Y = null;
+    H !== void 0 && (U = "" + H), R.key !== void 0 && (U = "" + R.key), R.ref !== void 0 && (Y = R.ref);
+    for (L in R)
+      d.call(R, L) && !M.hasOwnProperty(L) && (k[L] = R[L]);
     if (F && F.defaultProps)
-      for (L in D = F.defaultProps, D)
-        M[L] === void 0 && (M[L] = D[L]);
-    return { $$typeof: r, type: F, key: U, ref: G, props: M, _owner: y.current };
+      for (L in R = F.defaultProps, R)
+        k[L] === void 0 && (k[L] = R[L]);
+    return { $$typeof: r, type: F, key: U, ref: Y, props: k, _owner: E.current };
   }
-  return reactJsxRuntime_production_min.Fragment = l, reactJsxRuntime_production_min.jsx = k, reactJsxRuntime_production_min.jsxs = k, reactJsxRuntime_production_min;
+  return reactJsxRuntime_production_min.Fragment = c, reactJsxRuntime_production_min.jsx = $, reactJsxRuntime_production_min.jsxs = $, reactJsxRuntime_production_min;
 }
 var reactJsxRuntime_development = {};
 /**
@@ -355,7 +355,7 @@ var reactJsxRuntime_development = {};
 var hasRequiredReactJsxRuntime_development;
 function requireReactJsxRuntime_development() {
   return hasRequiredReactJsxRuntime_development || (hasRequiredReactJsxRuntime_development = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = o, r = Symbol.for("react.element"), l = Symbol.for("react.portal"), d = Symbol.for("react.fragment"), y = Symbol.for("react.strict_mode"), E = Symbol.for("react.profiler"), k = Symbol.for("react.provider"), F = Symbol.for("react.context"), D = Symbol.for("react.forward_ref"), Y = Symbol.for("react.suspense"), L = Symbol.for("react.suspense_list"), M = Symbol.for("react.memo"), U = Symbol.for("react.lazy"), G = Symbol.for("react.offscreen"), Q = Symbol.iterator, ae = "@@iterator";
+    var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.portal"), d = Symbol.for("react.fragment"), E = Symbol.for("react.strict_mode"), M = Symbol.for("react.profiler"), $ = Symbol.for("react.provider"), F = Symbol.for("react.context"), R = Symbol.for("react.forward_ref"), H = Symbol.for("react.suspense"), L = Symbol.for("react.suspense_list"), k = Symbol.for("react.memo"), U = Symbol.for("react.lazy"), Y = Symbol.for("react.offscreen"), Q = Symbol.iterator, ae = "@@iterator";
     function ie(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -363,38 +363,38 @@ function requireReactJsxRuntime_development() {
       return typeof n == "function" ? n : null;
     }
     var Z = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function B(e) {
+    function W(e) {
       {
-        for (var n = arguments.length, c = new Array(n > 1 ? n - 1 : 0), u = 1; u < n; u++)
-          c[u - 1] = arguments[u];
-        Qe("error", e, c);
+        for (var n = arguments.length, l = new Array(n > 1 ? n - 1 : 0), u = 1; u < n; u++)
+          l[u - 1] = arguments[u];
+        Qe("error", e, l);
       }
     }
-    function Qe(e, n, c) {
+    function Qe(e, n, l) {
       {
-        var u = Z.ReactDebugCurrentFrame, g = u.getStackAddendum();
-        g !== "" && (n += "%s", c = c.concat([g]));
-        var S = c.map(function(_) {
-          return String(_);
+        var u = Z.ReactDebugCurrentFrame, _ = u.getStackAddendum();
+        _ !== "" && (n += "%s", l = l.concat([_]));
+        var g = l.map(function(v) {
+          return String(v);
         });
-        S.unshift("Warning: " + n), Function.prototype.apply.call(console[e], console, S);
+        g.unshift("Warning: " + n), Function.prototype.apply.call(console[e], console, g);
       }
     }
     var et = !1, tt = !1, rt = !1, at = !1, nt = !1, Se;
     Se = Symbol.for("react.module.reference");
     function ot(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === d || e === E || nt || e === y || e === Y || e === L || at || e === G || et || tt || rt || typeof e == "object" && e !== null && (e.$$typeof === U || e.$$typeof === M || e.$$typeof === k || e.$$typeof === F || e.$$typeof === D || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === d || e === M || nt || e === E || e === H || e === L || at || e === Y || et || tt || rt || typeof e == "object" && e !== null && (e.$$typeof === U || e.$$typeof === k || e.$$typeof === $ || e.$$typeof === F || e.$$typeof === R || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
       e.$$typeof === Se || e.getModuleId !== void 0));
     }
-    function it(e, n, c) {
+    function it(e, n, l) {
       var u = e.displayName;
       if (u)
         return u;
-      var g = n.displayName || n.name || "";
-      return g !== "" ? c + "(" + g + ")" : c;
+      var _ = n.displayName || n.name || "";
+      return _ !== "" ? l + "(" + _ + ")" : l;
     }
     function we(e) {
       return e.displayName || "Context";
@@ -402,20 +402,20 @@ function requireReactJsxRuntime_development() {
     function q(e) {
       if (e == null)
         return null;
-      if (typeof e.tag == "number" && B("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
+      if (typeof e.tag == "number" && W("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
         return e.displayName || e.name || null;
       if (typeof e == "string")
         return e;
       switch (e) {
         case d:
           return "Fragment";
-        case l:
+        case c:
           return "Portal";
-        case E:
+        case M:
           return "Profiler";
-        case y:
+        case E:
           return "StrictMode";
-        case Y:
+        case H:
           return "Suspense";
         case L:
           return "SuspenseList";
@@ -425,18 +425,18 @@ function requireReactJsxRuntime_development() {
           case F:
             var n = e;
             return we(n) + ".Consumer";
-          case k:
-            var c = e;
-            return we(c._context) + ".Provider";
-          case D:
+          case $:
+            var l = e;
+            return we(l._context) + ".Provider";
+          case R:
             return it(e, e.render, "ForwardRef");
-          case M:
+          case k:
             var u = e.displayName || null;
             return u !== null ? u : q(e.type) || "Memo";
           case U: {
-            var g = e, S = g._payload, _ = g._init;
+            var _ = e, g = _._payload, v = _._init;
             try {
-              return q(_(S));
+              return q(v(g));
             } catch {
               return null;
             }
@@ -503,17 +503,17 @@ function requireReactJsxRuntime_development() {
             })
           });
         }
-        se < 0 && B("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        se < 0 && W("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
     var me = Z.ReactCurrentDispatcher, he;
-    function ce(e, n, c) {
+    function ce(e, n, l) {
       {
         if (he === void 0)
           try {
             throw Error();
-          } catch (g) {
-            var u = g.stack.trim().match(/\n( *(at )?)/);
+          } catch (_) {
+            var u = _.stack.trim().match(/\n( *(at )?)/);
             he = u && u[1] || "";
           }
         return `
@@ -529,39 +529,39 @@ function requireReactJsxRuntime_development() {
       if (!e || xe)
         return "";
       {
-        var c = ue.get(e);
-        if (c !== void 0)
-          return c;
+        var l = ue.get(e);
+        if (l !== void 0)
+          return l;
       }
       var u;
       xe = !0;
-      var g = Error.prepareStackTrace;
+      var _ = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var S;
-      S = me.current, me.current = null, st();
+      var g;
+      g = me.current, me.current = null, st();
       try {
         if (n) {
-          var _ = function() {
+          var v = function() {
             throw Error();
           };
-          if (Object.defineProperty(_.prototype, "props", {
+          if (Object.defineProperty(v.prototype, "props", {
             set: function() {
               throw Error();
             }
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
-              Reflect.construct(_, []);
+              Reflect.construct(v, []);
             } catch (K) {
               u = K;
             }
-            Reflect.construct(e, [], _);
+            Reflect.construct(e, [], v);
           } else {
             try {
-              _.call();
+              v.call();
             } catch (K) {
               u = K;
             }
-            e.call(_.prototype);
+            e.call(v.prototype);
           }
         } else {
           try {
@@ -573,37 +573,37 @@ function requireReactJsxRuntime_development() {
         }
       } catch (K) {
         if (K && u && typeof K.stack == "string") {
-          for (var v = K.stack.split(`
-`), W = u.stack.split(`
-`), O = v.length - 1, $ = W.length - 1; O >= 1 && $ >= 0 && v[O] !== W[$]; )
-            $--;
-          for (; O >= 1 && $ >= 0; O--, $--)
-            if (v[O] !== W[$]) {
-              if (O !== 1 || $ !== 1)
+          for (var y = K.stack.split(`
+`), B = u.stack.split(`
+`), D = y.length - 1, O = B.length - 1; D >= 1 && O >= 0 && y[D] !== B[O]; )
+            O--;
+          for (; D >= 1 && O >= 0; D--, O--)
+            if (y[D] !== B[O]) {
+              if (D !== 1 || O !== 1)
                 do
-                  if (O--, $--, $ < 0 || v[O] !== W[$]) {
-                    var H = `
-` + v[O].replace(" at new ", " at ");
-                    return e.displayName && H.includes("<anonymous>") && (H = H.replace("<anonymous>", e.displayName)), typeof e == "function" && ue.set(e, H), H;
+                  if (D--, O--, O < 0 || y[D] !== B[O]) {
+                    var G = `
+` + y[D].replace(" at new ", " at ");
+                    return e.displayName && G.includes("<anonymous>") && (G = G.replace("<anonymous>", e.displayName)), typeof e == "function" && ue.set(e, G), G;
                   }
-                while (O >= 1 && $ >= 0);
+                while (D >= 1 && O >= 0);
               break;
             }
         }
       } finally {
-        xe = !1, me.current = S, lt(), Error.prepareStackTrace = g;
+        xe = !1, me.current = g, lt(), Error.prepareStackTrace = _;
       }
       var oe = e ? e.displayName || e.name : "", Xe = oe ? ce(oe) : "";
       return typeof e == "function" && ue.set(e, Xe), Xe;
     }
-    function ut(e, n, c) {
+    function ut(e, n, l) {
       return Ae(e, !1);
     }
     function dt(e) {
       var n = e.prototype;
       return !!(n && n.isReactComponent);
     }
-    function de(e, n, c) {
+    function de(e, n, l) {
       if (e == null)
         return "";
       if (typeof e == "function")
@@ -611,21 +611,21 @@ function requireReactJsxRuntime_development() {
       if (typeof e == "string")
         return ce(e);
       switch (e) {
-        case Y:
+        case H:
           return ce("Suspense");
         case L:
           return ce("SuspenseList");
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case D:
+          case R:
             return ut(e.render);
-          case M:
-            return de(e.type, n, c);
+          case k:
+            return de(e.type, n, l);
           case U: {
-            var u = e, g = u._payload, S = u._init;
+            var u = e, _ = u._payload, g = u._init;
             try {
-              return de(S(g), n, c);
+              return de(g(_), n, l);
             } catch {
             }
           }
@@ -635,27 +635,27 @@ function requireReactJsxRuntime_development() {
     var fe = Object.prototype.hasOwnProperty, Fe = {}, Le = Z.ReactDebugCurrentFrame;
     function pe(e) {
       if (e) {
-        var n = e._owner, c = de(e.type, e._source, n ? n.type : null);
-        Le.setExtraStackFrame(c);
+        var n = e._owner, l = de(e.type, e._source, n ? n.type : null);
+        Le.setExtraStackFrame(l);
       } else
         Le.setExtraStackFrame(null);
     }
-    function ft(e, n, c, u, g) {
+    function ft(e, n, l, u, _) {
       {
-        var S = Function.call.bind(fe);
-        for (var _ in e)
-          if (S(e, _)) {
-            var v = void 0;
+        var g = Function.call.bind(fe);
+        for (var v in e)
+          if (g(e, v)) {
+            var y = void 0;
             try {
-              if (typeof e[_] != "function") {
-                var W = Error((u || "React class") + ": " + c + " type `" + _ + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[_] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                throw W.name = "Invariant Violation", W;
+              if (typeof e[v] != "function") {
+                var B = Error((u || "React class") + ": " + l + " type `" + v + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[v] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                throw B.name = "Invariant Violation", B;
               }
-              v = e[_](n, _, u, c, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (O) {
-              v = O;
+              y = e[v](n, v, u, l, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (D) {
+              y = D;
             }
-            v && !(v instanceof Error) && (pe(g), B("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", u || "React class", c, _, typeof v), pe(null)), v instanceof Error && !(v.message in Fe) && (Fe[v.message] = !0, pe(g), B("Failed %s type: %s", c, v.message), pe(null));
+            y && !(y instanceof Error) && (pe(_), W("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", u || "React class", l, v, typeof y), pe(null)), y instanceof Error && !(y.message in Fe) && (Fe[y.message] = !0, pe(_), W("Failed %s type: %s", l, y.message), pe(null));
           }
       }
     }
@@ -665,8 +665,8 @@ function requireReactJsxRuntime_development() {
     }
     function mt(e) {
       {
-        var n = typeof Symbol == "function" && Symbol.toStringTag, c = n && e[Symbol.toStringTag] || e.constructor.name || "Object";
-        return c;
+        var n = typeof Symbol == "function" && Symbol.toStringTag, l = n && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        return l;
       }
     }
     function ht(e) {
@@ -679,16 +679,16 @@ function requireReactJsxRuntime_development() {
     function Ue(e) {
       return "" + e;
     }
-    function Be(e) {
+    function We(e) {
       if (ht(e))
-        return B("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", mt(e)), Ue(e);
+        return W("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", mt(e)), Ue(e);
     }
     var le = Z.ReactCurrentOwner, xt = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, We, Ye, ye;
+    }, Be, He, ye;
     ye = {};
     function bt(e) {
       if (fe.call(e, "ref")) {
@@ -708,93 +708,93 @@ function requireReactJsxRuntime_development() {
     }
     function vt(e, n) {
       if (typeof e.ref == "string" && le.current && n && le.current.stateNode !== n) {
-        var c = q(le.current.type);
-        ye[c] || (B('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', q(le.current.type), e.ref), ye[c] = !0);
+        var l = q(le.current.type);
+        ye[l] || (W('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', q(le.current.type), e.ref), ye[l] = !0);
       }
     }
     function _t(e, n) {
       {
-        var c = function() {
-          We || (We = !0, B("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
+        var l = function() {
+          Be || (Be = !0, W("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
         };
-        c.isReactWarning = !0, Object.defineProperty(e, "key", {
-          get: c,
+        l.isReactWarning = !0, Object.defineProperty(e, "key", {
+          get: l,
           configurable: !0
         });
       }
     }
     function gt(e, n) {
       {
-        var c = function() {
-          Ye || (Ye = !0, B("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
+        var l = function() {
+          He || (He = !0, W("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
         };
-        c.isReactWarning = !0, Object.defineProperty(e, "ref", {
-          get: c,
+        l.isReactWarning = !0, Object.defineProperty(e, "ref", {
+          get: l,
           configurable: !0
         });
       }
     }
-    var St = function(e, n, c, u, g, S, _) {
-      var v = {
+    var St = function(e, n, l, u, _, g, v) {
+      var y = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: r,
         // Built-in properties that belong on the element
         type: e,
         key: n,
-        ref: c,
-        props: _,
+        ref: l,
+        props: v,
         // Record the component responsible for creating this element.
-        _owner: S
+        _owner: g
       };
-      return v._store = {}, Object.defineProperty(v._store, "validated", {
+      return y._store = {}, Object.defineProperty(y._store, "validated", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
         value: !1
-      }), Object.defineProperty(v, "_self", {
+      }), Object.defineProperty(y, "_self", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
         value: u
-      }), Object.defineProperty(v, "_source", {
+      }), Object.defineProperty(y, "_source", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: g
-      }), Object.freeze && (Object.freeze(v.props), Object.freeze(v)), v;
+        value: _
+      }), Object.freeze && (Object.freeze(y.props), Object.freeze(y)), y;
     };
-    function wt(e, n, c, u, g) {
+    function wt(e, n, l, u, _) {
       {
-        var S, _ = {}, v = null, W = null;
-        c !== void 0 && (Be(c), v = "" + c), yt(n) && (Be(n.key), v = "" + n.key), bt(n) && (W = n.ref, vt(n, g));
-        for (S in n)
-          fe.call(n, S) && !xt.hasOwnProperty(S) && (_[S] = n[S]);
+        var g, v = {}, y = null, B = null;
+        l !== void 0 && (We(l), y = "" + l), yt(n) && (We(n.key), y = "" + n.key), bt(n) && (B = n.ref, vt(n, _));
+        for (g in n)
+          fe.call(n, g) && !xt.hasOwnProperty(g) && (v[g] = n[g]);
         if (e && e.defaultProps) {
-          var O = e.defaultProps;
-          for (S in O)
-            _[S] === void 0 && (_[S] = O[S]);
+          var D = e.defaultProps;
+          for (g in D)
+            v[g] === void 0 && (v[g] = D[g]);
         }
-        if (v || W) {
-          var $ = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
-          v && _t(_, $), W && gt(_, $);
+        if (y || B) {
+          var O = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
+          y && _t(v, O), B && gt(v, O);
         }
-        return St(e, v, W, g, u, le.current, _);
+        return St(e, y, B, _, u, le.current, v);
       }
     }
-    var ve = Z.ReactCurrentOwner, He = Z.ReactDebugCurrentFrame;
+    var ve = Z.ReactCurrentOwner, Ge = Z.ReactDebugCurrentFrame;
     function ne(e) {
       if (e) {
-        var n = e._owner, c = de(e.type, e._source, n ? n.type : null);
-        He.setExtraStackFrame(c);
+        var n = e._owner, l = de(e.type, e._source, n ? n.type : null);
+        Ge.setExtraStackFrame(l);
       } else
-        He.setExtraStackFrame(null);
+        Ge.setExtraStackFrame(null);
     }
     var _e;
     _e = !1;
     function ge(e) {
       return typeof e == "object" && e !== null && e.$$typeof === r;
     }
-    function Ge() {
+    function Ye() {
       {
         if (ve.current) {
           var e = q(ve.current.type);
@@ -809,10 +809,10 @@ Check the render method of \`` + e + "`.";
     function Tt(e) {
       {
         if (e !== void 0) {
-          var n = e.fileName.replace(/^.*[\\\/]/, ""), c = e.lineNumber;
+          var n = e.fileName.replace(/^.*[\\\/]/, ""), l = e.lineNumber;
           return `
 
-Check your code at ` + n + ":" + c + ".";
+Check your code at ` + n + ":" + l + ".";
         }
         return "";
       }
@@ -820,12 +820,12 @@ Check your code at ` + n + ":" + c + ".";
     var qe = {};
     function Et(e) {
       {
-        var n = Ge();
+        var n = Ye();
         if (!n) {
-          var c = typeof e == "string" ? e : e.displayName || e.name;
-          c && (n = `
+          var l = typeof e == "string" ? e : e.displayName || e.name;
+          l && (n = `
 
-Check the top-level render call using <` + c + ">.");
+Check the top-level render call using <` + l + ">.");
         }
         return n;
       }
@@ -835,12 +835,12 @@ Check the top-level render call using <` + c + ">.");
         if (!e._store || e._store.validated || e.key != null)
           return;
         e._store.validated = !0;
-        var c = Et(n);
-        if (qe[c])
+        var l = Et(n);
+        if (qe[l])
           return;
-        qe[c] = !0;
+        qe[l] = !0;
         var u = "";
-        e && e._owner && e._owner !== ve.current && (u = " It was passed a child from " + q(e._owner.type) + "."), ne(e), B('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', c, u), ne(null);
+        e && e._owner && e._owner !== ve.current && (u = " It was passed a child from " + q(e._owner.type) + "."), ne(e), W('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', l, u), ne(null);
       }
     }
     function Ke(e, n) {
@@ -848,17 +848,17 @@ Check the top-level render call using <` + c + ">.");
         if (typeof e != "object")
           return;
         if (be(e))
-          for (var c = 0; c < e.length; c++) {
-            var u = e[c];
+          for (var l = 0; l < e.length; l++) {
+            var u = e[l];
             ge(u) && Je(u, n);
           }
         else if (ge(e))
           e._store && (e._store.validated = !0);
         else if (e) {
-          var g = ie(e);
-          if (typeof g == "function" && g !== e.entries)
-            for (var S = g.call(e), _; !(_ = S.next()).done; )
-              ge(_.value) && Je(_.value, n);
+          var _ = ie(e);
+          if (typeof _ == "function" && _ !== e.entries)
+            for (var g = _.call(e), v; !(v = g.next()).done; )
+              ge(v.value) && Je(v.value, n);
         }
       }
     }
@@ -867,83 +867,83 @@ Check the top-level render call using <` + c + ">.");
         var n = e.type;
         if (n == null || typeof n == "string")
           return;
-        var c;
+        var l;
         if (typeof n == "function")
-          c = n.propTypes;
-        else if (typeof n == "object" && (n.$$typeof === D || // Note: Memo only checks outer props here.
+          l = n.propTypes;
+        else if (typeof n == "object" && (n.$$typeof === R || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        n.$$typeof === M))
-          c = n.propTypes;
+        n.$$typeof === k))
+          l = n.propTypes;
         else
           return;
-        if (c) {
+        if (l) {
           var u = q(n);
-          ft(c, e.props, "prop", u, e);
+          ft(l, e.props, "prop", u, e);
         } else if (n.PropTypes !== void 0 && !_e) {
           _e = !0;
-          var g = q(n);
-          B("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", g || "Unknown");
+          var _ = q(n);
+          W("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", _ || "Unknown");
         }
-        typeof n.getDefaultProps == "function" && !n.getDefaultProps.isReactClassApproved && B("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof n.getDefaultProps == "function" && !n.getDefaultProps.isReactClassApproved && W("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
-    function jt(e) {
+    function kt(e) {
       {
-        for (var n = Object.keys(e.props), c = 0; c < n.length; c++) {
-          var u = n[c];
+        for (var n = Object.keys(e.props), l = 0; l < n.length; l++) {
+          var u = n[l];
           if (u !== "children" && u !== "key") {
-            ne(e), B("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", u), ne(null);
+            ne(e), W("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", u), ne(null);
             break;
           }
         }
-        e.ref !== null && (ne(e), B("Invalid attribute `ref` supplied to `React.Fragment`."), ne(null));
+        e.ref !== null && (ne(e), W("Invalid attribute `ref` supplied to `React.Fragment`."), ne(null));
       }
     }
-    function Ze(e, n, c, u, g, S) {
+    function Ze(e, n, l, u, _, g) {
       {
-        var _ = ot(e);
-        if (!_) {
-          var v = "";
-          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (v += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var W = Tt(g);
-          W ? v += W : v += Ge();
-          var O;
-          e === null ? O = "null" : be(e) ? O = "array" : e !== void 0 && e.$$typeof === r ? (O = "<" + (q(e.type) || "Unknown") + " />", v = " Did you accidentally export a JSX literal instead of a component?") : O = typeof e, B("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", O, v);
+        var v = ot(e);
+        if (!v) {
+          var y = "";
+          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (y += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
+          var B = Tt(_);
+          B ? y += B : y += Ye();
+          var D;
+          e === null ? D = "null" : be(e) ? D = "array" : e !== void 0 && e.$$typeof === r ? (D = "<" + (q(e.type) || "Unknown") + " />", y = " Did you accidentally export a JSX literal instead of a component?") : D = typeof e, W("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", D, y);
         }
-        var $ = wt(e, n, c, g, S);
-        if ($ == null)
-          return $;
-        if (_) {
-          var H = n.children;
-          if (H !== void 0)
+        var O = wt(e, n, l, _, g);
+        if (O == null)
+          return O;
+        if (v) {
+          var G = n.children;
+          if (G !== void 0)
             if (u)
-              if (be(H)) {
-                for (var oe = 0; oe < H.length; oe++)
-                  Ke(H[oe], e);
-                Object.freeze && Object.freeze(H);
+              if (be(G)) {
+                for (var oe = 0; oe < G.length; oe++)
+                  Ke(G[oe], e);
+                Object.freeze && Object.freeze(G);
               } else
-                B("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                W("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              Ke(H, e);
+              Ke(G, e);
         }
-        return e === d ? jt($) : Rt($), $;
+        return e === d ? kt(O) : Rt(O), O;
       }
     }
-    function kt(e, n, c) {
-      return Ze(e, n, c, !0);
+    function jt(e, n, l) {
+      return Ze(e, n, l, !0);
     }
-    function Ct(e, n, c) {
-      return Ze(e, n, c, !1);
+    function Dt(e, n, l) {
+      return Ze(e, n, l, !1);
     }
-    var Dt = Ct, Mt = kt;
-    reactJsxRuntime_development.Fragment = d, reactJsxRuntime_development.jsx = Dt, reactJsxRuntime_development.jsxs = Mt;
+    var Ct = Dt, Mt = jt;
+    reactJsxRuntime_development.Fragment = d, reactJsxRuntime_development.jsx = Ct, reactJsxRuntime_development.jsxs = Mt;
   }()), reactJsxRuntime_development;
 }
 process.env.NODE_ENV === "production" ? jsxRuntime.exports = requireReactJsxRuntime_production_min() : jsxRuntime.exports = requireReactJsxRuntime_development();
 var jsxRuntimeExports = jsxRuntime.exports, ECalculatorDirect = /* @__PURE__ */ ((t) => (t.FIRST = "first", t.LAST = "last", t))(ECalculatorDirect || {}), ECalculatorNumber = /* @__PURE__ */ ((t) => (t[t.ZERO = 0] = "ZERO", t[t.ONE = 1] = "ONE", t[t.TWO = 2] = "TWO", t[t.THREE = 3] = "THREE", t[t.FOUR = 4] = "FOUR", t[t.FIVE = 5] = "FIVE", t[t.SIX = 6] = "SIX", t[t.SEVEN = 7] = "SEVEN", t[t.EIGHT = 8] = "EIGHT", t[t.NINE = 9] = "NINE", t))(ECalculatorNumber || {}), ECalculatorSymbol = /* @__PURE__ */ ((t) => (t.ADD = "+", t.DIVIDE = "/", t.DOT = ".", t.MINUS = "-", t.MULTIPLY = "*", t.RESULT = "=", t))(ECalculatorSymbol || {});
 class CalculatorService {
-  isValueEqual(t, r, l) {
-    switch (l) {
+  isValueEqual(t, r, c) {
+    switch (c) {
       case ECalculatorDirect.FIRST:
         return t.slice(0, r.length) === r;
       case ECalculatorDirect.LAST:
@@ -975,53 +975,33 @@ class CalculatorService {
     return t ? !!/(?:(?:^|[-+_*/])(?:\s*-?\d+(\.\d+)?(?:[eE][+-]?\d+)?\s*))+$/.test(t) : !1;
   }
 }
-var __defProp$2 = Object.defineProperty, __getOwnPropDesc$2 = Object.getOwnPropertyDescriptor, __decorateClass$2 = (t, r, l, d) => {
-  for (var y = d > 1 ? void 0 : d ? __getOwnPropDesc$2(r, l) : r, E = t.length - 1, k; E >= 0; E--)
-    (k = t[E]) && (y = (d ? k(r, l, y) : k(y)) || y);
-  return d && y && __defProp$2(r, l, y), y;
-};
 class CalculatorDomain {
   constructor() {
-    R(this, "value", "0");
-    R(this, "calculatorService", new CalculatorService());
-    R(this, "addNumber", (r) => {
+    S(this, "value", "0");
+    S(this, "calculatorService", new CalculatorService());
+    S(this, "addNumber", (r) => {
       this.calculatorService.isValueEqual(this.value, "0", ECalculatorDirect.FIRST) && !this.calculatorService.isValueEqual(this.value, "0.", ECalculatorDirect.FIRST) && this.value.length === 1 ? this.value = String(r) : this.value += String(r);
     });
-    R(this, "addDot", () => {
+    S(this, "addDot", () => {
       this.calculatorService.isDotExist(this.value) || this.calculatorService.isMathematicalSignLast(this.value) || this.calculatorService.isValueEqual(this.value, ".", ECalculatorDirect.LAST) || (this.value += ".");
     });
-    R(this, "addSymbol", (r) => {
+    S(this, "addSymbol", (r) => {
       this.value === "0." || this.calculatorService.isMathematicalSignLast(this.value) || (this.value += r);
     });
-    R(this, "summResult", () => {
+    S(this, "summResult", () => {
       this.value = this.calculatorService.summResult(this.value);
     });
     makeAutoObservable(this);
   }
 }
-__decorateClass$2([
-  observable
-], CalculatorDomain.prototype, "value", 2);
-__decorateClass$2([
-  action
-], CalculatorDomain.prototype, "addNumber", 2);
-__decorateClass$2([
-  action
-], CalculatorDomain.prototype, "addDot", 2);
-__decorateClass$2([
-  action
-], CalculatorDomain.prototype, "addSymbol", 2);
-__decorateClass$2([
-  action
-], CalculatorDomain.prototype, "summResult", 2);
-const calculatorDomain = new CalculatorDomain(), CalculatorDomainContext = createContext(calculatorDomain), wrapper$2 = "_wrapper_wc6ff_96", styles$c = {
+const calculatorDomain = new CalculatorDomain(), DomainContext$3 = createContext(calculatorDomain), wrapper$2 = "_wrapper_wc6ff_96", styles$c = {
   "theme-light": "_theme-light_wc6ff_16",
   "theme-dark": "_theme-dark_wc6ff_36",
   wrapper: wrapper$2
 };
 function useCalculator() {
   return {
-    calculatorDomain: useContext(CalculatorDomainContext)
+    calculatorDomain: useContext(DomainContext$3)
   };
 }
 function useScreen$1() {
@@ -1057,11 +1037,11 @@ const screen$1 = "_screen_1hx69_96", styles$b = {
 }, OperationButton = ({
   id: t,
   onClick: r,
-  variant: l = "blue"
+  variant: c = "blue"
 }) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   "button",
   {
-    className: `${styles$9.button} ${styles$9[l]}`,
+    className: `${styles$9.button} ${styles$9[c]}`,
     "data-testid": `ma-calculator-operation-button-${t}`,
     onClick: r,
     type: "button",
@@ -1081,7 +1061,7 @@ const Keypad = observer(() => {
   const {
     addDot: t,
     addNumber: r,
-    addSymbol: l,
+    addSymbol: c,
     summResult: d
   } = useKeypad();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -1118,7 +1098,7 @@ const Keypad = observer(() => {
           OperationButton,
           {
             id: ECalculatorSymbol.DIVIDE,
-            onClick: () => l(ECalculatorSymbol.DIVIDE),
+            onClick: () => c(ECalculatorSymbol.DIVIDE),
             variant: "secondary"
           }
         ),
@@ -1150,7 +1130,7 @@ const Keypad = observer(() => {
           OperationButton,
           {
             id: ECalculatorSymbol.MULTIPLY,
-            onClick: () => l(ECalculatorSymbol.MULTIPLY),
+            onClick: () => c(ECalculatorSymbol.MULTIPLY),
             variant: "secondary"
           }
         ),
@@ -1182,7 +1162,7 @@ const Keypad = observer(() => {
           OperationButton,
           {
             id: ECalculatorSymbol.MINUS,
-            onClick: () => l(ECalculatorSymbol.MINUS),
+            onClick: () => c(ECalculatorSymbol.MINUS),
             variant: "secondary"
           }
         ),
@@ -1214,7 +1194,7 @@ const Keypad = observer(() => {
           OperationButton,
           {
             id: ECalculatorSymbol.ADD,
-            onClick: () => l(ECalculatorSymbol.ADD),
+            onClick: () => c(ECalculatorSymbol.ADD),
             variant: "secondary"
           }
         )
@@ -1231,15 +1211,15 @@ const Keypad = observer(() => {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Keypad, {})
     ]
   }
-), CalculatorView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(CalculatorDomainContext.Provider, { value: calculatorDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$3, {}) });
+), CalculatorView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$3.Provider, { value: calculatorDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$3, {}) });
 class CalendarRepository {
   constructor() {
-    R(this, "date");
-    R(this, "firstDayMonth");
-    R(this, "lastDateMonth");
-    R(this, "year");
-    R(this, "month");
-    R(this, "days");
+    S(this, "date");
+    S(this, "firstDayMonth");
+    S(this, "lastDateMonth");
+    S(this, "year");
+    S(this, "month");
+    S(this, "days");
     this.date = null, this.year = null, this.month = null, this.days = null, this.firstDayMonth = null, this.lastDateMonth = null;
   }
   initCalendar(r) {
@@ -1249,16 +1229,16 @@ class CalendarRepository {
     const r = [];
     if (this.date === null || this.firstDayMonth === null || this.lastDateMonth === null)
       throw new Error("Date not found");
-    for (let l = this.firstDayMonth; l > 0; l--)
+    for (let c = this.firstDayMonth; c > 0; c--)
       r.push({
         status: "inactive",
         value: ""
       });
-    for (let l = 1; l <= this.lastDateMonth; l++) {
-      const d = l === this.date.getDate() && this.month === (/* @__PURE__ */ new Date()).getMonth() && this.year === (/* @__PURE__ */ new Date()).getFullYear();
+    for (let c = 1; c <= this.lastDateMonth; c++) {
+      const d = c === this.date.getDate() && this.month === (/* @__PURE__ */ new Date()).getMonth() && this.year === (/* @__PURE__ */ new Date()).getFullYear();
       r.push({
         status: d ? "active" : "normal",
-        value: String(l)
+        value: String(c)
       });
     }
     this.days = r;
@@ -1287,17 +1267,12 @@ class CalendarRepository {
     this.lastDateMonth = new Date(this.year, this.month + 1, 0).getDate();
   }
 }
-var __defProp$1 = Object.defineProperty, __getOwnPropDesc$1 = Object.getOwnPropertyDescriptor, __decorateClass$1 = (t, r, l, d) => {
-  for (var y = d > 1 ? void 0 : d ? __getOwnPropDesc$1(r, l) : r, E = t.length - 1, k; E >= 0; E--)
-    (k = t[E]) && (y = (d ? k(r, l, y) : k(y)) || y);
-  return d && y && __defProp$1(r, l, y), y;
-};
-class CalendarService {
+class CalendarDomain {
   constructor() {
-    R(this, "calendar", null);
-    R(this, "year", null);
-    R(this, "month", null);
-    R(this, "calendarRepository", new CalendarRepository());
+    S(this, "calendar", null);
+    S(this, "year", null);
+    S(this, "month", null);
+    S(this, "calendarRepository", new CalendarRepository());
     makeAutoObservable(this);
   }
   generateCalendar(r) {
@@ -1312,8 +1287,8 @@ class CalendarService {
   changeCalendarByMonth(r) {
     if (!this.year)
       return;
-    const l = new Date(this.year, r);
-    this.generateCalendar(l);
+    const c = new Date(this.year, r);
+    this.generateCalendar(c);
   }
   increaseYear() {
     this.year && (this.year += 1, this.changeCalendarByYear());
@@ -1322,25 +1297,7 @@ class CalendarService {
     this.year && (this.year -= 1, this.changeCalendarByYear());
   }
 }
-__decorateClass$1([
-  observable
-], CalendarService.prototype, "calendar", 2);
-__decorateClass$1([
-  action
-], CalendarService.prototype, "generateCalendar", 1);
-__decorateClass$1([
-  action
-], CalendarService.prototype, "changeCalendarByYear", 1);
-__decorateClass$1([
-  action
-], CalendarService.prototype, "changeCalendarByMonth", 1);
-__decorateClass$1([
-  action
-], CalendarService.prototype, "increaseYear", 1);
-__decorateClass$1([
-  action
-], CalendarService.prototype, "decreaseYear", 1);
-const calendarService = new CalendarService(), DomainContext$1 = createContext(calendarService);
+const calendarDomain = new CalendarDomain(), DomainContext$2 = createContext(calendarDomain);
 (function() {
   try {
     if (typeof document < "u") {
@@ -1366,18 +1323,18 @@ function gr() {
   if (Ce)
     return z;
   Ce = 1;
-  var t = o, r = Symbol.for("react.element"), l = Symbol.for("react.fragment"), d = Object.prototype.hasOwnProperty, y = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, E = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function k(F, D, Y) {
-    var L, M = {}, U = null, G = null;
-    Y !== void 0 && (U = "" + Y), D.key !== void 0 && (U = "" + D.key), D.ref !== void 0 && (G = D.ref);
-    for (L in D)
-      d.call(D, L) && !E.hasOwnProperty(L) && (M[L] = D[L]);
+  var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.fragment"), d = Object.prototype.hasOwnProperty, E = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, M = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function $(F, R, H) {
+    var L, k = {}, U = null, Y = null;
+    H !== void 0 && (U = "" + H), R.key !== void 0 && (U = "" + R.key), R.ref !== void 0 && (Y = R.ref);
+    for (L in R)
+      d.call(R, L) && !M.hasOwnProperty(L) && (k[L] = R[L]);
     if (F && F.defaultProps)
-      for (L in D = F.defaultProps, D)
-        M[L] === void 0 && (M[L] = D[L]);
-    return { $$typeof: r, type: F, key: U, ref: G, props: M, _owner: y.current };
+      for (L in R = F.defaultProps, R)
+        k[L] === void 0 && (k[L] = R[L]);
+    return { $$typeof: r, type: F, key: U, ref: Y, props: k, _owner: E.current };
   }
-  return z.Fragment = l, z.jsx = k, z.jsxs = k, z;
+  return z.Fragment = c, z.jsx = $, z.jsxs = $, z;
 }
 var I = {};
 /**
@@ -1392,7 +1349,7 @@ var I = {};
 var De;
 function br() {
   return De || (De = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = o, r = Symbol.for("react.element"), l = Symbol.for("react.portal"), d = Symbol.for("react.fragment"), y = Symbol.for("react.strict_mode"), E = Symbol.for("react.profiler"), k = Symbol.for("react.provider"), F = Symbol.for("react.context"), D = Symbol.for("react.forward_ref"), Y = Symbol.for("react.suspense"), L = Symbol.for("react.suspense_list"), M = Symbol.for("react.memo"), U = Symbol.for("react.lazy"), G = Symbol.for("react.offscreen"), Q = Symbol.iterator, ae = "@@iterator";
+    var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.portal"), d = Symbol.for("react.fragment"), E = Symbol.for("react.strict_mode"), M = Symbol.for("react.profiler"), $ = Symbol.for("react.provider"), F = Symbol.for("react.context"), R = Symbol.for("react.forward_ref"), H = Symbol.for("react.suspense"), L = Symbol.for("react.suspense_list"), k = Symbol.for("react.memo"), U = Symbol.for("react.lazy"), Y = Symbol.for("react.offscreen"), Q = Symbol.iterator, ae = "@@iterator";
     function ie(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -1400,38 +1357,38 @@ function br() {
       return typeof n == "function" ? n : null;
     }
     var Z = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function B(e) {
+    function W(e) {
       {
-        for (var n = arguments.length, c = new Array(n > 1 ? n - 1 : 0), u = 1; u < n; u++)
-          c[u - 1] = arguments[u];
-        Qe("error", e, c);
+        for (var n = arguments.length, l = new Array(n > 1 ? n - 1 : 0), u = 1; u < n; u++)
+          l[u - 1] = arguments[u];
+        Qe("error", e, l);
       }
     }
-    function Qe(e, n, c) {
+    function Qe(e, n, l) {
       {
-        var u = Z.ReactDebugCurrentFrame, g = u.getStackAddendum();
-        g !== "" && (n += "%s", c = c.concat([g]));
-        var S = c.map(function(_) {
-          return String(_);
+        var u = Z.ReactDebugCurrentFrame, _ = u.getStackAddendum();
+        _ !== "" && (n += "%s", l = l.concat([_]));
+        var g = l.map(function(v) {
+          return String(v);
         });
-        S.unshift("Warning: " + n), Function.prototype.apply.call(console[e], console, S);
+        g.unshift("Warning: " + n), Function.prototype.apply.call(console[e], console, g);
       }
     }
     var et = !1, tt = !1, rt = !1, at = !1, nt = !1, Se;
     Se = Symbol.for("react.module.reference");
     function ot(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === d || e === E || nt || e === y || e === Y || e === L || at || e === G || et || tt || rt || typeof e == "object" && e !== null && (e.$$typeof === U || e.$$typeof === M || e.$$typeof === k || e.$$typeof === F || e.$$typeof === D || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === d || e === M || nt || e === E || e === H || e === L || at || e === Y || et || tt || rt || typeof e == "object" && e !== null && (e.$$typeof === U || e.$$typeof === k || e.$$typeof === $ || e.$$typeof === F || e.$$typeof === R || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
       e.$$typeof === Se || e.getModuleId !== void 0));
     }
-    function it(e, n, c) {
+    function it(e, n, l) {
       var u = e.displayName;
       if (u)
         return u;
-      var g = n.displayName || n.name || "";
-      return g !== "" ? c + "(" + g + ")" : c;
+      var _ = n.displayName || n.name || "";
+      return _ !== "" ? l + "(" + _ + ")" : l;
     }
     function we(e) {
       return e.displayName || "Context";
@@ -1439,20 +1396,20 @@ function br() {
     function q(e) {
       if (e == null)
         return null;
-      if (typeof e.tag == "number" && B("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
+      if (typeof e.tag == "number" && W("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
         return e.displayName || e.name || null;
       if (typeof e == "string")
         return e;
       switch (e) {
         case d:
           return "Fragment";
-        case l:
+        case c:
           return "Portal";
-        case E:
+        case M:
           return "Profiler";
-        case y:
+        case E:
           return "StrictMode";
-        case Y:
+        case H:
           return "Suspense";
         case L:
           return "SuspenseList";
@@ -1462,18 +1419,18 @@ function br() {
           case F:
             var n = e;
             return we(n) + ".Consumer";
-          case k:
-            var c = e;
-            return we(c._context) + ".Provider";
-          case D:
+          case $:
+            var l = e;
+            return we(l._context) + ".Provider";
+          case R:
             return it(e, e.render, "ForwardRef");
-          case M:
+          case k:
             var u = e.displayName || null;
             return u !== null ? u : q(e.type) || "Memo";
           case U: {
-            var g = e, S = g._payload, _ = g._init;
+            var _ = e, g = _._payload, v = _._init;
             try {
-              return q(_(S));
+              return q(v(g));
             } catch {
               return null;
             }
@@ -1540,17 +1497,17 @@ function br() {
             })
           });
         }
-        se < 0 && B("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        se < 0 && W("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
     var me = Z.ReactCurrentDispatcher, he;
-    function ce(e, n, c) {
+    function ce(e, n, l) {
       {
         if (he === void 0)
           try {
             throw Error();
-          } catch (g) {
-            var u = g.stack.trim().match(/\n( *(at )?)/);
+          } catch (_) {
+            var u = _.stack.trim().match(/\n( *(at )?)/);
             he = u && u[1] || "";
           }
         return `
@@ -1566,39 +1523,39 @@ function br() {
       if (!e || xe)
         return "";
       {
-        var c = ue.get(e);
-        if (c !== void 0)
-          return c;
+        var l = ue.get(e);
+        if (l !== void 0)
+          return l;
       }
       var u;
       xe = !0;
-      var g = Error.prepareStackTrace;
+      var _ = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var S;
-      S = me.current, me.current = null, st();
+      var g;
+      g = me.current, me.current = null, st();
       try {
         if (n) {
-          var _ = function() {
+          var v = function() {
             throw Error();
           };
-          if (Object.defineProperty(_.prototype, "props", {
+          if (Object.defineProperty(v.prototype, "props", {
             set: function() {
               throw Error();
             }
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
-              Reflect.construct(_, []);
+              Reflect.construct(v, []);
             } catch (K) {
               u = K;
             }
-            Reflect.construct(e, [], _);
+            Reflect.construct(e, [], v);
           } else {
             try {
-              _.call();
+              v.call();
             } catch (K) {
               u = K;
             }
-            e.call(_.prototype);
+            e.call(v.prototype);
           }
         } else {
           try {
@@ -1610,37 +1567,37 @@ function br() {
         }
       } catch (K) {
         if (K && u && typeof K.stack == "string") {
-          for (var v = K.stack.split(`
-`), W = u.stack.split(`
-`), O = v.length - 1, $ = W.length - 1; O >= 1 && $ >= 0 && v[O] !== W[$]; )
-            $--;
-          for (; O >= 1 && $ >= 0; O--, $--)
-            if (v[O] !== W[$]) {
-              if (O !== 1 || $ !== 1)
+          for (var y = K.stack.split(`
+`), B = u.stack.split(`
+`), D = y.length - 1, O = B.length - 1; D >= 1 && O >= 0 && y[D] !== B[O]; )
+            O--;
+          for (; D >= 1 && O >= 0; D--, O--)
+            if (y[D] !== B[O]) {
+              if (D !== 1 || O !== 1)
                 do
-                  if (O--, $--, $ < 0 || v[O] !== W[$]) {
-                    var H = `
-` + v[O].replace(" at new ", " at ");
-                    return e.displayName && H.includes("<anonymous>") && (H = H.replace("<anonymous>", e.displayName)), typeof e == "function" && ue.set(e, H), H;
+                  if (D--, O--, O < 0 || y[D] !== B[O]) {
+                    var G = `
+` + y[D].replace(" at new ", " at ");
+                    return e.displayName && G.includes("<anonymous>") && (G = G.replace("<anonymous>", e.displayName)), typeof e == "function" && ue.set(e, G), G;
                   }
-                while (O >= 1 && $ >= 0);
+                while (D >= 1 && O >= 0);
               break;
             }
         }
       } finally {
-        xe = !1, me.current = S, lt(), Error.prepareStackTrace = g;
+        xe = !1, me.current = g, lt(), Error.prepareStackTrace = _;
       }
       var oe = e ? e.displayName || e.name : "", Xe = oe ? ce(oe) : "";
       return typeof e == "function" && ue.set(e, Xe), Xe;
     }
-    function ut(e, n, c) {
+    function ut(e, n, l) {
       return Ae(e, !1);
     }
     function dt(e) {
       var n = e.prototype;
       return !!(n && n.isReactComponent);
     }
-    function de(e, n, c) {
+    function de(e, n, l) {
       if (e == null)
         return "";
       if (typeof e == "function")
@@ -1648,21 +1605,21 @@ function br() {
       if (typeof e == "string")
         return ce(e);
       switch (e) {
-        case Y:
+        case H:
           return ce("Suspense");
         case L:
           return ce("SuspenseList");
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case D:
+          case R:
             return ut(e.render);
-          case M:
-            return de(e.type, n, c);
+          case k:
+            return de(e.type, n, l);
           case U: {
-            var u = e, g = u._payload, S = u._init;
+            var u = e, _ = u._payload, g = u._init;
             try {
-              return de(S(g), n, c);
+              return de(g(_), n, l);
             } catch {
             }
           }
@@ -1672,27 +1629,27 @@ function br() {
     var fe = Object.prototype.hasOwnProperty, Fe = {}, Le = Z.ReactDebugCurrentFrame;
     function pe(e) {
       if (e) {
-        var n = e._owner, c = de(e.type, e._source, n ? n.type : null);
-        Le.setExtraStackFrame(c);
+        var n = e._owner, l = de(e.type, e._source, n ? n.type : null);
+        Le.setExtraStackFrame(l);
       } else
         Le.setExtraStackFrame(null);
     }
-    function ft(e, n, c, u, g) {
+    function ft(e, n, l, u, _) {
       {
-        var S = Function.call.bind(fe);
-        for (var _ in e)
-          if (S(e, _)) {
-            var v = void 0;
+        var g = Function.call.bind(fe);
+        for (var v in e)
+          if (g(e, v)) {
+            var y = void 0;
             try {
-              if (typeof e[_] != "function") {
-                var W = Error((u || "React class") + ": " + c + " type `" + _ + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[_] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                throw W.name = "Invariant Violation", W;
+              if (typeof e[v] != "function") {
+                var B = Error((u || "React class") + ": " + l + " type `" + v + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[v] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                throw B.name = "Invariant Violation", B;
               }
-              v = e[_](n, _, u, c, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (O) {
-              v = O;
+              y = e[v](n, v, u, l, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (D) {
+              y = D;
             }
-            v && !(v instanceof Error) && (pe(g), B("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", u || "React class", c, _, typeof v), pe(null)), v instanceof Error && !(v.message in Fe) && (Fe[v.message] = !0, pe(g), B("Failed %s type: %s", c, v.message), pe(null));
+            y && !(y instanceof Error) && (pe(_), W("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", u || "React class", l, v, typeof y), pe(null)), y instanceof Error && !(y.message in Fe) && (Fe[y.message] = !0, pe(_), W("Failed %s type: %s", l, y.message), pe(null));
           }
       }
     }
@@ -1702,8 +1659,8 @@ function br() {
     }
     function mt(e) {
       {
-        var n = typeof Symbol == "function" && Symbol.toStringTag, c = n && e[Symbol.toStringTag] || e.constructor.name || "Object";
-        return c;
+        var n = typeof Symbol == "function" && Symbol.toStringTag, l = n && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        return l;
       }
     }
     function ht(e) {
@@ -1716,16 +1673,16 @@ function br() {
     function Ue(e) {
       return "" + e;
     }
-    function Be(e) {
+    function We(e) {
       if (ht(e))
-        return B("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", mt(e)), Ue(e);
+        return W("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", mt(e)), Ue(e);
     }
     var le = Z.ReactCurrentOwner, xt = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, We, Ye, ye;
+    }, Be, He, ye;
     ye = {};
     function bt(e) {
       if (fe.call(e, "ref")) {
@@ -1745,93 +1702,93 @@ function br() {
     }
     function vt(e, n) {
       if (typeof e.ref == "string" && le.current && n && le.current.stateNode !== n) {
-        var c = q(le.current.type);
-        ye[c] || (B('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', q(le.current.type), e.ref), ye[c] = !0);
+        var l = q(le.current.type);
+        ye[l] || (W('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', q(le.current.type), e.ref), ye[l] = !0);
       }
     }
     function _t(e, n) {
       {
-        var c = function() {
-          We || (We = !0, B("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
+        var l = function() {
+          Be || (Be = !0, W("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
         };
-        c.isReactWarning = !0, Object.defineProperty(e, "key", {
-          get: c,
+        l.isReactWarning = !0, Object.defineProperty(e, "key", {
+          get: l,
           configurable: !0
         });
       }
     }
     function gt(e, n) {
       {
-        var c = function() {
-          Ye || (Ye = !0, B("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
+        var l = function() {
+          He || (He = !0, W("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
         };
-        c.isReactWarning = !0, Object.defineProperty(e, "ref", {
-          get: c,
+        l.isReactWarning = !0, Object.defineProperty(e, "ref", {
+          get: l,
           configurable: !0
         });
       }
     }
-    var St = function(e, n, c, u, g, S, _) {
-      var v = {
+    var St = function(e, n, l, u, _, g, v) {
+      var y = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: r,
         // Built-in properties that belong on the element
         type: e,
         key: n,
-        ref: c,
-        props: _,
+        ref: l,
+        props: v,
         // Record the component responsible for creating this element.
-        _owner: S
+        _owner: g
       };
-      return v._store = {}, Object.defineProperty(v._store, "validated", {
+      return y._store = {}, Object.defineProperty(y._store, "validated", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
         value: !1
-      }), Object.defineProperty(v, "_self", {
+      }), Object.defineProperty(y, "_self", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
         value: u
-      }), Object.defineProperty(v, "_source", {
+      }), Object.defineProperty(y, "_source", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: g
-      }), Object.freeze && (Object.freeze(v.props), Object.freeze(v)), v;
+        value: _
+      }), Object.freeze && (Object.freeze(y.props), Object.freeze(y)), y;
     };
-    function wt(e, n, c, u, g) {
+    function wt(e, n, l, u, _) {
       {
-        var S, _ = {}, v = null, W = null;
-        c !== void 0 && (Be(c), v = "" + c), yt(n) && (Be(n.key), v = "" + n.key), bt(n) && (W = n.ref, vt(n, g));
-        for (S in n)
-          fe.call(n, S) && !xt.hasOwnProperty(S) && (_[S] = n[S]);
+        var g, v = {}, y = null, B = null;
+        l !== void 0 && (We(l), y = "" + l), yt(n) && (We(n.key), y = "" + n.key), bt(n) && (B = n.ref, vt(n, _));
+        for (g in n)
+          fe.call(n, g) && !xt.hasOwnProperty(g) && (v[g] = n[g]);
         if (e && e.defaultProps) {
-          var O = e.defaultProps;
-          for (S in O)
-            _[S] === void 0 && (_[S] = O[S]);
+          var D = e.defaultProps;
+          for (g in D)
+            v[g] === void 0 && (v[g] = D[g]);
         }
-        if (v || W) {
-          var $ = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
-          v && _t(_, $), W && gt(_, $);
+        if (y || B) {
+          var O = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
+          y && _t(v, O), B && gt(v, O);
         }
-        return St(e, v, W, g, u, le.current, _);
+        return St(e, y, B, _, u, le.current, v);
       }
     }
-    var ve = Z.ReactCurrentOwner, He = Z.ReactDebugCurrentFrame;
+    var ve = Z.ReactCurrentOwner, Ge = Z.ReactDebugCurrentFrame;
     function ne(e) {
       if (e) {
-        var n = e._owner, c = de(e.type, e._source, n ? n.type : null);
-        He.setExtraStackFrame(c);
+        var n = e._owner, l = de(e.type, e._source, n ? n.type : null);
+        Ge.setExtraStackFrame(l);
       } else
-        He.setExtraStackFrame(null);
+        Ge.setExtraStackFrame(null);
     }
     var _e;
     _e = !1;
     function ge(e) {
       return typeof e == "object" && e !== null && e.$$typeof === r;
     }
-    function Ge() {
+    function Ye() {
       {
         if (ve.current) {
           var e = q(ve.current.type);
@@ -1846,10 +1803,10 @@ Check the render method of \`` + e + "`.";
     function Tt(e) {
       {
         if (e !== void 0) {
-          var n = e.fileName.replace(/^.*[\\\/]/, ""), c = e.lineNumber;
+          var n = e.fileName.replace(/^.*[\\\/]/, ""), l = e.lineNumber;
           return `
 
-Check your code at ` + n + ":" + c + ".";
+Check your code at ` + n + ":" + l + ".";
         }
         return "";
       }
@@ -1857,12 +1814,12 @@ Check your code at ` + n + ":" + c + ".";
     var qe = {};
     function Et(e) {
       {
-        var n = Ge();
+        var n = Ye();
         if (!n) {
-          var c = typeof e == "string" ? e : e.displayName || e.name;
-          c && (n = `
+          var l = typeof e == "string" ? e : e.displayName || e.name;
+          l && (n = `
 
-Check the top-level render call using <` + c + ">.");
+Check the top-level render call using <` + l + ">.");
         }
         return n;
       }
@@ -1872,12 +1829,12 @@ Check the top-level render call using <` + c + ">.");
         if (!e._store || e._store.validated || e.key != null)
           return;
         e._store.validated = !0;
-        var c = Et(n);
-        if (qe[c])
+        var l = Et(n);
+        if (qe[l])
           return;
-        qe[c] = !0;
+        qe[l] = !0;
         var u = "";
-        e && e._owner && e._owner !== ve.current && (u = " It was passed a child from " + q(e._owner.type) + "."), ne(e), B('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', c, u), ne(null);
+        e && e._owner && e._owner !== ve.current && (u = " It was passed a child from " + q(e._owner.type) + "."), ne(e), W('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', l, u), ne(null);
       }
     }
     function Ke(e, n) {
@@ -1885,17 +1842,17 @@ Check the top-level render call using <` + c + ">.");
         if (typeof e != "object")
           return;
         if (be(e))
-          for (var c = 0; c < e.length; c++) {
-            var u = e[c];
+          for (var l = 0; l < e.length; l++) {
+            var u = e[l];
             ge(u) && Je(u, n);
           }
         else if (ge(e))
           e._store && (e._store.validated = !0);
         else if (e) {
-          var g = ie(e);
-          if (typeof g == "function" && g !== e.entries)
-            for (var S = g.call(e), _; !(_ = S.next()).done; )
-              ge(_.value) && Je(_.value, n);
+          var _ = ie(e);
+          if (typeof _ == "function" && _ !== e.entries)
+            for (var g = _.call(e), v; !(v = g.next()).done; )
+              ge(v.value) && Je(v.value, n);
         }
       }
     }
@@ -1904,76 +1861,76 @@ Check the top-level render call using <` + c + ">.");
         var n = e.type;
         if (n == null || typeof n == "string")
           return;
-        var c;
+        var l;
         if (typeof n == "function")
-          c = n.propTypes;
-        else if (typeof n == "object" && (n.$$typeof === D || // Note: Memo only checks outer props here.
+          l = n.propTypes;
+        else if (typeof n == "object" && (n.$$typeof === R || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        n.$$typeof === M))
-          c = n.propTypes;
+        n.$$typeof === k))
+          l = n.propTypes;
         else
           return;
-        if (c) {
+        if (l) {
           var u = q(n);
-          ft(c, e.props, "prop", u, e);
+          ft(l, e.props, "prop", u, e);
         } else if (n.PropTypes !== void 0 && !_e) {
           _e = !0;
-          var g = q(n);
-          B("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", g || "Unknown");
+          var _ = q(n);
+          W("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", _ || "Unknown");
         }
-        typeof n.getDefaultProps == "function" && !n.getDefaultProps.isReactClassApproved && B("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof n.getDefaultProps == "function" && !n.getDefaultProps.isReactClassApproved && W("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
-    function jt(e) {
+    function kt(e) {
       {
-        for (var n = Object.keys(e.props), c = 0; c < n.length; c++) {
-          var u = n[c];
+        for (var n = Object.keys(e.props), l = 0; l < n.length; l++) {
+          var u = n[l];
           if (u !== "children" && u !== "key") {
-            ne(e), B("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", u), ne(null);
+            ne(e), W("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", u), ne(null);
             break;
           }
         }
-        e.ref !== null && (ne(e), B("Invalid attribute `ref` supplied to `React.Fragment`."), ne(null));
+        e.ref !== null && (ne(e), W("Invalid attribute `ref` supplied to `React.Fragment`."), ne(null));
       }
     }
-    function Ze(e, n, c, u, g, S) {
+    function Ze(e, n, l, u, _, g) {
       {
-        var _ = ot(e);
-        if (!_) {
-          var v = "";
-          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (v += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var W = Tt(g);
-          W ? v += W : v += Ge();
-          var O;
-          e === null ? O = "null" : be(e) ? O = "array" : e !== void 0 && e.$$typeof === r ? (O = "<" + (q(e.type) || "Unknown") + " />", v = " Did you accidentally export a JSX literal instead of a component?") : O = typeof e, B("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", O, v);
+        var v = ot(e);
+        if (!v) {
+          var y = "";
+          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (y += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
+          var B = Tt(_);
+          B ? y += B : y += Ye();
+          var D;
+          e === null ? D = "null" : be(e) ? D = "array" : e !== void 0 && e.$$typeof === r ? (D = "<" + (q(e.type) || "Unknown") + " />", y = " Did you accidentally export a JSX literal instead of a component?") : D = typeof e, W("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", D, y);
         }
-        var $ = wt(e, n, c, g, S);
-        if ($ == null)
-          return $;
-        if (_) {
-          var H = n.children;
-          if (H !== void 0)
+        var O = wt(e, n, l, _, g);
+        if (O == null)
+          return O;
+        if (v) {
+          var G = n.children;
+          if (G !== void 0)
             if (u)
-              if (be(H)) {
-                for (var oe = 0; oe < H.length; oe++)
-                  Ke(H[oe], e);
-                Object.freeze && Object.freeze(H);
+              if (be(G)) {
+                for (var oe = 0; oe < G.length; oe++)
+                  Ke(G[oe], e);
+                Object.freeze && Object.freeze(G);
               } else
-                B("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                W("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              Ke(H, e);
+              Ke(G, e);
         }
-        return e === d ? jt($) : Rt($), $;
+        return e === d ? kt(O) : Rt(O), O;
       }
     }
-    function kt(e, n, c) {
-      return Ze(e, n, c, !0);
+    function jt(e, n, l) {
+      return Ze(e, n, l, !0);
     }
-    function Ct(e, n, c) {
-      return Ze(e, n, c, !1);
+    function Dt(e, n, l) {
+      return Ze(e, n, l, !1);
     }
-    var Dt = Ct, Mt = kt;
-    I.Fragment = d, I.jsx = Dt, I.jsxs = Mt;
+    var Ct = Dt, Mt = jt;
+    I.Fragment = d, I.jsx = Ct, I.jsxs = Mt;
   }()), I;
 }
 process.env.NODE_ENV === "production" ? te.exports = gr() : te.exports = br();
@@ -1987,24 +1944,24 @@ const Oe = {
 }, Wr = ({
   size: t = "medium",
   disabled: r = !1,
-  onClick: l,
+  onClick: c,
   text: d,
-  id: y,
-  isTextVisible: E = !0,
-  iconLeft: k,
+  id: E,
+  isTextVisible: M = !0,
+  iconLeft: $,
   iconRight: F
 }) => /* @__PURE__ */ a.jsxs(
   "button",
   {
-    "aria-label": E ? void 0 : d,
+    "aria-label": M ? void 0 : d,
     className: `${Oe["ds-button"]} ${Oe[`size-${t}`]}`,
-    "data-testid": `${y}-button`,
+    "data-testid": `${E}-button`,
     type: "button",
     disabled: r,
-    onClick: l,
+    onClick: c,
     children: [
-      k,
-      E && d,
+      $,
+      M && d,
       F
     ]
   }
@@ -2020,11 +1977,11 @@ const Oe = {
 function ke({
   ariaLabel: t,
   className: r = "",
-  direction: l,
+  direction: c,
   disabled: d,
-  id: y,
-  onClick: E,
-  size: k
+  id: E,
+  onClick: M,
+  size: $
 }) {
   return /* @__PURE__ */ a.jsx(
     "button",
@@ -2032,14 +1989,14 @@ function ke({
       "aria-label": t,
       className: `
 				${ee["ds-button-arrow"]}
-				${ee[`arrow-${l}`]}
-				${ee[`size-${k}`]}
+				${ee[`arrow-${c}`]}
+				${ee[`size-${$}`]}
 				${r}
 			`,
-      "data-testid": `ds-button-arrow-${y}-${l}`,
+      "data-testid": `ds-button-arrow-${E}-${c}`,
       disabled: d,
       type: "button",
-      onClick: E
+      onClick: M
     }
   );
 }
@@ -2052,21 +2009,21 @@ const Rr = "_frame_hpida_96", yr = "_title_hpida_104", Pe = {
 function Yr({
   children: t,
   className: r = "",
-  id: l,
+  id: c,
   title: d
 }) {
   return /* @__PURE__ */ a.jsxs(
     "div",
     {
       className: `${Pe.frame} ${r}`,
-      "data-testid": `ds-frame-${l}`,
+      "data-testid": `ds-frame-${c}`,
       children: [
         d && /* @__PURE__ */ a.jsx(
           ze,
           {
             className: Pe.title,
             text: d,
-            id: `frame-${l}`
+            id: `frame-${c}`
           }
         ),
         t
@@ -2149,56 +2106,56 @@ const xr = ({
   label: jr
 };
 function Sr({ initialValue: t, onChange: r }) {
-  const [l, d] = useState(t);
+  const [c, d] = useState(t);
   return useEffect(() => {
     d(t);
-  }, [t, d]), { value: l, handleInputChange: (y) => {
-    const E = y.target.value;
-    d(E), r && r(E);
+  }, [t, d]), { value: c, handleInputChange: (E) => {
+    const M = E.target.value;
+    d(M), r && r(M);
   } };
 }
 function $r({
   className: t = "",
   type: r = "text",
-  id: l,
+  id: c,
   disabled: d = !1,
-  readonly: y = !1,
-  initialValue: E = "",
-  labelName: k,
+  readonly: E = !1,
+  initialValue: M = "",
+  labelName: $,
   wrapperLayout: F = "vertical",
-  min: D,
-  max: Y,
+  min: R,
+  max: H,
   onChange: L
 }) {
-  const { value: M, handleInputChange: U } = Sr({ initialValue: E, onChange: L }), G = `ds-input-${l}`;
+  const { value: k, handleInputChange: U } = Sr({ initialValue: M, onChange: L }), Y = `ds-input-${c}`;
   return /* @__PURE__ */ a.jsxs(
     "div",
     {
       className: `${re[`wrapper-${F}`]} ${t}`,
-      "data-testid": G,
+      "data-testid": Y,
       children: [
-        k && /* @__PURE__ */ a.jsx(
+        $ && /* @__PURE__ */ a.jsx(
           "label",
           {
             className: re.label,
-            "data-testid": `ds-input-label-${l}`,
-            htmlFor: G,
-            children: k
+            "data-testid": `ds-input-label-${c}`,
+            htmlFor: Y,
+            children: $
           }
         ),
         /* @__PURE__ */ a.jsx(
           "input",
           {
-            id: G,
+            id: Y,
             className: re.input,
-            "data-testid": `ds-input-input-${l}`,
+            "data-testid": `ds-input-input-${c}`,
             type: r,
             disabled: d,
-            readOnly: y,
-            value: M,
-            min: D ?? void 0,
-            max: Y ?? void 0,
-            name: G,
+            readOnly: E,
+            value: k,
+            min: R ?? void 0,
+            max: H ?? void 0,
+            name: Y,
             onChange: U
           }
         )
@@ -2215,26 +2172,26 @@ const Tr = "_wrapper_12q8r_96", Cr = "_disabled_12q8r_108", Dr = "_input_12q8r_1
   icon: Or
 };
 function kr({ initialChecked: t, onChange: r }) {
-  const [l, d] = useState(t);
+  const [c, d] = useState(t);
   return useEffect(() => {
     d(t);
   }, [t]), {
-    checked: l,
-    handleChange: (y) => {
-      r && r(), d(y.target.checked);
+    checked: c,
+    handleChange: (E) => {
+      r && r(), d(E.target.checked);
     }
   };
 }
 const qr = ({
   initialChecked: t = !1,
   disabled: r = !1,
-  id: l,
+  id: c,
   onChange: d,
-  name: y,
-  text: E
+  name: E,
+  text: M
 }) => {
   const {
-    checked: k,
+    checked: $,
     handleChange: F
   } = kr({
     initialChecked: t,
@@ -2243,20 +2200,20 @@ const qr = ({
   return /* @__PURE__ */ a.jsxs(
     "label",
     {
-      "aria-label": E.visible ? void 0 : E.content,
+      "aria-label": M.visible ? void 0 : M.content,
       className: `${N.wrapper} ${r ? N.disabled : ""}`,
-      "data-testid": `${l}-radio`,
+      "data-testid": `${c}-radio`,
       children: [
         /* @__PURE__ */ a.jsx(
           "input",
           {
             className: N.input,
-            checked: k,
-            "data-testid": `${l}-radio-input`,
+            checked: $,
+            "data-testid": `${c}-radio-input`,
             disabled: r,
-            name: y,
+            name: E,
             type: "radio",
-            value: l,
+            value: c,
             onChange: F
           }
         ),
@@ -2264,16 +2221,16 @@ const qr = ({
           "span",
           {
             className: N.icon,
-            "data-testid": `${l}-radio-icon`,
-            children: /* @__PURE__ */ a.jsx(xr, { isChecked: k })
+            "data-testid": `${c}-radio-icon`,
+            children: /* @__PURE__ */ a.jsx(xr, { isChecked: $ })
           }
         ),
-        E.visible && /* @__PURE__ */ a.jsx(
+        M.visible && /* @__PURE__ */ a.jsx(
           ze,
           {
             className: N.text,
-            id: l,
-            text: E.content
+            id: c,
+            text: M.content
           }
         )
       ]
@@ -2281,11 +2238,11 @@ const qr = ({
   );
 };
 function Pr(t) {
-  const [r, l] = useState(t);
+  const [r, c] = useState(t);
   return {
     value: r,
     handleChange: (d) => {
-      l(d.target.value);
+      c(d.target.value);
     }
   };
 }
@@ -2300,24 +2257,24 @@ const Vr = "_wrapper_1id5f_96", Fr = "_label_1id5f_100", zr = "_select_1id5f_105
 function Lr({
   className: t = "",
   id: r,
-  required: l = !1,
+  required: c = !1,
   disabled: d = !1,
-  modelValue: y,
-  options: E,
-  labelName: k,
+  modelValue: E,
+  options: M,
+  labelName: $,
   onSelect: F
 }) {
-  const { value: D, handleChange: Y } = Pr(y), L = (M) => {
-    Y(M), F(M);
+  const { value: R, handleChange: H } = Pr(E), L = (k) => {
+    H(k), F(k);
   };
   return /* @__PURE__ */ a.jsxs("div", { className: `${A.wrapper} ${t}`, children: [
-    k && /* @__PURE__ */ a.jsx(
+    $ && /* @__PURE__ */ a.jsx(
       "label",
       {
         className: A.label,
         "data-testid": `ds-select-label-${r}`,
         htmlFor: r,
-        children: k
+        children: $
       }
     ),
     /* @__PURE__ */ a.jsx(
@@ -2329,17 +2286,17 @@ function Lr({
         id: r,
         name: r,
         onChange: L,
-        required: l,
-        value: D,
-        children: E.map((M, U) => /* @__PURE__ */ a.jsx(
+        required: c,
+        value: R,
+        children: M.map((k, U) => /* @__PURE__ */ a.jsx(
           "option",
           {
             className: A.option,
             "data-testid": `ds-select-option-${r}-${U}`,
-            value: M.value,
-            children: M.name
+            value: k.value,
+            children: k.name
           },
-          `${r}-${M.value}`
+          `${r}-${k.value}`
         ))
       }
     ),
@@ -2361,30 +2318,30 @@ const Ve = {
 function Nr({
   modelValue: t,
   onIncrease: r,
-  onDecrease: l
+  onDecrease: c
 }) {
-  const [d, y] = useState(t);
+  const [d, E] = useState(t);
   return useEffect(() => {
-    y(t);
+    E(t);
   }, [t]), { value: d, handleIncrease: () => {
     r && r();
   }, handleDecrease: () => {
-    l && l();
+    c && c();
   } };
 }
 function Ur({
   className: t = "",
   id: r,
-  modelValue: l,
+  modelValue: c,
   disabled: d = !1,
-  onIncrease: y,
-  onDecrease: E
+  onIncrease: E,
+  onDecrease: M
 }) {
   const {
-    value: k,
+    value: $,
     handleIncrease: F,
-    handleDecrease: D
-  } = Nr({ modelValue: l, onIncrease: y, onDecrease: E });
+    handleDecrease: R
+  } = Nr({ modelValue: c, onIncrease: E, onDecrease: M });
   return /* @__PURE__ */ a.jsxs(
     "div",
     {
@@ -2398,7 +2355,7 @@ function Ur({
           $r,
           {
             id: `stepper-${r}`,
-            initialValue: k,
+            initialValue: $,
             readonly: !0
           }
         ),
@@ -2421,7 +2378,7 @@ function Ur({
             disabled: d,
             id: r,
             size: "small",
-            onClick: D
+            onClick: R
           }
         )
       ]
@@ -2436,24 +2393,40 @@ const Ar = "_DSText_pg4yx_96", Hr = {
 function ze({
   className: t = "",
   id: r,
-  text: l
+  text: c
 }) {
   return /* @__PURE__ */ a.jsx(
     "p",
     {
       className: `${Hr.DSText} ${t}`,
       "data-testid": `ds-text-${r}`,
-      children: l
+      children: c
     }
   );
 }
 function useCalendar() {
   return {
-    calendarService: useContext(DomainContext$1)
+    calendarDomain: useContext(DomainContext$2)
   };
 }
+function useSyncLang() {
+  const { i18n: t } = useTranslation();
+  useEffect(() => {
+    const r = document.documentElement.lang;
+    r && t.changeLanguage(r);
+  }, []), useEffect(() => {
+    const r = new MutationObserver((c) => {
+      c.forEach((d) => {
+        d.type === "attributes" && d.attributeName === "lang" && t.changeLanguage(d.target.lang);
+      });
+    });
+    return r.observe(document.documentElement, { attributes: !0 }), () => {
+      r.disconnect();
+    };
+  }, [t]);
+}
 function useWrapper$1() {
-  const { t } = useTranslation(), { calendarService: r } = useCalendar();
+  const { t } = useTranslation(), { calendarDomain: r } = useCalendar();
   return useEffect(() => {
     r.generateCalendar();
   }, []), {
@@ -2466,7 +2439,7 @@ function useWrapper$1() {
   };
 }
 function useDays() {
-  const { calendarService: t } = useCalendar(), { t: r } = useTranslation(), l = useMemo(
+  const { calendarDomain: t } = useCalendar(), { t: r } = useTranslation(), c = useMemo(
     () => ({
       weekDays: [
         r("ma-calendar.days.sunday"),
@@ -2482,7 +2455,7 @@ function useDays() {
   );
   return {
     monthDays: t.calendar,
-    weekDays: l.weekDays
+    weekDays: c.weekDays
   };
 }
 const day$1 = "_day_1v33v_104", styles$8 = {
@@ -2492,14 +2465,14 @@ const day$1 = "_day_1v33v_104", styles$8 = {
   day: day$1
 }, WeekDays = observer(() => {
   const { weekDays: t } = useDays();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$8["week-days"], children: t.map((r, l) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$8["week-days"], children: t.map((r, c) => /* @__PURE__ */ jsxRuntimeExports.jsx(
     "span",
     {
       className: styles$8.day,
-      "data-testid": `calendar-week-days-day-${l}`,
+      "data-testid": `calendar-week-days-day-${c}`,
       children: r
     },
-    l
+    c
   )) });
 }), day = "_day_12et3_102", styles$7 = {
   "theme-light": "_theme-light_12et3_16",
@@ -2509,13 +2482,13 @@ const day$1 = "_day_1v33v_104", styles$8 = {
   "day-active": "_day-active_12et3_107"
 }, MonthDays = observer(() => {
   const { monthDays: t } = useDays();
-  return t && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$7["month-days"], "data-testid": "calendar-view-days", children: t.map((r, l) => r.value === "" ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+  return t && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$7["month-days"], "data-testid": "calendar-view-days", children: t.map((r, c) => r.value === "" ? /* @__PURE__ */ jsxRuntimeExports.jsx(
     "span",
     {
       className: styles$7.day,
-      "data-testid": `calendar-month-days-empty-${l}`
+      "data-testid": `calendar-month-days-empty-${c}`
     },
-    l
+    c
   ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
     "button",
     {
@@ -2527,7 +2500,7 @@ const day$1 = "_day_1v33v_104", styles$8 = {
       type: "button",
       children: r.value
     },
-    l
+    c
   )) });
 }), days = "_days_1xeii_96", styles$6 = {
   "theme-light": "_theme-light_1xeii_16",
@@ -2538,8 +2511,8 @@ const day$1 = "_day_1v33v_104", styles$8 = {
   /* @__PURE__ */ jsxRuntimeExports.jsx(MonthDays, {})
 ] });
 function useMonthSwitcher() {
-  const { t } = useTranslation(), { calendarService: r } = useCalendar(), l = (y) => {
-    r.changeCalendarByMonth(Number(y.currentTarget.value));
+  const { t } = useTranslation(), { calendarDomain: r } = useCalendar(), c = (E) => {
+    r.changeCalendarByMonth(Number(E.currentTarget.value));
   }, d = useMemo(
     () => ({
       months: [
@@ -2596,25 +2569,25 @@ function useMonthSwitcher() {
     [t]
   );
   return {
-    handleSelectChange: l,
+    handleSelectChange: c,
     month: r.month,
     months: d.months
   };
 }
 const MonthSwitcher = observer(() => {
-  const { handleSelectChange: t, month: r, months: l } = useMonthSwitcher();
+  const { handleSelectChange: t, month: r, months: c } = useMonthSwitcher();
   return r !== null && /* @__PURE__ */ jsxRuntimeExports.jsx(
     Lr,
     {
       id: "month-switcher",
       modelValue: r,
-      options: l,
+      options: c,
       onSelect: t
     }
   );
 });
 function useYearSwitcher() {
-  const { calendarService: t } = useCalendar();
+  const { calendarDomain: t } = useCalendar();
   return {
     decreaseYear: () => {
       t.decreaseYear();
@@ -2626,12 +2599,12 @@ function useYearSwitcher() {
   };
 }
 const YearSwitcher = observer(() => {
-  const { decreaseYear: t, increaseYear: r, year: l } = useYearSwitcher();
-  return l && /* @__PURE__ */ jsxRuntimeExports.jsx(
+  const { decreaseYear: t, increaseYear: r, year: c } = useYearSwitcher();
+  return c && /* @__PURE__ */ jsxRuntimeExports.jsx(
     Ur,
     {
       id: "calendar-year",
-      modelValue: l,
+      modelValue: c,
       onIncrease: r,
       onDecrease: t
     }
@@ -2640,24 +2613,7 @@ const YearSwitcher = observer(() => {
   "theme-light": "_theme-light_s3u64_16",
   "theme-dark": "_theme-dark_s3u64_36",
   wrapper: wrapper$1
-};
-function useSyncLang() {
-  const { i18n: t } = useTranslation();
-  useEffect(() => {
-    const r = document.documentElement.lang;
-    r && t.changeLanguage(r);
-  }, []), useEffect(() => {
-    const r = new MutationObserver((l) => {
-      l.forEach((d) => {
-        d.type === "attributes" && d.attributeName === "lang" && t.changeLanguage(d.target.lang);
-      });
-    });
-    return r.observe(document.documentElement, { attributes: !0 }), () => {
-      r.disconnect();
-    };
-  }, [t]);
-}
-const Wrapper$2 = observer(() => {
+}, Wrapper$2 = observer(() => {
   const { title: t } = useWrapper$1();
   return useSyncLang(), /* @__PURE__ */ jsxRuntimeExports.jsxs(
     Yr,
@@ -2672,21 +2628,16 @@ const Wrapper$2 = observer(() => {
       ]
     }
   );
-}), CalendarView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$1.Provider, { value: calendarService, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$2, {}) });
+}), CalendarView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$2.Provider, { value: calendarDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$2, {}) });
 class TimezoneRepository {
   getTimezones() {
     return [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   }
 }
-var __defProp = Object.defineProperty, __getOwnPropDesc = Object.getOwnPropertyDescriptor, __decorateClass = (t, r, l, d) => {
-  for (var y = d > 1 ? void 0 : d ? __getOwnPropDesc(r, l) : r, E = t.length - 1, k; E >= 0; E--)
-    (k = t[E]) && (y = (d ? k(r, l, y) : k(y)) || y);
-  return d && y && __defProp(r, l, y), y;
-};
-class TimezoneService {
+class TimezoneDomain {
   constructor() {
-    R(this, "timezoneRepository", new TimezoneRepository());
-    R(this, "timezonesValuePairs", null);
+    S(this, "timezoneRepository", new TimezoneRepository());
+    S(this, "timezonesValuePairs", null);
     makeAutoObservable(this);
   }
   generateTimezones() {
@@ -2697,22 +2648,16 @@ class TimezoneService {
     return `ma-timezone.stepper.${r}`;
   }
   mapTimezonesToValuePairs(r) {
-    return r.map((l) => ({
-      value: l,
-      label: this.createI18nKey(l)
+    return r.map((c) => ({
+      value: c,
+      label: this.createI18nKey(c)
     }));
   }
 }
-__decorateClass([
-  observable
-], TimezoneService.prototype, "timezoneRepository", 2);
-__decorateClass([
-  action
-], TimezoneService.prototype, "generateTimezones", 1);
-const timezoneService = new TimezoneService(), DomainContext = createContext(timezoneService);
+const timezoneDomain = new TimezoneDomain(), DomainContext$1 = createContext(timezoneDomain);
 function useTimezone() {
   return {
-    timezoneService: useContext(DomainContext)
+    timezoneService: useContext(DomainContext$1)
   };
 }
 function useWrapper() {
@@ -2735,9 +2680,9 @@ function useTimezoneSwitcher() {
       () => {
         var d;
         return {
-          timezones: (d = r == null ? void 0 : r.timezonesValuePairs) == null ? void 0 : d.map((y) => ({
-            value: y.value,
-            name: t(y.label)
+          timezones: (d = r == null ? void 0 : r.timezonesValuePairs) == null ? void 0 : d.map((E) => ({
+            value: E.value,
+            name: t(E.label)
           }))
         };
       },
@@ -2767,27 +2712,27 @@ const TimezoneSwitcher = observer(() => {
       children: /* @__PURE__ */ jsxRuntimeExports.jsx(TimezoneSwitcher, {})
     }
   );
-}), TimezoneView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext.Provider, { value: timezoneService, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$1, {}) });
+}), TimezoneView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$1.Provider, { value: timezoneDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$1, {}) });
 var ETimerPresets = /* @__PURE__ */ ((t) => (t.THREE_MINUTES = "3-min", t.FIVE_MINUTES = "5-min", t.TEN_MINUTES = "10-min", t.FIFTEEN_MINUTES = "15-min", t.CUSTOM_MINUTES = "custom", t))(ETimerPresets || {}), ETimerTime = /* @__PURE__ */ ((t) => (t.HOURS = "hours", t.MINUTES = "minutes", t.SECONDS = "seconds", t))(ETimerTime || {}), ETimerStatus = /* @__PURE__ */ ((t) => (t.PLAY = "play", t.STOP = "stop", t.RESET = "reset", t))(ETimerStatus || {});
 class TimerControllerDomain {
   constructor(r) {
-    R(this, "timerDomain");
-    R(this, "increaseSeconds", () => {
-      this.timerDomain.time.seconds !== 59 && (console.log(this), this.timerDomain.addTime(ETimerTime.SECONDS, 1));
+    S(this, "timerDomain");
+    S(this, "increaseSeconds", () => {
+      this.timerDomain.time.seconds !== 59 && this.timerDomain.addTime(ETimerTime.SECONDS, 1);
     });
-    R(this, "decreaseSeconds", () => {
+    S(this, "decreaseSeconds", () => {
       this.timerDomain.time.seconds !== 0 && this.timerDomain.subtractTime(ETimerTime.SECONDS, 1);
     });
-    R(this, "increaseMinutes", () => {
+    S(this, "increaseMinutes", () => {
       this.timerDomain.time.minutes !== 59 && this.timerDomain.addTime(ETimerTime.MINUTES, 1);
     });
-    R(this, "decreaseMinutes", () => {
+    S(this, "decreaseMinutes", () => {
       this.timerDomain.time.minutes !== 0 && this.timerDomain.subtractTime(ETimerTime.MINUTES, 1);
     });
-    R(this, "increaseHours", () => {
+    S(this, "increaseHours", () => {
       this.timerDomain.time.hours !== 59 && this.timerDomain.addTime(ETimerTime.HOURS, 1);
     });
-    R(this, "decreaseHours", () => {
+    S(this, "decreaseHours", () => {
       this.timerDomain.time.hours !== 0 && this.timerDomain.subtractTime(ETimerTime.HOURS, 1);
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -2795,23 +2740,23 @@ class TimerControllerDomain {
 }
 class TimerPlayerDomain {
   constructor(r) {
-    R(this, "timerDomain");
-    R(this, "interval", null);
-    R(this, "start", () => {
+    S(this, "timerDomain");
+    S(this, "interval", null);
+    S(this, "start", () => {
       this.timerDomain.setStatus(ETimerStatus.PLAY), this.interval = setInterval(() => {
         this.timerDomain.time.hours === 0 && this.timerDomain.time.minutes === 0 && this.timerDomain.time.seconds === 0 && this.reset(), this.timerDomain.time.hours >= 1 && this.timerDomain.time.minutes === 0 && this.timerDomain.time.seconds === 0 ? (this.timerDomain.time.hours--, this.timerDomain.time.minutes = 59, this.timerDomain.time.seconds = 59) : this.timerDomain.time.seconds === 0 && this.timerDomain.time.minutes >= 1 ? (this.timerDomain.time.seconds = 59, this.timerDomain.time.minutes--) : this.timerDomain.time.seconds--;
       }, 1e3);
     });
-    R(this, "stop", () => {
+    S(this, "stop", () => {
       this.timerDomain.setStatus(ETimerStatus.STOP), this.clearTimerInterval();
     });
-    R(this, "reset", () => {
+    S(this, "reset", () => {
       this.timerDomain.setStatus(ETimerStatus.RESET), this.clearTimerInterval(), this.restartTime();
     });
-    R(this, "clearTimerInterval", () => {
+    S(this, "clearTimerInterval", () => {
       this.interval && clearInterval(this.interval);
     });
-    R(this, "restartTime", () => {
+    S(this, "restartTime", () => {
       this.timerDomain.time.hours = 0, this.timerDomain.time.minutes = 0, this.timerDomain.time.seconds = 0;
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -2819,25 +2764,25 @@ class TimerPlayerDomain {
 }
 class TimerPresetsDomain {
   constructor(r) {
-    R(this, "preset", ETimerPresets.CUSTOM_MINUTES);
-    R(this, "timerDomain");
-    R(this, "presetTimes", {
+    S(this, "preset", ETimerPresets.CUSTOM_MINUTES);
+    S(this, "timerDomain");
+    S(this, "presetTimes", {
       [ETimerPresets.CUSTOM_MINUTES]: 0,
       [ETimerPresets.THREE_MINUTES]: 3,
       [ETimerPresets.FIVE_MINUTES]: 5,
       [ETimerPresets.TEN_MINUTES]: 10,
       [ETimerPresets.FIFTEEN_MINUTES]: 15
     });
-    R(this, "setPreset", (r) => {
+    S(this, "setPreset", (r) => {
       this.setPresetStatus(r), this.resetSecondsAndHours(), this.setMinutes(r);
     });
-    R(this, "setMinutes", (r) => {
+    S(this, "setMinutes", (r) => {
       this.timerDomain.setTime(ETimerTime.MINUTES, this.presetTimes[r]);
     });
-    R(this, "setPresetStatus", (r) => {
+    S(this, "setPresetStatus", (r) => {
       this.preset !== r && (this.preset = r);
     });
-    R(this, "resetSecondsAndHours", () => {
+    S(this, "resetSecondsAndHours", () => {
       this.timerDomain.time.seconds !== 0 && this.timerDomain.setTime(ETimerTime.SECONDS, 0), this.timerDomain.time.hours !== 0 && this.timerDomain.setTime(ETimerTime.HOURS, 0);
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -2845,42 +2790,42 @@ class TimerPresetsDomain {
 }
 class TimerDomain {
   constructor() {
-    R(this, "controllerDomain");
-    R(this, "playerDomain");
-    R(this, "presetsDomain");
-    R(this, "time", {
+    S(this, "controllerDomain");
+    S(this, "playerDomain");
+    S(this, "presetsDomain");
+    S(this, "time", {
       seconds: 0,
       minutes: 0,
       hours: 0
     });
-    R(this, "status", ETimerStatus.RESET);
-    R(this, "addTime", (r, l) => {
-      this.time[r] += l;
+    S(this, "status", ETimerStatus.RESET);
+    S(this, "addTime", (r, c) => {
+      this.time[r] += c;
     });
-    R(this, "subtractTime", (r, l) => {
-      this.time[r] -= l;
+    S(this, "subtractTime", (r, c) => {
+      this.time[r] -= c;
     });
-    R(this, "setTime", (r, l) => {
-      this.time[r] = l;
+    S(this, "setTime", (r, c) => {
+      this.time[r] = c;
     });
-    R(this, "setStatus", (r) => {
+    S(this, "setStatus", (r) => {
       this.status = r;
     });
     makeAutoObservable(this), this.controllerDomain = new TimerControllerDomain(this), this.playerDomain = new TimerPlayerDomain(this), this.presetsDomain = new TimerPresetsDomain(this);
   }
 }
-const timerDomain = new TimerDomain(), TimerDomainContext = createContext(timerDomain);
+const timerDomain = new TimerDomain(), DomainContext = createContext(timerDomain);
 var State = /* @__PURE__ */ ((t) => (t.ACTIVE = "active", t.DISABLED = "disabled", t.IDLE = "idle", t.LOADING = "loading", t))(State || {});
 function addZeroBeforeNumber(t, r) {
   return t < r ? `0${t}` : String(t);
 }
 function useTimer() {
   return {
-    timerDomain: useContext(TimerDomainContext)
+    timerDomain: useContext(DomainContext)
   };
 }
 function useController() {
-  const { timerDomain: t } = useTimer(), l = (t.presetsDomain.preset !== ETimerPresets.CUSTOM_MINUTES ? State.DISABLED : State.ACTIVE) === State.DISABLED;
+  const { timerDomain: t } = useTimer(), c = (t.presetsDomain.preset !== ETimerPresets.CUSTOM_MINUTES ? State.DISABLED : State.ACTIVE) === State.DISABLED;
   return {
     hours: t.time.hours,
     minutes: t.time.minutes,
@@ -2891,7 +2836,7 @@ function useController() {
     decreaseMinutes: t.controllerDomain.decreaseMinutes,
     increaseHours: t.controllerDomain.increaseHours,
     decreaseHours: t.controllerDomain.decreaseHours,
-    isDisabled: l
+    isDisabled: c
   };
 }
 const controller = "_controller_15w9q_96", styles$4 = {
@@ -2902,14 +2847,14 @@ const controller = "_controller_15w9q_96", styles$4 = {
   const {
     hours: t,
     minutes: r,
-    seconds: l,
+    seconds: c,
     increaseSeconds: d,
-    decreaseSeconds: y,
-    increaseMinutes: E,
-    decreaseMinutes: k,
+    decreaseSeconds: E,
+    increaseMinutes: M,
+    decreaseMinutes: $,
     increaseHours: F,
-    decreaseHours: D,
-    isDisabled: Y
+    decreaseHours: R,
+    isDisabled: H
   } = useController();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
@@ -2923,8 +2868,8 @@ const controller = "_controller_15w9q_96", styles$4 = {
             id: "hours",
             modelValue: t,
             onIncrease: F,
-            onDecrease: D,
-            disabled: Y
+            onDecrease: R,
+            disabled: H
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -2932,19 +2877,19 @@ const controller = "_controller_15w9q_96", styles$4 = {
           {
             id: "minutes",
             modelValue: r,
-            onIncrease: E,
-            onDecrease: k,
-            disabled: Y
+            onIncrease: M,
+            onDecrease: $,
+            disabled: H
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           Ur,
           {
             id: "seconds",
-            modelValue: l,
+            modelValue: c,
             onIncrease: d,
-            onDecrease: y,
-            disabled: Y
+            onDecrease: E,
+            disabled: H
           }
         )
       ]
@@ -2955,22 +2900,22 @@ const controller = "_controller_15w9q_96", styles$4 = {
   "theme-dark": "_theme-dark_covgd_36",
   player
 }, useStartAndStop = () => {
-  const { t } = useTranslation(), { timerDomain: r } = useTimer(), l = useMemo(() => ({
+  const { t } = useTranslation(), { timerDomain: r } = useTimer(), c = useMemo(() => ({
     start: t("ma-timer.start"),
     stop: t("ma-timer.stop")
   }), [t]), d = () => {
     r.status === ETimerStatus.PLAY ? r.playerDomain.stop() : r.playerDomain.start();
-  }, y = r.status === ETimerStatus.PLAY ? l.stop : l.start;
+  }, E = r.status === ETimerStatus.PLAY ? c.stop : c.start;
   return {
     disabled: r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0,
     onClick: d,
-    text: y
+    text: E
   };
 }, StartAndStop = observer(() => {
   const {
     disabled: t,
     onClick: r,
-    text: l
+    text: c
   } = useStartAndStop();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Wr,
@@ -2978,25 +2923,25 @@ const controller = "_controller_15w9q_96", styles$4 = {
       id: "ma-timer-player-start-and-stop",
       disabled: t,
       onClick: r,
-      text: l
+      text: c
     }
   );
 }), useReset = () => {
-  const { t } = useTranslation(), { timerDomain: r } = useTimer(), l = useMemo(() => ({
+  const { t } = useTranslation(), { timerDomain: r } = useTimer(), c = useMemo(() => ({
     reset: t("ma-timer.reset")
   }), [t]), d = () => {
-    y || r.playerDomain.reset();
-  }, y = r.status === ETimerStatus.PLAY || r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0;
+    E || r.playerDomain.reset();
+  }, E = r.status === ETimerStatus.PLAY || r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0;
   return {
-    disabled: y,
+    disabled: E,
     onClick: d,
-    text: l.reset
+    text: c.reset
   };
 }, Reset = observer(() => {
   const {
     disabled: t,
     onClick: r,
-    text: l
+    text: c
   } = useReset();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Wr,
@@ -3004,7 +2949,7 @@ const controller = "_controller_15w9q_96", styles$4 = {
       id: "ma-timer-player-reset",
       disabled: t,
       onClick: r,
-      text: l
+      text: c
     }
   );
 }), Player = () => /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -3019,9 +2964,9 @@ const controller = "_controller_15w9q_96", styles$4 = {
   }
 ), usePresets = () => {
   const { t } = useTranslation(), { timerDomain: r } = useTimer(), [
-    l,
+    c,
     d
-  ] = useState(r.presetsDomain.preset), y = useMemo(() => [
+  ] = useState(r.presetsDomain.preset), E = useMemo(() => [
     {
       preset: ETimerPresets.THREE_MINUTES,
       content: t("ma-timer.presets.three-minutes"),
@@ -3047,14 +2992,14 @@ const controller = "_controller_15w9q_96", styles$4 = {
       content: t("ma-timer.presets.custom"),
       id: "ma-timer-preset-custom"
     }
-  ], [t]), E = (D) => {
-    k || (r.presetsDomain.setPreset(D), d(D));
-  }, k = r.status === ETimerStatus.PLAY, F = t("ma-timer.presets.title");
+  ], [t]), M = (R) => {
+    $ || (r.presetsDomain.setPreset(R), d(R));
+  }, $ = r.status === ETimerStatus.PLAY, F = t("ma-timer.presets.title");
   return {
-    disabled: k,
-    presets: y,
-    setPreset: E,
-    selectedPreset: l,
+    disabled: $,
+    presets: E,
+    setPreset: M,
+    selectedPreset: c,
     title: F
   };
 }, presets = "_presets_2r2rz_96", styles$2 = {
@@ -3065,9 +3010,9 @@ const controller = "_controller_15w9q_96", styles$4 = {
   const {
     disabled: t,
     presets: r,
-    selectedPreset: l,
+    selectedPreset: c,
     setPreset: d,
-    title: y
+    title: E
   } = usePresets();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Yr,
@@ -3075,30 +3020,30 @@ const controller = "_controller_15w9q_96", styles$4 = {
       className: styles$2.presets,
       "data-testid": "ma-timer-presets",
       id: "ma-timer-presets",
-      title: y,
-      children: r.map((E) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      title: E,
+      children: r.map((M) => /* @__PURE__ */ jsxRuntimeExports.jsx(
         qr,
         {
-          initialChecked: E.preset === l,
+          initialChecked: M.preset === c,
           disabled: t,
-          id: E.id,
+          id: M.id,
           name: "ma-timer-presets",
-          onChange: () => d(E.preset),
+          onChange: () => d(M.preset),
           text: {
-            content: E.content,
+            content: M.content,
             visible: !0
           }
         },
-        E.id
+        M.id
       ))
     }
   );
 });
 function useScreen() {
-  const { timerDomain: t } = useTimer(), r = addZeroBeforeNumber(t.time.hours, 10), l = addZeroBeforeNumber(t.time.minutes, 10), d = addZeroBeforeNumber(t.time.seconds, 10);
+  const { timerDomain: t } = useTimer(), r = addZeroBeforeNumber(t.time.hours, 10), c = addZeroBeforeNumber(t.time.minutes, 10), d = addZeroBeforeNumber(t.time.seconds, 10);
   return {
     hours: r,
-    minutes: l,
+    minutes: c,
     seconds: d
   };
 }
@@ -3111,7 +3056,7 @@ const screen = "_screen_ddbl8_96", time = "_time_ddbl8_113", styles$1 = {
   const {
     hours: t,
     minutes: r,
-    seconds: l
+    seconds: c
   } = useScreen();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
@@ -3142,7 +3087,7 @@ const screen = "_screen_ddbl8_96", time = "_time_ddbl8_113", styles$1 = {
           {
             className: styles$1.time,
             "data-testid": "ma-timer-screen-seconds",
-            children: l
+            children: c
           }
         )
       ]
@@ -3164,7 +3109,7 @@ const screen = "_screen_ddbl8_96", time = "_time_ddbl8_113", styles$1 = {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Player, {})
     ]
   }
-)), TimerView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(TimerDomainContext.Provider, { value: timerDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper, {}) }), MACalculator = s(CalculatorView);
+)), TimerView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext.Provider, { value: timerDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper, {}) }), MACalculator = s(CalculatorView);
 customElements.define("ma-calculator", MACalculator);
 const MACalendar = s(CalendarView);
 customElements.define("ma-calendar", MACalendar);
