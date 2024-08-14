@@ -2,7 +2,7 @@ import { DatabaseRepository } from "../../data/repositories/database.repository"
 import type { DatabaseServiceContract } from "../contracts/service.contract"
 
 export default class DatabaseService implements DatabaseServiceContract {
-	private readonly databaseRepository: DatabaseRepository
+	public readonly databaseRepository: DatabaseRepository
 
 	constructor(
 		public readonly databaseName: string,
