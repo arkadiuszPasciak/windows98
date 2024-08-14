@@ -405,6 +405,9 @@ importers:
 
   micro-services:
     devDependencies:
+      '@biomejs/biome':
+        specifier: 1.8.3
+        version: 1.8.3
       '@windows98/configs':
         specifier: workspace:*
         version: link:../core/configs

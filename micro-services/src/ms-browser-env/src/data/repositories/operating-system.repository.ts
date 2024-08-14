@@ -1,7 +1,12 @@
 import type BrowserEnvRepositoryContract from "../../domain/contracts/repository.contract"
-import type { IOperatingSystemRegex, TOperatingSystemAll } from "../../domain/models/operating.model"
+import type {
+	IOperatingSystemRegex,
+	TOperatingSystemAll,
+} from "../../domain/models/operating.model"
 
-export default class OperatingSystemRepository implements BrowserEnvRepositoryContract<TOperatingSystemAll> {
+export default class OperatingSystemRepository
+	implements BrowserEnvRepositoryContract<TOperatingSystemAll>
+{
 	constructor(
 		private readonly operatingSystems: Array<IOperatingSystemRegex> = [
 			{ name: "Windows 3.11", regex: /Win16/ },
@@ -32,8 +37,8 @@ export default class OperatingSystemRepository implements BrowserEnvRepositoryCo
 			{ name: "UNIX", regex: /UNIX/ },
 			{ name: "BeOS", regex: /BeOS/ },
 			{ name: "OS/2", regex: /OS\/2/ },
-		]
-	) { }
+		],
+	) {}
 
 	public get() {
 		const userAgent = window.navigator.userAgent

@@ -6,8 +6,8 @@ export class DatabaseRepository implements DatabaseRepositoryContract {
 
 	constructor(
 		private databaseName: string,
-		private storeName: string
-	) { }
+		private storeName: string,
+	) {}
 
 	public async open(): Promise<void> {
 		return new Promise((resolve, reject) => {
@@ -46,7 +46,10 @@ export class DatabaseRepository implements DatabaseRepositoryContract {
 			throw new Error("Database not open")
 		}
 
-		const transaction: IDBTransaction = this.database.transaction(this.storeName, mode)
+		const transaction: IDBTransaction = this.database.transaction(
+			this.storeName,
+			mode,
+		)
 		return transaction.objectStore(this.storeName)
 	}
 }

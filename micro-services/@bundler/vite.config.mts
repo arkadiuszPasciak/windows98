@@ -9,12 +9,10 @@ export default defineConfig({
 			entry: "../src/index.ts",
 			name: "micro-services",
 			fileName: "index",
-			formats: ["es", "umd"]
+			formats: ["es", "umd"],
 		},
 		outDir: "build",
 		sourcemap: true,
 	},
-	plugins: [
-		dts({ include: ["../src/"] }),
-	],
+	plugins: [dts({ include: ["../src/"] })],
 })

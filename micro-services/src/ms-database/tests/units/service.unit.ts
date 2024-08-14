@@ -1,4 +1,4 @@
-import { beforeEach, expect, it, describe, vi } from "vitest"
+import { beforeEach, describe, expect, it, vi } from "vitest"
 import DatabaseService from "../../src/domain/services/database.service"
 
 describe("[MicroServices]<Database>(DatabaseService)", () => {
@@ -18,10 +18,10 @@ describe("[MicroServices]<Database>(DatabaseService)", () => {
 								add: vi.fn(),
 								get: vi.fn(),
 								put: vi.fn(),
-								delete: vi.fn()
-							})
-						})
-					}
+								delete: vi.fn(),
+							}),
+						}),
+					},
 				}
 
 				setTimeout(() => {
@@ -36,7 +36,7 @@ describe("[MicroServices]<Database>(DatabaseService)", () => {
 			}),
 			deleteDatabase: vi.fn(),
 			cmp: vi.fn(),
-			databases: vi.fn()
+			databases: vi.fn(),
 		})
 
 		databaseService = new DatabaseService("databaseName", "storeName")
@@ -45,7 +45,7 @@ describe("[MicroServices]<Database>(DatabaseService)", () => {
 	})
 
 	it("open()", async () => {
-		const openSpy = vi.spyOn(databaseService["databaseRepository"], "open")
+		const openSpy = vi.spyOn(databaseService.databaseRepository, "open")
 
 		await databaseService.open()
 
@@ -54,7 +54,7 @@ describe("[MicroServices]<Database>(DatabaseService)", () => {
 
 	it("add()", async () => {
 		const item = { id: 1, name: "Item 1" }
-		const addSpy = vi.spyOn(databaseService["databaseRepository"], "add")
+		const addSpy = vi.spyOn(databaseService.databaseRepository, "add")
 
 		await databaseService.add(item)
 
@@ -63,7 +63,7 @@ describe("[MicroServices]<Database>(DatabaseService)", () => {
 
 	it("get()", async () => {
 		const key = 1
-		const getSpy = vi.spyOn(databaseService["databaseRepository"], "get")
+		const getSpy = vi.spyOn(databaseService.databaseRepository, "get")
 
 		await databaseService.get(key)
 
@@ -73,7 +73,7 @@ describe("[MicroServices]<Database>(DatabaseService)", () => {
 	it("update()", async () => {
 		const key = 1
 		const item = { id: 1, name: "Updated Item 1" }
-		const updateSpy = vi.spyOn(databaseService["databaseRepository"], "update")
+		const updateSpy = vi.spyOn(databaseService.databaseRepository, "update")
 
 		await databaseService.update(key, item)
 
@@ -82,7 +82,7 @@ describe("[MicroServices]<Database>(DatabaseService)", () => {
 
 	it("delete()", async () => {
 		const key = 1
-		const deleteSpy = vi.spyOn(databaseService["databaseRepository"], "delete")
+		const deleteSpy = vi.spyOn(databaseService.databaseRepository, "delete")
 
 		await databaseService.delete(key)
 

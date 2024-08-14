@@ -1,5 +1,5 @@
 export interface DatabaseServiceContract {
-	readonly databaseName: string,
+	readonly databaseName: string
 	readonly storeName: string
 	open(): Promise<void>
 	add<T>(item: T): Promise<void>

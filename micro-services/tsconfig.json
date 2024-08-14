@@ -1,8 +1,4 @@
 {
-	"extends": [
-		"@windows98/linters/ts-config/base"
-	],
-	"include": [
-		"./**/*"
-	],
+	"extends": ["@windows98/linters/ts-config/base"],
+	"include": ["./**/*"]
 }

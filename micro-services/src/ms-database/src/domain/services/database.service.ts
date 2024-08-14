@@ -6,9 +6,12 @@ export default class DatabaseService implements DatabaseServiceContract {
 
 	constructor(
 		public readonly databaseName: string,
-		public readonly storeName: string
+		public readonly storeName: string,
 	) {
-		this.databaseRepository = new DatabaseRepository(this.databaseName, this.storeName)
+		this.databaseRepository = new DatabaseRepository(
+			this.databaseName,
+			this.storeName,
+		)
 	}
 
 	async open(): Promise<void> {

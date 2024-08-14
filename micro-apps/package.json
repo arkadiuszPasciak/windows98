@@ -3,7 +3,9 @@
 	"main": "@bundler/build/index.umd.cjs",
 	"module": "@bundler/build/index.js",
 	"types": "@bundler/build/@bundles/src/wc/index.wc.d.ts",
-	"files": ["@bundler/build"],
+	"files": [
+		"@bundler/build"
+	],
 	"exports": {
 		".": {
 			"import": "./@bundler/build/index.js",
@@ -51,7 +53,7 @@
 		"dev": "vite @bundler",
 		"build": "vite build @bundler",
 		"preview": "vite preview @bundler",
-		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix --unsafe",
+		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
 		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
 		"lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"src/**/*.scss\" --fix",

@@ -1,11 +1,6 @@
-export type TBrowserName =
-  | "Chrome"
-  | "Firefox"
-  | "Safari"
-  | "Opera"
-  | "Edge"
+export type TBrowserName = "Chrome" | "Firefox" | "Safari" | "Opera" | "Edge"
 
 export interface IBrowserNameRegex {
-  name: TBrowserName
-  regex: RegExp
+	name: TBrowserName
+	regex: RegExp
 }

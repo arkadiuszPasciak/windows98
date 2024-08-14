@@ -1,7 +1,12 @@
-import type { IBrowserNameRegex, TBrowserName } from "../../domain/models/browser.model"
 import type BrowserEnvRepositoryContract from "../../domain/contracts/repository.contract"
+import type {
+	IBrowserNameRegex,
+	TBrowserName,
+} from "../../domain/models/browser.model"
 
-export default class BrowserNameRepository implements BrowserEnvRepositoryContract<TBrowserName> {
+export default class BrowserNameRepository
+	implements BrowserEnvRepositoryContract<TBrowserName>
+{
 	constructor(
 		private readonly browserNames: Array<IBrowserNameRegex> = [
 			{ name: "Chrome", regex: /chrome|chromium|crios/i },
@@ -10,7 +15,7 @@ export default class BrowserNameRepository implements BrowserEnvRepositoryContra
 			{ name: "Opera", regex: /opr\//i },
 			{ name: "Edge", regex: /edg/i },
 		],
-	) { }
+	) {}
 
 	public get() {
 		const userAgent = window.navigator.userAgent
