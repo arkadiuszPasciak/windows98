@@ -1,5 +1,5 @@
-import { DSSelect, type DSSelectProps } from "@windows98/design-system"
 import type { Meta, StoryObj } from "@storybook/react"
+import { DSSelect, type DSSelectProps } from "@windows98/design-system"
 
 const meta: Meta<typeof DSSelect> = {
 	argTypes: {
@@ -42,7 +42,7 @@ const meta: Meta<typeof DSSelect> = {
 	},
 	component: DSSelect,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSSelect"
+	title: "Design System/Components/DSSelect",
 }
 
 export default meta
@@ -59,12 +59,12 @@ export const Primary: Story = {
 		options: [
 			{
 				value: "storybook",
-				name: "Storybook"
+				name: "Storybook",
 			},
 			{
 				value: "storybook-ui",
-				name: "Storybook UI"
-			}
+				name: "Storybook UI",
+			},
 		],
 		required: false,
 	} as DSSelectProps,
@@ -73,20 +73,20 @@ export const Primary: Story = {
 export const Disabled: Story = {
 	args: {
 		...Primary.args,
-		disabled: true
-	}
+		disabled: true,
+	},
 }
 
 export const Horizontal: Story = {
 	args: {
 		...Primary.args,
-		labelPosition: "top"
-	}
+		labelPosition: "top",
+	},
 }
 
 export const Vertical: Story = {
 	args: {
 		...Primary.args,
-		labelPosition: "left"
-	}
+		labelPosition: "left",
+	},
 }

@@ -1,5 +1,5 @@
-import { DSStepper, type DSStepperProps } from "@windows98/design-system"
 import type { Meta, StoryObj } from "@storybook/react"
+import { DSStepper, type DSStepperProps } from "@windows98/design-system"
 
 const meta: Meta<typeof DSStepper> = {
 	argTypes: {
@@ -21,7 +21,7 @@ const meta: Meta<typeof DSStepper> = {
 	},
 	component: DSStepper,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSStepper"
+	title: "Design System/Components/DSStepper",
 }
 
 export default meta
@@ -39,6 +39,6 @@ export const Primary: Story = {
 export const Disabled: Story = {
 	args: {
 		...Primary.args,
-		disabled: true
-	}
+		disabled: true,
+	},
 }

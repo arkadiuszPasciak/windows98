@@ -260,6 +260,9 @@ importers:
 
   docs:
     devDependencies:
+      '@biomejs/biome':
+        specifier: 1.8.3
+        version: 1.8.3
       '@chromatic-com/storybook':
         specifier: 1.2.25
         version: 1.2.25(react@18.2.0)
@@ -296,6 +299,9 @@ importers:
       '@types/react-dom':
         specifier: 18.2.17
         version: 18.2.17
+      '@windows98/configs':
+        specifier: workspace:*
+        version: link:../core/configs
       '@windows98/design-system':
         specifier: workspace:*
         version: link:../core/design-system

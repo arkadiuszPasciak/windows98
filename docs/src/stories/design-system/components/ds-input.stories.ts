@@ -1,5 +1,5 @@
-import { DSInput, type DSInputProps } from "@windows98/design-system"
 import type { Meta, StoryObj } from "@storybook/react"
+import { DSInput, type DSInputProps } from "@windows98/design-system"
 
 const meta: Meta<typeof DSInput> = {
 	argTypes: {
@@ -53,7 +53,7 @@ const meta: Meta<typeof DSInput> = {
 	},
 	component: DSInput,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSInput"
+	title: "Design System/Components/DSInput",
 }
 
 export default meta
@@ -75,27 +75,27 @@ export const Primary: Story = {
 export const Disabled: Story = {
 	args: {
 		...Primary.args,
-		disabled: true
-	}
+		disabled: true,
+	},
 }
 
 export const Readonly: Story = {
 	args: {
 		...Primary.args,
-		readonly: true
-	}
+		readonly: true,
+	},
 }
 
 export const Horizontal: Story = {
 	args: {
 		...Primary.args,
-		wrapperLayout: "horizontal"
-	}
+		wrapperLayout: "horizontal",
+	},
 }
 
 export const Vertical: Story = {
 	args: {
 		...Primary.args,
-		wrapperLayout: "vertical"
-	}
+		wrapperLayout: "vertical",
+	},
 }

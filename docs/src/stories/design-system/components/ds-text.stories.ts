@@ -1,5 +1,5 @@
-import { DSText, type DSTextProps } from "@windows98/design-system"
 import type { Meta, StoryObj } from "@storybook/react"
+import { DSText, type DSTextProps } from "@windows98/design-system"
 
 const meta: Meta<typeof DSText> = {
 	argTypes: {
@@ -16,7 +16,7 @@ const meta: Meta<typeof DSText> = {
 	},
 	component: DSText,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSText"
+	title: "Design System/Components/DSText",
 }
 
 export default meta
@@ -26,6 +26,6 @@ type Story = StoryObj<typeof DSText>
 export const Primary: Story = {
 	args: {
 		id: "storybook",
-		text: "storybook"
+		text: "storybook",
 	} as DSTextProps,
 }
