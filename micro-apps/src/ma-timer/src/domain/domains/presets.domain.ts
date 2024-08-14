@@ -1,12 +1,7 @@
-import {
-	makeAutoObservable,
-} from "mobx"
+import { makeAutoObservable } from "mobx"
 import type { TimerPresetsDomainContract } from "../contracts"
-import {
-	ETimerPresets,
-	ETimerTime,
-} from "../models"
-import { TimerDomainContract } from "../contracts"
+import type { TimerDomainContract } from "../contracts"
+import { ETimerPresets, ETimerTime } from "../models"
 
 export class TimerPresetsDomain implements TimerPresetsDomainContract {
 	public preset: ETimerPresets = ETimerPresets.CUSTOM_MINUTES
@@ -30,7 +25,6 @@ export class TimerPresetsDomain implements TimerPresetsDomainContract {
 		this.resetSecondsAndHours()
 
 		this.setMinutes(preset)
-
 	}
 
 	private setMinutes = (preset: ETimerPresets): void => {
@@ -42,7 +36,9 @@ export class TimerPresetsDomain implements TimerPresetsDomainContract {
 	}
 
 	private resetSecondsAndHours = (): void => {
-		if (this.timerDomain.time.seconds !== 0) this.timerDomain.setTime(ETimerTime.SECONDS, 0)
-		if (this.timerDomain.time.hours !== 0) this.timerDomain.setTime(ETimerTime.HOURS, 0)
+		if (this.timerDomain.time.seconds !== 0)
+			this.timerDomain.setTime(ETimerTime.SECONDS, 0)
+		if (this.timerDomain.time.hours !== 0)
+			this.timerDomain.setTime(ETimerTime.HOURS, 0)
 	}
 }

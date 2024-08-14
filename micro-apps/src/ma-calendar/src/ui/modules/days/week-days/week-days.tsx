@@ -7,13 +7,13 @@ export const WeekDays = observer(() => {
 
 	return (
 		<div className={styles["week-days"]}>
-			{weekDays.map((day, id) => (
+			{weekDays.map((day) => (
 				<span
-					className={styles["day"]}
-					data-testid={`calendar-week-days-day-${id}`}
-					key={id}
+					className={styles.day}
+					data-testid={`calendar-week-days-day-${day.id}`}
+					key={`calendar-week-days-day-${day.id}`}
 				>
-					{day}
+					{day.name}
 				</span>
 			))}
 		</div>

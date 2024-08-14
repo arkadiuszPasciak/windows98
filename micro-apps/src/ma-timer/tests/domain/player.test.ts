@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest"
+import { describe, expect, it } from "vitest"
 import { TimerDomain, TimerPlayerDomain } from "../../src/domain/domains"
 import { ETimerStatus } from "../../src/domain/models"
 

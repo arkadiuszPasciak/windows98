@@ -1,6 +1,4 @@
-import type {
-	ETimerPresets,
-} from "../models"
+import type { ETimerPresets } from "../models"
 
 export interface TimerPresetsDomainContract {
 	preset: ETimerPresets

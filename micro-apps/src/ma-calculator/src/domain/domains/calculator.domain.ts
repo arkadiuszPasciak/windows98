@@ -1,15 +1,11 @@
-import {
-	makeAutoObservable,
-} from "mobx"
-import {
-	CalculatorService,
-} from "../services"
+import { makeAutoObservable } from "mobx"
+import type { CalculatorDomainContract } from "../contracts"
 import {
 	ECalculatorDirect,
-	ECalculatorNumber,
-	ECalculatorSymbol,
+	type ECalculatorNumber,
+	type ECalculatorSymbol,
 } from "../models"
-import { CalculatorDomainContract } from "../contracts"
+import { CalculatorService } from "../services"
 
 export class CalculatorDomain implements CalculatorDomainContract {
 	public value = "0"
@@ -17,13 +13,20 @@ export class CalculatorDomain implements CalculatorDomainContract {
 
 	constructor() {
 		makeAutoObservable(this)
-
 	}
 
 	public addNumber = (number: ECalculatorNumber) => {
 		if (
-			this.calculatorService.isValueEqual(this.value, "0", ECalculatorDirect.FIRST) &&
-			!this.calculatorService.isValueEqual(this.value, "0.", ECalculatorDirect.FIRST) &&
+			this.calculatorService.isValueEqual(
+				this.value,
+				"0",
+				ECalculatorDirect.FIRST,
+			) &&
+			!this.calculatorService.isValueEqual(
+				this.value,
+				"0.",
+				ECalculatorDirect.FIRST,
+			) &&
 			this.value.length === 1
 		) {
 			this.value = String(number)
@@ -40,7 +43,13 @@ export class CalculatorDomain implements CalculatorDomainContract {
 			return
 		}
 
-		if (!this.calculatorService.isValueEqual(this.value, ".", ECalculatorDirect.LAST)) {
+		if (
+			!this.calculatorService.isValueEqual(
+				this.value,
+				".",
+				ECalculatorDirect.LAST,
+			)
+		) {
 			this.value += "."
 		}
 	}

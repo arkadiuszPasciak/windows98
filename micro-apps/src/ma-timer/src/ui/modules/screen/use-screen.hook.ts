@@ -1,5 +1,5 @@
-import { useTimer } from "../../hooks"
 import { addZeroBeforeNumber } from "@windows98/toolkit"
+import { useTimer } from "../../hooks"
 
 export function useScreen() {
 	const { timerDomain } = useTimer()

@@ -9,16 +9,18 @@ export function useSyncLang() {
 		const htmlLang = document.documentElement.lang
 
 		if (htmlLang) i18n.changeLanguage(htmlLang)
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [])
+	})
 
 	useEffect(() => {
 		const htmlLangObserver = new MutationObserver((mutations) => {
-			mutations.forEach((mutation) => {
-				if (mutation.type === "attributes" && mutation.attributeName === "lang") {
+			for (const mutation of mutations) {
+				if (
+					mutation.type === "attributes" &&
+					mutation.attributeName === "lang"
+				) {
 					i18n.changeLanguage((mutation.target as HTMLElement).lang)
 				}
-			})
+			}
 		})
 
 		htmlLangObserver.observe(document.documentElement, { attributes: true })

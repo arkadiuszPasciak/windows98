@@ -56,8 +56,10 @@ test.describe("operation button", () => {
 	test("show operation buttons", async ({ mount }) => {
 		const component = await mount(<CalculatorView />)
 
-		for (let index = 0; index <= (operationButtons.length - 1); index++) {
-			const button = await component.getByTestId(`ma-calculator-operation-button-${operationButtons[index].id}`)
+		for (let index = 0; index <= operationButtons.length - 1; index++) {
+			const button = await component.getByTestId(
+				`ma-calculator-operation-button-${operationButtons[index].id}`,
+			)
 			expect(button).toHaveText(String(operationButtons[index].id))
 		}
 	})

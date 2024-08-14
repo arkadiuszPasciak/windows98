@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react"
-import styles from "./wrapper.module.scss"
-import { Screen } from "../screen"
 import { Keypad } from "../keypad"
+import { Screen } from "../screen"
+import styles from "./wrapper.module.scss"
 
 export const Wrapper: FunctionComponent = () => {
 	return (

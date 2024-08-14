@@ -1,14 +1,10 @@
-import { observer } from 'mobx-react-lite'
+import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
-import { useScreen } from './use-screen.hook'
 import styles from "./screen.module.scss"
+import { useScreen } from "./use-screen.hook"
 
 export const Screen: FunctionComponent = observer(() => {
-	const {
-		hours,
-		minutes,
-		seconds,
-	} = useScreen()
+	const { hours, minutes, seconds } = useScreen()
 
 	return (
 		<div

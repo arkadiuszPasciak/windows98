@@ -1,7 +1,7 @@
 import { useMemo } from "react"
-import { useTimer } from "../../../hooks"
-import { ETimerStatus } from "../../../../domain/models"
 import { useTranslation } from "react-i18next"
+import { ETimerStatus } from "../../../../domain/models"
+import { useTimer } from "../../../hooks"
 
 export const useStartAndStop = () => {
 	const { t } = useTranslation()
@@ -22,10 +22,16 @@ export const useStartAndStop = () => {
 		}
 	}
 
-	const text: string = timerDomain.status === ETimerStatus.PLAY ? translations.stop : translations.start
+	const text: string =
+		timerDomain.status === ETimerStatus.PLAY
+			? translations.stop
+			: translations.start
 
-	const disabled: boolean = timerDomain.time.seconds === 0 && timerDomain.time.minutes === 0 && timerDomain.time.hours === 0
-		? true : false
+	const disabled: boolean = !!(
+		timerDomain.time.seconds === 0 &&
+		timerDomain.time.minutes === 0 &&
+		timerDomain.time.hours === 0
+	)
 
 	return {
 		disabled,

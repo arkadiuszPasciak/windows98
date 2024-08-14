@@ -9,8 +9,12 @@ test.describe("calendar", () => {
 		const frame = await component.getByTestId("ds-text-frame-calculator")
 		await expect(frame, "Frame has rendered correct").toBeVisible()
 
-		const selectMonth = await component.getByTestId("ds-select-select-month-switcher")
-		const decreaseYear = await component.getByTestId("ds-button-arrow-calendar-year-bottom")
+		const selectMonth = await component.getByTestId(
+			"ds-select-select-month-switcher",
+		)
+		const decreaseYear = await component.getByTestId(
+			"ds-button-arrow-calendar-year-bottom",
+		)
 
 		await selectMonth.selectOption("February")
 		await decreaseYear.click()

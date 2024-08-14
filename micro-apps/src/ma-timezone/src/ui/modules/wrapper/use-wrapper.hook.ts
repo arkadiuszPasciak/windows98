@@ -6,11 +6,9 @@ export function useWrapper() {
 	const { t } = useTranslation()
 	const { timezoneService } = useTimezone()
 
-
 	useEffect(() => {
 		timezoneService.generateTimezones()
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [])
+	})
 
 	const dictionary = useMemo(
 		() => ({

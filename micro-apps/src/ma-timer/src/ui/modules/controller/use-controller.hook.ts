@@ -5,8 +5,11 @@ import { useTimer } from "../../hooks"
 export function useController() {
 	const { timerDomain } = useTimer()
 
-	const state = timerDomain.presetsDomain.preset !== ETimerPresets.CUSTOM_MINUTES ? State.DISABLED : State.ACTIVE
-	const isDisabled = state === State.DISABLED ? true : false
+	const state =
+		timerDomain.presetsDomain.preset !== ETimerPresets.CUSTOM_MINUTES
+			? State.DISABLED
+			: State.ACTIVE
+	const isDisabled = state === State.DISABLED
 
 	return {
 		hours: timerDomain.time.hours,

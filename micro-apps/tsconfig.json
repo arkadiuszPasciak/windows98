@@ -1,9 +1,7 @@
 {
 	"extends": [
 		"@windows98/linters/ts-config/react",
-		"@windows98/linters/ts-config/vite",
+		"@windows98/linters/ts-config/vite"
 	],
-	"include": [
-		"./**/*"
-	],
+	"include": ["./**/*"]
 }

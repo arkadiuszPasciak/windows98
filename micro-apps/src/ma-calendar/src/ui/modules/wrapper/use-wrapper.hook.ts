@@ -8,8 +8,7 @@ export function useWrapper() {
 
 	useEffect(() => {
 		calendarDomain.generateCalendar()
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [])
+	})
 
 	const dictionary = useMemo(
 		() => ({
