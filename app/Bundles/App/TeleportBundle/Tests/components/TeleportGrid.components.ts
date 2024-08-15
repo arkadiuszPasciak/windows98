@@ -6,7 +6,7 @@ describe("[TeleportBundle]<Components>(TeleportGrid)", async () => {
 
 		cy.mount(TeleportGrid, {
 			slots: {
-				default: "<div class=\"test-teleport\">teleport</div>",
+				default: '<div class="test-teleport">teleport</div>',
 			},
 		})
 

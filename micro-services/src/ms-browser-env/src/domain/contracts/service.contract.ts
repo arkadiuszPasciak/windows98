@@ -5,8 +5,8 @@ import type { TOperatingSystemAll } from "../models/operating.model"
 import type { IScreenInformation } from "../models/screen.model"
 
 export default interface BrowserEnvServiceContract {
-    getBrowserName(): Maybe<TBrowserName>
-    getDeviceType(): Maybe<TDevices>
-    getOperatingSystem(): Maybe<TOperatingSystemAll>
-    getScreenInformation(): Maybe<IScreenInformation>
+	getBrowserName(): Maybe<TBrowserName>
+	getDeviceType(): Maybe<TDevices>
+	getOperatingSystem(): Maybe<TOperatingSystemAll>
+	getScreenInformation(): Maybe<IScreenInformation>
 }

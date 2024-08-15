@@ -1,7 +1,7 @@
-import { observer } from "mobx-react-lite"
 import { DSFrame } from "@windows98/design-system"
-import { useWrapper } from "./use-wrapper.hook"
+import { observer } from "mobx-react-lite"
 import { TimezoneSwitcher } from "../timezone-switcher"
+import { useWrapper } from "./use-wrapper.hook"
 
 export const Wrapper = observer(() => {
 	const { title } = useWrapper()

@@ -1,9 +1,6 @@
-import { describe, it, expect } from "vitest"
+import { describe, expect, it } from "vitest"
 import { TimerDomain } from "../../src/domain/domains"
-import {
-	ETimerStatus,
-	ETimerTime,
-} from "../../src/domain/models"
+import { ETimerStatus, ETimerTime } from "../../src/domain/models"
 
 describe("TimerDomain", () => {
 	const timerDomain = new TimerDomain()

@@ -26,9 +26,9 @@
 </template>
 
 <script setup lang="ts">
-import { PropType, ref } from "vue"
+import type { TUITabsProps } from "@APP|Bundles/UITabsBundle/Supports/UITabs.supports"
+import { type PropType, ref } from "vue"
 import { useI18n } from "vue-i18n"
-import { TUITabsProps } from "@APP|Bundles/UITabsBundle/Supports/UITabs.supports"
 
 defineProps({
 	tabs: {

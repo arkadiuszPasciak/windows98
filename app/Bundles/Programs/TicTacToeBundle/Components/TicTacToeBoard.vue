@@ -23,12 +23,12 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue"
-import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
 import { TicTacToeBoard } from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeBoard.services"
 import { useTicTacToeStore } from "@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores"
 import { ETicTacToeStatusGame } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports"
-import { TTicTacToeRadioDimension } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
+import type { TTicTacToeRadioDimension } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import type { PropType } from "vue"
 
 const props = defineProps({
 	dimensionType: {

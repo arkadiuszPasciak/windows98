@@ -2,7 +2,7 @@ import TicTacToeChooseDimension from "@APP|Bundles/TicTacToeBundle/Components/Ti
 import TicTacToeChooseDimensionTesting from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeChooseDimensionTesting.services"
 
 const TicTacToeChooseDimensionTestingService =
-  new TicTacToeChooseDimensionTesting()
+	new TicTacToeChooseDimensionTesting()
 
 describe("[TicTacToeBundle]<Components>(TicTacToeChooseDimension)", () => {
 	it("renders correctly component", () => {

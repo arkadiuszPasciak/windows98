@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./ds-button.module.scss"
-import { DSButtonProps } from "./ds-button.type"
+import type { DSButtonProps } from "./ds-button.type"
 
 export const DSButton = ({
 	size = "medium",

@@ -1,12 +1,12 @@
-import { useState, useEffect, type ChangeEvent } from "react"
+import { type ChangeEvent, useEffect, useState } from "react"
 import type { UseDSInputProps } from "./index"
 
-export function useDSInput({initialValue, onChange}: UseDSInputProps) {
+export function useDSInput({ initialValue, onChange }: UseDSInputProps) {
 	const [value, setValue] = useState(initialValue)
 
 	useEffect(() => {
 		setValue(initialValue)
-	}, [initialValue, setValue])
+	}, [initialValue])
 
 	const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
 		const newValue = event.target.value

@@ -1,6 +1,6 @@
-import type { ICalendarDays } from "../../domain/models"
-import type { CalendarRepositoryContract } from "../../domain/contracts"
 import type { Maybe } from "@windows98/toolkit"
+import type { CalendarRepositoryContract } from "../../domain/contracts"
+import type { ICalendarDays } from "../../domain/models"
 
 export class CalendarRepository implements CalendarRepositoryContract {
 	private date: Maybe<Date>
@@ -31,7 +31,12 @@ export class CalendarRepository implements CalendarRepositoryContract {
 	public generateDays(): void {
 		const days = [] as Array<ICalendarDays>
 
-		if (this.date === null || this.firstDayMonth === null || this.lastDateMonth === null) throw new Error("Date not found")
+		if (
+			this.date === null ||
+			this.firstDayMonth === null ||
+			this.lastDateMonth === null
+		)
+			throw new Error("Date not found")
 
 		for (let index = this.firstDayMonth; index > 0; index--) {
 			days.push({
@@ -72,13 +77,15 @@ export class CalendarRepository implements CalendarRepositoryContract {
 	}
 
 	private getFirstDayMonth(): void {
-		if (this.year === null || this.month === null) throw new Error("Date not found")
+		if (this.year === null || this.month === null)
+			throw new Error("Date not found")
 
 		this.firstDayMonth = new Date(this.year, this.month, 1).getDay()
 	}
 
 	private getLastDateMonth(): void {
-		if (this.year === null || this.month === null) throw new Error("Date not found")
+		if (this.year === null || this.month === null)
+			throw new Error("Date not found")
 
 		this.lastDateMonth = new Date(this.year, this.month + 1, 0).getDate()
 	}

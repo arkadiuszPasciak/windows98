@@ -1,8 +1,8 @@
-import { defineStore } from "pinia"
-import {
+import type {
 	IProgramStoresActions,
 	IProgramStoresState,
 } from "@APP|Bundles/ProgramBundle/Supports/ProgramStores.supports"
+import { defineStore } from "pinia"
 
 export const useProgramStore = defineStore("program", {
 	state: () =>
@@ -15,7 +15,7 @@ export const useProgramStore = defineStore("program", {
 			modalShutDown: false,
 			modalTicTacToe: false,
 			modalTimer: false,
-		} as IProgramStoresState),
+		}) as IProgramStoresState,
 	actions: {
 		updateCalculatorModal(status) {
 			this.modalCalculator = status

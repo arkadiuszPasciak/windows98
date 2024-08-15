@@ -30,8 +30,8 @@
 </template>
 
 <script setup lang="ts">
-import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
 import { generateDataTestName } from "@APP|Bundles/UIRadioBundle/Services/UIRadio.services"
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
 
 defineProps({
 	modelValue: {

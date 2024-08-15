@@ -1,5 +1,5 @@
 // import { flushPromises, mount } from '@vue/test-utils'
-import { it, describe } from "vitest"
+import { describe, it } from "vitest"
 // import { createTestingPinia } from '@pinia/testing'
 // import Start from '@APP|Bundles/StartBundle/Components/Start.vue'
 

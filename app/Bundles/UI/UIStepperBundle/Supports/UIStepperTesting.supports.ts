@@ -1,8 +1,8 @@
 export interface IUIStepperStoresState {
-  value: number
+	value: number
 }
 
 export interface IUIStepperStoresActions extends IUIStepperStoresState {
-  increaseValue(): void
-  decreaseValue(): void
+	increaseValue(): void
+	decreaseValue(): void
 }

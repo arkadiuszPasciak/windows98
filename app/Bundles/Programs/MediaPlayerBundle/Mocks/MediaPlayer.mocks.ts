@@ -1,4 +1,4 @@
-import { IMediaPlayerVideos } from "@APP|Bundles/MediaPlayerBundle/Supports/MediaPlayer.supports"
+import type { IMediaPlayerVideos } from "@APP|Bundles/MediaPlayerBundle/Supports/MediaPlayer.supports"
 
 export const mediaPlayerVideos = [
 	{

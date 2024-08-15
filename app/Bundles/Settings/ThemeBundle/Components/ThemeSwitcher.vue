@@ -9,14 +9,14 @@
 </template>
 
 <script setup lang="ts">
-import UISelect from "@APP|Bundles/UISelectBundle/Components/UISelect.vue"
 import { MThemeOptions } from "@APP|Bundles/ThemeBundle/Mocks/Theme.mocks"
 import {
-	updateThemeClass,
-	setThemeColorInStorage,
 	getThemeColorFromStorage,
+	setThemeColorInStorage,
+	updateThemeClass,
 } from "@APP|Bundles/ThemeBundle/Services/Theme.services"
-import { TThemes } from "@APP|Bundles/ThemeBundle/Supports/Theme.supports"
+import type { TThemes } from "@APP|Bundles/ThemeBundle/Supports/Theme.supports"
+import UISelect from "@APP|Bundles/UISelectBundle/Components/UISelect.vue"
 
 const themeValue = getThemeColorFromStorage()
 

@@ -1,7 +1,7 @@
-import { defineConfig } from "vite"
-import dts from "vite-plugin-dts"
 import react from "@vitejs/plugin-react"
+import { defineConfig } from "vite"
 import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js"
+import dts from "vite-plugin-dts"
 
 export default defineConfig({
 	build: {
@@ -10,7 +10,7 @@ export default defineConfig({
 			entry: "src/wc/index.wc.ts",
 			name: "micro-apps",
 			fileName: "index",
-			formats: ["es", "umd"]
+			formats: ["es", "umd"],
 		},
 		emptyOutDir: true,
 		outDir: "build",
@@ -30,7 +30,7 @@ export default defineConfig({
 					react: "react",
 					"react-dom": "reactDOM",
 					"react-i18next": "reactI18next",
-					"mobx": "mobx",
+					mobx: "mobx",
 					"mobx-react-lite": "mobxReactLite",
 				},
 			},
@@ -45,9 +45,5 @@ export default defineConfig({
 			},
 		},
 	},
-	plugins: [
-		cssInjectedByJsPlugin(),
-		dts({ include: ["src/wc"] }),
-		react()
-	],
+	plugins: [cssInjectedByJsPlugin(), dts({ include: ["src/wc"] }), react()],
 })

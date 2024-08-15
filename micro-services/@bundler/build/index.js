@@ -150,13 +150,19 @@ class w {
   getStore(e) {
     if (!this.database)
       throw new Error("Database not open");
-    return this.database.transaction(this.storeName, e).objectStore(this.storeName);
+    return this.database.transaction(
+      this.storeName,
+      e
+    ).objectStore(this.storeName);
   }
 }
 class p {
   constructor(e, t) {
     a(this, "databaseRepository");
-    this.databaseName = e, this.storeName = t, this.databaseRepository = new w(this.databaseName, this.storeName);
+    this.databaseName = e, this.storeName = t, this.databaseRepository = new w(
+      this.databaseName,
+      this.storeName
+    );
   }
   async open() {
     return this.databaseRepository.open();

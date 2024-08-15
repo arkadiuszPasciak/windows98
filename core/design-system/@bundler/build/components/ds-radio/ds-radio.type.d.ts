@@ -1,4 +1,4 @@
-import { DSDefaultProps } from "../../types/component.type";
+import type { DSDefaultProps } from "../../types/component.type";
 export interface DSRadioProps extends DSDefaultProps {
     id: string;
     name: string;

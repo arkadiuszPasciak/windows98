@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
 import type { UseDSStepperProps } from "./ds-stepper.type"
 
 export function useDSStepper({
 	modelValue,
 	onIncrease,
-	onDecrease
+	onDecrease,
 }: UseDSStepperProps) {
 	const [value, setValue] = useState(modelValue)
 

@@ -1,4 +1,4 @@
-import { expect, describe, test } from "vitest"
+import { describe, expect, test } from "vitest"
 import { CalendarDomain } from "../../src/domain/domains"
 
 describe("CalendarDomain", () => {

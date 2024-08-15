@@ -1,4 +1,4 @@
-import {
+import type {
 	ITicTacToeCurrentBoard3x3,
 	ITicTacToeLengthOfBoard,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeBoard.supports"

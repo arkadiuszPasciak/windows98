@@ -18,12 +18,12 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from "vue-i18n"
-import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
-import TicTacToeChoosePlayer from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeChoosePlayer.vue"
 import TicTacToeChooseDimension from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeChooseDimension.vue"
+import TicTacToeChoosePlayer from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeChoosePlayer.vue"
 import TicTacToeEnterYourName from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeEnterYourName.vue"
 import { useTicTacToeStore } from "@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
 

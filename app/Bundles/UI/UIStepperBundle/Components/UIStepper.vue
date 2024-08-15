@@ -39,25 +39,25 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue"
 import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
 import UIInput from "@APP|Bundles/UIInputBundle/Components/UIInput.vue"
 import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
+import { computed } from "vue"
 
-  interface UIStepperProps {
-    input: {
-      id: string
-    }
-    fieldModification: boolean
-    modelValue: number
-    disabled?: boolean
-  }
+interface UIStepperProps {
+	input: {
+		id: string
+	}
+	fieldModification: boolean
+	modelValue: number
+	disabled?: boolean
+}
 
-  interface UIStepperEmits {
-    (e: "increase"): void
-    (e: "decrease"): void
-    (e: "value", value: number): void
-  }
+interface UIStepperEmits {
+	(e: "increase"): void
+	(e: "decrease"): void
+	(e: "value", value: number): void
+}
 
 const props = defineProps<UIStepperProps>()
 

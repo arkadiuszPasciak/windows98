@@ -1,4 +1,4 @@
-import { expect, describe, it, beforeEach } from "vitest"
+import { beforeEach, describe, expect, it } from "vitest"
 import { CalculatorDomain } from "../../src/domain/domains"
 import { ECalculatorSymbol } from "../../src/domain/models"
 

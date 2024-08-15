@@ -1,7 +1,7 @@
-import { expect, it, describe, vi, test } from "vitest"
+import { describe, expect, it, test, vi } from "vitest"
 import BrowserEnvService from "../../src/domain/services/browser-env.service"
 
-export const MUserAgentMocks = {
+const MUserAgentMocks = {
 	chromeMacOSXDesktop:
 		"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
 	safariIOSMobile:
@@ -14,7 +14,7 @@ export const MUserAgentMocks = {
 		"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 OPR/96.0.4640.0",
 }
 
-export const MUserAgentBrowserNames = [
+const MUserAgentBrowserNames = [
 	{
 		userAgent: MUserAgentMocks.chromeMacOSXDesktop,
 		expected: "Chrome",
@@ -29,7 +29,7 @@ export const MUserAgentBrowserNames = [
 	},
 ]
 
-export const MUserAgentDeviceTypes = [
+const MUserAgentDeviceTypes = [
 	{
 		userAgent: MUserAgentMocks.chromeMacOSXDesktop,
 		expected: "desktop",
@@ -40,7 +40,7 @@ export const MUserAgentDeviceTypes = [
 	},
 ]
 
-export const MUserAgentOperatingSystems = [
+const MUserAgentOperatingSystems = [
 	{
 		userAgent: MUserAgentMocks.chromeMacOSXDesktop,
 		expected: "Mac OS X",

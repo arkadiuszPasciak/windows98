@@ -1,6 +1,6 @@
-import { expect, it, describe } from "vitest"
-import { setActivePinia, createPinia } from "pinia"
 import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
+import { createPinia, setActivePinia } from "pinia"
+import { describe, expect, it } from "vitest"
 
 setActivePinia(createPinia())
 const store = useProgramStore()

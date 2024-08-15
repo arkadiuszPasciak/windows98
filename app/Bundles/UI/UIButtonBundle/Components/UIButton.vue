@@ -12,13 +12,13 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue"
+import type { PropType } from "vue"
 
 defineProps({
 	size: {
 		type: String as PropType<
-      "small" | "medium" | "media-player" | "tic-tac-toe"
-    >,
+			"small" | "medium" | "media-player" | "tic-tac-toe"
+		>,
 		default: "medium",
 	},
 	disabled: {

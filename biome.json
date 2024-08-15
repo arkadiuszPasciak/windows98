@@ -1,0 +1,3 @@
+{
+	"extends": ["./core/configs/src/configs/biome/shared.config.json"]
+}

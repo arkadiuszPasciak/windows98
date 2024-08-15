@@ -1,4 +1,4 @@
-import { ITestingSettings } from "@APP|Bundles/TestingBundle/Supports/Testing.supports"
+import type { ITestingSettings } from "@APP|Bundles/TestingBundle/Supports/Testing.supports"
 
 export default class Testing {
 	private settings: ITestingSettings
@@ -7,7 +7,7 @@ export default class Testing {
 		this.settings = {
 			mainClassName: settings.mainClassName,
 			modalTitleClassName:
-        settings.modalTitleClassName ?? "[data-test=\"modal-header-title\"]",
+				settings.modalTitleClassName ?? '[data-test="modal-header-title"]',
 			modalTitleText: settings.modalTitleText ?? null,
 			viewportHeight: settings.viewportHeight,
 			viewportWidth: settings.viewportWidth,

@@ -1,7 +1,7 @@
-(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_wc6ff_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_wc6ff_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper_wc6ff_96{display:grid;row-gap:15px;padding:13px 22px 10px;background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1hx69_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1hx69_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._screen_1hx69_96{background-color:var(--background-color-white);color:var(--text-color);width:100%;height:20px;padding:5px;text-align:right;box-shadow:var(--border-field);font:400 11px/13px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_uzbrq_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_uzbrq_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._keypad_uzbrq_96{display:grid;justify-content:center;grid-template-rows:repeat(3,30px);grid-template-columns:repeat(4,35px);gap:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_9arum_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_9arum_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._button_9arum_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);width:35px;height:30px}@media (hover: hover){._button_9arum_96{cursor:pointer}}._button_9arum_96:disabled{pointer-events:none;opacity:.5}._button_9arum_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._primary_9arum_122{color:#00f}._secondary_9arum_126{color:#fe0000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1v33v_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1v33v_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._week-days_1v33v_96{display:grid;height:20px;grid-template-columns:repeat(7,1fr);background-color:gray;color:var(--text-color-3)}._day_1v33v_104{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_12et3_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_12et3_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._month-days_12et3_96{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(6,1fr)}._day_12et3_102{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}._day-active_12et3_107{color:#fff;background-color:navy}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1xeii_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1xeii_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._days_1xeii_96{width:160px;height:145px;box-shadow:var(--border-field);padding:2px;text-align:center;background-color:var(--background-color-white)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_s3u64_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_s3u64_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper_s3u64_96{display:grid;grid-template-columns:90px 70px;background-color:var(--background-color);gap:10px 0;max-width:180px;width:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_15w9q_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_15w9q_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._controller_15w9q_96{display:flex;justify-content:center;align-items:center;column-gap:15px;margin-bottom:15px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_covgd_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_covgd_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._player_covgd_96{display:flex;column-gap:20px;justify-content:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_2r2rz_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_2r2rz_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._presets_2r2rz_96{display:flex;justify-content:center;align-items:center;gap:8px;grid-area:1/1/2/7;margin-right:0;margin-left:0}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_ddbl8_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_ddbl8_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._screen_ddbl8_96{display:flex;grid-area:3/1/4/7;justify-self:center;background-color:var(--background-color-white);max-width:203px;width:100%;height:48px;padding:5px;box-shadow:var(--border-field);font:400 39px/44px MSSansSerifBold,sans-serif;letter-spacing:3px;color:var(--text-color);-webkit-user-select:none;user-select:none;margin:0 auto 15px}._time_ddbl8_113{width:55px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1h4hz_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1h4hz_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper_1h4hz_96{background-color:var(--background-color);padding:0 10px 10px;max-width:385px;width:100%}')),document.head.appendChild(o)}}catch(f){console.error("vite-plugin-css-injected-by-js",f)}})();
+(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_9arum_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_9arum_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._button_9arum_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);width:35px;height:30px}@media (hover: hover){._button_9arum_96{cursor:pointer}}._button_9arum_96:disabled{pointer-events:none;opacity:.5}._button_9arum_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._primary_9arum_122{color:#00f}._secondary_9arum_126{color:#fe0000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_uzbrq_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_uzbrq_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._keypad_uzbrq_96{display:grid;justify-content:center;grid-template-rows:repeat(3,30px);grid-template-columns:repeat(4,35px);gap:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1hx69_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1hx69_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._screen_1hx69_96{background-color:var(--background-color-white);color:var(--text-color);width:100%;height:20px;padding:5px;text-align:right;box-shadow:var(--border-field);font:400 11px/13px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_wc6ff_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_wc6ff_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper_wc6ff_96{display:grid;row-gap:15px;padding:13px 22px 10px;background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1xeii_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1xeii_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._days_1xeii_96{width:160px;height:145px;box-shadow:var(--border-field);padding:2px;text-align:center;background-color:var(--background-color-white)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_12et3_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_12et3_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._month-days_12et3_96{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(6,1fr)}._day_12et3_102{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}._day-active_12et3_107{color:#fff;background-color:navy}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1v33v_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1v33v_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._week-days_1v33v_96{display:grid;height:20px;grid-template-columns:repeat(7,1fr);background-color:gray;color:var(--text-color-3)}._day_1v33v_104{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_s3u64_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_s3u64_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper_s3u64_96{display:grid;grid-template-columns:90px 70px;background-color:var(--background-color);gap:10px 0;max-width:180px;width:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_15w9q_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_15w9q_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._controller_15w9q_96{display:flex;justify-content:center;align-items:center;column-gap:15px;margin-bottom:15px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_covgd_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_covgd_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._player_covgd_96{display:flex;column-gap:20px;justify-content:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_2r2rz_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_2r2rz_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._presets_2r2rz_96{display:flex;justify-content:center;align-items:center;gap:8px;grid-area:1/1/2/7;margin-right:0;margin-left:0}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_ddbl8_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_ddbl8_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._screen_ddbl8_96{display:flex;grid-area:3/1/4/7;justify-self:center;background-color:var(--background-color-white);max-width:203px;width:100%;height:48px;padding:5px;box-shadow:var(--border-field);font:400 39px/44px MSSansSerifBold,sans-serif;letter-spacing:3px;color:var(--text-color);-webkit-user-select:none;user-select:none;margin:0 auto 15px}._time_ddbl8_113{width:55px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1h4hz_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1h4hz_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper_1h4hz_96{background-color:var(--background-color);padding:0 10px 10px;max-width:385px;width:100%}')),document.head.appendChild(o)}}catch(f){console.error("vite-plugin-css-injected-by-js",f)}})();
 var Ot = Object.defineProperty;
 var $t = (t, r, c) => r in t ? Ot(t, r, { enumerable: !0, configurable: !0, writable: !0, value: c }) : t[r] = c;
-var S = (t, r, c) => ($t(t, typeof r != "symbol" ? r + "" : r, c), c);
+var E = (t, r, c) => ($t(t, typeof r != "symbol" ? r + "" : r, c), c);
 import o, { createContext, useContext, useState, useEffect, useMemo } from "react";
 import require$$0 from "react-dom";
 import i18next from "i18next";
@@ -54,17 +54,17 @@ const C = {
   json: P
 }, A$1 = Symbol.for("r2wc.render"), h = Symbol.for("r2wc.connected"), p = Symbol.for("r2wc.context"), i$1 = Symbol.for("r2wc.props");
 function z$1(t, r, c) {
-  var d, E, M;
+  var d, S, k;
   r.props || (r.props = t.propTypes ? Object.keys(t.propTypes) : []);
-  const $ = (Array.isArray(r.props) ? r.props.slice() : Object.keys(r.props)).filter((k) => k !== "container"), F = {}, R = {}, H = {};
-  for (const k of $) {
-    F[k] = Array.isArray(r.props) ? "string" : r.props[k];
-    const U = J(k);
-    R[k] = U, H[U] = k;
+  const $ = (Array.isArray(r.props) ? r.props.slice() : Object.keys(r.props)).filter((D) => D !== "container"), F = {}, R = {}, H = {};
+  for (const D of $) {
+    F[D] = Array.isArray(r.props) ? "string" : r.props[D];
+    const U = J(D);
+    R[D] = U, H[U] = D;
   }
   class L extends HTMLElement {
     constructor() {
-      super(), b(this, d, !0), b(this, E), b(this, M, {}), b(this, "container"), r.shadow ? this.container = this.attachShadow({
+      super(), b(this, d, !0), b(this, S), b(this, k, {}), b(this, "container"), r.shadow ? this.container = this.attachShadow({
         mode: r.shadow
       }) : this.container = this, this[i$1].container = this.container;
       for (const U of $) {
@@ -85,7 +85,7 @@ function z$1(t, r, c) {
       const ae = H[U], ie = F[ae], Z = w[ie];
       ae in F && Z != null && Z.parse && (this[i$1][ae] = Z.parse(Q, this), this[A$1]());
     }
-    [(d = h, E = p, M = i$1, A$1)]() {
+    [(d = h, S = p, k = i$1, A$1)]() {
       this[h] && (this[p] ? c.update(this[p], this[i$1]) : this[p] = c.mount(
         this.container,
         t,
@@ -93,16 +93,16 @@ function z$1(t, r, c) {
       ));
     }
   }
-  for (const k of $) {
-    const U = R[k], Y = F[k];
-    Object.defineProperty(L.prototype, k, {
+  for (const D of $) {
+    const U = R[D], Y = F[D];
+    Object.defineProperty(L.prototype, D, {
       enumerable: !0,
       configurable: !0,
       get() {
-        return this[i$1][k];
+        return this[i$1][D];
       },
       set(Q) {
-        this[i$1][k] = Q;
+        this[i$1][D] = Q;
         const ae = w[Y];
         if (ae != null && ae.stringify) {
           const ie = ae.stringify(Q);
@@ -117,8 +117,8 @@ function J(t = "") {
   return t.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
 }
 function f(t, r, c) {
-  const d = createRoot(t), E = o.createElement(r, c);
-  return d.render(E), {
+  const d = createRoot(t), S = o.createElement(r, c);
+  return d.render(S), {
     root: d,
     ReactComponent: r
   };
@@ -329,16 +329,16 @@ function requireReactJsxRuntime_production_min() {
   if (hasRequiredReactJsxRuntime_production_min)
     return reactJsxRuntime_production_min;
   hasRequiredReactJsxRuntime_production_min = 1;
-  var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.fragment"), d = Object.prototype.hasOwnProperty, E = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, M = { key: !0, ref: !0, __self: !0, __source: !0 };
+  var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.fragment"), d = Object.prototype.hasOwnProperty, S = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, k = { key: !0, ref: !0, __self: !0, __source: !0 };
   function $(F, R, H) {
-    var L, k = {}, U = null, Y = null;
+    var L, D = {}, U = null, Y = null;
     H !== void 0 && (U = "" + H), R.key !== void 0 && (U = "" + R.key), R.ref !== void 0 && (Y = R.ref);
     for (L in R)
-      d.call(R, L) && !M.hasOwnProperty(L) && (k[L] = R[L]);
+      d.call(R, L) && !k.hasOwnProperty(L) && (D[L] = R[L]);
     if (F && F.defaultProps)
       for (L in R = F.defaultProps, R)
-        k[L] === void 0 && (k[L] = R[L]);
-    return { $$typeof: r, type: F, key: U, ref: Y, props: k, _owner: E.current };
+        D[L] === void 0 && (D[L] = R[L]);
+    return { $$typeof: r, type: F, key: U, ref: Y, props: D, _owner: S.current };
   }
   return reactJsxRuntime_production_min.Fragment = c, reactJsxRuntime_production_min.jsx = $, reactJsxRuntime_production_min.jsxs = $, reactJsxRuntime_production_min;
 }
@@ -355,7 +355,7 @@ var reactJsxRuntime_development = {};
 var hasRequiredReactJsxRuntime_development;
 function requireReactJsxRuntime_development() {
   return hasRequiredReactJsxRuntime_development || (hasRequiredReactJsxRuntime_development = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.portal"), d = Symbol.for("react.fragment"), E = Symbol.for("react.strict_mode"), M = Symbol.for("react.profiler"), $ = Symbol.for("react.provider"), F = Symbol.for("react.context"), R = Symbol.for("react.forward_ref"), H = Symbol.for("react.suspense"), L = Symbol.for("react.suspense_list"), k = Symbol.for("react.memo"), U = Symbol.for("react.lazy"), Y = Symbol.for("react.offscreen"), Q = Symbol.iterator, ae = "@@iterator";
+    var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.portal"), d = Symbol.for("react.fragment"), S = Symbol.for("react.strict_mode"), k = Symbol.for("react.profiler"), $ = Symbol.for("react.provider"), F = Symbol.for("react.context"), R = Symbol.for("react.forward_ref"), H = Symbol.for("react.suspense"), L = Symbol.for("react.suspense_list"), D = Symbol.for("react.memo"), U = Symbol.for("react.lazy"), Y = Symbol.for("react.offscreen"), Q = Symbol.iterator, ae = "@@iterator";
     function ie(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -383,7 +383,7 @@ function requireReactJsxRuntime_development() {
     var et = !1, tt = !1, rt = !1, at = !1, nt = !1, Se;
     Se = Symbol.for("react.module.reference");
     function ot(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === d || e === M || nt || e === E || e === H || e === L || at || e === Y || et || tt || rt || typeof e == "object" && e !== null && (e.$$typeof === U || e.$$typeof === k || e.$$typeof === $ || e.$$typeof === F || e.$$typeof === R || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === d || e === k || nt || e === S || e === H || e === L || at || e === Y || et || tt || rt || typeof e == "object" && e !== null && (e.$$typeof === U || e.$$typeof === D || e.$$typeof === $ || e.$$typeof === F || e.$$typeof === R || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -411,9 +411,9 @@ function requireReactJsxRuntime_development() {
           return "Fragment";
         case c:
           return "Portal";
-        case M:
+        case k:
           return "Profiler";
-        case E:
+        case S:
           return "StrictMode";
         case H:
           return "Suspense";
@@ -430,7 +430,7 @@ function requireReactJsxRuntime_development() {
             return we(l._context) + ".Provider";
           case R:
             return it(e, e.render, "ForwardRef");
-          case k:
+          case D:
             var u = e.displayName || null;
             return u !== null ? u : q(e.type) || "Memo";
           case U: {
@@ -575,18 +575,18 @@ function requireReactJsxRuntime_development() {
         if (K && u && typeof K.stack == "string") {
           for (var y = K.stack.split(`
 `), B = u.stack.split(`
-`), D = y.length - 1, O = B.length - 1; D >= 1 && O >= 0 && y[D] !== B[O]; )
+`), M = y.length - 1, O = B.length - 1; M >= 1 && O >= 0 && y[M] !== B[O]; )
             O--;
-          for (; D >= 1 && O >= 0; D--, O--)
-            if (y[D] !== B[O]) {
-              if (D !== 1 || O !== 1)
+          for (; M >= 1 && O >= 0; M--, O--)
+            if (y[M] !== B[O]) {
+              if (M !== 1 || O !== 1)
                 do
-                  if (D--, O--, O < 0 || y[D] !== B[O]) {
+                  if (M--, O--, O < 0 || y[M] !== B[O]) {
                     var G = `
-` + y[D].replace(" at new ", " at ");
+` + y[M].replace(" at new ", " at ");
                     return e.displayName && G.includes("<anonymous>") && (G = G.replace("<anonymous>", e.displayName)), typeof e == "function" && ue.set(e, G), G;
                   }
-                while (D >= 1 && O >= 0);
+                while (M >= 1 && O >= 0);
               break;
             }
         }
@@ -620,7 +620,7 @@ function requireReactJsxRuntime_development() {
         switch (e.$$typeof) {
           case R:
             return ut(e.render);
-          case k:
+          case D:
             return de(e.type, n, l);
           case U: {
             var u = e, _ = u._payload, g = u._init;
@@ -652,8 +652,8 @@ function requireReactJsxRuntime_development() {
                 throw B.name = "Invariant Violation", B;
               }
               y = e[v](n, v, u, l, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (D) {
-              y = D;
+            } catch (M) {
+              y = M;
             }
             y && !(y instanceof Error) && (pe(_), W("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", u || "React class", l, v, typeof y), pe(null)), y instanceof Error && !(y.message in Fe) && (Fe[y.message] = !0, pe(_), W("Failed %s type: %s", l, y.message), pe(null));
           }
@@ -770,9 +770,9 @@ function requireReactJsxRuntime_development() {
         for (g in n)
           fe.call(n, g) && !xt.hasOwnProperty(g) && (v[g] = n[g]);
         if (e && e.defaultProps) {
-          var D = e.defaultProps;
-          for (g in D)
-            v[g] === void 0 && (v[g] = D[g]);
+          var M = e.defaultProps;
+          for (g in M)
+            v[g] === void 0 && (v[g] = M[g]);
         }
         if (y || B) {
           var O = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
@@ -872,7 +872,7 @@ Check the top-level render call using <` + l + ">.");
           l = n.propTypes;
         else if (typeof n == "object" && (n.$$typeof === R || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        n.$$typeof === k))
+        n.$$typeof === D))
           l = n.propTypes;
         else
           return;
@@ -907,8 +907,8 @@ Check the top-level render call using <` + l + ">.");
           (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (y += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
           var B = Tt(_);
           B ? y += B : y += Ye();
-          var D;
-          e === null ? D = "null" : be(e) ? D = "array" : e !== void 0 && e.$$typeof === r ? (D = "<" + (q(e.type) || "Unknown") + " />", y = " Did you accidentally export a JSX literal instead of a component?") : D = typeof e, W("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", D, y);
+          var M;
+          e === null ? M = "null" : be(e) ? M = "array" : e !== void 0 && e.$$typeof === r ? (M = "<" + (q(e.type) || "Unknown") + " />", y = " Did you accidentally export a JSX literal instead of a component?") : M = typeof e, W("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", M, y);
         }
         var O = wt(e, n, l, _, g);
         if (O == null)
@@ -977,58 +977,36 @@ class CalculatorService {
 }
 class CalculatorDomain {
   constructor() {
-    S(this, "value", "0");
-    S(this, "calculatorService", new CalculatorService());
-    S(this, "addNumber", (r) => {
-      this.calculatorService.isValueEqual(this.value, "0", ECalculatorDirect.FIRST) && !this.calculatorService.isValueEqual(this.value, "0.", ECalculatorDirect.FIRST) && this.value.length === 1 ? this.value = String(r) : this.value += String(r);
+    E(this, "value", "0");
+    E(this, "calculatorService", new CalculatorService());
+    E(this, "addNumber", (r) => {
+      this.calculatorService.isValueEqual(
+        this.value,
+        "0",
+        ECalculatorDirect.FIRST
+      ) && !this.calculatorService.isValueEqual(
+        this.value,
+        "0.",
+        ECalculatorDirect.FIRST
+      ) && this.value.length === 1 ? this.value = String(r) : this.value += String(r);
     });
-    S(this, "addDot", () => {
-      this.calculatorService.isDotExist(this.value) || this.calculatorService.isMathematicalSignLast(this.value) || this.calculatorService.isValueEqual(this.value, ".", ECalculatorDirect.LAST) || (this.value += ".");
+    E(this, "addDot", () => {
+      this.calculatorService.isDotExist(this.value) || this.calculatorService.isMathematicalSignLast(this.value) || this.calculatorService.isValueEqual(
+        this.value,
+        ".",
+        ECalculatorDirect.LAST
+      ) || (this.value += ".");
     });
-    S(this, "addSymbol", (r) => {
+    E(this, "addSymbol", (r) => {
       this.value === "0." || this.calculatorService.isMathematicalSignLast(this.value) || (this.value += r);
     });
-    S(this, "summResult", () => {
+    E(this, "summResult", () => {
       this.value = this.calculatorService.summResult(this.value);
     });
     makeAutoObservable(this);
   }
 }
-const calculatorDomain = new CalculatorDomain(), DomainContext$3 = createContext(calculatorDomain), wrapper$2 = "_wrapper_wc6ff_96", styles$c = {
-  "theme-light": "_theme-light_wc6ff_16",
-  "theme-dark": "_theme-dark_wc6ff_36",
-  wrapper: wrapper$2
-};
-function useCalculator() {
-  return {
-    calculatorDomain: useContext(DomainContext$3)
-  };
-}
-function useScreen$1() {
-  const { calculatorDomain: t } = useCalculator();
-  return {
-    value: t.value
-  };
-}
-const screen$1 = "_screen_1hx69_96", styles$b = {
-  "theme-light": "_theme-light_1hx69_16",
-  "theme-dark": "_theme-dark_1hx69_36",
-  screen: screen$1
-}, Screen$1 = observer(() => {
-  const { value: t } = useScreen$1();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "span",
-    {
-      className: styles$b.screen,
-      "data-testid": "ma-calculator-screen",
-      children: t ?? "ERROR"
-    }
-  );
-}), keypad = "_keypad_uzbrq_96", styles$a = {
-  "theme-light": "_theme-light_uzbrq_16",
-  "theme-dark": "_theme-dark_uzbrq_36",
-  keypad
-}, button = "_button_9arum_96", primary = "_primary_9arum_122", secondary = "_secondary_9arum_126", styles$9 = {
+const calculatorDomain = new CalculatorDomain(), DomainContext$3 = createContext(calculatorDomain), button = "_button_9arum_96", primary = "_primary_9arum_122", secondary = "_secondary_9arum_126", styles$c = {
   "theme-light": "_theme-light_9arum_16",
   "theme-dark": "_theme-dark_9arum_36",
   button,
@@ -1041,13 +1019,22 @@ const screen$1 = "_screen_1hx69_96", styles$b = {
 }) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   "button",
   {
-    className: `${styles$9.button} ${styles$9[c]}`,
+    className: `${styles$c.button} ${styles$c[c]}`,
     "data-testid": `ma-calculator-operation-button-${t}`,
     onClick: r,
     type: "button",
     children: t
   }
-);
+), keypad = "_keypad_uzbrq_96", styles$b = {
+  "theme-light": "_theme-light_uzbrq_16",
+  "theme-dark": "_theme-dark_uzbrq_36",
+  keypad
+};
+function useCalculator() {
+  return {
+    calculatorDomain: useContext(DomainContext$3)
+  };
+}
 function useKeypad() {
   const { calculatorDomain: t } = useCalculator();
   return {
@@ -1058,16 +1045,11 @@ function useKeypad() {
   };
 }
 const Keypad = observer(() => {
-  const {
-    addDot: t,
-    addNumber: r,
-    addSymbol: c,
-    summResult: d
-  } = useKeypad();
+  const { addDot: t, addNumber: r, addSymbol: c, summResult: d } = useKeypad();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
-      className: styles$a.keypad,
+      className: styles$b.keypad,
       "data-testid": "ma-calculator-keypad",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -1201,10 +1183,35 @@ const Keypad = observer(() => {
       ]
     }
   );
-}), Wrapper$3 = () => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+}), screen$1 = "_screen_1hx69_96", styles$a = {
+  "theme-light": "_theme-light_1hx69_16",
+  "theme-dark": "_theme-dark_1hx69_36",
+  screen: screen$1
+};
+function useScreen$1() {
+  const { calculatorDomain: t } = useCalculator();
+  return {
+    value: t.value
+  };
+}
+const Screen$1 = observer(() => {
+  const { value: t } = useScreen$1();
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "span",
+    {
+      className: styles$a.screen,
+      "data-testid": "ma-calculator-screen",
+      children: t ?? "ERROR"
+    }
+  );
+}), wrapper$2 = "_wrapper_wc6ff_96", styles$9 = {
+  "theme-light": "_theme-light_wc6ff_16",
+  "theme-dark": "_theme-dark_wc6ff_36",
+  wrapper: wrapper$2
+}, Wrapper$3 = () => /* @__PURE__ */ jsxRuntimeExports.jsxs(
   "div",
   {
-    className: styles$c.wrapper,
+    className: styles$9.wrapper,
     "data-testid": "ma-calculator-wrapper",
     children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Screen$1, {}),
@@ -1214,12 +1221,12 @@ const Keypad = observer(() => {
 ), CalculatorView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$3.Provider, { value: calculatorDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$3, {}) });
 class CalendarRepository {
   constructor() {
-    S(this, "date");
-    S(this, "firstDayMonth");
-    S(this, "lastDateMonth");
-    S(this, "year");
-    S(this, "month");
-    S(this, "days");
+    E(this, "date");
+    E(this, "firstDayMonth");
+    E(this, "lastDateMonth");
+    E(this, "year");
+    E(this, "month");
+    E(this, "days");
     this.date = null, this.year = null, this.month = null, this.days = null, this.firstDayMonth = null, this.lastDateMonth = null;
   }
   initCalendar(r) {
@@ -1269,10 +1276,10 @@ class CalendarRepository {
 }
 class CalendarDomain {
   constructor() {
-    S(this, "calendar", null);
-    S(this, "year", null);
-    S(this, "month", null);
-    S(this, "calendarRepository", new CalendarRepository());
+    E(this, "calendar", null);
+    E(this, "year", null);
+    E(this, "month", null);
+    E(this, "calendarRepository", new CalendarRepository());
     makeAutoObservable(this);
   }
   generateCalendar(r) {
@@ -1323,16 +1330,16 @@ function gr() {
   if (Ce)
     return z;
   Ce = 1;
-  var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.fragment"), d = Object.prototype.hasOwnProperty, E = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, M = { key: !0, ref: !0, __self: !0, __source: !0 };
+  var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.fragment"), d = Object.prototype.hasOwnProperty, S = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, k = { key: !0, ref: !0, __self: !0, __source: !0 };
   function $(F, R, H) {
-    var L, k = {}, U = null, Y = null;
+    var L, D = {}, U = null, Y = null;
     H !== void 0 && (U = "" + H), R.key !== void 0 && (U = "" + R.key), R.ref !== void 0 && (Y = R.ref);
     for (L in R)
-      d.call(R, L) && !M.hasOwnProperty(L) && (k[L] = R[L]);
+      d.call(R, L) && !k.hasOwnProperty(L) && (D[L] = R[L]);
     if (F && F.defaultProps)
       for (L in R = F.defaultProps, R)
-        k[L] === void 0 && (k[L] = R[L]);
-    return { $$typeof: r, type: F, key: U, ref: Y, props: k, _owner: E.current };
+        D[L] === void 0 && (D[L] = R[L]);
+    return { $$typeof: r, type: F, key: U, ref: Y, props: D, _owner: S.current };
   }
   return z.Fragment = c, z.jsx = $, z.jsxs = $, z;
 }
@@ -1349,7 +1356,7 @@ var I = {};
 var De;
 function br() {
   return De || (De = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.portal"), d = Symbol.for("react.fragment"), E = Symbol.for("react.strict_mode"), M = Symbol.for("react.profiler"), $ = Symbol.for("react.provider"), F = Symbol.for("react.context"), R = Symbol.for("react.forward_ref"), H = Symbol.for("react.suspense"), L = Symbol.for("react.suspense_list"), k = Symbol.for("react.memo"), U = Symbol.for("react.lazy"), Y = Symbol.for("react.offscreen"), Q = Symbol.iterator, ae = "@@iterator";
+    var t = o, r = Symbol.for("react.element"), c = Symbol.for("react.portal"), d = Symbol.for("react.fragment"), S = Symbol.for("react.strict_mode"), k = Symbol.for("react.profiler"), $ = Symbol.for("react.provider"), F = Symbol.for("react.context"), R = Symbol.for("react.forward_ref"), H = Symbol.for("react.suspense"), L = Symbol.for("react.suspense_list"), D = Symbol.for("react.memo"), U = Symbol.for("react.lazy"), Y = Symbol.for("react.offscreen"), Q = Symbol.iterator, ae = "@@iterator";
     function ie(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -1377,7 +1384,7 @@ function br() {
     var et = !1, tt = !1, rt = !1, at = !1, nt = !1, Se;
     Se = Symbol.for("react.module.reference");
     function ot(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === d || e === M || nt || e === E || e === H || e === L || at || e === Y || et || tt || rt || typeof e == "object" && e !== null && (e.$$typeof === U || e.$$typeof === k || e.$$typeof === $ || e.$$typeof === F || e.$$typeof === R || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === d || e === k || nt || e === S || e === H || e === L || at || e === Y || et || tt || rt || typeof e == "object" && e !== null && (e.$$typeof === U || e.$$typeof === D || e.$$typeof === $ || e.$$typeof === F || e.$$typeof === R || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -1405,9 +1412,9 @@ function br() {
           return "Fragment";
         case c:
           return "Portal";
-        case M:
+        case k:
           return "Profiler";
-        case E:
+        case S:
           return "StrictMode";
         case H:
           return "Suspense";
@@ -1424,7 +1431,7 @@ function br() {
             return we(l._context) + ".Provider";
           case R:
             return it(e, e.render, "ForwardRef");
-          case k:
+          case D:
             var u = e.displayName || null;
             return u !== null ? u : q(e.type) || "Memo";
           case U: {
@@ -1569,18 +1576,18 @@ function br() {
         if (K && u && typeof K.stack == "string") {
           for (var y = K.stack.split(`
 `), B = u.stack.split(`
-`), D = y.length - 1, O = B.length - 1; D >= 1 && O >= 0 && y[D] !== B[O]; )
+`), M = y.length - 1, O = B.length - 1; M >= 1 && O >= 0 && y[M] !== B[O]; )
             O--;
-          for (; D >= 1 && O >= 0; D--, O--)
-            if (y[D] !== B[O]) {
-              if (D !== 1 || O !== 1)
+          for (; M >= 1 && O >= 0; M--, O--)
+            if (y[M] !== B[O]) {
+              if (M !== 1 || O !== 1)
                 do
-                  if (D--, O--, O < 0 || y[D] !== B[O]) {
+                  if (M--, O--, O < 0 || y[M] !== B[O]) {
                     var G = `
-` + y[D].replace(" at new ", " at ");
+` + y[M].replace(" at new ", " at ");
                     return e.displayName && G.includes("<anonymous>") && (G = G.replace("<anonymous>", e.displayName)), typeof e == "function" && ue.set(e, G), G;
                   }
-                while (D >= 1 && O >= 0);
+                while (M >= 1 && O >= 0);
               break;
             }
         }
@@ -1614,7 +1621,7 @@ function br() {
         switch (e.$$typeof) {
           case R:
             return ut(e.render);
-          case k:
+          case D:
             return de(e.type, n, l);
           case U: {
             var u = e, _ = u._payload, g = u._init;
@@ -1646,8 +1653,8 @@ function br() {
                 throw B.name = "Invariant Violation", B;
               }
               y = e[v](n, v, u, l, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (D) {
-              y = D;
+            } catch (M) {
+              y = M;
             }
             y && !(y instanceof Error) && (pe(_), W("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", u || "React class", l, v, typeof y), pe(null)), y instanceof Error && !(y.message in Fe) && (Fe[y.message] = !0, pe(_), W("Failed %s type: %s", l, y.message), pe(null));
           }
@@ -1764,9 +1771,9 @@ function br() {
         for (g in n)
           fe.call(n, g) && !xt.hasOwnProperty(g) && (v[g] = n[g]);
         if (e && e.defaultProps) {
-          var D = e.defaultProps;
-          for (g in D)
-            v[g] === void 0 && (v[g] = D[g]);
+          var M = e.defaultProps;
+          for (g in M)
+            v[g] === void 0 && (v[g] = M[g]);
         }
         if (y || B) {
           var O = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
@@ -1866,7 +1873,7 @@ Check the top-level render call using <` + l + ">.");
           l = n.propTypes;
         else if (typeof n == "object" && (n.$$typeof === R || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        n.$$typeof === k))
+        n.$$typeof === D))
           l = n.propTypes;
         else
           return;
@@ -1901,8 +1908,8 @@ Check the top-level render call using <` + l + ">.");
           (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (y += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
           var B = Tt(_);
           B ? y += B : y += Ye();
-          var D;
-          e === null ? D = "null" : be(e) ? D = "array" : e !== void 0 && e.$$typeof === r ? (D = "<" + (q(e.type) || "Unknown") + " />", y = " Did you accidentally export a JSX literal instead of a component?") : D = typeof e, W("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", D, y);
+          var M;
+          e === null ? M = "null" : be(e) ? M = "array" : e !== void 0 && e.$$typeof === r ? (M = "<" + (q(e.type) || "Unknown") + " />", y = " Did you accidentally export a JSX literal instead of a component?") : M = typeof e, W("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", M, y);
         }
         var O = wt(e, n, l, _, g);
         if (O == null)
@@ -1946,22 +1953,22 @@ const Oe = {
   disabled: r = !1,
   onClick: c,
   text: d,
-  id: E,
-  isTextVisible: M = !0,
+  id: S,
+  isTextVisible: k = !0,
   iconLeft: $,
   iconRight: F
 }) => /* @__PURE__ */ a.jsxs(
   "button",
   {
-    "aria-label": M ? void 0 : d,
+    "aria-label": k ? void 0 : d,
     className: `${Oe["ds-button"]} ${Oe[`size-${t}`]}`,
-    "data-testid": `${E}-button`,
+    "data-testid": `${S}-button`,
     type: "button",
     disabled: r,
     onClick: c,
     children: [
       $,
-      M && d,
+      k && d,
       F
     ]
   }
@@ -1979,8 +1986,8 @@ function ke({
   className: r = "",
   direction: c,
   disabled: d,
-  id: E,
-  onClick: M,
+  id: S,
+  onClick: k,
   size: $
 }) {
   return /* @__PURE__ */ a.jsx(
@@ -1993,10 +2000,10 @@ function ke({
 				${ee[`size-${$}`]}
 				${r}
 			`,
-      "data-testid": `ds-button-arrow-${E}-${c}`,
+      "data-testid": `ds-button-arrow-${S}-${c}`,
       disabled: d,
       type: "button",
-      onClick: M
+      onClick: k
     }
   );
 }
@@ -2109,9 +2116,9 @@ function Sr({ initialValue: t, onChange: r }) {
   const [c, d] = useState(t);
   return useEffect(() => {
     d(t);
-  }, [t, d]), { value: c, handleInputChange: (E) => {
-    const M = E.target.value;
-    d(M), r && r(M);
+  }, [t, d]), { value: c, handleInputChange: (S) => {
+    const k = S.target.value;
+    d(k), r && r(k);
   } };
 }
 function $r({
@@ -2119,15 +2126,15 @@ function $r({
   type: r = "text",
   id: c,
   disabled: d = !1,
-  readonly: E = !1,
-  initialValue: M = "",
+  readonly: S = !1,
+  initialValue: k = "",
   labelName: $,
   wrapperLayout: F = "vertical",
   min: R,
   max: H,
   onChange: L
 }) {
-  const { value: k, handleInputChange: U } = Sr({ initialValue: M, onChange: L }), Y = `ds-input-${c}`;
+  const { value: D, handleInputChange: U } = Sr({ initialValue: k, onChange: L }), Y = `ds-input-${c}`;
   return /* @__PURE__ */ a.jsxs(
     "div",
     {
@@ -2151,8 +2158,8 @@ function $r({
             "data-testid": `ds-input-input-${c}`,
             type: r,
             disabled: d,
-            readOnly: E,
-            value: k,
+            readOnly: S,
+            value: D,
             min: R ?? void 0,
             max: H ?? void 0,
             name: Y,
@@ -2177,8 +2184,8 @@ function kr({ initialChecked: t, onChange: r }) {
     d(t);
   }, [t]), {
     checked: c,
-    handleChange: (E) => {
-      r && r(), d(E.target.checked);
+    handleChange: (S) => {
+      r && r(), d(S.target.checked);
     }
   };
 }
@@ -2187,8 +2194,8 @@ const qr = ({
   disabled: r = !1,
   id: c,
   onChange: d,
-  name: E,
-  text: M
+  name: S,
+  text: k
 }) => {
   const {
     checked: $,
@@ -2200,7 +2207,7 @@ const qr = ({
   return /* @__PURE__ */ a.jsxs(
     "label",
     {
-      "aria-label": M.visible ? void 0 : M.content,
+      "aria-label": k.visible ? void 0 : k.content,
       className: `${N.wrapper} ${r ? N.disabled : ""}`,
       "data-testid": `${c}-radio`,
       children: [
@@ -2211,7 +2218,7 @@ const qr = ({
             checked: $,
             "data-testid": `${c}-radio-input`,
             disabled: r,
-            name: E,
+            name: S,
             type: "radio",
             value: c,
             onChange: F
@@ -2225,12 +2232,12 @@ const qr = ({
             children: /* @__PURE__ */ a.jsx(xr, { isChecked: $ })
           }
         ),
-        M.visible && /* @__PURE__ */ a.jsx(
+        k.visible && /* @__PURE__ */ a.jsx(
           ze,
           {
             className: N.text,
             id: c,
-            text: M.content
+            text: k.content
           }
         )
       ]
@@ -2259,13 +2266,13 @@ function Lr({
   id: r,
   required: c = !1,
   disabled: d = !1,
-  modelValue: E,
-  options: M,
+  modelValue: S,
+  options: k,
   labelName: $,
   onSelect: F
 }) {
-  const { value: R, handleChange: H } = Pr(E), L = (k) => {
-    H(k), F(k);
+  const { value: R, handleChange: H } = Pr(S), L = (D) => {
+    H(D), F(D);
   };
   return /* @__PURE__ */ a.jsxs("div", { className: `${A.wrapper} ${t}`, children: [
     $ && /* @__PURE__ */ a.jsx(
@@ -2288,15 +2295,15 @@ function Lr({
         onChange: L,
         required: c,
         value: R,
-        children: M.map((k, U) => /* @__PURE__ */ a.jsx(
+        children: k.map((D, U) => /* @__PURE__ */ a.jsx(
           "option",
           {
             className: A.option,
             "data-testid": `ds-select-option-${r}-${U}`,
-            value: k.value,
-            children: k.name
+            value: D.value,
+            children: D.name
           },
-          `${r}-${k.value}`
+          `${r}-${D.value}`
         ))
       }
     ),
@@ -2320,9 +2327,9 @@ function Nr({
   onIncrease: r,
   onDecrease: c
 }) {
-  const [d, E] = useState(t);
+  const [d, S] = useState(t);
   return useEffect(() => {
-    E(t);
+    S(t);
   }, [t]), { value: d, handleIncrease: () => {
     r && r();
   }, handleDecrease: () => {
@@ -2334,14 +2341,14 @@ function Ur({
   id: r,
   modelValue: c,
   disabled: d = !1,
-  onIncrease: E,
-  onDecrease: M
+  onIncrease: S,
+  onDecrease: k
 }) {
   const {
     value: $,
     handleIncrease: F,
     handleDecrease: R
-  } = Nr({ modelValue: c, onIncrease: E, onDecrease: M });
+  } = Nr({ modelValue: c, onIncrease: S, onDecrease: k });
   return /* @__PURE__ */ a.jsxs(
     "div",
     {
@@ -2404,115 +2411,119 @@ function ze({
     }
   );
 }
-function useCalendar() {
-  return {
-    calendarDomain: useContext(DomainContext$2)
-  };
-}
 function useSyncLang() {
   const { i18n: t } = useTranslation();
   useEffect(() => {
     const r = document.documentElement.lang;
     r && t.changeLanguage(r);
-  }, []), useEffect(() => {
+  }), useEffect(() => {
     const r = new MutationObserver((c) => {
-      c.forEach((d) => {
+      for (const d of c)
         d.type === "attributes" && d.attributeName === "lang" && t.changeLanguage(d.target.lang);
-      });
     });
     return r.observe(document.documentElement, { attributes: !0 }), () => {
       r.disconnect();
     };
   }, [t]);
 }
-function useWrapper$1() {
-  const { t } = useTranslation(), { calendarDomain: r } = useCalendar();
-  return useEffect(() => {
-    r.generateCalendar();
-  }, []), {
-    title: useMemo(
-      () => ({
-        title: t("ma-calendar.wrapper.title")
-      }),
-      [t]
-    ).title
+const days = "_days_1xeii_96", styles$8 = {
+  "theme-light": "_theme-light_1xeii_16",
+  "theme-dark": "_theme-dark_1xeii_36",
+  days
+};
+function useCalendar() {
+  return {
+    calendarDomain: useContext(DomainContext$2)
   };
 }
 function useDays() {
   const { calendarDomain: t } = useCalendar(), { t: r } = useTranslation(), c = useMemo(
-    () => ({
-      weekDays: [
-        r("ma-calendar.days.sunday"),
-        r("ma-calendar.days.monday"),
-        r("ma-calendar.days.tuesday"),
-        r("ma-calendar.days.wednesday"),
-        r("ma-calendar.days.thursday"),
-        r("ma-calendar.days.friday"),
-        r("ma-calendar.days.saturday")
-      ]
-    }),
+    () => {
+      var S;
+      return (S = t.calendar) == null ? void 0 : S.map((k, $) => ({
+        id: $,
+        value: k.value,
+        status: k.status
+      }));
+    },
+    [t.calendar]
+  ), d = useMemo(
+    () => [
+      { id: 0, name: r("ma-calendar.days.sunday") },
+      { id: 1, name: r("ma-calendar.days.monday") },
+      { id: 2, name: r("ma-calendar.days.tuesday") },
+      { id: 3, name: r("ma-calendar.days.wednesday") },
+      { id: 4, name: r("ma-calendar.days.thursday") },
+      { id: 5, name: r("ma-calendar.days.friday") },
+      { id: 6, name: r("ma-calendar.days.saturday") }
+    ],
     [r]
   );
   return {
-    monthDays: t.calendar,
-    weekDays: c.weekDays
+    monthDays: c,
+    weekDays: d
   };
 }
-const day$1 = "_day_1v33v_104", styles$8 = {
-  "theme-light": "_theme-light_1v33v_16",
-  "theme-dark": "_theme-dark_1v33v_36",
-  "week-days": "_week-days_1v33v_96",
-  day: day$1
-}, WeekDays = observer(() => {
-  const { weekDays: t } = useDays();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$8["week-days"], children: t.map((r, c) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "span",
-    {
-      className: styles$8.day,
-      "data-testid": `calendar-week-days-day-${c}`,
-      children: r
-    },
-    c
-  )) });
-}), day = "_day_12et3_102", styles$7 = {
+const day$1 = "_day_12et3_102", styles$7 = {
   "theme-light": "_theme-light_12et3_16",
   "theme-dark": "_theme-dark_12et3_36",
   "month-days": "_month-days_12et3_96",
-  day,
+  day: day$1,
   "day-active": "_day-active_12et3_107"
 }, MonthDays = observer(() => {
   const { monthDays: t } = useDays();
-  return t && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$7["month-days"], "data-testid": "calendar-view-days", children: t.map((r, c) => r.value === "" ? /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "span",
+  return t && /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "div",
     {
-      className: styles$7.day,
-      "data-testid": `calendar-month-days-empty-${c}`
-    },
-    c
-  ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "button",
-    {
-      className: `
+      className: styles$7["month-days"],
+      "data-testid": "calendar-view-days",
+      children: t.map(
+        (r, c) => r.value === "" ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "span",
+          {
+            className: styles$7.day,
+            "data-testid": `calendar-month-days-empty-${c}`
+          },
+          `calendar-month-days-day-${r.id}`
+        ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "button",
+          {
+            className: `
                         ${styles$7.day}
                         ${r.status === "active" ? styles$7["day-active"] : ""}
                     `,
-      "data-testid": `calendar-month-days-day-${r.value}`,
-      type: "button",
-      children: r.value
+            "data-testid": `calendar-month-days-day-${r.value}`,
+            type: "button",
+            children: r.value
+          },
+          `calendar-month-days-day-${r.id}`
+        )
+      )
+    }
+  );
+}), day = "_day_1v33v_104", styles$6 = {
+  "theme-light": "_theme-light_1v33v_16",
+  "theme-dark": "_theme-dark_1v33v_36",
+  "week-days": "_week-days_1v33v_96",
+  day
+}, WeekDays = observer(() => {
+  const { weekDays: t } = useDays();
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$6["week-days"], children: t.map((r) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "span",
+    {
+      className: styles$6.day,
+      "data-testid": `calendar-week-days-day-${r.id}`,
+      children: r.name
     },
-    c
+    `calendar-week-days-day-${r.id}`
   )) });
-}), days = "_days_1xeii_96", styles$6 = {
-  "theme-light": "_theme-light_1xeii_16",
-  "theme-dark": "_theme-dark_1xeii_36",
-  days
-}, Days = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$6.days, children: [
+}), Days = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$8.days, children: [
   /* @__PURE__ */ jsxRuntimeExports.jsx(WeekDays, {}),
   /* @__PURE__ */ jsxRuntimeExports.jsx(MonthDays, {})
 ] });
 function useMonthSwitcher() {
-  const { t } = useTranslation(), { calendarDomain: r } = useCalendar(), c = (E) => {
-    r.changeCalendarByMonth(Number(E.currentTarget.value));
+  const { t } = useTranslation(), { calendarDomain: r } = useCalendar(), c = (S) => {
+    r.changeCalendarByMonth(Number(S.currentTarget.value));
   }, d = useMemo(
     () => ({
       months: [
@@ -2609,7 +2620,21 @@ const YearSwitcher = observer(() => {
       onDecrease: t
     }
   );
-}), wrapper$1 = "_wrapper_s3u64_96", styles$5 = {
+});
+function useWrapper$1() {
+  const { t } = useTranslation(), { calendarDomain: r } = useCalendar();
+  return useEffect(() => {
+    r.generateCalendar();
+  }), {
+    title: useMemo(
+      () => ({
+        title: t("ma-calendar.wrapper.title")
+      }),
+      [t]
+    ).title
+  };
+}
+const wrapper$1 = "_wrapper_s3u64_96", styles$5 = {
   "theme-light": "_theme-light_s3u64_16",
   "theme-dark": "_theme-dark_s3u64_36",
   wrapper: wrapper$1
@@ -2629,110 +2654,26 @@ const YearSwitcher = observer(() => {
     }
   );
 }), CalendarView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$2.Provider, { value: calendarDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$2, {}) });
-class TimezoneRepository {
-  getTimezones() {
-    return [-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-  }
-}
-class TimezoneDomain {
-  constructor() {
-    S(this, "timezoneRepository", new TimezoneRepository());
-    S(this, "timezonesValuePairs", null);
-    makeAutoObservable(this);
-  }
-  generateTimezones() {
-    const r = this.timezoneRepository.getTimezones();
-    this.timezonesValuePairs = this.mapTimezonesToValuePairs(r);
-  }
-  createI18nKey(r) {
-    return `ma-timezone.stepper.${r}`;
-  }
-  mapTimezonesToValuePairs(r) {
-    return r.map((c) => ({
-      value: c,
-      label: this.createI18nKey(c)
-    }));
-  }
-}
-const timezoneDomain = new TimezoneDomain(), DomainContext$1 = createContext(timezoneDomain);
-function useTimezone() {
-  return {
-    timezoneService: useContext(DomainContext$1)
-  };
-}
-function useWrapper() {
-  const { t } = useTranslation(), { timezoneService: r } = useTimezone();
-  return useEffect(() => {
-    r.generateTimezones();
-  }, []), {
-    title: useMemo(
-      () => ({
-        title: t("ma-timezone.wrapper.title")
-      }),
-      [t]
-    ).title
-  };
-}
-function useTimezoneSwitcher() {
-  const { t } = useTranslation(), { timezoneService: r } = useTimezone();
-  return {
-    dictionary: useMemo(
-      () => {
-        var d;
-        return {
-          timezones: (d = r == null ? void 0 : r.timezonesValuePairs) == null ? void 0 : d.map((E) => ({
-            value: E.value,
-            name: t(E.label)
-          }))
-        };
-      },
-      [t, r == null ? void 0 : r.timezonesValuePairs]
-    )
-  };
-}
-const TimezoneSwitcher = observer(() => {
-  const { dictionary: t } = useTimezoneSwitcher();
-  return (t == null ? void 0 : t.timezones) && /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Lr,
-    {
-      id: "timezone-switcher",
-      modelValue: t.timezones[0].value,
-      options: t.timezones,
-      onSelect: () => {
-      }
-    }
-  );
-}), Wrapper$1 = observer(() => {
-  const { title: t } = useWrapper();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Yr,
-    {
-      id: "timezone",
-      title: t,
-      children: /* @__PURE__ */ jsxRuntimeExports.jsx(TimezoneSwitcher, {})
-    }
-  );
-}), TimezoneView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$1.Provider, { value: timezoneDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$1, {}) });
 var ETimerPresets = /* @__PURE__ */ ((t) => (t.THREE_MINUTES = "3-min", t.FIVE_MINUTES = "5-min", t.TEN_MINUTES = "10-min", t.FIFTEEN_MINUTES = "15-min", t.CUSTOM_MINUTES = "custom", t))(ETimerPresets || {}), ETimerTime = /* @__PURE__ */ ((t) => (t.HOURS = "hours", t.MINUTES = "minutes", t.SECONDS = "seconds", t))(ETimerTime || {}), ETimerStatus = /* @__PURE__ */ ((t) => (t.PLAY = "play", t.STOP = "stop", t.RESET = "reset", t))(ETimerStatus || {});
 class TimerControllerDomain {
   constructor(r) {
-    S(this, "timerDomain");
-    S(this, "increaseSeconds", () => {
+    E(this, "timerDomain");
+    E(this, "increaseSeconds", () => {
       this.timerDomain.time.seconds !== 59 && this.timerDomain.addTime(ETimerTime.SECONDS, 1);
     });
-    S(this, "decreaseSeconds", () => {
+    E(this, "decreaseSeconds", () => {
       this.timerDomain.time.seconds !== 0 && this.timerDomain.subtractTime(ETimerTime.SECONDS, 1);
     });
-    S(this, "increaseMinutes", () => {
+    E(this, "increaseMinutes", () => {
       this.timerDomain.time.minutes !== 59 && this.timerDomain.addTime(ETimerTime.MINUTES, 1);
     });
-    S(this, "decreaseMinutes", () => {
+    E(this, "decreaseMinutes", () => {
       this.timerDomain.time.minutes !== 0 && this.timerDomain.subtractTime(ETimerTime.MINUTES, 1);
     });
-    S(this, "increaseHours", () => {
+    E(this, "increaseHours", () => {
       this.timerDomain.time.hours !== 59 && this.timerDomain.addTime(ETimerTime.HOURS, 1);
     });
-    S(this, "decreaseHours", () => {
+    E(this, "decreaseHours", () => {
       this.timerDomain.time.hours !== 0 && this.timerDomain.subtractTime(ETimerTime.HOURS, 1);
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -2740,23 +2681,23 @@ class TimerControllerDomain {
 }
 class TimerPlayerDomain {
   constructor(r) {
-    S(this, "timerDomain");
-    S(this, "interval", null);
-    S(this, "start", () => {
+    E(this, "timerDomain");
+    E(this, "interval", null);
+    E(this, "start", () => {
       this.timerDomain.setStatus(ETimerStatus.PLAY), this.interval = setInterval(() => {
         this.timerDomain.time.hours === 0 && this.timerDomain.time.minutes === 0 && this.timerDomain.time.seconds === 0 && this.reset(), this.timerDomain.time.hours >= 1 && this.timerDomain.time.minutes === 0 && this.timerDomain.time.seconds === 0 ? (this.timerDomain.time.hours--, this.timerDomain.time.minutes = 59, this.timerDomain.time.seconds = 59) : this.timerDomain.time.seconds === 0 && this.timerDomain.time.minutes >= 1 ? (this.timerDomain.time.seconds = 59, this.timerDomain.time.minutes--) : this.timerDomain.time.seconds--;
       }, 1e3);
     });
-    S(this, "stop", () => {
+    E(this, "stop", () => {
       this.timerDomain.setStatus(ETimerStatus.STOP), this.clearTimerInterval();
     });
-    S(this, "reset", () => {
+    E(this, "reset", () => {
       this.timerDomain.setStatus(ETimerStatus.RESET), this.clearTimerInterval(), this.restartTime();
     });
-    S(this, "clearTimerInterval", () => {
+    E(this, "clearTimerInterval", () => {
       this.interval && clearInterval(this.interval);
     });
-    S(this, "restartTime", () => {
+    E(this, "restartTime", () => {
       this.timerDomain.time.hours = 0, this.timerDomain.time.minutes = 0, this.timerDomain.time.seconds = 0;
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -2764,25 +2705,25 @@ class TimerPlayerDomain {
 }
 class TimerPresetsDomain {
   constructor(r) {
-    S(this, "preset", ETimerPresets.CUSTOM_MINUTES);
-    S(this, "timerDomain");
-    S(this, "presetTimes", {
+    E(this, "preset", ETimerPresets.CUSTOM_MINUTES);
+    E(this, "timerDomain");
+    E(this, "presetTimes", {
       [ETimerPresets.CUSTOM_MINUTES]: 0,
       [ETimerPresets.THREE_MINUTES]: 3,
       [ETimerPresets.FIVE_MINUTES]: 5,
       [ETimerPresets.TEN_MINUTES]: 10,
       [ETimerPresets.FIFTEEN_MINUTES]: 15
     });
-    S(this, "setPreset", (r) => {
+    E(this, "setPreset", (r) => {
       this.setPresetStatus(r), this.resetSecondsAndHours(), this.setMinutes(r);
     });
-    S(this, "setMinutes", (r) => {
+    E(this, "setMinutes", (r) => {
       this.timerDomain.setTime(ETimerTime.MINUTES, this.presetTimes[r]);
     });
-    S(this, "setPresetStatus", (r) => {
+    E(this, "setPresetStatus", (r) => {
       this.preset !== r && (this.preset = r);
     });
-    S(this, "resetSecondsAndHours", () => {
+    E(this, "resetSecondsAndHours", () => {
       this.timerDomain.time.seconds !== 0 && this.timerDomain.setTime(ETimerTime.SECONDS, 0), this.timerDomain.time.hours !== 0 && this.timerDomain.setTime(ETimerTime.HOURS, 0);
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -2790,38 +2731,42 @@ class TimerPresetsDomain {
 }
 class TimerDomain {
   constructor() {
-    S(this, "controllerDomain");
-    S(this, "playerDomain");
-    S(this, "presetsDomain");
-    S(this, "time", {
+    E(this, "controllerDomain");
+    E(this, "playerDomain");
+    E(this, "presetsDomain");
+    E(this, "time", {
       seconds: 0,
       minutes: 0,
       hours: 0
     });
-    S(this, "status", ETimerStatus.RESET);
-    S(this, "addTime", (r, c) => {
+    E(this, "status", ETimerStatus.RESET);
+    E(this, "addTime", (r, c) => {
       this.time[r] += c;
     });
-    S(this, "subtractTime", (r, c) => {
+    E(this, "subtractTime", (r, c) => {
       this.time[r] -= c;
     });
-    S(this, "setTime", (r, c) => {
+    E(this, "setTime", (r, c) => {
       this.time[r] = c;
     });
-    S(this, "setStatus", (r) => {
+    E(this, "setStatus", (r) => {
       this.status = r;
     });
     makeAutoObservable(this), this.controllerDomain = new TimerControllerDomain(this), this.playerDomain = new TimerPlayerDomain(this), this.presetsDomain = new TimerPresetsDomain(this);
   }
 }
-const timerDomain = new TimerDomain(), DomainContext = createContext(timerDomain);
+const timerDomain = new TimerDomain(), DomainContext$1 = createContext(timerDomain), controller = "_controller_15w9q_96", styles$4 = {
+  "theme-light": "_theme-light_15w9q_16",
+  "theme-dark": "_theme-dark_15w9q_36",
+  controller
+};
 var State = /* @__PURE__ */ ((t) => (t.ACTIVE = "active", t.DISABLED = "disabled", t.IDLE = "idle", t.LOADING = "loading", t))(State || {});
 function addZeroBeforeNumber(t, r) {
   return t < r ? `0${t}` : String(t);
 }
 function useTimer() {
   return {
-    timerDomain: useContext(DomainContext)
+    timerDomain: useContext(DomainContext$1)
   };
 }
 function useController() {
@@ -2839,18 +2784,14 @@ function useController() {
     isDisabled: c
   };
 }
-const controller = "_controller_15w9q_96", styles$4 = {
-  "theme-light": "_theme-light_15w9q_16",
-  "theme-dark": "_theme-dark_15w9q_36",
-  controller
-}, Controller = observer(() => {
+const Controller = observer(() => {
   const {
     hours: t,
     minutes: r,
     seconds: c,
     increaseSeconds: d,
-    decreaseSeconds: E,
-    increaseMinutes: M,
+    decreaseSeconds: S,
+    increaseMinutes: k,
     decreaseMinutes: $,
     increaseHours: F,
     decreaseHours: R,
@@ -2877,7 +2818,7 @@ const controller = "_controller_15w9q_96", styles$4 = {
           {
             id: "minutes",
             modelValue: r,
-            onIncrease: M,
+            onIncrease: k,
             onDecrease: $,
             disabled: H
           }
@@ -2888,7 +2829,7 @@ const controller = "_controller_15w9q_96", styles$4 = {
             id: "seconds",
             modelValue: c,
             onIncrease: d,
-            onDecrease: E,
+            onDecrease: S,
             disabled: H
           }
         )
@@ -2899,54 +2840,46 @@ const controller = "_controller_15w9q_96", styles$4 = {
   "theme-light": "_theme-light_covgd_16",
   "theme-dark": "_theme-dark_covgd_36",
   player
-}, useStartAndStop = () => {
+}, useReset = () => {
   const { t } = useTranslation(), { timerDomain: r } = useTimer(), c = useMemo(() => ({
-    start: t("ma-timer.start"),
-    stop: t("ma-timer.stop")
+    reset: t("ma-timer.reset")
   }), [t]), d = () => {
-    r.status === ETimerStatus.PLAY ? r.playerDomain.stop() : r.playerDomain.start();
-  }, E = r.status === ETimerStatus.PLAY ? c.stop : c.start;
+    S || r.playerDomain.reset();
+  }, S = r.status === ETimerStatus.PLAY || r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0;
   return {
-    disabled: r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0,
+    disabled: S,
     onClick: d,
-    text: E
+    text: c.reset
   };
-}, StartAndStop = observer(() => {
-  const {
-    disabled: t,
-    onClick: r,
-    text: c
-  } = useStartAndStop();
+}, Reset = observer(() => {
+  const { disabled: t, onClick: r, text: c } = useReset();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Wr,
     {
-      id: "ma-timer-player-start-and-stop",
+      id: "ma-timer-player-reset",
       disabled: t,
       onClick: r,
       text: c
     }
   );
-}), useReset = () => {
+}), useStartAndStop = () => {
   const { t } = useTranslation(), { timerDomain: r } = useTimer(), c = useMemo(() => ({
-    reset: t("ma-timer.reset")
+    start: t("ma-timer.start"),
+    stop: t("ma-timer.stop")
   }), [t]), d = () => {
-    E || r.playerDomain.reset();
-  }, E = r.status === ETimerStatus.PLAY || r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0;
+    r.status === ETimerStatus.PLAY ? r.playerDomain.stop() : r.playerDomain.start();
+  }, S = r.status === ETimerStatus.PLAY ? c.stop : c.start;
   return {
-    disabled: E,
+    disabled: r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0,
     onClick: d,
-    text: c.reset
+    text: S
   };
-}, Reset = observer(() => {
-  const {
-    disabled: t,
-    onClick: r,
-    text: c
-  } = useReset();
+}, StartAndStop = observer(() => {
+  const { disabled: t, onClick: r, text: c } = useStartAndStop();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Wr,
     {
-      id: "ma-timer-player-reset",
+      id: "ma-timer-player-start-and-stop",
       disabled: t,
       onClick: r,
       text: c
@@ -2962,11 +2895,14 @@ const controller = "_controller_15w9q_96", styles$4 = {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Reset, {})
     ]
   }
-), usePresets = () => {
-  const { t } = useTranslation(), { timerDomain: r } = useTimer(), [
-    c,
-    d
-  ] = useState(r.presetsDomain.preset), E = useMemo(() => [
+), presets = "_presets_2r2rz_96", styles$2 = {
+  "theme-light": "_theme-light_2r2rz_16",
+  "theme-dark": "_theme-dark_2r2rz_36",
+  presets
+}, usePresets = () => {
+  const { t } = useTranslation(), { timerDomain: r } = useTimer(), [c, d] = useState(
+    r.presetsDomain.preset
+  ), S = useMemo(() => [
     {
       preset: ETimerPresets.THREE_MINUTES,
       content: t("ma-timer.presets.three-minutes"),
@@ -2992,53 +2928,48 @@ const controller = "_controller_15w9q_96", styles$4 = {
       content: t("ma-timer.presets.custom"),
       id: "ma-timer-preset-custom"
     }
-  ], [t]), M = (R) => {
+  ], [t]), k = (R) => {
     $ || (r.presetsDomain.setPreset(R), d(R));
   }, $ = r.status === ETimerStatus.PLAY, F = t("ma-timer.presets.title");
   return {
     disabled: $,
-    presets: E,
-    setPreset: M,
+    presets: S,
+    setPreset: k,
     selectedPreset: c,
     title: F
   };
-}, presets = "_presets_2r2rz_96", styles$2 = {
-  "theme-light": "_theme-light_2r2rz_16",
-  "theme-dark": "_theme-dark_2r2rz_36",
-  presets
 }, Presets = observer(() => {
-  const {
-    disabled: t,
-    presets: r,
-    selectedPreset: c,
-    setPreset: d,
-    title: E
-  } = usePresets();
+  const { disabled: t, presets: r, selectedPreset: c, setPreset: d, title: S } = usePresets();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Yr,
     {
       className: styles$2.presets,
       "data-testid": "ma-timer-presets",
       id: "ma-timer-presets",
-      title: E,
-      children: r.map((M) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      title: S,
+      children: r.map((k) => /* @__PURE__ */ jsxRuntimeExports.jsx(
         qr,
         {
-          initialChecked: M.preset === c,
+          initialChecked: k.preset === c,
           disabled: t,
-          id: M.id,
+          id: k.id,
           name: "ma-timer-presets",
-          onChange: () => d(M.preset),
+          onChange: () => d(k.preset),
           text: {
-            content: M.content,
+            content: k.content,
             visible: !0
           }
         },
-        M.id
+        k.id
       ))
     }
   );
-});
+}), screen = "_screen_ddbl8_96", time = "_time_ddbl8_113", styles$1 = {
+  "theme-light": "_theme-light_ddbl8_16",
+  "theme-dark": "_theme-dark_ddbl8_36",
+  screen,
+  time
+};
 function useScreen() {
   const { timerDomain: t } = useTimer(), r = addZeroBeforeNumber(t.time.hours, 10), c = addZeroBeforeNumber(t.time.minutes, 10), d = addZeroBeforeNumber(t.time.seconds, 10);
   return {
@@ -3047,17 +2978,8 @@ function useScreen() {
     seconds: d
   };
 }
-const screen = "_screen_ddbl8_96", time = "_time_ddbl8_113", styles$1 = {
-  "theme-light": "_theme-light_ddbl8_16",
-  "theme-dark": "_theme-dark_ddbl8_36",
-  screen,
-  time
-}, Screen = observer(() => {
-  const {
-    hours: t,
-    minutes: r,
-    seconds: c
-  } = useScreen();
+const Screen = observer(() => {
+  const { hours: t, minutes: r, seconds: c } = useScreen();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
@@ -3097,7 +3019,7 @@ const screen = "_screen_ddbl8_96", time = "_time_ddbl8_113", styles$1 = {
   "theme-light": "_theme-light_1h4hz_16",
   "theme-dark": "_theme-dark_1h4hz_36",
   wrapper
-}, Wrapper = () => (useSyncLang(), /* @__PURE__ */ jsxRuntimeExports.jsxs(
+}, Wrapper$1 = () => (useSyncLang(), /* @__PURE__ */ jsxRuntimeExports.jsxs(
   "div",
   {
     className: styles.wrapper,
@@ -3109,7 +3031,118 @@ const screen = "_screen_ddbl8_96", time = "_time_ddbl8_113", styles$1 = {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Player, {})
     ]
   }
-)), TimerView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext.Provider, { value: timerDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper, {}) }), MACalculator = s(CalculatorView);
+)), TimerView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$1.Provider, { value: timerDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$1, {}) });
+class TimezoneRepository {
+  getTimezones() {
+    return [
+      -12,
+      -11,
+      -10,
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ];
+  }
+}
+class TimezoneDomain {
+  constructor() {
+    E(this, "timezoneRepository", new TimezoneRepository());
+    E(this, "timezonesValuePairs", null);
+    makeAutoObservable(this);
+  }
+  generateTimezones() {
+    const r = this.timezoneRepository.getTimezones();
+    this.timezonesValuePairs = this.mapTimezonesToValuePairs(r);
+  }
+  createI18nKey(r) {
+    return `ma-timezone.stepper.${r}`;
+  }
+  mapTimezonesToValuePairs(r) {
+    return r.map((c) => ({
+      value: c,
+      label: this.createI18nKey(c)
+    }));
+  }
+}
+const timezoneDomain = new TimezoneDomain(), DomainContext = createContext(timezoneDomain);
+function useTimezone() {
+  return {
+    timezoneService: useContext(DomainContext)
+  };
+}
+function useTimezoneSwitcher() {
+  const { t } = useTranslation(), { timezoneService: r } = useTimezone();
+  return {
+    dictionary: useMemo(
+      () => {
+        var d;
+        return {
+          timezones: (d = r == null ? void 0 : r.timezonesValuePairs) == null ? void 0 : d.map((S) => ({
+            value: S.value,
+            name: t(S.label)
+          }))
+        };
+      },
+      [t, r == null ? void 0 : r.timezonesValuePairs]
+    )
+  };
+}
+const TimezoneSwitcher = observer(() => {
+  const { dictionary: t } = useTimezoneSwitcher();
+  return (t == null ? void 0 : t.timezones) && /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Lr,
+    {
+      id: "timezone-switcher",
+      modelValue: t.timezones[0].value,
+      options: t.timezones,
+      onSelect: () => {
+      }
+    }
+  );
+});
+function useWrapper() {
+  const { t } = useTranslation(), { timezoneService: r } = useTimezone();
+  return useEffect(() => {
+    r.generateTimezones();
+  }), {
+    title: useMemo(
+      () => ({
+        title: t("ma-timezone.wrapper.title")
+      }),
+      [t]
+    ).title
+  };
+}
+const Wrapper = observer(() => {
+  const { title: t } = useWrapper();
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Yr,
+    {
+      id: "timezone",
+      title: t,
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(TimezoneSwitcher, {})
+    }
+  );
+}), TimezoneView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext.Provider, { value: timezoneDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper, {}) }), MACalculator = s(CalculatorView);
 customElements.define("ma-calculator", MACalculator);
 const MACalendar = s(CalendarView);
 customElements.define("ma-calendar", MACalendar);

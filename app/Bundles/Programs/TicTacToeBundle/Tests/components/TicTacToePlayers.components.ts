@@ -15,19 +15,19 @@ describe("[TicTacToeBundle]<Components>(TicTacToePlayers)", () => {
 
 		cy.get("div.TicTacToePlayers")
 
-		cy.get("[data-test=\"ui-frame-arkadiusz\"]")
-		cy.get("[data-test=\"ui-frame-arkadiusz\"] > p.UIText.title").contains(
+		cy.get('[data-test="ui-frame-arkadiusz"]')
+		cy.get('[data-test="ui-frame-arkadiusz"] > p.UIText.title').contains(
 			"Arkadiusz",
 		)
-		cy.get("[data-test=\"ui-frame-arkadiusz\"] > span.sign")
+		cy.get('[data-test="ui-frame-arkadiusz"] > span.sign')
 			.contains(ETicTacToePlayerSign.PLAYER_O)
 			.should("have.attr", "style", "color: rgb(0, 0, 255);")
 
-		cy.get("[data-test=\"ui-frame-computer\"]")
-		cy.get("[data-test=\"ui-frame-computer\"] > p.UIText.title").contains(
+		cy.get('[data-test="ui-frame-computer"]')
+		cy.get('[data-test="ui-frame-computer"] > p.UIText.title').contains(
 			"Computer",
 		)
-		cy.get("[data-test=\"ui-frame-computer\"] > span.sign")
+		cy.get('[data-test="ui-frame-computer"] > span.sign')
 			.contains(ETicTacToePlayerSign.PLAYER_X)
 			.should("have.attr", "style", "color: rgb(254, 0, 0);")
 	})
@@ -44,17 +44,17 @@ describe("[TicTacToeBundle]<Components>(TicTacToePlayers)", () => {
 
 		cy.get("div.TicTacToePlayers")
 
-		cy.get("[data-test=\"ui-frame-elon\"]")
-		cy.get("[data-test=\"ui-frame-elon\"] > p.UIText.title").contains("Elon")
-		cy.get("[data-test=\"ui-frame-elon\"] > span.sign")
+		cy.get('[data-test="ui-frame-elon"]')
+		cy.get('[data-test="ui-frame-elon"] > p.UIText.title').contains("Elon")
+		cy.get('[data-test="ui-frame-elon"] > span.sign')
 			.contains(ETicTacToePlayerSign.PLAYER_X)
 			.should("have.attr", "style", "color: rgb(254, 0, 0);")
 
-		cy.get("[data-test=\"ui-frame-computer\"]")
-		cy.get("[data-test=\"ui-frame-computer\"] > p.UIText.title").contains(
+		cy.get('[data-test="ui-frame-computer"]')
+		cy.get('[data-test="ui-frame-computer"] > p.UIText.title').contains(
 			"Computer",
 		)
-		cy.get("[data-test=\"ui-frame-computer\"] > span.sign")
+		cy.get('[data-test="ui-frame-computer"] > span.sign')
 			.contains(ETicTacToePlayerSign.PLAYER_O)
 			.should("have.attr", "style", "color: rgb(0, 0, 255);")
 	})

@@ -1,6 +1,6 @@
 import { useMemo } from "react"
-import { useTimezone } from "../../hooks"
 import { useTranslation } from "react-i18next"
+import { useTimezone } from "../../hooks"
 
 export function useTimezoneSwitcher() {
 	const { t } = useTranslation()
@@ -11,7 +11,7 @@ export function useTimezoneSwitcher() {
 			timezones: timezoneService?.timezonesValuePairs?.map((timezone) => {
 				return {
 					value: timezone.value,
-					name: t(timezone.label)
+					name: t(timezone.label),
 				}
 			}),
 		}),
@@ -19,6 +19,6 @@ export function useTimezoneSwitcher() {
 	)
 
 	return {
-		dictionary
+		dictionary,
 	}
 }

@@ -9,7 +9,7 @@ describe("[UIFrameBundle]<Components>(UIFrame)", async () => {
 				title: "Date & Time",
 			},
 			slots: {
-				default: "<p class=\"text-test\">here can be content :)</p>",
+				default: '<p class="text-test">here can be content :)</p>',
 			},
 		})
 

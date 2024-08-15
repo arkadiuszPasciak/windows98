@@ -1,17 +1,11 @@
 import { DSFrame, DSRadio } from "@windows98/design-system"
-import type { FunctionComponent } from "react"
-import { usePresets } from './use-presets.hook'
-import styles from "./presets.module.scss"
 import { observer } from "mobx-react-lite"
+import type { FunctionComponent } from "react"
+import styles from "./presets.module.scss"
+import { usePresets } from "./use-presets.hook"
 
 export const Presets: FunctionComponent = observer(() => {
-	const {
-		disabled,
-		presets,
-		selectedPreset,
-		setPreset,
-		title,
-	} = usePresets()
+	const { disabled, presets, selectedPreset, setPreset, title } = usePresets()
 
 	return (
 		<DSFrame

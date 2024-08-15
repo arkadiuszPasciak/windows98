@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react"
-import type { OperationButtonProps } from './operation-button.types'
 import styles from "./operation-button.module.scss"
+import type { OperationButtonProps } from "./operation-button.types"
 
 export const OperationButton: FunctionComponent<OperationButtonProps> = ({
 	id,

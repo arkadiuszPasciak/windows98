@@ -23,12 +23,12 @@ export enum ETimezone {
 	JAPAN_STANDARD_TIME = 9,
 	EASTERN_AUSTRALIA_STANDARD_TIME = 10,
 	SAKHALIN_TIME = 11,
-	NEW_ZEALAND_STANDARD_TIME = 12
+	NEW_ZEALAND_STANDARD_TIME = 12,
 }
 
 export type TTimezoneValues = ETimezone
 
 export interface ITimezoneValuePairs {
-	value: TTimezoneValues,
+	value: TTimezoneValues
 	label: string
 }

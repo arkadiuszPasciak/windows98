@@ -1,6 +1,6 @@
 import {
 	ETicTacToePlayerSign,
-	TTicTacToePlayerSign,
+	type TTicTacToePlayerSign,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports"
 
 export default class TicTacToeChoosePlayerTesting {

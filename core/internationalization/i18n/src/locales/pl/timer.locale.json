@@ -1,15 +1,15 @@
 {
-  "TimerBundle.button.reset": "Reset",
-  "TimerBundle.button.start": "Start",
-  "TimerBundle.button.stop": "Stop",
-  "TimerBundle.close": "Zamknij",
-  "TimerBundle.description-modal": "Minutnik zakończył pracę",
-  "TimerBundle.presets.custom": "Niestandardowe",
-  "TimerBundle.presets.fifteen-minutes": "15 min",
-  "TimerBundle.presets.five-minutes": "5 min",
-  "TimerBundle.presets.ten-minutes": "10 min",
-  "TimerBundle.presets.three-minutes": "3 min",
-  "TimerBundle.presets.title": "Presety",
-  "TimerBundle.title": "Minutnik",
-  "TimerBundle.title-modal": "Status"
+	"TimerBundle.button.reset": "Reset",
+	"TimerBundle.button.start": "Start",
+	"TimerBundle.button.stop": "Stop",
+	"TimerBundle.close": "Zamknij",
+	"TimerBundle.description-modal": "Minutnik zakończył pracę",
+	"TimerBundle.presets.custom": "Niestandardowe",
+	"TimerBundle.presets.fifteen-minutes": "15 min",
+	"TimerBundle.presets.five-minutes": "5 min",
+	"TimerBundle.presets.ten-minutes": "10 min",
+	"TimerBundle.presets.three-minutes": "3 min",
+	"TimerBundle.presets.title": "Presety",
+	"TimerBundle.title": "Minutnik",
+	"TimerBundle.title-modal": "Status"
 }

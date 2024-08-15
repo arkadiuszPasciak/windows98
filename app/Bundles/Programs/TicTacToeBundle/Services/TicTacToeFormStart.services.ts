@@ -1,16 +1,16 @@
-import { Nullable } from "vitest"
 import {
 	ETicTacToeRadioDimension,
 	ETicTacToeRadioPlayer,
 	ETicTacToeValidateStatusType,
 	ETicTacToeValidationError,
 	ETicTacToeValidationSuccess,
-	ITicTacToeValidateFields,
-	ITicTacToeValidateStatus,
-	TTicTacToeRadioDimension,
-	TTicTacToeRadioPlayer,
-	TTicTacToeValidationError,
+	type ITicTacToeValidateFields,
+	type ITicTacToeValidateStatus,
+	type TTicTacToeRadioDimension,
+	type TTicTacToeRadioPlayer,
+	type TTicTacToeValidationError,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
+import type { Nullable } from "vitest"
 
 export class TicTacToeFormStart {
 	public submitForm(event: Event) {
@@ -42,9 +42,8 @@ export class TicTacToeFormStart {
 			} as ITicTacToeValidateFields
 
 			return fields
-		} else {
-			return null
 		}
+		return null
 	}
 
 	private validateDimensionType(dimensionType: TTicTacToeRadioDimension): void {
@@ -53,12 +52,12 @@ export class TicTacToeFormStart {
 		}
 
 		switch (dimensionType) {
-		case ETicTacToeRadioDimension.THREE_X_THREE:
-		case ETicTacToeRadioDimension.SIX_X_SIX:
-		case ETicTacToeRadioDimension.NINE_X_NINE:
-			return
-		default:
-			throw ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED
+			case ETicTacToeRadioDimension.THREE_X_THREE:
+			case ETicTacToeRadioDimension.SIX_X_SIX:
+			case ETicTacToeRadioDimension.NINE_X_NINE:
+				return
+			default:
+				throw ETicTacToeValidationError.DIMENSION_TYPE_UNDEFINED
 		}
 	}
 
@@ -78,11 +77,11 @@ export class TicTacToeFormStart {
 		}
 
 		switch (playerType) {
-		case ETicTacToeRadioPlayer.PLAYER_X:
-		case ETicTacToeRadioPlayer.PLAYER_O:
-			return
-		default:
-			throw ETicTacToeValidationError.PLAYER_TYPE_UNDEFINED
+			case ETicTacToeRadioPlayer.PLAYER_X:
+			case ETicTacToeRadioPlayer.PLAYER_O:
+				return
+			default:
+				throw ETicTacToeValidationError.PLAYER_TYPE_UNDEFINED
 		}
 	}
 

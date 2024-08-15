@@ -1,12 +1,11 @@
-import {
-	makeAutoObservable,
-} from "mobx"
-import { TimerControllerDomainContract, TimerDomainContract, TimerPlayerDomainContract, TimerPresetsDomainContract } from "../contracts"
-import {
-	ETimerStatus,
-	ETimerTime,
-	type ITimerTime,
-} from "../models"
+import { makeAutoObservable } from "mobx"
+import type {
+	TimerControllerDomainContract,
+	TimerDomainContract,
+	TimerPlayerDomainContract,
+	TimerPresetsDomainContract,
+} from "../contracts"
+import { ETimerStatus, type ETimerTime, type ITimerTime } from "../models"
 import { TimerControllerDomain } from "./controller.domain"
 import { TimerPlayerDomain } from "./player.domain"
 import { TimerPresetsDomain } from "./presets.domain"

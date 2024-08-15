@@ -1,4 +1,4 @@
-import { expect, it, describe } from "vitest"
+import { describe, expect, it } from "vitest"
 import test from "./test"
 
 describe("empty test to run vitest unit test, to delete when will be real test", () => {

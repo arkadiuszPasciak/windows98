@@ -1,7 +1,7 @@
+import type { Maybe } from "@windows98/toolkit"
 import { makeAutoObservable } from "mobx"
 import { CalendarRepository } from "../../data/repositories"
 import type { CalendarDomainContract } from "../contracts"
-import type { Maybe } from "@windows98/toolkit"
 import type { ICalendarDays } from "../models"
 
 export class CalendarDomain implements CalendarDomainContract {

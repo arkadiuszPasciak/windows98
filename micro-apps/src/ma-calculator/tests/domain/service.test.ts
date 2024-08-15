@@ -1,4 +1,4 @@
-import { expect, describe, test } from "vitest"
+import { describe, expect, test } from "vitest"
 import { CalculatorService } from "../../src/domain/services"
 
 describe("CalculatorService", () => {
@@ -33,7 +33,7 @@ describe("CalculatorService", () => {
 		test("initial state", () => {
 			expect(calculatorService.summResult("")).toBe("ERROR")
 			expect(calculatorService.summResult("abcde")).toBe("ERROR")
-			expect(calculatorService.summResult("!@^)(\"")).toBe("ERROR")
+			expect(calculatorService.summResult('!@^)("')).toBe("ERROR")
 		})
 
 		test("valid mathematical expression", () => {
@@ -45,7 +45,7 @@ describe("CalculatorService", () => {
 		test("initial state", () => {
 			expect(calculatorService.isMathematicalOperation("")).toBe(false)
 			expect(calculatorService.isMathematicalOperation("abcde")).toBe(false)
-			expect(calculatorService.isMathematicalOperation("!@^)(\"")).toBe(false)
+			expect(calculatorService.isMathematicalOperation('!@^)("')).toBe(false)
 		})
 
 		test("valid mathematical expression", () => {

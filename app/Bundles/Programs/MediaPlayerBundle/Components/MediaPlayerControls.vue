@@ -27,8 +27,8 @@
 
 <script setup lang="ts">
 import MediaPlayerButtonControl from "@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerButtonControl.vue"
-import MediaPlayerVolumeControl from "@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerVolumeControl.vue"
 import MediaPlayerProgress from "@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerProgress.vue"
+import MediaPlayerVolumeControl from "@APP|Bundles/MediaPlayerBundle/Components/MediaPlayerVolumeControl.vue"
 </script>
 
 <style

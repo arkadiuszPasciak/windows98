@@ -1,17 +1,12 @@
+import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
-import { observer } from 'mobx-react-lite'
-import styles from "./keypad.module.scss"
+import { ECalculatorNumber, ECalculatorSymbol } from "../../../domain/models"
 import { OperationButton } from "../operation-button"
-import { ECalculatorNumber, ECalculatorSymbol } from '../../../domain/models'
-import { useKeypad } from './use-keypad.hook'
+import styles from "./keypad.module.scss"
+import { useKeypad } from "./use-keypad.hook"
 
 export const Keypad: FunctionComponent = observer(() => {
-	const {
-		addDot,
-		addNumber,
-		addSymbol,
-		summResult,
-	} = useKeypad()
+	const { addDot, addNumber, addSymbol, summResult } = useKeypad()
 
 	return (
 		<div

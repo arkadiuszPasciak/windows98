@@ -1,4 +1,4 @@
-import { TTicTacToeRadioDimension } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
+import type { TTicTacToeRadioDimension } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
 
 export class TicTacToeBoard {
 	public dimension: TTicTacToeRadioDimension

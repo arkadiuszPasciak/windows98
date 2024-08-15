@@ -2,13 +2,17 @@ import { expect, test } from "@playwright/experimental-ct-react"
 import { TimerView } from "../../src/ui/views/timer.view"
 
 test.describe("Player", () => {
-	test("should interact with buttons start, stop and reset", async ({ mount }) => {
+	test("should interact with buttons start, stop and reset", async ({
+		mount,
+	}) => {
 		const component = await mount(<TimerView />)
 
 		const preset3min = component.getByTestId("ma-timer-preset-3-minutes-radio")
 		await preset3min.click()
 
-		const startStopButton = component.getByTestId("ma-timer-player-start-and-stop-button")
+		const startStopButton = component.getByTestId(
+			"ma-timer-player-start-and-stop-button",
+		)
 		const resetButton = component.getByTestId("ma-timer-player-reset-button")
 
 		await startStopButton.click()

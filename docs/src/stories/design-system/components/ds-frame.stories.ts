@@ -1,5 +1,5 @@
-import { DSFrame, type DSFrameProps } from "@windows98/design-system"
 import type { Meta, StoryObj } from "@storybook/react"
+import { DSFrame, type DSFrameProps } from "@windows98/design-system"
 
 const meta: Meta<typeof DSFrame> = {
 	argTypes: {
@@ -15,7 +15,7 @@ const meta: Meta<typeof DSFrame> = {
 	},
 	component: DSFrame,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSFrame"
+	title: "Design System/Components/DSFrame",
 }
 
 export default meta

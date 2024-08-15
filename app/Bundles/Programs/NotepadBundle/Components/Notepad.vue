@@ -44,15 +44,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from "vue"
-import { useI18n } from "vue-i18n"
+import FileOpen from "@APP|Bundles/FileBundle/Components/FileOpen.vue"
+import FileSave from "@APP|Bundles/FileBundle/Components/FileSave.vue"
+import { useNotepadStore } from "@APP|Bundles/NotepadBundle/Stores/Notepad.stores"
+import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
 import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
 import UIModalNavigationItem from "@APP|Bundles/UIModalBundle/Components/UIModalNavigationItem.vue"
 import UITextarea from "@APP|Bundles/UITextareaBundle/Components/UITextarea.vue"
-import FileOpen from "@APP|Bundles/FileBundle/Components/FileOpen.vue"
-import FileSave from "@APP|Bundles/FileBundle/Components/FileSave.vue"
-import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
-import { useNotepadStore } from "@APP|Bundles/NotepadBundle/Stores/Notepad.stores"
+import { ref, watch } from "vue"
+import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
 

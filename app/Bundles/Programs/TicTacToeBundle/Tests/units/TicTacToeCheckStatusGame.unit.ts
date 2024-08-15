@@ -1,14 +1,14 @@
-import { expect, describe } from "vitest"
 import { MTicTacToeCurrentBoard3x3 } from "@APP|Bundles/TicTacToeBundle/Mocks/TicTacToeBoard.mocks"
 import { MTicTacToeWinningStates3x3 } from "@APP|Bundles/TicTacToeBundle/Mocks/TicTacToeWinningStates.mocks"
 import { TicTacToeCheckStatusGame } from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeCheckStatusGame.services"
 import { ETicTacToeStatusGame } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports"
 import { ETicTacToePlayerSign } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports"
+import { describe, expect } from "vitest"
 
 const ticTacToeCheckStatusGame3x3 = Reflect.construct(
 	TicTacToeCheckStatusGame,
 	[],
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	// biome-ignore lint/suspicious/noExplicitAny: I need to refactor the whole tic tac toe bundle as micro app
 ) as any
 
 describe("[TicTacToeBundle]<Services>(TicTacToeCheckStatusGame)", () => {

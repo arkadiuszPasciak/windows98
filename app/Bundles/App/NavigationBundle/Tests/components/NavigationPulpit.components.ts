@@ -1,5 +1,5 @@
-import { createTestingPinia } from "@pinia/testing"
 import NavigationPulpit from "@APP|Bundles/NavigationBundle/Components/NavigationPulpit.vue"
+import { createTestingPinia } from "@pinia/testing"
 
 describe("[NavigationBundle]<Components>(NavigationPulpit)", () => {
 	it("renders correctly component", () => {

@@ -59,22 +59,22 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
-import { useI18n } from "vue-i18n"
-import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
-import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
-import UIRadio from "@APP|Bundles/UIRadioBundle/Components/UIRadio.vue"
-import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
+import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
 import {
 	restartSystem,
 	shutDownSystem,
 } from "@APP|Bundles/ShutDownBundle/Services/ShutDown.services"
-import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
 import {
 	EShutDownRadioCheck,
-	IShutDownRadioCheck,
+	type IShutDownRadioCheck,
 	shutDownRadioInputName,
 } from "@APP|Bundles/ShutDownBundle/Supports/ShutDown.supports"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
+import UIRadio from "@APP|Bundles/UIRadioBundle/Components/UIRadio.vue"
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
 

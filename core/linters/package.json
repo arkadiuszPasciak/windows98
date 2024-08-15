@@ -17,15 +17,11 @@
 		"./ts-config/vue": "./src/configs/ts-config/vue.config.json"
 	},
 	"scripts": {
-		"lint:code:fix": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
-		"lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs"
 	},
 	"devDependencies": {
-		"eslint": "8.57.0",
 		"@types/react": "18.2.43",
-		"@types/react-dom": "18.2.17",
-		"@windows98/eslint-config": "workspace:*"
+		"@types/react-dom": "18.2.17"
 	},
 	"peerDependencies": {
 		"lint-staged": "15.2.2",

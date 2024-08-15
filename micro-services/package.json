@@ -1,44 +1,41 @@
 {
-  "name": "@windows98/micro-services",
-  "main": "@bundler/build/index.umd.cjs",
-  "module": "@bundler/build/index.js",
-  "types": "@bundler/build/@bundles/src/wc/index.wc.d.ts",
-  "files": [
-    "@bundler/build"
-  ],
-  "exports": {
-    ".": {
-      "import": "./@bundler/build/index.js",
-      "require": "./@bundler/build/index.umd.cjs"
-    }
-  },
-  "version": "1.0.0",
-  "description": "Micro services for Windows 98",
-  "author": "Arkadiusz Paściak",
-  "engines": {
-    "node": "20.12.0"
-  },
-  "type": "module",
-  "devDependencies": {
-    "eslint": "8.57.0",
-    "@windows98/eslint-config": "workspace:*",
-    "@windows98/configs": "workspace:*",
-    "@windows98/linters": "workspace:*",
-    "@windows98/toolkit": "workspace:*",
-    "lint-staged": "15.2.2",
-    "typescript": "5.4.2",
-    "vite": "5.2.8",
-    "vite-plugin-dts": "3.7.0",
-    "vitest": "1.3.1"
-  },
-  "scripts": {
-    "dev": "vite @bundler",
-    "build": "vite build @bundler",
-    "lint:code:fix": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
-    "lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
-    "lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
-    "lint:types:run": "tsc",
-    "test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
-    "test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js"
-  }
+	"name": "@windows98/micro-services",
+	"main": "@bundler/build/index.umd.cjs",
+	"module": "@bundler/build/index.js",
+	"types": "@bundler/build/@bundles/src/wc/index.wc.d.ts",
+	"files": ["@bundler/build"],
+	"exports": {
+		".": {
+			"import": "./@bundler/build/index.js",
+			"require": "./@bundler/build/index.umd.cjs"
+		}
+	},
+	"version": "1.0.0",
+	"description": "Micro services for Windows 98",
+	"author": "Arkadiusz Paściak",
+	"engines": {
+		"node": "20.12.0"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@windows98/configs": "workspace:*",
+		"@windows98/linters": "workspace:*",
+		"@windows98/toolkit": "workspace:*",
+		"lint-staged": "15.2.2",
+		"typescript": "5.4.2",
+		"vite": "5.2.8",
+		"vite-plugin-dts": "3.7.0",
+		"vitest": "1.3.1"
+	},
+	"scripts": {
+		"dev": "vite @bundler",
+		"build": "vite build @bundler",
+		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
+		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
+		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
+		"lint:types:run": "tsc",
+		"test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
+		"test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js"
+	}
 }

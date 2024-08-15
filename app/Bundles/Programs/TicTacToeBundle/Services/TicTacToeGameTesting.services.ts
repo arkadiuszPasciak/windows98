@@ -10,9 +10,8 @@ export default class TicTacToeGameTesting {
 			if (isBoardBlock) {
 				isBlock = true
 				return
-			} else {
-				this.clickOnAvailableField()
 			}
+			this.clickOnAvailableField()
 		}
 	}
 
@@ -54,7 +53,7 @@ export default class TicTacToeGameTesting {
 			"div.TicTacToeBoard.is-blocked",
 		) as Element
 
-		return gameBoard ? true : false
+		return !!gameBoard
 	}
 
 	private isBoardBlocked(): boolean {

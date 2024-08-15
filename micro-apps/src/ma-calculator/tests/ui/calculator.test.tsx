@@ -1,4 +1,8 @@
-import { expect, MountResult, test } from "@playwright/experimental-ct-react"
+import {
+	type MountResult,
+	expect,
+	test,
+} from "@playwright/experimental-ct-react"
 import { CalculatorView } from "../../src/ui/views"
 
 async function performClicks(
@@ -6,7 +10,9 @@ async function performClicks(
 	ids: Array<string>,
 ): Promise<void> {
 	for (const id of ids) {
-		const button = await component.getByTestId(`ma-calculator-operation-button-${id}`)
+		const button = await component.getByTestId(
+			`ma-calculator-operation-button-${id}`,
+		)
 		await button.click()
 	}
 }

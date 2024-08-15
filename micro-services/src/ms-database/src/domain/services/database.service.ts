@@ -2,13 +2,16 @@ import { DatabaseRepository } from "../../data/repositories/database.repository"
 import type { DatabaseServiceContract } from "../contracts/service.contract"
 
 export default class DatabaseService implements DatabaseServiceContract {
-	private readonly databaseRepository: DatabaseRepository
+	public readonly databaseRepository: DatabaseRepository
 
 	constructor(
 		public readonly databaseName: string,
-		public readonly storeName: string
+		public readonly storeName: string,
 	) {
-		this.databaseRepository = new DatabaseRepository(this.databaseName, this.storeName)
+		this.databaseRepository = new DatabaseRepository(
+			this.databaseName,
+			this.storeName,
+		)
 	}
 
 	async open(): Promise<void> {

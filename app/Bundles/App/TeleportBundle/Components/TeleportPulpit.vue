@@ -12,8 +12,8 @@
 </template>
 
 <script setup lang="ts">
-import { defineAsyncComponent } from "vue"
 import TeleportGrid from "@APP|Bundles/TeleportBundle/Components/TeleportGrid.vue"
+import { defineAsyncComponent } from "vue"
 
 const Calculator = defineAsyncComponent(
 	() => import("@APP|Bundles/CalculatorBundle/Components/Calculator.vue"),

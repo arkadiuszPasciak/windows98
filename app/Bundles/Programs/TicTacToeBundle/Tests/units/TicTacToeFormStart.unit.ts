@@ -1,4 +1,3 @@
-import { expect, it, describe } from "vitest"
 import { TicTacToeFormStart } from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeFormStart.services"
 import {
 	ETicTacToeRadioDimension,
@@ -6,10 +5,11 @@ import {
 	ETicTacToeValidateStatusType,
 	ETicTacToeValidationError,
 	ETicTacToeValidationSuccess,
-	ITicTacToeValidateFields,
+	type ITicTacToeValidateFields,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
+import { describe, expect, it } from "vitest"
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// biome-ignore lint/suspicious/noExplicitAny: I need to refactor the whole tic tac toe bundle as micro app
 const testingService = Reflect.construct(TicTacToeFormStart, []) as any
 
 describe("[TicTacToeBundle]<Services>(TicTacToeFormStart)", () => {
@@ -110,7 +110,6 @@ describe("[TicTacToeBundle]<Services>(TicTacToeFormStart)", () => {
 			fields: null,
 		})
 
-		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 		// @ts-ignore
 		const forthFields = {
 			userName: "Arkadiusz",
@@ -124,7 +123,6 @@ describe("[TicTacToeBundle]<Services>(TicTacToeFormStart)", () => {
 			fields: null,
 		})
 
-		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 		// @ts-ignore
 		const fifthField = {
 			userName: "Arkadiusz",

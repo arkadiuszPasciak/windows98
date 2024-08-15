@@ -24,12 +24,12 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from "vue"
-import { useI18n } from "vue-i18n"
-import UIFrame from "@APP|Bundles/UIFrameBundle/Components/UIFrame.vue"
 import { TicTacToePlayers } from "@APP|Bundles/TicTacToeBundle/Services/TicTacToePlayers.services"
-import { TTicTacToeRadioPlayer } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
+import type { TTicTacToeRadioPlayer } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
 import { ETicTacToePlayerType } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports"
+import UIFrame from "@APP|Bundles/UIFrameBundle/Components/UIFrame.vue"
+import type { PropType } from "vue"
+import { useI18n } from "vue-i18n"
 
 const props = defineProps({
 	userName: {
@@ -47,10 +47,7 @@ const { t } = useI18n()
 const { setColorByPlayerType, setSignByPlayerType } = new TicTacToePlayers()
 
 const signs = {
-	computer: setSignByPlayerType(
-		ETicTacToePlayerType.COMPUTER,
-		props.userSign,
-	),
+	computer: setSignByPlayerType(ETicTacToePlayerType.COMPUTER, props.userSign),
 	user: setSignByPlayerType(ETicTacToePlayerType.USER, props.userSign),
 }
 

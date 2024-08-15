@@ -1,8 +1,8 @@
+import type { Maybe } from "@windows98/toolkit"
 import { makeAutoObservable } from "mobx"
 import { TimezoneRepository } from "../../data/repositories"
-import type { ITimezoneValuePairs, TTimezoneValues } from "../models"
-import type { Maybe } from "@windows98/toolkit"
 import type { TimezoneDomainContract } from "../contracts"
+import type { ITimezoneValuePairs, TTimezoneValues } from "../models"
 
 export class TimezoneDomain implements TimezoneDomainContract {
 	timezoneRepository: TimezoneRepository = new TimezoneRepository()
@@ -22,11 +22,13 @@ export class TimezoneDomain implements TimezoneDomainContract {
 		return `ma-timezone.stepper.${timezone}`
 	}
 
-	private mapTimezonesToValuePairs(timezones: Array<TTimezoneValues>): Array<ITimezoneValuePairs> {
+	private mapTimezonesToValuePairs(
+		timezones: Array<TTimezoneValues>,
+	): Array<ITimezoneValuePairs> {
 		return timezones.map((timezone) => {
 			return {
 				value: timezone,
-				label: this.createI18nKey(timezone)
+				label: this.createI18nKey(timezone),
 			}
 		})
 	}

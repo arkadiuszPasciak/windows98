@@ -1,9 +1,9 @@
 {
-  "MediaPlayer.title": "Media Player",
-  "MediaPlayerBundle.description-content": "Work in progress",
-  "MediaPlayer.button-control.mute": "Mute",
-  "MediaPlayer.button-control.pauza": "Pauza",
-  "MediaPlayer.button-control.play": "Play",
-  "MediaPlayer.button-control.stop": "Stop",
-  "MediaPlayerBundle.services-content-1": "Work in progress"
+	"MediaPlayer.title": "Media Player",
+	"MediaPlayerBundle.description-content": "Work in progress",
+	"MediaPlayer.button-control.mute": "Mute",
+	"MediaPlayer.button-control.pauza": "Pauza",
+	"MediaPlayer.button-control.play": "Play",
+	"MediaPlayer.button-control.stop": "Stop",
+	"MediaPlayerBundle.services-content-1": "Work in progress"
 }

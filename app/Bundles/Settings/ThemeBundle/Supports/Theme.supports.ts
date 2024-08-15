@@ -1,11 +1,11 @@
 export enum EThemes {
-  DARK = "dark",
-  LIGHT = "light",
+	DARK = "dark",
+	LIGHT = "light",
 }
 
 export type TThemes = EThemes.DARK | EThemes.LIGHT
 
 export interface IThemeOptions {
-  value: TThemes
-  name: string
+	value: TThemes
+	name: string
 }

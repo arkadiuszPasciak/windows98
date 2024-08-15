@@ -17,13 +17,13 @@
 </template>
 
 <script setup lang="ts">
-import { useI18n } from "vue-i18n"
-import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
+import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
+import TicTacToeFormStart from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue"
 import TicTacToeGame from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeGame.vue"
 import TicTacToeScore from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeScore.vue"
-import TicTacToeFormStart from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue"
-import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
 import { useTicTacToeStore } from "@APP|Bundles/TicTacToeBundle/Stores/TicTacToe.stores"
+import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
+import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
 const programStore = useProgramStore()

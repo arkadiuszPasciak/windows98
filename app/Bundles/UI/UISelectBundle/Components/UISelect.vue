@@ -33,9 +33,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed, PropType } from "vue"
+import type { TUISelectPropsObject } from "@APP|Bundles/UISelectBundle/Supports/UISelect.supports"
+import { type PropType, computed } from "vue"
 import { useI18n } from "vue-i18n"
-import { TUISelectPropsObject } from "@APP|Bundles/UISelectBundle/Supports/UISelect.supports"
 
 const props = defineProps({
 	id: {

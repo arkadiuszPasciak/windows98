@@ -1,6 +1,6 @@
-import { useMemo, type ReactEventHandler } from "react"
-import { useCalendar } from "../../hooks"
+import { type ReactEventHandler, useMemo } from "react"
 import { useTranslation } from "react-i18next"
+import { useCalendar } from "../../hooks"
 
 export default function useMonthSwitcher() {
 	const { t } = useTranslation()
@@ -61,7 +61,7 @@ export default function useMonthSwitcher() {
 					value: 11,
 					name: t("ma-calendar.month-switcher.december"),
 				},
-			]
+			],
 		}),
 		[t],
 	)

@@ -1,8 +1,8 @@
-import { Component } from "vue"
+import type { Component } from "vue"
 
 interface IUITabProps {
-  title: string
-  component: Component
+	title: string
+	component: Component
 }
 
 export type TUITabsProps = Array<IUITabProps>

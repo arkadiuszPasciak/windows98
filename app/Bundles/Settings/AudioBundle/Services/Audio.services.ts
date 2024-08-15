@@ -3,9 +3,8 @@ export function muteAllSound(status: boolean): void {
 		"audio, video",
 	) as NodeListOf<Element>
 
-	Array.from(mediaElements).forEach((element: Element): void => {
+	for (const element of Array.from(mediaElements)) {
 		const mediaElement = element as HTMLMediaElement
-
 		mediaElement.muted = status
-	})
+	}
 }

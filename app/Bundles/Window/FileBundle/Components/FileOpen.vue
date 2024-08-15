@@ -17,9 +17,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
-import { Nullable } from "vitest"
 import { openTextFileFromUserDisk } from "@APP|Bundles/FileBundle/Services/File.services"
+import type { Nullable } from "vitest"
+import { ref } from "vue"
 
 const emits = defineEmits(["update:textFileValue"])
 

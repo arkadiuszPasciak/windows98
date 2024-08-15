@@ -9,7 +9,9 @@ test.describe("Timezone", () => {
 		const frame = await component.getByTestId("ds-text-frame-timezone")
 		await expect(frame, "Frame has rendered correct").toBeVisible()
 
-		const select = await component.getByTestId("ds-select-select-timezone-switcher")
+		const select = await component.getByTestId(
+			"ds-select-select-timezone-switcher",
+		)
 
 		await select.selectOption("GMT+1 Central European Time (CET)")
 		await expect(select, "User has selected CET").toHaveValue(String(1))

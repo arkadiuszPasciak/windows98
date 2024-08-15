@@ -1,17 +1,17 @@
-import { Nullable } from "vitest"
 import { TicTacToeBoard } from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeBoard.services"
 import { TicTacToeCheckStatusGame } from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeCheckStatusGame.services"
 import { TicTacToeWinningStates } from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeWinningStates.services"
-import { TTicTacToeCheckStatusGame } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports"
+import type { TTicTacToeCheckStatusGame } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports"
 import {
 	ETicTacToeRadioPlayer,
-	TTicTacToeRadioDimension,
-	TTicTacToeRadioPlayer,
+	type TTicTacToeRadioDimension,
+	type TTicTacToeRadioPlayer,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
 import {
 	ETicTacToePlayerSign,
-	TTicTacToePlayerSign,
+	type TTicTacToePlayerSign,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports"
+import type { Nullable } from "vitest"
 
 export class TicTacToeGame {
 	private readonly dimension: TTicTacToeRadioDimension
@@ -98,7 +98,7 @@ export class TicTacToeGame {
 		eventTarget.classList.add(`is-${type}`)
 
 		const dataField = (Number(eventTarget.getAttribute("data-field")) -
-      1) as number
+			1) as number
 
 		this.currentBoard[dataField] = sign
 	}

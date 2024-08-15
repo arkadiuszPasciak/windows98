@@ -1,7 +1,9 @@
 import type BrowserEnvRepositoryContract from "../../domain/contracts/repository.contract"
-import { IDevicesRegex, TDevices } from "../../domain/models/device.model"
+import type { IDevicesRegex, TDevices } from "../../domain/models/device.model"
 
-export default class DeviceTypeRepository implements BrowserEnvRepositoryContract<TDevices> {
+export default class DeviceTypeRepository
+	implements BrowserEnvRepositoryContract<TDevices>
+{
 	constructor(
 		private readonly devicesNames: Array<IDevicesRegex> = [
 			{
@@ -12,8 +14,8 @@ export default class DeviceTypeRepository implements BrowserEnvRepositoryContrac
 				name: "desktop",
 				regex: /Win|Windows|OpenBSD|SunOS|Linux|X11|Mac|Mac OS X/i,
 			},
-		]
-	) { }
+		],
+	) {}
 
 	public get() {
 		const userAgent = window.navigator.userAgent

@@ -1,4 +1,4 @@
 {
-  "ClockBundle.description-content": "The Bundle responsible for the <b>clock</b>",
-  "ClockBundle.services-content-1": "showing current time"
+	"ClockBundle.description-content": "The Bundle responsible for the <b>clock</b>",
+	"ClockBundle.services-content-1": "showing current time"
 }

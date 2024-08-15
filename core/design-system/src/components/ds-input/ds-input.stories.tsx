@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import { DSInput } from './index'
+import { useState } from "react"
+import { DSInput } from "./index"
 
 export function DSInputStories(): JSX.Element {
-	const [value, setValue] = useState<string>('this is value')
+	const [value, setValue] = useState<string>("this is value")
 
 	return (
 		<DSInput
@@ -13,5 +13,5 @@ export function DSInputStories(): JSX.Element {
 			labelName="Label"
 			onChange={(value) => setValue(String(value))}
 		/>
-  	)
+	)
 }

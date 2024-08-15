@@ -77,14 +77,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
-import { useI18n } from "vue-i18n"
-import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
-import { useStartStore } from "@APP|Bundles/StartBundle/Stores/Start.stores"
-import { IStartStoreApps } from "@APP|Bundles/StartBundle/Supports/Start.supports"
 import { useProgramStore } from "@APP|Bundles/ProgramBundle/Stores/Program.stores"
 import StartPanel from "@APP|Bundles/StartBundle/Components/StartPanel.vue"
 import StartPanelItem from "@APP|Bundles/StartBundle/Components/StartPanelItem.vue"
+import { useStartStore } from "@APP|Bundles/StartBundle/Stores/Start.stores"
+import type { IStartStoreApps } from "@APP|Bundles/StartBundle/Supports/Start.supports"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
 const store = useStartStore()
@@ -102,27 +102,27 @@ const togglePrimaryPanel = (): void => {
 
 const openProgram = (programName: string): void => {
 	switch (programName) {
-	case "StartBundle.calculator":
-		programStore.updateCalculatorModal(true)
-		break
-	case "StartBundle.notepad":
-		programStore.updateNotepadModal(true)
-		break
-	case "StartBundle.run":
-		programStore.updateRunModal(true)
-		break
-	case "StartBundle.settings":
-		programStore.updateSettingsModal(true)
-		break
-	case "StartBundle.shut-down":
-		programStore.updateShutDownModal(true)
-		break
-	case "StartBundle.tic-tac-toe":
-		programStore.updateTicTacToeModal(true)
-		break
-	case "StartBundle.timer":
-		programStore.updateTimerModal(true)
-		break
+		case "StartBundle.calculator":
+			programStore.updateCalculatorModal(true)
+			break
+		case "StartBundle.notepad":
+			programStore.updateNotepadModal(true)
+			break
+		case "StartBundle.run":
+			programStore.updateRunModal(true)
+			break
+		case "StartBundle.settings":
+			programStore.updateSettingsModal(true)
+			break
+		case "StartBundle.shut-down":
+			programStore.updateShutDownModal(true)
+			break
+		case "StartBundle.tic-tac-toe":
+			programStore.updateTicTacToeModal(true)
+			break
+		case "StartBundle.timer":
+			programStore.updateTimerModal(true)
+			break
 	}
 
 	togglePrimaryPanel()

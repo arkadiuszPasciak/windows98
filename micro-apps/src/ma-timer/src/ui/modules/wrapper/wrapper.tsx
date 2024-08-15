@@ -1,10 +1,10 @@
-import { Controller } from '../controller'
-import { Player } from '../player'
-import { Presets } from '../presets'
-import { Screen } from "../screen"
 import type { FunctionComponent } from "react"
+import { useSyncLang } from "../../../../../ma-calendar/src/ui/hooks/use-sync-lang.hook"
+import { Controller } from "../controller"
+import { Player } from "../player"
+import { Presets } from "../presets"
+import { Screen } from "../screen"
 import styles from "./wrapper.module.scss"
-import { useSyncLang } from '../../../../../ma-calendar/src/ui/hooks/use-sync-lang.hook'
 
 export const Wrapper: FunctionComponent = () => {
 	// It's temporary solution, will be removed in the future

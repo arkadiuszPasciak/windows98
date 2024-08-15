@@ -1,11 +1,11 @@
-import { observer } from "mobx-react-lite"
 import { DSFrame } from "@windows98/design-system"
-import { useWrapper } from "./use-wrapper.hook"
+import { observer } from "mobx-react-lite"
+import { useSyncLang } from "../../hooks/use-sync-lang.hook"
 import { Days } from "../days/days"
 import { MonthSwitcher } from "../month-switcher/month-switcher"
 import { YearSwitcher } from "../year-switcher/year-switcher"
+import { useWrapper } from "./use-wrapper.hook"
 import styles from "./wrapper.module.scss"
-import { useSyncLang } from "../../hooks/use-sync-lang.hook"
 
 export const Wrapper = observer(() => {
 	const { title } = useWrapper()

@@ -1,10 +1,10 @@
-import { Nullable } from "vitest"
-import { localStorageNames } from "@APP|Bundles/StorageBundle/Configs/Storage.configs"
-import { LocalStorage } from "@APP|Bundles/StorageBundle/Services/Storage.services"
 import {
 	ELanguageLocales,
-	TLanguageLocales,
+	type TLanguageLocales,
 } from "@APP|Bundles/LanguageBundle/Supports/Language.supports"
+import { localStorageNames } from "@APP|Bundles/StorageBundle/Configs/Storage.configs"
+import { LocalStorage } from "@APP|Bundles/StorageBundle/Services/Storage.services"
+import type { Nullable } from "vitest"
 
 export function mountLanguageVersionByStorage(): Nullable<string> {
 	const isExist = LocalStorage.isItemExist(localStorageNames.LANGUAGE)

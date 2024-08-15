@@ -6,20 +6,32 @@ test.describe("Year switcher", () => {
 		const component = await mount(<CalendarView />)
 
 		const today = new Date()
-		let year = today.getFullYear()
+		const currentYear = today.getFullYear()
+		const nextYear = currentYear + 1
+		const previousYear = currentYear - 1
 
-		const input = await component.getByTestId("ds-input-input-stepper-calendar-year")
-		const increaseYear = await component.getByTestId("ds-button-arrow-calendar-year-top")
-		const decreaseYear = await component.getByTestId("ds-button-arrow-calendar-year-bottom")
+		const input = component.getByTestId("ds-input-input-stepper-calendar-year")
+		const increaseYear = component.getByTestId(
+			"ds-button-arrow-calendar-year-top",
+		)
+		const decreaseYear = component.getByTestId(
+			"ds-button-arrow-calendar-year-bottom",
+		)
 
-		await expect(input, "input has the initial year value").toHaveValue(String(year))
+		await expect(input, "input has the initial year value").toHaveValue(
+			String(currentYear),
+		)
 
 		await increaseYear.click()
 
-		await expect(input, "input has the incremented year value").toHaveValue(String(year += 1))
+		await expect(input, "input has the incremented year value").toHaveValue(
+			String(nextYear),
+		)
 
 		await decreaseYear.click()
 
-		await expect(input, "input has the decremented year value").toHaveValue(String(year -= 1))
+		await expect(input, "input has the decremented year value").toHaveValue(
+			String(previousYear),
+		)
 	})
 })

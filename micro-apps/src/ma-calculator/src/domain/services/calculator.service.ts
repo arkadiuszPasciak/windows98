@@ -1,8 +1,5 @@
-import { CalculatorServiceContract } from "../contracts"
-import {
-	ECalculatorSymbol,
-	ECalculatorDirect,
-} from "../models"
+import type { CalculatorServiceContract } from "../contracts"
+import { ECalculatorDirect, ECalculatorSymbol } from "../models"
 
 export class CalculatorService implements CalculatorServiceContract {
 	public isValueEqual(
@@ -11,12 +8,12 @@ export class CalculatorService implements CalculatorServiceContract {
 		direct: ECalculatorDirect,
 	): boolean {
 		switch (direct) {
-		case ECalculatorDirect.FIRST:
-			return value.slice(0, sign.length) === sign ? true : false
-		case ECalculatorDirect.LAST:
-			return value.slice(-1) === sign ? true : false
-		default:
-			return false
+			case ECalculatorDirect.FIRST:
+				return value.slice(0, sign.length) === sign
+			case ECalculatorDirect.LAST:
+				return value.slice(-1) === sign
+			default:
+				return false
 		}
 	}
 
@@ -28,7 +25,7 @@ export class CalculatorService implements CalculatorServiceContract {
 		const array = value.split("")
 		const result = array.find((element) => element === ".")
 
-		return result ? true : false
+		return !!result
 	}
 
 	public isMathematicalSignLast(value: string): boolean {
@@ -39,13 +36,13 @@ export class CalculatorService implements CalculatorServiceContract {
 		const lastValue = value.slice(-1)
 
 		switch (lastValue) {
-		case ECalculatorSymbol.ADD:
-		case ECalculatorSymbol.DIVIDE:
-		case ECalculatorSymbol.MINUS:
-		case ECalculatorSymbol.MULTIPLY:
-			return true
-		default:
-			return false
+			case ECalculatorSymbol.ADD:
+			case ECalculatorSymbol.DIVIDE:
+			case ECalculatorSymbol.MINUS:
+			case ECalculatorSymbol.MULTIPLY:
+				return true
+			default:
+				return false
 		}
 	}
 
@@ -58,6 +55,7 @@ export class CalculatorService implements CalculatorServiceContract {
 			return "ERROR"
 		}
 
+		// biome-ignore lint/security/noGlobalEval: I am not proud of that but It is temporary
 		return String(eval(value))
 	}
 
@@ -68,6 +66,6 @@ export class CalculatorService implements CalculatorServiceContract {
 
 		const regex = /(?:(?:^|[-+_*/])(?:\s*-?\d+(\.\d+)?(?:[eE][+-]?\d+)?\s*))+$/
 
-		return regex.test(value) ? true : false
+		return !!regex.test(value)
 	}
 }

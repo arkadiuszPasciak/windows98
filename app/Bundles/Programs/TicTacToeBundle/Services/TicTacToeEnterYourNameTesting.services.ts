@@ -12,20 +12,20 @@ export default class TicTacToeEnterYourNameTesting {
 	}
 
 	private checkInputValue(value: string): void {
-		cy.get("[data-test=\"ui-input-tic-tac-toe-enter-your-name\"]").should(
+		cy.get('[data-test="ui-input-tic-tac-toe-enter-your-name"]').should(
 			"have.value",
 			value,
 		)
 	}
 
 	private checkLabelValue(labelName: string): void {
-		cy.get("[data-test=\"ui-input-label-tic-tac-toe-enter-your-name\"]").contains(
+		cy.get('[data-test="ui-input-label-tic-tac-toe-enter-your-name"]').contains(
 			labelName,
 		)
 	}
 
 	private clearInput(): void {
-		cy.get("[data-test=\"ui-input-tic-tac-toe-enter-your-name\"]").clear()
+		cy.get('[data-test="ui-input-tic-tac-toe-enter-your-name"]').clear()
 	}
 
 	private isMainElementRender(): void {
@@ -33,6 +33,6 @@ export default class TicTacToeEnterYourNameTesting {
 	}
 
 	private typeValueInput(value: string): void {
-		cy.get("[data-test=\"ui-input-tic-tac-toe-enter-your-name\"]").type(value)
+		cy.get('[data-test="ui-input-tic-tac-toe-enter-your-name"]').type(value)
 	}
 }

@@ -12,8 +12,8 @@ describe("[UIModalBundle]<Components>(UIModal)", async () => {
 				modalState: true,
 			},
 			slots: {
-				default: "<div class=\"content\">it is content</div>",
-				options: "<button class=\"menu\">menu</button>",
+				default: '<div class="content">it is content</div>',
+				options: '<button class="menu">menu</button>',
 			},
 		})
 
@@ -27,13 +27,13 @@ describe("[UIModalBundle]<Components>(UIModal)", async () => {
 
 		cy.get("div.UIModal > div.container > div.header > h3.title")
 
-		cy.get("[data-test=\"modal-header-title\"]").contains("Name of application")
+		cy.get('[data-test="modal-header-title"]').contains("Name of application")
 
-		cy.get("[data-test=\"ui-modal-button-close\"]")
+		cy.get('[data-test="ui-modal-button-close"]')
 			.should("have.attr", "type", "button")
 			.click()
 
-		cy.get("[data-test=\"ui-modal-button-close\"] > img")
+		cy.get('[data-test="ui-modal-button-close"] > img')
 			.should("have.class", "button-close-icon")
 			.should("have.attr", "width", 8)
 			.should("have.attr", "height", 7)

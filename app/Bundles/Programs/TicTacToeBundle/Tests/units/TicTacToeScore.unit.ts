@@ -1,7 +1,7 @@
-import { expect, it, describe } from "vitest"
 import { TicTacToeScore } from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeScore.services"
 import { ETicTacToeStatusGame } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports"
 import { ETicTacToeRadioPlayer } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
+import { describe, expect, it } from "vitest"
 
 const { getDescriptionByScoreResult } = new TicTacToeScore()
 
@@ -40,7 +40,6 @@ describe("[TicTacToeBundle]<Services>(TicTacToeScore)", () => {
 
 		const undefinedScore = getDescriptionByScoreResult(
 			translate,
-			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 			// @ts-ignore
 			"undefined",
 			"Arkadiusz",

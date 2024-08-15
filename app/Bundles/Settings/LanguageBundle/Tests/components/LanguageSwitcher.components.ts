@@ -12,9 +12,9 @@ describe("[LanguageBundle]<Components>(LanguageSwitcher)", () => {
 	it("should have element, class and change language", () => {
 		cy.get("div.UISelect.LanguageSwitcher")
 
-		cy.get("[data-test=\"ui-select-languages\"]").select("Polish")
+		cy.get('[data-test="ui-select-languages"]').select("Polish")
 
-		cy.get("[data-test=\"ui-select-languages\"] > option:selected").should(
+		cy.get('[data-test="ui-select-languages"] > option:selected').should(
 			"have.text",
 			"Polski",
 		)
@@ -29,9 +29,9 @@ describe("[LanguageBundle]<Components>(LanguageSwitcher)", () => {
 			})
 		})
 
-		cy.get("[data-test=\"ui-select-languages\"]").select("Angielski")
+		cy.get('[data-test="ui-select-languages"]').select("Angielski")
 
-		cy.get("[data-test=\"ui-select-languages\"] > option:selected").should(
+		cy.get('[data-test="ui-select-languages"] > option:selected').should(
 			"have.text",
 			"English",
 		)

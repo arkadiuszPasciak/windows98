@@ -1,5 +1,5 @@
-import ThemeSwitcher from "@APP|Bundles/ThemeBundle/Components/ThemeSwitcher.vue"
 import { EStorageNames } from "@APP|Bundles/StorageBundle/Supports/Storage.supports"
+import ThemeSwitcher from "@APP|Bundles/ThemeBundle/Components/ThemeSwitcher.vue"
 import { EThemes } from "@APP|Bundles/ThemeBundle/Supports/Theme.supports"
 
 describe("[ThemeBundle]<Components>(ThemeSwitcher)", () => {
@@ -12,9 +12,9 @@ describe("[ThemeBundle]<Components>(ThemeSwitcher)", () => {
 	it("should have element, class and change theme", () => {
 		cy.get("div.UISelect.ThemeSwitcher")
 
-		cy.get("[data-test=\"ui-select-themes\"]").select("Dark")
+		cy.get('[data-test="ui-select-themes"]').select("Dark")
 
-		cy.get("[data-test=\"ui-select-themes\"] > option:selected").should(
+		cy.get('[data-test="ui-select-themes"] > option:selected').should(
 			"have.text",
 			"Dark",
 		)
@@ -29,9 +29,9 @@ describe("[ThemeBundle]<Components>(ThemeSwitcher)", () => {
 			})
 		})
 
-		cy.get("[data-test=\"ui-select-themes\"]").select("Light")
+		cy.get('[data-test="ui-select-themes"]').select("Light")
 
-		cy.get("[data-test=\"ui-select-themes\"] > option:selected").should(
+		cy.get('[data-test="ui-select-themes"] > option:selected').should(
 			"have.text",
 			"Light",
 		)

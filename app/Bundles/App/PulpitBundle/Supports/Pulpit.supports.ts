@@ -1,4 +1,4 @@
 export interface IPulpitStoreApps {
-  name: string
-  iconName: string
+	name: string
+	iconName: string
 }
