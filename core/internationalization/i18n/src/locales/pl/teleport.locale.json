@@ -1,4 +1,4 @@
 {
-  "TeleportBundle.description-content": "Teleport jest wbudowanym komponentem, który pozwala nam \"teleportować\" część szablonu komponentu do węzła DOM, który istnieje poza hierarchią DOM tego komponentu.",
-  "TeleportBundle.services-content-1": "zarządzanie modalami na górze DOM"
+	"TeleportBundle.description-content": "Teleport jest wbudowanym komponentem, który pozwala nam \"teleportować\" część szablonu komponentu do węzła DOM, który istnieje poza hierarchią DOM tego komponentu.",
+	"TeleportBundle.services-content-1": "zarządzanie modalami na górze DOM"
 }

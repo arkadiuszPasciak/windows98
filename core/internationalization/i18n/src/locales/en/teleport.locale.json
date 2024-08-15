@@ -1,4 +1,4 @@
 {
-  "TeleportBundle.description-content": "The Bundle is a built-in com`ponent that allows us to \"teleport\" a part of a component's template into a DOM node that exists outside the DOM hierarchy of that component.",
-  "TeleportBundle.services-content-1": "manage modals on top of the DOM"
+	"TeleportBundle.description-content": "The Bundle is a built-in com`ponent that allows us to \"teleport\" a part of a component's template into a DOM node that exists outside the DOM hierarchy of that component.",
+	"TeleportBundle.services-content-1": "manage modals on top of the DOM"
 }

@@ -1,3 +1,3 @@
 export interface I18nLocaleSkeleton {
-  [key: string]: string
+	[key: string]: string
 }

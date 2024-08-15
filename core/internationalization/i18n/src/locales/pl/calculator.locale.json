@@ -1,10 +1,10 @@
 {
-  "CalculatorBundle.description-content": "Bundle jest to program <b>kalkulator</b>",
-  "CalculatorBundle.services-content-1": "dodawanie liczb",
-  "CalculatorBundle.services-content-2": "odejmowanie liczb",
-  "CalculatorBundle.services-content-3": "dzielenie liczb",
-  "CalculatorBundle.services-content-4": "mnożenie liczb",
-  "CalculatorBundle.services-content-5": "dodawanie kropki w liczbie",
-  "CalculatorBundle.services-content-6": "liczenie wyniku",
-  "CalculatorBundle.title": "Kalkulator"
+	"CalculatorBundle.description-content": "Bundle jest to program <b>kalkulator</b>",
+	"CalculatorBundle.services-content-1": "dodawanie liczb",
+	"CalculatorBundle.services-content-2": "odejmowanie liczb",
+	"CalculatorBundle.services-content-3": "dzielenie liczb",
+	"CalculatorBundle.services-content-4": "mnożenie liczb",
+	"CalculatorBundle.services-content-5": "dodawanie kropki w liczbie",
+	"CalculatorBundle.services-content-6": "liczenie wyniku",
+	"CalculatorBundle.title": "Kalkulator"
 }

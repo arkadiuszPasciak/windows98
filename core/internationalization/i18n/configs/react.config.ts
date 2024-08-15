@@ -6,6 +6,6 @@ export default async function i18nInit(): Promise<void> {
 	await i18next.use(initReactI18next).init({
 		resources: localesReact,
 		lng: "en",
-		fallbackLng: "en"
+		fallbackLng: "en",
 	})
 }

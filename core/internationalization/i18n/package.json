@@ -1,23 +1,25 @@
 {
-  "name": "@windows98/i18n",
-  "version": "1.0.0",
-  "description": "I18n configuration for Windows 98",
-  "author": "Arkadiusz Paściak",
-  "engines": {
-    "node": "20.12.0"
-  },
-  "devDependencies": {
-    "@windows98/linters": "workspace:*",
-    "i18next": "23.8.2",
-    "lint-staged": "15.2.2",
-    "react-i18next": "14.0.5",
-    "typescript": "5.4.2",
-    "vue-i18n": "9.2.2"
-  },
-  "scripts": {
-    "lint:code:fix": "eslint --config ./@linter/eslint.config.cjs . --fix --ext \".js, .ts\"",
-    "lint:code:run": "eslint --config ./@linter/eslint.config.cjs . --ext \".js, .ts\"",
-    "lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
-    "lint:types:run": "tsc"
-  }
+	"name": "@windows98/i18n",
+	"version": "1.0.0",
+	"description": "I18n configuration for Windows 98",
+	"author": "Arkadiusz Paściak",
+	"engines": {
+		"node": "20.12.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"@windows98/configs": "workspace:*",
+		"@windows98/linters": "workspace:*",
+		"i18next": "23.8.2",
+		"lint-staged": "15.2.2",
+		"react-i18next": "14.0.5",
+		"typescript": "5.4.2",
+		"vue-i18n": "9.2.2"
+	},
+	"scripts": {
+		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
+		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
+		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
+		"lint:types:run": "tsc"
+	}
 }

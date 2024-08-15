@@ -1,29 +1,29 @@
 import localesEN from "../locales/en"
-import localesMicroAppsEN from "./micro-apps/en"
 import localesPL from "../locales/pl"
+import localesMicroAppsEN from "./micro-apps/en"
 import localesMicroAppsPL from "./micro-apps/pl"
 
 const locales = {
 	en: {
 		...localesEN,
-		...localesMicroAppsEN
+		...localesMicroAppsEN,
 	},
 	pl: {
 		...localesPL,
-		...localesMicroAppsPL
+		...localesMicroAppsPL,
 	},
 }
 
 export const localesReact = {
 	en: {
 		translation: {
-			...localesMicroAppsEN
-		}
+			...localesMicroAppsEN,
+		},
 	},
 	pl: {
 		translation: {
-			...localesMicroAppsPL
-		}
+			...localesMicroAppsPL,
+		},
 	},
 }
 

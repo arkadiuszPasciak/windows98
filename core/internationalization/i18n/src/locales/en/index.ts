@@ -1,3 +1,4 @@
+import type { I18nLocaleSkeleton } from "../../types/locale-skeleton.type"
 import appEN from "./app.locale.json"
 import audioEN from "./audio.locale.json"
 import calculatorEN from "./calculator.locale.json"
@@ -22,7 +23,6 @@ import ticTacToeEN from "./tic-tac-toe.locale.json"
 import timerEN from "./timer.locale.json"
 import uiModalEN from "./ui-modal.locale.json"
 import uiSelectEN from "./ui-select.locale.json"
-import type { I18nLocaleSkeleton } from "../../types/locale-skeleton.type"
 
 const localesEN: I18nLocaleSkeleton = {
 	...appEN,

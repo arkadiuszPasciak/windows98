@@ -168,6 +168,12 @@ importers:
 
   core/internationalization/i18n:
     devDependencies:
+      '@biomejs/biome':
+        specifier: 1.8.3
+        version: 1.8.3
+      '@windows98/configs':
+        specifier: workspace:*
+        version: link:../../configs
       '@windows98/linters':
         specifier: workspace:*
         version: link:../../linters
