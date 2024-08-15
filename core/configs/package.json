@@ -13,7 +13,14 @@
 	"peerDependencies": {
 		"@biomejs/biome": "1.8.3",
 		"@playwright/experimental-ct-react": "1.45.1",
+		"@windows98/linters": "workspace:*",
+		"lint-staged": "15.2.2",
 		"vitest": "1.3.1"
+	},
+	"scripts": {
+		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
+		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
+		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs"
 	},
 	"types": "src/types/declarations.d.ts",
 	"version": "1.0.0"

@@ -1,13 +1,7 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
 	"files": {
-		"ignore": [
-			".cache",
-			"build",
-			"dist",
-			"node_modules",
-			"test-results"
-		]
+		"ignore": [".cache", "build", "dist", "node_modules", "test-results"]
 	},
 	"formatter": {
 		"attributePosition": "multiline",
