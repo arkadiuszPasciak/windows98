@@ -1,6 +1,6 @@
-import { createTestingPinia } from "@pinia/testing"
 import TicTacToeBoard from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeBoard.vue"
 import { ETicTacToeRadioDimension } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
+import { createTestingPinia } from "@pinia/testing"
 
 describe("[TicTacToeBundle]<Components>(TicTacToeBoard)", async () => {
 	it("renders correctly component with dimension 3x3", () => {

@@ -10,9 +10,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onBeforeUnmount } from "vue"
-import { Nullable } from "vitest"
 import { useClockStore } from "@APP|Bundles/ClockBundle/Stores/Clock.stores"
+import type { Nullable } from "vitest"
+import { onBeforeUnmount, ref } from "vue"
 
 const store = useClockStore()
 const time = ref<Nullable<string>>(store.$state.time)

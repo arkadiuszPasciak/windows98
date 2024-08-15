@@ -11,10 +11,10 @@
 </template>
 
 <script setup lang="ts">
+import { ETicTacToeInputNames } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
+import UIInput from "@APP|Bundles/UIInputBundle/Components/UIInput.vue"
 import { ref } from "vue"
 import { useI18n } from "vue-i18n"
-import UIInput from "@APP|Bundles/UIInputBundle/Components/UIInput.vue"
-import { ETicTacToeInputNames } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
 
 const { t } = useI18n()
 

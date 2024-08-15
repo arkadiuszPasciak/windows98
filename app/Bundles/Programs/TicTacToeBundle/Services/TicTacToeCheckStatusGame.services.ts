@@ -1,14 +1,14 @@
-import { Nullable } from "vitest"
 import {
 	ETicTacToeStatusGame,
-	TTicTacToeCheckStatusGame,
-	TTicTacToeStatusGameDraw,
-	TTicTacToeStatusGameWinner,
+	type TTicTacToeCheckStatusGame,
+	type TTicTacToeStatusGameDraw,
+	type TTicTacToeStatusGameWinner,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports"
 import {
 	ETicTacToePlayerSign,
-	TTicTacToePlayerSign,
+	type TTicTacToePlayerSign,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToePlayers.supports"
+import type { Nullable } from "vitest"
 
 export class TicTacToeCheckStatusGame {
 	public checkStatusGame(
@@ -40,9 +40,8 @@ export class TicTacToeCheckStatusGame {
 
 		if (isDraw) {
 			return ETicTacToeStatusGame.DRAW
-		} else {
-			return null
 		}
+		return null
 	}
 
 	private checkWinner(
@@ -55,8 +54,8 @@ export class TicTacToeCheckStatusGame {
 
 			if (
 				currentlyBoard[a - 1] === player &&
-        currentlyBoard[b - 1] === player &&
-        currentlyBoard[c - 1] === player
+				currentlyBoard[b - 1] === player &&
+				currentlyBoard[c - 1] === player
 			) {
 				return player === ETicTacToePlayerSign.PLAYER_X
 					? ETicTacToeStatusGame.WINNER_X

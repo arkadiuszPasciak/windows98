@@ -24,15 +24,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
-import { useI18n } from "vue-i18n"
-import UIRadio from "@APP|Bundles/UIRadioBundle/Components/UIRadio.vue"
-import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
 import {
 	ETicTacToeInputNames,
 	ETicTacToeRadioPlayer,
-	TTicTacToeRadioPlayer,
+	type TTicTacToeRadioPlayer,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
+import UIRadio from "@APP|Bundles/UIRadioBundle/Components/UIRadio.vue"
+import UIText from "@APP|Bundles/UITextBundle/Components/UIText.vue"
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
 const checkedRadioBoxes = ref<TTicTacToeRadioPlayer>(

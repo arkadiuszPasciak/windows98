@@ -1,5 +1,5 @@
-import { createTestingPinia } from "@pinia/testing"
 import SettingsDateTime from "@APP|Bundles/SettingsBundle/Components/SettingsDateTime.vue"
+import { createTestingPinia } from "@pinia/testing"
 
 describe("[SettingsBundle]<Components>(SettingsDateTime)", () => {
 	beforeEach(() => {
@@ -22,6 +22,6 @@ describe("[SettingsBundle]<Components>(SettingsDateTime)", () => {
 
 		cy.get("div.UIFrame.TimezoneSwitcher")
 
-		cy.get("[data-test=\"frame-title-timezone\"]").contains("Timezone")
+		cy.get('[data-test="frame-title-timezone"]').contains("Timezone")
 	})
 })

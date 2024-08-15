@@ -24,6 +24,9 @@ importers:
         specifier: ^9.2.2
         version: 9.6.5(vue@3.3.8(typescript@5.2.2))
     devDependencies:
+      '@biomejs/biome':
+        specifier: 1.8.3
+        version: 1.8.3
       '@intlify/unplugin-vue-i18n':
         specifier: ^0.11.0
         version: 0.11.0(rollup@4.14.0)(vue-i18n@9.6.5(vue@3.3.8(typescript@5.2.2)))

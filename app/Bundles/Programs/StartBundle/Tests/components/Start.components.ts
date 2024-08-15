@@ -1,5 +1,5 @@
-import { createTestingPinia } from "@pinia/testing"
 import Start from "@APP|Bundles/StartBundle/Components/Start.vue"
+import { createTestingPinia } from "@pinia/testing"
 
 describe("[StartBundle]<Components>(Start)", () => {
 	beforeEach(() => {
@@ -22,7 +22,7 @@ describe("[StartBundle]<Components>(Start)", () => {
 	})
 
 	it("should open panel", () => {
-		cy.get("[data-test=\"start-button-open\"]").click()
+		cy.get('[data-test="start-button-open"]').click()
 
 		cy.get(".StartPanel.v-primary.is-active")
 	})

@@ -18,7 +18,7 @@ describe("[UIRadioBundle]<Components>(UIRadio)", async () => {
 
 		cy.get(".UIRadio")
 
-		cy.get("[data-test=\"ui-radio-input-available-radio-restart\"]")
+		cy.get('[data-test="ui-radio-input-available-radio-restart"]')
 			.should("have.class", "input")
 			.should("have.attr", "type", "radio")
 			.should("have.attr", "name", "available-radio")
@@ -28,18 +28,18 @@ describe("[UIRadioBundle]<Components>(UIRadio)", async () => {
 
 		cy.get("label").click()
 
-		cy.get("[data-test=\"ui-radio-input-available-radio-restart\"]").should(
+		cy.get('[data-test="ui-radio-input-available-radio-restart"]').should(
 			"have.prop",
 			"checked",
 			true,
 		)
 
-		cy.get("[data-test=\"ui-radio-icon-available-radio-restart\"]").should(
+		cy.get('[data-test="ui-radio-icon-available-radio-restart"]').should(
 			"have.class",
 			"radio",
 		)
 
-		cy.get("[data-test=\"ui-radio-label-available-radio-restart\"]")
+		cy.get('[data-test="ui-radio-label-available-radio-restart"]')
 			.should("have.class", "UIText text")
 			.contains("Check Me!")
 	})
@@ -58,7 +58,7 @@ describe("[UIRadioBundle]<Components>(UIRadio)", async () => {
 
 		cy.get(".UIRadio.is-disabled")
 
-		cy.get("[data-test=\"ui-radio-input-unavailable-radio-shut-down\"]")
+		cy.get('[data-test="ui-radio-input-unavailable-radio-shut-down"]')
 			.should("have.class", "input")
 			.should("have.attr", "type", "radio")
 			.should("have.attr", "name", "unavailable-radio")

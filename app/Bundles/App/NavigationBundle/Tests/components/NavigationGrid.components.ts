@@ -6,7 +6,7 @@ describe("[NavigationBundle]<Components>(NavigationGrid)", () => {
 
 		cy.mount(NavigationGrid, {
 			slots: {
-				default: "<div class=\"test-navigation\">navigation</div>",
+				default: '<div class="test-navigation">navigation</div>',
 			},
 		})
 

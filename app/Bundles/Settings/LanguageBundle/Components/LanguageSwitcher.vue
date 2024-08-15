@@ -13,12 +13,12 @@
 </template>
 
 <script setup lang="ts">
-import UISelect from "@APP|Bundles/UISelectBundle/Components/UISelect.vue"
 import { MLanguageOptions } from "@APP|Bundles/LanguageBundle/Mocks/Language.mocks"
 import {
 	setLanguageVersionInStorage,
 	updateLangAttribute,
 } from "@APP|Bundles/LanguageBundle/Services/Language.services"
+import UISelect from "@APP|Bundles/UISelectBundle/Components/UISelect.vue"
 import { useI18n } from "vue-i18n"
 
 const i18n = useI18n()

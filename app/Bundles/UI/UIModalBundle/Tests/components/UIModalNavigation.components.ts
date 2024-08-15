@@ -4,7 +4,7 @@ describe("[UIModalBundle]<Snapshots>(UIModalNavigation)", async () => {
 	it("renders correctly component", () => {
 		cy.mount(UIModalNavigation, {
 			slots: {
-				default: "<p class=\"slot\">This is a default slot!</p>",
+				default: '<p class="slot">This is a default slot!</p>',
 			},
 		})
 

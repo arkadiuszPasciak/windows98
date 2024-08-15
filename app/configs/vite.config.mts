@@ -1,11 +1,8 @@
-import { defineConfig } from "vite"
-import Vue from "@vitejs/plugin-vue"
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite"
+import Vue from "@vitejs/plugin-vue"
+import { defineConfig } from "vite"
 import tsconfigPaths from "vite-tsconfig-paths"
-import {
-	isEnvironment,
-	EEnvironment,
-} from "./environment.config"
+import { EEnvironment, isEnvironment } from "./environment.config"
 import { getPathMain } from "./path.config"
 
 export default defineConfig({
@@ -30,9 +27,9 @@ export default defineConfig({
 			include: [/\.vue$/],
 			template: {
 				compilerOptions: {
-					isCustomElement: (tag) => tag.includes("ma-")
-				}
-			}
+					isCustomElement: (tag) => tag.includes("ma-"),
+				},
+			},
 		}),
 		VueI18nPlugin({
 			strictMessage: false,

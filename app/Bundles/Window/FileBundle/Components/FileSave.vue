@@ -45,18 +45,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
-import { useI18n } from "vue-i18n"
-import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
-import UIInput from "@APP|Bundles/UIInputBundle/Components/UIInput.vue"
-import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
-import UISelect from "@APP|Bundles/UISelectBundle/Components/UISelect.vue"
 import { MFilesTextTypes } from "@APP|Bundles/FileBundle/Mocks/File.mocks"
 import { saveFileOnUserDisk } from "@APP|Bundles/FileBundle/Services/File.services"
 import {
 	EFileTextTypes,
-	TFileTextTypes,
+	type TFileTextTypes,
 } from "@APP|Bundles/FileBundle/Supports/File.supports"
+import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
+import UIInput from "@APP|Bundles/UIInputBundle/Components/UIInput.vue"
+import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
+import UISelect from "@APP|Bundles/UISelectBundle/Components/UISelect.vue"
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
 
 const props = defineProps({
 	modalState: {

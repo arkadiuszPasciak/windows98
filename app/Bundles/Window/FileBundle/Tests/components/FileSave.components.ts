@@ -20,7 +20,7 @@ describe("[FileBundle]<Components>(FileSave)", () => {
 	})
 
 	it("should have title", () => {
-		cy.get("[data-test=\"modal-header-title\"]").should("have.text", "Save as")
+		cy.get('[data-test="modal-header-title"]').should("have.text", "Save as")
 	})
 
 	it("should have labels", () => {
@@ -28,14 +28,14 @@ describe("[FileBundle]<Components>(FileSave)", () => {
 	})
 
 	it("saves a text file", () => {
-		cy.get("[data-test=\"ui-input-file-save-name\"]").clear().type("cool-name")
+		cy.get('[data-test="ui-input-file-save-name"]').clear().type("cool-name")
 
 		methods.changeSelectAndCheckOptionSelected("Rich text format (*.rtf)")
 		methods.changeSelectAndCheckOptionSelected("Text Document (*.txt)")
 		methods.changeSelectAndCheckOptionSelected("CSV Document (*.csv)")
 		methods.changeSelectAndCheckOptionSelected("Word Document (*.doc)")
 
-		cy.get("[data-test=\"file-save-button-cancel\"]").click()
-		cy.get("[data-test=\"file-save-button-save\"]").click()
+		cy.get('[data-test="file-save-button-cancel"]').click()
+		cy.get('[data-test="file-save-button-save"]').click()
 	})
 })

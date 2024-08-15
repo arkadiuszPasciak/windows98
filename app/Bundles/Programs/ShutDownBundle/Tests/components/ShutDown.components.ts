@@ -1,5 +1,5 @@
-import { createTestingPinia } from "@pinia/testing"
 import ShutDown from "@APP|Bundles/ShutDownBundle/Components/ShutDown.vue"
+import { createTestingPinia } from "@pinia/testing"
 
 describe("[ShutDownBundle]<Components>(ShutDown)", () => {
 	beforeEach(() => {
@@ -21,7 +21,7 @@ describe("[ShutDownBundle]<Components>(ShutDown)", () => {
 	})
 
 	it("should have title", () => {
-		cy.get("[data-test=\"modal-header-title\"]").should(
+		cy.get('[data-test="modal-header-title"]').should(
 			"have.text",
 			"Shut Down Windows",
 		)
@@ -30,23 +30,23 @@ describe("[ShutDownBundle]<Components>(ShutDown)", () => {
 	it("should have elements and classes", () => {
 		cy.get("div.ShutDown")
 
-		cy.get("[data-test=\"shut-down-icon\"]")
+		cy.get('[data-test="shut-down-icon"]')
 
-		cy.get("[data-test=\"shut-down-description\"]").contains(
+		cy.get('[data-test="shut-down-description"]').contains(
 			"What do you want the computer to do?",
 		)
 
-		cy.get("[data-test=\"ui-radio-label-shut-down-shut-down\"]").contains(
+		cy.get('[data-test="ui-radio-label-shut-down-shut-down"]').contains(
 			"Shut Down",
 		)
 
-		cy.get("[data-test=\"ui-radio-label-shut-down-restart\"]").contains("Restart")
+		cy.get('[data-test="ui-radio-label-shut-down-restart"]').contains("Restart")
 	})
 
 	it("should check restart and restart page", () => {
-		cy.get("[data-test=\"ui-radio-icon-shut-down-restart\"]").click()
+		cy.get('[data-test="ui-radio-icon-shut-down-restart"]').click()
 
-		cy.get("[data-test=\"ui-radio-input-shut-down-restart\"]").should(
+		cy.get('[data-test="ui-radio-input-shut-down-restart"]').should(
 			"be.checked",
 		)
 
@@ -55,9 +55,9 @@ describe("[ShutDownBundle]<Components>(ShutDown)", () => {
 	})
 
 	it("should shut down and move user to google.com", () => {
-		cy.get("[data-test=\"ui-radio-icon-shut-down-shut-down\"]").click()
+		cy.get('[data-test="ui-radio-icon-shut-down-shut-down"]').click()
 
-		cy.get("[data-test=\"ui-radio-input-shut-down-shut-down\"]").should(
+		cy.get('[data-test="ui-radio-input-shut-down-shut-down"]').should(
 			"be.checked",
 		)
 

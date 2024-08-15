@@ -1,5 +1,5 @@
-import { createTestingPinia } from "@pinia/testing"
 import SettingsLanguages from "@APP|Bundles/SettingsBundle/Components/SettingsLanguages.vue"
+import { createTestingPinia } from "@pinia/testing"
 
 describe("[SettingsBundle]<Components>(SettingsLanguages)", () => {
 	beforeEach(() => {

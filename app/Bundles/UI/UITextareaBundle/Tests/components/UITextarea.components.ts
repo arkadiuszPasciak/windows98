@@ -15,12 +15,12 @@ describe("[UITextareaBundle]<Components>(UITextarea)", async () => {
 
 		cy.get(".UITextarea.label-position-left")
 
-		const label = cy.get("[data-test=\"ui-textarea-label-comment\"]")
+		const label = cy.get('[data-test="ui-textarea-label-comment"]')
 
 		label.contains("Comment")
 		label.should("have.attr", "for", "comment")
 
-		const input = cy.get("[data-test=\"ui-textarea-comment\"]")
+		const input = cy.get('[data-test="ui-textarea-comment"]')
 
 		input.should("have.attr", "id", "comment")
 		input.should("have.value", "your comment...")
@@ -42,12 +42,12 @@ describe("[UITextareaBundle]<Components>(UITextarea)", async () => {
 
 		cy.get(".UITextarea.label-position-top")
 
-		const label = cy.get("[data-test=\"ui-textarea-label-feedback\"]")
+		const label = cy.get('[data-test="ui-textarea-label-feedback"]')
 
 		label.contains("Feedback")
 		label.should("have.attr", "for", "feedback")
 
-		const input = cy.get("[data-test=\"ui-textarea-feedback\"]")
+		const input = cy.get('[data-test="ui-textarea-feedback"]')
 
 		input.should("have.attr", "id", "feedback")
 		input.should("have.value", "Why is feedback important for change?")
@@ -69,7 +69,7 @@ describe("[UITextareaBundle]<Components>(UITextarea)", async () => {
 
 		cy.get(".UITextarea.label-position-top.type-notepad")
 
-		const input = cy.get("[data-test=\"ui-textarea-notepad\"]")
+		const input = cy.get('[data-test="ui-textarea-notepad"]')
 
 		input.should("have.attr", "id", "notepad")
 		input.should("have.value", "This is an Example!")

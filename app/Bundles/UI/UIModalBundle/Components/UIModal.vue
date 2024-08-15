@@ -50,12 +50,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue"
-import { Nullable } from "vitest"
-import { useI18n } from "vue-i18n"
 import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
 import UIModalNavigation from "@APP|Bundles/UIModalBundle/Components/UIModalNavigation.vue"
-import { TUIModalCursor } from "@APP|Bundles/UIModalBundle/Supports/UIModal.supports"
+import type { TUIModalCursor } from "@APP|Bundles/UIModalBundle/Supports/UIModal.supports"
+import type { Nullable } from "vitest"
+import { ref } from "vue"
+import { useI18n } from "vue-i18n"
 
 const props = defineProps({
 	title: {
@@ -122,8 +122,8 @@ const mouseMove = (event: MouseEvent): void => {
 		return
 	}
 
-	modalElement.value.style.left = event.clientX + positionX.value + "px"
-	modalElement.value.style.top = event.clientY + positionY.value + "px"
+	modalElement.value.style.left = `${event.clientX + positionX.value}px`
+	modalElement.value.style.top = `${event.clientY + positionY.value}px`
 }
 
 defineEmits(["closeModal"])

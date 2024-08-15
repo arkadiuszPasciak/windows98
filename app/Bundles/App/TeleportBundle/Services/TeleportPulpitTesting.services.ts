@@ -1,6 +1,6 @@
-import { createTestingPinia } from "@pinia/testing"
 import TeleportPulpit from "@APP|Bundles/TeleportBundle/Components/TeleportPulpit.vue"
-import { ITeleportPulpitTesting } from "@APP|Bundles/TeleportBundle/Supports/TeleportPulpitTesting.supports"
+import type { ITeleportPulpitTesting } from "@APP|Bundles/TeleportBundle/Supports/TeleportPulpitTesting.supports"
+import { createTestingPinia } from "@pinia/testing"
 
 export default class TeleportPulpitTesting {
 	public testComponent(settings: ITeleportPulpitTesting): void {
@@ -35,7 +35,7 @@ export default class TeleportPulpitTesting {
 		cy.get("div.TeleportGrid.TeleportPulpit")
 		cy.get(`div.UIModal.${name}`)
 
-		cy.get("[data-test=\"ui-modal-button-close\"]").click()
+		cy.get('[data-test="ui-modal-button-close"]').click()
 
 		cy.get(`div.UIModal.${name}`).should("not.exist")
 	}

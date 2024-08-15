@@ -1,20 +1,20 @@
-import { defineStore } from "pinia"
 import { TicTacToeFormStart } from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeFormStart.services"
 import { TicTacToeGame } from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeGame.services"
 import {
 	ETicTacToeStatusGame,
-	TTicTacToeCheckStatusGame,
+	type TTicTacToeCheckStatusGame,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeCheckStatusGame.supports"
 import {
 	ETicTacToeRadioDimension,
 	ETicTacToeRadioPlayer,
 	ETicTacToeValidateStatusType,
-	TTicTacToeValidationError,
+	type TTicTacToeValidationError,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeFormStart.supports"
-import {
-	ITicTacToeStoresState,
+import type {
 	ITicTacToeStoresActions,
+	ITicTacToeStoresState,
 } from "@APP|Bundles/TicTacToeBundle/Supports/TicTacToeStores.supports"
+import { defineStore } from "pinia"
 
 export const useTicTacToeStore = defineStore("tic-tac-toe", {
 	state: () =>
@@ -42,7 +42,7 @@ export const useTicTacToeStore = defineStore("tic-tac-toe", {
 				),
 				TicTacToeFormStart: new TicTacToeFormStart(),
 			},
-		} as ITicTacToeStoresState),
+		}) as ITicTacToeStoresState,
 	actions: {
 		clearErrorState() {
 			this.form.errorState.state = false

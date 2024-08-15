@@ -16,12 +16,12 @@ describe("[UIInputBundle]<Components>(UIInput)", async () => {
 
 		cy.get(".UIInput.label-position-left")
 
-		const label = cy.get("[data-test=\"ui-input-label-main-email\"]")
+		const label = cy.get('[data-test="ui-input-label-main-email"]')
 
 		label.contains("Email")
 		label.should("have.attr", "for", "main-email")
 
-		const input = cy.get("[data-test=\"ui-input-main-email\"]")
+		const input = cy.get('[data-test="ui-input-main-email"]')
 
 		input.should("have.attr", "id", "main-email")
 		input.should("have.attr", "type", "email")
@@ -46,12 +46,12 @@ describe("[UIInputBundle]<Components>(UIInput)", async () => {
 
 		cy.get(".UIInput.label-position-top")
 
-		const label = cy.get("[data-test=\"ui-input-label-first-name\"]")
+		const label = cy.get('[data-test="ui-input-label-first-name"]')
 
 		label.contains("First name")
 		label.should("have.attr", "for", "first-name")
 
-		const input = cy.get("[data-test=\"ui-input-first-name\"]")
+		const input = cy.get('[data-test="ui-input-first-name"]')
 
 		input.should("have.attr", "id", "first-name")
 		input.should("have.attr", "type", "text")
@@ -74,12 +74,12 @@ describe("[UIInputBundle]<Components>(UIInput)", async () => {
 
 		cy.get(".UIInput.label-position-top")
 
-		const label = cy.get("[data-test=\"ui-input-label-password\"]")
+		const label = cy.get('[data-test="ui-input-label-password"]')
 
 		label.contains("Password")
 		label.should("have.attr", "for", "password")
 
-		const input = cy.get("[data-test=\"ui-input-password\"]")
+		const input = cy.get('[data-test="ui-input-password"]')
 
 		input.should("have.attr", "id", "password")
 		input.should("have.attr", "type", "password")
@@ -101,7 +101,7 @@ describe("[UIInputBundle]<Components>(UIInput)", async () => {
 
 		cy.get(".UIInput")
 
-		const input = cy.get("[data-test=\"ui-input-year-switcher\"]")
+		const input = cy.get('[data-test="ui-input-year-switcher"]')
 
 		input.should("have.attr", "id", "year-switcher")
 		input.should("have.attr", "type", "number")

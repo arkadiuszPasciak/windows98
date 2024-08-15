@@ -1,5 +1,5 @@
 export interface ITeleportPulpitTesting {
-  name: string
-  width: number
-  height: number
+	name: string
+	width: number
+	height: number
 }

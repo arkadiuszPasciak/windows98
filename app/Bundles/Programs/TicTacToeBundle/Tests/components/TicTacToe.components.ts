@@ -1,12 +1,12 @@
-import { createTestingPinia } from "@pinia/testing"
 import TicTacToe from "@APP|Bundles/TicTacToeBundle/Components/TicTacToe.vue"
 import TicTacToeChooseDimensionTesting from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeChooseDimensionTesting.services"
 import TicTacToeChoosePlayerTesting from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeChoosePlayerTesting.services"
 import TicTacToeEnterYourNameTesting from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeEnterYourNameTesting.services"
 import TicTacToeGameTesting from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeGameTesting.services"
+import { createTestingPinia } from "@pinia/testing"
 
 const TicTacToeChooseDimensionTestingService =
-  new TicTacToeChooseDimensionTesting()
+	new TicTacToeChooseDimensionTesting()
 const TicTacToeChoosePlayerTestingService = new TicTacToeChoosePlayerTesting()
 const TicTacToeEnterYourNameTestingService = new TicTacToeEnterYourNameTesting()
 const TicTacToeGameTestingService = new TicTacToeGameTesting()
@@ -30,7 +30,7 @@ describe("[TicTacToeBundle]<Components>(TicTacToe)", () => {
 		})
 
 		cy.get(".TicTacToe")
-		cy.get("[data-test=\"modal-header-title\"]").should(
+		cy.get('[data-test="modal-header-title"]').should(
 			"have.text",
 			"Tic Tac Toe",
 		)
@@ -46,7 +46,7 @@ describe("[TicTacToeBundle]<Components>(TicTacToe)", () => {
 
 		TicTacToeChooseDimensionTestingService.checkInputRadio3x3()
 
-		cy.get("button.UIButton[data-test=\"tic-tac-toe-form-button\"]")
+		cy.get('button.UIButton[data-test="tic-tac-toe-form-button"]')
 			.contains("Start")
 			.click()
 

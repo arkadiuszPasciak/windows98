@@ -17,11 +17,11 @@ describe("[UICheckboxBundle]<Components>(UICheckbox)", async () => {
 
 		cy.get(".UICheckbox")
 
-		cy.get("[data-test=\"ui-checkbox-checkmark-adult\"] .icon")
+		cy.get('[data-test="ui-checkbox-checkmark-adult"] .icon')
 
-		cy.get("[data-test=\"ui-checkbox-text-adult\"]").contains("Are you adult?")
+		cy.get('[data-test="ui-checkbox-text-adult"]').contains("Are you adult?")
 
-		const input = cy.get("[data-test=\"ui-checkbox-input-adult\"]")
+		const input = cy.get('[data-test="ui-checkbox-input-adult"]')
 
 		input.should("have.attr", "type", "checkbox")
 
@@ -46,13 +46,13 @@ describe("[UICheckboxBundle]<Components>(UICheckbox)", async () => {
 
 		cy.get(".UICheckbox")
 
-		cy.get("[data-test=\"ui-checkbox-checkmark-country\"] .icon")
+		cy.get('[data-test="ui-checkbox-checkmark-country"] .icon')
 
-		cy.get("[data-test=\"ui-checkbox-text-country\"]").contains(
+		cy.get('[data-test="ui-checkbox-text-country"]').contains(
 			"You can't uncheck it :)",
 		)
 
-		const input = cy.get("[data-test=\"ui-checkbox-input-country\"]")
+		const input = cy.get('[data-test="ui-checkbox-input-country"]')
 
 		input.should("have.attr", "type", "checkbox")
 		input.should("have.attr", "disabled")

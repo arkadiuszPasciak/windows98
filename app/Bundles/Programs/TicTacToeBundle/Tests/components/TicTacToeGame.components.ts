@@ -1,5 +1,5 @@
-import { createTestingPinia } from "@pinia/testing"
 import TicTacToeGame from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeGame.vue"
+import { createTestingPinia } from "@pinia/testing"
 
 describe("[TicTacToeBundle]<Components>(TicTacToeGame)", () => {
 	it("renders correctly component", () => {

@@ -1,4 +1,4 @@
-import { IFilesTextTypes } from "@APP|Bundles/FileBundle/Supports/File.supports"
+import type { IFilesTextTypes } from "@APP|Bundles/FileBundle/Supports/File.supports"
 
 export const MFilesTextTypes = [
 	{

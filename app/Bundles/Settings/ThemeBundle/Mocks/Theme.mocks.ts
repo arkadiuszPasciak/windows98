@@ -1,6 +1,6 @@
 import {
 	EThemes,
-	IThemeOptions,
+	type IThemeOptions,
 } from "@APP|Bundles/ThemeBundle/Supports/Theme.supports"
 
 export const MThemeOptions = [

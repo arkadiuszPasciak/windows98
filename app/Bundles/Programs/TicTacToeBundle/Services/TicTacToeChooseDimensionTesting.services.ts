@@ -17,19 +17,19 @@ export default class TicTacToeChooseDimensionTesting {
 
 	private checkInputValue(): void {
 		cy.get(
-			"[data-test=\"ui-radio-label-tic-tac-toc-choose-dimension-3x3\"]",
+			'[data-test="ui-radio-label-tic-tac-toc-choose-dimension-3x3"]',
 		).contains(" 3 x 3 ")
 	}
 
 	private chooseInput(): void {
 		cy.get(
-			"[data-test=\"ui-radio-input-tic-tac-toc-choose-dimension-3x3\"]",
+			'[data-test="ui-radio-input-tic-tac-toc-choose-dimension-3x3"]',
 		).click()
 	}
 
 	private isInputChecked(): void {
 		cy.get(
-			"[data-test=\"ui-radio-input-tic-tac-toc-choose-dimension-3x3\"]",
+			'[data-test="ui-radio-input-tic-tac-toc-choose-dimension-3x3"]',
 		).should("be.checked")
 	}
 

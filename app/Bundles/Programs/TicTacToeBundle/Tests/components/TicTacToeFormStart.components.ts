@@ -1,11 +1,11 @@
-import { createTestingPinia } from "@pinia/testing"
 import TicTacToeFormStart from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue"
 import TicTacToeChooseDimensionTesting from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeChooseDimensionTesting.services"
 import TicTacToeChoosePlayerTesting from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeChoosePlayerTesting.services"
 import TicTacToeEnterYourNameTesting from "@APP|Bundles/TicTacToeBundle/Services/TicTacToeEnterYourNameTesting.services"
+import { createTestingPinia } from "@pinia/testing"
 
 const TicTacToeChooseDimensionTestingService =
-  new TicTacToeChooseDimensionTesting()
+	new TicTacToeChooseDimensionTesting()
 const TicTacToeChoosePlayerTestingService = new TicTacToeChoosePlayerTesting()
 const TicTacToeEnterYourNameTestingService = new TicTacToeEnterYourNameTesting()
 
@@ -35,7 +35,7 @@ describe("[TicTacToeBundle]<Components>(TicTacToeFormStart)", () => {
 
 		TicTacToeChooseDimensionTestingService.checkInputRadio3x3()
 
-		cy.get("button.UIButton[data-test=\"tic-tac-toe-form-button\"]")
+		cy.get('button.UIButton[data-test="tic-tac-toe-form-button"]')
 			.contains("Start")
 			.click()
 
@@ -56,7 +56,7 @@ describe("[TicTacToeBundle]<Components>(TicTacToeFormStart)", () => {
 			},
 		})
 
-		cy.get("[data-test=\"ui-input-tic-tac-toe-enter-your-name\"]").clear()
+		cy.get('[data-test="ui-input-tic-tac-toe-enter-your-name"]').clear()
 
 		cy.get("form.TicTacToeFormStart")
 	})

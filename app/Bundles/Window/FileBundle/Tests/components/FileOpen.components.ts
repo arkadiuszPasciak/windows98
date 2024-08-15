@@ -7,7 +7,7 @@ describe("[FileBundle]<Components>(FileOpen)", () => {
 		cy.mount(FileOpen, {
 			slots: {
 				default:
-          "<button class=\"cypress-button-small\" type=\"button\">Open File</button>",
+					'<button class="cypress-button-small" type="button">Open File</button>',
 			},
 		})
 	})
@@ -17,6 +17,6 @@ describe("[FileBundle]<Components>(FileOpen)", () => {
 	})
 
 	it("should open file", () => {
-		cy.get("[data-test=\"file-open-button\"]").click()
+		cy.get('[data-test="file-open-button"]').click()
 	})
 })

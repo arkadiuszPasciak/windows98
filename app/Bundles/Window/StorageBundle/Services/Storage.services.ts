@@ -1,5 +1,5 @@
-import { Nullable } from "vitest"
-import { TStorageName } from "@APP|Bundles/StorageBundle/Supports/Storage.supports"
+import type { TStorageName } from "@APP|Bundles/StorageBundle/Supports/Storage.supports"
+import type { Nullable } from "vitest"
 
 class BaseStorage {
 	readonly storage: Storage
@@ -19,7 +19,7 @@ class BaseStorage {
 	public isItemExist(name: TStorageName): boolean {
 		const item = this.storage.getItem(name)
 
-		return item && item.length ? true : false
+		return !!item?.length
 	}
 
 	public removeItem(name: TStorageName): void {

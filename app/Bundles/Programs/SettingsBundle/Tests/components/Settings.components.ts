@@ -1,5 +1,5 @@
-import { createTestingPinia } from "@pinia/testing"
 import Settings from "@APP|Bundles/SettingsBundle/Components/Settings.vue"
+import { createTestingPinia } from "@pinia/testing"
 
 describe("[SettingsBundle]<Components>(Settings)", () => {
 	beforeEach(() => {
@@ -21,7 +21,7 @@ describe("[SettingsBundle]<Components>(Settings)", () => {
 	})
 
 	it("should have title", () => {
-		cy.get("[data-test=\"modal-header-title\"]").should("have.text", "Settings")
+		cy.get('[data-test="modal-header-title"]').should("have.text", "Settings")
 	})
 
 	it("should have element and class", () => {
@@ -29,19 +29,19 @@ describe("[SettingsBundle]<Components>(Settings)", () => {
 	})
 
 	it("should open date and time tab", () => {
-		cy.get("[data-test=\"ui-tabs-button-1\"]").contains("Date & Time").click()
+		cy.get('[data-test="ui-tabs-button-1"]').contains("Date & Time").click()
 
 		cy.get("div.SettingsDateTime")
 	})
 
 	it("should open date and languages tab", () => {
-		cy.get("[data-test=\"ui-tabs-button-2\"]").contains("Languages").click()
+		cy.get('[data-test="ui-tabs-button-2"]').contains("Languages").click()
 
 		cy.get("div.SettingsLanguages")
 	})
 
 	it("should open date and general tab", () => {
-		cy.get("[data-test=\"ui-tabs-button-0\"]").contains("General").click()
+		cy.get('[data-test="ui-tabs-button-0"]').contains("General").click()
 
 		cy.get("div.SettingsGeneral")
 	})

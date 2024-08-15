@@ -1,4 +1,4 @@
-import { UserConfig as VitestConfigInterface } from "vitest/config"
+import type { UserConfig as VitestConfigInterface } from "vitest/config"
 import { getPathMain } from "./path.config"
 
 const vitestConfig = {

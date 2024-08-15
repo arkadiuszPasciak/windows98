@@ -2,9 +2,9 @@ import { localStorageNames } from "@APP|Bundles/StorageBundle/Configs/Storage.co
 import { LocalStorage } from "@APP|Bundles/StorageBundle/Services/Storage.services"
 import {
 	EThemes,
-	TThemes,
+	type TThemes,
 } from "@APP|Bundles/ThemeBundle/Supports/Theme.supports"
-import { Nullable } from "vitest"
+import type { Nullable } from "vitest"
 
 export function getThemeColorFromStorage(): TThemes {
 	const theme = LocalStorage.getItem(

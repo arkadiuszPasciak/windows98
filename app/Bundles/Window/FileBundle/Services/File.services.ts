@@ -1,7 +1,7 @@
-import {
+import type {
 	IFilesElements,
-	TFileTextTypes,
 	TFileTextFileReader,
+	TFileTextTypes,
 } from "@APP|Bundles/FileBundle/Supports/File.supports"
 
 export function saveFileOnUserDisk(
@@ -62,10 +62,10 @@ export class FileSaveComponentTesting {
 
 	constructor() {
 		this.elements = {
-			labelFileSaveName: "[data-test=\"ui-input-label-file-save-name\"]",
-			labelFileTypes: "[data-test=\"ui-select-label-file-types\"]",
-			selectTypeFile: "[data-test=\"ui-select-file-types\"]",
-			optionSelected: "[data-test=\"ui-select-file-types\"] > option:selected",
+			labelFileSaveName: '[data-test="ui-input-label-file-save-name"]',
+			labelFileTypes: '[data-test="ui-select-label-file-types"]',
+			selectTypeFile: '[data-test="ui-select-file-types"]',
+			optionSelected: '[data-test="ui-select-file-types"] > option:selected',
 		}
 	}
 

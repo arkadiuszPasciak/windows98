@@ -1,14 +1,14 @@
-import { defineStore } from "pinia"
-import {
+import type {
 	IUIStepperStoresActions,
 	IUIStepperStoresState,
 } from "@APP|Bundles/UIStepperBundle/Supports/UIStepperTesting.supports"
+import { defineStore } from "pinia"
 
 export const useUIStepperTestingStore = defineStore("ui-stepper-testing", {
 	state: () =>
 		({
 			value: 0,
-		} as IUIStepperStoresState),
+		}) as IUIStepperStoresState,
 	actions: {
 		increaseValue() {
 			this.value += 1
