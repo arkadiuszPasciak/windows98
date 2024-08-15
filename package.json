@@ -1,20 +1,21 @@
 {
-  "name": "windows98",
-  "version": "0.0.4",
-  "description": "My sandbox to improve my programming skills based on Windows 98",
-  "author": "Arkadiusz Paściak",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arkadiuszPasciak/windows98.git"
-  },
-  "homepage": "https://github.com/arkadiuszPasciak/windows98#readme",
-  "engines": {
-    "node": "20.12.0"
-  },
-  "scripts": {
-    "prepare": "husky install"
-  },
-  "devDependencies": {
-    "husky": "^8.0.3"
-  }
+	"name": "windows98",
+	"version": "0.0.4",
+	"description": "My sandbox to improve my programming skills based on Windows 98",
+	"author": "Arkadiusz Paściak",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/arkadiuszPasciak/windows98.git"
+	},
+	"homepage": "https://github.com/arkadiuszPasciak/windows98#readme",
+	"engines": {
+		"node": "20.12.0"
+	},
+	"scripts": {
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"husky": "8.0.3"
+	}
 }
