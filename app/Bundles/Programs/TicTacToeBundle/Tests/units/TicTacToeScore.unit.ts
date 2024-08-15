@@ -40,7 +40,6 @@ describe("[TicTacToeBundle]<Services>(TicTacToeScore)", () => {
 
 		const undefinedScore = getDescriptionByScoreResult(
 			translate,
-			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 			// @ts-ignore
 			"undefined",
 			"Arkadiusz",

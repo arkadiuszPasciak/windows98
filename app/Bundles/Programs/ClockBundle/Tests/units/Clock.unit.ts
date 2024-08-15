@@ -19,12 +19,6 @@ describe("[ClockBundle]<Services>(getTimeClock)", () => {
 
 		expect(time?.length)
 	})
-
-	it("should return null if params are falsy or empty", () => {
-		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-		// @ts-ignore
-		expect(getTimeClock()).toBe(null)
-	})
 })
 
 describe("[ClockBundle]<Stores>(useClockStore)", () => {

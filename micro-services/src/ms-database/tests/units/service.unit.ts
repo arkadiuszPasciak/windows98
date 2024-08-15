@@ -26,7 +26,6 @@ describe("[MicroServices]<Database>(DatabaseService)", () => {
 
 				setTimeout(() => {
 					if (request.onsuccess) {
-						// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 						// @ts-ignore
 						request.onsuccess()
 					}

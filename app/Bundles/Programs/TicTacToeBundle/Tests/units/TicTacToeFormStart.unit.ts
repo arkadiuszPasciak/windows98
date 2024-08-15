@@ -110,7 +110,6 @@ describe("[TicTacToeBundle]<Services>(TicTacToeFormStart)", () => {
 			fields: null,
 		})
 
-		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 		// @ts-ignore
 		const forthFields = {
 			userName: "Arkadiusz",
@@ -124,7 +123,6 @@ describe("[TicTacToeBundle]<Services>(TicTacToeFormStart)", () => {
 			fields: null,
 		})
 
-		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 		// @ts-ignore
 		const fifthField = {
 			userName: "Arkadiusz",
