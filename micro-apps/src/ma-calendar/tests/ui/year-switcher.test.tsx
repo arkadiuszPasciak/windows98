@@ -10,9 +10,7 @@ test.describe("Year switcher", () => {
 		const nextYear = currentYear + 1
 		const previousYear = currentYear - 1
 
-		const input = component.getByTestId(
-			"ds-input-input-stepper-calendar-year",
-		)
+		const input = component.getByTestId("ds-input-input-stepper-calendar-year")
 		const increaseYear = component.getByTestId(
 			"ds-button-arrow-calendar-year-top",
 		)

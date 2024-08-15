@@ -3,9 +3,7 @@
 	"main": "@bundler/build/index.umd.cjs",
 	"module": "@bundler/build/index.js",
 	"types": "@bundler/build/@bundles/src/wc/index.wc.d.ts",
-	"files": [
-		"@bundler/build"
-	],
+	"files": ["@bundler/build"],
 	"exports": {
 		".": {
 			"import": "./@bundler/build/index.js",
