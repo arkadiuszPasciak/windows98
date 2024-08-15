@@ -1,8 +1,9 @@
+import { DatabaseRepository } from "../../data/repositories/database.repository";
 import type { DatabaseServiceContract } from "../contracts/service.contract";
 export default class DatabaseService implements DatabaseServiceContract {
     readonly databaseName: string;
     readonly storeName: string;
-    private readonly databaseRepository;
+    readonly databaseRepository: DatabaseRepository;
     constructor(databaseName: string, storeName: string);
     open(): Promise<void>;
     add<T>(item: T): Promise<void>;
