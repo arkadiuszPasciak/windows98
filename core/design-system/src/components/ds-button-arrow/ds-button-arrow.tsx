@@ -1,20 +1,20 @@
-import type { DSButtonArrowProps } from './ds-button-arrow.type';
-import styles from './ds-button-arrow.module.scss'
+import styles from "./ds-button-arrow.module.scss"
+import type { DSButtonArrowProps } from "./ds-button-arrow.type"
 
 export function DSButtonArrow({
 	ariaLabel,
-	className = '',
+	className = "",
 	direction,
 	disabled,
 	id,
 	onClick,
-	size
+	size,
 }: DSButtonArrowProps) {
 	return (
 		<button
 			aria-label={ariaLabel}
 			className={`
-				${styles['ds-button-arrow']}
+				${styles["ds-button-arrow"]}
 				${styles[`arrow-${direction}`]}
 				${styles[`size-${size}`]}
 				${className}
@@ -25,5 +25,4 @@ export function DSButtonArrow({
 			onClick={onClick}
 		/>
 	)
-	
 }

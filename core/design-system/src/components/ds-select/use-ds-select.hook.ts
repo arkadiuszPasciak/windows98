@@ -1,4 +1,4 @@
-import { useState, ChangeEvent } from "react"
+import { type ChangeEvent, useState } from "react"
 import type { DSSelectProps } from "./ds-select.type"
 
 export default function useDSSelect(modelValue: DSSelectProps["modelValue"]) {

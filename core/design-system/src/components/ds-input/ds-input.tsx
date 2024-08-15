@@ -1,23 +1,23 @@
-import styles from './ds-input.module.scss';
-import type { DSInputProps } from './ds-input.type';
-import { useDSInput } from './use-ds-input.hook';
+import styles from "./ds-input.module.scss"
+import type { DSInputProps } from "./ds-input.type"
+import { useDSInput } from "./use-ds-input.hook"
 
 export function DSInput({
-  className = '',
-  type = 'text',
-  id,
-  disabled = false,
-  readonly = false,
-  initialValue = '',
-  labelName,
-  wrapperLayout = 'vertical',
-  min,
-  max,
-  onChange,
+	className = "",
+	type = "text",
+	id,
+	disabled = false,
+	readonly = false,
+	initialValue = "",
+	labelName,
+	wrapperLayout = "vertical",
+	min,
+	max,
+	onChange,
 }: DSInputProps) {
-    const { value, handleInputChange } = useDSInput({initialValue, onChange});
+	const { value, handleInputChange } = useDSInput({ initialValue, onChange })
 
-	const mainID = `ds-input-${id}`;
+	const mainID = `ds-input-${id}`
 
 	return (
 		<div
@@ -26,7 +26,7 @@ export function DSInput({
 		>
 			{labelName && (
 				<label
-					className={styles['label']}
+					className={styles.label}
 					data-testid={`ds-input-label-${id}`}
 					htmlFor={mainID}
 				>
@@ -36,7 +36,7 @@ export function DSInput({
 
 			<input
 				id={mainID}
-				className={styles['input']}
+				className={styles.input}
 				data-testid={`ds-input-input-${id}`}
 				type={type}
 				disabled={disabled}
@@ -48,5 +48,5 @@ export function DSInput({
 				onChange={handleInputChange}
 			/>
 		</div>
-	);
+	)
 }
