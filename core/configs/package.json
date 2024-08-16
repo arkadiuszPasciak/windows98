@@ -5,17 +5,17 @@
 		"node": "20.12.0"
 	},
 	"exports": {
-		"./biome/shared": "./src/configs/biome/shared.config.json",
-		"./lint-staged/code": "./src/configs/lint-staged/code.config.cjs",
-		"./lint-staged/styles": "./src/configs/lint-staged/styles.config.cjs",
-		"./playwright/component-react": "./src/configs/playwright/component-react.config.mjs",
-		"./typescript/base": "./src/configs/typescript/base.config.json",
-		"./typescript/cypress": "./src/configs/typescript/cypress.config.json",
-		"./typescript/node": "./src/configs/typescript/react.config.json",
-		"./typescript/react": "./src/configs/typescript/react.config.json",
-		"./typescript/vite": "./src/configs/typescript/vite.config.json",
-		"./typescript/vue": "./src/configs/typescript/vue.config.json",
-		"./vitest/shared": "./src/configs/vitest/shared.config.mjs"
+		"./biome/shared": "./src/biome/shared.config.json",
+		"./lint-staged/code": "./src/lint-staged/code.config.cjs",
+		"./lint-staged/styles": "./src/lint-staged/styles.config.cjs",
+		"./playwright/component-react": "./src/playwright/component-react.config.mjs",
+		"./typescript/base": "./src/typescript/base.config.json",
+		"./typescript/cypress": "./src/typescript/cypress.config.json",
+		"./typescript/node": "./src/typescript/react.config.json",
+		"./typescript/react": "./src/typescript/react.config.json",
+		"./typescript/vite": "./src/typescript/vite.config.json",
+		"./typescript/vue": "./src/typescript/vue.config.json",
+		"./vitest/shared": "./src/vitest/shared.config.mjs"
 	},
 	"name": "@windows98/configs",
 	"devDependencies": {
