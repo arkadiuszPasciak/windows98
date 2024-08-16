@@ -1,4 +1,4 @@
-const codeConfig = require("@windows98/configs/lint-staged/code")
+const codeConfig = require("../src/configs/lint-staged/code.config.cjs")
 
 module.exports = {
 	...codeConfig,

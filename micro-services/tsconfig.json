@@ -1,4 +1,4 @@
 {
-	"extends": ["@windows98/linters/ts-config/base"],
+	"extends": ["@windows98/configs/typescript/base"],
 	"include": ["./**/*"]
 }

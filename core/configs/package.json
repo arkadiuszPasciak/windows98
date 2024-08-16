@@ -9,14 +9,25 @@
 		"./lint-staged/code": "./src/configs/lint-staged/code.config.cjs",
 		"./lint-staged/styles": "./src/configs/lint-staged/styles.config.cjs",
 		"./playwright/component-react": "./src/configs/playwright/component-react.config.mjs",
+		"./typescript/base": "./src/configs/typescript/base.config.json",
+		"./typescript/cypress": "./src/configs/typescript/cypress.config.json",
+		"./typescript/node": "./src/configs/typescript/react.config.json",
+		"./typescript/react": "./src/configs/typescript/react.config.json",
+		"./typescript/vite": "./src/configs/typescript/vite.config.json",
+		"./typescript/vue": "./src/configs/typescript/vue.config.json",
 		"./vitest/shared": "./src/configs/vitest/shared.config.mjs"
 	},
 	"name": "@windows98/configs",
+	"devDependencies": {
+		"@types/react": "18.2.43",
+		"@types/react-dom": "18.2.17"
+	},
 	"peerDependencies": {
 		"@biomejs/biome": "1.8.3",
 		"@playwright/experimental-ct-react": "1.45.1",
 		"@windows98/linters": "workspace:*",
 		"lint-staged": "15.2.2",
+		"typescript": "5.4.2",
 		"vitest": "1.3.1"
 	},
 	"scripts": {
