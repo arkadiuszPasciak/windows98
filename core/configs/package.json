@@ -6,6 +6,8 @@
 	},
 	"exports": {
 		"./biome/shared": "./src/configs/biome/shared.config.json",
+		"./lint-staged/code": "./src/configs/lint-staged/code.config.cjs",
+		"./lint-staged/styles": "./src/configs/lint-staged/styles.config.cjs",
 		"./playwright/component-react": "./src/configs/playwright/component-react.config.mjs",
 		"./vitest/shared": "./src/configs/vitest/shared.config.mjs"
 	},
