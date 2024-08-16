@@ -9,6 +9,8 @@
 		"./lint-staged/code": "./src/lint-staged/code.config.cjs",
 		"./lint-staged/styles": "./src/lint-staged/styles.config.cjs",
 		"./playwright/component-react": "./src/playwright/component-react.config.mjs",
+		"./stylelint/css": "./src/stylelint/css.config.cjs",
+		"./stylelint/scss": "./src/stylelint/scss.config.cjs",
 		"./typescript/base": "./src/typescript/base.config.json",
 		"./typescript/cypress": "./src/typescript/cypress.config.json",
 		"./typescript/node": "./src/typescript/react.config.json",
@@ -20,13 +22,17 @@
 	"name": "@windows98/configs",
 	"devDependencies": {
 		"@types/react": "18.2.43",
-		"@types/react-dom": "18.2.17"
+		"@types/react-dom": "18.2.17",
+		"postcss-html": "1.6.0",
+		"postcss-scss": "4.0.9",
+		"stylelint-config-recommended-scss": "14.0.0"
 	},
 	"peerDependencies": {
 		"@biomejs/biome": "1.8.3",
 		"@playwright/experimental-ct-react": "1.45.1",
 		"@windows98/linters": "workspace:*",
 		"lint-staged": "15.2.2",
+		"stylelint": "16.2.1",
 		"typescript": "5.4.2",
 		"vitest": "1.3.1"
 	},

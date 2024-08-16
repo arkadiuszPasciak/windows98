@@ -1,3 +1,3 @@
 module.exports = {
-	extends: ["@windows98/stylelint-config/scss"],
+	extends: ["@windows98/configs/stylelint/scss"],
 }
