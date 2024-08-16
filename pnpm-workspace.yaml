@@ -4,8 +4,6 @@ packages:
   - core/configs
   - core/design-system
   - core/internationalization/*
-  - core/linters
-  - core/linters/*
   - core/tests/*
   - core/toolkit
   - docs

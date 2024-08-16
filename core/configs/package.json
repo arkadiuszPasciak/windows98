@@ -30,7 +30,6 @@
 	"peerDependencies": {
 		"@biomejs/biome": "1.8.3",
 		"@playwright/experimental-ct-react": "1.45.1",
-		"@windows98/linters": "workspace:*",
 		"lint-staged": "15.2.2",
 		"stylelint": "16.2.1",
 		"typescript": "5.4.2",
