@@ -26,12 +26,20 @@ class PNPMReadPackageHook {
 		],
 	}
 
+	#engines = {
+		requirements: {
+			node: "20.12.0",
+			pnpm: "9.0.6",
+		},
+	}
+
 	run = (pck) => {
 		if (!pck || typeof pck !== "object") {
 			throw new Error("[PNPMReadPackageHook]: Invalid packages object")
 		}
 
 		this.#checkDependencies(pck)
+		this.#checkEngines(pck)
 
 		return pck
 	}
@@ -47,6 +55,19 @@ class PNPMReadPackageHook {
 						`[PNPMReadPackageHook]: Dependency version mismatch in "${pck.name}" for ${dependency} of ${type}. Expected: ${this.#dependencies.requirements[dependency]}, Found: ${pck[type][dependency]}`,
 					)
 				}
+			}
+		}
+	}
+
+	#checkEngines = (pck) => {
+		for (const engine of Object.keys(this.#engines.requirements)) {
+			if (
+				pck.engines?.[engine] &&
+				pck.engines[engine] !== this.#engines.requirements[engine]
+			) {
+				throw new Error(
+					`[PNPMReadPackageHook]: Engine version mismatch in "${pck.name}" for ${engine}. Expected: ${this.#engines.requirements[engine]}, Found: ${pck.engines[engine]}`,
+				)
 			}
 		}
 	}

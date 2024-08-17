@@ -14,7 +14,8 @@
 	"description": "Micro services for Windows 98",
 	"author": "Arkadiusz Paściak",
 	"engines": {
-		"node": "20.12.0"
+		"node": "20.12.0",
+		"pnpm": "9.0.6"
 	},
 	"type": "module",
 	"devDependencies": {

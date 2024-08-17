@@ -12,11 +12,11 @@
 		"vue-i18n": "9.2.2"
 	},
 	"engines": {
-		"node": "20.12.0"
+		"node": "20.12.0",
+		"pnpm": "9.0.6"
 	},
 	"license": "MIT",
 	"name": "@windows98/cypress",
-	"packageManager": "pnpm@9.0.6",
 	"scripts": {
 		"test:integration:open": "NODE_ENV=test cypress open --config-file ./configs/cypress.config.ts",
 		"test:integration:run": "NODE_ENV=test cypress run --config-file ./configs/cypress.config.ts --component --browser chrome"
