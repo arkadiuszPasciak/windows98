@@ -1,8 +1,8 @@
 {
 	"extends": [
-		"@windows98/linters/ts-config/cypress",
-		"@windows98/linters/ts-config/vue",
-		"@windows98/linters/ts-config/vite"
+		"@windows98/configs/typescript/cypress",
+		"@windows98/configs/typescript/vue",
+		"@windows98/configs/typescript/vite"
 	],
 	"compilerOptions": {
 		"baseUrl": ".",

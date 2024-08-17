@@ -14,13 +14,13 @@
 	"description": "Micro services for Windows 98",
 	"author": "Arkadiusz Paściak",
 	"engines": {
-		"node": "20.12.0"
+		"node": "20.12.0",
+		"pnpm": "9.0.6"
 	},
 	"type": "module",
 	"devDependencies": {
 		"@biomejs/biome": "1.8.3",
 		"@windows98/configs": "workspace:*",
-		"@windows98/linters": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
 		"lint-staged": "15.2.2",
 		"typescript": "5.4.2",

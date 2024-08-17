@@ -1,4 +1,4 @@
 {
-	"extends": ["@windows98/linters/ts-config/react"],
+	"extends": ["@windows98/configs/typescript/react"],
 	"include": ["./.storybook/**/*", "./src/**/*"]
 }

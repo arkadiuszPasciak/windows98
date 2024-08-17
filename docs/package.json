@@ -17,7 +17,6 @@
 		"@types/react-dom": "18.2.17",
 		"@windows98/configs": "workspace:*",
 		"@windows98/design-system": "workspace:*",
-		"@windows98/linters": "workspace:*",
 		"@windows98/micro-apps": "workspace:*",
 		"lint-staged": "15.2.2",
 		"prop-types": "15.8.1",

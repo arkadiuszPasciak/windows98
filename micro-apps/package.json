@@ -19,19 +19,17 @@
 		"react-i18next": "14.0.5"
 	},
 	"dependencies": {
-		"@r2wc/react-to-web-component": "^2.0.3"
+		"@r2wc/react-to-web-component": "2.0.3"
 	},
 	"devDependencies": {
 		"@playwright/experimental-ct-react": "1.45.1",
 		"@types/react": "18.2.43",
 		"@types/react-dom": "18.2.17",
-		"@vitejs/plugin-react": "^4.2.1",
+		"@vitejs/plugin-react": "4.2.1",
 		"@windows98/app": "workspace:*",
 		"@windows98/configs": "workspace:*",
 		"@windows98/design-system": "workspace:*",
 		"@windows98/i18n": "workspace:*",
-		"@windows98/linters": "workspace:*",
-		"@windows98/stylelint-config": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
 		"@biomejs/biome": "1.8.3",
 		"lint-staged": "15.2.2",
@@ -39,12 +37,13 @@
 		"stylelint": "16.2.1",
 		"typescript": "5.4.2",
 		"vite": "5.2.8",
-		"vite-plugin-css-injected-by-js": "^3.3.1",
-		"vite-plugin-dts": "^3.7.0",
+		"vite-plugin-css-injected-by-js": "3.3.1",
+		"vite-plugin-dts": "3.7.0",
 		"vitest": "1.3.1"
 	},
 	"engines": {
-		"node": "20.12.0"
+		"node": "20.12.0",
+		"pnpm": "9.0.6"
 	},
 	"name": "@windows98/micro-apps",
 	"scripts": {

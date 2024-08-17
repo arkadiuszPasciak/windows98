@@ -1,5 +1,5 @@
 module.exports = {
-	extends: ["./css.config.js"],
+	extends: ["./css.config.cjs"],
 	overrides: [
 		{
 			files: ["*.scss", "**/*.scss"],
@@ -8,6 +8,6 @@ module.exports = {
 			rules: {
 				"scss/operator-no-newline-after": null,
 			},
-		}
+		},
 	],
 }
