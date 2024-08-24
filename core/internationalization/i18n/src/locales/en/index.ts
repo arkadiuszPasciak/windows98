@@ -6,7 +6,6 @@ import calendarEN from "./calendar.locale.json"
 import clockEN from "./clock.locale.json"
 import fileEN from "./file.locale.json"
 import languageEN from "./language.locale.json"
-import markdownEN from "./markdown.locale.json"
 import mediaPlayerEN from "./media-player.locale.json"
 import navigationEN from "./navigation.locale.json"
 import notepadEN from "./notepad.locale.json"
@@ -32,7 +31,6 @@ const localesEN: I18nLocaleSkeleton = {
 	...fileEN,
 	...languageEN,
 	...clockEN,
-	...markdownEN,
 	...mediaPlayerEN,
 	...navigationEN,
 	...notepadEN,
