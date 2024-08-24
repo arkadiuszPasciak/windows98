@@ -1,5 +1,3 @@
 module.exports = {
-	"**/*.{css,scss}": [
-		"pnpm run lint:styles:fix",
-	],
+	"**/*.{css,scss}": ["pnpm run lint:styles:fix"],
 }

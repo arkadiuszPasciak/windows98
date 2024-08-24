@@ -2,9 +2,6 @@
 	"extends": "./base.config.json",
 	"compilerOptions": {
 		"jsx": "react-jsx",
-		"types": [
-			"@types/react",
-			"@types/react-dom"
-		]
+		"types": ["@types/react", "@types/react-dom"]
 	}
 }
