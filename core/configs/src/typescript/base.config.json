@@ -5,10 +5,7 @@
 		"experimentalDecorators": true,
 		"isolatedModules": false,
 		"useDefineForClassFields": true,
-		"lib": [
-			"esnext",
-			"dom"
-		],
+		"lib": ["esnext", "dom"],
 		"module": "esnext",
 		"moduleResolution": "bundler",
 		"noEmit": true,
@@ -20,9 +17,5 @@
 		"strict": true,
 		"target": "esnext"
 	},
-	"exclude": [
-		"build",
-		"dist",
-		"node_modules"
-	]
+	"exclude": ["build", "dist", "node_modules"]
 }

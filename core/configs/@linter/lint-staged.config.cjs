@@ -1,4 +1,4 @@
-const codeConfig = require("../src/configs/lint-staged/code.config.cjs")
+const codeConfig = require("../src/lint-staged/code.config.cjs")
 
 module.exports = {
 	...codeConfig,
