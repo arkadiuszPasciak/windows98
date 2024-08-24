@@ -85,7 +85,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Check types
-        run: pnpm --filter @windows98/ci-cd run lint:types:run:all
+        run: pnpm --filter @windows98/ci-cd run lint:types:run
 
   code-lint-format:
     runs-on: ubuntu-latest
@@ -118,7 +118,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint code
-        run: pnpm --filter @windows98/ci-cd run lint:code:run:all
+        run: pnpm --filter @windows98/ci-cd run lint:code:run
 
   stylelint-lint:
     runs-on: ubuntu-latest
@@ -151,7 +151,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Lint with Stylelint
-        run: pnpm --filter @windows98/ci-cd run lint:styles:run:all
+        run: pnpm --filter @windows98/ci-cd run lint:styles:run
 
   vitest-tests:
     runs-on: ubuntu-latest
@@ -184,7 +184,7 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Run Vitest tests
-        run: pnpm run --filter @windows98/ci-cd test:unit:run:all
+        run: pnpm run --filter @windows98/ci-cd test:unit:run
 
   build:
     runs-on: ubuntu-latest
@@ -216,8 +216,8 @@ jobs:
         run: pnpm install
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
-      - name: Build Application
-        run: pnpm --filter @windows98/app run app:build
+      - name: Build Applications
+        run: pnpm run --filter @windows98/ci-cd build
 
   deploy-preview:
     runs-on: ubuntu-latest
