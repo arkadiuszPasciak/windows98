@@ -7,18 +7,18 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["*"],
-			"@APP/*": ["app/*"],
+			"@APP/*": ["*"],
 			"@APP|Bundles/*": [
-				"Bundles/App/*",
-				"Bundles/Programs/*",
-				"Bundles/Settings/*",
-				"Bundles/UI/*",
-				"Bundles/Window/*"
+				"src/bundles/App/*",
+				"src/bundles/Programs/*",
+				"src/bundles/Settings/*",
+				"src/bundles/UI/*",
+				"src/bundles/Window/*"
 			],
-			"@APP|Views/*": ["Views/*"],
-			"vue-i18n": ["./node_modules/vue-i18n/dist/vue-i18n.d.ts"]
+			"@APP|Views/*": ["src/views/*"],
+			"vue-i18n": ["./node_modules/vue-i18n/dist/vue-i18n.d.ts"],
+			"@windows98/design-system/*": ["../core/design-system/*"]
 		}
 	},
-	"include": ["./**/*", "./configs/cypress.config.d.ts"]
+	"include": ["./**/*", "src/configs/cypress.config.d.ts"]
 }
