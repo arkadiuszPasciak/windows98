@@ -1,6 +1,5 @@
 export interface IProgramStoresState {
 	modalCalculator: boolean
-	modalMediaPlayer: boolean
 	modalNotepad: boolean
 	modalRun: boolean
 	modalSettings: boolean
@@ -11,7 +10,6 @@ export interface IProgramStoresState {
 
 export interface IProgramStoresActions extends IProgramStoresState {
 	updateCalculatorModal(status: boolean): void
-	updateMediaPlayerModal(status: boolean): void
 	updateNotepadModal(status: boolean): void
 	updateRunModal(status: boolean): void
 	updateSettingsModal(status: boolean): void

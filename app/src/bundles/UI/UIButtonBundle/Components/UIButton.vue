@@ -16,9 +16,7 @@ import type { PropType } from "vue"
 
 defineProps({
 	size: {
-		type: String as PropType<
-			"small" | "medium" | "media-player" | "tic-tac-toe"
-		>,
+		type: String as PropType<"small" | "medium" | "tic-tac-toe">,
 		default: "medium",
 	},
 	disabled: {

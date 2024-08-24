@@ -1,7 +1,6 @@
 <template>
   <TeleportGrid class="TeleportPulpit">
     <Calculator />
-    <MediaPlayer />
     <Notepad />
     <Run />
     <Settings />
@@ -17,10 +16,6 @@ import { defineAsyncComponent } from "vue"
 
 const Calculator = defineAsyncComponent(
 	() => import("@APP|Bundles/CalculatorBundle/Components/Calculator.vue"),
-)
-
-const MediaPlayer = defineAsyncComponent(
-	() => import("@APP|Bundles/MediaPlayerBundle/Components/MediaPlayer.vue"),
 )
 
 const Notepad = defineAsyncComponent(
