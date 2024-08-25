@@ -8,14 +8,14 @@
 		"pnpm": "9.0.6"
 	},
 	"scripts": {
-		"app:build": "vite build --config ./configs/vite.config.mts",
-		"app:dev": "vite --config ./configs/vite.config.mts",
-		"app:preview": "vite preview --config ./configs/vite.config.mts",
+		"build": "vite build @bundler/vite",
+		"dev": "vite @bundler/vite",
+		"preview": "vite preview @bundler/vite",
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
 		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
-		"lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"Bundles/**/*.scss\" --fix",
-		"lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"Bundles/**/*.scss\"",
+		"lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"src/bundles/**/*.scss\" --fix",
+		"lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"src/bundles/**/*.scss\"",
 		"lint:types:run": "vue-tsc --noEmit",
 		"test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
 		"test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js"
