@@ -8,9 +8,9 @@
 		"pnpm": "9.0.6"
 	},
 	"scripts": {
-		"app:build": "vite build @bundler/vite",
-		"app:dev": "vite @bundler/vite",
-		"app:preview": "vite preview @bundler/vite",
+		"build": "vite build @bundler/vite",
+		"dev": "vite @bundler/vite",
+		"preview": "vite preview @bundler/vite",
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
 		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
