@@ -20,5 +20,5 @@
 			"@windows98/design-system/*": ["../core/design-system/*"]
 		}
 	},
-	"include": ["./**/*", "src/configs/cypress.config.d.ts"]
+	"include": ["./**/*"]
 }
