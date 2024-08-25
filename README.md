@@ -66,7 +66,7 @@ cd app
 5. Start the development mode.
 
 ```bash
-pnpm run app:dev
+pnpm run dev
 ```
 
 Now you can access the application in your browser at http://localhost:5173. Enjoy!
