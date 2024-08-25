@@ -15,7 +15,7 @@ import TeleportGrid from "@APP|Bundles/TeleportBundle/Components/TeleportGrid.vu
 import { defineAsyncComponent } from "vue"
 
 const Calculator = defineAsyncComponent(
-	() => import("@APP|Bundles/CalculatorBundle/Components/Calculator.vue"),
+	() => import("@APP|Bundles/ProgramBundle/Components/Calculator.vue"),
 )
 
 const Notepad = defineAsyncComponent(
@@ -39,7 +39,7 @@ const TicTacToe = defineAsyncComponent(
 )
 
 const Timer = defineAsyncComponent(
-	() => import("@APP|Bundles/TimerBundle/Components/Timer.vue"),
+	() => import("@APP|Bundles/ProgramBundle/Components/Timer.vue"),
 )
 </script>
 
