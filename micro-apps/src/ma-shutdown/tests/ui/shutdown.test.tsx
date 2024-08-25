@@ -25,7 +25,7 @@ test.fixme("Shut Down", () => {
 		await expect(page).toHaveURL("/")
 	})
 
-	test("when I click button close, the modal is closed", async ({ mount, page }) => {
+	test("when I click button close, the modal is closed", async ({ mount }) => {
 		const component = await mount(<p>@TODO: add component</p>)
 
 		const cancelButton = component.getByTestId("ma-shutdown-cancel-button")
