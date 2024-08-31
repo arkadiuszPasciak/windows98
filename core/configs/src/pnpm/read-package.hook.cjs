@@ -33,43 +33,53 @@ class PNPMReadPackageHook {
 		},
 	}
 
-	run = (pck) => {
-		if (!pck || typeof pck !== "object") {
+	run = (pkg) => {
+		if (!pkg || typeof pkg !== "object") {
 			throw new Error("[PNPMReadPackageHook]: Invalid packages object")
 		}
 
-		this.#checkDependencies(pck)
-		this.#checkEngines(pck)
+		if (this.#checkOnlyMyWorkspace(pkg)) {
+			this.#checkDependencies(pkg)
+			this.#checkEngines(pkg)
+		}
 
-		return pck
+		return pkg
 	}
 
-	#checkDependencies = (pck) => {
+	#checkDependencies = (pkg) => {
 		for (const type of this.#dependencies.types) {
 			for (const dependency of Object.keys(this.#dependencies.requirements)) {
 				if (
-					pck[type]?.[dependency] &&
-					pck[type][dependency] !== this.#dependencies.requirements[dependency]
+					pkg[type]?.[dependency] &&
+					pkg[type][dependency] !== this.#dependencies.requirements[dependency]
 				) {
 					throw new Error(
-						`[PNPMReadPackageHook]: Dependency version mismatch in "${pck.name}" for ${dependency} of ${type}. Expected: ${this.#dependencies.requirements[dependency]}, Found: ${pck[type][dependency]}`,
+						`[PNPMReadPackageHook]: Dependency version mismatch in "${pkg.name}" for ${dependency} of ${type}. Expected: ${this.#dependencies.requirements[dependency]}, Found: ${pkg[type][dependency]}`,
 					)
 				}
 			}
 		}
 	}
 
-	#checkEngines = (pck) => {
+	#checkEngines = (pkg) => {
 		for (const engine of Object.keys(this.#engines.requirements)) {
 			if (
-				pck.engines?.[engine] &&
-				pck.engines[engine] !== this.#engines.requirements[engine]
+				pkg.engines?.[engine] &&
+				pkg.engines[engine] !== this.#engines.requirements[engine]
 			) {
 				throw new Error(
-					`[PNPMReadPackageHook]: Engine version mismatch in "${pck.name}" for ${engine}. Expected: ${this.#engines.requirements[engine]}, Found: ${pck.engines[engine]}`,
+					`[PNPMReadPackageHook]: Engine version mismatch in "${pkg.name}" for ${engine}. Expected: ${this.#engines.requirements[engine]}, Found: ${pkg.engines[engine]}`,
 				)
 			}
 		}
+	}
+
+	#checkOnlyMyWorkspace = (pkg) => {
+		if (pkg.name.startsWith("@windows98") || pkg.name.startsWith("windows98")) {
+			return true
+		}
+
+		return false
 	}
 }
 
