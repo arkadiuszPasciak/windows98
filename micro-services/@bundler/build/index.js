@@ -1,7 +1,27 @@
 var i = Object.defineProperty;
-var o = (r, e, t) => e in r ? i(r, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : r[e] = t;
-var a = (r, e, t) => (o(r, typeof e != "symbol" ? e + "" : e, t), t);
+var a = (s, e, t) => e in s ? i(s, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : s[e] = t;
+var n = (s, e, t) => (a(s, typeof e != "symbol" ? e + "" : e, t), t);
 class d {
+  restartApplication() {
+    window.location.reload();
+  }
+  turnOffApplication() {
+    window.location.href = "https://google.com";
+  }
+}
+class h {
+  constructor() {
+    n(this, "appControllerRepository");
+    this.appControllerRepository = new d();
+  }
+  restartApplication() {
+    this.appControllerRepository.restartApplication();
+  }
+  turnOffApplication() {
+    this.appControllerRepository.turnOffApplication();
+  }
+}
+class c {
   constructor(e = [
     { name: "Chrome", regex: /chrome|chromium|crios/i },
     { name: "Firefox", regex: /firefox|fxios/i },
@@ -16,14 +36,14 @@ class d {
     if (!e)
       return null;
     for (const t in this.browserNames) {
-      const s = this.browserNames[t];
-      if (s.regex.test(e))
-        return s.name;
+      const r = this.browserNames[t];
+      if (r.regex.test(e))
+        return r.name;
     }
     return null;
   }
 }
-class c {
+class p {
   constructor(e = [
     {
       name: "mobile",
@@ -41,9 +61,9 @@ class c {
     if (!e)
       return null;
     for (const t in this.devicesNames) {
-      const s = this.devicesNames[t];
-      if (s.regex.test(e))
-        return s.name;
+      const r = this.devicesNames[t];
+      if (r.regex.test(e))
+        return r.name;
     }
     return null;
   }
@@ -86,9 +106,9 @@ class g {
     if (!e)
       return null;
     for (const t in this.operatingSystems) {
-      const s = this.operatingSystems[t];
-      if (s.regex.test(e))
-        return s.name;
+      const r = this.operatingSystems[t];
+      if (r.regex.test(e))
+        return r.name;
     }
     return null;
   }
@@ -103,9 +123,9 @@ class m {
     } : null;
   }
 }
-class h {
-  constructor(e = new d(), t = new c(), s = new g(), n = new m()) {
-    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = s, this.screenRepository = n;
+class l {
+  constructor(e = new c(), t = new p(), r = new g(), o = new m()) {
+    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = r, this.screenRepository = o;
   }
   getBrowserName() {
     return this.browserNameRepository.get();
@@ -122,16 +142,16 @@ class h {
 }
 class w {
   constructor(e, t) {
-    a(this, "database", null);
+    n(this, "database", null);
     this.databaseName = e, this.storeName = t;
   }
   async open() {
     return new Promise((e, t) => {
-      const s = window.indexedDB.open(this.databaseName);
-      s.onerror = () => t(s.error), s.onsuccess = () => {
-        this.database = s.result, e();
-      }, s.onupgradeneeded = (n) => {
-        this.database = n.target.result, this.database.createObjectStore(this.storeName);
+      const r = window.indexedDB.open(this.databaseName);
+      r.onerror = () => t(r.error), r.onsuccess = () => {
+        this.database = r.result, e();
+      }, r.onupgradeneeded = (o) => {
+        this.database = o.target.result, this.database.createObjectStore(this.storeName);
       };
     });
   }
@@ -156,9 +176,9 @@ class w {
     ).objectStore(this.storeName);
   }
 }
-class p {
+class y {
   constructor(e, t) {
-    a(this, "databaseRepository");
+    n(this, "databaseRepository");
     this.databaseName = e, this.storeName = t, this.databaseRepository = new w(
       this.databaseName,
       this.storeName
@@ -181,7 +201,8 @@ class p {
   }
 }
 export {
-  h as MSBrowserEnv,
-  p as MSDatabase
+  h as MSAppController,
+  l as MSBrowserEnv,
+  y as MSDatabase
 };
 //# sourceMappingURL=index.js.map
