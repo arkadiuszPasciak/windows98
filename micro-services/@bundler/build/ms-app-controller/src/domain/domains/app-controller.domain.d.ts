@@ -3,5 +3,5 @@ export declare class AppControllerDomain implements AppControllerDomainContract 
     private appControllerRepository;
     constructor();
     restartApplication(): void;
-    turnOffApplication(): void;
+    shutdownApplication(): void;
 }

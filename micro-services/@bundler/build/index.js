@@ -1,15 +1,15 @@
 var i = Object.defineProperty;
-var a = (s, e, t) => e in s ? i(s, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : s[e] = t;
-var n = (s, e, t) => (a(s, typeof e != "symbol" ? e + "" : e, t), t);
+var a = (r, e, t) => e in r ? i(r, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : r[e] = t;
+var n = (r, e, t) => (a(r, typeof e != "symbol" ? e + "" : e, t), t);
 class d {
   restartApplication() {
     window.location.reload();
   }
-  turnOffApplication() {
+  shutdownApplication() {
     window.location.href = "https://google.com";
   }
 }
-class h {
+class u {
   constructor() {
     n(this, "appControllerRepository");
     this.appControllerRepository = new d();
@@ -17,8 +17,8 @@ class h {
   restartApplication() {
     this.appControllerRepository.restartApplication();
   }
-  turnOffApplication() {
-    this.appControllerRepository.turnOffApplication();
+  shutdownApplication() {
+    this.appControllerRepository.shutdownApplication();
   }
 }
 class c {
@@ -36,9 +36,9 @@ class c {
     if (!e)
       return null;
     for (const t in this.browserNames) {
-      const r = this.browserNames[t];
-      if (r.regex.test(e))
-        return r.name;
+      const s = this.browserNames[t];
+      if (s.regex.test(e))
+        return s.name;
     }
     return null;
   }
@@ -61,9 +61,9 @@ class p {
     if (!e)
       return null;
     for (const t in this.devicesNames) {
-      const r = this.devicesNames[t];
-      if (r.regex.test(e))
-        return r.name;
+      const s = this.devicesNames[t];
+      if (s.regex.test(e))
+        return s.name;
     }
     return null;
   }
@@ -106,14 +106,14 @@ class g {
     if (!e)
       return null;
     for (const t in this.operatingSystems) {
-      const r = this.operatingSystems[t];
-      if (r.regex.test(e))
-        return r.name;
+      const s = this.operatingSystems[t];
+      if (s.regex.test(e))
+        return s.name;
     }
     return null;
   }
 }
-class m {
+class w {
   get() {
     const e = window.screen;
     return e ? {
@@ -124,8 +124,8 @@ class m {
   }
 }
 class l {
-  constructor(e = new c(), t = new p(), r = new g(), o = new m()) {
-    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = r, this.screenRepository = o;
+  constructor(e = new c(), t = new p(), s = new g(), o = new w()) {
+    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = s, this.screenRepository = o;
   }
   getBrowserName() {
     return this.browserNameRepository.get();
@@ -140,17 +140,17 @@ class l {
     return this.screenRepository.get();
   }
 }
-class w {
+class m {
   constructor(e, t) {
     n(this, "database", null);
     this.databaseName = e, this.storeName = t;
   }
   async open() {
     return new Promise((e, t) => {
-      const r = window.indexedDB.open(this.databaseName);
-      r.onerror = () => t(r.error), r.onsuccess = () => {
-        this.database = r.result, e();
-      }, r.onupgradeneeded = (o) => {
+      const s = window.indexedDB.open(this.databaseName);
+      s.onerror = () => t(s.error), s.onsuccess = () => {
+        this.database = s.result, e();
+      }, s.onupgradeneeded = (o) => {
         this.database = o.target.result, this.database.createObjectStore(this.storeName);
       };
     });
@@ -179,7 +179,7 @@ class w {
 class y {
   constructor(e, t) {
     n(this, "databaseRepository");
-    this.databaseName = e, this.storeName = t, this.databaseRepository = new w(
+    this.databaseName = e, this.storeName = t, this.databaseRepository = new m(
       this.databaseName,
       this.storeName
     );
@@ -201,7 +201,7 @@ class y {
   }
 }
 export {
-  h as MSAppController,
+  u as MSAppController,
   l as MSBrowserEnv,
   y as MSDatabase
 };

@@ -1,4 +1,4 @@
 export interface AppControllerRepositoryContract {
     restartApplication(): void;
-    turnOffApplication(): void;
+    shutdownApplication(): void;
 }
