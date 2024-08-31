@@ -1,2 +1,3 @@
-export * from "./ms-browser-env/src/index"
-export * from "./ms-database/src/index"
+export * from "./ms-app-controller/src"
+export * from "./ms-browser-env/src"
+export * from "./ms-database/src"
