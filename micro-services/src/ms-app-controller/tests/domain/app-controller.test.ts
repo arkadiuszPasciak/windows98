@@ -22,7 +22,7 @@ describe("AppControllerDomain", () => {
 	})
 
 	it("turnOffApplication should redirect to 'https://google.com'", () => {
-		appControllerDomain.turnOffApplication()
+		appControllerDomain.shutdownApplication()
 
 		expect(window.location.href).toBe("https://google.com")
 	})

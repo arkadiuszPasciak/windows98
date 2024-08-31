@@ -7,7 +7,7 @@ export class AppControllerRepository
 		window.location.reload()
 	}
 
-	turnOffApplication(): void {
+	shutdownApplication(): void {
 		window.location.href = "https://google.com"
 	}
 }

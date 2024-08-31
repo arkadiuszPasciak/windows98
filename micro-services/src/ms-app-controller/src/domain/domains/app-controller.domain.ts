@@ -15,7 +15,7 @@ export class AppControllerDomain implements AppControllerDomainContract {
 		this.appControllerRepository.restartApplication()
 	}
 
-	turnOffApplication(): void {
-		this.appControllerRepository.turnOffApplication()
+	shutdownApplication(): void {
+		this.appControllerRepository.shutdownApplication()
 	}
 }
