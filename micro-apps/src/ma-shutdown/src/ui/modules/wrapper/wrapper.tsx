@@ -1,3 +1,4 @@
+import { Controller } from "../controller"
 import { Description } from "../description"
 import { Presets } from "../presets"
 
@@ -6,6 +7,7 @@ export const Wrapper = () => {
 		<div>
 			<Description />
 			<Presets />
+			<Controller />
 		</div>
 	)
 }
