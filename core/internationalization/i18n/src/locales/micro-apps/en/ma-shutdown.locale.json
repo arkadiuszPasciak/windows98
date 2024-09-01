@@ -1,0 +1,10 @@
+{
+	"ma-shutdown": {
+		"cancel": "Cancel",
+		"description": "What do you want the computer to do?",
+		"ok": "OK",
+		"restart": "Restart",
+		"shutdown": "Shutdown",
+		"title": "Shutdown Windows"
+	}
+}
