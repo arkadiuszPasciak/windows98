@@ -15,7 +15,7 @@ export const usePresets = () => {
 			{
 				preset: EShutdownPresets.SHUTDOWN,
 				content: t("ma-shutdown.shutdown"),
-				id: "ma-shutdown-preset-shutdowns",
+				id: "ma-shutdown-preset-shutdown",
 			},
 			{
 				preset: EShutdownPresets.RESTART,
