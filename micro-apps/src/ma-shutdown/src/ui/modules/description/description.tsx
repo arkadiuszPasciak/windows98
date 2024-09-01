@@ -14,7 +14,10 @@ export const Description = () => {
 				alt=""
 				data-test-id="ma-shutdown-description-icon"
 			/>
-			<DSText id="ma-shutdown-description-text" text={translations.description} />
+			<DSText
+				id="ma-shutdown-description-text"
+				text={translations.description}
+			/>
 		</div>
 	)
 }

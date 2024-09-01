@@ -12,6 +12,6 @@ export const useCancel = () => {
 	// @TODO: Implement onClick logic when I prepare program management
 
 	return {
-		translations
+		translations,
 	}
 }

@@ -25,6 +25,6 @@ export const useOk = () => {
 
 	return {
 		onClick,
-		translations
+		translations,
 	}
 }
