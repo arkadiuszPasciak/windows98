@@ -1,5 +1,9 @@
+import { Description } from "../description"
+
 export const Wrapper = () => {
 	return (
-		<div>123</div>
+		<div>
+			<Description />
+		</div>
 	)
 }
