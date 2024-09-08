@@ -31,7 +31,7 @@ const Settings = defineAsyncComponent(
 )
 
 const ShutDown = defineAsyncComponent(
-	() => import("@APP|Bundles/ShutDownBundle/Components/ShutDown.vue"),
+	() => import("@APP|Bundles/ProgramBundle/Components/ShutDown.vue"),
 )
 
 const TicTacToe = defineAsyncComponent(
