@@ -1,7 +1,7 @@
 var i = Object.defineProperty;
-var a = (r, e, t) => e in r ? i(r, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : r[e] = t;
-var n = (r, e, t) => (a(r, typeof e != "symbol" ? e + "" : e, t), t);
-class d {
+var a = (r, e, o) => e in r ? i(r, e, { enumerable: !0, configurable: !0, writable: !0, value: o }) : r[e] = o;
+var n = (r, e, o) => (a(r, typeof e != "symbol" ? e + "" : e, o), o);
+class g {
   restartApplication() {
     window.location.reload();
   }
@@ -12,7 +12,7 @@ class d {
 class u {
   constructor() {
     n(this, "appControllerRepository");
-    this.appControllerRepository = new d();
+    this.appControllerRepository = new g();
   }
   restartApplication() {
     this.appControllerRepository.restartApplication();
@@ -21,7 +21,7 @@ class u {
     this.appControllerRepository.shutdownApplication();
   }
 }
-class c {
+class m {
   constructor(e = [
     { name: "Chrome", regex: /chrome|chromium|crios/i },
     { name: "Firefox", regex: /firefox|fxios/i },
@@ -35,15 +35,15 @@ class c {
     const e = window.navigator.userAgent;
     if (!e)
       return null;
-    for (const t in this.browserNames) {
-      const s = this.browserNames[t];
-      if (s.regex.test(e))
-        return s.name;
+    for (const o in this.browserNames) {
+      const t = this.browserNames[o];
+      if (t.regex.test(e))
+        return t.name;
     }
     return null;
   }
 }
-class p {
+class d {
   constructor(e = [
     {
       name: "mobile",
@@ -60,15 +60,15 @@ class p {
     const e = window.navigator.userAgent;
     if (!e)
       return null;
-    for (const t in this.devicesNames) {
-      const s = this.devicesNames[t];
-      if (s.regex.test(e))
-        return s.name;
+    for (const o in this.devicesNames) {
+      const t = this.devicesNames[o];
+      if (t.regex.test(e))
+        return t.name;
     }
     return null;
   }
 }
-class g {
+class w {
   constructor(e = [
     { name: "Windows 3.11", regex: /Win16/ },
     { name: "Windows 95", regex: /(Windows 95|Win95|Windows_95)/ },
@@ -105,15 +105,15 @@ class g {
     const e = window.navigator.userAgent;
     if (!e)
       return null;
-    for (const t in this.operatingSystems) {
-      const s = this.operatingSystems[t];
-      if (s.regex.test(e))
-        return s.name;
+    for (const o in this.operatingSystems) {
+      const t = this.operatingSystems[o];
+      if (t.regex.test(e))
+        return t.name;
     }
     return null;
   }
 }
-class w {
+class p {
   get() {
     const e = window.screen;
     return e ? {
@@ -123,9 +123,9 @@ class w {
     } : null;
   }
 }
-class l {
-  constructor(e = new c(), t = new p(), s = new g(), o = new w()) {
-    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = s, this.screenRepository = o;
+class h {
+  constructor(e = new m(), o = new d(), t = new w(), s = new p()) {
+    this.browserNameRepository = e, this.deviceTypeRepository = o, this.operatingSystemRepository = t, this.screenRepository = s;
   }
   getBrowserName() {
     return this.browserNameRepository.get();
@@ -140,69 +140,48 @@ class l {
     return this.screenRepository.get();
   }
 }
-class m {
-  constructor(e, t) {
-    n(this, "database", null);
-    this.databaseName = e, this.storeName = t;
+class c {
+  addItem(e, o) {
+    window.localStorage.setItem(e, o);
   }
-  async open() {
-    return new Promise((e, t) => {
-      const s = window.indexedDB.open(this.databaseName);
-      s.onerror = () => t(s.error), s.onsuccess = () => {
-        this.database = s.result, e();
-      }, s.onupgradeneeded = (o) => {
-        this.database = o.target.result, this.database.createObjectStore(this.storeName);
-      };
-    });
+  getItem(e) {
+    return window.localStorage.getItem(e);
   }
-  async add(e) {
-    this.getStore("readwrite").add(e);
+  isItemExist(e) {
+    const o = this.getItem(e);
+    return !!(o != null && o.length);
   }
-  async get(e) {
-    return this.getStore("readonly").get(e);
+  removeItem(e) {
+    window.localStorage.removeItem(e);
   }
-  async update(e, t) {
-    this.getStore("readwrite").put(t, e);
-  }
-  async delete(e) {
-    this.getStore("readwrite").delete(e);
-  }
-  getStore(e) {
-    if (!this.database)
-      throw new Error("Database not open");
-    return this.database.transaction(
-      this.storeName,
-      e
-    ).objectStore(this.storeName);
+  clearAll() {
+    window.localStorage.clear();
   }
 }
-class y {
-  constructor(e, t) {
-    n(this, "databaseRepository");
-    this.databaseName = e, this.storeName = t, this.databaseRepository = new m(
-      this.databaseName,
-      this.storeName
-    );
+class x {
+  constructor() {
+    n(this, "storageRepository");
+    this.storageRepository = new c();
   }
-  async open() {
-    return this.databaseRepository.open();
+  addItem(e, o) {
+    this.storageRepository.addItem(e, o);
   }
-  async add(e) {
-    return this.databaseRepository.add(e);
+  getItem(e) {
+    return this.storageRepository.getItem(e);
   }
-  async get(e) {
-    return this.databaseRepository.get(e);
+  isItemExist(e) {
+    return this.storageRepository.isItemExist(e);
   }
-  async update(e, t) {
-    return this.databaseRepository.update(e, t);
+  updateItem(e, o) {
+    this.storageRepository.addItem(e, o);
   }
-  async delete(e) {
-    return this.databaseRepository.delete(e);
+  removeItem(e) {
+    this.storageRepository.removeItem(e);
   }
 }
 export {
   u as MSAppController,
-  l as MSBrowserEnv,
-  y as MSDatabase
+  h as MSBrowserEnv,
+  x as MSStorage
 };
 //# sourceMappingURL=index.js.map
