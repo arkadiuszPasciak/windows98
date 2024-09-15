@@ -1,7 +1,7 @@
-var i = Object.defineProperty;
-var a = (r, e, o) => e in r ? i(r, e, { enumerable: !0, configurable: !0, writable: !0, value: o }) : r[e] = o;
-var n = (r, e, o) => (a(r, typeof e != "symbol" ? e + "" : e, o), o);
-class g {
+var g = Object.defineProperty;
+var d = (r, e, t) => e in r ? g(r, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : r[e] = t;
+var s = (r, e, t) => (d(r, typeof e != "symbol" ? e + "" : e, t), t);
+class c {
   restartApplication() {
     window.location.reload();
   }
@@ -9,10 +9,10 @@ class g {
     window.location.href = "https://google.com";
   }
 }
-class u {
+class T {
   constructor() {
-    n(this, "appControllerRepository");
-    this.appControllerRepository = new g();
+    s(this, "appControllerRepository");
+    this.appControllerRepository = new c();
   }
   restartApplication() {
     this.appControllerRepository.restartApplication();
@@ -21,7 +21,7 @@ class u {
     this.appControllerRepository.shutdownApplication();
   }
 }
-class m {
+class l {
   constructor(e = [
     { name: "Chrome", regex: /chrome|chromium|crios/i },
     { name: "Firefox", regex: /firefox|fxios/i },
@@ -35,15 +35,15 @@ class m {
     const e = window.navigator.userAgent;
     if (!e)
       return null;
-    for (const o in this.browserNames) {
-      const t = this.browserNames[o];
-      if (t.regex.test(e))
-        return t.name;
+    for (const t in this.browserNames) {
+      const o = this.browserNames[t];
+      if (o.regex.test(e))
+        return o.name;
     }
     return null;
   }
 }
-class d {
+class p {
   constructor(e = [
     {
       name: "mobile",
@@ -60,10 +60,10 @@ class d {
     const e = window.navigator.userAgent;
     if (!e)
       return null;
-    for (const o in this.devicesNames) {
-      const t = this.devicesNames[o];
-      if (t.regex.test(e))
-        return t.name;
+    for (const t in this.devicesNames) {
+      const o = this.devicesNames[t];
+      if (o.regex.test(e))
+        return o.name;
     }
     return null;
   }
@@ -105,15 +105,15 @@ class w {
     const e = window.navigator.userAgent;
     if (!e)
       return null;
-    for (const o in this.operatingSystems) {
-      const t = this.operatingSystems[o];
-      if (t.regex.test(e))
-        return t.name;
+    for (const t in this.operatingSystems) {
+      const o = this.operatingSystems[t];
+      if (o.regex.test(e))
+        return o.name;
     }
     return null;
   }
 }
-class p {
+class h {
   get() {
     const e = window.screen;
     return e ? {
@@ -123,9 +123,9 @@ class p {
     } : null;
   }
 }
-class h {
-  constructor(e = new m(), o = new d(), t = new w(), s = new p()) {
-    this.browserNameRepository = e, this.deviceTypeRepository = o, this.operatingSystemRepository = t, this.screenRepository = s;
+class W {
+  constructor(e = new l(), t = new p(), o = new w(), m = new h()) {
+    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = o, this.screenRepository = m;
   }
   getBrowserName() {
     return this.browserNameRepository.get();
@@ -140,16 +140,16 @@ class h {
     return this.screenRepository.get();
   }
 }
-class c {
-  addItem(e, o) {
-    window.localStorage.setItem(e, o);
+class u {
+  addItem(e, t) {
+    window.localStorage.setItem(e, t);
   }
   getItem(e) {
     return window.localStorage.getItem(e);
   }
   isItemExist(e) {
-    const o = this.getItem(e);
-    return !!(o != null && o.length);
+    const t = this.getItem(e);
+    return !!(t != null && t.length);
   }
   removeItem(e) {
     window.localStorage.removeItem(e);
@@ -160,11 +160,11 @@ class c {
 }
 class x {
   constructor() {
-    n(this, "storageRepository");
-    this.storageRepository = new c();
+    s(this, "storageRepository");
+    this.storageRepository = new u();
   }
-  addItem(e, o) {
-    this.storageRepository.addItem(e, o);
+  addItem(e, t) {
+    this.storageRepository.addItem(e, t);
   }
   getItem(e) {
     return this.storageRepository.getItem(e);
@@ -172,16 +172,45 @@ class x {
   isItemExist(e) {
     return this.storageRepository.isItemExist(e);
   }
-  updateItem(e, o) {
-    this.storageRepository.addItem(e, o);
+  updateItem(e, t) {
+    this.storageRepository.addItem(e, t);
   }
   removeItem(e) {
     this.storageRepository.removeItem(e);
   }
 }
+var i = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(i || {}), n = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(n || {}), a = /* @__PURE__ */ ((r) => (r.DARK = "dark", r.LIGHT = "light", r))(a || {});
+class y {
+  constructor() {
+    s(this, "storage", new x());
+    s(this, "defaultTheme", a.LIGHT);
+  }
+  getThemeColor() {
+    return this.storage.getItem(n.THEME) ?? this.defaultTheme;
+  }
+  setThemeColor(e) {
+    this.storage.updateItem(n.THEME, e);
+  }
+  updateTheme(e) {
+    const t = window.document.querySelector("html");
+    !t || t.getAttribute(i.THEME) === e || t.setAttribute(i.THEME, e);
+  }
+  mountThemeColor() {
+    if (!this.storage.isItemExist(n.THEME)) {
+      this.initDefaultTheme();
+      return;
+    }
+    const t = this.storage.getItem(n.THEME);
+    t && this.updateTheme(t);
+  }
+  initDefaultTheme() {
+    this.updateTheme(this.defaultTheme), this.setThemeColor(this.defaultTheme);
+  }
+}
 export {
-  u as MSAppController,
-  h as MSBrowserEnv,
-  x as MSStorage
+  T as MSAppController,
+  W as MSBrowserEnv,
+  x as MSStorage,
+  y as MSTheme
 };
 //# sourceMappingURL=index.js.map
