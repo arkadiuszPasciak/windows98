@@ -1,11 +1,11 @@
 import type { ThemeDomainContract } from "../contracts";
-import { EThemes } from "../models";
-export declare class ThemeDomain implements ThemeDomainContract {
+export declare class ThemeDomain<Theme extends string> implements ThemeDomainContract<Theme> {
     private storage;
     private defaultTheme;
-    getThemeColor(): EThemes;
-    setThemeColor(theme: EThemes): void;
-    updateTheme(theme: EThemes): void;
+    constructor(defaultTheme: Theme);
+    getThemeColor(): Theme;
+    setThemeColor(theme: Theme): void;
+    updateTheme(theme: Theme): void;
     mountThemeColor(): void;
     private initDefaultTheme;
 }

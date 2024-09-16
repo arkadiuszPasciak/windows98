@@ -1,8 +1,6 @@
-import type { EThemes } from "../models"
-
-export interface ThemeDomainContract {
-	getThemeColor(): EThemes
+export interface ThemeDomainContract<Theme extends string> {
+	getThemeColor(): Theme
 	mountThemeColor(): void
-	setThemeColor(theme: EThemes): void
-	updateTheme(theme: EThemes): void
+	setThemeColor(theme: Theme): void
+	updateTheme(theme: Theme): void
 }

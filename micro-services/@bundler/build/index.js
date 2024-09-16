@@ -1,7 +1,7 @@
-var g = Object.defineProperty;
-var d = (r, e, t) => e in r ? g(r, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : r[e] = t;
-var s = (r, e, t) => (d(r, typeof e != "symbol" ? e + "" : e, t), t);
-class c {
+var m = Object.defineProperty;
+var g = (r, e, t) => e in r ? m(r, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : r[e] = t;
+var s = (r, e, t) => (g(r, typeof e != "symbol" ? e + "" : e, t), t);
+class d {
   restartApplication() {
     window.location.reload();
   }
@@ -9,10 +9,10 @@ class c {
     window.location.href = "https://google.com";
   }
 }
-class T {
+class S {
   constructor() {
     s(this, "appControllerRepository");
-    this.appControllerRepository = new c();
+    this.appControllerRepository = new d();
   }
   restartApplication() {
     this.appControllerRepository.restartApplication();
@@ -21,7 +21,7 @@ class T {
     this.appControllerRepository.shutdownApplication();
   }
 }
-class l {
+class c {
   constructor(e = [
     { name: "Chrome", regex: /chrome|chromium|crios/i },
     { name: "Firefox", regex: /firefox|fxios/i },
@@ -43,7 +43,7 @@ class l {
     return null;
   }
 }
-class p {
+class h {
   constructor(e = [
     {
       name: "mobile",
@@ -68,7 +68,7 @@ class p {
     return null;
   }
 }
-class w {
+class l {
   constructor(e = [
     { name: "Windows 3.11", regex: /Win16/ },
     { name: "Windows 95", regex: /(Windows 95|Win95|Windows_95)/ },
@@ -113,7 +113,7 @@ class w {
     return null;
   }
 }
-class h {
+class p {
   get() {
     const e = window.screen;
     return e ? {
@@ -123,9 +123,9 @@ class h {
     } : null;
   }
 }
-class W {
-  constructor(e = new l(), t = new p(), o = new w(), m = new h()) {
-    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = o, this.screenRepository = m;
+class T {
+  constructor(e = new c(), t = new h(), o = new l(), a = new p()) {
+    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = o, this.screenRepository = a;
   }
   getBrowserName() {
     return this.browserNameRepository.get();
@@ -140,7 +140,7 @@ class W {
     return this.screenRepository.get();
   }
 }
-class u {
+class w {
   addItem(e, t) {
     window.localStorage.setItem(e, t);
   }
@@ -158,10 +158,10 @@ class u {
     window.localStorage.clear();
   }
 }
-class x {
+class u {
   constructor() {
     s(this, "storageRepository");
-    this.storageRepository = new u();
+    this.storageRepository = new w();
   }
   addItem(e, t) {
     this.storageRepository.addItem(e, t);
@@ -179,28 +179,29 @@ class x {
     this.storageRepository.removeItem(e);
   }
 }
-var i = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(i || {}), n = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(n || {}), a = /* @__PURE__ */ ((r) => (r.DARK = "dark", r.LIGHT = "light", r))(a || {});
-class y {
-  constructor() {
-    s(this, "storage", new x());
-    s(this, "defaultTheme", a.LIGHT);
+var n = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(n || {}), i = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(i || {});
+class W {
+  constructor(e) {
+    s(this, "storage");
+    s(this, "defaultTheme");
+    this.storage = new u(), this.defaultTheme = e;
   }
   getThemeColor() {
-    return this.storage.getItem(n.THEME) ?? this.defaultTheme;
+    return this.storage.getItem(i.THEME) ?? this.defaultTheme;
   }
   setThemeColor(e) {
-    this.storage.updateItem(n.THEME, e);
+    this.storage.updateItem(i.THEME, e);
   }
   updateTheme(e) {
     const t = window.document.querySelector("html");
-    !t || t.getAttribute(i.THEME) === e || t.setAttribute(i.THEME, e);
+    !t || t.getAttribute(n.THEME) === e || t.setAttribute(n.THEME, e);
   }
   mountThemeColor() {
-    if (!this.storage.isItemExist(n.THEME)) {
+    if (!this.storage.isItemExist(i.THEME)) {
       this.initDefaultTheme();
       return;
     }
-    const t = this.storage.getItem(n.THEME);
+    const t = this.storage.getItem(i.THEME);
     t && this.updateTheme(t);
   }
   initDefaultTheme() {
@@ -208,9 +209,9 @@ class y {
   }
 }
 export {
-  T as MSAppController,
-  W as MSBrowserEnv,
-  x as MSStorage,
-  y as MSTheme
+  S as MSAppController,
+  T as MSBrowserEnv,
+  u as MSStorage,
+  W as MSTheme
 };
 //# sourceMappingURL=index.js.map

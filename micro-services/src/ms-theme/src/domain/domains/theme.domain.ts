@@ -1,22 +1,28 @@
 import { MSStorage } from "../../../../index"
 import type { ThemeDomainContract } from "../contracts"
-import { EAttributes, EStorageKeys, EThemes } from "../models"
+import { EAttributes, EStorageKeys } from "../models"
 
-export class ThemeDomain implements ThemeDomainContract {
-	private storage = new MSStorage<EStorageKeys, EThemes>()
-	private defaultTheme: EThemes = EThemes.LIGHT
+export class ThemeDomain<Theme extends string>
+	implements ThemeDomainContract<Theme>
+{
+	private storage: MSStorage<string, Theme>
+	private defaultTheme: Theme
 
-	public getThemeColor(): EThemes {
+	constructor(defaultTheme: Theme) {
+		this.storage = new MSStorage()
+		this.defaultTheme = defaultTheme
+	}
+
+	public getThemeColor(): Theme {
 		const theme = this.storage.getItem(EStorageKeys.THEME)
-
 		return theme ?? this.defaultTheme
 	}
 
-	public setThemeColor(theme: EThemes): void {
+	public setThemeColor(theme: Theme): void {
 		this.storage.updateItem(EStorageKeys.THEME, theme)
 	}
 
-	public updateTheme(theme: EThemes): void {
+	public updateTheme(theme: Theme): void {
 		const element = window.document.querySelector("html")
 		if (!element) return
 
@@ -31,7 +37,6 @@ export class ThemeDomain implements ThemeDomainContract {
 
 		if (!isExist) {
 			this.initDefaultTheme()
-
 			return
 		}
 
