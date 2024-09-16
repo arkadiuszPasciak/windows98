@@ -18,10 +18,7 @@ export class ThemeDomain implements ThemeDomainContract {
 		if (this.theme === theme) return
 
 		this.updateTheme(theme)
-		this.msTheme.setThemeColor(theme)
-
-		console.log(theme, "props")
-		console.log(this.theme, "state")
+		this.msTheme.updateTheme(theme)
 	}
 
 	private updateTheme(theme: EThemes): void {

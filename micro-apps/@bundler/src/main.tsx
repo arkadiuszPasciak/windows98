@@ -7,6 +7,7 @@ import type { Maybe } from "@windows98/toolkit"
 import { CalculatorView } from "../../src/ma-calculator/src/ui/views"
 import { CalendarView } from "../../src/ma-calendar/src/ui/views/calendar.view"
 import { ShutdownView } from "../../src/ma-shutdown/src/ui/views"
+import { ThemeView } from "../../src/ma-theme/src/ui/views"
 import { TimerView } from "../../src/ma-timer/src/ui/views"
 import { TimezoneView } from "../../src/ma-timezone/src/ui/views"
 
@@ -21,6 +22,7 @@ i18nInit().then(() => {
 			<TimezoneView />
 			<CalculatorView />
 			<TimerView />
+			<ThemeView />
 			<ShutdownView />
 		</React.StrictMode>,
 	)
