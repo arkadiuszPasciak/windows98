@@ -5,7 +5,7 @@ import { EAttributes, EStorageKeys } from "../models"
 export class ThemeDomain<Theme extends string>
 	implements ThemeDomainContract<Theme>
 {
-	private storage: MSStorage<string, Theme>
+	private storage: MSStorage<EStorageKeys.THEME, Theme>
 	private defaultTheme: Theme
 
 	constructor(defaultTheme: Theme) {
