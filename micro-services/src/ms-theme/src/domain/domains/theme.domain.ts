@@ -3,8 +3,7 @@ import type { ThemeDomainContract } from "../contracts"
 import { EAttributes, EStorageKeys } from "../models"
 
 export class ThemeDomain<Theme extends string>
-	implements ThemeDomainContract<Theme>
-{
+	implements ThemeDomainContract<Theme> {
 	private storage: MSStorage<EStorageKeys.THEME, Theme>
 	private defaultTheme: Theme
 
@@ -30,6 +29,7 @@ export class ThemeDomain<Theme extends string>
 		if (currentTheme === theme) return
 
 		element.setAttribute(EAttributes.THEME, theme)
+		this.setThemeColor(theme)
 	}
 
 	public mountThemeColor(): void {

@@ -194,7 +194,7 @@ class W {
   }
   updateTheme(e) {
     const t = window.document.querySelector("html");
-    !t || t.getAttribute(n.THEME) === e || t.setAttribute(n.THEME, e);
+    !t || t.getAttribute(n.THEME) === e || (t.setAttribute(n.THEME, e), this.setThemeColor(e));
   }
   mountThemeColor() {
     if (!this.storage.isItemExist(i.THEME)) {
