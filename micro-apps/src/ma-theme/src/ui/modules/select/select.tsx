@@ -9,7 +9,7 @@ export const Select = observer(() => {
 
 	return (
 		<DSSelect
-			id="theme"
+			id="ma-theme-theme"
 			modelValue={theme}
 			options={themes}
 			onSelect={handleSelectChange}
