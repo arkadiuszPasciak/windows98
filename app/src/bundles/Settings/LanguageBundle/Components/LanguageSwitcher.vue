@@ -7,7 +7,8 @@
     @update:model-value="
       ;(i18n.locale.value = $event),
         setLanguageVersionInStorage($event),
-        updateLangAttribute($event)
+        updateLangAttribute($event),
+        appConfig.setLanguage($event)
     "
   />
 </template>
@@ -18,9 +19,11 @@ import {
 	setLanguageVersionInStorage,
 	updateLangAttribute,
 } from "@APP/src/bundles/Settings/LanguageBundle/Services/Language.services"
+import { useAppConfig } from "@APP/src/configs/app"
 import UISelect from "@APP|Bundles/UISelectBundle/Components/UISelect.vue"
 import { useI18n } from "vue-i18n"
 
+const { appConfig } = useAppConfig()
 const i18n = useI18n()
 </script>
 
