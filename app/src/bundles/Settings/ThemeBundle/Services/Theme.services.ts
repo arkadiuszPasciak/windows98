@@ -4,6 +4,7 @@ import {
 } from "@APP/src/bundles/Settings/ThemeBundle/Supports/Theme.supports"
 import { localStorageNames } from "@APP/src/bundles/Window/StorageBundle/Configs/Storage.configs"
 import { LocalStorage } from "@APP/src/bundles/Window/StorageBundle/Services/Storage.services"
+import { AppThemes, useAppConfig } from "@APP/src/configs/app"
 import type { Nullable } from "vitest"
 
 export function getThemeColorFromStorage(): TThemes {
@@ -16,10 +17,12 @@ export function getThemeColorFromStorage(): TThemes {
 
 export function mountThemeColorByStorage(): void {
 	const isExist = LocalStorage.isItemExist(localStorageNames.THEME)
+	const { appConfig } = useAppConfig()
 
 	if (!isExist) {
 		updateThemeClass(EThemes.LIGHT)
 		setThemeColorInStorage(EThemes.LIGHT)
+		appConfig.setTheme(AppThemes.LIGHT)
 	}
 
 	const theme = LocalStorage.getItem(localStorageNames.THEME) as TThemes
@@ -30,6 +33,7 @@ export function mountThemeColorByStorage(): void {
 
 	updateThemeClass(theme)
 	setThemeColorInStorage(theme)
+	appConfig.setTheme(theme as unknown as AppThemes)
 }
 
 export function setThemeColorInStorage(theme: TThemes): void {

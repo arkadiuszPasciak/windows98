@@ -6,8 +6,9 @@
 import { useClockStore } from "@APP/src/bundles/Programs/ClockBundle/Stores/Clock.stores"
 import { mountLanguageVersionByStorage } from "@APP/src/bundles/Settings/LanguageBundle/Services/Language.services"
 import { mountThemeColorByStorage } from "@APP/src/bundles/Settings/ThemeBundle/Services/Theme.services"
+import { useAppConfig } from "@APP/src/configs/app"
 import HomePage from "@APP|Views/HomePage/HomePage.vue"
-import { onBeforeMount } from "vue"
+import { onBeforeMount, onMounted } from "vue"
 import { useI18n } from "vue-i18n"
 
 const clockStore = useClockStore()
@@ -22,6 +23,10 @@ onBeforeMount(() => {
 	}
 
 	mountThemeColorByStorage()
+})
+
+onMounted(() => {
+	useAppConfig()
 })
 </script>
 
