@@ -2,7 +2,8 @@ import type { AppConfigBuilderDomainContract } from "../contracts"
 import type { IConfig } from "../models"
 
 export class AppConfigBuilderDomain<EThemes, ELanguages>
-	implements AppConfigBuilderDomainContract<EThemes, ELanguages> {
+	implements AppConfigBuilderDomainContract<EThemes, ELanguages>
+{
 	readonly config: IConfig<EThemes, ELanguages>
 
 	constructor() {
