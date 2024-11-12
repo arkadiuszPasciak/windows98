@@ -1,28 +1,50 @@
 var d = Object.defineProperty;
-var l = (r, e, t) => e in r ? d(r, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : r[e] = t;
-var n = (r, e, t) => (l(r, typeof e != "symbol" ? e + "" : e, t), t);
+var h = (r, e, t) => e in r ? d(r, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : r[e] = t;
+var n = (r, e, t) => (h(r, typeof e != "symbol" ? e + "" : e, t), t);
 const o = class o {
-  constructor(e, t) {
-    n(this, "language");
-    n(this, "theme");
-    this.language = e, this.theme = t;
+  constructor(e) {
+    n(this, "config");
+    this.config = e;
   }
-  static getInstance(e, t) {
+  static getInstance(e) {
     for (; o.lock; )
       ;
-    return o.lock = !0, o.instance || (o.instance = new o(e, t)), o.lock = !1, o.instance;
+    return o.lock = !0, o.instance || (o.instance = new o(e)), o.lock = !1, o.instance;
   }
   setLanguage(e) {
-    this.language !== e && (this.language = e);
+    this.config.language !== e && (this.config.language = e);
   }
   setTheme(e) {
-    this.theme !== e && (this.theme = e);
+    this.config.theme !== e && (this.config.theme = e);
   }
 };
 // biome-ignore lint/suspicious/noExplicitAny: any is used to store the instance of the class
 n(o, "instance"), n(o, "lock", !1);
-let m = o;
-class h {
+let g = o;
+class y {
+  constructor() {
+    n(this, "config");
+    this.config = {
+      theme: void 0,
+      language: void 0
+    };
+  }
+  addTheme(e) {
+    return this.config.theme = e, this;
+  }
+  addLanguage(e) {
+    return this.config.language = e, this;
+  }
+  build() {
+    return this.validateConfig(), this.config;
+  }
+  validateConfig() {
+    for (const [e, t] of Object.entries(this.config))
+      if (t === void 0)
+        throw new Error(`[MSAppConfig]: Missing ${e}`);
+  }
+}
+class l {
   restartApplication() {
     window.location.reload();
   }
@@ -30,10 +52,10 @@ class h {
     window.location.href = "https://google.com";
   }
 }
-class y {
+class W {
   constructor() {
     n(this, "appControllerRepository");
-    this.appControllerRepository = new h();
+    this.appControllerRepository = new l();
   }
   restartApplication() {
     this.appControllerRepository.restartApplication();
@@ -57,9 +79,9 @@ class u {
     if (!e)
       return null;
     for (const t in this.browserNames) {
-      const s = this.browserNames[t];
-      if (s.regex.test(e))
-        return s.name;
+      const i = this.browserNames[t];
+      if (i.regex.test(e))
+        return i.name;
     }
     return null;
   }
@@ -82,9 +104,9 @@ class w {
     if (!e)
       return null;
     for (const t in this.devicesNames) {
-      const s = this.devicesNames[t];
-      if (s.regex.test(e))
-        return s.name;
+      const i = this.devicesNames[t];
+      if (i.regex.test(e))
+        return i.name;
     }
     return null;
   }
@@ -127,14 +149,14 @@ class p {
     if (!e)
       return null;
     for (const t in this.operatingSystems) {
-      const s = this.operatingSystems[t];
-      if (s.regex.test(e))
-        return s.name;
+      const i = this.operatingSystems[t];
+      if (i.regex.test(e))
+        return i.name;
     }
     return null;
   }
 }
-class x {
+class f {
   get() {
     const e = window.screen;
     return e ? {
@@ -144,9 +166,9 @@ class x {
     } : null;
   }
 }
-class f {
-  constructor(e = new u(), t = new w(), s = new p(), c = new x()) {
-    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = s, this.screenRepository = c;
+class E {
+  constructor(e = new u(), t = new w(), i = new p(), c = new f()) {
+    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = i, this.screenRepository = c;
   }
   getBrowserName() {
     return this.browserNameRepository.get();
@@ -161,7 +183,7 @@ class f {
     return this.screenRepository.get();
   }
 }
-class S {
+class x {
   addItem(e, t) {
     window.localStorage.setItem(e, t);
   }
@@ -179,10 +201,10 @@ class S {
     window.localStorage.clear();
   }
 }
-class T {
+class S {
   constructor() {
     n(this, "storageRepository");
-    this.storageRepository = new S();
+    this.storageRepository = new x();
   }
   addItem(e, t) {
     this.storageRepository.addItem(e, t);
@@ -200,28 +222,28 @@ class T {
     this.storageRepository.removeItem(e);
   }
 }
-var a = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(a || {}), i = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(i || {}), g = /* @__PURE__ */ ((r) => (r.DARK = "dark", r.LIGHT = "light", r))(g || {});
-class E {
+var a = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(a || {}), s = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(s || {}), m = /* @__PURE__ */ ((r) => (r.DARK = "dark", r.LIGHT = "light", r))(m || {});
+class I {
   constructor() {
-    n(this, "storage", new T());
-    n(this, "defaultTheme", g.LIGHT);
+    n(this, "storage", new S());
+    n(this, "defaultTheme", m.LIGHT);
   }
   getThemeColor() {
-    return this.storage.getItem(i.THEME) ?? this.defaultTheme;
+    return this.storage.getItem(s.THEME) ?? this.defaultTheme;
   }
   setThemeColor(e) {
-    this.storage.updateItem(i.THEME, e);
+    this.storage.updateItem(s.THEME, e);
   }
   updateTheme(e) {
     const t = window.document.querySelector("html");
     !t || t.getAttribute(a.THEME) === e || t.setAttribute(a.THEME, e);
   }
   mountThemeColor() {
-    if (!this.storage.isItemExist(i.THEME)) {
+    if (!this.storage.isItemExist(s.THEME)) {
       this.initDefaultTheme();
       return;
     }
-    const t = this.storage.getItem(i.THEME);
+    const t = this.storage.getItem(s.THEME);
     t && this.updateTheme(t);
   }
   initDefaultTheme() {
@@ -229,10 +251,11 @@ class E {
   }
 }
 export {
-  m as MSAppConfig,
-  y as MSAppController,
-  f as MSBrowserEnv,
-  T as MSStorage,
-  E as MSTheme
+  g as MSAppConfig,
+  y as MSAppConfigBuilder,
+  W as MSAppController,
+  E as MSBrowserEnv,
+  S as MSStorage,
+  I as MSTheme
 };
 //# sourceMappingURL=index.js.map
