@@ -37,15 +37,13 @@ describe("AppConfigBuilderDomain", () => {
 	it("should throw an error if theme is missing", () => {
 		builder.addLanguage(TestLanguages.EN)
 
-		expect(() => builder.build()).toThrowError("[MSAppConfig]: Missing theme")
+		expect(() => builder.build()).toThrowError("missing theme")
 	})
 
 	it("should throw an error if language is missing", () => {
 		builder.addTheme(TestThemes.LIGHT)
 
-		expect(() => builder.build()).toThrowError(
-			"[MSAppConfig]: Missing language",
-		)
+		expect(() => builder.build()).toThrowError("missing language")
 	})
 
 	it("should set theme correctly", () => {
