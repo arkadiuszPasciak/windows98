@@ -29,15 +29,20 @@ describe("ErrorHandlerDomain", () => {
 				if (error instanceof Error) {
 					expect(error.message).toBe(testData.errorMessage)
 					expect(error.name).toBe(
-						`[MSErrorHandler:${testData.moduleName}] ${testData.methodName}`,
+						`[${testData.moduleName}]<${testData.methodName}>`,
 					)
 				}
 			}
 		})
 
 		it("should use the unknown error message if no custom message is provided", () => {
+			const testData = {
+				moduleName: "ModuleName",
+				methodName: "MethodName",
+			}
+
 			class TestClass {
-				@MSErrorHandler.CatchError("ModuleName", "MethodName")
+				@MSErrorHandler.CatchError(testData.moduleName, testData.methodName)
 				methodThatThrows() {
 					throw new Error()
 				}
@@ -52,7 +57,9 @@ describe("ErrorHandlerDomain", () => {
 
 				if (error instanceof Error) {
 					expect(error.message).toBe("Unknown error message")
-					expect(error.name).toBe("[MSErrorHandler:ModuleName] MethodName")
+					expect(error.name).toBe(
+						`[${testData.moduleName}]<${testData.methodName}>`,
+					)
 				}
 			}
 		})

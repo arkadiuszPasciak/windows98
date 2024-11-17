@@ -38,7 +38,7 @@ export class ErrorHandlerDomain implements ErrorHandlerDomainContract {
 		const errorMessage = this.generateErrorMessage(error)
 
 		const newError = new Error(errorMessage)
-		newError.name = `[MSErrorHandler:${moduleName}] ${methodName}`
+		newError.name = `[${moduleName}]<${methodName}>`
 
 		return newError
 	}
