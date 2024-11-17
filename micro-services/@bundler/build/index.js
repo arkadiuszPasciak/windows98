@@ -1,15 +1,15 @@
-var d = Object.defineProperty;
-var h = (r, e, t) => e in r ? d(r, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : r[e] = t;
-var n = (r, e, t) => (h(r, typeof e != "symbol" ? e + "" : e, t), t);
-const o = class o {
+var f = Object.defineProperty;
+var E = (r, e, t) => e in r ? f(r, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : r[e] = t;
+var s = (r, e, t) => (E(r, typeof e != "symbol" ? e + "" : e, t), t);
+const n = class n {
   constructor(e) {
-    n(this, "config");
+    s(this, "config");
     this.config = e;
   }
   static getInstance(e) {
-    for (; o.lock; )
+    for (; n.lock; )
       ;
-    return o.lock = !0, o.instance || (o.instance = new o(e)), o.lock = !1, o.instance;
+    return n.lock = !0, n.instance || (n.instance = new n(e)), n.lock = !1, n.instance;
   }
   setLanguage(e) {
     this.config.language !== e && (this.config.language = e);
@@ -19,11 +19,11 @@ const o = class o {
   }
 };
 // biome-ignore lint/suspicious/noExplicitAny: any is used to store the instance of the class
-n(o, "instance"), n(o, "lock", !1);
-let g = o;
-class y {
+s(n, "instance"), s(n, "lock", !1);
+let d = n;
+class A {
   constructor() {
-    n(this, "config");
+    s(this, "config");
     this.config = {
       theme: void 0,
       language: void 0
@@ -44,7 +44,7 @@ class y {
         throw new Error(`[MSAppConfig]: Missing ${e}`);
   }
 }
-class l {
+class S {
   restartApplication() {
     window.location.reload();
   }
@@ -52,10 +52,10 @@ class l {
     window.location.href = "https://google.com";
   }
 }
-class W {
+class O {
   constructor() {
-    n(this, "appControllerRepository");
-    this.appControllerRepository = new l();
+    s(this, "appControllerRepository");
+    this.appControllerRepository = new S();
   }
   restartApplication() {
     this.appControllerRepository.restartApplication();
@@ -64,7 +64,7 @@ class W {
     this.appControllerRepository.shutdownApplication();
   }
 }
-class u {
+class x {
   constructor(e = [
     { name: "Chrome", regex: /chrome|chromium|crios/i },
     { name: "Firefox", regex: /firefox|fxios/i },
@@ -79,14 +79,14 @@ class u {
     if (!e)
       return null;
     for (const t in this.browserNames) {
-      const i = this.browserNames[t];
-      if (i.regex.test(e))
-        return i.name;
+      const o = this.browserNames[t];
+      if (o.regex.test(e))
+        return o.name;
     }
     return null;
   }
 }
-class w {
+class y {
   constructor(e = [
     {
       name: "mobile",
@@ -104,14 +104,14 @@ class w {
     if (!e)
       return null;
     for (const t in this.devicesNames) {
-      const i = this.devicesNames[t];
-      if (i.regex.test(e))
-        return i.name;
+      const o = this.devicesNames[t];
+      if (o.regex.test(e))
+        return o.name;
     }
     return null;
   }
 }
-class p {
+class T {
   constructor(e = [
     { name: "Windows 3.11", regex: /Win16/ },
     { name: "Windows 95", regex: /(Windows 95|Win95|Windows_95)/ },
@@ -149,14 +149,14 @@ class p {
     if (!e)
       return null;
     for (const t in this.operatingSystems) {
-      const i = this.operatingSystems[t];
-      if (i.regex.test(e))
-        return i.name;
+      const o = this.operatingSystems[t];
+      if (o.regex.test(e))
+        return o.name;
     }
     return null;
   }
 }
-class f {
+class W {
   get() {
     const e = window.screen;
     return e ? {
@@ -166,9 +166,9 @@ class f {
     } : null;
   }
 }
-class E {
-  constructor(e = new u(), t = new w(), i = new p(), c = new f()) {
-    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = i, this.screenRepository = c;
+class C {
+  constructor(e = new x(), t = new y(), o = new T(), a = new W()) {
+    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = o, this.screenRepository = a;
   }
   getBrowserName() {
     return this.browserNameRepository.get();
@@ -183,7 +183,39 @@ class E {
     return this.screenRepository.get();
   }
 }
-class x {
+class M {
+  constructor() {
+    s(this, "UNKNOWN_ERROR_MESSAGE", "Unknown error message");
+  }
+  CatchError(e, t) {
+    const o = this;
+    return (a, c, m) => {
+      const u = m.value;
+      m.value = function(...w) {
+        try {
+          return u.apply(this, w);
+        } catch (p) {
+          throw o.createError(
+            e,
+            t,
+            p
+          );
+        }
+      };
+    };
+  }
+  createError(e, t, o) {
+    const a = this.generateErrorMessage(o), c = new Error(a);
+    return c.name = `[MSErrorHandler:${e}] ${t}`, c;
+  }
+  generateErrorMessage(e) {
+    return e instanceof Error && e.message.length ? e.message : this.UNKNOWN_ERROR_MESSAGE;
+  }
+}
+const h = new M(), b = {
+  CatchError: h.CatchError.bind(h)
+};
+class N {
   addItem(e, t) {
     window.localStorage.setItem(e, t);
   }
@@ -201,10 +233,10 @@ class x {
     window.localStorage.clear();
   }
 }
-class S {
+class R {
   constructor() {
-    n(this, "storageRepository");
-    this.storageRepository = new x();
+    s(this, "storageRepository");
+    this.storageRepository = new N();
   }
   addItem(e, t) {
     this.storageRepository.addItem(e, t);
@@ -222,28 +254,28 @@ class S {
     this.storageRepository.removeItem(e);
   }
 }
-var a = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(a || {}), s = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(s || {}), m = /* @__PURE__ */ ((r) => (r.DARK = "dark", r.LIGHT = "light", r))(m || {});
-class I {
+var g = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(g || {}), i = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(i || {}), l = /* @__PURE__ */ ((r) => (r.DARK = "dark", r.LIGHT = "light", r))(l || {});
+class H {
   constructor() {
-    n(this, "storage", new S());
-    n(this, "defaultTheme", m.LIGHT);
+    s(this, "storage", new R());
+    s(this, "defaultTheme", l.LIGHT);
   }
   getThemeColor() {
-    return this.storage.getItem(s.THEME) ?? this.defaultTheme;
+    return this.storage.getItem(i.THEME) ?? this.defaultTheme;
   }
   setThemeColor(e) {
-    this.storage.updateItem(s.THEME, e);
+    this.storage.updateItem(i.THEME, e);
   }
   updateTheme(e) {
     const t = window.document.querySelector("html");
-    !t || t.getAttribute(a.THEME) === e || t.setAttribute(a.THEME, e);
+    !t || t.getAttribute(g.THEME) === e || t.setAttribute(g.THEME, e);
   }
   mountThemeColor() {
-    if (!this.storage.isItemExist(s.THEME)) {
+    if (!this.storage.isItemExist(i.THEME)) {
       this.initDefaultTheme();
       return;
     }
-    const t = this.storage.getItem(s.THEME);
+    const t = this.storage.getItem(i.THEME);
     t && this.updateTheme(t);
   }
   initDefaultTheme() {
@@ -251,11 +283,12 @@ class I {
   }
 }
 export {
-  g as MSAppConfig,
-  y as MSAppConfigBuilder,
-  W as MSAppController,
-  E as MSBrowserEnv,
-  S as MSStorage,
-  I as MSTheme
+  d as MSAppConfig,
+  A as MSAppConfigBuilder,
+  O as MSAppController,
+  C as MSBrowserEnv,
+  b as MSErrorHandler,
+  R as MSStorage,
+  H as MSTheme
 };
 //# sourceMappingURL=index.js.map
