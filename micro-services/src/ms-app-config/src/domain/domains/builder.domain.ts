@@ -1,3 +1,4 @@
+import { MSErrorHandler } from "../../../../ms-error-handler/src"
 import type { AppConfigBuilderDomainContract } from "../contracts"
 import type { IConfig } from "../models"
 
@@ -31,9 +32,10 @@ export class AppConfigBuilderDomain<EThemes, ELanguages>
 		return this.config
 	}
 
+	@MSErrorHandler.CatchError("AppConfigBuilderDomain", "validateConfig")
 	private validateConfig(): void {
 		for (const [key, value] of Object.entries(this.config)) {
-			if (value === undefined) throw new Error(`[MSAppConfig]: Missing ${key}`)
+			if (value === undefined) throw new Error(`missing ${key}`)
 		}
 	}
 }
