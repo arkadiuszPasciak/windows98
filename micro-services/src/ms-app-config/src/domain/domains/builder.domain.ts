@@ -1,32 +1,22 @@
 import { MSErrorHandler } from "../../../../ms-error-handler/src"
 import type { AppConfigBuilderDomainContract } from "../contracts"
-import type { IConfig } from "../models"
 
-export class AppConfigBuilderDomain<EThemes, ELanguages>
-	implements AppConfigBuilderDomainContract<EThemes, ELanguages>
+export class AppConfigBuilderDomain<Config>
+	implements AppConfigBuilderDomainContract<Config>
 {
-	readonly config: IConfig<EThemes, ELanguages>
+	private config: Config
 
-	constructor() {
-		this.config = {
-			theme: undefined,
-			language: undefined,
-		}
+	constructor(config: Config) {
+		this.config = config
 	}
 
-	public addTheme(theme: EThemes): this {
-		this.config.theme = theme
+	public add<Key extends keyof Config>(key: Key, value: Config[Key]): this {
+		this.config[key] = value
 
 		return this
 	}
 
-	public addLanguage(language: ELanguages): this {
-		this.config.language = language
-
-		return this
-	}
-
-	public build(): IConfig<EThemes, ELanguages> {
+	public build(): Config {
 		this.validateConfig()
 
 		return this.config
@@ -34,7 +24,11 @@ export class AppConfigBuilderDomain<EThemes, ELanguages>
 
 	@MSErrorHandler.CatchError("AppConfigBuilderDomain", "validateConfig")
 	private validateConfig(): void {
-		for (const [key, value] of Object.entries(this.config)) {
+		if (this.config === undefined) throw new Error("missing config")
+
+		for (const [key, value] of Object.entries(
+			this.config as Record<string, unknown>,
+		)) {
 			if (value === undefined) throw new Error(`missing ${key}`)
 		}
 	}
