@@ -11,11 +11,19 @@ enum TestLanguages {
 	FR = "fr",
 }
 
+interface TestConfig {
+	theme: TestThemes | undefined
+	language: TestLanguages | undefined
+}
+
 describe("AppConfigBuilderDomain", () => {
-	let builder: AppConfigBuilderDomain<TestThemes, TestLanguages>
+	let builder: AppConfigBuilderDomain<TestConfig>
 
 	beforeEach(() => {
-		builder = new AppConfigBuilderDomain<TestThemes, TestLanguages>()
+		builder = new AppConfigBuilderDomain<TestConfig>({
+			theme: undefined,
+			language: undefined,
+		})
 	})
 
 	afterEach(() => {
@@ -23,8 +31,8 @@ describe("AppConfigBuilderDomain", () => {
 	})
 
 	it("build should return a correct config", () => {
-		builder.addTheme(TestThemes.LIGHT)
-		builder.addLanguage(TestLanguages.EN)
+		builder.add("theme", TestThemes.LIGHT)
+		builder.add("language", TestLanguages.EN)
 
 		const config = builder.build()
 
@@ -35,26 +43,24 @@ describe("AppConfigBuilderDomain", () => {
 	})
 
 	it("should throw an error if theme is missing", () => {
-		builder.addLanguage(TestLanguages.EN)
+		builder.add("language", TestLanguages.EN)
 
 		expect(() => builder.build()).toThrowError("missing theme")
 	})
 
 	it("should throw an error if language is missing", () => {
-		builder.addTheme(TestThemes.LIGHT)
+		builder.add("theme", TestThemes.LIGHT)
 
 		expect(() => builder.build()).toThrowError("missing language")
 	})
 
-	it("should set theme correctly", () => {
-		builder.addTheme(TestThemes.DARK)
+	it("should set theme and language correctly", () => {
+		builder.add("theme", TestThemes.DARK)
+		builder.add("language", TestLanguages.FR)
 
-		expect(builder.config.theme).toBe(TestThemes.DARK)
-	})
+		const config = builder.build()
 
-	it("should set language correctly", () => {
-		builder.addLanguage(TestLanguages.FR)
-
-		expect(builder.config.language).toBe(TestLanguages.FR)
+		expect(config.theme).toBe(TestThemes.DARK)
+		expect(config.language).toBe(TestLanguages.FR)
 	})
 })

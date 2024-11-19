@@ -11,11 +11,16 @@ enum TestLanguages {
 	FR = "fr",
 }
 
+interface TestConfig {
+	theme: TestThemes
+	language: TestLanguages
+}
+
 describe("AppConfigDomain", () => {
-	let appConfigDomain: AppConfigDomain<TestThemes, TestLanguages>
+	let appConfigDomain: AppConfigDomain<TestConfig>
 
 	beforeEach(() => {
-		const defaultConfig = {
+		const defaultConfig: TestConfig = {
 			theme: TestThemes.LIGHT,
 			language: TestLanguages.EN,
 		}
@@ -43,27 +48,15 @@ describe("AppConfigDomain", () => {
 		expect(instance1.config.theme).toBe(TestThemes.LIGHT)
 	})
 
-	it("setLanguage should update the language", () => {
-		appConfigDomain.setLanguage(TestLanguages.FR)
+	it("set should update the language", () => {
+		appConfigDomain.set("language", TestLanguages.FR)
 
 		expect(appConfigDomain.config.language).toBe(TestLanguages.FR)
 	})
 
-	it("setLanguage should not update the language if the same", () => {
-		appConfigDomain.setLanguage(TestLanguages.EN)
-
-		expect(appConfigDomain.config.language).toBe(TestLanguages.EN)
-	})
-
-	it("setTheme should update the theme", () => {
-		appConfigDomain.setTheme(TestThemes.DARK)
+	it("set should update the theme", () => {
+		appConfigDomain.set("theme", TestThemes.DARK)
 
 		expect(appConfigDomain.config.theme).toBe(TestThemes.DARK)
-	})
-
-	it("setTheme should not update the theme if the same", () => {
-		appConfigDomain.setTheme(TestThemes.LIGHT)
-
-		expect(appConfigDomain.config.theme).toBe(TestThemes.LIGHT)
 	})
 })
