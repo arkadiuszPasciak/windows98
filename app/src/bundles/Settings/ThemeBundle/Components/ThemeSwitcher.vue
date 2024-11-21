@@ -25,7 +25,7 @@ const { appConfig } = useAppConfig()
 const update = (event: TThemes): void => {
 	updateThemeClass(event)
 	setThemeColorInStorage(event)
-	appConfig.setTheme(event as unknown as AppThemes)
+	appConfig.set("theme", event as unknown as AppThemes)
 }
 </script>
 

@@ -22,7 +22,7 @@ export function mountThemeColorByStorage(): void {
 	if (!isExist) {
 		updateThemeClass(EThemes.LIGHT)
 		setThemeColorInStorage(EThemes.LIGHT)
-		appConfig.setTheme(AppThemes.LIGHT)
+		appConfig.set("theme", AppThemes.LIGHT)
 	}
 
 	const theme = LocalStorage.getItem(localStorageNames.THEME) as TThemes
@@ -33,7 +33,7 @@ export function mountThemeColorByStorage(): void {
 
 	updateThemeClass(theme)
 	setThemeColorInStorage(theme)
-	appConfig.setTheme(theme as unknown as AppThemes)
+	appConfig.set("theme", theme as unknown as AppThemes)
 }
 
 export function setThemeColorInStorage(theme: TThemes): void {

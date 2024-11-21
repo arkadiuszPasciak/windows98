@@ -14,7 +14,7 @@ export function mountLanguageVersionByStorage(): Nullable<string> {
 	if (!isExist) {
 		updateLangAttribute(ELanguageLocales.ENGLISH)
 		setLanguageVersionInStorage(ELanguageLocales.ENGLISH)
-		appConfig.setLanguage(AppLanguages.ENGLISH)
+		appConfig.set("language", AppLanguages.ENGLISH)
 
 		return null
 	}
@@ -29,7 +29,7 @@ export function mountLanguageVersionByStorage(): Nullable<string> {
 
 	updateLangAttribute(language)
 
-	appConfig.setLanguage(language as unknown as AppLanguages)
+	appConfig.set("language", language as unknown as AppLanguages)
 
 	return LocalStorage.getItem(localStorageNames.LANGUAGE)
 }

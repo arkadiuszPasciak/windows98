@@ -1,11 +1,10 @@
 import type { AppConfigDomainContract } from "../contracts";
-import type { IConfig } from "../models";
-export declare class AppConfigDomain<EThemes, ELanguages> implements AppConfigDomainContract<EThemes, ELanguages> {
+export declare class AppConfigDomain<Config> implements AppConfigDomainContract<Config> {
     private static instance;
     private static lock;
-    readonly config: IConfig<EThemes, ELanguages>;
+    readonly config: Config;
     private constructor();
-    static getInstance<EThemes, ELanguages>(config: IConfig<EThemes, ELanguages>): AppConfigDomain<EThemes, ELanguages>;
-    setLanguage(language: ELanguages): void;
-    setTheme(theme: EThemes): void;
+    static getInstance<Config>(config: Config): AppConfigDomain<Config>;
+    set<Key extends keyof Config>(key: Key, value: Config[Key]): void;
+    get<Key extends keyof Config>(key: Key): Config[Key];
 }

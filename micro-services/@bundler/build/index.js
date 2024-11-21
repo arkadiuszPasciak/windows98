@@ -11,11 +11,11 @@ const s = class s {
       ;
     return s.lock = !0, s.instance || (s.instance = new s(e)), s.lock = !1, s.instance;
   }
-  setLanguage(e) {
-    this.config.language !== e && (this.config.language = e);
+  set(e, t) {
+    this.config[e] !== t && (this.config[e] = t);
   }
-  setTheme(e) {
-    this.config.theme !== e && (this.config.theme = e);
+  get(e) {
+    return this.config[e];
   }
 };
 // biome-ignore lint/suspicious/noExplicitAny: any is used to store the instance of the class
@@ -29,14 +29,14 @@ class S {
     const o = this;
     return (n, a, c) => {
       const u = c.value;
-      c.value = function(...p) {
+      c.value = function(...w) {
         try {
-          return u.apply(this, p);
-        } catch (w) {
+          return u.apply(this, w);
+        } catch (p) {
           throw o.createError(
             e,
             t,
-            w
+            p
           );
         }
       };
@@ -50,38 +50,36 @@ class S {
     return e instanceof Error && e.message.length ? e.message : this.UNKNOWN_ERROR_MESSAGE;
   }
 }
-const h = new S(), x = {
-  CatchError: h.CatchError.bind(h)
+const d = new S(), x = {
+  CatchError: d.CatchError.bind(d)
 };
-var y = Object.defineProperty, T = Object.getOwnPropertyDescriptor, W = (r, e, t, o) => {
-  for (var n = o > 1 ? void 0 : o ? T(e, t) : e, a = r.length - 1, c; a >= 0; a--)
+var y = Object.defineProperty, W = Object.getOwnPropertyDescriptor, T = (r, e, t, o) => {
+  for (var n = o > 1 ? void 0 : o ? W(e, t) : e, a = r.length - 1, c; a >= 0; a--)
     (c = r[a]) && (n = (o ? c(e, t, n) : c(n)) || n);
   return o && n && y(e, t, n), n;
 };
 class v {
-  constructor() {
+  constructor(e) {
     i(this, "config");
-    this.config = {
-      theme: void 0,
-      language: void 0
-    };
+    this.config = e;
   }
-  addTheme(e) {
-    return this.config.theme = e, this;
-  }
-  addLanguage(e) {
-    return this.config.language = e, this;
+  add(e, t) {
+    return this.config[e] = t, this;
   }
   build() {
     return this.validateConfig(), this.config;
   }
   validateConfig() {
-    for (const [e, t] of Object.entries(this.config))
+    if (this.config === void 0)
+      throw new Error("missing config");
+    for (const [e, t] of Object.entries(
+      this.config
+    ))
       if (t === void 0)
         throw new Error(`missing ${e}`);
   }
 }
-W([
+T([
   x.CatchError("AppConfigBuilderDomain", "validateConfig")
 ], v.prototype, "validateConfig", 1);
 class M {
@@ -262,11 +260,11 @@ class A {
     this.storageRepository.removeItem(e);
   }
 }
-var m = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(m || {}), g = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(g || {}), d = /* @__PURE__ */ ((r) => (r.DARK = "dark", r.LIGHT = "light", r))(d || {});
+var m = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(m || {}), g = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(g || {}), h = /* @__PURE__ */ ((r) => (r.DARK = "dark", r.LIGHT = "light", r))(h || {});
 class B {
   constructor() {
     i(this, "storage", new A());
-    i(this, "defaultTheme", d.LIGHT);
+    i(this, "defaultTheme", h.LIGHT);
   }
   getThemeColor() {
     return this.storage.getItem(g.THEME) ?? this.defaultTheme;

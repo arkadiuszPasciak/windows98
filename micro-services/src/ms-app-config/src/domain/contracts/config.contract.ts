@@ -1,8 +1,6 @@
-import type { IConfig } from "../models"
+export interface AppConfigDomainContract<Config> {
+	readonly config: Config
 
-export interface AppConfigDomainContract<EThemes, ELanguages> {
-	readonly config: IConfig<EThemes, ELanguages>
-
-	setLanguage(language: ELanguages): void
-	setTheme(EThemes: EThemes): void
+	set<Key extends keyof Config>(key: Key, value: Config[Key]): void
+	get<Key extends keyof Config>(key: Key): Config[Key]
 }
