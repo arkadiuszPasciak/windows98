@@ -1,6 +1,4 @@
-import type { IConfig } from "../models"
-
-export interface AppConfigDomainContract<Config extends IConfig> {
+export interface AppConfigDomainContract<Config> {
 	readonly config: Config
 
 	set<Key extends keyof Config>(key: Key, value: Config[Key]): void
