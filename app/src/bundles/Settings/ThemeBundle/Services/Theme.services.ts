@@ -17,7 +17,7 @@ export function getThemeColorFromStorage(): TThemes {
 
 export function mountThemeColorByStorage(): void {
 	const isExist = LocalStorage.isItemExist(localStorageNames.THEME)
-	const { appConfig } = useAppConfig()
+	const appConfig = useAppConfig()
 
 	if (!isExist) {
 		updateThemeClass(EThemes.LIGHT)

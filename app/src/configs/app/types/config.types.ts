@@ -8,7 +8,11 @@ export enum AppLanguages {
 	POLISH = "pl",
 }
 
+// Add types from browsers, devices, and operating systems
 export interface AppConfig {
-	theme: AppThemes | undefined
+	browserName: string | undefined
+	deviceType: string | undefined
 	language: AppLanguages | undefined
+	operatingSystem: string | undefined
+	theme: AppThemes | undefined
 }

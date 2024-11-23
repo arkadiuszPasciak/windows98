@@ -20,7 +20,7 @@ import { type AppThemes, useAppConfig } from "@APP/src/configs/app"
 import UISelect from "@APP|Bundles/UISelectBundle/Components/UISelect.vue"
 
 const themeValue = getThemeColorFromStorage()
-const { appConfig } = useAppConfig()
+const appConfig = useAppConfig()
 
 const update = (event: TThemes): void => {
 	updateThemeClass(event)

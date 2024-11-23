@@ -23,8 +23,8 @@ import { type AppLanguages, useAppConfig } from "@APP/src/configs/app"
 import UISelect from "@APP|Bundles/UISelectBundle/Components/UISelect.vue"
 import { useI18n } from "vue-i18n"
 
-const { appConfig } = useAppConfig()
 const i18n = useI18n()
+const appConfig = useAppConfig()
 
 const setLanguage = (language: AppLanguages): void => {
 	appConfig.set("language", language)

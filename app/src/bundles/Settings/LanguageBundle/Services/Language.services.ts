@@ -9,7 +9,7 @@ import type { Nullable } from "vitest"
 
 export function mountLanguageVersionByStorage(): Nullable<string> {
 	const isExist = LocalStorage.isItemExist(localStorageNames.LANGUAGE)
-	const { appConfig } = useAppConfig()
+	const appConfig = useAppConfig()
 
 	if (!isExist) {
 		updateLangAttribute(ELanguageLocales.ENGLISH)
