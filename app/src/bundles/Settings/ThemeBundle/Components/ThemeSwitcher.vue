@@ -16,16 +16,17 @@ import {
 	updateThemeClass,
 } from "@APP/src/bundles/Settings/ThemeBundle/Services/Theme.services"
 import type { TThemes } from "@APP/src/bundles/Settings/ThemeBundle/Supports/Theme.supports"
-import { type AppThemes, useAppConfig } from "@APP/src/configs/app"
+import { useTheme } from "@APP/src/bundles/Settings/ThemeBundle/hooks"
+import type { AppThemes } from "@APP/src/configs/app"
 import UISelect from "@APP|Bundles/UISelectBundle/Components/UISelect.vue"
 
 const themeValue = getThemeColorFromStorage()
-const appConfig = useAppConfig()
+const { toggleTheme } = useTheme()
 
 const update = (event: TThemes): void => {
 	updateThemeClass(event)
 	setThemeColorInStorage(event)
-	appConfig.set("theme", event as unknown as AppThemes)
+	toggleTheme(event as unknown as AppThemes)
 }
 </script>
 
