@@ -1,10 +1,6 @@
-export interface StorageRepositoryContract<
-	Key extends string,
-	Value extends string,
-> {
-	addItem(key: Key, value: Value): void
-	getItem(key: Key): string | null
-	isItemExist(key: Key): boolean
+export interface StorageRepositoryStrategyContract<Key extends string, Value extends string> {
+	getItem(key: Key): Value | null
+	setItem(key: Key, value: string): void
 	removeItem(key: Key): void
-	clearAll(): void
+	clear(): void
 }
