@@ -1,7 +1,8 @@
 import type { StorageRepositoryStrategyContract } from "../../domain/contracts"
 
 export class LocalStorageRepository<Key extends string, Value extends string>
-	implements StorageRepositoryStrategyContract<Key, Value> {
+	implements StorageRepositoryStrategyContract<Key, Value>
+{
 	public getItem(key: Key): Value | null {
 		return window.localStorage.getItem(key) as Value
 	}

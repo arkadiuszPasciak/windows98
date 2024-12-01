@@ -7,7 +7,10 @@ interface TestKeyValues {
 }
 
 describe("MSLocalStorage", () => {
-	const storageDomain: MSLocalStorage<keyof TestKeyValues, TestKeyValues[keyof TestKeyValues]> = new MSLocalStorage()
+	const storageDomain: MSLocalStorage<
+		keyof TestKeyValues,
+		TestKeyValues[keyof TestKeyValues]
+	> = new MSLocalStorage()
 
 	beforeEach(() => {
 		Object.defineProperty(window, "localStorage", {

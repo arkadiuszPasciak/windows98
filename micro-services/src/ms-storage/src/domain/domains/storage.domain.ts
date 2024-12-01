@@ -1,11 +1,17 @@
 import type { Maybe } from "@windows98/toolkit"
-import type { StorageDomainContract, StorageRepositoryStrategyContract } from "../contracts"
+import type {
+	StorageDomainContract,
+	StorageRepositoryStrategyContract,
+} from "../contracts"
 
 export class StorageDomain<Key extends string, Value extends string>
-	implements StorageDomainContract<Key, Value> {
+	implements StorageDomainContract<Key, Value>
+{
 	private storageRepository: StorageRepositoryStrategyContract<Key, Value>
 
-	constructor(storageRepository: StorageRepositoryStrategyContract<Key, Value>) {
+	constructor(
+		storageRepository: StorageRepositoryStrategyContract<Key, Value>,
+	) {
 		this.storageRepository = storageRepository
 	}
 
@@ -27,6 +33,3 @@ export class StorageDomain<Key extends string, Value extends string>
 		this.storageRepository.removeItem(key)
 	}
 }
-
-
-

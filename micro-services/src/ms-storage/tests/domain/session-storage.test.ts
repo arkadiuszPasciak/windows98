@@ -7,7 +7,10 @@ interface TestKeyValues {
 }
 
 describe("MSsessionStorage", () => {
-	const storageDomain: MSSessionStorage<keyof TestKeyValues, TestKeyValues[keyof TestKeyValues]> = new MSSessionStorage()
+	const storageDomain: MSSessionStorage<
+		keyof TestKeyValues,
+		TestKeyValues[keyof TestKeyValues]
+	> = new MSSessionStorage()
 
 	beforeEach(() => {
 		Object.defineProperty(window, "sessionStorage", {
@@ -30,7 +33,10 @@ describe("MSsessionStorage", () => {
 	it("should set an item in sessionStorage", () => {
 		storageDomain.set("season", "summer")
 
-		expect(window.sessionStorage.setItem).toHaveBeenCalledWith("season", "summer")
+		expect(window.sessionStorage.setItem).toHaveBeenCalledWith(
+			"season",
+			"summer",
+		)
 	})
 
 	it("should get an item from sessionStorage", () => {
