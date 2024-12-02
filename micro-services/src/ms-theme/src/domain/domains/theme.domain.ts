@@ -1,14 +1,20 @@
 import type { ThemeDomainContract, ThemeStrategyContract } from "../contracts"
 import { AttributeThemeStrategy } from "./strategies"
 
-export class ThemeDomain<EThemes> implements ThemeDomainContract<EThemes> {
+class ThemeDomain<EThemes> implements ThemeDomainContract<EThemes> {
 	private themeStrategy: ThemeStrategyContract<EThemes>
 
-	constructor() {
-		this.themeStrategy = new AttributeThemeStrategy<EThemes>()
+	constructor(themeStrategy: ThemeStrategyContract<EThemes>) {
+		this.themeStrategy = themeStrategy
 	}
 
 	public updateTheme(theme: EThemes): void {
 		this.themeStrategy.applyTheme(theme)
+	}
+}
+
+export class MSTheme<EThemes> extends ThemeDomain<EThemes> {
+	constructor() {
+		super(new AttributeThemeStrategy<EThemes>())
 	}
 }

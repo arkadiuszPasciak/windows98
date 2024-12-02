@@ -23,6 +23,6 @@ describe("AttributeThemeStrategy", () => {
 		document.querySelector = vi.fn().mockReturnValue(null)
 		const strategy = new AttributeThemeStrategy()
 
-		expect(() => strategy.applyTheme("dark")).toThrow("Element not found")
+		expect(() => strategy.applyTheme("dark")).toThrow("Element HTML not found")
 	})
 })

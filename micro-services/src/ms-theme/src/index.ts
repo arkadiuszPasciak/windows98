@@ -1,1 +1,1 @@
-export { ThemeDomain as MSTheme } from "./domain/domains"
+export { MSTheme } from "./domain/domains"
