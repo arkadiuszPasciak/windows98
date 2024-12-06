@@ -4,32 +4,35 @@ import type {
 	StorageRepositoryStrategyContract,
 } from "../contracts"
 
-export class StorageDomain<Key extends string, Value extends string>
-	implements StorageDomainContract<Key, Value>
+export class StorageDomain<StorageKeys>
+	implements StorageDomainContract<StorageKeys>
 {
-	private storageRepository: StorageRepositoryStrategyContract<Key, Value>
+	private storageRepository: StorageRepositoryStrategyContract<StorageKeys>
 
 	constructor(
-		storageRepository: StorageRepositoryStrategyContract<Key, Value>,
+		storageRepository: StorageRepositoryStrategyContract<StorageKeys>,
 	) {
 		this.storageRepository = storageRepository
 	}
 
-	public set(key: Key, value: Value): void {
+	public set<Key extends keyof StorageKeys>(
+		key: Key,
+		value: StorageKeys[Key],
+	): void {
 		this.storageRepository.setItem(key, value)
 	}
 
-	public get(key: Key): Maybe<Value> {
-		return this.storageRepository.getItem(key) as Value
+	public get<Key extends keyof StorageKeys>(key: Key): Maybe<StorageKeys[Key]> {
+		return this.storageRepository.getItem(key) as Maybe<StorageKeys[Key]>
 	}
 
-	public exists(key: Key): boolean {
+	public exists<Key extends keyof StorageKeys>(key: Key): boolean {
 		const item = this.get(key)
 
-		return !!item?.length
+		return !!item?.toString().length
 	}
 
-	public remove(key: Key): void {
+	public remove<Key extends keyof StorageKeys>(key: Key): void {
 		this.storageRepository.removeItem(key)
 	}
 }

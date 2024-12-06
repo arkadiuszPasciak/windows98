@@ -7,10 +7,7 @@ interface TestKeyValues {
 }
 
 describe("MSsessionStorage", () => {
-	const storageDomain: MSSessionStorage<
-		keyof TestKeyValues,
-		TestKeyValues[keyof TestKeyValues]
-	> = new MSSessionStorage()
+	const storageDomain = new MSSessionStorage<TestKeyValues>()
 
 	beforeEach(() => {
 		Object.defineProperty(window, "sessionStorage", {

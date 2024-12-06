@@ -1,18 +1,24 @@
+import type { Maybe } from "@windows98/toolkit"
 import type { StorageRepositoryStrategyContract } from "../../domain/contracts"
 
-export class LocalStorageRepository<Key extends string, Value extends string>
-	implements StorageRepositoryStrategyContract<Key, Value>
+export class LocalStorageRepository<StorageKeys>
+	implements StorageRepositoryStrategyContract<StorageKeys>
 {
-	public getItem(key: Key): Value | null {
-		return window.localStorage.getItem(key) as Value
+	public getItem<Key extends keyof StorageKeys>(
+		key: Key,
+	): Maybe<StorageKeys[Key]> {
+		return window.localStorage.getItem(key as string) as StorageKeys[Key]
 	}
 
-	public setItem(key: Key, value: Value): void {
-		window.localStorage.setItem(key, value)
+	public setItem<Key extends keyof StorageKeys>(
+		key: Key,
+		value: StorageKeys[Key],
+	): void {
+		window.localStorage.setItem(key as string, value as string)
 	}
 
-	public removeItem(key: Key): void {
-		window.localStorage.removeItem(key)
+	public removeItem<Key extends keyof StorageKeys>(key: Key): void {
+		window.localStorage.removeItem(key as string)
 	}
 
 	public clear(): void {

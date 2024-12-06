@@ -1,11 +1,8 @@
 import { SessionStorageRepository } from "../../data/repositories"
 import { StorageDomain } from "./storage.domain"
 
-export class MSSessionStorage<
-	Key extends string,
-	Value extends string,
-> extends StorageDomain<Key, Value> {
+export class MSSessionStorage<StorageKeys> extends StorageDomain<StorageKeys> {
 	constructor() {
-		super(new SessionStorageRepository<Key, Value>())
+		super(new SessionStorageRepository<StorageKeys>())
 	}
 }
