@@ -1,4 +1,4 @@
-:root.theme-light {
+:root[theme="light"] {
   --background-color: #{$cl-greyC0};
   --background-color-white: #{$cl-white};
   --background-color-modal-header: linear-gradient(
