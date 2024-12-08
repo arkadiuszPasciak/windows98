@@ -1,11 +1,10 @@
 import type { Maybe } from "@windows98/toolkit";
-import type { StorageDomainContract } from "../contracts";
-export declare class StorageDomain<Key extends string, Value extends string> implements StorageDomainContract<Key, Value> {
-    private readonly storageRepository;
-    constructor();
-    addItem(key: Key, value: Value): void;
-    getItem(key: Key): Maybe<Value>;
-    isItemExist(key: Key): boolean;
-    updateItem(key: Key, value: Value): void;
-    removeItem(key: Key): void;
+import type { StorageDomainContract, StorageRepositoryStrategyContract } from "../contracts";
+export declare class StorageDomain<StorageKeys> implements StorageDomainContract<StorageKeys> {
+    private storageRepository;
+    constructor(storageRepository: StorageRepositoryStrategyContract<StorageKeys>);
+    set<Key extends keyof StorageKeys>(key: Key, value: StorageKeys[Key]): void;
+    get<Key extends keyof StorageKeys>(key: Key): Maybe<StorageKeys[Key]>;
+    exists<Key extends keyof StorageKeys>(key: Key): boolean;
+    remove<Key extends keyof StorageKeys>(key: Key): void;
 }

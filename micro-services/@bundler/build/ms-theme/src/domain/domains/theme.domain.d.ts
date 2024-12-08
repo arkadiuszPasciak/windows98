@@ -1,6 +1,10 @@
-import type { ThemeDomainContract } from "../contracts";
-export declare class ThemeDomain<EThemes> implements ThemeDomainContract<EThemes> {
+import type { ThemeDomainContract, ThemeStrategyContract } from "../contracts";
+declare class ThemeDomain<EThemes> implements ThemeDomainContract<EThemes> {
     private themeStrategy;
-    constructor();
+    constructor(themeStrategy: ThemeStrategyContract<EThemes>);
     updateTheme(theme: EThemes): void;
 }
+export declare class MSTheme<EThemes> extends ThemeDomain<EThemes> {
+    constructor();
+}
+export {};
