@@ -1,1 +1,1 @@
-export * from "./default-config.builder"
+export * from "./init-config.builder"
