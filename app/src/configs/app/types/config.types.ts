@@ -16,3 +16,8 @@ export interface AppConfig {
 	operatingSystem: string | undefined
 	theme: AppThemes | undefined
 }
+
+export interface AppStorage {
+	theme: AppThemes | undefined
+	language: AppLanguages | undefined
+}
