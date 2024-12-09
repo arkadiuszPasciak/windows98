@@ -1,4 +1,4 @@
-:root.theme-dark {
+:root[theme="dark"] {
   --background-color: #{$cl-grey3b};
   --background-color-white: #{$cl-grey3b};
   --background-color-modal-header: linear-gradient(

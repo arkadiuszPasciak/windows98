@@ -1,44 +1,6 @@
-import {
-	ELanguageLocales,
-	type TLanguageLocales,
-} from "@APP/src/bundles/Settings/LanguageBundle/Supports/Language.supports"
-import { localStorageNames } from "@APP/src/bundles/Window/StorageBundle/Configs/Storage.configs"
-import { LocalStorage } from "@APP/src/bundles/Window/StorageBundle/Services/Storage.services"
-import { AppLanguages, useAppConfig } from "@APP/src/configs/app"
-import type { Nullable } from "vitest"
+import type { AppLanguages } from "@APP/src/configs/app"
 
-export function mountLanguageVersionByStorage(): Nullable<string> {
-	const isExist = LocalStorage.isItemExist(localStorageNames.LANGUAGE)
-	const { appConfig } = useAppConfig()
-
-	if (!isExist) {
-		updateLangAttribute(ELanguageLocales.ENGLISH)
-		setLanguageVersionInStorage(ELanguageLocales.ENGLISH)
-		appConfig.set("language", AppLanguages.ENGLISH)
-
-		return null
-	}
-
-	const language = LocalStorage.getItem(
-		localStorageNames.LANGUAGE,
-	) as ELanguageLocales
-
-	if (!language) {
-		return null
-	}
-
-	updateLangAttribute(language)
-
-	appConfig.set("language", language as unknown as AppLanguages)
-
-	return LocalStorage.getItem(localStorageNames.LANGUAGE)
-}
-
-export function setLanguageVersionInStorage(language: TLanguageLocales): void {
-	LocalStorage.setItem(localStorageNames.LANGUAGE, language)
-}
-
-export function updateLangAttribute(language: TLanguageLocales): void {
+export function updateLangAttribute(language: AppLanguages): void {
 	if (!document || !language) {
 		return
 	}

@@ -12,7 +12,6 @@
     >
       {{ deviceType ? t(`Settings.${deviceType}`) : 'undefined' }}
     </p>
-
     <h3
       class="title"
       data-test="settings-general-operation-system-title"
@@ -42,11 +41,13 @@
 </template>
 
 <script setup lang="ts">
-import useSettingsGeneral from "@APP/src/bundles/Programs/SettingsBundle/composables/use-settings-general"
+import { useAppConfig } from "@APP/src/configs/app"
 import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
-const { browserName, operatingSystem, deviceType } = useSettingsGeneral()
+const {
+	config: { browserName, operatingSystem, deviceType },
+} = useAppConfig()
 </script>
 
 <style

@@ -1,2 +1,2 @@
-export * from "./app.types"
-export * from "./use-app-config.hook"
+export * from "./hooks"
+export * from "./types"

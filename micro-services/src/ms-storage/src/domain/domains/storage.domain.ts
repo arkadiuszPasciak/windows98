@@ -1,33 +1,38 @@
 import type { Maybe } from "@windows98/toolkit"
-import { StorageRepository } from "../../data/repositories"
-import type { StorageDomainContract } from "../contracts"
+import type {
+	StorageDomainContract,
+	StorageRepositoryStrategyContract,
+} from "../contracts"
 
-export class StorageDomain<Key extends string, Value extends string>
-	implements StorageDomainContract<Key, Value>
+export class StorageDomain<StorageKeys>
+	implements StorageDomainContract<StorageKeys>
 {
-	private readonly storageRepository: StorageRepository<Key, Value>
+	private storageRepository: StorageRepositoryStrategyContract<StorageKeys>
 
-	constructor() {
-		this.storageRepository = new StorageRepository()
+	constructor(
+		storageRepository: StorageRepositoryStrategyContract<StorageKeys>,
+	) {
+		this.storageRepository = storageRepository
 	}
 
-	public addItem(key: Key, value: Value): void {
-		this.storageRepository.addItem(key, value)
+	public set<Key extends keyof StorageKeys>(
+		key: Key,
+		value: StorageKeys[Key],
+	): void {
+		this.storageRepository.setItem(key, value)
 	}
 
-	public getItem(key: Key): Maybe<Value> {
-		return this.storageRepository.getItem(key) as Value
+	public get<Key extends keyof StorageKeys>(key: Key): Maybe<StorageKeys[Key]> {
+		return this.storageRepository.getItem(key) as Maybe<StorageKeys[Key]>
 	}
 
-	public isItemExist(key: Key): boolean {
-		return this.storageRepository.isItemExist(key)
+	public exists<Key extends keyof StorageKeys>(key: Key): boolean {
+		const item = this.get(key)
+
+		return !!item?.toString().length
 	}
 
-	public updateItem(key: Key, value: Value): void {
-		this.storageRepository.addItem(key, value)
-	}
-
-	public removeItem(key: Key): void {
+	public remove<Key extends keyof StorageKeys>(key: Key): void {
 		this.storageRepository.removeItem(key)
 	}
 }

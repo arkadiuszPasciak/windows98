@@ -36,6 +36,7 @@
 		"@windows98/i18n": "workspace:*",
 		"@windows98/micro-apps": "workspace:*",
 		"@windows98/micro-services": "workspace:*",
+		"@windows98/toolkit": "workspace:*",
 		"cypress": "13.6.6",
 		"jsdom": "22.1.0",
 		"lint-staged": "15.2.2",
