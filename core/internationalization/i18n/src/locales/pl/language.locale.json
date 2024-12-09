@@ -1,7 +1,7 @@
 {
 	"LanguageBundle.description-content": "The Bundle odpowiedzialny za zarządzanie <b>językami</b>",
-	"LanguageBundle.english": "Angielski",
-	"LanguageBundle.polish": "Polski",
+	"LanguageBundle.en": "Angielski",
+	"LanguageBundle.pl": "Polski",
 	"LanguageBundle.services-content-1": "zmień język",
 	"LanguageBundle.services-content-2": "zamontuj wersję języka z danych w local storage",
 	"LanguageBundle.services-content-3": "ustaw wersje języka w local storage",
