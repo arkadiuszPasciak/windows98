@@ -1,1 +1,2 @@
-export * from "./storage.repository";
+export * from "./local-storage.repository";
+export * from "./session-storage.repository";

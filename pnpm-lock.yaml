@@ -59,6 +59,9 @@ importers:
       '@windows98/micro-services':
         specifier: workspace:*
         version: link:../micro-services
+      '@windows98/toolkit':
+        specifier: workspace:*
+        version: link:../core/toolkit
       cypress:
         specifier: 13.6.6
         version: 13.6.6
