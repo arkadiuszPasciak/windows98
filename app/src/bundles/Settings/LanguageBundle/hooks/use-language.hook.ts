@@ -1,9 +1,11 @@
 import type { TUISelectPropsObject } from "@APP/src/bundles/UI/UISelectBundle/Supports/UISelect.supports"
 import { AppLanguages } from "@APP/src/configs/app"
 import { useAppConfig, useLocalStorage } from "@APP/src/configs/app"
+import { MSLanguage } from "@windows98/micro-services"
 import { onBeforeMount, ref } from "vue"
 import { useI18n } from "vue-i18n"
-import { updateLangAttribute } from "../Services/Language.services"
+
+const msLanguage = new MSLanguage<AppLanguages>()
 
 export function useLanguage() {
 	const appConfig = useAppConfig()
@@ -34,7 +36,7 @@ export function useLanguage() {
 		appConfig.set("language", language)
 		localStorage.set("language", language)
 		locale.value = language
-		updateLangAttribute(language)
+		msLanguage.updateLanguage(language)
 	}
 
 	return {
