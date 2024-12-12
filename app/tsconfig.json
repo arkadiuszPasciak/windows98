@@ -1,6 +1,5 @@
 {
 	"extends": [
-		"@windows98/configs/typescript/cypress",
 		"@windows98/configs/typescript/vue",
 		"@windows98/configs/typescript/vite"
 	],

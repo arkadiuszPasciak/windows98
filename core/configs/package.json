@@ -13,7 +13,6 @@
 		"./stylelint/css": "./src/stylelint/css.config.cjs",
 		"./stylelint/scss": "./src/stylelint/scss.config.cjs",
 		"./typescript/base": "./src/typescript/base.config.json",
-		"./typescript/cypress": "./src/typescript/cypress.config.json",
 		"./typescript/node": "./src/typescript/react.config.json",
 		"./typescript/react": "./src/typescript/react.config.json",
 		"./typescript/vite": "./src/typescript/vite.config.json",

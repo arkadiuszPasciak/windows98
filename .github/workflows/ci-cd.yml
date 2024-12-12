@@ -37,16 +37,6 @@ jobs:
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
-      - name: Cache Cypress binary
-        id: cache-cypress-binary
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cache/Cypress
-            /home/runner/.cache/Cypress
-          key: cypress-binary-${{ hashFiles('**/pnpm-lock.json') }}
-          restore-keys: cypress-binary-
-
       - name: Install PNPM
         run: npm install -g pnpm@9.15.0
 
