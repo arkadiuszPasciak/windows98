@@ -6,7 +6,7 @@
 	"type": "module",
 	"engines": {
 		"node": "20.18.1",
-		"pnpm": "9.0.6"
+		"pnpm": "9.15.0"
 	},
 	"main": "@bundler/build/index.umd.cjs",
 	"module": "@bundler/build/index.js",
