@@ -4,7 +4,7 @@
 	"description": "Curated set of tools and utilities for efficient software development",
 	"author": "Arkadiusz Paściak",
 	"engines": {
-		"node": "20.12.0",
+		"node": "20.18.1",
 		"pnpm": "9.0.6"
 	},
 	"exports": {
