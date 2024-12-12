@@ -2,8 +2,8 @@
 	"author": "Arkadiusz Paściak",
 	"description": "Tests",
 	"engines": {
-		"node": "20.12.0",
-		"pnpm": "9.0.6"
+		"node": "20.18.1",
+		"pnpm": "9.15.0"
 	},
 	"exports": {
 		"./biome/shared": "./src/biome/shared.config.json",
@@ -13,7 +13,6 @@
 		"./stylelint/css": "./src/stylelint/css.config.cjs",
 		"./stylelint/scss": "./src/stylelint/scss.config.cjs",
 		"./typescript/base": "./src/typescript/base.config.json",
-		"./typescript/cypress": "./src/typescript/cypress.config.json",
 		"./typescript/node": "./src/typescript/react.config.json",
 		"./typescript/react": "./src/typescript/react.config.json",
 		"./typescript/vite": "./src/typescript/vite.config.json",
