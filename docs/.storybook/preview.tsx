@@ -6,7 +6,7 @@ import "@windows98/micro-apps"
 const preview: Preview = {
 	decorators: [
 		(Story) => {
-			document.documentElement.classList.add("theme-light")
+			document.documentElement.setAttribute("theme", "light")
 
 			return <Story />
 		},
