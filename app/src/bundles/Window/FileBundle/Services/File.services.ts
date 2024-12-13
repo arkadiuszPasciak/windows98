@@ -1,5 +1,4 @@
 import type {
-	IFilesElements,
 	TFileTextFileReader,
 	TFileTextTypes,
 } from "@APP/src/bundles/Window/FileBundle/Supports/File.supports"
@@ -55,29 +54,4 @@ export async function openTextFileFromUserDisk(
 	})
 
 	return result ?? null
-}
-
-export class FileSaveComponentTesting {
-	public elements: IFilesElements
-
-	constructor() {
-		this.elements = {
-			labelFileSaveName: '[data-test="ui-input-label-file-save-name"]',
-			labelFileTypes: '[data-test="ui-select-label-file-types"]',
-			selectTypeFile: '[data-test="ui-select-file-types"]',
-			optionSelected: '[data-test="ui-select-file-types"] > option:selected',
-		}
-	}
-
-	public checkLabels(): void {
-		cy.get(this.elements.labelFileSaveName).should("have.text", "File name:")
-
-		cy.get(this.elements.labelFileTypes).should("have.text", "Save as type:")
-	}
-
-	public changeSelectAndCheckOptionSelected(name: string): void {
-		cy.get(this.elements.selectTypeFile).select(name)
-
-		cy.get(this.elements.optionSelected).should("have.text", name)
-	}
 }
