@@ -32,7 +32,7 @@
 		"@windows98/design-system": "workspace:*",
 		"@windows98/i18n": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
-		"@biomejs/biome": "1.8.3",
+		"@biomejs/biome": "1.9.4",
 		"lint-staged": "15.2.2",
 		"sass": "1.62.1",
 		"stylelint": "16.2.1",

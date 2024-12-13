@@ -28,7 +28,7 @@
 		"stylelint-config-recommended-scss": "14.0.0"
 	},
 	"peerDependencies": {
-		"@biomejs/biome": "1.8.3",
+		"@biomejs/biome": "1.9.4",
 		"@playwright/experimental-ct-react": "1.45.1",
 		"lint-staged": "15.2.2",
 		"stylelint": "16.2.1",
