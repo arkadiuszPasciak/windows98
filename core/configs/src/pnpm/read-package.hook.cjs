@@ -5,7 +5,7 @@ class PNPMReadPackageHook {
 			"@playwright/experimental-ct-react": "1.45.1",
 			"@vitejs/plugin-react": "4.2.1",
 			i18next: "23.8.2",
-			"lint-staged": "15.2.2",
+			"lint-staged": "15.2.11",
 			mobx: "6.12.0",
 			"mobx-react-lite": "4.0.4",
 			react: "18.2.0",

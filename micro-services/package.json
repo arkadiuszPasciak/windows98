@@ -22,7 +22,7 @@
 		"@biomejs/biome": "1.9.4",
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
-		"lint-staged": "15.2.2",
+		"lint-staged": "15.2.11",
 		"typescript": "5.4.2",
 		"vite": "5.4.11",
 		"vite-plugin-dts": "3.7.0",

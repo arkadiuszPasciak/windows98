@@ -38,7 +38,7 @@
 		"@windows98/micro-services": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
 		"jsdom": "25.0.1",
-		"lint-staged": "15.2.2",
+		"lint-staged": "15.2.11",
 		"sass": "1.62.1",
 		"stylelint": "16.2.1",
 		"typescript": "5.4.2",

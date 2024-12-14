@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@windows98/configs": "workspace:*",
-		"lint-staged": "15.2.2",
+		"lint-staged": "15.2.11",
 		"typescript": "5.4.2",
 		"vitest": "2.1.5"
 	},

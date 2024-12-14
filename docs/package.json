@@ -18,7 +18,7 @@
 		"@windows98/configs": "workspace:*",
 		"@windows98/design-system": "workspace:*",
 		"@windows98/micro-apps": "workspace:*",
-		"lint-staged": "15.2.2",
+		"lint-staged": "15.2.11",
 		"prop-types": "15.8.1",
 		"storybook": "8.4.7",
 		"typescript": "5.4.2"
