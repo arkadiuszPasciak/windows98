@@ -14,7 +14,7 @@
 		"lint-staged": "15.2.11",
 		"react-i18next": "14.0.5",
 		"typescript": "5.4.2",
-		"vue-i18n": "9.2.2"
+		"vue-i18n": "10.0.5"
 	},
 	"scripts": {
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
