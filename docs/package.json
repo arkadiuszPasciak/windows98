@@ -3,7 +3,7 @@
 	"description": "This workspace uses Storybook, an open-source tool for developing UI components in isolation. It helps to build, document, and test React components interactively.",
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@chromatic-com/storybook": "1.2.25",
+		"@chromatic-com/storybook": "3.2.2",
 		"@storybook/addon-docs": "8.4.7",
 		"@storybook/addon-essentials": "8.4.7",
 		"@storybook/addon-interactions": "8.4.7",
@@ -19,7 +19,6 @@
 		"@windows98/design-system": "workspace:*",
 		"@windows98/micro-apps": "workspace:*",
 		"lint-staged": "15.2.11",
-		"prop-types": "15.8.1",
 		"storybook": "8.4.7",
 		"typescript": "5.4.2"
 	},
