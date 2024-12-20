@@ -1,3 +1,4 @@
+import { MSErrorHandler } from "../../../../ms-error-handler/src"
 import type { DateRepositoryContract } from "../../domain/contracts"
 import type {
 	EDay,
@@ -8,51 +9,35 @@ import type {
 
 export class DateRepository implements DateRepositoryContract {
 	public getDate(value?: string): number {
-		if (value) return new Date(value).getDate()
-
-		return new Date().getDate()
+		return this.createDate(value).getDate()
 	}
 
 	public getDay(value?: string): EDay {
-		if (value) return new Date(value).getDay()
-
-		return new Date().getDay()
+		return this.createDate(value).getDay()
 	}
 
 	public getFullYear(value?: string): number {
-		if (value) return new Date(value).getFullYear()
-
-		return new Date().getFullYear()
+		return this.createDate(value).getFullYear()
 	}
 
 	public getHours(value?: string): number {
-		if (value) return new Date(value).getHours()
-
-		return new Date().getHours()
+		return this.createDate(value).getHours()
 	}
 
 	public getMilliseconds(value?: string): number {
-		if (value) return new Date(value).getMilliseconds()
-
-		return new Date().getMilliseconds()
+		return this.createDate(value).getMilliseconds()
 	}
 
 	public getMinutes(value?: string): number {
-		if (value) return new Date(value).getMinutes()
-
-		return new Date().getMinutes()
+		return this.createDate(value).getMinutes()
 	}
 
 	public getMonth(value?: string): EMonth {
-		if (value) return new Date(value).getMonth()
-
-		return new Date().getMonth()
+		return this.createDate(value).getMonth()
 	}
 
 	public getSeconds(value?: string): number {
-		if (value) return new Date(value).getSeconds()
-
-		return new Date().getSeconds()
+		return this.createDate(value).getSeconds()
 	}
 
 	public toLocaleString(
@@ -60,9 +45,7 @@ export class DateRepository implements DateRepositoryContract {
 		locales?: TLocalesArgument,
 		options?: IFormatOptions,
 	): string {
-		if (value) return new Date(value).toLocaleString(locales, options)
-
-		return new Date().toLocaleString(locales, options)
+		return this.createDate(value).toLocaleString(locales, options)
 	}
 
 	public toLocaleDateString(
@@ -70,9 +53,7 @@ export class DateRepository implements DateRepositoryContract {
 		locales?: TLocalesArgument,
 		options?: IFormatOptions,
 	): string {
-		if (value) return new Date(value).toLocaleDateString(locales, options)
-
-		return new Date().toLocaleDateString(locales, options)
+		return this.createDate(value).toLocaleDateString(locales, options)
 	}
 
 	public toLocaleTimeString(
@@ -80,8 +61,19 @@ export class DateRepository implements DateRepositoryContract {
 		locales?: TLocalesArgument,
 		options?: IFormatOptions,
 	): string {
-		if (value) return new Date(value).toLocaleTimeString(locales, options)
+		return this.createDate(value).toLocaleTimeString(locales, options)
+	}
 
-		return new Date().toLocaleTimeString(locales, options)
+	@MSErrorHandler.CatchError("DateRepository", "CatchError")
+	private createDate(value?: string): Date {
+		if (value && !this.isValidDate(value)) {
+			throw new Error(`Invalid date string: ${value}`)
+		}
+
+		return value ? new Date(value) : new Date()
+	}
+
+	private isValidDate(value: string): boolean {
+		return !Number.isNaN(Date.parse(value))
 	}
 }
