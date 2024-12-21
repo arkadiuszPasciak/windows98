@@ -1,1 +1,3 @@
-export { DateDomain as MSDate } from "../src/domain/domains"
+import { DateDomain } from "../src/domain/domains"
+
+export const MSDate = new DateDomain()
