@@ -1,16 +1,14 @@
-import { getTimeClock } from "@APP/src/bundles/Programs/ClockBundle/Services/Clock.services"
+import { MSDate } from "@windows98/micro-services"
+import type { Maybe } from "@windows98/toolkit"
 import { defineStore } from "pinia"
-import type { Nullable } from "vitest"
 
 export const useClockStore = defineStore("clock", {
 	state: () => ({
-		time: "12:00 PM" as Nullable<string>,
+		time: "12:00 PM" as Maybe<string>,
 	}),
 	actions: {
 		updateTime() {
-			this.time = getTimeClock({
-				timeStyle: "short",
-			})
+			this.time = MSDate.getTime(undefined, undefined, { timeStyle: "short" })
 		},
 	},
 })

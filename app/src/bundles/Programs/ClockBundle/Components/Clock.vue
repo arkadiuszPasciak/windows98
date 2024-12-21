@@ -11,11 +11,11 @@
 
 <script setup lang="ts">
 import { useClockStore } from "@APP/src/bundles/Programs/ClockBundle/Stores/Clock.stores"
-import type { Nullable } from "vitest"
+import type { Maybe } from "@windows98/toolkit"
 import { onBeforeUnmount, ref } from "vue"
 
 const store = useClockStore()
-const time = ref<Nullable<string>>(store.$state.time)
+const time = ref<Maybe<string>>(store.$state.time)
 
 const updateTime = (): void => {
 	store.updateTime()
