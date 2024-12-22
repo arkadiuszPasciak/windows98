@@ -1,0 +1,13 @@
+{
+	"RunBundle.title": "Run",
+	"RunBundle.description": "Geben Sie den Namen eines Programms ein und Windows öffnet es für Sie",
+	"RunBundle.open": "Offen:",
+	"RunBundle.ok": "OK",
+	"RunBundle.cancel": "Stornieren",
+	"RunBundle.program.calculator": "rechner",
+	"RunBundle.program.notepad": "notizblock",
+	"RunBundle.program.run": "run",
+	"RunBundle.program.settings": "einstellungen",
+	"RunBundle.program.shut-down": "abschalten",
+	"RunBundle.program.tic-tac-toe": "tic tac toe"
+}

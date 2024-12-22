@@ -1,0 +1,12 @@
+{
+	"FileBundle.cancel": "Stornieren",
+	"FileBundle.file-name": "Dateiname:",
+	"FileBundle.untitled": "Ohne Titel",
+	"FileBundle.save": "Speichern",
+	"FileBundle.save-as-type": "Speichern unter:",
+	"FileBundle.text-csv": "CSV Document (*.csv)",
+	"FileBundle.text-doc": "Word Document (*.doc)",
+	"FileBundle.text-rtf": "Rich text format (*.rtf)",
+	"FileBundle.text-txt": "Text Document (*.txt)",
+	"FileBundle.title-save": "Speichern unter"
+}
