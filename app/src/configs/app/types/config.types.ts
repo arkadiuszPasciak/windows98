@@ -4,6 +4,7 @@ export enum AppThemes {
 }
 
 export enum AppLanguages {
+	GERMAN = "de",
 	ENGLISH = "en",
 	POLISH = "pl",
 }

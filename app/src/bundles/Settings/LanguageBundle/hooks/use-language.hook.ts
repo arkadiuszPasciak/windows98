@@ -20,6 +20,10 @@ export function useLanguage() {
 
 	const languages: TUISelectPropsObject = [
 		{
+			value: AppLanguages.GERMAN,
+			name: `LanguageBundle.${AppLanguages.GERMAN}`,
+		},
+		{
 			value: AppLanguages.ENGLISH,
 			name: `LanguageBundle.${AppLanguages.ENGLISH}`,
 		},
