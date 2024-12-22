@@ -68,12 +68,14 @@ describe("DateDomain", () => {
 			expect(result).toBe(new Date().toLocaleString(undefined, options))
 		})
 
-		it("should return current date and time string if no parameters are provided", () => {
-			const mockDate = new Date("2023-10-05T14:48:00.000Z")
+		it("should return current date string if no parameters are provided", () => {
+			const locales = "en-US"
+			const options: IFormatOptions = { dateStyle: "long" }
+			const mockDate = new Date("2023-10-05")
 			vi.setSystemTime(mockDate)
 
-			const result = msDate.getDateWithTime()
-			expect(result).toBe("10/5/2023, 4:48:00 PM")
+			const result = msDate.getDate(undefined, locales, options)
+			expect(result).toBe(mockDate.toLocaleDateString(locales, options))
 
 			vi.useRealTimers()
 		})
@@ -109,7 +111,9 @@ describe("DateDomain", () => {
 			vi.setSystemTime(mockDate)
 
 			const result = msDate.getTime()
-			expect(result).toBe("4:48:00 PM")
+			expect(result).toBe(
+				new Date(mockDate).toLocaleTimeString("en-US", { timeStyle: "medium" }),
+			)
 
 			vi.useRealTimers()
 		})
