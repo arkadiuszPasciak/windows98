@@ -1,6 +1,4 @@
 {
-	"PulpitBundle.description-content": "The Bundle responsible for the pulpit",
 	"PulpitBundle.my-computer": "My Computer",
-	"PulpitBundle.recycle": "Recycle",
-	"PulpitBundle.services-content-1": "manage programs in the pulpit"
+	"PulpitBundle.recycle": "Recycle"
 }

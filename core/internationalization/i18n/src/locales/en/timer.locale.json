@@ -1,15 +1,3 @@
 {
-	"TimerBundle.button.reset": "Reset",
-	"TimerBundle.button.start": "Start",
-	"TimerBundle.button.stop": "Stop",
-	"TimerBundle.close": "Close",
-	"TimerBundle.description-modal": "The timer has finished",
-	"TimerBundle.presets.custom": "Custom",
-	"TimerBundle.presets.fifteen-minutes": "15 min",
-	"TimerBundle.presets.five-minutes": "5 min",
-	"TimerBundle.presets.ten-minutes": "10 min",
-	"TimerBundle.presets.three-minutes": "3 min",
-	"TimerBundle.presets.title": "Presets",
-	"TimerBundle.title": "Timer",
-	"TimerBundle.title-modal": "Status"
+	"TimerBundle.title": "Timer"
 }

@@ -3,7 +3,6 @@
 	"TicTacToeBundle.choose-player": "Wybierz gracza",
 	"TicTacToeBundle.computer": "Komputer",
 	"TicTacToeBundle.default-player": "Domyślny gracz",
-	"TicTacToeBundle.description-content": "Bundle jest programem tic tac toe",
 	"TicTacToeBundle.draw": "Remis!",
 	"TicTacToeBundle.enter-your-name": "Wprowadź swoje imię",
 	"TicTacToeBundle.new-game": "Nowa gra",
@@ -11,11 +10,5 @@
 	"TicTacToeBundle.start": "Rozpocznij",
 	"TicTacToeBundle.score": "Wynik",
 	"TicTacToeBundle.score-undefined": "Wynik jest niezdefiniowany",
-	"TicTacToeBundle.services-content-1": "wpisz nazwę użytkownika",
-	"TicTacToeBundle.services-content-2": "wybierz znak dla użytkownika",
-	"TicTacToeBundle.services-content-3": "wybierz wielkość pola dla gry",
-	"TicTacToeBundle.services-content-4": "rozpocznij grę z komputerem",
-	"TicTacToeBundle.services-content-5": "wyświetl modal z wynikem gry",
-	"TicTacToeBundle.services-content-6": "zrestartuj grę",
 	"TicTacToeBundle.title": "Kółko i krzyżyk"
 }

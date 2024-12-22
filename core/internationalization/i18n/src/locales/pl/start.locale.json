@@ -1,7 +1,6 @@
 {
 	"StartBundle.accessories": "Akcesoria",
 	"StartBundle.calculator": "Kalkulator",
-	"StartBundle.description-content": "Bundle jest programem Start",
 	"StartBundle.documentation": "Dokumentacja",
 	"StartBundle.entertainment": "Rozrywka",
 	"StartBundle.find": "Znajdź",
@@ -11,7 +10,6 @@
 	"StartBundle.notepad": "Notatnik",
 	"StartBundle.programs": "Programy",
 	"StartBundle.run": "Włącz...",
-	"StartBundle.services-content-1": "pokazywanie listy wszystkich programów",
 	"StartBundle.settings": "Ustawienia",
 	"StartBundle.shut-down": "Wyłącz...",
 	"StartBundle.start": "Start",

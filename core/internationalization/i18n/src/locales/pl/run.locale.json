@@ -1,5 +1,4 @@
 {
-	"RunBundle.description-content": "Bundle jest to program Run",
 	"RunBundle.title": "Run",
 	"RunBundle.description": "Wpisz nazwę programu i Windows otworzy go dla Ciebie",
 	"RunBundle.open": "Włącz:",
@@ -10,6 +9,5 @@
 	"RunBundle.program.run": "włącz",
 	"RunBundle.program.settings": "ustawienia",
 	"RunBundle.program.shut-down": "wyłącz",
-	"RunBundle.program.tic-tac-toe": "kółko i krzyżyk",
-	"RunBundle.services-content-1": "uruchom program przez wpisanie jego nazwy"
+	"RunBundle.program.tic-tac-toe": "kółko i krzyżyk"
 }
