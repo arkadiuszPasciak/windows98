@@ -1,5 +1,4 @@
 {
-	"RunBundle.description-content": "The Bundle is the program Run",
 	"RunBundle.title": "Run",
 	"RunBundle.description": "Type of the name of a program and Windows will open it for you",
 	"RunBundle.open": "Open:",
@@ -10,6 +9,5 @@
 	"RunBundle.program.run": "run",
 	"RunBundle.program.settings": "settings",
 	"RunBundle.program.shut-down": "shut down",
-	"RunBundle.program.tic-tac-toe": "tic tac toe",
-	"RunBundle.services-content-1": "run program by writing its name"
+	"RunBundle.program.tic-tac-toe": "tic tac toe"
 }

@@ -1,0 +1,10 @@
+{
+	"ma-shutdown": {
+		"cancel": "Stornieren",
+		"description": "Was soll der Computer tun?",
+		"ok": "OK",
+		"restart": "Neustart",
+		"shutdown": "Herunterfahren",
+		"title": "Abschalten Windows"
+	}
+}

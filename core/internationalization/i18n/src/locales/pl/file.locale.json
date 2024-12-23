@@ -1,12 +1,9 @@
 {
 	"FileBundle.cancel": "Cancel",
-	"FileBundle.description-content": "Bundle odpowiedzialny za zarządzanie <b>plikami</b>",
 	"FileBundle.file-name": "Nazwa pliku:",
 	"FileBundle.untitled": "Bez_tytuły",
 	"FileBundle.save": "Zapisz",
 	"FileBundle.save-as-type": "Zapisz jako typ:",
-	"FileBundle.services-content-1": "zapisywanie plików na dysku użytkownika",
-	"FileBundle.services-content-2": "odtwórz plik tekstowy z dysku użytkownika",
 	"FileBundle.text-csv": "CSV Dokument (*.csv)",
 	"FileBundle.text-doc": "Word Dokument (*.doc)",
 	"FileBundle.text-rtf": "Wzbogacony format tekstowy (*.rtf)",

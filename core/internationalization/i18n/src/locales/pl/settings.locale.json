@@ -1,11 +1,5 @@
 {
 	"Settings.browser": "Przeglądarka",
-	"SettingsBundle.description-content": "Bundle odpowiedzialny za zarządzanie ustawieniami",
-	"SettingsBundle.services-content-1": "informację o sprzęcie użytkownika",
-	"SettingsBundle.services-content-2": "kalendarz",
-	"SettingsBundle.services-content-3": "strefa czasowa",
-	"SettingsBundle.services-content-4": "zmiana języka",
-	"SettingsBundle.services-content-5": "zmiana tła",
 	"Settings.date-time": "Data & Czas",
 	"Settings.desktop": "Pulpit",
 	"Settings.device": "Urządzenie",

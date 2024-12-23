@@ -1,8 +1,0 @@
-{
-	"AppBundle.description-content": "Bundle odpowiedzialny za tworzenie <a href='https://vuejs.org/guide/essentials/application.html#creating-a-vue-application'>Aplikacji Vue</a>",
-	"AppBundle.services-content-1": "tworzenie aplikacji",
-	"AppBundle.services-content-2": "tworzenie pinia w aplikacji",
-	"AppBundle.services-content-3": "tworzenie i18n w aplikacji",
-	"AppBundle.services-content-4": "ustawienie globalnych zmiennych i funkcji przed zamontowaniem aplikacji",
-	"AppBundle.services-content-5": "montowanie aplikacji"
-}

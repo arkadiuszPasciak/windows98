@@ -1,38 +1,38 @@
-(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_9arum_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_9arum_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._button_9arum_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);width:35px;height:30px}@media (hover: hover){._button_9arum_96{cursor:pointer}}._button_9arum_96:disabled{pointer-events:none;opacity:.5}._button_9arum_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._primary_9arum_122{color:#00f}._secondary_9arum_126{color:#fe0000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_uzbrq_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_uzbrq_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._keypad_uzbrq_96{display:grid;justify-content:center;grid-template-rows:repeat(3,30px);grid-template-columns:repeat(4,35px);gap:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1hx69_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1hx69_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._screen_1hx69_96{background-color:var(--background-color-white);color:var(--text-color);width:100%;height:20px;padding:5px;text-align:right;box-shadow:var(--border-field);font:400 11px/13px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_wc6ff_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_wc6ff_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper_wc6ff_96{display:grid;row-gap:15px;padding:13px 22px 10px;background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1xeii_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1xeii_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._days_1xeii_96{width:160px;height:145px;box-shadow:var(--border-field);padding:2px;text-align:center;background-color:var(--background-color-white)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_12et3_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_12et3_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._month-days_12et3_96{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(6,1fr)}._day_12et3_102{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}._day-active_12et3_107{color:#fff;background-color:navy}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1v33v_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1v33v_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._week-days_1v33v_96{display:grid;height:20px;grid-template-columns:repeat(7,1fr);background-color:gray;color:var(--text-color-3)}._day_1v33v_104{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_s3u64_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_s3u64_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper_s3u64_96{display:grid;grid-template-columns:90px 70px;background-color:var(--background-color);gap:10px 0;max-width:180px;width:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1dsur_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1dsur_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._controller_1dsur_96{display:flex;column-gap:5px;justify-content:center;padding-top:35px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_5pr9f_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_5pr9f_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._description_5pr9f_96{display:flex;column-gap:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_uwzih_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_uwzih_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._presets_uwzih_96{display:flex;flex-direction:column;row-gap:5px;margin-left:42px;margin-top:-10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_wbu18_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_wbu18_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper_wbu18_96{max-width:290px;background-color:var(--background-color);padding:20px;box-sizing:content-box}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_15w9q_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_15w9q_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._controller_15w9q_96{display:flex;justify-content:center;align-items:center;column-gap:15px;margin-bottom:15px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_covgd_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_covgd_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._player_covgd_96{display:flex;column-gap:20px;justify-content:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_2r2rz_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_2r2rz_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._presets_2r2rz_96{display:flex;justify-content:center;align-items:center;gap:8px;grid-area:1/1/2/7;margin-right:0;margin-left:0}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_ddbl8_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_ddbl8_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._screen_ddbl8_96{display:flex;grid-area:3/1/4/7;justify-self:center;background-color:var(--background-color-white);max-width:203px;width:100%;height:48px;padding:5px;box-shadow:var(--border-field);font:400 39px/44px MSSansSerifBold,sans-serif;letter-spacing:3px;color:var(--text-color);-webkit-user-select:none;user-select:none;margin:0 auto 15px}._time_ddbl8_113{width:55px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1h4hz_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1h4hz_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper_1h4hz_96{background-color:var(--background-color);padding:0 10px 10px;max-width:385px;width:100%}')),document.head.appendChild(o)}}catch(f){console.error("vite-plugin-css-injected-by-js",f)}})();
-var Pt = Object.defineProperty;
-var zt = (t, r, y) => r in t ? Pt(t, r, { enumerable: !0, configurable: !0, writable: !0, value: y }) : t[r] = y;
-var D = (t, r, y) => (zt(t, typeof r != "symbol" ? r + "" : r, y), y);
+(function(){"use strict";try{if(typeof document<"u"){var f=document.createElement("style");f.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._button_1h5df_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);width:35px;height:30px}@media (hover: hover){._button_1h5df_96{cursor:pointer}}._button_1h5df_96:disabled{pointer-events:none;opacity:.5}._button_1h5df_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._primary_1h5df_122{color:#00f}._secondary_1h5df_126{color:#fe0000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._keypad_1orw4_96{display:grid;justify-content:center;grid-template-rows:repeat(3,30px);grid-template-columns:repeat(4,35px);gap:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._screen_jjy5e_96{background-color:var(--background-color-white);color:var(--text-color);width:100%;height:20px;padding:5px;text-align:right;box-shadow:var(--border-field);font:400 11px/13px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_sceh6_96{display:grid;row-gap:15px;padding:13px 22px 10px;background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._days_qp2wh_96{width:160px;height:145px;box-shadow:var(--border-field);padding:2px;text-align:center;background-color:var(--background-color-white)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._month-days_cut46_96{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(6,1fr)}._day_cut46_102{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}._day-active_cut46_107{color:#fff;background-color:navy}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._week-days_jydkk_96{display:grid;height:20px;grid-template-columns:repeat(7,1fr);background-color:gray;color:var(--text-color-3)}._day_jydkk_104{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1xgp9_96{display:grid;grid-template-columns:90px 70px;background-color:var(--background-color);gap:10px 0;max-width:180px;width:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_128l9_96{display:flex;column-gap:5px;justify-content:center;padding-top:35px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._description_7aii1_96{display:flex;column-gap:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._presets_91z49_96{display:flex;flex-direction:column;row-gap:5px;margin-left:42px;margin-top:-10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_vb7vs_96{max-width:290px;background-color:var(--background-color);padding:20px;box-sizing:content-box}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_hsr5s_96{display:flex;justify-content:center;align-items:center;column-gap:15px;margin-bottom:15px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._player_1lb22_96{display:flex;column-gap:20px;justify-content:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._presets_1t37w_96{display:flex;justify-content:center;align-items:center;gap:8px;grid-area:1/1/2/7;margin-right:0;margin-left:0}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._screen_1jb1u_96{display:flex;grid-area:3/1/4/7;justify-self:center;background-color:var(--background-color-white);max-width:203px;width:100%;height:48px;padding:5px;box-shadow:var(--border-field);font:400 39px/44px MSSansSerifBold,sans-serif;letter-spacing:3px;color:var(--text-color);-webkit-user-select:none;user-select:none;margin:0 auto 15px}._time_1jb1u_113{width:55px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper_10bwx_96{background-color:var(--background-color);padding:0 10px 10px;max-width:385px;width:100%}')),document.head.appendChild(f)}}catch(o){console.error("vite-plugin-css-injected-by-js",o)}})();
+var er = Object.defineProperty;
+var tr = (t, r, y) => r in t ? er(t, r, { enumerable: !0, configurable: !0, writable: !0, value: y }) : t[r] = y;
+var oe = (t, r, y) => tr(t, typeof r != "symbol" ? r + "" : r, y);
 import o, { createContext, useContext, useState, useEffect, useMemo } from "react";
 import require$$0 from "react-dom";
 import i18next from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
 import { makeAutoObservable } from "mobx";
 import { observer } from "mobx-react-lite";
-var createRoot, m = require$$0;
+var createRoot, m$1 = require$$0;
 if (process.env.NODE_ENV === "production")
-  createRoot = m.createRoot, m.hydrateRoot;
+  createRoot = m$1.createRoot, m$1.hydrateRoot;
 else {
-  var i$3 = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+  var i$3 = m$1.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
   createRoot = function(t, r) {
     i$3.usingClientEntryPoint = !0;
     try {
-      return m.createRoot(t, r);
+      return m$1.createRoot(t, r);
     } finally {
       i$3.usingClientEntryPoint = !1;
     }
   };
 }
-var j = Object.defineProperty, x = (t, r, y) => r in t ? j(t, r, { enumerable: !0, configurable: !0, writable: !0, value: y }) : t[r] = y, b = (t, r, y) => (x(t, typeof r != "symbol" ? r + "" : r, y), y);
-const C = {
+var j = Object.defineProperty, x$1 = (t, r, y) => r in t ? j(t, r, { enumerable: !0, configurable: !0, writable: !0, value: y }) : t[r] = y, b$1 = (t, r, y) => (x$1(t, typeof r != "symbol" ? r + "" : r, y), y);
+const C$1 = {
   stringify: (t) => t,
   parse: (t) => t
-}, T = {
+}, T$1 = {
   stringify: (t) => `${t}`,
   parse: (t) => parseFloat(t)
-}, V = {
+}, V$1 = {
   stringify: (t) => t ? "true" : "false",
   parse: (t) => /^[ty1-9]/i.test(t)
-}, N$1 = {
+}, N$2 = {
   stringify: (t) => t.name,
   parse: (t, r) => {
     const y = (() => {
@@ -47,93 +47,184 @@ const C = {
   stringify: (t) => JSON.stringify(t),
   parse: (t) => JSON.parse(t)
 }, w = {
-  string: C,
-  number: T,
-  boolean: V,
-  function: N$1,
+  string: C$1,
+  number: T$1,
+  boolean: V$1,
+  function: N$2,
   json: P
-}, A$1 = Symbol.for("r2wc.render"), h = Symbol.for("r2wc.connected"), p = Symbol.for("r2wc.context"), i$2 = Symbol.for("r2wc.props");
+}, A$1 = Symbol.for("r2wc.render"), h$1 = Symbol.for("r2wc.connected"), p$1 = Symbol.for("r2wc.context"), i$2 = Symbol.for("r2wc.props");
 function z$1(t, r, y) {
-  var _, k, M;
+  var R, k, Y;
   r.props || (r.props = t.propTypes ? Object.keys(t.propTypes) : []);
-  const U = (Array.isArray(r.props) ? r.props.slice() : Object.keys(r.props)).filter((O) => O !== "container"), W = {}, $ = {}, q = {};
-  for (const O of U) {
-    W[O] = Array.isArray(r.props) ? "string" : r.props[O];
-    const B = J(O);
-    $[O] = B, q[B] = O;
+  const ae = (Array.isArray(r.props) ? r.props.slice() : Object.keys(r.props)).filter((le) => le !== "container"), de = {}, ie = {}, ye = {};
+  for (const le of ae) {
+    de[le] = Array.isArray(r.props) ? "string" : r.props[le];
+    const fe = J(le);
+    ie[le] = fe, ye[fe] = le;
   }
-  class H extends HTMLElement {
+  class me extends HTMLElement {
     constructor() {
-      super(), b(this, _, !0), b(this, k), b(this, M, {}), b(this, "container"), r.shadow ? this.container = this.attachShadow({
+      super(), b$1(this, R, !0), b$1(this, k), b$1(this, Y, {}), b$1(this, "container"), r.shadow ? this.container = this.attachShadow({
         mode: r.shadow
       }) : this.container = this, this[i$2].container = this.container;
-      for (const B of U) {
-        const Z = $[B], oe = this.getAttribute(Z), se = W[B], ce = w[se];
-        oe && ce != null && ce.parse && (this[i$2][B] = ce.parse(oe, this));
+      for (const fe of ae) {
+        const xe = ie[fe], Te = this.getAttribute(xe), _e = de[fe], je = w[_e];
+        Te && je != null && je.parse && (this[i$2][fe] = je.parse(Te, this));
       }
     }
     static get observedAttributes() {
-      return Object.keys(q);
+      return Object.keys(ye);
     }
     connectedCallback() {
-      this[h] = !0, this[A$1]();
+      this[h$1] = !0, this[A$1]();
     }
     disconnectedCallback() {
-      this[h] = !1, this[p] && y.unmount(this[p]), delete this[p];
+      this[h$1] = !1, this[p$1] && y.unmount(this[p$1]), delete this[p$1];
     }
-    attributeChangedCallback(B, Z, oe) {
-      const se = q[B], ce = W[se], ne = w[ce];
-      se in W && ne != null && ne.parse && (this[i$2][se] = ne.parse(oe, this), this[A$1]());
+    attributeChangedCallback(fe, xe, Te) {
+      const _e = ye[fe], je = de[_e], Se = w[je];
+      _e in de && Se != null && Se.parse && (this[i$2][_e] = Se.parse(Te, this), this[A$1]());
     }
-    [(_ = h, k = p, M = i$2, A$1)]() {
-      this[h] && (this[p] ? y.update(this[p], this[i$2]) : this[p] = y.mount(
+    [(R = h$1, k = p$1, Y = i$2, A$1)]() {
+      this[h$1] && (this[p$1] ? y.update(this[p$1], this[i$2]) : this[p$1] = y.mount(
         this.container,
         t,
         this[i$2]
       ));
     }
   }
-  for (const O of U) {
-    const B = $[O], Z = W[O];
-    Object.defineProperty(H.prototype, O, {
+  for (const le of ae) {
+    const fe = ie[le], xe = de[le];
+    Object.defineProperty(me.prototype, le, {
       enumerable: !0,
       configurable: !0,
       get() {
-        return this[i$2][O];
+        return this[i$2][le];
       },
-      set(oe) {
-        this[i$2][O] = oe;
-        const se = w[Z];
-        if (se != null && se.stringify) {
-          const ce = se.stringify(oe);
-          this.getAttribute(B) !== ce && this.setAttribute(B, ce);
+      set(Te) {
+        this[i$2][le] = Te;
+        const _e = w[xe];
+        if (_e != null && _e.stringify) {
+          const je = _e.stringify(Te);
+          this.getAttribute(fe) !== je && this.setAttribute(fe, je);
         }
       }
     });
   }
-  return H;
+  return me;
 }
 function J(t = "") {
   return t.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
 }
 function f(t, r, y) {
-  const _ = createRoot(t), k = o.createElement(r, y);
-  return _.render(k), {
-    root: _,
+  const R = createRoot(t), k = o.createElement(r, y);
+  return R.render(k), {
+    root: R,
     ReactComponent: r
   };
 }
 function i$1({ root: t, ReactComponent: r }, y) {
-  const _ = o.createElement(r, y);
-  t.render(_);
+  const R = o.createElement(r, y);
+  t.render(R);
 }
-function a$2({ root: t }) {
+function a({ root: t }) {
   t.unmount();
 }
 function s(t, r = {}) {
-  return z$1(t, r, { mount: f, update: i$1, unmount: a$2 });
+  return z$1(t, r, { mount: f, update: i$1, unmount: a });
 }
-const calendarEN = {
+const calendarDE = {
+  "ma-calendar": {
+    days: {
+      monday: "Mo",
+      tuesday: "Di",
+      wednesday: "Mi",
+      thursday: "Do",
+      friday: "Fr",
+      saturday: "Sa",
+      sunday: "So"
+    },
+    "month-switcher": {
+      january: "Januar",
+      february: "Februar",
+      march: "März",
+      april: "April",
+      may: "Mai",
+      june: "Juni",
+      july: "Juli",
+      august: "August",
+      september: "September",
+      october: "Oktober",
+      november: "November",
+      december: "Dezember"
+    },
+    wrapper: {
+      title: "Kalender"
+    }
+  }
+}, shutdownDE = {
+  "ma-shutdown": {
+    cancel: "Stornieren",
+    description: "Was soll der Computer tun?",
+    ok: "OK",
+    restart: "Neustart",
+    shutdown: "Herunterfahren",
+    title: "Abschalten Windows"
+  }
+}, timerDE = {
+  "ma-timer": {
+    title: "Timer",
+    reset: "Zurücksetzen",
+    start: "Start",
+    stop: "Stopp",
+    presets: {
+      title: "Voreinstellungen",
+      "three-minutes": "3 min",
+      "five-minutes": "5 min",
+      "ten-minutes": "10 min",
+      "fifteen-minutes": "15 min",
+      custom: "Benutzerdefiniert"
+    }
+  }
+}, timezoneDE = {
+  "ma-timezone": {
+    stepper: {
+      0: "GMT+0 Greenwich Mean Time (GMT)",
+      1: "GMT+1 Central European Time (CET)",
+      2: "GMT+2 Eastern European Time (EET)",
+      3: "GMT+3 Moscow Time (MSK)",
+      4: "GMT+4 Armenia Time (AMT)",
+      5: "GMT+5 Pakistan Standard Time (PKT)",
+      6: "GMT+6 Omsk Time (OMSK)",
+      7: "GMT+7 Kranoyask Time (KRAT)",
+      8: "GMT+8 China Standard Time (CST)",
+      9: "GMT+9 Japan Standard Time (JST)",
+      10: "GMT+10 Eastern Australia Standard Time (AEST)",
+      11: "GMT+11 Sakhalin Time (SAKT)",
+      12: "GMT+12 New Zealand Standard Time (NZST)",
+      "-12": "GMT-12 International Date Line West (IDLW)",
+      "-11": "GMT-11 Nome Time (NT)",
+      "-10": "GMT-10 Hawaii Standard Time (HST)",
+      "-9": "GMT-9 Alaska Standard Time (AKST)",
+      "-8": "GMT-8 Pacific Standard Time (PST)",
+      "-7": "GMT-7 Mountain Standard Time (MST)",
+      "-6": "GMT-6 Central Standard Time (CST)",
+      "-5": "GMT-5 Eastern Standard Time (EST)",
+      "-4": "GMT-4 Atlantic Standard Time (AST)",
+      "-3": "GMT-3 Argentina Time (ART)",
+      "-2": "GMT-2 Azores Time (AT)",
+      "-1": "GMT-1 West Africa Time (WAT)"
+    },
+    wrapper: {
+      title: "Zeitzone"
+    }
+  }
+}, localesMicroAppsDE = {
+  ...calendarDE,
+  ...shutdownDE,
+  ...timerDE,
+  ...timezoneDE
+}, calendarEN = {
   "ma-calendar": {
     days: {
       monday: "M",
@@ -316,6 +407,11 @@ const calendarEN = {
   ...timerPL,
   ...timezonePL
 }, localesReact = {
+  de: {
+    translation: {
+      ...localesMicroAppsDE
+    }
+  },
   en: {
     translation: {
       ...localesMicroAppsEN
@@ -346,21 +442,17 @@ var jsxRuntime = { exports: {} }, reactJsxRuntime_production_min = {};
  */
 var hasRequiredReactJsxRuntime_production_min;
 function requireReactJsxRuntime_production_min() {
-  if (hasRequiredReactJsxRuntime_production_min)
-    return reactJsxRuntime_production_min;
+  if (hasRequiredReactJsxRuntime_production_min) return reactJsxRuntime_production_min;
   hasRequiredReactJsxRuntime_production_min = 1;
-  var t = o, r = Symbol.for("react.element"), y = Symbol.for("react.fragment"), _ = Object.prototype.hasOwnProperty, k = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, M = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function U(W, $, q) {
-    var H, O = {}, B = null, Z = null;
-    q !== void 0 && (B = "" + q), $.key !== void 0 && (B = "" + $.key), $.ref !== void 0 && (Z = $.ref);
-    for (H in $)
-      _.call($, H) && !M.hasOwnProperty(H) && (O[H] = $[H]);
-    if (W && W.defaultProps)
-      for (H in $ = W.defaultProps, $)
-        O[H] === void 0 && (O[H] = $[H]);
-    return { $$typeof: r, type: W, key: B, ref: Z, props: O, _owner: k.current };
+  var t = o, r = Symbol.for("react.element"), y = Symbol.for("react.fragment"), R = Object.prototype.hasOwnProperty, k = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, Y = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function ae(de, ie, ye) {
+    var me, le = {}, fe = null, xe = null;
+    ye !== void 0 && (fe = "" + ye), ie.key !== void 0 && (fe = "" + ie.key), ie.ref !== void 0 && (xe = ie.ref);
+    for (me in ie) R.call(ie, me) && !Y.hasOwnProperty(me) && (le[me] = ie[me]);
+    if (de && de.defaultProps) for (me in ie = de.defaultProps, ie) le[me] === void 0 && (le[me] = ie[me]);
+    return { $$typeof: r, type: de, key: fe, ref: xe, props: le, _owner: k.current };
   }
-  return reactJsxRuntime_production_min.Fragment = y, reactJsxRuntime_production_min.jsx = U, reactJsxRuntime_production_min.jsxs = U, reactJsxRuntime_production_min;
+  return reactJsxRuntime_production_min.Fragment = y, reactJsxRuntime_production_min.jsx = ae, reactJsxRuntime_production_min.jsxs = ae, reactJsxRuntime_production_min;
 }
 var reactJsxRuntime_development = {};
 /**
@@ -375,88 +467,88 @@ var reactJsxRuntime_development = {};
 var hasRequiredReactJsxRuntime_development;
 function requireReactJsxRuntime_development() {
   return hasRequiredReactJsxRuntime_development || (hasRequiredReactJsxRuntime_development = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = o, r = Symbol.for("react.element"), y = Symbol.for("react.portal"), _ = Symbol.for("react.fragment"), k = Symbol.for("react.strict_mode"), M = Symbol.for("react.profiler"), U = Symbol.for("react.provider"), W = Symbol.for("react.context"), $ = Symbol.for("react.forward_ref"), q = Symbol.for("react.suspense"), H = Symbol.for("react.suspense_list"), O = Symbol.for("react.memo"), B = Symbol.for("react.lazy"), Z = Symbol.for("react.offscreen"), oe = Symbol.iterator, se = "@@iterator";
-    function ce(e) {
+    var t = o, r = Symbol.for("react.element"), y = Symbol.for("react.portal"), R = Symbol.for("react.fragment"), k = Symbol.for("react.strict_mode"), Y = Symbol.for("react.profiler"), ae = Symbol.for("react.provider"), de = Symbol.for("react.context"), ie = Symbol.for("react.forward_ref"), ye = Symbol.for("react.suspense"), me = Symbol.for("react.suspense_list"), le = Symbol.for("react.memo"), fe = Symbol.for("react.lazy"), xe = Symbol.for("react.offscreen"), Te = Symbol.iterator, _e = "@@iterator";
+    function je(e) {
       if (e === null || typeof e != "object")
         return null;
-      var l = oe && e[oe] || e[se];
+      var l = Te && e[Te] || e[_e];
       return typeof l == "function" ? l : null;
     }
-    var ne = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function G(e) {
+    var Se = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function pe(e) {
       {
-        for (var l = arguments.length, c = new Array(l > 1 ? l - 1 : 0), v = 1; v < l; v++)
-          c[v - 1] = arguments[v];
-        rt("error", e, c);
+        for (var l = arguments.length, S = new Array(l > 1 ? l - 1 : 0), M = 1; M < l; M++)
+          S[M - 1] = arguments[M];
+        St("error", e, S);
       }
     }
-    function rt(e, l, c) {
+    function St(e, l, S) {
       {
-        var v = ne.ReactDebugCurrentFrame, E = v.getStackAddendum();
-        E !== "" && (l += "%s", c = c.concat([E]));
-        var R = c.map(function(S) {
-          return String(S);
+        var M = Se.ReactDebugCurrentFrame, ne = M.getStackAddendum();
+        ne !== "" && (l += "%s", S = S.concat([ne]));
+        var se = S.map(function(X) {
+          return String(X);
         });
-        R.unshift("Warning: " + l), Function.prototype.apply.call(console[e], console, R);
+        se.unshift("Warning: " + l), Function.prototype.apply.call(console[e], console, se);
       }
     }
-    var nt = !1, at = !1, ot = !1, st = !1, it = !1, Te;
-    Te = Symbol.for("react.module.reference");
-    function lt(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === _ || e === M || it || e === k || e === q || e === H || st || e === Z || nt || at || ot || typeof e == "object" && e !== null && (e.$$typeof === B || e.$$typeof === O || e.$$typeof === U || e.$$typeof === W || e.$$typeof === $ || // This needs to include all possible module reference object
+    var gt = !1, Tt = !1, _t = !1, Et = !1, Rt = !1, Ze;
+    Ze = Symbol.for("react.module.reference");
+    function jt(e) {
+      return !!(typeof e == "string" || typeof e == "function" || e === R || e === Y || Rt || e === k || e === ye || e === me || Et || e === xe || gt || Tt || _t || typeof e == "object" && e !== null && (e.$$typeof === fe || e.$$typeof === le || e.$$typeof === ae || e.$$typeof === de || e.$$typeof === ie || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
-      e.$$typeof === Te || e.getModuleId !== void 0));
+      e.$$typeof === Ze || e.getModuleId !== void 0));
     }
-    function ct(e, l, c) {
-      var v = e.displayName;
-      if (v)
-        return v;
-      var E = l.displayName || l.name || "";
-      return E !== "" ? c + "(" + E + ")" : c;
+    function Mt(e, l, S) {
+      var M = e.displayName;
+      if (M)
+        return M;
+      var ne = l.displayName || l.name || "";
+      return ne !== "" ? S + "(" + ne + ")" : S;
     }
-    function Re(e) {
+    function Xe(e) {
       return e.displayName || "Context";
     }
-    function X(e) {
+    function we(e) {
       if (e == null)
         return null;
-      if (typeof e.tag == "number" && G("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
+      if (typeof e.tag == "number" && pe("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
         return e.displayName || e.name || null;
       if (typeof e == "string")
         return e;
       switch (e) {
-        case _:
+        case R:
           return "Fragment";
         case y:
           return "Portal";
-        case M:
+        case Y:
           return "Profiler";
         case k:
           return "StrictMode";
-        case q:
+        case ye:
           return "Suspense";
-        case H:
+        case me:
           return "SuspenseList";
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case W:
+          case de:
             var l = e;
-            return Re(l) + ".Consumer";
-          case U:
-            var c = e;
-            return Re(c._context) + ".Provider";
-          case $:
-            return ct(e, e.render, "ForwardRef");
-          case O:
-            var v = e.displayName || null;
-            return v !== null ? v : X(e.type) || "Memo";
-          case B: {
-            var E = e, R = E._payload, S = E._init;
+            return Xe(l) + ".Consumer";
+          case ae:
+            var S = e;
+            return Xe(S._context) + ".Provider";
+          case ie:
+            return Mt(e, e.render, "ForwardRef");
+          case le:
+            var M = e.displayName || null;
+            return M !== null ? M : we(e.type) || "Memo";
+          case fe: {
+            var ne = e, se = ne._payload, X = ne._init;
             try {
-              return X(S(R));
+              return we(X(se));
             } catch {
               return null;
             }
@@ -464,18 +556,18 @@ function requireReactJsxRuntime_development() {
         }
       return null;
     }
-    var ae = Object.assign, ue = 0, je, Me, $e, Ne, Ae, Ie, Fe;
-    function Le() {
+    var ge = Object.assign, Me = 0, Qe, et, tt, rt, nt, at, st;
+    function ot() {
     }
-    Le.__reactDisabledLog = !0;
-    function ut() {
+    ot.__reactDisabledLog = !0;
+    function Dt() {
       {
-        if (ue === 0) {
-          je = console.log, Me = console.info, $e = console.warn, Ne = console.error, Ae = console.group, Ie = console.groupCollapsed, Fe = console.groupEnd;
+        if (Me === 0) {
+          Qe = console.log, et = console.info, tt = console.warn, rt = console.error, nt = console.group, at = console.groupCollapsed, st = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
-            value: Le,
+            value: ot,
             writable: !0
           };
           Object.defineProperties(console, {
@@ -488,336 +580,336 @@ function requireReactJsxRuntime_development() {
             groupEnd: e
           });
         }
-        ue++;
+        Me++;
       }
     }
-    function dt() {
+    function Ct() {
       {
-        if (ue--, ue === 0) {
+        if (Me--, Me === 0) {
           var e = {
             configurable: !0,
             enumerable: !0,
             writable: !0
           };
           Object.defineProperties(console, {
-            log: ae({}, e, {
-              value: je
+            log: ge({}, e, {
+              value: Qe
             }),
-            info: ae({}, e, {
-              value: Me
+            info: ge({}, e, {
+              value: et
             }),
-            warn: ae({}, e, {
-              value: $e
+            warn: ge({}, e, {
+              value: tt
             }),
-            error: ae({}, e, {
-              value: Ne
+            error: ge({}, e, {
+              value: rt
             }),
-            group: ae({}, e, {
-              value: Ae
+            group: ge({}, e, {
+              value: nt
             }),
-            groupCollapsed: ae({}, e, {
-              value: Ie
+            groupCollapsed: ge({}, e, {
+              value: at
             }),
-            groupEnd: ae({}, e, {
-              value: Fe
+            groupEnd: ge({}, e, {
+              value: st
             })
           });
         }
-        ue < 0 && G("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        Me < 0 && pe("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var be = ne.ReactCurrentDispatcher, ye;
-    function fe(e, l, c) {
+    var We = Se.ReactCurrentDispatcher, Ue;
+    function Ne(e, l, S) {
       {
-        if (ye === void 0)
+        if (Ue === void 0)
           try {
             throw Error();
-          } catch (E) {
-            var v = E.stack.trim().match(/\n( *(at )?)/);
-            ye = v && v[1] || "";
+          } catch (ne) {
+            var M = ne.stack.trim().match(/\n( *(at )?)/);
+            Ue = M && M[1] || "";
           }
         return `
-` + ye + e;
+` + Ue + e;
       }
     }
-    var ve = !1, pe;
+    var He = !1, Ae;
     {
-      var ft = typeof WeakMap == "function" ? WeakMap : Map;
-      pe = new ft();
+      var $t = typeof WeakMap == "function" ? WeakMap : Map;
+      Ae = new $t();
     }
-    function Ue(e, l) {
-      if (!e || ve)
+    function it(e, l) {
+      if (!e || He)
         return "";
       {
-        var c = pe.get(e);
-        if (c !== void 0)
-          return c;
+        var S = Ae.get(e);
+        if (S !== void 0)
+          return S;
       }
-      var v;
-      ve = !0;
-      var E = Error.prepareStackTrace;
+      var M;
+      He = !0;
+      var ne = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var R;
-      R = be.current, be.current = null, ut();
+      var se;
+      se = We.current, We.current = null, Dt();
       try {
         if (l) {
-          var S = function() {
+          var X = function() {
             throw Error();
           };
-          if (Object.defineProperty(S.prototype, "props", {
+          if (Object.defineProperty(X.prototype, "props", {
             set: function() {
               throw Error();
             }
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
-              Reflect.construct(S, []);
-            } catch (Q) {
-              v = Q;
+              Reflect.construct(X, []);
+            } catch (be) {
+              M = be;
             }
-            Reflect.construct(e, [], S);
+            Reflect.construct(e, [], X);
           } else {
             try {
-              S.call();
-            } catch (Q) {
-              v = Q;
+              X.call();
+            } catch (be) {
+              M = be;
             }
-            e.call(S.prototype);
+            e.call(X.prototype);
           }
         } else {
           try {
             throw Error();
-          } catch (Q) {
-            v = Q;
+          } catch (be) {
+            M = be;
           }
           e();
         }
-      } catch (Q) {
-        if (Q && v && typeof Q.stack == "string") {
-          for (var g = Q.stack.split(`
-`), Y = v.stack.split(`
-`), F = g.length - 1, L = Y.length - 1; F >= 1 && L >= 0 && g[F] !== Y[L]; )
-            L--;
-          for (; F >= 1 && L >= 0; F--, L--)
-            if (g[F] !== Y[L]) {
-              if (F !== 1 || L !== 1)
+      } catch (be) {
+        if (be && M && typeof be.stack == "string") {
+          for (var H = be.stack.split(`
+`), he = M.stack.split(`
+`), ce = H.length - 1, ue = he.length - 1; ce >= 1 && ue >= 0 && H[ce] !== he[ue]; )
+            ue--;
+          for (; ce >= 1 && ue >= 0; ce--, ue--)
+            if (H[ce] !== he[ue]) {
+              if (ce !== 1 || ue !== 1)
                 do
-                  if (F--, L--, L < 0 || g[F] !== Y[L]) {
-                    var K = `
-` + g[F].replace(" at new ", " at ");
-                    return e.displayName && K.includes("<anonymous>") && (K = K.replace("<anonymous>", e.displayName)), typeof e == "function" && pe.set(e, K), K;
+                  if (ce--, ue--, ue < 0 || H[ce] !== he[ue]) {
+                    var ve = `
+` + H[ce].replace(" at new ", " at ");
+                    return e.displayName && ve.includes("<anonymous>") && (ve = ve.replace("<anonymous>", e.displayName)), typeof e == "function" && Ae.set(e, ve), ve;
                   }
-                while (F >= 1 && L >= 0);
+                while (ce >= 1 && ue >= 0);
               break;
             }
         }
       } finally {
-        ve = !1, be.current = R, dt(), Error.prepareStackTrace = E;
+        He = !1, We.current = se, Ct(), Error.prepareStackTrace = ne;
       }
-      var le = e ? e.displayName || e.name : "", tt = le ? fe(le) : "";
-      return typeof e == "function" && pe.set(e, tt), tt;
+      var Re = e ? e.displayName || e.name : "", bt = Re ? Ne(Re) : "";
+      return typeof e == "function" && Ae.set(e, bt), bt;
     }
-    function pt(e, l, c) {
-      return Ue(e, !1);
+    function kt(e, l, S) {
+      return it(e, !1);
     }
-    function mt(e) {
+    function Ot(e) {
       var l = e.prototype;
       return !!(l && l.isReactComponent);
     }
-    function me(e, l, c) {
+    function Ie(e, l, S) {
       if (e == null)
         return "";
       if (typeof e == "function")
-        return Ue(e, mt(e));
+        return it(e, Ot(e));
       if (typeof e == "string")
-        return fe(e);
+        return Ne(e);
       switch (e) {
-        case q:
-          return fe("Suspense");
-        case H:
-          return fe("SuspenseList");
+        case ye:
+          return Ne("Suspense");
+        case me:
+          return Ne("SuspenseList");
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case $:
-            return pt(e.render);
-          case O:
-            return me(e.type, l, c);
-          case B: {
-            var v = e, E = v._payload, R = v._init;
+          case ie:
+            return kt(e.render);
+          case le:
+            return Ie(e.type, l, S);
+          case fe: {
+            var M = e, ne = M._payload, se = M._init;
             try {
-              return me(R(E), l, c);
+              return Ie(se(ne), l, S);
             } catch {
             }
           }
         }
       return "";
     }
-    var he = Object.prototype.hasOwnProperty, We = {}, He = ne.ReactDebugCurrentFrame;
-    function xe(e) {
+    var Le = Object.prototype.hasOwnProperty, lt = {}, ct = Se.ReactDebugCurrentFrame;
+    function Fe(e) {
       if (e) {
-        var l = e._owner, c = me(e.type, e._source, l ? l.type : null);
-        He.setExtraStackFrame(c);
+        var l = e._owner, S = Ie(e.type, e._source, l ? l.type : null);
+        ct.setExtraStackFrame(S);
       } else
-        He.setExtraStackFrame(null);
+        ct.setExtraStackFrame(null);
     }
-    function ht(e, l, c, v, E) {
+    function Nt(e, l, S, M, ne) {
       {
-        var R = Function.call.bind(he);
-        for (var S in e)
-          if (R(e, S)) {
-            var g = void 0;
+        var se = Function.call.bind(Le);
+        for (var X in e)
+          if (se(e, X)) {
+            var H = void 0;
             try {
-              if (typeof e[S] != "function") {
-                var Y = Error((v || "React class") + ": " + c + " type `" + S + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[S] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                throw Y.name = "Invariant Violation", Y;
+              if (typeof e[X] != "function") {
+                var he = Error((M || "React class") + ": " + S + " type `" + X + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[X] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                throw he.name = "Invariant Violation", he;
               }
-              g = e[S](l, S, v, c, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (F) {
-              g = F;
+              H = e[X](l, X, M, S, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (ce) {
+              H = ce;
             }
-            g && !(g instanceof Error) && (xe(E), G("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", v || "React class", c, S, typeof g), xe(null)), g instanceof Error && !(g.message in We) && (We[g.message] = !0, xe(E), G("Failed %s type: %s", c, g.message), xe(null));
+            H && !(H instanceof Error) && (Fe(ne), pe("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", M || "React class", S, X, typeof H), Fe(null)), H instanceof Error && !(H.message in lt) && (lt[H.message] = !0, Fe(ne), pe("Failed %s type: %s", S, H.message), Fe(null));
           }
       }
     }
-    var xt = Array.isArray;
-    function _e(e) {
-      return xt(e);
+    var Pt = Array.isArray;
+    function Be(e) {
+      return Pt(e);
     }
-    function bt(e) {
+    function At(e) {
       {
-        var l = typeof Symbol == "function" && Symbol.toStringTag, c = l && e[Symbol.toStringTag] || e.constructor.name || "Object";
-        return c;
+        var l = typeof Symbol == "function" && Symbol.toStringTag, S = l && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        return S;
       }
     }
-    function yt(e) {
+    function zt(e) {
       try {
-        return Be(e), !1;
+        return ut(e), !1;
       } catch {
         return !0;
       }
     }
-    function Be(e) {
+    function ut(e) {
       return "" + e;
     }
-    function Ge(e) {
-      if (yt(e))
-        return G("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", bt(e)), Be(e);
+    function dt(e) {
+      if (zt(e))
+        return pe("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", At(e)), ut(e);
     }
-    var de = ne.ReactCurrentOwner, vt = {
+    var $e = Se.ReactCurrentOwner, It = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, Ye, qe, ge;
-    ge = {};
-    function _t(e) {
-      if (he.call(e, "ref")) {
+    }, mt, ft, Ye;
+    Ye = {};
+    function Vt(e) {
+      if (Le.call(e, "ref")) {
         var l = Object.getOwnPropertyDescriptor(e, "ref").get;
         if (l && l.isReactWarning)
           return !1;
       }
       return e.ref !== void 0;
     }
-    function gt(e) {
-      if (he.call(e, "key")) {
+    function Lt(e) {
+      if (Le.call(e, "key")) {
         var l = Object.getOwnPropertyDescriptor(e, "key").get;
         if (l && l.isReactWarning)
           return !1;
       }
       return e.key !== void 0;
     }
-    function wt(e, l) {
-      if (typeof e.ref == "string" && de.current && l && de.current.stateNode !== l) {
-        var c = X(de.current.type);
-        ge[c] || (G('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', X(de.current.type), e.ref), ge[c] = !0);
+    function Ft(e, l) {
+      if (typeof e.ref == "string" && $e.current && l && $e.current.stateNode !== l) {
+        var S = we($e.current.type);
+        Ye[S] || (pe('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', we($e.current.type), e.ref), Ye[S] = !0);
       }
     }
-    function St(e, l) {
+    function Gt(e, l) {
       {
-        var c = function() {
-          Ye || (Ye = !0, G("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", l));
+        var S = function() {
+          mt || (mt = !0, pe("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", l));
         };
-        c.isReactWarning = !0, Object.defineProperty(e, "key", {
-          get: c,
+        S.isReactWarning = !0, Object.defineProperty(e, "key", {
+          get: S,
           configurable: !0
         });
       }
     }
-    function Et(e, l) {
+    function Wt(e, l) {
       {
-        var c = function() {
-          qe || (qe = !0, G("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", l));
+        var S = function() {
+          ft || (ft = !0, pe("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", l));
         };
-        c.isReactWarning = !0, Object.defineProperty(e, "ref", {
-          get: c,
+        S.isReactWarning = !0, Object.defineProperty(e, "ref", {
+          get: S,
           configurable: !0
         });
       }
     }
-    var Tt = function(e, l, c, v, E, R, S) {
-      var g = {
+    var Ut = function(e, l, S, M, ne, se, X) {
+      var H = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: r,
         // Built-in properties that belong on the element
         type: e,
         key: l,
-        ref: c,
-        props: S,
+        ref: S,
+        props: X,
         // Record the component responsible for creating this element.
-        _owner: R
+        _owner: se
       };
-      return g._store = {}, Object.defineProperty(g._store, "validated", {
+      return H._store = {}, Object.defineProperty(H._store, "validated", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
         value: !1
-      }), Object.defineProperty(g, "_self", {
+      }), Object.defineProperty(H, "_self", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: v
-      }), Object.defineProperty(g, "_source", {
+        value: M
+      }), Object.defineProperty(H, "_source", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: E
-      }), Object.freeze && (Object.freeze(g.props), Object.freeze(g)), g;
+        value: ne
+      }), Object.freeze && (Object.freeze(H.props), Object.freeze(H)), H;
     };
-    function Rt(e, l, c, v, E) {
+    function Ht(e, l, S, M, ne) {
       {
-        var R, S = {}, g = null, Y = null;
-        c !== void 0 && (Ge(c), g = "" + c), gt(l) && (Ge(l.key), g = "" + l.key), _t(l) && (Y = l.ref, wt(l, E));
-        for (R in l)
-          he.call(l, R) && !vt.hasOwnProperty(R) && (S[R] = l[R]);
+        var se, X = {}, H = null, he = null;
+        S !== void 0 && (dt(S), H = "" + S), Lt(l) && (dt(l.key), H = "" + l.key), Vt(l) && (he = l.ref, Ft(l, ne));
+        for (se in l)
+          Le.call(l, se) && !It.hasOwnProperty(se) && (X[se] = l[se]);
         if (e && e.defaultProps) {
-          var F = e.defaultProps;
-          for (R in F)
-            S[R] === void 0 && (S[R] = F[R]);
+          var ce = e.defaultProps;
+          for (se in ce)
+            X[se] === void 0 && (X[se] = ce[se]);
         }
-        if (g || Y) {
-          var L = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
-          g && St(S, L), Y && Et(S, L);
+        if (H || he) {
+          var ue = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
+          H && Gt(X, ue), he && Wt(X, ue);
         }
-        return Tt(e, g, Y, E, v, de.current, S);
+        return Ut(e, H, he, ne, M, $e.current, X);
       }
     }
-    var we = ne.ReactCurrentOwner, Je = ne.ReactDebugCurrentFrame;
-    function ie(e) {
-      if (e) {
-        var l = e._owner, c = me(e.type, e._source, l ? l.type : null);
-        Je.setExtraStackFrame(c);
-      } else
-        Je.setExtraStackFrame(null);
-    }
-    var Se;
-    Se = !1;
+    var qe = Se.ReactCurrentOwner, pt = Se.ReactDebugCurrentFrame;
     function Ee(e) {
+      if (e) {
+        var l = e._owner, S = Ie(e.type, e._source, l ? l.type : null);
+        pt.setExtraStackFrame(S);
+      } else
+        pt.setExtraStackFrame(null);
+    }
+    var Ke;
+    Ke = !1;
+    function Je(e) {
       return typeof e == "object" && e !== null && e.$$typeof === r;
     }
-    function Ke() {
+    function ht() {
       {
-        if (we.current) {
-          var e = X(we.current.type);
+        if (qe.current) {
+          var e = we(qe.current.type);
           if (e)
             return `
 
@@ -826,137 +918,129 @@ Check the render method of \`` + e + "`.";
         return "";
       }
     }
-    function kt(e) {
-      {
-        if (e !== void 0) {
-          var l = e.fileName.replace(/^.*[\\\/]/, ""), c = e.lineNumber;
-          return `
-
-Check your code at ` + l + ":" + c + ".";
-        }
-        return "";
-      }
+    function Bt(e) {
+      return "";
     }
-    var Ze = {};
-    function jt(e) {
+    var yt = {};
+    function Yt(e) {
       {
-        var l = Ke();
+        var l = ht();
         if (!l) {
-          var c = typeof e == "string" ? e : e.displayName || e.name;
-          c && (l = `
+          var S = typeof e == "string" ? e : e.displayName || e.name;
+          S && (l = `
 
-Check the top-level render call using <` + c + ">.");
+Check the top-level render call using <` + S + ">.");
         }
         return l;
       }
     }
-    function Xe(e, l) {
+    function vt(e, l) {
       {
         if (!e._store || e._store.validated || e.key != null)
           return;
         e._store.validated = !0;
-        var c = jt(l);
-        if (Ze[c])
+        var S = Yt(l);
+        if (yt[S])
           return;
-        Ze[c] = !0;
-        var v = "";
-        e && e._owner && e._owner !== we.current && (v = " It was passed a child from " + X(e._owner.type) + "."), ie(e), G('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', c, v), ie(null);
+        yt[S] = !0;
+        var M = "";
+        e && e._owner && e._owner !== qe.current && (M = " It was passed a child from " + we(e._owner.type) + "."), Ee(e), pe('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', S, M), Ee(null);
       }
     }
-    function Qe(e, l) {
+    function xt(e, l) {
       {
         if (typeof e != "object")
           return;
-        if (_e(e))
-          for (var c = 0; c < e.length; c++) {
-            var v = e[c];
-            Ee(v) && Xe(v, l);
+        if (Be(e))
+          for (var S = 0; S < e.length; S++) {
+            var M = e[S];
+            Je(M) && vt(M, l);
           }
-        else if (Ee(e))
+        else if (Je(e))
           e._store && (e._store.validated = !0);
         else if (e) {
-          var E = ce(e);
-          if (typeof E == "function" && E !== e.entries)
-            for (var R = E.call(e), S; !(S = R.next()).done; )
-              Ee(S.value) && Xe(S.value, l);
+          var ne = je(e);
+          if (typeof ne == "function" && ne !== e.entries)
+            for (var se = ne.call(e), X; !(X = se.next()).done; )
+              Je(X.value) && vt(X.value, l);
         }
       }
     }
-    function Ct(e) {
+    function qt(e) {
       {
         var l = e.type;
         if (l == null || typeof l == "string")
           return;
-        var c;
+        var S;
         if (typeof l == "function")
-          c = l.propTypes;
-        else if (typeof l == "object" && (l.$$typeof === $ || // Note: Memo only checks outer props here.
+          S = l.propTypes;
+        else if (typeof l == "object" && (l.$$typeof === ie || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        l.$$typeof === O))
-          c = l.propTypes;
+        l.$$typeof === le))
+          S = l.propTypes;
         else
           return;
-        if (c) {
-          var v = X(l);
-          ht(c, e.props, "prop", v, e);
-        } else if (l.PropTypes !== void 0 && !Se) {
-          Se = !0;
-          var E = X(l);
-          G("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", E || "Unknown");
+        if (S) {
+          var M = we(l);
+          Nt(S, e.props, "prop", M, e);
+        } else if (l.PropTypes !== void 0 && !Ke) {
+          Ke = !0;
+          var ne = we(l);
+          pe("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", ne || "Unknown");
         }
-        typeof l.getDefaultProps == "function" && !l.getDefaultProps.isReactClassApproved && G("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof l.getDefaultProps == "function" && !l.getDefaultProps.isReactClassApproved && pe("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
-    function Dt(e) {
+    function Kt(e) {
       {
-        for (var l = Object.keys(e.props), c = 0; c < l.length; c++) {
-          var v = l[c];
-          if (v !== "children" && v !== "key") {
-            ie(e), G("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", v), ie(null);
+        for (var l = Object.keys(e.props), S = 0; S < l.length; S++) {
+          var M = l[S];
+          if (M !== "children" && M !== "key") {
+            Ee(e), pe("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", M), Ee(null);
             break;
           }
         }
-        e.ref !== null && (ie(e), G("Invalid attribute `ref` supplied to `React.Fragment`."), ie(null));
+        e.ref !== null && (Ee(e), pe("Invalid attribute `ref` supplied to `React.Fragment`."), Ee(null));
       }
     }
-    function et(e, l, c, v, E, R) {
+    function wt(e, l, S, M, ne, se) {
       {
-        var S = lt(e);
-        if (!S) {
-          var g = "";
-          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (g += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var Y = kt(E);
-          Y ? g += Y : g += Ke();
-          var F;
-          e === null ? F = "null" : _e(e) ? F = "array" : e !== void 0 && e.$$typeof === r ? (F = "<" + (X(e.type) || "Unknown") + " />", g = " Did you accidentally export a JSX literal instead of a component?") : F = typeof e, G("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", F, g);
+        var X = jt(e);
+        if (!X) {
+          var H = "";
+          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (H += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
+          var he = Bt();
+          he ? H += he : H += ht();
+          var ce;
+          e === null ? ce = "null" : Be(e) ? ce = "array" : e !== void 0 && e.$$typeof === r ? (ce = "<" + (we(e.type) || "Unknown") + " />", H = " Did you accidentally export a JSX literal instead of a component?") : ce = typeof e, pe("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", ce, H);
         }
-        var L = Rt(e, l, c, E, R);
-        if (L == null)
-          return L;
-        if (S) {
-          var K = l.children;
-          if (K !== void 0)
-            if (v)
-              if (_e(K)) {
-                for (var le = 0; le < K.length; le++)
-                  Qe(K[le], e);
-                Object.freeze && Object.freeze(K);
+        var ue = Ht(e, l, S, ne, se);
+        if (ue == null)
+          return ue;
+        if (X) {
+          var ve = l.children;
+          if (ve !== void 0)
+            if (M)
+              if (Be(ve)) {
+                for (var Re = 0; Re < ve.length; Re++)
+                  xt(ve[Re], e);
+                Object.freeze && Object.freeze(ve);
               } else
-                G("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                pe("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              Qe(K, e);
+              xt(ve, e);
         }
-        return e === _ ? Dt(L) : Ct(L), L;
+        return e === R ? Kt(ue) : qt(ue), ue;
       }
     }
-    function Mt(e, l, c) {
-      return et(e, l, c, !0);
+    function Jt(e, l, S) {
+      return wt(e, l, S, !0);
     }
-    function $t(e, l, c) {
-      return et(e, l, c, !1);
+    function Zt(e, l, S) {
+      return wt(e, l, S, !1);
     }
-    var Ot = $t, Nt = Mt;
-    reactJsxRuntime_development.Fragment = _, reactJsxRuntime_development.jsx = Ot, reactJsxRuntime_development.jsxs = Nt;
+    var Xt = Zt, Qt = Jt;
+    reactJsxRuntime_development.Fragment = R, reactJsxRuntime_development.jsx = Xt, reactJsxRuntime_development.jsxs = Qt;
   }()), reactJsxRuntime_development;
 }
 process.env.NODE_ENV === "production" ? jsxRuntime.exports = requireReactJsxRuntime_production_min() : jsxRuntime.exports = requireReactJsxRuntime_development();
@@ -973,7 +1057,7 @@ class CalculatorService {
     }
   }
   isDotExist(t) {
-    return t ? !!t.split("").find((_) => _ === ".") : !1;
+    return t ? !!t.split("").find((R) => R === ".") : !1;
   }
   isMathematicalSignLast(t) {
     if (!t)
@@ -997,9 +1081,9 @@ class CalculatorService {
 }
 class CalculatorDomain {
   constructor() {
-    D(this, "value", "0");
-    D(this, "calculatorService", new CalculatorService());
-    D(this, "addNumber", (r) => {
+    oe(this, "value", "0");
+    oe(this, "calculatorService", new CalculatorService());
+    oe(this, "addNumber", (r) => {
       this.calculatorService.isValueEqual(
         this.value,
         "0",
@@ -1010,25 +1094,23 @@ class CalculatorDomain {
         ECalculatorDirect.FIRST
       ) && this.value.length === 1 ? this.value = String(r) : this.value += String(r);
     });
-    D(this, "addDot", () => {
+    oe(this, "addDot", () => {
       this.calculatorService.isDotExist(this.value) || this.calculatorService.isMathematicalSignLast(this.value) || this.calculatorService.isValueEqual(
         this.value,
         ".",
         ECalculatorDirect.LAST
       ) || (this.value += ".");
     });
-    D(this, "addSymbol", (r) => {
+    oe(this, "addSymbol", (r) => {
       this.value === "0." || this.calculatorService.isMathematicalSignLast(this.value) || (this.value += r);
     });
-    D(this, "summResult", () => {
+    oe(this, "summResult", () => {
       this.value = this.calculatorService.summResult(this.value);
     });
     makeAutoObservable(this);
   }
 }
-const calculatorDomain = new CalculatorDomain(), DomainContext$4 = createContext(calculatorDomain), button = "_button_9arum_96", primary = "_primary_9arum_122", secondary = "_secondary_9arum_126", styles$g = {
-  "theme-light": "_theme-light_9arum_16",
-  "theme-dark": "_theme-dark_9arum_36",
+const calculatorDomain = new CalculatorDomain(), DomainContext$4 = createContext(calculatorDomain), button = "_button_1h5df_96", primary = "_primary_1h5df_122", secondary = "_secondary_1h5df_126", styles$g = {
   button,
   primary,
   secondary
@@ -1045,9 +1127,7 @@ const calculatorDomain = new CalculatorDomain(), DomainContext$4 = createContext
     type: "button",
     children: t
   }
-), keypad = "_keypad_uzbrq_96", styles$f = {
-  "theme-light": "_theme-light_uzbrq_16",
-  "theme-dark": "_theme-dark_uzbrq_36",
+), keypad = "_keypad_1orw4_96", styles$f = {
   keypad
 };
 function useCalculator() {
@@ -1065,7 +1145,7 @@ function useKeypad() {
   };
 }
 const Keypad = observer(() => {
-  const { addDot: t, addNumber: r, addSymbol: y, summResult: _ } = useKeypad();
+  const { addDot: t, addNumber: r, addSymbol: y, summResult: R } = useKeypad();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
@@ -1188,7 +1268,7 @@ const Keypad = observer(() => {
           OperationButton,
           {
             id: ECalculatorSymbol.RESULT,
-            onClick: _,
+            onClick: R,
             variant: "primary"
           }
         ),
@@ -1203,9 +1283,7 @@ const Keypad = observer(() => {
       ]
     }
   );
-}), screen$1 = "_screen_1hx69_96", styles$e = {
-  "theme-light": "_theme-light_1hx69_16",
-  "theme-dark": "_theme-dark_1hx69_36",
+}), screen$1 = "_screen_jjy5e_96", styles$e = {
   screen: screen$1
 };
 function useScreen$1() {
@@ -1224,9 +1302,7 @@ const Screen$1 = observer(() => {
       children: t ?? "ERROR"
     }
   );
-}), wrapper$3 = "_wrapper_wc6ff_96", styles$d = {
-  "theme-light": "_theme-light_wc6ff_16",
-  "theme-dark": "_theme-dark_wc6ff_36",
+}), wrapper$3 = "_wrapper_sceh6_96", styles$d = {
   wrapper: wrapper$3
 }, Wrapper$4 = () => /* @__PURE__ */ jsxRuntimeExports.jsxs(
   "div",
@@ -1241,12 +1317,12 @@ const Screen$1 = observer(() => {
 ), CalculatorView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$4.Provider, { value: calculatorDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$4, {}) });
 class CalendarRepository {
   constructor() {
-    D(this, "date");
-    D(this, "firstDayMonth");
-    D(this, "lastDateMonth");
-    D(this, "year");
-    D(this, "month");
-    D(this, "days");
+    oe(this, "date");
+    oe(this, "firstDayMonth");
+    oe(this, "lastDateMonth");
+    oe(this, "year");
+    oe(this, "month");
+    oe(this, "days");
     this.date = null, this.year = null, this.month = null, this.days = null, this.firstDayMonth = null, this.lastDateMonth = null;
   }
   initCalendar(r) {
@@ -1262,9 +1338,9 @@ class CalendarRepository {
         value: ""
       });
     for (let y = 1; y <= this.lastDateMonth; y++) {
-      const _ = y === this.date.getDate() && this.month === (/* @__PURE__ */ new Date()).getMonth() && this.year === (/* @__PURE__ */ new Date()).getFullYear();
+      const R = y === this.date.getDate() && this.month === (/* @__PURE__ */ new Date()).getMonth() && this.year === (/* @__PURE__ */ new Date()).getFullYear();
       r.push({
-        status: _ ? "active" : "normal",
+        status: R ? "active" : "normal",
         value: String(y)
       });
     }
@@ -1274,13 +1350,11 @@ class CalendarRepository {
     this.date = r || /* @__PURE__ */ new Date();
   }
   getFullYear() {
-    if (this.date === null)
-      throw new Error("Date not found");
+    if (this.date === null) throw new Error("Date not found");
     this.year = this.date.getFullYear();
   }
   getMonth() {
-    if (this.date === null)
-      throw new Error("Date not found");
+    if (this.date === null) throw new Error("Date not found");
     this.month = this.date.getMonth();
   }
   getFirstDayMonth() {
@@ -1296,10 +1370,10 @@ class CalendarRepository {
 }
 class CalendarDomain {
   constructor() {
-    D(this, "calendar", null);
-    D(this, "year", null);
-    D(this, "month", null);
-    D(this, "calendarRepository", new CalendarRepository());
+    oe(this, "calendar", null);
+    oe(this, "year", null);
+    oe(this, "month", null);
+    oe(this, "calendarRepository", new CalendarRepository());
     makeAutoObservable(this);
   }
   generateCalendar(r) {
@@ -1329,7 +1403,7 @@ const calendarDomain = new CalendarDomain(), DomainContext$3 = createContext(cal
   try {
     if (typeof document < "u") {
       var t = document.createElement("style");
-      t.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_158st_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_158st_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._ds-button_158st_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_158st_96{cursor:pointer}}._ds-button_158st_96:disabled{pointer-events:none;opacity:.5}._ds-button_158st_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_158st_120{width:16px;height:14px;padding:1px}._size-medium_158st_126{height:23px;min-width:75px;padding:0 12px}._size-medium_158st_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_158st_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_qp7ji_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_qp7ji_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._ds-button-arrow_qp7ji_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_qp7ji_96:hover{cursor:pointer}}._ds-button-arrow_qp7ji_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_qp7ji_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_qp7ji_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_qp7ji_124:after{border-top:3px solid var(--text-color)}._arrow-top_qp7ji_128:after{border-bottom:3px solid var(--text-color)}._size-small_qp7ji_132{width:20px;height:10px}._size-medium_qp7ji_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_hpida_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_hpida_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._frame_hpida_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_hpida_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_e0ixd_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_e0ixd_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper-horizontal_e0ixd_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_e0ixd_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._input_e0ixd_111,._label_e0ixd_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_e0ixd_111{padding:3px 4px;height:21px;width:100%;box-shadow:var(--border-field);background-color:var(--background-color-white)}._input_e0ixd_111:focus{outline:none}._input_e0ixd_111:disabled,._input_e0ixd_111:disabled+._label_e0ixd_112{opacity:.8}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_12q8r_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_12q8r_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper_12q8r_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_12q8r_96:hover{cursor:pointer}}._disabled_12q8r_108{pointer-events:none;opacity:.5}._input_12q8r_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_12q8r_113[disabled]{pointer-events:none}._icon_12q8r_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_1id5f_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_1id5f_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._wrapper_1id5f_96{position:relative}._label_1id5f_100{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._select_1id5f_105{height:21px;width:100%;background:var(--background-color-white) url(/icons/select-button.svg) no-repeat top 2px right 2px;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_1id5f_115{position:absolute;right:1px;top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_p8wyg_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_p8wyg_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}._ds-stepper_p8wyg_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_p8wyg_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_p8wyg_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_p8wyg_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_p8wyg_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root._theme-light_pg4yx_16{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root._theme-dark_pg4yx_36{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._DSText_pg4yx_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}')), document.head.appendChild(t);
+      t.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button_i4qw7_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_i4qw7_96{cursor:pointer}}._ds-button_i4qw7_96:disabled{pointer-events:none;opacity:.5}._ds-button_i4qw7_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_i4qw7_120{width:16px;height:14px;padding:1px}._size-medium_i4qw7_126{height:23px;min-width:75px;padding:0 12px}._size-medium_i4qw7_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_i4qw7_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button-arrow_1w7w8_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_1w7w8_96:hover{cursor:pointer}}._ds-button-arrow_1w7w8_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_1w7w8_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_1w7w8_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_1w7w8_124:after{border-top:3px solid var(--text-color)}._arrow-top_1w7w8_128:after{border-bottom:3px solid var(--text-color)}._size-small_1w7w8_132{width:20px;height:10px}._size-medium_1w7w8_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_i4tc8_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_i4tc8_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper-horizontal_4dyys_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_4dyys_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._input_4dyys_111,._label_4dyys_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_4dyys_111{padding:3px 4px;height:21px;width:100%;box-shadow:var(--border-field);background-color:var(--background-color-white)}._input_4dyys_111:focus{outline:none}._input_4dyys_111:disabled,._input_4dyys_111:disabled+._label_4dyys_112{opacity:.8}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_s5be2_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_s5be2_96:hover{cursor:pointer}}._disabled_s5be2_108{pointer-events:none;opacity:.5}._input_s5be2_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_s5be2_113[disabled]{pointer-events:none}._icon_s5be2_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_upk41_96{position:relative}._label_upk41_100{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._select_upk41_105{height:21px;width:100%;background:var(--background-color-white) url(/icons/select-button.svg) no-repeat top 2px right 2px;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_upk41_115{position:absolute;right:1px;top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-stepper_8xv2v_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_8xv2v_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_8xv2v_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_8xv2v_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_8xv2v_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._DSText_zb3qg_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}')), document.head.appendChild(t);
     }
   } catch (r) {
     console.error("vite-plugin-css-injected-by-js", r);
@@ -1346,24 +1420,24 @@ var te = { exports: {} }, z = {};
  * LICENSE file in the root directory of this source tree.
  */
 var Ce;
-function gr() {
+function br() {
   if (Ce)
     return z;
   Ce = 1;
-  var t = o, r = Symbol.for("react.element"), y = Symbol.for("react.fragment"), _ = Object.prototype.hasOwnProperty, k = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, M = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function U(W, $, q) {
-    var H, O = {}, B = null, Z = null;
-    q !== void 0 && (B = "" + q), $.key !== void 0 && (B = "" + $.key), $.ref !== void 0 && (Z = $.ref);
-    for (H in $)
-      _.call($, H) && !M.hasOwnProperty(H) && (O[H] = $[H]);
-    if (W && W.defaultProps)
-      for (H in $ = W.defaultProps, $)
-        O[H] === void 0 && (O[H] = $[H]);
-    return { $$typeof: r, type: W, key: B, ref: Z, props: O, _owner: k.current };
+  var t = o, r = Symbol.for("react.element"), y = Symbol.for("react.fragment"), R = Object.prototype.hasOwnProperty, k = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, Y = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function ae(de, ie, ye) {
+    var me, le = {}, fe = null, xe = null;
+    ye !== void 0 && (fe = "" + ye), ie.key !== void 0 && (fe = "" + ie.key), ie.ref !== void 0 && (xe = ie.ref);
+    for (me in ie)
+      R.call(ie, me) && !Y.hasOwnProperty(me) && (le[me] = ie[me]);
+    if (de && de.defaultProps)
+      for (me in ie = de.defaultProps, ie)
+        le[me] === void 0 && (le[me] = ie[me]);
+    return { $$typeof: r, type: de, key: fe, ref: xe, props: le, _owner: k.current };
   }
-  return z.Fragment = y, z.jsx = U, z.jsxs = U, z;
+  return z.Fragment = y, z.jsx = ae, z.jsxs = ae, z;
 }
-var I = {};
+var I$1 = {};
 /**
  * @license React
  * react-jsx-runtime.development.js
@@ -1373,91 +1447,91 @@ var I = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var ke;
-function br() {
-  return ke || (ke = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = o, r = Symbol.for("react.element"), y = Symbol.for("react.portal"), _ = Symbol.for("react.fragment"), k = Symbol.for("react.strict_mode"), M = Symbol.for("react.profiler"), U = Symbol.for("react.provider"), W = Symbol.for("react.context"), $ = Symbol.for("react.forward_ref"), q = Symbol.for("react.suspense"), H = Symbol.for("react.suspense_list"), O = Symbol.for("react.memo"), B = Symbol.for("react.lazy"), Z = Symbol.for("react.offscreen"), oe = Symbol.iterator, se = "@@iterator";
-    function ce(e) {
+var De;
+function gr() {
+  return De || (De = 1, process.env.NODE_ENV !== "production" && function() {
+    var t = o, r = Symbol.for("react.element"), y = Symbol.for("react.portal"), R = Symbol.for("react.fragment"), k = Symbol.for("react.strict_mode"), Y = Symbol.for("react.profiler"), ae = Symbol.for("react.provider"), de = Symbol.for("react.context"), ie = Symbol.for("react.forward_ref"), ye = Symbol.for("react.suspense"), me = Symbol.for("react.suspense_list"), le = Symbol.for("react.memo"), fe = Symbol.for("react.lazy"), xe = Symbol.for("react.offscreen"), Te = Symbol.iterator, _e = "@@iterator";
+    function je(e) {
       if (e === null || typeof e != "object")
         return null;
-      var l = oe && e[oe] || e[se];
+      var l = Te && e[Te] || e[_e];
       return typeof l == "function" ? l : null;
     }
-    var ne = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function G(e) {
+    var Se = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function pe(e) {
       {
-        for (var l = arguments.length, c = new Array(l > 1 ? l - 1 : 0), v = 1; v < l; v++)
-          c[v - 1] = arguments[v];
-        rt("error", e, c);
+        for (var l = arguments.length, S = new Array(l > 1 ? l - 1 : 0), M = 1; M < l; M++)
+          S[M - 1] = arguments[M];
+        St("error", e, S);
       }
     }
-    function rt(e, l, c) {
+    function St(e, l, S) {
       {
-        var v = ne.ReactDebugCurrentFrame, E = v.getStackAddendum();
-        E !== "" && (l += "%s", c = c.concat([E]));
-        var R = c.map(function(S) {
-          return String(S);
+        var M = Se.ReactDebugCurrentFrame, ne = M.getStackAddendum();
+        ne !== "" && (l += "%s", S = S.concat([ne]));
+        var se = S.map(function(X) {
+          return String(X);
         });
-        R.unshift("Warning: " + l), Function.prototype.apply.call(console[e], console, R);
+        se.unshift("Warning: " + l), Function.prototype.apply.call(console[e], console, se);
       }
     }
-    var nt = !1, at = !1, ot = !1, st = !1, it = !1, Te;
-    Te = Symbol.for("react.module.reference");
-    function lt(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === _ || e === M || it || e === k || e === q || e === H || st || e === Z || nt || at || ot || typeof e == "object" && e !== null && (e.$$typeof === B || e.$$typeof === O || e.$$typeof === U || e.$$typeof === W || e.$$typeof === $ || // This needs to include all possible module reference object
+    var gt = !1, Tt = !1, _t = !1, Et = !1, Rt = !1, Ze;
+    Ze = Symbol.for("react.module.reference");
+    function jt(e) {
+      return !!(typeof e == "string" || typeof e == "function" || e === R || e === Y || Rt || e === k || e === ye || e === me || Et || e === xe || gt || Tt || _t || typeof e == "object" && e !== null && (e.$$typeof === fe || e.$$typeof === le || e.$$typeof === ae || e.$$typeof === de || e.$$typeof === ie || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
-      e.$$typeof === Te || e.getModuleId !== void 0));
+      e.$$typeof === Ze || e.getModuleId !== void 0));
     }
-    function ct(e, l, c) {
-      var v = e.displayName;
-      if (v)
-        return v;
-      var E = l.displayName || l.name || "";
-      return E !== "" ? c + "(" + E + ")" : c;
+    function Mt(e, l, S) {
+      var M = e.displayName;
+      if (M)
+        return M;
+      var ne = l.displayName || l.name || "";
+      return ne !== "" ? S + "(" + ne + ")" : S;
     }
-    function Re(e) {
+    function Xe(e) {
       return e.displayName || "Context";
     }
-    function X(e) {
+    function we(e) {
       if (e == null)
         return null;
-      if (typeof e.tag == "number" && G("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
+      if (typeof e.tag == "number" && pe("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
         return e.displayName || e.name || null;
       if (typeof e == "string")
         return e;
       switch (e) {
-        case _:
+        case R:
           return "Fragment";
         case y:
           return "Portal";
-        case M:
+        case Y:
           return "Profiler";
         case k:
           return "StrictMode";
-        case q:
+        case ye:
           return "Suspense";
-        case H:
+        case me:
           return "SuspenseList";
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case W:
+          case de:
             var l = e;
-            return Re(l) + ".Consumer";
-          case U:
-            var c = e;
-            return Re(c._context) + ".Provider";
-          case $:
-            return ct(e, e.render, "ForwardRef");
-          case O:
-            var v = e.displayName || null;
-            return v !== null ? v : X(e.type) || "Memo";
-          case B: {
-            var E = e, R = E._payload, S = E._init;
+            return Xe(l) + ".Consumer";
+          case ae:
+            var S = e;
+            return Xe(S._context) + ".Provider";
+          case ie:
+            return Mt(e, e.render, "ForwardRef");
+          case le:
+            var M = e.displayName || null;
+            return M !== null ? M : we(e.type) || "Memo";
+          case fe: {
+            var ne = e, se = ne._payload, X = ne._init;
             try {
-              return X(S(R));
+              return we(X(se));
             } catch {
               return null;
             }
@@ -1465,18 +1539,18 @@ function br() {
         }
       return null;
     }
-    var ae = Object.assign, ue = 0, je, Me, $e, Ne, Ae, Ie, Fe;
-    function Le() {
+    var ge = Object.assign, Me = 0, Qe, et, tt, rt, nt, at, st;
+    function ot() {
     }
-    Le.__reactDisabledLog = !0;
-    function ut() {
+    ot.__reactDisabledLog = !0;
+    function Dt() {
       {
-        if (ue === 0) {
-          je = console.log, Me = console.info, $e = console.warn, Ne = console.error, Ae = console.group, Ie = console.groupCollapsed, Fe = console.groupEnd;
+        if (Me === 0) {
+          Qe = console.log, et = console.info, tt = console.warn, rt = console.error, nt = console.group, at = console.groupCollapsed, st = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
-            value: Le,
+            value: ot,
             writable: !0
           };
           Object.defineProperties(console, {
@@ -1489,336 +1563,336 @@ function br() {
             groupEnd: e
           });
         }
-        ue++;
+        Me++;
       }
     }
-    function dt() {
+    function Ct() {
       {
-        if (ue--, ue === 0) {
+        if (Me--, Me === 0) {
           var e = {
             configurable: !0,
             enumerable: !0,
             writable: !0
           };
           Object.defineProperties(console, {
-            log: ae({}, e, {
-              value: je
+            log: ge({}, e, {
+              value: Qe
             }),
-            info: ae({}, e, {
-              value: Me
+            info: ge({}, e, {
+              value: et
             }),
-            warn: ae({}, e, {
-              value: $e
+            warn: ge({}, e, {
+              value: tt
             }),
-            error: ae({}, e, {
-              value: Ne
+            error: ge({}, e, {
+              value: rt
             }),
-            group: ae({}, e, {
-              value: Ae
+            group: ge({}, e, {
+              value: nt
             }),
-            groupCollapsed: ae({}, e, {
-              value: Ie
+            groupCollapsed: ge({}, e, {
+              value: at
             }),
-            groupEnd: ae({}, e, {
-              value: Fe
+            groupEnd: ge({}, e, {
+              value: st
             })
           });
         }
-        ue < 0 && G("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        Me < 0 && pe("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var be = ne.ReactCurrentDispatcher, ye;
-    function fe(e, l, c) {
+    var We = Se.ReactCurrentDispatcher, Ue;
+    function Ne(e, l, S) {
       {
-        if (ye === void 0)
+        if (Ue === void 0)
           try {
             throw Error();
-          } catch (E) {
-            var v = E.stack.trim().match(/\n( *(at )?)/);
-            ye = v && v[1] || "";
+          } catch (ne) {
+            var M = ne.stack.trim().match(/\n( *(at )?)/);
+            Ue = M && M[1] || "";
           }
         return `
-` + ye + e;
+` + Ue + e;
       }
     }
-    var ve = !1, pe;
+    var He = !1, Ae;
     {
-      var ft = typeof WeakMap == "function" ? WeakMap : Map;
-      pe = new ft();
+      var $t = typeof WeakMap == "function" ? WeakMap : Map;
+      Ae = new $t();
     }
-    function Ue(e, l) {
-      if (!e || ve)
+    function it(e, l) {
+      if (!e || He)
         return "";
       {
-        var c = pe.get(e);
-        if (c !== void 0)
-          return c;
+        var S = Ae.get(e);
+        if (S !== void 0)
+          return S;
       }
-      var v;
-      ve = !0;
-      var E = Error.prepareStackTrace;
+      var M;
+      He = !0;
+      var ne = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var R;
-      R = be.current, be.current = null, ut();
+      var se;
+      se = We.current, We.current = null, Dt();
       try {
         if (l) {
-          var S = function() {
+          var X = function() {
             throw Error();
           };
-          if (Object.defineProperty(S.prototype, "props", {
+          if (Object.defineProperty(X.prototype, "props", {
             set: function() {
               throw Error();
             }
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
-              Reflect.construct(S, []);
-            } catch (Q) {
-              v = Q;
+              Reflect.construct(X, []);
+            } catch (be) {
+              M = be;
             }
-            Reflect.construct(e, [], S);
+            Reflect.construct(e, [], X);
           } else {
             try {
-              S.call();
-            } catch (Q) {
-              v = Q;
+              X.call();
+            } catch (be) {
+              M = be;
             }
-            e.call(S.prototype);
+            e.call(X.prototype);
           }
         } else {
           try {
             throw Error();
-          } catch (Q) {
-            v = Q;
+          } catch (be) {
+            M = be;
           }
           e();
         }
-      } catch (Q) {
-        if (Q && v && typeof Q.stack == "string") {
-          for (var g = Q.stack.split(`
-`), Y = v.stack.split(`
-`), F = g.length - 1, L = Y.length - 1; F >= 1 && L >= 0 && g[F] !== Y[L]; )
-            L--;
-          for (; F >= 1 && L >= 0; F--, L--)
-            if (g[F] !== Y[L]) {
-              if (F !== 1 || L !== 1)
+      } catch (be) {
+        if (be && M && typeof be.stack == "string") {
+          for (var H = be.stack.split(`
+`), he = M.stack.split(`
+`), ce = H.length - 1, ue = he.length - 1; ce >= 1 && ue >= 0 && H[ce] !== he[ue]; )
+            ue--;
+          for (; ce >= 1 && ue >= 0; ce--, ue--)
+            if (H[ce] !== he[ue]) {
+              if (ce !== 1 || ue !== 1)
                 do
-                  if (F--, L--, L < 0 || g[F] !== Y[L]) {
-                    var K = `
-` + g[F].replace(" at new ", " at ");
-                    return e.displayName && K.includes("<anonymous>") && (K = K.replace("<anonymous>", e.displayName)), typeof e == "function" && pe.set(e, K), K;
+                  if (ce--, ue--, ue < 0 || H[ce] !== he[ue]) {
+                    var ve = `
+` + H[ce].replace(" at new ", " at ");
+                    return e.displayName && ve.includes("<anonymous>") && (ve = ve.replace("<anonymous>", e.displayName)), typeof e == "function" && Ae.set(e, ve), ve;
                   }
-                while (F >= 1 && L >= 0);
+                while (ce >= 1 && ue >= 0);
               break;
             }
         }
       } finally {
-        ve = !1, be.current = R, dt(), Error.prepareStackTrace = E;
+        He = !1, We.current = se, Ct(), Error.prepareStackTrace = ne;
       }
-      var le = e ? e.displayName || e.name : "", tt = le ? fe(le) : "";
-      return typeof e == "function" && pe.set(e, tt), tt;
+      var Re = e ? e.displayName || e.name : "", bt = Re ? Ne(Re) : "";
+      return typeof e == "function" && Ae.set(e, bt), bt;
     }
-    function pt(e, l, c) {
-      return Ue(e, !1);
+    function kt(e, l, S) {
+      return it(e, !1);
     }
-    function mt(e) {
+    function Ot(e) {
       var l = e.prototype;
       return !!(l && l.isReactComponent);
     }
-    function me(e, l, c) {
+    function Ie(e, l, S) {
       if (e == null)
         return "";
       if (typeof e == "function")
-        return Ue(e, mt(e));
+        return it(e, Ot(e));
       if (typeof e == "string")
-        return fe(e);
+        return Ne(e);
       switch (e) {
-        case q:
-          return fe("Suspense");
-        case H:
-          return fe("SuspenseList");
+        case ye:
+          return Ne("Suspense");
+        case me:
+          return Ne("SuspenseList");
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case $:
-            return pt(e.render);
-          case O:
-            return me(e.type, l, c);
-          case B: {
-            var v = e, E = v._payload, R = v._init;
+          case ie:
+            return kt(e.render);
+          case le:
+            return Ie(e.type, l, S);
+          case fe: {
+            var M = e, ne = M._payload, se = M._init;
             try {
-              return me(R(E), l, c);
+              return Ie(se(ne), l, S);
             } catch {
             }
           }
         }
       return "";
     }
-    var he = Object.prototype.hasOwnProperty, We = {}, He = ne.ReactDebugCurrentFrame;
-    function xe(e) {
+    var Le = Object.prototype.hasOwnProperty, lt = {}, ct = Se.ReactDebugCurrentFrame;
+    function Fe(e) {
       if (e) {
-        var l = e._owner, c = me(e.type, e._source, l ? l.type : null);
-        He.setExtraStackFrame(c);
+        var l = e._owner, S = Ie(e.type, e._source, l ? l.type : null);
+        ct.setExtraStackFrame(S);
       } else
-        He.setExtraStackFrame(null);
+        ct.setExtraStackFrame(null);
     }
-    function ht(e, l, c, v, E) {
+    function Nt(e, l, S, M, ne) {
       {
-        var R = Function.call.bind(he);
-        for (var S in e)
-          if (R(e, S)) {
-            var g = void 0;
+        var se = Function.call.bind(Le);
+        for (var X in e)
+          if (se(e, X)) {
+            var H = void 0;
             try {
-              if (typeof e[S] != "function") {
-                var Y = Error((v || "React class") + ": " + c + " type `" + S + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[S] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                throw Y.name = "Invariant Violation", Y;
+              if (typeof e[X] != "function") {
+                var he = Error((M || "React class") + ": " + S + " type `" + X + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[X] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                throw he.name = "Invariant Violation", he;
               }
-              g = e[S](l, S, v, c, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (F) {
-              g = F;
+              H = e[X](l, X, M, S, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (ce) {
+              H = ce;
             }
-            g && !(g instanceof Error) && (xe(E), G("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", v || "React class", c, S, typeof g), xe(null)), g instanceof Error && !(g.message in We) && (We[g.message] = !0, xe(E), G("Failed %s type: %s", c, g.message), xe(null));
+            H && !(H instanceof Error) && (Fe(ne), pe("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", M || "React class", S, X, typeof H), Fe(null)), H instanceof Error && !(H.message in lt) && (lt[H.message] = !0, Fe(ne), pe("Failed %s type: %s", S, H.message), Fe(null));
           }
       }
     }
-    var xt = Array.isArray;
-    function _e(e) {
-      return xt(e);
+    var Pt = Array.isArray;
+    function Be(e) {
+      return Pt(e);
     }
-    function bt(e) {
+    function At(e) {
       {
-        var l = typeof Symbol == "function" && Symbol.toStringTag, c = l && e[Symbol.toStringTag] || e.constructor.name || "Object";
-        return c;
+        var l = typeof Symbol == "function" && Symbol.toStringTag, S = l && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        return S;
       }
     }
-    function yt(e) {
+    function zt(e) {
       try {
-        return Be(e), !1;
+        return ut(e), !1;
       } catch {
         return !0;
       }
     }
-    function Be(e) {
+    function ut(e) {
       return "" + e;
     }
-    function Ge(e) {
-      if (yt(e))
-        return G("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", bt(e)), Be(e);
+    function dt(e) {
+      if (zt(e))
+        return pe("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", At(e)), ut(e);
     }
-    var de = ne.ReactCurrentOwner, vt = {
+    var $e = Se.ReactCurrentOwner, It = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, Ye, qe, ge;
-    ge = {};
-    function _t(e) {
-      if (he.call(e, "ref")) {
+    }, mt, ft, Ye;
+    Ye = {};
+    function Vt(e) {
+      if (Le.call(e, "ref")) {
         var l = Object.getOwnPropertyDescriptor(e, "ref").get;
         if (l && l.isReactWarning)
           return !1;
       }
       return e.ref !== void 0;
     }
-    function gt(e) {
-      if (he.call(e, "key")) {
+    function Lt(e) {
+      if (Le.call(e, "key")) {
         var l = Object.getOwnPropertyDescriptor(e, "key").get;
         if (l && l.isReactWarning)
           return !1;
       }
       return e.key !== void 0;
     }
-    function wt(e, l) {
-      if (typeof e.ref == "string" && de.current && l && de.current.stateNode !== l) {
-        var c = X(de.current.type);
-        ge[c] || (G('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', X(de.current.type), e.ref), ge[c] = !0);
+    function Ft(e, l) {
+      if (typeof e.ref == "string" && $e.current && l && $e.current.stateNode !== l) {
+        var S = we($e.current.type);
+        Ye[S] || (pe('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', we($e.current.type), e.ref), Ye[S] = !0);
       }
     }
-    function St(e, l) {
+    function Gt(e, l) {
       {
-        var c = function() {
-          Ye || (Ye = !0, G("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", l));
+        var S = function() {
+          mt || (mt = !0, pe("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", l));
         };
-        c.isReactWarning = !0, Object.defineProperty(e, "key", {
-          get: c,
+        S.isReactWarning = !0, Object.defineProperty(e, "key", {
+          get: S,
           configurable: !0
         });
       }
     }
-    function Et(e, l) {
+    function Wt(e, l) {
       {
-        var c = function() {
-          qe || (qe = !0, G("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", l));
+        var S = function() {
+          ft || (ft = !0, pe("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", l));
         };
-        c.isReactWarning = !0, Object.defineProperty(e, "ref", {
-          get: c,
+        S.isReactWarning = !0, Object.defineProperty(e, "ref", {
+          get: S,
           configurable: !0
         });
       }
     }
-    var Tt = function(e, l, c, v, E, R, S) {
-      var g = {
+    var Ut = function(e, l, S, M, ne, se, X) {
+      var H = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: r,
         // Built-in properties that belong on the element
         type: e,
         key: l,
-        ref: c,
-        props: S,
+        ref: S,
+        props: X,
         // Record the component responsible for creating this element.
-        _owner: R
+        _owner: se
       };
-      return g._store = {}, Object.defineProperty(g._store, "validated", {
+      return H._store = {}, Object.defineProperty(H._store, "validated", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
         value: !1
-      }), Object.defineProperty(g, "_self", {
+      }), Object.defineProperty(H, "_self", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: v
-      }), Object.defineProperty(g, "_source", {
+        value: M
+      }), Object.defineProperty(H, "_source", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: E
-      }), Object.freeze && (Object.freeze(g.props), Object.freeze(g)), g;
+        value: ne
+      }), Object.freeze && (Object.freeze(H.props), Object.freeze(H)), H;
     };
-    function Rt(e, l, c, v, E) {
+    function Ht(e, l, S, M, ne) {
       {
-        var R, S = {}, g = null, Y = null;
-        c !== void 0 && (Ge(c), g = "" + c), gt(l) && (Ge(l.key), g = "" + l.key), _t(l) && (Y = l.ref, wt(l, E));
-        for (R in l)
-          he.call(l, R) && !vt.hasOwnProperty(R) && (S[R] = l[R]);
+        var se, X = {}, H = null, he = null;
+        S !== void 0 && (dt(S), H = "" + S), Lt(l) && (dt(l.key), H = "" + l.key), Vt(l) && (he = l.ref, Ft(l, ne));
+        for (se in l)
+          Le.call(l, se) && !It.hasOwnProperty(se) && (X[se] = l[se]);
         if (e && e.defaultProps) {
-          var F = e.defaultProps;
-          for (R in F)
-            S[R] === void 0 && (S[R] = F[R]);
+          var ce = e.defaultProps;
+          for (se in ce)
+            X[se] === void 0 && (X[se] = ce[se]);
         }
-        if (g || Y) {
-          var L = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
-          g && St(S, L), Y && Et(S, L);
+        if (H || he) {
+          var ue = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
+          H && Gt(X, ue), he && Wt(X, ue);
         }
-        return Tt(e, g, Y, E, v, de.current, S);
+        return Ut(e, H, he, ne, M, $e.current, X);
       }
     }
-    var we = ne.ReactCurrentOwner, Je = ne.ReactDebugCurrentFrame;
-    function ie(e) {
-      if (e) {
-        var l = e._owner, c = me(e.type, e._source, l ? l.type : null);
-        Je.setExtraStackFrame(c);
-      } else
-        Je.setExtraStackFrame(null);
-    }
-    var Se;
-    Se = !1;
+    var qe = Se.ReactCurrentOwner, pt = Se.ReactDebugCurrentFrame;
     function Ee(e) {
+      if (e) {
+        var l = e._owner, S = Ie(e.type, e._source, l ? l.type : null);
+        pt.setExtraStackFrame(S);
+      } else
+        pt.setExtraStackFrame(null);
+    }
+    var Ke;
+    Ke = !1;
+    function Je(e) {
       return typeof e == "object" && e !== null && e.$$typeof === r;
     }
-    function Ke() {
+    function ht() {
       {
-        if (we.current) {
-          var e = X(we.current.type);
+        if (qe.current) {
+          var e = we(qe.current.type);
           if (e)
             return `
 
@@ -1827,224 +1901,210 @@ Check the render method of \`` + e + "`.";
         return "";
       }
     }
-    function kt(e) {
-      {
-        if (e !== void 0) {
-          var l = e.fileName.replace(/^.*[\\\/]/, ""), c = e.lineNumber;
-          return `
-
-Check your code at ` + l + ":" + c + ".";
-        }
-        return "";
-      }
+    function Bt(e) {
+      return "";
     }
-    var Ze = {};
-    function jt(e) {
+    var yt = {};
+    function Yt(e) {
       {
-        var l = Ke();
+        var l = ht();
         if (!l) {
-          var c = typeof e == "string" ? e : e.displayName || e.name;
-          c && (l = `
+          var S = typeof e == "string" ? e : e.displayName || e.name;
+          S && (l = `
 
-Check the top-level render call using <` + c + ">.");
+Check the top-level render call using <` + S + ">.");
         }
         return l;
       }
     }
-    function Xe(e, l) {
+    function vt(e, l) {
       {
         if (!e._store || e._store.validated || e.key != null)
           return;
         e._store.validated = !0;
-        var c = jt(l);
-        if (Ze[c])
+        var S = Yt(l);
+        if (yt[S])
           return;
-        Ze[c] = !0;
-        var v = "";
-        e && e._owner && e._owner !== we.current && (v = " It was passed a child from " + X(e._owner.type) + "."), ie(e), G('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', c, v), ie(null);
+        yt[S] = !0;
+        var M = "";
+        e && e._owner && e._owner !== qe.current && (M = " It was passed a child from " + we(e._owner.type) + "."), Ee(e), pe('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', S, M), Ee(null);
       }
     }
-    function Qe(e, l) {
+    function xt(e, l) {
       {
         if (typeof e != "object")
           return;
-        if (_e(e))
-          for (var c = 0; c < e.length; c++) {
-            var v = e[c];
-            Ee(v) && Xe(v, l);
+        if (Be(e))
+          for (var S = 0; S < e.length; S++) {
+            var M = e[S];
+            Je(M) && vt(M, l);
           }
-        else if (Ee(e))
+        else if (Je(e))
           e._store && (e._store.validated = !0);
         else if (e) {
-          var E = ce(e);
-          if (typeof E == "function" && E !== e.entries)
-            for (var R = E.call(e), S; !(S = R.next()).done; )
-              Ee(S.value) && Xe(S.value, l);
+          var ne = je(e);
+          if (typeof ne == "function" && ne !== e.entries)
+            for (var se = ne.call(e), X; !(X = se.next()).done; )
+              Je(X.value) && vt(X.value, l);
         }
       }
     }
-    function Ct(e) {
+    function qt(e) {
       {
         var l = e.type;
         if (l == null || typeof l == "string")
           return;
-        var c;
+        var S;
         if (typeof l == "function")
-          c = l.propTypes;
-        else if (typeof l == "object" && (l.$$typeof === $ || // Note: Memo only checks outer props here.
+          S = l.propTypes;
+        else if (typeof l == "object" && (l.$$typeof === ie || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        l.$$typeof === O))
-          c = l.propTypes;
+        l.$$typeof === le))
+          S = l.propTypes;
         else
           return;
-        if (c) {
-          var v = X(l);
-          ht(c, e.props, "prop", v, e);
-        } else if (l.PropTypes !== void 0 && !Se) {
-          Se = !0;
-          var E = X(l);
-          G("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", E || "Unknown");
+        if (S) {
+          var M = we(l);
+          Nt(S, e.props, "prop", M, e);
+        } else if (l.PropTypes !== void 0 && !Ke) {
+          Ke = !0;
+          var ne = we(l);
+          pe("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", ne || "Unknown");
         }
-        typeof l.getDefaultProps == "function" && !l.getDefaultProps.isReactClassApproved && G("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof l.getDefaultProps == "function" && !l.getDefaultProps.isReactClassApproved && pe("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
-    function Dt(e) {
+    function Kt(e) {
       {
-        for (var l = Object.keys(e.props), c = 0; c < l.length; c++) {
-          var v = l[c];
-          if (v !== "children" && v !== "key") {
-            ie(e), G("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", v), ie(null);
+        for (var l = Object.keys(e.props), S = 0; S < l.length; S++) {
+          var M = l[S];
+          if (M !== "children" && M !== "key") {
+            Ee(e), pe("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", M), Ee(null);
             break;
           }
         }
-        e.ref !== null && (ie(e), G("Invalid attribute `ref` supplied to `React.Fragment`."), ie(null));
+        e.ref !== null && (Ee(e), pe("Invalid attribute `ref` supplied to `React.Fragment`."), Ee(null));
       }
     }
-    function et(e, l, c, v, E, R) {
+    function wt(e, l, S, M, ne, se) {
       {
-        var S = lt(e);
-        if (!S) {
-          var g = "";
-          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (g += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var Y = kt(E);
-          Y ? g += Y : g += Ke();
-          var F;
-          e === null ? F = "null" : _e(e) ? F = "array" : e !== void 0 && e.$$typeof === r ? (F = "<" + (X(e.type) || "Unknown") + " />", g = " Did you accidentally export a JSX literal instead of a component?") : F = typeof e, G("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", F, g);
+        var X = jt(e);
+        if (!X) {
+          var H = "";
+          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (H += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
+          var he = Bt();
+          he ? H += he : H += ht();
+          var ce;
+          e === null ? ce = "null" : Be(e) ? ce = "array" : e !== void 0 && e.$$typeof === r ? (ce = "<" + (we(e.type) || "Unknown") + " />", H = " Did you accidentally export a JSX literal instead of a component?") : ce = typeof e, pe("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", ce, H);
         }
-        var L = Rt(e, l, c, E, R);
-        if (L == null)
-          return L;
-        if (S) {
-          var K = l.children;
-          if (K !== void 0)
-            if (v)
-              if (_e(K)) {
-                for (var le = 0; le < K.length; le++)
-                  Qe(K[le], e);
-                Object.freeze && Object.freeze(K);
+        var ue = Ht(e, l, S, ne, se);
+        if (ue == null)
+          return ue;
+        if (X) {
+          var ve = l.children;
+          if (ve !== void 0)
+            if (M)
+              if (Be(ve)) {
+                for (var Re = 0; Re < ve.length; Re++)
+                  xt(ve[Re], e);
+                Object.freeze && Object.freeze(ve);
               } else
-                G("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                pe("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              Qe(K, e);
+              xt(ve, e);
         }
-        return e === _ ? Dt(L) : Ct(L), L;
+        return e === R ? Kt(ue) : qt(ue), ue;
       }
     }
-    function Mt(e, l, c) {
-      return et(e, l, c, !0);
+    function Jt(e, l, S) {
+      return wt(e, l, S, !0);
     }
-    function $t(e, l, c) {
-      return et(e, l, c, !1);
+    function Zt(e, l, S) {
+      return wt(e, l, S, !1);
     }
-    var Ot = $t, Nt = Mt;
-    I.Fragment = _, I.jsx = Ot, I.jsxs = Nt;
-  }()), I;
+    var Xt = Zt, Qt = Jt;
+    I$1.Fragment = R, I$1.jsx = Xt, I$1.jsxs = Qt;
+  }()), I$1;
 }
-process.env.NODE_ENV === "production" ? te.exports = gr() : te.exports = br();
-var a$1 = te.exports;
-const De = {
-  "theme-light": "_theme-light_158st_16",
-  "theme-dark": "_theme-dark_158st_36",
-  "ds-button": "_ds-button_158st_96",
-  "size-small": "_size-small_158st_120",
-  "size-medium": "_size-medium_158st_126"
+process.env.NODE_ENV === "production" ? te.exports = br() : te.exports = gr();
+var n = te.exports;
+const Oe = {
+  "ds-button": "_ds-button_i4qw7_96",
+  "size-small": "_size-small_i4qw7_120",
+  "size-medium": "_size-medium_i4qw7_126"
 }, Wr = ({
   size: t = "medium",
   disabled: r = !1,
   onClick: y,
-  text: _,
+  text: R,
   id: k,
-  isTextVisible: M = !0,
-  iconLeft: U,
-  iconRight: W
-}) => /* @__PURE__ */ a$1.jsxs(
+  isTextVisible: Y = !0,
+  iconLeft: ae,
+  iconRight: de
+}) => /* @__PURE__ */ n.jsxs(
   "button",
   {
-    "aria-label": M ? void 0 : _,
-    className: `${De["ds-button"]} ${De[`size-${t}`]}`,
+    "aria-label": Y ? void 0 : R,
+    className: `${Oe["ds-button"]} ${Oe[`size-${t}`]}`,
     "data-testid": `${k}-button`,
     type: "button",
     disabled: r,
     onClick: y,
     children: [
-      U,
-      M && _,
-      W
+      ae,
+      Y && R,
+      de
     ]
   }
 ), ee = {
-  "theme-light": "_theme-light_qp7ji_16",
-  "theme-dark": "_theme-dark_qp7ji_36",
-  "ds-button-arrow": "_ds-button-arrow_qp7ji_96",
-  "arrow-bottom": "_arrow-bottom_qp7ji_124",
-  "arrow-top": "_arrow-top_qp7ji_128",
-  "size-small": "_size-small_qp7ji_132",
-  "size-medium": "_size-medium_qp7ji_137"
+  "ds-button-arrow": "_ds-button-arrow_1w7w8_96",
+  "arrow-bottom": "_arrow-bottom_1w7w8_124",
+  "arrow-top": "_arrow-top_1w7w8_128",
+  "size-small": "_size-small_1w7w8_132",
+  "size-medium": "_size-medium_1w7w8_137"
 };
-function Oe({
+function Pe({
   ariaLabel: t,
   className: r = "",
   direction: y,
-  disabled: _,
+  disabled: R,
   id: k,
-  onClick: M,
-  size: U
+  onClick: Y,
+  size: ae
 }) {
-  return /* @__PURE__ */ a$1.jsx(
+  return /* @__PURE__ */ n.jsx(
     "button",
     {
       "aria-label": t,
       className: `
 				${ee["ds-button-arrow"]}
 				${ee[`arrow-${y}`]}
-				${ee[`size-${U}`]}
+				${ee[`size-${ae}`]}
 				${r}
 			`,
       "data-testid": `ds-button-arrow-${k}-${y}`,
-      disabled: _,
+      disabled: R,
       type: "button",
-      onClick: M
+      onClick: Y
     }
   );
 }
-const Rr = "_frame_hpida_96", yr = "_title_hpida_104", Pe = {
-  "theme-light": "_theme-light_hpida_16",
-  "theme-dark": "_theme-dark_hpida_36",
+const Rr = "_frame_i4tc8_96", yr = "_title_i4tc8_104", ke = {
   frame: Rr,
   title: yr
 };
-function Yr({ children: t, className: r = "", id: y, title: _ }) {
-  return /* @__PURE__ */ a$1.jsxs(
+function Yr({ children: t, className: r = "", id: y, title: R }) {
+  return /* @__PURE__ */ n.jsxs(
     "div",
     {
-      className: `${Pe.frame} ${r}`,
+      className: `${ke.frame} ${r}`,
       "data-testid": `ds-frame-${y}`,
       children: [
-        _ && /* @__PURE__ */ a$1.jsx(
+        R && /* @__PURE__ */ n.jsx(
           ze,
           {
-            className: Pe.title,
-            text: _,
+            className: ke.title,
+            text: R,
             id: `frame-${y}`
           }
         ),
@@ -2053,7 +2113,7 @@ function Yr({ children: t, className: r = "", id: y, title: _ }) {
     }
   );
 }
-const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
+const wr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ n.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -2062,10 +2122,10 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
     role: "img",
     "aria-label": "Checked radio button",
     children: [
-      /* @__PURE__ */ a$1.jsx("title", { children: "Checked radio button" }),
-      /* @__PURE__ */ a$1.jsxs("g", { className: "layer", children: [
-        /* @__PURE__ */ a$1.jsx("title", { children: "Layer 1" }),
-        /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx("title", { children: "Checked radio button" }),
+      /* @__PURE__ */ n.jsxs("g", { className: "layer", children: [
+        /* @__PURE__ */ n.jsx("title", { children: "Layer 1" }),
+        /* @__PURE__ */ n.jsx(
           "path",
           {
             clipRule: "evenodd",
@@ -2075,7 +2135,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
             id: "svg_1"
           }
         ),
-        /* @__PURE__ */ a$1.jsx(
+        /* @__PURE__ */ n.jsx(
           "path",
           {
             clipRule: "evenodd",
@@ -2085,7 +2145,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
             id: "svg_2"
           }
         ),
-        /* @__PURE__ */ a$1.jsx(
+        /* @__PURE__ */ n.jsx(
           "path",
           {
             clipRule: "evenodd",
@@ -2095,7 +2155,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
             id: "svg_3"
           }
         ),
-        /* @__PURE__ */ a$1.jsx(
+        /* @__PURE__ */ n.jsx(
           "path",
           {
             clipRule: "evenodd",
@@ -2105,7 +2165,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
             id: "svg_4"
           }
         ),
-        /* @__PURE__ */ a$1.jsx(
+        /* @__PURE__ */ n.jsx(
           "path",
           {
             clipRule: "evenodd",
@@ -2115,7 +2175,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
             id: "svg_5"
           }
         ),
-        /* @__PURE__ */ a$1.jsx(
+        /* @__PURE__ */ n.jsx(
           "use",
           {
             id: "svg_7",
@@ -2125,14 +2185,14 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
           }
         )
       ] }),
-      /* @__PURE__ */ a$1.jsx("defs", { children: /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx("defs", { children: /* @__PURE__ */ n.jsx(
         "symbol",
         {
           xmlns: "http://www.w3.org/2000/svg",
           height: "4",
           id: "svg_6",
           width: "4",
-          children: /* @__PURE__ */ a$1.jsx(
+          children: /* @__PURE__ */ n.jsx(
             "path",
             {
               clipRule: "evenodd",
@@ -2145,7 +2205,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
       ) })
     ]
   }
-) : t ? null : /* @__PURE__ */ a$1.jsxs(
+) : t ? null : /* @__PURE__ */ n.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -2154,8 +2214,8 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
     role: "img",
     "aria-label": "Unchecked radio button",
     children: [
-      /* @__PURE__ */ a$1.jsx("title", { children: "Unchecked radio button" }),
-      /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx("title", { children: "Unchecked radio button" }),
+      /* @__PURE__ */ n.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -2164,7 +2224,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
           fill: "gray"
         }
       ),
-      /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -2173,7 +2233,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
           fill: "#000"
         }
       ),
-      /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -2182,7 +2242,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
           fill: "#DFDFDF"
         }
       ),
-      /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -2191,7 +2251,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
           fill: "#fff"
         }
       ),
-      /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -2202,7 +2262,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
       )
     ]
   }
-), wr = () => /* @__PURE__ */ a$1.jsxs(
+), xr = () => /* @__PURE__ */ n.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -2212,8 +2272,8 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
     role: "img",
     "aria-label": "Icon select button",
     children: [
-      /* @__PURE__ */ a$1.jsx("title", { children: "Icon select button" }),
-      /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx("title", { children: "Icon select button" }),
+      /* @__PURE__ */ n.jsx(
         "path",
         {
           fill: "#DFDFDF",
@@ -2222,7 +2282,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
           clipRule: "evenodd"
         }
       ),
-      /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx(
         "path",
         {
           fill: "#fff",
@@ -2231,7 +2291,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
           clipRule: "evenodd"
         }
       ),
-      /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx(
         "path",
         {
           fill: "#000",
@@ -2240,7 +2300,7 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
           clipRule: "evenodd"
         }
       ),
-      /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx(
         "path",
         {
           fill: "gray",
@@ -2249,14 +2309,14 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
           clipRule: "evenodd"
         }
       ),
-      /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx(
         "path",
         {
           fill: "silver",
           d: "M2 2h12v13H2z"
         }
       ),
-      /* @__PURE__ */ a$1.jsx(
+      /* @__PURE__ */ n.jsx(
         "path",
         {
           fill: "#000",
@@ -2267,146 +2327,140 @@ const xr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ a$1.jsxs(
       )
     ]
   }
-), jr = "_input_e0ixd_111", Er = "_label_e0ixd_112", re = {
-  "theme-light": "_theme-light_e0ixd_16",
-  "theme-dark": "_theme-dark_e0ixd_36",
-  "wrapper-horizontal": "_wrapper-horizontal_e0ixd_96",
-  "wrapper-vertical": "_wrapper-vertical_e0ixd_102",
-  input: jr,
-  label: Er
+), Er = "_input_4dyys_111", jr = "_label_4dyys_112", re = {
+  "wrapper-horizontal": "_wrapper-horizontal_4dyys_96",
+  "wrapper-vertical": "_wrapper-vertical_4dyys_102",
+  input: Er,
+  label: jr
 };
 function Sr({ initialValue: t, onChange: r }) {
-  const [y, _] = useState(t);
+  const [y, R] = useState(t);
   return useEffect(() => {
-    _(t);
+    R(t);
   }, [t]), { value: y, handleInputChange: (k) => {
-    const M = k.target.value;
-    _(M), r && r(M);
+    const Y = k.target.value;
+    R(Y), r && r(Y);
   } };
 }
 function $r({
   className: t = "",
   type: r = "text",
   id: y,
-  disabled: _ = !1,
+  disabled: R = !1,
   readonly: k = !1,
-  initialValue: M = "",
-  labelName: U,
-  wrapperLayout: W = "vertical",
-  min: $,
-  max: q,
-  onChange: H
+  initialValue: Y = "",
+  labelName: ae,
+  wrapperLayout: de = "vertical",
+  min: ie,
+  max: ye,
+  onChange: me
 }) {
-  const { value: O, handleInputChange: B } = Sr({ initialValue: M, onChange: H }), Z = `ds-input-${y}`;
-  return /* @__PURE__ */ a$1.jsxs(
+  const { value: le, handleInputChange: fe } = Sr({ initialValue: Y, onChange: me }), xe = `ds-input-${y}`;
+  return /* @__PURE__ */ n.jsxs(
     "div",
     {
-      className: `${re[`wrapper-${W}`]} ${t}`,
-      "data-testid": Z,
+      className: `${re[`wrapper-${de}`]} ${t}`,
+      "data-testid": xe,
       children: [
-        U && /* @__PURE__ */ a$1.jsx(
+        ae && /* @__PURE__ */ n.jsx(
           "label",
           {
             className: re.label,
             "data-testid": `ds-input-label-${y}`,
-            htmlFor: Z,
-            children: U
+            htmlFor: xe,
+            children: ae
           }
         ),
-        /* @__PURE__ */ a$1.jsx(
+        /* @__PURE__ */ n.jsx(
           "input",
           {
-            id: Z,
+            id: xe,
             className: re.input,
             "data-testid": `ds-input-input-${y}`,
             type: r,
-            disabled: _,
+            disabled: R,
             readOnly: k,
-            value: O,
-            min: $ ?? void 0,
-            max: q ?? void 0,
-            name: Z,
-            onChange: B
+            value: le,
+            min: ie ?? void 0,
+            max: ye ?? void 0,
+            name: xe,
+            onChange: fe
           }
         )
       ]
     }
   );
 }
-const Tr = "_wrapper_12q8r_96", Cr = "_disabled_12q8r_108", kr = "_input_12q8r_113", Dr = "_icon_12q8r_123", N = {
-  "theme-light": "_theme-light_12q8r_16",
-  "theme-dark": "_theme-dark_12q8r_36",
+const Tr = "_wrapper_s5be2_96", Cr = "_disabled_s5be2_108", Dr = "_input_s5be2_113", Or = "_icon_s5be2_123", N$1 = {
   wrapper: Tr,
   disabled: Cr,
-  input: kr,
-  icon: Dr
+  input: Dr,
+  icon: Or
 };
-function Or({ initialChecked: t, onChange: r }) {
-  const [y, _] = useState(t);
+function Pr({ initialChecked: t, onChange: r }) {
+  const [y, R] = useState(t);
   return useEffect(() => {
-    _(t);
+    R(t);
   }, [t]), {
     checked: y,
     handleChange: (k) => {
-      r && r(), _(k.target.checked);
+      r && r(), R(k.target.checked);
     }
   };
 }
-const qr = ({
+const Lr = ({
   initialChecked: t = !1,
   disabled: r = !1,
   id: y,
-  onChange: _,
+  onChange: R,
   name: k,
-  text: M
+  text: Y
 }) => {
-  const { checked: U, handleChange: W } = Or({
+  const { checked: ae, handleChange: de } = Pr({
     initialChecked: t,
-    onChange: _
+    onChange: R
   });
-  return /* @__PURE__ */ a$1.jsxs(
+  return /* @__PURE__ */ n.jsxs(
     "label",
     {
-      "aria-label": M.visible ? void 0 : M.content,
-      className: `${N.wrapper} ${r ? N.disabled : ""}`,
+      "aria-label": Y.visible ? void 0 : Y.content,
+      className: `${N$1.wrapper} ${r ? N$1.disabled : ""}`,
       "data-testid": `${y}-radio`,
       children: [
-        /* @__PURE__ */ a$1.jsx(
+        /* @__PURE__ */ n.jsx(
           "input",
           {
-            className: N.input,
-            checked: U,
+            className: N$1.input,
+            checked: ae,
             "data-testid": `${y}-radio-input`,
             disabled: r,
             name: k,
             type: "radio",
             value: y,
-            onChange: W
+            onChange: de
           }
         ),
-        /* @__PURE__ */ a$1.jsx(
+        /* @__PURE__ */ n.jsx(
           "span",
           {
-            className: N.icon,
+            className: N$1.icon,
             "data-testid": `${y}-radio-icon`,
-            children: /* @__PURE__ */ a$1.jsx(xr, { isChecked: U })
+            children: /* @__PURE__ */ n.jsx(wr, { isChecked: ae })
           }
         ),
-        M.visible && /* @__PURE__ */ a$1.jsx(
+        Y.visible && /* @__PURE__ */ n.jsx(
           ze,
           {
-            className: N.text,
+            className: N$1.text,
             id: y,
-            text: M.content
+            text: Y.content
           }
         )
       ]
     }
   );
-}, Pr = "_wrapper_1id5f_96", Vr = "_label_1id5f_100", Fr = "_select_1id5f_105", zr = "_arrow_1id5f_115", A = {
-  "theme-light": "_theme-light_1id5f_16",
-  "theme-dark": "_theme-dark_1id5f_36",
-  wrapper: Pr,
+}, kr = "_wrapper_upk41_96", Vr = "_label_upk41_100", Fr = "_select_upk41_105", zr = "_arrow_upk41_115", A = {
+  wrapper: kr,
   label: Vr,
   select: Fr,
   arrow: zr
@@ -2415,143 +2469,139 @@ function Ir(t) {
   const [r, y] = useState(t);
   return {
     value: r,
-    handleChange: (_) => {
-      y(_.target.value);
+    handleChange: (R) => {
+      y(R.target.value);
     }
   };
 }
-function Lr({
+function Ur({
   className: t = "",
   id: r,
   required: y = !1,
-  disabled: _ = !1,
+  disabled: R = !1,
   modelValue: k,
-  options: M,
-  labelName: U,
-  onSelect: W
+  options: Y,
+  labelName: ae,
+  onSelect: de
 }) {
-  const { value: $, handleChange: q } = Ir(k), H = (O) => {
-    q(O), W(O);
+  const { value: ie, handleChange: ye } = Ir(k), me = (le) => {
+    ye(le), de(le);
   };
-  return /* @__PURE__ */ a$1.jsxs("div", { className: `${A.wrapper} ${t}`, children: [
-    U && /* @__PURE__ */ a$1.jsx(
+  return /* @__PURE__ */ n.jsxs("div", { className: `${A.wrapper} ${t}`, children: [
+    ae && /* @__PURE__ */ n.jsx(
       "label",
       {
         className: A.label,
         "data-testid": `ds-select-label-${r}`,
         htmlFor: r,
-        children: U
+        children: ae
       }
     ),
-    /* @__PURE__ */ a$1.jsx(
+    /* @__PURE__ */ n.jsx(
       "select",
       {
         className: A.select,
         "data-testid": `ds-select-select-${r}`,
-        disabled: _,
+        disabled: R,
         id: r,
         name: r,
-        onChange: H,
+        onChange: me,
         required: y,
-        value: $,
-        children: M.map((O, B) => /* @__PURE__ */ a$1.jsx(
+        value: ie,
+        children: Y.map((le, fe) => /* @__PURE__ */ n.jsx(
           "option",
           {
             className: A.option,
-            "data-testid": `ds-select-option-${r}-${B}`,
-            value: O.value,
-            children: O.name
+            "data-testid": `ds-select-option-${r}-${fe}`,
+            value: le.value,
+            children: le.name
           },
-          `${r}-${O.value}`
+          `${r}-${le.value}`
         ))
       }
     ),
-    /* @__PURE__ */ a$1.jsx("span", { className: A.arrow, children: /* @__PURE__ */ a$1.jsx(wr, {}) })
+    /* @__PURE__ */ n.jsx("span", { className: A.arrow, children: /* @__PURE__ */ n.jsx(xr, {}) })
   ] });
 }
 const Ve = {
-  "theme-light": "_theme-light_p8wyg_16",
-  "theme-dark": "_theme-dark_p8wyg_36",
-  "ds-stepper": "_ds-stepper_p8wyg_96",
-  "state-disabled": "_state-disabled_p8wyg_111"
+  "ds-stepper": "_ds-stepper_8xv2v_96",
+  "state-disabled": "_state-disabled_8xv2v_111"
 };
 function Nr({
   modelValue: t,
   onIncrease: r,
   onDecrease: y
 }) {
-  const [_, k] = useState(t);
+  const [R, k] = useState(t);
   return useEffect(() => {
     k(t);
-  }, [t]), { value: _, handleIncrease: () => {
+  }, [t]), { value: R, handleIncrease: () => {
     r && r();
   }, handleDecrease: () => {
     y && y();
   } };
 }
-function Ur({
+function qr({
   className: t = "",
   id: r,
   modelValue: y,
-  disabled: _ = !1,
+  disabled: R = !1,
   onIncrease: k,
-  onDecrease: M
+  onDecrease: Y
 }) {
-  const { value: U, handleIncrease: W, handleDecrease: $ } = Nr({
+  const { value: ae, handleIncrease: de, handleDecrease: ie } = Nr({
     modelValue: y,
     onIncrease: k,
-    onDecrease: M
+    onDecrease: Y
   });
-  return /* @__PURE__ */ a$1.jsxs(
+  return /* @__PURE__ */ n.jsxs(
     "div",
     {
       className: `
         ${Ve["ds-stepper"]}
-        ${_ ? Ve["state-disabled"] : ""}
+        ${R ? Ve["state-disabled"] : ""}
         ${t}
       `,
       children: [
-        /* @__PURE__ */ a$1.jsx(
+        /* @__PURE__ */ n.jsx(
           $r,
           {
             id: `stepper-${r}`,
-            initialValue: U,
+            initialValue: ae,
             readonly: !0
           }
         ),
-        /* @__PURE__ */ a$1.jsx(
-          Oe,
+        /* @__PURE__ */ n.jsx(
+          Pe,
           {
             ariaLabel: "Increase",
             direction: "top",
-            disabled: _,
+            disabled: R,
             id: r,
             size: "small",
-            onClick: W
+            onClick: de
           }
         ),
-        /* @__PURE__ */ a$1.jsx(
-          Oe,
+        /* @__PURE__ */ n.jsx(
+          Pe,
           {
             ariaLabel: "Decrease",
             direction: "bottom",
-            disabled: _,
+            disabled: R,
             id: r,
             size: "small",
-            onClick: $
+            onClick: ie
           }
         )
       ]
     }
   );
 }
-const Ar = "_DSText_pg4yx_96", Hr = {
-  "theme-light": "_theme-light_pg4yx_16",
-  "theme-dark": "_theme-dark_pg4yx_36",
+const Ar = "_DSText_zb3qg_96", Hr = {
   DSText: Ar
 };
 function ze({ className: t = "", id: r, text: y }) {
-  return /* @__PURE__ */ a$1.jsx(
+  return /* @__PURE__ */ n.jsx(
     "p",
     {
       className: `${Hr.DSText} ${t}`,
@@ -2567,17 +2617,15 @@ function useSyncLang() {
     r && t.changeLanguage(r);
   }), useEffect(() => {
     const r = new MutationObserver((y) => {
-      for (const _ of y)
-        _.type === "attributes" && _.attributeName === "lang" && t.changeLanguage(_.target.lang);
+      for (const R of y)
+        R.type === "attributes" && R.attributeName === "lang" && t.changeLanguage(R.target.lang);
     });
     return r.observe(document.documentElement, { attributes: !0 }), () => {
       r.disconnect();
     };
   }, [t]);
 }
-const days = "_days_1xeii_96", styles$c = {
-  "theme-light": "_theme-light_1xeii_16",
-  "theme-dark": "_theme-dark_1xeii_36",
+const days = "_days_qp2wh_96", styles$c = {
   days
 };
 function useCalendar() {
@@ -2589,14 +2637,14 @@ function useDays() {
   const { calendarDomain: t } = useCalendar(), { t: r } = useTranslation(), y = useMemo(
     () => {
       var k;
-      return (k = t.calendar) == null ? void 0 : k.map((M, U) => ({
-        id: U,
-        value: M.value,
-        status: M.status
+      return (k = t.calendar) == null ? void 0 : k.map((Y, ae) => ({
+        id: ae,
+        value: Y.value,
+        status: Y.status
       }));
     },
     [t.calendar]
-  ), _ = useMemo(
+  ), R = useMemo(
     () => [
       { id: 0, name: r("ma-calendar.days.sunday") },
       { id: 1, name: r("ma-calendar.days.monday") },
@@ -2610,15 +2658,13 @@ function useDays() {
   );
   return {
     monthDays: y,
-    weekDays: _
+    weekDays: R
   };
 }
-const day$1 = "_day_12et3_102", styles$b = {
-  "theme-light": "_theme-light_12et3_16",
-  "theme-dark": "_theme-dark_12et3_36",
-  "month-days": "_month-days_12et3_96",
+const day$1 = "_day_cut46_102", styles$b = {
+  "month-days": "_month-days_cut46_96",
   day: day$1,
-  "day-active": "_day-active_12et3_107"
+  "day-active": "_day-active_cut46_107"
 }, MonthDays = observer(() => {
   const { monthDays: t } = useDays();
   return t && /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -2650,10 +2696,8 @@ const day$1 = "_day_12et3_102", styles$b = {
       )
     }
   );
-}), day = "_day_1v33v_104", styles$a = {
-  "theme-light": "_theme-light_1v33v_16",
-  "theme-dark": "_theme-dark_1v33v_36",
-  "week-days": "_week-days_1v33v_96",
+}), day = "_day_jydkk_104", styles$a = {
+  "week-days": "_week-days_jydkk_96",
   day
 }, WeekDays = observer(() => {
   const { weekDays: t } = useDays();
@@ -2673,7 +2717,7 @@ const day$1 = "_day_12et3_102", styles$b = {
 function useMonthSwitcher() {
   const { t } = useTranslation(), { calendarDomain: r } = useCalendar(), y = (k) => {
     r.changeCalendarByMonth(Number(k.currentTarget.value));
-  }, _ = useMemo(
+  }, R = useMemo(
     () => ({
       months: [
         {
@@ -2731,13 +2775,13 @@ function useMonthSwitcher() {
   return {
     handleSelectChange: y,
     month: r.month,
-    months: _.months
+    months: R.months
   };
 }
 const MonthSwitcher = observer(() => {
   const { handleSelectChange: t, month: r, months: y } = useMonthSwitcher();
   return r !== null && /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Lr,
+    Ur,
     {
       id: "month-switcher",
       modelValue: r,
@@ -2761,7 +2805,7 @@ function useYearSwitcher() {
 const YearSwitcher = observer(() => {
   const { decreaseYear: t, increaseYear: r, year: y } = useYearSwitcher();
   return y && /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Ur,
+    qr,
     {
       id: "calendar-year",
       modelValue: y,
@@ -2783,9 +2827,7 @@ function useWrapper$1() {
     ).title
   };
 }
-const wrapper$2 = "_wrapper_s3u64_96", styles$9 = {
-  "theme-light": "_theme-light_s3u64_16",
-  "theme-dark": "_theme-dark_s3u64_36",
+const wrapper$2 = "_wrapper_1xgp9_96", styles$9 = {
   wrapper: wrapper$2
 }, Wrapper$3 = observer(() => {
   const { title: t } = useWrapper$1();
@@ -2803,8 +2845,85 @@ const wrapper$2 = "_wrapper_s3u64_96", styles$9 = {
     }
   );
 }), CalendarView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$3.Provider, { value: calendarDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$3, {}) });
-var i = Object.defineProperty, a = (t, r, y) => r in t ? i(t, r, { enumerable: !0, configurable: !0, writable: !0, value: y }) : t[r] = y, n = (t, r, y) => (a(t, typeof r != "symbol" ? r + "" : r, y), y);
-class d {
+var v = Object.defineProperty, E = (t, r, y) => r in t ? v(t, r, { enumerable: !0, configurable: !0, writable: !0, value: y }) : t[r] = y, c = (t, r, y) => (E(t, typeof r != "symbol" ? r + "" : r, y), y);
+const i = class Ge {
+  constructor(r) {
+    c(this, "config"), this.config = r;
+  }
+  static getInstance(r) {
+    for (; Ge.lock; )
+      ;
+    return Ge.lock = !0, Ge.instance || (Ge.instance = new Ge(r)), Ge.lock = !1, Ge.instance;
+  }
+  set(r, y) {
+    this.config[r] !== y && (this.config[r] = y);
+  }
+  get(r) {
+    return this.config[r];
+  }
+};
+c(i, "instance"), c(i, "lock", !1);
+class x {
+  constructor() {
+    c(this, "UNKNOWN_ERROR_MESSAGE", "Unknown error message");
+  }
+  CatchError(r, y) {
+    const R = this;
+    return (k, Y, ae) => {
+      const de = ae.value;
+      ae.value = function(...ie) {
+        try {
+          return de.apply(this, ie);
+        } catch (ye) {
+          throw R.createError(
+            r,
+            y,
+            ye
+          );
+        }
+      };
+    };
+  }
+  createError(r, y, R) {
+    const k = this.generateErrorMessage(R), Y = new Error(k);
+    return Y.name = `[${r}]<${y}>`, Y;
+  }
+  generateErrorMessage(r) {
+    return r instanceof Error && r.message.length ? r.message : this.UNKNOWN_ERROR_MESSAGE;
+  }
+}
+const p = new x(), g = {
+  CatchError: p.CatchError.bind(p)
+};
+var W = Object.defineProperty, O = Object.getOwnPropertyDescriptor, N = (t, r, y, R) => {
+  for (var k = O(r, y), Y = t.length - 1, ae; Y >= 0; Y--)
+    (ae = t[Y]) && (k = ae(r, y, k) || k);
+  return k && W(r, y, k), k;
+};
+class C {
+  constructor(r) {
+    c(this, "config"), this.config = r;
+  }
+  add(r, y) {
+    return this.config[r] = y, this;
+  }
+  build() {
+    return this.validateConfig(), this.config;
+  }
+  validateConfig() {
+    if (this.config === void 0)
+      throw new Error("missing config");
+    for (const [r, y] of Object.entries(
+      this.config
+    ))
+      if (y === void 0)
+        throw new Error(`missing ${r}`);
+  }
+}
+N([
+  g.CatchError("AppConfigBuilderDomain", "validateConfig")
+], C.prototype, "validateConfig");
+class T {
   restartApplication() {
     window.location.reload();
   }
@@ -2812,9 +2931,9 @@ class d {
     window.location.href = "https://google.com";
   }
 }
-class u {
+class Z {
   constructor() {
-    n(this, "appControllerRepository"), this.appControllerRepository = new d();
+    c(this, "appControllerRepository"), this.appControllerRepository = new T();
   }
   restartApplication() {
     this.appControllerRepository.restartApplication();
@@ -2823,10 +2942,78 @@ class u {
     this.appControllerRepository.shutdownApplication();
   }
 }
+var m = /* @__PURE__ */ ((t) => (t.LANGUAGE = "lang", t))(m || {}), _ = Object.defineProperty, b = Object.getOwnPropertyDescriptor, L = (t, r, y, R) => {
+  for (var k = b(r, y), Y = t.length - 1, ae; Y >= 0; Y--)
+    (ae = t[Y]) && (k = ae(r, y, k) || k);
+  return k && _(r, y, k), k;
+};
+class u {
+  applyLanguage(r) {
+    const y = window.document.querySelector("html");
+    if (y)
+      y.setAttribute(m.LANGUAGE, r);
+    else
+      throw new Error("Element HTML not found");
+  }
+}
+L([
+  g.CatchError("AttributeLanguageStrategy", "applyLanguage")
+], u.prototype, "applyLanguage");
+var D = Object.defineProperty, I = Object.getOwnPropertyDescriptor, $ = (t, r, y, R) => {
+  for (var k = I(r, y), Y = t.length - 1, ae; Y >= 0; Y--)
+    (ae = t[Y]) && (k = ae(r, y, k) || k);
+  return k && D(r, y, k), k;
+};
+class B {
+  applyLanguage(r) {
+    const y = window.document.querySelector("html"), R = `language-${r}`;
+    if (y)
+      y.className = R;
+    else
+      throw new Error("Element HTML not found");
+  }
+}
+$([
+  g.CatchError("ClassLanguageStrategy", "applyLanguage")
+], B.prototype, "applyLanguage");
+var h = /* @__PURE__ */ ((t) => (t.THEME = "theme", t))(h || {}), U = Object.defineProperty, G = Object.getOwnPropertyDescriptor, q = (t, r, y, R) => {
+  for (var k = G(r, y), Y = t.length - 1, ae; Y >= 0; Y--)
+    (ae = t[Y]) && (k = ae(r, y, k) || k);
+  return k && U(r, y, k), k;
+};
+class d {
+  applyTheme(r) {
+    const y = window.document.querySelector("html");
+    if (y)
+      y.setAttribute(h.THEME, r);
+    else
+      throw new Error("Element HTML not found");
+  }
+}
+q([
+  g.CatchError("AttributeThemeStrategy", "applyTheme")
+], d.prototype, "applyTheme");
+var K = Object.defineProperty, Q = Object.getOwnPropertyDescriptor, F = (t, r, y, R) => {
+  for (var k = Q(r, y), Y = t.length - 1, ae; Y >= 0; Y--)
+    (ae = t[Y]) && (k = ae(r, y, k) || k);
+  return k && K(r, y, k), k;
+};
+class V {
+  applyTheme(r) {
+    const y = window.document.querySelector("html"), R = `theme-${r}`;
+    if (y)
+      y.className = R;
+    else
+      throw new Error("Element HTML not found");
+  }
+}
+F([
+  g.CatchError("ClassThemeStrategy", "applyTheme")
+], V.prototype, "applyTheme");
 class ShutdownRepository {
   constructor() {
-    D(this, "appController");
-    this.appController = new u();
+    oe(this, "appController");
+    this.appController = new Z();
   }
   restartApplication() {
     this.appController.restartApplication();
@@ -2838,8 +3025,8 @@ class ShutdownRepository {
 var EShutdownPresets = /* @__PURE__ */ ((t) => (t.RESTART = "restart", t.SHUTDOWN = "shutdown", t))(EShutdownPresets || {});
 class ShutdownDomain {
   constructor() {
-    D(this, "shutdownRepository");
-    D(this, "preset", EShutdownPresets.SHUTDOWN);
+    oe(this, "shutdownRepository");
+    oe(this, "preset", EShutdownPresets.SHUTDOWN);
     makeAutoObservable(this), this.shutdownRepository = new ShutdownRepository();
   }
   changePreset(r) {
@@ -2868,9 +3055,7 @@ const shutdownDomain = new ShutdownDomain(), DomainContext$2 = createContext(shu
       text: t.text
     }
   );
-}, controller$1 = "_controller_1dsur_96", styles$8 = {
-  "theme-light": "_theme-light_1dsur_16",
-  "theme-dark": "_theme-dark_1dsur_36",
+}, controller$1 = "_controller_128l9_96", styles$8 = {
   controller: controller$1
 };
 function useShutdown() {
@@ -2908,9 +3093,7 @@ const useOk = () => {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Cancel, {})
     ]
   }
-), description = "_description_5pr9f_96", styles$7 = {
-  "theme-light": "_theme-light_5pr9f_16",
-  "theme-dark": "_theme-dark_5pr9f_36",
+), description = "_description_7aii1_96", styles$7 = {
   description
 };
 function useDescription() {
@@ -2942,12 +3125,10 @@ const Description = () => {
       }
     )
   ] });
-}, presets$1 = "_presets_uwzih_96", styles$6 = {
-  "theme-light": "_theme-light_uwzih_16",
-  "theme-dark": "_theme-dark_uwzih_36",
+}, presets$1 = "_presets_91z49_96", styles$6 = {
   presets: presets$1
 }, usePresets$1 = () => {
-  const { t } = useTranslation(), { shutdownDomain: r } = useShutdown(), [y, _] = useState(
+  const { t } = useTranslation(), { shutdownDomain: r } = useShutdown(), [y, R] = useState(
     r.preset
   );
   return {
@@ -2963,30 +3144,28 @@ const Description = () => {
         id: "ma-shutdown-preset-restart"
       }
     ], [t]),
-    setPreset: (U) => {
-      r.changePreset(U), _(U);
+    setPreset: (ae) => {
+      r.changePreset(ae), R(ae);
     },
     selectedPreset: y
   };
 }, Presets$1 = observer(() => {
   const { presets: t, selectedPreset: r, setPreset: y } = usePresets$1();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$6.presets, children: t.map((_) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-    qr,
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$6.presets, children: t.map((R) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Lr,
     {
-      initialChecked: _.preset === r,
-      id: _.id,
+      initialChecked: R.preset === r,
+      id: R.id,
       name: "ma-timer-presets",
-      onChange: () => y(_.preset),
+      onChange: () => y(R.preset),
       text: {
-        content: _.content,
+        content: R.content,
         visible: !0
       }
     },
-    _.id
+    R.id
   )) });
-}), wrapper$1 = "_wrapper_wbu18_96", styles$5 = {
-  "theme-light": "_theme-light_wbu18_16",
-  "theme-dark": "_theme-dark_wbu18_36",
+}), wrapper$1 = "_wrapper_vb7vs_96", styles$5 = {
   wrapper: wrapper$1
 }, Wrapper$2 = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$5.wrapper, children: [
   /* @__PURE__ */ jsxRuntimeExports.jsx(Description, {}),
@@ -2996,23 +3175,23 @@ const Description = () => {
 var ETimerPresets = /* @__PURE__ */ ((t) => (t.THREE_MINUTES = "3-min", t.FIVE_MINUTES = "5-min", t.TEN_MINUTES = "10-min", t.FIFTEEN_MINUTES = "15-min", t.CUSTOM_MINUTES = "custom", t))(ETimerPresets || {}), ETimerTime = /* @__PURE__ */ ((t) => (t.HOURS = "hours", t.MINUTES = "minutes", t.SECONDS = "seconds", t))(ETimerTime || {}), ETimerStatus = /* @__PURE__ */ ((t) => (t.PLAY = "play", t.STOP = "stop", t.RESET = "reset", t))(ETimerStatus || {});
 class TimerControllerDomain {
   constructor(r) {
-    D(this, "timerDomain");
-    D(this, "increaseSeconds", () => {
+    oe(this, "timerDomain");
+    oe(this, "increaseSeconds", () => {
       this.timerDomain.time.seconds !== 59 && this.timerDomain.addTime(ETimerTime.SECONDS, 1);
     });
-    D(this, "decreaseSeconds", () => {
+    oe(this, "decreaseSeconds", () => {
       this.timerDomain.time.seconds !== 0 && this.timerDomain.subtractTime(ETimerTime.SECONDS, 1);
     });
-    D(this, "increaseMinutes", () => {
+    oe(this, "increaseMinutes", () => {
       this.timerDomain.time.minutes !== 59 && this.timerDomain.addTime(ETimerTime.MINUTES, 1);
     });
-    D(this, "decreaseMinutes", () => {
+    oe(this, "decreaseMinutes", () => {
       this.timerDomain.time.minutes !== 0 && this.timerDomain.subtractTime(ETimerTime.MINUTES, 1);
     });
-    D(this, "increaseHours", () => {
+    oe(this, "increaseHours", () => {
       this.timerDomain.time.hours !== 59 && this.timerDomain.addTime(ETimerTime.HOURS, 1);
     });
-    D(this, "decreaseHours", () => {
+    oe(this, "decreaseHours", () => {
       this.timerDomain.time.hours !== 0 && this.timerDomain.subtractTime(ETimerTime.HOURS, 1);
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -3020,23 +3199,23 @@ class TimerControllerDomain {
 }
 class TimerPlayerDomain {
   constructor(r) {
-    D(this, "timerDomain");
-    D(this, "interval", null);
-    D(this, "start", () => {
+    oe(this, "timerDomain");
+    oe(this, "interval", null);
+    oe(this, "start", () => {
       this.timerDomain.setStatus(ETimerStatus.PLAY), this.interval = setInterval(() => {
         this.timerDomain.time.hours === 0 && this.timerDomain.time.minutes === 0 && this.timerDomain.time.seconds === 0 && this.reset(), this.timerDomain.time.hours >= 1 && this.timerDomain.time.minutes === 0 && this.timerDomain.time.seconds === 0 ? (this.timerDomain.time.hours--, this.timerDomain.time.minutes = 59, this.timerDomain.time.seconds = 59) : this.timerDomain.time.seconds === 0 && this.timerDomain.time.minutes >= 1 ? (this.timerDomain.time.seconds = 59, this.timerDomain.time.minutes--) : this.timerDomain.time.seconds--;
       }, 1e3);
     });
-    D(this, "stop", () => {
+    oe(this, "stop", () => {
       this.timerDomain.setStatus(ETimerStatus.STOP), this.clearTimerInterval();
     });
-    D(this, "reset", () => {
+    oe(this, "reset", () => {
       this.timerDomain.setStatus(ETimerStatus.RESET), this.clearTimerInterval(), this.restartTime();
     });
-    D(this, "clearTimerInterval", () => {
+    oe(this, "clearTimerInterval", () => {
       this.interval && clearInterval(this.interval);
     });
-    D(this, "restartTime", () => {
+    oe(this, "restartTime", () => {
       this.timerDomain.time.hours = 0, this.timerDomain.time.minutes = 0, this.timerDomain.time.seconds = 0;
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -3044,25 +3223,25 @@ class TimerPlayerDomain {
 }
 class TimerPresetsDomain {
   constructor(r) {
-    D(this, "preset", ETimerPresets.CUSTOM_MINUTES);
-    D(this, "timerDomain");
-    D(this, "presetTimes", {
+    oe(this, "preset", ETimerPresets.CUSTOM_MINUTES);
+    oe(this, "timerDomain");
+    oe(this, "presetTimes", {
       [ETimerPresets.CUSTOM_MINUTES]: 0,
       [ETimerPresets.THREE_MINUTES]: 3,
       [ETimerPresets.FIVE_MINUTES]: 5,
       [ETimerPresets.TEN_MINUTES]: 10,
       [ETimerPresets.FIFTEEN_MINUTES]: 15
     });
-    D(this, "setPreset", (r) => {
+    oe(this, "setPreset", (r) => {
       this.setPresetStatus(r), this.resetSecondsAndHours(), this.setMinutes(r);
     });
-    D(this, "setMinutes", (r) => {
+    oe(this, "setMinutes", (r) => {
       this.timerDomain.setTime(ETimerTime.MINUTES, this.presetTimes[r]);
     });
-    D(this, "setPresetStatus", (r) => {
+    oe(this, "setPresetStatus", (r) => {
       this.preset !== r && (this.preset = r);
     });
-    D(this, "resetSecondsAndHours", () => {
+    oe(this, "resetSecondsAndHours", () => {
       this.timerDomain.time.seconds !== 0 && this.timerDomain.setTime(ETimerTime.SECONDS, 0), this.timerDomain.time.hours !== 0 && this.timerDomain.setTime(ETimerTime.HOURS, 0);
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -3070,33 +3249,31 @@ class TimerPresetsDomain {
 }
 class TimerDomain {
   constructor() {
-    D(this, "controllerDomain");
-    D(this, "playerDomain");
-    D(this, "presetsDomain");
-    D(this, "time", {
+    oe(this, "controllerDomain");
+    oe(this, "playerDomain");
+    oe(this, "presetsDomain");
+    oe(this, "time", {
       seconds: 0,
       minutes: 0,
       hours: 0
     });
-    D(this, "status", ETimerStatus.RESET);
-    D(this, "addTime", (r, y) => {
+    oe(this, "status", ETimerStatus.RESET);
+    oe(this, "addTime", (r, y) => {
       this.time[r] += y;
     });
-    D(this, "subtractTime", (r, y) => {
+    oe(this, "subtractTime", (r, y) => {
       this.time[r] -= y;
     });
-    D(this, "setTime", (r, y) => {
+    oe(this, "setTime", (r, y) => {
       this.time[r] = y;
     });
-    D(this, "setStatus", (r) => {
+    oe(this, "setStatus", (r) => {
       this.status = r;
     });
     makeAutoObservable(this), this.controllerDomain = new TimerControllerDomain(this), this.playerDomain = new TimerPlayerDomain(this), this.presetsDomain = new TimerPresetsDomain(this);
   }
 }
-const timerDomain = new TimerDomain(), DomainContext$1 = createContext(timerDomain), controller = "_controller_15w9q_96", styles$4 = {
-  "theme-light": "_theme-light_15w9q_16",
-  "theme-dark": "_theme-dark_15w9q_36",
+const timerDomain = new TimerDomain(), DomainContext$1 = createContext(timerDomain), controller = "_controller_hsr5s_96", styles$4 = {
   controller
 };
 var State = /* @__PURE__ */ ((t) => (t.ACTIVE = "active", t.DISABLED = "disabled", t.IDLE = "idle", t.LOADING = "loading", t))(State || {});
@@ -3128,13 +3305,13 @@ const Controller = observer(() => {
     hours: t,
     minutes: r,
     seconds: y,
-    increaseSeconds: _,
+    increaseSeconds: R,
     decreaseSeconds: k,
-    increaseMinutes: M,
-    decreaseMinutes: U,
-    increaseHours: W,
-    decreaseHours: $,
-    isDisabled: q
+    increaseMinutes: Y,
+    decreaseMinutes: ae,
+    increaseHours: de,
+    decreaseHours: ie,
+    isDisabled: ye
   } = useController();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
@@ -3143,51 +3320,49 @@ const Controller = observer(() => {
       className: styles$4.controller,
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Ur,
+          qr,
           {
             id: "hours",
             modelValue: t,
-            onIncrease: W,
-            onDecrease: $,
-            disabled: q
+            onIncrease: de,
+            onDecrease: ie,
+            disabled: ye
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Ur,
+          qr,
           {
             id: "minutes",
             modelValue: r,
-            onIncrease: M,
-            onDecrease: U,
-            disabled: q
+            onIncrease: Y,
+            onDecrease: ae,
+            disabled: ye
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Ur,
+          qr,
           {
             id: "seconds",
             modelValue: y,
-            onIncrease: _,
+            onIncrease: R,
             onDecrease: k,
-            disabled: q
+            disabled: ye
           }
         )
       ]
     }
   );
-}), player = "_player_covgd_96", styles$3 = {
-  "theme-light": "_theme-light_covgd_16",
-  "theme-dark": "_theme-dark_covgd_36",
+}), player = "_player_1lb22_96", styles$3 = {
   player
 }, useReset = () => {
   const { t } = useTranslation(), { timerDomain: r } = useTimer(), y = useMemo(() => ({
     reset: t("ma-timer.reset")
-  }), [t]), _ = () => {
+  }), [t]), R = () => {
     k || r.playerDomain.reset();
   }, k = r.status === ETimerStatus.PLAY || r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0;
   return {
     disabled: k,
-    onClick: _,
+    onClick: R,
     text: y.reset
   };
 }, Reset = observer(() => {
@@ -3205,12 +3380,12 @@ const Controller = observer(() => {
   const { t } = useTranslation(), { timerDomain: r } = useTimer(), y = useMemo(() => ({
     start: t("ma-timer.start"),
     stop: t("ma-timer.stop")
-  }), [t]), _ = () => {
+  }), [t]), R = () => {
     r.status === ETimerStatus.PLAY ? r.playerDomain.stop() : r.playerDomain.start();
   }, k = r.status === ETimerStatus.PLAY ? y.stop : y.start;
   return {
     disabled: r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0,
-    onClick: _,
+    onClick: R,
     text: k
   };
 }, StartAndStop = observer(() => {
@@ -3234,12 +3409,10 @@ const Controller = observer(() => {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Reset, {})
     ]
   }
-), presets = "_presets_2r2rz_96", styles$2 = {
-  "theme-light": "_theme-light_2r2rz_16",
-  "theme-dark": "_theme-dark_2r2rz_36",
+), presets = "_presets_1t37w_96", styles$2 = {
   presets
 }, usePresets = () => {
-  const { t } = useTranslation(), { timerDomain: r } = useTimer(), [y, _] = useState(
+  const { t } = useTranslation(), { timerDomain: r } = useTimer(), [y, R] = useState(
     r.presetsDomain.preset
   ), k = useMemo(() => [
     {
@@ -3267,18 +3440,18 @@ const Controller = observer(() => {
       content: t("ma-timer.presets.custom"),
       id: "ma-timer-preset-custom"
     }
-  ], [t]), M = ($) => {
-    U || (r.presetsDomain.setPreset($), _($));
-  }, U = r.status === ETimerStatus.PLAY, W = t("ma-timer.presets.title");
+  ], [t]), Y = (ie) => {
+    ae || (r.presetsDomain.setPreset(ie), R(ie));
+  }, ae = r.status === ETimerStatus.PLAY, de = t("ma-timer.presets.title");
   return {
-    disabled: U,
+    disabled: ae,
     presets: k,
-    setPreset: M,
+    setPreset: Y,
     selectedPreset: y,
-    title: W
+    title: de
   };
 }, Presets = observer(() => {
-  const { disabled: t, presets: r, selectedPreset: y, setPreset: _, title: k } = usePresets();
+  const { disabled: t, presets: r, selectedPreset: y, setPreset: R, title: k } = usePresets();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Yr,
     {
@@ -3286,35 +3459,33 @@ const Controller = observer(() => {
       "data-testid": "ma-timer-presets",
       id: "ma-timer-presets",
       title: k,
-      children: r.map((M) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-        qr,
+      children: r.map((Y) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Lr,
         {
-          initialChecked: M.preset === y,
+          initialChecked: Y.preset === y,
           disabled: t,
-          id: M.id,
+          id: Y.id,
           name: "ma-timer-presets",
-          onChange: () => _(M.preset),
+          onChange: () => R(Y.preset),
           text: {
-            content: M.content,
+            content: Y.content,
             visible: !0
           }
         },
-        M.id
+        Y.id
       ))
     }
   );
-}), screen = "_screen_ddbl8_96", time = "_time_ddbl8_113", styles$1 = {
-  "theme-light": "_theme-light_ddbl8_16",
-  "theme-dark": "_theme-dark_ddbl8_36",
+}), screen = "_screen_1jb1u_96", time = "_time_1jb1u_113", styles$1 = {
   screen,
   time
 };
 function useScreen() {
-  const { timerDomain: t } = useTimer(), r = addZeroBeforeNumber(t.time.hours, 10), y = addZeroBeforeNumber(t.time.minutes, 10), _ = addZeroBeforeNumber(t.time.seconds, 10);
+  const { timerDomain: t } = useTimer(), r = addZeroBeforeNumber(t.time.hours, 10), y = addZeroBeforeNumber(t.time.minutes, 10), R = addZeroBeforeNumber(t.time.seconds, 10);
   return {
     hours: r,
     minutes: y,
-    seconds: _
+    seconds: R
   };
 }
 const Screen = observer(() => {
@@ -3354,9 +3525,7 @@ const Screen = observer(() => {
       ]
     }
   );
-}), wrapper = "_wrapper_1h4hz_96", styles = {
-  "theme-light": "_theme-light_1h4hz_16",
-  "theme-dark": "_theme-dark_1h4hz_36",
+}), wrapper = "_wrapper_10bwx_96", styles = {
   wrapper
 }, Wrapper$1 = () => (useSyncLang(), /* @__PURE__ */ jsxRuntimeExports.jsxs(
   "div",
@@ -3404,8 +3573,8 @@ class TimezoneRepository {
 }
 class TimezoneDomain {
   constructor() {
-    D(this, "timezoneRepository", new TimezoneRepository());
-    D(this, "timezonesValuePairs", null);
+    oe(this, "timezoneRepository", new TimezoneRepository());
+    oe(this, "timezonesValuePairs", null);
     makeAutoObservable(this);
   }
   generateTimezones() {
@@ -3433,9 +3602,9 @@ function useTimezoneSwitcher() {
   return {
     dictionary: useMemo(
       () => {
-        var _;
+        var R;
         return {
-          timezones: (_ = r == null ? void 0 : r.timezonesValuePairs) == null ? void 0 : _.map((k) => ({
+          timezones: (R = r == null ? void 0 : r.timezonesValuePairs) == null ? void 0 : R.map((k) => ({
             value: k.value,
             name: t(k.label)
           }))
@@ -3448,7 +3617,7 @@ function useTimezoneSwitcher() {
 const TimezoneSwitcher = observer(() => {
   const { dictionary: t } = useTimezoneSwitcher();
   return (t == null ? void 0 : t.timezones) && /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Lr,
+    Ur,
     {
       id: "timezone-switcher",
       modelValue: t.timezones[0].value,

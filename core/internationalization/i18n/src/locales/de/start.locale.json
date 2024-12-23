@@ -1,0 +1,19 @@
+{
+	"StartBundle.accessories": "Zubehör",
+	"StartBundle.calculator": "Rechner",
+	"StartBundle.documentation": "Dokumentation",
+	"StartBundle.entertainment": "Unterhaltung",
+	"StartBundle.find": "Finden",
+	"StartBundle.games": "Spiele",
+	"StartBundle.help": "Hilfe",
+	"StartBundle.media-player": "Media Player",
+	"StartBundle.notepad": "Notizblock",
+	"StartBundle.programs": "Programme",
+	"StartBundle.run": "Run...",
+	"StartBundle.settings": "Einstellungen",
+	"StartBundle.shut-down": "Abschalten...",
+	"StartBundle.start": "Start",
+	"StartBundle.tic-tac-toe": "Tic Tac Toe",
+	"StartBundle.timer": "Timer",
+	"StartBundle.windows-logo": "Windows logo"
+}

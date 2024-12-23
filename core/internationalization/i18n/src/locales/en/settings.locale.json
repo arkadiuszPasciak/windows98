@@ -1,11 +1,5 @@
 {
 	"Settings.browser": "Browser",
-	"SettingsBundle.description-content": "The Bundle responsible for the settings",
-	"SettingsBundle.services-content-1": "information about user device",
-	"SettingsBundle.services-content-2": "calendar",
-	"SettingsBundle.services-content-3": "timezone",
-	"SettingsBundle.services-content-4": "change language",
-	"SettingsBundle.services-content-5": "change theme",
 	"Settings.date-time": "Date & Time",
 	"Settings.desktop": "Desktop",
 	"Settings.device": "Device",
