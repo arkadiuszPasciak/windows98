@@ -1,5 +1,7 @@
 .NavigationGrid {
   display: flex;
+  align-items: center;
+  gap: 6px;
   width: 100vw;
   height: 28px;
   background-color: var(--background-color);
