@@ -1,9 +1,12 @@
-import { DateRepository } from "../../data/repositories"
+import { DateRepository, TimeRepository } from "../../data/repositories"
 import type { DateDomainContract } from "../contracts"
 import type { IFormatOptions, TLocalesArgument } from "../models"
 
 export class DateDomain implements DateDomainContract {
-	constructor(private readonly dateRepository = new DateRepository()) {}
+	constructor(
+		private readonly dateRepository = new DateRepository(),
+		private readonly timeRepository = new TimeRepository(),
+	) {}
 
 	public getDate(
 		value?: string,
@@ -26,6 +29,6 @@ export class DateDomain implements DateDomainContract {
 		locales?: TLocalesArgument,
 		options?: IFormatOptions,
 	): string {
-		return this.dateRepository.toLocaleTimeString(value, locales, options)
+		return this.timeRepository.toLocaleTimeString(value, locales, options)
 	}
 }
