@@ -1,12 +1,26 @@
-import { DateRepository, TimeRepository } from "../../data/repositories"
+import {
+	CalendarRepository,
+	DateRepository,
+	TimeRepository,
+} from "../../data/repositories"
 import type { DateDomainContract } from "../contracts"
-import type { IFormatOptions, TLocalesArgument } from "../models"
+import type {
+	EMonth,
+	ICalendar,
+	IFormatOptions,
+	TLocalesArgument,
+} from "../models"
 
 export class DateDomain implements DateDomainContract {
 	constructor(
+		private readonly calendarRepository = new CalendarRepository(),
 		private readonly dateRepository = new DateRepository(),
 		private readonly timeRepository = new TimeRepository(),
 	) {}
+
+	public getCalendar(month: EMonth, year: number): ICalendar {
+		return this.calendarRepository.get(month, year)
+	}
 
 	public getDate(
 		value?: string,
