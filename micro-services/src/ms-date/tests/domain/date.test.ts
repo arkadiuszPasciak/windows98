@@ -109,6 +109,24 @@ describe("DateDomain", () => {
 		})
 	})
 
+	describe("getMonth", () => {
+		it("should return the correct month number for a given date", () => {
+			const mockDate = new Date(1517, EMonth.OCTOBER, 31)
+			vi.setSystemTime(mockDate)
+
+			const result = msDate.getMonth()
+			expect(result).toBe(EMonth.OCTOBER)
+
+			vi.useRealTimers()
+		})
+
+		it("should return the correct month number for a specific date value", () => {
+			const value = "1989-11-09"
+			const result = msDate.getMonth(value)
+			expect(result).toBe(EMonth.NOVEMBER)
+		})
+	})
+
 	describe("getTime", () => {
 		it("should return formatted time string", () => {
 			const value = "2023-10-05T14:48:00.000Z"
