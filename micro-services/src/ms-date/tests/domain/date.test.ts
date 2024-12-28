@@ -164,4 +164,22 @@ describe("DateDomain", () => {
 			vi.useRealTimers()
 		})
 	})
+
+	describe("getYear", () => {
+		it("should return the correct year for a given date", () => {
+			const mockDate = new Date(2023, EMonth.OCTOBER, 5)
+			vi.setSystemTime(mockDate)
+
+			const result = msDate.getYear()
+			expect(result).toBe(2023)
+
+			vi.useRealTimers()
+		})
+
+		it("should return the correct year for a specific date value", () => {
+			const value = "1989-11-09"
+			const result = msDate.getYear(value)
+			expect(result).toBe(1989)
+		})
+	})
 })
