@@ -1,13 +1,9 @@
 import type { TimeRepositoryContract } from "../../domain/contracts"
-import type {
-	EMonth,
-	IFormatOptions,
-	TLocalesArgument,
-} from "../../domain/models"
+import type { IFormatOptions, TLocalesArgument } from "../../domain/models"
 import { DateStrategy } from "./strategies"
 
 export class TimeRepository implements TimeRepositoryContract {
-	constructor(private readonly dateStrategy = new DateStrategy()) { }
+	constructor(private readonly dateStrategy = new DateStrategy()) {}
 
 	public getHours(value?: string): number {
 		return this.dateStrategy.createDate(value).getHours()

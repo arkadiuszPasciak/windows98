@@ -4,6 +4,7 @@ import {
 	TimeRepository,
 } from "../../data/repositories"
 import { MonthRepository } from "../../data/repositories/month.repository"
+import { YearRepository } from "../../data/repositories/year.repository"
 import type { DateDomainContract } from "../contracts"
 import type {
 	EMonth,
@@ -18,6 +19,7 @@ export class DateDomain implements DateDomainContract {
 		private readonly dateRepository = new DateRepository(),
 		private readonly monthRepository = new MonthRepository(),
 		private readonly timeRepository = new TimeRepository(),
+		private readonly yearRepository = new YearRepository(),
 	) {}
 
 	public getCalendar(month: EMonth, year: number): ICalendar {
@@ -50,5 +52,9 @@ export class DateDomain implements DateDomainContract {
 		options?: IFormatOptions,
 	): string {
 		return this.timeRepository.toLocaleTimeString(value, locales, options)
+	}
+
+	public getYear(value?: string): number {
+		return this.yearRepository.get(value)
 	}
 }

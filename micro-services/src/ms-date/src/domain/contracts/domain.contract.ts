@@ -27,4 +27,6 @@ export interface DateDomainContract {
 		locales?: TLocalesArgument,
 		options?: IFormatOptions,
 	): string
+
+	getYear(value?: string): number
 }
