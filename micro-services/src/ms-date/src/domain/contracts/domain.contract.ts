@@ -7,11 +7,6 @@ import type {
 
 export interface DateDomainContract {
 	getCalendar(month: EMonth, year: number): ICalendar
-	getTime(
-		value?: string,
-		locales?: TLocalesArgument,
-		options?: IFormatOptions,
-	): string
 
 	getDate(
 		value?: string,
@@ -20,6 +15,14 @@ export interface DateDomainContract {
 	): string
 
 	getDateWithTime(
+		value?: string,
+		locales?: TLocalesArgument,
+		options?: IFormatOptions,
+	): string
+
+	getMonth(value?: string): EMonth
+
+	getTime(
 		value?: string,
 		locales?: TLocalesArgument,
 		options?: IFormatOptions,

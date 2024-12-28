@@ -4,7 +4,7 @@ import type { EDay, EMonth, ICalendar } from "../../domain/models"
 import { DateStrategy } from "./strategies"
 
 export class CalendarRepository implements CalendarRepositoryContract {
-	constructor(private readonly dateStrategy = new DateStrategy()) { }
+	constructor(private readonly dateStrategy = new DateStrategy()) {}
 
 	public get(month: EMonth, year: number): ICalendar {
 		const activeDay = this.getActiveDay(month, year)

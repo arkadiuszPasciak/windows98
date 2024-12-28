@@ -7,7 +7,7 @@ import type {
 import { DateStrategy } from "./strategies"
 
 export class TimeRepository implements TimeRepositoryContract {
-	constructor(private readonly dateStrategy = new DateStrategy()) {}
+	constructor(private readonly dateStrategy = new DateStrategy()) { }
 
 	public getHours(value?: string): number {
 		return this.dateStrategy.createDate(value).getHours()
@@ -19,10 +19,6 @@ export class TimeRepository implements TimeRepositoryContract {
 
 	public getMinutes(value?: string): number {
 		return this.dateStrategy.createDate(value).getMinutes()
-	}
-
-	public getMonth(value?: string): EMonth {
-		return this.dateStrategy.createDate(value).getMonth()
 	}
 
 	public getSeconds(value?: string): number {

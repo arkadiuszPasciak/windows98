@@ -3,6 +3,7 @@ import {
 	DateRepository,
 	TimeRepository,
 } from "../../data/repositories"
+import { MonthRepository } from "../../data/repositories/month.repository"
 import type { DateDomainContract } from "../contracts"
 import type {
 	EMonth,
@@ -15,6 +16,7 @@ export class DateDomain implements DateDomainContract {
 	constructor(
 		private readonly calendarRepository = new CalendarRepository(),
 		private readonly dateRepository = new DateRepository(),
+		private readonly monthRepository = new MonthRepository(),
 		private readonly timeRepository = new TimeRepository(),
 	) {}
 
@@ -36,6 +38,10 @@ export class DateDomain implements DateDomainContract {
 		options?: IFormatOptions,
 	): string {
 		return this.dateRepository.toLocaleString(value, locales, options)
+	}
+
+	public getMonth(value?: string): EMonth {
+		return this.monthRepository.get(value)
 	}
 
 	public getTime(
