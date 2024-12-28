@@ -1,10 +1,38 @@
 import { describe, expect, it, vi } from "vitest"
 import { DateDomain } from "../../src/domain/domains"
-import type { IFormatOptions } from "../../src/domain/models"
+import { EDay, EMonth, type IFormatOptions } from "../../src/domain/models"
 
 const msDate = new DateDomain()
 
 describe("DateDomain", () => {
+	describe("getCalendar", () => {
+		it("should return the correct number of days in January 1871 with no active day and Sunday as the first day of the week", () => {
+			const result = msDate.getCalendar(EMonth.JANUARY, 1871)
+
+			expect(result).toEqual({
+				activeDay: null,
+				daysInMonth: 31,
+				firstDayOfWeek: EDay.SUNDAY,
+			})
+		})
+
+		it("should return the correct number of days in August 1994 with the active day and Monday as the first day of the week", () => {
+			const activeDay = 14
+			const mockDate = new Date(1994, EMonth.AUGUST, activeDay)
+			vi.setSystemTime(mockDate)
+
+			const result = msDate.getCalendar(EMonth.AUGUST, 1994)
+
+			expect(result).toEqual({
+				activeDay: activeDay,
+				daysInMonth: 31,
+				firstDayOfWeek: EDay.MONDAY,
+			})
+
+			vi.useRealTimers()
+		})
+	})
+
 	describe("getDate", () => {
 		it("should return formatted date string", () => {
 			const value = "2023-10-05"
