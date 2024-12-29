@@ -1,10 +1,38 @@
 import { describe, expect, it, vi } from "vitest"
 import { DateDomain } from "../../src/domain/domains"
-import type { IFormatOptions } from "../../src/domain/models"
+import { EDay, EMonth, type IFormatOptions } from "../../src/domain/models"
 
 const msDate = new DateDomain()
 
 describe("DateDomain", () => {
+	describe("getCalendar", () => {
+		it("should return the correct number of days in January 1871 with no active day and Sunday as the first day of the week", () => {
+			const result = msDate.getCalendar(EMonth.JANUARY, 1871)
+
+			expect(result).toEqual({
+				activeDay: null,
+				daysInMonth: 31,
+				firstDayOfWeek: EDay.SUNDAY,
+			})
+		})
+
+		it("should return the correct number of days in August 1994 with the active day and Monday as the first day of the week", () => {
+			const activeDay = 14
+			const mockDate = new Date(1994, EMonth.AUGUST, activeDay)
+			vi.setSystemTime(mockDate)
+
+			const result = msDate.getCalendar(EMonth.AUGUST, 1994)
+
+			expect(result).toEqual({
+				activeDay: activeDay,
+				daysInMonth: 31,
+				firstDayOfWeek: EDay.MONDAY,
+			})
+
+			vi.useRealTimers()
+		})
+	})
+
 	describe("getDate", () => {
 		it("should return formatted date string", () => {
 			const value = "2023-10-05"
@@ -81,6 +109,24 @@ describe("DateDomain", () => {
 		})
 	})
 
+	describe("getMonth", () => {
+		it("should return the correct month number for a given date", () => {
+			const mockDate = new Date(1517, EMonth.OCTOBER, 31)
+			vi.setSystemTime(mockDate)
+
+			const result = msDate.getMonth()
+			expect(result).toBe(EMonth.OCTOBER)
+
+			vi.useRealTimers()
+		})
+
+		it("should return the correct month number for a specific date value", () => {
+			const value = "1989-11-09"
+			const result = msDate.getMonth(value)
+			expect(result).toBe(EMonth.NOVEMBER)
+		})
+	})
+
 	describe("getTime", () => {
 		it("should return formatted time string", () => {
 			const value = "2023-10-05T14:48:00.000Z"
@@ -116,6 +162,24 @@ describe("DateDomain", () => {
 			)
 
 			vi.useRealTimers()
+		})
+	})
+
+	describe("getYear", () => {
+		it("should return the correct year for a given date", () => {
+			const mockDate = new Date(2023, EMonth.OCTOBER, 5)
+			vi.setSystemTime(mockDate)
+
+			const result = msDate.getYear()
+			expect(result).toBe(2023)
+
+			vi.useRealTimers()
+		})
+
+		it("should return the correct year for a specific date value", () => {
+			const value = "1989-11-09"
+			const result = msDate.getYear(value)
+			expect(result).toBe(1989)
 		})
 	})
 })

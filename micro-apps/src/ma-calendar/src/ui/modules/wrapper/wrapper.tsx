@@ -1,5 +1,4 @@
 import { DSFrame } from "@windows98/design-system"
-import { observer } from "mobx-react-lite"
 import { useSyncLang } from "../../hooks/use-sync-lang.hook"
 import { Days } from "../days/days"
 import { MonthSwitcher } from "../month-switcher/month-switcher"
@@ -7,7 +6,7 @@ import { YearSwitcher } from "../year-switcher/year-switcher"
 import { useWrapper } from "./use-wrapper.hook"
 import styles from "./wrapper.module.scss"
 
-export const Wrapper = observer(() => {
+export const Wrapper = () => {
 	const { title } = useWrapper()
 
 	useSyncLang()
@@ -23,4 +22,4 @@ export const Wrapper = observer(() => {
 			<Days />
 		</DSFrame>
 	)
-})
+}

@@ -1,20 +1,8 @@
 import { useMemo } from "react"
 import { useTranslation } from "react-i18next"
-import { useCalendar } from "../../hooks"
 
-export function useDays() {
-	const { calendarDomain } = useCalendar()
+export function useWeekDays() {
 	const { t } = useTranslation()
-
-	const monthDays = useMemo(
-		() =>
-			calendarDomain.calendar?.map((day, index) => ({
-				id: index,
-				value: day.value,
-				status: day.status,
-			})),
-		[calendarDomain.calendar],
-	)
 
 	const weekDays = useMemo(
 		() => [
@@ -30,7 +18,6 @@ export function useDays() {
 	)
 
 	return {
-		monthDays,
 		weekDays,
 	}
 }
