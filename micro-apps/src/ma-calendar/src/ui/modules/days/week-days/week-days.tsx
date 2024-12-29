@@ -1,9 +1,9 @@
 import { observer } from "mobx-react-lite"
-import { useDays } from "../use-days.hook"
+import { useWeekDays } from "./use-week-days.hook"
 import styles from "./week-days.module.scss"
 
 export const WeekDays = observer(() => {
-	const { weekDays } = useDays()
+	const { weekDays } = useWeekDays()
 
 	return (
 		<div className={styles["week-days"]}>
