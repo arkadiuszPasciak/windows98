@@ -1,61 +1,56 @@
+import { MSDate } from "@windows98/micro-services"
 import type { Maybe } from "@windows98/toolkit"
 import { makeAutoObservable } from "mobx"
-import { CalendarRepository } from "../../data/repositories"
 import type { CalendarDomainContract } from "../contracts"
-import type { ICalendarDays } from "../models"
 
 export class CalendarDomain implements CalendarDomainContract {
-	calendar: Maybe<Array<ICalendarDays>> = null
-	year: Maybe<number> = null
-	month: Maybe<number> = null
-	calendarRepository: CalendarRepository = new CalendarRepository()
+	public activeDay: Maybe<number> = null
+	public daysInMonth = 0
+	public firstDayOfWeek = 0
+	public currentYear = 0
+	public currentMonth = 0
 
-	constructor() {
+	constructor(private readonly msDateDomain: typeof MSDate = MSDate) {
 		makeAutoObservable(this)
+
+		this.initCalendar()
 	}
 
-	generateCalendar(date?: Date): void {
-		this.calendarRepository.initCalendar(date || null)
+	public initCalendar = (): void => {
+		const month = this.msDateDomain.getMonth()
+		const year = this.msDateDomain.getYear()
 
-		this.calendar = this.calendarRepository.days
-		this.year = this.calendarRepository.year
-		this.month = this.calendarRepository.month
+		this.generateCalendar(month, year)
 	}
 
-	changeCalendarByYear(): void {
-		if ((!this.month && this.month !== 0) || !this.year) {
-			return
-		}
-
-		const date = new Date(this.year, this.month)
-
-		this.generateCalendar(date)
+	public changeCalendarByYear = (year: number): void => {
+		this.generateCalendar(this.currentMonth, year)
 	}
 
-	changeCalendarByMonth(month: number): void {
-		if (!this.year) {
-			return
-		}
-
-		const date = new Date(this.year, month)
-
-		this.generateCalendar(date)
+	public changeCalendarByMonth = (month: number): void => {
+		this.generateCalendar(month, this.currentYear)
 	}
 
-	increaseYear(): void {
-		if (!this.year) return
+	public decreaseYear = (): void => {
+		this.currentYear -= 1
 
-		this.year += 1
-
-		this.changeCalendarByYear()
+		this.generateCalendar(this.currentMonth, this.currentYear)
 	}
 
-	decreaseYear(): void {
-		if (!this.year) return
+	public increaseYear = (): void => {
+		this.currentYear += 1
 
-		this.year -= 1
+		this.generateCalendar(this.currentMonth, this.currentYear)
+	}
 
-		this.changeCalendarByYear()
+	private generateCalendar = (month: number, year: number): void => {
+		const calendar = this.msDateDomain.getCalendar(month, year)
+
+		this.activeDay = calendar.activeDay
+		this.daysInMonth = calendar.daysInMonth
+		this.firstDayOfWeek = calendar.firstDayOfWeek
+		this.currentYear = year
+		this.currentMonth = month
 	}
 }
 
