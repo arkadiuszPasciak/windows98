@@ -3,6 +3,7 @@ import i18nInit from "@windows98/i18n/configs/react.config"
 import { CalculatorView } from "../../../src/ma-calculator/src/ui/views"
 import { CalendarView } from "../../../src/ma-calendar/src/ui/views/calendar.view"
 import { ClockView } from "../../../src/ma-clock/src/ui/views"
+import { NavigationView } from "../../../src/ma-navigation/src/ui/views"
 import { ShutdownView } from "../../../src/ma-shutdown/src/ui/views"
 import { TimerView } from "../../../src/ma-timer/src/ui/views"
 import { TimezoneView } from "../../../src/ma-timezone/src/ui/views"
@@ -15,6 +16,9 @@ customElements.define("ma-calendar", MACalendar)
 
 const MAClock = r2wc(ClockView)
 customElements.define("ma-clock", MAClock)
+
+const MANavigation = r2wc(NavigationView)
+customElements.define("ma-navigation", MANavigation)
 
 const MAShutdown = r2wc(ShutdownView)
 customElements.define("ma-shutdown", MAShutdown)
