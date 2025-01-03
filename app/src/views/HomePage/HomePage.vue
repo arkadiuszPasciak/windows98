@@ -2,7 +2,7 @@
   <div class="HomePage">
     <TeleportPulpit />
 
-    <Pulpit />
+    <ma-pulpit />
 
     <NavigationPulpit />
   </div>
@@ -10,7 +10,6 @@
 
 <script setup lang="ts">
 import NavigationPulpit from "@APP|Bundles/NavigationBundle/Components/NavigationPulpit.vue"
-import Pulpit from "@APP|Bundles/PulpitBundle/Components/Pulpit.vue"
 import TeleportPulpit from "@APP|Bundles/TeleportBundle/Components/TeleportPulpit.vue"
 </script>
 
