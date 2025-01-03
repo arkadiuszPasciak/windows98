@@ -4,7 +4,6 @@ import calculatorDE from "./calculator.locale.json"
 import fileDE from "./file.locale.json"
 import languageDE from "./language.locale.json"
 import notepadDE from "./notepad.locale.json"
-import pulpitDE from "./pulpit.locale.json"
 import runDE from "./run.locale.json"
 import settingsDE from "./settings.locale.json"
 import shutDownDE from "./shut-down.locale.json"
@@ -20,7 +19,6 @@ const localesDE: I18nLocaleSkeleton = {
 	...fileDE,
 	...languageDE,
 	...notepadDE,
-	...pulpitDE,
 	...runDE,
 	...settingsDE,
 	...shutDownDE,
