@@ -4,7 +4,6 @@ import calculatorEN from "./calculator.locale.json"
 import fileEN from "./file.locale.json"
 import languageEN from "./language.locale.json"
 import notepadEN from "./notepad.locale.json"
-import pulpitEN from "./pulpit.locale.json"
 import runEN from "./run.locale.json"
 import settingsEN from "./settings.locale.json"
 import shutDownEN from "./shut-down.locale.json"
@@ -20,7 +19,6 @@ const localesEN: I18nLocaleSkeleton = {
 	...fileEN,
 	...languageEN,
 	...notepadEN,
-	...pulpitEN,
 	...runEN,
 	...settingsEN,
 	...shutDownEN,
