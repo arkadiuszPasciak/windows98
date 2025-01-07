@@ -1,3 +1,4 @@
+// TODO: set the same formats in the method
 export enum EFileTextTypes {
 	CSV = "text/csv;charset=utf-8;",
 	DOC = "text/doc;charset=utf-8;",
