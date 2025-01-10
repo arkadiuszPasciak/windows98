@@ -1,8 +1,8 @@
 import type { FunctionComponent } from "react"
 import { DSButton } from "../../ds-button"
-import type { CloseButtonProps } from "./close-button.type"
+import type { ModalCloseButtonProps } from "./modal-close-button.type"
 
-export const CloseButton: FunctionComponent<CloseButtonProps> = ({
+export const ModalCloseButton: FunctionComponent<ModalCloseButtonProps> = ({
 	onClick,
 }) => {
 	return (
