@@ -1,0 +1,12 @@
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 4px 2px;
+	column-gap: 5px;
+}
+  
+.navigation-button {
+	@include font('medium', 11, 14);
+	color: var(--text-color);
+	cursor: pointer;
+}
