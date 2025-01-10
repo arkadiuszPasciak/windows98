@@ -1,15 +1,8 @@
 import { expect, test } from "@playwright/experimental-ct-react"
 import { DSHeading } from "./ds-heading"
-import { DSHeadingType } from "./ds-heading.type"
+import type { DSHeadingType } from "./ds-heading.type"
 
-const headingTypes: Array<DSHeadingType> = [
-	DSHeadingType.H1,
-	DSHeadingType.H2,
-	DSHeadingType.H3,
-	DSHeadingType.H4,
-	DSHeadingType.H5,
-	DSHeadingType.H6,
-]
+const headingTypes: Array<DSHeadingType> = ["h1", "h2", "h3", "h4", "h5", "h6"]
 
 test.use({ viewport: { width: 500, height: 500 } })
 
