@@ -1,0 +1,9 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 20px;
+	padding: 3px 2px 3px 3px;
+	color: var(--text-color-2);
+	background: var(--background-color-modal-header);
+}
