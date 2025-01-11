@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react"
+import styles from "./modal-container.module.scss"
 import type { ModalContainerProps } from "./modal-container.type"
-import styles from "./modal-navigation.module.scss"
 
 export const ModalContainer: FunctionComponent<ModalContainerProps> = ({
 	children,

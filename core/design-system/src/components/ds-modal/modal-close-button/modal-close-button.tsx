@@ -11,7 +11,7 @@ export const ModalCloseButton: FunctionComponent<ModalCloseButtonProps> = ({
 			size="small"
 			id={`${id}-close-button`}
 			onClick={onClick}
-			text="Close modal"
+			text=""
 			iconLeft={
 				<img
 					className="button-close-icon"
