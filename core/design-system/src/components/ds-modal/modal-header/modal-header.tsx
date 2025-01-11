@@ -5,6 +5,7 @@ import styles from "./modal-header.module.scss"
 import type { ModalHeaderProps } from "./modal-header.type"
 
 export const ModalHeader: FunctionComponent<ModalHeaderProps> = ({
+	id,
 	title,
 	onClose,
 	cursorType = "default",
@@ -13,6 +14,7 @@ export const ModalHeader: FunctionComponent<ModalHeaderProps> = ({
 	return (
 		<div
 			className={styles.header}
+			data-testid={`${id}-modal-header`}
 			style={{ cursor: cursorType }}
 			onMouseDown={mouseDownEvent}
 		>
@@ -21,7 +23,10 @@ export const ModalHeader: FunctionComponent<ModalHeaderProps> = ({
 				text={title}
 				id="ds-modal"
 			/>
-			<ModalCloseButton onClick={onClose} />
+			<ModalCloseButton
+				id={id}
+				onClick={onClose}
+			/>
 		</div>
 	)
 }

@@ -4,5 +4,6 @@ export interface ModalNavigationItem {
 }
 
 export interface ModalNavigationProps {
+	id: string
 	navigation: ModalNavigationItem[]
 }

@@ -4,13 +4,14 @@ import type { ModalCloseButtonProps } from "./modal-close-button.type"
 
 export const ModalCloseButton: FunctionComponent<ModalCloseButtonProps> = ({
 	onClick,
+	id,
 }) => {
 	return (
 		<DSButton
 			size="small"
-			id="ds-modal-button-close"
+			id={`${id}-close-button`}
 			onClick={onClick}
-			text=""
+			text="Close modal"
 			iconLeft={
 				<img
 					className="button-close-icon"

@@ -3,6 +3,7 @@ import styles from "./modal-navigation.module.scss"
 import type { ModalNavigationProps } from "./modal-navigation.type"
 
 export const ModalNavigation: FunctionComponent<ModalNavigationProps> = ({
+	id,
 	navigation,
 }) => {
 	if (!navigation) return null
@@ -10,12 +11,12 @@ export const ModalNavigation: FunctionComponent<ModalNavigationProps> = ({
 	return (
 		<div
 			className={styles.navigation}
-			data-testid="ds-modal-navigation"
+			data-testid={`${id}-modal-navigation`}
 		>
 			{navigation?.map((item) => (
 				<button
 					className={styles["navigation-button"]}
-					key={`ds-modal-navigation-button-${item.name}`}
+					key={`${id}-modal-navigation-button-${item.name}`}
 					onClick={item.onClick ?? undefined}
 					type="button"
 				>
