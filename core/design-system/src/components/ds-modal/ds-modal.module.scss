@@ -1,0 +1,11 @@
+.resize-window {
+	resize: both;
+	overflow: auto;
+}
+
+.move-window {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
