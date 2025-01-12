@@ -11,7 +11,7 @@ export interface DSModalProps {
 	id: string
 	height?: string
 	modalState?: boolean
-	moveWindow?: boolean
+	moveWindow: boolean
 	navigation?: ModalNavigationItem[]
 	onClose: () => void
 	resizeWindow?: boolean

@@ -19,7 +19,7 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 	children,
 	navigation,
 }) => {
-	const { modalElement, mouseMove, mouseDownEvent, cursorType } = useDSModal({
+	const { modalElement, mouseMove, mouseDown, cursorType } = useDSModal({
 		moveWindow,
 	})
 
@@ -40,7 +40,7 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 				<ModalHeader
 					id={id}
 					cursorType={cursorType}
-					mouseDownEvent={mouseDownEvent}
+					mouseDownEvent={mouseDown}
 					onClose={onClose}
 					title={title}
 				/>

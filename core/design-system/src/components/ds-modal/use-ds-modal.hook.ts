@@ -1,52 +1,54 @@
-import { useEffect, useRef, useState } from "react"
+import { type MouseEvent, useCallback, useRef, useState } from "react"
 import { DSModalCursor, type UseDSModalProps } from "./ds-modal.type"
+import { mouseDownEvent, mouseMoveEvent, mouseUpEvent } from "./helpers"
 
-export function useDSModal({ moveWindow }: UseDSModalProps) {
-	const modalElement = useRef<HTMLDivElement | null>(null)
+export const useDSModal = ({ moveWindow }: UseDSModalProps) => {
+	const modalElement = useRef<HTMLDivElement>(null)
 	const [mouseState, setMouseState] = useState(false)
-	const [positionX, setPositionX] = useState(0)
-	const [positionY, setPositionY] = useState(0)
 	const [cursorType, setCursorType] = useState<DSModalCursor>(
 		DSModalCursor.DEFAULT,
 	)
+	const [positionX, setPositionX] = useState(0)
+	const [positionY, setPositionY] = useState(0)
 
-	const mouseDownEvent = (event: React.MouseEvent) => {
-		if (!modalElement.current || !moveWindow) {
-			return
-		}
+	const mouseDown = useCallback(
+		(event: MouseEvent) => {
+			mouseDownEvent(
+				event,
+				modalElement,
+				moveWindow,
+				setCursorType,
+				setMouseState,
+				setPositionX,
+				setPositionY,
+			)
+		},
+		[moveWindow],
+	)
 
-		setCursorType(DSModalCursor.MOVE)
-		setMouseState(true)
-		setPositionX(modalElement.current.offsetLeft - event.clientX)
-		setPositionY(modalElement.current.offsetTop - event.clientY)
+	const mouseUp = useCallback(() => {
+		mouseUpEvent(moveWindow, setMouseState, setCursorType)
+	}, [moveWindow])
+
+	const mouseMove = useCallback(
+		(event: MouseEvent) => {
+			mouseMoveEvent(
+				event,
+				modalElement,
+				moveWindow,
+				mouseState,
+				positionX,
+				positionY,
+			)
+		},
+		[moveWindow, mouseState, positionX, positionY],
+	)
+
+	return {
+		modalElement,
+		mouseDown,
+		mouseUp,
+		mouseMove,
+		cursorType,
 	}
-
-	const mouseUpEvent = () => {
-		if (!moveWindow) {
-			return
-		}
-
-		setMouseState(false)
-		setCursorType(DSModalCursor.DEFAULT)
-	}
-
-	const mouseMove = (event: React.MouseEvent) => {
-		if (!mouseState || !modalElement.current || !moveWindow) {
-			return
-		}
-
-		modalElement.current.style.left = `${event.clientX + positionX}px`
-		modalElement.current.style.top = `${event.clientY + positionY}px`
-	}
-
-	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
-	useEffect(() => {
-		const handleMouseUp = () => mouseUpEvent()
-		document.addEventListener("mouseup", handleMouseUp)
-		return () => {
-			document.removeEventListener("mouseup", handleMouseUp)
-		}
-	}, [])
-
-	return { modalElement, mouseMove, mouseDownEvent, cursorType }
 }
