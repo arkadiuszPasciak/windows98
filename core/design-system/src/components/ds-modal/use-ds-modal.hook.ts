@@ -1,9 +1,19 @@
-import { type MouseEvent, useCallback, useRef, useState } from "react"
-import { DSModalCursor, type UseDSModalProps } from "./ds-modal.type"
+import {
+	type MouseEvent,
+	useCallback,
+	useEffect,
+	useRef,
+	useState,
+} from "react"
+import { DSModalCursor } from "./ds-modal.type"
 import { mouseDownEvent, mouseMoveEvent, mouseUpEvent } from "./helpers"
 
-export const useDSModal = ({ moveWindow }: UseDSModalProps) => {
+export const useDSModal = ({
+	moveWindow,
+	modalState,
+}: { moveWindow: boolean; modalState: boolean }) => {
 	const modalElement = useRef<HTMLDivElement>(null)
+	const dialogRef = useRef<HTMLDialogElement>(null)
 	const [mouseState, setMouseState] = useState(false)
 	const [cursorType, setCursorType] = useState<DSModalCursor>(
 		DSModalCursor.DEFAULT,
@@ -44,11 +54,21 @@ export const useDSModal = ({ moveWindow }: UseDSModalProps) => {
 		[moveWindow, mouseState, positionX, positionY],
 	)
 
+	useEffect(() => {
+		if (modalState) dialogRef?.current?.showModal()
+	}, [modalState])
+
+	const closeModal = (): void => {
+		dialogRef.current?.close()
+	}
+
 	return {
 		modalElement,
+		dialogRef,
 		mouseDown,
 		mouseUp,
 		mouseMove,
 		cursorType,
+		closeModal,
 	}
 }

@@ -1,3 +1,4 @@
+import type { MouseEvent } from "react"
 import type { DSModalCursor } from "../ds-modal.type"
 
 export interface ModalHeaderProps {
@@ -5,5 +6,6 @@ export interface ModalHeaderProps {
 	title: string
 	onClose: () => void
 	cursorType: DSModalCursor
-	mouseDownEvent: (event: React.MouseEvent) => void
+	mouseDownEvent: (event: MouseEvent) => void
+	mouseUpEvent: () => void
 }

@@ -1,7 +1,6 @@
 import type { FunctionComponent } from "react"
 import styles from "./ds-modal.module.scss"
 import type { DSModalProps } from "./ds-modal.type"
-import { ModalContainer } from "./modal-container"
 import { ModalContent } from "./modal-content"
 import { ModalHeader } from "./modal-header"
 import { ModalNavigation } from "./modal-navigation/modal-navigation"
@@ -15,45 +14,49 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 	resizeWindow = false,
 	moveWindow = true,
 	modalState = false,
-	onClose,
 	children,
 	navigation,
 }) => {
-	const { modalElement, mouseMove, mouseDown, cursorType } = useDSModal({
-		moveWindow,
-	})
+	const {
+		modalElement,
+		dialogRef,
+		mouseDown,
+		mouseUp,
+		mouseMove,
+		cursorType,
+		closeModal,
+	} = useDSModal({ moveWindow, modalState })
 
 	if (!modalState) return null
 
 	return (
-		<div
-			ref={modalElement}
-			className={`${resizeWindow ? styles["resize-window"] : ""} ${moveWindow ? styles["move-window"] : ""}`}
+		<dialog
+			ref={dialogRef}
+			className={styles.modal}
 			onMouseMove={mouseMove}
-			style={{ cursor: cursorType }}
 		>
-			<ModalContainer
-				id={id}
-				height={height}
-				width={width}
+			<div
+				className={`${styles.container} ${resizeWindow ? styles["resize-window"] : ""} ${moveWindow ? styles["move-window"] : ""}`}
+				data-testid={`${id}-modal-container`}
+				ref={modalElement}
+				style={{ width, height }}
 			>
 				<ModalHeader
-					id={id}
 					cursorType={cursorType}
+					id={id}
+					onClose={closeModal}
 					mouseDownEvent={mouseDown}
-					onClose={onClose}
+					mouseUpEvent={mouseUp}
 					title={title}
 				/>
-
 				{navigation && (
 					<ModalNavigation
 						id={id}
 						navigation={navigation}
 					/>
 				)}
-
 				<ModalContent id={id}>{children}</ModalContent>
-			</ModalContainer>
-		</div>
+			</div>
+		</dialog>
 	)
 }

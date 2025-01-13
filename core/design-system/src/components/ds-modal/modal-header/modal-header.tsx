@@ -10,6 +10,7 @@ export const ModalHeader: FunctionComponent<ModalHeaderProps> = ({
 	onClose,
 	cursorType = "default",
 	mouseDownEvent,
+	mouseUpEvent,
 }) => {
 	return (
 		<div
@@ -17,6 +18,7 @@ export const ModalHeader: FunctionComponent<ModalHeaderProps> = ({
 			data-testid={`${id}-modal-header`}
 			style={{ cursor: cursorType }}
 			onMouseDown={mouseDownEvent}
+			onMouseUp={mouseUpEvent}
 		>
 			<DSHeading
 				type="h3"
