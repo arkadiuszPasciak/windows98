@@ -1,5 +1,6 @@
 import type { FunctionComponent } from "react"
 import { DSButton } from "../../ds-button"
+import { DSIconCloseSVG } from "../../ds-icon"
 import type { ModalCloseButtonProps } from "./modal-close-button.type"
 
 export const ModalCloseButton: FunctionComponent<ModalCloseButtonProps> = ({
@@ -12,15 +13,7 @@ export const ModalCloseButton: FunctionComponent<ModalCloseButtonProps> = ({
 			id={`${id}-close-button`}
 			onClick={onClick}
 			text=""
-			iconLeft={
-				<img
-					className="button-close-icon"
-					width={8}
-					height={7}
-					src="/icons/close-modal.svg"
-					alt="design-system.close-window"
-				/>
-			}
+			iconLeft={<DSIconCloseSVG />}
 		/>
 	)
 }
