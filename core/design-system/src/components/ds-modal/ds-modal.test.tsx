@@ -33,14 +33,37 @@ test.describe("DSModal", () => {
 	})
 
 	test("opens and closes modal", async ({ mount }) => {
-		const component = await mount(<DSModal {...defaultModal} />)
+		let modalState = false
 
-		const closeButton = await component.getByTestId(
-			`${defaultModal.id}-close-button`,
+		const openModal = (): void => {
+			modalState = true
+		}
+
+		const component = await mount(
+			<>
+				<button
+					data-testid="open-modal-button"
+					type="button"
+					onClick={openModal}
+				>
+					Open Modal
+				</button>
+				<DSModal
+					{...defaultModal}
+					modalState={modalState}
+				/>
+			</>,
 		)
 
+		const openButton = component.getByTestId("open-modal-button")
+		await openButton.click()
+
+		const modalComponent = component.getByTestId(`${defaultModal.id}`)
+		await expect(modalComponent).toBeVisible()
+
+		const closeButton = component.getByTestId(`${defaultModal.id}-close-button`)
 		await closeButton.click()
-		await expect(component).not.toBeVisible()
+		await expect(modalComponent).not.toBeVisible()
 	})
 
 	test("resizes window", async ({ mount }) => {
