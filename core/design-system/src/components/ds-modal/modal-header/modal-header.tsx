@@ -23,7 +23,7 @@ export const ModalHeader: FunctionComponent<ModalHeaderProps> = ({
 			<DSHeading
 				type="h3"
 				text={title}
-				id="ds-modal"
+				id={`${id}-modal-header`}
 			/>
 			<ModalCloseButton
 				id={id}

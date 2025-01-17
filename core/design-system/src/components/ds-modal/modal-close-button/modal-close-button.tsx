@@ -10,7 +10,7 @@ export const ModalCloseButton: FunctionComponent<ModalCloseButtonProps> = ({
 	return (
 		<DSButton
 			size="small"
-			id={`${id}-close-button`}
+			id={`${id}-close`}
 			onClick={onClick}
 			text=""
 			iconLeft={<DSIconCloseSVG />}

@@ -16,6 +16,7 @@ export const ModalNavigation: FunctionComponent<ModalNavigationProps> = ({
 			{navigation?.map((item) => (
 				<button
 					className={styles["navigation-button"]}
+					data-testid={`${id}-modal-navigation-button-${item.name}`}
 					key={`${id}-modal-navigation-button-${item.name}`}
 					onClick={item.onClick ?? undefined}
 					type="button"
