@@ -6,7 +6,6 @@ const defaultModal: DSModalProps = {
 	id: "modal",
 	title: "Test Modal",
 	moveWindow: true,
-	modalState: true,
 	onClose: () => {},
 	children: <div>Test Content</div>,
 }
@@ -15,6 +14,8 @@ const modalWithNavigation: DSModalProps = {
 	...defaultModal,
 	navigation: [{ name: "NavItem1", onClick: () => {} }],
 }
+
+test.use({ viewport: { width: 1000, height: 1000 } })
 
 test.describe("DSModal", () => {
 	test("renders properly", async ({ mount }) => {
@@ -35,23 +36,26 @@ test.describe("DSModal", () => {
 	test("opens and closes modal", async ({ mount }) => {
 		let modalState = false
 
-		const openModal = (): void => {
-			modalState = true
-		}
-
 		const component = await mount(
 			<>
 				<button
 					data-testid="open-modal-button"
 					type="button"
-					onClick={openModal}
+					onClick={() => {
+						console.log("test")
+						modalState = true
+					}}
 				>
 					Open Modal
 				</button>
-				<DSModal
-					{...defaultModal}
-					modalState={modalState}
-				/>
+				{modalState && (
+					<DSModal
+						{...defaultModal}
+						onClose={() => {
+							modalState = false
+						}}
+					/>
+				)}
 			</>,
 		)
 
@@ -63,7 +67,7 @@ test.describe("DSModal", () => {
 
 		const closeButton = component.getByTestId(`${defaultModal.id}-close-button`)
 		await closeButton.click()
-		await expect(modalComponent).not.toBeVisible()
+		await expect(modalComponent).toBeHidden()
 	})
 
 	test("resizes window", async ({ mount }) => {
@@ -74,7 +78,7 @@ test.describe("DSModal", () => {
 			/>,
 		)
 
-		const modalElement = await component.getByTestId(
+		const modalElement = component.getByTestId(
 			`${defaultModal.id}-modal-container`,
 		)
 
@@ -108,8 +112,8 @@ test.describe("DSModal", () => {
 		})
 		await modalHeader.dispatchEvent("mouseup")
 
-		await expect(modalElement).toHaveCSS("left", "721px")
-		await expect(modalElement).toHaveCSS("top", "441px")
+		await expect(modalElement).toHaveCSS("left", "600px")
+		await expect(modalElement).toHaveCSS("top", "600px")
 	})
 
 	test("navigation click and check render", async ({ mount }) => {
