@@ -18,4 +18,5 @@ export interface DSModalProps {
 	width?: string
 }
 
-export interface UseDSModalProps extends Pick<DSModalProps, "moveWindow"> {}
+export interface UseDSModalProps
+	extends Pick<DSModalProps, "moveWindow" | "onClose"> {}

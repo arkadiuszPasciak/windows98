@@ -17,14 +17,21 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 	navigation,
 	onClose,
 }) => {
-	const { modalElement, mouseDown, mouseUp, mouseMove, cursorType } =
-		useDSModal({ moveWindow })
+	const {
+		dialogRef,
+		modalElement,
+		mouseDown,
+		mouseUp,
+		mouseMove,
+		cursorType,
+		closeModal,
+	} = useDSModal({ moveWindow, onClose })
 
 	return (
 		<dialog
+			ref={dialogRef}
 			className={styles.modal}
 			onMouseMove={mouseMove}
-			open
 		>
 			<div
 				className={`${styles.container} ${resizeWindow ? styles["resize-window"] : ""} ${moveWindow ? styles["move-window"] : ""}`}
@@ -35,7 +42,7 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 				<ModalHeader
 					cursorType={cursorType}
 					id={id}
-					onClose={onClose}
+					onClose={closeModal}
 					mouseDownEvent={mouseDown}
 					mouseUpEvent={mouseUp}
 					title={title}
