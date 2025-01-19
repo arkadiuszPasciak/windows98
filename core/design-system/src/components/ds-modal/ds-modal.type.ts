@@ -10,7 +10,6 @@ export interface DSModalProps {
 	children: ReactNode
 	id: string
 	height?: string
-	modalState?: boolean
 	moveWindow: boolean
 	navigation?: ModalNavigationItem[]
 	onClose: () => void
