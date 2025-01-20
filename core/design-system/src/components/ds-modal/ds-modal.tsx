@@ -29,8 +29,8 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 
 	return (
 		<dialog
-			ref={dialogRef}
 			className={styles.modal}
+			ref={dialogRef}
 			onMouseMove={mouseMove}
 		>
 			<div

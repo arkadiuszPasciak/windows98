@@ -10,8 +10,8 @@ export const DSIconCloseSVG: FunctionComponent = () => {
 		>
 			<title>Close icon</title>
 			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
+				fillRule="evenodd"
+				clipRule="evenodd"
 				d="M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z"
 				fill="#000"
 			/>

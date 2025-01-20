@@ -21,9 +21,9 @@ export const ModalHeader: FunctionComponent<ModalHeaderProps> = ({
 			onMouseUp={mouseUpEvent}
 		>
 			<DSHeading
-				type="h3"
-				text={title}
 				id={`${id}-modal-header`}
+				text={title}
+				type="h3"
 			/>
 			<ModalCloseButton
 				id={id}
