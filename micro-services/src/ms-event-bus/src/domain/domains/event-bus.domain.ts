@@ -1,9 +1,9 @@
+import { SingletonFactory } from "@windows98/toolkit"
 import type { EventBusDomainContract } from "../contracts"
 import type { EventBusSubscriber, Events } from "../models"
 
 class EventBusDomain implements EventBusDomainContract {
 	private events: Events = {}
-	private static instance: EventBusDomain
 
 	public emit<Data, EventName extends string>(
 		event: EventName,
@@ -49,13 +49,6 @@ class EventBusDomain implements EventBusDomainContract {
 
 		this.on(event, wrapper)
 	}
-
-	public static getInstance(): EventBusDomain {
-		if (!EventBusDomain.instance) {
-			EventBusDomain.instance = new EventBusDomain()
-		}
-		return EventBusDomain.instance
-	}
 }
 
-export const MSEventBus = EventBusDomain.getInstance()
+export const MSEventBus = SingletonFactory.getInstance(EventBusDomain)
