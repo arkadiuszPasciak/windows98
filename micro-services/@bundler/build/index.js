@@ -1,15 +1,15 @@
-var v = Object.defineProperty;
-var E = (r, e, t) => e in r ? v(r, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : r[e] = t;
-var c = (r, e, t) => E(r, typeof e != "symbol" ? e + "" : e, t);
-const i = class i {
+var M = Object.defineProperty;
+var O = (n, e, t) => e in n ? M(n, e, { enumerable: !0, configurable: !0, writable: !0, value: t }) : n[e] = t;
+var i = (n, e, t) => O(n, typeof e != "symbol" ? e + "" : e, t);
+const c = class c {
   constructor(e) {
-    c(this, "config");
+    i(this, "config");
     this.config = e;
   }
   static getInstance(e) {
-    for (; i.lock; )
+    for (; c.lock; )
       ;
-    return i.lock = !0, i.instance || (i.instance = new i(e)), i.lock = !1, i.instance;
+    return c.lock = !0, c.instance || (c.instance = new c(e)), c.lock = !1, c.instance;
   }
   set(e, t) {
     this.config[e] !== t && (this.config[e] = t);
@@ -19,48 +19,48 @@ const i = class i {
   }
 };
 // biome-ignore lint/suspicious/noExplicitAny: any is used to store the instance of the class
-c(i, "instance"), c(i, "lock", !1);
-let u = i;
-class O {
+i(c, "instance"), i(c, "lock", !1);
+let d = c;
+class x {
   constructor() {
-    c(this, "UNKNOWN_ERROR_MESSAGE", "Unknown error message");
+    i(this, "UNKNOWN_ERROR_MESSAGE", "Unknown error message");
   }
   CatchError(e, t) {
-    const n = this;
-    return (o, s, a) => {
-      const p = a.value;
-      a.value = function(...f) {
+    const r = this;
+    return (s, o, a) => {
+      const u = a.value;
+      a.value = function(...v) {
         try {
-          return p.apply(this, f);
-        } catch (D) {
-          throw n.createError(
+          return u.apply(this, v);
+        } catch (E) {
+          throw r.createError(
             e,
             t,
-            D
+            E
           );
         }
       };
     };
   }
-  createError(e, t, n) {
-    const o = this.generateErrorMessage(n), s = new Error(o);
-    return s.name = `[${e}]<${t}>`, s;
+  createError(e, t, r) {
+    const s = this.generateErrorMessage(r), o = new Error(s);
+    return o.name = `[${e}]<${t}>`, o;
   }
   generateErrorMessage(e) {
     return e instanceof Error && e.message.length ? e.message : this.UNKNOWN_ERROR_MESSAGE;
   }
 }
-const d = new O(), g = {
-  CatchError: d.CatchError.bind(d)
+const m = new x(), g = {
+  CatchError: m.CatchError.bind(m)
 };
-var M = Object.defineProperty, x = Object.getOwnPropertyDescriptor, R = (r, e, t, n) => {
-  for (var o = x(e, t), s = r.length - 1, a; s >= 0; s--)
-    (a = r[s]) && (o = a(e, t, o) || o);
-  return o && M(e, t, o), o;
+var R = Object.defineProperty, W = Object.getOwnPropertyDescriptor, N = (n, e, t, r) => {
+  for (var s = W(e, t), o = n.length - 1, a; o >= 0; o--)
+    (a = n[o]) && (s = a(e, t, s) || s);
+  return s && R(e, t, s), s;
 };
-class W {
+class T {
   constructor(e) {
-    c(this, "config");
+    i(this, "config");
     this.config = e;
   }
   add(e, t) {
@@ -77,9 +77,9 @@ class W {
       if (t === void 0) throw new Error(`missing ${e}`);
   }
 }
-R([
+N([
   g.CatchError("AppConfigBuilderDomain", "validateConfig")
-], W.prototype, "validateConfig");
+], T.prototype, "validateConfig");
 class C {
   restartApplication() {
     window.location.reload();
@@ -88,9 +88,9 @@ class C {
     window.location.href = "https://google.com";
   }
 }
-class ge {
+class ue {
   constructor() {
-    c(this, "appControllerRepository");
+    i(this, "appControllerRepository");
     this.appControllerRepository = new C();
   }
   restartApplication() {
@@ -100,7 +100,7 @@ class ge {
     this.appControllerRepository.shutdownApplication();
   }
 }
-class N {
+class b {
   constructor(e = [
     { name: "Chrome", regex: /chrome|chromium|crios/i },
     { name: "Firefox", regex: /firefox|fxios/i },
@@ -114,14 +114,14 @@ class N {
     const e = window.navigator.userAgent;
     if (!e) return null;
     for (const t in this.browserNames) {
-      const n = this.browserNames[t];
-      if (n.regex.test(e))
-        return n.name;
+      const r = this.browserNames[t];
+      if (r.regex.test(e))
+        return r.name;
     }
     return null;
   }
 }
-class T {
+class L {
   constructor(e = [
     {
       name: "mobile",
@@ -138,14 +138,14 @@ class T {
     const e = window.navigator.userAgent;
     if (!e) return null;
     for (const t in this.devicesNames) {
-      const n = this.devicesNames[t];
-      if (n.regex.test(e))
-        return n.name;
+      const r = this.devicesNames[t];
+      if (r.regex.test(e))
+        return r.name;
     }
     return null;
   }
 }
-class b {
+class P {
   constructor(e = [
     { name: "Windows 3.11", regex: /Win16/ },
     { name: "Windows 95", regex: /(Windows 95|Win95|Windows_95)/ },
@@ -182,14 +182,14 @@ class b {
     const e = window.navigator.userAgent;
     if (!e) return null;
     for (const t in this.operatingSystems) {
-      const n = this.operatingSystems[t];
-      if (n.regex.test(e))
-        return n.name;
+      const r = this.operatingSystems[t];
+      if (r.regex.test(e))
+        return r.name;
     }
     return null;
   }
 }
-class L {
+class A {
   get() {
     const e = window.screen;
     return e ? {
@@ -199,9 +199,9 @@ class L {
     } : null;
   }
 }
-class le {
-  constructor(e = new N(), t = new T(), n = new b(), o = new L()) {
-    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = n, this.screenRepository = o;
+class he {
+  constructor(e = new b(), t = new L(), r = new P(), s = new A()) {
+    this.browserNameRepository = e, this.deviceTypeRepository = t, this.operatingSystemRepository = r, this.screenRepository = s;
   }
   getBrowserName() {
     return this.browserNameRepository.get();
@@ -216,10 +216,10 @@ class le {
     return this.screenRepository.get();
   }
 }
-var _ = Object.defineProperty, P = Object.getOwnPropertyDescriptor, A = (r, e, t, n) => {
-  for (var o = P(e, t), s = r.length - 1, a; s >= 0; s--)
-    (a = r[s]) && (o = a(e, t, o) || o);
-  return o && _(e, t, o), o;
+var _ = Object.defineProperty, I = Object.getOwnPropertyDescriptor, $ = (n, e, t, r) => {
+  for (var s = I(e, t), o = n.length - 1, a; o >= 0; o--)
+    (a = n[o]) && (s = a(e, t, s) || s);
+  return s && _(e, t, s), s;
 };
 class l {
   createDate(e) {
@@ -231,35 +231,35 @@ class l {
     return !Number.isNaN(Date.parse(e));
   }
 }
-A([
+$([
   g.CatchError("DateStrategy", "createDate")
 ], l.prototype, "createDate");
-class I {
+class B {
   constructor(e = new l()) {
     this.dateStrategy = e;
   }
   get(e, t) {
-    const n = this.getActiveDay(e, t), o = this.getDaysInMonth(e, t), s = this.getFirstDayOfWeek(e, t);
+    const r = this.getActiveDay(e, t), s = this.getDaysInMonth(e, t), o = this.getFirstDayOfWeek(e, t);
     return {
-      activeDay: n,
-      daysInMonth: o,
-      firstDayOfWeek: s
+      activeDay: r,
+      daysInMonth: s,
+      firstDayOfWeek: o
     };
   }
   getActiveDay(e, t) {
-    const n = this.dateStrategy.createDate(), o = n.getFullYear(), s = n.getMonth();
-    return o === t && s === e ? n.getDate() : null;
+    const r = this.dateStrategy.createDate(), s = r.getFullYear(), o = r.getMonth();
+    return s === t && o === e ? r.getDate() : null;
   }
   getDaysInMonth(e, t) {
-    const n = this.dateStrategy.createDate();
-    return n.setFullYear(t, e + 1, 0), n.getDate();
+    const r = this.dateStrategy.createDate();
+    return r.setFullYear(t, e + 1, 0), r.getDate();
   }
   getFirstDayOfWeek(e, t) {
-    const n = this.dateStrategy.createDate();
-    return n.setFullYear(t, e, 1), n.getDay();
+    const r = this.dateStrategy.createDate();
+    return r.setFullYear(t, e, 1), r.getDay();
   }
 }
-class $ {
+class j {
   constructor(e = new l()) {
     this.dateStrategy = e;
   }
@@ -269,14 +269,14 @@ class $ {
   getDay(e) {
     return this.dateStrategy.createDate(e).getDay();
   }
-  toLocaleString(e, t, n) {
-    return this.dateStrategy.createDate(e).toLocaleString(t, n);
+  toLocaleString(e, t, r) {
+    return this.dateStrategy.createDate(e).toLocaleString(t, r);
   }
-  toLocaleDateString(e, t, n) {
-    return this.dateStrategy.createDate(e).toLocaleDateString(t, n);
+  toLocaleDateString(e, t, r) {
+    return this.dateStrategy.createDate(e).toLocaleDateString(t, r);
   }
 }
-class j {
+class H {
   constructor(e = new l()) {
     this.dateStrategy = e;
   }
@@ -292,11 +292,11 @@ class j {
   getSeconds(e) {
     return this.dateStrategy.createDate(e).getSeconds();
   }
-  toLocaleTimeString(e, t, n) {
-    return this.dateStrategy.createDate(e).toLocaleTimeString(t, n);
+  toLocaleTimeString(e, t, r) {
+    return this.dateStrategy.createDate(e).toLocaleTimeString(t, r);
   }
 }
-class B {
+class X {
   constructor(e = new l()) {
     this.dateStrategy = e;
   }
@@ -312,100 +312,133 @@ class F {
     return this.dateStrategy.createDate(e).getFullYear();
   }
 }
-class H {
-  constructor(e = new I(), t = new $(), n = new B(), o = new j(), s = new F()) {
-    this.calendarRepository = e, this.dateRepository = t, this.monthRepository = n, this.timeRepository = o, this.yearRepository = s;
+class U {
+  constructor(e = new B(), t = new j(), r = new X(), s = new H(), o = new F()) {
+    this.calendarRepository = e, this.dateRepository = t, this.monthRepository = r, this.timeRepository = s, this.yearRepository = o;
   }
   getCalendar(e, t) {
     return this.calendarRepository.get(e, t);
   }
-  getDate(e, t, n) {
-    return this.dateRepository.toLocaleDateString(e, t, n);
+  getDate(e, t, r) {
+    return this.dateRepository.toLocaleDateString(e, t, r);
   }
-  getDateWithTime(e, t, n) {
-    return this.dateRepository.toLocaleString(e, t, n);
+  getDateWithTime(e, t, r) {
+    return this.dateRepository.toLocaleString(e, t, r);
   }
   getMonth(e) {
     return this.monthRepository.get(e);
   }
-  getTime(e, t, n) {
-    return this.timeRepository.toLocaleTimeString(e, t, n);
+  getTime(e, t, r) {
+    return this.timeRepository.toLocaleTimeString(e, t, r);
   }
   getYear(e) {
     return this.yearRepository.get(e);
   }
 }
-const pe = new H();
-class X {
+const de = new U(), p = class p {
+  static getInstance(e, ...t) {
+    let r = p.instances.get(e);
+    return r || (r = new e(...t), p.instances.set(e, r)), r;
+  }
+};
+// biome-ignore lint/suspicious/noExplicitAny: accept any arguments
+i(p, "instances", /* @__PURE__ */ new Map());
+let h = p;
+class k {
+  constructor() {
+    i(this, "events", {});
+  }
+  emit(e, t) {
+    if (this.events[e])
+      for (const r of this.events[e])
+        r(t);
+  }
+  off(e, t) {
+    this.events[e] && (this.events[e] = this.events[e].filter(
+      (r) => r !== t
+    ));
+  }
+  on(e, t) {
+    this.events[e] || (this.events[e] = []), this.events[e].push(t);
+  }
+  once(e, t) {
+    const r = (s) => {
+      t(s), this.off(e, r);
+    };
+    this.on(e, r);
+  }
+}
+const me = h.getInstance(k);
+class Y {
   async openFile() {
     return new Promise((e, t) => {
-      const n = document.createElement("input");
-      n.type = "file", n.onchange = async (o) => {
-        const s = o.target;
-        if (!s.files || s.files.length === 0) {
+      const r = document.createElement("input");
+      r.type = "file", r.onchange = async (s) => {
+        const o = s.target;
+        if (!o.files || o.files.length === 0) {
           t(new Error("No file selected"));
           return;
         }
-        const p = await s.files[0].text();
-        e(p);
-      }, n.click();
+        const u = await o.files[0].text();
+        e(u);
+      }, r.click();
     });
   }
-  async saveFile(e, t, n) {
-    const o = new Blob([e], { type: n }), s = document.createElement("a");
-    s.href = URL.createObjectURL(o), s.download = t, document.body.appendChild(s), s.click(), document.body.removeChild(s);
+  async saveFile(e, t, r) {
+    const s = new Blob([e], { type: r }), o = document.createElement("a");
+    o.href = URL.createObjectURL(s), o.download = t, document.body.appendChild(o), o.click(), document.body.removeChild(o);
   }
 }
-const ue = new X();
-var h = /* @__PURE__ */ ((r) => (r.LANGUAGE = "lang", r))(h || {}), U = Object.defineProperty, k = Object.getOwnPropertyDescriptor, Y = (r, e, t, n) => {
-  for (var o = k(e, t), s = r.length - 1, a; s >= 0; s--)
-    (a = r[s]) && (o = a(e, t, o) || o);
-  return o && U(e, t, o), o;
+const we = new Y();
+var w = /* @__PURE__ */ ((n) => (n.LANGUAGE = "lang", n))(w || {}), G = Object.defineProperty, q = Object.getOwnPropertyDescriptor, K = (n, e, t, r) => {
+  for (var s = q(e, t), o = n.length - 1, a; o >= 0; o--)
+    (a = n[o]) && (s = a(e, t, s) || s);
+  return s && G(e, t, s), s;
 };
-class m {
+class y {
   applyLanguage(e) {
     const t = window.document.querySelector("html");
     if (t)
-      t.setAttribute(h.LANGUAGE, e);
-    else
-      throw new Error("Element HTML not found");
-  }
-}
-Y([
-  g.CatchError("AttributeLanguageStrategy", "applyLanguage")
-], m.prototype, "applyLanguage");
-var G = Object.defineProperty, q = Object.getOwnPropertyDescriptor, K = (r, e, t, n) => {
-  for (var o = q(e, t), s = r.length - 1, a; s >= 0; s--)
-    (a = r[s]) && (o = a(e, t, o) || o);
-  return o && G(e, t, o), o;
-};
-class V {
-  applyLanguage(e) {
-    const t = window.document.querySelector("html"), n = `language-${e}`;
-    if (t)
-      t.className = n;
+      t.setAttribute(w.LANGUAGE, e);
     else
       throw new Error("Element HTML not found");
   }
 }
 K([
+  g.CatchError("AttributeLanguageStrategy", "applyLanguage")
+], y.prototype, "applyLanguage");
+var V = Object.defineProperty, Q = Object.getOwnPropertyDescriptor, z = (n, e, t, r) => {
+  for (var s = Q(e, t), o = n.length - 1, a; o >= 0; o--)
+    (a = n[o]) && (s = a(e, t, s) || s);
+  return s && V(e, t, s), s;
+};
+class J {
+  applyLanguage(e) {
+    const t = window.document.querySelector("html"), r = `language-${e}`;
+    if (t)
+      t.className = r;
+    else
+      throw new Error("Element HTML not found");
+  }
+}
+z([
   g.CatchError("ClassLanguageStrategy", "applyLanguage")
-], V.prototype, "applyLanguage");
-class Q {
+], J.prototype, "applyLanguage");
+class Z {
   constructor(e) {
-    c(this, "languageStrategy");
+    i(this, "languageStrategy");
     this.languageStrategy = e;
   }
   updateLanguage(e) {
     this.languageStrategy.applyLanguage(e);
   }
 }
-class de extends Q {
+class ye extends Z {
   constructor() {
-    super(new m());
+    super(new y());
   }
 }
-class z {
+class ee {
   getItem(e) {
     return window.localStorage.getItem(e);
   }
@@ -419,7 +452,7 @@ class z {
     window.localStorage.clear();
   }
 }
-class J {
+class te {
   getItem(e) {
     return window.sessionStorage.getItem(e);
   }
@@ -433,9 +466,9 @@ class J {
     window.sessionStorage.clear();
   }
 }
-class w {
+class S {
   constructor(e) {
-    c(this, "storageRepository");
+    i(this, "storageRepository");
     this.storageRepository = e;
   }
   set(e, t) {
@@ -452,75 +485,76 @@ class w {
     this.storageRepository.removeItem(e);
   }
 }
-class he extends w {
+class Se extends S {
   constructor() {
-    super(new z());
+    super(new ee());
   }
 }
-class me extends w {
+class fe extends S {
   constructor() {
-    super(new J());
+    super(new te());
   }
 }
-var y = /* @__PURE__ */ ((r) => (r.THEME = "theme", r))(y || {}), Z = Object.defineProperty, ee = Object.getOwnPropertyDescriptor, te = (r, e, t, n) => {
-  for (var o = ee(e, t), s = r.length - 1, a; s >= 0; s--)
-    (a = r[s]) && (o = a(e, t, o) || o);
-  return o && Z(e, t, o), o;
+var f = /* @__PURE__ */ ((n) => (n.THEME = "theme", n))(f || {}), re = Object.defineProperty, ne = Object.getOwnPropertyDescriptor, se = (n, e, t, r) => {
+  for (var s = ne(e, t), o = n.length - 1, a; o >= 0; o--)
+    (a = n[o]) && (s = a(e, t, s) || s);
+  return s && re(e, t, s), s;
 };
-class S {
+class D {
   applyTheme(e) {
     const t = window.document.querySelector("html");
     if (t)
-      t.setAttribute(y.THEME, e);
+      t.setAttribute(f.THEME, e);
     else
       throw new Error("Element HTML not found");
   }
 }
-te([
+se([
   g.CatchError("AttributeThemeStrategy", "applyTheme")
-], S.prototype, "applyTheme");
-var re = Object.defineProperty, ne = Object.getOwnPropertyDescriptor, oe = (r, e, t, n) => {
-  for (var o = ne(e, t), s = r.length - 1, a; s >= 0; s--)
-    (a = r[s]) && (o = a(e, t, o) || o);
-  return o && re(e, t, o), o;
+], D.prototype, "applyTheme");
+var oe = Object.defineProperty, ae = Object.getOwnPropertyDescriptor, ie = (n, e, t, r) => {
+  for (var s = ae(e, t), o = n.length - 1, a; o >= 0; o--)
+    (a = n[o]) && (s = a(e, t, s) || s);
+  return s && oe(e, t, s), s;
 };
-class se {
+class ce {
   applyTheme(e) {
-    const t = window.document.querySelector("html"), n = `theme-${e}`;
+    const t = window.document.querySelector("html"), r = `theme-${e}`;
     if (t)
-      t.className = n;
+      t.className = r;
     else
       throw new Error("Element HTML not found");
   }
 }
-oe([
+ie([
   g.CatchError("ClassThemeStrategy", "applyTheme")
-], se.prototype, "applyTheme");
-class ae {
+], ce.prototype, "applyTheme");
+class ge {
   constructor(e) {
-    c(this, "themeStrategy");
+    i(this, "themeStrategy");
     this.themeStrategy = e;
   }
   updateTheme(e) {
     this.themeStrategy.applyTheme(e);
   }
 }
-class we extends ae {
+class De extends ge {
   constructor() {
-    super(new S());
+    super(new D());
   }
 }
 export {
-  u as MSAppConfig,
-  W as MSAppConfigBuilder,
-  ge as MSAppController,
-  le as MSBrowserEnv,
-  pe as MSDate,
+  d as MSAppConfig,
+  T as MSAppConfigBuilder,
+  ue as MSAppController,
+  he as MSBrowserEnv,
+  de as MSDate,
   g as MSErrorHandler,
-  ue as MSFileManager,
-  de as MSLanguage,
-  he as MSLocalStorage,
-  me as MSSessionStorage,
-  we as MSTheme
+  me as MSEventBus,
+  we as MSFileManager,
+  ye as MSLanguage,
+  Se as MSLocalStorage,
+  fe as MSSessionStorage,
+  De as MSTheme
 };
 //# sourceMappingURL=index.js.map
