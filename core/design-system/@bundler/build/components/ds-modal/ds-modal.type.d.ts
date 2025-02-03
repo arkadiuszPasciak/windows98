@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { ModalNavigationItem } from "./modal-navigation";
+import type { Tabs } from "./modal-tabs";
 export declare enum DSModalCursor {
     DEFAULT = "default",
     MOVE = "move"
@@ -12,6 +13,7 @@ export interface DSModalProps {
     navigation?: ModalNavigationItem[];
     onClose: () => void;
     resizeWindow?: boolean;
+    tabs?: Tabs;
     title: string;
     width?: string;
 }

@@ -47,6 +47,11 @@ const meta: Meta<typeof DSModal> = {
 				type: "text",
 			},
 		},
+		tabs: {
+			control: {
+				type: "object",
+			},
+		},
 	},
 	component: DSModal,
 	tags: ["autodocs"],
@@ -76,5 +81,33 @@ export const Default: Story = {
 				onClick: () => {},
 			},
 		],
+	},
+}
+
+export const WithTabs: Story = {
+	args: {
+		id: "storybook-modal-tabs",
+		title: "Storybook Modal with Tabs",
+		width: "450px",
+		height: "300px",
+		resizeWindow: true,
+		moveWindow: true,
+		tabs: {
+			initialIndex: 0,
+			tabs: [
+				{
+					title: "Tab 1",
+					component: "<div>Content for Tab 1</div>",
+				},
+				{
+					title: "Tab 2",
+					component: "<div>Content for Tab 2 </div>",
+				},
+				{
+					title: "Tab 3",
+					component: "<div>Content for Tab 3 </div>",
+				},
+			],
+		},
 	},
 }
