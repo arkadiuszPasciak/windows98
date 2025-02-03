@@ -1,14 +1,15 @@
 import type { ReactNode } from "react"
 
-export interface DSModalTabs {
-	component: ReactNode
-	title: string
+export interface Tabs {
+	initialIndex?: number
+	tabs: {
+		title: string
+		component: ReactNode
+	}[]
 }
 
-export interface DSModalTabsProps {
-	initialIndex?: number
-	tabs: DSModalTabs[]
+export interface DSModalTabsProps extends Tabs {
 	id: string
 }
 
-export type useDSModalTabs = Pick<DSModalTabsProps, "initialIndex">
+export type useDSModalTabs = Pick<Tabs, "initialIndex">

@@ -31,7 +31,7 @@ export const ModalTabs: FunctionComponent<DSModalTabsProps> = ({
 			<div className={styles.content}>
 				{tabs.map((tab, index) => (
 					<div
-						className={`${styles["content-tab"]} ${index === activeTab ? styles.activeContentTab : ""}`}
+						className={`${styles["content-tab"]} ${index === activeTab ? styles["active-content-tab"] : ""}`}
 						data-testid={`${id}-modal-tabs-content-${index}`}
 						key={`${id}-modal-tabs-content`}
 					>

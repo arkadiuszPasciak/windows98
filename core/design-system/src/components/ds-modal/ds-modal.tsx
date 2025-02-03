@@ -4,6 +4,7 @@ import type { DSModalProps } from "./ds-modal.type"
 import { ModalContent } from "./modal-content"
 import { ModalHeader } from "./modal-header"
 import { ModalNavigation } from "./modal-navigation/modal-navigation"
+import { ModalTabs } from "./modal-tabs"
 import { useDSModal } from "./use-ds-modal.hook"
 
 export const DSModal: FunctionComponent<DSModalProps> = ({
@@ -13,6 +14,7 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 	height = "150px",
 	resizeWindow = false,
 	moveWindow = true,
+	tabs,
 	children,
 	navigation,
 	onClose,
@@ -47,13 +49,24 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 					mouseUpEvent={mouseUp}
 					title={title}
 				/>
-				{navigation && (
-					<ModalNavigation
+				{!tabs && (
+					<>
+						{navigation && (
+							<ModalNavigation
+								id={id}
+								navigation={navigation}
+							/>
+						)}
+						{children && <ModalContent id={id}>{children}</ModalContent>}
+					</>
+				)}
+				{tabs && (
+					<ModalTabs
 						id={id}
-						navigation={navigation}
+						initialIndex={tabs.initialIndex}
+						tabs={tabs.tabs}
 					/>
 				)}
-				<ModalContent id={id}>{children}</ModalContent>
 			</div>
 		</dialog>
 	)
