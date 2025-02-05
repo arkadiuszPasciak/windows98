@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
 const meta: Meta = {
-	title: "Micro Apps/Custom Elements/MATimezone",
+	title: "Micro Apps/Components/MATimezone",
 }
 
 export default meta
