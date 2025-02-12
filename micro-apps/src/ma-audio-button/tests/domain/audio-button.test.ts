@@ -1,57 +1,36 @@
-import { beforeEach, describe, expect, it, vi } from "vitest"
+import { afterEach, beforeEach, describe, expect, it } from "vitest"
 import { AudioButtonDomain } from "../../src/domain/domains"
 
-const AudioContextMock = vi.fn().mockImplementation(() => ({
-	createOscillator: vi.fn().mockReturnValue({
-		connect: vi.fn(),
-		start: vi.fn(),
-		stop: vi.fn(),
-	}),
-	createGain: vi.fn().mockReturnValue({
-		connect: vi.fn(),
-		gain: {
-			value: 1,
-			setValueAtTime: vi.fn(),
-		},
-	}),
-	createMediaElementSource: vi.fn(),
-	createMediaStreamDestination: vi.fn(),
-	createMediaStreamSource: vi.fn(),
-	getOutputTimestamp: vi.fn(),
-	baseLatency: 0,
-	outputLatency: 0,
-	destination: {},
-	resume: vi.fn().mockResolvedValue(undefined),
-	suspend: vi.fn().mockResolvedValue(undefined),
-	close: vi.fn().mockResolvedValue(undefined),
-	addEventListener: vi.fn(),
-	removeEventListener: vi.fn(),
-}));
+describe("AudioButtonDomain", () => {
+	let audioButtonDomain: AudioButtonDomain
+	let audioElement: HTMLAudioElement
+	let videoElement: HTMLVideoElement
 
-// TODO: Fix a problem - "AudioContext is not defined"
-describe.skip("AudioButtonDomain", () => {
 	beforeEach(() => {
-		vi.stubGlobal("AudioContext", AudioContextMock)
+		audioButtonDomain = new AudioButtonDomain()
+		audioElement = document.createElement("audio")
+		videoElement = document.createElement("video")
+		document.body.appendChild(audioElement)
+		document.body.appendChild(videoElement)
 	})
 
-	it("should mute sound when toggleSound is called", () => {
-		const audioButtonDomain = new AudioButtonDomain()
-		audioButtonDomain.toggleSound()
+	afterEach(() => {
+		document.body.removeChild(audioElement)
+		document.body.removeChild(videoElement)
+	})
+
+	it("should mute sound when toggleSound is called", async () => {
+		await audioButtonDomain.toggleSound()
 		expect(audioButtonDomain.isMuted).toBe(true)
-
-		const audioContext = new AudioContext()
-		const gainNode = audioContext.createGain()
-		expect(gainNode.gain.value).toBe(0)
+		expect(audioElement.muted).toBe(true)
+		expect(videoElement.muted).toBe(true)
 	})
 
-	it("should unmute sound when toggleSound is called again", () => {
-		const audioButtonDomain = new AudioButtonDomain()
-		audioButtonDomain.toggleSound()
-		audioButtonDomain.toggleSound()
+	it("should unmute sound when toggleSound is called again", async () => {
+		await audioButtonDomain.toggleSound()
+		await audioButtonDomain.toggleSound()
 		expect(audioButtonDomain.isMuted).toBe(false)
-
-		const audioContext = new AudioContext()
-		const gainNode = audioContext.createGain()
-		expect(gainNode.gain.value).toBe(1)
+		expect(audioElement.muted).toBe(false)
+		expect(videoElement.muted).toBe(false)
 	})
 })
