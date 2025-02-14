@@ -1,137 +1,137 @@
-(function(){"use strict";try{if(typeof document<"u"){var f=document.createElement("style");f.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._button_1h5df_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);width:35px;height:30px}@media (hover: hover){._button_1h5df_96{cursor:pointer}}._button_1h5df_96:disabled{pointer-events:none;opacity:.5}._button_1h5df_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._primary_1h5df_122{color:#00f}._secondary_1h5df_126{color:#fe0000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._keypad_1orw4_96{display:grid;justify-content:center;grid-template-rows:repeat(3,30px);grid-template-columns:repeat(4,35px);gap:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._screen_jjy5e_96{background-color:var(--background-color-white);color:var(--text-color);width:100%;height:20px;padding:5px;text-align:right;box-shadow:var(--border-field);font:400 11px/13px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_sceh6_96{display:grid;row-gap:15px;padding:13px 22px 10px;background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._days_qp2wh_96{width:160px;height:145px;box-shadow:var(--border-field);padding:2px;text-align:center;background-color:var(--background-color-white)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._month-days_cut46_96{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(6,1fr)}._day_cut46_102{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}._day-active_cut46_107{color:#fff;background-color:navy}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._week-days_jydkk_96{display:grid;height:20px;grid-template-columns:repeat(7,1fr);background-color:gray;color:var(--text-color-3)}._day_jydkk_104{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1xgp9_96{display:grid;grid-template-columns:90px 70px;background-color:var(--background-color);gap:10px 0;max-width:180px;width:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._time_d2a3x_96{color:var(--text-color);font:400 12px/12px MSSansSerifMedium,sans-serif;letter-spacing:.7px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_whtyc_96{background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1hx0w_96{display:flex;align-items:center;gap:6px;width:100vw;height:28px;background-color:var(--background-color);border-top:1px solid var(--border-color-navigation);outline:1px solid var(--background-color);padding:3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._item_8l6q7_96{display:flex;justify-content:center;align-items:center;flex-direction:column;cursor:pointer;font:400 11px/13px MSSansSerifMedium,sans-serif}._icon_8l6q7_105{margin-bottom:6px}._name_8l6q7_109{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._pulpit_1h2vr_96{display:grid;grid-column-gap:5px;grid-row-gap:5px;grid-template-columns:repeat(auto-fill,75px);grid-template-rows:repeat(auto-fill,65px);grid-auto-flow:column;width:100%;height:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1tvy2_96{width:100vw;height:calc(100vh - 28px);background-color:var(--background-color-pulpit);padding:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_128l9_96{display:flex;column-gap:5px;justify-content:center;padding-top:35px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._description_7aii1_96{display:flex;column-gap:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._presets_91z49_96{display:flex;flex-direction:column;row-gap:5px;margin-left:42px;margin-top:-10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_vb7vs_96{max-width:290px;background-color:var(--background-color);padding:20px;box-sizing:content-box}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_hsr5s_96{display:flex;justify-content:center;align-items:center;column-gap:15px;margin-bottom:15px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._player_1lb22_96{display:flex;column-gap:20px;justify-content:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._presets_1t37w_96{display:flex;justify-content:center;align-items:center;gap:8px;grid-area:1/1/2/7;margin-right:0;margin-left:0}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._screen_1jb1u_96{display:flex;grid-area:3/1/4/7;justify-self:center;background-color:var(--background-color-white);max-width:203px;width:100%;height:48px;padding:5px;box-shadow:var(--border-field);font:400 39px/44px MSSansSerifBold,sans-serif;letter-spacing:3px;color:var(--text-color);-webkit-user-select:none;user-select:none;margin:0 auto 15px}._time_1jb1u_113{width:55px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper_10bwx_96{background-color:var(--background-color);padding:0 10px 10px;max-width:385px;width:100%}')),document.head.appendChild(f)}}catch(o){console.error("vite-plugin-css-injected-by-js",o)}})();
-var lr = Object.defineProperty;
-var cr = (t, r, S) => r in t ? lr(t, r, { enumerable: !0, configurable: !0, writable: !0, value: S }) : t[r] = S;
-var fe = (t, r, S) => cr(t, typeof r != "symbol" ? r + "" : r, S);
-import o, { createContext, useContext, useState, useEffect, useMemo } from "react";
+(function(){"use strict";try{if(typeof document<"u"){var f=document.createElement("style");f.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._button_vf3zr_96{cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._button_1h5df_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);width:35px;height:30px}@media (hover: hover){._button_1h5df_96{cursor:pointer}}._button_1h5df_96:disabled{pointer-events:none;opacity:.5}._button_1h5df_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._primary_1h5df_122{color:#00f}._secondary_1h5df_126{color:#fe0000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._keypad_1orw4_96{display:grid;justify-content:center;grid-template-rows:repeat(3,30px);grid-template-columns:repeat(4,35px);gap:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._screen_jjy5e_96{background-color:var(--background-color-white);color:var(--text-color);width:100%;height:20px;padding:5px;text-align:right;box-shadow:var(--border-field);font:400 11px/13px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_sceh6_96{display:grid;row-gap:15px;padding:13px 22px 10px;background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._days_qp2wh_96{width:160px;height:145px;box-shadow:var(--border-field);padding:2px;text-align:center;background-color:var(--background-color-white)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._month-days_cut46_96{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(6,1fr)}._day_cut46_102{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}._day-active_cut46_107{color:#fff;background-color:navy}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._week-days_jydkk_96{display:grid;height:20px;grid-template-columns:repeat(7,1fr);background-color:gray;color:var(--text-color-3)}._day_jydkk_104{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1xgp9_96{display:grid;grid-template-columns:90px 70px;background-color:var(--background-color);gap:10px 0;max-width:180px;width:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._time_d2a3x_96{color:var(--text-color);font:400 12px/12px MSSansSerifMedium,sans-serif;letter-spacing:.7px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_whtyc_96{background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1hx0w_96{display:flex;align-items:center;gap:6px;width:100vw;height:28px;background-color:var(--background-color);border-top:1px solid var(--border-color-navigation);outline:1px solid var(--background-color);padding:3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._item_8l6q7_96{display:flex;justify-content:center;align-items:center;flex-direction:column;cursor:pointer;font:400 11px/13px MSSansSerifMedium,sans-serif}._icon_8l6q7_105{margin-bottom:6px}._name_8l6q7_109{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._pulpit_1h2vr_96{display:grid;grid-column-gap:5px;grid-row-gap:5px;grid-template-columns:repeat(auto-fill,75px);grid-template-rows:repeat(auto-fill,65px);grid-auto-flow:column;width:100%;height:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1tvy2_96{width:100vw;height:calc(100vh - 28px);background-color:var(--background-color-pulpit);padding:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_128l9_96{display:flex;column-gap:5px;justify-content:center;padding-top:35px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._description_7aii1_96{display:flex;column-gap:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._presets_91z49_96{display:flex;flex-direction:column;row-gap:5px;margin-left:42px;margin-top:-10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_vb7vs_96{max-width:290px;background-color:var(--background-color);padding:20px;box-sizing:content-box}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_hsr5s_96{display:flex;justify-content:center;align-items:center;column-gap:15px;margin-bottom:15px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._player_1lb22_96{display:flex;column-gap:20px;justify-content:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._presets_1t37w_96{display:flex;justify-content:center;align-items:center;gap:8px;grid-area:1/1/2/7;margin-right:0;margin-left:0}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._screen_1jb1u_96{display:flex;grid-area:3/1/4/7;justify-self:center;background-color:var(--background-color-white);max-width:203px;width:100%;height:48px;padding:5px;box-shadow:var(--border-field);font:400 39px/44px MSSansSerifBold,sans-serif;letter-spacing:3px;color:var(--text-color);-webkit-user-select:none;user-select:none;margin:0 auto 15px}._time_1jb1u_113{width:55px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper_10bwx_96{background-color:var(--background-color);padding:0 10px 10px;max-width:385px;width:100%}')),document.head.appendChild(f)}}catch(o){console.error("vite-plugin-css-injected-by-js",o)}})();
+var Lr = Object.defineProperty;
+var Vr = (t, r, u) => r in t ? Lr(t, r, { enumerable: !0, configurable: !0, writable: !0, value: u }) : t[r] = u;
+var he = (t, r, u) => Vr(t, typeof r != "symbol" ? r + "" : r, u);
+import o, { createContext, useState, useEffect, useContext, useMemo } from "react";
 import require$$0 from "react-dom";
 import i18next from "i18next";
 import { initReactI18next, useTranslation } from "react-i18next";
 import { makeAutoObservable } from "mobx";
 import { observer } from "mobx-react-lite";
-var createRoot, m = require$$0;
+var createRoot, m$1 = require$$0;
 if (process.env.NODE_ENV === "production")
-  createRoot = m.createRoot, m.hydrateRoot;
+  createRoot = m$1.createRoot, m$1.hydrateRoot;
 else {
-  var i$3 = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+  var i$3 = m$1.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
   createRoot = function(t, r) {
     i$3.usingClientEntryPoint = !0;
     try {
-      return m.createRoot(t, r);
+      return m$1.createRoot(t, r);
     } finally {
       i$3.usingClientEntryPoint = !1;
     }
   };
 }
-var j$1 = Object.defineProperty, x$1 = (t, r, S) => r in t ? j$1(t, r, { enumerable: !0, configurable: !0, writable: !0, value: S }) : t[r] = S, b$1 = (t, r, S) => (x$1(t, typeof r != "symbol" ? r + "" : r, S), S);
-const C = {
+var j$1 = Object.defineProperty, x$1 = (t, r, u) => r in t ? j$1(t, r, { enumerable: !0, configurable: !0, writable: !0, value: u }) : t[r] = u, b = (t, r, u) => (x$1(t, typeof r != "symbol" ? r + "" : r, u), u);
+const C$1 = {
   stringify: (t) => t,
   parse: (t) => t
 }, T$1 = {
   stringify: (t) => `${t}`,
   parse: (t) => parseFloat(t)
-}, V = {
+}, V$1 = {
   stringify: (t) => t ? "true" : "false",
   parse: (t) => /^[ty1-9]/i.test(t)
 }, N$1 = {
   stringify: (t) => t.name,
   parse: (t, r) => {
-    const S = (() => {
+    const u = (() => {
       if (typeof window < "u" && t in window)
         return window[t];
       if (typeof global < "u" && t in global)
         return global[t];
     })();
-    return typeof S == "function" ? S.bind(r) : void 0;
+    return typeof u == "function" ? u.bind(r) : void 0;
   }
-}, P$1 = {
+}, P = {
   stringify: (t) => JSON.stringify(t),
   parse: (t) => JSON.parse(t)
 }, w$1 = {
-  string: C,
+  string: C$1,
   number: T$1,
-  boolean: V,
+  boolean: V$1,
   function: N$1,
-  json: P$1
-}, A$2 = Symbol.for("r2wc.render"), h$1 = Symbol.for("r2wc.connected"), p = Symbol.for("r2wc.context"), i$2 = Symbol.for("r2wc.props");
-function z$1(t, r, S) {
-  var L, Q, se;
+  json: P
+}, A$1 = Symbol.for("r2wc.render"), h$1 = Symbol.for("r2wc.connected"), p$1 = Symbol.for("r2wc.context"), i$2 = Symbol.for("r2wc.props");
+function z$1(t, r, u) {
+  var S, E, ee;
   r.props || (r.props = t.propTypes ? Object.keys(t.propTypes) : []);
-  const me = (Array.isArray(r.props) ? r.props.slice() : Object.keys(r.props)).filter((ye) => ye !== "container"), we = {}, he = {}, _e = {};
-  for (const ye of me) {
-    we[ye] = Array.isArray(r.props) ? "string" : r.props[ye];
-    const be = J$1(ye);
-    he[ye] = be, _e[be] = ye;
+  const pe = (Array.isArray(r.props) ? r.props.slice() : Object.keys(r.props)).filter((xe) => xe !== "container"), be = {}, Se = {}, je = {};
+  for (const xe of pe) {
+    be[xe] = Array.isArray(r.props) ? "string" : r.props[xe];
+    const Ee = J$1(xe);
+    Se[xe] = Ee, je[Ee] = xe;
   }
-  class Se extends HTMLElement {
+  class _e extends HTMLElement {
     constructor() {
-      super(), b$1(this, L, !0), b$1(this, Q), b$1(this, se, {}), b$1(this, "container"), r.shadow ? this.container = this.attachShadow({
+      super(), b(this, S, !0), b(this, E), b(this, ee, {}), b(this, "container"), r.shadow ? this.container = this.attachShadow({
         mode: r.shadow
       }) : this.container = this, this[i$2].container = this.container;
-      for (const be of me) {
-        const Re = he[be], Ae = this.getAttribute(Re), Ie = we[be], Fe = w$1[Ie];
-        Ae && Fe != null && Fe.parse && (this[i$2][be] = Fe.parse(Ae, this));
+      for (const Ee of pe) {
+        const Ce = Se[Ee], Ne = this.getAttribute(Ce), ze = be[Ee], Fe = w$1[ze];
+        Ne && Fe != null && Fe.parse && (this[i$2][Ee] = Fe.parse(Ne, this));
       }
     }
     static get observedAttributes() {
-      return Object.keys(_e);
+      return Object.keys(je);
     }
     connectedCallback() {
-      this[h$1] = !0, this[A$2]();
+      this[h$1] = !0, this[A$1]();
     }
     disconnectedCallback() {
-      this[h$1] = !1, this[p] && S.unmount(this[p]), delete this[p];
+      this[h$1] = !1, this[p$1] && u.unmount(this[p$1]), delete this[p$1];
     }
-    attributeChangedCallback(be, Re, Ae) {
-      const Ie = _e[be], Fe = we[Ie], $e = w$1[Fe];
-      Ie in we && $e != null && $e.parse && (this[i$2][Ie] = $e.parse(Ae, this), this[A$2]());
+    attributeChangedCallback(Ee, Ce, Ne) {
+      const ze = je[Ee], Fe = be[ze], Oe = w$1[Fe];
+      ze in be && Oe != null && Oe.parse && (this[i$2][ze] = Oe.parse(Ne, this), this[A$1]());
     }
-    [(L = h$1, Q = p, se = i$2, A$2)]() {
-      this[h$1] && (this[p] ? S.update(this[p], this[i$2]) : this[p] = S.mount(
+    [(S = h$1, E = p$1, ee = i$2, A$1)]() {
+      this[h$1] && (this[p$1] ? u.update(this[p$1], this[i$2]) : this[p$1] = u.mount(
         this.container,
         t,
         this[i$2]
       ));
     }
   }
-  for (const ye of me) {
-    const be = he[ye], Re = we[ye];
-    Object.defineProperty(Se.prototype, ye, {
+  for (const xe of pe) {
+    const Ee = Se[xe], Ce = be[xe];
+    Object.defineProperty(_e.prototype, xe, {
       enumerable: !0,
       configurable: !0,
       get() {
-        return this[i$2][ye];
+        return this[i$2][xe];
       },
-      set(Ae) {
-        this[i$2][ye] = Ae;
-        const Ie = w$1[Re];
-        if (Ie != null && Ie.stringify) {
-          const Fe = Ie.stringify(Ae);
-          this.getAttribute(be) !== Fe && this.setAttribute(be, Fe);
+      set(Ne) {
+        this[i$2][xe] = Ne;
+        const ze = w$1[Ce];
+        if (ze != null && ze.stringify) {
+          const Fe = ze.stringify(Ne);
+          this.getAttribute(Ee) !== Fe && this.setAttribute(Ee, Fe);
         }
       }
     });
   }
-  return Se;
+  return _e;
 }
 function J$1(t = "") {
   return t.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
 }
-function f(t, r, S) {
-  const L = createRoot(t), Q = o.createElement(r, S);
-  return L.render(Q), {
-    root: L,
+function f$1(t, r, u) {
+  const S = createRoot(t), E = o.createElement(r, u);
+  return S.render(E), {
+    root: S,
     ReactComponent: r
   };
 }
-function i$1({ root: t, ReactComponent: r }, S) {
-  const L = o.createElement(r, S);
-  t.render(L);
+function i$1({ root: t, ReactComponent: r }, u) {
+  const S = o.createElement(r, u);
+  t.render(S);
 }
 function a({ root: t }) {
   t.unmount();
 }
 function s(t, r = {}) {
-  return z$1(t, r, { mount: f, update: i$1, unmount: a });
+  return z$1(t, r, { mount: f$1, update: i$1, unmount: a });
 }
 const calendarDE = {
   "ma-calendar": {
@@ -462,15 +462,15 @@ var hasRequiredReactJsxRuntime_production_min;
 function requireReactJsxRuntime_production_min() {
   if (hasRequiredReactJsxRuntime_production_min) return reactJsxRuntime_production_min;
   hasRequiredReactJsxRuntime_production_min = 1;
-  var t = o, r = Symbol.for("react.element"), S = Symbol.for("react.fragment"), L = Object.prototype.hasOwnProperty, Q = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, se = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function me(we, he, _e) {
-    var Se, ye = {}, be = null, Re = null;
-    _e !== void 0 && (be = "" + _e), he.key !== void 0 && (be = "" + he.key), he.ref !== void 0 && (Re = he.ref);
-    for (Se in he) L.call(he, Se) && !se.hasOwnProperty(Se) && (ye[Se] = he[Se]);
-    if (we && we.defaultProps) for (Se in he = we.defaultProps, he) ye[Se] === void 0 && (ye[Se] = he[Se]);
-    return { $$typeof: r, type: we, key: be, ref: Re, props: ye, _owner: Q.current };
+  var t = o, r = Symbol.for("react.element"), u = Symbol.for("react.fragment"), S = Object.prototype.hasOwnProperty, E = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, ee = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function pe(be, Se, je) {
+    var _e, xe = {}, Ee = null, Ce = null;
+    je !== void 0 && (Ee = "" + je), Se.key !== void 0 && (Ee = "" + Se.key), Se.ref !== void 0 && (Ce = Se.ref);
+    for (_e in Se) S.call(Se, _e) && !ee.hasOwnProperty(_e) && (xe[_e] = Se[_e]);
+    if (be && be.defaultProps) for (_e in Se = be.defaultProps, Se) xe[_e] === void 0 && (xe[_e] = Se[_e]);
+    return { $$typeof: r, type: be, key: Ee, ref: Ce, props: xe, _owner: E.current };
   }
-  return reactJsxRuntime_production_min.Fragment = S, reactJsxRuntime_production_min.jsx = me, reactJsxRuntime_production_min.jsxs = me, reactJsxRuntime_production_min;
+  return reactJsxRuntime_production_min.Fragment = u, reactJsxRuntime_production_min.jsx = pe, reactJsxRuntime_production_min.jsxs = pe, reactJsxRuntime_production_min;
 }
 var reactJsxRuntime_development = {};
 /**
@@ -485,88 +485,88 @@ var reactJsxRuntime_development = {};
 var hasRequiredReactJsxRuntime_development;
 function requireReactJsxRuntime_development() {
   return hasRequiredReactJsxRuntime_development || (hasRequiredReactJsxRuntime_development = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = o, r = Symbol.for("react.element"), S = Symbol.for("react.portal"), L = Symbol.for("react.fragment"), Q = Symbol.for("react.strict_mode"), se = Symbol.for("react.profiler"), me = Symbol.for("react.provider"), we = Symbol.for("react.context"), he = Symbol.for("react.forward_ref"), _e = Symbol.for("react.suspense"), Se = Symbol.for("react.suspense_list"), ye = Symbol.for("react.memo"), be = Symbol.for("react.lazy"), Re = Symbol.for("react.offscreen"), Ae = Symbol.iterator, Ie = "@@iterator";
+    var t = o, r = Symbol.for("react.element"), u = Symbol.for("react.portal"), S = Symbol.for("react.fragment"), E = Symbol.for("react.strict_mode"), ee = Symbol.for("react.profiler"), pe = Symbol.for("react.provider"), be = Symbol.for("react.context"), Se = Symbol.for("react.forward_ref"), je = Symbol.for("react.suspense"), _e = Symbol.for("react.suspense_list"), xe = Symbol.for("react.memo"), Ee = Symbol.for("react.lazy"), Ce = Symbol.for("react.offscreen"), Ne = Symbol.iterator, ze = "@@iterator";
     function Fe(e) {
       if (e === null || typeof e != "object")
         return null;
-      var _ = Ae && e[Ae] || e[Ie];
-      return typeof _ == "function" ? _ : null;
+      var d = Ne && e[Ne] || e[ze];
+      return typeof d == "function" ? d : null;
     }
-    var $e = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function ge(e) {
+    var Oe = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function Te(e) {
       {
-        for (var _ = arguments.length, D = new Array(_ > 1 ? _ - 1 : 0), ae = 1; ae < _; ae++)
-          D[ae - 1] = arguments[ae];
-        Mt("error", e, D);
+        for (var d = arguments.length, v = new Array(d > 1 ? d - 1 : 0), Z = 1; Z < d; Z++)
+          v[Z - 1] = arguments[Z];
+        Ot("error", e, v);
       }
     }
-    function Mt(e, _, D) {
+    function Ot(e, d, v) {
       {
-        var ae = $e.ReactDebugCurrentFrame, de = ae.getStackAddendum();
-        de !== "" && (_ += "%s", D = D.concat([de]));
-        var pe = D.map(function(ue) {
-          return String(ue);
+        var Z = Oe.ReactDebugCurrentFrame, me = Z.getStackAddendum();
+        me !== "" && (d += "%s", v = v.concat([me]));
+        var ye = v.map(function(le) {
+          return String(le);
         });
-        pe.unshift("Warning: " + _), Function.prototype.apply.call(console[e], console, pe);
+        ye.unshift("Warning: " + d), Function.prototype.apply.call(console[e], console, ye);
       }
     }
-    var Ct = !1, kt = !1, $t = !1, Ot = !1, Nt = !1, st;
-    st = Symbol.for("react.module.reference");
-    function Pt(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === L || e === se || Nt || e === Q || e === _e || e === Se || Ot || e === Re || Ct || kt || $t || typeof e == "object" && e !== null && (e.$$typeof === be || e.$$typeof === ye || e.$$typeof === me || e.$$typeof === we || e.$$typeof === he || // This needs to include all possible module reference object
+    var Nt = !1, Bt = !1, Ft = !1, Gt = !1, Ht = !1, it;
+    it = Symbol.for("react.module.reference");
+    function qt(e) {
+      return !!(typeof e == "string" || typeof e == "function" || e === S || e === ee || Ht || e === E || e === je || e === _e || Gt || e === Ce || Nt || Bt || Ft || typeof e == "object" && e !== null && (e.$$typeof === Ee || e.$$typeof === xe || e.$$typeof === pe || e.$$typeof === be || e.$$typeof === Se || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
-      e.$$typeof === st || e.getModuleId !== void 0));
+      e.$$typeof === it || e.getModuleId !== void 0));
     }
-    function At(e, _, D) {
-      var ae = e.displayName;
-      if (ae)
-        return ae;
-      var de = _.displayName || _.name || "";
-      return de !== "" ? D + "(" + de + ")" : D;
+    function Jt(e, d, v) {
+      var Z = e.displayName;
+      if (Z)
+        return Z;
+      var me = d.displayName || d.name || "";
+      return me !== "" ? v + "(" + me + ")" : v;
     }
-    function ot(e) {
+    function lt(e) {
       return e.displayName || "Context";
     }
-    function je(e) {
+    function ke(e) {
       if (e == null)
         return null;
-      if (typeof e.tag == "number" && ge("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
+      if (typeof e.tag == "number" && Te("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
         return e.displayName || e.name || null;
       if (typeof e == "string")
         return e;
       switch (e) {
-        case L:
-          return "Fragment";
         case S:
+          return "Fragment";
+        case u:
           return "Portal";
-        case se:
+        case ee:
           return "Profiler";
-        case Q:
+        case E:
           return "StrictMode";
-        case _e:
+        case je:
           return "Suspense";
-        case Se:
+        case _e:
           return "SuspenseList";
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case we:
-            var _ = e;
-            return ot(_) + ".Consumer";
-          case me:
-            var D = e;
-            return ot(D._context) + ".Provider";
-          case he:
-            return At(e, e.render, "ForwardRef");
-          case ye:
-            var ae = e.displayName || null;
-            return ae !== null ? ae : je(e.type) || "Memo";
-          case be: {
-            var de = e, pe = de._payload, ue = de._init;
+          case be:
+            var d = e;
+            return lt(d) + ".Consumer";
+          case pe:
+            var v = e;
+            return lt(v._context) + ".Provider";
+          case Se:
+            return Jt(e, e.render, "ForwardRef");
+          case xe:
+            var Z = e.displayName || null;
+            return Z !== null ? Z : ke(e.type) || "Memo";
+          case Ee: {
+            var me = e, ye = me._payload, le = me._init;
             try {
-              return je(ue(pe));
+              return ke(le(ye));
             } catch {
               return null;
             }
@@ -574,18 +574,18 @@ function requireReactJsxRuntime_development() {
         }
       return null;
     }
-    var Ne = Object.assign, Ge = 0, it, lt, ct, ut, dt, mt, pt;
-    function ft() {
+    var Pe = Object.assign, Ge = 0, ct, ut, dt, ft, mt, pt, ht;
+    function yt() {
     }
-    ft.__reactDisabledLog = !0;
-    function zt() {
+    yt.__reactDisabledLog = !0;
+    function Kt() {
       {
         if (Ge === 0) {
-          it = console.log, lt = console.info, ct = console.warn, ut = console.error, dt = console.group, mt = console.groupCollapsed, pt = console.groupEnd;
+          ct = console.log, ut = console.info, dt = console.warn, ft = console.error, mt = console.group, pt = console.groupCollapsed, ht = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
-            value: ft,
+            value: yt,
             writable: !0
           };
           Object.defineProperties(console, {
@@ -601,7 +601,7 @@ function requireReactJsxRuntime_development() {
         Ge++;
       }
     }
-    function It() {
+    function Zt() {
       {
         if (Ge--, Ge === 0) {
           var e = {
@@ -610,324 +610,324 @@ function requireReactJsxRuntime_development() {
             writable: !0
           };
           Object.defineProperties(console, {
-            log: Ne({}, e, {
-              value: it
-            }),
-            info: Ne({}, e, {
-              value: lt
-            }),
-            warn: Ne({}, e, {
+            log: Pe({}, e, {
               value: ct
             }),
-            error: Ne({}, e, {
+            info: Pe({}, e, {
               value: ut
             }),
-            group: Ne({}, e, {
+            warn: Pe({}, e, {
               value: dt
             }),
-            groupCollapsed: Ne({}, e, {
+            error: Pe({}, e, {
+              value: ft
+            }),
+            group: Pe({}, e, {
               value: mt
             }),
-            groupEnd: Ne({}, e, {
+            groupCollapsed: Pe({}, e, {
               value: pt
+            }),
+            groupEnd: Pe({}, e, {
+              value: ht
             })
           });
         }
-        Ge < 0 && ge("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        Ge < 0 && Te("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var Ze = $e.ReactCurrentDispatcher, Xe;
-    function He(e, _, D) {
+    var Qe = Oe.ReactCurrentDispatcher, et;
+    function He(e, d, v) {
       {
-        if (Xe === void 0)
+        if (et === void 0)
           try {
             throw Error();
-          } catch (de) {
-            var ae = de.stack.trim().match(/\n( *(at )?)/);
-            Xe = ae && ae[1] || "";
+          } catch (me) {
+            var Z = me.stack.trim().match(/\n( *(at )?)/);
+            et = Z && Z[1] || "";
           }
         return `
-` + Xe + e;
+` + et + e;
       }
     }
-    var Qe = !1, Ye;
+    var tt = !1, qe;
     {
-      var Vt = typeof WeakMap == "function" ? WeakMap : Map;
-      Ye = new Vt();
+      var Xt = typeof WeakMap == "function" ? WeakMap : Map;
+      qe = new Xt();
     }
-    function ht(e, _) {
-      if (!e || Qe)
+    function xt(e, d) {
+      if (!e || tt)
         return "";
       {
-        var D = Ye.get(e);
-        if (D !== void 0)
-          return D;
+        var v = qe.get(e);
+        if (v !== void 0)
+          return v;
       }
-      var ae;
-      Qe = !0;
-      var de = Error.prepareStackTrace;
+      var Z;
+      tt = !0;
+      var me = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var pe;
-      pe = Ze.current, Ze.current = null, zt();
+      var ye;
+      ye = Qe.current, Qe.current = null, Kt();
       try {
-        if (_) {
-          var ue = function() {
+        if (d) {
+          var le = function() {
             throw Error();
           };
-          if (Object.defineProperty(ue.prototype, "props", {
+          if (Object.defineProperty(le.prototype, "props", {
             set: function() {
               throw Error();
             }
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
-              Reflect.construct(ue, []);
-            } catch (Me) {
-              ae = Me;
+              Reflect.construct(le, []);
+            } catch ($e) {
+              Z = $e;
             }
-            Reflect.construct(e, [], ue);
+            Reflect.construct(e, [], le);
           } else {
             try {
-              ue.call();
-            } catch (Me) {
-              ae = Me;
+              le.call();
+            } catch ($e) {
+              Z = $e;
             }
-            e.call(ue.prototype);
+            e.call(le.prototype);
           }
         } else {
           try {
             throw Error();
-          } catch (Me) {
-            ae = Me;
+          } catch ($e) {
+            Z = $e;
           }
           e();
         }
-      } catch (Me) {
-        if (Me && ae && typeof Me.stack == "string") {
-          for (var ie = Me.stack.split(`
-`), Te = ae.stack.split(`
-`), ve = ie.length - 1, xe = Te.length - 1; ve >= 1 && xe >= 0 && ie[ve] !== Te[xe]; )
-            xe--;
-          for (; ve >= 1 && xe >= 0; ve--, xe--)
-            if (ie[ve] !== Te[xe]) {
-              if (ve !== 1 || xe !== 1)
+      } catch ($e) {
+        if ($e && Z && typeof $e.stack == "string") {
+          for (var te = $e.stack.split(`
+`), Re = Z.stack.split(`
+`), we = te.length - 1, ge = Re.length - 1; we >= 1 && ge >= 0 && te[we] !== Re[ge]; )
+            ge--;
+          for (; we >= 1 && ge >= 0; we--, ge--)
+            if (te[we] !== Re[ge]) {
+              if (we !== 1 || ge !== 1)
                 do
-                  if (ve--, xe--, xe < 0 || ie[ve] !== Te[xe]) {
-                    var Ee = `
-` + ie[ve].replace(" at new ", " at ");
-                    return e.displayName && Ee.includes("<anonymous>") && (Ee = Ee.replace("<anonymous>", e.displayName)), typeof e == "function" && Ye.set(e, Ee), Ee;
+                  if (we--, ge--, ge < 0 || te[we] !== Re[ge]) {
+                    var De = `
+` + te[we].replace(" at new ", " at ");
+                    return e.displayName && De.includes("<anonymous>") && (De = De.replace("<anonymous>", e.displayName)), typeof e == "function" && qe.set(e, De), De;
                   }
-                while (ve >= 1 && xe >= 0);
+                while (we >= 1 && ge >= 0);
               break;
             }
         }
       } finally {
-        Qe = !1, Ze.current = pe, It(), Error.prepareStackTrace = de;
+        tt = !1, Qe.current = ye, Zt(), Error.prepareStackTrace = me;
       }
-      var We = e ? e.displayName || e.name : "", Dt = We ? He(We) : "";
-      return typeof e == "function" && Ye.set(e, Dt), Dt;
+      var We = e ? e.displayName || e.name : "", $t = We ? He(We) : "";
+      return typeof e == "function" && qe.set(e, $t), $t;
     }
-    function Lt(e, _, D) {
-      return ht(e, !1);
+    function Qt(e, d, v) {
+      return xt(e, !1);
     }
-    function Wt(e) {
-      var _ = e.prototype;
-      return !!(_ && _.isReactComponent);
+    function er(e) {
+      var d = e.prototype;
+      return !!(d && d.isReactComponent);
     }
-    function Be(e, _, D) {
+    function Je(e, d, v) {
       if (e == null)
         return "";
       if (typeof e == "function")
-        return ht(e, Wt(e));
+        return xt(e, er(e));
       if (typeof e == "string")
         return He(e);
       switch (e) {
-        case _e:
+        case je:
           return He("Suspense");
-        case Se:
+        case _e:
           return He("SuspenseList");
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case he:
-            return Lt(e.render);
-          case ye:
-            return Be(e.type, _, D);
-          case be: {
-            var ae = e, de = ae._payload, pe = ae._init;
+          case Se:
+            return Qt(e.render);
+          case xe:
+            return Je(e.type, d, v);
+          case Ee: {
+            var Z = e, me = Z._payload, ye = Z._init;
             try {
-              return Be(pe(de), _, D);
+              return Je(ye(me), d, v);
             } catch {
             }
           }
         }
       return "";
     }
-    var qe = Object.prototype.hasOwnProperty, yt = {}, vt = $e.ReactDebugCurrentFrame;
-    function Ke(e) {
+    var Ke = Object.prototype.hasOwnProperty, wt = {}, vt = Oe.ReactDebugCurrentFrame;
+    function Ze(e) {
       if (e) {
-        var _ = e._owner, D = Be(e.type, e._source, _ ? _.type : null);
-        vt.setExtraStackFrame(D);
+        var d = e._owner, v = Je(e.type, e._source, d ? d.type : null);
+        vt.setExtraStackFrame(v);
       } else
         vt.setExtraStackFrame(null);
     }
-    function Ft(e, _, D, ae, de) {
+    function tr(e, d, v, Z, me) {
       {
-        var pe = Function.call.bind(qe);
-        for (var ue in e)
-          if (pe(e, ue)) {
-            var ie = void 0;
+        var ye = Function.call.bind(Ke);
+        for (var le in e)
+          if (ye(e, le)) {
+            var te = void 0;
             try {
-              if (typeof e[ue] != "function") {
-                var Te = Error((ae || "React class") + ": " + D + " type `" + ue + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[ue] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                throw Te.name = "Invariant Violation", Te;
+              if (typeof e[le] != "function") {
+                var Re = Error((Z || "React class") + ": " + v + " type `" + le + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[le] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                throw Re.name = "Invariant Violation", Re;
               }
-              ie = e[ue](_, ue, ae, D, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (ve) {
-              ie = ve;
+              te = e[le](d, le, Z, v, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (we) {
+              te = we;
             }
-            ie && !(ie instanceof Error) && (Ke(de), ge("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", ae || "React class", D, ue, typeof ie), Ke(null)), ie instanceof Error && !(ie.message in yt) && (yt[ie.message] = !0, Ke(de), ge("Failed %s type: %s", D, ie.message), Ke(null));
+            te && !(te instanceof Error) && (Ze(me), Te("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", Z || "React class", v, le, typeof te), Ze(null)), te instanceof Error && !(te.message in wt) && (wt[te.message] = !0, Ze(me), Te("Failed %s type: %s", v, te.message), Ze(null));
           }
       }
     }
-    var Gt = Array.isArray;
-    function et(e) {
-      return Gt(e);
+    var rr = Array.isArray;
+    function rt(e) {
+      return rr(e);
     }
-    function Ut(e) {
+    function nr(e) {
       {
-        var _ = typeof Symbol == "function" && Symbol.toStringTag, D = _ && e[Symbol.toStringTag] || e.constructor.name || "Object";
-        return D;
+        var d = typeof Symbol == "function" && Symbol.toStringTag, v = d && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        return v;
       }
     }
-    function Ht(e) {
+    function ar(e) {
       try {
-        return xt(e), !1;
+        return gt(e), !1;
       } catch {
         return !0;
       }
     }
-    function xt(e) {
+    function gt(e) {
       return "" + e;
     }
-    function wt(e) {
-      if (Ht(e))
-        return ge("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", Ut(e)), xt(e);
+    function bt(e) {
+      if (ar(e))
+        return Te("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", nr(e)), gt(e);
     }
-    var Ue = $e.ReactCurrentOwner, Yt = {
+    var Ue = Oe.ReactCurrentOwner, or = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, St, bt, tt;
-    tt = {};
-    function Bt(e) {
-      if (qe.call(e, "ref")) {
-        var _ = Object.getOwnPropertyDescriptor(e, "ref").get;
-        if (_ && _.isReactWarning)
+    }, _t, Et, nt;
+    nt = {};
+    function sr(e) {
+      if (Ke.call(e, "ref")) {
+        var d = Object.getOwnPropertyDescriptor(e, "ref").get;
+        if (d && d.isReactWarning)
           return !1;
       }
       return e.ref !== void 0;
     }
-    function qt(e) {
-      if (qe.call(e, "key")) {
-        var _ = Object.getOwnPropertyDescriptor(e, "key").get;
-        if (_ && _.isReactWarning)
+    function ir(e) {
+      if (Ke.call(e, "key")) {
+        var d = Object.getOwnPropertyDescriptor(e, "key").get;
+        if (d && d.isReactWarning)
           return !1;
       }
       return e.key !== void 0;
     }
-    function Kt(e, _) {
-      if (typeof e.ref == "string" && Ue.current && _ && Ue.current.stateNode !== _) {
-        var D = je(Ue.current.type);
-        tt[D] || (ge('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', je(Ue.current.type), e.ref), tt[D] = !0);
+    function lr(e, d) {
+      if (typeof e.ref == "string" && Ue.current && d && Ue.current.stateNode !== d) {
+        var v = ke(Ue.current.type);
+        nt[v] || (Te('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', ke(Ue.current.type), e.ref), nt[v] = !0);
       }
     }
-    function Jt(e, _) {
+    function cr(e, d) {
       {
-        var D = function() {
-          St || (St = !0, ge("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", _));
+        var v = function() {
+          _t || (_t = !0, Te("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", d));
         };
-        D.isReactWarning = !0, Object.defineProperty(e, "key", {
-          get: D,
+        v.isReactWarning = !0, Object.defineProperty(e, "key", {
+          get: v,
           configurable: !0
         });
       }
     }
-    function Zt(e, _) {
+    function ur(e, d) {
       {
-        var D = function() {
-          bt || (bt = !0, ge("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", _));
+        var v = function() {
+          Et || (Et = !0, Te("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", d));
         };
-        D.isReactWarning = !0, Object.defineProperty(e, "ref", {
-          get: D,
+        v.isReactWarning = !0, Object.defineProperty(e, "ref", {
+          get: v,
           configurable: !0
         });
       }
     }
-    var Xt = function(e, _, D, ae, de, pe, ue) {
-      var ie = {
+    var dr = function(e, d, v, Z, me, ye, le) {
+      var te = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: r,
         // Built-in properties that belong on the element
         type: e,
-        key: _,
-        ref: D,
-        props: ue,
+        key: d,
+        ref: v,
+        props: le,
         // Record the component responsible for creating this element.
-        _owner: pe
+        _owner: ye
       };
-      return ie._store = {}, Object.defineProperty(ie._store, "validated", {
+      return te._store = {}, Object.defineProperty(te._store, "validated", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
         value: !1
-      }), Object.defineProperty(ie, "_self", {
+      }), Object.defineProperty(te, "_self", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: ae
-      }), Object.defineProperty(ie, "_source", {
+        value: Z
+      }), Object.defineProperty(te, "_source", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: de
-      }), Object.freeze && (Object.freeze(ie.props), Object.freeze(ie)), ie;
+        value: me
+      }), Object.freeze && (Object.freeze(te.props), Object.freeze(te)), te;
     };
-    function Qt(e, _, D, ae, de) {
+    function Sr(e, d, v, Z, me) {
       {
-        var pe, ue = {}, ie = null, Te = null;
-        D !== void 0 && (wt(D), ie = "" + D), qt(_) && (wt(_.key), ie = "" + _.key), Bt(_) && (Te = _.ref, Kt(_, de));
-        for (pe in _)
-          qe.call(_, pe) && !Yt.hasOwnProperty(pe) && (ue[pe] = _[pe]);
+        var ye, le = {}, te = null, Re = null;
+        v !== void 0 && (bt(v), te = "" + v), ir(d) && (bt(d.key), te = "" + d.key), sr(d) && (Re = d.ref, lr(d, me));
+        for (ye in d)
+          Ke.call(d, ye) && !or.hasOwnProperty(ye) && (le[ye] = d[ye]);
         if (e && e.defaultProps) {
-          var ve = e.defaultProps;
-          for (pe in ve)
-            ue[pe] === void 0 && (ue[pe] = ve[pe]);
+          var we = e.defaultProps;
+          for (ye in we)
+            le[ye] === void 0 && (le[ye] = we[ye]);
         }
-        if (ie || Te) {
-          var xe = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
-          ie && Jt(ue, xe), Te && Zt(ue, xe);
+        if (te || Re) {
+          var ge = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
+          te && cr(le, ge), Re && ur(le, ge);
         }
-        return Xt(e, ie, Te, de, ae, Ue.current, ue);
+        return dr(e, te, Re, me, Z, Ue.current, le);
       }
     }
-    var rt = $e.ReactCurrentOwner, gt = $e.ReactDebugCurrentFrame;
-    function Le(e) {
+    var at = Oe.ReactCurrentOwner, Mt = Oe.ReactDebugCurrentFrame;
+    function Ve(e) {
       if (e) {
-        var _ = e._owner, D = Be(e.type, e._source, _ ? _.type : null);
-        gt.setExtraStackFrame(D);
+        var d = e._owner, v = Je(e.type, e._source, d ? d.type : null);
+        Mt.setExtraStackFrame(v);
       } else
-        gt.setExtraStackFrame(null);
+        Mt.setExtraStackFrame(null);
     }
-    var nt;
-    nt = !1;
-    function at(e) {
+    var ot;
+    ot = !1;
+    function st(e) {
       return typeof e == "object" && e !== null && e.$$typeof === r;
     }
-    function Tt() {
+    function Rt() {
       {
-        if (rt.current) {
-          var e = je(rt.current.type);
+        if (at.current) {
+          var e = ke(at.current.type);
           if (e)
             return `
 
@@ -936,728 +936,159 @@ Check the render method of \`` + e + "`.";
         return "";
       }
     }
-    function er(e) {
+    function Er(e) {
       return "";
     }
-    var _t = {};
-    function tr(e) {
+    var jt = {};
+    function Tr(e) {
       {
-        var _ = Tt();
-        if (!_) {
-          var D = typeof e == "string" ? e : e.displayName || e.name;
-          D && (_ = `
+        var d = Rt();
+        if (!d) {
+          var v = typeof e == "string" ? e : e.displayName || e.name;
+          v && (d = `
 
-Check the top-level render call using <` + D + ">.");
+Check the top-level render call using <` + v + ">.");
         }
-        return _;
+        return d;
       }
     }
-    function Et(e, _) {
+    function Dt(e, d) {
       {
         if (!e._store || e._store.validated || e.key != null)
           return;
         e._store.validated = !0;
-        var D = tr(_);
-        if (_t[D])
+        var v = Tr(d);
+        if (jt[v])
           return;
-        _t[D] = !0;
-        var ae = "";
-        e && e._owner && e._owner !== rt.current && (ae = " It was passed a child from " + je(e._owner.type) + "."), Le(e), ge('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', D, ae), Le(null);
+        jt[v] = !0;
+        var Z = "";
+        e && e._owner && e._owner !== at.current && (Z = " It was passed a child from " + ke(e._owner.type) + "."), Ve(e), Te('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', v, Z), Ve(null);
       }
     }
-    function Rt(e, _) {
+    function Ct(e, d) {
       {
         if (typeof e != "object")
           return;
-        if (et(e))
-          for (var D = 0; D < e.length; D++) {
-            var ae = e[D];
-            at(ae) && Et(ae, _);
+        if (rt(e))
+          for (var v = 0; v < e.length; v++) {
+            var Z = e[v];
+            st(Z) && Dt(Z, d);
           }
-        else if (at(e))
+        else if (st(e))
           e._store && (e._store.validated = !0);
         else if (e) {
-          var de = Fe(e);
-          if (typeof de == "function" && de !== e.entries)
-            for (var pe = de.call(e), ue; !(ue = pe.next()).done; )
-              at(ue.value) && Et(ue.value, _);
+          var me = Fe(e);
+          if (typeof me == "function" && me !== e.entries)
+            for (var ye = me.call(e), le; !(le = ye.next()).done; )
+              st(le.value) && Dt(le.value, d);
         }
       }
     }
-    function rr(e) {
+    function Mr(e) {
       {
-        var _ = e.type;
-        if (_ == null || typeof _ == "string")
+        var d = e.type;
+        if (d == null || typeof d == "string")
           return;
-        var D;
-        if (typeof _ == "function")
-          D = _.propTypes;
-        else if (typeof _ == "object" && (_.$$typeof === he || // Note: Memo only checks outer props here.
+        var v;
+        if (typeof d == "function")
+          v = d.propTypes;
+        else if (typeof d == "object" && (d.$$typeof === Se || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        _.$$typeof === ye))
-          D = _.propTypes;
+        d.$$typeof === xe))
+          v = d.propTypes;
         else
           return;
-        if (D) {
-          var ae = je(_);
-          Ft(D, e.props, "prop", ae, e);
-        } else if (_.PropTypes !== void 0 && !nt) {
-          nt = !0;
-          var de = je(_);
-          ge("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", de || "Unknown");
+        if (v) {
+          var Z = ke(d);
+          tr(v, e.props, "prop", Z, e);
+        } else if (d.PropTypes !== void 0 && !ot) {
+          ot = !0;
+          var me = ke(d);
+          Te("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", me || "Unknown");
         }
-        typeof _.getDefaultProps == "function" && !_.getDefaultProps.isReactClassApproved && ge("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof d.getDefaultProps == "function" && !d.getDefaultProps.isReactClassApproved && Te("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
-    function nr(e) {
+    function kr(e) {
       {
-        for (var _ = Object.keys(e.props), D = 0; D < _.length; D++) {
-          var ae = _[D];
-          if (ae !== "children" && ae !== "key") {
-            Le(e), ge("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", ae), Le(null);
+        for (var d = Object.keys(e.props), v = 0; v < d.length; v++) {
+          var Z = d[v];
+          if (Z !== "children" && Z !== "key") {
+            Ve(e), Te("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", Z), Ve(null);
             break;
           }
         }
-        e.ref !== null && (Le(e), ge("Invalid attribute `ref` supplied to `React.Fragment`."), Le(null));
+        e.ref !== null && (Ve(e), Te("Invalid attribute `ref` supplied to `React.Fragment`."), Ve(null));
       }
     }
-    function jt(e, _, D, ae, de, pe) {
+    function kt(e, d, v, Z, me, ye) {
       {
-        var ue = Pt(e);
-        if (!ue) {
-          var ie = "";
-          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (ie += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var Te = er();
-          Te ? ie += Te : ie += Tt();
-          var ve;
-          e === null ? ve = "null" : et(e) ? ve = "array" : e !== void 0 && e.$$typeof === r ? (ve = "<" + (je(e.type) || "Unknown") + " />", ie = " Did you accidentally export a JSX literal instead of a component?") : ve = typeof e, ge("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", ve, ie);
+        var le = qt(e);
+        if (!le) {
+          var te = "";
+          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (te += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
+          var Re = Er();
+          Re ? te += Re : te += Rt();
+          var we;
+          e === null ? we = "null" : rt(e) ? we = "array" : e !== void 0 && e.$$typeof === r ? (we = "<" + (ke(e.type) || "Unknown") + " />", te = " Did you accidentally export a JSX literal instead of a component?") : we = typeof e, Te("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", we, te);
         }
-        var xe = Qt(e, _, D, de, pe);
-        if (xe == null)
-          return xe;
-        if (ue) {
-          var Ee = _.children;
-          if (Ee !== void 0)
-            if (ae)
-              if (et(Ee)) {
-                for (var We = 0; We < Ee.length; We++)
-                  Rt(Ee[We], e);
-                Object.freeze && Object.freeze(Ee);
+        var ge = Sr(e, d, v, me, ye);
+        if (ge == null)
+          return ge;
+        if (le) {
+          var De = d.children;
+          if (De !== void 0)
+            if (Z)
+              if (rt(De)) {
+                for (var We = 0; We < De.length; We++)
+                  Ct(De[We], e);
+                Object.freeze && Object.freeze(De);
               } else
-                ge("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                Te("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              Rt(Ee, e);
+              Ct(De, e);
         }
-        return e === L ? nr(xe) : rr(xe), xe;
+        return e === S ? kr(ge) : Mr(ge), ge;
       }
     }
-    function ar(e, _, D) {
-      return jt(e, _, D, !0);
+    function $r(e, d, v) {
+      return kt(e, d, v, !0);
     }
-    function sr(e, _, D) {
-      return jt(e, _, D, !1);
+    function Or(e, d, v) {
+      return kt(e, d, v, !1);
     }
-    var or = sr, ir = ar;
-    reactJsxRuntime_development.Fragment = L, reactJsxRuntime_development.jsx = or, reactJsxRuntime_development.jsxs = ir;
+    var Ar = Or, Nr = $r;
+    reactJsxRuntime_development.Fragment = S, reactJsxRuntime_development.jsx = Ar, reactJsxRuntime_development.jsxs = Nr;
   }()), reactJsxRuntime_development;
 }
 process.env.NODE_ENV === "production" ? jsxRuntime.exports = requireReactJsxRuntime_production_min() : jsxRuntime.exports = requireReactJsxRuntime_development();
-var jsxRuntimeExports = jsxRuntime.exports, ECalculatorDirect = /* @__PURE__ */ ((t) => (t.FIRST = "first", t.LAST = "last", t))(ECalculatorDirect || {}), ECalculatorNumber = /* @__PURE__ */ ((t) => (t[t.ZERO = 0] = "ZERO", t[t.ONE = 1] = "ONE", t[t.TWO = 2] = "TWO", t[t.THREE = 3] = "THREE", t[t.FOUR = 4] = "FOUR", t[t.FIVE = 5] = "FIVE", t[t.SIX = 6] = "SIX", t[t.SEVEN = 7] = "SEVEN", t[t.EIGHT = 8] = "EIGHT", t[t.NINE = 9] = "NINE", t))(ECalculatorNumber || {}), ECalculatorSymbol = /* @__PURE__ */ ((t) => (t.ADD = "+", t.DIVIDE = "/", t.DOT = ".", t.MINUS = "-", t.MULTIPLY = "*", t.RESULT = "=", t))(ECalculatorSymbol || {});
-class CalculatorService {
-  isValueEqual(t, r, S) {
-    switch (S) {
-      case ECalculatorDirect.FIRST:
-        return t.slice(0, r.length) === r;
-      case ECalculatorDirect.LAST:
-        return t.slice(-1) === r;
-      default:
-        return !1;
-    }
-  }
-  isDotExist(t) {
-    return t ? !!t.split("").find((L) => L === ".") : !1;
-  }
-  isMathematicalSignLast(t) {
-    if (!t)
-      return !1;
-    switch (t.slice(-1)) {
-      case ECalculatorSymbol.ADD:
-      case ECalculatorSymbol.DIVIDE:
-      case ECalculatorSymbol.MINUS:
-      case ECalculatorSymbol.MULTIPLY:
-        return !0;
-      default:
-        return !1;
-    }
-  }
-  summResult(value) {
-    return !value || !this.isMathematicalOperation(value) ? "ERROR" : String(eval(value));
-  }
-  isMathematicalOperation(t) {
-    return t ? !!/(?:(?:^|[-+_*/])(?:\s*-?\d+(\.\d+)?(?:[eE][+-]?\d+)?\s*))+$/.test(t) : !1;
-  }
-}
-class CalculatorDomain {
+var jsxRuntimeExports = jsxRuntime.exports;
+class AudioButtonDomain {
   constructor() {
-    fe(this, "value", "0");
-    fe(this, "calculatorService", new CalculatorService());
-    fe(this, "addNumber", (r) => {
-      this.calculatorService.isValueEqual(
-        this.value,
-        "0",
-        ECalculatorDirect.FIRST
-      ) && !this.calculatorService.isValueEqual(
-        this.value,
-        "0.",
-        ECalculatorDirect.FIRST
-      ) && this.value.length === 1 ? this.value = String(r) : this.value += String(r);
-    });
-    fe(this, "addDot", () => {
-      this.calculatorService.isDotExist(this.value) || this.calculatorService.isMathematicalSignLast(this.value) || this.calculatorService.isValueEqual(
-        this.value,
-        ".",
-        ECalculatorDirect.LAST
-      ) || (this.value += ".");
-    });
-    fe(this, "addSymbol", (r) => {
-      this.value === "0." || this.calculatorService.isMathematicalSignLast(this.value) || (this.value += r);
-    });
-    fe(this, "summResult", () => {
-      this.value = this.calculatorService.summResult(this.value);
-    });
+    he(this, "isMuted", !1);
     makeAutoObservable(this);
   }
-}
-const calculatorDomain = new CalculatorDomain(), DomainContext$5 = createContext(calculatorDomain), button = "_button_1h5df_96", primary = "_primary_1h5df_122", secondary = "_secondary_1h5df_126", styles$m = {
-  button,
-  primary,
-  secondary
-}, OperationButton = ({
-  id: t,
-  onClick: r,
-  variant: S = "blue"
-}) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-  "button",
-  {
-    className: `${styles$m.button} ${styles$m[S]}`,
-    "data-testid": `ma-calculator-operation-button-${t}`,
-    onClick: r,
-    type: "button",
-    children: t
-  }
-), keypad = "_keypad_1orw4_96", styles$l = {
-  keypad
-};
-function useCalculator() {
-  return {
-    calculatorDomain: useContext(DomainContext$5)
-  };
-}
-function useKeypad() {
-  const { calculatorDomain: t } = useCalculator();
-  return {
-    addDot: t.addDot,
-    addNumber: t.addNumber,
-    addSymbol: t.addSymbol,
-    summResult: t.summResult
-  };
-}
-const Keypad = observer(() => {
-  const { addDot: t, addNumber: r, addSymbol: S, summResult: L } = useKeypad();
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    "div",
-    {
-      className: styles$l.keypad,
-      "data-testid": "ma-calculator-keypad",
-      children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorNumber.SEVEN,
-            onClick: () => r(ECalculatorNumber.SEVEN),
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorNumber.EIGHT,
-            onClick: () => r(ECalculatorNumber.EIGHT),
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorNumber.NINE,
-            onClick: () => r(ECalculatorNumber.NINE),
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorSymbol.DIVIDE,
-            onClick: () => S(ECalculatorSymbol.DIVIDE),
-            variant: "secondary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorNumber.FOUR,
-            onClick: () => r(ECalculatorNumber.FOUR),
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorNumber.FIVE,
-            onClick: () => r(ECalculatorNumber.FIVE),
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorNumber.SIX,
-            onClick: () => r(ECalculatorNumber.SIX),
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorSymbol.MULTIPLY,
-            onClick: () => S(ECalculatorSymbol.MULTIPLY),
-            variant: "secondary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorNumber.ONE,
-            onClick: () => r(ECalculatorNumber.ONE),
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorNumber.TWO,
-            onClick: () => r(ECalculatorNumber.TWO),
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorNumber.THREE,
-            onClick: () => r(ECalculatorNumber.THREE),
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorSymbol.MINUS,
-            onClick: () => S(ECalculatorSymbol.MINUS),
-            variant: "secondary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorNumber.ZERO,
-            onClick: () => r(ECalculatorNumber.ZERO),
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorSymbol.DOT,
-            onClick: t,
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorSymbol.RESULT,
-            onClick: L,
-            variant: "primary"
-          }
-        ),
-        /* @__PURE__ */ jsxRuntimeExports.jsx(
-          OperationButton,
-          {
-            id: ECalculatorSymbol.ADD,
-            onClick: () => S(ECalculatorSymbol.ADD),
-            variant: "secondary"
-          }
-        )
-      ]
+  async toggleSound() {
+    this.isMuted = !this.isMuted;
+    const r = document.querySelectorAll("audio, video");
+    for (const u of Array.from(r)) {
+      const S = u;
+      S.muted = this.isMuted;
     }
-  );
-}), screen$1 = "_screen_jjy5e_96", styles$k = {
-  screen: screen$1
-};
-function useScreen$1() {
-  const { calculatorDomain: t } = useCalculator();
-  return {
-    value: t.value
-  };
-}
-const Screen$1 = observer(() => {
-  const { value: t } = useScreen$1();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "span",
-    {
-      className: styles$k.screen,
-      "data-testid": "ma-calculator-screen",
-      children: t ?? "ERROR"
-    }
-  );
-}), wrapper$6 = "_wrapper_sceh6_96", styles$j = {
-  wrapper: wrapper$6
-}, Wrapper$7 = () => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-  "div",
-  {
-    className: styles$j.wrapper,
-    "data-testid": "ma-calculator-wrapper",
-    children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Screen$1, {}),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Keypad, {})
-    ]
-  }
-), CalculatorView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$5.Provider, { value: calculatorDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$7, {}) });
-var v = Object.defineProperty, E = (t, r, S) => r in t ? v(t, r, { enumerable: !0, configurable: !0, writable: !0, value: S }) : t[r] = S, c = (t, r, S) => E(t, typeof r != "symbol" ? r + "" : r, S);
-const i = class Je {
-  constructor(r) {
-    c(this, "config"), this.config = r;
-  }
-  static getInstance(r) {
-    for (; Je.lock; )
-      ;
-    return Je.lock = !0, Je.instance || (Je.instance = new Je(r)), Je.lock = !1, Je.instance;
-  }
-  set(r, S) {
-    this.config[r] !== S && (this.config[r] = S);
-  }
-  get(r) {
-    return this.config[r];
-  }
-};
-c(i, "instance"), c(i, "lock", !1);
-class O {
-  constructor() {
-    c(this, "UNKNOWN_ERROR_MESSAGE", "Unknown error message");
-  }
-  CatchError(r, S) {
-    const L = this;
-    return (Q, se, me) => {
-      const we = me.value;
-      me.value = function(...he) {
-        try {
-          return we.apply(this, he);
-        } catch (_e) {
-          throw L.createError(
-            r,
-            S,
-            _e
-          );
-        }
-      };
-    };
-  }
-  createError(r, S, L) {
-    const Q = this.generateErrorMessage(L), se = new Error(Q);
-    return se.name = `[${r}]<${S}>`, se;
-  }
-  generateErrorMessage(r) {
-    return r instanceof Error && r.message.length ? r.message : this.UNKNOWN_ERROR_MESSAGE;
   }
 }
-const u = new O(), g = {
-  CatchError: u.CatchError.bind(u)
-};
-var x = Object.defineProperty, W = Object.getOwnPropertyDescriptor, M = (t, r, S, L) => {
-  for (var Q = W(r, S), se = t.length - 1, me; se >= 0; se--)
-    (me = t[se]) && (Q = me(r, S, Q) || Q);
-  return Q && x(r, S, Q), Q;
-};
-class R {
-  constructor(r) {
-    c(this, "config"), this.config = r;
-  }
-  add(r, S) {
-    return this.config[r] = S, this;
-  }
-  build() {
-    return this.validateConfig(), this.config;
-  }
-  validateConfig() {
-    if (this.config === void 0) throw new Error("missing config");
-    for (const [r, S] of Object.entries(
-      this.config
-    ))
-      if (S === void 0) throw new Error(`missing ${r}`);
-  }
-}
-M([
-  g.CatchError("AppConfigBuilderDomain", "validateConfig")
-], R.prototype, "validateConfig");
-class T {
-  restartApplication() {
-    window.location.reload();
-  }
-  shutdownApplication() {
-    window.location.href = "https://google.com";
-  }
-}
-class ce {
-  constructor() {
-    c(this, "appControllerRepository"), this.appControllerRepository = new T();
-  }
-  restartApplication() {
-    this.appControllerRepository.restartApplication();
-  }
-  shutdownApplication() {
-    this.appControllerRepository.shutdownApplication();
-  }
-}
-var P = Object.defineProperty, A$1 = Object.getOwnPropertyDescriptor, b = (t, r, S, L) => {
-  for (var Q = A$1(r, S), se = t.length - 1, me; se >= 0; se--)
-    (me = t[se]) && (Q = me(r, S, Q) || Q);
-  return Q && P(r, S, Q), Q;
-};
-class l {
-  createDate(r) {
-    if (r && !this.isValidDate(r))
-      throw new Error(`Invalid date string: ${r}`);
-    return r ? new Date(r) : /* @__PURE__ */ new Date();
-  }
-  isValidDate(r) {
-    return !Number.isNaN(Date.parse(r));
-  }
-}
-b([
-  g.CatchError("DateStrategy", "createDate")
-], l.prototype, "createDate");
-let I$1 = class {
-  constructor(r = new l()) {
-    this.dateStrategy = r;
-  }
-  get(r, S) {
-    const L = this.getActiveDay(r, S), Q = this.getDaysInMonth(r, S), se = this.getFirstDayOfWeek(r, S);
-    return {
-      activeDay: L,
-      daysInMonth: Q,
-      firstDayOfWeek: se
-    };
-  }
-  getActiveDay(r, S) {
-    const L = this.dateStrategy.createDate(), Q = L.getFullYear(), se = L.getMonth();
-    return Q === S && se === r ? L.getDate() : null;
-  }
-  getDaysInMonth(r, S) {
-    const L = this.dateStrategy.createDate();
-    return L.setFullYear(S, r + 1, 0), L.getDate();
-  }
-  getFirstDayOfWeek(r, S) {
-    const L = this.dateStrategy.createDate();
-    return L.setFullYear(S, r, 1), L.getDay();
-  }
-};
-class $ {
-  constructor(r = new l()) {
-    this.dateStrategy = r;
-  }
-  getDate(r) {
-    return this.dateStrategy.createDate(r).getDate();
-  }
-  getDay(r) {
-    return this.dateStrategy.createDate(r).getDay();
-  }
-  toLocaleString(r, S, L) {
-    return this.dateStrategy.createDate(r).toLocaleString(S, L);
-  }
-  toLocaleDateString(r, S, L) {
-    return this.dateStrategy.createDate(r).toLocaleDateString(S, L);
-  }
-}
-class j {
-  constructor(r = new l()) {
-    this.dateStrategy = r;
-  }
-  getHours(r) {
-    return this.dateStrategy.createDate(r).getHours();
-  }
-  getMilliseconds(r) {
-    return this.dateStrategy.createDate(r).getMilliseconds();
-  }
-  getMinutes(r) {
-    return this.dateStrategy.createDate(r).getMinutes();
-  }
-  getSeconds(r) {
-    return this.dateStrategy.createDate(r).getSeconds();
-  }
-  toLocaleTimeString(r, S, L) {
-    return this.dateStrategy.createDate(r).toLocaleTimeString(S, L);
-  }
-}
-class B {
-  constructor(r = new l()) {
-    this.dateStrategy = r;
-  }
-  get(r) {
-    return this.dateStrategy.createDate(r).getMonth();
-  }
-}
-class H {
-  constructor(r = new l()) {
-    this.dateStrategy = r;
-  }
-  get(r) {
-    return this.dateStrategy.createDate(r).getFullYear();
-  }
-}
-class X {
-  constructor(r = new I$1(), S = new $(), L = new B(), Q = new j(), se = new H()) {
-    this.calendarRepository = r, this.dateRepository = S, this.monthRepository = L, this.timeRepository = Q, this.yearRepository = se;
-  }
-  getCalendar(r, S) {
-    return this.calendarRepository.get(r, S);
-  }
-  getDate(r, S, L) {
-    return this.dateRepository.toLocaleDateString(r, S, L);
-  }
-  getDateWithTime(r, S, L) {
-    return this.dateRepository.toLocaleString(r, S, L);
-  }
-  getMonth(r) {
-    return this.monthRepository.get(r);
-  }
-  getTime(r, S, L) {
-    return this.timeRepository.toLocaleTimeString(r, S, L);
-  }
-  getYear(r) {
-    return this.yearRepository.get(r);
-  }
-}
-const le = new X();
-var d = /* @__PURE__ */ ((t) => (t.LANGUAGE = "lang", t))(d || {}), F = Object.defineProperty, U = Object.getOwnPropertyDescriptor, Y = (t, r, S, L) => {
-  for (var Q = U(r, S), se = t.length - 1, me; se >= 0; se--)
-    (me = t[se]) && (Q = me(r, S, Q) || Q);
-  return Q && F(r, S, Q), Q;
-};
-class h {
-  applyLanguage(r) {
-    const S = window.document.querySelector("html");
-    if (S)
-      S.setAttribute(d.LANGUAGE, r);
-    else
-      throw new Error("Element HTML not found");
-  }
-}
-Y([
-  g.CatchError("AttributeLanguageStrategy", "applyLanguage")
-], h.prototype, "applyLanguage");
-var G = Object.defineProperty, k = Object.getOwnPropertyDescriptor, q = (t, r, S, L) => {
-  for (var Q = k(r, S), se = t.length - 1, me; se >= 0; se--)
-    (me = t[se]) && (Q = me(r, S, Q) || Q);
-  return Q && G(r, S, Q), Q;
-};
-class K {
-  applyLanguage(r) {
-    const S = window.document.querySelector("html"), L = `language-${r}`;
-    if (S)
-      S.className = L;
-    else
-      throw new Error("Element HTML not found");
-  }
-}
-q([
-  g.CatchError("ClassLanguageStrategy", "applyLanguage")
-], K.prototype, "applyLanguage");
-var w = /* @__PURE__ */ ((t) => (t.THEME = "theme", t))(w || {}), J = Object.defineProperty, Z = Object.getOwnPropertyDescriptor, ee$1 = (t, r, S, L) => {
-  for (var Q = Z(r, S), se = t.length - 1, me; se >= 0; se--)
-    (me = t[se]) && (Q = me(r, S, Q) || Q);
-  return Q && J(r, S, Q), Q;
-};
-class y {
-  applyTheme(r) {
-    const S = window.document.querySelector("html");
-    if (S)
-      S.setAttribute(w.THEME, r);
-    else
-      throw new Error("Element HTML not found");
-  }
-}
-ee$1([
-  g.CatchError("AttributeThemeStrategy", "applyTheme")
-], y.prototype, "applyTheme");
-var te$1 = Object.defineProperty, re$1 = Object.getOwnPropertyDescriptor, ne = (t, r, S, L) => {
-  for (var Q = re$1(r, S), se = t.length - 1, me; se >= 0; se--)
-    (me = t[se]) && (Q = me(r, S, Q) || Q);
-  return Q && te$1(r, S, Q), Q;
-};
-class oe {
-  applyTheme(r) {
-    const S = window.document.querySelector("html"), L = `theme-${r}`;
-    if (S)
-      S.className = L;
-    else
-      throw new Error("Element HTML not found");
-  }
-}
-ne([
-  g.CatchError("ClassThemeStrategy", "applyTheme")
-], oe.prototype, "applyTheme");
-class CalendarDomain {
-  constructor(r = le) {
-    fe(this, "activeDay", null);
-    fe(this, "daysInMonth", 0);
-    fe(this, "firstDayOfWeek", 0);
-    fe(this, "currentYear", 0);
-    fe(this, "currentMonth", 0);
-    fe(this, "initCalendar", () => {
-      const r = this.msDateDomain.getMonth(), S = this.msDateDomain.getYear();
-      this.generateCalendar(r, S);
-    });
-    fe(this, "changeCalendarByYear", (r) => {
-      this.generateCalendar(this.currentMonth, r);
-    });
-    fe(this, "changeCalendarByMonth", (r) => {
-      this.generateCalendar(r, this.currentYear);
-    });
-    fe(this, "decreaseYear", () => {
-      this.currentYear -= 1, this.generateCalendar(this.currentMonth, this.currentYear);
-    });
-    fe(this, "increaseYear", () => {
-      this.currentYear += 1, this.generateCalendar(this.currentMonth, this.currentYear);
-    });
-    fe(this, "generateCalendar", (r, S) => {
-      const L = this.msDateDomain.getCalendar(r, S);
-      this.activeDay = L.activeDay, this.daysInMonth = L.daysInMonth, this.firstDayOfWeek = L.firstDayOfWeek, this.currentYear = S, this.currentMonth = r;
-    });
-    this.msDateDomain = r, makeAutoObservable(this), this.initCalendar();
-  }
-}
-const calendarDomain = new CalendarDomain(), DomainContext$4 = createContext(calendarDomain);
+const audioButtonDomain = new AudioButtonDomain(), DomainContext$6 = createContext(audioButtonDomain);
 (function() {
   try {
     if (typeof document < "u") {
       var t = document.createElement("style");
-      t.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button_i4qw7_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_i4qw7_96{cursor:pointer}}._ds-button_i4qw7_96:disabled{pointer-events:none;opacity:.5}._ds-button_i4qw7_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_i4qw7_120{width:16px;height:14px;padding:1px}._size-medium_i4qw7_126{height:23px;min-width:75px;padding:0 12px}._size-medium_i4qw7_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_i4qw7_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button-arrow_1w7w8_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_1w7w8_96:hover{cursor:pointer}}._ds-button-arrow_1w7w8_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_1w7w8_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_1w7w8_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_1w7w8_124:after{border-top:3px solid var(--text-color)}._arrow-top_1w7w8_128:after{border-bottom:3px solid var(--text-color)}._size-small_1w7w8_132{width:20px;height:10px}._size-medium_1w7w8_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_i4tc8_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_i4tc8_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper-horizontal_4dyys_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_4dyys_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._input_4dyys_111,._label_4dyys_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_4dyys_111{padding:3px 4px;height:21px;width:100%;box-shadow:var(--border-field);background-color:var(--background-color-white)}._input_4dyys_111:focus{outline:none}._input_4dyys_111:disabled,._input_4dyys_111:disabled+._label_4dyys_112{opacity:.8}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_s5be2_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_s5be2_96:hover{cursor:pointer}}._disabled_s5be2_108{pointer-events:none;opacity:.5}._input_s5be2_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_s5be2_113[disabled]{pointer-events:none}._icon_s5be2_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_upk41_96{position:relative}._label_upk41_100{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._select_upk41_105{height:21px;width:100%;background:var(--background-color-white) url(/icons/select-button.svg) no-repeat top 2px right 2px;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_upk41_115{position:absolute;right:1px;top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-stepper_8xv2v_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_8xv2v_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_8xv2v_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_8xv2v_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_8xv2v_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._DSText_zb3qg_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}')), document.head.appendChild(t);
+      t.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button_i4qw7_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_i4qw7_96{cursor:pointer}}._ds-button_i4qw7_96:disabled{pointer-events:none;opacity:.5}._ds-button_i4qw7_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_i4qw7_120{width:16px;height:14px;padding:1px}._size-medium_i4qw7_126{height:23px;min-width:75px;padding:0 12px}._size-medium_i4qw7_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_i4qw7_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button-arrow_1w7w8_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_1w7w8_96:hover{cursor:pointer}}._ds-button-arrow_1w7w8_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_1w7w8_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_1w7w8_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_1w7w8_124:after{border-top:3px solid var(--text-color)}._arrow-top_1w7w8_128:after{border-bottom:3px solid var(--text-color)}._size-small_1w7w8_132{width:20px;height:10px}._size-medium_1w7w8_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_b9rid_96{position:relative;display:flex;align-items:center;column-gap:6px}._wrapper_b9rid_96:hover{cursor:pointer}._disabled_b9rid_106{pointer-events:none;opacity:.5}._input_b9rid_111{position:absolute;width:1px;height:1px;background-color:transparent}._input_b9rid_111[disabled]{pointer-events:none}._icon_b9rid_121{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_i4tc8_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_i4tc8_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-heading_1hbyy_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper-horizontal_4dyys_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_4dyys_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._input_4dyys_111,._label_4dyys_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_4dyys_111{padding:3px 4px;height:21px;width:100%;box-shadow:var(--border-field);background-color:var(--background-color-white)}._input_4dyys_111:focus{outline:none}._input_4dyys_111:disabled,._input_4dyys_111:disabled+._label_4dyys_112{opacity:.8}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._modal_38rt1_96{background-color:transparent;border:0;height:100%;width:100%}._modal_38rt1_96::backdrop{background-color:transparent}._move-window_38rt1_107{position:relative;top:50%;left:50%;transform:translate(-50%,-50%)}._container_38rt1_114{padding:3px;min-height:110px;min-width:190px;max-width:100%;max-height:100%;background-color:var(--background-color);box-shadow:var(--box-shadow-raised)}._resize-window_38rt1_124{resize:both;overflow:auto}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._content_dk22n_96{padding:2px;width:100%;height:calc(100% - 40px)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._header_1q3bo_96{display:flex;justify-content:space-between;align-items:center;height:20px;padding:3px 2px 3px 3px;background:var(--background-color-modal-header)}._header_1q3bo_96>h3{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._navigation_1fej4_96{column-gap:5px;display:flex;flex-wrap:wrap;padding:4px 2px}._navigation-button_1fej4_103{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_15rwh_96{height:calc(100% - 28px);margin:5px}._tab_15rwh_101{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._active-tab_15rwh_106{position:relative;z-index:3}._content_15rwh_111{position:relative;z-index:2;top:-2px;height:calc(100% - 21px)}._tab_15rwh_101,._content_15rwh_111{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_15rwh_124{display:none}._active-content-tab_15rwh_128{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_s5be2_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_s5be2_96:hover{cursor:pointer}}._disabled_s5be2_108{pointer-events:none;opacity:.5}._input_s5be2_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_s5be2_113[disabled]{pointer-events:none}._icon_s5be2_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_upk41_96{position:relative}._label_upk41_100{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._select_upk41_105{height:21px;width:100%;background:var(--background-color-white) url(/icons/select-button.svg) no-repeat top 2px right 2px;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_upk41_115{position:absolute;right:1px;top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-stepper_8xv2v_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_8xv2v_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_8xv2v_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_8xv2v_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_8xv2v_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._DSText_zb3qg_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper-horizontal_1g0sz_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_1g0sz_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._textarea_1g0sz_111,._label_1g0sz_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._textarea_1g0sz_111{padding:3px 4px;box-shadow:var(--border-field);background-color:var(--background-color-white);resize:none}._textarea_1g0sz_111:disabled,._textarea_1g0sz_111:read-only{background-color:var(--background-color-white)}._textarea_1g0sz_111:disabled,._textarea_1g0sz_111:disabled+._label_1g0sz_112,._textarea_1g0sz_111[readonly],._textarea_1g0sz_111[readonly]+._label_1g0sz_112{opacity:.8}._textarea_1g0sz_111:focus{outline:none}')), document.head.appendChild(t);
     }
   } catch (r) {
     console.error("vite-plugin-css-injected-by-js", r);
   }
 })();
-var te = { exports: {} }, z = {};
+var fe = { exports: {} }, A = {};
 /**
  * @license React
  * react-jsx-runtime.production.min.js
@@ -1667,25 +1098,21 @@ var te = { exports: {} }, z = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var Ce;
-function br() {
-  if (Ce)
-    return z;
-  Ce = 1;
-  var t = o, r = Symbol.for("react.element"), S = Symbol.for("react.fragment"), L = Object.prototype.hasOwnProperty, Q = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, se = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function me(we, he, _e) {
-    var Se, ye = {}, be = null, Re = null;
-    _e !== void 0 && (be = "" + _e), he.key !== void 0 && (be = "" + he.key), he.ref !== void 0 && (Re = he.ref);
-    for (Se in he)
-      L.call(he, Se) && !se.hasOwnProperty(Se) && (ye[Se] = he[Se]);
-    if (we && we.defaultProps)
-      for (Se in he = we.defaultProps, he)
-        ye[Se] === void 0 && (ye[Se] = he[Se]);
-    return { $$typeof: r, type: we, key: be, ref: Re, props: ye, _owner: Q.current };
+var Me;
+function St() {
+  if (Me) return A;
+  Me = 1;
+  var t = o, r = Symbol.for("react.element"), u = Symbol.for("react.fragment"), S = Object.prototype.hasOwnProperty, E = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, ee = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function pe(be, Se, je) {
+    var _e, xe = {}, Ee = null, Ce = null;
+    je !== void 0 && (Ee = "" + je), Se.key !== void 0 && (Ee = "" + Se.key), Se.ref !== void 0 && (Ce = Se.ref);
+    for (_e in Se) S.call(Se, _e) && !ee.hasOwnProperty(_e) && (xe[_e] = Se[_e]);
+    if (be && be.defaultProps) for (_e in Se = be.defaultProps, Se) xe[_e] === void 0 && (xe[_e] = Se[_e]);
+    return { $$typeof: r, type: be, key: Ee, ref: Ce, props: xe, _owner: E.current };
   }
-  return z.Fragment = S, z.jsx = me, z.jsxs = me, z;
+  return A.Fragment = u, A.jsx = pe, A.jsxs = pe, A;
 }
-var I = {};
+var L = {};
 /**
  * @license React
  * react-jsx-runtime.development.js
@@ -1695,91 +1122,91 @@ var I = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var De;
-function gr() {
-  return De || (De = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = o, r = Symbol.for("react.element"), S = Symbol.for("react.portal"), L = Symbol.for("react.fragment"), Q = Symbol.for("react.strict_mode"), se = Symbol.for("react.profiler"), me = Symbol.for("react.provider"), we = Symbol.for("react.context"), he = Symbol.for("react.forward_ref"), _e = Symbol.for("react.suspense"), Se = Symbol.for("react.suspense_list"), ye = Symbol.for("react.memo"), be = Symbol.for("react.lazy"), Re = Symbol.for("react.offscreen"), Ae = Symbol.iterator, Ie = "@@iterator";
+var Ie;
+function Vt() {
+  return Ie || (Ie = 1, process.env.NODE_ENV !== "production" && function() {
+    var t = o, r = Symbol.for("react.element"), u = Symbol.for("react.portal"), S = Symbol.for("react.fragment"), E = Symbol.for("react.strict_mode"), ee = Symbol.for("react.profiler"), pe = Symbol.for("react.provider"), be = Symbol.for("react.context"), Se = Symbol.for("react.forward_ref"), je = Symbol.for("react.suspense"), _e = Symbol.for("react.suspense_list"), xe = Symbol.for("react.memo"), Ee = Symbol.for("react.lazy"), Ce = Symbol.for("react.offscreen"), Ne = Symbol.iterator, ze = "@@iterator";
     function Fe(e) {
       if (e === null || typeof e != "object")
         return null;
-      var _ = Ae && e[Ae] || e[Ie];
-      return typeof _ == "function" ? _ : null;
+      var d = Ne && e[Ne] || e[ze];
+      return typeof d == "function" ? d : null;
     }
-    var $e = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function ge(e) {
+    var Oe = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function Te(e) {
       {
-        for (var _ = arguments.length, D = new Array(_ > 1 ? _ - 1 : 0), ae = 1; ae < _; ae++)
-          D[ae - 1] = arguments[ae];
-        Mt("error", e, D);
+        for (var d = arguments.length, v = new Array(d > 1 ? d - 1 : 0), Z = 1; Z < d; Z++)
+          v[Z - 1] = arguments[Z];
+        Ot("error", e, v);
       }
     }
-    function Mt(e, _, D) {
+    function Ot(e, d, v) {
       {
-        var ae = $e.ReactDebugCurrentFrame, de = ae.getStackAddendum();
-        de !== "" && (_ += "%s", D = D.concat([de]));
-        var pe = D.map(function(ue) {
-          return String(ue);
+        var Z = Oe.ReactDebugCurrentFrame, me = Z.getStackAddendum();
+        me !== "" && (d += "%s", v = v.concat([me]));
+        var ye = v.map(function(le) {
+          return String(le);
         });
-        pe.unshift("Warning: " + _), Function.prototype.apply.call(console[e], console, pe);
+        ye.unshift("Warning: " + d), Function.prototype.apply.call(console[e], console, ye);
       }
     }
-    var Ct = !1, kt = !1, $t = !1, Ot = !1, Nt = !1, st;
-    st = Symbol.for("react.module.reference");
-    function Pt(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === L || e === se || Nt || e === Q || e === _e || e === Se || Ot || e === Re || Ct || kt || $t || typeof e == "object" && e !== null && (e.$$typeof === be || e.$$typeof === ye || e.$$typeof === me || e.$$typeof === we || e.$$typeof === he || // This needs to include all possible module reference object
+    var Nt = !1, Bt = !1, Ft = !1, Gt = !1, Ht = !1, it;
+    it = Symbol.for("react.module.reference");
+    function qt(e) {
+      return !!(typeof e == "string" || typeof e == "function" || e === S || e === ee || Ht || e === E || e === je || e === _e || Gt || e === Ce || Nt || Bt || Ft || typeof e == "object" && e !== null && (e.$$typeof === Ee || e.$$typeof === xe || e.$$typeof === pe || e.$$typeof === be || e.$$typeof === Se || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
-      e.$$typeof === st || e.getModuleId !== void 0));
+      e.$$typeof === it || e.getModuleId !== void 0));
     }
-    function At(e, _, D) {
-      var ae = e.displayName;
-      if (ae)
-        return ae;
-      var de = _.displayName || _.name || "";
-      return de !== "" ? D + "(" + de + ")" : D;
+    function Jt(e, d, v) {
+      var Z = e.displayName;
+      if (Z)
+        return Z;
+      var me = d.displayName || d.name || "";
+      return me !== "" ? v + "(" + me + ")" : v;
     }
-    function ot(e) {
+    function lt(e) {
       return e.displayName || "Context";
     }
-    function je(e) {
+    function ke(e) {
       if (e == null)
         return null;
-      if (typeof e.tag == "number" && ge("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
+      if (typeof e.tag == "number" && Te("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
         return e.displayName || e.name || null;
       if (typeof e == "string")
         return e;
       switch (e) {
-        case L:
-          return "Fragment";
         case S:
+          return "Fragment";
+        case u:
           return "Portal";
-        case se:
+        case ee:
           return "Profiler";
-        case Q:
+        case E:
           return "StrictMode";
-        case _e:
+        case je:
           return "Suspense";
-        case Se:
+        case _e:
           return "SuspenseList";
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case we:
-            var _ = e;
-            return ot(_) + ".Consumer";
-          case me:
-            var D = e;
-            return ot(D._context) + ".Provider";
-          case he:
-            return At(e, e.render, "ForwardRef");
-          case ye:
-            var ae = e.displayName || null;
-            return ae !== null ? ae : je(e.type) || "Memo";
-          case be: {
-            var de = e, pe = de._payload, ue = de._init;
+          case be:
+            var d = e;
+            return lt(d) + ".Consumer";
+          case pe:
+            var v = e;
+            return lt(v._context) + ".Provider";
+          case Se:
+            return Jt(e, e.render, "ForwardRef");
+          case xe:
+            var Z = e.displayName || null;
+            return Z !== null ? Z : ke(e.type) || "Memo";
+          case Ee: {
+            var me = e, ye = me._payload, le = me._init;
             try {
-              return je(ue(pe));
+              return ke(le(ye));
             } catch {
               return null;
             }
@@ -1787,18 +1214,18 @@ function gr() {
         }
       return null;
     }
-    var Ne = Object.assign, Ge = 0, it, lt, ct, ut, dt, mt, pt;
-    function ft() {
+    var Pe = Object.assign, Ge = 0, ct, ut, dt, ft, mt, pt, ht;
+    function yt() {
     }
-    ft.__reactDisabledLog = !0;
-    function zt() {
+    yt.__reactDisabledLog = !0;
+    function Kt() {
       {
         if (Ge === 0) {
-          it = console.log, lt = console.info, ct = console.warn, ut = console.error, dt = console.group, mt = console.groupCollapsed, pt = console.groupEnd;
+          ct = console.log, ut = console.info, dt = console.warn, ft = console.error, mt = console.group, pt = console.groupCollapsed, ht = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
-            value: ft,
+            value: yt,
             writable: !0
           };
           Object.defineProperties(console, {
@@ -1814,7 +1241,7 @@ function gr() {
         Ge++;
       }
     }
-    function It() {
+    function Zt() {
       {
         if (Ge--, Ge === 0) {
           var e = {
@@ -1823,324 +1250,324 @@ function gr() {
             writable: !0
           };
           Object.defineProperties(console, {
-            log: Ne({}, e, {
-              value: it
-            }),
-            info: Ne({}, e, {
-              value: lt
-            }),
-            warn: Ne({}, e, {
+            log: Pe({}, e, {
               value: ct
             }),
-            error: Ne({}, e, {
+            info: Pe({}, e, {
               value: ut
             }),
-            group: Ne({}, e, {
+            warn: Pe({}, e, {
               value: dt
             }),
-            groupCollapsed: Ne({}, e, {
+            error: Pe({}, e, {
+              value: ft
+            }),
+            group: Pe({}, e, {
               value: mt
             }),
-            groupEnd: Ne({}, e, {
+            groupCollapsed: Pe({}, e, {
               value: pt
+            }),
+            groupEnd: Pe({}, e, {
+              value: ht
             })
           });
         }
-        Ge < 0 && ge("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        Ge < 0 && Te("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var Ze = $e.ReactCurrentDispatcher, Xe;
-    function He(e, _, D) {
+    var Qe = Oe.ReactCurrentDispatcher, et;
+    function He(e, d, v) {
       {
-        if (Xe === void 0)
+        if (et === void 0)
           try {
             throw Error();
-          } catch (de) {
-            var ae = de.stack.trim().match(/\n( *(at )?)/);
-            Xe = ae && ae[1] || "";
+          } catch (me) {
+            var Z = me.stack.trim().match(/\n( *(at )?)/);
+            et = Z && Z[1] || "";
           }
         return `
-` + Xe + e;
+` + et + e;
       }
     }
-    var Qe = !1, Ye;
+    var tt = !1, qe;
     {
-      var Vt = typeof WeakMap == "function" ? WeakMap : Map;
-      Ye = new Vt();
+      var Xt = typeof WeakMap == "function" ? WeakMap : Map;
+      qe = new Xt();
     }
-    function ht(e, _) {
-      if (!e || Qe)
+    function xt(e, d) {
+      if (!e || tt)
         return "";
       {
-        var D = Ye.get(e);
-        if (D !== void 0)
-          return D;
+        var v = qe.get(e);
+        if (v !== void 0)
+          return v;
       }
-      var ae;
-      Qe = !0;
-      var de = Error.prepareStackTrace;
+      var Z;
+      tt = !0;
+      var me = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var pe;
-      pe = Ze.current, Ze.current = null, zt();
+      var ye;
+      ye = Qe.current, Qe.current = null, Kt();
       try {
-        if (_) {
-          var ue = function() {
+        if (d) {
+          var le = function() {
             throw Error();
           };
-          if (Object.defineProperty(ue.prototype, "props", {
+          if (Object.defineProperty(le.prototype, "props", {
             set: function() {
               throw Error();
             }
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
-              Reflect.construct(ue, []);
-            } catch (Me) {
-              ae = Me;
+              Reflect.construct(le, []);
+            } catch ($e) {
+              Z = $e;
             }
-            Reflect.construct(e, [], ue);
+            Reflect.construct(e, [], le);
           } else {
             try {
-              ue.call();
-            } catch (Me) {
-              ae = Me;
+              le.call();
+            } catch ($e) {
+              Z = $e;
             }
-            e.call(ue.prototype);
+            e.call(le.prototype);
           }
         } else {
           try {
             throw Error();
-          } catch (Me) {
-            ae = Me;
+          } catch ($e) {
+            Z = $e;
           }
           e();
         }
-      } catch (Me) {
-        if (Me && ae && typeof Me.stack == "string") {
-          for (var ie = Me.stack.split(`
-`), Te = ae.stack.split(`
-`), ve = ie.length - 1, xe = Te.length - 1; ve >= 1 && xe >= 0 && ie[ve] !== Te[xe]; )
-            xe--;
-          for (; ve >= 1 && xe >= 0; ve--, xe--)
-            if (ie[ve] !== Te[xe]) {
-              if (ve !== 1 || xe !== 1)
+      } catch ($e) {
+        if ($e && Z && typeof $e.stack == "string") {
+          for (var te = $e.stack.split(`
+`), Re = Z.stack.split(`
+`), we = te.length - 1, ge = Re.length - 1; we >= 1 && ge >= 0 && te[we] !== Re[ge]; )
+            ge--;
+          for (; we >= 1 && ge >= 0; we--, ge--)
+            if (te[we] !== Re[ge]) {
+              if (we !== 1 || ge !== 1)
                 do
-                  if (ve--, xe--, xe < 0 || ie[ve] !== Te[xe]) {
-                    var Ee = `
-` + ie[ve].replace(" at new ", " at ");
-                    return e.displayName && Ee.includes("<anonymous>") && (Ee = Ee.replace("<anonymous>", e.displayName)), typeof e == "function" && Ye.set(e, Ee), Ee;
+                  if (we--, ge--, ge < 0 || te[we] !== Re[ge]) {
+                    var De = `
+` + te[we].replace(" at new ", " at ");
+                    return e.displayName && De.includes("<anonymous>") && (De = De.replace("<anonymous>", e.displayName)), typeof e == "function" && qe.set(e, De), De;
                   }
-                while (ve >= 1 && xe >= 0);
+                while (we >= 1 && ge >= 0);
               break;
             }
         }
       } finally {
-        Qe = !1, Ze.current = pe, It(), Error.prepareStackTrace = de;
+        tt = !1, Qe.current = ye, Zt(), Error.prepareStackTrace = me;
       }
-      var We = e ? e.displayName || e.name : "", Dt = We ? He(We) : "";
-      return typeof e == "function" && Ye.set(e, Dt), Dt;
+      var We = e ? e.displayName || e.name : "", $t = We ? He(We) : "";
+      return typeof e == "function" && qe.set(e, $t), $t;
     }
-    function Lt(e, _, D) {
-      return ht(e, !1);
+    function Qt(e, d, v) {
+      return xt(e, !1);
     }
-    function Wt(e) {
-      var _ = e.prototype;
-      return !!(_ && _.isReactComponent);
+    function er(e) {
+      var d = e.prototype;
+      return !!(d && d.isReactComponent);
     }
-    function Be(e, _, D) {
+    function Je(e, d, v) {
       if (e == null)
         return "";
       if (typeof e == "function")
-        return ht(e, Wt(e));
+        return xt(e, er(e));
       if (typeof e == "string")
         return He(e);
       switch (e) {
-        case _e:
+        case je:
           return He("Suspense");
-        case Se:
+        case _e:
           return He("SuspenseList");
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case he:
-            return Lt(e.render);
-          case ye:
-            return Be(e.type, _, D);
-          case be: {
-            var ae = e, de = ae._payload, pe = ae._init;
+          case Se:
+            return Qt(e.render);
+          case xe:
+            return Je(e.type, d, v);
+          case Ee: {
+            var Z = e, me = Z._payload, ye = Z._init;
             try {
-              return Be(pe(de), _, D);
+              return Je(ye(me), d, v);
             } catch {
             }
           }
         }
       return "";
     }
-    var qe = Object.prototype.hasOwnProperty, yt = {}, vt = $e.ReactDebugCurrentFrame;
-    function Ke(e) {
+    var Ke = Object.prototype.hasOwnProperty, wt = {}, vt = Oe.ReactDebugCurrentFrame;
+    function Ze(e) {
       if (e) {
-        var _ = e._owner, D = Be(e.type, e._source, _ ? _.type : null);
-        vt.setExtraStackFrame(D);
+        var d = e._owner, v = Je(e.type, e._source, d ? d.type : null);
+        vt.setExtraStackFrame(v);
       } else
         vt.setExtraStackFrame(null);
     }
-    function Ft(e, _, D, ae, de) {
+    function tr(e, d, v, Z, me) {
       {
-        var pe = Function.call.bind(qe);
-        for (var ue in e)
-          if (pe(e, ue)) {
-            var ie = void 0;
+        var ye = Function.call.bind(Ke);
+        for (var le in e)
+          if (ye(e, le)) {
+            var te = void 0;
             try {
-              if (typeof e[ue] != "function") {
-                var Te = Error((ae || "React class") + ": " + D + " type `" + ue + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[ue] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                throw Te.name = "Invariant Violation", Te;
+              if (typeof e[le] != "function") {
+                var Re = Error((Z || "React class") + ": " + v + " type `" + le + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[le] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                throw Re.name = "Invariant Violation", Re;
               }
-              ie = e[ue](_, ue, ae, D, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (ve) {
-              ie = ve;
+              te = e[le](d, le, Z, v, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (we) {
+              te = we;
             }
-            ie && !(ie instanceof Error) && (Ke(de), ge("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", ae || "React class", D, ue, typeof ie), Ke(null)), ie instanceof Error && !(ie.message in yt) && (yt[ie.message] = !0, Ke(de), ge("Failed %s type: %s", D, ie.message), Ke(null));
+            te && !(te instanceof Error) && (Ze(me), Te("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", Z || "React class", v, le, typeof te), Ze(null)), te instanceof Error && !(te.message in wt) && (wt[te.message] = !0, Ze(me), Te("Failed %s type: %s", v, te.message), Ze(null));
           }
       }
     }
-    var Gt = Array.isArray;
-    function et(e) {
-      return Gt(e);
+    var rr = Array.isArray;
+    function rt(e) {
+      return rr(e);
     }
-    function Ut(e) {
+    function nr(e) {
       {
-        var _ = typeof Symbol == "function" && Symbol.toStringTag, D = _ && e[Symbol.toStringTag] || e.constructor.name || "Object";
-        return D;
+        var d = typeof Symbol == "function" && Symbol.toStringTag, v = d && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        return v;
       }
     }
-    function Ht(e) {
+    function ar(e) {
       try {
-        return xt(e), !1;
+        return gt(e), !1;
       } catch {
         return !0;
       }
     }
-    function xt(e) {
+    function gt(e) {
       return "" + e;
     }
-    function wt(e) {
-      if (Ht(e))
-        return ge("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", Ut(e)), xt(e);
+    function bt(e) {
+      if (ar(e))
+        return Te("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", nr(e)), gt(e);
     }
-    var Ue = $e.ReactCurrentOwner, Yt = {
+    var Ue = Oe.ReactCurrentOwner, or = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, St, bt, tt;
-    tt = {};
-    function Bt(e) {
-      if (qe.call(e, "ref")) {
-        var _ = Object.getOwnPropertyDescriptor(e, "ref").get;
-        if (_ && _.isReactWarning)
+    }, _t, Et, nt;
+    nt = {};
+    function sr(e) {
+      if (Ke.call(e, "ref")) {
+        var d = Object.getOwnPropertyDescriptor(e, "ref").get;
+        if (d && d.isReactWarning)
           return !1;
       }
       return e.ref !== void 0;
     }
-    function qt(e) {
-      if (qe.call(e, "key")) {
-        var _ = Object.getOwnPropertyDescriptor(e, "key").get;
-        if (_ && _.isReactWarning)
+    function ir(e) {
+      if (Ke.call(e, "key")) {
+        var d = Object.getOwnPropertyDescriptor(e, "key").get;
+        if (d && d.isReactWarning)
           return !1;
       }
       return e.key !== void 0;
     }
-    function Kt(e, _) {
-      if (typeof e.ref == "string" && Ue.current && _ && Ue.current.stateNode !== _) {
-        var D = je(Ue.current.type);
-        tt[D] || (ge('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', je(Ue.current.type), e.ref), tt[D] = !0);
+    function lr(e, d) {
+      if (typeof e.ref == "string" && Ue.current && d && Ue.current.stateNode !== d) {
+        var v = ke(Ue.current.type);
+        nt[v] || (Te('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', ke(Ue.current.type), e.ref), nt[v] = !0);
       }
     }
-    function Jt(e, _) {
+    function cr(e, d) {
       {
-        var D = function() {
-          St || (St = !0, ge("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", _));
+        var v = function() {
+          _t || (_t = !0, Te("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", d));
         };
-        D.isReactWarning = !0, Object.defineProperty(e, "key", {
-          get: D,
+        v.isReactWarning = !0, Object.defineProperty(e, "key", {
+          get: v,
           configurable: !0
         });
       }
     }
-    function Zt(e, _) {
+    function ur(e, d) {
       {
-        var D = function() {
-          bt || (bt = !0, ge("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", _));
+        var v = function() {
+          Et || (Et = !0, Te("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", d));
         };
-        D.isReactWarning = !0, Object.defineProperty(e, "ref", {
-          get: D,
+        v.isReactWarning = !0, Object.defineProperty(e, "ref", {
+          get: v,
           configurable: !0
         });
       }
     }
-    var Xt = function(e, _, D, ae, de, pe, ue) {
-      var ie = {
+    var dr = function(e, d, v, Z, me, ye, le) {
+      var te = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: r,
         // Built-in properties that belong on the element
         type: e,
-        key: _,
-        ref: D,
-        props: ue,
+        key: d,
+        ref: v,
+        props: le,
         // Record the component responsible for creating this element.
-        _owner: pe
+        _owner: ye
       };
-      return ie._store = {}, Object.defineProperty(ie._store, "validated", {
+      return te._store = {}, Object.defineProperty(te._store, "validated", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
         value: !1
-      }), Object.defineProperty(ie, "_self", {
+      }), Object.defineProperty(te, "_self", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: ae
-      }), Object.defineProperty(ie, "_source", {
+        value: Z
+      }), Object.defineProperty(te, "_source", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: de
-      }), Object.freeze && (Object.freeze(ie.props), Object.freeze(ie)), ie;
+        value: me
+      }), Object.freeze && (Object.freeze(te.props), Object.freeze(te)), te;
     };
-    function Qt(e, _, D, ae, de) {
+    function Sr(e, d, v, Z, me) {
       {
-        var pe, ue = {}, ie = null, Te = null;
-        D !== void 0 && (wt(D), ie = "" + D), qt(_) && (wt(_.key), ie = "" + _.key), Bt(_) && (Te = _.ref, Kt(_, de));
-        for (pe in _)
-          qe.call(_, pe) && !Yt.hasOwnProperty(pe) && (ue[pe] = _[pe]);
+        var ye, le = {}, te = null, Re = null;
+        v !== void 0 && (bt(v), te = "" + v), ir(d) && (bt(d.key), te = "" + d.key), sr(d) && (Re = d.ref, lr(d, me));
+        for (ye in d)
+          Ke.call(d, ye) && !or.hasOwnProperty(ye) && (le[ye] = d[ye]);
         if (e && e.defaultProps) {
-          var ve = e.defaultProps;
-          for (pe in ve)
-            ue[pe] === void 0 && (ue[pe] = ve[pe]);
+          var we = e.defaultProps;
+          for (ye in we)
+            le[ye] === void 0 && (le[ye] = we[ye]);
         }
-        if (ie || Te) {
-          var xe = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
-          ie && Jt(ue, xe), Te && Zt(ue, xe);
+        if (te || Re) {
+          var ge = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
+          te && cr(le, ge), Re && ur(le, ge);
         }
-        return Xt(e, ie, Te, de, ae, Ue.current, ue);
+        return dr(e, te, Re, me, Z, Ue.current, le);
       }
     }
-    var rt = $e.ReactCurrentOwner, gt = $e.ReactDebugCurrentFrame;
-    function Le(e) {
+    var at = Oe.ReactCurrentOwner, Mt = Oe.ReactDebugCurrentFrame;
+    function Ve(e) {
       if (e) {
-        var _ = e._owner, D = Be(e.type, e._source, _ ? _.type : null);
-        gt.setExtraStackFrame(D);
+        var d = e._owner, v = Je(e.type, e._source, d ? d.type : null);
+        Mt.setExtraStackFrame(v);
       } else
-        gt.setExtraStackFrame(null);
+        Mt.setExtraStackFrame(null);
     }
-    var nt;
-    nt = !1;
-    function at(e) {
+    var ot;
+    ot = !1;
+    function st(e) {
       return typeof e == "object" && e !== null && e.$$typeof === r;
     }
-    function Tt() {
+    function Rt() {
       {
-        if (rt.current) {
-          var e = je(rt.current.type);
+        if (at.current) {
+          var e = ke(at.current.type);
           if (e)
             return `
 
@@ -2149,211 +1576,211 @@ Check the render method of \`` + e + "`.";
         return "";
       }
     }
-    function er(e) {
+    function Er(e) {
       return "";
     }
-    var _t = {};
-    function tr(e) {
+    var jt = {};
+    function Tr(e) {
       {
-        var _ = Tt();
-        if (!_) {
-          var D = typeof e == "string" ? e : e.displayName || e.name;
-          D && (_ = `
+        var d = Rt();
+        if (!d) {
+          var v = typeof e == "string" ? e : e.displayName || e.name;
+          v && (d = `
 
-Check the top-level render call using <` + D + ">.");
+Check the top-level render call using <` + v + ">.");
         }
-        return _;
+        return d;
       }
     }
-    function Et(e, _) {
+    function Dt(e, d) {
       {
         if (!e._store || e._store.validated || e.key != null)
           return;
         e._store.validated = !0;
-        var D = tr(_);
-        if (_t[D])
+        var v = Tr(d);
+        if (jt[v])
           return;
-        _t[D] = !0;
-        var ae = "";
-        e && e._owner && e._owner !== rt.current && (ae = " It was passed a child from " + je(e._owner.type) + "."), Le(e), ge('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', D, ae), Le(null);
+        jt[v] = !0;
+        var Z = "";
+        e && e._owner && e._owner !== at.current && (Z = " It was passed a child from " + ke(e._owner.type) + "."), Ve(e), Te('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', v, Z), Ve(null);
       }
     }
-    function Rt(e, _) {
+    function Ct(e, d) {
       {
         if (typeof e != "object")
           return;
-        if (et(e))
-          for (var D = 0; D < e.length; D++) {
-            var ae = e[D];
-            at(ae) && Et(ae, _);
+        if (rt(e))
+          for (var v = 0; v < e.length; v++) {
+            var Z = e[v];
+            st(Z) && Dt(Z, d);
           }
-        else if (at(e))
+        else if (st(e))
           e._store && (e._store.validated = !0);
         else if (e) {
-          var de = Fe(e);
-          if (typeof de == "function" && de !== e.entries)
-            for (var pe = de.call(e), ue; !(ue = pe.next()).done; )
-              at(ue.value) && Et(ue.value, _);
+          var me = Fe(e);
+          if (typeof me == "function" && me !== e.entries)
+            for (var ye = me.call(e), le; !(le = ye.next()).done; )
+              st(le.value) && Dt(le.value, d);
         }
       }
     }
-    function rr(e) {
+    function Mr(e) {
       {
-        var _ = e.type;
-        if (_ == null || typeof _ == "string")
+        var d = e.type;
+        if (d == null || typeof d == "string")
           return;
-        var D;
-        if (typeof _ == "function")
-          D = _.propTypes;
-        else if (typeof _ == "object" && (_.$$typeof === he || // Note: Memo only checks outer props here.
+        var v;
+        if (typeof d == "function")
+          v = d.propTypes;
+        else if (typeof d == "object" && (d.$$typeof === Se || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        _.$$typeof === ye))
-          D = _.propTypes;
+        d.$$typeof === xe))
+          v = d.propTypes;
         else
           return;
-        if (D) {
-          var ae = je(_);
-          Ft(D, e.props, "prop", ae, e);
-        } else if (_.PropTypes !== void 0 && !nt) {
-          nt = !0;
-          var de = je(_);
-          ge("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", de || "Unknown");
+        if (v) {
+          var Z = ke(d);
+          tr(v, e.props, "prop", Z, e);
+        } else if (d.PropTypes !== void 0 && !ot) {
+          ot = !0;
+          var me = ke(d);
+          Te("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", me || "Unknown");
         }
-        typeof _.getDefaultProps == "function" && !_.getDefaultProps.isReactClassApproved && ge("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof d.getDefaultProps == "function" && !d.getDefaultProps.isReactClassApproved && Te("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
-    function nr(e) {
+    function kr(e) {
       {
-        for (var _ = Object.keys(e.props), D = 0; D < _.length; D++) {
-          var ae = _[D];
-          if (ae !== "children" && ae !== "key") {
-            Le(e), ge("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", ae), Le(null);
+        for (var d = Object.keys(e.props), v = 0; v < d.length; v++) {
+          var Z = d[v];
+          if (Z !== "children" && Z !== "key") {
+            Ve(e), Te("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", Z), Ve(null);
             break;
           }
         }
-        e.ref !== null && (Le(e), ge("Invalid attribute `ref` supplied to `React.Fragment`."), Le(null));
+        e.ref !== null && (Ve(e), Te("Invalid attribute `ref` supplied to `React.Fragment`."), Ve(null));
       }
     }
-    function jt(e, _, D, ae, de, pe) {
+    function kt(e, d, v, Z, me, ye) {
       {
-        var ue = Pt(e);
-        if (!ue) {
-          var ie = "";
-          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (ie += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var Te = er();
-          Te ? ie += Te : ie += Tt();
-          var ve;
-          e === null ? ve = "null" : et(e) ? ve = "array" : e !== void 0 && e.$$typeof === r ? (ve = "<" + (je(e.type) || "Unknown") + " />", ie = " Did you accidentally export a JSX literal instead of a component?") : ve = typeof e, ge("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", ve, ie);
+        var le = qt(e);
+        if (!le) {
+          var te = "";
+          (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (te += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
+          var Re = Er();
+          Re ? te += Re : te += Rt();
+          var we;
+          e === null ? we = "null" : rt(e) ? we = "array" : e !== void 0 && e.$$typeof === r ? (we = "<" + (ke(e.type) || "Unknown") + " />", te = " Did you accidentally export a JSX literal instead of a component?") : we = typeof e, Te("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", we, te);
         }
-        var xe = Qt(e, _, D, de, pe);
-        if (xe == null)
-          return xe;
-        if (ue) {
-          var Ee = _.children;
-          if (Ee !== void 0)
-            if (ae)
-              if (et(Ee)) {
-                for (var We = 0; We < Ee.length; We++)
-                  Rt(Ee[We], e);
-                Object.freeze && Object.freeze(Ee);
+        var ge = Sr(e, d, v, me, ye);
+        if (ge == null)
+          return ge;
+        if (le) {
+          var De = d.children;
+          if (De !== void 0)
+            if (Z)
+              if (rt(De)) {
+                for (var We = 0; We < De.length; We++)
+                  Ct(De[We], e);
+                Object.freeze && Object.freeze(De);
               } else
-                ge("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                Te("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              Rt(Ee, e);
+              Ct(De, e);
         }
-        return e === L ? nr(xe) : rr(xe), xe;
+        return e === S ? kr(ge) : Mr(ge), ge;
       }
     }
-    function ar(e, _, D) {
-      return jt(e, _, D, !0);
+    function $r(e, d, v) {
+      return kt(e, d, v, !0);
     }
-    function sr(e, _, D) {
-      return jt(e, _, D, !1);
+    function Or(e, d, v) {
+      return kt(e, d, v, !1);
     }
-    var or = sr, ir = ar;
-    I.Fragment = L, I.jsx = or, I.jsxs = ir;
-  }()), I;
+    var Ar = Or, Nr = $r;
+    L.Fragment = S, L.jsx = Ar, L.jsxs = Nr;
+  }()), L;
 }
-process.env.NODE_ENV === "production" ? te.exports = br() : te.exports = gr();
-var n = te.exports;
-const Oe = {
+process.env.NODE_ENV === "production" ? fe.exports = St() : fe.exports = Vt();
+var n = fe.exports;
+const Ae = {
   "ds-button": "_ds-button_i4qw7_96",
   "size-small": "_size-small_i4qw7_120",
   "size-medium": "_size-medium_i4qw7_126"
-}, Wr = ({
+}, Tt = ({
   size: t = "medium",
   disabled: r = !1,
-  onClick: S,
-  text: L,
-  id: Q,
-  isTextVisible: se = !0,
-  iconLeft: me,
-  iconRight: we
+  onClick: u,
+  text: S,
+  id: E,
+  isTextVisible: ee = !0,
+  iconLeft: pe,
+  iconRight: be
 }) => /* @__PURE__ */ n.jsxs(
   "button",
   {
-    "aria-label": se ? void 0 : L,
-    className: `${Oe["ds-button"]} ${Oe[`size-${t}`]}`,
-    "data-testid": `${Q}-button`,
+    "aria-label": ee ? void 0 : S,
+    className: `${Ae["ds-button"]} ${Ae[`size-${t}`]}`,
+    "data-testid": `${E}-button`,
     type: "button",
     disabled: r,
-    onClick: S,
+    onClick: u,
     children: [
-      me,
-      se && L,
-      we
+      pe,
+      ee && S,
+      be
     ]
   }
-), ee = {
+), ce$1 = {
   "ds-button-arrow": "_ds-button-arrow_1w7w8_96",
   "arrow-bottom": "_arrow-bottom_1w7w8_124",
   "arrow-top": "_arrow-top_1w7w8_128",
   "size-small": "_size-small_1w7w8_132",
   "size-medium": "_size-medium_1w7w8_137"
 };
-function Pe({
+function Le({
   ariaLabel: t,
   className: r = "",
-  direction: S,
-  disabled: L,
-  id: Q,
-  onClick: se,
-  size: me
+  direction: u,
+  disabled: S,
+  id: E,
+  onClick: ee,
+  size: pe
 }) {
   return /* @__PURE__ */ n.jsx(
     "button",
     {
       "aria-label": t,
       className: `
-				${ee["ds-button-arrow"]}
-				${ee[`arrow-${S}`]}
-				${ee[`size-${me}`]}
+				${ce$1["ds-button-arrow"]}
+				${ce$1[`arrow-${u}`]}
+				${ce$1[`size-${pe}`]}
 				${r}
 			`,
-      "data-testid": `ds-button-arrow-${Q}-${S}`,
-      disabled: L,
+      "data-testid": `ds-button-arrow-${E}-${u}`,
+      disabled: S,
       type: "button",
-      onClick: se
+      onClick: ee
     }
   );
 }
-const Rr = "_frame_i4tc8_96", yr = "_title_i4tc8_104", ke = {
-  frame: Rr,
-  title: yr
+const Pt = "_frame_i4tc8_96", zt = "_title_i4tc8_104", Ye = {
+  frame: Pt,
+  title: zt
 };
-function Yr({ children: t, className: r = "", id: S, title: L }) {
+function Cr({ children: t, className: r = "", id: u, title: S }) {
   return /* @__PURE__ */ n.jsxs(
     "div",
     {
-      className: `${ke.frame} ${r}`,
-      "data-testid": `ds-frame-${S}`,
+      className: `${Ye.frame} ${r}`,
+      "data-testid": `ds-frame-${u}`,
       children: [
-        L && /* @__PURE__ */ n.jsx(
-          ze,
+        S && /* @__PURE__ */ n.jsx(
+          ve,
           {
-            className: ke.title,
-            text: L,
-            id: `frame-${S}`
+            className: Ye.title,
+            text: S,
+            id: `frame-${u}`
           }
         ),
         t
@@ -2361,7 +1788,25 @@ function Yr({ children: t, className: r = "", id: S, title: L }) {
     }
   );
 }
-const wr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ n.jsxs(
+const Dr = () => /* @__PURE__ */ n.jsx(
+  "img",
+  {
+    alt: "Audio button off",
+    "data-testid": "ds-icon-audio-button-off",
+    height: "16",
+    src: "/icons/audio-button-off.png",
+    width: "16"
+  }
+), Hr = () => /* @__PURE__ */ n.jsx(
+  "img",
+  {
+    alt: "Audio button on",
+    "data-testid": "ds-icon-audio-button-on",
+    height: "16",
+    src: "/icons/audio-button.png",
+    width: "16"
+  }
+), It = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ n.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -2510,7 +1955,7 @@ const wr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ n.jsxs(
       )
     ]
   }
-), xr = () => /* @__PURE__ */ n.jsxs(
+), At = () => /* @__PURE__ */ n.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -2575,298 +2020,946 @@ const wr = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ n.jsxs(
       )
     ]
   }
-), Er = "_input_4dyys_111", jr = "_label_4dyys_112", re = {
+), Lt = "_input_4dyys_111", Yt = "_label_4dyys_112", ue$1 = {
   "wrapper-horizontal": "_wrapper-horizontal_4dyys_96",
   "wrapper-vertical": "_wrapper-vertical_4dyys_102",
-  input: Er,
-  label: jr
+  input: Lt,
+  label: Yt
 };
-function Sr({ initialValue: t, onChange: r }) {
-  const [S, L] = useState(t);
+function Ut({ initialValue: t, onChange: r }) {
+  const [u, S] = useState(t);
   return useEffect(() => {
-    L(t);
-  }, [t]), { value: S, handleInputChange: (Q) => {
-    const se = Q.target.value;
-    L(se), r && r(se);
+    S(t);
+  }, [t]), { value: u, handleInputChange: (E) => {
+    const ee = E.target.value;
+    S(ee), r && r(ee);
   } };
 }
-function $r({
+function Wt({
   className: t = "",
   type: r = "text",
-  id: S,
-  disabled: L = !1,
-  readonly: Q = !1,
-  initialValue: se = "",
-  labelName: me,
-  wrapperLayout: we = "vertical",
-  min: he,
-  max: _e,
-  onChange: Se
+  id: u,
+  disabled: S = !1,
+  readonly: E = !1,
+  initialValue: ee = "",
+  labelName: pe,
+  wrapperLayout: be = "vertical",
+  min: Se,
+  max: je,
+  onChange: _e
 }) {
-  const { value: ye, handleInputChange: be } = Sr({ initialValue: se, onChange: Se }), Re = `ds-input-${S}`;
+  const { value: xe, handleInputChange: Ee } = Ut({ initialValue: ee, onChange: _e }), Ce = `ds-input-${u}`;
   return /* @__PURE__ */ n.jsxs(
     "div",
     {
-      className: `${re[`wrapper-${we}`]} ${t}`,
-      "data-testid": Re,
+      className: `${ue$1[`wrapper-${be}`]} ${t}`,
+      "data-testid": Ce,
       children: [
-        me && /* @__PURE__ */ n.jsx(
+        pe && /* @__PURE__ */ n.jsx(
           "label",
           {
-            className: re.label,
-            "data-testid": `ds-input-label-${S}`,
-            htmlFor: Re,
-            children: me
+            className: ue$1.label,
+            "data-testid": `ds-input-label-${u}`,
+            htmlFor: Ce,
+            children: pe
           }
         ),
         /* @__PURE__ */ n.jsx(
           "input",
           {
-            id: Re,
-            className: re.input,
-            "data-testid": `ds-input-input-${S}`,
+            id: Ce,
+            className: ue$1.input,
+            "data-testid": `ds-input-input-${u}`,
             type: r,
-            disabled: L,
-            readOnly: Q,
-            value: ye,
-            min: he ?? void 0,
-            max: _e ?? void 0,
-            name: Re,
-            onChange: be
+            disabled: S,
+            readOnly: E,
+            value: xe,
+            min: Se ?? void 0,
+            max: je ?? void 0,
+            name: Ce,
+            onChange: Ee
           }
         )
       ]
     }
   );
 }
-const Tr = "_wrapper_s5be2_96", Cr = "_disabled_s5be2_108", Dr = "_input_s5be2_113", Or = "_icon_s5be2_123", N = {
-  wrapper: Tr,
-  disabled: Cr,
-  input: Dr,
-  icon: Or
+const fr = "_wrapper_s5be2_96", vr = "_disabled_s5be2_108", hr = "_input_s5be2_113", pr = "_icon_s5be2_123", Y = {
+  wrapper: fr,
+  disabled: vr,
+  input: hr,
+  icon: pr
 };
-function Pr({ initialChecked: t, onChange: r }) {
-  const [S, L] = useState(t);
+function _r({ initialChecked: t, onChange: r }) {
+  const [u, S] = useState(t);
   return useEffect(() => {
-    L(t);
+    S(t);
   }, [t]), {
-    checked: S,
-    handleChange: (Q) => {
-      r && r(), L(Q.target.checked);
+    checked: u,
+    handleChange: (E) => {
+      r && r(), S(E.target.checked);
     }
   };
 }
-const Lr = ({
+const Pr = ({
   initialChecked: t = !1,
   disabled: r = !1,
-  id: S,
-  onChange: L,
-  name: Q,
-  text: se
+  id: u,
+  onChange: S,
+  name: E,
+  text: ee
 }) => {
-  const { checked: me, handleChange: we } = Pr({
+  const { checked: pe, handleChange: be } = _r({
     initialChecked: t,
-    onChange: L
+    onChange: S
   });
   return /* @__PURE__ */ n.jsxs(
     "label",
     {
-      "aria-label": se.visible ? void 0 : se.content,
-      className: `${N.wrapper} ${r ? N.disabled : ""}`,
-      "data-testid": `${S}-radio`,
+      "aria-label": ee.visible ? void 0 : ee.content,
+      className: `${Y.wrapper} ${r ? Y.disabled : ""}`,
+      "data-testid": `${u}-radio`,
       children: [
         /* @__PURE__ */ n.jsx(
           "input",
           {
-            className: N.input,
-            checked: me,
-            "data-testid": `${S}-radio-input`,
+            className: Y.input,
+            checked: pe,
+            "data-testid": `${u}-radio-input`,
             disabled: r,
-            name: Q,
+            name: E,
             type: "radio",
-            value: S,
-            onChange: we
+            value: u,
+            onChange: be
           }
         ),
         /* @__PURE__ */ n.jsx(
           "span",
           {
-            className: N.icon,
-            "data-testid": `${S}-radio-icon`,
-            children: /* @__PURE__ */ n.jsx(wr, { isChecked: me })
+            className: Y.icon,
+            "data-testid": `${u}-radio-icon`,
+            children: /* @__PURE__ */ n.jsx(It, { isChecked: pe })
           }
         ),
-        se.visible && /* @__PURE__ */ n.jsx(
-          ze,
+        ee.visible && /* @__PURE__ */ n.jsx(
+          ve,
           {
-            className: N.text,
-            id: S,
-            text: se.content
+            className: Y.text,
+            id: u,
+            text: ee.content
           }
         )
       ]
     }
   );
-}, kr = "_wrapper_upk41_96", Vr = "_label_upk41_100", Fr = "_select_upk41_105", zr = "_arrow_upk41_115", A = {
-  wrapper: kr,
-  label: Vr,
-  select: Fr,
-  arrow: zr
+}, br = "_wrapper_upk41_96", mr = "_label_upk41_100", gr = "_select_upk41_105", xr = "_arrow_upk41_115", U$1 = {
+  wrapper: br,
+  label: mr,
+  select: gr,
+  arrow: xr
 };
-function Ir(t) {
-  const [r, S] = useState(t);
+function wr(t) {
+  const [r, u] = useState(t);
   return {
     value: r,
-    handleChange: (L) => {
-      S(L.target.value);
+    handleChange: (S) => {
+      u(S.target.value);
     }
   };
 }
-function Ur({
+function zr({
   className: t = "",
   id: r,
-  required: S = !1,
-  disabled: L = !1,
-  modelValue: Q,
-  options: se,
-  labelName: me,
-  onSelect: we
+  required: u = !1,
+  disabled: S = !1,
+  modelValue: E,
+  options: ee,
+  labelName: pe,
+  onSelect: be
 }) {
-  const { value: he, handleChange: _e } = Ir(Q), Se = (ye) => {
-    _e(ye), we(ye);
+  const { value: Se, handleChange: je } = wr(E), _e = (xe) => {
+    je(xe), be(xe);
   };
-  return /* @__PURE__ */ n.jsxs("div", { className: `${A.wrapper} ${t}`, children: [
-    me && /* @__PURE__ */ n.jsx(
+  return /* @__PURE__ */ n.jsxs("div", { className: `${U$1.wrapper} ${t}`, children: [
+    pe && /* @__PURE__ */ n.jsx(
       "label",
       {
-        className: A.label,
+        className: U$1.label,
         "data-testid": `ds-select-label-${r}`,
         htmlFor: r,
-        children: me
+        children: pe
       }
     ),
     /* @__PURE__ */ n.jsx(
       "select",
       {
-        className: A.select,
+        className: U$1.select,
         "data-testid": `ds-select-select-${r}`,
-        disabled: L,
+        disabled: S,
         id: r,
         name: r,
-        onChange: Se,
-        required: S,
-        value: he,
-        children: se.map((ye, be) => /* @__PURE__ */ n.jsx(
+        onChange: _e,
+        required: u,
+        value: Se,
+        children: ee.map((xe, Ee) => /* @__PURE__ */ n.jsx(
           "option",
           {
-            className: A.option,
-            "data-testid": `ds-select-option-${r}-${be}`,
-            value: ye.value,
-            children: ye.name
+            className: U$1.option,
+            "data-testid": `ds-select-option-${r}-${Ee}`,
+            value: xe.value,
+            children: xe.name
           },
-          `${r}-${ye.value}`
+          `${r}-${xe.value}`
         ))
       }
     ),
-    /* @__PURE__ */ n.jsx("span", { className: A.arrow, children: /* @__PURE__ */ n.jsx(xr, {}) })
+    /* @__PURE__ */ n.jsx("span", { className: U$1.arrow, children: /* @__PURE__ */ n.jsx(At, {}) })
   ] });
 }
-const Ve = {
+const Be = {
   "ds-stepper": "_ds-stepper_8xv2v_96",
   "state-disabled": "_state-disabled_8xv2v_111"
 };
-function Nr({
+function yr({
   modelValue: t,
   onIncrease: r,
-  onDecrease: S
+  onDecrease: u
 }) {
-  const [L, Q] = useState(t);
+  const [S, E] = useState(t);
   return useEffect(() => {
-    Q(t);
-  }, [t]), { value: L, handleIncrease: () => {
+    E(t);
+  }, [t]), { value: S, handleIncrease: () => {
     r && r();
   }, handleDecrease: () => {
-    S && S();
+    u && u();
   } };
 }
-function qr({
+function Fr({
   className: t = "",
   id: r,
-  modelValue: S,
-  disabled: L = !1,
-  onIncrease: Q,
-  onDecrease: se
+  modelValue: u,
+  disabled: S = !1,
+  onIncrease: E,
+  onDecrease: ee
 }) {
-  const { value: me, handleIncrease: we, handleDecrease: he } = Nr({
-    modelValue: S,
-    onIncrease: Q,
-    onDecrease: se
+  const { value: pe, handleIncrease: be, handleDecrease: Se } = yr({
+    modelValue: u,
+    onIncrease: E,
+    onDecrease: ee
   });
   return /* @__PURE__ */ n.jsxs(
     "div",
     {
       className: `
-        ${Ve["ds-stepper"]}
-        ${L ? Ve["state-disabled"] : ""}
+        ${Be["ds-stepper"]}
+        ${S ? Be["state-disabled"] : ""}
         ${t}
       `,
       children: [
         /* @__PURE__ */ n.jsx(
-          $r,
+          Wt,
           {
             id: `stepper-${r}`,
-            initialValue: me,
+            initialValue: pe,
             readonly: !0
           }
         ),
         /* @__PURE__ */ n.jsx(
-          Pe,
+          Le,
           {
             ariaLabel: "Increase",
             direction: "top",
-            disabled: L,
+            disabled: S,
             id: r,
             size: "small",
-            onClick: we
+            onClick: be
           }
         ),
         /* @__PURE__ */ n.jsx(
-          Pe,
+          Le,
           {
             ariaLabel: "Decrease",
             direction: "bottom",
-            disabled: L,
+            disabled: S,
             id: r,
             size: "small",
-            onClick: he
+            onClick: Se
           }
         )
       ]
     }
   );
 }
-const Ar = "_DSText_zb3qg_96", Hr = {
-  DSText: Ar
+const Rr = "_DSText_zb3qg_96", jr = {
+  DSText: Rr
 };
-function ze({ className: t = "", id: r, text: S }) {
+function ve({ className: t = "", id: r, text: u }) {
   return /* @__PURE__ */ n.jsx(
     "p",
     {
-      className: `${Hr.DSText} ${t}`,
+      className: `${jr.DSText} ${t}`,
       "data-testid": `ds-text-${r}`,
-      children: S
+      children: u
     }
   );
 }
+const button$1 = "_button_vf3zr_96", styles$n = {
+  button: button$1
+};
+function useAudioButton() {
+  return useContext(DomainContext$6);
+}
+function useButton() {
+  const t = useAudioButton();
+  return {
+    isMuted: t.isMuted,
+    toggleSound: () => {
+      t.toggleSound();
+    }
+  };
+}
+const Button = observer(() => {
+  const { isMuted: t, toggleSound: r } = useButton();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "button",
+    {
+      className: styles$n.button,
+      "data-testid": "ma-audio-button-button",
+      type: "button",
+      onClick: r,
+      children: [
+        t && /* @__PURE__ */ jsxRuntimeExports.jsx(Dr, {}),
+        !t && /* @__PURE__ */ jsxRuntimeExports.jsx(Hr, {})
+      ]
+    }
+  );
+}), Wrapper$8 = () => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { "data-testid": "ma-audio-button-wrapper", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Button, {}) }), AudioButtonView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$6.Provider, { value: audioButtonDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$8, {}) });
+var ECalculatorDirect = /* @__PURE__ */ ((t) => (t.FIRST = "first", t.LAST = "last", t))(ECalculatorDirect || {}), ECalculatorNumber = /* @__PURE__ */ ((t) => (t[t.ZERO = 0] = "ZERO", t[t.ONE = 1] = "ONE", t[t.TWO = 2] = "TWO", t[t.THREE = 3] = "THREE", t[t.FOUR = 4] = "FOUR", t[t.FIVE = 5] = "FIVE", t[t.SIX = 6] = "SIX", t[t.SEVEN = 7] = "SEVEN", t[t.EIGHT = 8] = "EIGHT", t[t.NINE = 9] = "NINE", t))(ECalculatorNumber || {}), ECalculatorSymbol = /* @__PURE__ */ ((t) => (t.ADD = "+", t.DIVIDE = "/", t.DOT = ".", t.MINUS = "-", t.MULTIPLY = "*", t.RESULT = "=", t))(ECalculatorSymbol || {});
+class CalculatorService {
+  isValueEqual(t, r, u) {
+    switch (u) {
+      case ECalculatorDirect.FIRST:
+        return t.slice(0, r.length) === r;
+      case ECalculatorDirect.LAST:
+        return t.slice(-1) === r;
+      default:
+        return !1;
+    }
+  }
+  isDotExist(t) {
+    return t ? !!t.split("").find((S) => S === ".") : !1;
+  }
+  isMathematicalSignLast(t) {
+    if (!t)
+      return !1;
+    switch (t.slice(-1)) {
+      case ECalculatorSymbol.ADD:
+      case ECalculatorSymbol.DIVIDE:
+      case ECalculatorSymbol.MINUS:
+      case ECalculatorSymbol.MULTIPLY:
+        return !0;
+      default:
+        return !1;
+    }
+  }
+  summResult(value) {
+    return !value || !this.isMathematicalOperation(value) ? "ERROR" : String(eval(value));
+  }
+  isMathematicalOperation(t) {
+    return t ? !!/(?:(?:^|[-+_*/])(?:\s*-?\d+(\.\d+)?(?:[eE][+-]?\d+)?\s*))+$/.test(t) : !1;
+  }
+}
+class CalculatorDomain {
+  constructor() {
+    he(this, "value", "0");
+    he(this, "calculatorService", new CalculatorService());
+    he(this, "addNumber", (r) => {
+      this.calculatorService.isValueEqual(
+        this.value,
+        "0",
+        ECalculatorDirect.FIRST
+      ) && !this.calculatorService.isValueEqual(
+        this.value,
+        "0.",
+        ECalculatorDirect.FIRST
+      ) && this.value.length === 1 ? this.value = String(r) : this.value += String(r);
+    });
+    he(this, "addDot", () => {
+      this.calculatorService.isDotExist(this.value) || this.calculatorService.isMathematicalSignLast(this.value) || this.calculatorService.isValueEqual(
+        this.value,
+        ".",
+        ECalculatorDirect.LAST
+      ) || (this.value += ".");
+    });
+    he(this, "addSymbol", (r) => {
+      this.value === "0." || this.calculatorService.isMathematicalSignLast(this.value) || (this.value += r);
+    });
+    he(this, "summResult", () => {
+      this.value = this.calculatorService.summResult(this.value);
+    });
+    makeAutoObservable(this);
+  }
+}
+const calculatorDomain = new CalculatorDomain(), DomainContext$5 = createContext(calculatorDomain), button = "_button_1h5df_96", primary = "_primary_1h5df_122", secondary = "_secondary_1h5df_126", styles$m = {
+  button,
+  primary,
+  secondary
+}, OperationButton = ({
+  id: t,
+  onClick: r,
+  variant: u = "blue"
+}) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+  "button",
+  {
+    className: `${styles$m.button} ${styles$m[u]}`,
+    "data-testid": `ma-calculator-operation-button-${t}`,
+    onClick: r,
+    type: "button",
+    children: t
+  }
+), keypad = "_keypad_1orw4_96", styles$l = {
+  keypad
+};
+function useCalculator() {
+  return {
+    calculatorDomain: useContext(DomainContext$5)
+  };
+}
+function useKeypad() {
+  const { calculatorDomain: t } = useCalculator();
+  return {
+    addDot: t.addDot,
+    addNumber: t.addNumber,
+    addSymbol: t.addSymbol,
+    summResult: t.summResult
+  };
+}
+const Keypad = observer(() => {
+  const { addDot: t, addNumber: r, addSymbol: u, summResult: S } = useKeypad();
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+    "div",
+    {
+      className: styles$l.keypad,
+      "data-testid": "ma-calculator-keypad",
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorNumber.SEVEN,
+            onClick: () => r(ECalculatorNumber.SEVEN),
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorNumber.EIGHT,
+            onClick: () => r(ECalculatorNumber.EIGHT),
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorNumber.NINE,
+            onClick: () => r(ECalculatorNumber.NINE),
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorSymbol.DIVIDE,
+            onClick: () => u(ECalculatorSymbol.DIVIDE),
+            variant: "secondary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorNumber.FOUR,
+            onClick: () => r(ECalculatorNumber.FOUR),
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorNumber.FIVE,
+            onClick: () => r(ECalculatorNumber.FIVE),
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorNumber.SIX,
+            onClick: () => r(ECalculatorNumber.SIX),
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorSymbol.MULTIPLY,
+            onClick: () => u(ECalculatorSymbol.MULTIPLY),
+            variant: "secondary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorNumber.ONE,
+            onClick: () => r(ECalculatorNumber.ONE),
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorNumber.TWO,
+            onClick: () => r(ECalculatorNumber.TWO),
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorNumber.THREE,
+            onClick: () => r(ECalculatorNumber.THREE),
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorSymbol.MINUS,
+            onClick: () => u(ECalculatorSymbol.MINUS),
+            variant: "secondary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorNumber.ZERO,
+            onClick: () => r(ECalculatorNumber.ZERO),
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorSymbol.DOT,
+            onClick: t,
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorSymbol.RESULT,
+            onClick: S,
+            variant: "primary"
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          OperationButton,
+          {
+            id: ECalculatorSymbol.ADD,
+            onClick: () => u(ECalculatorSymbol.ADD),
+            variant: "secondary"
+          }
+        )
+      ]
+    }
+  );
+}), screen$1 = "_screen_jjy5e_96", styles$k = {
+  screen: screen$1
+};
+function useScreen$1() {
+  const { calculatorDomain: t } = useCalculator();
+  return {
+    value: t.value
+  };
+}
+const Screen$1 = observer(() => {
+  const { value: t } = useScreen$1();
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    "span",
+    {
+      className: styles$k.screen,
+      "data-testid": "ma-calculator-screen",
+      children: t ?? "ERROR"
+    }
+  );
+}), wrapper$6 = "_wrapper_sceh6_96", styles$j = {
+  wrapper: wrapper$6
+}, Wrapper$7 = () => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+  "div",
+  {
+    className: styles$j.wrapper,
+    "data-testid": "ma-calculator-wrapper",
+    children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Screen$1, {}),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Keypad, {})
+    ]
+  }
+), CalculatorView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$5.Provider, { value: calculatorDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$7, {}) });
+var M = Object.defineProperty, O = (t, r, u) => r in t ? M(t, r, { enumerable: !0, configurable: !0, writable: !0, value: u }) : t[r] = u, i = (t, r, u) => O(t, typeof r != "symbol" ? r + "" : r, u);
+const c = class Xe {
+  constructor(r) {
+    i(this, "config"), this.config = r;
+  }
+  static getInstance(r) {
+    for (; Xe.lock; )
+      ;
+    return Xe.lock = !0, Xe.instance || (Xe.instance = new Xe(r)), Xe.lock = !1, Xe.instance;
+  }
+  set(r, u) {
+    this.config[r] !== u && (this.config[r] = u);
+  }
+  get(r) {
+    return this.config[r];
+  }
+};
+i(c, "instance"), i(c, "lock", !1);
+class x {
+  constructor() {
+    i(this, "UNKNOWN_ERROR_MESSAGE", "Unknown error message");
+  }
+  CatchError(r, u) {
+    const S = this;
+    return (E, ee, pe) => {
+      const be = pe.value;
+      pe.value = function(...Se) {
+        try {
+          return be.apply(this, Se);
+        } catch (je) {
+          throw S.createError(
+            r,
+            u,
+            je
+          );
+        }
+      };
+    };
+  }
+  createError(r, u, S) {
+    const E = this.generateErrorMessage(S), ee = new Error(E);
+    return ee.name = `[${r}]<${u}>`, ee;
+  }
+  generateErrorMessage(r) {
+    return r instanceof Error && r.message.length ? r.message : this.UNKNOWN_ERROR_MESSAGE;
+  }
+}
+const m = new x(), g = {
+  CatchError: m.CatchError.bind(m)
+};
+var R = Object.defineProperty, W = Object.getOwnPropertyDescriptor, N = (t, r, u, S) => {
+  for (var E = W(r, u), ee = t.length - 1, pe; ee >= 0; ee--)
+    (pe = t[ee]) && (E = pe(r, u, E) || E);
+  return E && R(r, u, E), E;
+};
+class T {
+  constructor(r) {
+    i(this, "config"), this.config = r;
+  }
+  add(r, u) {
+    return this.config[r] = u, this;
+  }
+  build() {
+    return this.validateConfig(), this.config;
+  }
+  validateConfig() {
+    if (this.config === void 0) throw new Error("missing config");
+    for (const [r, u] of Object.entries(
+      this.config
+    ))
+      if (u === void 0) throw new Error(`missing ${r}`);
+  }
+}
+N([
+  g.CatchError("AppConfigBuilderDomain", "validateConfig")
+], T.prototype, "validateConfig");
+class C {
+  restartApplication() {
+    window.location.reload();
+  }
+  shutdownApplication() {
+    window.location.href = "https://google.com";
+  }
+}
+class ue {
+  constructor() {
+    i(this, "appControllerRepository"), this.appControllerRepository = new C();
+  }
+  restartApplication() {
+    this.appControllerRepository.restartApplication();
+  }
+  shutdownApplication() {
+    this.appControllerRepository.shutdownApplication();
+  }
+}
+var _ = Object.defineProperty, I = Object.getOwnPropertyDescriptor, $ = (t, r, u, S) => {
+  for (var E = I(r, u), ee = t.length - 1, pe; ee >= 0; ee--)
+    (pe = t[ee]) && (E = pe(r, u, E) || E);
+  return E && _(r, u, E), E;
+};
+class l {
+  createDate(r) {
+    if (r && !this.isValidDate(r))
+      throw new Error(`Invalid date string: ${r}`);
+    return r ? new Date(r) : /* @__PURE__ */ new Date();
+  }
+  isValidDate(r) {
+    return !Number.isNaN(Date.parse(r));
+  }
+}
+$([
+  g.CatchError("DateStrategy", "createDate")
+], l.prototype, "createDate");
+class B {
+  constructor(r = new l()) {
+    this.dateStrategy = r;
+  }
+  get(r, u) {
+    const S = this.getActiveDay(r, u), E = this.getDaysInMonth(r, u), ee = this.getFirstDayOfWeek(r, u);
+    return {
+      activeDay: S,
+      daysInMonth: E,
+      firstDayOfWeek: ee
+    };
+  }
+  getActiveDay(r, u) {
+    const S = this.dateStrategy.createDate(), E = S.getFullYear(), ee = S.getMonth();
+    return E === u && ee === r ? S.getDate() : null;
+  }
+  getDaysInMonth(r, u) {
+    const S = this.dateStrategy.createDate();
+    return S.setFullYear(u, r + 1, 0), S.getDate();
+  }
+  getFirstDayOfWeek(r, u) {
+    const S = this.dateStrategy.createDate();
+    return S.setFullYear(u, r, 1), S.getDay();
+  }
+}
+class j {
+  constructor(r = new l()) {
+    this.dateStrategy = r;
+  }
+  getDate(r) {
+    return this.dateStrategy.createDate(r).getDate();
+  }
+  getDay(r) {
+    return this.dateStrategy.createDate(r).getDay();
+  }
+  toLocaleString(r, u, S) {
+    return this.dateStrategy.createDate(r).toLocaleString(u, S);
+  }
+  toLocaleDateString(r, u, S) {
+    return this.dateStrategy.createDate(r).toLocaleDateString(u, S);
+  }
+}
+class H {
+  constructor(r = new l()) {
+    this.dateStrategy = r;
+  }
+  getHours(r) {
+    return this.dateStrategy.createDate(r).getHours();
+  }
+  getMilliseconds(r) {
+    return this.dateStrategy.createDate(r).getMilliseconds();
+  }
+  getMinutes(r) {
+    return this.dateStrategy.createDate(r).getMinutes();
+  }
+  getSeconds(r) {
+    return this.dateStrategy.createDate(r).getSeconds();
+  }
+  toLocaleTimeString(r, u, S) {
+    return this.dateStrategy.createDate(r).toLocaleTimeString(u, S);
+  }
+}
+class X {
+  constructor(r = new l()) {
+    this.dateStrategy = r;
+  }
+  get(r) {
+    return this.dateStrategy.createDate(r).getMonth();
+  }
+}
+class F {
+  constructor(r = new l()) {
+    this.dateStrategy = r;
+  }
+  get(r) {
+    return this.dateStrategy.createDate(r).getFullYear();
+  }
+}
+class U {
+  constructor(r = new B(), u = new j(), S = new X(), E = new H(), ee = new F()) {
+    this.calendarRepository = r, this.dateRepository = u, this.monthRepository = S, this.timeRepository = E, this.yearRepository = ee;
+  }
+  getCalendar(r, u) {
+    return this.calendarRepository.get(r, u);
+  }
+  getDate(r, u, S) {
+    return this.dateRepository.toLocaleDateString(r, u, S);
+  }
+  getDateWithTime(r, u, S) {
+    return this.dateRepository.toLocaleString(r, u, S);
+  }
+  getMonth(r) {
+    return this.monthRepository.get(r);
+  }
+  getTime(r, u, S) {
+    return this.timeRepository.toLocaleTimeString(r, u, S);
+  }
+  getYear(r) {
+    return this.yearRepository.get(r);
+  }
+}
+const de = new U(), p = class Ir {
+  static getInstance(r, ...u) {
+    let S = Ir.instances.get(r);
+    return S || (S = new r(...u), Ir.instances.set(r, S)), S;
+  }
+};
+i(p, "instances", /* @__PURE__ */ new Map());
+let h = p;
+class k {
+  constructor() {
+    i(this, "events", {});
+  }
+  emit(r, u) {
+    if (this.events[r])
+      for (const S of this.events[r])
+        S(u);
+  }
+  off(r, u) {
+    this.events[r] && (this.events[r] = this.events[r].filter(
+      (S) => S !== u
+    ));
+  }
+  on(r, u) {
+    this.events[r] || (this.events[r] = []), this.events[r].push(u);
+  }
+  once(r, u) {
+    const S = (E) => {
+      u(E), this.off(r, S);
+    };
+    this.on(r, S);
+  }
+}
+h.getInstance(k);
+var w = /* @__PURE__ */ ((t) => (t.LANGUAGE = "lang", t))(w || {}), G = Object.defineProperty, q = Object.getOwnPropertyDescriptor, K = (t, r, u, S) => {
+  for (var E = q(r, u), ee = t.length - 1, pe; ee >= 0; ee--)
+    (pe = t[ee]) && (E = pe(r, u, E) || E);
+  return E && G(r, u, E), E;
+};
+class y {
+  applyLanguage(r) {
+    const u = window.document.querySelector("html");
+    if (u)
+      u.setAttribute(w.LANGUAGE, r);
+    else
+      throw new Error("Element HTML not found");
+  }
+}
+K([
+  g.CatchError("AttributeLanguageStrategy", "applyLanguage")
+], y.prototype, "applyLanguage");
+var V = Object.defineProperty, Q = Object.getOwnPropertyDescriptor, z = (t, r, u, S) => {
+  for (var E = Q(r, u), ee = t.length - 1, pe; ee >= 0; ee--)
+    (pe = t[ee]) && (E = pe(r, u, E) || E);
+  return E && V(r, u, E), E;
+};
+class J {
+  applyLanguage(r) {
+    const u = window.document.querySelector("html"), S = `language-${r}`;
+    if (u)
+      u.className = S;
+    else
+      throw new Error("Element HTML not found");
+  }
+}
+z([
+  g.CatchError("ClassLanguageStrategy", "applyLanguage")
+], J.prototype, "applyLanguage");
+var f = /* @__PURE__ */ ((t) => (t.THEME = "theme", t))(f || {}), re = Object.defineProperty, ne = Object.getOwnPropertyDescriptor, se = (t, r, u, S) => {
+  for (var E = ne(r, u), ee = t.length - 1, pe; ee >= 0; ee--)
+    (pe = t[ee]) && (E = pe(r, u, E) || E);
+  return E && re(r, u, E), E;
+};
+class D {
+  applyTheme(r) {
+    const u = window.document.querySelector("html");
+    if (u)
+      u.setAttribute(f.THEME, r);
+    else
+      throw new Error("Element HTML not found");
+  }
+}
+se([
+  g.CatchError("AttributeThemeStrategy", "applyTheme")
+], D.prototype, "applyTheme");
+var oe = Object.defineProperty, ae = Object.getOwnPropertyDescriptor, ie = (t, r, u, S) => {
+  for (var E = ae(r, u), ee = t.length - 1, pe; ee >= 0; ee--)
+    (pe = t[ee]) && (E = pe(r, u, E) || E);
+  return E && oe(r, u, E), E;
+};
+class ce {
+  applyTheme(r) {
+    const u = window.document.querySelector("html"), S = `theme-${r}`;
+    if (u)
+      u.className = S;
+    else
+      throw new Error("Element HTML not found");
+  }
+}
+ie([
+  g.CatchError("ClassThemeStrategy", "applyTheme")
+], ce.prototype, "applyTheme");
+class CalendarDomain {
+  constructor(r = de) {
+    he(this, "activeDay", null);
+    he(this, "daysInMonth", 0);
+    he(this, "firstDayOfWeek", 0);
+    he(this, "currentYear", 0);
+    he(this, "currentMonth", 0);
+    he(this, "initCalendar", () => {
+      const r = this.msDateDomain.getMonth(), u = this.msDateDomain.getYear();
+      this.generateCalendar(r, u);
+    });
+    he(this, "changeCalendarByYear", (r) => {
+      this.generateCalendar(this.currentMonth, r);
+    });
+    he(this, "changeCalendarByMonth", (r) => {
+      this.generateCalendar(r, this.currentYear);
+    });
+    he(this, "decreaseYear", () => {
+      this.currentYear -= 1, this.generateCalendar(this.currentMonth, this.currentYear);
+    });
+    he(this, "increaseYear", () => {
+      this.currentYear += 1, this.generateCalendar(this.currentMonth, this.currentYear);
+    });
+    he(this, "generateCalendar", (r, u) => {
+      const S = this.msDateDomain.getCalendar(r, u);
+      this.activeDay = S.activeDay, this.daysInMonth = S.daysInMonth, this.firstDayOfWeek = S.firstDayOfWeek, this.currentYear = u, this.currentMonth = r;
+    });
+    this.msDateDomain = r, makeAutoObservable(this), this.initCalendar();
+  }
+}
+const calendarDomain = new CalendarDomain(), DomainContext$4 = createContext(calendarDomain);
 function useSyncLang() {
   const { i18n: t } = useTranslation();
   useEffect(() => {
     const r = document.documentElement.lang;
     r && t.changeLanguage(r);
   }), useEffect(() => {
-    const r = new MutationObserver((S) => {
-      for (const L of S)
-        L.type === "attributes" && L.attributeName === "lang" && t.changeLanguage(L.target.lang);
+    const r = new MutationObserver((u) => {
+      for (const S of u)
+        S.type === "attributes" && S.attributeName === "lang" && t.changeLanguage(S.target.lang);
     });
     return r.observe(document.documentElement, { attributes: !0 }), () => {
       r.disconnect();
@@ -2884,41 +2977,41 @@ function useCalendar() {
   return useContext(DomainContext$4);
 }
 function useMonthDays() {
-  const t = useCalendar(), r = t.activeDay, S = t.firstDayOfWeek, L = t.daysInMonth;
+  const t = useCalendar(), r = t.activeDay, u = t.firstDayOfWeek, S = t.daysInMonth;
   return {
     activeDay: r,
-    firstDayOfWeek: S,
-    monthDays: L
+    firstDayOfWeek: u,
+    monthDays: S
   };
 }
 const MonthDays = observer(() => {
-  const { activeDay: t, firstDayOfWeek: r, monthDays: S } = useMonthDays();
-  return typeof S == "number" && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+  const { activeDay: t, firstDayOfWeek: r, monthDays: u } = useMonthDays();
+  return typeof u == "number" && /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
       className: styles$h["month-days"],
       "data-testid": "calendar-view-days",
       children: [
-        Array.from({ length: r }).map((L, Q) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Array.from({ length: r }).map((S, E) => /* @__PURE__ */ jsxRuntimeExports.jsx(
           "span",
           {
             className: styles$h.day,
-            "data-testid": `calendar-month-days-empty-${Q + 1}`
+            "data-testid": `calendar-month-days-empty-${E + 1}`
           },
-          `calendar-month-days-empty-${Q + 1}`
+          `calendar-month-days-empty-${E + 1}`
         )),
-        Array.from({ length: S }).map((L, Q) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Array.from({ length: u }).map((S, E) => /* @__PURE__ */ jsxRuntimeExports.jsx(
           "button",
           {
             className: `
                             ${styles$h.day}
-                            ${Q + 1 === t ? styles$h["day-active"] : ""}
+                            ${E + 1 === t ? styles$h["day-active"] : ""}
                         `,
-            "data-testid": `calendar-month-days-day-${Q + 1}`,
+            "data-testid": `calendar-month-days-day-${E + 1}`,
             type: "button",
-            children: Q + 1
+            children: E + 1
           },
-          `calendar-month-days-day-${Q + 1}`
+          `calendar-month-days-day-${E + 1}`
         ))
       ]
     }
@@ -2960,9 +3053,9 @@ const day = "_day_jydkk_104", styles$g = {
   /* @__PURE__ */ jsxRuntimeExports.jsx(MonthDays, {})
 ] });
 function useMonthSwitcher() {
-  const { t } = useTranslation(), r = useCalendar(), S = (se) => {
-    r.changeCalendarByMonth(Number(se.currentTarget.value));
-  }, L = r.currentMonth;
+  const { t } = useTranslation(), r = useCalendar(), u = (ee) => {
+    r.changeCalendarByMonth(Number(ee.currentTarget.value));
+  }, S = r.currentMonth;
   return {
     dictionary: useMemo(
       () => ({
@@ -3019,18 +3112,18 @@ function useMonthSwitcher() {
       }),
       [t]
     ),
-    handleSelectChange: S,
-    month: L
+    handleSelectChange: u,
+    month: S
   };
 }
 const MonthSwitcher = observer(() => {
-  const { handleSelectChange: t, month: r, dictionary: S } = useMonthSwitcher();
+  const { handleSelectChange: t, month: r, dictionary: u } = useMonthSwitcher();
   return r !== null && /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Ur,
+    zr,
     {
       id: "month-switcher",
       modelValue: r,
-      options: S.months,
+      options: u.months,
       onSelect: t
     }
   );
@@ -3038,22 +3131,22 @@ const MonthSwitcher = observer(() => {
 function useYearSwitcher() {
   const t = useCalendar(), r = () => {
     t.decreaseYear();
-  }, S = () => {
+  }, u = () => {
     t.increaseYear();
-  }, L = t.currentYear;
+  }, S = t.currentYear;
   return {
     decreaseYear: r,
-    increaseYear: S,
-    year: L
+    increaseYear: u,
+    year: S
   };
 }
 const YearSwitcher = observer(() => {
-  const { decreaseYear: t, increaseYear: r, year: S } = useYearSwitcher();
-  return S && /* @__PURE__ */ jsxRuntimeExports.jsx(
-    qr,
+  const { decreaseYear: t, increaseYear: r, year: u } = useYearSwitcher();
+  return u && /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Fr,
     {
       id: "calendar-year",
-      modelValue: S,
+      modelValue: u,
       onIncrease: r,
       onDecrease: t
     }
@@ -3075,7 +3168,7 @@ const wrapper$5 = "_wrapper_1xgp9_96", styles$f = {
 }, Wrapper$6 = () => {
   const { title: t } = useWrapper$1();
   return useSyncLang(), /* @__PURE__ */ jsxRuntimeExports.jsxs(
-    Yr,
+    Cr,
     {
       className: styles$f.wrapper,
       id: "calculator",
@@ -3090,9 +3183,9 @@ const wrapper$5 = "_wrapper_1xgp9_96", styles$f = {
 }, CalendarView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$4.Provider, { value: calendarDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$6, {}) });
 class ClockDomain {
   constructor() {
-    fe(this, "time", null);
-    fe(this, "dateDomain");
-    makeAutoObservable(this), this.dateDomain = le;
+    he(this, "time", null);
+    he(this, "dateDomain");
+    makeAutoObservable(this), this.dateDomain = de;
   }
   updateTime() {
     const r = this.dateDomain.getTime(void 0, void 0, {
@@ -3183,13 +3276,13 @@ const Pulpit = ({ items: t }) => {
     {
       className: styles$a.pulpit,
       "data-testid": "ma-pulpit-pulpit",
-      children: t.map((S, L) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      children: t.map((u, S) => /* @__PURE__ */ jsxRuntimeExports.jsx(
         PulpitItem,
         {
-          name: r(S.name),
-          icon: S.icon
+          name: r(u.name),
+          icon: u.icon
         },
-        `pulpit-item-${L}-${S.icon}`
+        `pulpit-item-${S}-${u.icon}`
       ))
     }
   );
@@ -3216,8 +3309,8 @@ const Pulpit = ({ items: t }) => {
 }, PulpitViewWithMock = () => /* @__PURE__ */ jsxRuntimeExports.jsx(PulpitView, { ...mockData });
 class ShutdownRepository {
   constructor() {
-    fe(this, "appController");
-    this.appController = new ce();
+    he(this, "appController");
+    this.appController = new ue();
   }
   restartApplication() {
     this.appController.restartApplication();
@@ -3229,8 +3322,8 @@ class ShutdownRepository {
 var EShutdownPresets = /* @__PURE__ */ ((t) => (t.RESTART = "restart", t.SHUTDOWN = "shutdown", t))(EShutdownPresets || {});
 class ShutdownDomain {
   constructor() {
-    fe(this, "shutdownRepository");
-    fe(this, "preset", EShutdownPresets.SHUTDOWN);
+    he(this, "shutdownRepository");
+    he(this, "preset", EShutdownPresets.SHUTDOWN);
     makeAutoObservable(this), this.shutdownRepository = new ShutdownRepository();
   }
   changePreset(r) {
@@ -3253,7 +3346,7 @@ const shutdownDomain = new ShutdownDomain(), DomainContext$2 = createContext(shu
 }, Cancel = () => {
   const { translations: t } = useCancel();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Wr,
+    Tt,
     {
       id: "ma-shutdown-controller-cancel",
       text: t.text
@@ -3268,19 +3361,19 @@ function useShutdown() {
   };
 }
 const useOk = () => {
-  const { t } = useTranslation(), { shutdownDomain: r } = useShutdown(), S = useMemo(() => ({
+  const { t } = useTranslation(), { shutdownDomain: r } = useShutdown(), u = useMemo(() => ({
     text: t("ma-shutdown.ok")
   }), [t]);
   return {
     onClick: () => {
       r.preset === EShutdownPresets.SHUTDOWN && r.shutdownApplication(), r.preset === EShutdownPresets.RESTART && r.restartApplication();
     },
-    translations: S
+    translations: u
   };
 }, Ok = observer(() => {
   const { onClick: t, translations: r } = useOk();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Wr,
+    Tt,
     {
       id: "ma-shutdown-controller-ok",
       onClick: t,
@@ -3322,7 +3415,7 @@ const Description = () => {
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
-      ze,
+      ve,
       {
         id: "ma-shutdown-description-text",
         text: t.description
@@ -3332,7 +3425,7 @@ const Description = () => {
 }, presets$1 = "_presets_91z49_96", styles$6 = {
   presets: presets$1
 }, usePresets$1 = () => {
-  const { t } = useTranslation(), { shutdownDomain: r } = useShutdown(), [S, L] = useState(
+  const { t } = useTranslation(), { shutdownDomain: r } = useShutdown(), [u, S] = useState(
     r.preset
   );
   return {
@@ -3348,26 +3441,26 @@ const Description = () => {
         id: "ma-shutdown-preset-restart"
       }
     ], [t]),
-    setPreset: (me) => {
-      r.changePreset(me), L(me);
+    setPreset: (pe) => {
+      r.changePreset(pe), S(pe);
     },
-    selectedPreset: S
+    selectedPreset: u
   };
 }, Presets$1 = observer(() => {
-  const { presets: t, selectedPreset: r, setPreset: S } = usePresets$1();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$6.presets, children: t.map((L) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Lr,
+  const { presets: t, selectedPreset: r, setPreset: u } = usePresets$1();
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$6.presets, children: t.map((S) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Pr,
     {
-      initialChecked: L.preset === r,
-      id: L.id,
+      initialChecked: S.preset === r,
+      id: S.id,
       name: "ma-timer-presets",
-      onChange: () => S(L.preset),
+      onChange: () => u(S.preset),
       text: {
-        content: L.content,
+        content: S.content,
         visible: !0
       }
     },
-    L.id
+    S.id
   )) });
 }), wrapper$1 = "_wrapper_vb7vs_96", styles$5 = {
   wrapper: wrapper$1
@@ -3379,23 +3472,23 @@ const Description = () => {
 var ETimerPresets = /* @__PURE__ */ ((t) => (t.THREE_MINUTES = "3-min", t.FIVE_MINUTES = "5-min", t.TEN_MINUTES = "10-min", t.FIFTEEN_MINUTES = "15-min", t.CUSTOM_MINUTES = "custom", t))(ETimerPresets || {}), ETimerTime = /* @__PURE__ */ ((t) => (t.HOURS = "hours", t.MINUTES = "minutes", t.SECONDS = "seconds", t))(ETimerTime || {}), ETimerStatus = /* @__PURE__ */ ((t) => (t.PLAY = "play", t.STOP = "stop", t.RESET = "reset", t))(ETimerStatus || {});
 class TimerControllerDomain {
   constructor(r) {
-    fe(this, "timerDomain");
-    fe(this, "increaseSeconds", () => {
+    he(this, "timerDomain");
+    he(this, "increaseSeconds", () => {
       this.timerDomain.time.seconds !== 59 && this.timerDomain.addTime(ETimerTime.SECONDS, 1);
     });
-    fe(this, "decreaseSeconds", () => {
+    he(this, "decreaseSeconds", () => {
       this.timerDomain.time.seconds !== 0 && this.timerDomain.subtractTime(ETimerTime.SECONDS, 1);
     });
-    fe(this, "increaseMinutes", () => {
+    he(this, "increaseMinutes", () => {
       this.timerDomain.time.minutes !== 59 && this.timerDomain.addTime(ETimerTime.MINUTES, 1);
     });
-    fe(this, "decreaseMinutes", () => {
+    he(this, "decreaseMinutes", () => {
       this.timerDomain.time.minutes !== 0 && this.timerDomain.subtractTime(ETimerTime.MINUTES, 1);
     });
-    fe(this, "increaseHours", () => {
+    he(this, "increaseHours", () => {
       this.timerDomain.time.hours !== 59 && this.timerDomain.addTime(ETimerTime.HOURS, 1);
     });
-    fe(this, "decreaseHours", () => {
+    he(this, "decreaseHours", () => {
       this.timerDomain.time.hours !== 0 && this.timerDomain.subtractTime(ETimerTime.HOURS, 1);
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -3403,23 +3496,23 @@ class TimerControllerDomain {
 }
 class TimerPlayerDomain {
   constructor(r) {
-    fe(this, "timerDomain");
-    fe(this, "interval", null);
-    fe(this, "start", () => {
+    he(this, "timerDomain");
+    he(this, "interval", null);
+    he(this, "start", () => {
       this.timerDomain.setStatus(ETimerStatus.PLAY), this.interval = setInterval(() => {
         this.timerDomain.time.hours === 0 && this.timerDomain.time.minutes === 0 && this.timerDomain.time.seconds === 0 && this.reset(), this.timerDomain.time.hours >= 1 && this.timerDomain.time.minutes === 0 && this.timerDomain.time.seconds === 0 ? (this.timerDomain.time.hours--, this.timerDomain.time.minutes = 59, this.timerDomain.time.seconds = 59) : this.timerDomain.time.seconds === 0 && this.timerDomain.time.minutes >= 1 ? (this.timerDomain.time.seconds = 59, this.timerDomain.time.minutes--) : this.timerDomain.time.seconds--;
       }, 1e3);
     });
-    fe(this, "stop", () => {
+    he(this, "stop", () => {
       this.timerDomain.setStatus(ETimerStatus.STOP), this.clearTimerInterval();
     });
-    fe(this, "reset", () => {
+    he(this, "reset", () => {
       this.timerDomain.setStatus(ETimerStatus.RESET), this.clearTimerInterval(), this.restartTime();
     });
-    fe(this, "clearTimerInterval", () => {
+    he(this, "clearTimerInterval", () => {
       this.interval && clearInterval(this.interval);
     });
-    fe(this, "restartTime", () => {
+    he(this, "restartTime", () => {
       this.timerDomain.time.hours = 0, this.timerDomain.time.minutes = 0, this.timerDomain.time.seconds = 0;
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -3427,25 +3520,25 @@ class TimerPlayerDomain {
 }
 class TimerPresetsDomain {
   constructor(r) {
-    fe(this, "preset", ETimerPresets.CUSTOM_MINUTES);
-    fe(this, "timerDomain");
-    fe(this, "presetTimes", {
+    he(this, "preset", ETimerPresets.CUSTOM_MINUTES);
+    he(this, "timerDomain");
+    he(this, "presetTimes", {
       [ETimerPresets.CUSTOM_MINUTES]: 0,
       [ETimerPresets.THREE_MINUTES]: 3,
       [ETimerPresets.FIVE_MINUTES]: 5,
       [ETimerPresets.TEN_MINUTES]: 10,
       [ETimerPresets.FIFTEEN_MINUTES]: 15
     });
-    fe(this, "setPreset", (r) => {
+    he(this, "setPreset", (r) => {
       this.setPresetStatus(r), this.resetSecondsAndHours(), this.setMinutes(r);
     });
-    fe(this, "setMinutes", (r) => {
+    he(this, "setMinutes", (r) => {
       this.timerDomain.setTime(ETimerTime.MINUTES, this.presetTimes[r]);
     });
-    fe(this, "setPresetStatus", (r) => {
+    he(this, "setPresetStatus", (r) => {
       this.preset !== r && (this.preset = r);
     });
-    fe(this, "resetSecondsAndHours", () => {
+    he(this, "resetSecondsAndHours", () => {
       this.timerDomain.time.seconds !== 0 && this.timerDomain.setTime(ETimerTime.SECONDS, 0), this.timerDomain.time.hours !== 0 && this.timerDomain.setTime(ETimerTime.HOURS, 0);
     });
     this.timerDomain = r, makeAutoObservable(this);
@@ -3453,25 +3546,25 @@ class TimerPresetsDomain {
 }
 class TimerDomain {
   constructor() {
-    fe(this, "controllerDomain");
-    fe(this, "playerDomain");
-    fe(this, "presetsDomain");
-    fe(this, "time", {
+    he(this, "controllerDomain");
+    he(this, "playerDomain");
+    he(this, "presetsDomain");
+    he(this, "time", {
       seconds: 0,
       minutes: 0,
       hours: 0
     });
-    fe(this, "status", ETimerStatus.RESET);
-    fe(this, "addTime", (r, S) => {
-      this.time[r] += S;
+    he(this, "status", ETimerStatus.RESET);
+    he(this, "addTime", (r, u) => {
+      this.time[r] += u;
     });
-    fe(this, "subtractTime", (r, S) => {
-      this.time[r] -= S;
+    he(this, "subtractTime", (r, u) => {
+      this.time[r] -= u;
     });
-    fe(this, "setTime", (r, S) => {
-      this.time[r] = S;
+    he(this, "setTime", (r, u) => {
+      this.time[r] = u;
     });
-    fe(this, "setStatus", (r) => {
+    he(this, "setStatus", (r) => {
       this.status = r;
     });
     makeAutoObservable(this), this.controllerDomain = new TimerControllerDomain(this), this.playerDomain = new TimerPlayerDomain(this), this.presetsDomain = new TimerPresetsDomain(this);
@@ -3490,7 +3583,7 @@ function useTimer() {
   };
 }
 function useController() {
-  const { timerDomain: t } = useTimer(), S = (t.presetsDomain.preset !== ETimerPresets.CUSTOM_MINUTES ? State.DISABLED : State.ACTIVE) === State.DISABLED;
+  const { timerDomain: t } = useTimer(), u = (t.presetsDomain.preset !== ETimerPresets.CUSTOM_MINUTES ? State.DISABLED : State.ACTIVE) === State.DISABLED;
   return {
     hours: t.time.hours,
     minutes: t.time.minutes,
@@ -3501,21 +3594,21 @@ function useController() {
     decreaseMinutes: t.controllerDomain.decreaseMinutes,
     increaseHours: t.controllerDomain.increaseHours,
     decreaseHours: t.controllerDomain.decreaseHours,
-    isDisabled: S
+    isDisabled: u
   };
 }
 const Controller = observer(() => {
   const {
     hours: t,
     minutes: r,
-    seconds: S,
-    increaseSeconds: L,
-    decreaseSeconds: Q,
-    increaseMinutes: se,
-    decreaseMinutes: me,
-    increaseHours: we,
-    decreaseHours: he,
-    isDisabled: _e
+    seconds: u,
+    increaseSeconds: S,
+    decreaseSeconds: E,
+    increaseMinutes: ee,
+    decreaseMinutes: pe,
+    increaseHours: be,
+    decreaseHours: Se,
+    isDisabled: je
   } = useController();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
@@ -3524,33 +3617,33 @@ const Controller = observer(() => {
       className: styles$4.controller,
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
-          qr,
+          Fr,
           {
             id: "hours",
             modelValue: t,
-            onIncrease: we,
-            onDecrease: he,
-            disabled: _e
+            onIncrease: be,
+            onDecrease: Se,
+            disabled: je
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
-          qr,
+          Fr,
           {
             id: "minutes",
             modelValue: r,
-            onIncrease: se,
-            onDecrease: me,
-            disabled: _e
+            onIncrease: ee,
+            onDecrease: pe,
+            disabled: je
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
-          qr,
+          Fr,
           {
             id: "seconds",
-            modelValue: S,
-            onIncrease: L,
-            onDecrease: Q,
-            disabled: _e
+            modelValue: u,
+            onIncrease: S,
+            onDecrease: E,
+            disabled: je
           }
         )
       ]
@@ -3559,48 +3652,48 @@ const Controller = observer(() => {
 }), player = "_player_1lb22_96", styles$3 = {
   player
 }, useReset = () => {
-  const { t } = useTranslation(), { timerDomain: r } = useTimer(), S = useMemo(() => ({
+  const { t } = useTranslation(), { timerDomain: r } = useTimer(), u = useMemo(() => ({
     reset: t("ma-timer.reset")
-  }), [t]), L = () => {
-    Q || r.playerDomain.reset();
-  }, Q = r.status === ETimerStatus.PLAY || r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0;
+  }), [t]), S = () => {
+    E || r.playerDomain.reset();
+  }, E = r.status === ETimerStatus.PLAY || r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0;
   return {
-    disabled: Q,
-    onClick: L,
-    text: S.reset
+    disabled: E,
+    onClick: S,
+    text: u.reset
   };
 }, Reset = observer(() => {
-  const { disabled: t, onClick: r, text: S } = useReset();
+  const { disabled: t, onClick: r, text: u } = useReset();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Wr,
+    Tt,
     {
       id: "ma-timer-player-reset",
       disabled: t,
       onClick: r,
-      text: S
+      text: u
     }
   );
 }), useStartAndStop = () => {
-  const { t } = useTranslation(), { timerDomain: r } = useTimer(), S = useMemo(() => ({
+  const { t } = useTranslation(), { timerDomain: r } = useTimer(), u = useMemo(() => ({
     start: t("ma-timer.start"),
     stop: t("ma-timer.stop")
-  }), [t]), L = () => {
+  }), [t]), S = () => {
     r.status === ETimerStatus.PLAY ? r.playerDomain.stop() : r.playerDomain.start();
-  }, Q = r.status === ETimerStatus.PLAY ? S.stop : S.start;
+  }, E = r.status === ETimerStatus.PLAY ? u.stop : u.start;
   return {
     disabled: r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0,
-    onClick: L,
-    text: Q
+    onClick: S,
+    text: E
   };
 }, StartAndStop = observer(() => {
-  const { disabled: t, onClick: r, text: S } = useStartAndStop();
+  const { disabled: t, onClick: r, text: u } = useStartAndStop();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Wr,
+    Tt,
     {
       id: "ma-timer-player-start-and-stop",
       disabled: t,
       onClick: r,
-      text: S
+      text: u
     }
   );
 }), Player = () => /* @__PURE__ */ jsxRuntimeExports.jsxs(
@@ -3616,9 +3709,9 @@ const Controller = observer(() => {
 ), presets = "_presets_1t37w_96", styles$2 = {
   presets
 }, usePresets = () => {
-  const { t } = useTranslation(), { timerDomain: r } = useTimer(), [S, L] = useState(
+  const { t } = useTranslation(), { timerDomain: r } = useTimer(), [u, S] = useState(
     r.presetsDomain.preset
-  ), Q = useMemo(() => [
+  ), E = useMemo(() => [
     {
       preset: ETimerPresets.THREE_MINUTES,
       content: t("ma-timer.presets.three-minutes"),
@@ -3644,39 +3737,39 @@ const Controller = observer(() => {
       content: t("ma-timer.presets.custom"),
       id: "ma-timer-preset-custom"
     }
-  ], [t]), se = (he) => {
-    me || (r.presetsDomain.setPreset(he), L(he));
-  }, me = r.status === ETimerStatus.PLAY, we = t("ma-timer.presets.title");
+  ], [t]), ee = (Se) => {
+    pe || (r.presetsDomain.setPreset(Se), S(Se));
+  }, pe = r.status === ETimerStatus.PLAY, be = t("ma-timer.presets.title");
   return {
-    disabled: me,
-    presets: Q,
-    setPreset: se,
-    selectedPreset: S,
-    title: we
+    disabled: pe,
+    presets: E,
+    setPreset: ee,
+    selectedPreset: u,
+    title: be
   };
 }, Presets = observer(() => {
-  const { disabled: t, presets: r, selectedPreset: S, setPreset: L, title: Q } = usePresets();
+  const { disabled: t, presets: r, selectedPreset: u, setPreset: S, title: E } = usePresets();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Yr,
+    Cr,
     {
       className: styles$2.presets,
       "data-testid": "ma-timer-presets",
       id: "ma-timer-presets",
-      title: Q,
-      children: r.map((se) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-        Lr,
+      title: E,
+      children: r.map((ee) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Pr,
         {
-          initialChecked: se.preset === S,
+          initialChecked: ee.preset === u,
           disabled: t,
-          id: se.id,
+          id: ee.id,
           name: "ma-timer-presets",
-          onChange: () => L(se.preset),
+          onChange: () => S(ee.preset),
           text: {
-            content: se.content,
+            content: ee.content,
             visible: !0
           }
         },
-        se.id
+        ee.id
       ))
     }
   );
@@ -3685,15 +3778,15 @@ const Controller = observer(() => {
   time
 };
 function useScreen() {
-  const { timerDomain: t } = useTimer(), r = addZeroBeforeNumber(t.time.hours, 10), S = addZeroBeforeNumber(t.time.minutes, 10), L = addZeroBeforeNumber(t.time.seconds, 10);
+  const { timerDomain: t } = useTimer(), r = addZeroBeforeNumber(t.time.hours, 10), u = addZeroBeforeNumber(t.time.minutes, 10), S = addZeroBeforeNumber(t.time.seconds, 10);
   return {
     hours: r,
-    minutes: S,
-    seconds: L
+    minutes: u,
+    seconds: S
   };
 }
 const Screen = observer(() => {
-  const { hours: t, minutes: r, seconds: S } = useScreen();
+  const { hours: t, minutes: r, seconds: u } = useScreen();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
@@ -3723,7 +3816,7 @@ const Screen = observer(() => {
           {
             className: styles$1.time,
             "data-testid": "ma-timer-screen-seconds",
-            children: S
+            children: u
           }
         )
       ]
@@ -3777,8 +3870,8 @@ class TimezoneRepository {
 }
 class TimezoneDomain {
   constructor() {
-    fe(this, "timezoneRepository", new TimezoneRepository());
-    fe(this, "timezonesValuePairs", null);
+    he(this, "timezoneRepository", new TimezoneRepository());
+    he(this, "timezonesValuePairs", null);
     makeAutoObservable(this);
   }
   generateTimezones() {
@@ -3789,9 +3882,9 @@ class TimezoneDomain {
     return `ma-timezone.stepper.${r}`;
   }
   mapTimezonesToValuePairs(r) {
-    return r.map((S) => ({
-      value: S,
-      label: this.createI18nKey(S)
+    return r.map((u) => ({
+      value: u,
+      label: this.createI18nKey(u)
     }));
   }
 }
@@ -3806,11 +3899,11 @@ function useTimezoneSwitcher() {
   return {
     dictionary: useMemo(
       () => {
-        var L;
+        var S;
         return {
-          timezones: (L = r == null ? void 0 : r.timezonesValuePairs) == null ? void 0 : L.map((Q) => ({
-            value: Q.value,
-            name: t(Q.label)
+          timezones: (S = r == null ? void 0 : r.timezonesValuePairs) == null ? void 0 : S.map((E) => ({
+            value: E.value,
+            name: t(E.label)
           }))
         };
       },
@@ -3821,7 +3914,7 @@ function useTimezoneSwitcher() {
 const TimezoneSwitcher = observer(() => {
   const { dictionary: t } = useTimezoneSwitcher();
   return (t == null ? void 0 : t.timezones) && /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Ur,
+    zr,
     {
       id: "timezone-switcher",
       modelValue: t.timezones[0].value,
@@ -3847,14 +3940,16 @@ function useWrapper() {
 const Wrapper = observer(() => {
   const { title: t } = useWrapper();
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Yr,
+    Cr,
     {
       id: "timezone",
       title: t,
       children: /* @__PURE__ */ jsxRuntimeExports.jsx(TimezoneSwitcher, {})
     }
   );
-}), TimezoneView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext.Provider, { value: timezoneDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper, {}) }), MACalculator = s(CalculatorView);
+}), TimezoneView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext.Provider, { value: timezoneDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper, {}) }), MAAudio = s(AudioButtonView);
+customElements.define("ma-audio-button", MAAudio);
+const MACalculator = s(CalculatorView);
 customElements.define("ma-calculator", MACalculator);
 const MACalendar = s(CalendarView);
 customElements.define("ma-calendar", MACalendar);
