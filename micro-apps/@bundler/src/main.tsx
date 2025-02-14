@@ -4,6 +4,7 @@ import "@windows98/design-system/base.config.css"
 import "@windows98/design-system/variables.config.css"
 import i18nInit from "@windows98/i18n/configs/react.config"
 import type { Maybe } from "@windows98/toolkit"
+import { AudioButtonView } from "../../src/ma-audio-button/src/ui/views"
 import { CalculatorView } from "../../src/ma-calculator/src/ui/views"
 import { CalendarView } from "../../src/ma-calendar/src/ui/views/calendar.view"
 import { ClockView } from "../../src/ma-clock/src/ui/views"
@@ -25,6 +26,7 @@ i18nInit().then(() => {
 			<TimerView />
 			<ShutdownView />
 			<NavigationView>
+				<AudioButtonView />
 				<ClockView />
 			</NavigationView>
 		</React.StrictMode>,

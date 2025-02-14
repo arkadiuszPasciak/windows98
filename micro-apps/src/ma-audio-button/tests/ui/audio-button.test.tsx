@@ -21,7 +21,9 @@ test.describe("AudioButton", () => {
 			return audioElement?.muted && videoElement?.muted
 		})
 
-		const audioButtonIconOff = await component.getByTestId("ds-icon-audio-button-off")
+		const audioButtonIconOff = await component.getByTestId(
+			"ds-icon-audio-button-off",
+		)
 		expect(isMuted, "Audio and video elements are muted").toBe(true)
 		expect(audioButtonIconOff).toBeVisible()
 
@@ -32,7 +34,9 @@ test.describe("AudioButton", () => {
 			const videoElement = document.querySelector("video")
 			return !audioElement?.muted && !videoElement?.muted
 		})
-		const audioButtonIconOn = await component.getByTestId("ds-icon-audio-button-on")
+		const audioButtonIconOn = await component.getByTestId(
+			"ds-icon-audio-button-on",
+		)
 		expect(isUnmuted, "Audio and video elements are unmuted").toBe(true)
 		expect(audioButtonIconOn).toBeVisible()
 	})
