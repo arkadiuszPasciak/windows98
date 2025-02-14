@@ -16,10 +16,10 @@ function St() {
   Me = 1;
   var t = qe, a = Symbol.for("react.element"), l = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, d = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, i = { key: !0, ref: !0, __self: !0, __source: !0 };
   function c(_, h, y) {
-    var b, g = {}, R = null, E = null;
+    var m, g = {}, R = null, E = null;
     y !== void 0 && (R = "" + y), h.key !== void 0 && (R = "" + h.key), h.ref !== void 0 && (E = h.ref);
-    for (b in h) o.call(h, b) && !i.hasOwnProperty(b) && (g[b] = h[b]);
-    if (_ && _.defaultProps) for (b in h = _.defaultProps, h) g[b] === void 0 && (g[b] = h[b]);
+    for (m in h) o.call(h, m) && !i.hasOwnProperty(m) && (g[m] = h[m]);
+    if (_ && _.defaultProps) for (m in h = _.defaultProps, h) g[m] === void 0 && (g[m] = h[m]);
     return { $$typeof: a, type: _, key: R, ref: E, props: g, _owner: d.current };
   }
   return A.Fragment = l, A.jsx = c, A.jsxs = c, A;
@@ -37,7 +37,7 @@ var L = {};
 var Ie;
 function Vt() {
   return Ie || (Ie = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = qe, a = Symbol.for("react.element"), l = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), d = Symbol.for("react.strict_mode"), i = Symbol.for("react.profiler"), c = Symbol.for("react.provider"), _ = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), y = Symbol.for("react.suspense"), b = Symbol.for("react.suspense_list"), g = Symbol.for("react.memo"), R = Symbol.for("react.lazy"), E = Symbol.for("react.offscreen"), O = Symbol.iterator, W = "@@iterator";
+    var t = qe, a = Symbol.for("react.element"), l = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), d = Symbol.for("react.strict_mode"), i = Symbol.for("react.profiler"), c = Symbol.for("react.provider"), _ = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), y = Symbol.for("react.suspense"), m = Symbol.for("react.suspense_list"), g = Symbol.for("react.memo"), R = Symbol.for("react.lazy"), E = Symbol.for("react.offscreen"), O = Symbol.iterator, W = "@@iterator";
     function S(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -56,16 +56,16 @@ function Vt() {
       {
         var u = P.ReactDebugCurrentFrame, p = u.getStackAddendum();
         p !== "" && (r += "%s", s = s.concat([p]));
-        var m = s.map(function(v) {
+        var b = s.map(function(v) {
           return String(v);
         });
-        m.unshift("Warning: " + r), Function.prototype.apply.call(console[e], console, m);
+        b.unshift("Warning: " + r), Function.prototype.apply.call(console[e], console, b);
       }
     }
     var Je = !1, Xe = !1, Ke = !1, Ze = !1, Qe = !1, he;
     he = Symbol.for("react.module.reference");
     function et(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === o || e === i || Qe || e === d || e === y || e === b || Ze || e === E || Je || Xe || Ke || typeof e == "object" && e !== null && (e.$$typeof === R || e.$$typeof === g || e.$$typeof === c || e.$$typeof === _ || e.$$typeof === h || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === o || e === i || Qe || e === d || e === y || e === m || Ze || e === E || Je || Xe || Ke || typeof e == "object" && e !== null && (e.$$typeof === R || e.$$typeof === g || e.$$typeof === c || e.$$typeof === _ || e.$$typeof === h || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -99,7 +99,7 @@ function Vt() {
           return "StrictMode";
         case y:
           return "Suspense";
-        case b:
+        case m:
           return "SuspenseList";
       }
       if (typeof e == "object")
@@ -116,9 +116,9 @@ function Vt() {
             var u = e.displayName || null;
             return u !== null ? u : C(e.type) || "Memo";
           case R: {
-            var p = e, m = p._payload, v = p._init;
+            var p = e, b = p._payload, v = p._init;
             try {
-              return C(v(m));
+              return C(v(b));
             } catch {
               return null;
             }
@@ -126,14 +126,14 @@ function Vt() {
         }
       return null;
     }
-    var H = Object.assign, M = 0, _e, me, be, ge, xe, we, ye;
+    var H = Object.assign, M = 0, _e, be, me, ge, xe, we, ye;
     function Re() {
     }
     Re.__reactDisabledLog = !0;
     function rt() {
       {
         if (M === 0) {
-          _e = console.log, me = console.info, be = console.warn, ge = console.error, xe = console.group, we = console.groupCollapsed, ye = console.groupEnd;
+          _e = console.log, be = console.info, me = console.warn, ge = console.error, xe = console.group, we = console.groupCollapsed, ye = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
@@ -166,10 +166,10 @@ function Vt() {
               value: _e
             }),
             info: H({}, e, {
-              value: me
+              value: be
             }),
             warn: H({}, e, {
-              value: be
+              value: me
             }),
             error: H({}, e, {
               value: ge
@@ -219,8 +219,8 @@ function Vt() {
       re = !0;
       var p = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var m;
-      m = ee.current, ee.current = null, rt();
+      var b;
+      b = ee.current, ee.current = null, rt();
       try {
         if (r) {
           var v = function() {
@@ -273,7 +273,7 @@ function Vt() {
             }
         }
       } finally {
-        re = !1, ee.current = m, nt(), Error.prepareStackTrace = p;
+        re = !1, ee.current = b, nt(), Error.prepareStackTrace = p;
       }
       var F = e ? e.displayName || e.name : "", Fe = F ? B(F) : "";
       return typeof e == "function" && q.set(e, Fe), Fe;
@@ -295,7 +295,7 @@ function Vt() {
       switch (e) {
         case y:
           return B("Suspense");
-        case b:
+        case m:
           return B("SuspenseList");
       }
       if (typeof e == "object")
@@ -305,9 +305,9 @@ function Vt() {
           case g:
             return G(e.type, r, s);
           case R: {
-            var u = e, p = u._payload, m = u._init;
+            var u = e, p = u._payload, b = u._init;
             try {
-              return G(m(p), r, s);
+              return G(b(p), r, s);
             } catch {
             }
           }
@@ -324,9 +324,9 @@ function Vt() {
     }
     function ot(e, r, s, u, p) {
       {
-        var m = Function.call.bind(J);
+        var b = Function.call.bind(J);
         for (var v in e)
-          if (m(e, v)) {
+          if (b(e, v)) {
             var f = void 0;
             try {
               if (typeof e[v] != "function") {
@@ -416,7 +416,7 @@ function Vt() {
         });
       }
     }
-    var mt = function(e, r, s, u, p, m, v) {
+    var bt = function(e, r, s, u, p, b, v) {
       var f = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: a,
@@ -426,7 +426,7 @@ function Vt() {
         ref: s,
         props: v,
         // Record the component responsible for creating this element.
-        _owner: m
+        _owner: b
       };
       return f._store = {}, Object.defineProperty(f._store, "validated", {
         configurable: !1,
@@ -445,22 +445,22 @@ function Vt() {
         value: p
       }), Object.freeze && (Object.freeze(f.props), Object.freeze(f)), f;
     };
-    function bt(e, r, s, u, p) {
+    function mt(e, r, s, u, p) {
       {
-        var m, v = {}, f = null, $ = null;
+        var b, v = {}, f = null, $ = null;
         s !== void 0 && (Ve(s), f = "" + s), vt(r) && (Ve(r.key), f = "" + r.key), ft(r) && ($ = r.ref, ht(r, p));
-        for (m in r)
-          J.call(r, m) && !dt.hasOwnProperty(m) && (v[m] = r[m]);
+        for (b in r)
+          J.call(r, b) && !dt.hasOwnProperty(b) && (v[b] = r[b]);
         if (e && e.defaultProps) {
           var x = e.defaultProps;
-          for (m in x)
-            v[m] === void 0 && (v[m] = x[m]);
+          for (b in x)
+            v[b] === void 0 && (v[b] = x[b]);
         }
         if (f || $) {
           var w = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
           f && pt(v, w), $ && _t(v, w);
         }
-        return mt(e, f, $, p, u, I.current, v);
+        return bt(e, f, $, p, u, I.current, v);
       }
     }
     var le = P.ReactCurrentOwner, De = P.ReactDebugCurrentFrame;
@@ -531,7 +531,7 @@ Check the top-level render call using <` + s + ">.");
         else if (e) {
           var p = S(e);
           if (typeof p == "function" && p !== e.entries)
-            for (var m = p.call(e), v; !(v = m.next()).done; )
+            for (var b = p.call(e), v; !(v = b.next()).done; )
               oe(v.value) && Oe(v.value, r);
         }
       }
@@ -573,7 +573,7 @@ Check the top-level render call using <` + s + ">.");
         e.ref !== null && (z(e), j("Invalid attribute `ref` supplied to `React.Fragment`."), z(null));
       }
     }
-    function ze(e, r, s, u, p, m) {
+    function ze(e, r, s, u, p, b) {
       {
         var v = et(e);
         if (!v) {
@@ -584,7 +584,7 @@ Check the top-level render call using <` + s + ">.");
           var x;
           e === null ? x = "null" : ne(e) ? x = "array" : e !== void 0 && e.$$typeof === a ? (x = "<" + (C(e.type) || "Unknown") + " />", f = " Did you accidentally export a JSX literal instead of a component?") : x = typeof e, j("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", x, f);
         }
-        var w = bt(e, r, s, p, m);
+        var w = mt(e, r, s, p, b);
         if (w == null)
           return w;
         if (v) {
@@ -779,7 +779,25 @@ const Ft = {
       children: a
     }
   );
-}, Ue = () => /* @__PURE__ */ n.jsxs(
+}, Dr = () => /* @__PURE__ */ n.jsx(
+  "img",
+  {
+    alt: "Audio button off",
+    "data-testid": "ds-icon-audio-button-off",
+    height: "16",
+    src: "/icons/audio-button-off.png",
+    width: "16"
+  }
+), Hr = () => /* @__PURE__ */ n.jsx(
+  "img",
+  {
+    alt: "Audio button on",
+    "data-testid": "ds-icon-audio-button-on",
+    height: "16",
+    src: "/icons/audio-button.png",
+    width: "16"
+  }
+), Ue = () => /* @__PURE__ */ n.jsxs(
   "svg",
   {
     width: "7",
@@ -800,7 +818,7 @@ const Ft = {
       )
     ]
   }
-), Dr = () => /* @__PURE__ */ n.jsxs(
+), kr = () => /* @__PURE__ */ n.jsxs(
   "svg",
   {
     width: "7",
@@ -1081,9 +1099,9 @@ function Wt({
   wrapperLayout: _ = "vertical",
   min: h,
   max: y,
-  onChange: b
+  onChange: m
 }) {
-  const { value: g, handleInputChange: R } = Ut({ initialValue: i, onChange: b }), E = `ds-input-${l}`;
+  const { value: g, handleInputChange: R } = Ut({ initialValue: i, onChange: m }), E = `ds-input-${l}`;
   return /* @__PURE__ */ n.jsxs(
     "div",
     {
@@ -1267,7 +1285,7 @@ const ir = (t, a, l, o, d, i, c) => {
 }, dr = ({ moveWindow: t, onClose: a }) => {
   const l = Ne(null), o = Ne(null), [d, i] = T(!1), [c, _] = T(
     Q.DEFAULT
-  ), [h, y] = T(0), [b, g] = T(0);
+  ), [h, y] = T(0), [m, g] = T(0);
   N(() => {
     const S = o.current;
     S && S.showModal();
@@ -1295,10 +1313,10 @@ const ir = (t, a, l, o, d, i, c) => {
         t,
         d,
         h,
-        b
+        m
       );
     },
-    [t, d, h, b]
+    [t, d, h, m]
   );
   return {
     modalElement: l,
@@ -1312,7 +1330,7 @@ const ir = (t, a, l, o, d, i, c) => {
       (S = o.current) == null || S.close(), a();
     }
   };
-}, Hr = ({
+}, Or = ({
   id: t,
   title: a,
   width: l = "450px",
@@ -1325,7 +1343,7 @@ const ir = (t, a, l, o, d, i, c) => {
   onClose: y
 }) => {
   const {
-    dialogRef: b,
+    dialogRef: m,
     modalElement: g,
     mouseDown: R,
     mouseUp: E,
@@ -1337,7 +1355,7 @@ const ir = (t, a, l, o, d, i, c) => {
     "dialog",
     {
       className: Z.modal,
-      ref: b,
+      ref: m,
       onMouseMove: O,
       children: /* @__PURE__ */ n.jsxs(
         "div",
@@ -1398,7 +1416,7 @@ function _r({ initialChecked: t, onChange: a }) {
     }
   };
 }
-const kr = ({
+const Pr = ({
   initialChecked: t = !1,
   disabled: a = !1,
   id: l,
@@ -1449,9 +1467,9 @@ const kr = ({
       ]
     }
   );
-}, mr = "_wrapper_upk41_96", br = "_label_upk41_100", gr = "_select_upk41_105", xr = "_arrow_upk41_115", U = {
-  wrapper: mr,
-  label: br,
+}, br = "_wrapper_upk41_96", mr = "_label_upk41_100", gr = "_select_upk41_105", xr = "_arrow_upk41_115", U = {
+  wrapper: br,
+  label: mr,
   select: gr,
   arrow: xr
 };
@@ -1464,7 +1482,7 @@ function wr(t) {
     }
   };
 }
-function Or({
+function zr({
   className: t = "",
   id: a,
   required: l = !1,
@@ -1474,7 +1492,7 @@ function Or({
   labelName: c,
   onSelect: _
 }) {
-  const { value: h, handleChange: y } = wr(d), b = (g) => {
+  const { value: h, handleChange: y } = wr(d), m = (g) => {
     y(g), _(g);
   };
   return /* @__PURE__ */ n.jsxs("div", { className: `${U.wrapper} ${t}`, children: [
@@ -1495,7 +1513,7 @@ function Or({
         disabled: o,
         id: a,
         name: a,
-        onChange: b,
+        onChange: m,
         required: l,
         value: h,
         children: i.map((g, R) => /* @__PURE__ */ n.jsx(
@@ -1531,7 +1549,7 @@ function yr({
     l && l();
   } };
 }
-function Pr({
+function Fr({
   className: t = "",
   id: a,
   modelValue: l,
@@ -1615,7 +1633,7 @@ function Sr({ initialValue: t, onChange: a }) {
     o(c), a && a(c);
   } };
 }
-function zr({
+function Nr({
   id: t,
   disabled: a = !1,
   readonly: l = !1,
@@ -1626,7 +1644,7 @@ function zr({
   max: _,
   onChange: h
 }) {
-  const { value: y, handleTextareaChange: b } = Sr({
+  const { value: y, handleTextareaChange: m } = Sr({
     initialValue: o,
     onChange: h
   });
@@ -1657,7 +1675,7 @@ function zr({
             minLength: c ?? void 0,
             maxLength: _ ?? void 0,
             name: t,
-            onChange: b
+            onChange: m
           }
         )
       ]
@@ -1670,17 +1688,19 @@ export {
   Tr as DSCheckbox,
   Cr as DSFrame,
   Nt as DSHeading,
-  Dr as DSIconCheckboxDisabledSVG,
+  Dr as DSIconAudioButtonOff,
+  Hr as DSIconAudioButtonOn,
+  kr as DSIconCheckboxDisabledSVG,
   Ue as DSIconCheckboxSVG,
   Mt as DSIconCloseSVG,
   It as DSIconRadioSVG,
   At as DSIconSelectButton,
   Wt as DSInput,
-  Hr as DSModal,
-  kr as DSRadio,
-  Or as DSSelect,
-  Pr as DSStepper,
+  Or as DSModal,
+  Pr as DSRadio,
+  zr as DSSelect,
+  Fr as DSStepper,
   ve as DSText,
-  zr as DSTextarea
+  Nr as DSTextarea
 };
 //# sourceMappingURL=index.js.map
