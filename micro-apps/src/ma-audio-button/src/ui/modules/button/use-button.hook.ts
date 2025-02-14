@@ -6,7 +6,6 @@ export function useButton() {
 	const isMuted = audioButtonDomain.isMuted
 
 	const toggleSound = (): void => {
-		console.log("toggleSound")
 		audioButtonDomain.toggleSound()
 	}
 
