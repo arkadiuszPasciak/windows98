@@ -1,5 +1,4 @@
 import type { FileManagerDomainContract } from "../contracts"
-import type { EFileTextTypes } from "../models"
 
 export class FileManagerDomain implements FileManagerDomainContract {
 	public async openFile(): Promise<string> {
@@ -23,10 +22,10 @@ export class FileManagerDomain implements FileManagerDomainContract {
 		})
 	}
 
-	public async saveFile(
+	public async saveFile<FileType extends string>(
 		content: string,
 		filename: string,
-		type: EFileTextTypes,
+		type: FileType,
 	): Promise<void> {
 		const blob = new Blob([content], { type })
 		const link = document.createElement("a")
