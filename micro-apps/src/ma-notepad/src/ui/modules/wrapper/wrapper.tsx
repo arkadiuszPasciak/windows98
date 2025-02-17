@@ -1,5 +1,6 @@
 import type { FunctionComponent } from "react"
+import { Modal } from "../modal"
 
 export const Wrapper: FunctionComponent = () => {
-	return <div data-testid="ma-notepad-wrapper">...</div>
+	return <Modal />
 }
