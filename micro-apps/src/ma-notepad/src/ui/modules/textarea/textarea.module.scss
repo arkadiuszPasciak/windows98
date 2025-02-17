@@ -1,0 +1,26 @@
+.textarea {
+	@include font("medium", 14, 18);
+	background-color: var(--background-color-white);
+	box-shadow: var(--border-field);
+  	color: var(--text-color);
+	padding: 3px 4px;
+	resize: none;
+	width: 100%;
+	height: 100%;
+
+	&:disabled,
+	&:read-only {
+		background-color: var(--background-color-white);
+	}
+
+	&:disabled,
+	&:disabled + .label,
+	&[readonly],
+	&[readonly] + .label {
+		opacity: 0.8;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
