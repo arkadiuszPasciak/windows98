@@ -1,0 +1,12 @@
+{
+	"ma-save-file.cancel": "Anuluj",
+	"ma-save-file.file-name": "Nazwa pliku:",
+	"ma-save-file.untitled": "Bez_tytuły",
+	"ma-save-file.modal-title": "Zapisz jako",
+	"ma-save-file.save": "Zapisz",
+	"ma-save-file.save-as": "Zapisz jako typ:",
+	"ma-save-file.text-csv": "CSV Document (*.csv)",
+	"ma-save-file.text-doc": "Word Document (*.doc)",
+	"ma-save-file.text-rtf": "Rich text format (*.rtf)",
+	"ma-save-file.text-txt": "Text Document (*.txt)"
+}
