@@ -1,0 +1,7 @@
+.wrapper {
+	display: grid;
+    grid-template-rows: repeat(2, 20px);
+    grid-template-columns: 75% 25%;
+    gap: 8px 0;
+    padding: 15px 5px;
+}
