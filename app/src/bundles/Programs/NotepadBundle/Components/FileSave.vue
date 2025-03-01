@@ -97,7 +97,7 @@ const fileNameModelValue = ref<string>(t("FileBundle.untitled"))
 const selectTextTypeModelValue = ref<TFileTextTypes>(MFilesTextTypes[0].value)
 
 const saveFile = (): void => {
-	fileManager.saveFile(
+	fileManager.saveTextFile(
 		props.contentValue,
 		fileNameModelValue.value,
 		EFileTextTypes.TXT,
