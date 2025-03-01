@@ -1,7 +1,17 @@
-import type { FileManagerDomainContract } from "../contracts"
+import type {
+	FileManagerDomainContract,
+	FileOperationStrategyContract,
+} from "../contracts"
 import type { EFileTextTypes } from "../models"
+import { FileOperationStrategy } from "./strategies"
 
 export class FileManagerDomain implements FileManagerDomainContract {
+	private fileOperationStrategy: FileOperationStrategyContract
+
+	constructor() {
+		this.fileOperationStrategy = new FileOperationStrategy()
+	}
+
 	public async openFile(): Promise<string> {
 		return new Promise((resolve, reject) => {
 			const input = document.createElement("input")
@@ -23,18 +33,11 @@ export class FileManagerDomain implements FileManagerDomainContract {
 		})
 	}
 
-	public async saveFile(
+	public async saveTextFile(
 		content: string,
 		filename: string,
 		type: EFileTextTypes,
 	): Promise<void> {
-		const blob = new Blob([content], { type })
-		const link = document.createElement("a")
-		link.href = URL.createObjectURL(blob)
-		link.download = filename
-
-		document.body.appendChild(link)
-		link.click()
-		document.body.removeChild(link)
+		this.fileOperationStrategy.saveFile<EFileTextTypes>(content, filename, type)
 	}
 }

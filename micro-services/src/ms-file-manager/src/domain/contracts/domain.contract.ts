@@ -2,7 +2,7 @@ import type { EFileTextTypes } from "../models"
 
 export interface FileManagerDomainContract {
 	openFile(): Promise<string>
-	saveFile(
+	saveTextFile(
 		content: string,
 		filename: string,
 		type: EFileTextTypes,

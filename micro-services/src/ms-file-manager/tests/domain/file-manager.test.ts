@@ -51,7 +51,7 @@ describe("FileManagerDomain", () => {
 		vi.spyOn(document.body, "appendChild").mockImplementation(appendChildMock)
 		vi.spyOn(document.body, "removeChild").mockImplementation(removeChildMock)
 
-		await fileManager.saveFile(content, filename, type)
+		await fileManager.saveTextFile(content, filename, type)
 
 		expect(createObjectURLMock).toHaveBeenCalled()
 		expect(appendChildMock).toHaveBeenCalled()
