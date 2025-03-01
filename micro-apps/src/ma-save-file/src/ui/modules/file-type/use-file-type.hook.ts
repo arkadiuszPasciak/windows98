@@ -1,6 +1,6 @@
+import { MSFileManagerTextTypes } from "@windows98/micro-services"
 import { type ReactEventHandler, useMemo } from "react"
 import { useTranslation } from "react-i18next"
-import { ESaveFileText } from "../../../domain/models"
 import { useSaveFile } from "../../hooks"
 
 export const useFileType = () => {
@@ -21,22 +21,21 @@ export const useFileType = () => {
 
 	const fileTypes = useMemo(() => {
 		return {
-			// TODO: it should be settable by config text, pictures and etc files
 			text: [
 				{
-					value: ESaveFileText.CSV,
+					value: MSFileManagerTextTypes.CSV,
 					name: translations.text.csv,
 				},
 				{
-					value: ESaveFileText.DOC,
+					value: MSFileManagerTextTypes.DOC,
 					name: translations.text.doc,
 				},
 				{
-					value: ESaveFileText.RTF,
+					value: MSFileManagerTextTypes.RTF,
 					name: translations.text.rtf,
 				},
 				{
-					value: ESaveFileText.TXT,
+					value: MSFileManagerTextTypes.TXT,
 					name: translations.text.txt,
 				},
 			],
