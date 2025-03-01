@@ -1,4 +1,4 @@
-import { MSFileManager } from "@windows98/micro-services"
+import { MSFileManager, MSFileManagerTextTypes } from "@windows98/micro-services"
 import { makeAutoObservable } from "mobx"
 import type { SaveFileDomainContract } from "../contracts"
 
@@ -6,7 +6,7 @@ export class SaveFileDomain implements SaveFileDomainContract {
 	private fileManagerDomain: typeof MSFileManager
 	public content = ""
 	public fileName = ""
-	public fileType = ""
+	public fileType: MSFileManagerTextTypes = MSFileManagerTextTypes.TXT
 
 	constructor() {
 		makeAutoObservable(this)
@@ -15,7 +15,7 @@ export class SaveFileDomain implements SaveFileDomainContract {
 	}
 
 	public async saveFile(): Promise<void> {
-		await this.fileManagerDomain.saveFile(
+		await this.fileManagerDomain.saveTextFile(
 			this.content,
 			this.fileName,
 			this.fileType,
@@ -30,7 +30,7 @@ export class SaveFileDomain implements SaveFileDomainContract {
 		this.fileName = fileName
 	}
 
-	public setFileType(fileType: string): void {
+	public setFileType(fileType: MSFileManagerTextTypes): void {
 		this.fileType = fileType
 	}
 }
