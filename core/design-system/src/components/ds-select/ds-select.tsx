@@ -12,6 +12,7 @@ export function DSSelect({
 	options,
 	labelName,
 	onSelect,
+	wrapperLayout = "vertical",
 }: DSSelectProps) {
 	const { value, handleChange } = useDSSelect(modelValue)
 
@@ -23,7 +24,9 @@ export function DSSelect({
 	}
 
 	return (
-		<div className={`${styles.wrapper} ${className}`}>
+		<div
+			className={`${styles.wrapper} ${styles[`wrapper-${wrapperLayout}`]} ${className}`}
+		>
 			{labelName && (
 				<label
 					className={styles.label}
@@ -54,7 +57,7 @@ export function DSSelect({
 					</option>
 				))}
 			</select>
-			<span className={styles.arrow}>
+			<span className={`${styles[`arrow-${wrapperLayout}`]} ${styles.arrow}`}>
 				<DSIconSelectButton />
 			</span>
 		</div>
