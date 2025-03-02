@@ -21,7 +21,7 @@ export function DSInput({
 
 	return (
 		<div
-			className={`${styles[`wrapper-${wrapperLayout}`]} ${className}`}
+			className={`${styles.wrapper} ${styles[`wrapper-${wrapperLayout}`]} ${className}`}
 			data-testid={mainID}
 		>
 			{labelName && (
