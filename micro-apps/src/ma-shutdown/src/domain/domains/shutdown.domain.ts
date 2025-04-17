@@ -1,16 +1,16 @@
+import { MSAppController } from "@windows98/micro-services"
 import { makeAutoObservable } from "mobx"
-import { ShutdownRepository } from "../../data/repositories"
 import type { ShutdownDomainContract } from "../contracts"
 import { EShutdownPresets } from "../models"
 
 export class ShutdownDomain implements ShutdownDomainContract {
-	private shutdownRepository: ShutdownRepository
+	private appController: MSAppController
 	public preset: EShutdownPresets = EShutdownPresets.SHUTDOWN
 
 	constructor() {
 		makeAutoObservable(this)
 
-		this.shutdownRepository = new ShutdownRepository()
+		this.appController = new MSAppController()
 	}
 
 	public changePreset(preset: EShutdownPresets): void {
@@ -20,11 +20,11 @@ export class ShutdownDomain implements ShutdownDomainContract {
 	}
 
 	public restartApplication(): void {
-		this.shutdownRepository.restartApplication()
+		this.appController.restartApplication()
 	}
 
 	public shutdownApplication(): void {
-		this.shutdownRepository.shutdownApplication()
+		this.appController.shutdownApplication()
 	}
 }
 
