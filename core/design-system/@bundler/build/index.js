@@ -1,4 +1,4 @@
-(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button_i4qw7_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_i4qw7_96{cursor:pointer}}._ds-button_i4qw7_96:disabled{pointer-events:none;opacity:.5}._ds-button_i4qw7_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_i4qw7_120{width:16px;height:14px;padding:1px}._size-medium_i4qw7_126{height:23px;min-width:75px;padding:0 12px}._size-medium_i4qw7_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_i4qw7_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button-arrow_1w7w8_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_1w7w8_96:hover{cursor:pointer}}._ds-button-arrow_1w7w8_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_1w7w8_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_1w7w8_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_1w7w8_124:after{border-top:3px solid var(--text-color)}._arrow-top_1w7w8_128:after{border-bottom:3px solid var(--text-color)}._size-small_1w7w8_132{width:20px;height:10px}._size-medium_1w7w8_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_b9rid_96{position:relative;display:flex;align-items:center;column-gap:6px}._wrapper_b9rid_96:hover{cursor:pointer}._disabled_b9rid_106{pointer-events:none;opacity:.5}._input_b9rid_111{position:absolute;width:1px;height:1px;background-color:transparent}._input_b9rid_111[disabled]{pointer-events:none}._icon_b9rid_121{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_i4tc8_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_i4tc8_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-heading_1hbyy_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper-horizontal_4dyys_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_4dyys_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._input_4dyys_111,._label_4dyys_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_4dyys_111{padding:3px 4px;height:21px;width:100%;box-shadow:var(--border-field);background-color:var(--background-color-white)}._input_4dyys_111:focus{outline:none}._input_4dyys_111:disabled,._input_4dyys_111:disabled+._label_4dyys_112{opacity:.8}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._modal_38rt1_96{background-color:transparent;border:0;height:100%;width:100%}._modal_38rt1_96::backdrop{background-color:transparent}._move-window_38rt1_107{position:relative;top:50%;left:50%;transform:translate(-50%,-50%)}._container_38rt1_114{padding:3px;min-height:110px;min-width:190px;max-width:100%;max-height:100%;background-color:var(--background-color);box-shadow:var(--box-shadow-raised)}._resize-window_38rt1_124{resize:both;overflow:auto}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._content_dk22n_96{padding:2px;width:100%;height:calc(100% - 40px)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._header_1q3bo_96{display:flex;justify-content:space-between;align-items:center;height:20px;padding:3px 2px 3px 3px;background:var(--background-color-modal-header)}._header_1q3bo_96>h3{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._navigation_1fej4_96{column-gap:5px;display:flex;flex-wrap:wrap;padding:4px 2px}._navigation-button_1fej4_103{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_15rwh_96{height:calc(100% - 28px);margin:5px}._tab_15rwh_101{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._active-tab_15rwh_106{position:relative;z-index:3}._content_15rwh_111{position:relative;z-index:2;top:-2px;height:calc(100% - 21px)}._tab_15rwh_101,._content_15rwh_111{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_15rwh_124{display:none}._active-content-tab_15rwh_128{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_s5be2_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_s5be2_96:hover{cursor:pointer}}._disabled_s5be2_108{pointer-events:none;opacity:.5}._input_s5be2_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_s5be2_113[disabled]{pointer-events:none}._icon_s5be2_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_upk41_96{position:relative}._label_upk41_100{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._select_upk41_105{height:21px;width:100%;background:var(--background-color-white) url(/icons/select-button.svg) no-repeat top 2px right 2px;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_upk41_115{position:absolute;right:1px;top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-stepper_8xv2v_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_8xv2v_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_8xv2v_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_8xv2v_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_8xv2v_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._DSText_zb3qg_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff) format("woff"),url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff) format("woff"),url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper-horizontal_1g0sz_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_1g0sz_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._textarea_1g0sz_111,._label_1g0sz_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._textarea_1g0sz_111{padding:3px 4px;box-shadow:var(--border-field);background-color:var(--background-color-white);resize:none}._textarea_1g0sz_111:disabled,._textarea_1g0sz_111:read-only{background-color:var(--background-color-white)}._textarea_1g0sz_111:disabled,._textarea_1g0sz_111:disabled+._label_1g0sz_112,._textarea_1g0sz_111[readonly],._textarea_1g0sz_111[readonly]+._label_1g0sz_112{opacity:.8}._textarea_1g0sz_111:focus{outline:none}')),document.head.appendChild(o)}}catch(f){console.error("vite-plugin-css-injected-by-js",f)}})();
+(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button_1es1f_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_1es1f_96{cursor:pointer}}._ds-button_1es1f_96:disabled{pointer-events:none;opacity:.5}._ds-button_1es1f_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_1es1f_120{width:16px;height:14px;padding:1px}._size-medium_1es1f_126{height:23px;min-width:75px;padding:0 12px}._size-medium_1es1f_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_1es1f_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button-arrow_1ury6_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_1ury6_96:hover{cursor:pointer}}._ds-button-arrow_1ury6_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_1ury6_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_1ury6_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_1ury6_124:after{border-top:3px solid var(--text-color)}._arrow-top_1ury6_128:after{border-bottom:3px solid var(--text-color)}._size-small_1ury6_132{width:20px;height:10px}._size-medium_1ury6_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_nsxiw_96{position:relative;display:flex;align-items:center;column-gap:6px}._wrapper_nsxiw_96:hover{cursor:pointer}._disabled_nsxiw_106{pointer-events:none;opacity:.5}._input_nsxiw_111{position:absolute;width:1px;height:1px;background-color:transparent}._input_nsxiw_111[disabled]{pointer-events:none}._icon_nsxiw_121{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_133id_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_133id_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-heading_18kg0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper-horizontal_1g60e_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_1g60e_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._input_1g60e_111,._label_1g60e_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_1g60e_111{padding:3px 4px;height:21px;width:100%;box-shadow:var(--border-field);background-color:var(--background-color-white)}._input_1g60e_111:focus{outline:none}._input_1g60e_111:disabled,._input_1g60e_111:disabled+._label_1g60e_112{opacity:.8}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._modal_jl7a7_96{background-color:transparent;border:0;height:100%;width:100%}._modal_jl7a7_96::backdrop{background-color:transparent}._move-window_jl7a7_107{position:relative;top:50%;left:50%;transform:translate(-50%,-50%)}._container_jl7a7_114{padding:3px;min-height:110px;min-width:190px;max-width:100%;max-height:100%;background-color:var(--background-color);box-shadow:var(--box-shadow-raised)}._resize-window_jl7a7_124{resize:both;overflow:auto}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._content_11jrm_96{padding:2px;width:100%;height:calc(100% - 40px)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._header_1qqbc_96{display:flex;justify-content:space-between;align-items:center;height:20px;padding:3px 2px 3px 3px;background:var(--background-color-modal-header)}._header_1qqbc_96>h3{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._navigation_1e5o9_96{column-gap:5px;display:flex;flex-wrap:wrap;padding:4px 2px}._navigation-button_1e5o9_103{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1i79t_96{height:calc(100% - 28px);margin:5px}._tab_1i79t_101{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._active-tab_1i79t_106{position:relative;z-index:3}._content_1i79t_111{position:relative;z-index:2;top:-2px;height:calc(100% - 21px)}._tab_1i79t_101,._content_1i79t_111{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_1i79t_124{display:none}._active-content-tab_1i79t_128{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1ui4e_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_1ui4e_96:hover{cursor:pointer}}._disabled_1ui4e_108{pointer-events:none;opacity:.5}._input_1ui4e_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_1ui4e_113[disabled]{pointer-events:none}._icon_1ui4e_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_kcvr7_96{position:relative}._label_kcvr7_100{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._select_kcvr7_105{height:21px;width:100%;background:var(--background-color-white) url(/icons/select-button.svg) no-repeat top 2px right 2px;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_kcvr7_115{position:absolute;right:1px;top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-stepper_45vc6_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_45vc6_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_45vc6_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_45vc6_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_45vc6_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._DSText_1n9d0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper-horizontal_1ubdj_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_1ubdj_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._textarea_1ubdj_111,._label_1ubdj_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._textarea_1ubdj_111{padding:3px 4px;box-shadow:var(--border-field);background-color:var(--background-color-white);resize:none}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:read-only{background-color:var(--background-color-white)}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:disabled+._label_1ubdj_112,._textarea_1ubdj_111[readonly],._textarea_1ubdj_111[readonly]+._label_1ubdj_112{opacity:.8}._textarea_1ubdj_111:focus{outline:none}')),document.head.appendChild(o)}}catch(e){console.error("vite-plugin-css-injected-by-js",e)}})();
 import qe, { useState as T, useEffect as N, useRef as Ne, useCallback as ie } from "react";
 var fe = { exports: {} }, A = {};
 /**
@@ -15,12 +15,12 @@ function St() {
   if (Me) return A;
   Me = 1;
   var t = qe, a = Symbol.for("react.element"), l = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, d = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, i = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function c(_, h, y) {
-    var m, g = {}, R = null, E = null;
-    y !== void 0 && (R = "" + y), h.key !== void 0 && (R = "" + h.key), h.ref !== void 0 && (E = h.ref);
-    for (m in h) o.call(h, m) && !i.hasOwnProperty(m) && (g[m] = h[m]);
-    if (_ && _.defaultProps) for (m in h = _.defaultProps, h) g[m] === void 0 && (g[m] = h[m]);
-    return { $$typeof: a, type: _, key: R, ref: E, props: g, _owner: d.current };
+  function c(_, h, j) {
+    var b, g = {}, y = null, E = null;
+    j !== void 0 && (y = "" + j), h.key !== void 0 && (y = "" + h.key), h.ref !== void 0 && (E = h.ref);
+    for (b in h) o.call(h, b) && !i.hasOwnProperty(b) && (g[b] = h[b]);
+    if (_ && _.defaultProps) for (b in h = _.defaultProps, h) g[b] === void 0 && (g[b] = h[b]);
+    return { $$typeof: a, type: _, key: y, ref: E, props: g, _owner: d.current };
   }
   return A.Fragment = l, A.jsx = c, A.jsxs = c, A;
 }
@@ -37,7 +37,7 @@ var L = {};
 var Ie;
 function Vt() {
   return Ie || (Ie = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = qe, a = Symbol.for("react.element"), l = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), d = Symbol.for("react.strict_mode"), i = Symbol.for("react.profiler"), c = Symbol.for("react.provider"), _ = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), y = Symbol.for("react.suspense"), m = Symbol.for("react.suspense_list"), g = Symbol.for("react.memo"), R = Symbol.for("react.lazy"), E = Symbol.for("react.offscreen"), O = Symbol.iterator, W = "@@iterator";
+    var t = qe, a = Symbol.for("react.element"), l = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), d = Symbol.for("react.strict_mode"), i = Symbol.for("react.profiler"), c = Symbol.for("react.provider"), _ = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), j = Symbol.for("react.suspense"), b = Symbol.for("react.suspense_list"), g = Symbol.for("react.memo"), y = Symbol.for("react.lazy"), E = Symbol.for("react.offscreen"), O = Symbol.iterator, W = "@@iterator";
     function S(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -45,7 +45,7 @@ function Vt() {
       return typeof r == "function" ? r : null;
     }
     var P = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function j(e) {
+    function R(e) {
       {
         for (var r = arguments.length, s = new Array(r > 1 ? r - 1 : 0), u = 1; u < r; u++)
           s[u - 1] = arguments[u];
@@ -56,16 +56,16 @@ function Vt() {
       {
         var u = P.ReactDebugCurrentFrame, p = u.getStackAddendum();
         p !== "" && (r += "%s", s = s.concat([p]));
-        var b = s.map(function(v) {
+        var m = s.map(function(v) {
           return String(v);
         });
-        b.unshift("Warning: " + r), Function.prototype.apply.call(console[e], console, b);
+        m.unshift("Warning: " + r), Function.prototype.apply.call(console[e], console, m);
       }
     }
     var Je = !1, Xe = !1, Ke = !1, Ze = !1, Qe = !1, he;
     he = Symbol.for("react.module.reference");
     function et(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === o || e === i || Qe || e === d || e === y || e === m || Ze || e === E || Je || Xe || Ke || typeof e == "object" && e !== null && (e.$$typeof === R || e.$$typeof === g || e.$$typeof === c || e.$$typeof === _ || e.$$typeof === h || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === o || e === i || Qe || e === d || e === j || e === b || Ze || e === E || Je || Xe || Ke || typeof e == "object" && e !== null && (e.$$typeof === y || e.$$typeof === g || e.$$typeof === c || e.$$typeof === _ || e.$$typeof === h || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -84,7 +84,7 @@ function Vt() {
     function C(e) {
       if (e == null)
         return null;
-      if (typeof e.tag == "number" && j("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
+      if (typeof e.tag == "number" && R("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof e == "function")
         return e.displayName || e.name || null;
       if (typeof e == "string")
         return e;
@@ -97,9 +97,9 @@ function Vt() {
           return "Profiler";
         case d:
           return "StrictMode";
-        case y:
+        case j:
           return "Suspense";
-        case m:
+        case b:
           return "SuspenseList";
       }
       if (typeof e == "object")
@@ -115,10 +115,10 @@ function Vt() {
           case g:
             var u = e.displayName || null;
             return u !== null ? u : C(e.type) || "Memo";
-          case R: {
-            var p = e, b = p._payload, v = p._init;
+          case y: {
+            var p = e, m = p._payload, v = p._init;
             try {
-              return C(v(b));
+              return C(v(m));
             } catch {
               return null;
             }
@@ -126,18 +126,18 @@ function Vt() {
         }
       return null;
     }
-    var H = Object.assign, M = 0, _e, be, me, ge, xe, we, ye;
-    function Re() {
+    var H = Object.assign, M = 0, _e, me, be, ge, xe, we, je;
+    function ye() {
     }
-    Re.__reactDisabledLog = !0;
+    ye.__reactDisabledLog = !0;
     function rt() {
       {
         if (M === 0) {
-          _e = console.log, be = console.info, me = console.warn, ge = console.error, xe = console.group, we = console.groupCollapsed, ye = console.groupEnd;
+          _e = console.log, me = console.info, be = console.warn, ge = console.error, xe = console.group, we = console.groupCollapsed, je = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
-            value: Re,
+            value: ye,
             writable: !0
           };
           Object.defineProperties(console, {
@@ -166,10 +166,10 @@ function Vt() {
               value: _e
             }),
             info: H({}, e, {
-              value: be
+              value: me
             }),
             warn: H({}, e, {
-              value: me
+              value: be
             }),
             error: H({}, e, {
               value: ge
@@ -181,11 +181,11 @@ function Vt() {
               value: we
             }),
             groupEnd: H({}, e, {
-              value: ye
+              value: je
             })
           });
         }
-        M < 0 && j("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        M < 0 && R("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
     var ee = P.ReactCurrentDispatcher, te;
@@ -207,7 +207,7 @@ function Vt() {
       var at = typeof WeakMap == "function" ? WeakMap : Map;
       q = new at();
     }
-    function je(e, r) {
+    function Re(e, r) {
       if (!e || re)
         return "";
       {
@@ -219,8 +219,8 @@ function Vt() {
       re = !0;
       var p = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var b;
-      b = ee.current, ee.current = null, rt();
+      var m;
+      m = ee.current, ee.current = null, rt();
       try {
         if (r) {
           var v = function() {
@@ -273,13 +273,13 @@ function Vt() {
             }
         }
       } finally {
-        re = !1, ee.current = b, nt(), Error.prepareStackTrace = p;
+        re = !1, ee.current = m, nt(), Error.prepareStackTrace = p;
       }
-      var F = e ? e.displayName || e.name : "", Fe = F ? B(F) : "";
-      return typeof e == "function" && q.set(e, Fe), Fe;
+      var z = e ? e.displayName || e.name : "", ze = z ? B(z) : "";
+      return typeof e == "function" && q.set(e, ze), ze;
     }
     function lt(e, r, s) {
-      return je(e, !1);
+      return Re(e, !1);
     }
     function st(e) {
       var r = e.prototype;
@@ -289,13 +289,13 @@ function Vt() {
       if (e == null)
         return "";
       if (typeof e == "function")
-        return je(e, st(e));
+        return Re(e, st(e));
       if (typeof e == "string")
         return B(e);
       switch (e) {
-        case y:
+        case j:
           return B("Suspense");
-        case m:
+        case b:
           return B("SuspenseList");
       }
       if (typeof e == "object")
@@ -304,10 +304,10 @@ function Vt() {
             return lt(e.render);
           case g:
             return G(e.type, r, s);
-          case R: {
-            var u = e, p = u._payload, b = u._init;
+          case y: {
+            var u = e, p = u._payload, m = u._init;
             try {
-              return G(b(p), r, s);
+              return G(m(p), r, s);
             } catch {
             }
           }
@@ -324,9 +324,9 @@ function Vt() {
     }
     function ot(e, r, s, u, p) {
       {
-        var b = Function.call.bind(J);
+        var m = Function.call.bind(J);
         for (var v in e)
-          if (b(e, v)) {
+          if (m(e, v)) {
             var f = void 0;
             try {
               if (typeof e[v] != "function") {
@@ -337,7 +337,7 @@ function Vt() {
             } catch (x) {
               f = x;
             }
-            f && !(f instanceof Error) && (X(p), j("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", u || "React class", s, v, typeof f), X(null)), f instanceof Error && !(f.message in $e) && ($e[f.message] = !0, X(p), j("Failed %s type: %s", s, f.message), X(null));
+            f && !(f instanceof Error) && (X(p), R("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", u || "React class", s, v, typeof f), X(null)), f instanceof Error && !(f.message in $e) && ($e[f.message] = !0, X(p), R("Failed %s type: %s", s, f.message), X(null));
           }
       }
     }
@@ -363,7 +363,7 @@ function Vt() {
     }
     function Ve(e) {
       if (ut(e))
-        return j("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", ct(e)), Se(e);
+        return R("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", ct(e)), Se(e);
     }
     var I = P.ReactCurrentOwner, dt = {
       key: !0,
@@ -391,13 +391,13 @@ function Vt() {
     function ht(e, r) {
       if (typeof e.ref == "string" && I.current && r && I.current.stateNode !== r) {
         var s = C(I.current.type);
-        ae[s] || (j('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', C(I.current.type), e.ref), ae[s] = !0);
+        ae[s] || (R('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', C(I.current.type), e.ref), ae[s] = !0);
       }
     }
     function pt(e, r) {
       {
         var s = function() {
-          Te || (Te = !0, j("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
+          Te || (Te = !0, R("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
         };
         s.isReactWarning = !0, Object.defineProperty(e, "key", {
           get: s,
@@ -408,7 +408,7 @@ function Vt() {
     function _t(e, r) {
       {
         var s = function() {
-          Ce || (Ce = !0, j("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
+          Ce || (Ce = !0, R("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
         };
         s.isReactWarning = !0, Object.defineProperty(e, "ref", {
           get: s,
@@ -416,7 +416,7 @@ function Vt() {
         });
       }
     }
-    var bt = function(e, r, s, u, p, b, v) {
+    var mt = function(e, r, s, u, p, m, v) {
       var f = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: a,
@@ -426,7 +426,7 @@ function Vt() {
         ref: s,
         props: v,
         // Record the component responsible for creating this element.
-        _owner: b
+        _owner: m
       };
       return f._store = {}, Object.defineProperty(f._store, "validated", {
         configurable: !1,
@@ -445,26 +445,26 @@ function Vt() {
         value: p
       }), Object.freeze && (Object.freeze(f.props), Object.freeze(f)), f;
     };
-    function mt(e, r, s, u, p) {
+    function bt(e, r, s, u, p) {
       {
-        var b, v = {}, f = null, $ = null;
+        var m, v = {}, f = null, $ = null;
         s !== void 0 && (Ve(s), f = "" + s), vt(r) && (Ve(r.key), f = "" + r.key), ft(r) && ($ = r.ref, ht(r, p));
-        for (b in r)
-          J.call(r, b) && !dt.hasOwnProperty(b) && (v[b] = r[b]);
+        for (m in r)
+          J.call(r, m) && !dt.hasOwnProperty(m) && (v[m] = r[m]);
         if (e && e.defaultProps) {
           var x = e.defaultProps;
-          for (b in x)
-            v[b] === void 0 && (v[b] = x[b]);
+          for (m in x)
+            v[m] === void 0 && (v[m] = x[m]);
         }
         if (f || $) {
           var w = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
           f && pt(v, w), $ && _t(v, w);
         }
-        return bt(e, f, $, p, u, I.current, v);
+        return mt(e, f, $, p, u, I.current, v);
       }
     }
     var le = P.ReactCurrentOwner, De = P.ReactDebugCurrentFrame;
-    function z(e) {
+    function F(e) {
       if (e) {
         var r = e._owner, s = G(e.type, e._source, r ? r.type : null);
         De.setExtraStackFrame(s);
@@ -514,7 +514,7 @@ Check the top-level render call using <` + s + ">.");
           return;
         ke[s] = !0;
         var u = "";
-        e && e._owner && e._owner !== le.current && (u = " It was passed a child from " + C(e._owner.type) + "."), z(e), j('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', s, u), z(null);
+        e && e._owner && e._owner !== le.current && (u = " It was passed a child from " + C(e._owner.type) + "."), F(e), R('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', s, u), F(null);
       }
     }
     function Pe(e, r) {
@@ -531,7 +531,7 @@ Check the top-level render call using <` + s + ">.");
         else if (e) {
           var p = S(e);
           if (typeof p == "function" && p !== e.entries)
-            for (var b = p.call(e), v; !(v = b.next()).done; )
+            for (var m = p.call(e), v; !(v = m.next()).done; )
               oe(v.value) && Oe(v.value, r);
         }
       }
@@ -556,24 +556,24 @@ Check the top-level render call using <` + s + ">.");
         } else if (r.PropTypes !== void 0 && !se) {
           se = !0;
           var p = C(r);
-          j("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", p || "Unknown");
+          R("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", p || "Unknown");
         }
-        typeof r.getDefaultProps == "function" && !r.getDefaultProps.isReactClassApproved && j("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof r.getDefaultProps == "function" && !r.getDefaultProps.isReactClassApproved && R("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
-    function yt(e) {
+    function jt(e) {
       {
         for (var r = Object.keys(e.props), s = 0; s < r.length; s++) {
           var u = r[s];
           if (u !== "children" && u !== "key") {
-            z(e), j("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", u), z(null);
+            F(e), R("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", u), F(null);
             break;
           }
         }
-        e.ref !== null && (z(e), j("Invalid attribute `ref` supplied to `React.Fragment`."), z(null));
+        e.ref !== null && (F(e), R("Invalid attribute `ref` supplied to `React.Fragment`."), F(null));
       }
     }
-    function ze(e, r, s, u, p, b) {
+    function Fe(e, r, s, u, p, m) {
       {
         var v = et(e);
         if (!v) {
@@ -582,9 +582,9 @@ Check the top-level render call using <` + s + ">.");
           var $ = gt();
           $ ? f += $ : f += He();
           var x;
-          e === null ? x = "null" : ne(e) ? x = "array" : e !== void 0 && e.$$typeof === a ? (x = "<" + (C(e.type) || "Unknown") + " />", f = " Did you accidentally export a JSX literal instead of a component?") : x = typeof e, j("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", x, f);
+          e === null ? x = "null" : ne(e) ? x = "array" : e !== void 0 && e.$$typeof === a ? (x = "<" + (C(e.type) || "Unknown") + " />", f = " Did you accidentally export a JSX literal instead of a component?") : x = typeof e, R("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", x, f);
         }
-        var w = mt(e, r, s, p, b);
+        var w = bt(e, r, s, p, m);
         if (w == null)
           return w;
         if (v) {
@@ -592,33 +592,33 @@ Check the top-level render call using <` + s + ">.");
           if (V !== void 0)
             if (u)
               if (ne(V)) {
-                for (var F = 0; F < V.length; F++)
-                  Pe(V[F], e);
+                for (var z = 0; z < V.length; z++)
+                  Pe(V[z], e);
                 Object.freeze && Object.freeze(V);
               } else
-                j("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                R("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
               Pe(V, e);
         }
-        return e === o ? yt(w) : wt(w), w;
+        return e === o ? jt(w) : wt(w), w;
       }
     }
+    function yt(e, r, s) {
+      return Fe(e, r, s, !0);
+    }
     function Rt(e, r, s) {
-      return ze(e, r, s, !0);
+      return Fe(e, r, s, !1);
     }
-    function jt(e, r, s) {
-      return ze(e, r, s, !1);
-    }
-    var $t = jt, Et = Rt;
+    var $t = Rt, Et = yt;
     L.Fragment = o, L.jsx = $t, L.jsxs = Et;
   }()), L;
 }
 process.env.NODE_ENV === "production" ? fe.exports = St() : fe.exports = Vt();
 var n = fe.exports;
 const Ae = {
-  "ds-button": "_ds-button_i4qw7_96",
-  "size-small": "_size-small_i4qw7_120",
-  "size-medium": "_size-medium_i4qw7_126"
+  "ds-button": "_ds-button_1es1f_96",
+  "size-small": "_size-small_1es1f_120",
+  "size-medium": "_size-medium_1es1f_126"
 }, Tt = ({
   size: t = "medium",
   disabled: a = !1,
@@ -644,11 +644,11 @@ const Ae = {
     ]
   }
 ), ce = {
-  "ds-button-arrow": "_ds-button-arrow_1w7w8_96",
-  "arrow-bottom": "_arrow-bottom_1w7w8_124",
-  "arrow-top": "_arrow-top_1w7w8_128",
-  "size-small": "_size-small_1w7w8_132",
-  "size-medium": "_size-medium_1w7w8_137"
+  "ds-button-arrow": "_ds-button-arrow_1ury6_96",
+  "arrow-bottom": "_arrow-bottom_1ury6_124",
+  "arrow-top": "_arrow-top_1ury6_128",
+  "size-small": "_size-small_1ury6_132",
+  "size-medium": "_size-medium_1ury6_137"
 };
 function Le({
   ariaLabel: t,
@@ -676,7 +676,7 @@ function Le({
     }
   );
 }
-const Ct = "_wrapper_b9rid_96", Dt = "_disabled_b9rid_106", Ht = "_input_b9rid_111", kt = "_icon_b9rid_121", K = {
+const Ct = "_wrapper_nsxiw_96", Dt = "_disabled_nsxiw_106", Ht = "_input_nsxiw_111", kt = "_icon_nsxiw_121", K = {
   wrapper: Ct,
   disabled: Dt,
   input: Ht,
@@ -739,9 +739,9 @@ const Ct = "_wrapper_b9rid_96", Dt = "_disabled_b9rid_106", Ht = "_input_b9rid_1
       ]
     }
   );
-}, Pt = "_frame_i4tc8_96", zt = "_title_i4tc8_104", Ye = {
+}, Pt = "_frame_133id_96", Ft = "_title_133id_104", Ye = {
   frame: Pt,
-  title: zt
+  title: Ft
 };
 function Cr({ children: t, className: a = "", id: l, title: o }) {
   return /* @__PURE__ */ n.jsxs(
@@ -763,8 +763,8 @@ function Cr({ children: t, className: a = "", id: l, title: o }) {
     }
   );
 }
-const Ft = {
-  "ds-heading": "_ds-heading_1hbyy_96"
+const zt = {
+  "ds-heading": "_ds-heading_18kg0_96"
 }, Nt = ({
   id: t,
   text: a,
@@ -774,7 +774,7 @@ const Ft = {
   return /* @__PURE__ */ n.jsx(
     o,
     {
-      className: Ft["ds-heading"],
+      className: zt["ds-heading"],
       "data-testid": `${t}-heading`,
       children: a
     }
@@ -1073,9 +1073,9 @@ const Ft = {
       )
     ]
   }
-), Lt = "_input_4dyys_111", Yt = "_label_4dyys_112", ue = {
-  "wrapper-horizontal": "_wrapper-horizontal_4dyys_96",
-  "wrapper-vertical": "_wrapper-vertical_4dyys_102",
+), Lt = "_input_1g60e_111", Yt = "_label_1g60e_112", ue = {
+  "wrapper-horizontal": "_wrapper-horizontal_1g60e_96",
+  "wrapper-vertical": "_wrapper-vertical_1g60e_102",
   input: Lt,
   label: Yt
 };
@@ -1098,10 +1098,10 @@ function Wt({
   labelName: c,
   wrapperLayout: _ = "vertical",
   min: h,
-  max: y,
-  onChange: m
+  max: j,
+  onChange: b
 }) {
-  const { value: g, handleInputChange: R } = Ut({ initialValue: i, onChange: m }), E = `ds-input-${l}`;
+  const { value: g, handleInputChange: y } = Ut({ initialValue: i, onChange: b }), E = `ds-input-${l}`;
   return /* @__PURE__ */ n.jsxs(
     "div",
     {
@@ -1128,21 +1128,21 @@ function Wt({
             readOnly: d,
             value: g,
             min: h ?? void 0,
-            max: y ?? void 0,
+            max: j ?? void 0,
             name: E,
-            onChange: R
+            onChange: y
           }
         )
       ]
     }
   );
 }
-const Bt = "_modal_38rt1_96", qt = "_container_38rt1_114", Z = {
+const Bt = "_modal_jl7a7_96", qt = "_container_jl7a7_114", Z = {
   modal: Bt,
-  "move-window": "_move-window_38rt1_107",
+  "move-window": "_move-window_jl7a7_107",
   container: qt,
-  "resize-window": "_resize-window_38rt1_124"
-}, Gt = "_content_dk22n_96", Jt = {
+  "resize-window": "_resize-window_jl7a7_124"
+}, Gt = "_content_11jrm_96", Jt = {
   content: Gt
 }, Xt = ({
   children: t,
@@ -1166,7 +1166,7 @@ const Bt = "_modal_38rt1_96", qt = "_container_38rt1_114", Z = {
     text: "",
     iconLeft: /* @__PURE__ */ n.jsx(Mt, {})
   }
-), Zt = "_header_1q3bo_96", Qt = {
+), Zt = "_header_1qqbc_96", Qt = {
   header: Zt
 }, er = ({
   id: t,
@@ -1201,9 +1201,9 @@ const Bt = "_modal_38rt1_96", qt = "_container_38rt1_114", Z = {
       )
     ]
   }
-), tr = "_navigation_1fej4_96", We = {
+), tr = "_navigation_1e5o9_96", We = {
   navigation: tr,
-  "navigation-button": "_navigation-button_1fej4_103"
+  "navigation-button": "_navigation-button_1e5o9_103"
 }, rr = ({
   id: t,
   navigation: a
@@ -1224,13 +1224,13 @@ const Bt = "_modal_38rt1_96", qt = "_container_38rt1_114", Z = {
       `${t}-modal-navigation-button-${l.name}`
     ))
   }
-) : null, nr = "_wrapper_15rwh_96", ar = "_tab_15rwh_101", lr = "_content_15rwh_111", k = {
+) : null, nr = "_wrapper_1i79t_96", ar = "_tab_1i79t_101", lr = "_content_1i79t_111", k = {
   wrapper: nr,
   tab: ar,
-  "active-tab": "_active-tab_15rwh_106",
+  "active-tab": "_active-tab_1i79t_106",
   content: lr,
-  "content-tab": "_content-tab_15rwh_124",
-  "active-content-tab": "_active-content-tab_15rwh_128"
+  "content-tab": "_content-tab_1i79t_124",
+  "active-content-tab": "_active-content-tab_1i79t_128"
 }, sr = ({ initialIndex: t }) => {
   const [a, l] = T(t);
   return {
@@ -1285,12 +1285,12 @@ const ir = (t, a, l, o, d, i, c) => {
 }, dr = ({ moveWindow: t, onClose: a }) => {
   const l = Ne(null), o = Ne(null), [d, i] = T(!1), [c, _] = T(
     Q.DEFAULT
-  ), [h, y] = T(0), [m, g] = T(0);
+  ), [h, j] = T(0), [b, g] = T(0);
   N(() => {
     const S = o.current;
     S && S.showModal();
   }, []);
-  const R = ie(
+  const y = ie(
     (S) => {
       ir(
         S,
@@ -1298,7 +1298,7 @@ const ir = (t, a, l, o, d, i, c) => {
         t,
         _,
         i,
-        y,
+        j,
         g
       );
     },
@@ -1313,15 +1313,15 @@ const ir = (t, a, l, o, d, i, c) => {
         t,
         d,
         h,
-        m
+        b
       );
     },
-    [t, d, h, m]
+    [t, d, h, b]
   );
   return {
     modalElement: l,
     dialogRef: o,
-    mouseDown: R,
+    mouseDown: y,
     mouseUp: E,
     mouseMove: O,
     cursorType: c,
@@ -1340,22 +1340,22 @@ const ir = (t, a, l, o, d, i, c) => {
   tabs: c,
   children: _,
   navigation: h,
-  onClose: y
+  onClose: j
 }) => {
   const {
-    dialogRef: m,
+    dialogRef: b,
     modalElement: g,
-    mouseDown: R,
+    mouseDown: y,
     mouseUp: E,
     mouseMove: O,
     cursorType: W,
     closeModal: S
-  } = dr({ moveWindow: i, onClose: y });
+  } = dr({ moveWindow: i, onClose: j });
   return /* @__PURE__ */ n.jsx(
     "dialog",
     {
       className: Z.modal,
-      ref: m,
+      ref: b,
       onMouseMove: O,
       children: /* @__PURE__ */ n.jsxs(
         "div",
@@ -1371,7 +1371,7 @@ const ir = (t, a, l, o, d, i, c) => {
                 cursorType: W,
                 id: t,
                 onClose: S,
-                mouseDownEvent: R,
+                mouseDownEvent: y,
                 mouseUpEvent: E,
                 title: a
               }
@@ -1399,7 +1399,7 @@ const ir = (t, a, l, o, d, i, c) => {
       )
     }
   );
-}, fr = "_wrapper_s5be2_96", vr = "_disabled_s5be2_108", hr = "_input_s5be2_113", pr = "_icon_s5be2_123", Y = {
+}, fr = "_wrapper_1ui4e_96", vr = "_disabled_1ui4e_108", hr = "_input_1ui4e_113", pr = "_icon_1ui4e_123", Y = {
   wrapper: fr,
   disabled: vr,
   input: hr,
@@ -1467,9 +1467,9 @@ const Pr = ({
       ]
     }
   );
-}, br = "_wrapper_upk41_96", mr = "_label_upk41_100", gr = "_select_upk41_105", xr = "_arrow_upk41_115", U = {
-  wrapper: br,
-  label: mr,
+}, mr = "_wrapper_kcvr7_96", br = "_label_kcvr7_100", gr = "_select_kcvr7_105", xr = "_arrow_kcvr7_115", U = {
+  wrapper: mr,
+  label: br,
   select: gr,
   arrow: xr
 };
@@ -1482,7 +1482,7 @@ function wr(t) {
     }
   };
 }
-function zr({
+function Fr({
   className: t = "",
   id: a,
   required: l = !1,
@@ -1492,8 +1492,8 @@ function zr({
   labelName: c,
   onSelect: _
 }) {
-  const { value: h, handleChange: y } = wr(d), m = (g) => {
-    y(g), _(g);
+  const { value: h, handleChange: j } = wr(d), b = (g) => {
+    j(g), _(g);
   };
   return /* @__PURE__ */ n.jsxs("div", { className: `${U.wrapper} ${t}`, children: [
     c && /* @__PURE__ */ n.jsx(
@@ -1513,14 +1513,14 @@ function zr({
         disabled: o,
         id: a,
         name: a,
-        onChange: m,
+        onChange: b,
         required: l,
         value: h,
-        children: i.map((g, R) => /* @__PURE__ */ n.jsx(
+        children: i.map((g, y) => /* @__PURE__ */ n.jsx(
           "option",
           {
             className: U.option,
-            "data-testid": `ds-select-option-${a}-${R}`,
+            "data-testid": `ds-select-option-${a}-${y}`,
             value: g.value,
             children: g.name
           },
@@ -1532,10 +1532,10 @@ function zr({
   ] });
 }
 const Be = {
-  "ds-stepper": "_ds-stepper_8xv2v_96",
-  "state-disabled": "_state-disabled_8xv2v_111"
+  "ds-stepper": "_ds-stepper_45vc6_96",
+  "state-disabled": "_state-disabled_45vc6_111"
 };
-function yr({
+function jr({
   modelValue: t,
   onIncrease: a,
   onDecrease: l
@@ -1549,7 +1549,7 @@ function yr({
     l && l();
   } };
 }
-function Fr({
+function zr({
   className: t = "",
   id: a,
   modelValue: l,
@@ -1557,7 +1557,7 @@ function Fr({
   onIncrease: d,
   onDecrease: i
 }) {
-  const { value: c, handleIncrease: _, handleDecrease: h } = yr({
+  const { value: c, handleIncrease: _, handleDecrease: h } = jr({
     modelValue: l,
     onIncrease: d,
     onDecrease: i
@@ -1605,22 +1605,22 @@ function Fr({
     }
   );
 }
-const Rr = "_DSText_zb3qg_96", jr = {
-  DSText: Rr
+const yr = "_DSText_1n9d0_96", Rr = {
+  DSText: yr
 };
 function ve({ className: t = "", id: a, text: l }) {
   return /* @__PURE__ */ n.jsx(
     "p",
     {
-      className: `${jr.DSText} ${t}`,
+      className: `${Rr.DSText} ${t}`,
       "data-testid": `ds-text-${a}`,
       children: l
     }
   );
 }
-const $r = "_textarea_1g0sz_111", Er = "_label_1g0sz_112", de = {
-  "wrapper-horizontal": "_wrapper-horizontal_1g0sz_96",
-  "wrapper-vertical": "_wrapper-vertical_1g0sz_102",
+const $r = "_textarea_1ubdj_111", Er = "_label_1ubdj_112", de = {
+  "wrapper-horizontal": "_wrapper-horizontal_1ubdj_96",
+  "wrapper-vertical": "_wrapper-vertical_1ubdj_102",
   textarea: $r,
   label: Er
 };
@@ -1644,7 +1644,7 @@ function Nr({
   max: _,
   onChange: h
 }) {
-  const { value: y, handleTextareaChange: m } = Sr({
+  const { value: j, handleTextareaChange: b } = Sr({
     initialValue: o,
     onChange: h
   });
@@ -1671,11 +1671,11 @@ function Nr({
             "data-testid": `${t}-textarea`,
             disabled: a,
             readOnly: l,
-            value: y,
+            value: j,
             minLength: c ?? void 0,
             maxLength: _ ?? void 0,
             name: t,
-            onChange: m
+            onChange: b
           }
         )
       ]
@@ -1698,8 +1698,8 @@ export {
   Wt as DSInput,
   Or as DSModal,
   Pr as DSRadio,
-  zr as DSSelect,
-  Fr as DSStepper,
+  Fr as DSSelect,
+  zr as DSStepper,
   ve as DSText,
   Nr as DSTextarea
 };
