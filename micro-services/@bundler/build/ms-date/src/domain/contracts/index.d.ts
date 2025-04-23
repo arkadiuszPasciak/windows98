@@ -4,4 +4,5 @@ export * from "./domain.contract";
 export * from "./month.contract";
 export * from "./strategy.contract";
 export * from "./time.contract";
+export * from "./timezone.contract";
 export * from "./year.contract";

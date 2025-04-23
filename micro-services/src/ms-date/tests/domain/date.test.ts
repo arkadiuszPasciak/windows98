@@ -165,6 +165,16 @@ describe("DateDomain", () => {
 		})
 	})
 
+	describe("getTimezones", () => {
+		it("should return the list of all timezones", () => {
+			const result = msDate.getTimezones()
+			expect(result).toEqual([
+				-12, -11, -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6,
+				7, 8, 9, 10, 11, 12,
+			])
+		})
+	})
+
 	describe("getYear", () => {
 		it("should return the correct year for a given date", () => {
 			const mockDate = new Date(2023, EMonth.OCTOBER, 5)

@@ -1,5 +1,6 @@
 import type {
 	EMonth,
+	ETimezone,
 	ICalendar,
 	IFormatOptions,
 	TLocalesArgument,
@@ -27,6 +28,8 @@ export interface DateDomainContract {
 		locales?: TLocalesArgument,
 		options?: IFormatOptions,
 	): string
+
+	getTimezones(): Array<ETimezone>
 
 	getYear(value?: string): number
 }
