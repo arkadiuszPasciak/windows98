@@ -1,19 +1,19 @@
+import { MSDate } from "@windows98/micro-services"
 import type { Maybe } from "@windows98/toolkit"
 import { makeAutoObservable } from "mobx"
-import { TimezoneRepository } from "../../data/repositories"
 import type { TimezoneDomainContract } from "../contracts"
 import type { ITimezoneValuePairs, TTimezoneValues } from "../models"
 
 export class TimezoneDomain implements TimezoneDomainContract {
-	timezoneRepository: TimezoneRepository = new TimezoneRepository()
-	timezonesValuePairs: Maybe<Array<ITimezoneValuePairs>> = null
+	private msDate: typeof MSDate = MSDate
+	public timezonesValuePairs: Maybe<Array<ITimezoneValuePairs>> = null
 
 	constructor() {
 		makeAutoObservable(this)
 	}
 
 	public generateTimezones(): void {
-		const timezones = this.timezoneRepository.getTimezones()
+		const timezones = this.msDate.getTimezones()
 
 		this.timezonesValuePairs = this.mapTimezonesToValuePairs(timezones)
 	}
