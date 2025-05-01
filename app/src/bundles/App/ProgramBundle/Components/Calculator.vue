@@ -8,7 +8,7 @@
     :modal-state="programStore.modalCalculator"
     @close-modal="closeModal"
   >
-    <ma-calculator />
+    <mf-calculator />
   </UIModal>
 </template>
 

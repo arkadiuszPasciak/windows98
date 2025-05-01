@@ -1,39 +1,39 @@
 import localesDE from "../locales/de"
 import localesEN from "../locales/en"
 import localesPL from "../locales/pl"
-import localesMicroAppsDE from "./micro-apps/de"
-import localesMicroAppsEN from "./micro-apps/en"
-import localesMicroAppsPL from "./micro-apps/pl"
+import localesMicroFrontendsDE from "./micro-frontends/de"
+import localesMicroFrontendsEN from "./micro-frontends/en"
+import localesMicroFrontendsPL from "./micro-frontends/pl"
 
 const locales = {
 	de: {
 		...localesDE,
-		...localesMicroAppsDE,
+		...localesMicroFrontendsDE,
 	},
 	en: {
 		...localesEN,
-		...localesMicroAppsEN,
+		...localesMicroFrontendsEN,
 	},
 	pl: {
 		...localesPL,
-		...localesMicroAppsPL,
+		...localesMicroFrontendsPL,
 	},
 }
 
 export const localesReact = {
 	de: {
 		translation: {
-			...localesMicroAppsDE,
+			...localesMicroFrontendsDE,
 		},
 	},
 	en: {
 		translation: {
-			...localesMicroAppsEN,
+			...localesMicroFrontendsEN,
 		},
 	},
 	pl: {
 		translation: {
-			...localesMicroAppsPL,
+			...localesMicroFrontendsPL,
 		},
 	},
 }

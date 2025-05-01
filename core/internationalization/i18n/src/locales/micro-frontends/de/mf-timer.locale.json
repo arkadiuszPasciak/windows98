@@ -1,0 +1,16 @@
+{
+	"mf-timer": {
+		"title": "Timer",
+		"reset": "Zurücksetzen",
+		"start": "Start",
+		"stop": "Stopp",
+		"presets": {
+			"title": "Voreinstellungen",
+			"three-minutes": "3 min",
+			"five-minutes": "5 min",
+			"ten-minutes": "10 min",
+			"fifteen-minutes": "15 min",
+			"custom": "Benutzerdefiniert"
+		}
+	}
+}

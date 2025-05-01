@@ -7,8 +7,8 @@ Welcome to **Windows98**, a creative endeavor where I am re-building the look an
 This project utilizes an array of modern web technologies and tools:
 
 1. `@windows98/app` - This is the main application. Previously, it was developed using Vue 3 with Pinia. Now, its components have been divided among other workspaces.
-2. `@windows98/design-system` - This is a library of React components used in micro-apps.
-3. `@windows98/micro-apps` - These are React applications with MobX. They are built as web components and used within the main app.
+2. `@windows98/design-system` - This is a library of React components used in micro-frontends.
+3. `@windows98/micro-frontends` - These are React applications with MobX. They are built as web components and used within the main app.
 4. `@windows98/micro-services` - These are TypeScript classes with logic that is exported to the main app.
 5. `@windows98/toolkit` - This includes utilities, types, and other common elements.
 6. `@windows98/i18n` - This contains all locales and tools for the application.

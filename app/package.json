@@ -34,7 +34,7 @@
 		"@windows98/configs": "workspace:*",
 		"@windows98/design-system": "workspace:*",
 		"@windows98/i18n": "workspace:*",
-		"@windows98/micro-apps": "workspace:*",
+		"@windows98/micro-frontends": "workspace:*",
 		"@windows98/micro-services": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
 		"jsdom": "25.0.1",

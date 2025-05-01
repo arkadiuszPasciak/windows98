@@ -1,0 +1,34 @@
+{
+	"mf-timezone": {
+		"stepper": {
+			"-12": "GMT-12 International Date Line West (IDLW)",
+			"-11": "GMT-11 Nome Time (NT)",
+			"-10": "GMT-10 Hawaii Standard Time (HST)",
+			"-9": "GMT-9 Alaska Standard Time (AKST)",
+			"-8": "GMT-8 Pacific Standard Time (PST)",
+			"-7": "GMT-7 Mountain Standard Time (MST)",
+			"-6": "GMT-6 Central Standard Time (CST)",
+			"-5": "GMT-5 Eastern Standard Time (EST)",
+			"-4": "GMT-4 Atlantic Standard Time (AST)",
+			"-3": "GMT-3 Argentina Time (ART)",
+			"-2": "GMT-2 Azores Time (AT)",
+			"-1": "GMT-1 West Africa Time (WAT)",
+			"0": "GMT+0 Greenwich Mean Time (GMT)",
+			"1": "GMT+1 Central European Time (CET)",
+			"2": "GMT+2 Eastern European Time (EET)",
+			"3": "GMT+3 Moscow Time (MSK)",
+			"4": "GMT+4 Armenia Time (AMT)",
+			"5": "GMT+5 Pakistan Standard Time (PKT)",
+			"6": "GMT+6 Omsk Time (OMSK)",
+			"7": "GMT+7 Kranoyask Time (KRAT)",
+			"8": "GMT+8 China Standard Time (CST)",
+			"9": "GMT+9 Japan Standard Time (JST)",
+			"10": "GMT+10 Eastern Australia Standard Time (AEST)",
+			"11": "GMT+11 Sakhalin Time (SAKT)",
+			"12": "GMT+12 New Zealand Standard Time (NZST)"
+		},
+		"wrapper": {
+			"title": "Zeitzone"
+		}
+	}
+}
