@@ -1,0 +1,7 @@
+{
+	"extends": [
+		"@windows98/configs/typescript/react",
+		"@windows98/configs/typescript/vite"
+	],
+	"include": ["./**/*"]
+}
