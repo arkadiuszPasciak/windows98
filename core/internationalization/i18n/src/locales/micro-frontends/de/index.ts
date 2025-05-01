@@ -4,7 +4,7 @@ import shutdownDE from "./mf-shutdown.locale.json"
 import timerDE from "./mf-timer.locale.json"
 import timezoneDE from "./mf-timezone.locale.json"
 
-const localesMicroAppsDE = {
+const localesMicroFrontendsDE = {
 	...calendarDE,
 	...pulpitDE,
 	...shutdownDE,
@@ -12,4 +12,4 @@ const localesMicroAppsDE = {
 	...timezoneDE,
 }
 
-export default localesMicroAppsDE
+export default localesMicroFrontendsDE

@@ -4,7 +4,7 @@ import shutdownPL from "./mf-shutdown.locale.json"
 import timerPL from "./mf-timer.locale.json"
 import timezonePL from "./mf-timezone.locale.json"
 
-const localesMicroAppsPL = {
+const localesMicroFrontendsPL = {
 	...calendarPL,
 	...pulpitPL,
 	...shutdownPL,
@@ -12,4 +12,4 @@ const localesMicroAppsPL = {
 	...timezonePL,
 }
 
-export default localesMicroAppsPL
+export default localesMicroFrontendsPL
