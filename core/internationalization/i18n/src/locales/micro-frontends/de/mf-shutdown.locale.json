@@ -1,5 +1,5 @@
 {
-	"ma-shutdown": {
+	"mf-shutdown": {
 		"cancel": "Stornieren",
 		"description": "Was soll der Computer tun?",
 		"ok": "OK",

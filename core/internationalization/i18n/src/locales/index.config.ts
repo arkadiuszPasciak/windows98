@@ -1,9 +1,9 @@
 import localesDE from "../locales/de"
 import localesEN from "../locales/en"
 import localesPL from "../locales/pl"
-import localesMicroAppsDE from "./micro-apps/de"
-import localesMicroAppsEN from "./micro-apps/en"
-import localesMicroAppsPL from "./micro-apps/pl"
+import localesMicroAppsDE from "./micro-frontends/de"
+import localesMicroAppsEN from "./micro-frontends/en"
+import localesMicroAppsPL from "./micro-frontends/pl"
 
 const locales = {
 	de: {
