@@ -16,7 +16,7 @@
 		"@windows98/configs": "workspace:*",
 		"lint-staged": "15.2.11",
 		"typescript": "5.4.2",
-		"vitest": "2.1.5"
+		"vitest": "3.1.2"
 	},
 	"scripts": {
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
