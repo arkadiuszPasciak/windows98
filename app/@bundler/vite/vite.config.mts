@@ -16,7 +16,7 @@ export default defineConfig({
 			include: [/\.vue$/],
 			template: {
 				compilerOptions: {
-					isCustomElement: (tag) => tag.includes("ma-"),
+					isCustomElement: (tag) => tag.includes("mf-"),
 				},
 			},
 		}),
