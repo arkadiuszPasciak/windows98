@@ -1,7 +1,7 @@
 <template>
   <div class="SettingsDateTime">
-    <ma-calendar />
-    <ma-timezone />
+    <mf-calendar />
+    <mf-timezone />
   </div>
 </template>
 

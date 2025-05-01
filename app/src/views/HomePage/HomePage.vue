@@ -2,7 +2,7 @@
   <div class="HomePage">
     <TeleportPulpit />
 
-    <ma-pulpit />
+    <mf-pulpit />
 
     <NavigationPulpit />
   </div>

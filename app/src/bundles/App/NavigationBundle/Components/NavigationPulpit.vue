@@ -1,8 +1,8 @@
 <template>
   <NavigationGrid class="NavigationPulpit">
     <Start />
-    <ma-audio-button></ma-audio-button>
-    <ma-clock></ma-clock>
+    <mf-audio-button />
+    <mf-clock />
   </NavigationGrid>
 </template>
 

@@ -9,7 +9,7 @@
     @close-modal="closeModal"
   >
     <div class="content">
-      <ma-shutdown />
+      <mf-shutdown />
     </div>
   </UIModal>
 </template>

@@ -8,7 +8,7 @@
     :modal-state="programStore.modalTimer"
     @close-modal="closeModal"
   >
-    <ma-timer />
+    <mf-timer />
   </UIModal>
 </template>
 
