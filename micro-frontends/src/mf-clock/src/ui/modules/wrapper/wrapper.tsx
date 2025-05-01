@@ -6,7 +6,7 @@ export const Wrapper: FunctionComponent = () => {
 	return (
 		<div
 			className={styles.wrapper}
-			data-testid="ma-clock-wrapper"
+			data-testid="mf-clock-wrapper"
 		>
 			<Time />
 		</div>

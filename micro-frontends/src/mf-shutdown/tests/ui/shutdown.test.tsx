@@ -9,11 +9,11 @@ test.describe("Shutdown", () => {
 		const component = await mount(<ShutdownView />)
 
 		const shutDownRadio = component.getByTestId(
-			"ma-shutdown-preset-shutdown-radio",
+			"mf-shutdown-preset-shutdown-radio",
 		)
 		await shutDownRadio.click()
 
-		const okButton = component.getByTestId("ma-shutdown-controller-ok-button")
+		const okButton = component.getByTestId("mf-shutdown-controller-ok-button")
 		await okButton.click()
 
 		await expect(page).toHaveURL("https://www.google.com")
@@ -26,11 +26,11 @@ test.describe("Shutdown", () => {
 		const component = await mount(<ShutdownView />)
 
 		const restartRadio = component.getByTestId(
-			"ma-shutdown-preset-restart-radio",
+			"mf-shutdown-preset-restart-radio",
 		)
 		await restartRadio.click()
 
-		const okButton = component.getByTestId("ma-shutdown-controller-ok-button")
+		const okButton = component.getByTestId("mf-shutdown-controller-ok-button")
 		await okButton.click()
 
 		await expect(page).toHaveURL("/")
@@ -43,11 +43,11 @@ test.describe("Shutdown", () => {
 			const component = await mount(<ShutdownView />)
 
 			const cancelButton = component.getByTestId(
-				"ma-shutdown-controller-cancel-button",
+				"mf-shutdown-controller-cancel-button",
 			)
 			await cancelButton.click()
 
-			const shutDownModal = component.getByTestId("ma-shutdown-main-modal")
+			const shutDownModal = component.getByTestId("mf-shutdown-main-modal")
 			await expect(shutDownModal).toBeHidden()
 		},
 	)

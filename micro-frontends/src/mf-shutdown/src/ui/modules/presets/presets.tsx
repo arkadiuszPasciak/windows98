@@ -14,7 +14,7 @@ export const Presets: FunctionComponent = observer(() => {
 					initialChecked={preset.preset === selectedPreset}
 					id={preset.id}
 					key={preset.id}
-					name="ma-timer-presets"
+					name="mf-timer-presets"
 					onChange={() => setPreset(preset.preset)}
 					text={{
 						content: preset.content,

@@ -13,7 +13,7 @@ export const Wrapper: FunctionComponent = () => {
 	return (
 		<div
 			className={styles.wrapper}
-			data-testid="ma-timer-wrapper"
+			data-testid="mf-timer-wrapper"
 		>
 			<Presets />
 			<Controller />

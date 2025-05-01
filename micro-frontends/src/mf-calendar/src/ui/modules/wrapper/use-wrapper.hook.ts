@@ -6,7 +6,7 @@ export function useWrapper() {
 
 	const dictionary = useMemo(
 		() => ({
-			title: t("ma-calendar.wrapper.title"),
+			title: t("mf-calendar.wrapper.title"),
 		}),
 		[t],
 	)

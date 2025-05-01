@@ -5,7 +5,7 @@ test.describe("Timer", () => {
 	test("should follow a typical user scenario", async ({ mount, page }) => {
 		const component = await mount(<TimerView />)
 
-		const customPreset = component.getByTestId("ma-timer-preset-custom-radio")
+		const customPreset = component.getByTestId("mf-timer-preset-custom-radio")
 		await customPreset.click()
 
 		const secondsUpButton = component.getByTestId("ds-button-arrow-seconds-top")
@@ -13,14 +13,14 @@ test.describe("Timer", () => {
 			await secondsUpButton.click()
 		}
 
-		const screenSeconds = component.getByTestId("ma-timer-screen-seconds")
+		const screenSeconds = component.getByTestId("mf-timer-screen-seconds")
 		await expect(
 			screenSeconds,
 			"Screen should display 5 seconds after increasing 5 times",
 		).toHaveText("05")
 
 		const startStopButton = component.getByTestId(
-			"ma-timer-player-start-and-stop-button",
+			"mf-timer-player-start-and-stop-button",
 		)
 		await startStopButton.click()
 		await expect(
@@ -42,15 +42,15 @@ test.describe("Timer", () => {
 		).toHaveText("Stop")
 
 		await expect(
-			component.getByTestId("ma-timer-screen-seconds"),
+			component.getByTestId("mf-timer-screen-seconds"),
 			"Seconds should be 00 after timer finishes",
 		).toHaveText("00", { timeout: 10000 })
 		await expect(
-			component.getByTestId("ma-timer-screen-minutes"),
+			component.getByTestId("mf-timer-screen-minutes"),
 			"Minutes should be 00 after timer finishes",
 		).toHaveText("00", { timeout: 10000 })
 		await expect(
-			component.getByTestId("ma-timer-screen-hours"),
+			component.getByTestId("mf-timer-screen-hours"),
 			"Hours should be 00 after timer finishes",
 		).toHaveText("00", { timeout: 10000 })
 	})

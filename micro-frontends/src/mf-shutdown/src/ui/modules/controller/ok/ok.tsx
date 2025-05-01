@@ -8,7 +8,7 @@ export const Ok: FunctionComponent = observer(() => {
 
 	return (
 		<DSButton
-			id="ma-shutdown-controller-ok"
+			id="mf-shutdown-controller-ok"
 			onClick={onClick}
 			text={translations.text}
 		/>

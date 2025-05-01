@@ -9,8 +9,8 @@ export const useStartAndStop = () => {
 
 	const translations = useMemo(() => {
 		return {
-			start: t("ma-timer.start"),
-			stop: t("ma-timer.stop"),
+			start: t("mf-timer.start"),
+			stop: t("mf-timer.stop"),
 		}
 	}, [t])
 

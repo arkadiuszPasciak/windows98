@@ -20,7 +20,7 @@ export const Controller: FunctionComponent = observer(() => {
 
 	return (
 		<div
-			data-testid="ma-timer-controller"
+			data-testid="mf-timer-controller"
 			className={styles.controller}
 		>
 			<DSStepper

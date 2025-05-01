@@ -10,8 +10,8 @@ export const Presets: FunctionComponent = observer(() => {
 	return (
 		<DSFrame
 			className={styles.presets}
-			data-testid="ma-timer-presets"
-			id="ma-timer-presets"
+			data-testid="mf-timer-presets"
+			id="mf-timer-presets"
 			title={title}
 		>
 			{presets.map((preset) => (
@@ -20,7 +20,7 @@ export const Presets: FunctionComponent = observer(() => {
 					disabled={disabled}
 					id={preset.id}
 					key={preset.id}
-					name="ma-timer-presets"
+					name="mf-timer-presets"
 					onChange={() => setPreset(preset.preset)}
 					text={{
 						content: preset.content,

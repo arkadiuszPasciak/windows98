@@ -8,7 +8,7 @@ export const StartAndStop: FunctionComponent = observer(() => {
 
 	return (
 		<DSButton
-			id="ma-timer-player-start-and-stop"
+			id="mf-timer-player-start-and-stop"
 			disabled={disabled}
 			onClick={onClick}
 			text={text}

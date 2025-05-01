@@ -7,13 +7,13 @@ test.describe("Player", () => {
 	}) => {
 		const component = await mount(<TimerView />)
 
-		const preset3min = component.getByTestId("ma-timer-preset-3-minutes-radio")
+		const preset3min = component.getByTestId("mf-timer-preset-3-minutes-radio")
 		await preset3min.click()
 
 		const startStopButton = component.getByTestId(
-			"ma-timer-player-start-and-stop-button",
+			"mf-timer-player-start-and-stop-button",
 		)
-		const resetButton = component.getByTestId("ma-timer-player-reset-button")
+		const resetButton = component.getByTestId("mf-timer-player-reset-button")
 
 		await startStopButton.click()
 		expect(startStopButton).toHaveText("Stop")
@@ -22,8 +22,8 @@ test.describe("Player", () => {
 		expect(startStopButton).toHaveText("Start")
 
 		await resetButton.click()
-		expect(component.getByTestId("ma-timer-screen-hours")).toHaveText("00")
-		expect(component.getByTestId("ma-timer-screen-minutes")).toHaveText("00")
-		expect(component.getByTestId("ma-timer-screen-seconds")).toHaveText("00")
+		expect(component.getByTestId("mf-timer-screen-hours")).toHaveText("00")
+		expect(component.getByTestId("mf-timer-screen-minutes")).toHaveText("00")
+		expect(component.getByTestId("mf-timer-screen-seconds")).toHaveText("00")
 	})
 })

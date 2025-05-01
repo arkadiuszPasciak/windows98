@@ -13,7 +13,7 @@ export const Button: FunctionComponent = observer(() => {
 	return (
 		<button
 			className={styles.button}
-			data-testid="ma-audio-button-button"
+			data-testid="mf-audio-button-button"
 			type="button"
 			onClick={toggleSound}
 		>

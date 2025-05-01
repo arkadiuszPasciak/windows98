@@ -9,11 +9,11 @@ export const Screen: FunctionComponent = observer(() => {
 	return (
 		<div
 			className={styles.screen}
-			data-testid="ma-timer-screen"
+			data-testid="mf-timer-screen"
 		>
 			<span
 				className={styles.time}
-				data-testid="ma-timer-screen-hours"
+				data-testid="mf-timer-screen-hours"
 			>
 				{hours}
 			</span>
@@ -22,7 +22,7 @@ export const Screen: FunctionComponent = observer(() => {
 
 			<span
 				className={styles.time}
-				data-testid="ma-timer-screen-minutes"
+				data-testid="mf-timer-screen-minutes"
 			>
 				{minutes}
 			</span>
@@ -31,7 +31,7 @@ export const Screen: FunctionComponent = observer(() => {
 
 			<span
 				className={styles.time}
-				data-testid="ma-timer-screen-seconds"
+				data-testid="mf-timer-screen-seconds"
 			>
 				{seconds}
 			</span>

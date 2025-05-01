@@ -8,7 +8,7 @@ export const Reset: FunctionComponent = observer(() => {
 
 	return (
 		<DSButton
-			id="ma-timer-player-reset"
+			id="mf-timer-player-reset"
 			disabled={disabled}
 			onClick={onClick}
 			text={text}

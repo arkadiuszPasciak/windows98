@@ -19,7 +19,7 @@ export class TimezoneDomain implements TimezoneDomainContract {
 	}
 
 	private createI18nKey(timezone: number): string {
-		return `ma-timezone.stepper.${timezone}`
+		return `mf-timezone.stepper.${timezone}`
 	}
 
 	private mapTimezonesToValuePairs(

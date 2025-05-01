@@ -14,28 +14,28 @@ export const usePresets = () => {
 		return [
 			{
 				preset: ETimerPresets.THREE_MINUTES,
-				content: t("ma-timer.presets.three-minutes"),
-				id: "ma-timer-preset-3-minutes",
+				content: t("mf-timer.presets.three-minutes"),
+				id: "mf-timer-preset-3-minutes",
 			},
 			{
 				preset: ETimerPresets.FIVE_MINUTES,
-				content: t("ma-timer.presets.five-minutes"),
-				id: "ma-timer-preset-5-minutes",
+				content: t("mf-timer.presets.five-minutes"),
+				id: "mf-timer-preset-5-minutes",
 			},
 			{
 				preset: ETimerPresets.TEN_MINUTES,
-				content: t("ma-timer.presets.ten-minutes"),
-				id: "ma-timer-preset-10-minutes",
+				content: t("mf-timer.presets.ten-minutes"),
+				id: "mf-timer-preset-10-minutes",
 			},
 			{
 				preset: ETimerPresets.FIFTEEN_MINUTES,
-				content: t("ma-timer.presets.fifteen-minutes"),
-				id: "ma-timer-preset-15-minutes",
+				content: t("mf-timer.presets.fifteen-minutes"),
+				id: "mf-timer-preset-15-minutes",
 			},
 			{
 				preset: ETimerPresets.CUSTOM_MINUTES,
-				content: t("ma-timer.presets.custom"),
-				id: "ma-timer-preset-custom",
+				content: t("mf-timer.presets.custom"),
+				id: "mf-timer-preset-custom",
 			},
 		]
 	}, [t])
@@ -49,7 +49,7 @@ export const usePresets = () => {
 
 	const disabled = timerDomain.status === ETimerStatus.PLAY
 
-	const title = t("ma-timer.presets.title")
+	const title = t("mf-timer.presets.title")
 
 	return {
 		disabled,

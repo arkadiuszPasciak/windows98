@@ -7,7 +7,7 @@ export const Player: FunctionComponent = () => {
 	return (
 		<div
 			className={styles.player}
-			data-testid="ma-timer-player"
+			data-testid="mf-timer-player"
 		>
 			<StartAndStop />
 			<Reset />

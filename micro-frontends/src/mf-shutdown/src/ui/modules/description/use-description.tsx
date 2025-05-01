@@ -6,7 +6,7 @@ export function useDescription() {
 
 	const translations = useMemo(() => {
 		return {
-			description: t("ma-shutdown.description"),
+			description: t("mf-shutdown.description"),
 		}
 	}, [t])
 

@@ -9,7 +9,7 @@ export const useReset = () => {
 
 	const translations = useMemo(() => {
 		return {
-			reset: t("ma-timer.reset"),
+			reset: t("mf-timer.reset"),
 		}
 	}, [t])
 

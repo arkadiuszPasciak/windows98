@@ -3,7 +3,7 @@ import { TimerView } from "../../src/ui/views/timer.view"
 
 const presets = [
 	{
-		dataTestId: "ma-timer-preset-3-minutes-radio",
+		dataTestId: "mf-timer-preset-3-minutes-radio",
 		expectTime: {
 			hours: "00",
 			minutes: "03",
@@ -11,7 +11,7 @@ const presets = [
 		},
 	},
 	{
-		dataTestId: "ma-timer-preset-5-minutes-radio",
+		dataTestId: "mf-timer-preset-5-minutes-radio",
 		expectTime: {
 			hours: "00",
 			minutes: "05",
@@ -19,7 +19,7 @@ const presets = [
 		},
 	},
 	{
-		dataTestId: "ma-timer-preset-10-minutes-radio",
+		dataTestId: "mf-timer-preset-10-minutes-radio",
 		expectTime: {
 			hours: "00",
 			minutes: "10",
@@ -27,7 +27,7 @@ const presets = [
 		},
 	},
 	{
-		dataTestId: "ma-timer-preset-15-minutes-radio",
+		dataTestId: "mf-timer-preset-15-minutes-radio",
 		expectTime: {
 			hours: "00",
 			minutes: "15",
@@ -35,7 +35,7 @@ const presets = [
 		},
 	},
 	{
-		dataTestId: "ma-timer-preset-custom-radio",
+		dataTestId: "mf-timer-preset-custom-radio",
 		expectTime: {
 			hours: "00",
 			minutes: "00",
@@ -50,9 +50,9 @@ test.describe("Presets", () => {
 	}) => {
 		const component = await mount(<TimerView />)
 
-		const hours = component.getByTestId("ma-timer-screen-hours")
-		const minutes = component.getByTestId("ma-timer-screen-minutes")
-		const seconds = component.getByTestId("ma-timer-screen-seconds")
+		const hours = component.getByTestId("mf-timer-screen-hours")
+		const minutes = component.getByTestId("mf-timer-screen-minutes")
+		const seconds = component.getByTestId("mf-timer-screen-seconds")
 
 		for (const preset of presets) {
 			const presetElement = component.getByTestId(preset.dataTestId)

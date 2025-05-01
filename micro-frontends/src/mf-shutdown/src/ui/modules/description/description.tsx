@@ -12,10 +12,10 @@ export const Description = () => {
 				height="32"
 				src="/icons/applications/mycomputer.png"
 				alt=""
-				data-test-id="ma-shutdown-description-icon"
+				data-test-id="mf-shutdown-description-icon"
 			/>
 			<DSText
-				id="ma-shutdown-description-text"
+				id="mf-shutdown-description-text"
 				text={translations.description}
 			/>
 		</div>

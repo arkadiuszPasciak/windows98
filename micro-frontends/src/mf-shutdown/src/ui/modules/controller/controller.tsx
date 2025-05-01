@@ -7,7 +7,7 @@ export const Controller: FunctionComponent = () => {
 	return (
 		<div
 			className={styles.controller}
-			data-testid="ma-shutdown-controller"
+			data-testid="mf-shutdown-controller"
 		>
 			<Ok />
 			<Cancel />

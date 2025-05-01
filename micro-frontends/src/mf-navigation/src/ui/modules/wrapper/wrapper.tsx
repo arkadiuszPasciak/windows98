@@ -6,7 +6,7 @@ export const Wrapper: FunctionComponent<WrapperProps> = ({ children }) => {
 	return (
 		<div
 			className={styles.wrapper}
-			data-testid="ma-navigation-wrapper"
+			data-testid="mf-navigation-wrapper"
 		>
 			{children}
 		</div>

@@ -11,7 +11,7 @@ export const Keypad: FunctionComponent = observer(() => {
 	return (
 		<div
 			className={styles.keypad}
-			data-testid="ma-calculator-keypad"
+			data-testid="mf-calculator-keypad"
 		>
 			<OperationButton
 				id={ECalculatorNumber.SEVEN}

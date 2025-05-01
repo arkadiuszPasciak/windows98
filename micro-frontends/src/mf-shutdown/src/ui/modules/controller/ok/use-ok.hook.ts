@@ -9,7 +9,7 @@ export const useOk = () => {
 
 	const translations = useMemo(() => {
 		return {
-			text: t("ma-shutdown.ok"),
+			text: t("mf-shutdown.ok"),
 		}
 	}, [t])
 

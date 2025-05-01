@@ -5,7 +5,7 @@ export const useCancel = () => {
 	const { t } = useTranslation()
 	const translations = useMemo(() => {
 		return {
-			text: t("ma-shutdown.cancel"),
+			text: t("mf-shutdown.cancel"),
 		}
 	}, [t])
 

@@ -12,7 +12,7 @@ export function useWrapper() {
 
 	const dictionary = useMemo(
 		() => ({
-			title: t("ma-timezone.wrapper.title"),
+			title: t("mf-timezone.wrapper.title"),
 		}),
 		[t],
 	)

@@ -10,7 +10,7 @@ export const Pulpit: FunctionComponent<PulpitProps> = ({ items }) => {
 	return (
 		<div
 			className={styles.pulpit}
-			data-testid="ma-pulpit-pulpit"
+			data-testid="mf-pulpit-pulpit"
 		>
 			{items.map((item, index) => (
 				<PulpitItem

@@ -7,7 +7,7 @@ export const Wrapper: FunctionComponent = () => {
 	return (
 		<div
 			className={styles.wrapper}
-			data-testid="ma-calculator-wrapper"
+			data-testid="mf-calculator-wrapper"
 		>
 			<Screen />
 			<Keypad />

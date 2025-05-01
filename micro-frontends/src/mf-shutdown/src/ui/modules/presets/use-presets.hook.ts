@@ -14,13 +14,13 @@ export const usePresets = () => {
 		return [
 			{
 				preset: EShutdownPresets.SHUTDOWN,
-				content: t("ma-shutdown.shutdown"),
-				id: "ma-shutdown-preset-shutdown",
+				content: t("mf-shutdown.shutdown"),
+				id: "mf-shutdown-preset-shutdown",
 			},
 			{
 				preset: EShutdownPresets.RESTART,
-				content: t("ma-shutdown.restart"),
-				id: "ma-shutdown-preset-restart",
+				content: t("mf-shutdown.restart"),
+				id: "mf-shutdown-preset-restart",
 			},
 		]
 	}, [t])

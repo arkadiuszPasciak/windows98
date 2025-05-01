@@ -15,11 +15,11 @@ export const PulpitView: FunctionComponent<PulpitViewProps> = (props) => {
 const mockData = {
 	items: [
 		{
-			name: "ma-pulpit.my-computer",
+			name: "mf-pulpit.my-computer",
 			icon: "mycomputer",
 		},
 		{
-			name: "ma-pulpit.recycle",
+			name: "mf-pulpit.recycle",
 			icon: "recycle",
 		},
 	],

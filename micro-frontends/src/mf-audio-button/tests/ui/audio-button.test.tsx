@@ -4,7 +4,7 @@ import { AudioButtonView } from "../../src/ui/views"
 test.describe("AudioButton", () => {
 	test("should turn off and turn on audio", async ({ mount }) => {
 		const component = await mount(<AudioButtonView />)
-		const button = component.getByTestId("ma-audio-button-button")
+		const button = component.getByTestId("mf-audio-button-button")
 
 		await component.evaluate(() => {
 			const audioElement = document.createElement("audio")

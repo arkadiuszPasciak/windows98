@@ -10,7 +10,7 @@ export const Time: FunctionComponent = observer(() => {
 		time && (
 			<span
 				className={styles.time}
-				data-testid="ma-clock-time"
+				data-testid="mf-clock-time"
 			>
 				{time}
 			</span>

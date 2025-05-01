@@ -134,7 +134,7 @@ function s(t, r = {}) {
   return z$1(t, r, { mount: f$1, update: i$1, unmount: a });
 }
 const calendarDE = {
-  "ma-calendar": {
+  "mf-calendar": {
     days: {
       monday: "Mo",
       tuesday: "Di",
@@ -163,12 +163,12 @@ const calendarDE = {
     }
   }
 }, pulpitDE = {
-  "ma-pulpit": {
+  "mf-pulpit": {
     "my-computer": "Mein Computer",
     recycle: "Papierkorb"
   }
 }, shutdownDE = {
-  "ma-shutdown": {
+  "mf-shutdown": {
     cancel: "Stornieren",
     description: "Was soll der Computer tun?",
     ok: "OK",
@@ -177,7 +177,7 @@ const calendarDE = {
     title: "Abschalten Windows"
   }
 }, timerDE = {
-  "ma-timer": {
+  "mf-timer": {
     title: "Timer",
     reset: "Zurücksetzen",
     start: "Start",
@@ -192,7 +192,7 @@ const calendarDE = {
     }
   }
 }, timezoneDE = {
-  "ma-timezone": {
+  "mf-timezone": {
     stepper: {
       0: "GMT+0 Greenwich Mean Time (GMT)",
       1: "GMT+1 Central European Time (CET)",
@@ -231,7 +231,7 @@ const calendarDE = {
   ...timerDE,
   ...timezoneDE
 }, calendarEN = {
-  "ma-calendar": {
+  "mf-calendar": {
     days: {
       monday: "M",
       tuesday: "T",
@@ -260,12 +260,12 @@ const calendarDE = {
     }
   }
 }, pulpitEN = {
-  "ma-pulpit": {
+  "mf-pulpit": {
     "my-computer": "My Computer",
     recycle: "Recycle"
   }
 }, shutdownEN = {
-  "ma-shutdown": {
+  "mf-shutdown": {
     cancel: "Cancel",
     description: "What do you want the computer to do?",
     ok: "OK",
@@ -274,7 +274,7 @@ const calendarDE = {
     title: "Shutdown Windows"
   }
 }, timerEN = {
-  "ma-timer": {
+  "mf-timer": {
     title: "Timer",
     reset: "Reset",
     start: "Start",
@@ -289,7 +289,7 @@ const calendarDE = {
     }
   }
 }, timezoneEN = {
-  "ma-timezone": {
+  "mf-timezone": {
     stepper: {
       0: "GMT+0 Greenwich Mean Time (GMT)",
       1: "GMT+1 Central European Time (CET)",
@@ -328,7 +328,7 @@ const calendarDE = {
   ...timerEN,
   ...timezoneEN
 }, calendarPL = {
-  "ma-calendar": {
+  "mf-calendar": {
     days: {
       monday: "P",
       tuesday: "W",
@@ -357,12 +357,12 @@ const calendarDE = {
     }
   }
 }, pulpitPL = {
-  "ma-pulpit": {
+  "mf-pulpit": {
     "my-computer": "Mój Komputer",
     recycle: "Recyckling"
   }
 }, shutdownPL = {
-  "ma-shutdown": {
+  "mf-shutdown": {
     cancel: "Anuluj",
     description: "Co chcesz zrobić z komputerem?",
     ok: "OK",
@@ -371,7 +371,7 @@ const calendarDE = {
     title: "Wyłącz Windows"
   }
 }, timerPL = {
-  "ma-timer": {
+  "mf-timer": {
     title: "Minutnik",
     reset: "Reset",
     start: "Start",
@@ -386,7 +386,7 @@ const calendarDE = {
     }
   }
 }, timezonePL = {
-  "ma-timezone": {
+  "mf-timezone": {
     stepper: {
       0: "GMT+0 Uniwersynalny Czas (GMT)",
       1: "GMT+1 Środkowoeuropejski Standardowy Czas (CET)",
@@ -574,14 +574,14 @@ function requireReactJsxRuntime_development() {
         }
       return null;
     }
-    var Ne = Object.assign, Ue = 0, ut, dt, mt, ft, pt, ht, yt;
+    var Ne = Object.assign, Ue = 0, ut, dt, ft, mt, pt, ht, yt;
     function xt() {
     }
     xt.__reactDisabledLog = !0;
     function Zt() {
       {
         if (Ue === 0) {
-          ut = console.log, dt = console.info, mt = console.warn, ft = console.error, pt = console.group, ht = console.groupCollapsed, yt = console.groupEnd;
+          ut = console.log, dt = console.info, ft = console.warn, mt = console.error, pt = console.group, ht = console.groupCollapsed, yt = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
@@ -617,10 +617,10 @@ function requireReactJsxRuntime_development() {
               value: dt
             }),
             warn: Ne({}, e, {
-              value: mt
+              value: ft
             }),
             error: Ne({}, e, {
-              value: ft
+              value: mt
             }),
             group: Ne({}, e, {
               value: pt
@@ -1214,14 +1214,14 @@ function Vt() {
         }
       return null;
     }
-    var Ne = Object.assign, Ue = 0, ut, dt, mt, ft, pt, ht, yt;
+    var Ne = Object.assign, Ue = 0, ut, dt, ft, mt, pt, ht, yt;
     function xt() {
     }
     xt.__reactDisabledLog = !0;
     function Zt() {
       {
         if (Ue === 0) {
-          ut = console.log, dt = console.info, mt = console.warn, ft = console.error, pt = console.group, ht = console.groupCollapsed, yt = console.groupEnd;
+          ut = console.log, dt = console.info, ft = console.warn, mt = console.error, pt = console.group, ht = console.groupCollapsed, yt = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
@@ -1257,10 +1257,10 @@ function Vt() {
               value: dt
             }),
             warn: Ne({}, e, {
-              value: mt
+              value: ft
             }),
             error: Ne({}, e, {
-              value: ft
+              value: mt
             }),
             group: Ne({}, e, {
               value: pt
@@ -2324,7 +2324,7 @@ const Button = observer(() => {
     "button",
     {
       className: styles$n.button,
-      "data-testid": "ma-audio-button-button",
+      "data-testid": "mf-audio-button-button",
       type: "button",
       onClick: r,
       children: [
@@ -2333,7 +2333,7 @@ const Button = observer(() => {
       ]
     }
   );
-}), Wrapper$8 = () => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { "data-testid": "ma-audio-button-wrapper", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Button, {}) }), AudioButtonView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$6.Provider, { value: audioButtonDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$8, {}) });
+}), Wrapper$8 = () => /* @__PURE__ */ jsxRuntimeExports.jsx("div", { "data-testid": "mf-audio-button-wrapper", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Button, {}) }), AudioButtonView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$6.Provider, { value: audioButtonDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$8, {}) });
 var ECalculatorDirect = /* @__PURE__ */ ((t) => (t.FIRST = "first", t.LAST = "last", t))(ECalculatorDirect || {}), ECalculatorNumber = /* @__PURE__ */ ((t) => (t[t.ZERO = 0] = "ZERO", t[t.ONE = 1] = "ONE", t[t.TWO = 2] = "TWO", t[t.THREE = 3] = "THREE", t[t.FOUR = 4] = "FOUR", t[t.FIVE = 5] = "FIVE", t[t.SIX = 6] = "SIX", t[t.SEVEN = 7] = "SEVEN", t[t.EIGHT = 8] = "EIGHT", t[t.NINE = 9] = "NINE", t))(ECalculatorNumber || {}), ECalculatorSymbol = /* @__PURE__ */ ((t) => (t.ADD = "+", t.DIVIDE = "/", t.DOT = ".", t.MINUS = "-", t.MULTIPLY = "*", t.RESULT = "=", t))(ECalculatorSymbol || {});
 class CalculatorService {
   isValueEqual(t, r, u) {
@@ -2412,7 +2412,7 @@ const calculatorDomain = new CalculatorDomain(), DomainContext$5 = createContext
   "button",
   {
     className: `${styles$m.button} ${styles$m[u]}`,
-    "data-testid": `ma-calculator-operation-button-${t}`,
+    "data-testid": `mf-calculator-operation-button-${t}`,
     onClick: r,
     type: "button",
     children: t
@@ -2440,7 +2440,7 @@ const Keypad = observer(() => {
     "div",
     {
       className: styles$l.keypad,
-      "data-testid": "ma-calculator-keypad",
+      "data-testid": "mf-calculator-keypad",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           OperationButton,
@@ -2588,7 +2588,7 @@ const Screen$1 = observer(() => {
     "span",
     {
       className: styles$k.screen,
-      "data-testid": "ma-calculator-screen",
+      "data-testid": "mf-calculator-screen",
       children: t ?? "ERROR"
     }
   );
@@ -2598,7 +2598,7 @@ const Screen$1 = observer(() => {
   "div",
   {
     className: styles$j.wrapper,
-    "data-testid": "ma-calculator-wrapper",
+    "data-testid": "mf-calculator-wrapper",
     children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Screen$1, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Keypad, {})
@@ -3056,13 +3056,13 @@ function useWeekDays() {
   return {
     weekDays: useMemo(
       () => [
-        { id: 0, name: t("ma-calendar.days.sunday") },
-        { id: 1, name: t("ma-calendar.days.monday") },
-        { id: 2, name: t("ma-calendar.days.tuesday") },
-        { id: 3, name: t("ma-calendar.days.wednesday") },
-        { id: 4, name: t("ma-calendar.days.thursday") },
-        { id: 5, name: t("ma-calendar.days.friday") },
-        { id: 6, name: t("ma-calendar.days.saturday") }
+        { id: 0, name: t("mf-calendar.days.sunday") },
+        { id: 1, name: t("mf-calendar.days.monday") },
+        { id: 2, name: t("mf-calendar.days.tuesday") },
+        { id: 3, name: t("mf-calendar.days.wednesday") },
+        { id: 4, name: t("mf-calendar.days.thursday") },
+        { id: 5, name: t("mf-calendar.days.friday") },
+        { id: 6, name: t("mf-calendar.days.saturday") }
       ],
       [t]
     )
@@ -3096,51 +3096,51 @@ function useMonthSwitcher() {
         months: [
           {
             value: 0,
-            name: t("ma-calendar.month-switcher.january")
+            name: t("mf-calendar.month-switcher.january")
           },
           {
             value: 1,
-            name: t("ma-calendar.month-switcher.february")
+            name: t("mf-calendar.month-switcher.february")
           },
           {
             value: 2,
-            name: t("ma-calendar.month-switcher.march")
+            name: t("mf-calendar.month-switcher.march")
           },
           {
             value: 3,
-            name: t("ma-calendar.month-switcher.april")
+            name: t("mf-calendar.month-switcher.april")
           },
           {
             value: 4,
-            name: t("ma-calendar.month-switcher.may")
+            name: t("mf-calendar.month-switcher.may")
           },
           {
             value: 5,
-            name: t("ma-calendar.month-switcher.june")
+            name: t("mf-calendar.month-switcher.june")
           },
           {
             value: 6,
-            name: t("ma-calendar.month-switcher.july")
+            name: t("mf-calendar.month-switcher.july")
           },
           {
             value: 7,
-            name: t("ma-calendar.month-switcher.august")
+            name: t("mf-calendar.month-switcher.august")
           },
           {
             value: 8,
-            name: t("ma-calendar.month-switcher.september")
+            name: t("mf-calendar.month-switcher.september")
           },
           {
             value: 9,
-            name: t("ma-calendar.month-switcher.october")
+            name: t("mf-calendar.month-switcher.october")
           },
           {
             value: 10,
-            name: t("ma-calendar.month-switcher.november")
+            name: t("mf-calendar.month-switcher.november")
           },
           {
             value: 11,
-            name: t("ma-calendar.month-switcher.december")
+            name: t("mf-calendar.month-switcher.december")
           }
         ]
       }),
@@ -3191,7 +3191,7 @@ function useWrapper$1() {
   return {
     title: useMemo(
       () => ({
-        title: t("ma-calendar.wrapper.title")
+        title: t("mf-calendar.wrapper.title")
       }),
       [t]
     ).title
@@ -3251,7 +3251,7 @@ const Time = observer(() => {
     "span",
     {
       className: styles$e.time,
-      "data-testid": "ma-clock-time",
+      "data-testid": "mf-clock-time",
       children: t
     }
   );
@@ -3261,7 +3261,7 @@ const Time = observer(() => {
   "div",
   {
     className: styles$d.wrapper,
-    "data-testid": "ma-clock-wrapper",
+    "data-testid": "mf-clock-wrapper",
     children: /* @__PURE__ */ jsxRuntimeExports.jsx(Time, {})
   }
 ), ClockView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$3.Provider, { value: clockDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$5, {}) }), wrapper$3 = "_wrapper_1rg8z_96", styles$c = {
@@ -3270,7 +3270,7 @@ const Time = observer(() => {
   "div",
   {
     className: styles$c.wrapper,
-    "data-testid": "ma-navigation-wrapper",
+    "data-testid": "mf-navigation-wrapper",
     children: t
   }
 ), NavigationView = ({
@@ -3309,7 +3309,7 @@ const Pulpit = ({ items: t }) => {
     "div",
     {
       className: styles$a.pulpit,
-      "data-testid": "ma-pulpit-pulpit",
+      "data-testid": "mf-pulpit-pulpit",
       children: t.map((u, v) => /* @__PURE__ */ jsxRuntimeExports.jsx(
         PulpitItem,
         {
@@ -3326,17 +3326,17 @@ const Pulpit = ({ items: t }) => {
   "div",
   {
     className: styles$9.wrapper,
-    "data-testid": "ma-pulpit-wrapper",
+    "data-testid": "mf-pulpit-wrapper",
     children: t
   }
 ), PulpitView = (t) => /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$3, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Pulpit, { ...t }) }), mockData = {
   items: [
     {
-      name: "ma-pulpit.my-computer",
+      name: "mf-pulpit.my-computer",
       icon: "mycomputer"
     },
     {
-      name: "ma-pulpit.recycle",
+      name: "mf-pulpit.recycle",
       icon: "recycle"
     }
   ]
@@ -3362,7 +3362,7 @@ const shutdownDomain = new ShutdownDomain(), DomainContext$2 = createContext(shu
   const { t } = useTranslation();
   return {
     translations: useMemo(() => ({
-      text: t("ma-shutdown.cancel")
+      text: t("mf-shutdown.cancel")
     }), [t])
   };
 }, Cancel = () => {
@@ -3370,7 +3370,7 @@ const shutdownDomain = new ShutdownDomain(), DomainContext$2 = createContext(shu
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Tt,
     {
-      id: "ma-shutdown-controller-cancel",
+      id: "mf-shutdown-controller-cancel",
       text: t.text
     }
   );
@@ -3384,7 +3384,7 @@ function useShutdown() {
 }
 const useOk = () => {
   const { t } = useTranslation(), { shutdownDomain: r } = useShutdown(), u = useMemo(() => ({
-    text: t("ma-shutdown.ok")
+    text: t("mf-shutdown.ok")
   }), [t]);
   return {
     onClick: () => {
@@ -3397,7 +3397,7 @@ const useOk = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Tt,
     {
-      id: "ma-shutdown-controller-ok",
+      id: "mf-shutdown-controller-ok",
       onClick: t,
       text: r.text
     }
@@ -3406,7 +3406,7 @@ const useOk = () => {
   "div",
   {
     className: styles$8.controller,
-    "data-testid": "ma-shutdown-controller",
+    "data-testid": "mf-shutdown-controller",
     children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Ok, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Cancel, {})
@@ -3419,7 +3419,7 @@ function useDescription() {
   const { t } = useTranslation();
   return {
     translations: useMemo(() => ({
-      description: t("ma-shutdown.description")
+      description: t("mf-shutdown.description")
     }), [t])
   };
 }
@@ -3433,13 +3433,13 @@ const Description = () => {
         height: "32",
         src: "/icons/applications/mycomputer.png",
         alt: "",
-        "data-test-id": "ma-shutdown-description-icon"
+        "data-test-id": "mf-shutdown-description-icon"
       }
     ),
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       ve,
       {
-        id: "ma-shutdown-description-text",
+        id: "mf-shutdown-description-text",
         text: t.description
       }
     )
@@ -3454,13 +3454,13 @@ const Description = () => {
     presets: useMemo(() => [
       {
         preset: EShutdownPresets.SHUTDOWN,
-        content: t("ma-shutdown.shutdown"),
-        id: "ma-shutdown-preset-shutdown"
+        content: t("mf-shutdown.shutdown"),
+        id: "mf-shutdown-preset-shutdown"
       },
       {
         preset: EShutdownPresets.RESTART,
-        content: t("ma-shutdown.restart"),
-        id: "ma-shutdown-preset-restart"
+        content: t("mf-shutdown.restart"),
+        id: "mf-shutdown-preset-restart"
       }
     ], [t]),
     setPreset: (le) => {
@@ -3475,7 +3475,7 @@ const Description = () => {
     {
       initialChecked: v.preset === r,
       id: v.id,
-      name: "ma-timer-presets",
+      name: "mf-timer-presets",
       onChange: () => u(v.preset),
       text: {
         content: v.content,
@@ -3635,7 +3635,7 @@ const Controller = observer(() => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
-      "data-testid": "ma-timer-controller",
+      "data-testid": "mf-timer-controller",
       className: styles$4.controller,
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -3675,7 +3675,7 @@ const Controller = observer(() => {
   player
 }, useReset = () => {
   const { t } = useTranslation(), { timerDomain: r } = useTimer(), u = useMemo(() => ({
-    reset: t("ma-timer.reset")
+    reset: t("mf-timer.reset")
   }), [t]), v = () => {
     E || r.playerDomain.reset();
   }, E = r.status === ETimerStatus.PLAY || r.time.seconds === 0 && r.time.minutes === 0 && r.time.hours === 0;
@@ -3689,7 +3689,7 @@ const Controller = observer(() => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Tt,
     {
-      id: "ma-timer-player-reset",
+      id: "mf-timer-player-reset",
       disabled: t,
       onClick: r,
       text: u
@@ -3697,8 +3697,8 @@ const Controller = observer(() => {
   );
 }), useStartAndStop = () => {
   const { t } = useTranslation(), { timerDomain: r } = useTimer(), u = useMemo(() => ({
-    start: t("ma-timer.start"),
-    stop: t("ma-timer.stop")
+    start: t("mf-timer.start"),
+    stop: t("mf-timer.stop")
   }), [t]), v = () => {
     r.status === ETimerStatus.PLAY ? r.playerDomain.stop() : r.playerDomain.start();
   }, E = r.status === ETimerStatus.PLAY ? u.stop : u.start;
@@ -3712,7 +3712,7 @@ const Controller = observer(() => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Tt,
     {
-      id: "ma-timer-player-start-and-stop",
+      id: "mf-timer-player-start-and-stop",
       disabled: t,
       onClick: r,
       text: u
@@ -3722,7 +3722,7 @@ const Controller = observer(() => {
   "div",
   {
     className: styles$3.player,
-    "data-testid": "ma-timer-player",
+    "data-testid": "mf-timer-player",
     children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(StartAndStop, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Reset, {})
@@ -3736,32 +3736,32 @@ const Controller = observer(() => {
   ), E = useMemo(() => [
     {
       preset: ETimerPresets.THREE_MINUTES,
-      content: t("ma-timer.presets.three-minutes"),
-      id: "ma-timer-preset-3-minutes"
+      content: t("mf-timer.presets.three-minutes"),
+      id: "mf-timer-preset-3-minutes"
     },
     {
       preset: ETimerPresets.FIVE_MINUTES,
-      content: t("ma-timer.presets.five-minutes"),
-      id: "ma-timer-preset-5-minutes"
+      content: t("mf-timer.presets.five-minutes"),
+      id: "mf-timer-preset-5-minutes"
     },
     {
       preset: ETimerPresets.TEN_MINUTES,
-      content: t("ma-timer.presets.ten-minutes"),
-      id: "ma-timer-preset-10-minutes"
+      content: t("mf-timer.presets.ten-minutes"),
+      id: "mf-timer-preset-10-minutes"
     },
     {
       preset: ETimerPresets.FIFTEEN_MINUTES,
-      content: t("ma-timer.presets.fifteen-minutes"),
-      id: "ma-timer-preset-15-minutes"
+      content: t("mf-timer.presets.fifteen-minutes"),
+      id: "mf-timer-preset-15-minutes"
     },
     {
       preset: ETimerPresets.CUSTOM_MINUTES,
-      content: t("ma-timer.presets.custom"),
-      id: "ma-timer-preset-custom"
+      content: t("mf-timer.presets.custom"),
+      id: "mf-timer-preset-custom"
     }
   ], [t]), ee = (xe) => {
     le || (r.presetsDomain.setPreset(xe), v(xe));
-  }, le = r.status === ETimerStatus.PLAY, we = t("ma-timer.presets.title");
+  }, le = r.status === ETimerStatus.PLAY, we = t("mf-timer.presets.title");
   return {
     disabled: le,
     presets: E,
@@ -3775,8 +3775,8 @@ const Controller = observer(() => {
     Cr,
     {
       className: styles$2.presets,
-      "data-testid": "ma-timer-presets",
-      id: "ma-timer-presets",
+      "data-testid": "mf-timer-presets",
+      id: "mf-timer-presets",
       title: E,
       children: r.map((ee) => /* @__PURE__ */ jsxRuntimeExports.jsx(
         Pr,
@@ -3784,7 +3784,7 @@ const Controller = observer(() => {
           initialChecked: ee.preset === u,
           disabled: t,
           id: ee.id,
-          name: "ma-timer-presets",
+          name: "mf-timer-presets",
           onChange: () => v(ee.preset),
           text: {
             content: ee.content,
@@ -3813,13 +3813,13 @@ const Screen = observer(() => {
     "div",
     {
       className: styles$1.screen,
-      "data-testid": "ma-timer-screen",
+      "data-testid": "mf-timer-screen",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "span",
           {
             className: styles$1.time,
-            "data-testid": "ma-timer-screen-hours",
+            "data-testid": "mf-timer-screen-hours",
             children: t
           }
         ),
@@ -3828,7 +3828,7 @@ const Screen = observer(() => {
           "span",
           {
             className: styles$1.time,
-            "data-testid": "ma-timer-screen-minutes",
+            "data-testid": "mf-timer-screen-minutes",
             children: r
           }
         ),
@@ -3837,7 +3837,7 @@ const Screen = observer(() => {
           "span",
           {
             className: styles$1.time,
-            "data-testid": "ma-timer-screen-seconds",
+            "data-testid": "mf-timer-screen-seconds",
             children: u
           }
         )
@@ -3850,7 +3850,7 @@ const Screen = observer(() => {
   "div",
   {
     className: styles.wrapper,
-    "data-testid": "ma-timer-wrapper",
+    "data-testid": "mf-timer-wrapper",
     children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Presets, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Controller, {}),
@@ -3870,7 +3870,7 @@ class TimezoneDomain {
     this.timezonesValuePairs = this.mapTimezonesToValuePairs(r);
   }
   createI18nKey(r) {
-    return `ma-timezone.stepper.${r}`;
+    return `mf-timezone.stepper.${r}`;
   }
   mapTimezonesToValuePairs(r) {
     return r.map((u) => ({
@@ -3922,7 +3922,7 @@ function useWrapper() {
   }), {
     title: useMemo(
       () => ({
-        title: t("ma-timezone.wrapper.title")
+        title: t("mf-timezone.wrapper.title")
       }),
       [t]
     ).title

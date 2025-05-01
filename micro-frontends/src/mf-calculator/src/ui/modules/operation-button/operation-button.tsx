@@ -10,7 +10,7 @@ export const OperationButton: FunctionComponent<OperationButtonProps> = ({
 	return (
 		<button
 			className={`${styles.button} ${styles[variant]}`}
-			data-testid={`ma-calculator-operation-button-${id}`}
+			data-testid={`mf-calculator-operation-button-${id}`}
 			onClick={onClick}
 			type="button"
 		>

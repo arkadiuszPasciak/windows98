@@ -7,7 +7,7 @@ export const Cancel: FunctionComponent = () => {
 
 	return (
 		<DSButton
-			id="ma-shutdown-controller-cancel"
+			id="mf-shutdown-controller-cancel"
 			text={translations.text}
 		/>
 	)
