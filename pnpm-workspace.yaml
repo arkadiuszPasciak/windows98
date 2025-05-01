@@ -7,5 +7,5 @@ packages:
   - core/tests/*
   - core/toolkit
   - docs
-  - micro-apps
+  - micro-frontends
   - micro-services
