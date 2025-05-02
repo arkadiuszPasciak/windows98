@@ -1,2 +1,2 @@
-export * from "./modal-tabs";
-export * from "./modal-tabs.type";
+export * from './modal-tabs';
+export * from './modal-tabs.type';

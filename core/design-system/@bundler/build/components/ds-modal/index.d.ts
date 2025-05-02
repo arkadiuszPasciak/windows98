@@ -1,1 +1,1 @@
-export * from "./ds-modal";
+export * from './ds-modal';

@@ -1,6 +1,6 @@
-import type { ReactNode } from "react";
-import type { ModalNavigationItem } from "./modal-navigation";
-import type { Tabs } from "./modal-tabs";
+import { ReactNode } from 'react';
+import { ModalNavigationItem } from './modal-navigation';
+import { Tabs } from './modal-tabs';
 export declare enum DSModalCursor {
     DEFAULT = "default",
     MOVE = "move"

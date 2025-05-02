@@ -1,1 +1,1 @@
-export * from "./ds-radio";
+export * from './ds-radio';

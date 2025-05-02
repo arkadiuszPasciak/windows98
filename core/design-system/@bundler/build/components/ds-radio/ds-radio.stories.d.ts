@@ -1,4 +1,4 @@
-import type { DSRadioProps } from "./ds-radio.type";
+import { DSRadioProps } from './ds-radio.type';
 export declare const dsRadioStoriesProps: {
     [key: string]: DSRadioProps;
 };

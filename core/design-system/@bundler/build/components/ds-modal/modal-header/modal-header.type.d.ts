@@ -1,5 +1,5 @@
-import type { MouseEvent } from "react";
-import type { DSModalCursor } from "../ds-modal.type";
+import { MouseEvent } from 'react';
+import { DSModalCursor } from '../ds-modal.type';
 export interface ModalHeaderProps {
     id: string;
     title: string;
