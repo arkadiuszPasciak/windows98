@@ -14,7 +14,7 @@ class PNPMReadPackageHook {
 			sass: "1.83.0",
 			stylelint: "16.2.1",
 			typescript: "5.4.2",
-			vite: "6.3.4",
+			vite: "5.4.19",
 			"vite-plugin-css-injected-by-js": "3.5.2",
 			"vite-plugin-dts": "4.5.3",
 			"vite-tsconfig-paths": "5.1.4",
