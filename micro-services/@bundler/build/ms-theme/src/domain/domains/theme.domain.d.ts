@@ -1,4 +1,4 @@
-import type { ThemeDomainContract, ThemeStrategyContract } from "../contracts";
+import { ThemeDomainContract, ThemeStrategyContract } from '../contracts';
 declare class ThemeDomain<EThemes> implements ThemeDomainContract<EThemes> {
     private themeStrategy;
     constructor(themeStrategy: ThemeStrategyContract<EThemes>);

@@ -1,2 +1,2 @@
-import { FileManagerDomain } from "./domain/domains";
+import { FileManagerDomain } from './domain/domains';
 export declare const MSFileManager: FileManagerDomain;

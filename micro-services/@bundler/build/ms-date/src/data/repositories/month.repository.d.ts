@@ -1,6 +1,6 @@
-import type { MonthRepositoryContract } from "../../domain/contracts";
-import type { EMonth } from "../../domain/models";
-import { DateStrategy } from "./strategies";
+import { MonthRepositoryContract } from '../../domain/contracts';
+import { EMonth } from '../../domain/models';
+import { DateStrategy } from './strategies';
 export declare class MonthRepository implements MonthRepositoryContract {
     private readonly dateStrategy;
     constructor(dateStrategy?: DateStrategy);

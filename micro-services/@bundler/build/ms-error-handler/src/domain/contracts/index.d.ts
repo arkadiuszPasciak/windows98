@@ -1,1 +1,1 @@
-export * from "./error-handler.contract";
+export * from './error-handler.contract';

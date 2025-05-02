@@ -1,1 +1,1 @@
-export { DSHeading } from "./ds-heading";
+export { DSHeading } from './ds-heading';

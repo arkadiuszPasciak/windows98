@@ -1,2 +1,2 @@
-export * from "./domain.contract";
-export * from "./strategy.contract";
+export * from './domain.contract';
+export * from './strategy.contract';

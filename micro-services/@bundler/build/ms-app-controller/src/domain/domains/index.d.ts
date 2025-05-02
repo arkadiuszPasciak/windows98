@@ -1,1 +1,1 @@
-export * from "./app-controller.domain";
+export * from './app-controller.domain';

@@ -1,4 +1,4 @@
-import type { DSDefaultProps } from "../../types/component.type";
+import { DSDefaultProps } from '../../types/component.type';
 export interface DSInputProps extends DSDefaultProps {
     type?: "text" | "password" | "email" | "number";
     id: string;

@@ -1,1 +1,1 @@
-export { ModalHeader } from "./modal-header";
+export { ModalHeader } from './modal-header';

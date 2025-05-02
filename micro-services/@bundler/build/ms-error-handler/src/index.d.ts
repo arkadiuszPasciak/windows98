@@ -1,1 +1,1 @@
-export { MSErrorHandler } from "./domain/domains";
+export { MSErrorHandler } from './domain/domains';

@@ -1,4 +1,4 @@
-import type { EMonth, ETimezone, ICalendar, IFormatOptions, TLocalesArgument } from "../models";
+import { EMonth, ETimezone, ICalendar, IFormatOptions, TLocalesArgument } from '../models';
 export interface DateDomainContract {
     getCalendar(month: EMonth, year: number): ICalendar;
     getDate(value?: string, locales?: TLocalesArgument, options?: IFormatOptions): string;

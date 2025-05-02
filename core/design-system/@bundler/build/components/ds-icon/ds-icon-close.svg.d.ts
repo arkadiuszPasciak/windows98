@@ -1,2 +1,2 @@
-import type { FunctionComponent } from "react";
+import { FunctionComponent } from 'react';
 export declare const DSIconCloseSVG: FunctionComponent;

@@ -1,4 +1,4 @@
-import type { EDay, IFormatOptions, TLocalesArgument } from "../models";
+import { EDay, IFormatOptions, TLocalesArgument } from '../models';
 export interface DateRepositoryContract {
     getDate(value?: string): number;
     getDay(value?: string): EDay;

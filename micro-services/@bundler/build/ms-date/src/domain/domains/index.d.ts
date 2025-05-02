@@ -1,1 +1,1 @@
-export * from "./date.domain";
+export * from './date.domain';

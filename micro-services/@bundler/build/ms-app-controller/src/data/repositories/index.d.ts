@@ -1,1 +1,1 @@
-export * from "./app-controller.repository";
+export * from './app-controller.repository';

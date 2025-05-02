@@ -1,5 +1,5 @@
-import type { EventBusDomainContract } from "../contracts";
-import type { EventBusSubscriber } from "../models";
+import { EventBusDomainContract } from '../contracts';
+import { EventBusSubscriber } from '../models';
 declare class EventBusDomain implements EventBusDomainContract {
     private events;
     emit<Data, EventName extends string>(event: EventName, data?: Data): void;

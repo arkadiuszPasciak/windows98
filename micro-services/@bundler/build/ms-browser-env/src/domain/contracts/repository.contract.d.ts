@@ -1,4 +1,4 @@
-import type { Maybe } from "@windows98/toolkit";
+import { Maybe } from '@windows98/toolkit';
 export default interface BrowserEnvRepositoryContract<T> {
     get(): Maybe<T>;
 }

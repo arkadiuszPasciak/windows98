@@ -1,1 +1,1 @@
-export { AppControllerDomain as MSAppController } from "./domain/domains/index";
+export { AppControllerDomain as MSAppController } from './domain/domains/index';

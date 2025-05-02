@@ -1,1 +1,1 @@
-export { MSEventBus } from "./domain/domains";
+export { MSEventBus } from './domain/domains';

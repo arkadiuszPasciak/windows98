@@ -1,3 +1,3 @@
-import type { FunctionComponent } from "react";
-import type { ModalNavigationProps } from "./modal-navigation.type";
+import { FunctionComponent } from 'react';
+import { ModalNavigationProps } from './modal-navigation.type';
 export declare const ModalNavigation: FunctionComponent<ModalNavigationProps>;

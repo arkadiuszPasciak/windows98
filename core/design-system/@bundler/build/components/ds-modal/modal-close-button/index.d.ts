@@ -1,1 +1,1 @@
-export { ModalCloseButton } from "./modal-close-button";
+export { ModalCloseButton } from './modal-close-button';

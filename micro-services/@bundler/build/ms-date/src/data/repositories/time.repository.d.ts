@@ -1,6 +1,6 @@
-import type { TimeRepositoryContract } from "../../domain/contracts";
-import type { IFormatOptions, TLocalesArgument } from "../../domain/models";
-import { DateStrategy } from "./strategies";
+import { TimeRepositoryContract } from '../../domain/contracts';
+import { IFormatOptions, TLocalesArgument } from '../../domain/models';
+import { DateStrategy } from './strategies';
 export declare class TimeRepository implements TimeRepositoryContract {
     private readonly dateStrategy;
     constructor(dateStrategy?: DateStrategy);

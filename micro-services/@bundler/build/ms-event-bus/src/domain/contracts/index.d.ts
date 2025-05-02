@@ -1,1 +1,1 @@
-export * from "./event-bus.contract";
+export * from './event-bus.contract';

@@ -1,5 +1,5 @@
-import type { Maybe } from "@windows98/toolkit";
-import type { StorageDomainContract, StorageRepositoryStrategyContract } from "../contracts";
+import { Maybe } from '@windows98/toolkit';
+import { StorageDomainContract, StorageRepositoryStrategyContract } from '../contracts';
 export declare class StorageDomain<StorageKeys> implements StorageDomainContract<StorageKeys> {
     private storageRepository;
     constructor(storageRepository: StorageRepositoryStrategyContract<StorageKeys>);
