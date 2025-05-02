@@ -1,1 +1,1 @@
-export * from "./file-manager.domain";
+export * from './file-manager.domain';

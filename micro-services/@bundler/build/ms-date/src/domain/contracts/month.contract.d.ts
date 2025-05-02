@@ -1,4 +1,4 @@
-import type { EMonth } from "../models";
+import { EMonth } from '../models';
 export interface MonthRepositoryContract {
     get(value?: string): EMonth;
 }

@@ -1,1 +1,1 @@
-export { MSLocalStorage, MSSessionStorage } from "./domain/domains";
+export { MSLocalStorage, MSSessionStorage } from './domain/domains';

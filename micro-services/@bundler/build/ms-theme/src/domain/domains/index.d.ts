@@ -1,2 +1,2 @@
-export * from "./strategies";
-export * from "./theme.domain";
+export * from './strategies';
+export * from './theme.domain';

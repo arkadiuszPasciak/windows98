@@ -1,4 +1,4 @@
-import type { AppControllerDomainContract } from "../contracts";
+import { AppControllerDomainContract } from '../contracts';
 export declare class AppControllerDomain implements AppControllerDomainContract {
     private appControllerRepository;
     constructor();

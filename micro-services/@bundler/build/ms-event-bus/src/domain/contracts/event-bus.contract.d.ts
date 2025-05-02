@@ -1,4 +1,4 @@
-import type { EventBusSubscriber } from "../models";
+import { EventBusSubscriber } from '../models';
 export interface EventBusDomainContract {
     emit<Data, EventName extends string>(event: EventName, data?: Data): void;
     off<Data, EventName extends string>(event: EventName, listenerToRemove?: EventBusSubscriber<Data>): void;

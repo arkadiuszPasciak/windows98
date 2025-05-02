@@ -1,1 +1,1 @@
-export { MSLanguage } from "./domain/domains";
+export { MSLanguage } from './domain/domains';

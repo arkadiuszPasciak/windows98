@@ -1,4 +1,4 @@
-import type { LanguageDomainContract, LanguageStrategyContract } from "../contracts";
+import { LanguageDomainContract, LanguageStrategyContract } from '../contracts';
 declare class LanguageDomain<ELanguages> implements LanguageDomainContract<ELanguages> {
     private languageStrategy;
     constructor(languageStrategy: LanguageStrategyContract<ELanguages>);

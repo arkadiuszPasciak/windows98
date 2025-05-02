@@ -1,4 +1,4 @@
-import type { AppConfigBuilderDomainContract } from "../contracts";
+import { AppConfigBuilderDomainContract } from '../contracts';
 export declare class AppConfigBuilderDomain<Config> implements AppConfigBuilderDomainContract<Config> {
     private config;
     constructor(config: Config);

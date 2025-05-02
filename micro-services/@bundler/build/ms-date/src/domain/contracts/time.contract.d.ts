@@ -1,4 +1,4 @@
-import type { IFormatOptions, TLocalesArgument } from "../models";
+import { IFormatOptions, TLocalesArgument } from '../models';
 export interface TimeRepositoryContract {
     getHours(value?: string): number;
     getMilliseconds(value?: string): number;

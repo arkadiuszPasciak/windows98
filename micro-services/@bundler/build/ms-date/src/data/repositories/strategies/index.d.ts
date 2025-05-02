@@ -1,1 +1,1 @@
-export * from "./date.strategy";
+export * from './date.strategy';

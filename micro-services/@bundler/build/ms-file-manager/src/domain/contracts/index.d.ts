@@ -1,1 +1,1 @@
-export * from "./domain.contract";
+export * from './domain.contract';

@@ -1,6 +1,6 @@
-import type { CalendarRepositoryContract } from "../../domain/contracts";
-import type { EMonth, ICalendar } from "../../domain/models";
-import { DateStrategy } from "./strategies";
+import { CalendarRepositoryContract } from '../../domain/contracts';
+import { EMonth, ICalendar } from '../../domain/models';
+import { DateStrategy } from './strategies';
 export declare class CalendarRepository implements CalendarRepositoryContract {
     private readonly dateStrategy;
     constructor(dateStrategy?: DateStrategy);

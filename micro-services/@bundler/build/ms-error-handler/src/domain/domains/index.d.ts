@@ -1,1 +1,1 @@
-export * from "./error-handler.domain";
+export * from './error-handler.domain';

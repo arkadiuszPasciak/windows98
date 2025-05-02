@@ -1,1 +1,1 @@
-export { MSTheme } from "./domain/domains";
+export { MSTheme } from './domain/domains';

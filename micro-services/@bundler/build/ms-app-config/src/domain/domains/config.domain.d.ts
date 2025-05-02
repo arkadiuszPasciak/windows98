@@ -1,4 +1,4 @@
-import type { AppConfigDomainContract } from "../contracts";
+import { AppConfigDomainContract } from '../contracts';
 export declare class AppConfigDomain<Config> implements AppConfigDomainContract<Config> {
     private static instance;
     private static lock;

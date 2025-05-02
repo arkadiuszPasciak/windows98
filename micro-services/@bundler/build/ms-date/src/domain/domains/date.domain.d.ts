@@ -1,6 +1,6 @@
-import { CalendarRepository, DateRepository, MonthRepository, TimeRepository, TimezoneRepository, YearRepository } from "../../data/repositories";
-import type { DateDomainContract } from "../contracts";
-import type { EMonth, ICalendar, IFormatOptions, TLocalesArgument } from "../models";
+import { CalendarRepository, DateRepository, MonthRepository, TimeRepository, TimezoneRepository, YearRepository } from '../../data/repositories';
+import { DateDomainContract } from '../contracts';
+import { EMonth, ICalendar, IFormatOptions, TLocalesArgument } from '../models';
 export declare class DateDomain implements DateDomainContract {
     private readonly calendarRepository;
     private readonly dateRepository;
