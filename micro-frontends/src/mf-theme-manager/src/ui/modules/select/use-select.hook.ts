@@ -1,34 +1,29 @@
 import type { ReactEventHandler } from "react"
 import { useTranslation } from "react-i18next"
+import { useConfig } from "../../config"
 import { useThemeManager } from "../../hooks"
 
 export default function useSelect() {
 	const { t } = useTranslation()
 	const themeManagerDomain = useThemeManager()
+	const { themes, onChangeTheme } = useConfig()
 
 	const handleSelectChange: ReactEventHandler<HTMLSelectElement> = (event) => {
 		themeManagerDomain.setTheme(event.currentTarget.value)
 
-		// TODO: add a function to set the language from the config
+		onChangeTheme(event.currentTarget.value)
 	}
 
-	const language = themeManagerDomain.theme
+	const theme = themeManagerDomain.theme
 
-	// TODO: add a function to get the languages from the config
-	const languages = [
-		{
-			value: "dark",
-			name: t("mf-theme-manager.theme.dark"),
-		},
-		{
-			value: "light",
-			name: t("mf-theme-manager.theme.light"),
-		},
-	]
+	const themeOptions = themes.map((theme) => ({
+		value: theme,
+		name: t(`mf-theme-manager.theme.${theme}`),
+	}))
 
 	return {
-		language,
-		languages,
+		theme,
+		themeOptions,
 		handleSelectChange,
 	}
 }

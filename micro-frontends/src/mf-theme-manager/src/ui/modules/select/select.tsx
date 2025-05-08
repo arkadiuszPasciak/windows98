@@ -4,13 +4,13 @@ import type { FunctionComponent } from "react"
 import useSelect from "./use-select.hook"
 
 export const Select: FunctionComponent = observer(() => {
-	const { handleSelectChange, language, languages } = useSelect()
+	const { handleSelectChange, theme, themeOptions } = useSelect()
 
 	return (
 		<DSSelect
 			id="mf-theme-manager"
-			modelValue={language}
-			options={languages}
+			modelValue={theme}
+			options={themeOptions}
 			onSelect={handleSelectChange}
 		/>
 	)
