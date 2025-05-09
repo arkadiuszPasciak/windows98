@@ -1,18 +1,21 @@
 import { MSTheme } from "@windows98/micro-services"
+import type { Maybe } from "@windows98/toolkit"
 import { makeAutoObservable } from "mobx"
 import type { ThemeManagerDomainContract } from "../contracts"
 
 export class ThemeManagerDomain<EThemes extends string>
 	implements ThemeManagerDomainContract<EThemes>
 {
-	public theme: EThemes
+	public theme: Maybe<EThemes> = null
 	private msTheme: MSTheme<EThemes>
 
 	constructor() {
 		makeAutoObservable(this)
 
 		this.msTheme = new MSTheme()
+	}
 
+	public initTheme(): void {
 		this.theme = this.msTheme.getTheme()
 	}
 

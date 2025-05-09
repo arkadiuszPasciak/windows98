@@ -7,11 +7,13 @@ export const Select: FunctionComponent = observer(() => {
 	const { handleSelectChange, theme, themeOptions } = useSelect()
 
 	return (
-		<DSSelect
-			id="mf-theme-manager"
-			modelValue={theme}
-			options={themeOptions}
-			onSelect={handleSelectChange}
-		/>
+		theme && (
+			<DSSelect
+				id="mf-theme-manager"
+				modelValue={theme}
+				options={themeOptions}
+				onSelect={handleSelectChange}
+			/>
+		)
 	)
 })
