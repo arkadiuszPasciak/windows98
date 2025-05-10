@@ -3,6 +3,7 @@ declare class ThemeDomain<EThemes> implements ThemeDomainContract<EThemes> {
     private themeStrategy;
     constructor(themeStrategy: ThemeStrategyContract<EThemes>);
     updateTheme(theme: EThemes): void;
+    getTheme(): EThemes;
 }
 export declare class MSTheme<EThemes> extends ThemeDomain<EThemes> {
     constructor();

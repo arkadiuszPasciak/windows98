@@ -11,6 +11,10 @@ class ThemeDomain<EThemes> implements ThemeDomainContract<EThemes> {
 	public updateTheme(theme: EThemes): void {
 		this.themeStrategy.applyTheme(theme)
 	}
+
+	public getTheme(): EThemes {
+		return this.themeStrategy.getTheme()
+	}
 }
 
 export class MSTheme<EThemes> extends ThemeDomain<EThemes> {
