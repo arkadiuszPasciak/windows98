@@ -22,8 +22,8 @@ export class ThemeManagerDomain<EThemes extends string>
 	public setTheme(theme: EThemes): void {
 		if (this.theme === theme) return
 
-		this.theme = theme as EThemes
-		this.msTheme.updateTheme(theme as EThemes)
+		this.theme = theme
+		this.msTheme.updateTheme(theme)
 	}
 }
 
