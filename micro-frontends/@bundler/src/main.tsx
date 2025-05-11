@@ -8,6 +8,7 @@ import { AudioButtonView } from "../../src/mf-audio-button/src/ui/views"
 import { CalculatorView } from "../../src/mf-calculator/src/ui/views"
 import { CalendarView } from "../../src/mf-calendar/src/ui/views/calendar.view"
 import { ClockView } from "../../src/mf-clock/src/ui/views"
+import { LanguageManagerView } from "../../src/mf-language-manager/src/ui/views"
 import { NavigationView } from "../../src/mf-navigation/src/ui/views"
 import { ShutdownView } from "../../src/mf-shutdown/src/ui/views"
 import { ThemeManagerView } from "../../src/mf-theme-manager/src/ui/views"
@@ -29,6 +30,10 @@ i18nInit().then(() => {
 			<ThemeManagerView
 				themes={["dark", "light"]}
 				onChangeTheme={(theme) => console.log(`this is ${theme}`)}
+			/>
+			<LanguageManagerView
+				languages={["de", "en", "pl"]}
+				onChangeLanguage={(language) => console.log(`this is ${language}`)}
 			/>
 			<NavigationView>
 				<AudioButtonView />
