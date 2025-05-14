@@ -14,15 +14,15 @@ var Ne;
 function Et() {
   if (Ne) return A;
   Ne = 1;
-  var t = We, a = Symbol.for("react.element"), l = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, d = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, i = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function c(_, h, R) {
+  var t = We, a = Symbol.for("react.element"), l = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, u = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, i = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function d(_, h, R) {
     var b, j = {}, g = null, y = null;
     R !== void 0 && (g = "" + R), h.key !== void 0 && (g = "" + h.key), h.ref !== void 0 && (y = h.ref);
     for (b in h) o.call(h, b) && !i.hasOwnProperty(b) && (j[b] = h[b]);
     if (_ && _.defaultProps) for (b in h = _.defaultProps, h) j[b] === void 0 && (j[b] = h[b]);
-    return { $$typeof: a, type: _, key: g, ref: y, props: j, _owner: d.current };
+    return { $$typeof: a, type: _, key: g, ref: y, props: j, _owner: u.current };
   }
-  return A.Fragment = l, A.jsx = c, A.jsxs = c, A;
+  return A.Fragment = l, A.jsx = d, A.jsxs = d, A;
 }
 var Y = {};
 /**
@@ -37,7 +37,7 @@ var Y = {};
 var Me;
 function St() {
   return Me || (Me = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = We, a = Symbol.for("react.element"), l = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), d = Symbol.for("react.strict_mode"), i = Symbol.for("react.profiler"), c = Symbol.for("react.provider"), _ = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), R = Symbol.for("react.suspense"), b = Symbol.for("react.suspense_list"), j = Symbol.for("react.memo"), g = Symbol.for("react.lazy"), y = Symbol.for("react.offscreen"), P = Symbol.iterator, U = "@@iterator";
+    var t = We, a = Symbol.for("react.element"), l = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), i = Symbol.for("react.profiler"), d = Symbol.for("react.provider"), _ = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), R = Symbol.for("react.suspense"), b = Symbol.for("react.suspense_list"), j = Symbol.for("react.memo"), g = Symbol.for("react.lazy"), y = Symbol.for("react.offscreen"), P = Symbol.iterator, U = "@@iterator";
     function S(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -47,14 +47,14 @@ function St() {
     var z = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     function E(e) {
       {
-        for (var r = arguments.length, s = new Array(r > 1 ? r - 1 : 0), u = 1; u < r; u++)
-          s[u - 1] = arguments[u];
+        for (var r = arguments.length, s = new Array(r > 1 ? r - 1 : 0), c = 1; c < r; c++)
+          s[c - 1] = arguments[c];
         qe("error", e, s);
       }
     }
     function qe(e, r, s) {
       {
-        var u = z.ReactDebugCurrentFrame, p = u.getStackAddendum();
+        var c = z.ReactDebugCurrentFrame, p = c.getStackAddendum();
         p !== "" && (r += "%s", s = s.concat([p]));
         var m = s.map(function(v) {
           return String(v);
@@ -65,16 +65,16 @@ function St() {
     var Ge = !1, Je = !1, Xe = !1, Ke = !1, Ze = !1, fe;
     fe = Symbol.for("react.module.reference");
     function Qe(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === o || e === i || Ze || e === d || e === R || e === b || Ke || e === y || Ge || Je || Xe || typeof e == "object" && e !== null && (e.$$typeof === g || e.$$typeof === j || e.$$typeof === c || e.$$typeof === _ || e.$$typeof === h || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === o || e === i || Ze || e === u || e === R || e === b || Ke || e === y || Ge || Je || Xe || typeof e == "object" && e !== null && (e.$$typeof === g || e.$$typeof === j || e.$$typeof === d || e.$$typeof === _ || e.$$typeof === h || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
       e.$$typeof === fe || e.getModuleId !== void 0));
     }
     function et(e, r, s) {
-      var u = e.displayName;
-      if (u)
-        return u;
+      var c = e.displayName;
+      if (c)
+        return c;
       var p = r.displayName || r.name || "";
       return p !== "" ? s + "(" + p + ")" : s;
     }
@@ -95,7 +95,7 @@ function St() {
           return "Portal";
         case i:
           return "Profiler";
-        case d:
+        case u:
           return "StrictMode";
         case R:
           return "Suspense";
@@ -107,14 +107,14 @@ function St() {
           case _:
             var r = e;
             return ve(r) + ".Consumer";
-          case c:
+          case d:
             var s = e;
             return ve(s._context) + ".Provider";
           case h:
             return et(e, e.render, "ForwardRef");
           case j:
-            var u = e.displayName || null;
-            return u !== null ? u : D(e.type) || "Memo";
+            var c = e.displayName || null;
+            return c !== null ? c : D(e.type) || "Memo";
           case g: {
             var p = e, m = p._payload, v = p._init;
             try {
@@ -195,8 +195,8 @@ function St() {
           try {
             throw Error();
           } catch (p) {
-            var u = p.stack.trim().match(/\n( *(at )?)/);
-            te = u && u[1] || "";
+            var c = p.stack.trim().match(/\n( *(at )?)/);
+            te = c && c[1] || "";
           }
         return `
 ` + te + e;
@@ -215,7 +215,7 @@ function St() {
         if (s !== void 0)
           return s;
       }
-      var u;
+      var c;
       re = !0;
       var p = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
@@ -234,14 +234,14 @@ function St() {
             try {
               Reflect.construct(v, []);
             } catch (C) {
-              u = C;
+              c = C;
             }
             Reflect.construct(e, [], v);
           } else {
             try {
               v.call();
             } catch (C) {
-              u = C;
+              c = C;
             }
             e.call(v.prototype);
           }
@@ -249,14 +249,14 @@ function St() {
           try {
             throw Error();
           } catch (C) {
-            u = C;
+            c = C;
           }
           e();
         }
       } catch (C) {
-        if (C && u && typeof C.stack == "string") {
+        if (C && c && typeof C.stack == "string") {
           for (var f = C.stack.split(`
-`), $ = u.stack.split(`
+`), $ = c.stack.split(`
 `), x = f.length - 1, w = $.length - 1; x >= 1 && w >= 0 && f[x] !== $[w]; )
             w--;
           for (; x >= 1 && w >= 0; x--, w--)
@@ -305,7 +305,7 @@ function St() {
           case j:
             return q(e.type, r, s);
           case g: {
-            var u = e, p = u._payload, m = u._init;
+            var c = e, p = c._payload, m = c._init;
             try {
               return q(m(p), r, s);
             } catch {
@@ -322,7 +322,7 @@ function St() {
       } else
         ye.setExtraStackFrame(null);
     }
-    function st(e, r, s, u, p) {
+    function st(e, r, s, c, p) {
       {
         var m = Function.call.bind(G);
         for (var v in e)
@@ -330,14 +330,14 @@ function St() {
             var f = void 0;
             try {
               if (typeof e[v] != "function") {
-                var $ = Error((u || "React class") + ": " + s + " type `" + v + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[v] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                var $ = Error((c || "React class") + ": " + s + " type `" + v + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[v] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
                 throw $.name = "Invariant Violation", $;
               }
-              f = e[v](r, v, u, s, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+              f = e[v](r, v, c, s, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
             } catch (x) {
               f = x;
             }
-            f && !(f instanceof Error) && (J(p), E("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", u || "React class", s, v, typeof f), J(null)), f instanceof Error && !(f.message in Re) && (Re[f.message] = !0, J(p), E("Failed %s type: %s", s, f.message), J(null));
+            f && !(f instanceof Error) && (J(p), E("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", c || "React class", s, v, typeof f), J(null)), f instanceof Error && !(f.message in Re) && (Re[f.message] = !0, J(p), E("Failed %s type: %s", s, f.message), J(null));
           }
       }
     }
@@ -412,7 +412,7 @@ function St() {
         });
       }
     }
-    var _t = function(e, r, s, u, p, m, v) {
+    var _t = function(e, r, s, c, p, m, v) {
       var f = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: a,
@@ -433,7 +433,7 @@ function St() {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: u
+        value: c
       }), Object.defineProperty(f, "_source", {
         configurable: !1,
         enumerable: !1,
@@ -441,7 +441,7 @@ function St() {
         value: p
       }), Object.freeze && (Object.freeze(f.props), Object.freeze(f)), f;
     };
-    function mt(e, r, s, u, p) {
+    function mt(e, r, s, c, p) {
       {
         var m, v = {}, f = null, $ = null;
         s !== void 0 && (Ee(s), f = "" + s), ft(r) && (Ee(r.key), f = "" + r.key), dt(r) && ($ = r.ref, vt(r, p));
@@ -456,7 +456,7 @@ function St() {
           var w = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
           f && ht(v, w), $ && pt(v, w);
         }
-        return _t(e, f, $, p, u, Se.current, v);
+        return _t(e, f, $, p, c, Se.current, v);
       }
     }
     var ae = z.ReactCurrentOwner, Ce = z.ReactDebugCurrentFrame;
@@ -509,8 +509,8 @@ Check the top-level render call using <` + s + ">.");
         if (He[s])
           return;
         He[s] = !0;
-        var u = "";
-        e && e._owner && e._owner !== ae.current && (u = " It was passed a child from " + D(e._owner.type) + "."), F(e), E('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', s, u), F(null);
+        var c = "";
+        e && e._owner && e._owner !== ae.current && (c = " It was passed a child from " + D(e._owner.type) + "."), F(e), E('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', s, c), F(null);
       }
     }
     function ke(e, r) {
@@ -519,8 +519,8 @@ Check the top-level render call using <` + s + ">.");
           return;
         if (ne(e))
           for (var s = 0; s < e.length; s++) {
-            var u = e[s];
-            se(u) && Oe(u, r);
+            var c = e[s];
+            se(c) && Oe(c, r);
           }
         else if (se(e))
           e._store && (e._store.validated = !0);
@@ -547,8 +547,8 @@ Check the top-level render call using <` + s + ">.");
         else
           return;
         if (s) {
-          var u = D(r);
-          st(s, e.props, "prop", u, e);
+          var c = D(r);
+          st(s, e.props, "prop", c, e);
         } else if (r.PropTypes !== void 0 && !le) {
           le = !0;
           var p = D(r);
@@ -560,16 +560,16 @@ Check the top-level render call using <` + s + ">.");
     function wt(e) {
       {
         for (var r = Object.keys(e.props), s = 0; s < r.length; s++) {
-          var u = r[s];
-          if (u !== "children" && u !== "key") {
-            F(e), E("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", u), F(null);
+          var c = r[s];
+          if (c !== "children" && c !== "key") {
+            F(e), E("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", c), F(null);
             break;
           }
         }
         e.ref !== null && (F(e), E("Invalid attribute `ref` supplied to `React.Fragment`."), F(null));
       }
     }
-    function Pe(e, r, s, u, p, m) {
+    function Pe(e, r, s, c, p, m) {
       {
         var v = Qe(e);
         if (!v) {
@@ -586,7 +586,7 @@ Check the top-level render call using <` + s + ">.");
         if (v) {
           var V = r.children;
           if (V !== void 0)
-            if (u)
+            if (c)
               if (ne(V)) {
                 for (var N = 0; N < V.length; N++)
                   ke(V[N], e);
@@ -620,21 +620,21 @@ const Ie = {
   disabled: a = !1,
   onClick: l,
   text: o,
-  id: d,
+  id: u,
   isTextVisible: i = !0,
-  iconLeft: c,
+  iconLeft: d,
   iconRight: _
 }) => /* @__PURE__ */ n.jsxs(
   "button",
   {
     "aria-label": i ? void 0 : o,
     className: `${Ie["ds-button"]} ${Ie[`size-${t}`]}`,
-    "data-testid": `${d}-button`,
+    "data-testid": `${u}-button`,
     type: "button",
     disabled: a,
     onClick: l,
     children: [
-      c,
+      d,
       i && o,
       _
     ]
@@ -651,9 +651,9 @@ function Ae({
   className: a = "",
   direction: l,
   disabled: o,
-  id: d,
+  id: u,
   onClick: i,
-  size: c
+  size: d
 }) {
   return /* @__PURE__ */ n.jsx(
     "button",
@@ -662,10 +662,10 @@ function Ae({
       className: `
 				${ie["ds-button-arrow"]}
 				${ie[`arrow-${l}`]}
-				${ie[`size-${c}`]}
+				${ie[`size-${d}`]}
 				${a}
 			`,
-      "data-testid": `ds-button-arrow-${d}-${l}`,
+      "data-testid": `ds-button-arrow-${u}-${l}`,
       disabled: o,
       type: "button",
       onClick: i
@@ -680,30 +680,30 @@ const Tt = "_wrapper_nsxiw_96", Ct = "_disabled_nsxiw_106", Dt = "_input_nsxiw_1
   initialChecked: t = !1,
   onChange: a
 }) => {
-  const [l, o] = T(t), d = () => {
+  const [l, o] = T(t), u = () => {
     const i = !l;
     o(i), a && a(i);
   };
   return M(() => {
     o(t);
-  }, [t]), { checked: l, handleChange: d };
+  }, [t]), { checked: l, handleChange: u };
 }, Vr = ({
   initialChecked: t = !1,
   disabled: a = !1,
   id: l,
   name: o,
-  onChange: d,
+  onChange: u,
   readonly: i = !1,
-  text: c
+  text: d
 }) => {
   const { checked: _, handleChange: h } = Ht({
     initialChecked: t,
-    onChange: d
+    onChange: u
   });
   return /* @__PURE__ */ n.jsxs(
     "label",
     {
-      "aria-label": c,
+      "aria-label": d,
       className: `${X.wrapper} ${a ? X.disabled : ""}`,
       "data-testid": `${l}-checkbox`,
       children: [
@@ -728,7 +728,7 @@ const Tt = "_wrapper_nsxiw_96", Ct = "_disabled_nsxiw_106", Dt = "_input_nsxiw_1
           {
             className: X.text,
             id: l,
-            text: c
+            text: d
           }
         )
       ]
@@ -1080,8 +1080,7 @@ function Lt({ initialValue: t, onChange: a }) {
   return M(() => {
     o(t);
   }, [t]), { value: l, handleInputChange: (i) => {
-    const c = i.target.value;
-    o(c), a && a(c);
+    o(i.target.value), a && a(i);
   } };
 }
 function Ut({
@@ -1089,9 +1088,9 @@ function Ut({
   type: a = "text",
   id: l,
   disabled: o = !1,
-  readonly: d = !1,
+  readonly: u = !1,
   initialValue: i = "",
-  labelName: c,
+  labelName: d,
   wrapperLayout: _ = "vertical",
   min: h,
   max: R,
@@ -1104,13 +1103,13 @@ function Ut({
       className: `${K.wrapper} ${K[`wrapper-${_}`]} ${t}`,
       "data-testid": y,
       children: [
-        c && /* @__PURE__ */ n.jsx(
+        d && /* @__PURE__ */ n.jsx(
           "label",
           {
             className: K.label,
             "data-testid": `ds-input-label-${l}`,
             htmlFor: y,
-            children: c
+            children: d
           }
         ),
         /* @__PURE__ */ n.jsx(
@@ -1121,7 +1120,7 @@ function Ut({
             "data-testid": `ds-input-input-${l}`,
             type: a,
             disabled: o,
-            readOnly: d,
+            readOnly: u,
             value: j,
             min: h ?? void 0,
             max: R ?? void 0,
@@ -1169,7 +1168,7 @@ const Bt = "_modal_jl7a7_96", Wt = "_container_jl7a7_114", Z = {
   title: a,
   onClose: l,
   cursorType: o = "default",
-  mouseDownEvent: d,
+  mouseDownEvent: u,
   mouseUpEvent: i
 }) => /* @__PURE__ */ n.jsxs(
   "div",
@@ -1177,7 +1176,7 @@ const Bt = "_modal_jl7a7_96", Wt = "_container_jl7a7_114", Z = {
     className: Zt.header,
     "data-testid": `${t}-modal-header`,
     style: { cursor: o },
-    onMouseDown: d,
+    onMouseDown: u,
     onMouseUp: i,
     children: [
       /* @__PURE__ */ n.jsx(
@@ -1231,8 +1230,8 @@ const Bt = "_modal_jl7a7_96", Wt = "_container_jl7a7_114", Z = {
   const [a, l] = T(t);
   return {
     activeTab: a,
-    setActiveTab: (d) => {
-      l(d);
+    setActiveTab: (u) => {
+      l(u);
     }
   };
 }, sr = ({
@@ -1240,29 +1239,29 @@ const Bt = "_modal_jl7a7_96", Wt = "_container_jl7a7_114", Z = {
   initialIndex: a = 0,
   tabs: l
 }) => {
-  const { activeTab: o, setActiveTab: d } = lr({ initialIndex: a });
+  const { activeTab: o, setActiveTab: u } = lr({ initialIndex: a });
   return /* @__PURE__ */ n.jsxs(
     "div",
     {
       className: O.wrapper,
       "data-testid": `${t}-modal-tabs`,
       children: [
-        /* @__PURE__ */ n.jsx("div", { className: O.tabs, children: l.map((i, c) => /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ n.jsx("div", { className: O.tabs, children: l.map((i, d) => /* @__PURE__ */ n.jsx(
           "button",
           {
-            className: `${O.tab} ${c === o ? O["active-tab"] : ""}`,
-            "data-testid": `${t}-modal-tabs-tab-${c}`,
+            className: `${O.tab} ${d === o ? O["active-tab"] : ""}`,
+            "data-testid": `${t}-modal-tabs-tab-${d}`,
             type: "button",
-            onClick: () => d(c),
+            onClick: () => u(d),
             children: i.title
           },
           `${t}-modal-tabs-tab`
         )) }),
-        /* @__PURE__ */ n.jsx("div", { className: O.content, children: l.map((i, c) => /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ n.jsx("div", { className: O.content, children: l.map((i, d) => /* @__PURE__ */ n.jsx(
           "div",
           {
-            className: `${O["content-tab"]} ${c === o ? O["active-content-tab"] : ""}`,
-            "data-testid": `${t}-modal-tabs-content-${c}`,
+            className: `${O["content-tab"]} ${d === o ? O["active-content-tab"] : ""}`,
+            "data-testid": `${t}-modal-tabs-content-${d}`,
             children: i.component
           },
           `${t}-modal-tabs-content`
@@ -1272,14 +1271,14 @@ const Bt = "_modal_jl7a7_96", Wt = "_container_jl7a7_114", Z = {
   );
 };
 var Q = /* @__PURE__ */ ((t) => (t.DEFAULT = "default", t.MOVE = "move", t))(Q || {});
-const or = (t, a, l, o, d, i, c) => {
-  !a.current || !l || (o(Q.MOVE), d(!0), i(a.current.offsetLeft - t.clientX), c(a.current.offsetTop - t.clientY));
+const or = (t, a, l, o, u, i, d) => {
+  !a.current || !l || (o(Q.MOVE), u(!0), i(a.current.offsetLeft - t.clientX), d(a.current.offsetTop - t.clientY));
 }, ir = (t, a, l) => {
   t && (a(!1), l(Q.DEFAULT));
-}, cr = (t, a, l, o, d, i) => {
-  !o || !a.current || !l || (a.current.style.left = `${t.clientX + d}px`, a.current.style.top = `${t.clientY + i}px`);
+}, cr = (t, a, l, o, u, i) => {
+  !o || !a.current || !l || (a.current.style.left = `${t.clientX + u}px`, a.current.style.top = `${t.clientY + i}px`);
 }, ur = ({ moveWindow: t, onClose: a }) => {
-  const l = Fe(null), o = Fe(null), [d, i] = T(!1), [c, _] = T(
+  const l = Fe(null), o = Fe(null), [u, i] = T(!1), [d, _] = T(
     Q.DEFAULT
   ), [h, R] = T(0), [b, j] = T(0);
   M(() => {
@@ -1307,12 +1306,12 @@ const or = (t, a, l, o, d, i, c) => {
         S,
         l,
         t,
-        d,
+        u,
         h,
         b
       );
     },
-    [t, d, h, b]
+    [t, u, h, b]
   );
   return {
     modalElement: l,
@@ -1320,7 +1319,7 @@ const or = (t, a, l, o, d, i, c) => {
     mouseDown: g,
     mouseUp: y,
     mouseMove: P,
-    cursorType: c,
+    cursorType: d,
     closeModal: () => {
       var S;
       (S = o.current) == null || S.close(), a();
@@ -1331,9 +1330,9 @@ const or = (t, a, l, o, d, i, c) => {
   title: a,
   width: l = "450px",
   height: o = "150px",
-  resizeWindow: d = !1,
+  resizeWindow: u = !1,
   moveWindow: i = !0,
-  tabs: c,
+  tabs: d,
   children: _,
   navigation: h,
   onClose: R
@@ -1356,7 +1355,7 @@ const or = (t, a, l, o, d, i, c) => {
       children: /* @__PURE__ */ n.jsxs(
         "div",
         {
-          className: `${Z.container} ${d ? Z["resize-window"] : ""} ${i ? Z["move-window"] : ""}`,
+          className: `${Z.container} ${u ? Z["resize-window"] : ""} ${i ? Z["move-window"] : ""}`,
           "data-testid": `${t}-modal-container`,
           ref: j,
           style: { width: l, height: o },
@@ -1372,7 +1371,7 @@ const or = (t, a, l, o, d, i, c) => {
                 title: a
               }
             ),
-            !c && /* @__PURE__ */ n.jsxs(n.Fragment, { children: [
+            !d && /* @__PURE__ */ n.jsxs(n.Fragment, { children: [
               h && /* @__PURE__ */ n.jsx(
                 tr,
                 {
@@ -1382,12 +1381,12 @@ const or = (t, a, l, o, d, i, c) => {
               ),
               _ && /* @__PURE__ */ n.jsx(Jt, { id: t, children: _ })
             ] }),
-            c && /* @__PURE__ */ n.jsx(
+            d && /* @__PURE__ */ n.jsx(
               sr,
               {
                 id: t,
-                initialIndex: c.initialIndex,
-                tabs: c.tabs
+                initialIndex: d.initialIndex,
+                tabs: d.tabs
               }
             )
           ]
@@ -1417,10 +1416,10 @@ const kr = ({
   disabled: a = !1,
   id: l,
   onChange: o,
-  name: d,
+  name: u,
   text: i
 }) => {
-  const { checked: c, handleChange: _ } = pr({
+  const { checked: d, handleChange: _ } = pr({
     initialChecked: t,
     onChange: o
   });
@@ -1435,10 +1434,10 @@ const kr = ({
           "input",
           {
             className: L.input,
-            checked: c,
+            checked: d,
             "data-testid": `${l}-radio-input`,
             disabled: a,
-            name: d,
+            name: u,
             type: "radio",
             value: l,
             onChange: _
@@ -1449,7 +1448,7 @@ const kr = ({
           {
             className: L.icon,
             "data-testid": `${l}-radio-icon`,
-            children: /* @__PURE__ */ n.jsx(Nt, { isChecked: c })
+            children: /* @__PURE__ */ n.jsx(Nt, { isChecked: d })
           }
         ),
         i.visible && /* @__PURE__ */ n.jsx(
@@ -1477,8 +1476,8 @@ function gr(t) {
   const [a, l] = T(t);
   return {
     value: a,
-    handleChange: (d) => {
-      l(d.target.value);
+    handleChange: (u) => {
+      l(u.target.value);
     }
   };
 }
@@ -1487,13 +1486,13 @@ function Pr({
   id: a,
   required: l = !1,
   disabled: o = !1,
-  modelValue: d,
+  modelValue: u,
   options: i,
-  labelName: c,
+  labelName: d,
   onSelect: _,
   wrapperLayout: h = "vertical"
 }) {
-  const { value: R, handleChange: b } = gr(d), j = (g) => {
+  const { value: R, handleChange: b } = gr(u), j = (g) => {
     b(g), _(g);
   };
   return /* @__PURE__ */ n.jsxs(
@@ -1501,13 +1500,13 @@ function Pr({
     {
       className: `${k.wrapper} ${k[`wrapper-${h}`]} ${t}`,
       children: [
-        c && /* @__PURE__ */ n.jsx(
+        d && /* @__PURE__ */ n.jsx(
           "label",
           {
             className: k.label,
             "data-testid": `ds-select-label-${a}`,
             htmlFor: a,
-            children: c
+            children: d
           }
         ),
         /* @__PURE__ */ n.jsx(
@@ -1547,9 +1546,9 @@ function wr({
   onIncrease: a,
   onDecrease: l
 }) {
-  const [o, d] = T(t);
+  const [o, u] = T(t);
   return M(() => {
-    d(t);
+    u(t);
   }, [t]), { value: o, handleIncrease: () => {
     a && a();
   }, handleDecrease: () => {
@@ -1561,12 +1560,12 @@ function zr({
   id: a,
   modelValue: l,
   disabled: o = !1,
-  onIncrease: d,
+  onIncrease: u,
   onDecrease: i
 }) {
-  const { value: c, handleIncrease: _, handleDecrease: h } = wr({
+  const { value: d, handleIncrease: _, handleDecrease: h } = wr({
     modelValue: l,
-    onIncrease: d,
+    onIncrease: u,
     onDecrease: i
   });
   return /* @__PURE__ */ n.jsxs(
@@ -1582,7 +1581,7 @@ function zr({
           Ut,
           {
             id: `stepper-${a}`,
-            initialValue: c,
+            initialValue: d,
             readonly: !0
           }
         ),
@@ -1636,8 +1635,8 @@ function Er({ initialValue: t, onChange: a }) {
   return M(() => {
     o(t);
   }, [t]), { value: l, handleTextareaChange: (i) => {
-    const c = i.target.value;
-    o(c), a && a(c);
+    const d = i.target.value;
+    o(d), a && a(d);
   } };
 }
 function Fr({
@@ -1645,9 +1644,9 @@ function Fr({
   disabled: a = !1,
   readonly: l = !1,
   initialValue: o = "",
-  labelName: d,
+  labelName: u,
   wrapperLayout: i = "vertical",
-  min: c,
+  min: d,
   max: _,
   onChange: h
 }) {
@@ -1661,13 +1660,13 @@ function Fr({
       className: ce[`wrapper-${i}`],
       "data-testid": `${t}-wrapper-textarea`,
       children: [
-        d && /* @__PURE__ */ n.jsx(
+        u && /* @__PURE__ */ n.jsx(
           "label",
           {
             className: ce.label,
             "data-testid": `${t}-label`,
             htmlFor: t,
-            children: d
+            children: u
           }
         ),
         /* @__PURE__ */ n.jsx(
@@ -1679,7 +1678,7 @@ function Fr({
             disabled: a,
             readOnly: l,
             value: R,
-            minLength: c ?? void 0,
+            minLength: d ?? void 0,
             maxLength: _ ?? void 0,
             name: t,
             onChange: b
