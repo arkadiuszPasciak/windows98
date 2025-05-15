@@ -8,13 +8,11 @@ export const FileName: FunctionComponent = observer(() => {
 
 	return (
 		<DSInput
-			id="ma-notepad-save-file-name"
+			id="mf-notepad-save-file-name"
 			initialValue={translations.untitled}
 			labelName={translations.fileName}
-			// TODO: Fix wrapperLayout prop
-			// TODO: Fix onChange prop with value
 			wrapperLayout="horizontal"
-			onChange={(event) => setFileName(event)}
+			onChange={setFileName}
 		/>
 	)
 })

@@ -12,7 +12,7 @@ export const Modal: FunctionComponent = () => {
 
 	return (
 		<DSModal
-			id="ma-notepad-save"
+			id="mf-save-file"
 			moveWindow={false}
 			onClose={closeModal}
 			title={translations.modalTitle}

@@ -1,4 +1,3 @@
-import { useMemo } from "react"
 import { useTranslation } from "react-i18next"
 import { useSaveFile } from "../../hooks"
 
@@ -14,11 +13,9 @@ export const useModal = () => {
 		saveFileDomain.saveFile()
 	}
 
-	const translations = useMemo(() => {
-		return {
-			modalTitle: t("ma-save-file.modal-title"),
-		}
-	}, [t])
+	const translations = {
+		modalTitle: t("mf-save-file.modal-title"),
+	}
 
 	return {
 		closeModal,

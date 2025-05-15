@@ -1,4 +1,3 @@
-import { useMemo } from "react"
 import { useTranslation } from "react-i18next"
 import { useSaveFile } from "../../hooks"
 
@@ -10,11 +9,9 @@ export const useSaveButton = () => {
 		saveFileDomain.saveFile()
 	}
 
-	const translations = useMemo(() => {
-		return {
-			save: t("ma-save-file.save"),
-		}
-	}, [t])
+	const translations = {
+		save: t("mf-save-file.save"),
+	}
 
 	return {
 		saveFile,

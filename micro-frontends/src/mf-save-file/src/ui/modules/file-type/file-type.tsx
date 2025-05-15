@@ -4,18 +4,18 @@ import type { FunctionComponent } from "react"
 import { useFileType } from "./use-file-type.hook"
 
 export const FileType: FunctionComponent = observer(() => {
-	const { fileType, fileTypes, handleSelectChange, translations } =
-		useFileType()
+	const { fileType, fileTypes, setFileType, translations } = useFileType()
 
 	return (
-		<DSSelect
-			id="ma-notepad-save-as-type"
-			labelName={translations.saveAs}
-			modelValue={fileType}
-			options={fileTypes.text}
-			onSelect={handleSelectChange}
-			// TODO: Add wrapperLayoyut prop
-			// wrapperLayout="horizontal"
-		/>
+		fileType && (
+			<DSSelect
+				id="mf-notepad-save-as-type"
+				labelName={translations.saveAs}
+				modelValue={fileType}
+				options={fileTypes.text}
+				onSelect={setFileType}
+				wrapperLayout="horizontal"
+			/>
+		)
 	)
 })

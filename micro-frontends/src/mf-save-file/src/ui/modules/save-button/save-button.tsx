@@ -8,7 +8,7 @@ export const SaveButton: FunctionComponent = observer(() => {
 
 	return (
 		<DSButton
-			id="ma-save-file-save"
+			id="mf-save-file-save"
 			onClick={saveFile}
 			text={translations.save}
 		/>
