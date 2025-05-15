@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from "vitest"
 import { FileManagerDomain } from "../../src/domain/domains/file-manager.domain"
-import { EFileTextTypes } from "../../src/domain/models"
+import { TextFileTypes } from "../../src/domain/models"
 
 describe("FileManagerDomain", () => {
 	let fileManager: FileManagerDomain
@@ -40,7 +40,7 @@ describe("FileManagerDomain", () => {
 	it("should save a file with the given content, filename, and type", async () => {
 		const content = "file content"
 		const filename = "test.txt"
-		const type = EFileTextTypes.PLAIN
+		const type = TextFileTypes.PLAIN
 
 		const createObjectURLMock = vi.fn(() => "blob:url")
 		const appendChildMock = vi.fn()
