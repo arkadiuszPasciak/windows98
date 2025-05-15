@@ -1,5 +1,4 @@
-import { EFileTextTypes } from '../models';
 export interface FileManagerDomainContract {
     openFile(): Promise<string>;
-    saveFile(content: string, filename: string, type: EFileTextTypes): Promise<void>;
+    saveFile<FileType extends string>(content: string, filename: string, type: FileType): Promise<void>;
 }

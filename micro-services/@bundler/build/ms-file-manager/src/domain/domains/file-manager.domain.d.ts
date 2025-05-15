@@ -1,6 +1,7 @@
 import { FileManagerDomainContract } from '../contracts';
-import { EFileTextTypes } from '../models';
 export declare class FileManagerDomain implements FileManagerDomainContract {
+    private saveFileStrategy;
+    constructor();
     openFile(): Promise<string>;
-    saveFile(content: string, filename: string, type: EFileTextTypes): Promise<void>;
+    saveFile<FileType extends string>(content: string, filename: string, type: FileType): Promise<void>;
 }
