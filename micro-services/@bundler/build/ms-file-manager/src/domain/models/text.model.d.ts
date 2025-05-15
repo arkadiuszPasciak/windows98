@@ -1,4 +1,4 @@
-export declare enum EFileTextTypes {
+export declare enum TextFileTypes {
     CSV = "text/csv;charset=utf-8;",
     DOC = "text/doc;charset=utf-8;",
     PLAIN = "text/plain;charset=utf-8;",

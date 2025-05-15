@@ -1,3 +1,4 @@
+import type { ReactEventHandler } from "react"
 import type { DSDefaultProps } from "../../types/component.type"
 
 export interface DSInputProps extends DSDefaultProps {
@@ -10,7 +11,7 @@ export interface DSInputProps extends DSDefaultProps {
 	wrapperLayout?: "horizontal" | "vertical"
 	min?: number
 	max?: number
-	onChange?: (value: string | number) => void
+	onChange?: ReactEventHandler<HTMLInputElement>
 }
 
 export interface UseDSInputProps {

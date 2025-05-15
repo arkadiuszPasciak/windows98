@@ -18,12 +18,6 @@ const meta: Meta<typeof DSSelect> = {
 				type: "text",
 			},
 		},
-		labelPosition: {
-			control: {
-				type: "select",
-				options: ["top", "left"],
-			},
-		},
 		modelValue: {
 			control: {
 				type: "text",
@@ -37,6 +31,12 @@ const meta: Meta<typeof DSSelect> = {
 		required: {
 			control: {
 				type: "boolean",
+			},
+		},
+		wrapperLayout: {
+			control: {
+				type: "select",
+				options: ["horizontal", "vertical"],
 			},
 		},
 	},
@@ -54,7 +54,6 @@ export const Primary: Story = {
 		disabled: false,
 		id: "storybook",
 		labelName: "Storybook",
-		labelPosition: "top",
 		modelValue: "storybook",
 		options: [
 			{
@@ -67,6 +66,7 @@ export const Primary: Story = {
 			},
 		],
 		required: false,
+		wrapperLayout: "horizontal",
 	} as DSSelectProps,
 }
 
@@ -80,13 +80,13 @@ export const Disabled: Story = {
 export const Horizontal: Story = {
 	args: {
 		...Primary.args,
-		labelPosition: "top",
+		wrapperLayout: "horizontal",
 	},
 }
 
 export const Vertical: Story = {
 	args: {
 		...Primary.args,
-		labelPosition: "left",
+		wrapperLayout: "vertical",
 	},
 }

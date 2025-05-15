@@ -5,7 +5,6 @@ const defaultSelect: DSSelectProps = {
 	disabled: false,
 	id: "language",
 	labelName: "Language",
-	labelPosition: "top",
 	modelValue: "en",
 	options: [
 		{
@@ -23,6 +22,7 @@ const defaultSelect: DSSelectProps = {
 	],
 	required: true,
 	onSelect: () => {},
+	wrapperLayout: "vertical",
 }
 
 const disabledSelect: DSSelectProps = {
@@ -39,11 +39,11 @@ test.describe("DSSelect", () => {
 				disabled={defaultSelect.disabled}
 				id={defaultSelect.id}
 				labelName={defaultSelect.labelName}
-				labelPosition={defaultSelect.labelPosition}
 				modelValue={defaultSelect.modelValue}
 				options={defaultSelect.options}
 				required={defaultSelect.required}
 				onSelect={defaultSelect.onSelect}
+				wrapperLayout={defaultSelect.wrapperLayout}
 			/>,
 		)
 
@@ -65,11 +65,11 @@ test.describe("DSSelect", () => {
 				disabled={defaultSelect.disabled}
 				id={defaultSelect.id}
 				labelName={defaultSelect.labelName}
-				labelPosition={defaultSelect.labelPosition}
 				modelValue={defaultSelect.modelValue}
 				options={defaultSelect.options}
 				required={defaultSelect.required}
 				onSelect={defaultSelect.onSelect}
+				wrapperLayout={defaultSelect.wrapperLayout}
 			/>,
 		)
 
@@ -93,11 +93,11 @@ test.describe("DSSelect", () => {
 				disabled={disabledSelect.disabled}
 				id={disabledSelect.id}
 				labelName={disabledSelect.labelName}
-				labelPosition={disabledSelect.labelPosition}
 				modelValue={disabledSelect.modelValue}
 				options={disabledSelect.options}
 				required={disabledSelect.required}
 				onSelect={disabledSelect.onSelect}
+				wrapperLayout={defaultSelect.wrapperLayout}
 			/>,
 		)
 

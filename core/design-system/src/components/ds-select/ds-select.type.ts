@@ -5,11 +5,11 @@ export interface DSSelectProps extends DSDefaultProps {
 	disabled?: boolean
 	id: string
 	labelName?: string
-	labelPosition?: "top" | "left"
 	modelValue: string | number
 	options: Array<DSSelectOption>
 	required?: boolean
 	onSelect: ReactEventHandler<HTMLSelectElement>
+	wrapperLayout?: "horizontal" | "vertical"
 }
 
 export interface DSSelectOption {

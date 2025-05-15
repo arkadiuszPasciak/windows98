@@ -9,10 +9,9 @@ export function useDSInput({ initialValue, onChange }: UseDSInputProps) {
 	}, [initialValue])
 
 	const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-		const newValue = event.target.value
-		setValue(newValue)
+		setValue(event.target.value)
 
-		if (onChange) onChange(newValue)
+		if (onChange) onChange(event)
 	}
 
 	return { value, handleInputChange }

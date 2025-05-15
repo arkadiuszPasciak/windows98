@@ -1,3 +1,4 @@
+import { ReactEventHandler } from 'react';
 import { DSDefaultProps } from '../../types/component.type';
 export interface DSInputProps extends DSDefaultProps {
     type?: "text" | "password" | "email" | "number";
@@ -9,7 +10,7 @@ export interface DSInputProps extends DSDefaultProps {
     wrapperLayout?: "horizontal" | "vertical";
     min?: number;
     max?: number;
-    onChange?: (value: string | number) => void;
+    onChange?: ReactEventHandler<HTMLInputElement>;
 }
 export interface UseDSInputProps {
     initialValue: DSInputProps["initialValue"];

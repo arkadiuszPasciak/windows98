@@ -1,16 +1,20 @@
+.wrapper {
+	display: flex;
+}
+
 .wrapper-horizontal {
-	display: grid;
 	align-items: center;
 	column-gap: 6px;
 }
 
 .wrapper-vertical {
-	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	flex-basis: 200px;
 	row-gap: 5px;
-	max-width: 200px;
+}
+
+.label {
+	min-width: 46px;
 }
 
 .input,
@@ -22,9 +26,9 @@
 .input {
 	padding: 3px 4px;
 	height: 21px;
-	width: 100%;
 	box-shadow: var(--border-field);
 	background-color: var(--background-color-white);
+	width: 100%;
 
 	&:focus {
 	  outline: none;
