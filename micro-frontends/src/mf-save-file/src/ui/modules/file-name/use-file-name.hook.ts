@@ -1,4 +1,4 @@
-import type { ReactEventHandler } from "react"
+import { type ReactEventHandler, useEffect } from "react"
 import { useTranslation } from "react-i18next"
 import { useSaveFile } from "../../hooks"
 
@@ -14,6 +14,10 @@ export const useFileName = () => {
 	const setFileName: ReactEventHandler<HTMLInputElement> = (event) => {
 		saveFileDomain.setFileName(event.currentTarget.value)
 	}
+
+	useEffect(() => {
+		saveFileDomain.setFileName(translations.untitled)
+	})
 
 	return {
 		setFileName,

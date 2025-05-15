@@ -1,10 +1,12 @@
 import { useTranslation } from "react-i18next"
+import { useConfig } from "../../config"
 
 export const useCancelButton = () => {
 	const { t } = useTranslation()
+	const { onCloseModal } = useConfig()
 
 	const closeModal = (): void => {
-		console.log("TODO: pass here a function from the config")
+		onCloseModal()
 	}
 
 	const translations = {
