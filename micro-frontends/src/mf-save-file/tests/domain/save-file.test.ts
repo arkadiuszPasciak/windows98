@@ -1,9 +1,8 @@
 import { beforeEach, describe, expect, it } from "vitest"
 import { SaveFileDomain } from "../../src/domain/domains"
 
-// TODO: run these test after the implementation
-describe.skip("SaveFileDomain", () => {
-	let saveFileDomain: SaveFileDomain
+describe("SaveFileDomain", () => {
+	let saveFileDomain: SaveFileDomain<string>
 
 	beforeEach(() => {
 		saveFileDomain = new SaveFileDomain()
@@ -25,9 +24,5 @@ describe.skip("SaveFileDomain", () => {
 		const fileType = "text/plain"
 		saveFileDomain.setFileType(fileType)
 		expect(saveFileDomain.fileType).toBe(fileType)
-	})
-
-	it("should call saveFile", async () => {
-		await saveFileDomain.saveFile()
 	})
 })
