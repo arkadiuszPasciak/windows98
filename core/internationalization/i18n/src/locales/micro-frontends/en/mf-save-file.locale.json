@@ -4,7 +4,7 @@
 	"mf-save-file.untitled": "Untitled",
 	"mf-save-file.modal-title": "Save as",
 	"mf-save-file.save": "Save",
-	"mf-save-file.save-as": "Save as type:",
+	"mf-save-file.save-as": "Save as:",
 	"mf-save-file.text-csv": "CSV Document (*.csv)",
 	"mf-save-file.text-doc": "Word Document (*.doc)",
 	"mf-save-file.text-rtf": "Rich text format (*.rtf)",
