@@ -13,6 +13,10 @@
 	row-gap: 5px;
 }
 
+.label {
+	min-width: 46px;
+}
+
 .input,
 .label {
   @include font('medium', 11, 14);
@@ -34,8 +38,4 @@
 	&:disabled + .label {
 	  opacity: 0.8;
 	}
-}
-
-.label {
-	min-width: 46px;
 }
