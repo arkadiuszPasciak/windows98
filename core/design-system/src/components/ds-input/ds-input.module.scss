@@ -24,6 +24,7 @@
 	height: 21px;
 	box-shadow: var(--border-field);
 	background-color: var(--background-color-white);
+	width: 100%;
 
 	&:focus {
 	  outline: none;
@@ -33,4 +34,8 @@
 	&:disabled + .label {
 	  opacity: 0.8;
 	}
+}
+
+.label {
+	min-width: 46px;
 }

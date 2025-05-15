@@ -18,9 +18,11 @@
 .label {
   @include font('medium', 11, 14);
   color: var(--text-color);
+  min-width: 46px;
 }
 
 .select {
+  background-color: var(--background-color-white);
   height: 21px;
   width: 100%;
   box-shadow: var(--border-field);

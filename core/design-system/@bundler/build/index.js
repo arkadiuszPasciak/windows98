@@ -1,4 +1,4 @@
-(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button_1es1f_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_1es1f_96{cursor:pointer}}._ds-button_1es1f_96:disabled{pointer-events:none;opacity:.5}._ds-button_1es1f_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_1es1f_120{width:16px;height:14px;padding:1px}._size-medium_1es1f_126{height:23px;min-width:75px;padding:0 12px}._size-medium_1es1f_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_1es1f_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button-arrow_1ury6_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_1ury6_96:hover{cursor:pointer}}._ds-button-arrow_1ury6_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_1ury6_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_1ury6_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_1ury6_124:after{border-top:3px solid var(--text-color)}._arrow-top_1ury6_128:after{border-bottom:3px solid var(--text-color)}._size-small_1ury6_132{width:20px;height:10px}._size-medium_1ury6_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_nsxiw_96{position:relative;display:flex;align-items:center;column-gap:6px}._wrapper_nsxiw_96:hover{cursor:pointer}._disabled_nsxiw_106{pointer-events:none;opacity:.5}._input_nsxiw_111{position:absolute;width:1px;height:1px;background-color:transparent}._input_nsxiw_111[disabled]{pointer-events:none}._icon_nsxiw_121{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_133id_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_133id_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-heading_18kg0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_32r4x_96{display:flex}._wrapper-horizontal_32r4x_100{align-items:center;column-gap:6px}._wrapper-vertical_32r4x_105{flex-direction:column;align-items:flex-start;row-gap:5px}._input_32r4x_111,._label_32r4x_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_32r4x_111{padding:3px 4px;height:21px;box-shadow:var(--border-field);background-color:var(--background-color-white)}._input_32r4x_111:focus{outline:none}._input_32r4x_111:disabled,._input_32r4x_111:disabled+._label_32r4x_112{opacity:.8}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._modal_jl7a7_96{background-color:transparent;border:0;height:100%;width:100%}._modal_jl7a7_96::backdrop{background-color:transparent}._move-window_jl7a7_107{position:relative;top:50%;left:50%;transform:translate(-50%,-50%)}._container_jl7a7_114{padding:3px;min-height:110px;min-width:190px;max-width:100%;max-height:100%;background-color:var(--background-color);box-shadow:var(--box-shadow-raised)}._resize-window_jl7a7_124{resize:both;overflow:auto}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._content_11jrm_96{padding:2px;width:100%;height:calc(100% - 40px)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._header_1qqbc_96{display:flex;justify-content:space-between;align-items:center;height:20px;padding:3px 2px 3px 3px;background:var(--background-color-modal-header)}._header_1qqbc_96>h3{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._navigation_1e5o9_96{column-gap:5px;display:flex;flex-wrap:wrap;padding:4px 2px}._navigation-button_1e5o9_103{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1i79t_96{height:calc(100% - 28px);margin:5px}._tab_1i79t_101{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._active-tab_1i79t_106{position:relative;z-index:3}._content_1i79t_111{position:relative;z-index:2;top:-2px;height:calc(100% - 21px)}._tab_1i79t_101,._content_1i79t_111{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_1i79t_124{display:none}._active-content-tab_1i79t_128{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1ui4e_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_1ui4e_96:hover{cursor:pointer}}._disabled_1ui4e_108{pointer-events:none;opacity:.5}._input_1ui4e_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_1ui4e_113[disabled]{pointer-events:none}._icon_1ui4e_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1feh5_96{position:relative;display:flex}._wrapper-horizontal_1feh5_101{align-items:center;column-gap:6px}._wrapper-vertical_1feh5_106{flex-direction:column;align-items:flex-start;row-gap:5px;max-width:200px}._label_1feh5_113{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._select_1feh5_118{height:21px;width:100%;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_1feh5_127{position:absolute;right:2px;z-index:-1}._arrow-vertical_1feh5_133{bottom:-2px}._arrow-horizontal_1feh5_137{top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-stepper_45vc6_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_45vc6_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_45vc6_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_45vc6_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_45vc6_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._DSText_1n9d0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper-horizontal_1ubdj_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_1ubdj_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._textarea_1ubdj_111,._label_1ubdj_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._textarea_1ubdj_111{padding:3px 4px;box-shadow:var(--border-field);background-color:var(--background-color-white);resize:none}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:read-only{background-color:var(--background-color-white)}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:disabled+._label_1ubdj_112,._textarea_1ubdj_111[readonly],._textarea_1ubdj_111[readonly]+._label_1ubdj_112{opacity:.8}._textarea_1ubdj_111:focus{outline:none}')),document.head.appendChild(o)}}catch(e){console.error("vite-plugin-css-injected-by-js",e)}})();
+(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button_1es1f_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_1es1f_96{cursor:pointer}}._ds-button_1es1f_96:disabled{pointer-events:none;opacity:.5}._ds-button_1es1f_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_1es1f_120{width:16px;height:14px;padding:1px}._size-medium_1es1f_126{height:23px;min-width:75px;padding:0 12px}._size-medium_1es1f_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_1es1f_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button-arrow_1ury6_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_1ury6_96:hover{cursor:pointer}}._ds-button-arrow_1ury6_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_1ury6_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_1ury6_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_1ury6_124:after{border-top:3px solid var(--text-color)}._arrow-top_1ury6_128:after{border-bottom:3px solid var(--text-color)}._size-small_1ury6_132{width:20px;height:10px}._size-medium_1ury6_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_nsxiw_96{position:relative;display:flex;align-items:center;column-gap:6px}._wrapper_nsxiw_96:hover{cursor:pointer}._disabled_nsxiw_106{pointer-events:none;opacity:.5}._input_nsxiw_111{position:absolute;width:1px;height:1px;background-color:transparent}._input_nsxiw_111[disabled]{pointer-events:none}._icon_nsxiw_121{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_133id_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_133id_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-heading_18kg0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_ffuxn_96{display:flex}._wrapper-horizontal_ffuxn_100{align-items:center;column-gap:6px}._wrapper-vertical_ffuxn_105{flex-direction:column;align-items:flex-start;row-gap:5px}._input_ffuxn_111,._label_ffuxn_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_ffuxn_111{padding:3px 4px;height:21px;box-shadow:var(--border-field);background-color:var(--background-color-white);width:100%}._input_ffuxn_111:focus{outline:none}._input_ffuxn_111:disabled,._input_ffuxn_111:disabled+._label_ffuxn_112{opacity:.8}._label_ffuxn_112{min-width:46px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._modal_jl7a7_96{background-color:transparent;border:0;height:100%;width:100%}._modal_jl7a7_96::backdrop{background-color:transparent}._move-window_jl7a7_107{position:relative;top:50%;left:50%;transform:translate(-50%,-50%)}._container_jl7a7_114{padding:3px;min-height:110px;min-width:190px;max-width:100%;max-height:100%;background-color:var(--background-color);box-shadow:var(--box-shadow-raised)}._resize-window_jl7a7_124{resize:both;overflow:auto}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._content_11jrm_96{padding:2px;width:100%;height:calc(100% - 40px)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._header_1qqbc_96{display:flex;justify-content:space-between;align-items:center;height:20px;padding:3px 2px 3px 3px;background:var(--background-color-modal-header)}._header_1qqbc_96>h3{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._navigation_1e5o9_96{column-gap:5px;display:flex;flex-wrap:wrap;padding:4px 2px}._navigation-button_1e5o9_103{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1i79t_96{height:calc(100% - 28px);margin:5px}._tab_1i79t_101{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._active-tab_1i79t_106{position:relative;z-index:3}._content_1i79t_111{position:relative;z-index:2;top:-2px;height:calc(100% - 21px)}._tab_1i79t_101,._content_1i79t_111{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_1i79t_124{display:none}._active-content-tab_1i79t_128{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1ui4e_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_1ui4e_96:hover{cursor:pointer}}._disabled_1ui4e_108{pointer-events:none;opacity:.5}._input_1ui4e_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_1ui4e_113[disabled]{pointer-events:none}._icon_1ui4e_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_uytru_96{position:relative;display:flex}._wrapper-horizontal_uytru_101{align-items:center;column-gap:6px}._wrapper-vertical_uytru_106{flex-direction:column;align-items:flex-start;row-gap:5px;max-width:200px}._label_uytru_113{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);min-width:46px}._select_uytru_119{background-color:var(--background-color-white);height:21px;width:100%;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_uytru_129{position:absolute;right:2px;z-index:-1}._arrow-vertical_uytru_135{bottom:-2px}._arrow-horizontal_uytru_139{top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-stepper_45vc6_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_45vc6_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_45vc6_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_45vc6_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_45vc6_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._DSText_1n9d0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper-horizontal_1ubdj_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_1ubdj_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._textarea_1ubdj_111,._label_1ubdj_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._textarea_1ubdj_111{padding:3px 4px;box-shadow:var(--border-field);background-color:var(--background-color-white);resize:none}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:read-only{background-color:var(--background-color-white)}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:disabled+._label_1ubdj_112,._textarea_1ubdj_111[readonly],._textarea_1ubdj_111[readonly]+._label_1ubdj_112{opacity:.8}._textarea_1ubdj_111:focus{outline:none}')),document.head.appendChild(o)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
 import We, { useState as T, useEffect as M, useRef as Fe, useCallback as oe } from "react";
 var ue = { exports: {} }, A = {};
 /**
@@ -15,12 +15,12 @@ function Et() {
   if (Ne) return A;
   Ne = 1;
   var t = We, a = Symbol.for("react.element"), l = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, u = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, i = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function d(_, h, R) {
-    var b, j = {}, g = null, y = null;
-    R !== void 0 && (g = "" + R), h.key !== void 0 && (g = "" + h.key), h.ref !== void 0 && (y = h.ref);
+  function d(_, h, y) {
+    var b, j = {}, g = null, R = null;
+    y !== void 0 && (g = "" + y), h.key !== void 0 && (g = "" + h.key), h.ref !== void 0 && (R = h.ref);
     for (b in h) o.call(h, b) && !i.hasOwnProperty(b) && (j[b] = h[b]);
     if (_ && _.defaultProps) for (b in h = _.defaultProps, h) j[b] === void 0 && (j[b] = h[b]);
-    return { $$typeof: a, type: _, key: g, ref: y, props: j, _owner: u.current };
+    return { $$typeof: a, type: _, key: g, ref: R, props: j, _owner: u.current };
   }
   return A.Fragment = l, A.jsx = d, A.jsxs = d, A;
 }
@@ -37,7 +37,7 @@ var Y = {};
 var Me;
 function St() {
   return Me || (Me = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = We, a = Symbol.for("react.element"), l = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), i = Symbol.for("react.profiler"), d = Symbol.for("react.provider"), _ = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), R = Symbol.for("react.suspense"), b = Symbol.for("react.suspense_list"), j = Symbol.for("react.memo"), g = Symbol.for("react.lazy"), y = Symbol.for("react.offscreen"), P = Symbol.iterator, U = "@@iterator";
+    var t = We, a = Symbol.for("react.element"), l = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), i = Symbol.for("react.profiler"), d = Symbol.for("react.provider"), _ = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), y = Symbol.for("react.suspense"), b = Symbol.for("react.suspense_list"), j = Symbol.for("react.memo"), g = Symbol.for("react.lazy"), R = Symbol.for("react.offscreen"), P = Symbol.iterator, U = "@@iterator";
     function S(e) {
       if (e === null || typeof e != "object")
         return null;
@@ -65,7 +65,7 @@ function St() {
     var Ge = !1, Je = !1, Xe = !1, Ke = !1, Ze = !1, fe;
     fe = Symbol.for("react.module.reference");
     function Qe(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === o || e === i || Ze || e === u || e === R || e === b || Ke || e === y || Ge || Je || Xe || typeof e == "object" && e !== null && (e.$$typeof === g || e.$$typeof === j || e.$$typeof === d || e.$$typeof === _ || e.$$typeof === h || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === o || e === i || Ze || e === u || e === y || e === b || Ke || e === R || Ge || Je || Xe || typeof e == "object" && e !== null && (e.$$typeof === g || e.$$typeof === j || e.$$typeof === d || e.$$typeof === _ || e.$$typeof === h || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -97,7 +97,7 @@ function St() {
           return "Profiler";
         case u:
           return "StrictMode";
-        case R:
+        case y:
           return "Suspense";
         case b:
           return "SuspenseList";
@@ -293,7 +293,7 @@ function St() {
       if (typeof e == "string")
         return B(e);
       switch (e) {
-        case R:
+        case y:
           return B("Suspense");
         case b:
           return B("SuspenseList");
@@ -314,13 +314,13 @@ function St() {
         }
       return "";
     }
-    var G = Object.prototype.hasOwnProperty, Re = {}, ye = z.ReactDebugCurrentFrame;
+    var G = Object.prototype.hasOwnProperty, ye = {}, Re = z.ReactDebugCurrentFrame;
     function J(e) {
       if (e) {
         var r = e._owner, s = q(e.type, e._source, r ? r.type : null);
-        ye.setExtraStackFrame(s);
+        Re.setExtraStackFrame(s);
       } else
-        ye.setExtraStackFrame(null);
+        Re.setExtraStackFrame(null);
     }
     function st(e, r, s, c, p) {
       {
@@ -337,7 +337,7 @@ function St() {
             } catch (x) {
               f = x;
             }
-            f && !(f instanceof Error) && (J(p), E("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", c || "React class", s, v, typeof f), J(null)), f instanceof Error && !(f.message in Re) && (Re[f.message] = !0, J(p), E("Failed %s type: %s", s, f.message), J(null));
+            f && !(f instanceof Error) && (J(p), E("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", c || "React class", s, v, typeof f), J(null)), f instanceof Error && !(f.message in ye) && (ye[f.message] = !0, J(p), E("Failed %s type: %s", s, f.message), J(null));
           }
       }
     }
@@ -602,11 +602,11 @@ Check the top-level render call using <` + s + ">.");
     function jt(e, r, s) {
       return Pe(e, r, s, !0);
     }
-    function Rt(e, r, s) {
+    function yt(e, r, s) {
       return Pe(e, r, s, !1);
     }
-    var yt = Rt, $t = jt;
-    Y.Fragment = o, Y.jsx = yt, Y.jsxs = $t;
+    var Rt = yt, $t = jt;
+    Y.Fragment = o, Y.jsx = Rt, Y.jsxs = $t;
   }()), Y;
 }
 process.env.NODE_ENV === "production" ? ue.exports = Et() : ue.exports = St();
@@ -1068,10 +1068,10 @@ const Pt = {
       )
     ]
   }
-), It = "_wrapper_32r4x_96", At = "_input_32r4x_111", Yt = "_label_32r4x_112", K = {
+), It = "_wrapper_ffuxn_96", At = "_input_ffuxn_111", Yt = "_label_ffuxn_112", K = {
   wrapper: It,
-  "wrapper-horizontal": "_wrapper-horizontal_32r4x_100",
-  "wrapper-vertical": "_wrapper-vertical_32r4x_105",
+  "wrapper-horizontal": "_wrapper-horizontal_ffuxn_100",
+  "wrapper-vertical": "_wrapper-vertical_ffuxn_105",
   input: At,
   label: Yt
 };
@@ -1093,29 +1093,29 @@ function Ut({
   labelName: d,
   wrapperLayout: _ = "vertical",
   min: h,
-  max: R,
+  max: y,
   onChange: b
 }) {
-  const { value: j, handleInputChange: g } = Lt({ initialValue: i, onChange: b }), y = `ds-input-${l}`;
+  const { value: j, handleInputChange: g } = Lt({ initialValue: i, onChange: b }), R = `ds-input-${l}`;
   return /* @__PURE__ */ n.jsxs(
     "div",
     {
       className: `${K.wrapper} ${K[`wrapper-${_}`]} ${t}`,
-      "data-testid": y,
+      "data-testid": R,
       children: [
         d && /* @__PURE__ */ n.jsx(
           "label",
           {
             className: K.label,
             "data-testid": `ds-input-label-${l}`,
-            htmlFor: y,
+            htmlFor: R,
             children: d
           }
         ),
         /* @__PURE__ */ n.jsx(
           "input",
           {
-            id: y,
+            id: R,
             className: K.input,
             "data-testid": `ds-input-input-${l}`,
             type: a,
@@ -1123,8 +1123,8 @@ function Ut({
             readOnly: u,
             value: j,
             min: h ?? void 0,
-            max: R ?? void 0,
-            name: y,
+            max: y ?? void 0,
+            name: R,
             onChange: g
           }
         )
@@ -1280,7 +1280,7 @@ const or = (t, a, l, o, u, i, d) => {
 }, ur = ({ moveWindow: t, onClose: a }) => {
   const l = Fe(null), o = Fe(null), [u, i] = T(!1), [d, _] = T(
     Q.DEFAULT
-  ), [h, R] = T(0), [b, j] = T(0);
+  ), [h, y] = T(0), [b, j] = T(0);
   M(() => {
     const S = o.current;
     S && S.showModal();
@@ -1293,12 +1293,12 @@ const or = (t, a, l, o, u, i, d) => {
         t,
         _,
         i,
-        R,
+        y,
         j
       );
     },
     [t]
-  ), y = oe(() => {
+  ), R = oe(() => {
     ir(t, i, _);
   }, [t]), P = oe(
     (S) => {
@@ -1317,7 +1317,7 @@ const or = (t, a, l, o, u, i, d) => {
     modalElement: l,
     dialogRef: o,
     mouseDown: g,
-    mouseUp: y,
+    mouseUp: R,
     mouseMove: P,
     cursorType: d,
     closeModal: () => {
@@ -1335,17 +1335,17 @@ const or = (t, a, l, o, u, i, d) => {
   tabs: d,
   children: _,
   navigation: h,
-  onClose: R
+  onClose: y
 }) => {
   const {
     dialogRef: b,
     modalElement: j,
     mouseDown: g,
-    mouseUp: y,
+    mouseUp: R,
     mouseMove: P,
     cursorType: U,
     closeModal: S
-  } = ur({ moveWindow: i, onClose: R });
+  } = ur({ moveWindow: i, onClose: y });
   return /* @__PURE__ */ n.jsx(
     "dialog",
     {
@@ -1367,7 +1367,7 @@ const or = (t, a, l, o, u, i, d) => {
                 id: t,
                 onClose: S,
                 mouseDownEvent: g,
-                mouseUpEvent: y,
+                mouseUpEvent: R,
                 title: a
               }
             ),
@@ -1462,15 +1462,15 @@ const kr = ({
       ]
     }
   );
-}, _r = "_wrapper_1feh5_96", mr = "_label_1feh5_113", br = "_select_1feh5_118", xr = "_arrow_1feh5_127", k = {
+}, _r = "_wrapper_uytru_96", mr = "_label_uytru_113", br = "_select_uytru_119", xr = "_arrow_uytru_129", k = {
   wrapper: _r,
-  "wrapper-horizontal": "_wrapper-horizontal_1feh5_101",
-  "wrapper-vertical": "_wrapper-vertical_1feh5_106",
+  "wrapper-horizontal": "_wrapper-horizontal_uytru_101",
+  "wrapper-vertical": "_wrapper-vertical_uytru_106",
   label: mr,
   select: br,
   arrow: xr,
-  "arrow-vertical": "_arrow-vertical_1feh5_133",
-  "arrow-horizontal": "_arrow-horizontal_1feh5_137"
+  "arrow-vertical": "_arrow-vertical_uytru_135",
+  "arrow-horizontal": "_arrow-horizontal_uytru_139"
 };
 function gr(t) {
   const [a, l] = T(t);
@@ -1492,7 +1492,7 @@ function Pr({
   onSelect: _,
   wrapperLayout: h = "vertical"
 }) {
-  const { value: R, handleChange: b } = gr(u), j = (g) => {
+  const { value: y, handleChange: b } = gr(u), j = (g) => {
     b(g), _(g);
   };
   return /* @__PURE__ */ n.jsxs(
@@ -1519,12 +1519,12 @@ function Pr({
             name: a,
             onChange: j,
             required: l,
-            value: R,
-            children: i.map((g, y) => /* @__PURE__ */ n.jsx(
+            value: y,
+            children: i.map((g, R) => /* @__PURE__ */ n.jsx(
               "option",
               {
                 className: k.option,
-                "data-testid": `ds-select-option-${a}-${y}`,
+                "data-testid": `ds-select-option-${a}-${R}`,
                 value: g.value,
                 children: g.name
               },
@@ -1611,23 +1611,23 @@ function zr({
     }
   );
 }
-const jr = "_DSText_1n9d0_96", Rr = {
+const jr = "_DSText_1n9d0_96", yr = {
   DSText: jr
 };
 function de({ className: t = "", id: a, text: l }) {
   return /* @__PURE__ */ n.jsx(
     "p",
     {
-      className: `${Rr.DSText} ${t}`,
+      className: `${yr.DSText} ${t}`,
       "data-testid": `ds-text-${a}`,
       children: l
     }
   );
 }
-const yr = "_textarea_1ubdj_111", $r = "_label_1ubdj_112", ce = {
+const Rr = "_textarea_1ubdj_111", $r = "_label_1ubdj_112", ce = {
   "wrapper-horizontal": "_wrapper-horizontal_1ubdj_96",
   "wrapper-vertical": "_wrapper-vertical_1ubdj_102",
-  textarea: yr,
+  textarea: Rr,
   label: $r
 };
 function Er({ initialValue: t, onChange: a }) {
@@ -1650,7 +1650,7 @@ function Fr({
   max: _,
   onChange: h
 }) {
-  const { value: R, handleTextareaChange: b } = Er({
+  const { value: y, handleTextareaChange: b } = Er({
     initialValue: o,
     onChange: h
   });
@@ -1677,7 +1677,7 @@ function Fr({
             "data-testid": `${t}-textarea`,
             disabled: a,
             readOnly: l,
-            value: R,
+            value: y,
             minLength: d ?? void 0,
             maxLength: _ ?? void 0,
             name: t,
