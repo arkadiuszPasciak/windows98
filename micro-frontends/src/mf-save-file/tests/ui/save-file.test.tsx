@@ -17,7 +17,7 @@ test.describe("SaveFileView", () => {
 		)
 
 		const fileNameInput = component.getByTestId(
-			"ds-input-input-mf-notepad-save-file-name",
+			"ds-input-input-mf-save-file-file-name",
 		)
 		await fileNameInput.fill("TestFile")
 
@@ -62,7 +62,7 @@ test.describe("SaveFileView", () => {
 		)
 
 		const fileNameInput = component.getByTestId(
-			"ds-input-input-mf-notepad-save-file-name",
+			"ds-input-input-mf-save-file-file-name",
 		)
 		await expect(fileNameInput).toHaveValue("mf-save-file.untitled")
 

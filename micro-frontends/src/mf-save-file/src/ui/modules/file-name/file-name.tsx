@@ -8,7 +8,7 @@ export const FileName: FunctionComponent = observer(() => {
 
 	return (
 		<DSInput
-			id="mf-notepad-save-file-name"
+			id="mf-save-file-file-name"
 			initialValue={translations.untitled}
 			labelName={translations.fileName}
 			wrapperLayout="horizontal"
