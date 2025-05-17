@@ -1,0 +1,10 @@
+.navigation {
+  display: flex;
+  gap: 5px;
+}
+
+.button {
+  font: 400 11px / 14px MSSansSerifMedium, sans-serif;
+  color: var(--text-color);
+  cursor: pointer;
+}
