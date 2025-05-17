@@ -10,7 +10,7 @@ import { CalendarView } from "../../src/mf-calendar/src/ui/views/calendar.view"
 import { ClockView } from "../../src/mf-clock/src/ui/views"
 import { LanguageManagerView } from "../../src/mf-language-manager/src/ui/views"
 import { NavigationView } from "../../src/mf-navigation/src/ui/views"
-import { SaveFileView } from "../../src/mf-save-file/src/ui/views"
+import { NotepadView } from "../../src/mf-notepad/src/ui/views"
 import { ShutdownView } from "../../src/mf-shutdown/src/ui/views"
 import { ThemeManagerView } from "../../src/mf-theme-manager/src/ui/views"
 import { TimerView } from "../../src/mf-timer/src/ui/views"
@@ -23,6 +23,7 @@ i18nInit().then(() => {
 
 	ReactDOM.createRoot(root).render(
 		<React.StrictMode>
+			<NotepadView />
 			<CalendarView />
 			<TimezoneView />
 			<CalculatorView />
@@ -40,11 +41,6 @@ i18nInit().then(() => {
 				<AudioButtonView />
 				<ClockView />
 			</NavigationView>
-			<SaveFileView
-				contentFile="test 123"
-				fileTypes={["text-doc", "text-txt"]}
-				onCloseModal={() => console.log("Modal is closed!")}
-			/>
 		</React.StrictMode>,
 	)
 })
