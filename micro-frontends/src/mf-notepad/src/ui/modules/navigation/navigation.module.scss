@@ -1,10 +1,11 @@
 .navigation {
   display: flex;
   gap: 5px;
+  padding: 3px 2px;
 }
 
 .button {
-  font: 400 11px / 14px MSSansSerifMedium, sans-serif;
+  @include font('medium', 11, 14);
   color: var(--text-color);
   cursor: pointer;
 }
