@@ -19,7 +19,7 @@ const Calculator = defineAsyncComponent(
 )
 
 const Notepad = defineAsyncComponent(
-	() => import("@APP|Bundles/NotepadBundle/Components/Notepad.vue"),
+	() => import("@APP|Bundles/ProgramBundle/Components/Notepad.vue"),
 )
 
 const Run = defineAsyncComponent(
