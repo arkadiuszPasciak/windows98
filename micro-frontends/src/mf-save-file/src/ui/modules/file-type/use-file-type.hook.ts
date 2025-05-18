@@ -3,6 +3,10 @@ import { useTranslation } from "react-i18next"
 import { useConfig } from "../../config"
 import { useSaveFile } from "../../hooks"
 
+const formatTranslationKey = (key: string): string => {
+	return `mf-save-file.${key.replace(";charset=utf-8;", "").replace("/", "-")}`
+}
+
 export const useFileType = () => {
 	const { t } = useTranslation()
 	const saveFileDomain = useSaveFile()
@@ -13,8 +17,8 @@ export const useFileType = () => {
 	}
 
 	const fileTypeOptions = fileTypes.map((fileType) => ({
-		value: `${fileType};charset=utf-8;`,
-		name: t(`mf-save-file.${fileType}`),
+		value: fileType,
+		name: t(formatTranslationKey(fileType)),
 	}))
 
 	const setFileType: ReactEventHandler<HTMLSelectElement> = (event) => {
