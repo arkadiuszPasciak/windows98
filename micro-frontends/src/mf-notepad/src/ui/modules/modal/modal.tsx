@@ -5,13 +5,13 @@ import { Textarea } from "../textarea"
 import { useModal } from "./use-modal.hook"
 
 export const Modal: FunctionComponent = () => {
-	const { translations } = useModal()
+	const { translations, onCloseProgram } = useModal()
 
 	return (
 		<DSModal
 			id="ma-notepad"
 			moveWindow={true}
-			onClose={() => {}}
+			onClose={onCloseProgram}
 			title={translations.title}
 			width="600px"
 			height="400px"

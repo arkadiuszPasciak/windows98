@@ -6,7 +6,9 @@ test.describe("Notepad", () => {
 	test("As a user, I can save the content written in the textarea", async ({
 		mount,
 	}) => {
-		const component = await mount(<NotepadView />)
+		const component = await mount(
+			<NotepadView onCloseProgram={() => console.log("notepad is closed!")} />,
+		)
 
 		const saveButton = component.getByTestId("mf-notepad-save-file-button")
 		await saveButton.click()
@@ -21,7 +23,9 @@ test.describe("Notepad", () => {
 		mount,
 		page,
 	}) => {
-		const component = await mount(<NotepadView />)
+		const component = await mount(
+			<NotepadView onCloseProgram={() => console.log("notepad is closed!")} />,
+		)
 
 		const fileChooserPromise = page.waitForEvent("filechooser")
 		await component.getByTestId("mf-notepad-open-file-button").click()

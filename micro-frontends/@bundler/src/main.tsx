@@ -23,7 +23,7 @@ i18nInit().then(() => {
 
 	ReactDOM.createRoot(root).render(
 		<React.StrictMode>
-			<NotepadView />
+			<NotepadView onCloseProgram={() => console.log("notepad is closed!")} />
 			<CalendarView />
 			<TimezoneView />
 			<CalculatorView />
