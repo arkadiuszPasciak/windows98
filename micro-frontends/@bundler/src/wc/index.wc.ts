@@ -5,6 +5,7 @@ import { CalculatorView } from "../../../src/mf-calculator/src/ui/views"
 import { CalendarView } from "../../../src/mf-calendar/src/ui/views/calendar.view"
 import { ClockView } from "../../../src/mf-clock/src/ui/views"
 import { NavigationView } from "../../../src/mf-navigation/src/ui/views"
+import { NotepadView } from "../../../src/mf-notepad/src/ui/views"
 import { PulpitViewWithMock } from "../../../src/mf-pulpit/src/ui/views"
 import { ShutdownView } from "../../../src/mf-shutdown/src/ui/views"
 import { TimerView } from "../../../src/mf-timer/src/ui/views"
@@ -24,6 +25,14 @@ customElements.define("mf-clock", MFClock)
 
 const MFNavigation = r2wc(NavigationView)
 customElements.define("mf-navigation", MFNavigation)
+
+const MFNotepad = r2wc(NotepadView, {
+	// @ts-ignore TODO: I don't know why error
+	props: {
+		onCloseProgram: "function",
+	},
+})
+customElements.define("mf-notepad", MFNotepad)
 
 const MFPulpit = r2wc(PulpitViewWithMock)
 customElements.define("mf-pulpit", MFPulpit)
