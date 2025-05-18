@@ -1,9 +1,7 @@
 import type { I18nLocaleSkeleton } from "../../types/locale-skeleton.type"
 import audioPL from "./audio.locale.json"
 import calculatorPL from "./calculator.locale.json"
-import filePL from "./file.locale.json"
 import languagePL from "./language.locale.json"
-import notepadPL from "./notepad.locale.json"
 import runPL from "./run.locale.json"
 import settingsPL from "./settings.locale.json"
 import shutDownPL from "./shut-down.locale.json"
@@ -16,9 +14,7 @@ import uiModalPL from "./ui-modal.locale.json"
 const localesPL: I18nLocaleSkeleton = {
 	...audioPL,
 	...calculatorPL,
-	...filePL,
 	...languagePL,
-	...notepadPL,
 	...runPL,
 	...settingsPL,
 	...shutDownPL,
