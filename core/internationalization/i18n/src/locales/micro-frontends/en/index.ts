@@ -4,6 +4,7 @@ import notepadEN from "./mf-notepad.locale.json"
 import pulpitEN from "./mf-pulpit.locale.json"
 import saveFileEN from "./mf-save-file.locale.json"
 import shutdownEN from "./mf-shutdown.locale.json"
+import systemInformationEN from "./mf-system-information.locale.json"
 import themeManagerEN from "./mf-theme-manager.locale.json"
 import timerEN from "./mf-timer.locale.json"
 import timezoneEN from "./mf-timezone.locale.json"
@@ -15,6 +16,7 @@ const localesMicroFrontendsEN = {
 	...pulpitEN,
 	...saveFileEN,
 	...shutdownEN,
+	...systemInformationEN,
 	...themeManagerEN,
 	...timerEN,
 	...timezoneEN,
