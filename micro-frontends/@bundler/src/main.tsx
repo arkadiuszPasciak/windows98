@@ -12,6 +12,7 @@ import { LanguageManagerView } from "../../src/mf-language-manager/src/ui/views"
 import { NavigationView } from "../../src/mf-navigation/src/ui/views"
 import { NotepadView } from "../../src/mf-notepad/src/ui/views"
 import { ShutdownView } from "../../src/mf-shutdown/src/ui/views"
+import { MFSystemInformation } from "../../src/mf-system-information/src/ui/views/system-information"
 import { ThemeManagerView } from "../../src/mf-theme-manager/src/ui/views"
 import { TimerView } from "../../src/mf-timer/src/ui/views"
 import { TimezoneView } from "../../src/mf-timezone/src/ui/views"
@@ -23,6 +24,7 @@ i18nInit().then(() => {
 
 	ReactDOM.createRoot(root).render(
 		<React.StrictMode>
+			<MFSystemInformation />
 			<NotepadView onCloseProgram={() => console.log("notepad is closed!")} />
 			<CalendarView />
 			<TimezoneView />
