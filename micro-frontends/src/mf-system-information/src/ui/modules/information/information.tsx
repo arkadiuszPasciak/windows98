@@ -7,31 +7,31 @@ export const Information: FunctionComponent = () => {
 		useInformation()
 
 	return (
-		<div
+		<dl
 			className={styles.information}
 			data-testid="mf-system-information-information"
 		>
-			<span className={styles.title}>{translations.deviceType}:</span>
-			<span
+			<dt className={styles.title}>{translations.deviceType}:</dt>
+			<dd
 				className={styles.text}
 				data-testid="mf-system-information-device-type"
 			>
 				{deviceType}
-			</span>
-			<span className={styles.title}>{translations.browserName}:</span>
-			<span
+			</dd>
+			<dt className={styles.title}>{translations.browserName}:</dt>
+			<dd
 				className={styles.text}
 				data-testid="mf-system-information-browser-name"
 			>
 				{browserName}
-			</span>
-			<span className={styles.title}>{translations.operatingSystem}:</span>
-			<span
+			</dd>
+			<dt className={styles.title}>{translations.operatingSystem}:</dt>
+			<dd
 				className={styles.text}
 				data-testid="mf-system-information-operating-system"
 			>
 				{operatingSystem}
-			</span>
-		</div>
+			</dd>
+		</dl>
 	)
 }
