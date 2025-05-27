@@ -1,6 +1,6 @@
-(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button_1es1f_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_1es1f_96{cursor:pointer}}._ds-button_1es1f_96:disabled{pointer-events:none;opacity:.5}._ds-button_1es1f_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_1es1f_120{width:16px;height:14px;padding:1px}._size-medium_1es1f_126{height:23px;min-width:75px;padding:0 12px}._size-medium_1es1f_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_1es1f_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button-arrow_1ury6_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_1ury6_96:hover{cursor:pointer}}._ds-button-arrow_1ury6_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_1ury6_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_1ury6_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_1ury6_124:after{border-top:3px solid var(--text-color)}._arrow-top_1ury6_128:after{border-bottom:3px solid var(--text-color)}._size-small_1ury6_132{width:20px;height:10px}._size-medium_1ury6_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_nsxiw_96{position:relative;display:flex;align-items:center;column-gap:6px}._wrapper_nsxiw_96:hover{cursor:pointer}._disabled_nsxiw_106{pointer-events:none;opacity:.5}._input_nsxiw_111{position:absolute;width:1px;height:1px;background-color:transparent}._input_nsxiw_111[disabled]{pointer-events:none}._icon_nsxiw_121{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_133id_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_133id_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-heading_18kg0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_zh02p_96{display:flex}._wrapper-horizontal_zh02p_100{align-items:center;column-gap:6px}._wrapper-vertical_zh02p_105{flex-direction:column;align-items:flex-start;row-gap:5px}._label_zh02p_111{min-width:46px}._input_zh02p_115,._label_zh02p_111{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_zh02p_115{padding:3px 4px;height:21px;box-shadow:var(--border-field);background-color:var(--background-color-white);width:100%}._input_zh02p_115:focus{outline:none}._input_zh02p_115:disabled,._input_zh02p_115:disabled+._label_zh02p_111{opacity:.8}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._modal_miwrn_96{background-color:transparent;border:0;height:100%;width:100%}._modal_miwrn_96::backdrop{background-color:transparent}._move-window_miwrn_107{position:relative;top:50%;left:50%;transform:translate(-50%,-50%)}._container_miwrn_114{position:relative;top:50%;left:50%;transform:translate(-50%,-50%);padding:3px;min-height:110px;min-width:190px;max-width:100%;max-height:100%;background-color:var(--background-color);box-shadow:var(--box-shadow-raised)}._resize-window_miwrn_128{resize:both;overflow:auto}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._content_11jrm_96{padding:2px;width:100%;height:calc(100% - 40px)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._header_1qqbc_96{display:flex;justify-content:space-between;align-items:center;height:20px;padding:3px 2px 3px 3px;background:var(--background-color-modal-header)}._header_1qqbc_96>h3{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._navigation_1e5o9_96{column-gap:5px;display:flex;flex-wrap:wrap;padding:4px 2px}._navigation-button_1e5o9_103{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1i79t_96{height:calc(100% - 28px);margin:5px}._tab_1i79t_101{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._active-tab_1i79t_106{position:relative;z-index:3}._content_1i79t_111{position:relative;z-index:2;top:-2px;height:calc(100% - 21px)}._tab_1i79t_101,._content_1i79t_111{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_1i79t_124{display:none}._active-content-tab_1i79t_128{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1ui4e_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_1ui4e_96:hover{cursor:pointer}}._disabled_1ui4e_108{pointer-events:none;opacity:.5}._input_1ui4e_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_1ui4e_113[disabled]{pointer-events:none}._icon_1ui4e_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_uytru_96{position:relative;display:flex}._wrapper-horizontal_uytru_101{align-items:center;column-gap:6px}._wrapper-vertical_uytru_106{flex-direction:column;align-items:flex-start;row-gap:5px;max-width:200px}._label_uytru_113{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);min-width:46px}._select_uytru_119{background-color:var(--background-color-white);height:21px;width:100%;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_uytru_129{position:absolute;right:2px;z-index:-1}._arrow-vertical_uytru_135{bottom:-2px}._arrow-horizontal_uytru_139{top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-stepper_45vc6_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_45vc6_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_45vc6_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_45vc6_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_45vc6_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._DSText_1n9d0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper-horizontal_1ubdj_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_1ubdj_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._textarea_1ubdj_111,._label_1ubdj_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._textarea_1ubdj_111{padding:3px 4px;box-shadow:var(--border-field);background-color:var(--background-color-white);resize:none}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:read-only{background-color:var(--background-color-white)}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:disabled+._label_1ubdj_112,._textarea_1ubdj_111[readonly],._textarea_1ubdj_111[readonly]+._label_1ubdj_112{opacity:.8}._textarea_1ubdj_111:focus{outline:none}')),document.head.appendChild(o)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
-import We, { useState as T, useEffect as M, useRef as Fe, useCallback as oe } from "react";
-var ue = { exports: {} }, A = {};
+(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button_1es1f_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_1es1f_96{cursor:pointer}}._ds-button_1es1f_96:disabled{pointer-events:none;opacity:.5}._ds-button_1es1f_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_1es1f_120{width:16px;height:14px;padding:1px}._size-medium_1es1f_126{height:23px;min-width:75px;padding:0 12px}._size-medium_1es1f_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_1es1f_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button-arrow_1ury6_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_1ury6_96:hover{cursor:pointer}}._ds-button-arrow_1ury6_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_1ury6_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_1ury6_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_1ury6_124:after{border-top:3px solid var(--text-color)}._arrow-top_1ury6_128:after{border-bottom:3px solid var(--text-color)}._size-small_1ury6_132{width:20px;height:10px}._size-medium_1ury6_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_nsxiw_96{position:relative;display:flex;align-items:center;column-gap:6px}._wrapper_nsxiw_96:hover{cursor:pointer}._disabled_nsxiw_106{pointer-events:none;opacity:.5}._input_nsxiw_111{position:absolute;width:1px;height:1px;background-color:transparent}._input_nsxiw_111[disabled]{pointer-events:none}._icon_nsxiw_121{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_133id_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_133id_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-heading_18kg0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_zh02p_96{display:flex}._wrapper-horizontal_zh02p_100{align-items:center;column-gap:6px}._wrapper-vertical_zh02p_105{flex-direction:column;align-items:flex-start;row-gap:5px}._label_zh02p_111{min-width:46px}._input_zh02p_115,._label_zh02p_111{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_zh02p_115{padding:3px 4px;height:21px;box-shadow:var(--border-field);background-color:var(--background-color-white);width:100%}._input_zh02p_115:focus{outline:none}._input_zh02p_115:disabled,._input_zh02p_115:disabled+._label_zh02p_111{opacity:.8}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._modal_miwrn_96{background-color:transparent;border:0;height:100%;width:100%}._modal_miwrn_96::backdrop{background-color:transparent}._move-window_miwrn_107{position:relative;top:50%;left:50%;transform:translate(-50%,-50%)}._container_miwrn_114{position:relative;top:50%;left:50%;transform:translate(-50%,-50%);padding:3px;min-height:110px;min-width:190px;max-width:100%;max-height:100%;background-color:var(--background-color);box-shadow:var(--box-shadow-raised)}._resize-window_miwrn_128{resize:both;overflow:auto}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._content_11jrm_96{padding:2px;width:100%;height:calc(100% - 40px)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._header_1qqbc_96{display:flex;justify-content:space-between;align-items:center;height:20px;padding:3px 2px 3px 3px;background:var(--background-color-modal-header)}._header_1qqbc_96>h3{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._navigation_1e5o9_96{column-gap:5px;display:flex;flex-wrap:wrap;padding:4px 2px}._navigation-button_1e5o9_103{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1i79t_96{height:calc(100% - 28px);margin:5px}._tab_1i79t_101{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._active-tab_1i79t_106{position:relative;z-index:3}._content_1i79t_111{position:relative;z-index:2;top:-2px;height:calc(100% - 21px)}._tab_1i79t_101,._content_1i79t_111{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_1i79t_124{display:none}._active-content-tab_1i79t_128{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1ui4e_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_1ui4e_96:hover{cursor:pointer}}._disabled_1ui4e_108{pointer-events:none;opacity:.5}._input_1ui4e_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_1ui4e_113[disabled]{pointer-events:none}._icon_1ui4e_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_uytru_96{position:relative;display:flex}._wrapper-horizontal_uytru_101{align-items:center;column-gap:6px}._wrapper-vertical_uytru_106{flex-direction:column;align-items:flex-start;row-gap:5px;max-width:200px}._label_uytru_113{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);min-width:46px}._select_uytru_119{background-color:var(--background-color-white);height:21px;width:100%;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_uytru_129{position:absolute;right:2px;z-index:-1}._arrow-vertical_uytru_135{bottom:-2px}._arrow-horizontal_uytru_139{top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-stepper_45vc6_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_45vc6_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_45vc6_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_45vc6_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_45vc6_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_13oe5_96{height:calc(100% - 28px);margin:5px;background-color:var(--background-color)}._tab_13oe5_102{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._tab-active_13oe5_107{position:relative;z-index:3}._content_13oe5_112{position:relative;z-index:2;top:-2px;height:calc(100% - 21px);padding:5px}._tab_13oe5_102,._content_13oe5_112{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_13oe5_126{display:none}._content-tab-active_13oe5_130{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._DSText_1n9d0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper-horizontal_1ubdj_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_1ubdj_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._textarea_1ubdj_111,._label_1ubdj_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._textarea_1ubdj_111{padding:3px 4px;box-shadow:var(--border-field);background-color:var(--background-color-white);resize:none}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:read-only{background-color:var(--background-color-white)}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:disabled+._label_1ubdj_112,._textarea_1ubdj_111[readonly],._textarea_1ubdj_111[readonly]+._label_1ubdj_112{opacity:.8}._textarea_1ubdj_111:focus{outline:none}')),document.head.appendChild(o)}}catch(t){console.error("vite-plugin-css-injected-by-js",t)}})();
+import qe, { useState as V, useEffect as M, useRef as Fe, useCallback as ie, createElement as St } from "react";
+var de = { exports: {} }, Y = {};
 /**
  * @license React
  * react-jsx-runtime.production.min.js
@@ -10,21 +10,21 @@ var ue = { exports: {} }, A = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var Ne;
-function Et() {
-  if (Ne) return A;
-  Ne = 1;
-  var t = We, a = Symbol.for("react.element"), l = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, u = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, i = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function d(_, h, j) {
-    var b, y = {}, g = null, R = null;
-    j !== void 0 && (g = "" + j), h.key !== void 0 && (g = "" + h.key), h.ref !== void 0 && (R = h.ref);
-    for (b in h) o.call(h, b) && !i.hasOwnProperty(b) && (y[b] = h[b]);
-    if (_ && _.defaultProps) for (b in h = _.defaultProps, h) y[b] === void 0 && (y[b] = h[b]);
-    return { $$typeof: a, type: _, key: g, ref: R, props: y, _owner: u.current };
+var Ie;
+function Tt() {
+  if (Ie) return Y;
+  Ie = 1;
+  var t = qe, a = Symbol.for("react.element"), l = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, i = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, c = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function d(_, p, y) {
+    var m, $ = {}, g = null, j = null;
+    y !== void 0 && (g = "" + y), p.key !== void 0 && (g = "" + p.key), p.ref !== void 0 && (j = p.ref);
+    for (m in p) o.call(p, m) && !c.hasOwnProperty(m) && ($[m] = p[m]);
+    if (_ && _.defaultProps) for (m in p = _.defaultProps, p) $[m] === void 0 && ($[m] = p[m]);
+    return { $$typeof: a, type: _, key: g, ref: j, props: $, _owner: i.current };
   }
-  return A.Fragment = l, A.jsx = d, A.jsxs = d, A;
+  return Y.Fragment = l, Y.jsx = d, Y.jsxs = d, Y;
 }
-var Y = {};
+var L = {};
 /**
  * @license React
  * react-jsx-runtime.development.js
@@ -35,50 +35,50 @@ var Y = {};
  * LICENSE file in the root directory of this source tree.
  */
 var Me;
-function St() {
+function Vt() {
   return Me || (Me = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = We, a = Symbol.for("react.element"), l = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), i = Symbol.for("react.profiler"), d = Symbol.for("react.provider"), _ = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), j = Symbol.for("react.suspense"), b = Symbol.for("react.suspense_list"), y = Symbol.for("react.memo"), g = Symbol.for("react.lazy"), R = Symbol.for("react.offscreen"), P = Symbol.iterator, U = "@@iterator";
+    var t = qe, a = Symbol.for("react.element"), l = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), i = Symbol.for("react.strict_mode"), c = Symbol.for("react.profiler"), d = Symbol.for("react.provider"), _ = Symbol.for("react.context"), p = Symbol.for("react.forward_ref"), y = Symbol.for("react.suspense"), m = Symbol.for("react.suspense_list"), $ = Symbol.for("react.memo"), g = Symbol.for("react.lazy"), j = Symbol.for("react.offscreen"), z = Symbol.iterator, B = "@@iterator";
     function S(e) {
       if (e === null || typeof e != "object")
         return null;
-      var r = P && e[P] || e[U];
-      return typeof r == "function" ? r : null;
+      var n = z && e[z] || e[B];
+      return typeof n == "function" ? n : null;
     }
-    var z = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    var N = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     function E(e) {
       {
-        for (var r = arguments.length, s = new Array(r > 1 ? r - 1 : 0), c = 1; c < r; c++)
-          s[c - 1] = arguments[c];
-        qe("error", e, s);
+        for (var n = arguments.length, s = new Array(n > 1 ? n - 1 : 0), u = 1; u < n; u++)
+          s[u - 1] = arguments[u];
+        Ge("error", e, s);
       }
     }
-    function qe(e, r, s) {
+    function Ge(e, n, s) {
       {
-        var c = z.ReactDebugCurrentFrame, p = c.getStackAddendum();
-        p !== "" && (r += "%s", s = s.concat([p]));
-        var m = s.map(function(v) {
+        var u = N.ReactDebugCurrentFrame, h = u.getStackAddendum();
+        h !== "" && (n += "%s", s = s.concat([h]));
+        var b = s.map(function(v) {
           return String(v);
         });
-        m.unshift("Warning: " + r), Function.prototype.apply.call(console[e], console, m);
+        b.unshift("Warning: " + n), Function.prototype.apply.call(console[e], console, b);
       }
     }
-    var Ge = !1, Je = !1, Xe = !1, Ke = !1, Ze = !1, fe;
-    fe = Symbol.for("react.module.reference");
-    function Qe(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === o || e === i || Ze || e === u || e === j || e === b || Ke || e === R || Ge || Je || Xe || typeof e == "object" && e !== null && (e.$$typeof === g || e.$$typeof === y || e.$$typeof === d || e.$$typeof === _ || e.$$typeof === h || // This needs to include all possible module reference object
+    var Je = !1, Xe = !1, Ke = !1, Ze = !1, Qe = !1, ve;
+    ve = Symbol.for("react.module.reference");
+    function et(e) {
+      return !!(typeof e == "string" || typeof e == "function" || e === o || e === c || Qe || e === i || e === y || e === m || Ze || e === j || Je || Xe || Ke || typeof e == "object" && e !== null && (e.$$typeof === g || e.$$typeof === $ || e.$$typeof === d || e.$$typeof === _ || e.$$typeof === p || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
-      e.$$typeof === fe || e.getModuleId !== void 0));
+      e.$$typeof === ve || e.getModuleId !== void 0));
     }
-    function et(e, r, s) {
-      var c = e.displayName;
-      if (c)
-        return c;
-      var p = r.displayName || r.name || "";
-      return p !== "" ? s + "(" + p + ")" : s;
+    function tt(e, n, s) {
+      var u = e.displayName;
+      if (u)
+        return u;
+      var h = n.displayName || n.name || "";
+      return h !== "" ? s + "(" + h + ")" : s;
     }
-    function ve(e) {
+    function pe(e) {
       return e.displayName || "Context";
     }
     function D(e) {
@@ -93,32 +93,32 @@ function St() {
           return "Fragment";
         case l:
           return "Portal";
-        case i:
+        case c:
           return "Profiler";
-        case u:
+        case i:
           return "StrictMode";
-        case j:
+        case y:
           return "Suspense";
-        case b:
+        case m:
           return "SuspenseList";
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
           case _:
-            var r = e;
-            return ve(r) + ".Consumer";
+            var n = e;
+            return pe(n) + ".Consumer";
           case d:
             var s = e;
-            return ve(s._context) + ".Provider";
-          case h:
-            return et(e, e.render, "ForwardRef");
-          case y:
-            var c = e.displayName || null;
-            return c !== null ? c : D(e.type) || "Memo";
+            return pe(s._context) + ".Provider";
+          case p:
+            return tt(e, e.render, "ForwardRef");
+          case $:
+            var u = e.displayName || null;
+            return u !== null ? u : D(e.type) || "Memo";
           case g: {
-            var p = e, m = p._payload, v = p._init;
+            var h = e, b = h._payload, v = h._init;
             try {
-              return D(v(m));
+              return D(v(b));
             } catch {
               return null;
             }
@@ -126,18 +126,18 @@ function St() {
         }
       return null;
     }
-    var H = Object.assign, I = 0, he, pe, _e, me, be, xe, ge;
-    function we() {
+    var H = Object.assign, A = 0, he, _e, be, me, xe, ge, we;
+    function $e() {
     }
-    we.__reactDisabledLog = !0;
-    function tt() {
+    $e.__reactDisabledLog = !0;
+    function rt() {
       {
-        if (I === 0) {
-          he = console.log, pe = console.info, _e = console.warn, me = console.error, be = console.group, xe = console.groupCollapsed, ge = console.groupEnd;
+        if (A === 0) {
+          he = console.log, _e = console.info, be = console.warn, me = console.error, xe = console.group, ge = console.groupCollapsed, we = console.groupEnd;
           var e = {
             configurable: !0,
             enumerable: !0,
-            value: we,
+            value: $e,
             writable: !0
           };
           Object.defineProperties(console, {
@@ -150,12 +150,12 @@ function St() {
             groupEnd: e
           });
         }
-        I++;
+        A++;
       }
     }
-    function rt() {
+    function nt() {
       {
-        if (I--, I === 0) {
+        if (A--, A === 0) {
           var e = {
             configurable: !0,
             enumerable: !0,
@@ -166,63 +166,63 @@ function St() {
               value: he
             }),
             info: H({}, e, {
-              value: pe
+              value: _e
             }),
             warn: H({}, e, {
-              value: _e
+              value: be
             }),
             error: H({}, e, {
               value: me
             }),
             group: H({}, e, {
-              value: be
-            }),
-            groupCollapsed: H({}, e, {
               value: xe
             }),
-            groupEnd: H({}, e, {
+            groupCollapsed: H({}, e, {
               value: ge
+            }),
+            groupEnd: H({}, e, {
+              value: we
             })
           });
         }
-        I < 0 && E("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        A < 0 && E("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var ee = z.ReactCurrentDispatcher, te;
-    function B(e, r, s) {
+    var te = N.ReactCurrentDispatcher, re;
+    function W(e, n, s) {
       {
-        if (te === void 0)
+        if (re === void 0)
           try {
             throw Error();
-          } catch (p) {
-            var c = p.stack.trim().match(/\n( *(at )?)/);
-            te = c && c[1] || "";
+          } catch (h) {
+            var u = h.stack.trim().match(/\n( *(at )?)/);
+            re = u && u[1] || "";
           }
         return `
-` + te + e;
+` + re + e;
       }
     }
-    var re = !1, W;
+    var ne = !1, q;
     {
-      var nt = typeof WeakMap == "function" ? WeakMap : Map;
-      W = new nt();
+      var at = typeof WeakMap == "function" ? WeakMap : Map;
+      q = new at();
     }
-    function ye(e, r) {
-      if (!e || re)
+    function ye(e, n) {
+      if (!e || ne)
         return "";
       {
-        var s = W.get(e);
+        var s = q.get(e);
         if (s !== void 0)
           return s;
       }
-      var c;
-      re = !0;
-      var p = Error.prepareStackTrace;
+      var u;
+      ne = !0;
+      var h = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var m;
-      m = ee.current, ee.current = null, tt();
+      var b;
+      b = te.current, te.current = null, rt();
       try {
-        if (r) {
+        if (n) {
           var v = function() {
             throw Error();
           };
@@ -234,14 +234,14 @@ function St() {
             try {
               Reflect.construct(v, []);
             } catch (C) {
-              c = C;
+              u = C;
             }
             Reflect.construct(e, [], v);
           } else {
             try {
               v.call();
             } catch (C) {
-              c = C;
+              u = C;
             }
             e.call(v.prototype);
           }
@@ -249,151 +249,151 @@ function St() {
           try {
             throw Error();
           } catch (C) {
-            c = C;
+            u = C;
           }
           e();
         }
       } catch (C) {
-        if (C && c && typeof C.stack == "string") {
+        if (C && u && typeof C.stack == "string") {
           for (var f = C.stack.split(`
-`), $ = c.stack.split(`
-`), x = f.length - 1, w = $.length - 1; x >= 1 && w >= 0 && f[x] !== $[w]; )
+`), R = u.stack.split(`
+`), x = f.length - 1, w = R.length - 1; x >= 1 && w >= 0 && f[x] !== R[w]; )
             w--;
           for (; x >= 1 && w >= 0; x--, w--)
-            if (f[x] !== $[w]) {
+            if (f[x] !== R[w]) {
               if (x !== 1 || w !== 1)
                 do
-                  if (x--, w--, w < 0 || f[x] !== $[w]) {
-                    var V = `
+                  if (x--, w--, w < 0 || f[x] !== R[w]) {
+                    var T = `
 ` + f[x].replace(" at new ", " at ");
-                    return e.displayName && V.includes("<anonymous>") && (V = V.replace("<anonymous>", e.displayName)), typeof e == "function" && W.set(e, V), V;
+                    return e.displayName && T.includes("<anonymous>") && (T = T.replace("<anonymous>", e.displayName)), typeof e == "function" && q.set(e, T), T;
                   }
                 while (x >= 1 && w >= 0);
               break;
             }
         }
       } finally {
-        re = !1, ee.current = m, rt(), Error.prepareStackTrace = p;
+        ne = !1, te.current = b, nt(), Error.prepareStackTrace = h;
       }
-      var N = e ? e.displayName || e.name : "", ze = N ? B(N) : "";
-      return typeof e == "function" && W.set(e, ze), ze;
+      var I = e ? e.displayName || e.name : "", Ne = I ? W(I) : "";
+      return typeof e == "function" && q.set(e, Ne), Ne;
     }
-    function at(e, r, s) {
+    function lt(e, n, s) {
       return ye(e, !1);
     }
-    function lt(e) {
-      var r = e.prototype;
-      return !!(r && r.isReactComponent);
+    function st(e) {
+      var n = e.prototype;
+      return !!(n && n.isReactComponent);
     }
-    function q(e, r, s) {
+    function G(e, n, s) {
       if (e == null)
         return "";
       if (typeof e == "function")
-        return ye(e, lt(e));
+        return ye(e, st(e));
       if (typeof e == "string")
-        return B(e);
+        return W(e);
       switch (e) {
-        case j:
-          return B("Suspense");
-        case b:
-          return B("SuspenseList");
+        case y:
+          return W("Suspense");
+        case m:
+          return W("SuspenseList");
       }
       if (typeof e == "object")
         switch (e.$$typeof) {
-          case h:
-            return at(e.render);
-          case y:
-            return q(e.type, r, s);
+          case p:
+            return lt(e.render);
+          case $:
+            return G(e.type, n, s);
           case g: {
-            var c = e, p = c._payload, m = c._init;
+            var u = e, h = u._payload, b = u._init;
             try {
-              return q(m(p), r, s);
+              return G(b(h), n, s);
             } catch {
             }
           }
         }
       return "";
     }
-    var G = Object.prototype.hasOwnProperty, je = {}, Re = z.ReactDebugCurrentFrame;
-    function J(e) {
+    var J = Object.prototype.hasOwnProperty, je = {}, Re = N.ReactDebugCurrentFrame;
+    function X(e) {
       if (e) {
-        var r = e._owner, s = q(e.type, e._source, r ? r.type : null);
+        var n = e._owner, s = G(e.type, e._source, n ? n.type : null);
         Re.setExtraStackFrame(s);
       } else
         Re.setExtraStackFrame(null);
     }
-    function st(e, r, s, c, p) {
+    function ot(e, n, s, u, h) {
       {
-        var m = Function.call.bind(G);
+        var b = Function.call.bind(J);
         for (var v in e)
-          if (m(e, v)) {
+          if (b(e, v)) {
             var f = void 0;
             try {
               if (typeof e[v] != "function") {
-                var $ = Error((c || "React class") + ": " + s + " type `" + v + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[v] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                throw $.name = "Invariant Violation", $;
+                var R = Error((u || "React class") + ": " + s + " type `" + v + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof e[v] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                throw R.name = "Invariant Violation", R;
               }
-              f = e[v](r, v, c, s, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+              f = e[v](n, v, u, s, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
             } catch (x) {
               f = x;
             }
-            f && !(f instanceof Error) && (J(p), E("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", c || "React class", s, v, typeof f), J(null)), f instanceof Error && !(f.message in je) && (je[f.message] = !0, J(p), E("Failed %s type: %s", s, f.message), J(null));
+            f && !(f instanceof Error) && (X(h), E("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", u || "React class", s, v, typeof f), X(null)), f instanceof Error && !(f.message in je) && (je[f.message] = !0, X(h), E("Failed %s type: %s", s, f.message), X(null));
           }
       }
     }
-    var ot = Array.isArray;
-    function ne(e) {
-      return ot(e);
+    var it = Array.isArray;
+    function ae(e) {
+      return it(e);
     }
-    function it(e) {
+    function ct(e) {
       {
-        var r = typeof Symbol == "function" && Symbol.toStringTag, s = r && e[Symbol.toStringTag] || e.constructor.name || "Object";
+        var n = typeof Symbol == "function" && Symbol.toStringTag, s = n && e[Symbol.toStringTag] || e.constructor.name || "Object";
         return s;
       }
     }
-    function ct(e) {
+    function ut(e) {
       try {
-        return $e(e), !1;
+        return Ee(e), !1;
       } catch {
         return !0;
       }
     }
-    function $e(e) {
+    function Ee(e) {
       return "" + e;
     }
-    function Ee(e) {
-      if (ct(e))
-        return E("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", it(e)), $e(e);
+    function Se(e) {
+      if (ut(e))
+        return E("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", ct(e)), Ee(e);
     }
-    var Se = z.ReactCurrentOwner, ut = {
+    var Te = N.ReactCurrentOwner, dt = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, Ve, Te;
-    function dt(e) {
-      if (G.call(e, "ref")) {
-        var r = Object.getOwnPropertyDescriptor(e, "ref").get;
-        if (r && r.isReactWarning)
+    }, Ve, Ce;
+    function ft(e) {
+      if (J.call(e, "ref")) {
+        var n = Object.getOwnPropertyDescriptor(e, "ref").get;
+        if (n && n.isReactWarning)
           return !1;
       }
       return e.ref !== void 0;
     }
-    function ft(e) {
-      if (G.call(e, "key")) {
-        var r = Object.getOwnPropertyDescriptor(e, "key").get;
-        if (r && r.isReactWarning)
+    function vt(e) {
+      if (J.call(e, "key")) {
+        var n = Object.getOwnPropertyDescriptor(e, "key").get;
+        if (n && n.isReactWarning)
           return !1;
       }
       return e.key !== void 0;
     }
-    function vt(e, r) {
-      typeof e.ref == "string" && Se.current;
+    function pt(e, n) {
+      typeof e.ref == "string" && Te.current;
     }
-    function ht(e, r) {
+    function ht(e, n) {
       {
         var s = function() {
-          Ve || (Ve = !0, E("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
+          Ve || (Ve = !0, E("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
         };
         s.isReactWarning = !0, Object.defineProperty(e, "key", {
           get: s,
@@ -401,10 +401,10 @@ function St() {
         });
       }
     }
-    function pt(e, r) {
+    function _t(e, n) {
       {
         var s = function() {
-          Te || (Te = !0, E("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", r));
+          Ce || (Ce = !0, E("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
         };
         s.isReactWarning = !0, Object.defineProperty(e, "ref", {
           get: s,
@@ -412,17 +412,17 @@ function St() {
         });
       }
     }
-    var _t = function(e, r, s, c, p, m, v) {
+    var bt = function(e, n, s, u, h, b, v) {
       var f = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: a,
         // Built-in properties that belong on the element
         type: e,
-        key: r,
+        key: n,
         ref: s,
         props: v,
         // Record the component responsible for creating this element.
-        _owner: m
+        _owner: b
       };
       return f._store = {}, Object.defineProperty(f._store, "validated", {
         configurable: !1,
@@ -433,49 +433,49 @@ function St() {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: c
+        value: u
       }), Object.defineProperty(f, "_source", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: p
+        value: h
       }), Object.freeze && (Object.freeze(f.props), Object.freeze(f)), f;
     };
-    function mt(e, r, s, c, p) {
+    function mt(e, n, s, u, h) {
       {
-        var m, v = {}, f = null, $ = null;
-        s !== void 0 && (Ee(s), f = "" + s), ft(r) && (Ee(r.key), f = "" + r.key), dt(r) && ($ = r.ref, vt(r, p));
-        for (m in r)
-          G.call(r, m) && !ut.hasOwnProperty(m) && (v[m] = r[m]);
+        var b, v = {}, f = null, R = null;
+        s !== void 0 && (Se(s), f = "" + s), vt(n) && (Se(n.key), f = "" + n.key), ft(n) && (R = n.ref, pt(n, h));
+        for (b in n)
+          J.call(n, b) && !dt.hasOwnProperty(b) && (v[b] = n[b]);
         if (e && e.defaultProps) {
           var x = e.defaultProps;
-          for (m in x)
-            v[m] === void 0 && (v[m] = x[m]);
+          for (b in x)
+            v[b] === void 0 && (v[b] = x[b]);
         }
-        if (f || $) {
+        if (f || R) {
           var w = typeof e == "function" ? e.displayName || e.name || "Unknown" : e;
-          f && ht(v, w), $ && pt(v, w);
+          f && ht(v, w), R && _t(v, w);
         }
-        return _t(e, f, $, p, c, Se.current, v);
+        return bt(e, f, R, h, u, Te.current, v);
       }
     }
-    var ae = z.ReactCurrentOwner, Ce = z.ReactDebugCurrentFrame;
+    var le = N.ReactCurrentOwner, De = N.ReactDebugCurrentFrame;
     function F(e) {
       if (e) {
-        var r = e._owner, s = q(e.type, e._source, r ? r.type : null);
-        Ce.setExtraStackFrame(s);
+        var n = e._owner, s = G(e.type, e._source, n ? n.type : null);
+        De.setExtraStackFrame(s);
       } else
-        Ce.setExtraStackFrame(null);
+        De.setExtraStackFrame(null);
     }
-    var le;
-    le = !1;
-    function se(e) {
+    var se;
+    se = !1;
+    function oe(e) {
       return typeof e == "object" && e !== null && e.$$typeof === a;
     }
-    function De() {
+    function He() {
       {
-        if (ae.current) {
-          var e = D(ae.current.type);
+        if (le.current) {
+          var e = D(le.current.type);
           if (e)
             return `
 
@@ -484,249 +484,249 @@ Check the render method of \`` + e + "`.";
         return "";
       }
     }
-    function bt(e) {
+    function xt(e) {
       return "";
     }
-    var He = {};
-    function xt(e) {
+    var Oe = {};
+    function gt(e) {
       {
-        var r = De();
-        if (!r) {
+        var n = He();
+        if (!n) {
           var s = typeof e == "string" ? e : e.displayName || e.name;
-          s && (r = `
+          s && (n = `
 
 Check the top-level render call using <` + s + ">.");
         }
-        return r;
+        return n;
       }
     }
-    function Oe(e, r) {
+    function ke(e, n) {
       {
         if (!e._store || e._store.validated || e.key != null)
           return;
         e._store.validated = !0;
-        var s = xt(r);
-        if (He[s])
+        var s = gt(n);
+        if (Oe[s])
           return;
-        He[s] = !0;
-        var c = "";
-        e && e._owner && e._owner !== ae.current && (c = " It was passed a child from " + D(e._owner.type) + "."), F(e), E('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', s, c), F(null);
+        Oe[s] = !0;
+        var u = "";
+        e && e._owner && e._owner !== le.current && (u = " It was passed a child from " + D(e._owner.type) + "."), F(e), E('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', s, u), F(null);
       }
     }
-    function ke(e, r) {
+    function Pe(e, n) {
       {
         if (typeof e != "object")
           return;
-        if (ne(e))
+        if (ae(e))
           for (var s = 0; s < e.length; s++) {
-            var c = e[s];
-            se(c) && Oe(c, r);
+            var u = e[s];
+            oe(u) && ke(u, n);
           }
-        else if (se(e))
+        else if (oe(e))
           e._store && (e._store.validated = !0);
         else if (e) {
-          var p = S(e);
-          if (typeof p == "function" && p !== e.entries)
-            for (var m = p.call(e), v; !(v = m.next()).done; )
-              se(v.value) && Oe(v.value, r);
+          var h = S(e);
+          if (typeof h == "function" && h !== e.entries)
+            for (var b = h.call(e), v; !(v = b.next()).done; )
+              oe(v.value) && ke(v.value, n);
         }
-      }
-    }
-    function gt(e) {
-      {
-        var r = e.type;
-        if (r == null || typeof r == "string")
-          return;
-        var s;
-        if (typeof r == "function")
-          s = r.propTypes;
-        else if (typeof r == "object" && (r.$$typeof === h || // Note: Memo only checks outer props here.
-        // Inner props are checked in the reconciler.
-        r.$$typeof === y))
-          s = r.propTypes;
-        else
-          return;
-        if (s) {
-          var c = D(r);
-          st(s, e.props, "prop", c, e);
-        } else if (r.PropTypes !== void 0 && !le) {
-          le = !0;
-          var p = D(r);
-          E("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", p || "Unknown");
-        }
-        typeof r.getDefaultProps == "function" && !r.getDefaultProps.isReactClassApproved && E("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
     function wt(e) {
       {
-        for (var r = Object.keys(e.props), s = 0; s < r.length; s++) {
-          var c = r[s];
-          if (c !== "children" && c !== "key") {
-            F(e), E("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", c), F(null);
+        var n = e.type;
+        if (n == null || typeof n == "string")
+          return;
+        var s;
+        if (typeof n == "function")
+          s = n.propTypes;
+        else if (typeof n == "object" && (n.$$typeof === p || // Note: Memo only checks outer props here.
+        // Inner props are checked in the reconciler.
+        n.$$typeof === $))
+          s = n.propTypes;
+        else
+          return;
+        if (s) {
+          var u = D(n);
+          ot(s, e.props, "prop", u, e);
+        } else if (n.PropTypes !== void 0 && !se) {
+          se = !0;
+          var h = D(n);
+          E("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", h || "Unknown");
+        }
+        typeof n.getDefaultProps == "function" && !n.getDefaultProps.isReactClassApproved && E("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+      }
+    }
+    function $t(e) {
+      {
+        for (var n = Object.keys(e.props), s = 0; s < n.length; s++) {
+          var u = n[s];
+          if (u !== "children" && u !== "key") {
+            F(e), E("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", u), F(null);
             break;
           }
         }
         e.ref !== null && (F(e), E("Invalid attribute `ref` supplied to `React.Fragment`."), F(null));
       }
     }
-    function Pe(e, r, s, c, p, m) {
+    function ze(e, n, s, u, h, b) {
       {
-        var v = Qe(e);
+        var v = et(e);
         if (!v) {
           var f = "";
           (e === void 0 || typeof e == "object" && e !== null && Object.keys(e).length === 0) && (f += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var $ = bt();
-          $ ? f += $ : f += De();
+          var R = xt();
+          R ? f += R : f += He();
           var x;
-          e === null ? x = "null" : ne(e) ? x = "array" : e !== void 0 && e.$$typeof === a ? (x = "<" + (D(e.type) || "Unknown") + " />", f = " Did you accidentally export a JSX literal instead of a component?") : x = typeof e, E("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", x, f);
+          e === null ? x = "null" : ae(e) ? x = "array" : e !== void 0 && e.$$typeof === a ? (x = "<" + (D(e.type) || "Unknown") + " />", f = " Did you accidentally export a JSX literal instead of a component?") : x = typeof e, E("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", x, f);
         }
-        var w = mt(e, r, s, p, m);
+        var w = mt(e, n, s, h, b);
         if (w == null)
           return w;
         if (v) {
-          var V = r.children;
-          if (V !== void 0)
-            if (c)
-              if (ne(V)) {
-                for (var N = 0; N < V.length; N++)
-                  ke(V[N], e);
-                Object.freeze && Object.freeze(V);
+          var T = n.children;
+          if (T !== void 0)
+            if (u)
+              if (ae(T)) {
+                for (var I = 0; I < T.length; I++)
+                  Pe(T[I], e);
+                Object.freeze && Object.freeze(T);
               } else
                 E("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              ke(V, e);
+              Pe(T, e);
         }
-        return e === o ? wt(w) : gt(w), w;
+        return e === o ? $t(w) : wt(w), w;
       }
     }
-    function yt(e, r, s) {
-      return Pe(e, r, s, !0);
+    function yt(e, n, s) {
+      return ze(e, n, s, !0);
     }
-    function jt(e, r, s) {
-      return Pe(e, r, s, !1);
+    function jt(e, n, s) {
+      return ze(e, n, s, !1);
     }
-    var Rt = jt, $t = yt;
-    Y.Fragment = o, Y.jsx = Rt, Y.jsxs = $t;
-  }()), Y;
+    var Rt = jt, Et = yt;
+    L.Fragment = o, L.jsx = Rt, L.jsxs = Et;
+  }()), L;
 }
-process.env.NODE_ENV === "production" ? ue.exports = Et() : ue.exports = St();
-var n = ue.exports;
-const Ie = {
+process.env.NODE_ENV === "production" ? de.exports = Tt() : de.exports = Vt();
+var r = de.exports;
+const Ae = {
   "ds-button": "_ds-button_1es1f_96",
   "size-small": "_size-small_1es1f_120",
   "size-medium": "_size-medium_1es1f_126"
-}, Vt = ({
+}, Ct = ({
   size: t = "medium",
   disabled: a = !1,
   onClick: l,
   text: o,
-  id: u,
-  isTextVisible: i = !0,
+  id: i,
+  isTextVisible: c = !0,
   iconLeft: d,
   iconRight: _
-}) => /* @__PURE__ */ n.jsxs(
+}) => /* @__PURE__ */ r.jsxs(
   "button",
   {
-    "aria-label": i ? void 0 : o,
-    className: `${Ie["ds-button"]} ${Ie[`size-${t}`]}`,
-    "data-testid": `${u}-button`,
+    "aria-label": c ? void 0 : o,
+    className: `${Ae["ds-button"]} ${Ae[`size-${t}`]}`,
+    "data-testid": `${i}-button`,
     type: "button",
     disabled: a,
     onClick: l,
     children: [
       d,
-      i && o,
+      c && o,
       _
     ]
   }
-), ie = {
+), ce = {
   "ds-button-arrow": "_ds-button-arrow_1ury6_96",
   "arrow-bottom": "_arrow-bottom_1ury6_124",
   "arrow-top": "_arrow-top_1ury6_128",
   "size-small": "_size-small_1ury6_132",
   "size-medium": "_size-medium_1ury6_137"
 };
-function Ae({
+function Ye({
   ariaLabel: t,
   className: a = "",
   direction: l,
   disabled: o,
-  id: u,
-  onClick: i,
+  id: i,
+  onClick: c,
   size: d
 }) {
-  return /* @__PURE__ */ n.jsx(
+  return /* @__PURE__ */ r.jsx(
     "button",
     {
       "aria-label": t,
       className: `
-				${ie["ds-button-arrow"]}
-				${ie[`arrow-${l}`]}
-				${ie[`size-${d}`]}
+				${ce["ds-button-arrow"]}
+				${ce[`arrow-${l}`]}
+				${ce[`size-${d}`]}
 				${a}
 			`,
-      "data-testid": `ds-button-arrow-${u}-${l}`,
+      "data-testid": `ds-button-arrow-${i}-${l}`,
       disabled: o,
       type: "button",
-      onClick: i
+      onClick: c
     }
   );
 }
-const Tt = "_wrapper_nsxiw_96", Ct = "_disabled_nsxiw_106", Dt = "_input_nsxiw_111", X = {
-  wrapper: Tt,
-  disabled: Ct,
-  input: Dt
-}, Ht = ({
+const Dt = "_wrapper_nsxiw_96", Ht = "_disabled_nsxiw_106", Ot = "_input_nsxiw_111", K = {
+  wrapper: Dt,
+  disabled: Ht,
+  input: Ot
+}, kt = ({
   initialChecked: t = !1,
   onChange: a
 }) => {
-  const [l, o] = T(t), u = () => {
-    const i = !l;
-    o(i), a && a(i);
+  const [l, o] = V(t), i = () => {
+    const c = !l;
+    o(c), a && a(c);
   };
   return M(() => {
     o(t);
-  }, [t]), { checked: l, handleChange: u };
-}, Vr = ({
+  }, [t]), { checked: l, handleChange: i };
+}, kr = ({
   initialChecked: t = !1,
   disabled: a = !1,
   id: l,
   name: o,
-  onChange: u,
-  readonly: i = !1,
+  onChange: i,
+  readonly: c = !1,
   text: d
 }) => {
-  const { checked: _, handleChange: h } = Ht({
+  const { checked: _, handleChange: p } = kt({
     initialChecked: t,
-    onChange: u
+    onChange: i
   });
-  return /* @__PURE__ */ n.jsxs(
+  return /* @__PURE__ */ r.jsxs(
     "label",
     {
       "aria-label": d,
-      className: `${X.wrapper} ${a ? X.disabled : ""}`,
+      className: `${K.wrapper} ${a ? K.disabled : ""}`,
       "data-testid": `${l}-checkbox`,
       children: [
-        /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx(
           "input",
           {
-            className: X.input,
+            className: K.input,
             checked: _,
             "data-testid": `${l}-checkbox-input`,
             disabled: a,
             name: o,
             type: "checkbox",
             value: l,
-            onChange: h,
-            readOnly: i
+            onChange: p,
+            readOnly: c
           }
         ),
-        _ && /* @__PURE__ */ n.jsx(Le, {}),
-        !_ && /* @__PURE__ */ n.jsx(Le, {}),
-        /* @__PURE__ */ n.jsx(
-          de,
+        _ && /* @__PURE__ */ r.jsx(Ue, {}),
+        !_ && /* @__PURE__ */ r.jsx(Ue, {}),
+        /* @__PURE__ */ r.jsx(
+          fe,
           {
-            className: X.text,
+            className: K.text,
             id: l,
             text: d
           }
@@ -734,21 +734,21 @@ const Tt = "_wrapper_nsxiw_96", Ct = "_disabled_nsxiw_106", Dt = "_input_nsxiw_1
       ]
     }
   );
-}, Ot = "_frame_133id_96", kt = "_title_133id_104", Ye = {
-  frame: Ot,
-  title: kt
+}, Pt = "_frame_133id_96", zt = "_title_133id_104", Le = {
+  frame: Pt,
+  title: zt
 };
-function Tr({ children: t, className: a = "", id: l, title: o }) {
-  return /* @__PURE__ */ n.jsxs(
+function Pr({ children: t, className: a = "", id: l, title: o }) {
+  return /* @__PURE__ */ r.jsxs(
     "div",
     {
-      className: `${Ye.frame} ${a}`,
+      className: `${Le.frame} ${a}`,
       "data-testid": `ds-frame-${l}`,
       children: [
-        o && /* @__PURE__ */ n.jsx(
-          de,
+        o && /* @__PURE__ */ r.jsx(
+          fe,
           {
-            className: Ye.title,
+            className: Le.title,
             text: o,
             id: `frame-${l}`
           }
@@ -758,23 +758,23 @@ function Tr({ children: t, className: a = "", id: l, title: o }) {
     }
   );
 }
-const Pt = {
+const Nt = {
   "ds-heading": "_ds-heading_18kg0_96"
-}, zt = ({
+}, Ft = ({
   id: t,
   text: a,
   type: l
 }) => {
   const o = l;
-  return /* @__PURE__ */ n.jsx(
+  return /* @__PURE__ */ r.jsx(
     o,
     {
-      className: Pt["ds-heading"],
+      className: Nt["ds-heading"],
       "data-testid": `${t}-heading`,
       children: a
     }
   );
-}, Cr = () => /* @__PURE__ */ n.jsx(
+}, zr = () => /* @__PURE__ */ r.jsx(
   "img",
   {
     alt: "Audio button off",
@@ -783,7 +783,7 @@ const Pt = {
     src: "/icons/audio-button-off.png",
     width: "16"
   }
-), Dr = () => /* @__PURE__ */ n.jsx(
+), Nr = () => /* @__PURE__ */ r.jsx(
   "img",
   {
     alt: "Audio button on",
@@ -792,7 +792,7 @@ const Pt = {
     src: "/icons/audio-button.png",
     width: "16"
   }
-), Le = () => /* @__PURE__ */ n.jsxs(
+), Ue = () => /* @__PURE__ */ r.jsxs(
   "svg",
   {
     width: "7",
@@ -801,8 +801,8 @@ const Pt = {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: [
-      /* @__PURE__ */ n.jsx("title", { children: "checkbox" }),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx("title", { children: "checkbox" }),
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -813,7 +813,7 @@ const Pt = {
       )
     ]
   }
-), Hr = () => /* @__PURE__ */ n.jsxs(
+), Fr = () => /* @__PURE__ */ r.jsxs(
   "svg",
   {
     width: "7",
@@ -822,8 +822,8 @@ const Pt = {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     children: [
-      /* @__PURE__ */ n.jsx("title", { children: "checkbox disabled" }),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx("title", { children: "checkbox disabled" }),
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -834,7 +834,7 @@ const Pt = {
       )
     ]
   }
-), Ft = () => /* @__PURE__ */ n.jsxs(
+), It = () => /* @__PURE__ */ r.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -842,8 +842,8 @@ const Pt = {
     height: "7",
     fill: "none",
     children: [
-      /* @__PURE__ */ n.jsx("title", { children: "Close icon" }),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx("title", { children: "Close icon" }),
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -854,7 +854,7 @@ const Pt = {
       )
     ]
   }
-), Nt = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ n.jsxs(
+), Mt = ({ isChecked: t = !1 }) => t ? /* @__PURE__ */ r.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -863,10 +863,10 @@ const Pt = {
     role: "img",
     "aria-label": "Checked radio button",
     children: [
-      /* @__PURE__ */ n.jsx("title", { children: "Checked radio button" }),
-      /* @__PURE__ */ n.jsxs("g", { className: "layer", children: [
-        /* @__PURE__ */ n.jsx("title", { children: "Layer 1" }),
-        /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx("title", { children: "Checked radio button" }),
+      /* @__PURE__ */ r.jsxs("g", { className: "layer", children: [
+        /* @__PURE__ */ r.jsx("title", { children: "Layer 1" }),
+        /* @__PURE__ */ r.jsx(
           "path",
           {
             clipRule: "evenodd",
@@ -876,7 +876,7 @@ const Pt = {
             id: "svg_1"
           }
         ),
-        /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx(
           "path",
           {
             clipRule: "evenodd",
@@ -886,7 +886,7 @@ const Pt = {
             id: "svg_2"
           }
         ),
-        /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx(
           "path",
           {
             clipRule: "evenodd",
@@ -896,7 +896,7 @@ const Pt = {
             id: "svg_3"
           }
         ),
-        /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx(
           "path",
           {
             clipRule: "evenodd",
@@ -906,7 +906,7 @@ const Pt = {
             id: "svg_4"
           }
         ),
-        /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx(
           "path",
           {
             clipRule: "evenodd",
@@ -916,7 +916,7 @@ const Pt = {
             id: "svg_5"
           }
         ),
-        /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx(
           "use",
           {
             id: "svg_7",
@@ -926,14 +926,14 @@ const Pt = {
           }
         )
       ] }),
-      /* @__PURE__ */ n.jsx("defs", { children: /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx("defs", { children: /* @__PURE__ */ r.jsx(
         "symbol",
         {
           xmlns: "http://www.w3.org/2000/svg",
           height: "4",
           id: "svg_6",
           width: "4",
-          children: /* @__PURE__ */ n.jsx(
+          children: /* @__PURE__ */ r.jsx(
             "path",
             {
               clipRule: "evenodd",
@@ -946,7 +946,7 @@ const Pt = {
       ) })
     ]
   }
-) : t ? null : /* @__PURE__ */ n.jsxs(
+) : t ? null : /* @__PURE__ */ r.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -955,8 +955,8 @@ const Pt = {
     role: "img",
     "aria-label": "Unchecked radio button",
     children: [
-      /* @__PURE__ */ n.jsx("title", { children: "Unchecked radio button" }),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx("title", { children: "Unchecked radio button" }),
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -965,7 +965,7 @@ const Pt = {
           fill: "gray"
         }
       ),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -974,7 +974,7 @@ const Pt = {
           fill: "#000"
         }
       ),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -983,7 +983,7 @@ const Pt = {
           fill: "#DFDFDF"
         }
       ),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -992,7 +992,7 @@ const Pt = {
           fill: "#fff"
         }
       ),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fillRule: "evenodd",
@@ -1003,7 +1003,7 @@ const Pt = {
       )
     ]
   }
-), Mt = () => /* @__PURE__ */ n.jsxs(
+), At = () => /* @__PURE__ */ r.jsxs(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -1013,8 +1013,8 @@ const Pt = {
     role: "img",
     "aria-label": "Icon select button",
     children: [
-      /* @__PURE__ */ n.jsx("title", { children: "Icon select button" }),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx("title", { children: "Icon select button" }),
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fill: "#DFDFDF",
@@ -1023,7 +1023,7 @@ const Pt = {
           clipRule: "evenodd"
         }
       ),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fill: "#fff",
@@ -1032,7 +1032,7 @@ const Pt = {
           clipRule: "evenodd"
         }
       ),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fill: "#000",
@@ -1041,7 +1041,7 @@ const Pt = {
           clipRule: "evenodd"
         }
       ),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fill: "gray",
@@ -1050,14 +1050,14 @@ const Pt = {
           clipRule: "evenodd"
         }
       ),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fill: "silver",
           d: "M2 2h12v13H2z"
         }
       ),
-      /* @__PURE__ */ n.jsx(
+      /* @__PURE__ */ r.jsx(
         "path",
         {
           fill: "#000",
@@ -1068,63 +1068,63 @@ const Pt = {
       )
     ]
   }
-), It = "_wrapper_zh02p_96", At = "_label_zh02p_111", Yt = "_input_zh02p_115", K = {
-  wrapper: It,
+), Yt = "_wrapper_zh02p_96", Lt = "_label_zh02p_111", Ut = "_input_zh02p_115", Z = {
+  wrapper: Yt,
   "wrapper-horizontal": "_wrapper-horizontal_zh02p_100",
   "wrapper-vertical": "_wrapper-vertical_zh02p_105",
-  label: At,
-  input: Yt
+  label: Lt,
+  input: Ut
 };
-function Lt({ initialValue: t, onChange: a }) {
-  const [l, o] = T(t);
+function Bt({ initialValue: t, onChange: a }) {
+  const [l, o] = V(t);
   return M(() => {
     o(t);
-  }, [t]), { value: l, handleInputChange: (i) => {
-    o(i.target.value), a && a(i);
+  }, [t]), { value: l, handleInputChange: (c) => {
+    o(c.target.value), a && a(c);
   } };
 }
-function Ut({
+function Wt({
   className: t = "",
   type: a = "text",
   id: l,
   disabled: o = !1,
-  readonly: u = !1,
-  initialValue: i = "",
+  readonly: i = !1,
+  initialValue: c = "",
   labelName: d,
   wrapperLayout: _ = "vertical",
-  min: h,
-  max: j,
-  onChange: b
+  min: p,
+  max: y,
+  onChange: m
 }) {
-  const { value: y, handleInputChange: g } = Lt({ initialValue: i, onChange: b }), R = `ds-input-${l}`;
-  return /* @__PURE__ */ n.jsxs(
+  const { value: $, handleInputChange: g } = Bt({ initialValue: c, onChange: m }), j = `ds-input-${l}`;
+  return /* @__PURE__ */ r.jsxs(
     "div",
     {
-      className: `${K.wrapper} ${K[`wrapper-${_}`]} ${t}`,
-      "data-testid": R,
+      className: `${Z.wrapper} ${Z[`wrapper-${_}`]} ${t}`,
+      "data-testid": j,
       children: [
-        d && /* @__PURE__ */ n.jsx(
+        d && /* @__PURE__ */ r.jsx(
           "label",
           {
-            className: K.label,
+            className: Z.label,
             "data-testid": `ds-input-label-${l}`,
-            htmlFor: R,
+            htmlFor: j,
             children: d
           }
         ),
-        /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx(
           "input",
           {
-            id: R,
-            className: K.input,
+            id: j,
+            className: Z.input,
             "data-testid": `ds-input-input-${l}`,
             type: a,
             disabled: o,
-            readOnly: u,
-            value: y,
-            min: h ?? void 0,
-            max: j ?? void 0,
-            name: R,
+            readOnly: i,
+            value: $,
+            min: p ?? void 0,
+            max: y ?? void 0,
+            name: j,
             onChange: g
           }
         )
@@ -1132,63 +1132,63 @@ function Ut({
     }
   );
 }
-const Bt = "_modal_miwrn_96", Wt = "_container_miwrn_114", Z = {
-  modal: Bt,
+const qt = "_modal_miwrn_96", Gt = "_container_miwrn_114", Q = {
+  modal: qt,
   "move-window": "_move-window_miwrn_107",
-  container: Wt,
+  container: Gt,
   "resize-window": "_resize-window_miwrn_128"
-}, qt = "_content_11jrm_96", Gt = {
-  content: qt
-}, Jt = ({
+}, Jt = "_content_11jrm_96", Xt = {
+  content: Jt
+}, Kt = ({
   children: t,
   id: a
-}) => /* @__PURE__ */ n.jsx(
+}) => /* @__PURE__ */ r.jsx(
   "div",
   {
-    className: Gt.content,
+    className: Xt.content,
     "data-testid": `${a}-modal-content`,
     children: t
   }
-), Xt = ({
+), Zt = ({
   onClick: t,
   id: a
-}) => /* @__PURE__ */ n.jsx(
-  Vt,
+}) => /* @__PURE__ */ r.jsx(
+  Ct,
   {
     size: "small",
     id: `${a}-close`,
     onClick: t,
     text: "",
-    iconLeft: /* @__PURE__ */ n.jsx(Ft, {})
+    iconLeft: /* @__PURE__ */ r.jsx(It, {})
   }
-), Kt = "_header_1qqbc_96", Zt = {
-  header: Kt
-}, Qt = ({
+), Qt = "_header_1qqbc_96", er = {
+  header: Qt
+}, tr = ({
   id: t,
   title: a,
   onClose: l,
   cursorType: o = "default",
-  mouseDownEvent: u,
-  mouseUpEvent: i
-}) => /* @__PURE__ */ n.jsxs(
+  mouseDownEvent: i,
+  mouseUpEvent: c
+}) => /* @__PURE__ */ r.jsxs(
   "div",
   {
-    className: Zt.header,
+    className: er.header,
     "data-testid": `${t}-modal-header`,
     style: { cursor: o },
-    onMouseDown: u,
-    onMouseUp: i,
+    onMouseDown: i,
+    onMouseUp: c,
     children: [
-      /* @__PURE__ */ n.jsx(
-        zt,
+      /* @__PURE__ */ r.jsx(
+        Ft,
         {
           id: `${t}-modal-header`,
           text: a,
           type: "h3"
         }
       ),
-      /* @__PURE__ */ n.jsx(
-        Xt,
+      /* @__PURE__ */ r.jsx(
+        Zt,
         {
           id: t,
           onClick: l
@@ -1196,21 +1196,21 @@ const Bt = "_modal_miwrn_96", Wt = "_container_miwrn_114", Z = {
       )
     ]
   }
-), er = "_navigation_1e5o9_96", Ue = {
-  navigation: er,
+), rr = "_navigation_1e5o9_96", Be = {
+  navigation: rr,
   "navigation-button": "_navigation-button_1e5o9_103"
-}, tr = ({
+}, nr = ({
   id: t,
   navigation: a
-}) => a ? /* @__PURE__ */ n.jsx(
+}) => a ? /* @__PURE__ */ r.jsx(
   "div",
   {
-    className: Ue.navigation,
+    className: Be.navigation,
     "data-testid": `${t}-modal-navigation`,
-    children: a == null ? void 0 : a.map((l) => /* @__PURE__ */ n.jsx(
+    children: a == null ? void 0 : a.map((l) => /* @__PURE__ */ r.jsx(
       "button",
       {
-        className: Ue["navigation-button"],
+        className: Be["navigation-button"],
         "data-testid": `${t}-modal-navigation-button-${l.name}`,
         onClick: l.onClick ?? void 0,
         type: "button",
@@ -1219,50 +1219,50 @@ const Bt = "_modal_miwrn_96", Wt = "_container_miwrn_114", Z = {
       `${t}-modal-navigation-button-${l.name}`
     ))
   }
-) : null, rr = "_wrapper_1i79t_96", nr = "_tab_1i79t_101", ar = "_content_1i79t_111", O = {
-  wrapper: rr,
-  tab: nr,
+) : null, ar = "_wrapper_1i79t_96", lr = "_tab_1i79t_101", sr = "_content_1i79t_111", O = {
+  wrapper: ar,
+  tab: lr,
   "active-tab": "_active-tab_1i79t_106",
-  content: ar,
+  content: sr,
   "content-tab": "_content-tab_1i79t_124",
   "active-content-tab": "_active-content-tab_1i79t_128"
-}, lr = ({ initialIndex: t }) => {
-  const [a, l] = T(t);
+}, or = ({ initialIndex: t }) => {
+  const [a, l] = V(t);
   return {
     activeTab: a,
-    setActiveTab: (u) => {
-      l(u);
+    setActiveTab: (i) => {
+      l(i);
     }
   };
-}, sr = ({
+}, ir = ({
   id: t,
   initialIndex: a = 0,
   tabs: l
 }) => {
-  const { activeTab: o, setActiveTab: u } = lr({ initialIndex: a });
-  return /* @__PURE__ */ n.jsxs(
+  const { activeTab: o, setActiveTab: i } = or({ initialIndex: a });
+  return /* @__PURE__ */ r.jsxs(
     "div",
     {
       className: O.wrapper,
       "data-testid": `${t}-modal-tabs`,
       children: [
-        /* @__PURE__ */ n.jsx("div", { className: O.tabs, children: l.map((i, d) => /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx("div", { className: O.tabs, children: l.map((c, d) => /* @__PURE__ */ r.jsx(
           "button",
           {
             className: `${O.tab} ${d === o ? O["active-tab"] : ""}`,
             "data-testid": `${t}-modal-tabs-tab-${d}`,
             type: "button",
-            onClick: () => u(d),
-            children: i.title
+            onClick: () => i(d),
+            children: c.title
           },
           `${t}-modal-tabs-tab`
         )) }),
-        /* @__PURE__ */ n.jsx("div", { className: O.content, children: l.map((i, d) => /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx("div", { className: O.content, children: l.map((c, d) => /* @__PURE__ */ r.jsx(
           "div",
           {
             className: `${O["content-tab"]} ${d === o ? O["active-content-tab"] : ""}`,
             "data-testid": `${t}-modal-tabs-content-${d}`,
-            children: i.component
+            children: c.component
           },
           `${t}-modal-tabs-content`
         )) })
@@ -1270,119 +1270,119 @@ const Bt = "_modal_miwrn_96", Wt = "_container_miwrn_114", Z = {
     }
   );
 };
-var Q = /* @__PURE__ */ ((t) => (t.DEFAULT = "default", t.MOVE = "move", t))(Q || {});
-const or = (t, a, l, o, u, i, d) => {
-  !a.current || !l || (o(Q.MOVE), u(!0), i(a.current.offsetLeft - t.clientX), d(a.current.offsetTop - t.clientY));
-}, ir = (t, a, l) => {
-  t && (a(!1), l(Q.DEFAULT));
-}, cr = (t, a, l, o, u, i) => {
-  !o || !a.current || !l || (a.current.style.left = `${t.clientX + u}px`, a.current.style.top = `${t.clientY + i}px`);
-}, ur = ({ moveWindow: t, onClose: a }) => {
-  const l = Fe(null), o = Fe(null), [u, i] = T(!1), [d, _] = T(
-    Q.DEFAULT
-  ), [h, j] = T(0), [b, y] = T(0);
+var ee = /* @__PURE__ */ ((t) => (t.DEFAULT = "default", t.MOVE = "move", t))(ee || {});
+const cr = (t, a, l, o, i, c, d) => {
+  !a.current || !l || (o(ee.MOVE), i(!0), c(a.current.offsetLeft - t.clientX), d(a.current.offsetTop - t.clientY));
+}, ur = (t, a, l) => {
+  t && (a(!1), l(ee.DEFAULT));
+}, dr = (t, a, l, o, i, c) => {
+  !o || !a.current || !l || (a.current.style.left = `${t.clientX + i}px`, a.current.style.top = `${t.clientY + c}px`);
+}, fr = ({ moveWindow: t, onClose: a }) => {
+  const l = Fe(null), o = Fe(null), [i, c] = V(!1), [d, _] = V(
+    ee.DEFAULT
+  ), [p, y] = V(0), [m, $] = V(0);
   M(() => {
     const S = o.current;
     S && S.showModal();
   }, []);
-  const g = oe(
-    (S) => {
-      or(
-        S,
-        l,
-        t,
-        _,
-        i,
-        j,
-        y
-      );
-    },
-    [t]
-  ), R = oe(() => {
-    ir(t, i, _);
-  }, [t]), P = oe(
+  const g = ie(
     (S) => {
       cr(
         S,
         l,
         t,
-        u,
-        h,
-        b
+        _,
+        c,
+        y,
+        $
       );
     },
-    [t, u, h, b]
+    [t]
+  ), j = ie(() => {
+    ur(t, c, _);
+  }, [t]), z = ie(
+    (S) => {
+      dr(
+        S,
+        l,
+        t,
+        i,
+        p,
+        m
+      );
+    },
+    [t, i, p, m]
   );
   return {
     modalElement: l,
     dialogRef: o,
     mouseDown: g,
-    mouseUp: R,
-    mouseMove: P,
+    mouseUp: j,
+    mouseMove: z,
     cursorType: d,
     closeModal: () => {
       var S;
       (S = o.current) == null || S.close(), a();
     }
   };
-}, Or = ({
+}, Ir = ({
   id: t,
   title: a,
   width: l = "450px",
   height: o = "150px",
-  resizeWindow: u = !1,
-  moveWindow: i = !0,
+  resizeWindow: i = !1,
+  moveWindow: c = !0,
   tabs: d,
   children: _,
-  navigation: h,
-  onClose: j
+  navigation: p,
+  onClose: y
 }) => {
   const {
-    dialogRef: b,
-    modalElement: y,
+    dialogRef: m,
+    modalElement: $,
     mouseDown: g,
-    mouseUp: R,
-    mouseMove: P,
-    cursorType: U,
+    mouseUp: j,
+    mouseMove: z,
+    cursorType: B,
     closeModal: S
-  } = ur({ moveWindow: i, onClose: j });
-  return /* @__PURE__ */ n.jsx(
+  } = fr({ moveWindow: c, onClose: y });
+  return /* @__PURE__ */ r.jsx(
     "dialog",
     {
-      className: Z.modal,
-      ref: b,
-      onMouseMove: P,
-      children: /* @__PURE__ */ n.jsxs(
+      className: Q.modal,
+      ref: m,
+      onMouseMove: z,
+      children: /* @__PURE__ */ r.jsxs(
         "div",
         {
-          className: `${Z.container} ${u ? Z["resize-window"] : ""} ${i ? Z["move-window"] : ""}`,
+          className: `${Q.container} ${i ? Q["resize-window"] : ""} ${c ? Q["move-window"] : ""}`,
           "data-testid": `${t}-modal-container`,
-          ref: y,
+          ref: $,
           style: { width: l, height: o },
           children: [
-            /* @__PURE__ */ n.jsx(
-              Qt,
+            /* @__PURE__ */ r.jsx(
+              tr,
               {
-                cursorType: U,
+                cursorType: B,
                 id: t,
                 onClose: S,
                 mouseDownEvent: g,
-                mouseUpEvent: R,
+                mouseUpEvent: j,
                 title: a
               }
             ),
-            !d && /* @__PURE__ */ n.jsxs(n.Fragment, { children: [
-              h && /* @__PURE__ */ n.jsx(
-                tr,
+            !d && /* @__PURE__ */ r.jsxs(r.Fragment, { children: [
+              p && /* @__PURE__ */ r.jsx(
+                nr,
                 {
                   id: t,
-                  navigation: h
+                  navigation: p
                 }
               ),
-              _ && /* @__PURE__ */ n.jsx(Jt, { id: t, children: _ })
+              _ && /* @__PURE__ */ r.jsx(Kt, { id: t, children: _ })
             ] }),
-            d && /* @__PURE__ */ n.jsx(
-              sr,
+            d && /* @__PURE__ */ r.jsx(
+              ir,
               {
                 id: t,
                 initialIndex: d.initialIndex,
@@ -1394,113 +1394,113 @@ const or = (t, a, l, o, u, i, d) => {
       )
     }
   );
-}, dr = "_wrapper_1ui4e_96", fr = "_disabled_1ui4e_108", vr = "_input_1ui4e_113", hr = "_icon_1ui4e_123", L = {
-  wrapper: dr,
-  disabled: fr,
-  input: vr,
-  icon: hr
+}, vr = "_wrapper_1ui4e_96", pr = "_disabled_1ui4e_108", hr = "_input_1ui4e_113", _r = "_icon_1ui4e_123", U = {
+  wrapper: vr,
+  disabled: pr,
+  input: hr,
+  icon: _r
 };
-function pr({ initialChecked: t, onChange: a }) {
-  const [l, o] = T(t);
+function br({ initialChecked: t, onChange: a }) {
+  const [l, o] = V(t);
   return M(() => {
     o(t);
   }, [t]), {
     checked: l,
-    handleChange: (i) => {
-      a && a(), o(i.target.checked);
+    handleChange: (c) => {
+      a && a(), o(c.target.checked);
     }
   };
 }
-const kr = ({
+const Mr = ({
   initialChecked: t = !1,
   disabled: a = !1,
   id: l,
   onChange: o,
-  name: u,
-  text: i
+  name: i,
+  text: c
 }) => {
-  const { checked: d, handleChange: _ } = pr({
+  const { checked: d, handleChange: _ } = br({
     initialChecked: t,
     onChange: o
   });
-  return /* @__PURE__ */ n.jsxs(
+  return /* @__PURE__ */ r.jsxs(
     "label",
     {
-      "aria-label": i.visible ? void 0 : i.content,
-      className: `${L.wrapper} ${a ? L.disabled : ""}`,
+      "aria-label": c.visible ? void 0 : c.content,
+      className: `${U.wrapper} ${a ? U.disabled : ""}`,
       "data-testid": `${l}-radio`,
       children: [
-        /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx(
           "input",
           {
-            className: L.input,
+            className: U.input,
             checked: d,
             "data-testid": `${l}-radio-input`,
             disabled: a,
-            name: u,
+            name: i,
             type: "radio",
             value: l,
             onChange: _
           }
         ),
-        /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx(
           "span",
           {
-            className: L.icon,
+            className: U.icon,
             "data-testid": `${l}-radio-icon`,
-            children: /* @__PURE__ */ n.jsx(Nt, { isChecked: d })
+            children: /* @__PURE__ */ r.jsx(Mt, { isChecked: d })
           }
         ),
-        i.visible && /* @__PURE__ */ n.jsx(
-          de,
+        c.visible && /* @__PURE__ */ r.jsx(
+          fe,
           {
-            className: L.text,
+            className: U.text,
             id: l,
-            text: i.content
+            text: c.content
           }
         )
       ]
     }
   );
-}, _r = "_wrapper_uytru_96", mr = "_label_uytru_113", br = "_select_uytru_119", xr = "_arrow_uytru_129", k = {
-  wrapper: _r,
+}, mr = "_wrapper_uytru_96", xr = "_label_uytru_113", gr = "_select_uytru_119", wr = "_arrow_uytru_129", k = {
+  wrapper: mr,
   "wrapper-horizontal": "_wrapper-horizontal_uytru_101",
   "wrapper-vertical": "_wrapper-vertical_uytru_106",
-  label: mr,
-  select: br,
-  arrow: xr,
+  label: xr,
+  select: gr,
+  arrow: wr,
   "arrow-vertical": "_arrow-vertical_uytru_135",
   "arrow-horizontal": "_arrow-horizontal_uytru_139"
 };
-function gr(t) {
-  const [a, l] = T(t);
+function $r(t) {
+  const [a, l] = V(t);
   return {
     value: a,
-    handleChange: (u) => {
-      l(u.target.value);
+    handleChange: (i) => {
+      l(i.target.value);
     }
   };
 }
-function Pr({
+function Ar({
   className: t = "",
   id: a,
   required: l = !1,
   disabled: o = !1,
-  modelValue: u,
-  options: i,
+  modelValue: i,
+  options: c,
   labelName: d,
   onSelect: _,
-  wrapperLayout: h = "vertical"
+  wrapperLayout: p = "vertical"
 }) {
-  const { value: j, handleChange: b } = gr(u), y = (g) => {
-    b(g), _(g);
+  const { value: y, handleChange: m } = $r(i), $ = (g) => {
+    m(g), _(g);
   };
-  return /* @__PURE__ */ n.jsxs(
+  return /* @__PURE__ */ r.jsxs(
     "div",
     {
-      className: `${k.wrapper} ${k[`wrapper-${h}`]} ${t}`,
+      className: `${k.wrapper} ${k[`wrapper-${p}`]} ${t}`,
       children: [
-        d && /* @__PURE__ */ n.jsx(
+        d && /* @__PURE__ */ r.jsx(
           "label",
           {
             className: k.label,
@@ -1509,7 +1509,7 @@ function Pr({
             children: d
           }
         ),
-        /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx(
           "select",
           {
             className: k.select,
@@ -1517,14 +1517,14 @@ function Pr({
             disabled: o,
             id: a,
             name: a,
-            onChange: y,
+            onChange: $,
             required: l,
-            value: j,
-            children: i.map((g, R) => /* @__PURE__ */ n.jsx(
+            value: y,
+            children: c.map((g, j) => /* @__PURE__ */ r.jsx(
               "option",
               {
                 className: k.option,
-                "data-testid": `ds-select-option-${a}-${R}`,
+                "data-testid": `ds-select-option-${a}-${j}`,
                 value: g.value,
                 children: g.name
               },
@@ -1532,61 +1532,61 @@ function Pr({
             ))
           }
         ),
-        /* @__PURE__ */ n.jsx("span", { className: `${k[`arrow-${h}`]} ${k.arrow}`, children: /* @__PURE__ */ n.jsx(Mt, {}) })
+        /* @__PURE__ */ r.jsx("span", { className: `${k[`arrow-${p}`]} ${k.arrow}`, children: /* @__PURE__ */ r.jsx(At, {}) })
       ]
     }
   );
 }
-const Be = {
+const We = {
   "ds-stepper": "_ds-stepper_45vc6_96",
   "state-disabled": "_state-disabled_45vc6_111"
 };
-function wr({
+function yr({
   modelValue: t,
   onIncrease: a,
   onDecrease: l
 }) {
-  const [o, u] = T(t);
+  const [o, i] = V(t);
   return M(() => {
-    u(t);
+    i(t);
   }, [t]), { value: o, handleIncrease: () => {
     a && a();
   }, handleDecrease: () => {
     l && l();
   } };
 }
-function zr({
+function Yr({
   className: t = "",
   id: a,
   modelValue: l,
   disabled: o = !1,
-  onIncrease: u,
-  onDecrease: i
+  onIncrease: i,
+  onDecrease: c
 }) {
-  const { value: d, handleIncrease: _, handleDecrease: h } = wr({
+  const { value: d, handleIncrease: _, handleDecrease: p } = yr({
     modelValue: l,
-    onIncrease: u,
-    onDecrease: i
+    onIncrease: i,
+    onDecrease: c
   });
-  return /* @__PURE__ */ n.jsxs(
+  return /* @__PURE__ */ r.jsxs(
     "div",
     {
       className: `
-        ${Be["ds-stepper"]}
-        ${o ? Be["state-disabled"] : ""}
+        ${We["ds-stepper"]}
+        ${o ? We["state-disabled"] : ""}
         ${t}
       `,
       children: [
-        /* @__PURE__ */ n.jsx(
-          Ut,
+        /* @__PURE__ */ r.jsx(
+          Wt,
           {
             id: `stepper-${a}`,
             initialValue: d,
             readonly: !0
           }
         ),
-        /* @__PURE__ */ n.jsx(
-          Ae,
+        /* @__PURE__ */ r.jsx(
+          Ye,
           {
             ariaLabel: "Increase",
             direction: "top",
@@ -1596,92 +1596,151 @@ function zr({
             onClick: _
           }
         ),
-        /* @__PURE__ */ n.jsx(
-          Ae,
+        /* @__PURE__ */ r.jsx(
+          Ye,
           {
             ariaLabel: "Decrease",
             direction: "bottom",
             disabled: o,
             id: a,
             size: "small",
-            onClick: h
+            onClick: p
           }
         )
       ]
     }
   );
 }
-const yr = "_DSText_1n9d0_96", jr = {
-  DSText: yr
+const jr = "_wrapper_13oe5_96", Rr = "_tab_13oe5_102", Er = "_content_13oe5_112", P = {
+  wrapper: jr,
+  tab: Rr,
+  "tab-active": "_tab-active_13oe5_107",
+  content: Er,
+  "content-tab": "_content-tab_13oe5_126",
+  "content-tab-active": "_content-tab-active_13oe5_130"
 };
-function de({ className: t = "", id: a, text: l }) {
-  return /* @__PURE__ */ n.jsx(
+function Sr() {
+  const [t, a] = V(0);
+  return { activeIndex: t, setActiveTab: (o) => {
+    a((i) => i === o ? i : o);
+  } };
+}
+const Lr = ({ id: t, tabs: a }) => {
+  const { activeIndex: l, setActiveTab: o } = Sr();
+  return /* @__PURE__ */ r.jsxs(
+    "div",
+    {
+      className: P.wrapper,
+      "data-testid": `${t}-tabs`,
+      children: [
+        /* @__PURE__ */ r.jsx(
+          "div",
+          {
+            className: P.tabs,
+            "data-testid": `${t}-tabs-buttons`,
+            children: a.map((i, c) => /* @__PURE__ */ r.jsx(
+              "button",
+              {
+                "data-testid": `${t}-${i.id}-tab-button`,
+                className: `${P.tab} ${c === l ? P["tab-active"] : ""}`,
+                type: "button",
+                onClick: () => o(c),
+                children: i.title
+              },
+              `${t}-${i.id}-tab-button`
+            ))
+          }
+        ),
+        /* @__PURE__ */ r.jsx(
+          "div",
+          {
+            className: P.content,
+            "data-testid": `${t}-tabs-content`,
+            children: a.map((i, c) => /* @__PURE__ */ r.jsx(
+              "div",
+              {
+                className: `${P["content-tab"]} ${c === l ? P["content-tab-active"] : ""}`,
+                "data-testid": `${t}-${i.id}-tab-content`,
+                children: St(i.component)
+              },
+              `${t}-${i.id}-content`
+            ))
+          }
+        )
+      ]
+    }
+  );
+}, Tr = "_DSText_1n9d0_96", Vr = {
+  DSText: Tr
+};
+function fe({ className: t = "", id: a, text: l }) {
+  return /* @__PURE__ */ r.jsx(
     "p",
     {
-      className: `${jr.DSText} ${t}`,
+      className: `${Vr.DSText} ${t}`,
       "data-testid": `ds-text-${a}`,
       children: l
     }
   );
 }
-const Rr = "_textarea_1ubdj_111", $r = "_label_1ubdj_112", ce = {
+const Cr = "_textarea_1ubdj_111", Dr = "_label_1ubdj_112", ue = {
   "wrapper-horizontal": "_wrapper-horizontal_1ubdj_96",
   "wrapper-vertical": "_wrapper-vertical_1ubdj_102",
-  textarea: Rr,
-  label: $r
+  textarea: Cr,
+  label: Dr
 };
-function Er({ initialValue: t, onChange: a }) {
-  const [l, o] = T(t);
+function Hr({ initialValue: t, onChange: a }) {
+  const [l, o] = V(t);
   return M(() => {
     o(t);
-  }, [t]), { value: l, handleTextareaChange: (i) => {
-    const d = i.target.value;
+  }, [t]), { value: l, handleTextareaChange: (c) => {
+    const d = c.target.value;
     o(d), a && a(d);
   } };
 }
-function Fr({
+function Ur({
   id: t,
   disabled: a = !1,
   readonly: l = !1,
   initialValue: o = "",
-  labelName: u,
-  wrapperLayout: i = "vertical",
+  labelName: i,
+  wrapperLayout: c = "vertical",
   min: d,
   max: _,
-  onChange: h
+  onChange: p
 }) {
-  const { value: j, handleTextareaChange: b } = Er({
+  const { value: y, handleTextareaChange: m } = Hr({
     initialValue: o,
-    onChange: h
+    onChange: p
   });
-  return /* @__PURE__ */ n.jsxs(
+  return /* @__PURE__ */ r.jsxs(
     "div",
     {
-      className: ce[`wrapper-${i}`],
+      className: ue[`wrapper-${c}`],
       "data-testid": `${t}-wrapper-textarea`,
       children: [
-        u && /* @__PURE__ */ n.jsx(
+        i && /* @__PURE__ */ r.jsx(
           "label",
           {
-            className: ce.label,
+            className: ue.label,
             "data-testid": `${t}-label`,
             htmlFor: t,
-            children: u
+            children: i
           }
         ),
-        /* @__PURE__ */ n.jsx(
+        /* @__PURE__ */ r.jsx(
           "textarea",
           {
             id: t,
-            className: ce.textarea,
+            className: ue.textarea,
             "data-testid": `${t}-textarea`,
             disabled: a,
             readOnly: l,
-            value: j,
+            value: y,
             minLength: d ?? void 0,
             maxLength: _ ?? void 0,
             name: t,
-            onChange: b
+            onChange: m
           }
         )
       ]
@@ -1689,24 +1748,25 @@ function Fr({
   );
 }
 export {
-  Vt as DSButton,
-  Ae as DSButtonArrow,
-  Vr as DSCheckbox,
-  Tr as DSFrame,
-  zt as DSHeading,
-  Cr as DSIconAudioButtonOff,
-  Dr as DSIconAudioButtonOn,
-  Hr as DSIconCheckboxDisabledSVG,
-  Le as DSIconCheckboxSVG,
-  Ft as DSIconCloseSVG,
-  Nt as DSIconRadioSVG,
-  Mt as DSIconSelectButton,
-  Ut as DSInput,
-  Or as DSModal,
-  kr as DSRadio,
-  Pr as DSSelect,
-  zr as DSStepper,
-  de as DSText,
-  Fr as DSTextarea
+  Ct as DSButton,
+  Ye as DSButtonArrow,
+  kr as DSCheckbox,
+  Pr as DSFrame,
+  Ft as DSHeading,
+  zr as DSIconAudioButtonOff,
+  Nr as DSIconAudioButtonOn,
+  Fr as DSIconCheckboxDisabledSVG,
+  Ue as DSIconCheckboxSVG,
+  It as DSIconCloseSVG,
+  Mt as DSIconRadioSVG,
+  At as DSIconSelectButton,
+  Wt as DSInput,
+  Ir as DSModal,
+  Mr as DSRadio,
+  Ar as DSSelect,
+  Yr as DSStepper,
+  Lr as DSTabs,
+  fe as DSText,
+  Ur as DSTextarea
 };
 //# sourceMappingURL=index.js.map
