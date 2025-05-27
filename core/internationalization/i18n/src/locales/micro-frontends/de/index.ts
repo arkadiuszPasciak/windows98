@@ -3,6 +3,7 @@ import languageManagerDE from "./mf-language-manager.locale.json"
 import notepadDE from "./mf-notepad.locale.json"
 import pulpitDE from "./mf-pulpit.locale.json"
 import saveFileDE from "./mf-save-file.locale.json"
+import settingsDE from "./mf-settings.locale.json"
 import shutdownDE from "./mf-shutdown.locale.json"
 import systemInformationDE from "./mf-system-information.locale.json"
 import themeManagerDE from "./mf-theme-manager.locale.json"
@@ -15,6 +16,7 @@ const localesMicroFrontendsDE = {
 	...notepadDE,
 	...pulpitDE,
 	...saveFileDE,
+	...settingsDE,
 	...shutdownDE,
 	...systemInformationDE,
 	...themeManagerDE,
