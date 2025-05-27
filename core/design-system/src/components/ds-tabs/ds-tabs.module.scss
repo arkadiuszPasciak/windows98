@@ -1,0 +1,37 @@
+.wrapper {
+  height: calc(100% - 28px);
+  margin: 5px;
+  background-color: var(--background-color);
+}
+
+.tab {
+  padding: 5px;
+  @include font('medium', 10, 10);
+}
+
+.tab-active {
+  position: relative;
+  z-index: 3;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  top: -2px;
+  height: calc(100% - 21px);
+  padding: 5px;
+}
+
+.tab,
+.content {
+  box-shadow: var(--box-shadow-raised);
+  color: var(--text-color);
+}
+
+.content-tab {
+  display: none;
+}
+
+.content-tab-active {
+  display: block;
+}
