@@ -1,0 +1,18 @@
+{
+	"mf-runner": {
+		"controller": {
+			"ok": "OK",
+			"cancel": "Anuluj"
+		},
+		"description": {
+			"text": "Wpisz nazwę programu i Windows otworzy go dla Ciebie"
+		},
+		"input": {
+			"label": "Uruchom",
+			"placeholder": "Wprowadź nazwę programu"
+		},
+		"modal": {
+			"title": "Uruchom"
+		}
+	}
+}

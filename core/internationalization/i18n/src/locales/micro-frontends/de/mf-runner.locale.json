@@ -1,0 +1,18 @@
+{
+	"mf-runner": {
+		"controller": {
+			"ok": "OK",
+			"cancel": "Stornieren"
+		},
+		"description": {
+			"text": "Geben Sie den Namen eines Programms ein und Windows öffnet es für Sie."
+		},
+		"input": {
+			"label": "Offen",
+			"placeholder": "Geben Sie den Namen des Programms ein"
+		},
+		"modal": {
+			"title": "Ausführen"
+		}
+	}
+}
