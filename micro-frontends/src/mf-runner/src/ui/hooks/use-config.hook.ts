@@ -5,6 +5,6 @@ export function useConfig() {
 	const config = useContext(ConfigContext)
 
 	return {
-		config,
+		configContext: config,
 	}
 }
