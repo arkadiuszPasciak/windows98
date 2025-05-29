@@ -5,11 +5,13 @@ import { Wrapper } from "../../modules/wrapper"
 import type { RunnerViewProps } from "./runner.type"
 
 export const MFRunner: FunctionComponent<RunnerViewProps> = ({
+	onCloseProgram,
 	onRunProgram,
 	programs,
 }) => {
 	return (
 		<Config
+			onCloseProgram={onCloseProgram}
 			onRunProgram={onRunProgram}
 			programs={programs}
 		>
