@@ -15,6 +15,7 @@ export const useOk = () => {
 
 		if (result) {
 			configContext.onRunProgram(result)
+			configContext.onCloseProgram()
 		}
 	}
 
