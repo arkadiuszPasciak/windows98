@@ -18,8 +18,11 @@ export const useOk = () => {
 		}
 	}
 
+	const isDisabled = runnerDomain.programName.length === 0
+
 	return {
 		onClick,
 		translations,
+		isDisabled,
 	}
 }
