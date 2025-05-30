@@ -1,0 +1,23 @@
+{
+	"mf-start-menu": {
+		"button": {
+			"logo": "Windows logo"
+		},
+		"programs": {
+			"accessories": "Akcesoria",
+			"calculator": "Kalkulator",
+			"entertainment": "Dokumentacja",
+			"find": "Znajdź",
+			"games": "Gry",
+			"help": "Pomoc",
+			"notepad": "Notatnik",
+			"programs": "Programy",
+			"run": "Uruchom",
+			"settings": "Ustawienia",
+			"shut-down": "Wyłącz",
+			"start": "Start",
+			"tic-tac-toe": "Kółko i krzyżyk",
+			"timer": "Minutnik"
+		}
+	}
+}

@@ -6,6 +6,7 @@ import runnerPL from "./mf-runner.locale.json"
 import saveFilePL from "./mf-save-file.locale.json"
 import settingsPL from "./mf-settings.locale.json"
 import shutdownPL from "./mf-shutdown.locale.json"
+import startMenuPL from "./mf-start-menu.locale.json"
 import systemInformationPL from "./mf-system-information.locale.json"
 import themeManagerPL from "./mf-theme-manager.locale.json"
 import timerPL from "./mf-timer.locale.json"
@@ -20,6 +21,7 @@ const localesMicroFrontendsPL = {
 	...saveFilePL,
 	...settingsPL,
 	...shutdownPL,
+	...startMenuPL,
 	...systemInformationPL,
 	...themeManagerPL,
 	...timerPL,

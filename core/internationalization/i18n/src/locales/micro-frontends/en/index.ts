@@ -6,6 +6,7 @@ import runnerEN from "./mf-runner.locale.json"
 import saveFileEN from "./mf-save-file.locale.json"
 import settingsEN from "./mf-settings.locale.json"
 import shutdownEN from "./mf-shutdown.locale.json"
+import startMenuEN from "./mf-start-menu.locale.json"
 import systemInformationEN from "./mf-system-information.locale.json"
 import themeManagerEN from "./mf-theme-manager.locale.json"
 import timerEN from "./mf-timer.locale.json"
@@ -20,6 +21,7 @@ const localesMicroFrontendsEN = {
 	...saveFileEN,
 	...settingsEN,
 	...shutdownEN,
+	...startMenuEN,
 	...systemInformationEN,
 	...themeManagerEN,
 	...timerEN,
