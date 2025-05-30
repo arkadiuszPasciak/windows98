@@ -1,0 +1,18 @@
+{
+	"mf-runner": {
+		"controller": {
+			"ok": "OK",
+			"cancel": "Cancel"
+		},
+		"description": {
+			"text": "Type of the name of a program and Windows will open it for you."
+		},
+		"input": {
+			"label": "Open",
+			"placeholder": "Enter the name of the program"
+		},
+		"modal": {
+			"title": "Run"
+		}
+	}
+}
