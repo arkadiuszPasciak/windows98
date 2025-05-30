@@ -1,3 +1,3 @@
-export type Programs = Array<{
-	[key: string]: Array<string>
-}>
+export type Programs<Program extends string> = Array<
+	Partial<Record<Program, string[]>>
+>

@@ -15,12 +15,14 @@ export class RunnerDomain implements RunnerDomainContract {
 	}
 
 	public runProgram<Program extends string>(
-		programs: Programs,
+		programs: Programs<Program>,
 	): Maybe<Program> {
-		for (const key in programs) {
+		for (const programObj of programs) {
+			const [key, values] = Object.entries(programObj)[0]
+
 			if (
-				Array.isArray(programs[key]) &&
-				programs[key].includes(this.programName)
+				Array.isArray(values) &&
+				values.includes(this.programName.toLowerCase())
 			) {
 				this.clearProgramName()
 				return key as Program

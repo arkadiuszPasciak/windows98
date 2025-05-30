@@ -8,7 +8,7 @@ import type { Programs } from "../../domain/models"
 export interface ConfigProps {
 	onCloseProgram: () => void
 	onRunProgram: (program: string) => void
-	programs: Programs
+	programs: Programs<string>
 }
 
 export const ConfigContext = createContext<ConfigProps>({

@@ -5,5 +5,7 @@ export interface RunnerDomainContract {
 	programName: string
 
 	setProgramName(programName: string): void
-	runProgram<Program extends string>(programs: Programs): Maybe<Program>
+	runProgram<Program extends string>(
+		programs: Programs<Program>,
+	): Maybe<Program>
 }
