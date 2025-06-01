@@ -1,0 +1,20 @@
+.panel {
+  background-color: var(--background-color);
+  border-top: 1px solid var(--border-color-navigation);
+  border-left: 1px solid var(--border-color-navigation);
+  border-right: 1px solid $cl-black;
+  border-bottom: 1px solid $cl-black;
+  min-width: 140px;
+}
+
+.variant-primary {
+    position: fixed;
+    bottom: 26px;
+    left: 2px;
+}
+
+.variant-secondary {
+    position: absolute;
+    top: -1px;
+    left: 100%;
+}
