@@ -1,0 +1,18 @@
+import type { FunctionComponent } from "react"
+import { Config } from "../../context/config.context"
+import { Wrapper } from "../../modules/wrapper"
+import type { StartMenuViewProps } from "./start-menu.type"
+
+export const MFStartMenu: FunctionComponent<StartMenuViewProps> = ({
+	onRunProgram,
+	panelItems,
+}) => {
+	return (
+		<Config
+			onRunProgram={onRunProgram}
+			panelItems={panelItems}
+		>
+			<Wrapper />
+		</Config>
+	)
+}
