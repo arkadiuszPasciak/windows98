@@ -1,5 +1,5 @@
-import type { PanelItemProps } from "../panel-item.type"
+import type { BasePanelItem } from "../panel-item.type"
 
-export type PanelItemContentProps = Pick<PanelItemProps, "id" | "variant"> & {
+export type PanelItemContentProps = Pick<BasePanelItem, "id" | "variant"> & {
 	name: string
 }

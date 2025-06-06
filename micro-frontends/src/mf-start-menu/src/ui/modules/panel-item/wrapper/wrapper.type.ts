@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from "react"
-import type { PanelItemProps } from "../panel-item.type"
+import type { BasePanelItem } from "../panel-item.type"
 
-export type PanelItemWrapperProps = Pick<PanelItemProps, "id" | "variant"> &
+export type PanelItemWrapperProps = Pick<BasePanelItem, "id" | "type"> &
 	PropsWithChildren

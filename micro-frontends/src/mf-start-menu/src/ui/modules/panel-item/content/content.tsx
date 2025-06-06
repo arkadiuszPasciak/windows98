@@ -1,12 +1,7 @@
 import { DSText } from "@windows98/design-system"
 import type { FunctionComponent } from "react"
-import type { PanelItemVariant } from "../panel-item.type"
+import styles from "./content.module.scss"
 import type { PanelItemContentProps } from "./content.type"
-
-const iconSizes: Record<PanelItemVariant, number> = {
-	secondary: 25,
-	primary: 18,
-}
 
 const getIconURL = (id: string): string => `/icons/programs/${id}.png`
 
@@ -15,10 +10,10 @@ export const PanelItemContent: FunctionComponent<PanelItemContentProps> = ({
 	name,
 	variant,
 }) => (
-	<div style={{ display: "flex", alignItems: "center" }}>
+	<div className={styles.content}>
 		<img
-			width={iconSizes[variant]}
-			height={iconSizes[variant]}
+			width={variant === "primary" ? 25 : 18}
+			height={variant === "primary" ? 25 : 18}
 			src={getIconURL(id)}
 			alt=""
 		/>

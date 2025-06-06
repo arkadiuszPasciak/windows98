@@ -1,25 +1,17 @@
-import type { ReactNode } from "react"
-import type { PanelItemType } from "../../../domain/models"
-
 export enum PanelItemVariant {
 	PRIMARY = "primary",
 	SECONDARY = "secondary",
 }
 
-interface BasePanelItem {
+export enum PanelItemType {
+	GROUP = "group",
+	PROGRAM = "program",
+}
+
+export interface BasePanelItem<Type = PanelItemType> {
 	variant: PanelItemVariant
 	id: string
+	type: Type
 }
 
-interface PanelItemProgram extends BasePanelItem {
-	type: PanelItemType.PROGRAM
-}
-
-interface PanelItemGroup extends BasePanelItem {
-	type: PanelItemType.GROUP
-	programs?: ReactNode
-}
-
-export type PanelItemProps = PanelItemProgram & PanelItemGroup
-
-export type UsePanelItem = Pick<PanelItemProps, "id">
+export type UsePanelItem = Pick<BasePanelItem, "id">
