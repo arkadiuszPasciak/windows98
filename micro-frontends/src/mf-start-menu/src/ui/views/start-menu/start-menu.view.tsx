@@ -5,12 +5,12 @@ import type { StartMenuViewProps } from "./start-menu.type"
 
 export const MFStartMenu: FunctionComponent<StartMenuViewProps> = ({
 	onRunProgram,
-	panelItems,
+	menuItems,
 }) => {
 	return (
 		<Config
 			onRunProgram={onRunProgram}
-			panelItems={panelItems}
+			menuItems={menuItems}
 		>
 			<Wrapper />
 		</Config>

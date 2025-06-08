@@ -1,2 +1,1 @@
-export * from "./panel-item.model"
-export * from "./panel.model"
+export * from "./menu.model"

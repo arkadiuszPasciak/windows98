@@ -5,7 +5,7 @@ export function useMenu() {
 	const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false)
 	const { configContext } = useConfig()
 
-	const items = configContext.panelItems
+	const items = configContext.menuItems
 
 	const toggleMenu = () => {
 		setIsOpenMenu(!isOpenMenu)

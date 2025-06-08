@@ -4,25 +4,25 @@ import {
 	type PropsWithChildren,
 	createContext,
 } from "react"
-import type { PanelItems } from "../../domain/models"
+import type { MenuItems } from "../../domain/models"
 
 export interface ConfigProps {
 	onRunProgram: (program: string) => void
-	panelItems: Maybe<PanelItems>
+	menuItems: Maybe<MenuItems>
 }
 
 export const ConfigContext = createContext<ConfigProps>({
 	onRunProgram: () => {},
-	panelItems: null,
+	menuItems: null,
 })
 
 export const Config: FunctionComponent<PropsWithChildren & ConfigProps> = ({
 	children,
 	onRunProgram,
-	panelItems,
+	menuItems,
 }) => {
 	return (
-		<ConfigContext.Provider value={{ onRunProgram, panelItems }}>
+		<ConfigContext.Provider value={{ onRunProgram, menuItems }}>
 			{children}
 		</ConfigContext.Provider>
 	)
