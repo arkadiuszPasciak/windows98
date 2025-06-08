@@ -1,10 +1,8 @@
 import { useTranslation } from "react-i18next"
-import type { UsePanelItem } from "./panel-item.type"
+import type { UseMenuItem } from "./menu-item.type"
 
-export function usePanelItem({ id }: UsePanelItem) {
+export function useMenuItem({ id }: UseMenuItem) {
 	const { t } = useTranslation()
-
-	console.log(id)
 
 	const translations = {
 		name: t(`mf-start-menu.programs.${id}`),

@@ -1,3 +1,3 @@
 export * from "./group"
 export * from "./program"
-export * from "./panel-item.type"
+export * from "./menu-item.type"

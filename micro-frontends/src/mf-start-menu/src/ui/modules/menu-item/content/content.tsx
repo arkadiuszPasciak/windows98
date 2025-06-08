@@ -1,0 +1,31 @@
+import { DSText } from "@windows98/design-system"
+import type { FunctionComponent } from "react"
+import type { MenuItemVariant } from "../menu-item.type"
+import styles from "./content.module.scss"
+import type { GetIconURL, MenuItemContentProps } from "./content.type"
+
+const getIconURL: GetIconURL = (id) => `/icons/programs/${id}.png`
+
+const imageSizes: Record<MenuItemVariant, number> = {
+	primary: 25,
+	secondary: 18,
+}
+
+export const MenuItemContent: FunctionComponent<MenuItemContentProps> = ({
+	id,
+	name,
+	variant,
+}) => (
+	<div className={styles.content}>
+		<img
+			width={imageSizes[variant]}
+			height={imageSizes[variant]}
+			src={getIconURL({ id })}
+			alt=""
+		/>
+		<DSText
+			id={`mf-start-menu-menu-item-${id}`}
+			text={name}
+		/>
+	</div>
+)

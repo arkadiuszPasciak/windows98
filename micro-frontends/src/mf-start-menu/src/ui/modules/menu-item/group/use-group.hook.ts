@@ -1,10 +1,10 @@
 import { useState } from "react"
-import type { UsePanelItem } from "../panel-item.type"
-import { usePanelItem } from "../use-panel-item.hook"
+import type { UseMenuItem } from "../menu-item.type"
+import { useMenuItem } from "../use-menu-item.hook"
 
-export function usePanelItemGroup({ id }: UsePanelItem) {
+export function usePanelItemGroup({ id }: UseMenuItem) {
 	const [isGroupHovered, setIsGroupHovered] = useState<boolean>(false)
-	const { translations } = usePanelItem({ id })
+	const { translations } = useMenuItem({ id })
 
 	const handleMouseEnter = (): void => {
 		setIsGroupHovered(true)
