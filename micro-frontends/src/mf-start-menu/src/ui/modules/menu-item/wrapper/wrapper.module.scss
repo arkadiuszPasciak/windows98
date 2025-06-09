@@ -10,7 +10,7 @@
     @include hover {
       background-color: $cl-blue33;
 
-      * p {
+      & > div > p {
         color: var(--text-color-2);
       }
     }
