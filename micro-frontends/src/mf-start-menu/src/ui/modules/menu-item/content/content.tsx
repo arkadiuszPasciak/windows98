@@ -4,7 +4,17 @@ import type { MenuItemVariant } from "../menu-item.type"
 import styles from "./content.module.scss"
 import type { GetIconURL, MenuItemContentProps } from "./content.type"
 
-const getIconURL: GetIconURL = (id) => `/icons/programs/${id}.png`
+const getIconURL: GetIconURL = (id) => {
+	switch (id) {
+		case "programs":
+		case "accessories":
+		case "entertainment":
+		case "games":
+			return "/icons/programs/folder.png"
+		default:
+			return `/icons/programs/${id}.png`
+	}
+}
 
 const imageSizes: Record<MenuItemVariant, number> = {
 	primary: 25,
