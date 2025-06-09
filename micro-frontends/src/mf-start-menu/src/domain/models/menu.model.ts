@@ -21,4 +21,4 @@ export type MenuItem = ProgramMenuItem | GroupMenuItem
 export type MenuItems =
 	| [MenuItem]
 	| [MenuItem, MenuItem]
-	| [MenuItem, MenuItem, MenuItem]
+	| [MenuItem, MenuItem, ProgramMenuItem]
