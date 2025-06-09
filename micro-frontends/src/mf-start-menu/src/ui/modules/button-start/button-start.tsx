@@ -13,8 +13,8 @@ export const ButtonStart: FunctionComponent<ButtonStartProps> = ({
 			iconLeft={
 				<img
 					className="button-icon"
-					width="23"
-					height="23"
+					width={23}
+					height={23}
 					src="/icons/programs/windows.png"
 					alt={translations.buttonLogo}
 				/>
