@@ -20,7 +20,7 @@ export const MenuItemContent: FunctionComponent<MenuItemContentProps> = ({
 		<img
 			width={imageSizes[variant]}
 			height={imageSizes[variant]}
-			src={getIconURL({ id })}
+			src={getIconURL(id)}
 			alt=""
 		/>
 		<DSText

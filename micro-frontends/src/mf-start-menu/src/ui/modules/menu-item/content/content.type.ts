@@ -1,8 +1,10 @@
 import type { PropsWithChildren } from "react"
-import type { BaseMenuItem } from "../../../../domain/models"
+import type { MenuItem } from "../../../../domain/models"
 import type { MenuItemProps } from "../menu-item.type"
 
-export type MenuItemContentProps = Pick<BaseMenuItem, "id"> &
-	MenuItemProps & { name: string } & PropsWithChildren
+export type MenuItemContentProps = MenuItemProps & {
+	name: string
+} & PropsWithChildren &
+	Pick<MenuItem, "id">
 
-export type GetIconURL = (id: Pick<BaseMenuItem, "id">) => string
+export type GetIconURL = (id: string) => string
