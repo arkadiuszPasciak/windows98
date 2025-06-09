@@ -1,18 +1,12 @@
 import type { FunctionComponent } from "react"
 import { MenuItemType } from "../../../domain/models"
 import { MenuItemGroup, MenuItemProgram, MenuItemVariant } from "../menu-item"
-import styles from "./menu-items.module.scss"
 import type { MenuItemsProps } from "./menu-items.type"
+import { MenuItemsWrapper, MenuItemsWrapperVariant } from "./wrapper"
 
-export const MenuItems: FunctionComponent<MenuItemsProps> = ({
-	items,
-	variant,
-}) => {
+export const MenuItems: FunctionComponent<MenuItemsProps> = ({ items }) => {
 	return (
-		<div
-			className={`${styles["menu-items-wrapper"]} ${styles[`variant-${variant}`]}`}
-			data-testid={`mf-start-menu-menu-items-${variant}`}
-		>
+		<MenuItemsWrapper variant={MenuItemsWrapperVariant.PRIMARY}>
 			{items.map((item) =>
 				item.type === "group" && item.programs ? (
 					<MenuItemGroup
@@ -20,8 +14,40 @@ export const MenuItems: FunctionComponent<MenuItemsProps> = ({
 						id={item.id}
 						type={MenuItemType.GROUP}
 						variant={MenuItemVariant.PRIMARY}
-						programs={<p>123</p>}
-					/>
+					>
+						<MenuItemsWrapper variant={MenuItemsWrapperVariant.SECONDARY}>
+							{item.programs.map((itemProgram) =>
+								itemProgram.type === "group" && itemProgram.programs ? (
+									<MenuItemGroup
+										key={`mf-start-menu-menu-item-${itemProgram.id}`}
+										id={itemProgram.id}
+										type={MenuItemType.GROUP}
+										variant={MenuItemVariant.SECONDARY}
+									>
+										<MenuItemsWrapper
+											variant={MenuItemsWrapperVariant.SECONDARY}
+										>
+											{itemProgram.programs.map((subItemProgram) => (
+												<MenuItemProgram
+													key={`mf-start-menu-menu-item-${subItemProgram.id}`}
+													id={subItemProgram.id}
+													type={MenuItemType.PROGRAM}
+													variant={MenuItemVariant.SECONDARY}
+												/>
+											))}
+										</MenuItemsWrapper>
+									</MenuItemGroup>
+								) : (
+									<MenuItemProgram
+										key={`mf-start-menu-menu-item-${itemProgram.id}`}
+										id={itemProgram.id}
+										type={MenuItemType.PROGRAM}
+										variant={MenuItemVariant.SECONDARY}
+									/>
+								),
+							)}
+						</MenuItemsWrapper>
+					</MenuItemGroup>
 				) : (
 					<MenuItemProgram
 						key={`mf-start-menu-menu-item-${item.id}`}
@@ -31,6 +57,6 @@ export const MenuItems: FunctionComponent<MenuItemsProps> = ({
 					/>
 				),
 			)}
-		</div>
+		</MenuItemsWrapper>
 	)
 }

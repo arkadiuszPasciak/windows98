@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react"
 import { ButtonStart } from "../button-start"
-import { MenuItems, MenuItemsVariant } from "../menu-items"
+import { MenuItems } from "../menu-items"
 import { useMenu } from "./use-menu.hook"
 
 export const Menu: FunctionComponent = () => {
@@ -12,12 +12,7 @@ export const Menu: FunctionComponent = () => {
 		<>
 			<ButtonStart onClick={toggleMenu} />
 
-			{isOpenMenu && (
-				<MenuItems
-					items={items}
-					variant={MenuItemsVariant.PRIMARY}
-				/>
-			)}
+			{isOpenMenu && <MenuItems items={items} />}
 		</>
 	)
 }
