@@ -10,7 +10,7 @@ describe("TicTacToeStarterDomain", () => {
 	})
 
 	it("setFieldType", () => {
-		const fieldType = FieldType.THREE_X_THREE
+		const fieldType = FieldType.THREE_BY_THREE
 		ticTacToeStarterDomain.setFieldType(fieldType)
 		expect(
 			ticTacToeStarterDomain.fieldType,

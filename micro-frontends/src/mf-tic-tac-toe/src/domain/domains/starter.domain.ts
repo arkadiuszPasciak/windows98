@@ -12,7 +12,7 @@ export class TicTacToeStarterDomain implements TicTacToeStarterDomainContract {
 	}
 
 	private readonly defaultData: GameData = {
-		fieldType: FieldType.THREE_X_THREE,
+		fieldType: FieldType.THREE_BY_THREE,
 		playerName: "",
 		playerSign: PlayerSign.X,
 	}
