@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from "vitest"
-import { PlayerSign } from "../../src/domain/models"
+import { BoardType, PlayerSign } from "../../src/domain/models"
 import { TicTacToeComputerService } from "../../src/domain/services"
 
 describe("TicTacToeComputerService", () => {
@@ -10,7 +10,7 @@ describe("TicTacToeComputerService", () => {
 	})
 
 	it("should pick a random cell on an empty board", () => {
-		const boardSize = 3
+		const boardSize = BoardType.THREE_BY_THREE
 		const emptyBoard = Array(boardSize * boardSize).fill("")
 		const move = ticTacToeComputerService.determineNextMove(
 			emptyBoard,
@@ -24,7 +24,7 @@ describe("TicTacToeComputerService", () => {
 	})
 
 	it("should pick an adjacent cell if possible", () => {
-		const boardSize = 3
+		const boardSize = BoardType.THREE_BY_THREE
 
 		const board = ["", "", "", "", PlayerSign.X, "", "", "", ""]
 		const move = ticTacToeComputerService.determineNextMove(

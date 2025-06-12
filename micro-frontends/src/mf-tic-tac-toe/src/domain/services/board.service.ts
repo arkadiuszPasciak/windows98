@@ -1,20 +1,25 @@
 import type { TicTacToeBoardServiceContract } from "../contracts"
-import type { BoardCells, FieldType, PlayerSign } from "../models"
+import type {
+	BoardCellIndex,
+	BoardCells,
+	BoardType,
+	PlayerSign,
+} from "../models"
 
 export class TicTacToeBoardService implements TicTacToeBoardServiceContract {
-	public generateBoard(fieldType: FieldType): BoardCells {
-		return Array(fieldType).fill("")
+	public generateBoard(boardType: BoardType): BoardCells {
+		return Array(boardType).fill("")
 	}
 
 	public chooseCell(
 		boardCells: BoardCells,
-		boardField: number,
+		boardCellIndex: BoardCellIndex,
 		playerSign: PlayerSign,
 	): void {
-		if (boardField < 0 || boardField >= boardCells.length) return
+		if (boardCellIndex < 0 || boardCellIndex >= boardCells.length) return
 
-		if (boardCells[boardField] !== "") return
+		if (boardCells[boardCellIndex] !== "") return
 
-		boardCells[boardField] = playerSign
+		boardCells[boardCellIndex] = playerSign
 	}
 }

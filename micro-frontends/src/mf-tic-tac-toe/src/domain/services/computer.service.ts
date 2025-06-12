@@ -1,18 +1,23 @@
 import type { Maybe } from "@windows98/toolkit"
 import type { TicTacToeComputerServiceContract } from "../contracts"
-import type { BoardCells, PlayerSign } from "../models"
+import type {
+	BoardCellIndex,
+	BoardCells,
+	BoardType,
+	PlayerSign,
+} from "../models"
 
 export class TicTacToeComputerService
 	implements TicTacToeComputerServiceContract
 {
 	public determineNextMove(
 		boardCells: BoardCells,
-		boardSize: number,
+		boardType: BoardType,
 		computerSign: PlayerSign,
-	): Maybe<number> {
+	): BoardCellIndex {
 		const adjacentIndex = this.findAdjacentEmptyCell(
 			boardCells,
-			boardSize,
+			boardType,
 			computerSign,
 		)
 		if (adjacentIndex !== null && adjacentIndex !== undefined) {
@@ -21,7 +26,7 @@ export class TicTacToeComputerService
 
 		const diagonalIndex = this.findDiagonalEmptyCell(
 			boardCells,
-			boardSize,
+			boardType,
 			computerSign,
 		)
 		if (diagonalIndex !== null && diagonalIndex !== undefined) {
@@ -39,21 +44,21 @@ export class TicTacToeComputerService
 
 	private findAdjacentEmptyCell(
 		boardCells: BoardCells,
-		boardSize: number,
+		boardType: BoardType,
 		computerSign: PlayerSign,
-	): Maybe<number> {
+	): Maybe<BoardCellIndex> {
 		const isLeftCellEmpty = (cellIndex: number): boolean =>
-			cellIndex % boardSize !== 0 && boardCells[cellIndex - 1] === ""
+			cellIndex % boardType !== 0 && boardCells[cellIndex - 1] === ""
 
 		const isRightCellEmpty = (cellIndex: number): boolean =>
-			(cellIndex + 1) % boardSize !== 0 && boardCells[cellIndex + 1] === ""
+			(cellIndex + 1) % boardType !== 0 && boardCells[cellIndex + 1] === ""
 
 		const isTopCellEmpty = (cellIndex: number): boolean =>
-			cellIndex - boardSize >= 0 && boardCells[cellIndex - boardSize] === ""
+			cellIndex - boardType >= 0 && boardCells[cellIndex - boardType] === ""
 
 		const isBottomCellEmpty = (cellIndex: number): boolean =>
-			cellIndex + boardSize < boardCells.length &&
-			boardCells[cellIndex + boardSize] === ""
+			cellIndex + boardType < boardCells.length &&
+			boardCells[cellIndex + boardType] === ""
 
 		for (let cellIndex = 0; cellIndex < boardCells.length; cellIndex++) {
 			const cell = boardCells[cellIndex]
@@ -68,11 +73,11 @@ export class TicTacToeComputerService
 				}
 
 				if (isTopCellEmpty(cellIndex)) {
-					return cellIndex - boardSize
+					return cellIndex - boardType
 				}
 
 				if (isBottomCellEmpty(cellIndex)) {
-					return cellIndex + boardSize
+					return cellIndex + boardType
 				}
 			}
 		}
@@ -82,47 +87,47 @@ export class TicTacToeComputerService
 
 	private findDiagonalEmptyCell(
 		boardCells: BoardCells,
-		boardSize: number,
+		boardType: BoardType,
 		computerSign: PlayerSign,
-	): Maybe<number> {
+	): Maybe<BoardCellIndex> {
 		const isTopLeftCellEmpty = (cellIndex: number): boolean =>
-			cellIndex % boardSize !== 0 &&
-			cellIndex - boardSize - 1 >= 0 &&
-			boardCells[cellIndex - boardSize - 1] === ""
+			cellIndex % boardType !== 0 &&
+			cellIndex - boardType - 1 >= 0 &&
+			boardCells[cellIndex - boardType - 1] === ""
 
 		const isTopRightCellEmpty = (cellIndex: number): boolean =>
-			(cellIndex + 1) % boardSize !== 0 &&
-			cellIndex - boardSize + 1 >= 0 &&
-			boardCells[cellIndex - boardSize + 1] === ""
+			(cellIndex + 1) % boardType !== 0 &&
+			cellIndex - boardType + 1 >= 0 &&
+			boardCells[cellIndex - boardType + 1] === ""
 
 		const isBottomLeftCellEmpty = (cellIndex: number): boolean =>
-			cellIndex % boardSize !== 0 &&
-			cellIndex + boardSize - 1 < boardCells.length &&
-			boardCells[cellIndex + boardSize - 1] === ""
+			cellIndex % boardType !== 0 &&
+			cellIndex + boardType - 1 < boardCells.length &&
+			boardCells[cellIndex + boardType - 1] === ""
 
 		const isBottomRightCellEmpty = (cellIndex: number): boolean =>
-			(cellIndex + 1) % boardSize !== 0 &&
-			cellIndex + boardSize + 1 < boardCells.length &&
-			boardCells[cellIndex + boardSize + 1] === ""
+			(cellIndex + 1) % boardType !== 0 &&
+			cellIndex + boardType + 1 < boardCells.length &&
+			boardCells[cellIndex + boardType + 1] === ""
 
 		for (let cellIndex = 0; cellIndex < boardCells.length; cellIndex++) {
 			const cell = boardCells[cellIndex]
 
 			if (cell === computerSign) {
 				if (isTopLeftCellEmpty(cellIndex)) {
-					return cellIndex - boardSize - 1
+					return cellIndex - boardType - 1
 				}
 
 				if (isTopRightCellEmpty(cellIndex)) {
-					return cellIndex - boardSize + 1
+					return cellIndex - boardType + 1
 				}
 
 				if (isBottomLeftCellEmpty(cellIndex)) {
-					return cellIndex + boardSize - 1
+					return cellIndex + boardType - 1
 				}
 
 				if (isBottomRightCellEmpty(cellIndex)) {
-					return cellIndex + boardSize + 1
+					return cellIndex + boardType + 1
 				}
 			}
 		}
@@ -130,7 +135,7 @@ export class TicTacToeComputerService
 		return null
 	}
 
-	private findRandomEmptyCell(boardCells: BoardCells): Maybe<number> {
+	private findRandomEmptyCell(boardCells: BoardCells): Maybe<BoardCellIndex> {
 		const emptyIndices: number[] = []
 		for (let cellIndex = 0; cellIndex < boardCells.length; cellIndex++) {
 			const cell = boardCells[cellIndex]

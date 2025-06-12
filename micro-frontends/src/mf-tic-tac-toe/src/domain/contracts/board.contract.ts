@@ -1,10 +1,15 @@
-import type { BoardCells, FieldType, PlayerSign } from "../models"
+import type {
+	BoardCellIndex,
+	BoardCells,
+	BoardType,
+	PlayerSign,
+} from "../models"
 
 export interface TicTacToeBoardServiceContract {
-	generateBoard(fieldType: FieldType): BoardCells
+	generateBoard(boardType: BoardType): BoardCells
 	chooseCell(
 		boardCells: BoardCells,
-		boardField: number,
+		boardCellIndex: BoardCellIndex,
 		playerSign: PlayerSign,
 	): void
 }

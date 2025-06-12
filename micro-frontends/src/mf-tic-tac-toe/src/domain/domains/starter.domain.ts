@@ -1,28 +1,28 @@
 import { makeAutoObservable } from "mobx"
 import type { TicTacToeStarterDomainContract } from "../contracts"
-import { FieldType, type GameData, PlayerSign } from "../models"
+import { BoardType, type GameData, PlayerSign } from "../models"
 
 export class TicTacToeStarterDomain implements TicTacToeStarterDomainContract {
 	constructor() {
 		makeAutoObservable(this)
 
-		this.fieldType = this.defaultData.fieldType
+		this.boardType = this.defaultData.boardType
 		this.playerName = this.defaultData.playerName
 		this.playerSign = this.defaultData.playerSign
 	}
 
 	private readonly defaultData: GameData = {
-		fieldType: FieldType.THREE_BY_THREE,
+		boardType: BoardType.THREE_BY_THREE,
 		playerName: "",
 		playerSign: PlayerSign.X,
 	}
 
-	public fieldType: FieldType
+	public boardType: BoardType
 	public playerName: string
 	public playerSign: PlayerSign
 
-	public setFieldType(type: FieldType): void {
-		this.fieldType = type
+	public setBoardType(type: BoardType): void {
+		this.boardType = type
 	}
 
 	public setPlayerName(name: string): void {
@@ -35,7 +35,7 @@ export class TicTacToeStarterDomain implements TicTacToeStarterDomainContract {
 
 	public getGameData(): GameData {
 		return {
-			fieldType: this.fieldType,
+			boardType: this.boardType,
 			playerName: this.playerName,
 			playerSign: this.playerSign,
 		}

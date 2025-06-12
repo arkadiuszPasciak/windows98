@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from "vitest"
-import { FieldType, PlayerSign } from "../../src/domain/models"
+import { BoardType, PlayerSign } from "../../src/domain/models"
 import { TicTacToeBoardService } from "../../src/domain/services"
 
 describe("TicTacToeBoardService", () => {
@@ -10,10 +10,10 @@ describe("TicTacToeBoardService", () => {
 	})
 
 	it("generateBoard", () => {
-		const board = ticTacToeBoardService.generateBoard(FieldType.THREE_BY_THREE)
+		const board = ticTacToeBoardService.generateBoard(BoardType.THREE_BY_THREE)
 
 		expect(board, "Should generate board with correct length").toHaveLength(
-			FieldType.THREE_BY_THREE,
+			BoardType.THREE_BY_THREE,
 		)
 		expect(
 			board.every((cell) => cell === ""),
@@ -24,7 +24,7 @@ describe("TicTacToeBoardService", () => {
 	describe("chooseCell", () => {
 		it("fill the whole board", () => {
 			const board = ticTacToeBoardService.generateBoard(
-				FieldType.THREE_BY_THREE,
+				BoardType.THREE_BY_THREE,
 			)
 			for (let index = 0; index < board.length; index++) {
 				const sign = index % 2 === 0 ? PlayerSign.X : PlayerSign.O
@@ -38,7 +38,7 @@ describe("TicTacToeBoardService", () => {
 
 		it("invalid index", () => {
 			const board = ticTacToeBoardService.generateBoard(
-				FieldType.THREE_BY_THREE,
+				BoardType.THREE_BY_THREE,
 			)
 			ticTacToeBoardService.chooseCell(board, -1, PlayerSign.X)
 			ticTacToeBoardService.chooseCell(board, 9, PlayerSign.O)
@@ -51,7 +51,7 @@ describe("TicTacToeBoardService", () => {
 
 		it("cell already filled", () => {
 			const board = ticTacToeBoardService.generateBoard(
-				FieldType.THREE_BY_THREE,
+				BoardType.THREE_BY_THREE,
 			)
 			ticTacToeBoardService.chooseCell(board, 0, PlayerSign.X)
 			ticTacToeBoardService.chooseCell(board, 0, PlayerSign.O)

@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from "vitest"
 import { TicTacToeStarterDomain } from "../../src/domain/domains"
-import { FieldType, PlayerSign } from "../../src/domain/models"
+import { BoardType, PlayerSign } from "../../src/domain/models"
 
 describe("TicTacToeStarterDomain", () => {
 	let ticTacToeStarterDomain: TicTacToeStarterDomain
@@ -9,13 +9,13 @@ describe("TicTacToeStarterDomain", () => {
 		ticTacToeStarterDomain = new TicTacToeStarterDomain()
 	})
 
-	it("setFieldType", () => {
-		const fieldType = FieldType.THREE_BY_THREE
-		ticTacToeStarterDomain.setFieldType(fieldType)
+	it("setBoardType", () => {
+		const boardType = BoardType.THREE_BY_THREE
+		ticTacToeStarterDomain.setBoardType(boardType)
 		expect(
-			ticTacToeStarterDomain.fieldType,
+			ticTacToeStarterDomain.boardType,
 			"Field type should be set correctly",
-		).toBe(fieldType)
+		).toBe(boardType)
 	})
 
 	it("setPlayerName", () => {
@@ -41,7 +41,7 @@ describe("TicTacToeStarterDomain", () => {
 		const gameData = ticTacToeStarterDomain.getGameData()
 
 		expect(gameData, "Game data should return the set values").toEqual({
-			fieldType: ticTacToeStarterDomain.fieldType,
+			boardType: ticTacToeStarterDomain.boardType,
 			playerName: ticTacToeStarterDomain.playerName,
 			playerSign: ticTacToeStarterDomain.playerSign,
 		})

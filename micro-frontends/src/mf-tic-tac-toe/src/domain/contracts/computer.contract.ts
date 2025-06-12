@@ -1,10 +1,14 @@
-import type { Maybe } from "@windows98/toolkit"
-import type { BoardCells, PlayerSign } from "../models"
+import type {
+	BoardCellIndex,
+	BoardCells,
+	BoardType,
+	PlayerSign,
+} from "../models"
 
 export interface TicTacToeComputerServiceContract {
 	determineNextMove(
 		boardCells: BoardCells,
-		boardSize: number,
+		boardType: BoardType,
 		computerSign: PlayerSign,
-	): Maybe<number>
+	): BoardCellIndex
 }
