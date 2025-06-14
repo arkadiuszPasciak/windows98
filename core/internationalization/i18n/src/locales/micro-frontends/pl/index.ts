@@ -9,6 +9,7 @@ import shutdownPL from "./mf-shutdown.locale.json"
 import startMenuPL from "./mf-start-menu.locale.json"
 import systemInformationPL from "./mf-system-information.locale.json"
 import themeManagerPL from "./mf-theme-manager.locale.json"
+import ticTacToePL from "./mf-tic-tac-toe.locale.json"
 import timerPL from "./mf-timer.locale.json"
 import timezonePL from "./mf-timezone.locale.json"
 
@@ -24,6 +25,7 @@ const localesMicroFrontendsPL = {
 	...startMenuPL,
 	...systemInformationPL,
 	...themeManagerPL,
+	...ticTacToePL,
 	...timerPL,
 	...timezonePL,
 }

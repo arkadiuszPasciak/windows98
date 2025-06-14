@@ -1,0 +1,21 @@
+{
+	"mf-tic-tac-toe": {
+		"modal": {
+			"title": "Tic Tac Toe"
+		},
+		"game": {
+			"draw": "Draw!",
+			"new-game": "New game",
+			"player-has-won": "{name} has won!",
+			"score": "Score"
+		},
+		"starter": {
+			"choose-dimension": "Choose a dimension of the field",
+			"choose-player": "Choose a player",
+			"computer": "Computer",
+			"default-player": "Default player",
+			"enter-your-name": "Enter your name",
+			"start": "Start"
+		}
+	}
+}
