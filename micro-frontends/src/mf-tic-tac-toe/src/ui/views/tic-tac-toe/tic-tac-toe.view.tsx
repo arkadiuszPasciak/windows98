@@ -1,11 +1,16 @@
 import type { FunctionComponent } from "react"
-import { DomainContextComponent } from "../../context/domain.context"
+import { ConfigContextComponent, DomainContextComponent } from "../../context"
 import { Wrapper } from "../../modules/wrapper"
+import type { TicTacToeViewProps } from "./tic-tac-toe.type"
 
-export const TicTacToeView: FunctionComponent = () => {
+export const TicTacToeView: FunctionComponent<TicTacToeViewProps> = ({
+	onCloseProgram,
+}) => {
 	return (
-		<DomainContextComponent>
-			<Wrapper />
-		</DomainContextComponent>
+		<ConfigContextComponent onCloseProgram={onCloseProgram}>
+			<DomainContextComponent>
+				<Wrapper />
+			</DomainContextComponent>
+		</ConfigContextComponent>
 	)
 }
