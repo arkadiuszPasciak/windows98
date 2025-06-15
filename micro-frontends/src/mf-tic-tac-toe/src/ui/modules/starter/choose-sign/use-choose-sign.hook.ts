@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next"
 import { PlayerSign } from "../../../../domain/models"
 import { useStarterDomain } from "../../../hooks"
 
-export const useStarter = () => {
+export const useChooseSign = () => {
 	const { t } = useTranslation()
 	const { starterDomain } = useStarterDomain()
 

@@ -2,11 +2,11 @@ import { DSRadio, DSText } from "@windows98/design-system"
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
 import styles from "./choose-sign.module.scss"
-import { useStarter } from "./use-choose-sign.hook"
+import { useChooseSign } from "./use-choose-sign.hook"
 
 export const ChooseSign: FunctionComponent = observer(() => {
 	const { playerSigns, setPlayerSign, selectedPlayerSign, translations } =
-		useStarter()
+		useChooseSign()
 
 	return (
 		<>
