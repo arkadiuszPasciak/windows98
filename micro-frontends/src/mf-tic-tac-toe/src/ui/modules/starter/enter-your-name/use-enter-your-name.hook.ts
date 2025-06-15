@@ -2,7 +2,7 @@ import type { ReactEventHandler } from "react"
 import { useTranslation } from "react-i18next"
 import { useStarterDomain } from "../../../hooks"
 
-export const usePlayerName = () => {
+export const useEnterYourName = () => {
 	const { t } = useTranslation()
 	const { starterDomain } = useStarterDomain()
 

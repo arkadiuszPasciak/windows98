@@ -1,14 +1,14 @@
 import { DSInput } from "@windows98/design-system"
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
-import { usePlayerName } from "./use-player-name.hook"
+import { useEnterYourName } from "./use-enter-your-name.hook"
 
-export const PlayerName: FunctionComponent = observer(() => {
-	const { translations, setPlayerName } = usePlayerName()
+export const EnterYourName: FunctionComponent = observer(() => {
+	const { translations, setPlayerName } = useEnterYourName()
 
 	return (
 		<DSInput
-			id="mf-tic-tac-toe-starter-player-name"
+			id="mf-tic-tac-toe-starter-enter-your-name"
 			initialValue=""
 			labelName={translations.label}
 			wrapperLayout="vertical"
