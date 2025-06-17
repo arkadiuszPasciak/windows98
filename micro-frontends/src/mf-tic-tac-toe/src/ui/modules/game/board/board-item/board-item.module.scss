@@ -1,0 +1,40 @@
+.board-item {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow-raised);
+    @include font('bold', 12, 30);
+
+    @include hover {
+        cursor: pointer;
+    }
+
+    &:not(:disabled):active {
+        box-shadow: var(--box-shadow-sunken);
+    }
+
+    &:disabled {
+        opacity: 0.2;
+        pointer-events: none;
+    }
+}
+
+.color-blue {
+    // @TODO: Move this color during implementation panda css
+    color: #0000ff;
+}
+
+.color-red {
+    // @TODO: Move this color during implementation panda css
+    color: #fe0000;
+}
+
+.color-black {
+    color: var(--text-color);
+}
