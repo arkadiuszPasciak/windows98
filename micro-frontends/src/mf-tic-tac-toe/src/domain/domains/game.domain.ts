@@ -57,13 +57,13 @@ export class TicTacToeGameDomain implements TicTacToeGameDomainContract {
 
 		this.boardCells = this.ticTacToeBoardService.generateBoard(boardType)
 		this.statusResult.status = GameStatus.IN_PROGRESS
+		this.currentPlayer = this.human.sign
 	}
 
 	public makeMove(boardCellIndex: BoardCellIndex): void {
 		const isGameFinished = this.isGameFinished()
 		if (isGameFinished) return
 
-		this.changeCurrentPlayer()
 		this.humanMove(boardCellIndex)
 		this.updateStatus()
 
@@ -73,6 +73,7 @@ export class TicTacToeGameDomain implements TicTacToeGameDomainContract {
 		this.changeCurrentPlayer()
 		this.computerMove()
 		this.updateStatus()
+		this.changeCurrentPlayer()
 	}
 
 	private humanMove(boardCellIndex: BoardCellIndex): void {
