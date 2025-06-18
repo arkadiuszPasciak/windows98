@@ -6,7 +6,7 @@
 		"game": {
 			"draw": "Remis!",
 			"new-game": "Neues Spiel",
-			"player-has-won": "{name} hat gewonnen!",
+			"player-has-won": "{{name}} hat gewonnen!",
 			"score": "Punktestand"
 		},
 		"starter": {

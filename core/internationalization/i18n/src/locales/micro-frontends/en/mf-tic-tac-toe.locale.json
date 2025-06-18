@@ -6,7 +6,7 @@
 		"game": {
 			"draw": "Draw!",
 			"new-game": "New game",
-			"player-has-won": "{name} has won!",
+			"player-has-won": "{{name}} has won!",
 			"score": "Score"
 		},
 		"starter": {
