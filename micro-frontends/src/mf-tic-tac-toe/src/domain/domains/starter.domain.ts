@@ -9,17 +9,20 @@ export class TicTacToeStarterDomain implements TicTacToeStarterDomainContract {
 		this.boardType = this.defaultData.boardType
 		this.playerName = this.defaultData.playerName
 		this.playerSign = this.defaultData.playerSign
+		this.computerSign = this.defaultData.computerSign
 	}
 
 	private readonly defaultData: GameData = {
 		boardType: BoardType.THREE_BY_THREE,
 		playerName: "",
 		playerSign: PlayerSign.X,
+		computerSign: PlayerSign.O,
 	}
 
 	public boardType: BoardType
 	public playerName: string
 	public playerSign: PlayerSign
+	public computerSign: PlayerSign
 
 	public setBoardType(type: BoardType): void {
 		this.boardType = type
@@ -31,6 +34,8 @@ export class TicTacToeStarterDomain implements TicTacToeStarterDomainContract {
 
 	public setPlayerSign(sign: PlayerSign): void {
 		this.playerSign = sign
+
+		this.computerSign = sign === PlayerSign.X ? PlayerSign.O : PlayerSign.X
 	}
 
 	public getGameData(): GameData {
@@ -38,6 +43,7 @@ export class TicTacToeStarterDomain implements TicTacToeStarterDomainContract {
 			boardType: this.boardType,
 			playerName: this.playerName,
 			playerSign: this.playerSign,
+			computerSign: this.computerSign,
 		}
 	}
 }

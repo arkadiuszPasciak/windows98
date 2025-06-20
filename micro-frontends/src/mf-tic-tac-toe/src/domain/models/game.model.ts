@@ -5,4 +5,5 @@ export interface GameData {
 	boardType: BoardType
 	playerName: string
 	playerSign: PlayerSign
+	computerSign: PlayerSign
 }
