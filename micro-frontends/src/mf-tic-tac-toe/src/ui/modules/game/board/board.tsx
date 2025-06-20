@@ -19,10 +19,7 @@ export const Board: FunctionComponent = observer(() => {
 		>
 			{boardCells.map((cell, index) => (
 				<BoardItem
-					key={`mf-tic-tac-toe-game-board-item-${
-						// biome-ignore lint/suspicious/noArrayIndexKey: @TODO: fix this problem please
-						index
-					}`}
+					key={`mf-tic-tac-toe-game-board-item-${index}-${cell}`}
 					value={cell}
 					onClick={() => handleCellClick(index)}
 				/>
