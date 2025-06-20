@@ -1,4 +1,4 @@
-import type { TicTacToeBoardServiceContract } from "../contracts"
+import type { TicTacToeBoardStrategyContract } from "../contracts"
 import type {
 	BoardCellIndex,
 	BoardCells,
@@ -6,7 +6,7 @@ import type {
 	PlayerSign,
 } from "../models"
 
-export class TicTacToeBoardService implements TicTacToeBoardServiceContract {
+export class TicTacToeBoardStrategy implements TicTacToeBoardStrategyContract {
 	public generateBoard(boardType: BoardType): BoardCells {
 		return Array(boardType).fill("")
 	}

@@ -29,11 +29,17 @@ describe("TicTacToeStarterDomain", () => {
 
 	it("setPlayerSign", () => {
 		const playerSign = PlayerSign.O
+		const computerSign = PlayerSign.X
+
 		ticTacToeStarterDomain.setPlayerSign(playerSign)
 		expect(
 			ticTacToeStarterDomain.playerSign,
 			"Player sign should be set correctly",
 		).toBe(playerSign)
+		expect(
+			ticTacToeStarterDomain.computerSign,
+			"Computer sign should be set correctly",
+		).toBe(computerSign)
 	})
 
 	it("getGameData", () => {
@@ -44,6 +50,7 @@ describe("TicTacToeStarterDomain", () => {
 			boardType: ticTacToeStarterDomain.boardType,
 			playerName: ticTacToeStarterDomain.playerName,
 			playerSign: ticTacToeStarterDomain.playerSign,
+			computerSign: ticTacToeStarterDomain.computerSign,
 		})
 	})
 })

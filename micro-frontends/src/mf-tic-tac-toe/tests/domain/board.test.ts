@@ -1,16 +1,16 @@
 import { beforeEach, describe, expect, it } from "vitest"
 import { BoardType, PlayerSign } from "../../src/domain/models"
-import { TicTacToeBoardService } from "../../src/domain/services"
+import { TicTacToeBoardStrategy } from "../../src/domain/strategies"
 
-describe("TicTacToeBoardService", () => {
-	let ticTacToeBoardService: TicTacToeBoardService
+describe("TicTacToeBoardStrategy", () => {
+	let ticTacToeBoardStrategy: TicTacToeBoardStrategy
 
 	beforeEach(() => {
-		ticTacToeBoardService = new TicTacToeBoardService()
+		ticTacToeBoardStrategy = new TicTacToeBoardStrategy()
 	})
 
 	it("generateBoard", () => {
-		const board = ticTacToeBoardService.generateBoard(BoardType.THREE_BY_THREE)
+		const board = ticTacToeBoardStrategy.generateBoard(BoardType.THREE_BY_THREE)
 
 		expect(board, "Should generate board with correct length").toHaveLength(
 			BoardType.THREE_BY_THREE,
@@ -23,12 +23,12 @@ describe("TicTacToeBoardService", () => {
 
 	describe("chooseCell", () => {
 		it("fill the whole board", () => {
-			const board = ticTacToeBoardService.generateBoard(
+			const board = ticTacToeBoardStrategy.generateBoard(
 				BoardType.THREE_BY_THREE,
 			)
 			for (let index = 0; index < board.length; index++) {
 				const sign = index % 2 === 0 ? PlayerSign.X : PlayerSign.O
-				ticTacToeBoardService.chooseCell(board, index, sign)
+				ticTacToeBoardStrategy.chooseCell(board, index, sign)
 
 				expect(board[index], `Cell ${index} should be set to ${sign}`).toBe(
 					sign,
@@ -37,11 +37,11 @@ describe("TicTacToeBoardService", () => {
 		})
 
 		it("invalid index", () => {
-			const board = ticTacToeBoardService.generateBoard(
+			const board = ticTacToeBoardStrategy.generateBoard(
 				BoardType.THREE_BY_THREE,
 			)
-			ticTacToeBoardService.chooseCell(board, -1, PlayerSign.X)
-			ticTacToeBoardService.chooseCell(board, 9, PlayerSign.O)
+			ticTacToeBoardStrategy.chooseCell(board, -1, PlayerSign.X)
+			ticTacToeBoardStrategy.chooseCell(board, 9, PlayerSign.O)
 
 			expect(
 				board.every((cell) => cell === ""),
@@ -50,11 +50,11 @@ describe("TicTacToeBoardService", () => {
 		})
 
 		it("cell already filled", () => {
-			const board = ticTacToeBoardService.generateBoard(
+			const board = ticTacToeBoardStrategy.generateBoard(
 				BoardType.THREE_BY_THREE,
 			)
-			ticTacToeBoardService.chooseCell(board, 0, PlayerSign.X)
-			ticTacToeBoardService.chooseCell(board, 0, PlayerSign.O)
+			ticTacToeBoardStrategy.chooseCell(board, 0, PlayerSign.X)
+			ticTacToeBoardStrategy.chooseCell(board, 0, PlayerSign.O)
 
 			expect(board[0], "Cell should not be overwritten").toBe(PlayerSign.X)
 		})

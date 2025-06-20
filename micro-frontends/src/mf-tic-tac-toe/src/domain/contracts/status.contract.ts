@@ -1,6 +1,6 @@
 import type { BoardCells, PlayerSign } from "../models"
 import type { GameStatusResult } from "../models/status.model"
 
-export interface TicTacToeStatusServiceContract {
+export interface TicTacToeStatusStrategyContract {
 	evaluateStatus(boardCells: BoardCells, player: PlayerSign): GameStatusResult
 }

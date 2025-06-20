@@ -1,4 +1,4 @@
-import type { TicTacToeStatusServiceContract } from "../contracts"
+import type { TicTacToeStatusStrategyContract } from "../contracts"
 import {
 	type BoardCells,
 	GameStatus,
@@ -6,7 +6,9 @@ import {
 	type PlayerSign,
 } from "../models"
 
-export class TicTacToeStatusService implements TicTacToeStatusServiceContract {
+export class TicTacToeStatusStrategy
+	implements TicTacToeStatusStrategyContract
+{
 	public evaluateStatus(
 		boardCells: BoardCells,
 		player: PlayerSign,

@@ -1,5 +1,5 @@
 import type { Maybe } from "@windows98/toolkit"
-import type { TicTacToeComputerServiceContract } from "../contracts"
+import type { TicTacToeComputerStrategyContract } from "../contracts"
 import type {
 	BoardCellIndex,
 	BoardCells,
@@ -7,8 +7,8 @@ import type {
 	PlayerSign,
 } from "../models"
 
-export class TicTacToeComputerService
-	implements TicTacToeComputerServiceContract
+export class TicTacToeComputerStrategy
+	implements TicTacToeComputerStrategyContract
 {
 	public determineNextMove(
 		boardCells: BoardCells,

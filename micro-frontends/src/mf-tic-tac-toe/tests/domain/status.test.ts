@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it } from "vitest"
 import { type BoardCells, BoardType, GameStatus } from "../../src/domain/models"
 import { PlayerSign } from "../../src/domain/models"
-import { TicTacToeStatusService } from "../../src/domain/services"
+import { TicTacToeStatusStrategy } from "../../src/domain/strategies"
 
 function generateDrawBoard(size: number): BoardCells {
 	return Array.from({ length: size * size }, (_, index) =>
@@ -122,17 +122,17 @@ const boardMocks = {
 	},
 }
 
-describe("TicTacToeStatusService", () => {
-	let ticTacToeStatusService: TicTacToeStatusService
+describe("TicTacToeStatusStrategy", () => {
+	let ticTacToeStatusStrategy: TicTacToeStatusStrategy
 
 	beforeEach(() => {
-		ticTacToeStatusService = new TicTacToeStatusService()
+		ticTacToeStatusStrategy = new TicTacToeStatusStrategy()
 	})
 
 	describe("evaluateStatus", () => {
 		it("returns ERROR for not square boards", () => {
 			for (const board of Object.values(notSquareBoard)) {
-				const result = ticTacToeStatusService.evaluateStatus(
+				const result = ticTacToeStatusStrategy.evaluateStatus(
 					board,
 					PlayerSign.X,
 				)
@@ -143,7 +143,7 @@ describe("TicTacToeStatusService", () => {
 
 		describe("THREE_BY_THREE", () => {
 			it("detects draw", () => {
-				const result = ticTacToeStatusService.evaluateStatus(
+				const result = ticTacToeStatusStrategy.evaluateStatus(
 					boardMocks[BoardType.THREE_BY_THREE].draw,
 					PlayerSign.X,
 				)
@@ -154,7 +154,7 @@ describe("TicTacToeStatusService", () => {
 			it("detects win in all columns", () => {
 				for (let column = 0; column < 3; column++) {
 					const player = column % 2 === 0 ? PlayerSign.X : PlayerSign.O
-					const result = ticTacToeStatusService.evaluateStatus(
+					const result = ticTacToeStatusStrategy.evaluateStatus(
 						boardMocks[BoardType.THREE_BY_THREE].column[column],
 						player,
 					)
@@ -166,7 +166,7 @@ describe("TicTacToeStatusService", () => {
 			it("detects win in all rows", () => {
 				for (let row = 0; row < 3; row++) {
 					const player = row % 2 === 0 ? PlayerSign.X : PlayerSign.O
-					const result = ticTacToeStatusService.evaluateStatus(
+					const result = ticTacToeStatusStrategy.evaluateStatus(
 						boardMocks[BoardType.THREE_BY_THREE].row[row],
 						player,
 					)
@@ -176,7 +176,7 @@ describe("TicTacToeStatusService", () => {
 			})
 
 			it("detects win in main diagonal", () => {
-				const result = ticTacToeStatusService.evaluateStatus(
+				const result = ticTacToeStatusStrategy.evaluateStatus(
 					boardMocks[BoardType.THREE_BY_THREE].mainDiagonal,
 					PlayerSign.X,
 				)
@@ -185,7 +185,7 @@ describe("TicTacToeStatusService", () => {
 			})
 
 			it("detects win in anti diagonal", () => {
-				const result = ticTacToeStatusService.evaluateStatus(
+				const result = ticTacToeStatusStrategy.evaluateStatus(
 					boardMocks[BoardType.THREE_BY_THREE].antiDiagonal,
 					PlayerSign.O,
 				)
@@ -194,7 +194,7 @@ describe("TicTacToeStatusService", () => {
 			})
 
 			it("returns IN_PROGRESS for incomplete board", () => {
-				const result = ticTacToeStatusService.evaluateStatus(
+				const result = ticTacToeStatusStrategy.evaluateStatus(
 					["", "", "", "", "", "", "", "", ""],
 					PlayerSign.X,
 				)
@@ -205,7 +205,7 @@ describe("TicTacToeStatusService", () => {
 
 		describe("SIX_BY_SIX", () => {
 			it("detects draw", () => {
-				const result = ticTacToeStatusService.evaluateStatus(
+				const result = ticTacToeStatusStrategy.evaluateStatus(
 					boardMocks[BoardType.SIX_BY_SIX].draw,
 					PlayerSign.X,
 				)
@@ -216,7 +216,7 @@ describe("TicTacToeStatusService", () => {
 			it("detects win in all columns", () => {
 				for (let column = 0; column < 6; column++) {
 					const player = column % 2 === 0 ? PlayerSign.X : PlayerSign.O
-					const result = ticTacToeStatusService.evaluateStatus(
+					const result = ticTacToeStatusStrategy.evaluateStatus(
 						boardMocks[BoardType.SIX_BY_SIX].column[column],
 						player,
 					)
@@ -228,7 +228,7 @@ describe("TicTacToeStatusService", () => {
 			it("detects win in all rows", () => {
 				for (let row = 0; row < 6; row++) {
 					const player = row % 2 === 0 ? PlayerSign.X : PlayerSign.O
-					const result = ticTacToeStatusService.evaluateStatus(
+					const result = ticTacToeStatusStrategy.evaluateStatus(
 						boardMocks[BoardType.SIX_BY_SIX].row[row],
 						player,
 					)
@@ -238,7 +238,7 @@ describe("TicTacToeStatusService", () => {
 			})
 
 			it("detects win in main diagonal", () => {
-				const result = ticTacToeStatusService.evaluateStatus(
+				const result = ticTacToeStatusStrategy.evaluateStatus(
 					boardMocks[BoardType.SIX_BY_SIX].mainDiagonal,
 					PlayerSign.X,
 				)
@@ -247,7 +247,7 @@ describe("TicTacToeStatusService", () => {
 			})
 
 			it("detects win in anti diagonal", () => {
-				const result = ticTacToeStatusService.evaluateStatus(
+				const result = ticTacToeStatusStrategy.evaluateStatus(
 					boardMocks[BoardType.SIX_BY_SIX].antiDiagonal,
 					PlayerSign.O,
 				)
@@ -258,7 +258,7 @@ describe("TicTacToeStatusService", () => {
 
 		describe("NINE_BY_NINE", () => {
 			it("detects draw", () => {
-				const result = ticTacToeStatusService.evaluateStatus(
+				const result = ticTacToeStatusStrategy.evaluateStatus(
 					boardMocks[BoardType.NINE_BY_NINE].draw,
 					PlayerSign.X,
 				)
@@ -269,7 +269,7 @@ describe("TicTacToeStatusService", () => {
 			it("detects win in all columns", () => {
 				for (let column = 0; column < 9; column++) {
 					const player = column % 2 === 0 ? PlayerSign.X : PlayerSign.O
-					const result = ticTacToeStatusService.evaluateStatus(
+					const result = ticTacToeStatusStrategy.evaluateStatus(
 						boardMocks[BoardType.NINE_BY_NINE].column[column],
 						player,
 					)
@@ -281,7 +281,7 @@ describe("TicTacToeStatusService", () => {
 			it("detects win in all rows", () => {
 				for (let row = 0; row < 9; row++) {
 					const player = row % 2 === 0 ? PlayerSign.X : PlayerSign.O
-					const result = ticTacToeStatusService.evaluateStatus(
+					const result = ticTacToeStatusStrategy.evaluateStatus(
 						boardMocks[BoardType.NINE_BY_NINE].row[row],
 						player,
 					)
@@ -291,7 +291,7 @@ describe("TicTacToeStatusService", () => {
 			})
 
 			it("detects win in main diagonal", () => {
-				const result = ticTacToeStatusService.evaluateStatus(
+				const result = ticTacToeStatusStrategy.evaluateStatus(
 					boardMocks[BoardType.NINE_BY_NINE].mainDiagonal,
 					PlayerSign.X,
 				)
@@ -300,7 +300,7 @@ describe("TicTacToeStatusService", () => {
 			})
 
 			it("detects win in anti diagonal", () => {
-				const result = ticTacToeStatusService.evaluateStatus(
+				const result = ticTacToeStatusStrategy.evaluateStatus(
 					boardMocks[BoardType.NINE_BY_NINE].antiDiagonal,
 					PlayerSign.O,
 				)

@@ -1,18 +1,18 @@
 import { beforeEach, describe, expect, it } from "vitest"
 import { BoardType, PlayerSign } from "../../src/domain/models"
-import { TicTacToeComputerService } from "../../src/domain/services"
+import { TicTacToeComputerStrategy } from "../../src/domain/strategies"
 
-describe("TicTacToeComputerService", () => {
-	let ticTacToeComputerService: TicTacToeComputerService
+describe("TicTacToeComputerStrategy", () => {
+	let ticTacToeComputerStrategy: TicTacToeComputerStrategy
 
 	beforeEach(() => {
-		ticTacToeComputerService = new TicTacToeComputerService()
+		ticTacToeComputerStrategy = new TicTacToeComputerStrategy()
 	})
 
 	it("should pick a random cell on an empty board", () => {
 		const boardSize = BoardType.THREE_BY_THREE
 		const emptyBoard = Array(boardSize * boardSize).fill("")
-		const move = ticTacToeComputerService.determineNextMove(
+		const move = ticTacToeComputerStrategy.determineNextMove(
 			emptyBoard,
 			boardSize,
 			PlayerSign.X,
@@ -27,7 +27,7 @@ describe("TicTacToeComputerService", () => {
 		const boardSize = BoardType.THREE_BY_THREE
 
 		const board = ["", "", "", "", PlayerSign.X, "", "", "", ""]
-		const move = ticTacToeComputerService.determineNextMove(
+		const move = ticTacToeComputerStrategy.determineNextMove(
 			board,
 			boardSize,
 			PlayerSign.X,

@@ -5,7 +5,7 @@ import type {
 	PlayerSign,
 } from "../models"
 
-export interface TicTacToeComputerServiceContract {
+export interface TicTacToeComputerStrategyContract {
 	determineNextMove(
 		boardCells: BoardCells,
 		boardType: BoardType,

@@ -1,9 +1,9 @@
 import { makeAutoObservable } from "mobx"
 import type {
-	TicTacToeBoardServiceContract,
-	TicTacToeComputerServiceContract,
+	TicTacToeBoardStrategyContract,
+	TicTacToeComputerStrategyContract,
 	TicTacToeGameDomainContract,
-	TicTacToeStatusServiceContract,
+	TicTacToeStatusStrategyContract,
 } from "../contracts"
 import {
 	type BoardCellIndex,
@@ -14,22 +14,22 @@ import {
 	PlayerSign,
 } from "../models"
 import {
-	TicTacToeBoardService,
-	TicTacToeComputerService,
-	TicTacToeStatusService,
-} from "../services"
+	TicTacToeBoardStrategy,
+	TicTacToeComputerStrategy,
+	TicTacToeStatusStrategy,
+} from "../strategies"
 
 export class TicTacToeGameDomain implements TicTacToeGameDomainContract {
 	constructor() {
 		makeAutoObservable(this)
 	}
 
-	private readonly ticTacToeBoardService: TicTacToeBoardServiceContract =
-		new TicTacToeBoardService()
-	private readonly ticTacToeComputerService: TicTacToeComputerServiceContract =
-		new TicTacToeComputerService()
-	private readonly ticTacToeStatusService: TicTacToeStatusServiceContract =
-		new TicTacToeStatusService()
+	private readonly ticTacToeBoardStrategy: TicTacToeBoardStrategyContract =
+		new TicTacToeBoardStrategy()
+	private readonly ticTacToeComputerStrategy: TicTacToeComputerStrategyContract =
+		new TicTacToeComputerStrategy()
+	private readonly ticTacToeStatusStrategy: TicTacToeStatusStrategyContract =
+		new TicTacToeStatusStrategy()
 
 	public boardCells: BoardCells = []
 	public currentPlayer = PlayerSign.X
@@ -55,7 +55,7 @@ export class TicTacToeGameDomain implements TicTacToeGameDomainContract {
 		this.human.sign = humanSign
 		this.human.name = humanName
 
-		this.boardCells = this.ticTacToeBoardService.generateBoard(boardType)
+		this.boardCells = this.ticTacToeBoardStrategy.generateBoard(boardType)
 		this.statusResult.status = GameStatus.IN_PROGRESS
 		this.currentPlayer = this.human.sign
 	}
@@ -77,7 +77,7 @@ export class TicTacToeGameDomain implements TicTacToeGameDomainContract {
 	}
 
 	private humanMove(boardCellIndex: BoardCellIndex): void {
-		this.ticTacToeBoardService.chooseCell(
+		this.ticTacToeBoardStrategy.chooseCell(
 			this.boardCells,
 			boardCellIndex,
 			this.currentPlayer,
@@ -85,13 +85,13 @@ export class TicTacToeGameDomain implements TicTacToeGameDomainContract {
 	}
 
 	private computerMove(): void {
-		const boardCellIndex = this.ticTacToeComputerService.determineNextMove(
+		const boardCellIndex = this.ticTacToeComputerStrategy.determineNextMove(
 			this.boardCells,
 			this.boardType,
 			this.computer.sign,
 		)
 
-		this.ticTacToeBoardService.chooseCell(
+		this.ticTacToeBoardStrategy.chooseCell(
 			this.boardCells,
 			boardCellIndex,
 			this.currentPlayer,
@@ -106,7 +106,7 @@ export class TicTacToeGameDomain implements TicTacToeGameDomainContract {
 	}
 
 	private updateStatus(): void {
-		const status = this.ticTacToeStatusService.evaluateStatus(
+		const status = this.ticTacToeStatusStrategy.evaluateStatus(
 			this.boardCells,
 			this.currentPlayer,
 		)

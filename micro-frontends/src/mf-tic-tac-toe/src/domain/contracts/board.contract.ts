@@ -5,7 +5,7 @@ import type {
 	PlayerSign,
 } from "../models"
 
-export interface TicTacToeBoardServiceContract {
+export interface TicTacToeBoardStrategyContract {
 	generateBoard(boardType: BoardType): BoardCells
 	chooseCell(
 		boardCells: BoardCells,
