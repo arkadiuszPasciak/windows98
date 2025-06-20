@@ -1,0 +1,38 @@
+.board-item {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow-raised);
+    @include font('bold', 12, 30);
+
+    @include hover {
+        cursor: pointer;
+    }
+
+    &:disabled {
+        opacity: 0.2;
+        pointer-events: none;
+    }
+
+    &:not(:disabled):active {
+        box-shadow: var(--box-shadow-sunken);
+    }
+}
+
+.color-blue {
+    color: $cl-blue00;
+}
+
+.color-red {
+    color: $cl-red;
+}
+
+.color-black {
+    color: var(--text-color);
+}

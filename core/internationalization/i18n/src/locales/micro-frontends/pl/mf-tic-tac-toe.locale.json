@@ -1,0 +1,21 @@
+{
+	"mf-tic-tac-toe": {
+		"modal": {
+			"title": "Kółko i krzyżyk"
+		},
+		"game": {
+			"draw": "Remis!",
+			"new-game": "Nowa gra",
+			"player-has-won": "{{name}} wygrał!",
+			"score": "Wynik"
+		},
+		"starter": {
+			"choose-dimension": "Wybierz wymiar planszy",
+			"choose-player": "Wybierz gracza",
+			"computer": "Komputer",
+			"default-player": "Domyślny gracz",
+			"enter-your-name": "Wprowadź swoje imię",
+			"start": "Start"
+		}
+	}
+}

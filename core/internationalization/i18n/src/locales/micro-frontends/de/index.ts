@@ -9,6 +9,7 @@ import shutdownDE from "./mf-shutdown.locale.json"
 import startMenuDE from "./mf-start-menu.locale.json"
 import systemInformationDE from "./mf-system-information.locale.json"
 import themeManagerDE from "./mf-theme-manager.locale.json"
+import ticTacToeDE from "./mf-tic-tac-toe.locale.json"
 import timerDE from "./mf-timer.locale.json"
 import timezoneDE from "./mf-timezone.locale.json"
 
@@ -24,6 +25,7 @@ const localesMicroFrontendsDE = {
 	...startMenuDE,
 	...systemInformationDE,
 	...themeManagerDE,
+	...ticTacToeDE,
 	...timerDE,
 	...timezoneDE,
 }
