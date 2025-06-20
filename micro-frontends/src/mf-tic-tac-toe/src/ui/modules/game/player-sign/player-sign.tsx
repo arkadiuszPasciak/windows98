@@ -17,7 +17,7 @@ export const PlayerSign: FunctionComponent<PlayerSignProps> = ({
 			id={`mf-tic-tac-toe-game-player-sign-${playerType}`}
 			title={name}
 		>
-			<span className={`${styles.sign} ${styles[`variant-${playerType}`]}`}>
+			<span className={`${styles.sign} ${styles[`sign-${signType}`]}`}>
 				{signType}
 			</span>
 		</DSFrame>
