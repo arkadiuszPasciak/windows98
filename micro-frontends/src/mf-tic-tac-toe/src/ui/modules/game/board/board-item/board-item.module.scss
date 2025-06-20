@@ -26,13 +26,11 @@
 }
 
 .color-blue {
-    // @TODO: Move this color during implementation panda css
-    color: #0000ff;
+    color: $cl-blue00;
 }
 
 .color-red {
-    // @TODO: Move this color during implementation panda css
-    color: #fe0000;
+    color: $cl-red;
 }
 
 .color-black {
