@@ -22,6 +22,8 @@ export const useStartGame = ({ onClick }: UseStartGame) => {
 		)
 
 		onClick()
+
+		starterDomain.reset()
 	}
 
 	const isButtonDisabled = starterDomain.playerName.length === 0

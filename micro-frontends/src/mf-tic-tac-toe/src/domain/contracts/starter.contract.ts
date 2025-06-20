@@ -5,4 +5,5 @@ export interface TicTacToeStarterDomainContract extends GameData {
 	setPlayerName(name: string): void
 	setPlayerSign(sign: PlayerSign): void
 	getGameData(): GameData
+	reset(): void
 }

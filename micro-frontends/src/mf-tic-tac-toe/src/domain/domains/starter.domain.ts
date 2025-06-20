@@ -46,6 +46,13 @@ export class TicTacToeStarterDomain implements TicTacToeStarterDomainContract {
 			computerSign: this.computerSign,
 		}
 	}
+
+	public reset(): void {
+		this.boardType = this.defaultData.boardType
+		this.playerName = this.defaultData.playerName
+		this.playerSign = this.defaultData.playerSign
+		this.computerSign = this.defaultData.computerSign
+	}
 }
 
 export const ticTacToeStarterDomain = new TicTacToeStarterDomain()
