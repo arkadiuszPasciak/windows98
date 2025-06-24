@@ -1,9 +1,9 @@
 import { expect, test } from "@playwright/experimental-ct-react"
-import { TimerView } from "../../src/ui/views"
+import { MFTimer } from "../../src/ui/views"
 
 test.describe("Timer", () => {
 	test("should follow a typical user scenario", async ({ mount, page }) => {
-		const component = await mount(<TimerView />)
+		const component = await mount(<MFTimer onCloseProgram={() => {}} />)
 
 		const customPreset = component.getByTestId("mf-timer-preset-custom-radio")
 		await customPreset.click()

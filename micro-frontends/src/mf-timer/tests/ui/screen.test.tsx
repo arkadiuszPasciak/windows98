@@ -1,9 +1,9 @@
 import { expect, test } from "@playwright/experimental-ct-react"
-import { TimerView } from "../../src/ui/views"
+import { MFTimer } from "../../src/ui/views"
 
 test.describe("Screen", () => {
 	test("should update screen when a preset is chosen", async ({ mount }) => {
-		const component = await mount(<TimerView />)
+		const component = await mount(<MFTimer onCloseProgram={() => {}} />)
 
 		const preset3Minutes = component.getByTestId(
 			"mf-timer-preset-3-minutes-radio",
@@ -22,7 +22,7 @@ test.describe("Screen", () => {
 	test("should update screen when hours/minutes/seconds are increased or decreased", async ({
 		mount,
 	}) => {
-		const component = await mount(<TimerView />)
+		const component = await mount(<MFTimer onCloseProgram={() => {}} />)
 
 		const hoursUpButton = component.getByTestId("ds-button-arrow-hours-top")
 		await hoursUpButton.click()

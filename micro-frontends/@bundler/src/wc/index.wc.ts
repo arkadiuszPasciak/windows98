@@ -6,7 +6,6 @@ import { ClockView } from "../../../src/mf-clock/src/ui/views"
 import { NavigationView } from "../../../src/mf-navigation/src/ui/views"
 import { NotepadView } from "../../../src/mf-notepad/src/ui/views"
 import { PulpitViewWithMock } from "../../../src/mf-pulpit/src/ui/views"
-import { TimerView } from "../../../src/mf-timer/src/ui/views"
 import { TimezoneView } from "../../../src/mf-timezone/src/ui/views"
 
 const MFAudio = r2wc(AudioButtonView)
@@ -31,9 +30,6 @@ customElements.define("mf-notepad", MFNotepad)
 
 const MFPulpit = r2wc(PulpitViewWithMock)
 customElements.define("mf-pulpit", MFPulpit)
-
-const MFTimer = r2wc(TimerView)
-customElements.define("mf-timer", MFTimer)
 
 const MFTimezone = r2wc(TimezoneView)
 customElements.define("mf-timezone", MFTimezone)
