@@ -1,1 +1,1 @@
-export * from "./timer.view"
+export * from "./timer"

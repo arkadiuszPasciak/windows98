@@ -3,12 +3,13 @@ import type { FunctionComponent } from "react"
 import { useCancel } from "./use-cancel.hook"
 
 export const Cancel: FunctionComponent = () => {
-	const { translations } = useCancel()
+	const { translations, onCloseProgram } = useCancel()
 
 	return (
 		<DSButton
 			id="mf-shutdown-controller-cancel"
 			text={translations.text}
+			onClick={onCloseProgram}
 		/>
 	)
 }

@@ -1,11 +1,11 @@
 import { expect, test } from "@playwright/experimental-ct-react"
-import { TimerView } from "../../src/ui/views/timer.view"
+import { MFTimer } from "../../src/ui/views"
 
 test.describe("Player", () => {
 	test("should interact with buttons start, stop and reset", async ({
 		mount,
 	}) => {
-		const component = await mount(<TimerView />)
+		const component = await mount(<MFTimer onCloseProgram={() => {}} />)
 
 		const preset3min = component.getByTestId("mf-timer-preset-3-minutes-radio")
 		await preset3min.click()

@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/experimental-ct-react"
-import { TimerView } from "../../src/ui/views/timer.view"
+import { MFTimer } from "../../src/ui/views"
 
 const presets = [
 	{
@@ -48,7 +48,7 @@ test.describe("Presets", () => {
 	test("should interact with presets 3 minutes, 5 minutes, 10 minutes, 15 minutes and custom", async ({
 		mount,
 	}) => {
-		const component = await mount(<TimerView />)
+		const component = await mount(<MFTimer onCloseProgram={() => {}} />)
 
 		const hours = component.getByTestId("mf-timer-screen-hours")
 		const minutes = component.getByTestId("mf-timer-screen-minutes")
