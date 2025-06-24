@@ -1,30 +1,38 @@
-import { SingletonFactory } from "@windows98/toolkit"
+import { ObserverHelper } from "@windows98/toolkit"
 import type { ProgramManagerDomainContract } from "../contracts"
 
 export class ProgramManagerDomain<Programs>
 	implements ProgramManagerDomainContract<Programs>
 {
+	public readonly observerHelper = new ObserverHelper<Programs>()
+	private programsState: Programs
+
 	public constructor(programs: Programs) {
-		this.programs = programs
+		this.programsState = programs
 	}
 
-	public readonly programs: Programs
+	public get programs(): Programs {
+		return this.programsState
+	}
+
+	public set programs(newPrograms: Programs) {
+		const oldPrograms = this.programsState
+		this.programsState = newPrograms
+		this.observerHelper.notify(newPrograms, oldPrograms)
+	}
 
 	public runProgram<Program extends keyof Programs>(
 		program: Program,
 		value: Programs[Program],
 	): void {
-		if (this.programs[program] === value) return
+		if (this.programsState[program] === value) return
 
-		this.programs[program] = value
-	}
+		const oldPrograms = this.programsState
+		this.programsState = {
+			...this.programsState,
+			[program]: value,
+		}
 
-	public static getInstance<Programs>(
-		programs?: Programs,
-	): ProgramManagerDomain<Programs> {
-		return SingletonFactory.getInstance<ProgramManagerDomain<Programs>>(
-			ProgramManagerDomain,
-			programs,
-		)
+		this.observerHelper.notify(this.programsState, oldPrograms)
 	}
 }
