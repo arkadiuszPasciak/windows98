@@ -5,7 +5,7 @@ import "@windows98/design-system/variables.config.css"
 import i18nInit from "@windows98/i18n/configs/react.config"
 import type { Maybe } from "@windows98/toolkit"
 import { AudioButtonView } from "../../src/mf-audio-button/src/ui/views"
-import { CalculatorView } from "../../src/mf-calculator/src/ui/views"
+import { MFCalculator } from "../../src/mf-calculator/src/ui/views"
 import { CalendarView } from "../../src/mf-calendar/src/ui/views/calendar.view"
 import { ClockView } from "../../src/mf-clock/src/ui/views"
 import { LanguageManagerView } from "../../src/mf-language-manager/src/ui/views"
@@ -28,7 +28,9 @@ i18nInit().then(() => {
 			<NotepadView onCloseProgram={() => console.log("notepad is closed!")} />
 			<CalendarView />
 			<TimezoneView />
-			<CalculatorView />
+			<MFCalculator
+				onCloseProgram={() => console.log("calculator is closed!")}
+			/>
 			<TimerView />
 			<ShutdownView />
 			<ThemeManagerView

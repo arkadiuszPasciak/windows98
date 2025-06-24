@@ -1,1 +1,1 @@
-export * from "./calculator.view"
+export * from "./calculator"

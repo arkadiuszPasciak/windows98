@@ -3,7 +3,7 @@ import {
 	expect,
 	test,
 } from "@playwright/experimental-ct-react"
-import { CalculatorView } from "../../src/ui/views"
+import { MFCalculator } from "../../src/ui/views"
 
 async function performClicks(
 	component: MountResult,
@@ -21,7 +21,7 @@ test.describe("Calculator E2E Tests", () => {
 	let component: MountResult
 
 	test.beforeEach(async ({ mount }) => {
-		component = await mount(<CalculatorView />)
+		component = await mount(<MFCalculator onCloseProgram={() => {}} />)
 	})
 
 	test("As a user, I can add two numbers and see the result", async () => {
