@@ -22,3 +22,13 @@ export interface AppStorage {
 	theme: AppThemes | undefined
 	language: AppLanguages | undefined
 }
+
+export interface AppPrograms {
+	calculator: boolean
+	notepad: boolean
+	run: boolean
+	settings: boolean
+	shutDown: boolean
+	ticTacToe: boolean
+	timer: boolean
+}
