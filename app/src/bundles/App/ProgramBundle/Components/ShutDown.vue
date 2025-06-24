@@ -5,26 +5,27 @@
     :resize-window="false"
     width="330px"
     height="180px"
-    :modal-state="programStore.modalShutDown"
+    :modal-state="programs.shutDown"
     @close-modal="closeModal"
   >
     <div class="content">
       <mf-shutdown />
     </div>
   </UIModal>
+  <div v-if="programs.shutDown" @click="closeModal">12345</div>
 </template>
 
 <script setup lang="ts">
-import { useProgramStore } from "@APP/src/bundles/App/ProgramBundle/Stores/Program.stores"
+import { useProgramManager } from "@APP/src/configs/app/hooks"
 import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
 import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
 
-const programStore = useProgramStore()
+const { runProgram, programs } = useProgramManager()
 
 const closeModal = (): void => {
-	programStore.updateShutDownModal(false)
+	runProgram("shutDown", false)
 }
 </script>
 

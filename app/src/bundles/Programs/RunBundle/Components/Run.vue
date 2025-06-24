@@ -5,7 +5,7 @@
     :resize-window="false"
     width="330px"
     height="165px"
-    :modal-state="programStore.modalRun"
+    :modal-state="programs.run"
     @close-modal="closeModal"
   >
     <div class="content">
@@ -49,8 +49,8 @@
 </template>
 
 <script setup lang="ts">
-import { useProgramStore } from "@APP/src/bundles/App/ProgramBundle/Stores/Program.stores"
 import { checkAndRunProgram } from "@APP/src/bundles/Programs/RunBundle/Services/Run.services"
+import { useProgramManager } from "@APP/src/configs/app/hooks"
 import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
 import UIInput from "@APP|Bundles/UIInputBundle/Components/UIInput.vue"
 import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
@@ -59,10 +59,10 @@ import { ref } from "vue"
 import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
-const programStore = useProgramStore()
+const { runProgram, programs } = useProgramManager()
 
 const closeModal = (): void => {
-	programStore.updateRunModal(false)
+	runProgram("run", false)
 }
 
 const openProgram = (): void => {

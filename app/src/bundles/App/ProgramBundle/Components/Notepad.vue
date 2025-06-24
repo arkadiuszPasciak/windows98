@@ -1,13 +1,12 @@
 <template>
-  <mf-notepad v-if="programStore.modalNotepad" :on-close-program="closeProgram"></mf-notepad>
+  <mf-notepad v-if="programs.notepad" :on-close-program="closeProgram"></mf-notepad>
 </template>
 
 <script setup lang="ts">
-import { useProgramStore } from "@APP/src/bundles/App/ProgramBundle/Stores/Program.stores"
-
-const programStore = useProgramStore()
+import { useProgramManager } from "@APP/src/configs/app"
+const { runProgram, programs } = useProgramManager()
 
 const closeProgram = (): void => {
-	programStore.updateCalculatorModal(false)
+	runProgram("notepad", false)
 }
 </script>

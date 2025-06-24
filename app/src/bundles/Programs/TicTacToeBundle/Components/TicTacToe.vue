@@ -5,7 +5,7 @@
     :resize-window="false"
     width="300px"
     height="auto"
-    :modal-state="programStore.modalTicTacToe"
+    :modal-state="programs.ticTacToe"
     @close-modal="closeModal"
   >
     <div class="content">
@@ -17,8 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import { useProgramStore } from "@APP/src/bundles/App/ProgramBundle/Stores/Program.stores"
 import { useTicTacToeStore } from "@APP/src/bundles/Programs/TicTacToeBundle/Stores/TicTacToe.stores"
+import { useProgramManager } from "@APP/src/configs/app/hooks"
 import TicTacToeFormStart from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeFormStart.vue"
 import TicTacToeGame from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeGame.vue"
 import TicTacToeScore from "@APP|Bundles/TicTacToeBundle/Components/TicTacToeScore.vue"
@@ -26,13 +26,13 @@ import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
 import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
-const programStore = useProgramStore()
+const { runProgram, programs } = useProgramManager()
 const ticTacToeStore = useTicTacToeStore()
 
 const closeModal = (): void => {
 	ticTacToeStore.restartGame()
 
-	programStore.updateTicTacToeModal(false)
+	runProgram("ticTacToe", false)
 }
 </script>
 
