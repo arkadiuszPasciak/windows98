@@ -5,7 +5,7 @@
     :resize-window="false"
     width="195px"
     height="220px"
-    :modal-state="programStore.modalCalculator"
+    :modal-state="programs.calculator"
     @close-modal="closeModal"
   >
     <mf-calculator />
@@ -13,14 +13,14 @@
 </template>
 
 <script setup lang="ts">
-import { useProgramStore } from "@APP/src/bundles/App/ProgramBundle/Stores/Program.stores"
+import { useProgramManager } from "@APP/src/configs/app"
 import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
 import { useI18n } from "vue-i18n"
 
-const programStore = useProgramStore()
+const { runProgram, programs } = useProgramManager()
 
 const closeModal = (): void => {
-	programStore.updateCalculatorModal(false)
+	runProgram("calculator", false)
 }
 
 const { t } = useI18n()

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { SingletonFactory } from "./singleton-factory.util"
+import { SingletonFactory } from "./singleton-factory.helper"
 
 class TestClass {
 	constructor(public value: number) {}

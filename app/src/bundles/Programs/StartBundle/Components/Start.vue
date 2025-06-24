@@ -77,9 +77,9 @@
 </template>
 
 <script setup lang="ts">
-import { useProgramStore } from "@APP/src/bundles/App/ProgramBundle/Stores/Program.stores"
 import { useStartStore } from "@APP/src/bundles/Programs/StartBundle/Stores/Start.stores"
 import type { IStartStoreApps } from "@APP/src/bundles/Programs/StartBundle/Supports/Start.supports"
+import { useProgramManager } from "@APP/src/configs/app/hooks"
 import StartPanel from "@APP|Bundles/StartBundle/Components/StartPanel.vue"
 import StartPanelItem from "@APP|Bundles/StartBundle/Components/StartPanelItem.vue"
 import UIButton from "@APP|Bundles/UIButtonBundle/Components/UIButton.vue"
@@ -90,7 +90,7 @@ const { t } = useI18n()
 const store = useStartStore()
 
 const apps = store.$state.apps as IStartStoreApps[]
-const programStore = useProgramStore()
+const { runProgram } = useProgramManager()
 
 const primaryPanelStatus = ref<boolean>(false)
 
@@ -103,25 +103,25 @@ const togglePrimaryPanel = (): void => {
 const openProgram = (programName: string): void => {
 	switch (programName) {
 		case "StartBundle.calculator":
-			programStore.updateCalculatorModal(true)
+			runProgram("calculator", true)
 			break
 		case "StartBundle.notepad":
-			programStore.updateNotepadModal(true)
+			runProgram("notepad", true)
 			break
 		case "StartBundle.run":
-			programStore.updateRunModal(true)
+			runProgram("run", true)
 			break
 		case "StartBundle.settings":
-			programStore.updateSettingsModal(true)
+			runProgram("settings", true)
 			break
 		case "StartBundle.shut-down":
-			programStore.updateShutDownModal(true)
+			runProgram("shutDown", true)
 			break
 		case "StartBundle.tic-tac-toe":
-			programStore.updateTicTacToeModal(true)
+			runProgram("ticTacToe", true)
 			break
 		case "StartBundle.timer":
-			programStore.updateTimerModal(true)
+			runProgram("timer", true)
 			break
 	}
 

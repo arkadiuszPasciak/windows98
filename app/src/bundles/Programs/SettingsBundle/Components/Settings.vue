@@ -5,7 +5,7 @@
     :resize-window="false"
     width="420px"
     height="415px"
-    :modal-state="programStore.modalSettings"
+	:modal-state="programs.settings"
     @close-modal="closeModal"
   >
     <UITabs :tabs="tabs" />
@@ -13,8 +13,8 @@
 </template>
 
 <script setup lang="ts">
-import { useProgramStore } from "@APP/src/bundles/App/ProgramBundle/Stores/Program.stores"
 import type { TUITabsProps } from "@APP/src/bundles/UI/UITabsBundle/Supports/UITabs.supports"
+import { useProgramManager } from "@APP/src/configs/app/hooks"
 import SettingsDateTime from "@APP|Bundles/SettingsBundle/Components/SettingsDateTime.vue"
 import SettingsGeneral from "@APP|Bundles/SettingsBundle/Components/SettingsGeneral.vue"
 import SettingsLanguages from "@APP|Bundles/SettingsBundle/Components/SettingsLanguages.vue"
@@ -23,7 +23,7 @@ import UITabs from "@APP|Bundles/UITabsBundle/Components/UITabs.vue"
 import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
-const programStore = useProgramStore()
+const { runProgram, programs } = useProgramManager()
 
 const tabs = [
 	{
@@ -41,7 +41,7 @@ const tabs = [
 ] as TUITabsProps
 
 const closeModal = (): void => {
-	programStore.updateSettingsModal(false)
+	runProgram("settings", false)
 }
 </script>
 

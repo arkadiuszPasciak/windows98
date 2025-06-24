@@ -5,7 +5,7 @@
     :resize-window="false"
     width="380px"
     height="230px"
-    :modal-state="programStore.modalTimer"
+    :modal-state="programs.timer"
     @close-modal="closeModal"
   >
     <mf-timer />
@@ -13,14 +13,14 @@
 </template>
 
 <script setup lang="ts">
-import { useProgramStore } from "@APP/src/bundles/App/ProgramBundle/Stores/Program.stores"
+import { useProgramManager } from "@APP/src/configs/app/hooks"
 import UIModal from "@APP|Bundles/UIModalBundle/Components/UIModal.vue"
 import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
-const programStore = useProgramStore()
+const { runProgram, programs } = useProgramManager()
 
 const closeModal = (): void => {
-	programStore.updateTimerModal(false)
+	runProgram("timer", false)
 }
 </script>
