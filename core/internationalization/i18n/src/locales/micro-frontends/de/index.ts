@@ -1,3 +1,4 @@
+import calculatorDE from "./mf-calculator.locale.json"
 import calendarDE from "./mf-calendar.locale.json"
 import languageManagerDE from "./mf-language-manager.locale.json"
 import notepadDE from "./mf-notepad.locale.json"
@@ -14,6 +15,7 @@ import timerDE from "./mf-timer.locale.json"
 import timezoneDE from "./mf-timezone.locale.json"
 
 const localesMicroFrontendsDE = {
+	...calculatorDE,
 	...calendarDE,
 	...languageManagerDE,
 	...notepadDE,
