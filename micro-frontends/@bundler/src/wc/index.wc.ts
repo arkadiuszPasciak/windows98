@@ -6,7 +6,6 @@ import { ClockView } from "../../../src/mf-clock/src/ui/views"
 import { NavigationView } from "../../../src/mf-navigation/src/ui/views"
 import { NotepadView } from "../../../src/mf-notepad/src/ui/views"
 import { PulpitViewWithMock } from "../../../src/mf-pulpit/src/ui/views"
-import { ShutdownView } from "../../../src/mf-shutdown/src/ui/views"
 import { TimerView } from "../../../src/mf-timer/src/ui/views"
 import { TimezoneView } from "../../../src/mf-timezone/src/ui/views"
 
@@ -32,9 +31,6 @@ customElements.define("mf-notepad", MFNotepad)
 
 const MFPulpit = r2wc(PulpitViewWithMock)
 customElements.define("mf-pulpit", MFPulpit)
-
-const MFShutdown = r2wc(ShutdownView)
-customElements.define("mf-shutdown", MFShutdown)
 
 const MFTimer = r2wc(TimerView)
 customElements.define("mf-timer", MFTimer)

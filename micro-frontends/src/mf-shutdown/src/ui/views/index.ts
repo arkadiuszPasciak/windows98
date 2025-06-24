@@ -1,1 +1,1 @@
-export * from "./shutdown.view"
+export * from "./shutdown"
