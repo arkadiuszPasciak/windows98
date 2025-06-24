@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it, vi } from "vitest"
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 import { ProgramManagerDomain } from "../../src/domain/domains"
 
 interface TestPrograms {
@@ -11,20 +11,36 @@ describe("ProgramManagerDomain", () => {
 		vi.restoreAllMocks()
 	})
 
-	describe("runProgram", () => {
-		const programManager = ProgramManagerDomain.getInstance<TestPrograms>({
-			calculator: false,
-			"tic-tac-toe": false,
+	describe("observerHelper", () => {
+		let programManager: ProgramManagerDomain<TestPrograms>
+
+		beforeEach(() => {
+			programManager = new ProgramManagerDomain<TestPrograms>({
+				calculator: false,
+				"tic-tac-toe": false,
+			})
 		})
 
-		it("should update the calculator program", () => {
+		it("should notify observers when programs change", () => {
+			const observerCallback = vi.fn()
+			programManager.observerHelper.subscribe(observerCallback)
+
 			programManager.runProgram("calculator", true)
-			expect(programManager.programs.calculator).toBe(true)
+
+			expect(observerCallback).toHaveBeenCalledTimes(1)
+			expect(observerCallback).toHaveBeenCalledWith(
+				{ calculator: true, "tic-tac-toe": false },
+				{ calculator: false, "tic-tac-toe": false },
+			)
 		})
 
-		it("should update the tic tac toe program", () => {
-			programManager.runProgram("tic-tac-toe", true)
-			expect(programManager.programs["tic-tac-toe"]).toBe(true)
+		it("should not notify observers if the program value does not change", () => {
+			const observerCallback = vi.fn()
+			programManager.observerHelper.subscribe(observerCallback)
+
+			programManager.runProgram("calculator", false)
+
+			expect(observerCallback).not.toHaveBeenCalled()
 		})
 	})
 })
