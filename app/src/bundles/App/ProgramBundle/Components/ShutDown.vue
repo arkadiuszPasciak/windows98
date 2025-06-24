@@ -12,7 +12,6 @@
       <mf-shutdown />
     </div>
   </UIModal>
-  <div v-if="programs.shutDown" @click="closeModal">12345</div>
 </template>
 
 <script setup lang="ts">
