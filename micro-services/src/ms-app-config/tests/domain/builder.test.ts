@@ -42,18 +42,6 @@ describe("AppConfigBuilderDomain", () => {
 		})
 	})
 
-	it("should throw an error if theme is missing", () => {
-		builder.add("language", TestLanguages.EN)
-
-		expect(() => builder.build()).toThrowError("missing theme")
-	})
-
-	it("should throw an error if language is missing", () => {
-		builder.add("theme", TestThemes.LIGHT)
-
-		expect(() => builder.build()).toThrowError("missing language")
-	})
-
 	it("should set theme and language correctly", () => {
 		builder.add("theme", TestThemes.DARK)
 		builder.add("language", TestLanguages.FR)

@@ -1,4 +1,3 @@
-import { MSErrorHandler } from "../../../../ms-error-handler/src"
 import type { AppConfigBuilderDomainContract } from "../contracts"
 
 export class AppConfigBuilderDomain<Config>
@@ -17,19 +16,6 @@ export class AppConfigBuilderDomain<Config>
 	}
 
 	public build(): Config {
-		this.validateConfig()
-
 		return this.config
-	}
-
-	@MSErrorHandler.CatchError("AppConfigBuilderDomain", "validateConfig")
-	private validateConfig(): void {
-		if (this.config === undefined) throw new Error("missing config")
-
-		for (const [key, value] of Object.entries(
-			this.config as Record<string, unknown>,
-		)) {
-			if (value === undefined) throw new Error(`missing ${key}`)
-		}
 	}
 }
