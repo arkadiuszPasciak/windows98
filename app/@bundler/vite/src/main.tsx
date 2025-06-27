@@ -4,7 +4,7 @@ import "@windows98/design-system/base.config.css"
 import "@windows98/design-system/variables.config.css"
 import i18nInit from "@windows98/i18n/configs/react.config"
 import type { Maybe } from "@windows98/toolkit"
-import { MainContainer } from "../../../src/presentations/container/main"
+import { MainContainer } from "../../../src/presentation/container/main"
 
 const root: Maybe<HTMLElement> = document.getElementById("root")
 
