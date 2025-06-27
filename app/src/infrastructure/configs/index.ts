@@ -1,0 +1,6 @@
+export * from "./app.config"
+export * from "./language.config"
+export * from "./program.config"
+export * from "./pulpit.config"
+export * from "./start-menu.config"
+export * from "./theme.config"
