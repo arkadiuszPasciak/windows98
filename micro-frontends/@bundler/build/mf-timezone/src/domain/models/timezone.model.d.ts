@@ -1,0 +1,32 @@
+export declare enum ETimezone {
+    INTERNATIONAL_DATE_LINE_WEST = -12,
+    NOME_TIME = -11,
+    HAWAII_STANDARD_TIME = -10,
+    ALASKA_STANDARD_TIME = -9,
+    PACIFIC_STANDARD_TIME = -8,
+    MOUNTAIN_STANDARD_TIME = -7,
+    CENTRAL_STANDARD_TIME = -6,
+    EASTERN_STANDARD_TIME = -5,
+    ATLANTIC_STANDARD_TIME = -4,
+    ARGENTINA_TIME = -3,
+    AZORES_TIME = -2,
+    WEST_AFRICA_TIME = -1,
+    GREENWICH_MEAN_TIME = 0,
+    CENTRAL_EUROPEAN_TIME = 1,
+    EASTERN_EUROPEAN_TIME = 2,
+    MOSCOW_TIME = 3,
+    ARMENIA_TIME = 4,
+    PAKISTAN_STANDARD_TIME = 5,
+    OMSK_TIME = 6,
+    KRANOYASK_TIME = 7,
+    CHINA_STANDARD_TIME = 8,
+    JAPAN_STANDARD_TIME = 9,
+    EASTERN_AUSTRALIA_STANDARD_TIME = 10,
+    SAKHALIN_TIME = 11,
+    NEW_ZEALAND_STANDARD_TIME = 12
+}
+export type TTimezoneValues = ETimezone;
+export interface ITimezoneValuePairs {
+    value: TTimezoneValues;
+    label: string;
+}

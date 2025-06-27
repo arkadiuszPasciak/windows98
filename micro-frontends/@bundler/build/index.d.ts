@@ -1,0 +1,18 @@
+export { AudioButtonView as MFAudioButton } from './mf-audio-button/src/ui/views';
+export { MFCalculator } from './mf-calculator/src/ui/views';
+export { CalendarView as MFCalendar } from './mf-calendar/src/ui/views/calendar.view';
+export { ClockView as MFClock } from './mf-clock/src/ui/views';
+export { LanguageManagerView as MFLanguageManager } from './mf-language-manager/src/ui/views/language-manager.view';
+export { NavigationView as MFNavigation } from './mf-navigation/src/ui/views/navigation.view';
+export { NotepadView as MFNotepad } from './mf-notepad/src/ui/views';
+export { PulpitView as MFPulpit } from './mf-pulpit/src/ui/views';
+export { MFRunner } from './mf-runner/src/ui/views/runner';
+export { SaveFileView as MSSaveFile } from './mf-save-file/src/ui/views';
+export { MFSettings } from './mf-settings/src/ui/views';
+export { MFShutdown } from './mf-shutdown/src/ui/views';
+export { MFStartMenu } from './mf-start-menu/src/ui/views/start-menu';
+export { MFSystemInformation } from './mf-system-information/src/ui/views/system-information';
+export { ThemeManagerView as MFThemeManager } from './mf-theme-manager/src/ui/views';
+export { MFTicTacToe } from './mf-tic-tac-toe/src/ui/views/tic-tac-toe';
+export { MFTimer } from './mf-timer/src/ui/views';
+export { TimezoneView as MFTimezone } from './mf-timezone/src/ui/views/timezone.view';
