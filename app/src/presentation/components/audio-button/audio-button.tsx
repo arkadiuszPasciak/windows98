@@ -1,6 +1,6 @@
-import { MFClock } from "@windows98/micro-frontends"
+import { MFAudioButton } from "@windows98/micro-frontends"
 import type { FunctionComponent } from "react"
 
-export const Clock: FunctionComponent = () => {
-	return <MFClock />
+export const AudioButton: FunctionComponent = () => {
+	return <MFAudioButton />
 }
