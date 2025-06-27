@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react"
 import { ProgramManagerService } from "../../infrastructure/services"
 import type { Program, ProgramManager } from "../../infrastructure/types"
 
-export default function useProgramManager() {
+export function useProgramManager() {
 	const [programs, setPrograms] = useState<ProgramManager>(
 		ProgramManagerService.programs,
 	)

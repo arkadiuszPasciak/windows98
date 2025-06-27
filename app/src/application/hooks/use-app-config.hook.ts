@@ -1,5 +1,5 @@
 import { AppConfigService } from "../../infrastructure/services"
 
-export default function useAppConfig() {
+export function useAppConfig() {
 	return { AppConfigService }
 }

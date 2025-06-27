@@ -1,5 +1,5 @@
 import { BrowserEnvService } from "../../infrastructure/services"
 
-export default function useBrowserEnv() {
+export function useBrowserEnv() {
 	return { BrowserEnvService }
 }

@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next"
-import useAppConfig from "./use-app-config.hook"
-import useBrowserEnv from "./use-browser-env.hook"
-import useLanguageManager from "./use-language-manager.hook"
-import useLocalStorage from "./use-local-storage.hook"
-import useThemeManager from "./use-theme-manager.hook"
+import { useAppConfig } from "./use-app-config.hook"
+import { useBrowserEnv } from "./use-browser-env.hook"
+import { useLanguageManager } from "./use-language-manager.hook"
+import { useLocalStorage } from "./use-local-storage.hook"
+import { useThemeManager } from "./use-theme-manager.hook"
 
 export function initAppConfig() {
 	const { AppConfigService } = useAppConfig()

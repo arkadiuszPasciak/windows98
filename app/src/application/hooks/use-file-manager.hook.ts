@@ -1,5 +1,5 @@
 import { FileManagerService } from "../../infrastructure/services"
 
-export default function useFileManager() {
+export function useFileManager() {
 	return { FileManagerService }
 }

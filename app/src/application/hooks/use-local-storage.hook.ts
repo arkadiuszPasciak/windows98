@@ -1,5 +1,5 @@
 import { LocalStorageService } from "../../infrastructure/services"
 
-export default function useLocalStorage() {
+export function useLocalStorage() {
 	return { LocalStorageService }
 }
