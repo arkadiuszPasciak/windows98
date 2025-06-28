@@ -15,13 +15,22 @@ export default defineConfig({
 		outDir: "build",
 		sourcemap: true,
 		rollupOptions: {
-			external: ["react", "react-dom", "mobx", "mobx-react-lite"],
+			external: [
+				"react",
+				"react-dom",
+				"mobx",
+				"mobx-react-lite",
+				"i18next",
+				"react-i18next",
+			],
 			output: {
 				globals: {
 					react: "react",
 					"react-dom": "reactDOM",
 					mobx: "mobx",
 					"mobx-react-lite": "mobxReactLite",
+					i18next: "i18next",
+					"react-i18next": "reactI18next",
 				},
 			},
 		},
