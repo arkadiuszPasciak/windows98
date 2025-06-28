@@ -1,4 +1,4 @@
-import useProgramManager from "../../../application/hooks/use-program-manager.hook"
+import { useProgramManager } from "../../../application/hooks"
 import { startMenuConfig } from "../../../infrastructure/configs"
 import type { Program } from "../../../infrastructure/types"
 
