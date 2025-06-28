@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import { ProgramsPortal } from "../../../application/portal"
+import { ProgramsPortal } from "../../../application/portals"
 import { HomeView } from "../../views"
 import useMainContainer from "./use-main-container.hook"
 
