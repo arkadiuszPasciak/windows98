@@ -3,9 +3,9 @@ import type { ProgramManager } from "../types"
 export const programManagerConfig: ProgramManager = {
 	calculator: false,
 	notepad: false,
-	run: false,
+	runner: false,
 	settings: false,
-	shutDown: false,
+	shutdown: false,
 	ticTacToe: false,
 	timer: false,
 }

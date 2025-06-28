@@ -1,9 +1,9 @@
 export enum Program {
 	CALCULATOR = "calculator",
 	NOTEPAD = "notepad",
-	RUN = "run",
+	RUNNER = "runner",
 	SETTINGS = "settings",
-	SHUT_DOWN = "shutDown",
+	SHUTDOWN = "shutdown",
 	TIC_TAC_TOE = "ticTacToe",
 	TIMER = "timer",
 }
