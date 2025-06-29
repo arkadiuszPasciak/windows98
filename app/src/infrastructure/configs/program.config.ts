@@ -6,6 +6,6 @@ export const programManagerConfig: ProgramManager = {
 	runner: false,
 	settings: false,
 	shutdown: false,
-	ticTacToe: false,
+	"tic-tac-toe": false,
 	timer: false,
 }

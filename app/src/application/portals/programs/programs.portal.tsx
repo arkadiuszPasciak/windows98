@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import { lazy } from "react"
+import { Suspense, lazy } from "react"
 
 const Calculator = lazy(() =>
 	import("../../../presentation/components/calculator").then((m) => ({
@@ -43,14 +43,14 @@ export const ProgramsPortal: FunctionComponent = () => {
 	const { programs } = useProgramsPortal()
 
 	return (
-		<>
+		<Suspense>
 			{programs.calculator && <Calculator />}
 			{programs.notepad && <Notepad />}
 			{programs.settings && <Settings />}
 			{programs.shutdown && <Shutdown />}
 			{programs.runner && <Runner />}
-			{programs.ticTacToe && <TicTacToe />}
+			{programs["tic-tac-toe"] && <TicTacToe />}
 			{programs.timer && <Timer />}
-		</>
+		</Suspense>
 	)
 }

@@ -39,10 +39,10 @@ export const startMenuConfig = [
 	},
 	{
 		type: "program",
-		id: "run",
+		id: "runner",
 	},
 	{
 		type: "program",
-		id: "shut-down",
+		id: "shutdown",
 	},
 ]
