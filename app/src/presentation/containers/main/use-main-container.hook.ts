@@ -1,5 +1,5 @@
-import { initAppConfig } from "../../../application/hooks"
+import { useInitAppConfig } from "../../../application/hooks"
 
-export default function useMainContainer() {
-	initAppConfig()
+export function useMainContainer() {
+	useInitAppConfig()
 }

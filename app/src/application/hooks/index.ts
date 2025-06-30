@@ -1,4 +1,4 @@
-export * from "./init-app-config.hook"
+export * from "./use-init-app-config.hook"
 export * from "./use-app-config.hook"
 export * from "./use-browser-env.hook"
 export * from "./use-language-manager.hook"
