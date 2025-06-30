@@ -4758,26 +4758,27 @@ function useConfig$2() {
     configContext: useContext(ConfigContext$2)
   };
 }
-function useMenuItemProgram({ id: t }) {
-  const { configContext: e } = useConfig$2(), { translations: n } = useMenuItem({ id: t });
+function useMenuItemProgram({ closeMenu: t, id: e }) {
+  const { configContext: n } = useConfig$2(), { translations: o } = useMenuItem({ id: e });
   return {
     openProgram: () => {
-      e.onRunProgram(t);
+      n.onRunProgram(e), t && t();
     },
-    translations: n
+    translations: o
   };
 }
 const MenuItemProgram = ({
   id: t,
   type: e,
-  variant: n
+  variant: n,
+  closeMenu: o
 }) => {
-  const { openProgram: o, translations: a } = useMenuItemProgram({ id: t });
+  const { openProgram: a, translations: f } = useMenuItemProgram({ id: t, closeMenu: o });
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "button",
     {
       type: "button",
-      onClick: o,
+      onClick: a,
       "data-testid": `mf-start-menu-menu-item-${t}-open-program`,
       children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         MenuItemWrapper,
@@ -4788,7 +4789,7 @@ const MenuItemProgram = ({
             MenuItemContent,
             {
               id: t,
-              name: a.name,
+              name: f.name,
               variant: n
             }
           )
@@ -4814,70 +4815,84 @@ const styles$e = {
   }
 );
 var MenuItemsWrapperVariant = /* @__PURE__ */ ((t) => (t.PRIMARY = "primary", t.SECONDARY = "secondary", t))(MenuItemsWrapperVariant || {});
-const MenuItems = ({ items: t }) => /* @__PURE__ */ jsxRuntimeExports.jsx(MenuItemsWrapper, { variant: MenuItemsWrapperVariant.PRIMARY, children: t.map(
-  (e) => e.type === "group" && e.programs ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+const MenuItems = ({
+  items: t,
+  closeMenu: e
+}) => /* @__PURE__ */ jsxRuntimeExports.jsx(MenuItemsWrapper, { variant: MenuItemsWrapperVariant.PRIMARY, children: t.map(
+  (n) => n.type === "group" && n.programs ? /* @__PURE__ */ jsxRuntimeExports.jsx(
     MenuItemGroup,
     {
-      id: e.id,
+      id: n.id,
       type: MenuItemType.GROUP,
       variant: MenuItemVariant.PRIMARY,
-      children: /* @__PURE__ */ jsxRuntimeExports.jsx(MenuItemsWrapper, { variant: MenuItemsWrapperVariant.SECONDARY, children: e.programs.map(
-        (n) => n.type === "group" && n.programs ? /* @__PURE__ */ jsxRuntimeExports.jsx(
+      children: /* @__PURE__ */ jsxRuntimeExports.jsx(MenuItemsWrapper, { variant: MenuItemsWrapperVariant.SECONDARY, children: n.programs.map(
+        (o) => o.type === "group" && o.programs ? /* @__PURE__ */ jsxRuntimeExports.jsx(
           MenuItemGroup,
           {
-            id: n.id,
+            id: o.id,
             type: MenuItemType.GROUP,
             variant: MenuItemVariant.SECONDARY,
             children: /* @__PURE__ */ jsxRuntimeExports.jsx(
               MenuItemsWrapper,
               {
                 variant: MenuItemsWrapperVariant.SECONDARY,
-                children: n.programs.map((o) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                children: o.programs.map((a) => /* @__PURE__ */ jsxRuntimeExports.jsx(
                   MenuItemProgram,
                   {
-                    id: o.id,
+                    id: a.id,
                     type: MenuItemType.PROGRAM,
-                    variant: MenuItemVariant.SECONDARY
+                    variant: MenuItemVariant.SECONDARY,
+                    closeMenu: e
                   },
-                  `mf-start-menu-menu-item-${o.id}`
+                  `mf-start-menu-menu-item-${a.id}`
                 ))
               }
             )
           },
-          `mf-start-menu-menu-item-${n.id}`
+          `mf-start-menu-menu-item-${o.id}`
         ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
           MenuItemProgram,
           {
-            id: n.id,
+            id: o.id,
             type: MenuItemType.PROGRAM,
-            variant: MenuItemVariant.SECONDARY
+            variant: MenuItemVariant.SECONDARY,
+            closeMenu: e
           },
-          `mf-start-menu-menu-item-${n.id}`
+          `mf-start-menu-menu-item-${o.id}`
         )
       ) })
     },
-    `mf-start-menu-menu-item-${e.id}`
+    `mf-start-menu-menu-item-${n.id}`
   ) : /* @__PURE__ */ jsxRuntimeExports.jsx(
     MenuItemProgram,
     {
-      id: e.id,
+      id: n.id,
       type: MenuItemType.PROGRAM,
-      variant: MenuItemVariant.PRIMARY
+      variant: MenuItemVariant.PRIMARY,
+      closeMenu: e
     },
-    `mf-start-menu-menu-item-${e.id}`
+    `mf-start-menu-menu-item-${n.id}`
   )
 ) });
 function useMenu() {
   const [t, e] = useState(!1), { configContext: n } = useConfig$2();
   return { items: n.menuItems, isOpenMenu: t, toggleMenu: () => {
     e(!t);
+  }, closeMenu: () => {
+    e(!1);
   } };
 }
 const Menu = () => {
-  const { items: t, isOpenMenu: e, toggleMenu: n } = useMenu();
+  const { items: t, isOpenMenu: e, toggleMenu: n, closeMenu: o } = useMenu();
   return t ? /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(ButtonStart, { onClick: n }),
-    e && /* @__PURE__ */ jsxRuntimeExports.jsx(MenuItems, { items: t })
+    e && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      MenuItems,
+      {
+        items: t,
+        closeMenu: o
+      }
+    )
   ] }) : null;
 }, Wrapper$2 = () => /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Menu, {}) }), MFStartMenu = ({
   onRunProgram: t,

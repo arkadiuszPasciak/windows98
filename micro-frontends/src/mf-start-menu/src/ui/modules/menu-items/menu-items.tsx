@@ -4,7 +4,10 @@ import { MenuItemGroup, MenuItemProgram, MenuItemVariant } from "../menu-item"
 import type { MenuItemsProps } from "./menu-items.type"
 import { MenuItemsWrapper, MenuItemsWrapperVariant } from "./wrapper"
 
-export const MenuItems: FunctionComponent<MenuItemsProps> = ({ items }) => {
+export const MenuItems: FunctionComponent<MenuItemsProps> = ({
+	items,
+	closeMenu,
+}) => {
 	return (
 		<MenuItemsWrapper variant={MenuItemsWrapperVariant.PRIMARY}>
 			{items.map((item) =>
@@ -33,6 +36,7 @@ export const MenuItems: FunctionComponent<MenuItemsProps> = ({ items }) => {
 													id={subItemProgram.id}
 													type={MenuItemType.PROGRAM}
 													variant={MenuItemVariant.SECONDARY}
+													closeMenu={closeMenu}
 												/>
 											))}
 										</MenuItemsWrapper>
@@ -43,6 +47,7 @@ export const MenuItems: FunctionComponent<MenuItemsProps> = ({ items }) => {
 										id={itemProgram.id}
 										type={MenuItemType.PROGRAM}
 										variant={MenuItemVariant.SECONDARY}
+										closeMenu={closeMenu}
 									/>
 								),
 							)}
@@ -54,6 +59,7 @@ export const MenuItems: FunctionComponent<MenuItemsProps> = ({ items }) => {
 						id={item.id}
 						type={MenuItemType.PROGRAM}
 						variant={MenuItemVariant.PRIMARY}
+						closeMenu={closeMenu}
 					/>
 				),
 			)}

@@ -8,8 +8,9 @@ export const MenuItemProgram: FunctionComponent<MenuItemProgramProps> = ({
 	id,
 	type,
 	variant,
+	closeMenu,
 }) => {
-	const { openProgram, translations } = useMenuItemProgram({ id })
+	const { openProgram, translations } = useMenuItemProgram({ id, closeMenu })
 
 	return (
 		<button

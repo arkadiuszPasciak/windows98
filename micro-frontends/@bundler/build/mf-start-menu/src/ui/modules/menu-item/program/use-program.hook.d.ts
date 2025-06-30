@@ -1,5 +1,5 @@
-import { UseMenuItem } from '../menu-item.type';
-export declare function useMenuItemProgram({ id }: UseMenuItem): {
+import { UseMenuItemProgram } from './program.type';
+export declare function useMenuItemProgram({ closeMenu, id }: UseMenuItemProgram): {
     openProgram: () => void;
     translations: {
         name: string;

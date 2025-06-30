@@ -63,5 +63,13 @@ test.describe("Shutdown", () => {
 		await calculatorWrapper.click()
 
 		expect(runProgramId).toBe("calculator")
+
+		const menu = component.getByTestId(
+			"mf-start-menu-menu-items-wrapper-primary",
+		)
+		expect(
+			menu,
+			"the start menu is closed after running a program",
+		).toBeHidden()
 	})
 })
