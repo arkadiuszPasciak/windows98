@@ -1,10 +1,10 @@
 import { Program } from "../types"
 
 export const searchProgramsList = [
-	{ [Program.CALCULATOR]: ["Calculator", "Kalkulator", "Taschenrechner"] },
-	{ [Program.NOTEPAD]: ["Notepad", "Notatnik", "Notizblock"] },
-	{ [Program.SETTINGS]: ["Settings", "Ustawienia", "Einstellungen"] },
-	{ [Program.SHUTDOWN]: ["Shutdown", "Wyłącz", "Abschalten"] },
-	{ [Program.TIC_TAC_TOE]: ["Tic Tac Toe", "Kółko i krzyżyk"] },
-	{ [Program.TIMER]: ["Timer", "Minutnik", "Stoppuhr"] },
+	{ [Program.CALCULATOR]: ["calculator", "kalkulator", "taschenrechner"] },
+	{ [Program.NOTEPAD]: ["notepad", "notatnik", "notizblock"] },
+	{ [Program.SETTINGS]: ["settings", "ustawienia", "einstellungen"] },
+	{ [Program.SHUTDOWN]: ["shutdown", "wyłącz", "abschalten"] },
+	{ [Program.TIC_TAC_TOE]: ["tic tac toe", "kółko i krzyżyk"] },
+	{ [Program.TIMER]: ["timer", "minutnik", "stoppuhr"] },
 ]
