@@ -1,7 +1,7 @@
-(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._button_17ol8_96{cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._button_1lve8_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);width:35px;height:30px}@media (hover: hover){._button_1lve8_96{cursor:pointer}}._button_1lve8_96:disabled{pointer-events:none;opacity:.5}._button_1lve8_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._primary_1lve8_122{color:#00f}._secondary_1lve8_126{color:#fe0000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._keypad_1d9g0_96{display:grid;justify-content:center;grid-template-rows:repeat(3,30px);grid-template-columns:repeat(4,35px);gap:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._screen_10mz5_96{background-color:var(--background-color-white);color:var(--text-color);width:100%;height:20px;padding:5px;text-align:right;box-shadow:var(--border-field);font:400 11px/13px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_15s3n_96{display:grid;row-gap:15px;padding:13px 22px 10px;background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._days_1477e_96{width:160px;height:145px;box-shadow:var(--border-field);padding:2px;text-align:center;background-color:var(--background-color-white)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._month-days_1v38p_96{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(6,1fr)}._day_1v38p_102{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}._day-active_1v38p_107{color:#fff;background-color:navy}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._week-days_xfsv0_96{display:grid;height:20px;grid-template-columns:repeat(7,1fr);background-color:gray;color:var(--text-color-3)}._day_xfsv0_104{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_y6jeh_96{display:grid;grid-template-columns:90px 70px;background-color:var(--background-color);gap:10px 0;max-width:180px;width:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._time_1t1t9_96{color:var(--text-color);font:400 12px/12px MSSansSerifMedium,sans-serif;letter-spacing:.7px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1eojf_96{background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1rg8z_96{display:flex;align-items:center;gap:6px;width:100vw;height:28px;background-color:var(--background-color);border-top:1px solid var(--border-color-navigation);outline:1px solid var(--background-color);padding:3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._navigation_1cfbb_96{display:flex;gap:5px;padding:3px 2px}._button_1cfbb_102{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1kr74_96{align-items:center;display:grid;grid-template-rows:repeat(2,20px);grid-template-columns:75% 25%;gap:8px 4px;justify-content:center;padding:10px 5px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._textarea_1ooji_96{font:400 14px/18px MSSansSerifMedium,sans-serif;background-color:var(--background-color-white);box-shadow:var(--border-field);color:var(--text-color);padding:3px 4px;resize:none;width:100%;height:100%}._textarea_1ooji_96:disabled,._textarea_1ooji_96:read-only{background-color:var(--background-color-white)}._textarea_1ooji_96:disabled,._textarea_1ooji_96:disabled+._label_1ooji_109,._textarea_1ooji_96[readonly],._textarea_1ooji_96[readonly]+._label_1ooji_109{opacity:.8}._textarea_1ooji_96:focus{outline:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._item_czfa3_96{display:flex;justify-content:center;align-items:center;flex-direction:column;cursor:pointer;font:400 11px/13px MSSansSerifMedium,sans-serif}._icon_czfa3_105{margin-bottom:6px}._name_czfa3_109{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._pulpit_37s25_96{display:grid;grid-column-gap:5px;grid-row-gap:5px;grid-template-columns:repeat(auto-fill,75px);grid-template-rows:repeat(auto-fill,65px);grid-auto-flow:column;width:100%;height:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_wb693_96{width:100vw;height:calc(100vh - 28px);background-color:var(--background-color-pulpit);padding:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_1vmwj_96{display:flex;column-gap:5px;justify-content:center;margin-top:15px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._description_18mip_96{display:flex;column-gap:10px;margin-bottom:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_f78ya_96{padding:20px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._information_1plt1_96{background-color:var(--background-color);display:grid;grid-template-columns:1fr;grid-template-rows:repeat(6,20px);padding:15px}._title_1plt1_104,._text_1plt1_105{font:400 11px/20px MSSansSerifMedium,sans-serif}._text_1plt1_105{margin-left:20px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_cq3wn_96{display:flex;column-gap:5px;justify-content:center;padding-top:35px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._description_eevxg_96{display:flex;column-gap:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._presets_1e5ju_96{display:flex;flex-direction:column;row-gap:5px;margin-left:42px;margin-top:-10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_ji3uq_96{max-width:290px;background-color:var(--background-color);padding:20px;box-sizing:content-box}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._content_ezlo1_96{display:flex;align-items:center;column-gap:5px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._menu-item_1y5ly_96{width:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._menu-item-wrapper_fns62_96{position:relative;display:flex;align-items:center;cursor:pointer;padding:5px;min-width:135px}@media (hover: hover){._menu-item-wrapper_fns62_96:hover{background-color:#309}._menu-item-wrapper_fns62_96:hover>div>p{color:var(--text-color-2)}}._type-group_fns62_113{position:relative}._type-group_fns62_113:after{content:"";position:absolute;top:50%;right:5px;transform:translateY(-50%);border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:4px solid #000000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._menu-items-wrapper_5f7oh_96{background-color:var(--background-color);border-top:1px solid var(--border-color-navigation);border-left:1px solid var(--border-color-navigation);border-right:1px solid #000000;border-bottom:1px solid #000000;max-width:140px}._variant-primary_5f7oh_105{position:fixed;bottom:26px;left:2px}._variant-secondary_5f7oh_111{position:absolute;top:-1px;left:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._board-item_19v6i_96{width:30px;height:30px;text-align:center;display:flex;justify-content:center;align-items:center;border:none;border-radius:0;background-color:var(--background-color);box-shadow:var(--box-shadow-raised);font:400 12px/30px MSSansSerifBold,sans-serif}@media (hover: hover){._board-item_19v6i_96{cursor:pointer}}._board-item_19v6i_96:disabled{opacity:.2;pointer-events:none}._board-item_19v6i_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._color-blue_19v6i_122{color:#00f}._color-red_19v6i_126{color:#fe0000}._color-black_19v6i_130{color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._board_11c5e_96{display:grid;justify-content:center;gap:1px;margin-bottom:10px}._variant-9_11c5e_103{grid-template-columns:repeat(3,30px);grid-template-rows:repeat(3,30px)}._variant-36_11c5e_108{grid-template-columns:repeat(6,30px);grid-template-rows:repeat(6,30px)}._disabled_11c5e_113{opacity:.3;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._game-wrapper_qxkod_96{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:60px 1fr;min-height:170px;row-gap:5px}._game-wrapper_qxkod_96>:nth-child(1){grid-column:1;grid-row:1}._game-wrapper_qxkod_96>:nth-child(2){grid-column:2;grid-row:1}._game-wrapper_qxkod_96>:nth-child(3){grid-column:1/span 2;grid-row:2}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_s20ct_96{display:flex;justify-content:center;align-items:center;padding:0}._sign_s20ct_103{font:400 17px/17px MSSansSerifBold,sans-serif}._sign-o_s20ct_107{color:#00f}._sign-x_s20ct_111{color:#fe0000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._result-modal-wrapper_v0hmv_96{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%;row-gap:15px;margin-top:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._radio-wrapper_1hb6n_96{display:flex;column-gap:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._button-wrapper_23zxi_96{max-width:75px;margin:20px auto 0}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._starter-wrapper_pdg5d_96{display:flex;flex-direction:column;justify-content:space-between;min-height:170px;padding:10px 5px;row-gap:7px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_pwklr_96{display:flex;justify-content:center;align-items:center;column-gap:15px;margin-bottom:15px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._player_6fj3s_96{display:flex;column-gap:20px;justify-content:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._presets_yc2gq_96{display:flex;justify-content:center;align-items:center;gap:8px;grid-area:1/1/2/7;margin-right:0;margin-left:0}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._screen_1oxvs_96{display:flex;grid-area:3/1/4/7;justify-self:center;background-color:var(--background-color-white);max-width:203px;width:100%;height:48px;padding:5px;box-shadow:var(--border-field);font:400 39px/44px MSSansSerifBold,sans-serif;letter-spacing:3px;color:var(--text-color);-webkit-user-select:none;user-select:none;margin:0 auto 15px}._time_1oxvs_113{width:55px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper_ozizt_96{background-color:var(--background-color);padding:0 10px 10px;max-width:385px;width:100%}')),document.head.appendChild(o)}}catch(f){console.error("vite-plugin-css-injected-by-js",f)}})();
-var In = Object.defineProperty;
-var Fn = (t, e, n) => e in t ? In(t, e, { enumerable: !0, configurable: !0, writable: !0, value: n }) : t[e] = n;
-var ae = (t, e, n) => Fn(t, typeof e != "symbol" ? e + "" : e, n);
+(function(){"use strict";try{if(typeof document<"u"){var o=document.createElement("style");o.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._button_8z35b_96{display:flex;cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._button_1lve8_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);width:35px;height:30px}@media (hover: hover){._button_1lve8_96{cursor:pointer}}._button_1lve8_96:disabled{pointer-events:none;opacity:.5}._button_1lve8_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._primary_1lve8_122{color:#00f}._secondary_1lve8_126{color:#fe0000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._keypad_1d9g0_96{display:grid;justify-content:center;grid-template-rows:repeat(3,30px);grid-template-columns:repeat(4,35px);gap:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._screen_10mz5_96{background-color:var(--background-color-white);color:var(--text-color);width:100%;height:20px;padding:5px;text-align:right;box-shadow:var(--border-field);font:400 11px/13px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_15s3n_96{display:grid;row-gap:15px;padding:13px 22px 10px;background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._days_1477e_96{width:160px;height:145px;box-shadow:var(--border-field);padding:2px;text-align:center;background-color:var(--background-color-white)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._month-days_1v38p_96{display:grid;grid-template-columns:repeat(7,1fr);grid-template-rows:repeat(6,1fr)}._day_1v38p_102{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}._day-active_1v38p_107{color:#fff;background-color:navy}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._week-days_xfsv0_96{display:grid;height:20px;grid-template-columns:repeat(7,1fr);background-color:gray;color:var(--text-color-3)}._day_xfsv0_104{height:20px;font:400 12px/20px MSSansSerifMedium,sans-serif}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_y6jeh_96{display:grid;grid-template-columns:90px 70px;background-color:var(--background-color);gap:10px 0;max-width:180px;width:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._time_1t1t9_96{color:var(--text-color);font:400 12px/12px MSSansSerifMedium,sans-serif;letter-spacing:.7px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_ea02q_96{display:flex;background-color:var(--background-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_wg4lh_96{display:flex;align-items:center;gap:6px;width:100vw;height:28px;background-color:var(--background-color);border-top:1px solid var(--border-color-navigation);outline:1px solid var(--background-color);padding:3px}._wrapper_wg4lh_96>*:first-child{margin-right:auto}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._navigation_1cfbb_96{display:flex;gap:5px;padding:3px 2px}._button_1cfbb_102{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1kr74_96{align-items:center;display:grid;grid-template-rows:repeat(2,20px);grid-template-columns:75% 25%;gap:8px 4px;justify-content:center;padding:10px 5px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._textarea_1ooji_96{font:400 14px/18px MSSansSerifMedium,sans-serif;background-color:var(--background-color-white);box-shadow:var(--border-field);color:var(--text-color);padding:3px 4px;resize:none;width:100%;height:100%}._textarea_1ooji_96:disabled,._textarea_1ooji_96:read-only{background-color:var(--background-color-white)}._textarea_1ooji_96:disabled,._textarea_1ooji_96:disabled+._label_1ooji_109,._textarea_1ooji_96[readonly],._textarea_1ooji_96[readonly]+._label_1ooji_109{opacity:.8}._textarea_1ooji_96:focus{outline:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._item_czfa3_96{display:flex;justify-content:center;align-items:center;flex-direction:column;cursor:pointer;font:400 11px/13px MSSansSerifMedium,sans-serif}._icon_czfa3_105{margin-bottom:6px}._name_czfa3_109{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._pulpit_37s25_96{display:grid;grid-column-gap:5px;grid-row-gap:5px;grid-template-columns:repeat(auto-fill,75px);grid-template-rows:repeat(auto-fill,65px);grid-auto-flow:column;width:100%;height:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_wb693_96{width:100vw;height:calc(100vh - 28px);background-color:var(--background-color-pulpit);padding:1px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_1vmwj_96{display:flex;column-gap:5px;justify-content:center;margin-top:15px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._description_18mip_96{display:flex;column-gap:10px;margin-bottom:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_f78ya_96{padding:20px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._information_1plt1_96{background-color:var(--background-color);display:grid;grid-template-columns:1fr;grid-template-rows:repeat(6,20px);padding:15px}._title_1plt1_104,._text_1plt1_105{font:400 11px/20px MSSansSerifMedium,sans-serif}._text_1plt1_105{margin-left:20px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_cq3wn_96{display:flex;column-gap:5px;justify-content:center;padding-top:35px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._description_eevxg_96{display:flex;column-gap:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._presets_1e5ju_96{display:flex;flex-direction:column;row-gap:5px;margin-left:42px;margin-top:-10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_ji3uq_96{max-width:290px;background-color:var(--background-color);padding:20px;box-sizing:content-box}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._button-start_14sby_96{font:11px/11px MSSansSerifBold,sans-serif!important;column-gap:4px!important;min-width:55px!important;padding:0 6px!important}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._content_ezlo1_96{display:flex;align-items:center;column-gap:5px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._menu-item_1y5ly_96{width:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._menu-item-wrapper_fns62_96{position:relative;display:flex;align-items:center;cursor:pointer;padding:5px;min-width:135px}@media (hover: hover){._menu-item-wrapper_fns62_96:hover{background-color:#309}._menu-item-wrapper_fns62_96:hover>div>p{color:var(--text-color-2)}}._type-group_fns62_113{position:relative}._type-group_fns62_113:after{content:"";position:absolute;top:50%;right:5px;transform:translateY(-50%);border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:4px solid #000000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._menu-items-wrapper_5f7oh_96{background-color:var(--background-color);border-top:1px solid var(--border-color-navigation);border-left:1px solid var(--border-color-navigation);border-right:1px solid #000000;border-bottom:1px solid #000000;max-width:140px}._variant-primary_5f7oh_105{position:fixed;bottom:26px;left:2px}._variant-secondary_5f7oh_111{position:absolute;top:-1px;left:100%}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._board-item_19v6i_96{width:30px;height:30px;text-align:center;display:flex;justify-content:center;align-items:center;border:none;border-radius:0;background-color:var(--background-color);box-shadow:var(--box-shadow-raised);font:400 12px/30px MSSansSerifBold,sans-serif}@media (hover: hover){._board-item_19v6i_96{cursor:pointer}}._board-item_19v6i_96:disabled{opacity:.2;pointer-events:none}._board-item_19v6i_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._color-blue_19v6i_122{color:#00f}._color-red_19v6i_126{color:#fe0000}._color-black_19v6i_130{color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._board_11c5e_96{display:grid;justify-content:center;gap:1px;margin-bottom:10px}._variant-9_11c5e_103{grid-template-columns:repeat(3,30px);grid-template-rows:repeat(3,30px)}._variant-36_11c5e_108{grid-template-columns:repeat(6,30px);grid-template-rows:repeat(6,30px)}._disabled_11c5e_113{opacity:.3;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._game-wrapper_qxkod_96{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:60px 1fr;min-height:170px;row-gap:5px}._game-wrapper_qxkod_96>:nth-child(1){grid-column:1;grid-row:1}._game-wrapper_qxkod_96>:nth-child(2){grid-column:2;grid-row:1}._game-wrapper_qxkod_96>:nth-child(3){grid-column:1/span 2;grid-row:2}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_s20ct_96{display:flex;justify-content:center;align-items:center;padding:0}._sign_s20ct_103{font:400 17px/17px MSSansSerifBold,sans-serif}._sign-o_s20ct_107{color:#00f}._sign-x_s20ct_111{color:#fe0000}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._result-modal-wrapper_v0hmv_96{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%;row-gap:15px;margin-top:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._radio-wrapper_1hb6n_96{display:flex;column-gap:10px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._button-wrapper_23zxi_96{max-width:75px;margin:20px auto 0}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._starter-wrapper_pdg5d_96{display:flex;flex-direction:column;justify-content:space-between;min-height:170px;padding:10px 5px;row-gap:7px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._controller_pwklr_96{display:flex;justify-content:center;align-items:center;column-gap:15px;margin-bottom:15px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._player_6fj3s_96{display:flex;column-gap:20px;justify-content:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._presets_yc2gq_96{display:flex;justify-content:center;align-items:center;gap:8px;grid-area:1/1/2/7;margin-right:0;margin-left:0}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._screen_1oxvs_96{display:flex;grid-area:3/1/4/7;justify-self:center;background-color:var(--background-color-white);max-width:203px;width:100%;height:48px;padding:5px;box-shadow:var(--border-field);font:400 39px/44px MSSansSerifBold,sans-serif;letter-spacing:3px;color:var(--text-color);-webkit-user-select:none;user-select:none;margin:0 auto 15px}._time_1oxvs_113{width:55px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper_ozizt_96{background-color:var(--background-color);padding:0 10px 10px;max-width:385px;width:100%}')),document.head.appendChild(o)}}catch(f){console.error("vite-plugin-css-injected-by-js",f)}})();
+var On = Object.defineProperty;
+var In = (t, e, n) => e in t ? On(t, e, { enumerable: !0, configurable: !0, writable: !0, value: n }) : t[e] = n;
+var oe = (t, e, n) => In(t, typeof e != "symbol" ? e + "" : e, n);
 import require$$0, { createContext, useState, useEffect, useRef, useCallback, createElement, useContext, useMemo } from "react";
 import { makeAutoObservable } from "mobx";
 import { observer } from "mobx-react-lite";
@@ -21,12 +21,12 @@ function requireReactJsxRuntime_production_min() {
   if (hasRequiredReactJsxRuntime_production_min) return reactJsxRuntime_production_min;
   hasRequiredReactJsxRuntime_production_min = 1;
   var t = require$$0, e = Symbol.for("react.element"), n = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, a = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, f = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function M(me, ne, Ee) {
-    var je, $e = {}, Re = null, Ne = null;
-    Ee !== void 0 && (Re = "" + Ee), ne.key !== void 0 && (Re = "" + ne.key), ne.ref !== void 0 && (Ne = ne.ref);
-    for (je in ne) o.call(ne, je) && !f.hasOwnProperty(je) && ($e[je] = ne[je]);
-    if (me && me.defaultProps) for (je in ne = me.defaultProps, ne) $e[je] === void 0 && ($e[je] = ne[je]);
-    return { $$typeof: e, type: me, key: Re, ref: Ne, props: $e, _owner: a.current };
+  function M(ae, O, be) {
+    var Se, Re = {}, Ce = null, De = null;
+    be !== void 0 && (Ce = "" + be), O.key !== void 0 && (Ce = "" + O.key), O.ref !== void 0 && (De = O.ref);
+    for (Se in O) o.call(O, Se) && !f.hasOwnProperty(Se) && (Re[Se] = O[Se]);
+    if (ae && ae.defaultProps) for (Se in O = ae.defaultProps, O) Re[Se] === void 0 && (Re[Se] = O[Se]);
+    return { $$typeof: e, type: ae, key: Ce, ref: De, props: Re, _owner: a.current };
   }
   return reactJsxRuntime_production_min.Fragment = n, reactJsxRuntime_production_min.jsx = M, reactJsxRuntime_production_min.jsxs = M, reactJsxRuntime_production_min;
 }
@@ -43,54 +43,54 @@ var reactJsxRuntime_development = {};
 var hasRequiredReactJsxRuntime_development;
 function requireReactJsxRuntime_development() {
   return hasRequiredReactJsxRuntime_development || (hasRequiredReactJsxRuntime_development = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = require$$0, e = Symbol.for("react.element"), n = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), a = Symbol.for("react.strict_mode"), f = Symbol.for("react.profiler"), M = Symbol.for("react.provider"), me = Symbol.for("react.context"), ne = Symbol.for("react.forward_ref"), Ee = Symbol.for("react.suspense"), je = Symbol.for("react.suspense_list"), $e = Symbol.for("react.memo"), Re = Symbol.for("react.lazy"), Ne = Symbol.for("react.offscreen"), Ge = Symbol.iterator, ke = "@@iterator";
-    function it(s) {
+    var t = require$$0, e = Symbol.for("react.element"), n = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), a = Symbol.for("react.strict_mode"), f = Symbol.for("react.profiler"), M = Symbol.for("react.provider"), ae = Symbol.for("react.context"), O = Symbol.for("react.forward_ref"), be = Symbol.for("react.suspense"), Se = Symbol.for("react.suspense_list"), Re = Symbol.for("react.memo"), Ce = Symbol.for("react.lazy"), De = Symbol.for("react.offscreen"), Ue = Symbol.iterator, Pe = "@@iterator";
+    function at(s) {
       if (s === null || typeof s != "object")
         return null;
-      var p = Ge && s[Ge] || s[ke];
+      var p = Ue && s[Ue] || s[Pe];
       return typeof p == "function" ? p : null;
     }
-    var Ve = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function Ce(s) {
+    var ke = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function Ee(s) {
       {
-        for (var p = arguments.length, T = new Array(p > 1 ? p - 1 : 0), oe = 1; oe < p; oe++)
-          T[oe - 1] = arguments[oe];
-        tn("error", s, T);
+        for (var p = arguments.length, T = new Array(p > 1 ? p - 1 : 0), ne = 1; ne < p; ne++)
+          T[ne - 1] = arguments[ne];
+        en("error", s, T);
       }
     }
-    function tn(s, p, T) {
+    function en(s, p, T) {
       {
-        var oe = Ve.ReactDebugCurrentFrame, xe = oe.getStackAddendum();
-        xe !== "" && (p += "%s", T = T.concat([xe]));
-        var ve = T.map(function(pe) {
-          return String(pe);
+        var ne = ke.ReactDebugCurrentFrame, pe = ne.getStackAddendum();
+        pe !== "" && (p += "%s", T = T.concat([pe]));
+        var xe = T.map(function(me) {
+          return String(me);
         });
-        ve.unshift("Warning: " + p), Function.prototype.apply.call(console[s], console, ve);
+        xe.unshift("Warning: " + p), Function.prototype.apply.call(console[s], console, xe);
       }
     }
-    var nn = !1, rn = !1, sn = !1, on = !1, an = !1, lt;
-    lt = Symbol.for("react.module.reference");
-    function ln(s) {
-      return !!(typeof s == "string" || typeof s == "function" || s === o || s === f || an || s === a || s === Ee || s === je || on || s === Ne || nn || rn || sn || typeof s == "object" && s !== null && (s.$$typeof === Re || s.$$typeof === $e || s.$$typeof === M || s.$$typeof === me || s.$$typeof === ne || // This needs to include all possible module reference object
+    var tn = !1, nn = !1, rn = !1, sn = !1, on = !1, it;
+    it = Symbol.for("react.module.reference");
+    function an(s) {
+      return !!(typeof s == "string" || typeof s == "function" || s === o || s === f || on || s === a || s === be || s === Se || sn || s === De || tn || nn || rn || typeof s == "object" && s !== null && (s.$$typeof === Ce || s.$$typeof === Re || s.$$typeof === M || s.$$typeof === ae || s.$$typeof === O || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
-      s.$$typeof === lt || s.getModuleId !== void 0));
+      s.$$typeof === it || s.getModuleId !== void 0));
     }
-    function cn(s, p, T) {
-      var oe = s.displayName;
-      if (oe)
-        return oe;
-      var xe = p.displayName || p.name || "";
-      return xe !== "" ? T + "(" + xe + ")" : T;
+    function ln(s, p, T) {
+      var ne = s.displayName;
+      if (ne)
+        return ne;
+      var pe = p.displayName || p.name || "";
+      return pe !== "" ? T + "(" + pe + ")" : T;
     }
-    function ct(s) {
+    function lt(s) {
       return s.displayName || "Context";
     }
     function Oe(s) {
       if (s == null)
         return null;
-      if (typeof s.tag == "number" && Ce("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof s == "function")
+      if (typeof s.tag == "number" && Ee("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof s == "function")
         return s.displayName || s.name || null;
       if (typeof s == "string")
         return s;
@@ -103,28 +103,28 @@ function requireReactJsxRuntime_development() {
           return "Profiler";
         case a:
           return "StrictMode";
-        case Ee:
+        case be:
           return "Suspense";
-        case je:
+        case Se:
           return "SuspenseList";
       }
       if (typeof s == "object")
         switch (s.$$typeof) {
-          case me:
+          case ae:
             var p = s;
-            return ct(p) + ".Consumer";
+            return lt(p) + ".Consumer";
           case M:
             var T = s;
-            return ct(T._context) + ".Provider";
-          case ne:
-            return cn(s, s.render, "ForwardRef");
-          case $e:
-            var oe = s.displayName || null;
-            return oe !== null ? oe : Oe(s.type) || "Memo";
-          case Re: {
-            var xe = s, ve = xe._payload, pe = xe._init;
+            return lt(T._context) + ".Provider";
+          case O:
+            return ln(s, s.render, "ForwardRef");
+          case Re:
+            var ne = s.displayName || null;
+            return ne !== null ? ne : Oe(s.type) || "Memo";
+          case Ce: {
+            var pe = s, xe = pe._payload, me = pe._init;
             try {
-              return Oe(pe(ve));
+              return Oe(me(xe));
             } catch {
               return null;
             }
@@ -132,18 +132,18 @@ function requireReactJsxRuntime_development() {
         }
       return null;
     }
-    var Fe = Object.assign, Ue = 0, ut, mt, dt, pt, ft, xt, ht;
-    function gt() {
+    var Fe = Object.assign, He = 0, ct, ut, mt, dt, pt, ft, xt;
+    function ht() {
     }
-    gt.__reactDisabledLog = !0;
-    function un() {
+    ht.__reactDisabledLog = !0;
+    function cn() {
       {
-        if (Ue === 0) {
-          ut = console.log, mt = console.info, dt = console.warn, pt = console.error, ft = console.group, xt = console.groupCollapsed, ht = console.groupEnd;
+        if (He === 0) {
+          ct = console.log, ut = console.info, mt = console.warn, dt = console.error, pt = console.group, ft = console.groupCollapsed, xt = console.groupEnd;
           var s = {
             configurable: !0,
             enumerable: !0,
-            value: gt,
+            value: ht,
             writable: !0
           };
           Object.defineProperties(console, {
@@ -156,12 +156,12 @@ function requireReactJsxRuntime_development() {
             groupEnd: s
           });
         }
-        Ue++;
+        He++;
       }
     }
-    function mn() {
+    function un() {
       {
-        if (Ue--, Ue === 0) {
+        if (He--, He === 0) {
           var s = {
             configurable: !0,
             enumerable: !0,
@@ -169,237 +169,237 @@ function requireReactJsxRuntime_development() {
           };
           Object.defineProperties(console, {
             log: Fe({}, s, {
-              value: ut
+              value: ct
             }),
             info: Fe({}, s, {
-              value: mt
+              value: ut
             }),
             warn: Fe({}, s, {
-              value: dt
+              value: mt
             }),
             error: Fe({}, s, {
-              value: pt
+              value: dt
             }),
             group: Fe({}, s, {
-              value: ft
+              value: pt
             }),
             groupCollapsed: Fe({}, s, {
-              value: xt
+              value: ft
             }),
             groupEnd: Fe({}, s, {
-              value: ht
+              value: xt
             })
           });
         }
-        Ue < 0 && Ce("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        He < 0 && Ee("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var et = Ve.ReactCurrentDispatcher, tt;
-    function qe(s, p, T) {
+    var Qe = ke.ReactCurrentDispatcher, et;
+    function Ge(s, p, T) {
       {
-        if (tt === void 0)
+        if (et === void 0)
           try {
             throw Error();
-          } catch (xe) {
-            var oe = xe.stack.trim().match(/\n( *(at )?)/);
-            tt = oe && oe[1] || "";
+          } catch (pe) {
+            var ne = pe.stack.trim().match(/\n( *(at )?)/);
+            et = ne && ne[1] || "";
           }
         return `
-` + tt + s;
+` + et + s;
       }
     }
-    var nt = !1, Xe;
+    var tt = !1, qe;
     {
-      var dn = typeof WeakMap == "function" ? WeakMap : Map;
-      Xe = new dn();
+      var mn = typeof WeakMap == "function" ? WeakMap : Map;
+      qe = new mn();
     }
-    function yt(s, p) {
-      if (!s || nt)
+    function gt(s, p) {
+      if (!s || tt)
         return "";
       {
-        var T = Xe.get(s);
+        var T = qe.get(s);
         if (T !== void 0)
           return T;
       }
-      var oe;
-      nt = !0;
-      var xe = Error.prepareStackTrace;
+      var ne;
+      tt = !0;
+      var pe = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var ve;
-      ve = et.current, et.current = null, un();
+      var xe;
+      xe = Qe.current, Qe.current = null, cn();
       try {
         if (p) {
-          var pe = function() {
+          var me = function() {
             throw Error();
           };
-          if (Object.defineProperty(pe.prototype, "props", {
+          if (Object.defineProperty(me.prototype, "props", {
             set: function() {
               throw Error();
             }
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
-              Reflect.construct(pe, []);
-            } catch (Pe) {
-              oe = Pe;
+              Reflect.construct(me, []);
+            } catch (Ne) {
+              ne = Ne;
             }
-            Reflect.construct(s, [], pe);
+            Reflect.construct(s, [], me);
           } else {
             try {
-              pe.call();
-            } catch (Pe) {
-              oe = Pe;
+              me.call();
+            } catch (Ne) {
+              ne = Ne;
             }
-            s.call(pe.prototype);
+            s.call(me.prototype);
           }
         } else {
           try {
             throw Error();
-          } catch (Pe) {
-            oe = Pe;
+          } catch (Ne) {
+            ne = Ne;
           }
           s();
         }
-      } catch (Pe) {
-        if (Pe && oe && typeof Pe.stack == "string") {
-          for (var ue = Pe.stack.split(`
-`), be = oe.stack.split(`
-`), _e = ue.length - 1, Se = be.length - 1; _e >= 1 && Se >= 0 && ue[_e] !== be[Se]; )
-            Se--;
-          for (; _e >= 1 && Se >= 0; _e--, Se--)
-            if (ue[_e] !== be[Se]) {
-              if (_e !== 1 || Se !== 1)
+      } catch (Ne) {
+        if (Ne && ne && typeof Ne.stack == "string") {
+          for (var ue = Ne.stack.split(`
+`), je = ne.stack.split(`
+`), ve = ue.length - 1, _e = je.length - 1; ve >= 1 && _e >= 0 && ue[ve] !== je[_e]; )
+            _e--;
+          for (; ve >= 1 && _e >= 0; ve--, _e--)
+            if (ue[ve] !== je[_e]) {
+              if (ve !== 1 || _e !== 1)
                 do
-                  if (_e--, Se--, Se < 0 || ue[_e] !== be[Se]) {
-                    var De = `
-` + ue[_e].replace(" at new ", " at ");
-                    return s.displayName && De.includes("<anonymous>") && (De = De.replace("<anonymous>", s.displayName)), typeof s == "function" && Xe.set(s, De), De;
+                  if (ve--, _e--, _e < 0 || ue[ve] !== je[_e]) {
+                    var $e = `
+` + ue[ve].replace(" at new ", " at ");
+                    return s.displayName && $e.includes("<anonymous>") && ($e = $e.replace("<anonymous>", s.displayName)), typeof s == "function" && qe.set(s, $e), $e;
                   }
-                while (_e >= 1 && Se >= 0);
+                while (ve >= 1 && _e >= 0);
               break;
             }
         }
       } finally {
-        nt = !1, et.current = ve, mn(), Error.prepareStackTrace = xe;
+        tt = !1, Qe.current = xe, un(), Error.prepareStackTrace = pe;
       }
-      var He = s ? s.displayName || s.name : "", en = He ? qe(He) : "";
-      return typeof s == "function" && Xe.set(s, en), en;
+      var ze = s ? s.displayName || s.name : "", Ht = ze ? Ge(ze) : "";
+      return typeof s == "function" && qe.set(s, Ht), Ht;
     }
-    function pn(s, p, T) {
-      return yt(s, !1);
+    function dn(s, p, T) {
+      return gt(s, !1);
     }
-    function fn(s) {
+    function pn(s) {
       var p = s.prototype;
       return !!(p && p.isReactComponent);
     }
-    function Je(s, p, T) {
+    function Xe(s, p, T) {
       if (s == null)
         return "";
       if (typeof s == "function")
-        return yt(s, fn(s));
+        return gt(s, pn(s));
       if (typeof s == "string")
-        return qe(s);
+        return Ge(s);
       switch (s) {
-        case Ee:
-          return qe("Suspense");
-        case je:
-          return qe("SuspenseList");
+        case be:
+          return Ge("Suspense");
+        case Se:
+          return Ge("SuspenseList");
       }
       if (typeof s == "object")
         switch (s.$$typeof) {
-          case ne:
-            return pn(s.render);
-          case $e:
-            return Je(s.type, p, T);
-          case Re: {
-            var oe = s, xe = oe._payload, ve = oe._init;
+          case O:
+            return dn(s.render);
+          case Re:
+            return Xe(s.type, p, T);
+          case Ce: {
+            var ne = s, pe = ne._payload, xe = ne._init;
             try {
-              return Je(ve(xe), p, T);
+              return Xe(xe(pe), p, T);
             } catch {
             }
           }
         }
       return "";
     }
-    var Ke = Object.prototype.hasOwnProperty, vt = {}, _t = Ve.ReactDebugCurrentFrame;
-    function Ze(s) {
+    var Je = Object.prototype.hasOwnProperty, yt = {}, vt = ke.ReactDebugCurrentFrame;
+    function Ke(s) {
       if (s) {
-        var p = s._owner, T = Je(s.type, s._source, p ? p.type : null);
-        _t.setExtraStackFrame(T);
+        var p = s._owner, T = Xe(s.type, s._source, p ? p.type : null);
+        vt.setExtraStackFrame(T);
       } else
-        _t.setExtraStackFrame(null);
+        vt.setExtraStackFrame(null);
     }
-    function xn(s, p, T, oe, xe) {
+    function fn(s, p, T, ne, pe) {
       {
-        var ve = Function.call.bind(Ke);
-        for (var pe in s)
-          if (ve(s, pe)) {
+        var xe = Function.call.bind(Je);
+        for (var me in s)
+          if (xe(s, me)) {
             var ue = void 0;
             try {
-              if (typeof s[pe] != "function") {
-                var be = Error((oe || "React class") + ": " + T + " type `" + pe + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof s[pe] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                throw be.name = "Invariant Violation", be;
+              if (typeof s[me] != "function") {
+                var je = Error((ne || "React class") + ": " + T + " type `" + me + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof s[me] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                throw je.name = "Invariant Violation", je;
               }
-              ue = s[pe](p, pe, oe, T, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (_e) {
-              ue = _e;
+              ue = s[me](p, me, ne, T, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (ve) {
+              ue = ve;
             }
-            ue && !(ue instanceof Error) && (Ze(xe), Ce("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", oe || "React class", T, pe, typeof ue), Ze(null)), ue instanceof Error && !(ue.message in vt) && (vt[ue.message] = !0, Ze(xe), Ce("Failed %s type: %s", T, ue.message), Ze(null));
+            ue && !(ue instanceof Error) && (Ke(pe), Ee("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", ne || "React class", T, me, typeof ue), Ke(null)), ue instanceof Error && !(ue.message in yt) && (yt[ue.message] = !0, Ke(pe), Ee("Failed %s type: %s", T, ue.message), Ke(null));
           }
       }
     }
-    var hn = Array.isArray;
-    function rt(s) {
-      return hn(s);
+    var xn = Array.isArray;
+    function nt(s) {
+      return xn(s);
     }
-    function gn(s) {
+    function hn(s) {
       {
         var p = typeof Symbol == "function" && Symbol.toStringTag, T = p && s[Symbol.toStringTag] || s.constructor.name || "Object";
         return T;
       }
     }
-    function yn(s) {
+    function gn(s) {
       try {
-        return wt(s), !1;
+        return _t(s), !1;
       } catch {
         return !0;
       }
     }
-    function wt(s) {
+    function _t(s) {
       return "" + s;
     }
-    function St(s) {
-      if (yn(s))
-        return Ce("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", gn(s)), wt(s);
+    function wt(s) {
+      if (gn(s))
+        return Ee("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", hn(s)), _t(s);
     }
-    var jt = Ve.ReactCurrentOwner, vn = {
+    var St = ke.ReactCurrentOwner, yn = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, bt, Et;
-    function _n(s) {
-      if (Ke.call(s, "ref")) {
+    }, bt, jt;
+    function vn(s) {
+      if (Je.call(s, "ref")) {
         var p = Object.getOwnPropertyDescriptor(s, "ref").get;
         if (p && p.isReactWarning)
           return !1;
       }
       return s.ref !== void 0;
     }
-    function wn(s) {
-      if (Ke.call(s, "key")) {
+    function _n(s) {
+      if (Je.call(s, "key")) {
         var p = Object.getOwnPropertyDescriptor(s, "key").get;
         if (p && p.isReactWarning)
           return !1;
       }
       return s.key !== void 0;
     }
-    function Sn(s, p) {
-      typeof s.ref == "string" && jt.current;
+    function wn(s, p) {
+      typeof s.ref == "string" && St.current;
     }
-    function jn(s, p) {
+    function Sn(s, p) {
       {
         var T = function() {
-          bt || (bt = !0, Ce("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", p));
+          bt || (bt = !0, Ee("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", p));
         };
         T.isReactWarning = !0, Object.defineProperty(s, "key", {
           get: T,
@@ -410,7 +410,7 @@ function requireReactJsxRuntime_development() {
     function bn(s, p) {
       {
         var T = function() {
-          Et || (Et = !0, Ce("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", p));
+          jt || (jt = !0, Ee("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", p));
         };
         T.isReactWarning = !0, Object.defineProperty(s, "ref", {
           get: T,
@@ -418,7 +418,7 @@ function requireReactJsxRuntime_development() {
         });
       }
     }
-    var En = function(s, p, T, oe, xe, ve, pe) {
+    var jn = function(s, p, T, ne, pe, xe, me) {
       var ue = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: e,
@@ -426,9 +426,9 @@ function requireReactJsxRuntime_development() {
         type: s,
         key: p,
         ref: T,
-        props: pe,
+        props: me,
         // Record the component responsible for creating this element.
-        _owner: ve
+        _owner: xe
       };
       return ue._store = {}, Object.defineProperty(ue._store, "validated", {
         configurable: !1,
@@ -439,49 +439,49 @@ function requireReactJsxRuntime_development() {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: oe
+        value: ne
       }), Object.defineProperty(ue, "_source", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: xe
+        value: pe
       }), Object.freeze && (Object.freeze(ue.props), Object.freeze(ue)), ue;
     };
-    function Cn(s, p, T, oe, xe) {
+    function En(s, p, T, ne, pe) {
       {
-        var ve, pe = {}, ue = null, be = null;
-        T !== void 0 && (St(T), ue = "" + T), wn(p) && (St(p.key), ue = "" + p.key), _n(p) && (be = p.ref, Sn(p, xe));
-        for (ve in p)
-          Ke.call(p, ve) && !vn.hasOwnProperty(ve) && (pe[ve] = p[ve]);
+        var xe, me = {}, ue = null, je = null;
+        T !== void 0 && (wt(T), ue = "" + T), _n(p) && (wt(p.key), ue = "" + p.key), vn(p) && (je = p.ref, wn(p, pe));
+        for (xe in p)
+          Je.call(p, xe) && !yn.hasOwnProperty(xe) && (me[xe] = p[xe]);
         if (s && s.defaultProps) {
-          var _e = s.defaultProps;
-          for (ve in _e)
-            pe[ve] === void 0 && (pe[ve] = _e[ve]);
+          var ve = s.defaultProps;
+          for (xe in ve)
+            me[xe] === void 0 && (me[xe] = ve[xe]);
         }
-        if (ue || be) {
-          var Se = typeof s == "function" ? s.displayName || s.name || "Unknown" : s;
-          ue && jn(pe, Se), be && bn(pe, Se);
+        if (ue || je) {
+          var _e = typeof s == "function" ? s.displayName || s.name || "Unknown" : s;
+          ue && Sn(me, _e), je && bn(me, _e);
         }
-        return En(s, ue, be, xe, oe, jt.current, pe);
+        return jn(s, ue, je, pe, ne, St.current, me);
       }
     }
-    var st = Ve.ReactCurrentOwner, Rt = Ve.ReactDebugCurrentFrame;
-    function ze(s) {
+    var rt = ke.ReactCurrentOwner, Et = ke.ReactDebugCurrentFrame;
+    function Ve(s) {
       if (s) {
-        var p = s._owner, T = Je(s.type, s._source, p ? p.type : null);
-        Rt.setExtraStackFrame(T);
+        var p = s._owner, T = Xe(s.type, s._source, p ? p.type : null);
+        Et.setExtraStackFrame(T);
       } else
-        Rt.setExtraStackFrame(null);
+        Et.setExtraStackFrame(null);
     }
-    var ot;
-    ot = !1;
-    function at(s) {
+    var st;
+    st = !1;
+    function ot(s) {
       return typeof s == "object" && s !== null && s.$$typeof === e;
     }
-    function $t() {
+    function Rt() {
       {
-        if (st.current) {
-          var s = Oe(st.current.type);
+        if (rt.current) {
+          var s = Oe(rt.current.type);
           if (s)
             return `
 
@@ -490,13 +490,13 @@ Check the render method of \`` + s + "`.";
         return "";
       }
     }
-    function Rn(s) {
+    function Cn(s) {
       return "";
     }
-    var Dt = {};
-    function $n(s) {
+    var $t = {};
+    function Rn(s) {
       {
-        var p = $t();
+        var p = Rt();
         if (!p) {
           var T = typeof s == "string" ? s : s.displayName || s.name;
           T && (p = `
@@ -506,39 +506,39 @@ Check the top-level render call using <` + T + ">.");
         return p;
       }
     }
-    function kt(s, p) {
+    function Dt(s, p) {
       {
         if (!s._store || s._store.validated || s.key != null)
           return;
         s._store.validated = !0;
-        var T = $n(p);
-        if (Dt[T])
+        var T = Rn(p);
+        if ($t[T])
           return;
-        Dt[T] = !0;
-        var oe = "";
-        s && s._owner && s._owner !== st.current && (oe = " It was passed a child from " + Oe(s._owner.type) + "."), ze(s), Ce('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', T, oe), ze(null);
+        $t[T] = !0;
+        var ne = "";
+        s && s._owner && s._owner !== rt.current && (ne = " It was passed a child from " + Oe(s._owner.type) + "."), Ve(s), Ee('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', T, ne), Ve(null);
       }
     }
-    function Ot(s, p) {
+    function kt(s, p) {
       {
         if (typeof s != "object")
           return;
-        if (rt(s))
+        if (nt(s))
           for (var T = 0; T < s.length; T++) {
-            var oe = s[T];
-            at(oe) && kt(oe, p);
+            var ne = s[T];
+            ot(ne) && Dt(ne, p);
           }
-        else if (at(s))
+        else if (ot(s))
           s._store && (s._store.validated = !0);
         else if (s) {
-          var xe = it(s);
-          if (typeof xe == "function" && xe !== s.entries)
-            for (var ve = xe.call(s), pe; !(pe = ve.next()).done; )
-              at(pe.value) && kt(pe.value, p);
+          var pe = at(s);
+          if (typeof pe == "function" && pe !== s.entries)
+            for (var xe = pe.call(s), me; !(me = xe.next()).done; )
+              ot(me.value) && Dt(me.value, p);
         }
       }
     }
-    function Dn(s) {
+    function $n(s) {
       {
         var p = s.type;
         if (p == null || typeof p == "string")
@@ -546,80 +546,80 @@ Check the top-level render call using <` + T + ">.");
         var T;
         if (typeof p == "function")
           T = p.propTypes;
-        else if (typeof p == "object" && (p.$$typeof === ne || // Note: Memo only checks outer props here.
+        else if (typeof p == "object" && (p.$$typeof === O || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        p.$$typeof === $e))
+        p.$$typeof === Re))
           T = p.propTypes;
         else
           return;
         if (T) {
-          var oe = Oe(p);
-          xn(T, s.props, "prop", oe, s);
-        } else if (p.PropTypes !== void 0 && !ot) {
-          ot = !0;
-          var xe = Oe(p);
-          Ce("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", xe || "Unknown");
+          var ne = Oe(p);
+          fn(T, s.props, "prop", ne, s);
+        } else if (p.PropTypes !== void 0 && !st) {
+          st = !0;
+          var pe = Oe(p);
+          Ee("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", pe || "Unknown");
         }
-        typeof p.getDefaultProps == "function" && !p.getDefaultProps.isReactClassApproved && Ce("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof p.getDefaultProps == "function" && !p.getDefaultProps.isReactClassApproved && Ee("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
-    function Tn(s) {
+    function Dn(s) {
       {
         for (var p = Object.keys(s.props), T = 0; T < p.length; T++) {
-          var oe = p[T];
-          if (oe !== "children" && oe !== "key") {
-            ze(s), Ce("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", oe), ze(null);
+          var ne = p[T];
+          if (ne !== "children" && ne !== "key") {
+            Ve(s), Ee("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", ne), Ve(null);
             break;
           }
         }
-        s.ref !== null && (ze(s), Ce("Invalid attribute `ref` supplied to `React.Fragment`."), ze(null));
+        s.ref !== null && (Ve(s), Ee("Invalid attribute `ref` supplied to `React.Fragment`."), Ve(null));
       }
     }
-    function Ht(s, p, T, oe, xe, ve) {
+    function Ot(s, p, T, ne, pe, xe) {
       {
-        var pe = ln(s);
-        if (!pe) {
+        var me = an(s);
+        if (!me) {
           var ue = "";
           (s === void 0 || typeof s == "object" && s !== null && Object.keys(s).length === 0) && (ue += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var be = Rn();
-          be ? ue += be : ue += $t();
-          var _e;
-          s === null ? _e = "null" : rt(s) ? _e = "array" : s !== void 0 && s.$$typeof === e ? (_e = "<" + (Oe(s.type) || "Unknown") + " />", ue = " Did you accidentally export a JSX literal instead of a component?") : _e = typeof s, Ce("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", _e, ue);
+          var je = Cn();
+          je ? ue += je : ue += Rt();
+          var ve;
+          s === null ? ve = "null" : nt(s) ? ve = "array" : s !== void 0 && s.$$typeof === e ? (ve = "<" + (Oe(s.type) || "Unknown") + " />", ue = " Did you accidentally export a JSX literal instead of a component?") : ve = typeof s, Ee("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", ve, ue);
         }
-        var Se = Cn(s, p, T, xe, ve);
-        if (Se == null)
-          return Se;
-        if (pe) {
-          var De = p.children;
-          if (De !== void 0)
-            if (oe)
-              if (rt(De)) {
-                for (var He = 0; He < De.length; He++)
-                  Ot(De[He], s);
-                Object.freeze && Object.freeze(De);
+        var _e = En(s, p, T, pe, xe);
+        if (_e == null)
+          return _e;
+        if (me) {
+          var $e = p.children;
+          if ($e !== void 0)
+            if (ne)
+              if (nt($e)) {
+                for (var ze = 0; ze < $e.length; ze++)
+                  kt($e[ze], s);
+                Object.freeze && Object.freeze($e);
               } else
-                Ce("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                Ee("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              Ot(De, s);
+              kt($e, s);
         }
-        return s === o ? Tn(Se) : Dn(Se), Se;
+        return s === o ? Dn(_e) : $n(_e), _e;
       }
     }
+    function Tn(s, p, T) {
+      return Ot(s, p, T, !0);
+    }
     function Mn(s, p, T) {
-      return Ht(s, p, T, !0);
+      return Ot(s, p, T, !1);
     }
-    function Nn(s, p, T) {
-      return Ht(s, p, T, !1);
-    }
-    var Pn = Nn, kn = Mn;
-    reactJsxRuntime_development.Fragment = o, reactJsxRuntime_development.jsx = Pn, reactJsxRuntime_development.jsxs = kn;
+    var Nn = Mn, Pn = Tn;
+    reactJsxRuntime_development.Fragment = o, reactJsxRuntime_development.jsx = Nn, reactJsxRuntime_development.jsxs = Pn;
   }()), reactJsxRuntime_development;
 }
 process.env.NODE_ENV === "production" ? jsxRuntime.exports = requireReactJsxRuntime_production_min() : jsxRuntime.exports = requireReactJsxRuntime_development();
 var jsxRuntimeExports = jsxRuntime.exports;
 class AudioButtonDomain {
   constructor() {
-    ae(this, "isMuted", !1);
+    oe(this, "isMuted", !1);
     makeAutoObservable(this);
   }
   async toggleSound() {
@@ -636,7 +636,7 @@ const audioButtonDomain = new AudioButtonDomain(), DomainContext$c = createConte
   try {
     if (typeof document < "u") {
       var t = document.createElement("style");
-      t.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button_1es1f_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_1es1f_96{cursor:pointer}}._ds-button_1es1f_96:disabled{pointer-events:none;opacity:.5}._ds-button_1es1f_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_1es1f_120{width:16px;height:14px;padding:1px}._size-medium_1es1f_126{height:23px;min-width:75px;padding:0 12px}._size-medium_1es1f_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_1es1f_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button-arrow_1ury6_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_1ury6_96:hover{cursor:pointer}}._ds-button-arrow_1ury6_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_1ury6_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_1ury6_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_1ury6_124:after{border-top:3px solid var(--text-color)}._arrow-top_1ury6_128:after{border-bottom:3px solid var(--text-color)}._size-small_1ury6_132{width:20px;height:10px}._size-medium_1ury6_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_nsxiw_96{position:relative;display:flex;align-items:center;column-gap:6px}._wrapper_nsxiw_96:hover{cursor:pointer}._disabled_nsxiw_106{pointer-events:none;opacity:.5}._input_nsxiw_111{position:absolute;width:1px;height:1px;background-color:transparent}._input_nsxiw_111[disabled]{pointer-events:none}._icon_nsxiw_121{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_133id_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_133id_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-heading_18kg0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_zh02p_96{display:flex}._wrapper-horizontal_zh02p_100{align-items:center;column-gap:6px}._wrapper-vertical_zh02p_105{flex-direction:column;align-items:flex-start;row-gap:5px}._label_zh02p_111{min-width:46px}._input_zh02p_115,._label_zh02p_111{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_zh02p_115{padding:3px 4px;height:21px;box-shadow:var(--border-field);background-color:var(--background-color-white);width:100%}._input_zh02p_115:focus{outline:none}._input_zh02p_115:disabled,._input_zh02p_115:disabled+._label_zh02p_111{opacity:.8}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._modal_miwrn_96{background-color:transparent;border:0;height:100%;width:100%}._modal_miwrn_96::backdrop{background-color:transparent}._move-window_miwrn_107{position:relative;top:50%;left:50%;transform:translate(-50%,-50%)}._container_miwrn_114{position:relative;top:50%;left:50%;transform:translate(-50%,-50%);padding:3px;min-height:110px;min-width:190px;max-width:100%;max-height:100%;background-color:var(--background-color);box-shadow:var(--box-shadow-raised)}._resize-window_miwrn_128{resize:both;overflow:auto}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._content_11jrm_96{padding:2px;width:100%;height:calc(100% - 40px)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._header_1qqbc_96{display:flex;justify-content:space-between;align-items:center;height:20px;padding:3px 2px 3px 3px;background:var(--background-color-modal-header)}._header_1qqbc_96>h3{color:var(--text-color-2)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._navigation_1e5o9_96{column-gap:5px;display:flex;flex-wrap:wrap;padding:4px 2px}._navigation-button_1e5o9_103{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1i79t_96{height:calc(100% - 28px);margin:5px}._tab_1i79t_101{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._active-tab_1i79t_106{position:relative;z-index:3}._content_1i79t_111{position:relative;z-index:2;top:-2px;height:calc(100% - 21px)}._tab_1i79t_101,._content_1i79t_111{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_1i79t_124{display:none}._active-content-tab_1i79t_128{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1ui4e_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_1ui4e_96:hover{cursor:pointer}}._disabled_1ui4e_108{pointer-events:none;opacity:.5}._input_1ui4e_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_1ui4e_113[disabled]{pointer-events:none}._icon_1ui4e_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_uytru_96{position:relative;display:flex}._wrapper-horizontal_uytru_101{align-items:center;column-gap:6px}._wrapper-vertical_uytru_106{flex-direction:column;align-items:flex-start;row-gap:5px;max-width:200px}._label_uytru_113{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);min-width:46px}._select_uytru_119{background-color:var(--background-color-white);height:21px;width:100%;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_uytru_129{position:absolute;right:2px;z-index:-1}._arrow-vertical_uytru_135{bottom:-2px}._arrow-horizontal_uytru_139{top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-stepper_45vc6_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_45vc6_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_45vc6_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_45vc6_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_45vc6_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_13oe5_96{height:calc(100% - 28px);margin:5px;background-color:var(--background-color)}._tab_13oe5_102{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._tab-active_13oe5_107{position:relative;z-index:3}._content_13oe5_112{position:relative;z-index:2;top:-2px;height:calc(100% - 21px);padding:5px}._tab_13oe5_102,._content_13oe5_112{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_13oe5_126{display:none}._content-tab-active_13oe5_130{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._DSText_1n9d0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper-horizontal_1ubdj_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_1ubdj_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._textarea_1ubdj_111,._label_1ubdj_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._textarea_1ubdj_111{padding:3px 4px;box-shadow:var(--border-field);background-color:var(--background-color-white);resize:none}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:read-only{background-color:var(--background-color-white)}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:disabled+._label_1ubdj_112,._textarea_1ubdj_111[readonly],._textarea_1ubdj_111[readonly]+._label_1ubdj_112{opacity:.8}._textarea_1ubdj_111:focus{outline:none}')), document.head.appendChild(t);
+      t.appendChild(document.createTextNode('@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button_1es1f_96{display:flex;justify-content:center;align-items:center;font:400 11px/11px MSSansSerifMedium,sans-serif;border:none;border-radius:0;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised)}@media (hover: hover){._ds-button_1es1f_96{cursor:pointer}}._ds-button_1es1f_96:disabled{pointer-events:none;opacity:.5}._ds-button_1es1f_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._size-small_1es1f_120{width:16px;height:14px;padding:1px}._size-medium_1es1f_126{height:23px;min-width:75px;padding:0 12px}._size-medium_1es1f_126:focus{outline:1px dotted #000000;outline-offset:-4px}._size-medium_1es1f_126:not(:disabled):active{padding:2px 11px 0 13px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-button-arrow_1ury6_96{display:flex;justify-content:center;align-items:center;background-color:var(--background-color);color:var(--text-color);box-shadow:var(--box-shadow-raised);padding:1px}@media (hover: hover){._ds-button-arrow_1ury6_96:hover{cursor:pointer}}._ds-button-arrow_1ury6_96:after{content:"";display:block;border-left:3px solid transparent;border-right:3px solid transparent}._ds-button-arrow_1ury6_96:disabled{pointer-events:none;opacity:.5}._ds-button-arrow_1ury6_96:not(:disabled):active{box-shadow:var(--box-shadow-sunken)}._arrow-bottom_1ury6_124:after{border-top:3px solid var(--text-color)}._arrow-top_1ury6_128:after{border-bottom:3px solid var(--text-color)}._size-small_1ury6_132{width:20px;height:10px}._size-medium_1ury6_137{width:16px;height:17px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_nsxiw_96{position:relative;display:flex;align-items:center;column-gap:6px}._wrapper_nsxiw_96:hover{cursor:pointer}._disabled_nsxiw_106{pointer-events:none;opacity:.5}._input_nsxiw_111{position:absolute;width:1px;height:1px;background-color:transparent}._input_nsxiw_111[disabled]{pointer-events:none}._icon_nsxiw_121{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._frame_133id_96{position:relative;border:1px solid var(--border-color-frame-1);outline:1px solid var(--border-color-frame-2);padding:16px 10px;margin:12px 9px}._title_133id_104{position:absolute;top:-7px;left:7px;background-color:var(--background-color);padding:0 3px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-heading_18kg0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_zh02p_96{display:flex}._wrapper-horizontal_zh02p_100{align-items:center;column-gap:6px}._wrapper-vertical_zh02p_105{flex-direction:column;align-items:flex-start;row-gap:5px}._label_zh02p_111{min-width:46px}._input_zh02p_115,._label_zh02p_111{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._input_zh02p_115{padding:3px 4px;height:21px;box-shadow:var(--border-field);background-color:var(--background-color-white);width:100%}._input_zh02p_115:focus{outline:none}._input_zh02p_115:disabled,._input_zh02p_115:disabled+._label_zh02p_111{opacity:.8}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._modal_miwrn_96{background-color:transparent;border:0;height:100%;width:100%}._modal_miwrn_96::backdrop{background-color:transparent}._move-window_miwrn_107{position:relative;top:50%;left:50%;transform:translate(-50%,-50%)}._container_miwrn_114{position:relative;top:50%;left:50%;transform:translate(-50%,-50%);padding:3px;min-height:110px;min-width:190px;max-width:100%;max-height:100%;background-color:var(--background-color);box-shadow:var(--box-shadow-raised)}._resize-window_miwrn_128{resize:both;overflow:auto}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._content_11jrm_96{padding:2px;width:100%;height:calc(100% - 40px)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._header_1kip7_96{display:flex;justify-content:space-between;align-items:center;height:20px;padding:3px 2px 3px 3px;background:var(--background-color-modal-header)}._header_1kip7_96>h3{color:var(--text-color-2);font-weight:700}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._navigation_1e5o9_96{column-gap:5px;display:flex;flex-wrap:wrap;padding:4px 2px}._navigation-button_1e5o9_103{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);cursor:pointer}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_hyfdf_96{height:calc(100% - 28px);margin:5px}._tab_hyfdf_101{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._active-tab_hyfdf_106{position:relative;z-index:3}._content_hyfdf_111{position:relative;z-index:2;top:-2px;height:100%}._tab_hyfdf_101,._content_hyfdf_111{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_hyfdf_124{display:none}._active-content-tab_hyfdf_128{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1ui4e_96{position:relative;display:flex;align-items:center;column-gap:6px}@media (hover: hover){._wrapper_1ui4e_96:hover{cursor:pointer}}._disabled_1ui4e_108{pointer-events:none;opacity:.5}._input_1ui4e_113{position:absolute;width:1px;height:1px;background-color:transparent}._input_1ui4e_113[disabled]{pointer-events:none}._icon_1ui4e_123{width:12px;height:12px;display:flex;align-items:center}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_13myd_96{position:relative;display:flex}._wrapper-horizontal_13myd_101{align-items:center;column-gap:6px}._wrapper-vertical_13myd_106{flex-direction:column;align-items:flex-start;row-gap:5px;max-width:200px}._label_13myd_113{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color);min-width:46px}._select_13myd_119{background-color:var(--background-color-white);height:21px;width:100%;box-shadow:var(--border-field);padding:5px 25px 5px 5px;color:var(--text-color);font:400 11px/13px MSSansSerifMedium,sans-serif}._arrow_13myd_129{position:absolute;right:2px;z-index:1;pointer-events:none}._arrow-vertical_13myd_136{bottom:-2px}._arrow-horizontal_13myd_140{top:2px}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._ds-stepper_45vc6_96{display:grid;grid-template-columns:50px 20px;grid-template-rows:repeat(2,10px)}._ds-stepper_45vc6_96>:nth-child(1){grid-area:1/1/3/2}._ds-stepper_45vc6_96>:nth-child(2){grid-area:1/2/2/3}._ds-stepper_45vc6_96>:nth-child(3){grid-area:2/2/3/3}._state-disabled_45vc6_111{opacity:.5;pointer-events:none}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._wrapper_1nrrt_96{height:calc(100% - 28px);margin:5px;background-color:var(--background-color)}._tab_1nrrt_102{padding:5px;font:400 10px/10px MSSansSerifMedium,sans-serif}._tab-active_1nrrt_107{position:relative;z-index:3}._content_1nrrt_112{position:relative;z-index:2;top:-2px;height:100%;padding:5px}._tab_1nrrt_102,._content_1nrrt_112{box-shadow:var(--box-shadow-raised);color:var(--text-color)}._content-tab_1nrrt_126{display:none}._content-tab-active_1nrrt_130{display:block}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}._DSText_1n9d0_96{font:400 11px/13px MSSansSerifMedium,sans-serif;color:var(--text-color)}@font-face{font-family:MSSansSerifMedium;src:url(/fonts/MSSansSerifMedium.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:MSSansSerifBold;src:url(/fonts/MSSansSerifBold.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}:root[theme=light]{--background-color: #c0c0c0;--background-color-white: #ffffff;--background-color-modal-header: linear-gradient( 90deg, #000080, #1084d0 );--background-color-pulpit: #007b7b;--border-field: inset -1px -1px #ffffff, inset 1px 1px #808080, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;--box-shadow-sunken: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;--text-color: #222222;--text-color-2: #ffffff;--text-color-3: #b5b5b5;--border-color-navigation: #ffffff;--border-color-frame-1: rgba(255, 255, 255, .7);--border-color-frame-2: #969696}:root[theme=dark]{--background-color: #3b3b3b;--background-color-white: #3b3b3b;--background-color-modal-header: linear-gradient( 90deg, #330099, #0f0f81 );--background-color-pulpit: #000000;--border-field: inset -1px -1px #8b8b8b, inset 1px 1px #000000, inset -2px -2px #8b8b8b, inset 2px 2px #000000;--box-shadow-raised: inset -1px -1px #0a0a0a, inset 1px 1px #9b9b9b, inset -2px -2px #000000, inset 2px 2px #808080;--box-shadow-sunken: inset -1px -1px #9b9b9b, inset 1px 1px #000000, inset -2px -2px #9b9b9b, inset 2px 2px #000000;--text-color: #9b9b9b;--text-color-2: #9b9b9b;--text-color-3: #000000;--border-color-navigation: #8b8b8b;--border-color-frame-1: transparent;--border-color-frame-2: #969696}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;appearance:none;-webkit-appearance:none;-moz-appearance:none}*:focus{outline-style:none}ul,ol{list-style:none}a{text-decoration:none}img{max-width:100%;display:block}input,button,textarea,select{font:inherit;background:none;border:0}._wrapper-horizontal_1ubdj_96{display:grid;align-items:center;column-gap:6px}._wrapper-vertical_1ubdj_102{display:flex;flex-direction:column;align-items:flex-start;flex-basis:200px;row-gap:5px;max-width:200px}._textarea_1ubdj_111,._label_1ubdj_112{font:400 11px/14px MSSansSerifMedium,sans-serif;color:var(--text-color)}._textarea_1ubdj_111{padding:3px 4px;box-shadow:var(--border-field);background-color:var(--background-color-white);resize:none}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:read-only{background-color:var(--background-color-white)}._textarea_1ubdj_111:disabled,._textarea_1ubdj_111:disabled+._label_1ubdj_112,._textarea_1ubdj_111[readonly],._textarea_1ubdj_111[readonly]+._label_1ubdj_112{opacity:.8}._textarea_1ubdj_111:focus{outline:none}')), document.head.appendChild(t);
     }
   } catch (e) {
     console.error("vite-plugin-css-injected-by-js", e);
@@ -657,12 +657,12 @@ function Tt() {
   if (Ie) return Y$1;
   Ie = 1;
   var t = require$$0, e = Symbol.for("react.element"), n = Symbol.for("react.fragment"), o = Object.prototype.hasOwnProperty, a = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, f = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function M(me, ne, Ee) {
-    var je, $e = {}, Re = null, Ne = null;
-    Ee !== void 0 && (Re = "" + Ee), ne.key !== void 0 && (Re = "" + ne.key), ne.ref !== void 0 && (Ne = ne.ref);
-    for (je in ne) o.call(ne, je) && !f.hasOwnProperty(je) && ($e[je] = ne[je]);
-    if (me && me.defaultProps) for (je in ne = me.defaultProps, ne) $e[je] === void 0 && ($e[je] = ne[je]);
-    return { $$typeof: e, type: me, key: Re, ref: Ne, props: $e, _owner: a.current };
+  function M(ae, O, be) {
+    var Se, Re = {}, Ce = null, De = null;
+    be !== void 0 && (Ce = "" + be), O.key !== void 0 && (Ce = "" + O.key), O.ref !== void 0 && (De = O.ref);
+    for (Se in O) o.call(O, Se) && !f.hasOwnProperty(Se) && (Re[Se] = O[Se]);
+    if (ae && ae.defaultProps) for (Se in O = ae.defaultProps, O) Re[Se] === void 0 && (Re[Se] = O[Se]);
+    return { $$typeof: e, type: ae, key: Ce, ref: De, props: Re, _owner: a.current };
   }
   return Y$1.Fragment = n, Y$1.jsx = M, Y$1.jsxs = M, Y$1;
 }
@@ -679,54 +679,54 @@ var L$1 = {};
 var Me;
 function Vt() {
   return Me || (Me = 1, process.env.NODE_ENV !== "production" && function() {
-    var t = require$$0, e = Symbol.for("react.element"), n = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), a = Symbol.for("react.strict_mode"), f = Symbol.for("react.profiler"), M = Symbol.for("react.provider"), me = Symbol.for("react.context"), ne = Symbol.for("react.forward_ref"), Ee = Symbol.for("react.suspense"), je = Symbol.for("react.suspense_list"), $e = Symbol.for("react.memo"), Re = Symbol.for("react.lazy"), Ne = Symbol.for("react.offscreen"), Ge = Symbol.iterator, ke = "@@iterator";
-    function it(s) {
+    var t = require$$0, e = Symbol.for("react.element"), n = Symbol.for("react.portal"), o = Symbol.for("react.fragment"), a = Symbol.for("react.strict_mode"), f = Symbol.for("react.profiler"), M = Symbol.for("react.provider"), ae = Symbol.for("react.context"), O = Symbol.for("react.forward_ref"), be = Symbol.for("react.suspense"), Se = Symbol.for("react.suspense_list"), Re = Symbol.for("react.memo"), Ce = Symbol.for("react.lazy"), De = Symbol.for("react.offscreen"), Ue = Symbol.iterator, Pe = "@@iterator";
+    function at(s) {
       if (s === null || typeof s != "object")
         return null;
-      var p = Ge && s[Ge] || s[ke];
+      var p = Ue && s[Ue] || s[Pe];
       return typeof p == "function" ? p : null;
     }
-    var Ve = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function Ce(s) {
+    var ke = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function Ee(s) {
       {
-        for (var p = arguments.length, T = new Array(p > 1 ? p - 1 : 0), oe = 1; oe < p; oe++)
-          T[oe - 1] = arguments[oe];
-        tn("error", s, T);
+        for (var p = arguments.length, T = new Array(p > 1 ? p - 1 : 0), ne = 1; ne < p; ne++)
+          T[ne - 1] = arguments[ne];
+        en("error", s, T);
       }
     }
-    function tn(s, p, T) {
+    function en(s, p, T) {
       {
-        var oe = Ve.ReactDebugCurrentFrame, xe = oe.getStackAddendum();
-        xe !== "" && (p += "%s", T = T.concat([xe]));
-        var ve = T.map(function(pe) {
-          return String(pe);
+        var ne = ke.ReactDebugCurrentFrame, pe = ne.getStackAddendum();
+        pe !== "" && (p += "%s", T = T.concat([pe]));
+        var xe = T.map(function(me) {
+          return String(me);
         });
-        ve.unshift("Warning: " + p), Function.prototype.apply.call(console[s], console, ve);
+        xe.unshift("Warning: " + p), Function.prototype.apply.call(console[s], console, xe);
       }
     }
-    var nn = !1, rn = !1, sn = !1, on = !1, an = !1, lt;
-    lt = Symbol.for("react.module.reference");
-    function ln(s) {
-      return !!(typeof s == "string" || typeof s == "function" || s === o || s === f || an || s === a || s === Ee || s === je || on || s === Ne || nn || rn || sn || typeof s == "object" && s !== null && (s.$$typeof === Re || s.$$typeof === $e || s.$$typeof === M || s.$$typeof === me || s.$$typeof === ne || // This needs to include all possible module reference object
+    var tn = !1, nn = !1, rn = !1, sn = !1, on = !1, it;
+    it = Symbol.for("react.module.reference");
+    function an(s) {
+      return !!(typeof s == "string" || typeof s == "function" || s === o || s === f || on || s === a || s === be || s === Se || sn || s === De || tn || nn || rn || typeof s == "object" && s !== null && (s.$$typeof === Ce || s.$$typeof === Re || s.$$typeof === M || s.$$typeof === ae || s.$$typeof === O || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
-      s.$$typeof === lt || s.getModuleId !== void 0));
+      s.$$typeof === it || s.getModuleId !== void 0));
     }
-    function cn(s, p, T) {
-      var oe = s.displayName;
-      if (oe)
-        return oe;
-      var xe = p.displayName || p.name || "";
-      return xe !== "" ? T + "(" + xe + ")" : T;
+    function ln(s, p, T) {
+      var ne = s.displayName;
+      if (ne)
+        return ne;
+      var pe = p.displayName || p.name || "";
+      return pe !== "" ? T + "(" + pe + ")" : T;
     }
-    function ct(s) {
+    function lt(s) {
       return s.displayName || "Context";
     }
     function Oe(s) {
       if (s == null)
         return null;
-      if (typeof s.tag == "number" && Ce("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof s == "function")
+      if (typeof s.tag == "number" && Ee("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof s == "function")
         return s.displayName || s.name || null;
       if (typeof s == "string")
         return s;
@@ -739,28 +739,28 @@ function Vt() {
           return "Profiler";
         case a:
           return "StrictMode";
-        case Ee:
+        case be:
           return "Suspense";
-        case je:
+        case Se:
           return "SuspenseList";
       }
       if (typeof s == "object")
         switch (s.$$typeof) {
-          case me:
+          case ae:
             var p = s;
-            return ct(p) + ".Consumer";
+            return lt(p) + ".Consumer";
           case M:
             var T = s;
-            return ct(T._context) + ".Provider";
-          case ne:
-            return cn(s, s.render, "ForwardRef");
-          case $e:
-            var oe = s.displayName || null;
-            return oe !== null ? oe : Oe(s.type) || "Memo";
-          case Re: {
-            var xe = s, ve = xe._payload, pe = xe._init;
+            return lt(T._context) + ".Provider";
+          case O:
+            return ln(s, s.render, "ForwardRef");
+          case Re:
+            var ne = s.displayName || null;
+            return ne !== null ? ne : Oe(s.type) || "Memo";
+          case Ce: {
+            var pe = s, xe = pe._payload, me = pe._init;
             try {
-              return Oe(pe(ve));
+              return Oe(me(xe));
             } catch {
               return null;
             }
@@ -768,18 +768,18 @@ function Vt() {
         }
       return null;
     }
-    var Fe = Object.assign, Ue = 0, ut, mt, dt, pt, ft, xt, ht;
-    function gt() {
+    var Fe = Object.assign, He = 0, ct, ut, mt, dt, pt, ft, xt;
+    function ht() {
     }
-    gt.__reactDisabledLog = !0;
-    function un() {
+    ht.__reactDisabledLog = !0;
+    function cn() {
       {
-        if (Ue === 0) {
-          ut = console.log, mt = console.info, dt = console.warn, pt = console.error, ft = console.group, xt = console.groupCollapsed, ht = console.groupEnd;
+        if (He === 0) {
+          ct = console.log, ut = console.info, mt = console.warn, dt = console.error, pt = console.group, ft = console.groupCollapsed, xt = console.groupEnd;
           var s = {
             configurable: !0,
             enumerable: !0,
-            value: gt,
+            value: ht,
             writable: !0
           };
           Object.defineProperties(console, {
@@ -792,12 +792,12 @@ function Vt() {
             groupEnd: s
           });
         }
-        Ue++;
+        He++;
       }
     }
-    function mn() {
+    function un() {
       {
-        if (Ue--, Ue === 0) {
+        if (He--, He === 0) {
           var s = {
             configurable: !0,
             enumerable: !0,
@@ -805,237 +805,237 @@ function Vt() {
           };
           Object.defineProperties(console, {
             log: Fe({}, s, {
-              value: ut
+              value: ct
             }),
             info: Fe({}, s, {
-              value: mt
+              value: ut
             }),
             warn: Fe({}, s, {
-              value: dt
+              value: mt
             }),
             error: Fe({}, s, {
-              value: pt
+              value: dt
             }),
             group: Fe({}, s, {
-              value: ft
+              value: pt
             }),
             groupCollapsed: Fe({}, s, {
-              value: xt
+              value: ft
             }),
             groupEnd: Fe({}, s, {
-              value: ht
+              value: xt
             })
           });
         }
-        Ue < 0 && Ce("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        He < 0 && Ee("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var et = Ve.ReactCurrentDispatcher, tt;
-    function qe(s, p, T) {
+    var Qe = ke.ReactCurrentDispatcher, et;
+    function Ge(s, p, T) {
       {
-        if (tt === void 0)
+        if (et === void 0)
           try {
             throw Error();
-          } catch (xe) {
-            var oe = xe.stack.trim().match(/\n( *(at )?)/);
-            tt = oe && oe[1] || "";
+          } catch (pe) {
+            var ne = pe.stack.trim().match(/\n( *(at )?)/);
+            et = ne && ne[1] || "";
           }
         return `
-` + tt + s;
+` + et + s;
       }
     }
-    var nt = !1, Xe;
+    var tt = !1, qe;
     {
-      var dn = typeof WeakMap == "function" ? WeakMap : Map;
-      Xe = new dn();
+      var mn = typeof WeakMap == "function" ? WeakMap : Map;
+      qe = new mn();
     }
-    function yt(s, p) {
-      if (!s || nt)
+    function gt(s, p) {
+      if (!s || tt)
         return "";
       {
-        var T = Xe.get(s);
+        var T = qe.get(s);
         if (T !== void 0)
           return T;
       }
-      var oe;
-      nt = !0;
-      var xe = Error.prepareStackTrace;
+      var ne;
+      tt = !0;
+      var pe = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var ve;
-      ve = et.current, et.current = null, un();
+      var xe;
+      xe = Qe.current, Qe.current = null, cn();
       try {
         if (p) {
-          var pe = function() {
+          var me = function() {
             throw Error();
           };
-          if (Object.defineProperty(pe.prototype, "props", {
+          if (Object.defineProperty(me.prototype, "props", {
             set: function() {
               throw Error();
             }
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
-              Reflect.construct(pe, []);
-            } catch (Pe) {
-              oe = Pe;
+              Reflect.construct(me, []);
+            } catch (Ne) {
+              ne = Ne;
             }
-            Reflect.construct(s, [], pe);
+            Reflect.construct(s, [], me);
           } else {
             try {
-              pe.call();
-            } catch (Pe) {
-              oe = Pe;
+              me.call();
+            } catch (Ne) {
+              ne = Ne;
             }
-            s.call(pe.prototype);
+            s.call(me.prototype);
           }
         } else {
           try {
             throw Error();
-          } catch (Pe) {
-            oe = Pe;
+          } catch (Ne) {
+            ne = Ne;
           }
           s();
         }
-      } catch (Pe) {
-        if (Pe && oe && typeof Pe.stack == "string") {
-          for (var ue = Pe.stack.split(`
-`), be = oe.stack.split(`
-`), _e = ue.length - 1, Se = be.length - 1; _e >= 1 && Se >= 0 && ue[_e] !== be[Se]; )
-            Se--;
-          for (; _e >= 1 && Se >= 0; _e--, Se--)
-            if (ue[_e] !== be[Se]) {
-              if (_e !== 1 || Se !== 1)
+      } catch (Ne) {
+        if (Ne && ne && typeof Ne.stack == "string") {
+          for (var ue = Ne.stack.split(`
+`), je = ne.stack.split(`
+`), ve = ue.length - 1, _e = je.length - 1; ve >= 1 && _e >= 0 && ue[ve] !== je[_e]; )
+            _e--;
+          for (; ve >= 1 && _e >= 0; ve--, _e--)
+            if (ue[ve] !== je[_e]) {
+              if (ve !== 1 || _e !== 1)
                 do
-                  if (_e--, Se--, Se < 0 || ue[_e] !== be[Se]) {
-                    var De = `
-` + ue[_e].replace(" at new ", " at ");
-                    return s.displayName && De.includes("<anonymous>") && (De = De.replace("<anonymous>", s.displayName)), typeof s == "function" && Xe.set(s, De), De;
+                  if (ve--, _e--, _e < 0 || ue[ve] !== je[_e]) {
+                    var $e = `
+` + ue[ve].replace(" at new ", " at ");
+                    return s.displayName && $e.includes("<anonymous>") && ($e = $e.replace("<anonymous>", s.displayName)), typeof s == "function" && qe.set(s, $e), $e;
                   }
-                while (_e >= 1 && Se >= 0);
+                while (ve >= 1 && _e >= 0);
               break;
             }
         }
       } finally {
-        nt = !1, et.current = ve, mn(), Error.prepareStackTrace = xe;
+        tt = !1, Qe.current = xe, un(), Error.prepareStackTrace = pe;
       }
-      var He = s ? s.displayName || s.name : "", en = He ? qe(He) : "";
-      return typeof s == "function" && Xe.set(s, en), en;
+      var ze = s ? s.displayName || s.name : "", Ht = ze ? Ge(ze) : "";
+      return typeof s == "function" && qe.set(s, Ht), Ht;
     }
-    function pn(s, p, T) {
-      return yt(s, !1);
+    function dn(s, p, T) {
+      return gt(s, !1);
     }
-    function fn(s) {
+    function pn(s) {
       var p = s.prototype;
       return !!(p && p.isReactComponent);
     }
-    function Je(s, p, T) {
+    function Xe(s, p, T) {
       if (s == null)
         return "";
       if (typeof s == "function")
-        return yt(s, fn(s));
+        return gt(s, pn(s));
       if (typeof s == "string")
-        return qe(s);
+        return Ge(s);
       switch (s) {
-        case Ee:
-          return qe("Suspense");
-        case je:
-          return qe("SuspenseList");
+        case be:
+          return Ge("Suspense");
+        case Se:
+          return Ge("SuspenseList");
       }
       if (typeof s == "object")
         switch (s.$$typeof) {
-          case ne:
-            return pn(s.render);
-          case $e:
-            return Je(s.type, p, T);
-          case Re: {
-            var oe = s, xe = oe._payload, ve = oe._init;
+          case O:
+            return dn(s.render);
+          case Re:
+            return Xe(s.type, p, T);
+          case Ce: {
+            var ne = s, pe = ne._payload, xe = ne._init;
             try {
-              return Je(ve(xe), p, T);
+              return Xe(xe(pe), p, T);
             } catch {
             }
           }
         }
       return "";
     }
-    var Ke = Object.prototype.hasOwnProperty, vt = {}, _t = Ve.ReactDebugCurrentFrame;
-    function Ze(s) {
+    var Je = Object.prototype.hasOwnProperty, yt = {}, vt = ke.ReactDebugCurrentFrame;
+    function Ke(s) {
       if (s) {
-        var p = s._owner, T = Je(s.type, s._source, p ? p.type : null);
-        _t.setExtraStackFrame(T);
+        var p = s._owner, T = Xe(s.type, s._source, p ? p.type : null);
+        vt.setExtraStackFrame(T);
       } else
-        _t.setExtraStackFrame(null);
+        vt.setExtraStackFrame(null);
     }
-    function xn(s, p, T, oe, xe) {
+    function fn(s, p, T, ne, pe) {
       {
-        var ve = Function.call.bind(Ke);
-        for (var pe in s)
-          if (ve(s, pe)) {
+        var xe = Function.call.bind(Je);
+        for (var me in s)
+          if (xe(s, me)) {
             var ue = void 0;
             try {
-              if (typeof s[pe] != "function") {
-                var be = Error((oe || "React class") + ": " + T + " type `" + pe + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof s[pe] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                throw be.name = "Invariant Violation", be;
+              if (typeof s[me] != "function") {
+                var je = Error((ne || "React class") + ": " + T + " type `" + me + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof s[me] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                throw je.name = "Invariant Violation", je;
               }
-              ue = s[pe](p, pe, oe, T, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (_e) {
-              ue = _e;
+              ue = s[me](p, me, ne, T, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (ve) {
+              ue = ve;
             }
-            ue && !(ue instanceof Error) && (Ze(xe), Ce("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", oe || "React class", T, pe, typeof ue), Ze(null)), ue instanceof Error && !(ue.message in vt) && (vt[ue.message] = !0, Ze(xe), Ce("Failed %s type: %s", T, ue.message), Ze(null));
+            ue && !(ue instanceof Error) && (Ke(pe), Ee("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", ne || "React class", T, me, typeof ue), Ke(null)), ue instanceof Error && !(ue.message in yt) && (yt[ue.message] = !0, Ke(pe), Ee("Failed %s type: %s", T, ue.message), Ke(null));
           }
       }
     }
-    var hn = Array.isArray;
-    function rt(s) {
-      return hn(s);
+    var xn = Array.isArray;
+    function nt(s) {
+      return xn(s);
     }
-    function gn(s) {
+    function hn(s) {
       {
         var p = typeof Symbol == "function" && Symbol.toStringTag, T = p && s[Symbol.toStringTag] || s.constructor.name || "Object";
         return T;
       }
     }
-    function yn(s) {
+    function gn(s) {
       try {
-        return wt(s), !1;
+        return _t(s), !1;
       } catch {
         return !0;
       }
     }
-    function wt(s) {
+    function _t(s) {
       return "" + s;
     }
-    function St(s) {
-      if (yn(s))
-        return Ce("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", gn(s)), wt(s);
+    function wt(s) {
+      if (gn(s))
+        return Ee("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", hn(s)), _t(s);
     }
-    var jt = Ve.ReactCurrentOwner, vn = {
+    var St = ke.ReactCurrentOwner, yn = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, bt, Et;
-    function _n(s) {
-      if (Ke.call(s, "ref")) {
+    }, bt, jt;
+    function vn(s) {
+      if (Je.call(s, "ref")) {
         var p = Object.getOwnPropertyDescriptor(s, "ref").get;
         if (p && p.isReactWarning)
           return !1;
       }
       return s.ref !== void 0;
     }
-    function wn(s) {
-      if (Ke.call(s, "key")) {
+    function _n(s) {
+      if (Je.call(s, "key")) {
         var p = Object.getOwnPropertyDescriptor(s, "key").get;
         if (p && p.isReactWarning)
           return !1;
       }
       return s.key !== void 0;
     }
-    function Sn(s, p) {
-      typeof s.ref == "string" && jt.current;
+    function wn(s, p) {
+      typeof s.ref == "string" && St.current;
     }
-    function jn(s, p) {
+    function Sn(s, p) {
       {
         var T = function() {
-          bt || (bt = !0, Ce("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", p));
+          bt || (bt = !0, Ee("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", p));
         };
         T.isReactWarning = !0, Object.defineProperty(s, "key", {
           get: T,
@@ -1046,7 +1046,7 @@ function Vt() {
     function bn(s, p) {
       {
         var T = function() {
-          Et || (Et = !0, Ce("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", p));
+          jt || (jt = !0, Ee("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", p));
         };
         T.isReactWarning = !0, Object.defineProperty(s, "ref", {
           get: T,
@@ -1054,7 +1054,7 @@ function Vt() {
         });
       }
     }
-    var En = function(s, p, T, oe, xe, ve, pe) {
+    var jn = function(s, p, T, ne, pe, xe, me) {
       var ue = {
         // This tag allows us to uniquely identify this as a React Element
         $$typeof: e,
@@ -1062,9 +1062,9 @@ function Vt() {
         type: s,
         key: p,
         ref: T,
-        props: pe,
+        props: me,
         // Record the component responsible for creating this element.
-        _owner: ve
+        _owner: xe
       };
       return ue._store = {}, Object.defineProperty(ue._store, "validated", {
         configurable: !1,
@@ -1075,49 +1075,49 @@ function Vt() {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: oe
+        value: ne
       }), Object.defineProperty(ue, "_source", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: xe
+        value: pe
       }), Object.freeze && (Object.freeze(ue.props), Object.freeze(ue)), ue;
     };
-    function Cn(s, p, T, oe, xe) {
+    function En(s, p, T, ne, pe) {
       {
-        var ve, pe = {}, ue = null, be = null;
-        T !== void 0 && (St(T), ue = "" + T), wn(p) && (St(p.key), ue = "" + p.key), _n(p) && (be = p.ref, Sn(p));
-        for (ve in p)
-          Ke.call(p, ve) && !vn.hasOwnProperty(ve) && (pe[ve] = p[ve]);
+        var xe, me = {}, ue = null, je = null;
+        T !== void 0 && (wt(T), ue = "" + T), _n(p) && (wt(p.key), ue = "" + p.key), vn(p) && (je = p.ref, wn(p));
+        for (xe in p)
+          Je.call(p, xe) && !yn.hasOwnProperty(xe) && (me[xe] = p[xe]);
         if (s && s.defaultProps) {
-          var _e = s.defaultProps;
-          for (ve in _e)
-            pe[ve] === void 0 && (pe[ve] = _e[ve]);
+          var ve = s.defaultProps;
+          for (xe in ve)
+            me[xe] === void 0 && (me[xe] = ve[xe]);
         }
-        if (ue || be) {
-          var Se = typeof s == "function" ? s.displayName || s.name || "Unknown" : s;
-          ue && jn(pe, Se), be && bn(pe, Se);
+        if (ue || je) {
+          var _e = typeof s == "function" ? s.displayName || s.name || "Unknown" : s;
+          ue && Sn(me, _e), je && bn(me, _e);
         }
-        return En(s, ue, be, xe, oe, jt.current, pe);
+        return jn(s, ue, je, pe, ne, St.current, me);
       }
     }
-    var st = Ve.ReactCurrentOwner, Rt = Ve.ReactDebugCurrentFrame;
-    function ze(s) {
+    var rt = ke.ReactCurrentOwner, Et = ke.ReactDebugCurrentFrame;
+    function Ve(s) {
       if (s) {
-        var p = s._owner, T = Je(s.type, s._source, p ? p.type : null);
-        Rt.setExtraStackFrame(T);
+        var p = s._owner, T = Xe(s.type, s._source, p ? p.type : null);
+        Et.setExtraStackFrame(T);
       } else
-        Rt.setExtraStackFrame(null);
+        Et.setExtraStackFrame(null);
     }
-    var ot;
-    ot = !1;
-    function at(s) {
+    var st;
+    st = !1;
+    function ot(s) {
       return typeof s == "object" && s !== null && s.$$typeof === e;
     }
-    function $t() {
+    function Rt() {
       {
-        if (st.current) {
-          var s = Oe(st.current.type);
+        if (rt.current) {
+          var s = Oe(rt.current.type);
           if (s)
             return `
 
@@ -1126,13 +1126,13 @@ Check the render method of \`` + s + "`.";
         return "";
       }
     }
-    function Rn(s) {
+    function Cn(s) {
       return "";
     }
-    var Dt = {};
-    function $n(s) {
+    var $t = {};
+    function Rn(s) {
       {
-        var p = $t();
+        var p = Rt();
         if (!p) {
           var T = typeof s == "string" ? s : s.displayName || s.name;
           T && (p = `
@@ -1142,39 +1142,39 @@ Check the top-level render call using <` + T + ">.");
         return p;
       }
     }
-    function kt(s, p) {
+    function Dt(s, p) {
       {
         if (!s._store || s._store.validated || s.key != null)
           return;
         s._store.validated = !0;
-        var T = $n(p);
-        if (Dt[T])
+        var T = Rn(p);
+        if ($t[T])
           return;
-        Dt[T] = !0;
-        var oe = "";
-        s && s._owner && s._owner !== st.current && (oe = " It was passed a child from " + Oe(s._owner.type) + "."), ze(s), Ce('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', T, oe), ze(null);
+        $t[T] = !0;
+        var ne = "";
+        s && s._owner && s._owner !== rt.current && (ne = " It was passed a child from " + Oe(s._owner.type) + "."), Ve(s), Ee('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', T, ne), Ve(null);
       }
     }
-    function Ot(s, p) {
+    function kt(s, p) {
       {
         if (typeof s != "object")
           return;
-        if (rt(s))
+        if (nt(s))
           for (var T = 0; T < s.length; T++) {
-            var oe = s[T];
-            at(oe) && kt(oe, p);
+            var ne = s[T];
+            ot(ne) && Dt(ne, p);
           }
-        else if (at(s))
+        else if (ot(s))
           s._store && (s._store.validated = !0);
         else if (s) {
-          var xe = it(s);
-          if (typeof xe == "function" && xe !== s.entries)
-            for (var ve = xe.call(s), pe; !(pe = ve.next()).done; )
-              at(pe.value) && kt(pe.value, p);
+          var pe = at(s);
+          if (typeof pe == "function" && pe !== s.entries)
+            for (var xe = pe.call(s), me; !(me = xe.next()).done; )
+              ot(me.value) && Dt(me.value, p);
         }
       }
     }
-    function Dn(s) {
+    function $n(s) {
       {
         var p = s.type;
         if (p == null || typeof p == "string")
@@ -1182,73 +1182,73 @@ Check the top-level render call using <` + T + ">.");
         var T;
         if (typeof p == "function")
           T = p.propTypes;
-        else if (typeof p == "object" && (p.$$typeof === ne || // Note: Memo only checks outer props here.
+        else if (typeof p == "object" && (p.$$typeof === O || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        p.$$typeof === $e))
+        p.$$typeof === Re))
           T = p.propTypes;
         else
           return;
         if (T) {
-          var oe = Oe(p);
-          xn(T, s.props, "prop", oe, s);
-        } else if (p.PropTypes !== void 0 && !ot) {
-          ot = !0;
-          var xe = Oe(p);
-          Ce("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", xe || "Unknown");
+          var ne = Oe(p);
+          fn(T, s.props, "prop", ne, s);
+        } else if (p.PropTypes !== void 0 && !st) {
+          st = !0;
+          var pe = Oe(p);
+          Ee("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", pe || "Unknown");
         }
-        typeof p.getDefaultProps == "function" && !p.getDefaultProps.isReactClassApproved && Ce("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof p.getDefaultProps == "function" && !p.getDefaultProps.isReactClassApproved && Ee("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
-    function Tn(s) {
+    function Dn(s) {
       {
         for (var p = Object.keys(s.props), T = 0; T < p.length; T++) {
-          var oe = p[T];
-          if (oe !== "children" && oe !== "key") {
-            ze(s), Ce("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", oe), ze(null);
+          var ne = p[T];
+          if (ne !== "children" && ne !== "key") {
+            Ve(s), Ee("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", ne), Ve(null);
             break;
           }
         }
-        s.ref !== null && (ze(s), Ce("Invalid attribute `ref` supplied to `React.Fragment`."), ze(null));
+        s.ref !== null && (Ve(s), Ee("Invalid attribute `ref` supplied to `React.Fragment`."), Ve(null));
       }
     }
-    function Ht(s, p, T, oe, xe, ve) {
+    function Ot(s, p, T, ne, pe, xe) {
       {
-        var pe = ln(s);
-        if (!pe) {
+        var me = an(s);
+        if (!me) {
           var ue = "";
           (s === void 0 || typeof s == "object" && s !== null && Object.keys(s).length === 0) && (ue += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var be = Rn();
-          be ? ue += be : ue += $t();
-          var _e;
-          s === null ? _e = "null" : rt(s) ? _e = "array" : s !== void 0 && s.$$typeof === e ? (_e = "<" + (Oe(s.type) || "Unknown") + " />", ue = " Did you accidentally export a JSX literal instead of a component?") : _e = typeof s, Ce("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", _e, ue);
+          var je = Cn();
+          je ? ue += je : ue += Rt();
+          var ve;
+          s === null ? ve = "null" : nt(s) ? ve = "array" : s !== void 0 && s.$$typeof === e ? (ve = "<" + (Oe(s.type) || "Unknown") + " />", ue = " Did you accidentally export a JSX literal instead of a component?") : ve = typeof s, Ee("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", ve, ue);
         }
-        var Se = Cn(s, p, T, xe, ve);
-        if (Se == null)
-          return Se;
-        if (pe) {
-          var De = p.children;
-          if (De !== void 0)
-            if (oe)
-              if (rt(De)) {
-                for (var He = 0; He < De.length; He++)
-                  Ot(De[He], s);
-                Object.freeze && Object.freeze(De);
+        var _e = En(s, p, T, pe, xe);
+        if (_e == null)
+          return _e;
+        if (me) {
+          var $e = p.children;
+          if ($e !== void 0)
+            if (ne)
+              if (nt($e)) {
+                for (var ze = 0; ze < $e.length; ze++)
+                  kt($e[ze], s);
+                Object.freeze && Object.freeze($e);
               } else
-                Ce("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                Ee("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              Ot(De, s);
+              kt($e, s);
         }
-        return s === o ? Tn(Se) : Dn(Se), Se;
+        return s === o ? Dn(_e) : $n(_e), _e;
       }
     }
+    function Tn(s, p, T) {
+      return Ot(s, p, T, !0);
+    }
     function Mn(s, p, T) {
-      return Ht(s, p, T, !0);
+      return Ot(s, p, T, !1);
     }
-    function Nn(s, p, T) {
-      return Ht(s, p, T, !1);
-    }
-    var Pn = Nn, kn = Mn;
-    L$1.Fragment = o, L$1.jsx = Pn, L$1.jsxs = kn;
+    var Nn = Mn, Pn = Tn;
+    L$1.Fragment = o, L$1.jsx = Nn, L$1.jsxs = Pn;
   }()), L$1;
 }
 process.env.NODE_ENV === "production" ? de$1.exports = Tt() : de$1.exports = Vt();
@@ -1258,27 +1258,28 @@ const Ae = {
   "size-small": "_size-small_1es1f_120",
   "size-medium": "_size-medium_1es1f_126"
 }, Ct = ({
-  size: t = "medium",
-  disabled: e = !1,
-  onClick: n,
-  text: o,
-  id: a,
-  isTextVisible: f = !0,
-  iconLeft: M,
-  iconRight: me
+  className: t = "",
+  size: e = "medium",
+  disabled: n = !1,
+  onClick: o,
+  text: a,
+  id: f,
+  isTextVisible: M = !0,
+  iconLeft: ae,
+  iconRight: O
 }) => /* @__PURE__ */ r.jsxs(
   "button",
   {
-    "aria-label": f ? void 0 : o,
-    className: `${Ae["ds-button"]} ${Ae[`size-${t}`]}`,
-    "data-testid": `${a}-button`,
+    "aria-label": M ? void 0 : a,
+    className: `${Ae["ds-button"]} ${Ae[`size-${e}`]} ${t}`,
+    "data-testid": `${f}-button`,
     type: "button",
-    disabled: e,
-    onClick: n,
+    disabled: n,
+    onClick: o,
     children: [
-      M,
-      f && o,
-      me
+      ae,
+      M && a,
+      O
     ]
   }
 ), ce$1 = {
@@ -1341,17 +1342,18 @@ function Pr({ children: t, className: e = "", id: n, title: o }) {
 const Nt = {
   "ds-heading": "_ds-heading_18kg0_96"
 }, Ft = ({
-  id: t,
-  text: e,
-  type: n
+  className: t = "",
+  id: e,
+  text: n,
+  type: o
 }) => {
-  const o = n;
+  const a = o;
   return /* @__PURE__ */ r.jsx(
-    o,
+    a,
     {
-      className: Nt["ds-heading"],
-      "data-testid": `${t}-heading`,
-      children: e
+      className: `${Nt["ds-heading"]} ${t}`,
+      "data-testid": `${e}-heading`,
+      children: n
     }
   );
 }, zr = () => /* @__PURE__ */ r.jsx(
@@ -1629,51 +1631,51 @@ function Wt({
   readonly: a = !1,
   initialValue: f = "",
   labelName: M,
-  wrapperLayout: me = "vertical",
-  min: ne,
-  max: Ee,
-  onChange: je
+  wrapperLayout: ae = "vertical",
+  min: O,
+  max: be,
+  onChange: Se
 }) {
-  const { value: $e, handleInputChange: Re } = Bt({ initialValue: f, onChange: je }), Ne = `ds-input-${n}`;
+  const { value: Re, handleInputChange: Ce } = Bt({ initialValue: f, onChange: Se }), De = `ds-input-${n}`;
   return /* @__PURE__ */ r.jsxs(
     "div",
     {
-      className: `${Z$1.wrapper} ${Z$1[`wrapper-${me}`]} ${t}`,
-      "data-testid": Ne,
+      className: `${Z$1.wrapper} ${Z$1[`wrapper-${ae}`]} ${t}`,
+      "data-testid": De,
       children: [
         M && /* @__PURE__ */ r.jsx(
           "label",
           {
             className: Z$1.label,
             "data-testid": `ds-input-label-${n}`,
-            htmlFor: Ne,
+            htmlFor: De,
             children: M
           }
         ),
         /* @__PURE__ */ r.jsx(
           "input",
           {
-            id: Ne,
+            id: De,
             className: Z$1.input,
             "data-testid": `ds-input-input-${n}`,
             type: e,
             disabled: o,
             readOnly: a,
-            value: $e,
-            min: ne ?? void 0,
-            max: Ee ?? void 0,
-            name: Ne,
-            onChange: Re
+            value: Re,
+            min: O ?? void 0,
+            max: be ?? void 0,
+            name: De,
+            onChange: Ce
           }
         )
       ]
     }
   );
 }
-const qt = "_modal_miwrn_96", Gt = "_container_miwrn_114", Q$1 = {
-  modal: qt,
+const Gt = "_modal_miwrn_96", qt = "_container_miwrn_114", Q$1 = {
+  modal: Gt,
   "move-window": "_move-window_miwrn_107",
-  container: Gt,
+  container: qt,
   "resize-window": "_resize-window_miwrn_128"
 }, Jt = "_content_11jrm_96", Xt = {
   content: Jt
@@ -1699,7 +1701,7 @@ const qt = "_modal_miwrn_96", Gt = "_container_miwrn_114", Q$1 = {
     text: "",
     iconLeft: /* @__PURE__ */ r.jsx(It, {})
   }
-), Qt = "_header_1qqbc_96", er = {
+), Qt = "_header_1kip7_96", er = {
   header: Qt
 }, tr = ({
   id: t,
@@ -1757,13 +1759,13 @@ const qt = "_modal_miwrn_96", Gt = "_container_miwrn_114", Q$1 = {
       `${t}-modal-navigation-button-${n.name}`
     ))
   }
-) : null, ar = "_wrapper_1i79t_96", lr = "_tab_1i79t_101", sr = "_content_1i79t_111", O = {
+) : null, ar = "_wrapper_hyfdf_96", lr = "_tab_hyfdf_101", sr = "_content_hyfdf_111", k = {
   wrapper: ar,
   tab: lr,
-  "active-tab": "_active-tab_1i79t_106",
+  "active-tab": "_active-tab_hyfdf_106",
   content: sr,
-  "content-tab": "_content-tab_1i79t_124",
-  "active-content-tab": "_active-content-tab_1i79t_128"
+  "content-tab": "_content-tab_hyfdf_124",
+  "active-content-tab": "_active-content-tab_hyfdf_128"
 }, or = ({ initialIndex: t }) => {
   const [e, n] = useState(t);
   return {
@@ -1781,13 +1783,13 @@ const qt = "_modal_miwrn_96", Gt = "_container_miwrn_114", Q$1 = {
   return /* @__PURE__ */ r.jsxs(
     "div",
     {
-      className: O.wrapper,
+      className: k.wrapper,
       "data-testid": `${t}-modal-tabs`,
       children: [
-        /* @__PURE__ */ r.jsx("div", { className: O.tabs, children: n.map((f, M) => /* @__PURE__ */ r.jsx(
+        /* @__PURE__ */ r.jsx("div", { className: k.tabs, children: n.map((f, M) => /* @__PURE__ */ r.jsx(
           "button",
           {
-            className: `${O.tab} ${M === o ? O["active-tab"] : ""}`,
+            className: `${k.tab} ${M === o ? k["active-tab"] : ""}`,
             "data-testid": `${t}-modal-tabs-tab-${M}`,
             type: "button",
             onClick: () => a(M),
@@ -1795,10 +1797,10 @@ const qt = "_modal_miwrn_96", Gt = "_container_miwrn_114", Q$1 = {
           },
           `${t}-modal-tabs-tab`
         )) }),
-        /* @__PURE__ */ r.jsx("div", { className: O.content, children: n.map((f, M) => /* @__PURE__ */ r.jsx(
+        /* @__PURE__ */ r.jsx("div", { className: k.content, children: n.map((f, M) => /* @__PURE__ */ r.jsx(
           "div",
           {
-            className: `${O["content-tab"]} ${M === o ? O["active-content-tab"] : ""}`,
+            className: `${k["content-tab"]} ${M === o ? k["active-content-tab"] : ""}`,
             "data-testid": `${t}-modal-tabs-content-${M}`,
             children: f.component
           },
@@ -1816,115 +1818,116 @@ const cr = (t, e, n, o, a, f, M) => {
 }, dr = (t, e, n, o, a, f) => {
   !o || !e.current || !n || (e.current.style.left = `${t.clientX + a}px`, e.current.style.top = `${t.clientY + f}px`);
 }, fr = ({ moveWindow: t, onClose: e }) => {
-  const n = useRef(null), o = useRef(null), [a, f] = useState(!1), [M, me] = useState(
+  const n = useRef(null), o = useRef(null), [a, f] = useState(!1), [M, ae] = useState(
     ee$1.DEFAULT
-  ), [ne, Ee] = useState(0), [je, $e] = useState(0);
+  ), [O, be] = useState(0), [Se, Re] = useState(0);
   useEffect(() => {
-    const ke = o.current;
-    ke && ke.showModal();
+    const Pe = o.current;
+    Pe && Pe.showModal();
   }, []);
-  const Re = useCallback(
-    (ke) => {
+  const Ce = useCallback(
+    (Pe) => {
       cr(
-        ke,
+        Pe,
         n,
         t,
-        me,
+        ae,
         f,
-        Ee,
-        $e
+        be,
+        Re
       );
     },
     [t]
-  ), Ne = useCallback(() => {
-    ur(t, f, me);
-  }, [t]), Ge = useCallback(
-    (ke) => {
+  ), De = useCallback(() => {
+    ur(t, f, ae);
+  }, [t]), Ue = useCallback(
+    (Pe) => {
       dr(
-        ke,
+        Pe,
         n,
         t,
         a,
-        ne,
-        je
+        O,
+        Se
       );
     },
-    [t, a, ne, je]
+    [t, a, O, Se]
   );
   return {
     modalElement: n,
     dialogRef: o,
-    mouseDown: Re,
-    mouseUp: Ne,
-    mouseMove: Ge,
+    mouseDown: Ce,
+    mouseUp: De,
+    mouseMove: Ue,
     cursorType: M,
     closeModal: () => {
-      var ke;
-      (ke = o.current) == null || ke.close(), e();
+      var Pe;
+      (Pe = o.current) == null || Pe.close(), e();
     }
   };
 }, Ir = ({
-  id: t,
-  title: e,
-  width: n = "450px",
-  height: o = "150px",
-  resizeWindow: a = !1,
-  moveWindow: f = !0,
-  tabs: M,
-  children: me,
-  navigation: ne,
-  onClose: Ee
+  className: t = "",
+  id: e,
+  title: n,
+  width: o = "450px",
+  height: a = "150px",
+  resizeWindow: f = !1,
+  moveWindow: M = !0,
+  tabs: ae,
+  children: O,
+  navigation: be,
+  onClose: Se
 }) => {
   const {
-    dialogRef: je,
-    modalElement: $e,
-    mouseDown: Re,
-    mouseUp: Ne,
-    mouseMove: Ge,
-    cursorType: ke,
-    closeModal: it
-  } = fr({ moveWindow: f, onClose: Ee });
+    dialogRef: Re,
+    modalElement: Ce,
+    mouseDown: De,
+    mouseUp: Ue,
+    mouseMove: Pe,
+    cursorType: at,
+    closeModal: ke
+  } = fr({ moveWindow: M, onClose: Se });
   return /* @__PURE__ */ r.jsx(
     "dialog",
     {
-      className: Q$1.modal,
-      ref: je,
-      onMouseMove: Ge,
+      className: `${Q$1.modal} ${t}`,
+      ref: Re,
+      onMouseMove: Pe,
       children: /* @__PURE__ */ r.jsxs(
         "div",
         {
-          className: `${Q$1.container} ${a ? Q$1["resize-window"] : ""} ${f ? Q$1["move-window"] : ""}`,
-          "data-testid": `${t}-modal-container`,
-          ref: $e,
-          style: { width: n, height: o },
+          className: `${Q$1.container} ${f ? Q$1["resize-window"] : ""} ${M ? Q$1["move-window"] : ""}`,
+          "data-testid": `${e}-modal-container`,
+          ref: Ce,
+          style: { width: o, height: a },
           children: [
             /* @__PURE__ */ r.jsx(
               tr,
               {
-                cursorType: ke,
-                id: t,
-                onClose: it,
-                mouseDownEvent: Re,
-                mouseUpEvent: Ne,
-                title: e
+                cursorType: at,
+                id: e,
+                onClose: ke,
+                mouseDownEvent: De,
+                mouseUpEvent: Ue,
+                title: n
               }
             ),
-            !M && /* @__PURE__ */ r.jsxs(r.Fragment, { children: [
-              ne && /* @__PURE__ */ r.jsx(
+            !ae && /* @__PURE__ */ r.jsxs(r.Fragment, { children: [
+              be && /* @__PURE__ */ r.jsx(
                 nr,
                 {
-                  id: t,
-                  navigation: ne
+                  id: e,
+                  navigation: be
                 }
               ),
-              me && /* @__PURE__ */ r.jsx(Kt, { id: t, children: me })
+              O && /* @__PURE__ */ r.jsx(Kt, { id: e, children: O })
             ] }),
-            M && /* @__PURE__ */ r.jsx(
+            ae && /* @__PURE__ */ r.jsx(
               ir,
               {
-                id: t,
-                initialIndex: M.initialIndex,
-                tabs: M.tabs
+                id: e,
+                initialIndex: ae.initialIndex,
+                tabs: ae.tabs
               }
             )
           ]
@@ -1932,13 +1935,13 @@ const cr = (t, e, n, o, a, f, M) => {
       )
     }
   );
-}, vr = "_wrapper_1ui4e_96", pr = "_disabled_1ui4e_108", hr = "_input_1ui4e_113", _r = "_icon_1ui4e_123", U$1 = {
+}, vr = "_wrapper_1ui4e_96", hr = "_disabled_1ui4e_108", pr = "_input_1ui4e_113", _r = "_icon_1ui4e_123", U$1 = {
   wrapper: vr,
-  disabled: pr,
-  input: hr,
+  disabled: hr,
+  input: pr,
   icon: _r
 };
-function br({ initialChecked: t, onChange: e }) {
+function mr({ initialChecked: t, onChange: e }) {
   const [n, o] = useState(t);
   return useEffect(() => {
     o(t);
@@ -1950,65 +1953,66 @@ function br({ initialChecked: t, onChange: e }) {
   };
 }
 const Mr = ({
-  initialChecked: t = !1,
-  disabled: e = !1,
-  id: n,
-  onChange: o,
-  name: a,
-  text: f
+  className: t = "",
+  initialChecked: e = !1,
+  disabled: n = !1,
+  id: o,
+  onChange: a,
+  name: f,
+  text: M
 }) => {
-  const { checked: M, handleChange: me } = br({
-    initialChecked: t,
-    onChange: o
+  const { checked: ae, handleChange: O } = mr({
+    initialChecked: e,
+    onChange: a
   });
   return /* @__PURE__ */ r.jsxs(
     "label",
     {
-      "aria-label": f.visible ? void 0 : f.content,
-      className: `${U$1.wrapper} ${e ? U$1.disabled : ""}`,
-      "data-testid": `${n}-radio`,
+      "aria-label": M.visible ? void 0 : M.content,
+      className: `${U$1.wrapper} ${n ? U$1.disabled : ""} ${t}`,
+      "data-testid": `${o}-radio`,
       children: [
         /* @__PURE__ */ r.jsx(
           "input",
           {
             className: U$1.input,
-            checked: M,
-            "data-testid": `${n}-radio-input`,
-            disabled: e,
-            name: a,
+            checked: ae,
+            "data-testid": `${o}-radio-input`,
+            disabled: n,
+            name: f,
             type: "radio",
-            value: n,
-            onChange: me
+            value: o,
+            onChange: O
           }
         ),
         /* @__PURE__ */ r.jsx(
           "span",
           {
             className: U$1.icon,
-            "data-testid": `${n}-radio-icon`,
-            children: /* @__PURE__ */ r.jsx(Mt, { isChecked: M })
+            "data-testid": `${o}-radio-icon`,
+            children: /* @__PURE__ */ r.jsx(Mt, { isChecked: ae })
           }
         ),
-        f.visible && /* @__PURE__ */ r.jsx(
+        M.visible && /* @__PURE__ */ r.jsx(
           fe$1,
           {
             className: U$1.text,
-            id: n,
-            text: f.content
+            id: o,
+            text: M.content
           }
         )
       ]
     }
   );
-}, mr = "_wrapper_uytru_96", xr = "_label_uytru_113", gr = "_select_uytru_119", wr = "_arrow_uytru_129", k = {
-  wrapper: mr,
-  "wrapper-horizontal": "_wrapper-horizontal_uytru_101",
-  "wrapper-vertical": "_wrapper-vertical_uytru_106",
+}, br = "_wrapper_13myd_96", xr = "_label_13myd_113", gr = "_select_13myd_119", wr = "_arrow_13myd_129", P$1 = {
+  wrapper: br,
+  "wrapper-horizontal": "_wrapper-horizontal_13myd_101",
+  "wrapper-vertical": "_wrapper-vertical_13myd_106",
   label: xr,
   select: gr,
   arrow: wr,
-  "arrow-vertical": "_arrow-vertical_uytru_135",
-  "arrow-horizontal": "_arrow-horizontal_uytru_139"
+  "arrow-vertical": "_arrow-vertical_13myd_136",
+  "arrow-horizontal": "_arrow-horizontal_13myd_140"
 };
 function $r(t) {
   const [e, n] = useState(t);
@@ -2027,21 +2031,21 @@ function Ar({
   modelValue: a,
   options: f,
   labelName: M,
-  onSelect: me,
-  wrapperLayout: ne = "vertical"
+  onSelect: ae,
+  wrapperLayout: O = "vertical"
 }) {
-  const { value: Ee, handleChange: je } = $r(a), $e = (Re) => {
-    je(Re), me(Re);
+  const { value: be, handleChange: Se } = $r(a), Re = (Ce) => {
+    Se(Ce), ae(Ce);
   };
   return /* @__PURE__ */ r.jsxs(
     "div",
     {
-      className: `${k.wrapper} ${k[`wrapper-${ne}`]} ${t}`,
+      className: `${P$1.wrapper} ${P$1[`wrapper-${O}`]} ${t}`,
       children: [
         M && /* @__PURE__ */ r.jsx(
           "label",
           {
-            className: k.label,
+            className: P$1.label,
             "data-testid": `ds-select-label-${e}`,
             htmlFor: e,
             children: M
@@ -2050,27 +2054,27 @@ function Ar({
         /* @__PURE__ */ r.jsx(
           "select",
           {
-            className: k.select,
+            className: P$1.select,
             "data-testid": `ds-select-select-${e}`,
             disabled: o,
             id: e,
             name: e,
-            onChange: $e,
+            onChange: Re,
             required: n,
-            value: Ee,
-            children: f.map((Re, Ne) => /* @__PURE__ */ r.jsx(
+            value: be,
+            children: f.map((Ce, De) => /* @__PURE__ */ r.jsx(
               "option",
               {
-                className: k.option,
-                "data-testid": `ds-select-option-${e}-${Ne}`,
-                value: Re.value,
-                children: Re.name
+                className: P$1.option,
+                "data-testid": `ds-select-option-${e}-${De}`,
+                value: Ce.value,
+                children: Ce.name
               },
-              `${e}-${Re.value}`
+              `${e}-${Ce.value}`
             ))
           }
         ),
-        /* @__PURE__ */ r.jsx("span", { className: `${k[`arrow-${ne}`]} ${k.arrow}`, children: /* @__PURE__ */ r.jsx(At, {}) })
+        /* @__PURE__ */ r.jsx("span", { className: `${P$1[`arrow-${O}`]} ${P$1.arrow}`, children: /* @__PURE__ */ r.jsx(At, {}) })
       ]
     }
   );
@@ -2101,7 +2105,7 @@ function Yr({
   onIncrease: a,
   onDecrease: f
 }) {
-  const { value: M, handleIncrease: me, handleDecrease: ne } = yr({
+  const { value: M, handleIncrease: ae, handleDecrease: O } = yr({
     modelValue: n,
     onIncrease: a,
     onDecrease: f
@@ -2131,7 +2135,7 @@ function Yr({
             disabled: o,
             id: e,
             size: "small",
-            onClick: me
+            onClick: ae
           }
         ),
         /* @__PURE__ */ r.jsx(
@@ -2142,20 +2146,20 @@ function Yr({
             disabled: o,
             id: e,
             size: "small",
-            onClick: ne
+            onClick: O
           }
         )
       ]
     }
   );
 }
-const jr = "_wrapper_13oe5_96", Rr = "_tab_13oe5_102", Er = "_content_13oe5_112", P$1 = {
+const jr = "_wrapper_1nrrt_96", Rr = "_tab_1nrrt_102", Er = "_content_1nrrt_112", z$1 = {
   wrapper: jr,
   tab: Rr,
-  "tab-active": "_tab-active_13oe5_107",
+  "tab-active": "_tab-active_1nrrt_107",
   content: Er,
-  "content-tab": "_content-tab_13oe5_126",
-  "content-tab-active": "_content-tab-active_13oe5_130"
+  "content-tab": "_content-tab_1nrrt_126",
+  "content-tab-active": "_content-tab-active_1nrrt_130"
 };
 function Sr() {
   const [t, e] = useState(0);
@@ -2163,45 +2167,49 @@ function Sr() {
     e((o) => o === n ? o : n);
   } };
 }
-const Lr = ({ id: t, tabs: e }) => {
-  const { activeIndex: n, setActiveTab: o } = Sr();
+const Lr = ({
+  id: t,
+  tabs: e,
+  className: n = ""
+}) => {
+  const { activeIndex: o, setActiveTab: a } = Sr();
   return /* @__PURE__ */ r.jsxs(
     "div",
     {
-      className: P$1.wrapper,
+      className: `${z$1.wrapper} ${n}`,
       "data-testid": `${t}-tabs`,
       children: [
         /* @__PURE__ */ r.jsx(
           "div",
           {
-            className: P$1.tabs,
+            className: z$1.tabs,
             "data-testid": `${t}-tabs-buttons`,
-            children: e.map((a, f) => /* @__PURE__ */ r.jsx(
+            children: e.map((f, M) => /* @__PURE__ */ r.jsx(
               "button",
               {
-                "data-testid": `${t}-${a.id}-tab-button`,
-                className: `${P$1.tab} ${f === n ? P$1["tab-active"] : ""}`,
+                "data-testid": `${t}-${f.id}-tab-button`,
+                className: `${z$1.tab} ${M === o ? z$1["tab-active"] : ""}`,
                 type: "button",
-                onClick: () => o(f),
-                children: a.title
+                onClick: () => a(M),
+                children: f.title
               },
-              `${t}-${a.id}-tab-button`
+              `${t}-${f.id}-tab-button`
             ))
           }
         ),
         /* @__PURE__ */ r.jsx(
           "div",
           {
-            className: P$1.content,
+            className: z$1.content,
             "data-testid": `${t}-tabs-content`,
-            children: e.map((a, f) => /* @__PURE__ */ r.jsx(
+            children: e.map((f, M) => /* @__PURE__ */ r.jsx(
               "div",
               {
-                className: `${P$1["content-tab"]} ${f === n ? P$1["content-tab-active"] : ""}`,
-                "data-testid": `${t}-${a.id}-tab-content`,
-                children: createElement(a.component)
+                className: `${z$1["content-tab"]} ${M === o ? z$1["content-tab-active"] : ""}`,
+                "data-testid": `${t}-${f.id}-tab-content`,
+                children: createElement(f.component)
               },
-              `${t}-${a.id}-content`
+              `${t}-${f.id}-content`
             ))
           }
         )
@@ -2221,7 +2229,7 @@ function fe$1({ className: t = "", id: e, text: n }) {
     }
   );
 }
-const button$2 = "_button_17ol8_96", styles$H = {
+const button$2 = "_button_8z35b_96", styles$I = {
   button: button$2
 };
 function useAudioButton() {
@@ -2241,7 +2249,7 @@ const Button = observer(() => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "button",
     {
-      className: styles$H.button,
+      className: styles$I.button,
       "data-testid": "mf-audio-button-button",
       type: "button",
       onClick: e,
@@ -2295,9 +2303,9 @@ class CalculatorService {
 }
 class CalculatorDomain {
   constructor() {
-    ae(this, "value", "0");
-    ae(this, "calculatorService", new CalculatorService());
-    ae(this, "addNumber", (e) => {
+    oe(this, "value", "0");
+    oe(this, "calculatorService", new CalculatorService());
+    oe(this, "addNumber", (e) => {
       this.calculatorService.isValueEqual(
         this.value,
         "0",
@@ -2308,17 +2316,17 @@ class CalculatorDomain {
         ECalculatorDirect.FIRST
       ) && this.value.length === 1 ? this.value = String(e) : this.value += String(e);
     });
-    ae(this, "addDot", () => {
+    oe(this, "addDot", () => {
       this.calculatorService.isDotExist(this.value) || this.calculatorService.isMathematicalSignLast(this.value) || this.calculatorService.isValueEqual(
         this.value,
         ".",
         ECalculatorDirect.LAST
       ) || (this.value += ".");
     });
-    ae(this, "addSymbol", (e) => {
+    oe(this, "addSymbol", (e) => {
       this.value === "0." || this.calculatorService.isMathematicalSignLast(this.value) || (this.value += e);
     });
-    ae(this, "summResult", () => {
+    oe(this, "summResult", () => {
       this.value = this.calculatorService.summResult(this.value);
     });
     makeAutoObservable(this);
@@ -2326,7 +2334,7 @@ class CalculatorDomain {
 }
 const calculatorDomain = new CalculatorDomain(), DomainContext$b = createContext(calculatorDomain), DomainContextComponent$3 = ({
   children: t
-}) => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$b.Provider, { value: calculatorDomain, children: t }), button$1 = "_button_1lve8_96", primary = "_primary_1lve8_122", secondary = "_secondary_1lve8_126", styles$G = {
+}) => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$b.Provider, { value: calculatorDomain, children: t }), button$1 = "_button_1lve8_96", primary = "_primary_1lve8_122", secondary = "_secondary_1lve8_126", styles$H = {
   button: button$1,
   primary,
   secondary
@@ -2337,13 +2345,13 @@ const calculatorDomain = new CalculatorDomain(), DomainContext$b = createContext
 }) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   "button",
   {
-    className: `${styles$G.button} ${styles$G[n]}`,
+    className: `${styles$H.button} ${styles$H[n]}`,
     "data-testid": `mf-calculator-operation-button-${t}`,
     onClick: e,
     type: "button",
     children: t
   }
-), keypad = "_keypad_1d9g0_96", styles$F = {
+), keypad = "_keypad_1d9g0_96", styles$G = {
   keypad
 };
 function useCalculator() {
@@ -2368,7 +2376,7 @@ const Keypad = observer(() => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
-      className: styles$F.keypad,
+      className: styles$G.keypad,
       "data-testid": "mf-calculator-keypad",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -2524,7 +2532,7 @@ const Keypad = observer(() => {
       children: t
     }
   );
-}, screen$1 = "_screen_10mz5_96", styles$E = {
+}, screen$1 = "_screen_10mz5_96", styles$F = {
   screen: screen$1
 };
 function useScreen$1() {
@@ -2538,17 +2546,17 @@ const Screen$1 = observer(() => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "span",
     {
-      className: styles$E.screen,
+      className: styles$F.screen,
       "data-testid": "mf-calculator-screen",
       children: t ?? "ERROR"
     }
   );
-}), wrapper$8 = "_wrapper_15s3n_96", styles$D = {
+}), wrapper$8 = "_wrapper_15s3n_96", styles$E = {
   wrapper: wrapper$8
 }, Wrapper$g = () => /* @__PURE__ */ jsxRuntimeExports.jsx(Modal$7, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
   "div",
   {
-    className: styles$D.wrapper,
+    className: styles$E.wrapper,
     "data-testid": "mf-calculator-wrapper",
     children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Screen$1, {}),
@@ -2559,14 +2567,14 @@ const Screen$1 = observer(() => {
   onCloseProgram: t
 }) => /* @__PURE__ */ jsxRuntimeExports.jsx(ConfigContextComponent$3, { onCloseProgram: t, children: /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContextComponent$3, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$g, {}) }) });
 var R = Object.defineProperty, x = (t, e, n) => e in t ? R(t, e, { enumerable: !0, configurable: !0, writable: !0, value: n }) : t[e] = n, i = (t, e, n) => x(t, typeof e != "symbol" ? e + "" : e, n);
-const c = class Qe {
+const c = class Ze {
   constructor(e) {
     i(this, "config"), this.config = e;
   }
   static getInstance(e) {
-    for (; Qe.lock; )
+    for (; Ze.lock; )
       ;
-    return Qe.lock = !0, Qe.instance || (Qe.instance = new Qe(e)), Qe.lock = !1, Qe.instance;
+    return Ze.lock = !0, Ze.instance || (Ze.instance = new Ze(e)), Ze.lock = !1, Ze.instance;
   }
   set(e, n) {
     this.config[e] !== n && (this.config[e] = n);
@@ -2718,15 +2726,15 @@ class A {
   CatchError(e, n) {
     const o = this;
     return (a, f, M) => {
-      const me = M.value;
-      M.value = function(...ne) {
+      const ae = M.value;
+      M.value = function(...O) {
         try {
-          return me.apply(this, ne);
-        } catch (Ee) {
+          return ae.apply(this, O);
+        } catch (be) {
           throw o.createError(
             e,
             n,
-            Ee
+            be
           );
         }
       };
@@ -2896,10 +2904,10 @@ class Y {
     return this.yearRepository.get(e);
   }
 }
-const ye = new Y(), h = class On {
+const ye = new Y(), h = class kn {
   static getInstance(e, ...n) {
-    let o = On.instances.get(e);
-    return o || (o = new e(...n), On.instances.set(e, o)), o;
+    let o = kn.instances.get(e);
+    return o || (o = new e(...n), kn.instances.set(e, o)), o;
   }
 };
 i(h, "instances", /* @__PURE__ */ new Map());
@@ -3093,53 +3101,37 @@ class Te extends he {
 }
 class CalendarDomain {
   constructor(e = ye) {
-    ae(this, "activeDay", null);
-    ae(this, "daysInMonth", 0);
-    ae(this, "firstDayOfWeek", 0);
-    ae(this, "currentYear", 0);
-    ae(this, "currentMonth", 0);
-    ae(this, "initCalendar", () => {
+    oe(this, "activeDay", null);
+    oe(this, "daysInMonth", 0);
+    oe(this, "firstDayOfWeek", 0);
+    oe(this, "currentYear", 0);
+    oe(this, "currentMonth", 0);
+    oe(this, "initCalendar", () => {
       const e = this.msDateDomain.getMonth(), n = this.msDateDomain.getYear();
       this.generateCalendar(e, n);
     });
-    ae(this, "changeCalendarByYear", (e) => {
+    oe(this, "changeCalendarByYear", (e) => {
       this.generateCalendar(this.currentMonth, e);
     });
-    ae(this, "changeCalendarByMonth", (e) => {
+    oe(this, "changeCalendarByMonth", (e) => {
       this.generateCalendar(e, this.currentYear);
     });
-    ae(this, "decreaseYear", () => {
+    oe(this, "decreaseYear", () => {
       this.currentYear -= 1, this.generateCalendar(this.currentMonth, this.currentYear);
     });
-    ae(this, "increaseYear", () => {
+    oe(this, "increaseYear", () => {
       this.currentYear += 1, this.generateCalendar(this.currentMonth, this.currentYear);
     });
-    ae(this, "generateCalendar", (e, n) => {
+    oe(this, "generateCalendar", (e, n) => {
       const o = this.msDateDomain.getCalendar(e, n);
       this.activeDay = o.activeDay, this.daysInMonth = o.daysInMonth, this.firstDayOfWeek = o.firstDayOfWeek, this.currentYear = n, this.currentMonth = e;
     });
     this.msDateDomain = e, makeAutoObservable(this), this.initCalendar();
   }
 }
-const calendarDomain = new CalendarDomain(), DomainContext$a = createContext(calendarDomain);
-function useSyncLang() {
-  const { i18n: t } = useTranslation();
-  useEffect(() => {
-    const e = document.documentElement.lang;
-    e && t.changeLanguage(e);
-  }), useEffect(() => {
-    const e = new MutationObserver((n) => {
-      for (const o of n)
-        o.type === "attributes" && o.attributeName === "lang" && t.changeLanguage(o.target.lang);
-    });
-    return e.observe(document.documentElement, { attributes: !0 }), () => {
-      e.disconnect();
-    };
-  }, [t]);
-}
-const days = "_days_1477e_96", styles$C = {
+const calendarDomain = new CalendarDomain(), DomainContext$a = createContext(calendarDomain), days = "_days_1477e_96", styles$D = {
   days
-}, day$1 = "_day_1v38p_102", styles$B = {
+}, day$1 = "_day_1v38p_102", styles$C = {
   "month-days": "_month-days_1v38p_96",
   day: day$1,
   "day-active": "_day-active_1v38p_107"
@@ -3160,13 +3152,13 @@ const MonthDays = observer(() => {
   return typeof n == "number" && /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
     {
-      className: styles$B["month-days"],
+      className: styles$C["month-days"],
       "data-testid": "calendar-view-days",
       children: [
         Array.from({ length: e }).map((o, a) => /* @__PURE__ */ jsxRuntimeExports.jsx(
           "span",
           {
-            className: styles$B.day,
+            className: styles$C.day,
             "data-testid": `calendar-month-days-empty-${a + 1}`
           },
           `calendar-month-days-empty-${a + 1}`
@@ -3175,8 +3167,8 @@ const MonthDays = observer(() => {
           "button",
           {
             className: `
-                            ${styles$B.day}
-                            ${a + 1 === t ? styles$B["day-active"] : ""}
+                            ${styles$C.day}
+                            ${a + 1 === t ? styles$C["day-active"] : ""}
                         `,
             "data-testid": `calendar-month-days-day-${a + 1}`,
             type: "button",
@@ -3205,21 +3197,21 @@ function useWeekDays() {
     )
   };
 }
-const day = "_day_xfsv0_104", styles$A = {
+const day = "_day_xfsv0_104", styles$B = {
   "week-days": "_week-days_xfsv0_96",
   day
 }, WeekDays = observer(() => {
   const { weekDays: t } = useWeekDays();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$A["week-days"], children: t.map((e) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$B["week-days"], children: t.map((e) => /* @__PURE__ */ jsxRuntimeExports.jsx(
     "span",
     {
-      className: styles$A.day,
+      className: styles$B.day,
       "data-testid": `calendar-week-days-day-${e.id}`,
       children: e.name
     },
     `calendar-week-days-day-${e.id}`
   )) });
-}), Days = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$C.days, children: [
+}), Days = () => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$D.days, children: [
   /* @__PURE__ */ jsxRuntimeExports.jsx(WeekDays, {}),
   /* @__PURE__ */ jsxRuntimeExports.jsx(MonthDays, {})
 ] });
@@ -3334,14 +3326,14 @@ function useWrapper$1() {
     ).title
   };
 }
-const wrapper$7 = "_wrapper_y6jeh_96", styles$z = {
+const wrapper$7 = "_wrapper_y6jeh_96", styles$A = {
   wrapper: wrapper$7
 }, Wrapper$f = () => {
   const { title: t } = useWrapper$1();
-  return useSyncLang(), /* @__PURE__ */ jsxRuntimeExports.jsxs(
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     Pr,
     {
-      className: styles$z.wrapper,
+      className: styles$A.wrapper,
       id: "calculator",
       title: t,
       children: [
@@ -3354,8 +3346,8 @@ const wrapper$7 = "_wrapper_y6jeh_96", styles$z = {
 }, CalendarView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$a.Provider, { value: calendarDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$f, {}) });
 class ClockDomain {
   constructor() {
-    ae(this, "time", null);
-    ae(this, "dateDomain");
+    oe(this, "time", null);
+    oe(this, "dateDomain");
     makeAutoObservable(this), this.dateDomain = ye;
   }
   updateTime() {
@@ -3365,7 +3357,7 @@ class ClockDomain {
     e !== this.time && (this.time = e);
   }
 }
-const clockDomain = new ClockDomain(), DomainContext$9 = createContext(clockDomain), time$1 = "_time_1t1t9_96", styles$y = {
+const clockDomain = new ClockDomain(), DomainContext$9 = createContext(clockDomain), time$1 = "_time_1t1t9_96", styles$z = {
   time: time$1
 };
 function useClock() {
@@ -3387,24 +3379,24 @@ const Time = observer(() => {
   return t && /* @__PURE__ */ jsxRuntimeExports.jsx(
     "span",
     {
-      className: styles$y.time,
+      className: styles$z.time,
       "data-testid": "mf-clock-time",
       children: t
     }
   );
-}), wrapper$6 = "_wrapper_1eojf_96", styles$x = {
+}), wrapper$6 = "_wrapper_ea02q_96", styles$y = {
   wrapper: wrapper$6
 }, Wrapper$e = () => /* @__PURE__ */ jsxRuntimeExports.jsx(
   "div",
   {
-    className: styles$x.wrapper,
+    className: styles$y.wrapper,
     "data-testid": "mf-clock-wrapper",
     children: /* @__PURE__ */ jsxRuntimeExports.jsx(Time, {})
   }
 ), ClockView = () => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$9.Provider, { value: clockDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$e, {}) });
 class LanguageManagerDomain {
   constructor() {
-    ae(this, "language", null);
+    oe(this, "language", null);
     makeAutoObservable(this);
   }
   initLanguage() {
@@ -3434,11 +3426,11 @@ function useSelect$1() {
   useEffect(() => {
     e.initLanguage();
   }, []);
-  const a = (me) => {
-    e.setLanguage(me.currentTarget.value), o(me.currentTarget.value);
-  }, f = e.language, M = n.map((me) => ({
-    value: me,
-    name: t(`mf-language-manager.language.${me}`)
+  const a = (ae) => {
+    e.setLanguage(ae.currentTarget.value), o(ae.currentTarget.value);
+  }, f = e.language, M = n.map((ae) => ({
+    value: ae,
+    name: t(`mf-language-manager.language.${ae}`)
   }));
   return {
     language: f,
@@ -3464,12 +3456,12 @@ const Select$1 = observer(() => {
     onChangeLanguage: e,
     children: /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$8.Provider, { value: languageManagerDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$d, {}) })
   }
-), wrapper$5 = "_wrapper_1rg8z_96", styles$w = {
+), wrapper$5 = "_wrapper_wg4lh_96", styles$x = {
   wrapper: wrapper$5
 }, Wrapper$c = ({ children: t }) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   "div",
   {
-    className: styles$w.wrapper,
+    className: styles$x.wrapper,
     "data-testid": "mf-navigation-wrapper",
     children: t
   }
@@ -3479,9 +3471,9 @@ const Select$1 = observer(() => {
 var TextFormats = /* @__PURE__ */ ((t) => (t.CSV = "text/csv;charset=utf-8;", t.DOC = "text/doc;charset=utf-8;", t.RTF = "text/rtf;charset=utf-8;", t.TXT = "text/txt;charset=utf-8;", t))(TextFormats || {});
 class NotepadDomain {
   constructor() {
-    ae(this, "fileManagerDomain");
-    ae(this, "text", "");
-    ae(this, "textFormats", Object.values(TextFormats));
+    oe(this, "fileManagerDomain");
+    oe(this, "text", "");
+    oe(this, "textFormats", Object.values(TextFormats));
     makeAutoObservable(this), this.fileManagerDomain = fe;
   }
   async openFile() {
@@ -3501,7 +3493,7 @@ const notepadDomain = new NotepadDomain(), ConfigDefaultContext$3 = {
 }) => {
   const n = { onCloseProgram: e };
   return /* @__PURE__ */ jsxRuntimeExports.jsx(ConfigContext$8.Provider, { value: n, children: t });
-}, useConfig$8 = () => useContext(ConfigContext$8), DomainContext$7 = createContext(notepadDomain), navigation = "_navigation_1cfbb_96", button = "_button_1cfbb_102", styles$v = {
+}, useConfig$8 = () => useContext(ConfigContext$8), DomainContext$7 = createContext(notepadDomain), navigation = "_navigation_1cfbb_96", button = "_button_1cfbb_102", styles$w = {
   navigation,
   button
 };
@@ -3523,7 +3515,7 @@ const useOpenFile = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(jsxRuntimeExports.Fragment, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(
     "button",
     {
-      className: styles$v.button,
+      className: styles$w.button,
       "data-testid": "mf-notepad-open-file-button",
       type: "button",
       onClick: t,
@@ -3533,10 +3525,10 @@ const useOpenFile = () => {
 });
 class SaveFileDomain {
   constructor() {
-    ae(this, "fileManagerDomain");
-    ae(this, "content", null);
-    ae(this, "fileName", null);
-    ae(this, "fileType", null);
+    oe(this, "fileManagerDomain");
+    oe(this, "content", null);
+    oe(this, "fileName", null);
+    oe(this, "fileType", null);
     makeAutoObservable(this), this.fileManagerDomain = fe;
   }
   async saveFile() {
@@ -3622,11 +3614,11 @@ const useFileName = () => {
 }), formatTranslationKey = (t) => `mf-save-file.${t.replace(";charset=utf-8;", "").replace("/", "-")}`, useFileType = () => {
   const { t } = useTranslation(), e = useSaveFile$1(), { fileTypes: n } = useConfig$7(), o = {
     saveAs: t("mf-save-file.save-as")
-  }, a = n.map((me) => ({
-    value: me,
-    name: t(formatTranslationKey(me))
-  })), f = (me) => {
-    e.setFileType(me.currentTarget.value);
+  }, a = n.map((ae) => ({
+    value: ae,
+    name: t(formatTranslationKey(ae))
+  })), f = (ae) => {
+    e.setFileType(ae.currentTarget.value);
   };
   useEffect(() => {
     M();
@@ -3673,7 +3665,7 @@ const useFileName = () => {
       text: e.save
     }
   );
-}), wrapper$4 = "_wrapper_1kr74_96", styles$u = {
+}), wrapper$4 = "_wrapper_1kr74_96", styles$v = {
   wrapper: wrapper$4
 }, useModal$6 = () => {
   const { t } = useTranslation(), e = useSaveFile$1(), { onCloseModal: n, contentFile: o } = useConfig$7(), a = () => {
@@ -3701,7 +3693,7 @@ const useFileName = () => {
       title: e.modalTitle,
       width: "320px",
       height: "100px",
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$u.wrapper, children: [
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$v.wrapper, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(FileName, {}),
         /* @__PURE__ */ jsxRuntimeExports.jsx(SaveButton, {}),
         /* @__PURE__ */ jsxRuntimeExports.jsx(FileType, {}),
@@ -3744,7 +3736,7 @@ const useFileName = () => {
       "button",
       {
         "data-testid": "mf-notepad-save-file-button",
-        className: styles$v.button,
+        className: styles$w.button,
         type: "button",
         onClick: e,
         children: f.button
@@ -3762,14 +3754,14 @@ const useFileName = () => {
 }), Navigation = () => /* @__PURE__ */ jsxRuntimeExports.jsxs(
   "div",
   {
-    className: styles$v.navigation,
+    className: styles$w.navigation,
     "data-testid": "mf-notepad-navigation",
     children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(SaveFile, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(OpenFile, {})
     ]
   }
-), textarea = "_textarea_1ooji_96", styles$t = {
+), textarea = "_textarea_1ooji_96", styles$u = {
   textarea
 }, useTextarea = () => {
   const { t } = useTranslation(), e = useNotepad(), n = t("mf-notepad.example"), o = (a) => {
@@ -3785,7 +3777,7 @@ const useFileName = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "textarea",
     {
-      className: styles$t.textarea,
+      className: styles$u.textarea,
       "data-testid": "mf-notepad-textarea",
       onChange: n,
       value: e,
@@ -3819,57 +3811,53 @@ const useFileName = () => {
   );
 }, Wrapper$a = () => /* @__PURE__ */ jsxRuntimeExports.jsx(Modal$5, {}), NotepadView = ({
   onCloseProgram: t
-}) => /* @__PURE__ */ jsxRuntimeExports.jsx(Config$5, { onCloseProgram: t, children: /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$7.Provider, { value: notepadDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$a, {}) }) }), item = "_item_czfa3_96", icon = "_icon_czfa3_105", name = "_name_czfa3_109", styles$s = {
+}) => /* @__PURE__ */ jsxRuntimeExports.jsx(Config$5, { onCloseProgram: t, children: /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$7.Provider, { value: notepadDomain, children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper$a, {}) }) }), item = "_item_czfa3_96", icon = "_icon_czfa3_105", name = "_name_czfa3_109", styles$t = {
   item,
   icon,
   name
-}, PulpitItem = ({
-  name: t,
-  icon: e
-}) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$s.item, children: [
-  /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "img",
-    {
-      className: styles$s.icon,
-      width: "32",
-      height: "32",
-      src: `/icons/applications/${e}.png`,
-      alt: t
-    }
-  ),
-  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: styles$s.name, children: t })
-] }), pulpit = "_pulpit_37s25_96", styles$r = {
-  pulpit
 };
-function usePulpit() {
-  const { t } = useTranslation();
+function usePulpitItem({ name: t }) {
+  const { t: e } = useTranslation();
   return {
-    t
+    translatedName: e(`mf-pulpit.${t}`)
   };
 }
-const Pulpit = ({ items: t }) => {
-  const { t: e } = usePulpit();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    "div",
-    {
-      className: styles$r.pulpit,
-      "data-testid": "mf-pulpit-pulpit",
-      children: t.map((n, o) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-        PulpitItem,
-        {
-          name: e(n.name),
-          icon: n.icon
-        },
-        `pulpit-item-${o}-${n.icon}`
-      ))
-    }
-  );
-}, wrapper$3 = "_wrapper_wb693_96", styles$q = {
+const PulpitItem = ({ name: t }) => {
+  const { translatedName: e } = usePulpitItem({ name: t });
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$t.item, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      "img",
+      {
+        className: styles$t.icon,
+        width: "32",
+        height: "32",
+        src: `/icons/programs/${t}.png`,
+        alt: e
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: styles$t.name, children: e })
+  ] });
+}, pulpit = "_pulpit_37s25_96", styles$s = {
+  pulpit
+}, Pulpit = ({ items: t }) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+  "div",
+  {
+    className: styles$s.pulpit,
+    "data-testid": "mf-pulpit-pulpit",
+    children: t.map((e, n) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      PulpitItem,
+      {
+        name: e.name
+      },
+      `pulpit-item-${n}-${e.name}`
+    ))
+  }
+), wrapper$3 = "_wrapper_wb693_96", styles$r = {
   wrapper: wrapper$3
 }, Wrapper$9 = ({ children: t }) => /* @__PURE__ */ jsxRuntimeExports.jsx(
   "div",
   {
-    className: styles$q.wrapper,
+    className: styles$r.wrapper,
     "data-testid": "mf-pulpit-wrapper",
     children: t
   }
@@ -3887,7 +3875,7 @@ const Pulpit = ({ items: t }) => {
 }) => /* @__PURE__ */ jsxRuntimeExports.jsx(ConfigContext$6.Provider, { value: { onCloseProgram: e, onRunProgram: n, programs: o }, children: t });
 class RunnerDomain {
   constructor() {
-    ae(this, "programName", "");
+    oe(this, "programName", "");
     makeAutoObservable(this);
   }
   setProgramName(e) {
@@ -3939,7 +3927,7 @@ const useCancel$1 = () => {
       onClick: t
     }
   );
-}, controller$2 = "_controller_1vmwj_96", styles$p = {
+}, controller$2 = "_controller_1vmwj_96", styles$q = {
   controller: controller$2
 }, useOk$1 = () => {
   const { t } = useTranslation(), { configContext: e } = useConfig$6(), { runnerDomain: n } = useDomain$1(), o = {
@@ -3967,14 +3955,14 @@ const useCancel$1 = () => {
 }), Controller$2 = () => /* @__PURE__ */ jsxRuntimeExports.jsxs(
   "div",
   {
-    className: styles$p.controller,
+    className: styles$q.controller,
     "data-testid": "mf-runner-controller",
     children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Ok$1, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Cancel$1, {})
     ]
   }
-), description$1 = "_description_18mip_96", styles$o = {
+), description$1 = "_description_18mip_96", styles$p = {
   description: description$1
 };
 function useDescription$1() {
@@ -3987,7 +3975,7 @@ function useDescription$1() {
 }
 const Description$1 = () => {
   const { translations: t } = useDescription$1();
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$o.description, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$p.description, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "img",
       {
@@ -4029,7 +4017,7 @@ const Description$1 = () => {
       onChange: e
     }
   );
-}), wrapper$2 = "_wrapper_f78ya_96", styles$n = {
+}), wrapper$2 = "_wrapper_f78ya_96", styles$o = {
   wrapper: wrapper$2
 }, useModal$4 = () => {
   const { t } = useTranslation(), { configContext: e } = useConfig$6();
@@ -4052,7 +4040,7 @@ const Description$1 = () => {
       title: t.title,
       width: "330px",
       height: "165px",
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$n.wrapper, children: [
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$o.wrapper, children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(Description$1, {}),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Input, {}),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Controller$2, {})
@@ -4099,8 +4087,8 @@ const Description$1 = () => {
 }, useConfig$5 = () => useContext(ConfigContext$5);
 class ThemeManagerDomain {
   constructor() {
-    ae(this, "theme", null);
-    ae(this, "msTheme");
+    oe(this, "theme", null);
+    oe(this, "msTheme");
     makeAutoObservable(this), this.msTheme = new Te();
   }
   initTheme() {
@@ -4130,11 +4118,11 @@ function useSelect() {
   useEffect(() => {
     e.initTheme();
   }, []);
-  const a = (me) => {
-    e.setTheme(me.currentTarget.value), o(me.currentTarget.value);
-  }, f = e.theme, M = n.map((me) => ({
-    value: me,
-    name: t(`mf-theme-manager.theme.${me}`)
+  const a = (ae) => {
+    e.setTheme(ae.currentTarget.value), o(ae.currentTarget.value);
+  }, f = e.theme, M = n.map((ae) => ({
+    value: ae,
+    name: t(`mf-theme-manager.theme.${ae}`)
   }));
   return {
     theme: f,
@@ -4194,8 +4182,8 @@ const CustomiseTab = () => {
 };
 class TimezoneDomain {
   constructor() {
-    ae(this, "msDate", ye);
-    ae(this, "timezonesValuePairs", null);
+    oe(this, "msDate", ye);
+    oe(this, "timezonesValuePairs", null);
     makeAutoObservable(this);
   }
   generateTimezones() {
@@ -4277,14 +4265,14 @@ const Wrapper$6 = observer(() => {
 ] });
 class SystemInformationDomain {
   constructor() {
-    ae(this, "deviceType");
-    ae(this, "operatingSystem");
-    ae(this, "browserName");
-    ae(this, "msBrowserEnv");
+    oe(this, "deviceType");
+    oe(this, "operatingSystem");
+    oe(this, "browserName");
+    oe(this, "msBrowserEnv");
     makeAutoObservable(this), this.msBrowserEnv = new we(), this.deviceType = this.msBrowserEnv.getDeviceType(), this.operatingSystem = this.msBrowserEnv.getOperatingSystem(), this.browserName = this.msBrowserEnv.getBrowserName();
   }
 }
-const systemInformationDomain = new SystemInformationDomain(), DomainContext$2 = createContext(systemInformationDomain), Domain = ({ children: t }) => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$2.Provider, { value: systemInformationDomain, children: t }), information = "_information_1plt1_96", title = "_title_1plt1_104", text = "_text_1plt1_105", styles$m = {
+const systemInformationDomain = new SystemInformationDomain(), DomainContext$2 = createContext(systemInformationDomain), Domain = ({ children: t }) => /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContext$2.Provider, { value: systemInformationDomain, children: t }), information = "_information_1plt1_96", title = "_title_1plt1_104", text = "_text_1plt1_105", styles$n = {
   information,
   title,
   text
@@ -4310,41 +4298,41 @@ const Information = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "dl",
     {
-      className: styles$m.information,
+      className: styles$n.information,
       "data-testid": "mf-system-information-information",
       children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("dt", { className: styles$m.title, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("dt", { className: styles$n.title, children: [
           o.deviceType,
           ":"
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "dd",
           {
-            className: styles$m.text,
+            className: styles$n.text,
             "data-testid": "mf-system-information-device-type",
             children: e
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("dt", { className: styles$m.title, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("dt", { className: styles$n.title, children: [
           o.browserName,
           ":"
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "dd",
           {
-            className: styles$m.text,
+            className: styles$n.text,
             "data-testid": "mf-system-information-browser-name",
             children: t
           }
         ),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("dt", { className: styles$m.title, children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("dt", { className: styles$n.title, children: [
           o.operatingSystem,
           ":"
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "dd",
           {
-            className: styles$m.text,
+            className: styles$n.text,
             "data-testid": "mf-system-information-operating-system",
             children: n
           }
@@ -4436,8 +4424,8 @@ const Tabs = () => {
 var EShutdownPresets = /* @__PURE__ */ ((t) => (t.RESTART = "restart", t.SHUTDOWN = "shutdown", t))(EShutdownPresets || {});
 class ShutdownDomain {
   constructor() {
-    ae(this, "appController");
-    ae(this, "preset", EShutdownPresets.SHUTDOWN);
+    oe(this, "appController");
+    oe(this, "preset", EShutdownPresets.SHUTDOWN);
     makeAutoObservable(this), this.appController = new de();
   }
   changePreset(e) {
@@ -4479,7 +4467,7 @@ const useCancel = () => {
       onClick: e
     }
   );
-}, controller$1 = "_controller_cq3wn_96", styles$l = {
+}, controller$1 = "_controller_cq3wn_96", styles$m = {
   controller: controller$1
 }, useOk = () => {
   const { t } = useTranslation(), { shutdownDomain: e } = useShutdown(), n = useMemo(() => ({
@@ -4504,14 +4492,14 @@ const useCancel = () => {
 }), Controller$1 = () => /* @__PURE__ */ jsxRuntimeExports.jsxs(
   "div",
   {
-    className: styles$l.controller,
+    className: styles$m.controller,
     "data-testid": "mf-shutdown-controller",
     children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Ok, {}),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Cancel, {})
     ]
   }
-), description = "_description_eevxg_96", styles$k = {
+), description = "_description_eevxg_96", styles$l = {
   description
 };
 function useDescription() {
@@ -4524,7 +4512,7 @@ function useDescription() {
 }
 const Description = () => {
   const { translations: t } = useDescription();
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$k.description, children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$l.description, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(
       "img",
       {
@@ -4565,7 +4553,7 @@ const Description = () => {
       children: t
     }
   );
-}, presets$1 = "_presets_1e5ju_96", styles$j = {
+}, presets$1 = "_presets_1e5ju_96", styles$k = {
   presets: presets$1
 }, usePresets$1 = () => {
   const { t } = useTranslation(), { shutdownDomain: e } = useShutdown(), [n, o] = useState(
@@ -4591,7 +4579,7 @@ const Description = () => {
   };
 }, Presets$1 = observer(() => {
   const { presets: t, selectedPreset: e, setPreset: n } = usePresets$1();
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$j.presets, children: t.map((o) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: styles$k.presets, children: t.map((o) => /* @__PURE__ */ jsxRuntimeExports.jsx(
     Mr,
     {
       initialChecked: o.preset === e,
@@ -4605,9 +4593,9 @@ const Description = () => {
     },
     o.id
   )) });
-}), wrapper$1 = "_wrapper_ji3uq_96", styles$i = {
+}), wrapper$1 = "_wrapper_ji3uq_96", styles$j = {
   wrapper: wrapper$1
-}, Wrapper$3 = () => /* @__PURE__ */ jsxRuntimeExports.jsx(Modal$2, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$i.wrapper, children: [
+}, Wrapper$3 = () => /* @__PURE__ */ jsxRuntimeExports.jsx(Modal$2, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: styles$j.wrapper, children: [
   /* @__PURE__ */ jsxRuntimeExports.jsx(Description, {}),
   /* @__PURE__ */ jsxRuntimeExports.jsx(Presets$1, {}),
   /* @__PURE__ */ jsxRuntimeExports.jsx(Controller$1, {})
@@ -4621,7 +4609,9 @@ const Description = () => {
   children: t,
   onRunProgram: e,
   menuItems: n
-}) => /* @__PURE__ */ jsxRuntimeExports.jsx(ConfigContext$2.Provider, { value: { onRunProgram: e, menuItems: n }, children: t }), useButtonStart = () => {
+}) => /* @__PURE__ */ jsxRuntimeExports.jsx(ConfigContext$2.Provider, { value: { onRunProgram: e, menuItems: n }, children: t }), styles$i = {
+  "button-start": "_button-start_14sby_96"
+}, useButtonStart = () => {
   const { t } = useTranslation();
   return {
     translations: {
@@ -4636,6 +4626,7 @@ const Description = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     Ct,
     {
+      className: styles$i["button-start"],
       iconLeft: /* @__PURE__ */ jsxRuntimeExports.jsx(
         "img",
         {
@@ -4733,7 +4724,7 @@ const MenuItemGroup = ({
   type: n,
   variant: o
 }) => {
-  const { isGroupHovered: a, handleMouseEnter: f, handleMouseLeave: M, translations: me } = usePanelItemGroup({ id: e });
+  const { isGroupHovered: a, handleMouseEnter: f, handleMouseLeave: M, translations: ae } = usePanelItemGroup({ id: e });
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
     "div",
     {
@@ -4751,7 +4742,7 @@ const MenuItemGroup = ({
               MenuItemContent,
               {
                 id: e,
-                name: me.name,
+                name: ae.name,
                 variant: o
               }
             ),
@@ -4936,32 +4927,32 @@ class TicTacToeComputerStrategy {
     return M;
   }
   findAdjacentEmptyCell(e, n, o) {
-    const a = (ne) => ne % n !== 0 && e[ne - 1] === "", f = (ne) => (ne + 1) % n !== 0 && e[ne + 1] === "", M = (ne) => ne - n >= 0 && e[ne - n] === "", me = (ne) => ne + n < e.length && e[ne + n] === "";
-    for (let ne = 0; ne < e.length; ne++)
-      if (e[ne] === o) {
-        if (a(ne))
-          return ne - 1;
-        if (f(ne))
-          return ne + 1;
-        if (M(ne))
-          return ne - n;
-        if (me(ne))
-          return ne + n;
+    const a = (O) => O % n !== 0 && e[O - 1] === "", f = (O) => (O + 1) % n !== 0 && e[O + 1] === "", M = (O) => O - n >= 0 && e[O - n] === "", ae = (O) => O + n < e.length && e[O + n] === "";
+    for (let O = 0; O < e.length; O++)
+      if (e[O] === o) {
+        if (a(O))
+          return O - 1;
+        if (f(O))
+          return O + 1;
+        if (M(O))
+          return O - n;
+        if (ae(O))
+          return O + n;
       }
     return null;
   }
   findDiagonalEmptyCell(e, n, o) {
-    const a = (ne) => ne % n !== 0 && ne - n - 1 >= 0 && e[ne - n - 1] === "", f = (ne) => (ne + 1) % n !== 0 && ne - n + 1 >= 0 && e[ne - n + 1] === "", M = (ne) => ne % n !== 0 && ne + n - 1 < e.length && e[ne + n - 1] === "", me = (ne) => (ne + 1) % n !== 0 && ne + n + 1 < e.length && e[ne + n + 1] === "";
-    for (let ne = 0; ne < e.length; ne++)
-      if (e[ne] === o) {
-        if (a(ne))
-          return ne - n - 1;
-        if (f(ne))
-          return ne - n + 1;
-        if (M(ne))
-          return ne + n - 1;
-        if (me(ne))
-          return ne + n + 1;
+    const a = (O) => O % n !== 0 && O - n - 1 >= 0 && e[O - n - 1] === "", f = (O) => (O + 1) % n !== 0 && O - n + 1 >= 0 && e[O - n + 1] === "", M = (O) => O % n !== 0 && O + n - 1 < e.length && e[O + n - 1] === "", ae = (O) => (O + 1) % n !== 0 && O + n + 1 < e.length && e[O + n + 1] === "";
+    for (let O = 0; O < e.length; O++)
+      if (e[O] === o) {
+        if (a(O))
+          return O - n - 1;
+        if (f(O))
+          return O - n + 1;
+        if (M(O))
+          return O + n - 1;
+        if (ae(O))
+          return O + n + 1;
       }
     return null;
   }
@@ -5043,18 +5034,18 @@ class TicTacToeStatusStrategy {
 }
 class TicTacToeGameDomain {
   constructor() {
-    ae(this, "ticTacToeBoardStrategy", new TicTacToeBoardStrategy());
-    ae(this, "ticTacToeComputerStrategy", new TicTacToeComputerStrategy());
-    ae(this, "ticTacToeStatusStrategy", new TicTacToeStatusStrategy());
-    ae(this, "boardCells", []);
-    ae(this, "currentPlayer", PlayerSign$1.X);
-    ae(this, "computer", { sign: PlayerSign$1.O });
-    ae(this, "boardType", BoardType.THREE_BY_THREE);
-    ae(this, "human", {
+    oe(this, "ticTacToeBoardStrategy", new TicTacToeBoardStrategy());
+    oe(this, "ticTacToeComputerStrategy", new TicTacToeComputerStrategy());
+    oe(this, "ticTacToeStatusStrategy", new TicTacToeStatusStrategy());
+    oe(this, "boardCells", []);
+    oe(this, "currentPlayer", PlayerSign$1.X);
+    oe(this, "computer", { sign: PlayerSign$1.O });
+    oe(this, "boardType", BoardType.THREE_BY_THREE);
+    oe(this, "human", {
       name: "",
       sign: PlayerSign$1.X
     });
-    ae(this, "statusResult", {
+    oe(this, "statusResult", {
       status: GameStatus.NOT_STARTED,
       winner: void 0
     });
@@ -5109,16 +5100,16 @@ class TicTacToeGameDomain {
 const ticTacToeGameDomain = new TicTacToeGameDomain();
 class TicTacToeStarterDomain {
   constructor() {
-    ae(this, "defaultData", {
+    oe(this, "defaultData", {
       boardType: BoardType.THREE_BY_THREE,
       playerName: "",
       playerSign: PlayerSign$1.X,
       computerSign: PlayerSign$1.O
     });
-    ae(this, "boardType");
-    ae(this, "playerName");
-    ae(this, "playerSign");
-    ae(this, "computerSign");
+    oe(this, "boardType");
+    oe(this, "playerName");
+    oe(this, "playerSign");
+    oe(this, "computerSign");
     makeAutoObservable(this), this.boardType = this.defaultData.boardType, this.playerName = this.defaultData.playerName, this.playerSign = this.defaultData.playerSign, this.computerSign = this.defaultData.computerSign;
   }
   setBoardType(e) {
@@ -5233,13 +5224,13 @@ const Board = observer(() => {
     {
       "data-testid": "mf-tic-tac-toe-game-board",
       className: `${styles$c.board} ${f} ${a}`,
-      children: t.map((M, me) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      children: t.map((M, ae) => /* @__PURE__ */ jsxRuntimeExports.jsx(
         BoardItem,
         {
           value: M,
-          onClick: () => n(me)
+          onClick: () => n(ae)
         },
-        `mf-tic-tac-toe-game-board-item-${me}-${M}`
+        `mf-tic-tac-toe-game-board-item-${ae}-${M}`
       ))
     }
   );
@@ -5510,12 +5501,12 @@ const Game = ({ onRestartGame: t }) => {
   const { t: e } = useTranslation(), { starterDomain: n } = useStarterDomain(), { gameDomain: o } = useGameDomain(), a = {
     button: e("mf-tic-tac-toe.starter.start")
   }, f = () => {
-    const me = n.getGameData();
+    const ae = n.getGameData();
     o.initGame(
-      me.computerSign,
-      me.boardType,
-      me.playerSign,
-      me.playerName
+      ae.computerSign,
+      ae.boardType,
+      ae.playerSign,
+      ae.playerName
     ), t(), n.reset();
   }, M = n.playerName.length === 0;
   return {
@@ -5583,23 +5574,23 @@ const Orchestrator = () => {
 var ETimerPresets = /* @__PURE__ */ ((t) => (t.THREE_MINUTES = "3-min", t.FIVE_MINUTES = "5-min", t.TEN_MINUTES = "10-min", t.FIFTEEN_MINUTES = "15-min", t.CUSTOM_MINUTES = "custom", t))(ETimerPresets || {}), ETimerTime = /* @__PURE__ */ ((t) => (t.HOURS = "hours", t.MINUTES = "minutes", t.SECONDS = "seconds", t))(ETimerTime || {}), ETimerStatus = /* @__PURE__ */ ((t) => (t.PLAY = "play", t.STOP = "stop", t.RESET = "reset", t))(ETimerStatus || {});
 class TimerControllerDomain {
   constructor(e) {
-    ae(this, "timerDomain");
-    ae(this, "increaseSeconds", () => {
+    oe(this, "timerDomain");
+    oe(this, "increaseSeconds", () => {
       this.timerDomain.time.seconds !== 59 && this.timerDomain.addTime(ETimerTime.SECONDS, 1);
     });
-    ae(this, "decreaseSeconds", () => {
+    oe(this, "decreaseSeconds", () => {
       this.timerDomain.time.seconds !== 0 && this.timerDomain.subtractTime(ETimerTime.SECONDS, 1);
     });
-    ae(this, "increaseMinutes", () => {
+    oe(this, "increaseMinutes", () => {
       this.timerDomain.time.minutes !== 59 && this.timerDomain.addTime(ETimerTime.MINUTES, 1);
     });
-    ae(this, "decreaseMinutes", () => {
+    oe(this, "decreaseMinutes", () => {
       this.timerDomain.time.minutes !== 0 && this.timerDomain.subtractTime(ETimerTime.MINUTES, 1);
     });
-    ae(this, "increaseHours", () => {
+    oe(this, "increaseHours", () => {
       this.timerDomain.time.hours !== 59 && this.timerDomain.addTime(ETimerTime.HOURS, 1);
     });
-    ae(this, "decreaseHours", () => {
+    oe(this, "decreaseHours", () => {
       this.timerDomain.time.hours !== 0 && this.timerDomain.subtractTime(ETimerTime.HOURS, 1);
     });
     this.timerDomain = e, makeAutoObservable(this);
@@ -5607,23 +5598,23 @@ class TimerControllerDomain {
 }
 class TimerPlayerDomain {
   constructor(e) {
-    ae(this, "timerDomain");
-    ae(this, "interval", null);
-    ae(this, "start", () => {
+    oe(this, "timerDomain");
+    oe(this, "interval", null);
+    oe(this, "start", () => {
       this.timerDomain.setStatus(ETimerStatus.PLAY), this.interval = setInterval(() => {
         this.timerDomain.time.hours === 0 && this.timerDomain.time.minutes === 0 && this.timerDomain.time.seconds === 0 && this.reset(), this.timerDomain.time.hours >= 1 && this.timerDomain.time.minutes === 0 && this.timerDomain.time.seconds === 0 ? (this.timerDomain.time.hours--, this.timerDomain.time.minutes = 59, this.timerDomain.time.seconds = 59) : this.timerDomain.time.seconds === 0 && this.timerDomain.time.minutes >= 1 ? (this.timerDomain.time.seconds = 59, this.timerDomain.time.minutes--) : this.timerDomain.time.seconds--;
       }, 1e3);
     });
-    ae(this, "stop", () => {
+    oe(this, "stop", () => {
       this.timerDomain.setStatus(ETimerStatus.STOP), this.clearTimerInterval();
     });
-    ae(this, "reset", () => {
+    oe(this, "reset", () => {
       this.timerDomain.setStatus(ETimerStatus.RESET), this.clearTimerInterval(), this.restartTime();
     });
-    ae(this, "clearTimerInterval", () => {
+    oe(this, "clearTimerInterval", () => {
       this.interval && clearInterval(this.interval);
     });
-    ae(this, "restartTime", () => {
+    oe(this, "restartTime", () => {
       this.timerDomain.time.hours = 0, this.timerDomain.time.minutes = 0, this.timerDomain.time.seconds = 0;
     });
     this.timerDomain = e, makeAutoObservable(this);
@@ -5631,25 +5622,25 @@ class TimerPlayerDomain {
 }
 class TimerPresetsDomain {
   constructor(e) {
-    ae(this, "preset", ETimerPresets.CUSTOM_MINUTES);
-    ae(this, "timerDomain");
-    ae(this, "presetTimes", {
+    oe(this, "preset", ETimerPresets.CUSTOM_MINUTES);
+    oe(this, "timerDomain");
+    oe(this, "presetTimes", {
       [ETimerPresets.CUSTOM_MINUTES]: 0,
       [ETimerPresets.THREE_MINUTES]: 3,
       [ETimerPresets.FIVE_MINUTES]: 5,
       [ETimerPresets.TEN_MINUTES]: 10,
       [ETimerPresets.FIFTEEN_MINUTES]: 15
     });
-    ae(this, "setPreset", (e) => {
+    oe(this, "setPreset", (e) => {
       this.setPresetStatus(e), this.resetSecondsAndHours(), this.setMinutes(e);
     });
-    ae(this, "setMinutes", (e) => {
+    oe(this, "setMinutes", (e) => {
       this.timerDomain.setTime(ETimerTime.MINUTES, this.presetTimes[e]);
     });
-    ae(this, "setPresetStatus", (e) => {
+    oe(this, "setPresetStatus", (e) => {
       this.preset !== e && (this.preset = e);
     });
-    ae(this, "resetSecondsAndHours", () => {
+    oe(this, "resetSecondsAndHours", () => {
       this.timerDomain.time.seconds !== 0 && this.timerDomain.setTime(ETimerTime.SECONDS, 0), this.timerDomain.time.hours !== 0 && this.timerDomain.setTime(ETimerTime.HOURS, 0);
     });
     this.timerDomain = e, makeAutoObservable(this);
@@ -5657,25 +5648,25 @@ class TimerPresetsDomain {
 }
 class TimerDomain {
   constructor() {
-    ae(this, "controllerDomain");
-    ae(this, "playerDomain");
-    ae(this, "presetsDomain");
-    ae(this, "time", {
+    oe(this, "controllerDomain");
+    oe(this, "playerDomain");
+    oe(this, "presetsDomain");
+    oe(this, "time", {
       seconds: 0,
       minutes: 0,
       hours: 0
     });
-    ae(this, "status", ETimerStatus.RESET);
-    ae(this, "addTime", (e, n) => {
+    oe(this, "status", ETimerStatus.RESET);
+    oe(this, "addTime", (e, n) => {
       this.time[e] += n;
     });
-    ae(this, "subtractTime", (e, n) => {
+    oe(this, "subtractTime", (e, n) => {
       this.time[e] -= n;
     });
-    ae(this, "setTime", (e, n) => {
+    oe(this, "setTime", (e, n) => {
       this.time[e] = n;
     });
-    ae(this, "setStatus", (e) => {
+    oe(this, "setStatus", (e) => {
       this.status = e;
     });
     makeAutoObservable(this), this.controllerDomain = new TimerControllerDomain(this), this.playerDomain = new TimerPlayerDomain(this), this.presetsDomain = new TimerPresetsDomain(this);
@@ -5722,9 +5713,9 @@ const Controller = observer(() => {
     decreaseSeconds: a,
     increaseMinutes: f,
     decreaseMinutes: M,
-    increaseHours: me,
-    decreaseHours: ne,
-    isDisabled: Ee
+    increaseHours: ae,
+    decreaseHours: O,
+    isDisabled: be
   } = useController();
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "div",
@@ -5737,9 +5728,9 @@ const Controller = observer(() => {
           {
             id: "hours",
             modelValue: t,
-            onIncrease: me,
-            onDecrease: ne,
-            disabled: Ee
+            onIncrease: ae,
+            onDecrease: O,
+            disabled: be
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -5749,7 +5740,7 @@ const Controller = observer(() => {
             modelValue: e,
             onIncrease: f,
             onDecrease: M,
-            disabled: Ee
+            disabled: be
           }
         ),
         /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -5759,7 +5750,7 @@ const Controller = observer(() => {
             modelValue: n,
             onIncrease: o,
             onDecrease: a,
-            disabled: Ee
+            disabled: be
           }
         )
       ]
@@ -5875,15 +5866,15 @@ const Controller = observer(() => {
       content: t("mf-timer.presets.custom"),
       id: "mf-timer-preset-custom"
     }
-  ], [t]), f = (ne) => {
-    M || (e.presetsDomain.setPreset(ne), o(ne));
-  }, M = e.status === ETimerStatus.PLAY, me = t("mf-timer.presets.title");
+  ], [t]), f = (O) => {
+    M || (e.presetsDomain.setPreset(O), o(O));
+  }, M = e.status === ETimerStatus.PLAY, ae = t("mf-timer.presets.title");
   return {
     disabled: M,
     presets: a,
     setPreset: f,
     selectedPreset: n,
-    title: me
+    title: ae
   };
 }, Presets = observer(() => {
   const { disabled: t, presets: e, selectedPreset: n, setPreset: o, title: a } = usePresets();
@@ -5962,7 +5953,7 @@ const Screen = observer(() => {
   );
 }), wrapper = "_wrapper_ozizt_96", styles = {
   wrapper
-}, Wrapper = () => (useSyncLang(), /* @__PURE__ */ jsxRuntimeExports.jsx(Modal, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+}, Wrapper = () => /* @__PURE__ */ jsxRuntimeExports.jsx(Modal, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
   "div",
   {
     className: styles.wrapper,
@@ -5974,7 +5965,7 @@ const Screen = observer(() => {
       /* @__PURE__ */ jsxRuntimeExports.jsx(Player, {})
     ]
   }
-) })), MFTimer = ({
+) }), MFTimer = ({
   onCloseProgram: t
 }) => /* @__PURE__ */ jsxRuntimeExports.jsx(ConfigContextComponent, { onCloseProgram: t, children: /* @__PURE__ */ jsxRuntimeExports.jsx(DomainContextComponent, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(Wrapper, {}) }) });
 export {

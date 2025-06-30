@@ -10,21 +10,3 @@ export const PulpitView: FunctionComponent<PulpitViewProps> = (props) => {
 		</Wrapper>
 	)
 }
-
-// This is temporary, when I move my app to react I export as a react component and set programs in the app
-const mockData = {
-	items: [
-		{
-			name: "mf-pulpit.my-computer",
-			icon: "mycomputer",
-		},
-		{
-			name: "mf-pulpit.recycle",
-			icon: "recycle",
-		},
-	],
-}
-
-export const PulpitViewWithMock: FunctionComponent = () => {
-	return <PulpitView {...mockData} />
-}
