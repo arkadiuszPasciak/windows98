@@ -1,10 +1,8 @@
 export const pulpitConfig = [
 	{
-		name: "my computer",
-		icon: "computer",
+		name: "my-computer",
 	},
 	{
-		name: "recycling",
-		icon: "recycling",
+		name: "recycle",
 	},
 ]
