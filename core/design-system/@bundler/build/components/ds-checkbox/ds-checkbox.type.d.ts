@@ -1,4 +1,5 @@
-export interface DSCheckboxProps {
+import { DSDefaultProps } from '../../types';
+export interface DSCheckboxProps extends DSDefaultProps {
     disabled?: boolean;
     id: string;
     initialChecked?: boolean;

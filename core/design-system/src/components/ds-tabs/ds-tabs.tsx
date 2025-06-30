@@ -3,12 +3,16 @@ import styles from "./ds-tabs.module.scss"
 import type { DSTabsProps } from "./ds-tabs.type"
 import { useDSTabs } from "./use-ds-tabs.hook"
 
-export const DSTabs: FunctionComponent<DSTabsProps> = ({ id, tabs }) => {
+export const DSTabs: FunctionComponent<DSTabsProps> = ({
+	id,
+	tabs,
+	className = "",
+}) => {
 	const { activeIndex, setActiveTab } = useDSTabs()
 
 	return (
 		<div
-			className={styles.wrapper}
+			className={`${styles.wrapper} ${className}`}
 			data-testid={`${id}-tabs`}
 		>
 			<div

@@ -1,4 +1,6 @@
-export type DSButtonProps = {
+import type { DSDefaultProps } from "../../types"
+
+export interface DSButtonProps extends DSDefaultProps {
 	size?: "small" | "medium"
 	disabled?: boolean
 	id: string

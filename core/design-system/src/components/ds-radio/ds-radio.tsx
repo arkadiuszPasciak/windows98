@@ -5,6 +5,7 @@ import type { DSRadioProps } from "./ds-radio.type"
 import { useDSRadio } from "./use-ds-radio.hook"
 
 export const DSRadio = ({
+	className = "",
 	initialChecked = false,
 	disabled = false,
 	id,
@@ -20,7 +21,7 @@ export const DSRadio = ({
 	return (
 		<label
 			aria-label={!text.visible ? text.content : undefined}
-			className={`${styles.wrapper} ${disabled ? styles.disabled : ""}`}
+			className={`${styles.wrapper} ${disabled ? styles.disabled : ""} ${className}`}
 			data-testid={`${id}-radio`}
 		>
 			<input
