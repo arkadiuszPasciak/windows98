@@ -12,9 +12,9 @@
 			"help": "Pomoc",
 			"notepad": "Notatnik",
 			"programs": "Programy",
-			"run": "Uruchom",
+			"runner": "Uruchom",
 			"settings": "Ustawienia",
-			"shut-down": "Wyłącz",
+			"shutdown": "Wyłącz",
 			"start": "Start",
 			"tic-tac-toe": "Kółko i krzyżyk",
 			"timer": "Minutnik"
