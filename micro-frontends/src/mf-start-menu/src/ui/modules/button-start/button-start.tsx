@@ -1,5 +1,6 @@
 import { DSButton } from "@windows98/design-system"
 import type { FunctionComponent } from "react"
+import styles from "./button-start.module.scss"
 import type { ButtonStartProps } from "./button-start.type"
 import { useButtonStart } from "./use-button-start.hook"
 
@@ -10,6 +11,7 @@ export const ButtonStart: FunctionComponent<ButtonStartProps> = ({
 
 	return (
 		<DSButton
+			className={styles["button-start"]}
 			iconLeft={
 				<img
 					className="button-icon"
