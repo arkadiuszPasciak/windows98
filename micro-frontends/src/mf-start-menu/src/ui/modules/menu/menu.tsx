@@ -4,7 +4,7 @@ import { MenuItems } from "../menu-items"
 import { useMenu } from "./use-menu.hook"
 
 export const Menu: FunctionComponent = () => {
-	const { items, isOpenMenu, toggleMenu } = useMenu()
+	const { items, isOpenMenu, toggleMenu, closeMenu } = useMenu()
 
 	if (!items) return null
 
@@ -12,7 +12,12 @@ export const Menu: FunctionComponent = () => {
 		<>
 			<ButtonStart onClick={toggleMenu} />
 
-			{isOpenMenu && <MenuItems items={items} />}
+			{isOpenMenu && (
+				<MenuItems
+					items={items}
+					closeMenu={closeMenu}
+				/>
+			)}
 		</>
 	)
 }

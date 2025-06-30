@@ -1,4 +1,5 @@
-export interface DSTextareaProps {
+import { DSDefaultProps } from '../../types';
+export interface DSTextareaProps extends DSDefaultProps {
     id: string;
     disabled?: boolean;
     readonly?: boolean;

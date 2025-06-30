@@ -7,31 +7,30 @@ export default defineConfig({
 	build: {
 		copyPublicDir: false,
 		lib: {
-			entry: "src/wc/index.wc.ts",
+			entry: "../src/index.ts",
 			name: "micro-frontends",
 			fileName: "index",
-			formats: ["es", "umd"],
 		},
 		emptyOutDir: true,
 		outDir: "build",
 		sourcemap: true,
 		rollupOptions: {
 			external: [
-				"i18next",
 				"react",
 				"react-dom",
-				"react-i18next",
 				"mobx",
 				"mobx-react-lite",
+				"i18next",
+				"react-i18next",
 			],
 			output: {
 				globals: {
-					i18next: "i18next",
 					react: "react",
 					"react-dom": "reactDOM",
-					"react-i18next": "reactI18next",
 					mobx: "mobx",
 					"mobx-react-lite": "mobxReactLite",
+					i18next: "i18next",
+					"react-i18next": "reactI18next",
 				},
 			},
 		},
@@ -45,5 +44,5 @@ export default defineConfig({
 			},
 		},
 	},
-	plugins: [cssInjectedByJsPlugin(), dts({ include: ["src/wc"] }), react()],
+	plugins: [cssInjectedByJsPlugin(), dts({ include: ["../src"] }), react()],
 })

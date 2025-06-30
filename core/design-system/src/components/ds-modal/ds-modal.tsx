@@ -8,6 +8,7 @@ import { ModalTabs } from "./modal-tabs"
 import { useDSModal } from "./use-ds-modal.hook"
 
 export const DSModal: FunctionComponent<DSModalProps> = ({
+	className = "",
 	id,
 	title,
 	width = "450px",
@@ -31,7 +32,7 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 
 	return (
 		<dialog
-			className={styles.modal}
+			className={`${styles.modal} ${className}`}
 			ref={dialogRef}
 			onMouseMove={mouseMove}
 		>

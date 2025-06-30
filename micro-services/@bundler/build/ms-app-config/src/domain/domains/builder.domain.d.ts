@@ -4,5 +4,4 @@ export declare class AppConfigBuilderDomain<Config> implements AppConfigBuilderD
     constructor(config: Config);
     add<Key extends keyof Config>(key: Key, value: Config[Key]): this;
     build(): Config;
-    private validateConfig;
 }

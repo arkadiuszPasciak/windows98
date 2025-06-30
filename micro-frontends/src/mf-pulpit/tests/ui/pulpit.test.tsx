@@ -5,12 +5,10 @@ import { PulpitView } from "../../src/ui/views"
 const testMock: Pulpit = {
 	items: [
 		{
-			name: "my computer",
-			icon: "https://placehold.co/50x50",
+			name: "my-computer",
 		},
 		{
-			name: "recycling",
-			icon: "https://placehold.co/50x50",
+			name: "recycle",
 		},
 	],
 }
@@ -30,7 +28,10 @@ test.describe("Pulpit", () => {
 			await expect(itemElement).toBeVisible()
 
 			const iconElement = itemElement.locator("img")
-			await expect(iconElement).toHaveAttribute("src", item.icon)
+			await expect(iconElement).toHaveAttribute(
+				"src",
+				`/icons/programs/${item.name}.png`,
+			)
 			await expect(iconElement).toHaveAttribute("alt", item.name)
 		}
 	})

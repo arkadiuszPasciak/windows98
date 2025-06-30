@@ -12,9 +12,9 @@
 			"help": "Help",
 			"notepad": "Notepad",
 			"programs": "Programs",
-			"run": "Run",
+			"runner": "Run",
 			"settings": "Settings",
-			"shut-down": "Shut Down",
+			"shutdown": "Shut Down",
 			"start": "Start",
 			"tic-tac-toe": "Tic Tac Toe",
 			"timer": "Timer"

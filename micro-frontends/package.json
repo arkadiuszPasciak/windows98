@@ -2,7 +2,7 @@
 	"author": "Arkadiusz Paściak",
 	"main": "@bundler/build/index.umd.cjs",
 	"module": "@bundler/build/index.js",
-	"types": "@bundler/build/@bundles/src/wc/index.wc.d.ts",
+	"types": "@bundler/build/index.d.ts",
 	"files": ["@bundler/build"],
 	"exports": {
 		".": {
@@ -11,7 +11,9 @@
 		}
 	},
 	"peerDependencies": {
+		"@windows98/design-system": "workspace:*",
 		"@windows98/micro-services": "workspace:*",
+		"@windows98/i18n": "workspace:*",
 		"i18next": "23.8.2",
 		"mobx": "6.12.0",
 		"mobx-react-lite": "4.0.4",
@@ -19,18 +21,12 @@
 		"react-dom": "18.2.0",
 		"react-i18next": "14.0.5"
 	},
-	"dependencies": {
-		"@r2wc/react-to-web-component": "2.0.3"
-	},
 	"devDependencies": {
 		"@playwright/experimental-ct-react": "1.49.1",
 		"@types/react": "18.2.43",
 		"@types/react-dom": "18.2.17",
 		"@vitejs/plugin-react": "4.2.1",
-		"@windows98/app": "workspace:*",
 		"@windows98/configs": "workspace:*",
-		"@windows98/design-system": "workspace:*",
-		"@windows98/i18n": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
 		"@biomejs/biome": "1.9.4",
 		"lint-staged": "15.2.11",

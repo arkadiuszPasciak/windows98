@@ -1,23 +1,7 @@
 {
 	"extends": [
-		"@windows98/configs/typescript/vue",
+		"@windows98/configs/typescript/react",
 		"@windows98/configs/typescript/vite"
 	],
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"@APP/*": ["*"],
-			"@APP|Bundles/*": [
-				"src/bundles/App/*",
-				"src/bundles/Programs/*",
-				"src/bundles/Settings/*",
-				"src/bundles/UI/*",
-				"src/bundles/Window/*"
-			],
-			"@APP|Views/*": ["src/views/*"],
-			"vue-i18n": ["./node_modules/vue-i18n/dist/vue-i18n.d.ts"],
-			"@windows98/design-system/*": ["../core/design-system/*"]
-		}
-	},
 	"include": ["./**/*"]
 }

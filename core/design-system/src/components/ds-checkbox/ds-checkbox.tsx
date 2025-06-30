@@ -5,6 +5,7 @@ import type { DSCheckboxProps } from "./ds-checkbox.type"
 import { useDSCheckbox } from "./use-ds-checkbox.hook"
 
 export const DSCheckbox: FunctionComponent<DSCheckboxProps> = ({
+	className = "",
 	initialChecked = false,
 	disabled = false,
 	id,
@@ -21,7 +22,7 @@ export const DSCheckbox: FunctionComponent<DSCheckboxProps> = ({
 	return (
 		<label
 			aria-label={text}
-			className={`${styles.wrapper} ${disabled ? styles.disabled : ""}`}
+			className={`${styles.wrapper} ${disabled ? styles.disabled : ""} ${className}`}
 			data-testid={`${id}-checkbox`}
 		>
 			<input

@@ -3,6 +3,7 @@ import type { DSTextareaProps } from "./ds-textarea.type"
 import { useDSTextarea } from "./use-ds-textarea.hook"
 
 export function DSTextarea({
+	className = "",
 	id,
 	disabled = false,
 	readonly = false,
@@ -20,7 +21,7 @@ export function DSTextarea({
 
 	return (
 		<div
-			className={styles[`wrapper-${wrapperLayout}`]}
+			className={`${styles[`wrapper-${wrapperLayout}`]} ${className}`}
 			data-testid={`${id}-wrapper-textarea`}
 		>
 			{labelName && (

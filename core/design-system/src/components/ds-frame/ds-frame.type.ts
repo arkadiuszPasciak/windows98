@@ -1,4 +1,4 @@
-import type { DSDefaultProps } from "../../types/component.type"
+import type { DSDefaultProps } from "../../types"
 
 export interface DSFrameProps extends DSDefaultProps {
 	title?: string

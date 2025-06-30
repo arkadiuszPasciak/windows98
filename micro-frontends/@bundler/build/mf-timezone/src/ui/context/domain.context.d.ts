@@ -1,0 +1,2 @@
+/// <reference types="react" />
+export declare const DomainContext: import('react').Context<import('../../domain/domains').TimezoneDomain>;

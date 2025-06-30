@@ -14,38 +14,34 @@
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
 		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
-		"lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"src/bundles/**/*.scss\" --fix",
-		"lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"src/bundles/**/*.scss\"",
-		"lint:types:run": "vue-tsc --noEmit",
-		"test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
-		"test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js"
+		"lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"src/bundles/**/*.scss\" --fix --allow-empty-input",
+		"lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"src/bundles/**/*.scss\" --allow-empty-input",
+		"lint:types:run": "tsc"
 	},
 	"dependencies": {
-		"pinia": "2.3.0",
-		"vue": "3.5.13",
-		"vue-i18n": "10.0.5"
+		"@windows98/configs": "workspace:*",
+		"@windows98/i18n": "workspace:*",
+		"@windows98/design-system": "workspace:*",
+		"@windows98/micro-frontends": "workspace:*",
+		"@windows98/micro-services": "workspace:*",
+		"i18next": "23.8.2",
+		"mobx": "6.12.0",
+		"mobx-react-lite": "4.0.4",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-i18next": "14.0.5"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@intlify/unplugin-vue-i18n": "6.0.1",
-		"@pinia/testing": "0.1.7",
-		"@vitejs/plugin-vue": "5.2.1",
-		"@vue/test-utils": "2.3.2",
-		"@windows98/configs": "workspace:*",
-		"@windows98/design-system": "workspace:*",
-		"@windows98/i18n": "workspace:*",
-		"@windows98/micro-frontends": "workspace:*",
-		"@windows98/micro-services": "workspace:*",
+		"@types/react": "18.2.43",
+		"@types/react-dom": "18.2.17",
+		"@vitejs/plugin-react": "4.2.1",
 		"@windows98/toolkit": "workspace:*",
-		"jsdom": "25.0.1",
 		"lint-staged": "15.2.11",
 		"sass": "1.83.0",
 		"stylelint": "16.2.1",
 		"typescript": "5.4.2",
-		"vite": "5.4.19",
-		"vite-tsconfig-paths": "5.1.4",
-		"vitest": "3.1.2",
-		"vue-tsc": "2.1.10"
+		"vite": "5.4.19"
 	},
 	"type": "module"
 }

@@ -1,4 +1,4 @@
-import { DSDefaultProps } from '../../types/component.type';
+import { DSDefaultProps } from '../../types';
 export interface DSFrameProps extends DSDefaultProps {
     title?: string;
     children: React.ReactNode;

@@ -1,5 +1,5 @@
 import type { MouseEvent } from "react"
-import type { DSDefaultProps } from "../../types/component.type"
+import type { DSDefaultProps } from "../../types"
 
 export interface DSButtonArrowProps extends DSDefaultProps {
 	ariaLabel: string

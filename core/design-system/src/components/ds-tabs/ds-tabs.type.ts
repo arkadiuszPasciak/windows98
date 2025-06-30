@@ -1,4 +1,5 @@
 import type { ComponentType } from "react"
+import type { DSDefaultProps } from "../../types"
 
 export interface DSTabsTab {
 	title: string
@@ -6,7 +7,7 @@ export interface DSTabsTab {
 	id: string
 }
 
-export interface DSTabsProps {
+export interface DSTabsProps extends DSDefaultProps {
 	id: string
 	tabs: Array<DSTabsTab>
 }

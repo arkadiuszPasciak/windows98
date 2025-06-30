@@ -3,6 +3,7 @@ import styles from "./ds-button.module.scss"
 import type { DSButtonProps } from "./ds-button.type"
 
 export const DSButton = ({
+	className = "",
 	size = "medium",
 	disabled = false,
 	onClick,
@@ -15,7 +16,7 @@ export const DSButton = ({
 	return (
 		<button
 			aria-label={!isTextVisible ? text : undefined}
-			className={`${styles["ds-button"]} ${styles[`size-${size}`]}`}
+			className={`${styles["ds-button"]} ${styles[`size-${size}`]} ${className}`}
 			data-testid={`${id}-button`}
 			type="button"
 			disabled={disabled}

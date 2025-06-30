@@ -11,5 +11,9 @@ export function useMenu() {
 		setIsOpenMenu(!isOpenMenu)
 	}
 
-	return { items, isOpenMenu, toggleMenu }
+	const closeMenu = () => {
+		setIsOpenMenu(false)
+	}
+
+	return { items, isOpenMenu, toggleMenu, closeMenu }
 }

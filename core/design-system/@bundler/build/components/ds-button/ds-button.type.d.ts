@@ -1,4 +1,5 @@
-export type DSButtonProps = {
+import { DSDefaultProps } from '../../types';
+export interface DSButtonProps extends DSDefaultProps {
     size?: "small" | "medium";
     disabled?: boolean;
     id: string;
@@ -7,4 +8,4 @@ export type DSButtonProps = {
     isTextVisible?: boolean;
     iconLeft?: React.ReactNode;
     iconRight?: React.ReactNode;
-};
+}
