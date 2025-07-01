@@ -25,11 +25,16 @@ pnpm-lock.yaml
 .temp
 .cache
 
-#Playwright
+# Playwright
 node_modules/
 test-results/
 playwright-report/
 blob-report/
 playwright/.cache/
 
+# Storybook
 *storybook.log
+
+# Panda
+styled-system
+styled-system-studio
