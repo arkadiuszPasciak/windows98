@@ -10,10 +10,11 @@ export default defineConfig({
 			width: "100%",
 		},
 	},
-	include: ["./src/components/**/*.styles.ts"],
+	include: ["src/components/**/*.style.ts"],
 	minify: true,
 	outdir: "@bundler/src/styled-system",
 	preflight: true,
+	presets: [],
 	shorthands: false,
 	strictPropertyValues: true,
 	strictTokens: true,
@@ -83,8 +84,8 @@ export default defineConfig({
 					white100: { value: "#ffffff" },
 				},
 				fonts: {
-					msSansSerifBold: { value: "'MSSansSerifBold', sans-serif" },
-					msSansSerifMedium: { value: "'MSSansSerifMedium', sans-serif" },
+					sansSerifBold: { value: "'MSSansSerifBold', sans-serif" },
+					sansSerifMedium: { value: "'MSSansSerifMedium', sans-serif" },
 				},
 				borders: {
 					fieldInner: {
@@ -159,10 +160,6 @@ export default defineConfig({
 					sunken: {
 						value: "{borders.sunkenOuterDark}, {borders.sunkenInnerDark}",
 					},
-				},
-				fonts: {
-					sansSerifBold: { value: "{fonts.msSansSerifBold}" },
-					sansSerifMedium: { value: "{fonts.msSansSerifMedium}" },
 				},
 			},
 		},

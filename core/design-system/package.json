@@ -27,7 +27,7 @@
 		"dev": "vite @bundler",
 		"build": "pnpm run build:components && pnpm run build:styles",
 		"build:components": "vite build @bundler",
-		"build:styles": "panda codegen --config ./@bundler/src/panda.config.ts",
+		"build:styles": "panda codegen --config ./@bundler/panda.config.ts",
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
 		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
