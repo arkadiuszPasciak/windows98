@@ -1,11 +1,11 @@
-import styles from "./ds-text.module.scss"
+import { textStyleWrapper } from "./ds-text.style"
 import type { DSTextProps } from "./ds-text.type"
 
-export function DSText({ className = "", id, text }: DSTextProps) {
+export function DSText({ styles, id, text }: DSTextProps) {
 	return (
 		<p
-			className={`${styles.DSText} ${className}`}
-			data-testid={`ds-text-${id}`}
+			className={textStyleWrapper(styles)}
+			data-testid={`${id}-text`}
 		>
 			{text}
 		</p>
