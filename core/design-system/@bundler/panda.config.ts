@@ -1,24 +1,10 @@
 import { defineConfig } from "@pandacss/dev"
 
 export default defineConfig({
-	globalCss: {
-		"html, body": {
-			appearance: "none",
-			margin: 0,
-			overflowX: "hidden",
-			padding: 0,
-			width: "100%",
-		},
+	conditions: {
+		light: "[theme=light] &",
+		dark: "[theme=dark] &",
 	},
-	include: ["src/components/**/*.style.ts"],
-	minify: true,
-	outdir: "@bundler/src/styled-system",
-	preflight: true,
-	presets: [],
-	shorthands: false,
-	strictPropertyValues: true,
-	strictTokens: true,
-	syntax: "object-literal",
 	theme: {
 		extend: {
 			containerSizes: {
@@ -136,85 +122,129 @@ export default defineConfig({
 			},
 			semanticTokens: {
 				colors: {
-					borderPrimary: { value: "{colors.grey300}" },
-					borderSecondary: { value: "{colors.grey400}" },
+					background: {
+						value: {
+							_light: "{colors.grey800}",
+							_dark: "{colors.grey100}",
+						},
+					},
+					backgroundWhite: {
+						value: {
+							_dark: "{colors.grey100}",
+							_light: "{colors.grey100}", // fallback to dark value
+						},
+					},
+					backgroundModalHeader: {
+						value: {
+							_light:
+								"linear-gradient(90deg, {colors.blue200}, {colors.blue300})",
+							_dark:
+								"linear-gradient(90deg, {colors.blue600}, {colors.blue500})",
+						},
+					},
+					backgroundPulpit: {
+						value: {
+							_light: "{colors.blue400}",
+							_dark: "{colors.black100}",
+						},
+					},
+					borderPrimary: {
+						value: {
+							_light: "{colors.grey300}",
+							_dark: "{colors.grey300}", // fallback to light value
+						},
+					},
+					borderSecondary: {
+						value: {
+							_light: "{colors.grey400}",
+							_dark: "{colors.grey400}", // fallback to light value
+						},
+					},
+					text: {
+						value: {
+							_light: "{colors.black300}",
+							_dark: "{colors.grey500}",
+						},
+					},
+					borderNavigation: {
+						value: {
+							_light: "{colors.white100}",
+							_dark: "{colors.grey300}",
+						},
+					},
 				},
 				borders: {
 					field: {
-						value:
-							"inset -1px -1px {colors.grey300}, inset 1px 1px {colors.black100}, inset -2px -2px {colors.grey300}, inset 2px 2px {colors.black100}",
+						value: {
+							_light:
+								"inset -1px -1px {colors.grey300}, inset 1px 1px {colors.black100}, inset -2px -2px {colors.grey300}, inset 2px 2px {colors.black100}",
+							_dark: "{borders.fieldInnerDark}, {borders.fieldOuterDark}",
+						},
 					},
 					raised: {
-						value:
-							"inset -1px -1px {colors.black200}, inset 1px 1px {colors.grey500}, inset -2px -2px {colors.black100}, inset 2px 2px {colors.grey200}",
+						value: {
+							_light:
+								"inset -1px -1px {colors.black200}, inset 1px 1px {colors.grey500}, inset -2px -2px {colors.black100}, inset 2px 2px {colors.grey200}",
+							_dark:
+								"inset -1px -1px {colors.black200}, inset 1px 1px {colors.grey500}, inset -2px -2px {colors.black100}, inset 2px 2px {colors.grey200}", // fallback to light value
+						},
 					},
 					sunken: {
-						value:
-							"inset -1px -1px {colors.grey500}, inset 1px 1px {colors.black100}, inset -2px -2px {colors.grey500}, inset 2px 2px {colors.black100}",
+						value: {
+							_light:
+								"inset -1px -1px {colors.grey500}, inset 1px 1px {colors.black100}, inset -2px -2px {colors.grey500}, inset 2px 2px {colors.black100}",
+							_dark:
+								"inset -1px -1px {colors.grey500}, inset 1px 1px {colors.black100}, inset -2px -2px {colors.grey500}, inset 2px 2px {colors.black100}", // fallback to light value
+						},
 					},
 				},
 				shadows: {
 					raised: {
-						value: "{borders.raisedOuterDark}, {borders.raisedInnerDark}",
+						value: {
+							_light: "{borders.raisedOuterDark}, {borders.raisedInnerDark}",
+							_dark: "{borders.raisedOuterDark}, {borders.raisedInnerDark}",
+						},
 					},
 					sunken: {
-						value: "{borders.sunkenOuterDark}, {borders.sunkenInnerDark}",
+						value: {
+							_light: "{borders.sunkenOuterDark}, {borders.sunkenInnerDark}",
+							_dark: "{borders.sunkenOuterDark}, {borders.sunkenInnerDark}",
+						},
 					},
 				},
 			},
 		},
 	},
-	themes: {
-		light: {
-			semanticTokens: {
-				colors: {
-					background: { value: "{colors.grey800}" },
-					backgroundModalHeader: {
-						value: "linear-gradient(90deg, {colors.blue200}, {colors.blue300})",
-					},
-					backgroundPulpit: { value: "{colors.blue400}" },
-					text: { value: "{colors.black300}" },
-					borderNavigation: { value: "{colors.white100}" },
-					borderFramePrimary: { value: "rgba(255,255,255,0.7)" },
-					borderFrameSecondary: { value: "{colors.grey400}" },
-				},
-				borders: {
-					field: { value: "{borders.fieldInner}, {borders.fieldOuter}" },
-				},
-				shadows: {
-					raised: { value: "{borders.raisedOuter}, {borders.raisedInner}" },
-					sunken: { value: "{borders.sunkenOuter}, {borders.sunkenInner}" },
-				},
-			},
-		},
-		dark: {
-			semanticTokens: {
-				colors: {
-					background: { value: "{colors.grey100}" },
-					backgroundWhite: { value: "{colors.grey100}" },
-					backgroundModalHeader: {
-						value: "linear-gradient(90deg, {colors.blue600}, {colors.blue500})",
-					},
-					backgroundPulpit: { value: "{colors.black100}" },
-					text: { value: "{colors.grey500}" },
-					borderNavigation: { value: "{colors.grey300}" },
-					borderFramePrimary: { value: "transparent" },
-					borderFrameSecondary: { value: "{colors.grey400}" },
-				},
-				borders: {
-					field: {
-						value: "{borders.fieldInnerDark}, {borders.fieldOuterDark}",
-					},
-				},
-				shadows: {
-					raised: {
-						value: "{borders.raisedOuterDark}, {borders.raisedInnerDark}",
-					},
-					sunken: {
-						value: "{borders.sunkenOuterDark}, {borders.sunkenInnerDark}",
-					},
-				},
-			},
+	globalCss: {
+		"html, body": {
+			appearance: "none",
+			margin: 0,
+			overflowX: "hidden",
+			padding: 0,
+			width: "100%",
 		},
 	},
+	globalFontface: {
+		MSSansSerifBold: {
+			src: 'url(/fonts/MSSansSerifBold.woff2) format("woff2")',
+			fontWeight: 800,
+			fontStyle: "normal",
+			fontDisplay: "swap",
+		},
+		MSSansSerifMedium: {
+			src: 'url(/fonts/MSSansSerifMedium.woff2) format("woff2")',
+			fontWeight: 400,
+			fontStyle: "normal",
+			fontDisplay: "swap",
+		},
+	},
+	include: ["src/components/**/*.style.ts"],
+	minify: true,
+	outdir: "@bundler/src/styled-system",
+	preflight: true,
+	presets: [],
+	shorthands: false,
+	strictPropertyValues: true,
+	strictTokens: true,
+	syntax: "object-literal",
 })
