@@ -1,6 +1,6 @@
 import { DSInput } from "../../index"
 import { DSButtonArrow } from "../../index"
-import styles from "./ds-stepper.module.scss"
+import styles from "./ds-stepper.module.css"
 import type { DSStepperProps } from "./ds-stepper.type"
 import { useDSStepper } from "./use-ds-stepper.hook"
 

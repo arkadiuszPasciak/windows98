@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react"
 import { DSHeading } from "../../ds-heading"
 import { ModalCloseButton } from "../modal-close-button"
-import styles from "./modal-header.module.scss"
+import styles from "./modal-header.module.css"
 import type { ModalHeaderProps } from "./modal-header.type"
 
 export const ModalHeader: FunctionComponent<ModalHeaderProps> = ({

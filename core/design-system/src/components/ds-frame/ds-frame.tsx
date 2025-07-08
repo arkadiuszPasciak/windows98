@@ -1,5 +1,5 @@
 import { DSText } from "../../index"
-import styles from "./ds-frame.module.scss"
+import styles from "./ds-frame.module.css"
 import type { DSFrameProps } from "./ds-frame.type"
 
 export function DSFrame({ children, className = "", id, title }: DSFrameProps) {

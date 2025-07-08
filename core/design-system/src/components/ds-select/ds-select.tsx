@@ -1,5 +1,5 @@
 import { DSIconSelectButton } from "../ds-icon/ds-icon-select-button.svg"
-import styles from "./ds-select.module.scss"
+import styles from "./ds-select.module.css"
 import type { DSSelectProps } from "./ds-select.type"
 import useDSSelect from "./use-ds-select.hook"
 

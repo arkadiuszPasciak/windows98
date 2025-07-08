@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import styles from "./modal-tabs.module.scss"
+import styles from "./modal-tabs.module.css"
 import type { DSModalTabsProps } from "./modal-tabs.type"
 import { useDSTabs } from "./use-modal-tabs.hook"
 

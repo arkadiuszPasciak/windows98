@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./ds-button.module.scss"
+import styles from "./ds-button.module.css"
 import type { DSButtonProps } from "./ds-button.type"
 
 export const DSButton = ({

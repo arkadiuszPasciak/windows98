@@ -4,18 +4,15 @@
 	height: 100%;
 	width: 100%;
 }
-
 .modal::backdrop {
 	background-color: transparent;
 }
-
 .move-window {
 	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
 .container {
 	position: relative;
 	top: 50%;
@@ -29,7 +26,6 @@
 	background-color: var(--background-color);
 	box-shadow: var(--box-shadow-raised);
 }
-
 .resize-window {
 	resize: both;
 	overflow: auto;

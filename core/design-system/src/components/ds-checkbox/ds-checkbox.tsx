@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react"
 import { DSIconCheckboxSVG, DSText } from "../../index"
-import styles from "./ds-checkbox.module.scss"
+import styles from "./ds-checkbox.module.css"
 import type { DSCheckboxProps } from "./ds-checkbox.type"
 import { useDSCheckbox } from "./use-ds-checkbox.hook"
 

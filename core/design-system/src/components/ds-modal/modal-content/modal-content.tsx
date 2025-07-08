@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import styles from "./modal-content.module.scss"
+import styles from "./modal-content.module.css"
 import type { ModalContentProps } from "./modal-content.type"
 
 export const ModalContent: FunctionComponent<ModalContentProps> = ({

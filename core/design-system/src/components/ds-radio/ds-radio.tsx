@@ -1,6 +1,6 @@
 import { DSText } from "../../index"
 import { DSIconRadioSVG } from "../ds-icon/ds-icon-radio.svg"
-import styles from "./ds-radio.module.scss"
+import styles from "./ds-radio.module.css"
 import type { DSRadioProps } from "./ds-radio.type"
 import { useDSRadio } from "./use-ds-radio.hook"
 

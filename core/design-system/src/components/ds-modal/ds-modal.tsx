@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import styles from "./ds-modal.module.scss"
+import styles from "./ds-modal.module.css"
 import type { DSModalProps } from "./ds-modal.type"
 import { ModalContent } from "./modal-content"
 import { ModalHeader } from "./modal-header"

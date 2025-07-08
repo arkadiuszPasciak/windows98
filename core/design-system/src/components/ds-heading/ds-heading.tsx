@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import styles from "./ds-heading.module.scss"
+import styles from "./ds-heading.module.css"
 import type { DSHeadingProps } from "./ds-heading.type"
 
 export const DSHeading: FunctionComponent<DSHeadingProps> = ({

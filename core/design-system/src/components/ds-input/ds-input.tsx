@@ -1,4 +1,4 @@
-import styles from "./ds-input.module.scss"
+import styles from "./ds-input.module.css"
 import type { DSInputProps } from "./ds-input.type"
 import { useDSInput } from "./use-ds-input.hook"
 

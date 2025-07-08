@@ -1,0 +1,32 @@
+.wrapper {
+	height: calc(100% - 28px);
+	margin: 5px;
+}
+.tab {
+	font-family: var(--ds-font-sans-serif-medium);
+	font-size: var(--ds-font-size-xs);
+	font-weight: var(--ds-font-weight-regular);
+	line-height: var(--ds-line-height-normal);
+	padding: 5px;
+}
+.active-tab {
+	position: relative;
+	z-index: 3;
+}
+.content {
+	position: relative;
+	z-index: 2;
+	top: -2px;
+	height: 100%;
+}
+.tab,
+.content {
+	box-shadow: var(--box-shadow-raised);
+	color: var(--text-color);
+}
+.content-tab {
+	display: none;
+}
+.active-content-tab {
+	display: block;
+}

@@ -1,4 +1,4 @@
-import styles from "./ds-button-arrow.module.scss"
+import styles from "./ds-button-arrow.module.css"
 import type { DSButtonArrowProps } from "./ds-button-arrow.type"
 
 export function DSButtonArrow({

@@ -1,4 +1,4 @@
-import styles from "./ds-textarea.module.scss"
+import styles from "./ds-textarea.module.css"
 import type { DSTextareaProps } from "./ds-textarea.type"
 import { useDSTextarea } from "./use-ds-textarea.hook"
 

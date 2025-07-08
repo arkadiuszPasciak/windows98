@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import styles from "./modal-navigation.module.scss"
+import styles from "./modal-navigation.module.css"
 import type { ModalNavigationProps } from "./modal-navigation.type"
 
 export const ModalNavigation: FunctionComponent<ModalNavigationProps> = ({

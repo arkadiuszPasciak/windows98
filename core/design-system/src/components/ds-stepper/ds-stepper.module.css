@@ -1,0 +1,18 @@
+.ds-stepper {
+	display: grid;
+	grid-template-columns: 50px 20px;
+	grid-template-rows: repeat(2, 10px);
+}
+.ds-stepper > :nth-child(1) {
+	grid-area: 1 / 1 / 3 / 2;
+}
+.ds-stepper > :nth-child(2) {
+	grid-area: 1 / 2 / 2 / 3;
+}
+.ds-stepper > :nth-child(3) {
+	grid-area: 2 / 2 / 3 / 3;
+}
+.state-disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}

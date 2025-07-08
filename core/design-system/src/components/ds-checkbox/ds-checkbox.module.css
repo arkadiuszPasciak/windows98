@@ -1,0 +1,28 @@
+.wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	column-gap: 6px;
+}
+.wrapper:hover {
+	cursor: pointer;
+}
+.disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+.input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	background-color: transparent;
+}
+.input[disabled] {
+	pointer-events: none;
+}
+.icon {
+	width: 12px;
+	height: 12px;
+	display: flex;
+	align-items: center;
+}

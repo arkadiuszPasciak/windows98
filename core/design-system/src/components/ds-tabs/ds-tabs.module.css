@@ -1,14 +1,18 @@
 .wrapper {
 	height: calc(100% - 28px);
 	margin: 5px;
+	background-color: var(--background-color);
 }
 
 .tab {
 	padding: 5px;
-	@include font('medium', 10, 10);
+	font-family: var(--ds-font-sans-serif-medium);
+	font-size: var(--ds-font-size-xs);
+	font-weight: var(--ds-font-weight-regular);
+	line-height: var(--ds-line-height-normal);
 }
 
-.active-tab {
+.tab-active {
 	position: relative;
 	z-index: 3;
 }
@@ -18,6 +22,7 @@
 	z-index: 2;
 	top: -2px;
 	height: 100%;
+	padding: 5px;
 }
 
 .tab,
@@ -30,6 +35,6 @@
 	display: none;
 }
 
-.active-content-tab {
+.content-tab-active {
 	display: block;
 }

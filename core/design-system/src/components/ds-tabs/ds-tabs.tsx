@@ -1,5 +1,5 @@
 import { type FunctionComponent, createElement } from "react"
-import styles from "./ds-tabs.module.scss"
+import styles from "./ds-tabs.module.css"
 import type { DSTabsProps } from "./ds-tabs.type"
 import { useDSTabs } from "./use-ds-tabs.hook"
 
