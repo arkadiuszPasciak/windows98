@@ -21,7 +21,7 @@ test.describe("DSTest", () => {
 		await expect(component).toHaveText(defaultText.text)
 		await expect(component).toHaveAttribute(
 			"data-testid",
-			`ds-text-${defaultText.id}`,
+			`${defaultText.id}-text`,
 		)
 	})
 })
