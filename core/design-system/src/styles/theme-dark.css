@@ -1,15 +1,15 @@
 @layer theme-dark {
 	:root[theme="dark"] {
-		--ds-background-primary: var(--ds-color-grey100);
-		--ds-background-secondary: var(--ds-color-grey100);
-		--ds-background-modal-header: linear-gradient(
+		--ds-background-color-primary: var(--ds-color-grey100);
+		--ds-background-color-secondary: var(--ds-color-grey100);
+		--ds-background-color-modal-header: linear-gradient(
 			90deg,
 			var(--ds-color-blue600),
 			var(--ds-color-blue500)
 		);
-		--ds-background-pulpit: var(--ds-color-black100);
+		--ds-background-color-pulpit: var(--ds-color-black100);
 
-		--ds-text-primary: var(--ds-color-grey500);
+		--ds-text-color-primary: var(--ds-color-grey500);
 
 		--ds-border-primary: var(--ds-color-grey300);
 		--ds-border-secondary: var(--ds-color-grey400);
