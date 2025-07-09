@@ -1,15 +1,15 @@
 export function getClassNames(
 	className: Array<string>,
-	additionalClassName?: string,
+	optionalClassName?: string,
 ): string {
 	const emptySpace = " "
 	let classNames = className.join(emptySpace)
 
-	if (additionalClassName) {
+	if (optionalClassName) {
 		if (classNames) {
-			classNames = classNames + emptySpace + additionalClassName
+			classNames = classNames + emptySpace + optionalClassName
 		} else {
-			classNames = additionalClassName
+			classNames = optionalClassName
 		}
 	}
 
