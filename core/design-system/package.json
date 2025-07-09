@@ -20,15 +20,17 @@
 		"./base.config.css": "./src/styles/configs/base.config.css",
 		"./index.config.scss": "./src/styles/configs/index.config.scss",
 		"./reset.config.css": "./src/styles/configs/reset.config.css",
-		"./variables.config.css": "./@bundler/build/styles/variables.config.css"
+		"./variables.config.css": "./@bundler/build/styles/variables.config.css",
+		"./index.css": "./@bundler/build/styles/index.css"
 	},
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite @bundler",
 		"build": "pnpm run build:components && pnpm run build:styles",
 		"build:components": "vite build @bundler",
-		"build:styles": "pnpm run build:styles:variables",
+		"build:styles": "pnpm run build:styles:variables && pnpm run build:styles:index",
 		"build:styles:variables": "sass ./src/styles/configs/variables.config.scss ./@bundler/build/styles/variables.config.css --style=compressed",
+		"build:styles:index": "lightningcss --minify --bundle --targets \">= 0.25%\" ./src/styles/index.css -o ./@bundler/build/styles/index.css",
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
 		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
@@ -54,6 +56,7 @@
 		"@vitejs/plugin-react": "4.2.1",
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
+		"lightningcss-cli": "1.30.1",
 		"lint-staged": "15.2.11",
 		"sass": "1.83.0",
 		"stylelint": "16.2.1",
