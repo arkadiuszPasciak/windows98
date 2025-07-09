@@ -1,0 +1,38 @@
+@layer theme-dark {
+	:root[theme="dark"] {
+		--ds-background-primary: var(--ds-color-grey100);
+		--ds-background-secondary: var(--ds-color-grey100);
+		--ds-background-modal-header: linear-gradient(
+			90deg,
+			var(--ds-color-blue600),
+			var(--ds-color-blue500)
+		);
+		--ds-background-pulpit: var(--ds-color-black100);
+
+		--ds-text-primary: var(--ds-color-grey500);
+
+		--ds-border-primary: var(--ds-color-grey300);
+		--ds-border-secondary: var(--ds-color-grey400);
+		--ds-border-navigation: var(--ds-color-grey300);
+
+		--ds-border-field: var(--ds-border-field-inner-dark),
+			var(--ds-border-field-outer-dark);
+		--ds-border-raised:
+			inset -1px -1px var(--ds-color-black200), inset 1px 1px var(
+				--ds-color-grey500
+			), inset -2px -2px var(--ds-color-black100), inset 2px 2px var(
+				--ds-color-grey200
+			);
+		--ds-border-sunken:
+			inset -1px -1px var(--ds-color-grey500), inset 1px 1px var(
+				--ds-color-black100
+			), inset -2px -2px var(--ds-color-grey500), inset 2px 2px var(
+				--ds-color-black100
+			);
+
+		--ds-shadow-raised: var(--ds-border-raised-outer-dark),
+			var(--ds-border-raised-inner-dark);
+		--ds-shadow-sunken: var(--ds-border-sunken-outer-dark),
+			var(--ds-border-sunken-inner-dark);
+	}
+}

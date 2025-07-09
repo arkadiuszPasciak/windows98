@@ -1,0 +1,9 @@
+@layer base {
+	body {
+		font-size: 17px;
+		width: 100%;
+		overflow-x: hidden;
+		margin: 0;
+		padding: 0;
+	}
+}

@@ -1,0 +1,30 @@
+@layer theme-light {
+	:root[theme="light"] {
+		--ds-background-primary: var(--ds-color-grey800);
+		--ds-background-secondary: var(--ds-color-grey100);
+		--ds-background-modal-header: linear-gradient(
+			90deg,
+			var(--ds-color-blue200),
+			var(--ds-color-blue300)
+		);
+		--ds-background-pulpit: var(--ds-color-blue400);
+
+		--ds-text-primary: var(--ds-color-black300);
+
+		--ds-border-primary: var(--ds-color-grey300);
+		--ds-border-secondary: var(--ds-color-grey400);
+		--ds-border-navigation: var(--ds-color-white100);
+
+		--ds-border-field: var(--ds-border-field-inner),
+			var(--ds-border-field-outer);
+		--ds-border-raised: var(--ds-border-raised-inner),
+			var(--ds-border-raised-outer);
+		--ds-border-sunken: var(--ds-border-sunken-inner),
+			var(--ds-border-sunken-outer);
+
+		--ds-shadow-raised: var(--ds-border-raised-outer),
+			var(--ds-border-raised-inner);
+		--ds-shadow-sunken: var(--ds-border-sunken-outer),
+			var(--ds-border-sunken-inner);
+	}
+}
