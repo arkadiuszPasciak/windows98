@@ -1,17 +1,10 @@
-export function getClassNames(
-	className: Array<string>,
-	optionalClassName?: string,
-): string {
+export function getClassNames(classNames: Array<string>): string {
 	const emptySpace = " "
-	let classNames = className.join(emptySpace)
+	const filteredClassNames = classNames.filter(
+		(className) => className && className.trim() !== "",
+	)
 
-	if (optionalClassName) {
-		if (classNames) {
-			classNames = classNames + emptySpace + optionalClassName
-		} else {
-			classNames = optionalClassName
-		}
-	}
+	const preparedClassNames = filteredClassNames.join(emptySpace)
 
-	return classNames
+	return preparedClassNames
 }
