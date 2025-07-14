@@ -5,7 +5,7 @@ import type { DSTextProps } from "./ds-text.type"
 export function DSText({ className = "", id, text }: DSTextProps) {
 	return (
 		<p
-			className={getClassNames([styles.button], className)}
+			className={getClassNames([styles.text, className])}
 			data-testid={`${id}-text`}
 		>
 			{text}
