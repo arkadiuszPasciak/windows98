@@ -1,4 +1,5 @@
-import styles from "./ds-button-arrow.module.scss"
+import { getClassNames } from "@windows98/toolkit"
+import styles from "./ds-button-arrow.module.css"
 import type { DSButtonArrowProps } from "./ds-button-arrow.type"
 
 export function DSButtonArrow({
@@ -13,12 +14,12 @@ export function DSButtonArrow({
 	return (
 		<button
 			aria-label={ariaLabel}
-			className={`
-				${styles["ds-button-arrow"]}
-				${styles[`arrow-${direction}`]}
-				${styles[`size-${size}`]}
-				${className}
-			`}
+			className={getClassNames([
+				styles["ds-button-arrow"],
+				styles[`arrow-${direction}`],
+				styles[`size-${size}`],
+				className,
+			])}
 			data-testid={`ds-button-arrow-${id}-${direction}`}
 			disabled={disabled}
 			type="button"
