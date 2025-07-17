@@ -1,0 +1,7 @@
+.ds-heading {
+	font-family: var(--ds-font-sans-serif-medium);
+	font-size: var(--ds-font-size-xs);
+	font-weight: var(--ds-font-weight-regular);
+	line-height: var(--ds-line-height-tight);
+	color: var(--ds-text-color-primary);
+}
