@@ -1,0 +1,16 @@
+.frame {
+	background-color: var(--ds-background-color-primary);
+	position: relative;
+	border: 1px solid var(--ds-border-color-primary);
+	outline: 1px solid var(--ds-border-color-secondary);
+	padding: var(--ds-spacing-md) var(--ds-spacing-sm);
+	margin: var(--ds-spacing-md) var(--ds-spacing-sm);
+}
+
+.title {
+	position: absolute;
+	top: -7px;
+	left: 7px;
+	background-color: var(--ds-background-color-primary);
+	padding: var(--ds-spacing-0) var(--ds-spacing-xs);
+}

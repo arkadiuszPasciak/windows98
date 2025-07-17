@@ -1,18 +1,21 @@
+import { getClassNames } from "@windows98/toolkit"
 import { DSText } from "../../index"
-import styles from "./ds-frame.module.scss"
+import styles from "./ds-frame.module.css"
 import type { DSFrameProps } from "./ds-frame.type"
 
 export function DSFrame({ children, className = "", id, title }: DSFrameProps) {
+	const idName = `${id}-frame`
+
 	return (
 		<div
-			className={`${styles.frame} ${className}`}
-			data-testid={`ds-frame-${id}`}
+			className={getClassNames([styles.frame, className])}
+			data-testid={idName}
 		>
 			{title && (
 				<DSText
-					className={styles.title}
+					className={getClassNames([styles.title])}
 					text={title}
-					id={`frame-${id}`}
+					id={idName}
 				/>
 			)}
 			{children}
