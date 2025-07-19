@@ -6,17 +6,15 @@
 	& > :nth-child(1) {
 		grid-area: 1 / 1 / 3 / 2;
 	}
-
 	& > :nth-child(2) {
 		grid-area: 1 / 2 / 2 / 3;
 	}
-
 	& > :nth-child(3) {
 		grid-area: 2 / 2 / 3 / 3;
 	}
-}
 
-.state-disabled {
-	opacity: 0.5;
-	pointer-events: none;
+	&[data-state="disabled"] {
+		opacity: var(--ds-opacity-not-allowed);
+		pointer-events: none;
+	}
 }
