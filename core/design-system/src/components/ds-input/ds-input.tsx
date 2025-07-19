@@ -1,4 +1,5 @@
-import styles from "./ds-input.module.scss"
+import { getClassNames } from "@windows98/toolkit"
+import styles from "./ds-input.module.css"
 import type { DSInputProps } from "./ds-input.type"
 import { useDSInput } from "./use-ds-input.hook"
 
@@ -18,16 +19,18 @@ export function DSInput({
 	const { value, handleInputChange } = useDSInput({ initialValue, onChange })
 
 	const mainID = `ds-input-${id}`
+	const state = disabled ? "disabled" : "active"
 
 	return (
 		<div
-			className={`${styles.wrapper} ${styles[`wrapper-${wrapperLayout}`]} ${className}`}
+			className={getClassNames([styles.wrapper, className])}
 			data-testid={mainID}
+			data-wrapper={wrapperLayout}
+			data-state={state}
 		>
 			{labelName && (
 				<label
-					className={styles.label}
-					data-testid={`ds-input-label-${id}`}
+					data-testid={`${mainID}-label`}
 					htmlFor={mainID}
 				>
 					{labelName}
@@ -36,8 +39,7 @@ export function DSInput({
 
 			<input
 				id={mainID}
-				className={styles.input}
-				data-testid={`ds-input-input-${id}`}
+				data-testid={`${mainID}-input`}
 				type={type}
 				disabled={disabled}
 				readOnly={readonly}
