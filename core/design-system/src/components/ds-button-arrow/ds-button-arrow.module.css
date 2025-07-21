@@ -4,7 +4,7 @@
 	align-items: center;
 	background-color: var(--ds-background-color-primary);
 	color: var(--ds-text-color-primary);
-	box-shadow: var(--ds-shadow-raised);
+	box-shadow: var(--ds-border-raised);
 	padding: var(--ds-spacing-2xs);
 
 	&:hover {

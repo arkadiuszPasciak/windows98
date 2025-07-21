@@ -10,7 +10,7 @@
 	border-radius: var(--ds-border-radius-none);
 	background-color: var(--ds-background-color-primary);
 	color: var(--ds-text-color-primary);
-	box-shadow: var(--ds-shadow-raised);
+	box-shadow: var(--ds-border-raised);
 
 	&:hover {
 		cursor: pointer;
@@ -22,7 +22,7 @@
 	}
 
 	&:not(:disabled):active {
-		box-shadow: var(--ds-shadow-sunken);
+		box-shadow: var(--ds-border-sunken);
 	}
 }
 
