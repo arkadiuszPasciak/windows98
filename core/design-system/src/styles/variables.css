@@ -31,13 +31,15 @@
 		--ds-spacing-auto: auto;
 		--ds-spacing-0: 0;
 		--ds-spacing-2xs: 0.0625rem;
-		--ds-spacing-xs: 0.125rem;
-		--ds-spacing-ms: 0.3125rem;
+		--ds-spacing-xs: 0.150rem;
+		--ds-spacing-sm: 0.3125rem;
 		--ds-spacing-md: 0.625rem;
 		--ds-spacing-lg: 0.75rem;
 		--ds-spacing-xl: 0.9375rem;
 		--ds-spacing-2xl: 1.25rem;
 		--ds-spacing-3xl: 1.5625rem;
+
+		--ds-opacity-not-allowed: 0.5;
 
 		--ds-color-black100: #000000;
 		--ds-color-black200: #0a0a0a;
@@ -62,26 +64,5 @@
 
 		--ds-font-sans-serif-bold: "MSSansSerifBold", sans-serif;
 		--ds-font-sans-serif-medium: "MSSansSerifMedium", sans-serif;
-
-		--ds-border-field-inner: inset -1px -1px #ffffff, inset 1px 1px #808080;
-		--ds-border-field-outer: inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
-		--ds-border-raised-inner: inset -2px -2px #808080, inset 2px 2px #dfdfdf;
-		--ds-border-raised-outer: inset -1px -1px #0a0a0a, inset 1px 1px #ffffff;
-		--ds-border-sunken-inner: inset -2px -2px #dfdfdf, inset 2px 2px #808080;
-		--ds-border-sunken-outer: inset -1px -1px #ffffff, inset 1px 1px #0a0a0a;
-		--ds-border-range-inner: 1px 0 0 #ffffff, 1px 1px 0 #ffffff, 0 1px 0 #ffffff,
-			-1px 0 0 #c0c0c0;
-		--ds-border-range-outer: -1px -1px 0 #c0c0c0, 0 -1px 0 #c0c0c0, -1px 1px 0
-			#ffffff, 1px -1px #c0c0c0;
-		--ds-border-field-outer-dark: inset -2px -2px #8b8b8b, inset 2px 2px #000000;
-		--ds-border-field-inner-dark: inset -1px -1px #8b8b8b, inset 1px 1px #000000;
-		--ds-border-raised-outer-dark: inset -1px -1px #0a0a0a, inset 1px 1px
-			#9b9b9b;
-		--ds-border-raised-inner-dark: inset -2px -2px #000000, inset 2px 2px
-			#808080;
-		--ds-border-sunken-outer-dark: inset -1px -1px #9b9b9b, inset 1px 1px
-			#000000;
-		--ds-border-sunken-inner-dark: inset -2px -2px #9b9b9b, inset 2px 2px
-			#000000;
 	}
 }

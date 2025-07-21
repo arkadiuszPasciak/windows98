@@ -10,29 +10,30 @@
 		--ds-background-color-pulpit: var(--ds-color-black100);
 
 		--ds-text-color-primary: var(--ds-color-grey500);
+		--ds-text-color-secondary: var(--ds-color-grey500);
 
-		--ds-border-primary: var(--ds-color-grey300);
-		--ds-border-secondary: var(--ds-color-grey400);
-		--ds-border-navigation: var(--ds-color-grey300);
+		--ds-border-field-inner: inset -1px -1px var(--ds-color-grey300), inset 1px
+			1px var(--ds-color-black100);
+		--ds-border-field-outer: inset -2px -2px var(--ds-color-grey300), inset 2px
+			2px var(--ds-color-black100);
+		--ds-border-raised-inner: inset -1px -1px var(--ds-color-black200), inset
+			1px 1px var(--ds-color-grey500);
+		--ds-border-raised-outer: inset -2px -2px var(--ds-color-black100), inset
+			2px 2px var(--ds-color-grey200);
+		--ds-border-sunken-inner: inset -1px -1px var(--ds-color-grey500), inset 1px
+			1px var(--ds-color-black100);
+		--ds-border-sunken-outer: inset -2px -2px var(--ds-color-grey500), inset 2px
+			2px var(--ds-color-black100);
 
-		--ds-border-field: var(--ds-border-field-inner-dark),
-			var(--ds-border-field-outer-dark);
-		--ds-border-raised:
-			inset -1px -1px var(--ds-color-black200), inset 1px 1px var(
-				--ds-color-grey500
-			), inset -2px -2px var(--ds-color-black100), inset 2px 2px var(
-				--ds-color-grey200
-			);
-		--ds-border-sunken:
-			inset -1px -1px var(--ds-color-grey500), inset 1px 1px var(
-				--ds-color-black100
-			), inset -2px -2px var(--ds-color-grey500), inset 2px 2px var(
-				--ds-color-black100
-			);
+		--ds-border-color-primary: var(--ds-color-grey300);
+		--ds-border-color-secondary: var(--ds-color-grey400);
+		--ds-border-color-navigation: var(--ds-color-grey300);
 
-		--ds-shadow-raised: var(--ds-border-raised-outer-dark),
-			var(--ds-border-raised-inner-dark);
-		--ds-shadow-sunken: var(--ds-border-sunken-outer-dark),
-			var(--ds-border-sunken-inner-dark);
+		--ds-border-field: var(--ds-border-field-inner),
+			var(--ds-border-field-outer);
+		--ds-border-raised: var(--ds-border-raised-inner),
+			var(--ds-border-raised-outer);
+		--ds-border-sunken: var(--ds-border-sunken-inner),
+			var(--ds-border-sunken-outer);
 	}
 }
