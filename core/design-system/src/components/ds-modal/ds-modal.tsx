@@ -1,10 +1,9 @@
+import { getClassNames } from "@windows98/toolkit"
 import type { FunctionComponent } from "react"
-import styles from "./ds-modal.module.scss"
+import styles from "./ds-modal.module.css"
 import type { DSModalProps } from "./ds-modal.type"
 import { ModalContent } from "./modal-content"
 import { ModalHeader } from "./modal-header"
-import { ModalNavigation } from "./modal-navigation/modal-navigation"
-import { ModalTabs } from "./modal-tabs"
 import { useDSModal } from "./use-ds-modal.hook"
 
 export const DSModal: FunctionComponent<DSModalProps> = ({
@@ -15,9 +14,7 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 	height = "150px",
 	resizeWindow = false,
 	moveWindow = true,
-	tabs,
 	children,
-	navigation,
 	onClose,
 }) => {
 	const {
@@ -32,12 +29,13 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 
 	return (
 		<dialog
-			className={`${styles.modal} ${className}`}
+			className={getClassNames([styles.modal, className])}
 			ref={dialogRef}
 			onMouseMove={mouseMove}
 		>
 			<div
-				className={`${styles.container} ${resizeWindow ? styles["resize-window"] : ""} ${moveWindow ? styles["move-window"] : ""}`}
+				className={getClassNames([styles.container])}
+				data-resize-window={resizeWindow}
 				data-testid={`${id}-modal-container`}
 				ref={modalElement}
 				style={{ width, height }}
@@ -50,24 +48,7 @@ export const DSModal: FunctionComponent<DSModalProps> = ({
 					mouseUpEvent={mouseUp}
 					title={title}
 				/>
-				{!tabs && (
-					<>
-						{navigation && (
-							<ModalNavigation
-								id={id}
-								navigation={navigation}
-							/>
-						)}
-						{children && <ModalContent id={id}>{children}</ModalContent>}
-					</>
-				)}
-				{tabs && (
-					<ModalTabs
-						id={id}
-						initialIndex={tabs.initialIndex}
-						tabs={tabs.tabs}
-					/>
-				)}
+				<ModalContent id={id}>{children}</ModalContent>
 			</div>
 		</dialog>
 	)

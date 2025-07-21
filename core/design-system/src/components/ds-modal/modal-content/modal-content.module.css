@@ -1,0 +1,5 @@
+.content {
+	padding: var(--ds-spacing-2xs);
+	width: 100%;
+	height: calc(100% - 40px);
+}
