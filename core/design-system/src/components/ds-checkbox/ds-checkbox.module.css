@@ -1,0 +1,33 @@
+.wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	column-gap: var(--ds-spacing-sm);
+	background-color: var(--ds-background-color-primary);
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:has(input:disabled) {
+		opacity: var(--ds-opacity-not-allowed);
+	}
+}
+
+.input {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	background-color: transparent;
+
+	&[disabled] {
+		pointer-events: none;
+	}
+}
+
+.icon {
+	width: 12px;
+	height: 12px;
+	display: flex;
+	align-items: center;
+}

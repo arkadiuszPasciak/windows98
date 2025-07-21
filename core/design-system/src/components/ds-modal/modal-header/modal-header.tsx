@@ -1,7 +1,8 @@
+import { getClassNames } from "@windows98/toolkit"
 import type { FunctionComponent } from "react"
 import { DSHeading } from "../../ds-heading"
 import { ModalCloseButton } from "../modal-close-button"
-import styles from "./modal-header.module.scss"
+import styles from "./modal-header.module.css"
 import type { ModalHeaderProps } from "./modal-header.type"
 
 export const ModalHeader: FunctionComponent<ModalHeaderProps> = ({
@@ -14,9 +15,9 @@ export const ModalHeader: FunctionComponent<ModalHeaderProps> = ({
 }) => {
 	return (
 		<div
-			className={styles.header}
+			className={getClassNames([styles.header])}
 			data-testid={`${id}-modal-header`}
-			style={{ cursor: cursorType }}
+			data-cursor={cursorType}
 			onMouseDown={mouseDownEvent}
 			onMouseUp={mouseUpEvent}
 		>

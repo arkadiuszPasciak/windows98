@@ -10,22 +10,6 @@ const defaultModal: DSModalProps = {
 	children: <div>Test Content</div>,
 }
 
-const modalWithNavigation: DSModalProps = {
-	...defaultModal,
-	navigation: [{ name: "NavItem1", onClick: () => {} }],
-}
-
-const modalWithTabs: DSModalProps = {
-	...defaultModal,
-	tabs: {
-		initialIndex: 0,
-		tabs: [
-			{ title: "Tab 1", component: <div>Tab 1 Content</div> },
-			{ title: "Tab 2", component: <div>Tab 2 Content</div> },
-		],
-	},
-}
-
 test.use({ viewport: { width: 1000, height: 1000 } })
 
 test.describe("DSModal", () => {
@@ -127,17 +111,6 @@ test.describe("DSModal", () => {
 		await expect(modalElement).toHaveCSS("top", "600px")
 	})
 
-	test("navigation click and check render", async ({ mount }) => {
-		const component = await mount(<DSModal {...modalWithNavigation} />)
-
-		const navButton = await component.getByTestId(
-			`${modalWithNavigation.id}-modal-navigation-button-NavItem1`,
-		)
-
-		await navButton.click()
-		await expect(navButton).toBeVisible()
-	})
-
 	test("check content render", async ({ mount }) => {
 		const component = await mount(<DSModal {...defaultModal} />)
 
@@ -158,30 +131,5 @@ test.describe("DSModal", () => {
 
 		await expect(titleElement).toBeVisible()
 		await expect(titleElement).toHaveText("Test Modal")
-	})
-
-	test("tabs render and change content", async ({ mount }) => {
-		const component = await mount(<DSModal {...modalWithTabs} />)
-
-		const tab1Button = component.getByTestId(
-			`${modalWithTabs.id}-modal-tabs-tab-0`,
-		)
-		const tab2Button = await component.getByTestId(
-			`${modalWithTabs.id}-modal-tabs-tab-1`,
-		)
-		const tab1Content = component.getByTestId(
-			`${modalWithTabs.id}-modal-tabs-content-0`,
-		)
-
-		await expect(tab1Button).toBeVisible()
-		await expect(tab1Content).toBeVisible()
-
-		await tab2Button.click()
-		const tab2Content = component.getByTestId(
-			`${modalWithTabs.id}-modal-tabs-content-1`,
-		)
-
-		await expect(tab2Content).toBeVisible()
-		await expect(tab1Content).toBeHidden()
 	})
 })

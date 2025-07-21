@@ -1,4 +1,5 @@
-import styles from "./ds-textarea.module.scss"
+import { getClassNames } from "@windows98/toolkit"
+import styles from "./ds-textarea.module.css"
 import type { DSTextareaProps } from "./ds-textarea.type"
 import { useDSTextarea } from "./use-ds-textarea.hook"
 
@@ -21,12 +22,12 @@ export function DSTextarea({
 
 	return (
 		<div
-			className={`${styles[`wrapper-${wrapperLayout}`]} ${className}`}
+			className={getClassNames([styles[`wrapper-${wrapperLayout}`], className])}
 			data-testid={`${id}-wrapper-textarea`}
 		>
 			{labelName && (
 				<label
-					className={styles.label}
+					className={getClassNames([styles.label])}
 					data-testid={`${id}-label`}
 					htmlFor={id}
 				>
@@ -36,7 +37,7 @@ export function DSTextarea({
 
 			<textarea
 				id={id}
-				className={styles.textarea}
+				className={getClassNames([styles.textarea])}
 				data-testid={`${id}-textarea`}
 				disabled={disabled}
 				readOnly={readonly}

@@ -1,5 +1,6 @@
+import { getClassNames } from "@windows98/toolkit"
 import { DSIconSelectButton } from "../ds-icon/ds-icon-select-button.svg"
-import styles from "./ds-select.module.scss"
+import styles from "./ds-select.module.css"
 import type { DSSelectProps } from "./ds-select.type"
 import useDSSelect from "./use-ds-select.hook"
 
@@ -23,13 +24,16 @@ export function DSSelect({
 		onSelect(value)
 	}
 
+	const state = disabled ? "disabled" : "enabled"
+
 	return (
 		<div
-			className={`${styles.wrapper} ${styles[`wrapper-${wrapperLayout}`]} ${className}`}
+			className={getClassNames([styles.wrapper, className])}
+			data-state={state}
+			data-wrapper={wrapperLayout}
 		>
 			{labelName && (
 				<label
-					className={styles.label}
 					data-testid={`ds-select-label-${id}`}
 					htmlFor={id}
 				>
@@ -37,7 +41,6 @@ export function DSSelect({
 				</label>
 			)}
 			<select
-				className={styles.select}
 				data-testid={`ds-select-select-${id}`}
 				disabled={disabled}
 				id={id}
@@ -57,7 +60,10 @@ export function DSSelect({
 					</option>
 				))}
 			</select>
-			<span className={`${styles[`arrow-${wrapperLayout}`]} ${styles.arrow}`}>
+			<span
+				className={styles.arrow}
+				data-wrapper={wrapperLayout}
+			>
 				<DSIconSelectButton />
 			</span>
 		</div>

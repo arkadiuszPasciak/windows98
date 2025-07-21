@@ -1,6 +1,7 @@
+import { getClassNames } from "@windows98/toolkit"
 import type { FunctionComponent } from "react"
 import { DSIconCheckboxSVG, DSText } from "../../index"
-import styles from "./ds-checkbox.module.scss"
+import styles from "./ds-checkbox.module.css"
 import type { DSCheckboxProps } from "./ds-checkbox.type"
 import { useDSCheckbox } from "./use-ds-checkbox.hook"
 
@@ -21,8 +22,9 @@ export const DSCheckbox: FunctionComponent<DSCheckboxProps> = ({
 
 	return (
 		<label
+			htmlFor={`${id}-checkbox`}
 			aria-label={text}
-			className={`${styles.wrapper} ${disabled ? styles.disabled : ""} ${className}`}
+			className={getClassNames([styles.wrapper, className])}
 			data-testid={`${id}-checkbox`}
 		>
 			<input
@@ -31,6 +33,7 @@ export const DSCheckbox: FunctionComponent<DSCheckboxProps> = ({
 				data-testid={`${id}-checkbox-input`}
 				disabled={disabled}
 				name={name}
+				id={`${id}-checkbox`}
 				type="checkbox"
 				value={id}
 				onChange={handleChange}

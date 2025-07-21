@@ -1,6 +1,7 @@
+import { getClassNames } from "@windows98/toolkit"
 import { DSText } from "../../index"
 import { DSIconRadioSVG } from "../ds-icon/ds-icon-radio.svg"
-import styles from "./ds-radio.module.scss"
+import styles from "./ds-radio.module.css"
 import type { DSRadioProps } from "./ds-radio.type"
 import { useDSRadio } from "./use-ds-radio.hook"
 
@@ -21,11 +22,12 @@ export const DSRadio = ({
 	return (
 		<label
 			aria-label={!text.visible ? text.content : undefined}
-			className={`${styles.wrapper} ${disabled ? styles.disabled : ""} ${className}`}
+			className={getClassNames([styles.wrapper, className])}
 			data-testid={`${id}-radio`}
+			data-state={disabled ? "disabled" : ""}
 		>
 			<input
-				className={styles.input}
+				className={getClassNames([styles.input])}
 				checked={checked}
 				data-testid={`${id}-radio-input`}
 				disabled={disabled}
@@ -36,7 +38,7 @@ export const DSRadio = ({
 			/>
 
 			<span
-				className={styles.icon}
+				className={getClassNames([styles.icon])}
 				data-testid={`${id}-radio-icon`}
 			>
 				<DSIconRadioSVG isChecked={checked} />
@@ -44,7 +46,7 @@ export const DSRadio = ({
 
 			{text.visible && (
 				<DSText
-					className={styles.text}
+					className={getClassNames([styles.text])}
 					id={id}
 					text={text.content}
 				/>

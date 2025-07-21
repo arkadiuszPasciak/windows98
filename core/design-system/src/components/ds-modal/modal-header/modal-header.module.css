@@ -1,0 +1,22 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 20px;
+	padding: var(--ds-spacing-sm) var(--ds-spacing-xs) var(--ds-spacing-sm)
+		var(--ds-spacing-sm);
+	background: var(--ds-background-color-modal-header);
+
+	&[data-cursor="default"] {
+		cursor: default;
+	}
+
+	&[data-cursor="move"] {
+		cursor: move;
+	}
+
+	& > h3 {
+		/* @TODO: Create a value colour type in ds-text and ds-heading */
+		color: var(--ds-text-color-secondary);
+	}
+}

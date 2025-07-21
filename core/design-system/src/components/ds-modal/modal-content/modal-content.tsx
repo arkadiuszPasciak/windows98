@@ -1,5 +1,6 @@
+import { getClassNames } from "@windows98/toolkit"
 import type { FunctionComponent } from "react"
-import styles from "./modal-content.module.scss"
+import styles from "./modal-content.module.css"
 import type { ModalContentProps } from "./modal-content.type"
 
 export const ModalContent: FunctionComponent<ModalContentProps> = ({
@@ -8,7 +9,7 @@ export const ModalContent: FunctionComponent<ModalContentProps> = ({
 }) => {
 	return (
 		<div
-			className={styles.content}
+			className={getClassNames([styles.content])}
 			data-testid={`${id}-modal-content`}
 		>
 			{children}

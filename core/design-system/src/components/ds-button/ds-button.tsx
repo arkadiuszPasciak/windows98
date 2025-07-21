@@ -1,5 +1,6 @@
+import { getClassNames } from "@windows98/toolkit"
 import React from "react"
-import styles from "./ds-button.module.scss"
+import styles from "./ds-button.module.css"
 import type { DSButtonProps } from "./ds-button.type"
 
 export const DSButton = ({
@@ -16,7 +17,11 @@ export const DSButton = ({
 	return (
 		<button
 			aria-label={!isTextVisible ? text : undefined}
-			className={`${styles["ds-button"]} ${styles[`size-${size}`]} ${className}`}
+			className={getClassNames([
+				styles.button,
+				styles[`size-${size}`],
+				className,
+			])}
 			data-testid={`${id}-button`}
 			type="button"
 			disabled={disabled}

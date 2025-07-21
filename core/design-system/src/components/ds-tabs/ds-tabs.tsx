@@ -1,5 +1,7 @@
+import { getClassNames } from "@windows98/toolkit"
 import { type FunctionComponent, createElement } from "react"
-import styles from "./ds-tabs.module.scss"
+
+import styles from "./ds-tabs.module.css"
 import type { DSTabsProps } from "./ds-tabs.type"
 import { useDSTabs } from "./use-ds-tabs.hook"
 
@@ -12,18 +14,19 @@ export const DSTabs: FunctionComponent<DSTabsProps> = ({
 
 	return (
 		<div
-			className={`${styles.wrapper} ${className}`}
+			className={getClassNames([styles.wrapper, className])}
 			data-testid={`${id}-tabs`}
 		>
 			<div
-				className={styles.tabs}
+				className={getClassNames([styles.tabs])}
 				data-testid={`${id}-tabs-buttons`}
 			>
 				{tabs.map((tab, index) => (
 					<button
+						data-active={index === activeIndex}
 						data-testid={`${id}-${tab.id}-tab-button`}
 						key={`${id}-${tab.id}-tab-button`}
-						className={`${styles.tab} ${index === activeIndex ? styles["tab-active"] : ""}`}
+						className={getClassNames([styles.tab])}
 						type="button"
 						onClick={() => setActiveTab(index)}
 					>
@@ -32,13 +35,14 @@ export const DSTabs: FunctionComponent<DSTabsProps> = ({
 				))}
 			</div>
 			<div
-				className={styles.content}
+				className={getClassNames([styles.content])}
 				data-testid={`${id}-tabs-content`}
 			>
 				{tabs.map((tab, index) => (
 					<div
 						key={`${id}-${tab.id}-content`}
-						className={`${styles["content-tab"]} ${index === activeIndex ? styles["content-tab-active"] : ""}`}
+						className={getClassNames([styles["content-tab"]])}
+						data-active={index === activeIndex}
 						data-testid={`${id}-${tab.id}-tab-content`}
 					>
 						{createElement(tab.component)}

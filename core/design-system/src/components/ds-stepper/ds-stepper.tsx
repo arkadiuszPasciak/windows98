@@ -1,6 +1,7 @@
+import { getClassNames } from "@windows98/toolkit"
 import { DSInput } from "../../index"
 import { DSButtonArrow } from "../../index"
-import styles from "./ds-stepper.module.scss"
+import styles from "./ds-stepper.module.css"
 import type { DSStepperProps } from "./ds-stepper.type"
 import { useDSStepper } from "./use-ds-stepper.hook"
 
@@ -18,13 +19,12 @@ export function DSStepper({
 		onDecrease,
 	})
 
+	const state = disabled ? "disabled" : "enabled"
+
 	return (
 		<div
-			className={`
-        ${styles["ds-stepper"]}
-        ${disabled ? styles["state-disabled"] : ""}
-        ${className}
-      `}
+			className={getClassNames([styles["ds-stepper"], className])}
+			data-state={state}
 		>
 			<DSInput
 				id={`stepper-${id}`}
