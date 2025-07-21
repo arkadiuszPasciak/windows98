@@ -17,10 +17,8 @@
 			"import": "./@bundler/build/index.js",
 			"require": "./@bundler/build/index.umd.cjs"
 		},
-		"./base.config.css": "./src/styles/configs/base.config.css",
 		"./index.config.scss": "./src/styles/configs/index.config.scss",
-		"./reset.config.css": "./src/styles/configs/reset.config.css",
-		"./variables.config.css": "./@bundler/build/styles/variables.config.css",
+		"./old-variables.css": "./@bundler/build/styles/variables.config.css",
 		"./index.css": "./@bundler/build/styles/index.css"
 	},
 	"license": "MIT",

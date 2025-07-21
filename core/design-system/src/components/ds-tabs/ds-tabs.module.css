@@ -5,7 +5,7 @@
 }
 
 .tab {
-	padding: var(--ds-spacing-xs);
+	padding: var(--ds-spacing-sm);
 	font-family: var(--ds-font-sans-serif-medium);
 	font-size: var(--ds-font-size-xs);
 	font-weight: var(--ds-font-weight-regular);
@@ -22,7 +22,7 @@
 	z-index: 2;
 	top: -2px;
 	height: 100%;
-	padding: var(--ds-spacing-xs);
+	padding: var(--ds-spacing-sm);
 }
 
 .tab,

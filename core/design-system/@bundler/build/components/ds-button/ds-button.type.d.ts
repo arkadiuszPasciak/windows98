@@ -1,6 +1,7 @@
 import { DSDefaultProps } from '../../types';
+export type DSButtonSize = "small" | "medium";
 export interface DSButtonProps extends DSDefaultProps {
-    size?: "small" | "medium";
+    size?: DSButtonSize;
     disabled?: boolean;
     id: string;
     onClick?: () => void;
