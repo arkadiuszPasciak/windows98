@@ -20,11 +20,11 @@
 
 	&:disabled {
 		pointer-events: none;
-		opacity: 0.5;
+		opacity: var(--ds-opacity-not-allowed);
 	}
 
 	&:not(:disabled):active {
-		box-shadow: var(--ds-shadow-sunken);
+		box-shadow: var(--ds-border-sunken);
 	}
 }
 

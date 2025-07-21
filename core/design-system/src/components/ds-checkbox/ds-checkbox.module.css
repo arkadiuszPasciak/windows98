@@ -2,7 +2,7 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	column-gap: 6px;
+	column-gap: var(--ds-spacing-sm);
 	background-color: var(--ds-background-color-primary);
 
 	&:hover {
@@ -10,7 +10,7 @@
 	}
 
 	&:has(input:disabled) {
-		opacity: 0.5;
+		opacity: var(--ds-opacity-not-allowed);
 	}
 }
 

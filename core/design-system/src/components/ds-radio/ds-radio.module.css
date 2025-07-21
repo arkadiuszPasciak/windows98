@@ -10,7 +10,7 @@
 
 	&[data-state="disabled"] {
 		pointer-events: none;
-		opacity: 0.5;
+		opacity: var(--ds-opacity-not-allowed);
 	}
 }
 
