@@ -33,23 +33,9 @@ const meta: Meta<typeof DSModal> = {
 				type: "boolean",
 			},
 		},
-		navigation: {
-			control: {
-				type: "object",
-			},
-			defaultValue: [
-				{ name: "NavItem1", onClick: () => console.log("NavItem1 clicked") },
-				{ name: "NavItem2", onClick: () => console.log("NavItem2 clicked") },
-			],
-		},
 		children: {
 			control: {
 				type: "text",
-			},
-		},
-		tabs: {
-			control: {
-				type: "object",
 			},
 		},
 	},
@@ -71,16 +57,6 @@ export const Default: Story = {
 		resizeWindow: true,
 		moveWindow: true,
 		children: "This is a modal content",
-		navigation: [
-			{
-				name: "test1",
-				onClick: () => {},
-			},
-			{
-				name: "test2",
-				onClick: () => {},
-			},
-		],
 	},
 }
 
@@ -92,22 +68,5 @@ export const WithTabs: Story = {
 		height: "300px",
 		resizeWindow: true,
 		moveWindow: true,
-		tabs: {
-			initialIndex: 0,
-			tabs: [
-				{
-					title: "Tab 1",
-					component: "<div>Content for Tab 1</div>",
-				},
-				{
-					title: "Tab 2",
-					component: "<div>Content for Tab 2 </div>",
-				},
-				{
-					title: "Tab 3",
-					component: "<div>Content for Tab 3 </div>",
-				},
-			],
-		},
 	},
 }
