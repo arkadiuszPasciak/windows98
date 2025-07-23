@@ -3,5 +3,5 @@
 	justify-content: center;
 	grid-template-rows: repeat(3, 30px);
 	grid-template-columns: repeat(4, 35px);
-	gap: 1px;
+	gap: var(--ds-spacing-xs);
 }

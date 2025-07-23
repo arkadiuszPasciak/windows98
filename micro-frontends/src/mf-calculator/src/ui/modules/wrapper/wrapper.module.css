@@ -1,0 +1,6 @@
+.wrapper {
+	display: grid;
+	row-gap: 15px;
+	padding: var(--ds-spacing-lg) var(--ds-spacing-xl) var(--ds-spacing-lg);
+	background-color: var(--ds-background-color-primary);
+}
