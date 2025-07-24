@@ -4,7 +4,7 @@ import { Modal } from "../modal"
 import { Player } from "../player"
 import { Presets } from "../presets"
 import { Screen } from "../screen"
-import styles from "./wrapper.module.scss"
+import styles from "./wrapper.module.css"
 
 export const Wrapper: FunctionComponent = () => {
 	return (

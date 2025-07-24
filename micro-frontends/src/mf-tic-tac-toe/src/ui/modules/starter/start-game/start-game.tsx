@@ -1,7 +1,7 @@
 import { DSButton } from "@windows98/design-system"
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
-import styles from "./start-game.module.scss"
+import styles from "./start-game.module.css"
 import type { StartGameProps } from "./start-game.type"
 import { useStartGame } from "./use-start-game.hook"
 
