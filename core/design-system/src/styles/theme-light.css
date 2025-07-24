@@ -2,6 +2,7 @@
 	:root[theme="light"] {
 		--ds-background-color-primary: var(--ds-color-grey800);
 		--ds-background-color-secondary: var(--ds-color-white100);
+		--ds-background-color-tertiary: var(--ds-color-grey200);
 		--ds-background-color-modal-header: linear-gradient(
 			90deg,
 			var(--ds-color-blue200),
@@ -11,10 +12,11 @@
 
 		--ds-text-color-primary: var(--ds-color-black300);
 		--ds-text-color-secondary: var(--ds-color-white100);
+		--ds-text-color-tertiary: var(--ds-color-black300);
 
 		--ds-border-color-primary: rgba(255, 255, 255, 0.7);
 		--ds-border-color-secondary: var(--ds-color-grey400);
-		--ds-border-color-navigation: var(--ds-color-white100);
+		--ds-border-color-tertiary: var(--ds-color-white100);
 
 		--ds-border-field-inner: inset -1px -1px var(--ds-color-white100), inset 1px
 			1px var(--ds-color-grey200);
