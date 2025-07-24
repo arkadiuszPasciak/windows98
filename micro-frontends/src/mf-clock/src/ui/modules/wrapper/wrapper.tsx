@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react"
 import { Time } from "../time"
-import styles from "./wrapper.module.scss"
+import styles from "./wrapper.module.css"
 
 export const Wrapper: FunctionComponent = () => {
 	return (
