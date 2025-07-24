@@ -1,0 +1,18 @@
+.information {
+	background-color: var(--ds-background-color-primary);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, 20px);
+	padding: var(--ds-spacing-lg);
+}
+
+.title,
+.text {
+	font-family: var(--ds-font-sans-serif-medium);
+	font-size: var(--ds-font-size-xs);
+	line-height: var(--ds-line-height-relaxed);
+}
+
+.text {
+	margin-left: var(--ds-spacing-lg);
+}
