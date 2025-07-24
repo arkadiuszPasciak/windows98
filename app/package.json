@@ -14,8 +14,8 @@
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
 		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
-		"lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"src/bundles/**/*.scss\" --fix --allow-empty-input",
-		"lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"src/bundles/**/*.scss\" --allow-empty-input",
+		"lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"src/bundles/**/*.css\" --fix --allow-empty-input",
+		"lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"src/bundles/**/*.css\" --allow-empty-input",
 		"lint:types:run": "tsc"
 	},
 	"dependencies": {
@@ -38,7 +38,6 @@
 		"@vitejs/plugin-react": "4.2.1",
 		"@windows98/toolkit": "workspace:*",
 		"lint-staged": "15.2.11",
-		"sass": "1.83.0",
 		"stylelint": "16.2.1",
 		"typescript": "5.4.2",
 		"vite": "5.4.19"

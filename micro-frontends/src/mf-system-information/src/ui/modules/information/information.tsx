@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import styles from "./information.module.scss"
+import styles from "./information.module.css"
 import { useInformation } from "./use-information.hook"
 
 export const Information: FunctionComponent = () => {

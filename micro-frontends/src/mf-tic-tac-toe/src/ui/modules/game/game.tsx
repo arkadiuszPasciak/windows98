@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react"
 import { Board } from "./board"
-import styles from "./game.module.scss"
+import styles from "./game.module.css"
 import type { GameProps } from "./game.type"
 import { PlayerSign, PlayerSignType } from "./player-sign"
 import { ResultModal } from "./result-modal/result-modal"

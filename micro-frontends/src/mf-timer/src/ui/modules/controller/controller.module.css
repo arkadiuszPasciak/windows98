@@ -1,0 +1,7 @@
+.controller {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: var(--ds-spacing-xl);
+	margin-bottom: var(--ds-spacing-xl);
+}

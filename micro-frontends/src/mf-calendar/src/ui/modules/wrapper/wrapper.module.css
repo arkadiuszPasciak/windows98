@@ -1,0 +1,8 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 90px 70px;
+	background-color: var(--ds-background-color-primary);
+	gap: var(--ds-spacing-md) 0;
+	max-width: 180px;
+	width: 100%;
+}

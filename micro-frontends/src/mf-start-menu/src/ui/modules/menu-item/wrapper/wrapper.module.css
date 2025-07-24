@@ -1,0 +1,31 @@
+.menu-item-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding: 5px;
+	min-width: 135px;
+}
+
+.menu-item-wrapper:hover {
+	background-color: var(--ds-color-blue600);
+}
+
+.menu-item-wrapper:hover > div > p {
+	color: var(--ds-text-color-secondary);
+}
+
+.type-group {
+	position: relative;
+}
+
+.type-group::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	transform: translateY(-50%);
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid var(--ds-color-black100);
+}

@@ -1,0 +1,19 @@
+.month-days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+
+.day {
+	height: 20px;
+	font-family: var(--ds-font-sans-serif-medium);
+	font-size: var(--ds-font-size-xs);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.day-active {
+	color: var(--ds-color-white100);
+	background-color: var(--ds-color-blue200);
+}

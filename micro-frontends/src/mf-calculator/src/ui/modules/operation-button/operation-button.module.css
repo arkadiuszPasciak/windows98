@@ -1,0 +1,36 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--ds-font-sans-serif-medium);
+	font-size: var(--ds-font-size-xs);
+	line-height: var(--ds-line-height-normal);
+	border: none;
+	border-radius: var(--ds-border-radius-none);
+	background-color: var(--ds-background-color-primary);
+	color: var(--ds-text-color-primary);
+	box-shadow: var(--ds-border-raised);
+	width: 35px;
+	height: 30px;
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:disabled {
+		pointer-events: none;
+		opacity: var(--ds-opacity-not-allowed);
+	}
+
+	&:not(:disabled):active {
+		box-shadow: var(--ds-border-sunken);
+	}
+}
+
+.primary {
+	color: var(--ds-color-blue100);
+}
+
+.secondary {
+	color: var(--ds-color-red100);
+}

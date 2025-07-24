@@ -2,9 +2,10 @@ import {
 	DSIconAudioButtonOff,
 	DSIconAudioButtonOn,
 } from "@windows98/design-system"
+import { getClassNames } from "@windows98/toolkit"
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
-import styles from "./button.module.scss"
+import styles from "./button.module.css"
 import { useButton } from "./use-button.hook"
 
 export const Button: FunctionComponent = observer(() => {
@@ -12,7 +13,7 @@ export const Button: FunctionComponent = observer(() => {
 
 	return (
 		<button
-			className={styles.button}
+			className={getClassNames([styles.button])}
 			data-testid="mf-audio-button-button"
 			type="button"
 			onClick={toggleSound}

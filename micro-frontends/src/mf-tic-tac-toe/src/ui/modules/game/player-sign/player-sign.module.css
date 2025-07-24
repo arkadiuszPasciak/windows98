@@ -1,0 +1,21 @@
+.frame {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+.sign {
+	font-family: var(--ds-font-sans-serif-bold);
+	font-size: var(--ds-font-size-md);
+	line-height: var(--ds-line-height-relaxed);
+	font-weight: var(--ds-font-weight-bold);
+}
+
+.sign-o {
+	color: var(--ds-color-blue100);
+}
+
+.sign-x {
+	color: var(--ds-color-red100);
+}

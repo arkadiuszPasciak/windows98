@@ -1,0 +1,5 @@
+.player {
+	display: flex;
+	column-gap: var(--ds-spacing-xl);
+	justify-content: center;
+}

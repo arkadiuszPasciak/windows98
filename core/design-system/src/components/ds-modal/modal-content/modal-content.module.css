@@ -1,5 +1,5 @@
 .content {
-	padding: var(--ds-spacing-sm);
+	padding: var(--ds-spacing-xs);
 	width: 100%;
 	height: calc(100% - 40px);
 }

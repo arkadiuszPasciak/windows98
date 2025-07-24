@@ -3,7 +3,7 @@ import { ChooseDimension } from "./choose-dimension"
 import { ChooseSign } from "./choose-sign"
 import { EnterYourName } from "./enter-your-name"
 import { StartGame } from "./start-game"
-import styles from "./starter.module.scss"
+import styles from "./starter.module.css"
 import type { StarterProps } from "./starter.type"
 
 export const Starter: FunctionComponent<StarterProps> = ({ onStartGame }) => {

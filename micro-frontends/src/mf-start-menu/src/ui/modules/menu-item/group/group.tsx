@@ -1,6 +1,7 @@
+import { getClassNames } from "@windows98/toolkit"
 import type { FunctionComponent } from "react"
 import { MenuItemContent } from "../content"
-import styles from "../menu-item.module.scss"
+import styles from "../menu-item.module.css"
 import { MenuItemWrapper } from "../wrapper"
 import type { MenuItemGroupProps } from "./group.type"
 import { usePanelItemGroup } from "./use-group.hook"
@@ -16,7 +17,7 @@ export const MenuItemGroup: FunctionComponent<MenuItemGroupProps> = ({
 
 	return (
 		<div
-			className={styles["menu-item"]}
+			className={getClassNames([styles["menu-item"]])}
 			data-testid={`mf-start-menu-menu-item-${id}-open-group`}
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}

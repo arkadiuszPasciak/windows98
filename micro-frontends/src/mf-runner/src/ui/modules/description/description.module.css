@@ -1,0 +1,5 @@
+.description {
+	display: flex;
+	column-gap: var(--ds-spacing-xl);
+	margin-bottom: var(--ds-spacing-sm);
+}

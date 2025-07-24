@@ -1,0 +1,7 @@
+.presets {
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--ds-spacing-sm);
+	margin-left: 42px;
+	margin-top: -10px;
+}

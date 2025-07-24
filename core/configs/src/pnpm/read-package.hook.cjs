@@ -11,7 +11,6 @@ class PNPMReadPackageHook {
 			react: "18.2.0",
 			"react-i18next": "14.0.5",
 			"react-dom": "18.2.0",
-			sass: "1.83.0",
 			stylelint: "16.2.1",
 			typescript: "5.4.2",
 			vite: "5.4.19",

@@ -3,7 +3,7 @@ import { Days } from "../days/days"
 import { MonthSwitcher } from "../month-switcher/month-switcher"
 import { YearSwitcher } from "../year-switcher/year-switcher"
 import { useWrapper } from "./use-wrapper.hook"
-import styles from "./wrapper.module.scss"
+import styles from "./wrapper.module.css"
 
 export const Wrapper = () => {
 	const { title } = useWrapper()

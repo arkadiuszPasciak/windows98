@@ -1,0 +1,20 @@
+.menu-items-wrapper {
+	background-color: var(--ds-background-color-primary);
+	border-top: 1px solid var(--ds-border-color-tertiary);
+	border-left: 1px solid var(--ds-border-color-tertiary);
+	border-right: 1px solid var(--ds-color-black100);
+	border-bottom: 1px solid var(--ds-color-black100);
+	max-width: 140px;
+}
+
+.variant-primary {
+	position: fixed;
+	bottom: 26px;
+	left: 2px;
+}
+
+.variant-secondary {
+	position: absolute;
+	top: -1px;
+	left: 100%;
+}

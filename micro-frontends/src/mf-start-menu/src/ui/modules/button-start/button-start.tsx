@@ -1,6 +1,6 @@
 import { DSButton } from "@windows98/design-system"
 import type { FunctionComponent } from "react"
-import styles from "./button-start.module.scss"
+import styles from "./button-start.module.css"
 import type { ButtonStartProps } from "./button-start.type"
 import { useButtonStart } from "./use-button-start.hook"
 

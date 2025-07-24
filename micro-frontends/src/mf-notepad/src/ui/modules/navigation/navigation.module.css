@@ -1,0 +1,13 @@
+.navigation {
+	display: flex;
+	gap: var(--ds-spacing-sm);
+	padding: 0 0 var(--ds-spacing-sm);
+}
+
+.button {
+	font-family: var(--ds-font-sans-serif-medium);
+	font-size: var(--ds-font-size-xs);
+	line-height: var(--ds-line-height-normal);
+	color: var(--ds-text-color-primary);
+	cursor: pointer;
+}

@@ -3,7 +3,7 @@ import type { FunctionComponent } from "react"
 import { Controller } from "../controller"
 import { Description } from "../description"
 import { Input } from "../input"
-import styles from "./modal.module.scss"
+import styles from "./modal.module.css"
 import { useModal } from "./use-modal.hook"
 
 export const Modal: FunctionComponent = () => {

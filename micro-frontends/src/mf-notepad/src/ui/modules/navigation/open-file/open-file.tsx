@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
-import styles from "../navigation.module.scss"
+import styles from "../navigation.module.css"
 import { useOpenFile } from "./use-open-file.hook"
 
 export const OpenFile: FunctionComponent = observer(() => {

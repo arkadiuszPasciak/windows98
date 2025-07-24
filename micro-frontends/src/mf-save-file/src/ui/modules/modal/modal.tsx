@@ -4,7 +4,7 @@ import { CancelButton } from "../cancel-button"
 import { FileName } from "../file-name"
 import { FileType } from "../file-type"
 import { SaveButton } from "../save-button"
-import styles from "./modal.module.scss"
+import styles from "./modal.module.css"
 import { useModal } from "./use-modal.hook"
 
 export const Modal: FunctionComponent = () => {

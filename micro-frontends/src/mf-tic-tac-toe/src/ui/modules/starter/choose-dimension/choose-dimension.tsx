@@ -1,7 +1,7 @@
 import { DSRadio, DSText } from "@windows98/design-system"
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
-import styles from "./choose-dimension.module.scss"
+import styles from "./choose-dimension.module.css"
 import { useChooseDimension } from "./use-choose-dimension.hook"
 
 export const ChooseDimension: FunctionComponent = observer(() => {

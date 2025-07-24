@@ -1,0 +1,18 @@
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: not-allowed;
+	font-family: var(--ds-font-sans-serif-medium);
+	font-size: var(--ds-font-size-xs);
+	line-height: var(--ds-line-height-normal);
+}
+
+.icon {
+	margin-bottom: var(--ds-spacing-md);
+}
+
+.name {
+	color: var(--ds-text-color-secondary);
+}

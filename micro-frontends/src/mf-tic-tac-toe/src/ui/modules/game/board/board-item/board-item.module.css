@@ -1,0 +1,40 @@
+.board-item {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 0;
+	background-color: var(--ds-background-color-primary);
+	box-shadow: var(--ds-border-raised);
+	font-family: var(--ds-font-sans-serif-bold);
+	font-size: var(--ds-font-size-sm);
+	line-height: var(--ds-line-height-relaxed);
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:disabled {
+		opacity: var(--ds-opacity-not-allowed);
+		pointer-events: none;
+	}
+
+	&:not(:disabled):active {
+		box-shadow: var(--ds-border-sunken);
+	}
+}
+
+.color-blue {
+	color: var(--ds-color-blue100);
+}
+
+.color-red {
+	color: var(--ds-color-red100);
+}
+
+.color-black {
+	color: var(--ds-text-color-primary);
+}

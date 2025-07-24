@@ -1,0 +1,6 @@
+.wrapper {
+	max-width: 290px;
+	background-color: var(--ds-background-color-primary);
+	padding: var(--ds-spacing-lg);
+	box-sizing: content-box;
+}

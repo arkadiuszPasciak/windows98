@@ -1,0 +1,15 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	gap: var(--ds-spacing-sm);
+	width: 100vw;
+	height: 28px;
+	background-color: var(--ds-background-color-primary);
+	border-top: 1px solid var(--ds-border-color-primary);
+	outline: 1px solid var(--ds-border-color-tertiary);
+	padding: var(--ds-spacing-xs);
+
+	& > *:first-child {
+		margin-right: auto;
+	}
+}

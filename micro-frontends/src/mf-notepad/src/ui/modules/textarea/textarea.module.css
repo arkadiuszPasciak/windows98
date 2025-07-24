@@ -1,0 +1,28 @@
+.textarea {
+	font-family: var(--ds-font-sans-serif-medium);
+	font-size: var(--ds-font-size-sm);
+	line-height: var(--ds-line-height-relaxed);
+	background-color: var(--ds-background-color-secondary);
+	box-shadow: var(--ds-border-field);
+	color: var(--ds-text-color-primary);
+	padding: var(--ds-spacing-sm);
+	resize: none;
+	width: 100%;
+	height: 100%;
+
+	&:disabled,
+	&:read-only {
+		background-color: var(--ds-background-color-secondary);
+	}
+
+	&:disabled,
+	&:disabled + .label,
+	&[readonly],
+	&[readonly] + .label {
+		opacity: var(--ds-opacity-not-allowed);
+	}
+
+	&:focus {
+		outline: none;
+	}
+}

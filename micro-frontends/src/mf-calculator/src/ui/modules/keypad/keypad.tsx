@@ -1,8 +1,9 @@
+import { getClassNames } from "@windows98/toolkit"
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
 import { ECalculatorNumber, ECalculatorSymbol } from "../../../domain/models"
 import { OperationButton } from "../operation-button"
-import styles from "./keypad.module.scss"
+import styles from "./keypad.module.css"
 import { useKeypad } from "./use-keypad.hook"
 
 export const Keypad: FunctionComponent = observer(() => {
@@ -10,7 +11,7 @@ export const Keypad: FunctionComponent = observer(() => {
 
 	return (
 		<div
-			className={styles.keypad}
+			className={getClassNames([styles.keypad])}
 			data-testid="mf-calculator-keypad"
 		>
 			<OperationButton

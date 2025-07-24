@@ -1,0 +1,6 @@
+.wrapper {
+	background-color: var(--ds-background-color-primary);
+	padding: 0 var(--ds-spacing-md) var(--ds-spacing-md);
+	max-width: 385px;
+	width: 100%;
+}

@@ -1,7 +1,7 @@
 import { DSStepper } from "@windows98/design-system"
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
-import styles from "./controller.module.scss"
+import styles from "./controller.module.css"
 import { useController } from "./use-controller.hook"
 
 export const Controller: FunctionComponent = observer(() => {
