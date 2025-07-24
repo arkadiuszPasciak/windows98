@@ -1,5 +1,5 @@
 import { DSText } from "@windows98/design-system"
-import styles from "./description.module.scss"
+import styles from "./description.module.css"
 import { useDescription } from "./use-description"
 
 export const Description = () => {
@@ -10,7 +10,7 @@ export const Description = () => {
 			<img
 				width="32"
 				height="32"
-				src="/icons/applications/mycomputer.png"
+				src="/icons/programs/my-computer.png"
 				alt=""
 				data-test-id="mf-shutdown-description-icon"
 			/>
