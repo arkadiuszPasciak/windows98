@@ -6,17 +6,6 @@ export default defineConfig({
 	use: {
 		trace: "on-first-retry",
 		ctPort: 3100,
-		ctViteConfig: {
-			css: {
-				preprocessorOptions: {
-					scss: {
-						additionalData: `
-							@import '@windows98/design-system/index.config.scss';
-						`,
-					},
-				},
-			},
-		},
 	},
 	testDir: "../../src/",
 })
