@@ -1,5 +1,6 @@
+import { getClassNames } from "@windows98/toolkit"
 import type { FunctionComponent } from "react"
-import styles from "./wrapper.module.scss"
+import styles from "./wrapper.module.css"
 import type { MenuItemWrapperProps } from "./wrapper.type"
 
 export const MenuItemWrapper: FunctionComponent<MenuItemWrapperProps> = ({
@@ -9,7 +10,10 @@ export const MenuItemWrapper: FunctionComponent<MenuItemWrapperProps> = ({
 }) => {
 	return (
 		<div
-			className={`${styles["menu-item-wrapper"]} ${styles[`type-${type}`]}`}
+			className={getClassNames([
+				styles["menu-item-wrapper"],
+				styles[`type-${type}`],
+			])}
 			data-testid={`mf-start-menu-menu-item-${id}-wrapper`}
 		>
 			{children}

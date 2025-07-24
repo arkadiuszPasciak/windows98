@@ -1,0 +1,9 @@
+.button-start {
+	/* @TODO: from copilot - This code is temporary and should be removed after migration to panda CSS */
+	font-family: var(--ds-font-sans-serif-bold) !important;
+	font-size: 11px !important;
+	line-height: 11px !important;
+	column-gap: 4px !important;
+	min-width: 55px !important;
+	padding: 0 6px !important;
+}

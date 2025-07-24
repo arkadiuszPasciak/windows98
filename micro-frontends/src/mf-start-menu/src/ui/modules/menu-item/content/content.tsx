@@ -1,7 +1,8 @@
 import { DSText } from "@windows98/design-system"
+import { getClassNames } from "@windows98/toolkit"
 import type { FunctionComponent } from "react"
 import type { MenuItemVariant } from "../menu-item.type"
-import styles from "./content.module.scss"
+import styles from "./content.module.css"
 import type { GetIconURL, MenuItemContentProps } from "./content.type"
 
 const getIconURL: GetIconURL = (id) => {
@@ -26,7 +27,7 @@ export const MenuItemContent: FunctionComponent<MenuItemContentProps> = ({
 	name,
 	variant,
 }) => (
-	<div className={styles.content}>
+	<div className={getClassNames([styles.content])}>
 		<img
 			width={imageSizes[variant]}
 			height={imageSizes[variant]}
