@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import styles from "./wrapper.module.scss"
+import styles from "./wrapper.module.css"
 import type { WrapperProps } from "./wrapper.types"
 
 export const Wrapper: FunctionComponent<WrapperProps> = ({ children }) => {
