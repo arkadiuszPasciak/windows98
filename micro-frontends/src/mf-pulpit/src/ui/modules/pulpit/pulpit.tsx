@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react"
 import { PulpitItem } from "../pulpit-item"
-import styles from "./pulpit.module.scss"
+import styles from "./pulpit.module.css"
 import type { PulpitProps } from "./pulpit.types"
 
 export const Pulpit: FunctionComponent<PulpitProps> = ({ items }) => {

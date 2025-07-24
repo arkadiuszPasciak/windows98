@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import styles from "./pulpit-item.module.scss"
+import styles from "./pulpit-item.module.css"
 import type { PulpitItemProps } from "./pulpit-item.types"
 import { usePulpitItem } from "./use-pulpit.hook"
 

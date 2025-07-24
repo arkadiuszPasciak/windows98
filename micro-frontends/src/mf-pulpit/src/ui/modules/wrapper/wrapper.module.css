@@ -1,0 +1,6 @@
+.wrapper {
+	width: 100vw;
+	height: calc(100vh - 28px);
+	background-color: var(--ds-background-color-pulpit);
+	padding: var(--ds-spacing-2xs);
+}
