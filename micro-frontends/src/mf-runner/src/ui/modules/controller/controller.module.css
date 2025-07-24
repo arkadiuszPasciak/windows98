@@ -1,0 +1,6 @@
+.controller {
+	display: flex;
+	column-gap: var(--ds-spacing-sm);
+	justify-content: center;
+	margin-top: var(--ds-spacing-md);
+}

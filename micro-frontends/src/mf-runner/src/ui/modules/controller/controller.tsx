@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react"
 import { Cancel } from "./cancel/cancel"
-import styles from "./controller.module.scss"
+import styles from "./controller.module.css"
 import { Ok } from "./ok/ok"
 
 export const Controller: FunctionComponent = () => {
