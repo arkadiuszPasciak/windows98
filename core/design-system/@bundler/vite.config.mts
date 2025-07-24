@@ -24,14 +24,5 @@ export default defineConfig({
 			},
 		},
 	},
-	css: {
-		preprocessorOptions: {
-			scss: {
-				additionalData: `
-          @import '../src/styles/configs/index.config.scss';
-        `,
-			},
-		},
-	},
 	plugins: [cssInjectedByJsPlugin(), dts({ include: ["../src"] }), react()],
 })
