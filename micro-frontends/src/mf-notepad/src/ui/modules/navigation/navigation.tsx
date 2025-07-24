@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import styles from "./navigation.module.scss"
+import styles from "./navigation.module.css"
 import { OpenFile } from "./open-file"
 import { SaveFile } from "./save-file"
 

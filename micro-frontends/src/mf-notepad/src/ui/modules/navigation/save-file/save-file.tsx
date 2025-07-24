@@ -1,7 +1,7 @@
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
 import { SaveFileView as MFSaveFile } from "../../../../../../mf-save-file/src/ui/views"
-import styles from "../navigation.module.scss"
+import styles from "../navigation.module.css"
 import { useSaveFile } from "./use-save-file.hook"
 
 export const SaveFile: FunctionComponent = observer(() => {

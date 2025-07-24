@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
-import styles from "./textarea.module.scss"
+import styles from "./textarea.module.css"
 import { useTextarea } from "./use-textarea.hook"
 
 export const Textarea: FunctionComponent = observer(() => {
