@@ -1,6 +1,7 @@
+import { getClassNames } from "@windows98/toolkit"
 import type { FunctionComponent } from "react"
 import { PlayerSign } from "../../../../../domain/models"
-import styles from "./board-item.module.scss"
+import styles from "./board-item.module.css"
 import { BoardItemColour, type BoardItemProps } from "./board-item.type"
 
 const getColor = (value: string): BoardItemColour => {
@@ -23,7 +24,10 @@ export const BoardItem: FunctionComponent<BoardItemProps> = ({
 
 	return (
 		<button
-			className={`${styles["board-item"]} ${styles[`color-${color}`]}`}
+			className={getClassNames([
+				styles["board-item"],
+				styles[`color-${color}`],
+			])}
 			type="button"
 			disabled={isDisabled}
 			onClick={onClick}

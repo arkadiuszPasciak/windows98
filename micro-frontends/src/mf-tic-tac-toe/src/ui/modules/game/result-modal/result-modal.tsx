@@ -2,7 +2,7 @@ import { DSButton, DSModal, DSText } from "@windows98/design-system"
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
 import { GameStatus } from "../../../../domain/models"
-import styles from "./result-modal.module.scss"
+import styles from "./result-modal.module.css"
 import type { ResultModalProps } from "./result-modal.type"
 import { useResultModal } from "./use-result-modal.hook"
 
