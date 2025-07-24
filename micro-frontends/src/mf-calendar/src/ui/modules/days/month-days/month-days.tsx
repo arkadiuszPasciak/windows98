@@ -1,5 +1,6 @@
+import { getClassNames } from "@windows98/toolkit"
 import { observer } from "mobx-react-lite"
-import styles from "./month-days.module.scss"
+import styles from "./month-days.module.css"
 import { useMonthDays } from "./use-month-days.hook"
 
 export const MonthDays = observer(() => {
@@ -21,10 +22,10 @@ export const MonthDays = observer(() => {
 
 				{Array.from({ length: monthDays }).map((_, index) => (
 					<button
-						className={`
-                            ${styles.day}
-                            ${index + 1 === activeDay ? styles["day-active"] : ""}
-                        `}
+						className={getClassNames([
+							styles.day,
+							index + 1 === activeDay ? styles["day-active"] : "",
+						])}
 						data-testid={`calendar-month-days-day-${index + 1}`}
 						type="button"
 						key={`calendar-month-days-day-${index + 1}`}

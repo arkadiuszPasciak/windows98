@@ -1,0 +1,16 @@
+.week-days {
+	display: grid;
+	height: 20px;
+	grid-template-columns: repeat(7, 1fr);
+	background-color: var(--ds-background-color-tertiary);
+	color: var(--ds-text-color-tertiary);
+}
+
+.day {
+	height: 20px;
+	font-family: var(--ds-font-sans-serif-medium);
+	font-size: var(--ds-font-size-xs);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
