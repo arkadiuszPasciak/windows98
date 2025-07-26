@@ -1,5 +1,5 @@
 import { getClassNames } from "@windows98/toolkit"
-import React from "react"
+import React, { type JSX } from "react"
 import styles from "./ds-button.module.css"
 import type { DSButtonProps } from "./ds-button.type"
 
