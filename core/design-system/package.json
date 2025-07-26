@@ -11,7 +11,9 @@
 	"main": "@bundler/build/index.umd.cjs",
 	"module": "@bundler/build/index.js",
 	"types": "@bundler/build/index.d.ts",
-	"files": ["@bundler/build"],
+	"files": [
+		"@bundler/build"
+	],
 	"exports": {
 		".": {
 			"import": "./@bundler/build/index.js",
@@ -38,25 +40,25 @@
 		"test:ui:watch": "playwright test -c ./@test/playwright/playwright-ct.config.mjs --ui"
 	},
 	"peerDependencies": {
-		"react": "18.2.0",
-		"react-dom": "18.2.0"
+		"react": "19.1.0",
+		"react-dom": "19.1.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@playwright/experimental-ct-react": "1.49.1",
+		"@playwright/experimental-ct-react": "1.54.1",
 		"@types/node": "20.9.0",
-		"@types/react": "18.2.43",
-		"@types/react-dom": "18.2.17",
-		"@vitejs/plugin-react": "4.2.1",
+		"@types/react": "19.1.0",
+		"@types/react-dom": "19.1.0",
+		"@vitejs/plugin-react": "4.7.0",
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
 		"lightningcss-cli": "1.30.1",
-		"lint-staged": "15.2.11",
-		"stylelint": "16.2.1",
-		"typescript": "5.4.2",
-		"vite": "5.4.19",
+		"lint-staged": "16.1.2",
+		"stylelint": "16.22.0",
+		"typescript": "5.8.3",
+		"vite": "6.3.5",
 		"vite-plugin-css-injected-by-js": "3.5.2",
-		"vite-plugin-dts": "4.5.3",
-		"vitest": "3.1.2"
+		"vite-plugin-dts": "4.5.4",
+		"vitest": "3.2.4"
 	}
 }
