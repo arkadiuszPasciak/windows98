@@ -10,11 +10,10 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@windows98/configs": "workspace:*",
-		"i18next": "23.8.2",
-		"lint-staged": "15.2.11",
-		"react-i18next": "14.0.5",
-		"typescript": "5.4.2",
-		"vue-i18n": "10.0.5"
+		"i18next": "25.3.2",
+		"lint-staged": "16.1.2",
+		"react-i18next": "15.6.1",
+		"typescript": "5.8.3"
 	},
 	"scripts": {
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
