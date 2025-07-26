@@ -1,4 +1,5 @@
 import { getClassNames } from "@windows98/toolkit"
+import type { JSX } from "react"
 import { DSText } from "../../index"
 import { DSIconRadioSVG } from "../ds-icon/ds-icon-radio.svg"
 import styles from "./ds-radio.module.css"
