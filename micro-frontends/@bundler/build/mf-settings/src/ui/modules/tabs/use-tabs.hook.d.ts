@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export declare function useTabs(): {
     tabs: {
         id: string;
