@@ -28,7 +28,7 @@ class PNPMReadPackageHook {
 
 	#engines = {
 		requirements: {
-			node: "20.18.1",
+			node: "22.17.1",
 			pnpm: "9.15.0",
 		},
 	}
