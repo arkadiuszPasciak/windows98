@@ -39,7 +39,7 @@
 	},
 	"engines": {
 		"node": "22.17.1",
-		"pnpm": "9.15.0"
+		"pnpm": "10.13.1"
 	},
 	"name": "@windows98/micro-frontends",
 	"scripts": {

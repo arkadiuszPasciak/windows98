@@ -5,7 +5,7 @@
 	"author": "Arkadiusz Paściak",
 	"engines": {
 		"node": "22.17.1",
-		"pnpm": "9.15.0"
+		"pnpm": "10.13.1"
 	},
 	"type": "module",
 	"scripts": {
