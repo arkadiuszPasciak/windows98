@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/react-vite"
 import { DSRadio } from "@windows98/design-system"
 
 const meta: Meta<typeof DSRadio> = {

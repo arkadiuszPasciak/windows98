@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/react-vite"
 import { DSTabs } from "@windows98/design-system"
 
 const TabOne = () => <div>Tab One Content Design System</div>

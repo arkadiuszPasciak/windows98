@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/react-vite"
 import { DSFrame, type DSFrameProps } from "@windows98/design-system"
 
 const meta: Meta<typeof DSFrame> = {

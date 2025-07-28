@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/react-vite"
 
 const meta: Meta = {
-	title: "Micro Apps/Components/MFAudioButton",
+	title: "Micro Frontends/Components/MFAudioButton",
 }
 
 export default meta

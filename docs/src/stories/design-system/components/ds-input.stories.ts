@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/react-vite"
 import { DSInput, type DSInputProps } from "@windows98/design-system"
 
 const meta: Meta<typeof DSInput> = {

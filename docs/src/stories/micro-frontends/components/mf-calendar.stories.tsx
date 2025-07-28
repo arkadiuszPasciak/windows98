@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/react-vite"
 
 const meta: Meta = {
-	title: "Micro Apps/Components/MFCalendar",
+	title: "Micro Frontends/Components/MFCalendar",
 }
 
 export default meta
