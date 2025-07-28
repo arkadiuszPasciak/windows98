@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from "@storybook/react-vite"
+import { MFClock } from "@windows98/micro-frontends"
 
-const meta: Meta = {
+const meta: Meta<typeof MFClock> = {
+	component: MFClock,
+	tags: ["autodocs"],
 	title: "Micro Frontends/Components/MFClock",
 }
 
 export default meta
 
-type Story = StoryObj
+type Story = StoryObj<typeof MFClock>
 
 export const Main: Story = {
-	render: () => (
-		// @ts-ignore
-		<mf-clock />
-	),
+	args: {},
 }
