@@ -25,7 +25,7 @@
 		"postcss-html": "1.8.0"
 	},
 	"peerDependencies": {
-		"@biomejs/biome": "1.9.4",
+		"@biomejs/biome": "2.1.2",
 		"@playwright/experimental-ct-react": "1.54.1",
 		"lint-staged": "16.1.2",
 		"stylelint": "16.22.0",

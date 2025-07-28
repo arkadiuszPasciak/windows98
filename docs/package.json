@@ -6,7 +6,7 @@
 		"react-dom": "19.1.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
+		"@biomejs/biome": "2.1.2",
 		"@storybook/addon-a11y": "9.0.18",
 		"@storybook/addon-docs": "9.0.18",
 		"@storybook/react-vite": "9.0.18",
