@@ -1,16 +1,16 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/react-vite"
+import { MFCalendar } from "@windows98/micro-frontends"
 
-const meta: Meta = {
-	title: "Micro Apps/Components/MFCalendar",
+const meta: Meta<typeof MFCalendar> = {
+	component: MFCalendar,
+	tags: ["autodocs"],
+	title: "Micro Frontends/Components/MFCalendar",
 }
 
 export default meta
 
-type Story = StoryObj
+type Story = StoryObj<typeof MFCalendar>
 
 export const Main: Story = {
-	render: () => (
-		// @ts-ignore
-		<mf-calendar />
-	),
+	args: {},
 }

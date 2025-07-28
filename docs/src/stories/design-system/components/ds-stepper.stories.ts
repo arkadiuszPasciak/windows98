@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/react-vite"
 import { DSStepper, type DSStepperProps } from "@windows98/design-system"
 
 const meta: Meta<typeof DSStepper> = {

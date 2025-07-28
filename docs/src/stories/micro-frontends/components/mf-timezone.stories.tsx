@@ -1,16 +1,16 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/react-vite"
+import { MFTimezone } from "@windows98/micro-frontends"
 
-const meta: Meta = {
-	title: "Micro Apps/Components/MFTimezone",
+const meta: Meta<typeof MFTimezone> = {
+	component: MFTimezone,
+	tags: ["autodocs"],
+	title: "Micro Frontends/Components/MFTimezone",
 }
 
 export default meta
 
-type Story = StoryObj
+type Story = StoryObj<typeof MFTimezone>
 
-export const Main: Story = {
-	render: () => (
-		// @ts-ignore
-		<mf-timezone />
-	),
+export const Primary: Story = {
+	args: {},
 }

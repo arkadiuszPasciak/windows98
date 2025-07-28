@@ -1,6 +1,7 @@
-import type { Preview } from "@storybook/react"
+import type { Preview } from "@storybook/react-vite"
 import DocumentationTemplate from "../src/configs/documentation-template.mdx"
 import "@windows98/design-system/index.css"
+import "@windows98/i18n/configs/react.config"
 
 const preview: Preview = {
 	decorators: [

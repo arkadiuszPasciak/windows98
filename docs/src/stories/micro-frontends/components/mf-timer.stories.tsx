@@ -1,16 +1,24 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/react-vite"
+import { MFTimer } from "@windows98/micro-frontends"
 
-const meta: Meta = {
-	title: "Micro Apps/Components/MFTimer",
+const meta: Meta<typeof MFTimer> = {
+	argTypes: {
+		onCloseProgram: {
+			action: "closed",
+			control: false,
+		},
+	},
+	component: MFTimer,
+	tags: ["autodocs"],
+	title: "Micro Frontends/Components/MFTimer",
 }
 
 export default meta
 
-type Story = StoryObj
+type Story = StoryObj<typeof MFTimer>
 
 export const Main: Story = {
-	render: () => (
-		// @ts-ignore
-		<mf-timer />
-	),
+	args: {
+		onCloseProgram: () => console.log("Timer closed"),
+	},
 }

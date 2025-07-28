@@ -1,16 +1,24 @@
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/react-vite"
+import { MFShutdown } from "@windows98/micro-frontends"
 
-const meta: Meta = {
-	title: "Micro Apps/Components/MFShutdown",
+const meta: Meta<typeof MFShutdown> = {
+	argTypes: {
+		onCloseProgram: {
+			action: "closed",
+			control: false,
+		},
+	},
+	component: MFShutdown,
+	tags: ["autodocs"],
+	title: "Micro Frontends/Components/MFShutdown",
 }
 
 export default meta
 
-type Story = StoryObj
+type Story = StoryObj<typeof MFShutdown>
 
 export const Main: Story = {
-	render: () => (
-		// @ts-ignore
-		<mf-shutdown />
-	),
+	args: {
+		onCloseProgram: () => console.log("Shutdown closed"),
+	},
 }
