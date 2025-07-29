@@ -19,9 +19,18 @@
 	},
 	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"linter": {
+		"domains": {
+			"react": "all",
+			"test": "all",
+			"solid": "all",
+			"project": "all"
+		},
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"correctness": {
+				"noUndeclaredDependencies": "off"
+			}
 		}
 	},
 	"javascript": {
