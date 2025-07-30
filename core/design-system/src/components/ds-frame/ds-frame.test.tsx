@@ -7,6 +7,11 @@ const defaultFrame: DSFrameProps = {
 	children: <div data-testid="children-test">Test Content</div>,
 }
 
+const noTitleDefaultFrame: DSFrameProps = {
+	...defaultFrame,
+	title: "",
+}
+
 test.use({ viewport: { width: 500, height: 500 } })
 
 test.describe("DSFrame", () => {
@@ -24,13 +29,28 @@ test.describe("DSFrame", () => {
 
 		await expect(component).toHaveAttribute(
 			"data-testid",
-			`ds-frame-${defaultFrame.id}`,
+			`${defaultFrame.id}-frame`,
 		)
 
-		const title = component.getByTestId(`ds-text-frame-${defaultFrame.id}`)
+		const title = component.getByTestId(`${defaultFrame.id}-frame-text`)
 		if (defaultFrame.title) await expect(title).toHaveText(defaultFrame.title)
 
 		const children = component.getByTestId("children-test")
 		await expect(children).toHaveText("Test Content")
+	})
+
+	test("renders properly without title", async ({ mount }) => {
+		const component = await mount(
+			<DSFrame
+				id={noTitleDefaultFrame.id}
+				title={noTitleDefaultFrame.title}
+			>
+				{noTitleDefaultFrame.children}
+			</DSFrame>,
+		)
+
+		const title = component.getByTestId(`${noTitleDefaultFrame.id}-frame-text`)
+
+		await expect(title).toBeHidden()
 	})
 })
