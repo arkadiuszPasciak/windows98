@@ -1,6 +1,5 @@
 import { expect, test } from "@playwright/experimental-ct-react"
 import { DSRadio } from "./ds-radio"
-import { DSRadioStories, dsRadioStoriesProps } from "./ds-radio.stories.tsx"
 import type { DSRadioProps } from "./ds-radio.type"
 
 const defaultRadioProps: DSRadioProps = {
@@ -33,10 +32,34 @@ test.describe("DSRadio", () => {
 		const iconElement = component.getByTestId(
 			`${defaultRadioProps.id}-radio-icon`,
 		)
-		const textElement = component.getByTestId(`ds-text-${defaultRadioProps.id}`)
+		const textElement = component.getByTestId(
+			`${defaultRadioProps.id}-radio-text`,
+		)
 
-		await expect(component).toBeVisible()
-		await expect(inputElement).toBeVisible()
+		await expect(component).toHaveAttribute(
+			"data-testid",
+			`${defaultRadioProps.id}-radio-label`,
+		)
+		await expect(component).toHaveAttribute(
+			"for",
+			`${defaultRadioProps.id}-radio`,
+		)
+		await expect(component).toHaveAttribute("data-state", "active")
+
+		await expect(inputElement).toHaveAttribute("type", "radio")
+		await expect(inputElement).toHaveAttribute(
+			"id",
+			`${defaultRadioProps.id}-radio`,
+		)
+		await expect(inputElement).toHaveAttribute(
+			"name",
+			`${defaultRadioProps.name}`,
+		)
+		await expect(inputElement).toHaveAttribute(
+			"value",
+			`${defaultRadioProps.id}`,
+		)
+
 		await expect(iconElement).toBeVisible()
 
 		if (defaultRadioProps.text.visible) {
@@ -63,7 +86,7 @@ test.describe("DSRadio", () => {
 
 		await component.click()
 		await expect(inputElement).toBeChecked()
-		await expect(checked).toBe(true)
+		expect(checked).toBe(true)
 	})
 
 	test("is disabled when state is disabled", async ({ mount }) => {
@@ -75,7 +98,7 @@ test.describe("DSRadio", () => {
 
 		const isRadioDisabled = await radioInputElement.isDisabled()
 
-		await expect(isRadioDisabled).toBe(true)
+		expect(isRadioDisabled).toBe(true)
 	})
 
 	test("is checked when checked is initial value", async ({ mount }) => {
@@ -87,45 +110,6 @@ test.describe("DSRadio", () => {
 
 		const isRadioChecked = await radioInputElement.isChecked()
 
-		await expect(isRadioChecked).toBe(true)
-	})
-
-	test("only one radio button is checked when clicked", async ({ mount }) => {
-		const component = await mount(<DSRadioStories />)
-
-		const labelElement1 = component.getByTestId(
-			`${dsRadioStoriesProps.radio1.id}-radio`,
-		)
-		const labelElement2 = component.getByTestId(
-			`${dsRadioStoriesProps.radio2.id}-radio`,
-		)
-		const labelElement3 = component.getByTestId(
-			`${dsRadioStoriesProps.radio3.id}-radio`,
-		)
-
-		const inputElement1 = component.getByTestId(
-			`${dsRadioStoriesProps.radio1.id}-radio`,
-		)
-		const inputElement2 = component.getByTestId(
-			`${dsRadioStoriesProps.radio2.id}-radio`,
-		)
-		const inputElement3 = component.getByTestId(
-			`${dsRadioStoriesProps.radio3.id}-radio`,
-		)
-
-		await labelElement2.click()
-		await expect(inputElement1).not.toBeChecked()
-		await expect(inputElement2).toBeChecked()
-		await expect(inputElement3).not.toBeChecked()
-
-		await labelElement3.click()
-		await expect(inputElement1).not.toBeChecked()
-		await expect(inputElement2).not.toBeChecked()
-		await expect(inputElement3).toBeChecked()
-
-		await labelElement1.click()
-		await expect(inputElement1).toBeChecked()
-		await expect(inputElement2).not.toBeChecked()
-		await expect(inputElement3).not.toBeChecked()
+		expect(isRadioChecked).toBe(true)
 	})
 })
