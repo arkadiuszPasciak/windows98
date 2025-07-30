@@ -25,6 +25,7 @@ export function DSSelect({
 	}
 
 	const state = disabled ? "disabled" : "enabled"
+	const mainId = `${id}-select`
 
 	return (
 		<div
@@ -34,14 +35,14 @@ export function DSSelect({
 		>
 			{labelName && (
 				<label
-					data-testid={`ds-select-label-${id}`}
+					data-testid={`${mainId}-label`}
 					htmlFor={id}
 				>
 					{labelName}
 				</label>
 			)}
 			<select
-				data-testid={`ds-select-select-${id}`}
+				data-testid={`${mainId}-select`}
 				disabled={disabled}
 				id={id}
 				name={id}
@@ -52,7 +53,7 @@ export function DSSelect({
 				{options.map((option, idOption) => (
 					<option
 						className={styles.option}
-						data-testid={`ds-select-option-${id}-${idOption}`}
+						data-testid={`${mainId}-option-${idOption}`}
 						key={`${id}-${option.value}`}
 						value={option.value}
 					>
