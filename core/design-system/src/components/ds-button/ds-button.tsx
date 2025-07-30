@@ -17,11 +17,8 @@ export const DSButton = ({
 	return (
 		<button
 			aria-label={!isTextVisible ? text : undefined}
-			className={getClassNames([
-				styles.button,
-				styles[`size-${size}`],
-				className,
-			])}
+			className={getClassNames([styles.button, className])}
+			data-size={size}
 			data-testid={`${id}-button`}
 			type="button"
 			disabled={disabled}

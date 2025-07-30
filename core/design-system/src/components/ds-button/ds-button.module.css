@@ -24,21 +24,21 @@
 	&:not(:disabled):active {
 		box-shadow: var(--ds-border-sunken);
 	}
-}
 
-.size-small {
-	width: 16px;
-	height: 14px;
-	padding: var(--ds-spacing-2xs);
-}
+	&[data-size="small"] {
+		width: 16px;
+		height: 14px;
+		padding: var(--ds-spacing-2xs);
+	}
 
-.size-medium {
-	height: 23px;
-	min-width: 75px;
-	padding: var(--ds-spacing-0) var(--ds-spacing-2xl);
+	&[data-size="medium"] {
+		height: 23px;
+		min-width: 75px;
+		padding: var(--ds-spacing-0) var(--ds-spacing-2xl);
 
-	&:focus {
-		outline: 1px dotted var(--ds-color-black100);
-		outline-offset: -4px;
+		&:focus {
+			outline: 1px dotted var(--ds-color-black100);
+			outline-offset: -4px;
+		}
 	}
 }
