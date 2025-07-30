@@ -20,6 +20,7 @@ export function DSStepper({
 	})
 
 	const state = disabled ? "disabled" : "enabled"
+	const mainId = `${id}-stepper`
 
 	return (
 		<div
@@ -27,7 +28,7 @@ export function DSStepper({
 			data-state={state}
 		>
 			<DSInput
-				id={`stepper-${id}`}
+				id={`${mainId}-input`}
 				initialValue={value}
 				readonly={true}
 			/>
@@ -36,7 +37,7 @@ export function DSStepper({
 				ariaLabel="Increase"
 				direction="top"
 				disabled={disabled}
-				id={id}
+				id={mainId}
 				size="small"
 				onClick={handleIncrease}
 			/>
@@ -45,7 +46,7 @@ export function DSStepper({
 				ariaLabel="Decrease"
 				direction="bottom"
 				disabled={disabled}
-				id={id}
+				id={mainId}
 				size="small"
 				onClick={handleDecrease}
 			/>
