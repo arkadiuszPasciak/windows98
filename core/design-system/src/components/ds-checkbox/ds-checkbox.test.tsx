@@ -21,6 +21,11 @@ const readOnlyCheckbox: DSCheckboxProps = {
 	readonly: true,
 }
 
+const initialCheckedCheckbox: DSCheckboxProps = {
+	...defaultCheckboxProps,
+	initialChecked: true,
+}
+
 test.describe("DSCheckbox", () => {
 	test("renders properly", async ({ mount }) => {
 		const component = await mount(<DSCheckbox {...defaultCheckboxProps} />)
@@ -28,10 +33,34 @@ test.describe("DSCheckbox", () => {
 		const inputElement = component.getByTestId(
 			`${defaultCheckboxProps.id}-checkbox-input`,
 		)
-		const text = component.getByTestId(`ds-text-${defaultCheckboxProps.id}`)
+		const text = component.getByTestId(
+			`${defaultCheckboxProps.id}-checkbox-text`,
+		)
 
-		await expect(component).toBeVisible()
-		await expect(inputElement).toBeVisible()
+		await expect(component).toHaveAttribute(
+			"data-testid",
+			`${defaultCheckboxProps.id}-checkbox-label`,
+		)
+		await expect(component).toHaveAttribute(
+			"aria-label",
+			defaultCheckboxProps.text,
+		)
+		await expect(component).toHaveAttribute(
+			"for",
+			`${defaultCheckboxProps.id}-checkbox`,
+		)
+
+		await expect(inputElement).toHaveRole("checkbox")
+		await expect(inputElement).toHaveAttribute(
+			"id",
+			`${defaultCheckboxProps.id}-checkbox`,
+		)
+		await expect(inputElement).toHaveAttribute("type", "checkbox")
+		await expect(inputElement).toHaveAttribute(
+			"name",
+			defaultCheckboxProps.name,
+		)
+
 		await expect(text).toHaveText(defaultCheckboxProps.text)
 	})
 
@@ -73,5 +102,15 @@ test.describe("DSCheckbox", () => {
 		const isInputReadonly = await inputElement.getAttribute("readonly")
 
 		expect(isInputReadonly).not.toBeNull()
+	})
+
+	test("initially checked state", async ({ mount }) => {
+		const component = await mount(<DSCheckbox {...initialCheckedCheckbox} />)
+
+		const inputElement = component.getByTestId(
+			`${defaultCheckboxProps.id}-checkbox-input`,
+		)
+
+		await expect(inputElement).toBeChecked()
 	})
 })
