@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/experimental-ct-react"
 import { DSInput, type DSInputProps } from "./index"
 
 const defaultInput: DSInputProps = {
-	id: "input",
+	id: "your-name",
 	type: "text",
 	disabled: false,
 	readonly: false,
@@ -28,24 +28,32 @@ test.describe("DSInput", () => {
 	test("renders properly", async ({ mount }) => {
 		const component = await mount(<DSInput {...defaultInput} />)
 
-		const inputElement = await component.getByTestId(
-			`ds-input-input-${defaultInput.id}`,
+		const inputElement = component.getByTestId(`${defaultInput.id}-input-input`)
+		const labelElement = component.getByTestId(`${defaultInput.id}-input-label`)
+
+		await expect(component).toHaveAttribute(
+			"data-testid",
+			`${defaultInput.id}-input-wrapper`,
 		)
-		const labelElement = await component.getByTestId(
-			`ds-input-label-${defaultInput.id}`,
+		await expect(component).toHaveAttribute("data-wrapper", "vertical")
+		await expect(component).toHaveAttribute("data-state", "active")
+
+		await expect(inputElement).toHaveAttribute("id", `${defaultInput.id}-input`)
+		await expect(inputElement).toHaveAttribute(
+			"name",
+			`${defaultInput.id}-input`,
 		)
 
-		await expect(component).toBeVisible()
-		await expect(inputElement).toBeVisible()
-		await expect(labelElement).toBeVisible()
+		await expect(labelElement).toHaveAttribute(
+			"for",
+			`${defaultInput.id}-input`,
+		)
 	})
 
 	test("handles input change", async ({ mount }) => {
 		const component = await mount(<DSInput {...defaultInput} />)
 
-		const inputElement = await component.getByTestId(
-			`ds-input-input-${defaultInput.id}`,
-		)
+		const inputElement = component.getByTestId(`${defaultInput.id}-input-input`)
 
 		await inputElement.type("Test Input")
 
@@ -55,25 +63,21 @@ test.describe("DSInput", () => {
 	test("does not allow input when disabled", async ({ mount }) => {
 		const component = await mount(<DSInput {...disabledInput} />)
 
-		const inputElement = await component.getByTestId(
-			`ds-input-input-${defaultInput.id}`,
-		)
+		const inputElement = component.getByTestId(`${defaultInput.id}-input-input`)
 
 		const isInputDisabled = await inputElement.isDisabled()
 
-		await expect(isInputDisabled).toBe(true)
+		expect(isInputDisabled).toBe(true)
 	})
 
 	test("does not allow input when readonly", async ({ mount }) => {
 		const component = await mount(<DSInput {...readOnlyInput} />)
 
-		const inputElement = await component.getByTestId(
-			`ds-input-input-${defaultInput.id}`,
-		)
+		const inputElement = component.getByTestId(`${defaultInput.id}-input-input`)
 
 		const isInputReadonly =
 			(await inputElement.getAttribute("readonly")) !== null
 
-		await expect(isInputReadonly).toBe(true)
+		expect(isInputReadonly).toBe(true)
 	})
 })

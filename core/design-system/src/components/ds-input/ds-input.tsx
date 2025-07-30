@@ -18,13 +18,13 @@ export function DSInput({
 }: DSInputProps) {
 	const { value, handleInputChange } = useDSInput({ initialValue, onChange })
 
-	const mainID = `ds-input-${id}`
+	const mainID = `${id}-input`
 	const state = disabled ? "disabled" : "active"
 
 	return (
 		<div
 			className={getClassNames([styles.wrapper, className])}
-			data-testid={mainID}
+			data-testid={`${mainID}-wrapper`}
 			data-wrapper={wrapperLayout}
 			data-state={state}
 		>
