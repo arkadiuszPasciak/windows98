@@ -24,7 +24,7 @@ test.describe("Runner", () => {
 			/>,
 		)
 
-		const input = component.getByTestId("ds-input-input-mf-runner-input")
+		const input = component.getByTestId("mf-runner-input-input-input")
 		const okButton = component.getByTestId("mf-runner-controller-ok-button")
 
 		await expect(
