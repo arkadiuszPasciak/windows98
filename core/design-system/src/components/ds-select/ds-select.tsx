@@ -36,7 +36,7 @@ export function DSSelect({
 			{labelName && (
 				<label
 					data-testid={`${mainId}-label`}
-					htmlFor={id}
+					htmlFor={mainId}
 				>
 					{labelName}
 				</label>
@@ -44,8 +44,8 @@ export function DSSelect({
 			<select
 				data-testid={`${mainId}-select`}
 				disabled={disabled}
-				id={id}
-				name={id}
+				id={mainId}
+				name={mainId}
 				onChange={handleOptionValue}
 				required={required}
 				value={value}

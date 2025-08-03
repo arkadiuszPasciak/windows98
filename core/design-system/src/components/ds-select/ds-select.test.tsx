@@ -59,7 +59,7 @@ test.describe("DSSelect", () => {
 				"data-testid",
 				`${defaultSelect.id}-select-label`,
 			)
-			await expect(label).toHaveAttribute("for", `${defaultSelect.id}`)
+			await expect(label).toHaveAttribute("for", `${defaultSelect.id}-select`)
 			await expect(label).toHaveText(defaultSelect.labelName)
 		}
 
@@ -68,8 +68,8 @@ test.describe("DSSelect", () => {
 			`${defaultSelect.id}-select-select`,
 		)
 
-		await expect(select).toHaveAttribute("id", defaultSelect.id)
-		await expect(select).toHaveAttribute("name", defaultSelect.id)
+		await expect(select).toHaveAttribute("id", `${defaultSelect.id}-select`)
+		await expect(select).toHaveAttribute("name", `${defaultSelect.id}-select`)
 	})
 
 	test("selects an option", async ({ mount }) => {
