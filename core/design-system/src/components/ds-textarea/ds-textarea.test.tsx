@@ -28,23 +28,40 @@ test.describe("DSTextarea", () => {
 	test("renders properly", async ({ mount }) => {
 		const component = await mount(<DSTextarea {...defaultTextarea} />)
 
-		const textareaElement = await component.getByTestId(
-			`${defaultTextarea.id}-textarea`,
+		const textareaElement = component.getByTestId(
+			`${defaultTextarea.id}-textarea-textarea`,
 		)
-		const labelElement = await component.getByTestId(
-			`${defaultTextarea.id}-label`,
+		const labelElement = component.getByTestId(
+			`${defaultTextarea.id}-textarea-label`,
 		)
 
-		await expect(component).toBeVisible()
-		await expect(textareaElement).toBeVisible()
-		await expect(labelElement).toBeVisible()
+		await expect(component).toHaveAttribute(
+			"data-testid",
+			`${defaultTextarea.id}-textarea-wrapper`,
+		)
+		await expect(component).toHaveAttribute("data-wrapper", "vertical")
+		await expect(component).toHaveAttribute("data-state", "active")
+
+		await expect(textareaElement).toHaveAttribute(
+			"id",
+			`${defaultTextarea.id}-textarea`,
+		)
+		await expect(textareaElement).toHaveAttribute(
+			"name",
+			`${defaultTextarea.id}-textarea`,
+		)
+
+		await expect(labelElement).toHaveAttribute(
+			"for",
+			`${defaultTextarea.id}-textarea`,
+		)
 	})
 
 	test("handles textarea change", async ({ mount }) => {
 		const component = await mount(<DSTextarea {...defaultTextarea} />)
 
-		const textareaElement = await component.getByTestId(
-			`${defaultTextarea.id}-textarea`,
+		const textareaElement = component.getByTestId(
+			`${defaultTextarea.id}-textarea-textarea`,
 		)
 
 		await textareaElement.type("Test Input")
@@ -55,25 +72,25 @@ test.describe("DSTextarea", () => {
 	test("does not allow input when disabled", async ({ mount }) => {
 		const component = await mount(<DSTextarea {...disabledTextarea} />)
 
-		const textareaElement = await component.getByTestId(
-			`${defaultTextarea.id}-textarea`,
+		const textareaElement = component.getByTestId(
+			`${defaultTextarea.id}-textarea-textarea`,
 		)
 
 		const isTextareaDisabled = await textareaElement.isDisabled()
 
-		await expect(isTextareaDisabled).toBe(true)
+		expect(isTextareaDisabled).toBe(true)
 	})
 
 	test("does not allow input when readonly", async ({ mount }) => {
 		const component = await mount(<DSTextarea {...readOnlyTextarea} />)
 
-		const textareaElement = await component.getByTestId(
-			`${defaultTextarea.id}-textarea`,
+		const textareaElement = component.getByTestId(
+			`${defaultTextarea.id}-textarea-textarea`,
 		)
 
 		const isTextareaReadonly =
 			(await textareaElement.getAttribute("readonly")) !== null
 
-		await expect(isTextareaReadonly).toBe(true)
+		expect(isTextareaReadonly).toBe(true)
 	})
 })

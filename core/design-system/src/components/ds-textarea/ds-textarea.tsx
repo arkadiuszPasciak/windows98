@@ -20,31 +20,36 @@ export function DSTextarea({
 		onChange,
 	})
 
+	const mainId = `${id}-textarea`
+	const state = disabled ? "disabled" : "active"
+
 	return (
 		<div
 			className={getClassNames([styles[`wrapper-${wrapperLayout}`], className])}
-			data-testid={`${id}-wrapper-textarea`}
+			data-testid={`${mainId}-wrapper`}
+			data-wrapper={wrapperLayout}
+			data-state={state}
 		>
 			{labelName && (
 				<label
 					className={getClassNames([styles.label])}
-					data-testid={`${id}-label`}
-					htmlFor={id}
+					data-testid={`${mainId}-label`}
+					htmlFor={mainId}
 				>
 					{labelName}
 				</label>
 			)}
 
 			<textarea
-				id={id}
+				id={mainId}
 				className={getClassNames([styles.textarea])}
-				data-testid={`${id}-textarea`}
+				data-testid={`${mainId}-textarea`}
 				disabled={disabled}
 				readOnly={readonly}
 				value={value}
 				minLength={min ?? undefined}
 				maxLength={max ?? undefined}
-				name={id}
+				name={mainId}
 				onChange={handleTextareaChange}
 			/>
 		</div>
