@@ -7,7 +7,10 @@ export const PulpitItem: FunctionComponent<PulpitItemProps> = ({ name }) => {
 	const { translatedName } = usePulpitItem({ name })
 
 	return (
-		<div className={styles.item}>
+		<div
+			className={styles.item}
+			data-testid="mf-pulpit-item"
+		>
 			<img
 				className={styles.icon}
 				width="32"
