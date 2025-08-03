@@ -15,7 +15,7 @@ test.describe("ThemeManager", () => {
 				onChangeTheme={onChangeTheme}
 			/>,
 		)
-		const dropdown = component.getByTestId("ds-select-select-mf-theme-manager")
+		const dropdown = component.getByTestId("mf-theme-manager-select-select")
 
 		const selectAndVerifyTheme = async (theme: string) => {
 			await dropdown.selectOption(theme)
