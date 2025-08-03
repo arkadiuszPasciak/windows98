@@ -10,13 +10,17 @@ test.describe("Year switcher", () => {
 		const nextYear = currentYear + 1
 		const previousYear = currentYear - 1
 
-		const input = component.getByTestId("ds-input-input-stepper-calendar-year")
+		const input = component.getByTestId(
+			"calendar-year-stepper-input-input-input",
+		)
 		const increaseYear = component.getByTestId(
-			"ds-button-arrow-calendar-year-top",
+			"calendar-year-stepper-button-arrow-top",
 		)
 		const decreaseYear = component.getByTestId(
-			"ds-button-arrow-calendar-year-bottom",
+			"calendar-year-stepper-button-arrow-bottom",
 		)
+
+		await expect(input, "input is visible").toBeVisible()
 
 		await expect(input, "input has the initial year value").toHaveValue(
 			String(currentYear),
@@ -27,6 +31,8 @@ test.describe("Year switcher", () => {
 		await expect(input, "input has the incremented year value").toHaveValue(
 			String(nextYear),
 		)
+
+		await decreaseYear.click()
 
 		await decreaseYear.click()
 
