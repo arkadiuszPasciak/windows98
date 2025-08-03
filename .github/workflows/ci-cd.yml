@@ -240,10 +240,10 @@ jobs:
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: pnpm --filter @windows98/design-system exec playwright install --with-deps
 
       - name: Design System & Micro Frontend E2E Tests
-        run: pnpm run --filter @windows98/ci-cd test:e2e:run
+        run: pnpm run --filter @windows98/ci-cd test:ui:run
 
   deploy-preview:
     runs-on: ubuntu-latest
