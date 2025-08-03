@@ -209,8 +209,45 @@ jobs:
       - name: Build Applications
         run: pnpm run --filter @windows98/ci-cd build
 
+  e2e-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [22.17.1]
+    needs: build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3.5.0
+
+      - name: Install Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Restore pnpm dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pnpm-store
+            node_modules
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+
+      - name: Install PNPM
+        run: npm install -g pnpm@10.13.1
+
+      - name: Install Dependencies
+        run: pnpm install
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+
+      - name: Install Playwright Browsers
+        run: pnpm --filter @windows98/design-system exec playwright install --with-deps
+
+      - name: Design System & Micro Frontend E2E Tests
+        run: pnpm run --filter @windows98/ci-cd test:ui:run
+
   deploy-preview:
     runs-on: ubuntu-latest
+    needs: e2e-tests
     steps:
       - uses: actions/checkout@v3.5.0
 
