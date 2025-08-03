@@ -7,45 +7,51 @@ test.describe("Controller", () => {
 	}) => {
 		const component = await mount(<MFTimer onCloseProgram={() => {}} />)
 
-		const hoursUpButton = component.getByTestId("ds-button-arrow-hours-top")
+		const hoursUpButton = component.getByTestId(
+			"hours-stepper-button-arrow-top",
+		)
 		const hoursDownButton = component.getByTestId(
-			"ds-button-arrow-hours-bottom",
+			"hours-stepper-button-arrow-bottom",
 		)
-		const minutesUpButton = component.getByTestId("ds-button-arrow-minutes-top")
+		const minutesUpButton = component.getByTestId(
+			"minutes-stepper-button-arrow-top",
+		)
 		const minutesDownButton = component.getByTestId(
-			"ds-button-arrow-minutes-bottom",
+			"minutes-stepper-button-arrow-bottom",
 		)
-		const secondsUpButton = component.getByTestId("ds-button-arrow-seconds-top")
+		const secondsUpButton = component.getByTestId(
+			"seconds-stepper-button-arrow-top",
+		)
 		const secondsDownButton = component.getByTestId(
-			"ds-button-arrow-seconds-bottom",
+			"seconds-stepper-button-arrow-bottom",
 		)
 
 		await hoursUpButton.click()
 		await minutesUpButton.click()
 		await secondsUpButton.click()
 
-		await expect(
-			component.getByTestId("ds-input-input-stepper-hours"),
-		).toHaveValue("1")
-		await expect(
-			component.getByTestId("ds-input-input-stepper-minutes"),
-		).toHaveValue("1")
-		await expect(
-			component.getByTestId("ds-input-input-stepper-seconds"),
-		).toHaveValue("1")
+		const hoursInput = component.getByTestId("hours-stepper-input-input-input")
+		const minutesInput = component.getByTestId(
+			"minutes-stepper-input-input-input",
+		)
+		const secondsInput = component.getByTestId(
+			"seconds-stepper-input-input-input",
+		)
+
+		await expect(hoursInput, "hours input is visible").toBeVisible()
+		await expect(minutesInput, "minutes input is visible").toBeVisible()
+		await expect(secondsInput, "seconds input is visible").toBeVisible()
+
+		await expect(hoursInput).toHaveValue("1")
+		await expect(minutesInput).toHaveValue("1")
+		await expect(secondsInput).toHaveValue("1")
 
 		await hoursDownButton.click()
 		await minutesDownButton.click()
 		await secondsDownButton.click()
 
-		await expect(
-			component.getByTestId("ds-input-input-stepper-hours"),
-		).toHaveValue("0")
-		await expect(
-			component.getByTestId("ds-input-input-stepper-minutes"),
-		).toHaveValue("0")
-		await expect(
-			component.getByTestId("ds-input-input-stepper-seconds"),
-		).toHaveValue("0")
+		await expect(hoursInput).toHaveValue("0")
+		await expect(minutesInput).toHaveValue("0")
+		await expect(secondsInput).toHaveValue("0")
 	})
 })

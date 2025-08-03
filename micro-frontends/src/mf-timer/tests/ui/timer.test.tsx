@@ -5,10 +5,14 @@ test.describe("Timer", () => {
 	test("should follow a typical user scenario", async ({ mount, page }) => {
 		const component = await mount(<MFTimer onCloseProgram={() => {}} />)
 
-		const customPreset = component.getByTestId("mf-timer-preset-custom-radio")
+		const customPreset = component.getByTestId(
+			"mf-timer-preset-custom-radio-input",
+		)
 		await customPreset.click()
 
-		const secondsUpButton = component.getByTestId("ds-button-arrow-seconds-top")
+		const secondsUpButton = component.getByTestId(
+			"seconds-stepper-button-arrow-top",
+		)
 		for (let index = 0; index < 5; index++) {
 			await secondsUpButton.click()
 		}
@@ -26,20 +30,20 @@ test.describe("Timer", () => {
 		await expect(
 			startStopButton,
 			"Button should display 'Stop' after starting the timer",
-		).toHaveText("Stop")
+		).toHaveText("mf-timer.stop")
 
 		await page.waitForTimeout(2000)
 		await startStopButton.click()
 		await expect(
 			startStopButton,
 			"Button should display 'Start' after pausing the timer",
-		).toHaveText("Start")
+		).toHaveText("mf-timer.start")
 
 		await startStopButton.click()
 		await expect(
 			startStopButton,
 			"Button should display 'Stop' after restarting the timer",
-		).toHaveText("Stop")
+		).toHaveText("mf-timer.stop")
 
 		await expect(
 			component.getByTestId("mf-timer-screen-seconds"),
