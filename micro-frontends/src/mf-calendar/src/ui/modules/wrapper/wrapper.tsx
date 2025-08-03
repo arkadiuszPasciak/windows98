@@ -11,7 +11,7 @@ export const Wrapper = () => {
 	return (
 		<DSFrame
 			className={styles.wrapper}
-			id="calculator"
+			id="calendar"
 			title={title}
 		>
 			<MonthSwitcher />

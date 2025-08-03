@@ -108,14 +108,14 @@ test.describe("Switcher", () => {
 	test("select timezones", async ({ mount }) => {
 		const component = await mount(<TimezoneView />)
 		const select = await component.getByTestId(
-			"ds-select-select-timezone-switcher",
+			"timezone-switcher-select-select",
 		)
 
 		for (let index = 0; index <= timezones.length - 1; index++) {
-			await select.selectOption(timezones[index].label)
+			await select.selectOption(String(timezones[index].value))
 			await expect(
 				select,
-				`User has selected ${timezones[index].label}`,
+				`User has selected ${timezones[index].value}`,
 			).toHaveValue(String(timezones[index].value))
 		}
 	})

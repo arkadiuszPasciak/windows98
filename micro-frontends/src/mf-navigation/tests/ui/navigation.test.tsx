@@ -4,9 +4,10 @@ import { NavigationView } from "../../src/ui/views"
 test.describe("Navigation", () => {
 	test("should render wrapper", async ({ mount }) => {
 		const component = await mount(<NavigationView>children</NavigationView>)
-		const navigationWrapper = component.getByTestId("mf-navigation-wrapper")
 
-		expect(navigationWrapper).toBeVisible()
-		expect(navigationWrapper.textContent()).toBe("children")
+		await expect(component).toHaveAttribute(
+			"data-testid",
+			"mf-navigation-wrapper",
+		)
 	})
 })

@@ -6,7 +6,7 @@ test.describe("Screen", () => {
 		const component = await mount(<MFTimer onCloseProgram={() => {}} />)
 
 		const preset3Minutes = component.getByTestId(
-			"mf-timer-preset-3-minutes-radio",
+			"mf-timer-preset-3-minutes-radio-input",
 		)
 		await preset3Minutes.click()
 		await expect(
@@ -24,7 +24,9 @@ test.describe("Screen", () => {
 	}) => {
 		const component = await mount(<MFTimer onCloseProgram={() => {}} />)
 
-		const hoursUpButton = component.getByTestId("ds-button-arrow-hours-top")
+		const hoursUpButton = component.getByTestId(
+			"hours-stepper-button-arrow-top",
+		)
 		await hoursUpButton.click()
 		await expect(
 			component.getByTestId("mf-timer-screen-hours"),
@@ -32,7 +34,7 @@ test.describe("Screen", () => {
 		).toHaveText("01")
 
 		const hoursDownButton = component.getByTestId(
-			"ds-button-arrow-hours-bottom",
+			"hours-stepper-button-arrow-bottom",
 		)
 		await hoursDownButton.click()
 		await expect(
@@ -40,7 +42,9 @@ test.describe("Screen", () => {
 			"Screen should display 00 hours after decrease",
 		).toHaveText("00")
 
-		const minutesUpButton = component.getByTestId("ds-button-arrow-minutes-top")
+		const minutesUpButton = component.getByTestId(
+			"minutes-stepper-button-arrow-top",
+		)
 		await minutesUpButton.click()
 		await expect(
 			component.getByTestId("mf-timer-screen-minutes"),
@@ -48,7 +52,7 @@ test.describe("Screen", () => {
 		).toHaveText("01")
 
 		const minutesDownButton = component.getByTestId(
-			"ds-button-arrow-minutes-bottom",
+			"minutes-stepper-button-arrow-bottom",
 		)
 		await minutesDownButton.click()
 		await expect(
@@ -56,7 +60,9 @@ test.describe("Screen", () => {
 			"Screen should display 00 minutes after decrease",
 		).toHaveText("00")
 
-		const secondsUpButton = component.getByTestId("ds-button-arrow-seconds-top")
+		const secondsUpButton = component.getByTestId(
+			"seconds-stepper-button-arrow-top",
+		)
 		await secondsUpButton.click()
 		await expect(
 			component.getByTestId("mf-timer-screen-seconds"),
@@ -64,7 +70,7 @@ test.describe("Screen", () => {
 		).toHaveText("01")
 
 		const secondsDownButton = component.getByTestId(
-			"ds-button-arrow-seconds-bottom",
+			"seconds-stepper-button-arrow-bottom",
 		)
 		await secondsDownButton.click()
 		await expect(

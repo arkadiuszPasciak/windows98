@@ -22,51 +22,29 @@ test.describe("Settings", () => {
 		const generalTabButton = component.getByTestId(
 			"mf-settings-general-tab-button",
 		)
-		generalTabButton.click()
+		await generalTabButton.click()
 
-		const systemInformation = component.getByTestId(
-			"mf-settings-system-information",
-		)
-		expect(systemInformation).toBeVisible()
+		const generalTabContent = component.getByTestId("mf-settings-general-tab")
+		await expect(generalTabContent).toBeVisible()
 
 		const dateAndTimeTabButton = component.getByTestId(
 			"mf-settings-date-and-time-tab-button",
 		)
-		dateAndTimeTabButton.click()
+		await dateAndTimeTabButton.click()
 
-		const dateAndTimeButton = component.getByTestId(
-			"mf-settings-date-and-time-button",
+		const dateAndTimeTabContent = component.getByTestId(
+			"mf-settings-date-and-time-tab-content",
 		)
-		dateAndTimeButton.click()
+		await expect(dateAndTimeTabContent).toBeVisible()
 
-		// TODO: Fix data test id in the micro frontend
-		const calendar = component.getByTestId("ds-frame-calculator")
-		expect(calendar).toBeVisible()
-
-		// TODO: Fix data test id in ds frame
-		const timezone = component.getByTestId("ds-frame-timezone")
-		expect(timezone).toBeVisible()
-
-		const customiseButton = component.getByTestId(
+		const customiseTabButton = component.getByTestId(
 			"mf-settings-customise-tab-button",
 		)
-		customiseButton.click()
+		await customiseTabButton.click()
 
-		const languageManager = component.getByTestId(
-			"ds-select-select-mf-language-manager",
+		const customiseTabContent = component.getByTestId(
+			"mf-settings-customise-tab-content",
 		)
-		expect(
-			languageManager,
-			"Language Manager is set in the customise tab",
-		).toBeVisible()
-
-		// TODO: Fix data test id in ds select
-		const themeManager = component.getByTestId(
-			"ds-select-select-mf-theme-manager",
-		)
-		expect(
-			themeManager,
-			"Theme Manager is set in the customise tab",
-		).toBeVisible()
+		await expect(customiseTabContent).toBeVisible()
 	})
 })

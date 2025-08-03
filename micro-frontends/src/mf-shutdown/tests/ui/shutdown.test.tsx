@@ -9,7 +9,7 @@ test.describe("Shutdown", () => {
 		const component = await mount(<MFShutdown onCloseProgram={() => {}} />)
 
 		const shutDownRadio = component.getByTestId(
-			"mf-shutdown-preset-shutdown-radio",
+			"mf-shutdown-preset-shutdown-radio-input",
 		)
 		await shutDownRadio.click()
 
@@ -26,7 +26,7 @@ test.describe("Shutdown", () => {
 		const component = await mount(<MFShutdown onCloseProgram={() => {}} />)
 
 		const restartRadio = component.getByTestId(
-			"mf-shutdown-preset-restart-radio",
+			"mf-shutdown-preset-restart-radio-input",
 		)
 		await restartRadio.click()
 
@@ -35,20 +35,4 @@ test.describe("Shutdown", () => {
 
 		await expect(page).toHaveURL("/")
 	})
-
-	// @TODO need to resolve problem between old app and micro app
-	test.fixme(
-		"when I click button close, the modal is closed",
-		async ({ mount }) => {
-			const component = await mount(<MFShutdown onCloseProgram={() => {}} />)
-
-			const cancelButton = component.getByTestId(
-				"mf-shutdown-controller-cancel-button",
-			)
-			await cancelButton.click()
-
-			const shutDownModal = component.getByTestId("mf-shutdown-main-modal")
-			await expect(shutDownModal).toBeHidden()
-		},
-	)
 })

@@ -44,8 +44,11 @@ test.describe("Shutdown", () => {
 			/>,
 		)
 
-		const startButton = component.getByTestId("mf-start-menu-start-button")
-		await startButton.click()
+		await expect(component).toHaveAttribute(
+			"data-testid",
+			"mf-start-menu-start-button",
+		)
+		await component.click()
 
 		const programsWrapper = component.getByTestId(
 			"mf-start-menu-menu-item-programs-wrapper",

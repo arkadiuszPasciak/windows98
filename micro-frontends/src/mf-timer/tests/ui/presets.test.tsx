@@ -3,7 +3,7 @@ import { MFTimer } from "../../src/ui/views"
 
 const presets = [
 	{
-		dataTestId: "mf-timer-preset-3-minutes-radio",
+		dataTestId: "mf-timer-preset-3-minutes-radio-input",
 		expectTime: {
 			hours: "00",
 			minutes: "03",
@@ -11,7 +11,7 @@ const presets = [
 		},
 	},
 	{
-		dataTestId: "mf-timer-preset-5-minutes-radio",
+		dataTestId: "mf-timer-preset-5-minutes-radio-input",
 		expectTime: {
 			hours: "00",
 			minutes: "05",
@@ -19,7 +19,7 @@ const presets = [
 		},
 	},
 	{
-		dataTestId: "mf-timer-preset-10-minutes-radio",
+		dataTestId: "mf-timer-preset-10-minutes-radio-input",
 		expectTime: {
 			hours: "00",
 			minutes: "10",
@@ -27,7 +27,7 @@ const presets = [
 		},
 	},
 	{
-		dataTestId: "mf-timer-preset-15-minutes-radio",
+		dataTestId: "mf-timer-preset-15-minutes-radio-input",
 		expectTime: {
 			hours: "00",
 			minutes: "15",
@@ -35,7 +35,7 @@ const presets = [
 		},
 	},
 	{
-		dataTestId: "mf-timer-preset-custom-radio",
+		dataTestId: "mf-timer-preset-custom-radio-input",
 		expectTime: {
 			hours: "00",
 			minutes: "00",

@@ -17,14 +17,14 @@ test.describe("SaveFileView", () => {
 		)
 
 		const fileNameInput = component.getByTestId(
-			"ds-input-input-mf-save-file-file-name",
+			"mf-save-file-file-name-input-input",
 		)
 		await fileNameInput.fill("TestFile")
 
 		const fileTypeSelect = component.getByTestId(
-			"ds-select-select-mf-save-file-file-type",
+			"mf-save-file-file-type-select-select",
 		)
-		await fileTypeSelect.selectOption("text-txt;charset=utf-8;")
+		await fileTypeSelect.selectOption("text-txt")
 
 		const saveButton = component.getByTestId("mf-save-file-save-button")
 		await saveButton.click()
@@ -62,15 +62,15 @@ test.describe("SaveFileView", () => {
 		)
 
 		const fileNameInput = component.getByTestId(
-			"ds-input-input-mf-save-file-file-name",
+			"mf-save-file-file-name-input-input",
 		)
 		await expect(fileNameInput).toHaveValue("mf-save-file.untitled")
 
 		const fileTypeOption1 = component.getByTestId(
-			"ds-select-option-mf-save-file-file-type-0",
+			"mf-save-file-file-type-select-option-0",
 		)
 		const fileTypeOption2 = component.getByTestId(
-			"ds-select-option-mf-save-file-file-type-1",
+			"mf-save-file-file-type-select-option-1",
 		)
 		await expect(fileTypeOption1).toHaveText("mf-save-file.text-doc")
 		await expect(fileTypeOption2).toHaveText("mf-save-file.text-txt")

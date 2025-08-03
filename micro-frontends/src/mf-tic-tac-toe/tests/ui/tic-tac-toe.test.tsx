@@ -25,7 +25,7 @@ test.describe("MFTicTacToe", () => {
 		const component = await mount(<MFTicTacToe onCloseProgram={() => {}} />)
 
 		const nameInput = component.getByTestId(
-			"ds-input-input-mf-tic-tac-toe-starter-enter-your-name",
+			"mf-tic-tac-toe-starter-enter-your-name-input-input",
 		)
 		await nameInput.fill("Wilhelm")
 

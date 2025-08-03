@@ -7,7 +7,9 @@ test.describe("Player", () => {
 	}) => {
 		const component = await mount(<MFTimer onCloseProgram={() => {}} />)
 
-		const preset3min = component.getByTestId("mf-timer-preset-3-minutes-radio")
+		const preset3min = component.getByTestId(
+			"mf-timer-preset-3-minutes-radio-input",
+		)
 		await preset3min.click()
 
 		const startStopButton = component.getByTestId(
@@ -16,10 +18,10 @@ test.describe("Player", () => {
 		const resetButton = component.getByTestId("mf-timer-player-reset-button")
 
 		await startStopButton.click()
-		expect(startStopButton).toHaveText("Stop")
+		expect(startStopButton).toHaveText("mf-timer.stop")
 
 		await startStopButton.click()
-		expect(startStopButton).toHaveText("Start")
+		expect(startStopButton).toHaveText("mf-timer.start")
 
 		await resetButton.click()
 		expect(component.getByTestId("mf-timer-screen-hours")).toHaveText("00")
