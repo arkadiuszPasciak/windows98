@@ -25,7 +25,7 @@ export const DSCheckbox: FunctionComponent<DSCheckboxProps> = ({
 			htmlFor={`${id}-checkbox`}
 			aria-label={text}
 			className={getClassNames([styles.wrapper, className])}
-			data-testid={`${id}-checkbox`}
+			data-testid={`${id}-checkbox-label`}
 		>
 			<input
 				className={styles.input}
@@ -46,7 +46,7 @@ export const DSCheckbox: FunctionComponent<DSCheckboxProps> = ({
 
 			<DSText
 				className={styles.text}
-				id={id}
+				id={`${id}-checkbox`}
 				text={text}
 			/>
 		</label>

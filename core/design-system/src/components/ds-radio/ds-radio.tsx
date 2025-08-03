@@ -20,27 +20,32 @@ export const DSRadio = ({
 		onChange,
 	})
 
+	const state = disabled ? "disabled" : "active"
+	const mainId = `${id}-radio`
+
 	return (
 		<label
 			aria-label={!text.visible ? text.content : undefined}
 			className={getClassNames([styles.wrapper, className])}
-			data-testid={`${id}-radio`}
-			data-state={disabled ? "disabled" : ""}
+			data-testid={`${mainId}-label`}
+			data-state={state}
+			htmlFor={mainId}
 		>
 			<input
 				className={getClassNames([styles.input])}
 				checked={checked}
-				data-testid={`${id}-radio-input`}
+				data-testid={`${mainId}-input`}
 				disabled={disabled}
 				name={name}
 				type="radio"
 				value={id}
 				onChange={handleChange}
+				id={mainId}
 			/>
 
 			<span
 				className={getClassNames([styles.icon])}
-				data-testid={`${id}-radio-icon`}
+				data-testid={`${mainId}-icon`}
 			>
 				<DSIconRadioSVG isChecked={checked} />
 			</span>
@@ -48,7 +53,7 @@ export const DSRadio = ({
 			{text.visible && (
 				<DSText
 					className={getClassNames([styles.text])}
-					id={id}
+					id={mainId}
 					text={text.content}
 				/>
 			)}

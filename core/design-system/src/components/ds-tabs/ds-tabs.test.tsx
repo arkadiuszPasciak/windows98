@@ -30,15 +30,19 @@ test.describe("DSTabs", () => {
 		)
 
 		const secondTabButton = component.getByTestId("profile-settings-tab-button")
-		secondTabButton.click()
+		await secondTabButton.click()
 
-		const secondTabContent = component.getByText("Settings Content")
-		expect(secondTabContent).toBeVisible()
+		const secondTabContent = component.getByTestId(
+			"profile-settings-tab-content",
+		)
+		await expect(secondTabContent).toHaveAttribute("data-active", "true")
 
 		const firstTabButton = component.getByTestId("profile-overview-tab-button")
-		firstTabButton.click()
+		await firstTabButton.click()
 
-		const overviewContent = component.getByText("Overview Content")
-		expect(overviewContent).toBeVisible()
+		const overviewContent = component.getByTestId(
+			"profile-overview-tab-content",
+		)
+		await expect(overviewContent).toHaveAttribute("data-active", "true")
 	})
 })

@@ -5,7 +5,7 @@ const defaultButton: DSButtonArrowProps = {
 	ariaLabel: "Test Button",
 	direction: "top",
 	disabled: false,
-	id: "test-button",
+	id: "increase",
 	size: "medium",
 	onClick: () => {},
 }
@@ -13,6 +13,11 @@ const defaultButton: DSButtonArrowProps = {
 const disabledButton: DSButtonArrowProps = {
 	...defaultButton,
 	disabled: true,
+}
+
+const arrowBottomButton: DSButtonArrowProps = {
+	...defaultButton,
+	direction: "bottom",
 }
 
 test.use({ viewport: { width: 500, height: 500 } })
@@ -30,7 +35,20 @@ test.describe("DSButtonArrow", () => {
 			/>,
 		)
 
-		await expect(component).toBeVisible()
+		await expect(component).toHaveRole("button")
+		await expect(component).toHaveAttribute(
+			"aria-label",
+			defaultButton.ariaLabel,
+		)
+		await expect(component).toHaveAttribute(
+			"data-arrow",
+			defaultButton.direction,
+		)
+		await expect(component).toHaveAttribute(
+			"data-testid",
+			`${defaultButton.id}-button-arrow-top`,
+		)
+		await expect(component).toHaveAttribute("data-size", defaultButton.size)
 	})
 
 	test("triggers onClick when clicked", async ({ mount }) => {
@@ -58,7 +76,7 @@ test.describe("DSButtonArrow", () => {
 		const component = await mount(
 			<DSButtonArrow
 				ariaLabel={disabledButton.ariaLabel}
-				direction={disabledButton.direction}
+				direction={arrowBottomButton.direction}
 				disabled={disabledButton.disabled}
 				id={defaultButton.id}
 				size={disabledButton.size}

@@ -48,15 +48,28 @@ test.describe("DSSelect", () => {
 		)
 
 		const label = defaultSelect.labelName
-			? await component.getByText(defaultSelect.labelName)
+			? component.getByText(defaultSelect.labelName)
 			: null
-		const select = await component.getByTestId(
-			`ds-select-select-${defaultSelect.id}`,
-		)
+		const select = component.getByTestId(`${defaultSelect.id}-select-select`)
 
 		await expect(component).toBeVisible()
-		if (label) await expect(label).toBeVisible()
-		await expect(select).toBeVisible()
+
+		if (label && defaultSelect.labelName) {
+			await expect(label).toHaveAttribute(
+				"data-testid",
+				`${defaultSelect.id}-select-label`,
+			)
+			await expect(label).toHaveAttribute("for", `${defaultSelect.id}-select`)
+			await expect(label).toHaveText(defaultSelect.labelName)
+		}
+
+		await expect(select).toHaveAttribute(
+			"data-testid",
+			`${defaultSelect.id}-select-select`,
+		)
+
+		await expect(select).toHaveAttribute("id", `${defaultSelect.id}-select`)
+		await expect(select).toHaveAttribute("name", `${defaultSelect.id}-select`)
 	})
 
 	test("selects an option", async ({ mount }) => {
@@ -73,9 +86,7 @@ test.describe("DSSelect", () => {
 			/>,
 		)
 
-		const select = await component.getByTestId(
-			`ds-select-select-${defaultSelect.id}`,
-		)
+		const select = component.getByTestId(`${defaultSelect.id}-select-select`)
 
 		await select.selectOption("de")
 		await expect(select).toHaveValue("de")
@@ -101,12 +112,10 @@ test.describe("DSSelect", () => {
 			/>,
 		)
 
-		const select = await component.getByTestId(
-			`ds-select-select-${disabledSelect.id}`,
-		)
+		const select = component.getByTestId(`${disabledSelect.id}-select-select`)
 
 		const isDisabled = await select.isDisabled()
 
-		await expect(isDisabled).toBe(true)
+		expect(isDisabled).toBe(true)
 	})
 })

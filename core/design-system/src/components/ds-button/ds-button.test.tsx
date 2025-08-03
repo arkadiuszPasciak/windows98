@@ -6,6 +6,7 @@ const defaultButton: DSButtonProps = {
 	text: "Click Me",
 	id: "open-modal",
 	onClick: () => {},
+	size: "medium",
 }
 
 const disabledButton: DSButtonProps = {
@@ -28,17 +29,14 @@ test.use({ viewport: { width: 500, height: 500 } })
 
 test.describe("DSButton", () => {
 	test("renders properly", async ({ mount }) => {
-		const component = await mount(
-			<div>
-				<DSButton {...defaultButton} />
-			</div>,
+		const component = await mount(<DSButton {...defaultButton} />)
+
+		await expect(component).toHaveRole("button")
+		await expect(component).toHaveAttribute(
+			"data-testid",
+			`${defaultButton.id}-button`,
 		)
-
-		const buttonElement = await component.getByRole("button", {
-			name: "Click Me",
-		})
-
-		await expect(buttonElement).toBeVisible()
+		await expect(component).toHaveAttribute("data-size", "medium")
 	})
 
 	test("handles click event", async ({ mount }) => {

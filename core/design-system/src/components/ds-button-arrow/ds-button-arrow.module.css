@@ -26,26 +26,26 @@
 	&:not(:disabled):active {
 		box-shadow: var(--ds-border-sunken);
 	}
-}
 
-.arrow-bottom {
-	&::after {
-		border-top: 3px solid var(--ds-text-color-primary);
+	&[data-arrow="bottom"] {
+		&::after {
+			border-top: 3px solid var(--ds-text-color-primary);
+		}
 	}
-}
 
-.arrow-top {
-	&::after {
-		border-bottom: 3px solid var(--ds-text-color-primary);
+	&[data-arrow="top"] {
+		&::after {
+			border-bottom: 3px solid var(--ds-text-color-primary);
+		}
 	}
-}
 
-.size-small {
-	width: 20px;
-	height: 10px;
-}
+	&[data-size="small"] {
+		width: 20px;
+		height: 10px;
+	}
 
-.size-medium {
-	width: 16px;
-	height: 17px;
+	&[data-size="medium"] {
+		width: 16px;
+		height: 17px;
+	}
 }

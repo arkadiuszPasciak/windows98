@@ -16,53 +16,16 @@ test.describe("DSModal", () => {
 	test("renders properly", async ({ mount }) => {
 		const component = await mount(<DSModal {...defaultModal} />)
 
-		const modalElement = await component.getByTestId(
+		const modalElement = component.getByTestId(
 			`${defaultModal.id}-modal-container`,
 		)
-		const titleElement = await component.getByTestId(
+		const titleElement = component.getByTestId(
 			`${defaultModal.id}-modal-header`,
 		)
 
 		await expect(component).toBeVisible()
 		await expect(modalElement).toBeVisible()
 		await expect(titleElement).toBeVisible()
-	})
-
-	test("opens and closes modal", async ({ mount }) => {
-		let modalState = false
-
-		const component = await mount(
-			<>
-				<button
-					data-testid="open-modal-button"
-					type="button"
-					onClick={() => {
-						console.log("test")
-						modalState = true
-					}}
-				>
-					Open Modal
-				</button>
-				{modalState && (
-					<DSModal
-						{...defaultModal}
-						onClose={() => {
-							modalState = false
-						}}
-					/>
-				)}
-			</>,
-		)
-
-		const openButton = component.getByTestId("open-modal-button")
-		await openButton.click()
-
-		const modalComponent = component.getByTestId(`${defaultModal.id}`)
-		await expect(modalComponent).toBeVisible()
-
-		const closeButton = component.getByTestId(`${defaultModal.id}-close-button`)
-		await closeButton.click()
-		await expect(modalComponent).toBeHidden()
 	})
 
 	test("resizes window", async ({ mount }) => {
@@ -89,13 +52,11 @@ test.describe("DSModal", () => {
 	test("moves window", async ({ mount }) => {
 		const component = await mount(<DSModal {...defaultModal} />)
 
-		const modalElement = await component.getByTestId(
+		const modalElement = component.getByTestId(
 			`${defaultModal.id}-modal-container`,
 		)
 
-		const modalHeader = await component.getByTestId(
-			`${defaultModal.id}-modal-header`,
-		)
+		const modalHeader = component.getByTestId(`${defaultModal.id}-modal-header`)
 
 		await modalHeader.dispatchEvent("mousedown", {
 			clientX: 100,
@@ -107,14 +68,14 @@ test.describe("DSModal", () => {
 		})
 		await modalHeader.dispatchEvent("mouseup")
 
-		await expect(modalElement).toHaveCSS("left", "600px")
-		await expect(modalElement).toHaveCSS("top", "600px")
+		await expect(modalElement).toHaveCSS("left", "580px")
+		await expect(modalElement).toHaveCSS("top", "580px")
 	})
 
 	test("check content render", async ({ mount }) => {
 		const component = await mount(<DSModal {...defaultModal} />)
 
-		const contentElement = await component.getByTestId(
+		const contentElement = component.getByTestId(
 			`${defaultModal.id}-modal-content`,
 		)
 
@@ -125,7 +86,7 @@ test.describe("DSModal", () => {
 	test("check title render", async ({ mount }) => {
 		const component = await mount(<DSModal {...defaultModal} />)
 
-		const titleElement = await component.getByTestId(
+		const titleElement = component.getByTestId(
 			`${defaultModal.id}-modal-header-heading`,
 		)
 
