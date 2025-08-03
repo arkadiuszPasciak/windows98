@@ -6,14 +6,17 @@ test.describe("Timezone", () => {
 		const component = await mount(<TimezoneView />)
 		await expect(component, "Component has rendered correct").toBeVisible()
 
-		const frame = await component.getByTestId("ds-text-frame-timezone")
-		await expect(frame, "Frame has rendered correct").toBeVisible()
-
-		const select = await component.getByTestId(
-			"ds-select-select-timezone-switcher",
+		await expect(component, "Frame has rendered correct").toHaveAttribute(
+			"data-testid",
+			"timezone-frame",
 		)
 
-		await select.selectOption("GMT+1 Central European Time (CET)")
+		const select = component.getByTestId("timezone-switcher-select-select")
+
+		// Wait for the select to be visible first
+		await expect(select, "Select has rendered correct").toBeVisible()
+
+		await select.selectOption("1")
 		await expect(select, "User has selected CET").toHaveValue(String(1))
 	})
 })
