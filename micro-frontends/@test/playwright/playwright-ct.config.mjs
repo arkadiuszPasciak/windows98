@@ -8,4 +8,5 @@ export default defineConfig({
 		ctPort: 3100,
 	},
 	testDir: "../../src/",
+	testMatch: "tests/*ui/*.test.tsx",
 })
