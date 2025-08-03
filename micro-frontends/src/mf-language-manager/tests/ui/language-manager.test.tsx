@@ -15,9 +15,7 @@ test.describe("LanguageManager", () => {
 				onChangeLanguage={onChangeLanguage}
 			/>,
 		)
-		const dropdown = component.getByTestId(
-			"ds-select-select-mf-language-manager",
-		)
+		const dropdown = component.getByTestId("mf-language-manager-select-select")
 
 		const selectAndVerifyLanguage = async (language: string) => {
 			await dropdown.selectOption(language)
