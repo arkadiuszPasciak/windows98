@@ -1,0 +1,70 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="App/Architecture" />
+
+<Title>🏗️ Architecture</Title>
+
+## Overview
+
+The application follows a **Clean Architecture** pattern with clear separation of concerns across three main layers:
+
+### Application Layer (`src/application/`)
+- **Hooks**: Business logic and state management hooks
+  - `useInitAppConfig` - Application configuration initialization
+  - `useProgramManager` - Program lifecycle management
+  - `useAppConfig`, `useLanguageManager`, `useThemeManager` - Service hooks
+- **Portals**: Dynamic component rendering system
+  - `ProgramsPortal` - Lazy-loads and renders running programs (Calculator, Notepad, Settings, etc.)
+
+### Infrastructure Layer (`src/infrastructure/`)
+- **Configs**: Application configuration files
+  - `start-menu.config.ts` - Start menu structure and program definitions
+- **Services**: External integrations and utilities
+  - App, Browser, File Manager, Language, Program, Storage, Theme services
+- **Types**: TypeScript type definitions and interfaces
+
+### Presentation Layer (`src/presentation/`)
+- **Components**: Reusable UI components wrapping micro-frontends
+  - AudioButton, Calculator, Clock, Navigation, Notepad, Settings, etc.
+- **Containers**: High-level component orchestrators
+  - `MainContainer` - Root application container
+- **Layouts**: Page layout components
+  - `PulpitLayout` - Desktop background and icons
+  - `NavigationLayout` - Taskbar and navigation elements
+- **Views**: Complete page views
+  - `HomeView` - Main desktop view combining layouts
+
+## Integration
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                    @windows98/app                            │
+├──────────────────────────────────────────────────────────────┤
+│  ┌─────────────────┐  ┌─────────────────┐  ┌──────────────┐  │
+│  │   Application   │  │ Infrastructure  │  │Presentation  │  │
+│  │                 │  │                 │  │              │  │
+│  │ • Hooks         │  │ • Configs       │  │ • Components │  │
+│  │ • Portals       │  │ • Services      │  │ • Containers │  │
+│  │ • Business      │  │ • Types         │  │ • Layouts    │  │
+│  │   Logic         │  │ • External      │  │ • Views      │  │
+│  │                 │  │   Integration   │  │              │  │
+│  └─────────────────┘  └─────────────────┘  └──────────────┘  │
+└──────────────────────────────────────────────────────────────┘
+           │                    │                    │
+           ▼                    ▼                    ▼
+┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐
+│ @windows98/      │  │ @windows98/      │  │ @windows98/      │
+│ micro-services   │  │ micro-frontends  │  │ design-system    │
+├──────────────────┤  ├──────────────────┤  ├──────────────────┤
+│ • App Config     │  │ • Calculator     │  │ • Components     │
+│ • App Controller │  │ • Notepad        │  │ • Styles         │
+│ • Browser Env    │  │ • Start Menu     │  │ • Themes         │
+│ • Date/Time      │  │ • Navigation     │  │ • Icons          │
+│ • Error Handler  │  │ • Clock          │  │ • Typography     │
+│ • Event Bus      │  │ • Settings       │  │ • Layout System  │
+│ • File Manager   │  │ • Games          │  │                  │
+│ • Language       │  │ • And more...    │  │                  │
+│ • Storage        │  │                  │  │                  │
+│ • Theme          │  │                  │  │                  │
+└──────────────────┘  └──────────────────┘  └──────────────────┘
+```
