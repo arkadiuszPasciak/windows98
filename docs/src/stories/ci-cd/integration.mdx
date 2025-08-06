@@ -1,0 +1,79 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="CI-CD/Integration" />
+
+<Title>🔌 Integration</Title>
+
+## Git Hooks
+
+### Pre-commit Hook Setup
+
+Integrate with tools like `lint-staged` for automatic code quality enforcement:
+
+```json
+// package.json
+{
+  "lint-staged": {
+    "*.{js,ts,tsx}": ["pnpm -w --filter @windows98/ci-cd lint:staged:fix"]
+  }
+}
+```
+
+### Pre-push Hook Setup
+
+Ensure quality gates before pushing:
+
+```bash
+#!/bin/sh
+# .git/hooks/pre-push
+
+echo "Running quality checks..."
+pnpm -w --filter @windows98/ci-cd lint:types:run
+pnpm -w --filter @windows98/ci-cd test:unit:run
+
+if [ $? -ne 0 ]; then
+  echo "Quality checks failed. Push aborted."
+  exit 1
+fi
+```
+
+## Pipeline Integration
+
+### GitHub Actions Example
+
+```yaml
+# .github/workflows/ci.yml
+name: CI Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 10.13.1
+      
+      - name: Install dependencies
+        run: pnpm install
+      
+      - name: Type checking
+        run: pnpm -w --filter @windows98/ci-cd lint:types:run
+      
+      - name: Code linting
+        run: pnpm -w --filter @windows98/ci-cd lint:code:run
+      
+      - name: Style linting
+        run: pnpm -w --filter @windows98/ci-cd lint:styles:run
+      
+      - name: Unit tests
+        run: pnpm -w --filter @windows98/ci-cd test:unit:run
+      
+      - name: UI tests
+        run: pnpm -w --filter @windows98/ci-cd test:ui:run
+      
+      - name: Build
+        run: pnpm -w --filter @windows98/ci-cd build
+```

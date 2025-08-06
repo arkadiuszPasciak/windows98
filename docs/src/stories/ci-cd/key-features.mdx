@@ -1,0 +1,79 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="CI-CD/Key Features" />
+
+<Title>🎯 Key Features</Title>
+
+The CI/CD workspace delivers powerful automation capabilities designed to streamline monorepo development workflows while maintaining code quality and consistency across all Windows98 packages.
+
+## Multi-Workspace Execution
+
+Execute commands across multiple packages simultaneously with intelligent targeting. Each command automatically runs on all relevant workspaces, eliminating the need to manually coordinate tasks across the monorepo.
+
+**Benefits:**
+- Single command triggers multiple workspace operations
+- Consistent execution across the entire codebase
+- Reduced manual coordination and human error
+
+## Selective Package Targeting
+
+Each command type targets only relevant workspaces, optimizing performance and avoiding unnecessary operations. The system intelligently maps commands to appropriate packages based on their capabilities and requirements.
+
+**Smart Targeting Examples:**
+- `lint:styles:run` only runs on packages with CSS/styling
+- `test:ui:run` targets only packages with UI components
+- `build` executes only on deployable packages
+
+## Streamlined Development
+
+Unified interface for build, lint, test, and deployment tasks across the entire monorepo. Developers can focus on coding while automation handles the complexity of coordinating tasks across multiple packages.
+
+**Developer Experience:**
+- Simple, consistent command interface
+- No need to remember workspace-specific commands
+- Automated coordination of complex multi-package operations
+
+## Error Handling
+
+Robust error reporting and process management with detailed context about failures. When commands fail, developers get clear information about which workspace failed and why.
+
+**Error Management:**
+- Detailed error messages with command and workspace context
+- Failed operations don't block other workspace executions
+- Clear success/failure reporting for each targeted package
+
+## PNPM Integration
+
+Leverages PNPM workspaces for efficient dependency management and command execution. The system uses PNPM's filtering capabilities to execute commands precisely where needed.
+
+**PNPM Advantages:**
+- Efficient workspace filtering with `--filter` flags
+- Optimized dependency resolution
+- Fast, reliable command execution across packages
+
+## Scalability
+
+Easy to add new workspaces and commands as the monorepo grows. The configuration-driven approach means adding new packages or command types requires minimal setup.
+
+**Growth Support:**
+- Configuration-based workspace mapping
+- Simple addition of new command types
+- Automatic inclusion of new workspaces in relevant commands
+
+## Consistency
+
+Ensures uniform execution across the entire monorepo, maintaining code quality standards and preventing configuration drift between packages.
+
+**Quality Assurance:**
+- Standardized linting rules across all packages
+- Consistent testing approaches
+- Uniform build processes and outputs
+
+## Developer Experience
+
+Simplified workflow for complex monorepo operations with intuitive commands and comprehensive feedback. Developers can execute sophisticated automation with simple, memorable commands.
+
+**UX Improvements:**
+- Intuitive command naming (e.g., `lint:code:run`, `test:ui:run`)
+- Comprehensive logging and progress feedback
+- Predictable behavior across all command types

@@ -1,0 +1,17 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="CI-CD/Structure" />
+
+<Title>📁 Structure</Title>
+
+## **Commands Layer** (`src/commands/`)
+- **`run.command.mjs`** - Entry point for all CI/CD operations
+- Extracts command arguments from CLI
+- Instantiates and executes CICDCommand class
+
+## **Configuration Layer** (`src/configs/`)
+- **`ci-cd.config.mjs`** - Central configuration defining workspace mappings
+- Contains CICDCommand class with command execution logic
+- Maps each command type to relevant workspace packages
+
+
