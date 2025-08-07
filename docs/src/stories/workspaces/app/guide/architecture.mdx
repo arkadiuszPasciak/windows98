@@ -1,0 +1,130 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/App/Guide/Architecture" />
+
+<Title>🏗️ Architecture</Title>
+
+## Architecture Diagram
+
+The following diagram illustrates the complete application flow from bootstrap to runtime architecture:
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                    @windows98/app                            │
+├──────────────────────────────────────────────────────────────┤
+│  ┌────────────────────────────────────────────────────────┐  │
+│  │                Bootstrap Process                       │  │
+│  │ main.tsx → bootstrap-app.tsx → MainContainer → Views   │  │
+│  │    │            │                  │           │       │  │
+│  │ Load CSS    Create React       Init App      Render    │  │
+│  │ Call boot   Root + i18n        Config       Desktop    │  │
+│  └────────────────────────────────────────────────────────┘  │
+│                             │                                │
+│                             ▼                                │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌──────────────┐  │
+│  │   Application   │  │ Infrastructure  │  │ Presentation │  │
+│  │                 │  │                 │  │              │  │
+│  │ • Hooks         │  │ • Configs       │  │ • Components │  │
+│  │ • Portals       │  │ • Services      │  │ • Containers │  │
+│  │ • Business      │  │ • Types         │  │ • Layouts    │  │
+│  │   Logic         │  │ • External      │  │ • Views      │  │
+│  │                 │  │   Integration   │  │              │  │
+│  └─────────────────┘  └─────────────────┘  └──────────────┘  │
+└──────────────────────────────────────────────────────────────┘
+           │                    │                    │
+           ▼                    ▼                    ▼
+┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐
+│ @windows98/      │  │ @windows98/      │  │ @windows98/      │
+│ micro-services   │  │ micro-frontends  │  │ design-system    │
+├──────────────────┤  ├──────────────────┤  ├──────────────────┤
+│ • App Config     │  │ • Calculator     │  │ • Components     │
+│ • App Controller │  │ • Notepad        │  │ • Styles         │
+│ • Browser Env    │  │ • Start Menu     │  │ • Themes         │
+│ • Date/Time      │  │ • Navigation     │  │ • Icons          │
+│ • Error Handler  │  │ • Clock          │  │ • Typography     │
+│ • Event Bus      │  │ • Settings       │  │ • Layout System  │
+│ • File Manager   │  │ • Games          │  │                  │
+│ • Language       │  │ • And more...    │  │                  │
+│ • Storage        │  │                  │  │                  │
+│ • Theme          │  │                  │  │                  │
+└──────────────────┘  └──────────────────┘  └──────────────────┘
+```
+
+## Bootstrap Process
+
+The Windows98 app follows a structured initialization sequence that sets up the entire application environment:
+
+### Phase 1: Entry Point (`main.tsx`)
+```tsx
+import "@windows98/design-system/index.css"
+import { bootstrapApp } from "./bootstrap-app"
+
+bootstrapApp()
+```
+- **Loads Design System**: Imports global CSS styles from `@windows98/design-system`
+- **Initiates Bootstrap**: Calls the main bootstrap function to start the application
+
+### Phase 2: React Setup (`bootstrap-app.tsx`)
+```tsx
+export async function bootstrapApp() {
+  const root: Maybe<HTMLElement> = document.getElementById("root")
+  
+  ReactDOM.createRoot(root).render(
+    <I18nextProvider i18n={i18n}>
+      <MainContainer />
+    </I18nextProvider>
+  )
+}
+```
+- **Creates React Root**: Establishes the React application root element
+- **Sets up i18n**: Wraps the app with internationalization provider
+- **Renders Main Container**: Mounts the primary application component
+
+### Phase 3: Main Container (`MainContainer`)
+```tsx
+export const MainContainer: FunctionComponent = () => {
+  useMainContainer() // Initializes app configuration and hooks
+  
+  return (
+    <>
+      <HomeView />
+      <ProgramsPortal />
+    </>
+  )
+}
+```
+- **Initializes Configuration**: Runs `useMainContainer` hook to set up app state
+- **Renders Core Views**: Displays the desktop environment and program portal
+
+### Phase 4: View Rendering
+- **HomeView**: Renders the main desktop interface with taskbar and desktop icons
+- **ProgramsPortal**: Manages dynamic loading and rendering of running applications
+- **Application State**: All hooks and services are now active and managing application state
+
+## Layers Overview
+
+### Application Layer (`src/application/`)
+- **Hooks**: Business logic and state management hooks
+  - `useInitAppConfig` - Application configuration initialization
+  - `useProgramManager` - Program lifecycle management
+  - `useAppConfig`, `useLanguageManager`, `useThemeManager` - Service hooks
+- **Portals**: Dynamic component rendering system
+  - `ProgramsPortal` - Lazy-loads and renders running programs (Calculator, Notepad, Settings, etc.)
+
+### Infrastructure Layer (`src/infrastructure/`)
+- **Configs**: Application configuration files
+  - `start-menu.config.ts` - Start menu structure and program definitions
+- **Services**: External integrations and utilities
+  - App, Browser, File Manager, Language, Program, Storage, Theme services
+- **Types**: TypeScript type definitions and interfaces
+
+### Presentation Layer (`src/presentation/`)
+- **Components**: Reusable UI components wrapping micro-frontends
+  - AudioButton, Calculator, Clock, Navigation, Notepad, Settings, etc.
+- **Containers**: High-level component orchestrators
+  - `MainContainer` - Root application container
+- **Layouts**: Page layout components
+  - `PulpitLayout` - Desktop background and icons
+  - `NavigationLayout` - Taskbar and navigation elements
+- **Views**: Complete page views
+  - `HomeView` - Main desktop view combining layouts
