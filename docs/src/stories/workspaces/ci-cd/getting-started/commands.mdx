@@ -1,0 +1,151 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/CI-CD/Getting Started/Commands" />
+
+<Title>⌨️ Commands</Title>
+
+Comprehensive reference for all available CI/CD commands and their usage.
+
+## Available Commands
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+      <th>Target Packages</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>build</code></td>
+      <td>Build the application for production</td>
+      <td>@windows98/app</td>
+      <td><code>pnpm run build</code></td>
+    </tr>
+    <tr>
+      <td><code>lint:code:run</code></td>
+      <td>Run code linting with Biome</td>
+      <td>app, configs, design-system, docs, i18n, micro-frontends, micro-services</td>
+      <td><code>pnpm run lint:code:run</code></td>
+    </tr>
+    <tr>
+      <td><code>lint:staged:fix</code></td>
+      <td>Fix staged files with linting</td>
+      <td>app, configs, design-system, docs, i18n, micro-frontends, micro-services, toolkit</td>
+      <td><code>pnpm run lint:staged:fix</code></td>
+    </tr>
+    <tr>
+      <td><code>lint:styles:run</code></td>
+      <td>Run CSS/SCSS linting with Stylelint</td>
+      <td>app, design-system, micro-frontends</td>
+      <td><code>pnpm run lint:styles:run</code></td>
+    </tr>
+    <tr>
+      <td><code>lint:types:run</code></td>
+      <td>Run TypeScript type checking</td>
+      <td>app, design-system, docs, i18n, micro-frontends, micro-services, toolkit</td>
+      <td><code>pnpm run lint:types:run</code></td>
+    </tr>
+    <tr>
+      <td><code>test:ui:run</code></td>
+      <td>Run UI tests with Playwright</td>
+      <td>design-system, micro-frontends</td>
+      <td><code>pnpm run test:ui:run</code></td>
+    </tr>
+    <tr>
+      <td><code>test:unit:run</code></td>
+      <td>Run unit tests with Vitest</td>
+      <td>app, design-system, micro-frontends, micro-services, toolkit</td>
+      <td><code>pnpm run test:unit:run</code></td>
+    </tr>
+  </tbody>
+</table>
+
+## Command Examples
+
+### Development Workflow
+
+```bash
+# Check types before development
+pnpm run lint:types:run
+
+# Fix any linting issues
+pnpm run lint:staged:fix
+
+# Run code quality checks
+pnpm run lint:code:run
+
+# Run style linting
+pnpm run lint:styles:run
+```
+
+### Testing Workflow
+
+```bash
+# Run all unit tests
+pnpm run test:unit:run
+
+# Run UI tests
+pnpm run test:ui:run
+```
+
+### Production Workflow
+
+```bash
+# Type check everything
+pnpm run lint:types:run
+
+# Run all linting
+pnpm run lint:code:run
+pnpm run lint:styles:run
+
+# Run all tests
+pnpm run test:unit:run
+pnpm run test:ui:run
+
+# Build for production
+pnpm run build
+```
+
+## Direct Command Execution
+
+You can also run commands directly using the Node.js command runner:
+
+```bash
+# Direct execution
+node src/commands/run.command.mjs build
+node src/commands/run.command.mjs lint:code:run
+node src/commands/run.command.mjs test:unit:run
+```
+
+## Command Filtering
+
+The CI/CD system uses pnpm workspace filtering to target specific packages:
+
+```bash
+# Example of how the system executes commands
+pnpm -r --filter @windows98/app build
+pnpm -r --filter @windows98/design-system lint:code:run
+```
+
+## Error Handling
+
+- Commands will halt on first error
+- Error messages include workspace context
+- Exit codes are properly propagated
+- Detailed error logging for debugging
+
+## CI/CD Integration
+
+These commands are used in GitHub Actions workflows:
+
+```yaml
+# Example GitHub Actions usage
+- name: Check types
+  run: pnpm --filter @windows98/ci-cd run lint:types:run
+
+- name: Lint code
+  run: pnpm --filter @windows98/ci-cd run lint:code:run
+```

@@ -1,0 +1,145 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/CI-CD/Guide/Workspace Management" />
+
+<Title>📦 Workspace Management</Title>
+
+Understanding how the CI/CD system manages and organizes workspace packages.
+
+## Package Selection Criteria
+
+### **Inclusion Principles**
+
+1. **Relevance**: Only include packages that have the target command/script
+2. **Efficiency**: Avoid running commands on packages that don't need them
+3. **Dependencies**: Consider package dependency relationships
+4. **Testing Scope**: Include packages based on what needs testing
+
+### **Exclusion Principles**
+
+1. **No Scripts**: Packages without the target script are automatically excluded
+2. **Build Optimization**: Only build packages that produce deployable artifacts
+3. **Test Relevance**: Only test packages with actual test files
+4. **Style Scope**: Only lint styles in packages with CSS/SCSS files
+
+## Workspace Dependencies
+
+### **Command Execution Order**
+
+The CI/CD system executes commands **sequentially** across packages to:
+- Prevent resource conflicts
+- Ensure proper error isolation
+- Provide clear progress tracking
+- Maintain consistent output
+
+## Adding New Packages
+
+### **Step 1: Package Setup**
+
+Create the package with appropriate scripts:
+
+```json
+{
+  "name": "@windows98/new-package",
+  "scripts": {
+    "lint:code:run": "biome check",
+    "lint:types:run": "tsc",
+    "test:unit:run": "vitest run"
+  }
+}
+```
+
+### **Step 2: Update CI/CD Mapping**
+
+Add the package to relevant commands in `ci-cd.config.mjs`:
+
+```javascript
+#commands = {
+  "lint:code:run": [
+    // ... existing packages
+    "@windows98/new-package"
+  ],
+  "lint:types:run": [
+    // ... existing packages  
+    "@windows98/new-package"
+  ]
+}
+```
+
+### **Step 3: Workspace Registration**
+
+Ensure the package is included in the root `pnpm-workspace.yaml`:
+
+```yaml
+packages:
+  - 'packages/new-package'
+  # ... other packages
+```
+
+## Package Maintenance
+
+### **Regular Tasks**
+
+1. **Dependency Updates**: Keep package dependencies current
+2. **Script Consistency**: Ensure all packages have consistent script names
+3. **Documentation**: Update package documentation as features change
+4. **Testing**: Maintain comprehensive test coverage
+
+### **Quality Checks**
+
+1. **Package.json Validation**: Verify all required scripts exist
+2. **Dependency Auditing**: Check for security vulnerabilities
+3. **Build Verification**: Ensure packages build successfully
+4. **Cross-package Compatibility**: Verify packages work together
+
+## Troubleshooting
+
+### **Common Issues**
+
+1. **Missing Scripts**: Package doesn't have the required script
+   ```bash
+   # Solution: Add the script to package.json
+   ```
+
+2. **Dependency Conflicts**: Package versions don't align
+   ```bash
+   # Solution: Update dependencies to compatible versions
+   ```
+
+3. **Build Failures**: Package fails to build
+   ```bash
+   # Solution: Check TypeScript config and dependencies
+   ```
+
+### **Debugging Commands**
+
+```bash
+# Check package scripts
+pnpm -r exec npm run
+
+# Verify package filtering
+pnpm -r --filter @windows98/package-name list
+
+# Test individual package
+pnpm --filter @windows98/package-name run command
+```
+
+## Best Practices
+
+### **Package Design**
+- Keep packages focused on single responsibilities
+- Minimize cross-package dependencies
+- Use consistent naming conventions
+- Maintain clear package boundaries
+
+### **Script Management**
+- Use consistent script names across packages
+- Implement proper error handling
+- Include helpful logging and output
+- Test scripts locally before CI/CD integration
+
+### **Documentation**
+- Document package purposes and APIs
+- Maintain up-to-date README files
+- Include usage examples
+- Document breaking changes

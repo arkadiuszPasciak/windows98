@@ -1,0 +1,86 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/CI-CD/Getting Started/Quick Start" />
+
+<Title>🏎️ Quick Start</Title>
+
+Get up and running with the Windows98 CI/CD system in minutes.
+
+## Installation
+
+1. **Navigate to CI/CD Workspace**
+   ```bash
+   cd core/ci-cd
+   ```
+
+2. **Verify Installation**
+   ```bash
+   # Check if the CI/CD commands are available
+   node src/commands/run.command.mjs --help
+   ```
+
+## Basic Usage
+
+### Running Commands
+
+The CI/CD system executes commands across multiple workspace packages:
+
+```bash
+# Run type checking across all TypeScript packages
+pnpm run lint:types:run
+
+# Run code linting across all packages
+pnpm run lint:code:run
+
+# Build the application
+pnpm run build
+
+# Run all tests
+pnpm run test:unit:run
+```
+
+### Command Structure
+
+All commands follow this pattern:
+```bash
+node src/commands/run.command.mjs <command-type>
+```
+
+Where `<command-type>` is one of:
+- `build`
+- `lint:code:run`
+- `lint:staged:fix`
+- `lint:styles:run`
+- `lint:types:run`
+- `test:ui:run`
+- `test:unit:run`
+
+## Workspace Targeting
+
+The CI/CD system automatically targets the appropriate packages for each command:
+<table>
+    <thead>
+        <tr>
+            <th>Command</th>
+            <th>Target Packages</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>build</code></td>
+            <td>@windows98/app</td>
+        </tr>
+        <tr>
+            <td><code>lint:code:run</code></td>
+            <td>app, configs, design-system, docs, i18n, micro-frontends, micro-services</td>
+        </tr>
+        <tr>
+            <td><code>lint:types:run</code></td>
+            <td>app, design-system, docs, i18n, micro-frontends, micro-services, toolkit</td>
+        </tr>
+        <tr>
+            <td><code>test:unit:run</code></td>
+            <td>app, design-system, micro-frontends, micro-services, toolkit</td>
+        </tr>
+    </tbody>
+</table>
