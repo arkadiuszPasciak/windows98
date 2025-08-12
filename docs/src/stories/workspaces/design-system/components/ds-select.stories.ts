@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite"
-import { DSInput, type DSInputProps } from "@windows98/design-system"
+import { DSSelect, type DSSelectProps } from "@windows98/design-system"
 
-const meta: Meta<typeof DSInput> = {
+const meta: Meta<typeof DSSelect> = {
 	argTypes: {
 		disabled: {
 			control: {
@@ -13,35 +13,24 @@ const meta: Meta<typeof DSInput> = {
 				type: "text",
 			},
 		},
-		initialValue: {
-			control: {
-				type: "text",
-			},
-		},
 		labelName: {
 			control: {
 				type: "text",
 			},
 		},
-		max: {
+		modelValue: {
 			control: {
-				type: "number",
+				type: "text",
 			},
 		},
-		min: {
+		options: {
 			control: {
-				type: "number",
+				type: "object",
 			},
 		},
-		readonly: {
+		required: {
 			control: {
 				type: "boolean",
-			},
-		},
-		type: {
-			control: {
-				type: "select",
-				options: ["text", "password", "email", "number"],
 			},
 		},
 		wrapperLayout: {
@@ -51,38 +40,40 @@ const meta: Meta<typeof DSInput> = {
 			},
 		},
 	},
-	component: DSInput,
+	component: DSSelect,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSInput",
+	title: "Workspaces/Design System/Components/DSSelect",
 }
 
 export default meta
 
-type Story = StoryObj<typeof DSInput>
+type Story = StoryObj<typeof DSSelect>
 
 export const Primary: Story = {
 	args: {
 		disabled: false,
 		id: "storybook",
-		initialValue: "Hello, World!",
 		labelName: "Storybook",
-		readonly: false,
-		type: "text",
-		wrapperLayout: "vertical",
-	} as DSInputProps,
+		modelValue: "storybook",
+		options: [
+			{
+				value: "storybook",
+				name: "Storybook",
+			},
+			{
+				value: "storybook-ui",
+				name: "Storybook UI",
+			},
+		],
+		required: false,
+		wrapperLayout: "horizontal",
+	} as DSSelectProps,
 }
 
 export const Disabled: Story = {
 	args: {
 		...Primary.args,
 		disabled: true,
-	},
-}
-
-export const Readonly: Story = {
-	args: {
-		...Primary.args,
-		readonly: true,
 	},
 }
 

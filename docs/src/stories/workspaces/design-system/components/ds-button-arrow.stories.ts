@@ -33,7 +33,7 @@ const meta: Meta<typeof DSButtonArrow> = {
 	},
 	component: DSButtonArrow,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSButtonArrow",
+	title: "Workspaces/Design System/Components/DSButtonArrow",
 }
 
 export default meta

@@ -8,7 +8,7 @@ import {
 } from "@windows98/design-system"
 
 const meta: Meta = {
-	title: "Design System/Components/DSIcon",
+	title: "Workspaces/Design System/Components/DSIcon",
 	tags: ["autodocs"],
 }
 

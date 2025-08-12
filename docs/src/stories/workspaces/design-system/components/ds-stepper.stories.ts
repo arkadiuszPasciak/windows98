@@ -21,7 +21,7 @@ const meta: Meta<typeof DSStepper> = {
 	},
 	component: DSStepper,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSStepper",
+	title: "Workspaces/Design System/Components/DSStepper",
 }
 
 export default meta

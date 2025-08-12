@@ -22,7 +22,7 @@ const meta: Meta<typeof DSHeading> = {
 	},
 	component: DSHeading,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSHeading",
+	title: "Workspaces/Design System/Components/DSHeading",
 }
 
 export default meta

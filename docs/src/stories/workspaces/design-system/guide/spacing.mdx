@@ -1,0 +1,181 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Design System/Guide/Spacing" />
+
+<Title>📏 Spacing</Title>
+
+Spacing system and layout utilities for the Windows98 design system.
+
+## Base Spacing Scale
+
+The spacing system provides consistent measurements for layout and component spacing.
+
+```css
+/* Spacing Tokens */
+--ds-spacing-auto: auto;
+--ds-spacing-0: 0;
+--ds-spacing-2xs: 0.0625rem;  /* 1px */
+--ds-spacing-xs: 0.150rem;    /* 2.4px */
+--ds-spacing-sm: 0.3125rem;   /* 5px */
+--ds-spacing-md: 0.625rem;    /* 10px */
+--ds-spacing-lg: 0.75rem;     /* 12px */
+--ds-spacing-xl: 0.9375rem;   /* 15px */
+--ds-spacing-2xl: 1.25rem;    /* 20px */
+--ds-spacing-3xl: 1.5625rem;  /* 25px */
+```
+
+## Container Sizes
+
+```css
+/* Container Size Tokens */
+--ds-container-size-sm: 320px;
+--ds-container-size-md: 768px;
+--ds-container-size-lg: 1024px;
+```
+
+## Spacing Usage Patterns
+
+### Component Spacing
+
+```css
+/* Button spacing example */
+.ds-button {
+  padding: var(--ds-spacing-sm) var(--ds-spacing-md);
+  gap: var(--ds-spacing-xs);
+}
+
+/* Input field spacing */
+.ds-input {
+  padding: var(--ds-spacing-xs) var(--ds-spacing-sm);
+  margin-bottom: var(--ds-spacing-md);
+}
+
+/* Modal spacing */
+.ds-modal {
+  padding: var(--ds-spacing-lg);
+  gap: var(--ds-spacing-md);
+}
+```
+
+### Layout Spacing
+
+```css
+/* Grid layouts */
+.grid-container {
+  gap: var(--ds-spacing-md);
+  padding: var(--ds-spacing-lg);
+}
+
+/* Form layouts */
+.form-field {
+  margin-bottom: var(--ds-spacing-md);
+}
+
+.form-section {
+  margin-bottom: var(--ds-spacing-2xl);
+}
+
+/* Section spacing */
+.content-section {
+  padding: var(--ds-spacing-xl) var(--ds-spacing-lg);
+}
+```
+
+## Spacing Guidelines
+
+### Do's ✅
+
+1. **Use spacing tokens** for consistent measurements
+   ```css
+   padding: var(--ds-spacing-md);
+   margin: var(--ds-spacing-sm) var(--ds-spacing-lg);
+   ```
+
+2. **Choose appropriate spacing** for component hierarchy
+   - `2xs-xs`: Fine details, borders
+   - `sm-md`: Component internal spacing
+   - `lg-xl`: Component external spacing
+   - `2xl-3xl`: Section spacing
+
+3. **Maintain rhythm** by using consistent spacing patterns
+
+### Don'ts ❌
+
+1. **Don't use arbitrary values** that break the spacing system
+   ```css
+   /* ❌ Bad */
+   padding: 7px 13px;
+   
+   /* ✅ Good */
+   padding: var(--ds-spacing-xs) var(--ds-spacing-md);
+   ```
+
+2. **Don't mix units** unnecessarily (stick to rem-based tokens)
+
+3. **Don't ignore responsive behavior** for different screen sizes
+
+## Usage Guidelines
+
+### Do's ✅
+
+1. **Use Design Tokens**
+   ```css
+   /* ✅ Good */
+   .component {
+     margin: var(--win98-spacing-md);
+   }
+   ```
+
+2. **Consistent Spacing**
+   ```css
+   /* ✅ Good - consistent spacing between elements */
+   .form-group {
+     margin-bottom: var(--win98-spacing-lg);
+   }
+   ```
+
+3. **Logical Spacing Hierarchy**
+   ```css
+   /* ✅ Good - larger spacing for major sections */
+   .section {
+     margin-bottom: var(--win98-spacing-2xl);
+   }
+   
+   .subsection {
+     margin-bottom: var(--win98-spacing-lg);
+   }
+   
+   .element {
+     margin-bottom: var(--win98-spacing-md);
+   }
+   ```
+
+### Don'ts ❌
+
+1. **Avoid Magic Numbers**
+   ```css
+   /* ❌ Bad */
+   .component {
+     margin: 13px;
+   }
+   ```
+
+2. **Don't Mix Units**
+   ```css
+   /* ❌ Bad */
+   .component {
+     padding: var(--win98-spacing-md) 15px;
+   }
+   ```
+
+3. **Avoid Inconsistent Spacing**
+   ```css
+   /* ❌ Bad - inconsistent spacing */
+   .item-1 {
+     margin-bottom: var(--win98-spacing-sm);
+   }
+   
+   .item-2 {
+     margin-bottom: var(--win98-spacing-xl);
+   }
+   ```

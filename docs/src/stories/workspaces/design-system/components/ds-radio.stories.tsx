@@ -31,7 +31,7 @@ const meta: Meta<typeof DSRadio> = {
 	},
 	component: DSRadio,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSRadio",
+	title: "Workspaces/Design System/Components/DSRadio",
 }
 
 export default meta

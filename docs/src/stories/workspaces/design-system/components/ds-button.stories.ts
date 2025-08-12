@@ -42,7 +42,7 @@ const meta: Meta<typeof DSButton> = {
 	},
 	component: DSButton,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSButton",
+	title: "Workspaces/Design System/Components/DSButton",
 }
 
 export default meta

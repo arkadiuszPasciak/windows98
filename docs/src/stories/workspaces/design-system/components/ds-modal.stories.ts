@@ -41,7 +41,7 @@ const meta: Meta<typeof DSModal> = {
 	},
 	component: DSModal,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSModal",
+	title: "Workspaces/Design System/Components/DSModal",
 }
 
 export default meta

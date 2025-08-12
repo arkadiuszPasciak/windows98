@@ -36,7 +36,7 @@ const meta: Meta<typeof DSCheckbox> = {
 	},
 	component: DSCheckbox,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSCheckbox",
+	title: "Workspaces/Design System/Components/DSCheckbox",
 }
 
 export default meta

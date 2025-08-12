@@ -17,7 +17,7 @@ const meta: Meta<typeof DSTabs> = {
 	},
 	component: DSTabs,
 	tags: ["autodocs"],
-	title: "Design System/Components/DSTabs",
+	title: "Workspaces/Design System/Components/DSTabs",
 }
 
 export default meta

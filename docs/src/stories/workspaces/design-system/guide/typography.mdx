@@ -1,0 +1,195 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Design System/Guide/Typography" />
+
+<Title>�️ Typography</Title>
+
+Typography system and font usage for the Windows98 design system.
+
+## Font Families
+
+The Windows98 design system uses authentic MS Sans Serif fonts to recreate the classic Windows 98 experience.
+
+```css
+/* Font Family Tokens */
+--ds-font-sans-serif-bold: "MSSansSerifBold", sans-serif;
+--ds-font-sans-serif-medium: "MSSansSerifMedium", sans-serif;
+```
+
+## Font Sizes
+
+```css
+/* Font Size Scale */
+--ds-font-size-xs: 0.625rem;   /* 10px */
+--ds-font-size-sm: 0.9375rem;  /* 15px */
+--ds-font-size-md: 1.25rem;    /* 20px */
+--ds-font-size-lg: 1.5625rem;  /* 25px */
+--ds-font-size-xl: 2.5rem;     /* 40px */
+```
+
+## Font Weights
+
+```css
+/* Font Weight Tokens */
+--ds-font-weight-regular: 400;
+--ds-font-weight-bold: 800;
+```
+
+## Line Heights
+
+```css
+/* Line Height Tokens */
+--ds-line-height-normal: 1;
+--ds-line-height-tight: 1.2;
+--ds-line-height-relaxed: 1.5;
+--ds-line-height-loose: 2;
+```
+
+## Letter Spacing
+
+```css
+/* Letter Spacing Tokens */
+--ds-letter-spacing-xs: 0.0625em;
+--ds-letter-spacing-sm: 0.125em;
+--ds-letter-spacing-md: 0.3125em;
+```
+
+## Typography Usage Patterns
+
+### Headings
+
+```css
+/* Heading styles using typography tokens */
+.ds-heading-1 {
+  font-family: var(--ds-font-sans-serif-bold);
+  font-size: var(--ds-font-size-xl);
+  font-weight: var(--ds-font-weight-bold);
+  line-height: var(--ds-line-height-tight);
+}
+
+.ds-heading-2 {
+  font-family: var(--ds-font-sans-serif-bold);
+  font-size: var(--ds-font-size-lg);
+  font-weight: var(--ds-font-weight-bold);
+  line-height: var(--ds-line-height-tight);
+}
+
+.ds-heading-3 {
+  font-family: var(--ds-font-sans-serif-medium);
+  font-size: var(--ds-font-size-md);
+  font-weight: var(--ds-font-weight-bold);
+  line-height: var(--ds-line-height-normal);
+}
+```
+
+### Body Text
+
+```css
+/* Body text styles */
+.ds-text-body {
+  font-family: var(--ds-font-sans-serif-medium);
+  font-size: var(--ds-font-size-xs);
+  font-weight: var(--ds-font-weight-regular);
+  line-height: var(--ds-line-height-relaxed);
+}
+
+.ds-text-small {
+  font-family: var(--ds-font-sans-serif-medium);
+  font-size: var(--ds-font-size-xs);
+  font-weight: var(--ds-font-weight-regular);
+  line-height: var(--ds-line-height-normal);
+}
+```
+
+## Typography Scale
+
+### Visual Hierarchy
+
+| Element | Font Family | Size | Weight | Line Height | Usage |
+|---------|-------------|------|---------|-------------|-------|
+| **H1** | MSSansSerifBold | 2.5rem (40px) | 800 | 1.2 | Page titles |
+| **H2** | MSSansSerifBold | 1.5625rem (25px) | 800 | 1.2 | Section titles |
+| **H3** | MSSansSerifMedium | 1.25rem (20px) | 800 | 1 | Subsection titles |
+| **Body** | MSSansSerifMedium | 0.625rem (10px) | 400 | 1.5 | Body text |
+| **Small** | MSSansSerifMedium | 0.625rem (10px) | 400 | 1 | Captions, labels |
+| **Button** | MSSansSerifMedium | 0.625rem (10px) | 400 | 1 | Interactive elements |
+
+## Typography Guidelines
+
+### Do's ✅
+
+1. **Use typography tokens** for consistent text styling
+   ```css
+   font-family: var(--ds-font-sans-serif-medium);
+   font-size: var(--ds-font-size-xs);
+   ```
+
+2. **Maintain hierarchy** with appropriate font sizes and weights
+   - Bold fonts for headings and emphasis
+   - Medium fonts for body text and UI elements
+
+3. **Consider readability** with proper line heights and letter spacing
+
+4. **Use semantic HTML** elements with typography classes
+   ```html
+   <h1 class="ds-heading-1">Page Title</h1>
+   <p class="ds-text-body">Body content</p>
+   ```
+
+### Don'ts ❌
+
+1. **Don't use system fonts** that break the Windows 98 aesthetic
+   ```css
+   /* ❌ Bad */
+   font-family: Arial, sans-serif;
+   
+   /* ✅ Good */
+   font-family: var(--ds-font-sans-serif-medium);
+   ```
+
+2. **Don't use arbitrary font sizes** outside the type scale
+
+3. **Don't ignore accessibility** - ensure sufficient contrast and readable sizes
+
+## Font Loading
+
+### Font Face Configuration
+
+```css
+/* Ensure fonts are loaded properly */
+@font-face {
+  font-family: "MSSansSerifMedium";
+  src: url("/fonts/MSSansSerifMedium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MSSansSerifBold";
+  src: url("/fonts/MSSansSerifBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+```
+
+### Font Preloading
+
+```html
+<!-- Preload critical fonts for better performance -->
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href="/fonts/MSSansSerifMedium.woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  as="font"
+  type="font/woff2"
+  href="/fonts/MSSansSerifBold.woff2"
+  crossorigin
+/>
+```
