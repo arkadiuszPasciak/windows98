@@ -1,0 +1,76 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/I18n/Getting Started/Quick Start" />
+
+<Title>🏎️ Quick Start</Title>
+
+Fast setup guide to get internationalization working in your Windows98 project.
+
+## Installation
+
+### Install Dependencies
+
+```bash
+# Install the i18n package
+pnpm add @windows98/i18n
+
+# Install peer dependencies for React
+pnpm add i18next react-i18next
+
+# For development, install types
+pnpm add -D @types/react-i18next
+```
+
+## Basic Setup
+
+### 1. Initialize i18n Configuration
+
+```typescript
+// src/i18n/config.ts
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
+import { localesReact } from '@windows98/i18n'
+
+i18n
+  .use(initReactI18next)
+  .init(/* i18n configuration options */)
+
+export default i18n
+```
+
+### 2. Initialize in Your App
+
+```typescript
+// src/main.tsx or src/index.tsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './i18n/config' // Import i18n configuration
+import App from './App'
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
+```
+
+## Basic Usage
+
+### Using Translations in Components
+
+```typescript
+// src/components/Welcome.tsx
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+
+export function Welcome() {
+  const { t } = useTranslation()
+  
+  return (
+    <div>
+      <h1>{t('mf-pulpit.welcome')}</h1>
+      <p>{t('mf-pulpit.description')}</p>
+    </div>
+  )
+}
+```
