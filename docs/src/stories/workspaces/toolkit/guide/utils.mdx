@@ -1,0 +1,60 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Toolkit/Guide/Utils" />
+
+<Title>⚙️ Utils</Title>
+
+Learn how to add utility functions to the `@windows98/toolkit` package.
+
+## Overview
+
+The utils module provides simple utility functions for common tasks. This guide shows you how to add new utilities using addZeroBeforeNumber as an example.
+
+## How to Add a New Utility
+
+### Example: addZeroBeforeNumber
+
+This function adds a leading zero to single-digit numbers.
+
+#### Basic Implementation
+
+```typescript
+import { addZeroBeforeNumber } from '@windows98/toolkit'
+
+// Format single digits with leading zero
+console.log(addZeroBeforeNumber(5))  // "05"
+console.log(addZeroBeforeNumber(15)) // "15"
+console.log(addZeroBeforeNumber(0))  // "00"
+```
+
+#### Practical Example
+
+```typescript
+import { addZeroBeforeNumber } from '@windows98/toolkit'
+
+function formatTime(date: Date): string {
+  const hours = addZeroBeforeNumber(date.getHours())
+  const minutes = addZeroBeforeNumber(date.getMinutes())
+  const seconds = addZeroBeforeNumber(date.getSeconds())
+  
+  return `${hours}:${minutes}:${seconds}`
+}
+
+// Usage in a clock component
+const time = formatTime(new Date()) // "09:05:23"
+```
+
+#### How to Add Your Own Utility
+
+1. **Create the utility file** in `src/utils/`
+2. **Export from index** in the utils module
+3. **Add tests** for your utility
+
+Example structure:
+```
+src/utils/
+├── addZeroBeforeNumber.ts
+├── getClassNames.ts
+├── your-new-utility.ts  ← Add here
+└── index.ts             ← Export here
+```

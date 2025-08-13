@@ -1,0 +1,67 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Toolkit/Guide/Types" />
+
+<Title>📘 Types</Title>
+
+Learn how to add TypeScript types to the `@windows98/toolkit` package.
+
+## Overview
+
+The types module provides TypeScript definitions for the Windows98 ecosystem. This guide shows you how to add new types using ApplicationConfig as an example.
+
+## How to Add a New Type
+
+### Example: ApplicationConfig
+
+This type defines the structure for application configuration.
+
+#### Basic Implementation
+
+```typescript
+interface ApplicationConfig {
+  id: string
+  title: string
+  version: string
+  author: string
+  description?: string
+  icon?: string
+  category: 'system' | 'utility' | 'game' | 'productivity'
+  permissions: string[]
+}
+
+// Usage example
+const calculatorConfig: ApplicationConfig = {
+  id: 'calculator',
+  title: 'Calculator',
+  version: '1.0.0',
+  author: 'Windows98 Team',
+  description: 'Simple calculator application',
+  icon: 'calc.ico',
+  category: 'utility',
+  permissions: ['read-files', 'write-files']
+}
+```
+
+#### How to Add Your Own Type
+
+1. **Create the type file** in `src/types/`
+2. **Export from index** in the types module
+3. **Document with JSDoc** comments
+
+Example structure:
+```
+src/types/
+├── application.ts
+├── window.ts
+├── your-new-type.ts  ← Add here
+└── index.ts          ← Export here
+```
+
+## Available Type Categories
+
+- **Application Types** - App configuration and metadata
+- **Window Types** - Window management and properties
+- **System Types** - System-level interfaces
+- **Event Types** - Event handling and callbacks
+- **Utility Types** - Helper types for common patterns
