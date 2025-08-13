@@ -1,0 +1,71 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Configs/Guide/Playwright" />
+
+<Title>🎪 Playwright</Title>
+
+Complete guide to using Playwright configuration from `@windows98/configs` for end-to-end and component testing.
+
+## Overview
+
+Playwright configuration provides modern browser testing setup optimized for React component testing and E2E testing within the Windows98 ecosystem.
+
+## Configuration Path
+
+```
+@windows98/configs/playwright/component-react
+```
+
+## Install Dependencies
+
+```bash
+# Install lint-staged and husky
+pnpm add -D @playwright/experimental-ct-react
+
+# Install the configs package
+pnpm add -D @windows98/configs
+```
+
+## Basic Usage
+
+### Component Testing Setup
+
+```javascript
+// playwright-ct.config.mjs
+import { defineConfig } from '@playwright/experimental-ct-react'
+import baseConfig from '@windows98/configs/playwright/component-react'
+
+export default defineConfig(baseConfig)
+```
+
+### With Custom Settings
+
+```javascript
+// playwright-ct.config.mjs
+import { defineConfig } from '@playwright/experimental-ct-react'
+import baseConfig from '@windows98/configs/playwright/component-react'
+
+export default defineConfig({
+  ...baseConfig,
+  use: {
+    ...baseConfig.use,
+    viewport: { width: 1024, height: 768 }
+  },
+  webServer: {
+    command: 'pnpm dev',
+    port: 5173,
+    reuseExistingServer: !process.env.CI
+  }
+})
+```
+
+## Package.json Scripts
+
+```json
+{
+  "scripts": {
+    "test:ui:run": "playwright test -c ./@test/playwright/playwright-ct.config.mjs",
+    "test:ui:watch": "playwright test -c ./@test/playwright/playwright-ct.config.mjs --ui"
+  }
+}
+```

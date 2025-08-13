@@ -1,0 +1,78 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Configs/Guide/TypeScript" />
+
+<Title>📘 TypeScript</Title>
+
+Complete guide to using TypeScript configurations from `@windows98/configs` for type checking and compilation.
+
+## Overview
+
+TypeScript configurations provide type checking and compilation settings optimized for different environments and frameworks within the Windows98 ecosystem.
+
+## Available Configurations
+
+<table>
+    <thead>
+        <tr>
+            <th>Configuration</th>
+            <th>Path</th>
+            <th>Purpose</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Base</strong></td>
+            <td><code>@windows98/configs/typescript/base</code></td>
+            <td>Foundation settings for all TypeScript projects</td>
+        </tr>
+        <tr>
+            <td><strong>React</strong></td>
+            <td><code>@windows98/configs/typescript/react</code></td>
+            <td>React applications and components</td>
+        </tr>
+        <tr>
+            <td><strong>Node.js</strong></td>
+            <td><code>@windows98/configs/typescript/node</code></td>
+            <td>Backend services and Node.js applications</td>
+        </tr>
+        <tr>
+            <td><strong>Vite</strong></td>
+            <td><code>@windows98/configs/typescript/vite</code></td>
+            <td>Vite-based projects and build optimization</td>
+        </tr>
+    </tbody>
+</table>
+
+## Install Dependencies
+
+```bash
+# Install typescript
+pnpm add -D typescript
+
+# Install the configs package
+pnpm add -D @windows98/configs
+```
+
+## Base Configuration
+
+### Basic Usage
+
+```json
+{
+  "extends": "@windows98/configs/typescript/base",
+}
+```
+
+### Configuration Details
+
+```json
+{
+  "extends": "@windows98/configs/typescript/base",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "allowJs": true
+  },
+  "exclude": ["test123"]
+}
+```

@@ -1,0 +1,50 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Configs/Guide/Lint-Staged" />
+
+<Title>🚀 Lint-Staged</Title>
+
+Complete guide to using Lint-Staged configuration from `@windows98/configs` for pre-commit hooks and automated code quality checks.
+
+## Overview
+
+Lint-Staged configuration provides automated code quality enforcement using Git hooks, ensuring consistent code style and catching issues before they enter your repository.
+
+## Configuration Path
+
+```
+@windows98/configs/lint-staged
+```
+
+## Install Dependencies
+
+```bash
+# Install lint-staged and husky
+pnpm add -D lint-staged husky
+
+# Install the configs package
+pnpm add -D @windows98/configs
+```
+
+## Basic Usage
+
+### Standard Setup
+
+```javascript
+// @linter/lint-staged.config.cjs
+const codeConfig = require("@windows98/configs/lint-staged/code")
+
+module.exports = {
+	...codeConfig,
+}
+```
+
+## Package.json Scripts
+
+```json
+{
+  "scripts": {
+    "lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
+  }
+}
+```

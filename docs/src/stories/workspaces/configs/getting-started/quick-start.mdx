@@ -1,0 +1,52 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Configs/Getting Started/Quick Start" />
+
+<Title>🏎️ Quick Start</Title>
+
+Follow these steps to install and use the `@windows98/configs` workspace in your project.
+
+## Installation
+
+### 1. **Install the Configs Package**
+
+```bash
+# Install the shared configurations package
+pnpm add -D @windows98/configs
+```
+
+### 2. **Install Required Peer Dependencies**
+
+```bash
+# Install the development tools that the configurations support
+pnpm add -D @biomejs/biome@1.9.4 \
+            typescript@5.7.3 \
+            stylelint@16.10.0 \
+            vitest@3.0.1 \
+            lint-staged@16.1.2 \
+            @playwright/experimental-ct-react@1.54.1
+```
+
+### 3. **Navigate to Your Workspace**
+
+```bash
+cd your-workspace
+```
+
+## Basic Setup
+
+Once installed, you can start using the shared configurations. Here's a minimal example:
+
+```json
+// tsconfig.json - Basic TypeScript setup
+{
+  "extends": "@windows98/configs/typescript/base"
+}
+```
+
+```json
+// biome.json - Basic code formatting and linting
+{
+  "extends": "@windows98/configs/biome/shared"
+}
+```
