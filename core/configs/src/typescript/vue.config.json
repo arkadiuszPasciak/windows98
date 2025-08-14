@@ -1,7 +1,0 @@
-{
-	"extends": "./base.config.json",
-	"compilerOptions": {
-		"jsx": "preserve",
-		"types": ["vue", "vue-i18n"]
-	}
-}
