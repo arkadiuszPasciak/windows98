@@ -1,0 +1,113 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSStorage" />
+
+<Title>💾 MS Storage</Title>
+
+Persistent data storage and management service for Windows98 ecosystem.
+
+## What is MS Storage?
+
+MS Storage is a comprehensive data persistence service that provides unified storage management across different storage backends. It offers a consistent API for saving, retrieving, and managing data while supporting various storage mechanisms including local storage, session storage, and custom storage adapters.
+
+## Key Features
+
+### 💾 **Storage Operations**
+- Data saving and retrieval operations
+- Storage item creation, update, and deletion
+- Batch storage operations
+- Transactional storage support
+
+### 🔧 **Storage Backends**
+- Local storage integration
+- Session storage support
+- In-memory storage for testing
+- Custom storage adapter support
+
+### 🗃️ **Data Management**
+- Structured data storage with schemas
+- Data serialization and deserialization
+- Data compression and optimization
+- Data integrity verification
+
+### 🔒 **Security & Privacy**
+- Data encryption and security
+- Storage access control
+- Privacy-compliant data handling
+- Secure data deletion
+
+### 📊 **Storage Analytics**
+- Storage usage monitoring
+- Storage performance metrics
+- Data access patterns analysis
+- Storage optimization recommendations
+
+### 🔄 **Synchronization**
+- Cross-tab storage synchronization
+- Storage change notifications
+- Conflict resolution mechanisms
+- Real-time storage updates
+
+### 🎯 **Windows98 Integration**
+- Registry-style data organization
+- System settings persistence
+- User profile data management
+- Application state preservation
+
+### ⚡ **Performance Optimization**
+- Lazy loading and caching
+- Memory-efficient data handling
+- Background storage operations
+- Storage quota management
+
+## Integration Example
+
+```tsx
+import { MSStorage } from '@windows98/micro-services'
+
+const storage = new MSStorage()
+
+// Basic storage operations
+await storage.setItem('user-preferences', {
+  theme: 'classic',
+  language: 'en-US',
+  soundEnabled: true
+})
+
+const preferences = await storage.getItem('user-preferences')
+await storage.removeItem('temporary-data')
+
+// Batch operations
+await storage.setBatch({
+  'window-positions': windowData,
+  'recent-files': recentFiles,
+  'user-settings': userSettings
+})
+
+// Storage with expiration
+await storage.setItem('session-token', token, {
+  expiresIn: 3600000 // 1 hour
+})
+
+// Watch for storage changes
+storage.watch('user-preferences', (newValue, oldValue) => {
+  console.log('Preferences changed:', newValue)
+})
+
+// Namespace support
+const userStorage = storage.namespace('user')
+await userStorage.setItem('profile', userProfile)
+
+// Storage info
+const storageInfo = await storage.getStorageInfo()
+console.log(`Used: ${storageInfo.used}, Available: ${storageInfo.available}`)
+```
+
+## Common Use Cases
+
+- **User Preferences**: Storing user settings and customization preferences
+- **Application State**: Persisting application state across sessions
+- **Cache Management**: Implementing client-side caching mechanisms
+- **Form Data**: Saving form data and draft content
+- **Session Management**: Managing user session data and authentication
+- **Offline Support**: Storing data for offline application functionality

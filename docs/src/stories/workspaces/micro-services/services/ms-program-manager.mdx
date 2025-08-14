@@ -1,0 +1,94 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSProgramManager" />
+
+<Title>🏃 MS Program Manager</Title>
+
+Program execution and lifecycle management service for Windows98 applications.
+
+## What is MS Program Manager?
+
+MS Program Manager is a core service responsible for managing the execution, lifecycle, and state of programs within the Windows98 environment. It provides a centralized way to launch, monitor, and control applications while maintaining their execution context and resource allocation.
+
+## Key Features
+
+### 🚀 **Program Execution**
+- Launch applications and programs
+- Manage program startup parameters
+- Handle program initialization sequences
+- Control execution environment
+
+### 📊 **Lifecycle Management**
+- Track program state (running, paused, stopped)
+- Manage program transitions and events
+- Handle program cleanup and termination
+- Monitor program health and performance
+
+### 🔄 **Process Control**
+- Start and stop programs
+- Pause and resume execution
+- Manage program priorities
+- Handle concurrent program execution
+
+### 🗂️ **Registry Management**
+- Maintain registry of running programs
+- Track program metadata and information
+- Manage program dependencies and relationships
+- Provide program discovery and lookup
+
+### 📋 **Task Management**
+- Queue and schedule program execution
+- Manage background and foreground tasks
+- Handle task prioritization
+- Coordinate multi-program workflows
+
+### 🛡️ **Resource Management**
+- Monitor program resource usage
+- Manage memory and CPU allocation
+- Handle resource conflicts and constraints
+- Optimize program performance
+
+### 🔗 **Inter-Program Communication**
+- Facilitate communication between programs
+- Manage program messaging and events
+- Handle program data exchange
+- Coordinate program interactions
+
+### 📈 **Monitoring & Analytics**
+- Track program execution metrics
+- Monitor performance and usage patterns
+- Generate program execution reports
+- Provide debugging and diagnostic information
+
+## Integration Example
+
+```tsx
+import { MSProgramManager } from '@windows98/micro-services'
+
+const programManager = new MSProgramManager()
+
+// Launch a program
+const programId = programManager.launch('calculator', {
+  windowMode: 'normal',
+  startupParams: { theme: 'classic' }
+})
+
+// Monitor program state
+programManager.onStateChange(programId, (state) => {
+  console.log(`Program state changed: ${state}`)
+})
+
+// Manage program lifecycle
+programManager.pause(programId)
+programManager.resume(programId)
+programManager.terminate(programId)
+```
+
+## Common Use Cases
+
+- **Application Launcher**: Creating desktop launchers and start menus
+- **Task Manager**: Building task management and monitoring interfaces
+- **Program Registry**: Maintaining lists of available and running programs
+- **Process Monitor**: Tracking system performance and resource usage
+- **Workflow Automation**: Coordinating multi-step program executions
+- **System Control**: Implementing system-wide program management features

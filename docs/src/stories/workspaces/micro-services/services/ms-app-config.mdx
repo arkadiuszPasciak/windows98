@@ -1,0 +1,98 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSAppConfig" />
+
+<Title>⚙️ MS App Config</Title>
+
+Application configuration management service for Windows98 ecosystem.
+
+## What is MS App Config?
+
+MS App Config is a centralized configuration management service that handles application settings, preferences, and configuration data across the Windows98 environment. It provides a unified way to store, retrieve, and manage configuration values for all applications and services.
+
+## Key Features
+
+### 🏗️ **Configuration Management**
+- Centralized configuration storage and retrieval
+- Hierarchical configuration structure support
+- Environment-based configuration handling
+- Configuration validation and type safety
+
+### 🔧 **Settings Control**
+- Application-specific settings management
+- User preference storage and synchronization
+- Default configuration fallback mechanisms
+- Dynamic configuration updates
+
+### 🌍 **Environment Handling**
+- Multi-environment configuration support (dev, prod, test)
+- Environment variable integration
+- Runtime environment detection
+- Configuration inheritance and overrides
+
+### 🔒 **Security & Validation**
+- Configuration value validation and sanitization
+- Secure configuration storage for sensitive data
+- Access control and permission management
+- Configuration integrity verification
+
+### 📊 **Monitoring & Debugging**
+- Configuration change tracking and auditing
+- Real-time configuration monitoring
+- Configuration debugging and inspection tools
+- Performance metrics for configuration access
+
+### 🔄 **Synchronization**
+- Cross-application configuration sharing
+- Configuration change notifications
+- Automatic configuration updates
+- Conflict resolution for concurrent changes
+
+### 💾 **Persistence**
+- Multiple storage backend support
+- Configuration backup and restore
+- Version control for configuration changes
+- Migration support for configuration updates
+
+### 🎯 **Type Safety**
+- Strongly typed configuration schemas
+- Runtime type checking and validation
+- Configuration IntelliSense support
+- Compile-time configuration verification
+
+## Integration Example
+
+```tsx
+import { MSAppConfig } from '@windows98/micro-services'
+
+const appConfig = new MSAppConfig()
+
+// Initialize configuration
+await appConfig.initialize({
+  environment: 'production',
+  configPath: './config',
+  validation: true
+})
+
+// Get configuration values
+const themeConfig = appConfig.get('ui.theme', 'classic')
+const apiEndpoint = appConfig.get('api.endpoint')
+
+// Set configuration values
+appConfig.set('user.preferences.language', 'en-US')
+appConfig.set('app.debugMode', false)
+
+// Listen for configuration changes
+appConfig.onChange('ui.theme', (newTheme) => {
+  console.log(`Theme changed to: ${newTheme}`)
+})
+```
+
+## Common Use Cases
+
+- **Application Settings**: Managing app-specific configuration and preferences
+- **User Preferences**: Storing and syncing user customization settings
+- **Environment Config**: Handling different configuration for dev/staging/production
+- **Feature Flags**: Managing feature toggles and experimental features
+- **API Configuration**: Storing endpoint URLs, API keys, and service settings
+- **UI Customization**: Managing theme, layout, and interface preferences

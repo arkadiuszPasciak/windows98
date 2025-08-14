@@ -1,0 +1,97 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSBrowserEnv" />
+
+<Title>🌐 MS Browser Env</Title>
+
+Browser environment detection and capability management service for Windows98 ecosystem.
+
+## What is MS Browser Env?
+
+MS Browser Env is a service that provides comprehensive browser environment detection, capability assessment, and compatibility management. It ensures that Windows98 applications work consistently across different browsers and platforms by providing standardized environment information and polyfills.
+
+## Key Features
+
+### 🔍 **Environment Detection**
+- Browser type and version identification
+- Operating system detection
+- Device type recognition (desktop, mobile, tablet)
+- Screen resolution and viewport information
+
+### 🛠️ **Capability Assessment**
+- Feature availability checking
+- API support detection
+- Performance capability assessment
+- Security feature verification
+
+### 🔧 **Compatibility Management**
+- Cross-browser compatibility utilities
+- Polyfill management and loading
+- Feature fallback mechanisms
+- Progressive enhancement support
+
+### 📱 **Device Information**
+- Hardware specification detection
+- Touch capability assessment
+- Orientation and viewport management
+- Input method detection
+
+### 🚀 **Performance Optimization**
+- Browser performance profiling
+- Resource loading optimization
+- Memory usage monitoring
+- Rendering performance assessment
+
+### 🔒 **Security & Privacy**
+- Security feature detection
+- Privacy mode identification
+- Cookie and storage availability
+- CORS and CSP compliance checking
+
+### 🌍 **Localization Support**
+- Language and locale detection
+- Timezone information
+- Regional preference identification
+- Character encoding support
+
+### 📊 **Analytics & Monitoring**
+- Environment metrics collection
+- Compatibility issue tracking
+- Performance monitoring
+- Feature usage analytics
+
+## Integration Example
+
+```tsx
+import { MSBrowserEnv } from '@windows98/micro-services'
+
+const browserEnv = new MSBrowserEnv()
+
+// Detect browser environment
+const envInfo = browserEnv.getEnvironmentInfo()
+console.log(`Browser: ${envInfo.browser} ${envInfo.version}`)
+console.log(`OS: ${envInfo.os}`)
+
+// Check feature support
+const hasWebGL = browserEnv.hasFeature('webgl')
+const hasLocalStorage = browserEnv.hasFeature('localStorage')
+
+// Get device capabilities
+const deviceInfo = browserEnv.getDeviceInfo()
+console.log(`Device type: ${deviceInfo.type}`)
+console.log(`Screen: ${deviceInfo.screen.width}x${deviceInfo.screen.height}`)
+
+// Load polyfills if needed
+if (!browserEnv.hasFeature('fetch')) {
+  await browserEnv.loadPolyfill('fetch')
+}
+```
+
+## Common Use Cases
+
+- **Feature Detection**: Checking browser API and feature availability
+- **Responsive Design**: Adapting UI based on device and screen capabilities
+- **Performance Optimization**: Optimizing code execution based on browser performance
+- **Compatibility Layer**: Providing consistent APIs across different browsers
+- **Progressive Enhancement**: Building features that work across capability ranges
+- **Analytics**: Collecting browser and device information for optimization

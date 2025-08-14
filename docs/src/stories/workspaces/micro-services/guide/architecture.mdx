@@ -1,0 +1,453 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Guide/Architecture" />
+
+<Title>🏗️ Service Architecture</Title>
+
+Understanding the architectural patterns and design principles behind Windows98 micro-services.
+
+## Architecture Overview
+
+The Windows98 micro-services architecture is built on principles of modularity, separation of concerns, and maintainable design. Each service is designed to be independent, focused, and easily integrable.
+
+## Core Architecture Patterns
+
+### Service Layer Architecture
+
+```
+┌─────────────────────────────────┐
+│        Domain Layer             │ ← Business Logic
+│  • Domain Services              │
+│  • Domain Contracts             │ 
+│  • Business Rules               │
+├─────────────────────────────────┤
+│         Data Layer              │ ← External Integrations
+│  • Repositories                 │
+│  • External API Adapters        │
+│  • Browser API Wrappers         │
+└─────────────────────────────────┘
+```
+
+#### Domain Layer (`src/domain/`)
+- **Business Logic**: Core service functionality and business rules
+- **Domain Contracts**: Interface definitions that establish service contracts
+- **Domain Services**: Implementation of business logic using repository abstractions
+- **State Management**: Internal service state handling and validation
+- **Domain Models**: Business entities and value objects
+
+**Structure:**
+```
+domain/
+├── contracts/          # Interface definitions
+│   ├── domain.contract.ts
+│   ├── repository.contract.ts
+│   └── index.ts
+└── domains/           # Business logic implementations
+    ├── storage.domain.ts
+    ├── local-storage.domain.ts
+    └── index.ts
+```
+
+#### Data Layer (`src/data/`)
+- **Repository Pattern**: Concrete implementations of data access contracts
+- **External Integration**: Interfaces with browser APIs, external services
+- **Data Transformation**: Converts between internal and external data formats
+- **Protocol Handling**: Manages different communication protocols
+- **Fallback Mechanisms**: Provides alternatives when external services fail
+
+**Structure:**
+```
+data/
+└── repositories/      # External data access implementations
+    ├── local-storage.repository.ts
+    ├── session-storage.repository.ts
+    └── index.ts
+```
+
+#### External Dependencies Layer
+- **Browser APIs**: localStorage, sessionStorage, fetch, etc.
+- **Third-party Services**: External APIs and services
+- **System Resources**: File system, network, hardware APIs
+
+## Service Communication Architecture
+
+```
+┌─────────────────────────────────┐    ┌─────────────────────────────────┐    ┌─────────────────┐
+│        Micro Frontend           │    │        Micro Service            │    │ External APIs   │
+│                                 │    │                                 │    │                 │
+│  Domain Layer:                  │    │  Domain Layer:                  │    │  • Browser APIs │
+│  • Components                   │────│  • Domain Services              │────│  • Storage APIs │
+│  • Views                        │    │  • Domain Contracts             │    │  • Network APIs │
+│  • Business Logic               │    │  • Business Rules               │    │  • File APIs    │
+│                                 │    │                                 │    │                 │
+└─────────────────────────────────┘    └─────────────────────────────────┘    └─────────────────┘
+```
+
+### Communication Flow
+
+#### 1. Micro Frontend → Micro Service
+```tsx
+// Micro Frontend (Domain Layer)
+class ThemeComponent {
+  constructor(private themeService: MSTheme) {}
+  
+  async changeTheme(theme: string) {
+    // Business logic in micro frontend
+    if (this.isValidTheme(theme)) {
+      await this.themeService.setTheme(theme) // Call to micro service domain
+    }
+  }
+}
+
+// Micro Service (Domain Layer) 
+class MSTheme extends StorageDomain {
+  async setTheme(theme: string) {
+    // Business logic in micro service
+    this.validateTheme(theme)
+    this.set('current-theme', theme) // Uses repository via parent class
+  }
+}
+```
+
+#### 2. Micro Service → External APIs
+```tsx
+// Micro Service (Data Layer)
+class LocalStorageRepository implements StorageRepositoryContract {
+  setItem(key: string, value: string) {
+    // Direct connection to browser API
+    window.localStorage.setItem(key, value)
+  }
+}
+```
+
+#### 3. Event-Driven Communication
+```tsx
+// Micro Frontend (Data Layer) - Event listener
+class ThemeEventAdapter {
+  constructor(private eventBus: MSEventBus) {
+    this.eventBus.on('theme-changed', this.handleThemeChange)
+  }
+}
+
+// Micro Service (Domain Layer) - Event emission
+class MSTheme {
+  setTheme(theme: string) {
+    this.repository.setItem('theme', theme)
+    this.eventBus.emit('theme-changed', theme) // Notify other components
+  }
+}
+```
+
+### Practical Architecture Example: MSStorage
+
+Here's how the data/domain pattern works in practice using the MSStorage service:
+
+#### Domain Layer (Business Logic)
+
+```tsx
+// domain/contracts/domain.contract.ts
+export interface StorageDomainContract<StorageKeys> {
+  set<Key extends keyof StorageKeys>(key: Key, value: StorageKeys[Key]): void
+  get<Key extends keyof StorageKeys>(key: Key): Maybe<StorageKeys[Key]>
+  exists<Key extends keyof StorageKeys>(key: Key): boolean
+  remove<Key extends keyof StorageKeys>(key: Key): void
+}
+
+// domain/contracts/repository.contract.ts
+export interface StorageRepositoryStrategyContract<StorageKeys> {
+  getItem<Key extends keyof StorageKeys>(key: Key): Maybe<StorageKeys[Key]>
+  setItem<Key extends keyof StorageKeys>(key: Key, value: StorageKeys[Key]): void
+  removeItem<Key extends keyof StorageKeys>(key: Key): void
+  clear(): void
+}
+
+// domain/domains/storage.domain.ts
+export class StorageDomain<StorageKeys> implements StorageDomainContract<StorageKeys> {
+  constructor(
+    private storageRepository: StorageRepositoryStrategyContract<StorageKeys>
+  ) {}
+
+  public set<Key extends keyof StorageKeys>(key: Key, value: StorageKeys[Key]): void {
+    this.storageRepository.setItem(key, value)
+  }
+
+  public get<Key extends keyof StorageKeys>(key: Key): Maybe<StorageKeys[Key]> {
+    return this.storageRepository.getItem(key)
+  }
+
+  public exists<Key extends keyof StorageKeys>(key: Key): boolean {
+    const item = this.get(key)
+    return !!item?.toString().length
+  }
+
+  public remove<Key extends keyof StorageKeys>(key: Key): void {
+    this.storageRepository.removeItem(key)
+  }
+}
+
+// domain/domains/local-storage.domain.ts
+export class MSLocalStorage<StorageKeys> extends StorageDomain<StorageKeys> {
+  constructor() {
+    super(new LocalStorageRepository<StorageKeys>())
+  }
+}
+```
+
+#### Data Layer (External Connections)
+
+```tsx
+// data/repositories/local-storage.repository.ts
+export class LocalStorageRepository<StorageKeys> 
+  implements StorageRepositoryStrategyContract<StorageKeys> {
+  
+  public getItem<Key extends keyof StorageKeys>(key: Key): Maybe<StorageKeys[Key]> {
+    return window.localStorage.getItem(key as string) as StorageKeys[Key]
+  }
+
+  public setItem<Key extends keyof StorageKeys>(key: Key, value: StorageKeys[Key]): void {
+    window.localStorage.setItem(key as string, value as string)
+  }
+
+  public removeItem<Key extends keyof StorageKeys>(key: Key): void {
+    window.localStorage.removeItem(key as string)
+  }
+
+  public clear(): void {
+    window.localStorage.clear()
+  }
+}
+
+// data/repositories/session-storage.repository.ts
+export class SessionStorageRepository<StorageKeys> 
+  implements StorageRepositoryStrategyContract<StorageKeys> {
+  
+  public getItem<Key extends keyof StorageKeys>(key: Key): Maybe<StorageKeys[Key]> {
+    return window.sessionStorage.getItem(key as string) as StorageKeys[Key]
+  }
+
+  public setItem<Key extends keyof StorageKeys>(key: Key, value: StorageKeys[Key]): void {
+    window.sessionStorage.setItem(key as string, value as string)
+  }
+
+  public removeItem<Key extends keyof StorageKeys>(key: Key): void {
+    window.sessionStorage.removeItem(key as string)
+  }
+
+  public clear(): void {
+    window.sessionStorage.clear()
+  }
+}
+```
+
+#### Public API Layer
+
+```tsx
+// index.ts
+export { MSLocalStorage, MSSessionStorage } from "./domain/domains"
+```
+
+### Architecture Benefits
+
+This data/domain separation provides several key advantages:
+
+1. **Separation of Concerns**: Business logic is separated from external dependencies
+2. **Testability**: Domain logic can be tested independently of browser APIs
+3. **Flexibility**: Easy to switch storage strategies without changing business logic
+4. **Type Safety**: Strong typing throughout all layers
+5. **Strategy Pattern**: Repository implementations can be swapped based on context
+
+### Usage Example
+
+```tsx
+// Consumer code doesn't know about repositories or browser APIs
+interface UserPreferences {
+  theme: string
+  language: string
+  notifications: boolean
+}
+
+const userStorage = new MSLocalStorage<UserPreferences>()
+
+// Business logic methods
+userStorage.set('theme', 'dark')
+const theme = userStorage.get('theme')
+const hasTheme = userStorage.exists('theme')
+userStorage.remove('notifications')
+```
+
+#### 1. Direct Service Access
+```tsx
+// Direct method calls for synchronous operations
+const theme = themeService.getCurrentTheme()
+await storageService.setItem('key', value)
+```
+
+#### 2. Event-Driven Communication
+```tsx
+// Asynchronous, decoupled communication
+eventBus.emit('theme-changed', newTheme)
+eventBus.on('user-action', handleUserAction)
+```
+
+#### 3. Observer Pattern
+```tsx
+// Service state change notifications
+themeService.subscribe(theme => updateUI(theme))
+```
+
+#### 4. Dependency Injection
+```tsx
+// Service composition and testing
+class MyService {
+  constructor(
+    private storage: MSStorage,
+    private eventBus: MSEventBus
+  ) {}
+}
+```
+
+## Service Design Principles
+
+### 1. Data/Domain Separation
+Services are organized into two distinct layers:
+
+```tsx
+// ✅ Good - Clear separation between data and domain
+// Data layer handles external connections
+class LocalStorageRepository implements StorageRepositoryContract {
+  getItem(key: string) { 
+    return window.localStorage.getItem(key) // Browser API access
+  }
+}
+
+// Domain layer handles business logic
+class StorageDomain {
+  constructor(private repository: StorageRepositoryContract) {}
+  
+  exists(key: string): boolean {
+    const item = this.repository.getItem(key)
+    return !!item?.toString().length // Business rule
+  }
+}
+
+// ❌ Bad - Mixed concerns
+class MSStorage {
+  exists(key: string): boolean {
+    // Business logic mixed with browser API
+    const item = window.localStorage.getItem(key)
+    return !!item?.toString().length
+  }
+}
+```
+
+### 2. Repository Pattern Implementation
+External dependencies are abstracted through repository contracts:
+
+```tsx
+// ✅ Good - Repository abstraction
+interface StorageRepositoryContract {
+  getItem(key: string): string | null
+  setItem(key: string, value: string): void
+}
+
+class StorageDomain {
+  constructor(private repository: StorageRepositoryContract) {}
+  // Domain logic works with any repository implementation
+}
+
+// ❌ Bad - Direct dependency on external API
+class StorageDomain {
+  get(key: string) {
+    return window.localStorage.getItem(key) // Tightly coupled
+  }
+}
+```
+
+### 3. Single Responsibility Principle (SRP)
+Each layer and class has one well-defined responsibility:
+
+```tsx
+// ✅ Good - Focused responsibilities
+class StorageDomain {
+  set(key: string, value: string) { /* business logic only */ }
+  get(key: string) { /* business logic only */ }
+}
+
+class LocalStorageRepository {
+  getItem(key: string) { /* localStorage API only */ }
+  setItem(key: string, value: string) { /* localStorage API only */ }
+}
+
+// ❌ Bad - Mixed responsibilities
+class MSStorage {
+  set(key: string, value: string) { /* business + API logic */ }
+  validateUser(user: User) { /* unrelated validation logic */ }
+}
+```
+
+### 4. Interface Segregation
+Services provide focused, minimal interfaces through contracts:
+
+```tsx
+// ✅ Good - Specific, focused contracts
+interface StorageDomainContract<T> {
+  get<K extends keyof T>(key: K): Maybe<T[K]>
+  set<K extends keyof T>(key: K, value: T[K]): void
+  exists<K extends keyof T>(key: K): boolean
+  remove<K extends keyof T>(key: K): void
+}
+
+interface StorageRepositoryContract<T> {
+  getItem<K extends keyof T>(key: K): Maybe<T[K]>
+  setItem<K extends keyof T>(key: K, value: T[K]): void
+  removeItem<K extends keyof T>(key: K): void
+  clear(): void
+}
+
+// ❌ Bad - Monolithic interface
+interface StorageService {
+  // Too many responsibilities in one interface
+  get(key: string): any
+  set(key: string, value: any): void
+  validateData(data: any): boolean
+  sendToServer(data: any): Promise<void>
+  logActivity(action: string): void
+}
+```
+
+### 5. Dependency Inversion
+Domain layer depends on abstractions (contracts), not concrete implementations:
+
+```tsx
+// ✅ Good - Depends on abstraction
+class StorageDomain {
+  constructor(private repository: StorageRepositoryContract) {}
+  // Works with any repository implementation
+}
+
+// ❌ Bad - Depends on concrete implementation
+class StorageDomain {
+  constructor(private localStorage: LocalStorageRepository) {}
+  // Tightly coupled to specific repository
+}
+```
+
+### 6. Strategy Pattern for Data Access
+Different storage strategies can be used without changing domain logic:
+
+```tsx
+// ✅ Good - Strategy pattern implementation
+const localStorageStrategy = new LocalStorageRepository()
+const sessionStorageStrategy = new SessionStorageRepository()
+const memoryStorageStrategy = new MemoryStorageRepository()
+
+// Same domain logic, different storage strategies
+const localStorage = new StorageDomain(localStorageStrategy)
+const sessionStorage = new StorageDomain(sessionStorageStrategy)
+const memoryStorage = new StorageDomain(memoryStorageStrategy)
+
+// Usage is identical regardless of strategy
+localStorage.set('theme', 'dark')
+sessionStorage.set('token', 'abc123')
+memoryStorage.set('cache', data)
+```

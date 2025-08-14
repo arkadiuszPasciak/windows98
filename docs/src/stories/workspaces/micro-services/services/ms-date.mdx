@@ -1,0 +1,99 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSDate" />
+
+<Title>📅 MS Date</Title>
+
+Date and time utilities service for Windows98 ecosystem.
+
+## What is MS Date?
+
+MS Date is a comprehensive date and time management service that provides utilities for date manipulation, formatting, timezone handling, and calendar operations. It ensures consistent date handling across all Windows98 applications with proper localization and timezone support.
+
+## Key Features
+
+### 🕐 **Date & Time Operations**
+- Current date and time retrieval
+- Date arithmetic and calculations
+- Time zone conversion and management
+- Timestamp generation and parsing
+
+### 📝 **Formatting & Parsing**
+- Multiple date format support
+- Custom date format creation
+- Locale-aware date formatting
+- Date string parsing and validation
+
+### 🌍 **Internationalization**
+- Locale-specific date formatting
+- Multiple calendar system support
+- Regional date preferences
+- Multilingual month and day names
+
+### ⏰ **Time Zone Management**
+- Automatic timezone detection
+- Manual timezone setting
+- DST (Daylight Saving Time) handling
+- UTC conversion utilities
+
+### 📊 **Calendar Operations**
+- Calendar calculations and utilities
+- Working day calculations
+- Holiday detection and management
+- Date range operations
+
+### 🔄 **Relative Time**
+- Relative time calculations (ago, from now)
+- Human-readable time differences
+- Duration calculations and formatting
+- Time interval management
+
+### ⚡ **Performance Optimization**
+- Efficient date calculations
+- Caching for repeated operations
+- Minimal memory footprint
+- Fast parsing and formatting
+
+### 🎯 **Windows98 Integration**
+- Classic Windows date picker styling
+- System clock synchronization
+- Taskbar clock integration
+- Calendar widget support
+
+## Integration Example
+
+```tsx
+import { MSDate } from '@windows98/micro-services'
+
+const dateService = new MSDate()
+
+// Get current date and time
+const now = dateService.now()
+const currentDate = dateService.getCurrentDate()
+
+// Format dates
+const formatted = dateService.format(now, 'MM/dd/yyyy HH:mm:ss')
+const localized = dateService.formatLocalized(now, 'full', 'en-US')
+
+// Date calculations
+const tomorrow = dateService.addDays(now, 1)
+const weekAgo = dateService.subtractDays(now, 7)
+const daysDiff = dateService.daysBetween(date1, date2)
+
+// Timezone operations
+const utcTime = dateService.toUTC(now)
+const localTime = dateService.toTimezone(utcTime, 'America/New_York')
+
+// Relative time
+const timeAgo = dateService.timeAgo(lastModified) // "2 hours ago"
+const timeUntil = dateService.timeUntil(deadline) // "in 3 days"
+```
+
+## Common Use Cases
+
+- **Clock Display**: Showing current time in taskbar and widgets
+- **Date Pickers**: Implementing date selection components
+- **File Timestamps**: Managing file creation and modification times
+- **Scheduling**: Handling appointment and event scheduling
+- **Logging**: Timestamping system events and user actions
+- **Calendar Views**: Building calendar and agenda applications
