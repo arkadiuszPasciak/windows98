@@ -4,7 +4,7 @@ import { MFAudioButton } from "@windows98/micro-frontends"
 const meta: Meta<typeof MFAudioButton> = {
 	component: MFAudioButton,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFAudioButton",
+	title: "Workspaces/Micro Frontends/Components/MFAudioButton",
 }
 
 export default meta

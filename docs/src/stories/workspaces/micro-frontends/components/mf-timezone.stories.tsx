@@ -4,7 +4,7 @@ import { MFTimezone } from "@windows98/micro-frontends"
 const meta: Meta<typeof MFTimezone> = {
 	component: MFTimezone,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFTimezone",
+	title: "Workspaces/Micro Frontends/Components/MFTimezone",
 }
 
 export default meta

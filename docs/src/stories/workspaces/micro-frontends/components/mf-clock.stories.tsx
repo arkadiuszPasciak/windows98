@@ -4,7 +4,7 @@ import { MFClock } from "@windows98/micro-frontends"
 const meta: Meta<typeof MFClock> = {
 	component: MFClock,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFClock",
+	title: "Workspaces/Micro Frontends/Components/MFClock",
 }
 
 export default meta

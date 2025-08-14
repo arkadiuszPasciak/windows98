@@ -1,0 +1,40 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Frontends/Getting Started/Quick Start" />
+
+<Title>🏎️ Quick Start</Title>
+
+Get started with `@windows98/micro-frontends` in minutes.
+
+## Installation
+
+```bash
+pnpm add @windows98/micro-frontends
+```
+
+## Peer Dependencies
+
+Install required peer dependencies:
+
+```bash
+pnpm add react react-dom @windows98/design-system @windows98/micro-services @windows98/i18n
+```
+
+## Basic Usage
+
+### Import and Use Micro-frontends
+
+```tsx
+import React from 'react'
+import { MFCalculator } from '@windows98/micro-frontends'
+
+function App() {
+  return (
+    <div className="container">
+      <MFCalculator />
+    </div>
+  )
+}
+
+export default App
+```

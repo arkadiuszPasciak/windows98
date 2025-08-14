@@ -4,7 +4,7 @@ import { MFPulpit } from "@windows98/micro-frontends"
 const meta: Meta<typeof MFPulpit> = {
 	component: MFPulpit,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFPulpit",
+	title: "Workspaces/Micro Frontends/Components/MFPulpit",
 }
 
 export default meta

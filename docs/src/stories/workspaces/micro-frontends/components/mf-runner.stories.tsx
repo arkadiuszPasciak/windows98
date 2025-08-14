@@ -19,7 +19,7 @@ const meta: Meta<typeof MFRunner> = {
 	},
 	component: MFRunner,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFRunner",
+	title: "Workspaces/Micro Frontends/Components/MFRunner",
 }
 
 export default meta

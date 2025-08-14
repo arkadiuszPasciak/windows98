@@ -10,7 +10,7 @@ const meta: Meta<typeof MFTimer> = {
 	},
 	component: MFTimer,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFTimer",
+	title: "Workspaces/Micro Frontends/Components/MFTimer",
 }
 
 export default meta

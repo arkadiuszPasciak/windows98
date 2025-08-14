@@ -20,7 +20,7 @@ const meta: Meta<typeof MSSaveFile> = {
 	},
 	component: MSSaveFile,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MSSaveFile",
+	title: "Workspaces/Micro Frontends/Components/MSSaveFile",
 }
 
 export default meta

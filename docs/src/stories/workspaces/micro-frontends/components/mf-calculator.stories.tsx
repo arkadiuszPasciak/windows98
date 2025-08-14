@@ -10,7 +10,7 @@ const meta: Meta<typeof MFCalculator> = {
 	},
 	component: MFCalculator,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFCalculator",
+	title: "Workspaces/Micro Frontends/Components/MFCalculator",
 }
 
 export default meta

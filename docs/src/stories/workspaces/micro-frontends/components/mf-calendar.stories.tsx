@@ -4,7 +4,7 @@ import { MFCalendar } from "@windows98/micro-frontends"
 const meta: Meta<typeof MFCalendar> = {
 	component: MFCalendar,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFCalendar",
+	title: "Workspaces/Micro Frontends/Components/MFCalendar",
 }
 
 export default meta

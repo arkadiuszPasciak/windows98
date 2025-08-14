@@ -10,7 +10,7 @@ const meta: Meta<typeof MFTicTacToe> = {
 	},
 	component: MFTicTacToe,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFTicTacToe",
+	title: "Workspaces/Micro Frontends/Components/MFTicTacToe",
 }
 
 export default meta

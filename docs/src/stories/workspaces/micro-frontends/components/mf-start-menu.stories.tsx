@@ -15,7 +15,7 @@ const meta: Meta<typeof MFStartMenu> = {
 	},
 	component: MFStartMenu,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFStartMenu",
+	title: "Workspaces/Micro Frontends/Components/MFStartMenu",
 }
 
 export default meta

@@ -10,7 +10,7 @@ const meta: Meta<typeof MFSystemInformation> = {
 	},
 	component: MFSystemInformation,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFSystemInformation",
+	title: "Workspaces/Micro Frontends/Components/MFSystemInformation",
 }
 
 export default meta

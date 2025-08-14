@@ -4,7 +4,7 @@ import { MFNavigation } from "@windows98/micro-frontends"
 const meta: Meta<typeof MFNavigation> = {
 	component: MFNavigation,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFNavigation",
+	title: "Workspaces/Micro Frontends/Components/MFNavigation",
 }
 
 export default meta

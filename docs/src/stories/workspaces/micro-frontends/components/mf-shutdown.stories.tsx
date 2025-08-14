@@ -10,7 +10,7 @@ const meta: Meta<typeof MFShutdown> = {
 	},
 	component: MFShutdown,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFShutdown",
+	title: "Workspaces/Micro Frontends/Components/MFShutdown",
 }
 
 export default meta

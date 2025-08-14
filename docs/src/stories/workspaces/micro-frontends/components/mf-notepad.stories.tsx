@@ -10,7 +10,7 @@ const meta: Meta<typeof MFNotepad> = {
 	},
 	component: MFNotepad,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFNotepad",
+	title: "Workspaces/Micro Frontends/Components/MFNotepad",
 }
 
 export default meta

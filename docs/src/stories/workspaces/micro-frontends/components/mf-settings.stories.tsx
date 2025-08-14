@@ -28,7 +28,7 @@ const meta: Meta<typeof MFSettings> = {
 	},
 	component: MFSettings,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFSettings",
+	title: "Workspaces/Micro Frontends/Components/MFSettings",
 }
 
 export default meta

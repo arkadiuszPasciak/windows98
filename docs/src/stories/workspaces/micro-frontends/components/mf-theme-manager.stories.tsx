@@ -4,7 +4,7 @@ import { MFThemeManager } from "@windows98/micro-frontends"
 const meta: Meta<typeof MFThemeManager> = {
 	component: MFThemeManager,
 	tags: ["autodocs"],
-	title: "Micro Frontends/Components/MFThemeManager",
+	title: "Workspaces/Micro Frontends/Components/MFThemeManager",
 }
 
 export default meta
