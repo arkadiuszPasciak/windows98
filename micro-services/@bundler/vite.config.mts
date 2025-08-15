@@ -11,7 +11,7 @@ export default defineConfig({
 			fileName: "index",
 			formats: ["es", "umd"],
 		},
-		outDir: "build",
+		outDir: "dist",
 		sourcemap: true,
 	},
 	plugins: [dts({ include: ["../src/"] })],
