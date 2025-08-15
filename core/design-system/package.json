@@ -24,7 +24,7 @@
 		"dev": "vite @bundler",
 		"build": "pnpm run build:components && pnpm run build:styles",
 		"build:components": "vite build @bundler",
-		"build:styles": "lightningcss --minify --bundle --targets \">= 0.25%\" ./src/styles/index.css -o ./@bundler/dist/styles/index.css",
+		"build:styles": "node @bundler/lightningcss.command.mjs",
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
 		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
