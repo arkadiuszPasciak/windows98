@@ -13,7 +13,7 @@
 		"pnpm": "10.13.1"
 	},
 	"scripts": {
-		"prepare": "husky install"
+		"prepare": "husky install && pnpm run --filter @windows98/ci-cd build"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
