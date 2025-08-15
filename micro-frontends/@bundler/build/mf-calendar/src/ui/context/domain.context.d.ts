@@ -1,1 +1,0 @@
-export declare const DomainContext: import('react').Context<import('../../domain/domains').CalendarDomain>;
