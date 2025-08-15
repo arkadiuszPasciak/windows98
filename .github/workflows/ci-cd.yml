@@ -52,9 +52,7 @@ jobs:
 
       - name: Install Dependencies
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
-        run: |
-          pnpm install
-          pnpm rebuild lightningcss-cli
+        run: pnpm install
 
       - name: Build Workspaces
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
