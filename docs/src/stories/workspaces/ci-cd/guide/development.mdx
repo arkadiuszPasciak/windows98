@@ -1,0 +1,363 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/CI-CD/Guide/Development" />
+
+<Title>🔧 Development</Title>
+
+Development workflows, best practices, and guidelines for working with the CI/CD system.
+
+## Development Environment Setup
+
+### Prerequisites
+
+```bash
+# Required versions
+node --version    # Should be 22.17.1
+pnpm --version    # Should be 10.13.1
+```
+
+### Local Setup
+
+1. **Navigate to CI/CD workspace**
+   ```bash
+   cd core/ci-cd
+   ```
+
+2. **Verify command system**
+   ```bash
+   # Test command execution
+   node src/commands/run.command.mjs lint:types:run
+   ```
+
+3. **Run through CI/CD pipeline locally**
+   ```bash
+   # Full local validation
+   pnpm run lint:types:run
+   pnpm run lint:code:run
+   pnpm run lint:styles:run
+   pnpm run test:unit:run
+   pnpm run build
+   ```
+
+## Development Workflows
+
+### **Feature Development Workflow**
+
+```bash
+# 1. Create feature branch
+git checkout -b feature/new-feature
+
+# 2. Make changes to packages
+
+# 3. Test locally before commit
+pnpm run lint:types:run
+pnpm run lint:code:run
+pnpm run test:unit:run
+
+# 4. Fix any issues
+pnpm run lint:staged:fix
+
+# 5. Commit changes
+git add .
+git commit -m "feat: implement new feature"
+
+# 6. Push and create PR
+git push origin feature/new-feature
+```
+
+### **Bug Fix Workflow**
+
+```bash
+# 1. Create bugfix branch
+git checkout -b fix/issue-description
+
+# 2. Reproduce the issue
+pnpm run test:unit:run  # Verify failing tests
+
+# 3. Implement fix
+
+# 4. Verify fix
+pnpm run lint:types:run
+pnpm run test:unit:run
+pnpm run build
+
+# 5. Commit and push
+git add .
+git commit -m "fix: resolve issue description"
+git push origin fix/issue-description
+```
+
+### **CI/CD System Development**
+
+```bash
+# 1. Modify command mappings in ci-cd.config.mjs
+
+# 2. Test new commands locally
+node src/commands/run.command.mjs new:command
+
+# 3. Update package.json scripts
+# Add new command to scripts section
+
+# 4. Test across multiple packages
+pnpm run new:command
+
+# 5. Update documentation
+# Add command to getting-started/commands.mdx
+```
+
+## Command Development
+
+### **Adding New Commands**
+
+1. **Define command mapping**
+   ```javascript
+   // src/configs/ci-cd.config.mjs
+   #commands = {
+     // ... existing commands
+     "new:command": [
+       "@windows98/package1",
+       "@windows98/package2"
+     ]
+   }
+   ```
+
+2. **Add package.json script**
+   ```json
+   {
+     "scripts": {
+       "new:command": "node ./src/commands/run.command.mjs new:command"
+     }
+   }
+   ```
+
+3. **Test command execution**
+   ```bash
+   # Direct test
+   node src/commands/run.command.mjs new:command
+   
+   # Via pnpm script
+   pnpm run new:command
+   ```
+
+4. **Verify target packages**
+   ```bash
+   # Check each target package has the script
+   pnpm --filter @windows98/package1 run new:command
+   pnpm --filter @windows98/package2 run new:command
+   ```
+
+### **Modifying Existing Commands**
+
+1. **Update command mapping**
+   ```javascript
+   // Add or remove packages from command
+   "lint:code:run": [
+     "@windows98/app",
+     // Add new package
+     "@windows98/new-package"
+   ]
+   ```
+
+2. **Test updated command**
+   ```bash
+   pnpm run lint:code:run
+   ```
+
+3. **Verify all packages execute successfully**
+
+## Testing Strategies
+
+### **Local Testing**
+
+```bash
+# Test individual commands
+pnpm run lint:types:run
+pnpm run lint:code:run
+pnpm run test:unit:run
+
+# Test command sequence (mirrors CI/CD pipeline)
+pnpm run lint:types:run && \
+pnpm run lint:code:run && \
+pnpm run lint:styles:run && \
+pnpm run test:unit:run && \
+pnpm run build && \
+pnpm run test:ui:run
+```
+
+### **Package-Specific Testing**
+
+```bash
+# Test specific package
+pnpm --filter @windows98/design-system run test:unit:run
+
+# Test multiple packages manually
+for pkg in app design-system micro-frontends; do
+  echo "Testing @windows98/$pkg"
+  pnpm --filter @windows98/$pkg run test:unit:run
+done
+```
+
+### **Error Testing**
+
+```bash
+# Test error handling by introducing intentional failures
+# 1. Modify a file to cause TypeScript errors
+# 2. Run commands to verify error reporting
+pnpm run lint:types:run
+
+# Should show clear error messages with context
+```
+
+## Debugging
+
+### **Command Execution Issues**
+
+1. **Check command exists**
+   ```bash
+   # Verify command is in mapping
+   grep -n "command-name" src/configs/ci-cd.config.mjs
+   ```
+
+2. **Test individual package**
+   ```bash
+   # Run command on specific package
+   pnpm --filter @windows98/package-name run command-name
+   ```
+
+3. **Check package.json scripts**
+   ```bash
+   # Verify script exists in target package
+   cat packages/package-name/package.json | grep -A5 "scripts"
+   ```
+
+### **Error Analysis**
+
+```bash
+# Run command with verbose output
+node src/commands/run.command.mjs lint:code:run 2>&1 | tee debug.log
+
+# Check for common issues:
+# - Missing dependencies
+# - Incorrect workspace filtering
+# - Package script errors
+# - Permission issues
+```
+
+### **GitHub Actions Debugging**
+
+1. **Local simulation**
+   ```bash
+   # Simulate GitHub Actions environment
+   export CI=true
+   pnpm run lint:types:run
+   ```
+
+2. **Check workflow file**
+   ```bash
+   # Verify command matches workflow
+   grep -n "ci-cd" .github/workflows/ci-cd.yml
+   ```
+
+## Performance Optimization
+
+### **Command Execution**
+
+1. **Sequential vs Parallel**
+   - Current: Sequential execution for error isolation
+   - Consider: Parallel execution for independent commands
+
+2. **Package Filtering**
+   ```bash
+   # Optimize by only targeting relevant packages
+   # Remove packages that don't need specific commands
+   ```
+
+3. **Caching**
+   - Leverage pnpm's caching mechanisms
+   - Use GitHub Actions cache for dependencies
+
+### **Development Speed**
+
+```bash
+# Quick type check
+pnpm run lint:types:run
+
+# Fast code check
+pnpm run lint:code:run
+
+# Skip slow tests during development
+pnpm --filter @windows98/app run test:unit:run
+```
+
+## Best Practices
+
+### **Code Quality**
+
+1. **Consistent Error Handling**
+   ```javascript
+   // Always include context in error messages
+   throw new Error(`[CICDCommand]: specific error with context`);
+   ```
+
+2. **Logging Standards**
+   ```javascript
+   // Include command and package context
+   console.log(`[CICDCommand/${command}]: ${workspace}`);
+   ```
+
+3. **Documentation**
+   - Update docs when adding/modifying commands
+   - Include usage examples
+   - Document package targeting rationale
+
+### **Testing**
+
+1. **Local First**
+   - Always test locally before pushing
+   - Verify all command variations work
+   - Test error scenarios
+
+2. **CI/CD Validation**
+   - Use PR process to validate changes
+   - Monitor GitHub Actions output
+   - Check deployment success
+
+### **Maintenance**
+
+1. **Regular Updates**
+   - Keep dependencies current
+   - Update Node.js/pnpm versions consistently
+   - Review and optimize command mappings
+
+2. **Monitoring**
+   - Watch CI/CD pipeline performance
+   - Monitor for failing packages
+   - Track execution times
+
+## Troubleshooting Guide
+
+### **Common Issues**
+
+| Problem | Symptoms | Solution |
+|---------|----------|----------|
+| Command not found | Error: command X not found | Add command to `#commands` mapping |
+| Package script missing | Error executing command on package Y | Add script to package.json |
+| Permission denied | Cannot execute node command | Check file permissions on run.command.mjs |
+| Workspace not found | Package @windows98/X not found | Verify package name and workspace config |
+| Dependency errors | Module not found errors | Run `pnpm install` to update dependencies |
+
+### **Debug Commands**
+
+```bash
+# List all workspace packages
+pnpm list -r
+
+# Check workspace filtering
+pnpm -r --filter @windows98/* list
+
+# Verify command execution
+node --trace-warnings src/commands/run.command.mjs command-name
+
+# Check package scripts
+pnpm -r exec npm run
+```

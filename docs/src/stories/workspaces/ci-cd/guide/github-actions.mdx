@@ -1,0 +1,339 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/CI-CD/Guide/GitHub Actions" />
+
+<Title>🚀 GitHub Actions</Title>
+
+Complete guide to the GitHub Actions integration and CI/CD pipeline workflows.
+
+## Workflow Overview
+
+The Windows98 project uses GitHub Actions for automated CI/CD with two main workflows:
+
+1. **CI/CD Pipeline** (`ci-cd.yml`) - Pull request validation and preview deployment
+2. **Production Deployment** (`deploy-production.yml`) - Production deployment on master branch
+
+## CI/CD Pipeline Workflow
+
+### Trigger Conditions
+
+```yaml
+on:
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "Why are you running manually?"
+        required: true
+```
+
+**Triggers:**
+- Pull requests to master branch
+- Manual workflow dispatch with reason
+
+### Environment Variables
+
+```yaml
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+```
+
+### Pipeline Stages
+
+The CI/CD pipeline follows a structured approach with job dependencies:
+
+```
+install-cache
+    ↓
+type-check
+    ↓
+code-lint-format + stylelint-lint
+    ↓
+vitest-tests
+    ↓
+build
+    ↓
+e2e-tests
+    ↓
+deploy-preview
+```
+
+### Job Details
+
+#### 1. Install & Cache (`install-cache`)
+
+```yaml
+install-cache:
+  runs-on: ubuntu-latest
+  strategy:
+    matrix:
+      node-version: [22.17.1]
+  steps:
+    - name: Checkout Commit
+      uses: actions/checkout@v3.5.0
+    
+    - name: Install Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+    
+    - name: Cache pnpm dependencies
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.pnpm-store
+          node_modules
+        key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+    
+    - name: Install PNPM
+      run: npm install -g pnpm@10.13.1
+    
+    - name: Install Dependencies
+      run: pnpm install
+```
+
+**Purpose:** Set up Node.js environment, install dependencies, and cache them for subsequent jobs
+
+#### 2. Type Checking (`type-check`)
+
+```yaml
+- name: Check types
+  run: pnpm --filter @windows98/ci-cd run lint:types:run
+```
+
+**Purpose:** Validate TypeScript types across all TypeScript packages
+**Dependencies:** `install-cache`
+
+#### 3. Code Linting (`code-lint-format`)
+
+```yaml
+- name: Lint code
+  run: pnpm --filter @windows98/ci-cd run lint:code:run
+```
+
+**Purpose:** Check code quality and formatting with Biome
+**Dependencies:** `type-check`
+
+#### 4. Style Linting (`stylelint-lint`)
+
+```yaml
+- name: Lint with Stylelint
+  run: pnpm --filter @windows98/ci-cd run lint:styles:run
+```
+
+**Purpose:** Validate CSS/SCSS styles with Stylelint
+**Dependencies:** `type-check`
+
+#### 5. Unit Testing (`vitest-tests`)
+
+```yaml
+- name: Run Vitest tests
+  run: pnpm run --filter @windows98/ci-cd test:unit:run
+```
+
+**Purpose:** Execute unit tests across all packages
+**Dependencies:** `code-lint-format`, `stylelint-lint`
+
+#### 6. Build (`build`)
+
+```yaml
+- name: Build Applications
+  run: pnpm run --filter @windows98/ci-cd build
+```
+
+**Purpose:** Build the application for production
+**Dependencies:** `vitest-tests`
+
+#### 7. E2E Testing (`e2e-tests`)
+
+```yaml
+- name: Install Playwright Browsers
+  run: pnpm --filter @windows98/design-system exec playwright install --with-deps
+
+- name: Design System & Micro Frontend E2E Tests
+  run: pnpm run --filter @windows98/ci-cd test:ui:run
+```
+
+**Purpose:** Run end-to-end tests with Playwright
+**Dependencies:** `build`
+
+#### 8. Preview Deployment (`deploy-preview`)
+
+```yaml
+- name: Install Vercel CLI Locally
+  run: npm install --global vercel@latest
+
+- name: Pull Vercel Environment Information
+  run: npx vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+
+- name: Build Project Artifacts
+  run: npx vercel build --token=${{ secrets.VERCEL_TOKEN }}
+
+- name: Deploy Project Artifacts to Vercel
+  run: npx vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+```
+
+**Purpose:** Deploy preview version to Vercel for testing
+**Dependencies:** `e2e-tests`
+
+## Production Deployment Workflow
+
+### Trigger Conditions
+
+```yaml
+on:
+  push:
+    branches:
+      - master
+```
+
+**Triggers:** Pushes to master branch (after PR merge)
+
+### Deployment Steps
+
+```yaml
+Deploy-Production:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v3.5.0
+    
+    - name: Install PNPM
+      run: npm install -g pnpm@10.13.1
+    
+    - name: Install Dependencies
+      run: pnpm install
+    
+    - name: Install Vercel CLI Locally
+      run: npm install --global vercel@latest
+    
+    - name: Pull Vercel Environment Information
+      run: npx vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+    
+    - name: Build Project Artifacts
+      run: npx vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+    
+    - name: Deploy Project Artifacts to Vercel
+      run: npx vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+```
+
+## CI/CD Integration Points
+
+### **@windows98/ci-cd Package Integration**
+
+All quality checks use the centralized CI/CD commands:
+
+```yaml
+# Type checking
+pnpm --filter @windows98/ci-cd run lint:types:run
+
+# Code linting  
+pnpm --filter @windows98/ci-cd run lint:code:run
+
+# Style linting
+pnpm --filter @windows98/ci-cd run lint:styles:run
+
+# Unit testing
+pnpm --filter @windows98/ci-cd run test:unit:run
+
+# UI testing
+pnpm --filter @windows98/ci-cd run test:ui:run
+
+# Building
+pnpm --filter @windows98/ci-cd run build
+```
+
+### **Caching Strategy**
+
+```yaml
+- name: Cache pnpm dependencies
+  uses: actions/cache@v3
+  with:
+    path: |
+      ~/.pnpm-store
+      node_modules
+    key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+```
+
+**Benefits:**
+- Faster builds by reusing dependencies
+- Reduced GitHub Actions execution time
+- Consistent environment across jobs
+
+### **Matrix Strategy**
+
+```yaml
+strategy:
+  matrix:
+    node-version: [22.17.1]
+```
+
+**Purpose:** Ensure compatibility with specific Node.js version
+
+## Required Secrets
+
+### Vercel Integration
+
+- `VERCEL_TOKEN` - Vercel authentication token
+- `VERCEL_ORG_ID` - Vercel organization identifier  
+- `VERCEL_PROJECT_ID` - Vercel project identifier
+
+## Quality Gates
+
+The pipeline enforces quality gates at each stage:
+
+1. **Type Safety** - TypeScript compilation must pass
+2. **Code Quality** - Biome linting must pass
+3. **Style Quality** - Stylelint validation must pass  
+4. **Unit Tests** - All unit tests must pass
+5. **Build Success** - Application must build successfully
+6. **E2E Tests** - End-to-end tests must pass
+7. **Deployment** - Only after all quality checks pass
+
+## Benefits
+
+### **Automated Quality Assurance**
+- Consistent quality checks on every PR
+- Prevents broken code from reaching production
+- Automated testing across all packages
+
+### **Fast Feedback Loop**
+- Quick validation of changes
+- Early detection of issues
+- Parallel execution where possible
+
+### **Deployment Automation**
+- Automatic preview deployments for testing
+- Seamless production deployments
+- Zero-downtime deployments via Vercel
+
+### **Monorepo Optimization**
+- Workspace-aware command execution
+- Only relevant packages are tested/built
+- Efficient resource utilization
+
+## Troubleshooting
+
+### **Common Issues**
+
+1. **Cache Invalidation**
+   - Delete `~/.pnpm-store` if dependencies are corrupted
+   - Update cache key if lock file changes
+
+2. **Playwright Issues**
+   - Ensure browsers are installed: `playwright install --with-deps`
+   - Check browser compatibility with OS
+
+3. **Vercel Deployment**
+   - Verify environment variables are set
+   - Check build output for errors
+   - Validate Vercel configuration
+
+### **Debugging Steps**
+
+1. Check individual job logs in GitHub Actions
+2. Run commands locally to reproduce issues
+3. Verify workspace filtering is correct
+4. Ensure all dependencies are properly installed

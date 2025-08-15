@@ -1,0 +1,258 @@
+import { Meta, Title, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+<Meta title="Workspaces/Design System/Guide/Colors" />
+
+<Title>🎨 Colors</Title>
+
+Complete color system and palette for the Windows98 design system.
+
+## Base Color Palette
+
+<ColorPalette>
+  <ColorItem
+    title="Grayscale Colors"
+    subtitle="Core neutral colors for backgrounds and UI elements"
+    colors={{
+      'Black 100': '#000000',
+      'Black 200': '#0a0a0a', 
+      'Black 300': '#222222',
+      'Grey 100': '#3b3b3b',
+      'Grey 200': '#808080',
+      'Grey 300': '#8b8b8b',
+      'Grey 400': '#969696',
+      'Grey 500': '#9b9b9b',
+      'Grey 600': '#a9a9a9',
+      'Grey 700': '#b5b5b5',
+      'Grey 800': '#c0c0c0',
+      'Grey 900': '#dfdfdf',
+      'White 100': '#ffffff'
+    }}
+  />
+  <ColorItem 
+    title="Blue Colors" 
+    subtitle="Primary blues for system elements and accents" 
+    colors={{
+      'Blue 100': '#0000ff',
+      'Blue 200': '#000080',
+      'Blue 300': '#1084d0',
+      'Blue 400': '#007b7b',
+      'Blue 500': '#0f0f81',
+      'Blue 600': '#330099'
+    }} 
+  />
+  <ColorItem 
+    title="System Colors" 
+    subtitle="System status and accent colors" 
+    colors={{
+      'Red 100': '#fe0000'
+    }} 
+  />
+</ColorPalette>
+
+```css
+/* Black Shades */
+--ds-color-black100: #000000;
+--ds-color-black200: #0a0a0a;
+--ds-color-black300: #222222;
+
+/* Blue Shades */
+--ds-color-blue100: #0000ff;
+--ds-color-blue200: #000080;
+--ds-color-blue300: #1084d0;
+--ds-color-blue400: #007b7b;
+--ds-color-blue500: #0f0f81;
+--ds-color-blue600: #330099;
+
+/* Grey Shades */
+--ds-color-grey100: #3b3b3b;
+--ds-color-grey200: #808080;
+--ds-color-grey300: #8b8b8b;
+--ds-color-grey400: #969696;
+--ds-color-grey500: #9b9b9b;
+--ds-color-grey600: #a9a9a9;
+--ds-color-grey700: #b5b5b5;
+--ds-color-grey800: #c0c0c0;
+--ds-color-grey900: #dfdfdf;
+
+/* Red Shades */
+--ds-color-red100: #fe0000;
+
+/* White */
+--ds-color-white100: #ffffff;
+```
+
+## Semantic Color Usage
+
+<ColorPalette>
+  <ColorItem
+    title="Light Theme Backgrounds"
+    subtitle="Background colors for light theme"
+    colors={{
+      'Primary': '#c0c0c0',
+      'Secondary': '#ffffff', 
+      'Tertiary': '#808080',
+      'Pulpit': '#007b7b'
+    }}
+  />
+  <ColorItem
+    title="Dark Theme Backgrounds" 
+    subtitle="Background colors for dark theme"
+    colors={{
+      'Primary': '#3b3b3b',
+      'Secondary': '#3b3b3b',
+      'Tertiary': '#808080', 
+      'Pulpit': '#000000'
+    }}
+  />
+</ColorPalette>
+
+<ColorPalette>
+  <ColorItem
+    title="Light Theme Text"
+    subtitle="Text colors for light theme"
+    colors={{
+      'Primary': '#222222',
+      'Secondary': '#ffffff',
+      'Tertiary': '#222222'
+    }}
+  />
+  <ColorItem
+    title="Dark Theme Text"
+    subtitle="Text colors for dark theme" 
+    colors={{
+      'Primary': '#9b9b9b',
+      'Secondary': '#9b9b9b',
+      'Tertiary': '#000000'
+    }}
+  />
+</ColorPalette>
+
+<ColorPalette>
+  <ColorItem
+    title="Modal Header Gradients"
+    subtitle="Gradient backgrounds for modal headers"
+    colors={{
+      'Light Theme': 'linear-gradient(90deg, #000080, #1084d0)',
+      'Dark Theme': 'linear-gradient(90deg, #330099, #0f0f81)'
+    }}
+  />
+  <ColorItem
+    title="Border Effects"
+    subtitle="3D border effect colors"
+    colors={{
+      'Light Inner': 'rgba(255, 255, 255, 0.7)',
+      'Dark Inner': '#8b8b8b',
+      'Shadow': '#0a0a0a'
+    }}
+  />
+</ColorPalette>
+
+## Theme Variables
+
+```css
+/* Light Theme */
+:root[theme="light"] {
+  --ds-background-color-primary: var(--ds-color-grey800);
+  --ds-background-color-secondary: var(--ds-color-white100);
+  --ds-background-color-tertiary: var(--ds-color-grey200);
+  --ds-background-color-modal-header: linear-gradient(
+    90deg,
+    var(--ds-color-blue200),
+    var(--ds-color-blue300)
+  );
+  --ds-background-color-pulpit: var(--ds-color-blue400);
+
+  --ds-text-color-primary: var(--ds-color-black300);
+  --ds-text-color-secondary: var(--ds-color-white100);
+  --ds-text-color-tertiary: var(--ds-color-black300);
+
+  --ds-border-color-primary: rgba(255, 255, 255, 0.7);
+  --ds-border-color-secondary: var(--ds-color-grey400);
+  --ds-border-color-tertiary: var(--ds-color-white100);
+}
+
+/* Dark Theme */
+:root[theme="dark"] {
+  --ds-background-color-primary: var(--ds-color-grey100);
+  --ds-background-color-secondary: var(--ds-color-grey100);
+  --ds-background-color-tertiary: var(--ds-color-grey200);
+  --ds-background-color-modal-header: linear-gradient(
+    90deg,
+    var(--ds-color-blue600),
+    var(--ds-color-blue500)
+  );
+  --ds-background-color-pulpit: var(--ds-color-black100);
+
+  --ds-text-color-primary: var(--ds-color-grey500);
+  --ds-text-color-secondary: var(--ds-color-grey500);
+  --ds-text-color-tertiary: var(--ds-color-black100);
+
+  --ds-border-color-primary: var(--ds-color-grey300);
+  --ds-border-color-secondary: var(--ds-color-grey400);
+  --ds-border-color-tertiary: var(--ds-color-grey100);
+}
+```
+
+## Color Usage Guidelines
+
+### Do's ✅
+
+1. **Use semantic variables** for theme-aware colors
+   ```css
+   color: var(--ds-text-color-primary);
+   background: var(--ds-background-color-primary);
+   ```
+
+2. **Test both themes** to ensure proper contrast and visibility
+
+3. **Use base color variables** for static elements that don't change with themes
+
+### Don'ts ❌
+
+1. **Don't use hardcoded colors** that break theme switching
+   ```css
+   /* ❌ Bad */
+   color: #222222;
+   
+   /* ✅ Good */
+   color: var(--ds-text-color-primary);
+   ```
+
+2. **Don't override system colors** without maintaining Windows 98 aesthetics
+
+3. **Don't ignore accessibility** - ensure sufficient contrast ratios
+
+## Custom Color Extensions
+
+### Adding Custom Colors
+
+```css
+:root {
+  /* Custom color additions */
+  --ds-color-custom-green: #00ff00;
+  --ds-color-custom-yellow: #ffff00;
+}
+
+/* Theme-specific usage */
+:root[theme="light"] {
+  --ds-text-color-success: var(--ds-color-custom-green);
+  --ds-text-color-warning: var(--ds-color-custom-yellow);
+}
+```
+
+### Brand Color Integration
+
+```css
+/* Integrate brand colors while maintaining Windows 98 aesthetic */
+:root {
+  --ds-color-brand-primary: #ff6b35;
+  --ds-color-brand-secondary: #004e89;
+}
+
+/* Use in specific components */
+.brand-button {
+  background: var(--ds-color-brand-primary);
+  color: var(--ds-color-white100);
+  box-shadow: var(--ds-border-raised);
+}
+```

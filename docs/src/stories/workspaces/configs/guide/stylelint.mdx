@@ -1,0 +1,63 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Configs/Guide/Stylelint" />
+
+<Title>🎨 Stylelint</Title>
+
+Complete guide to using Stylelint configuration from `@windows98/configs` for CSS and SCSS linting.
+
+## Overview
+
+Stylelint configuration provides CSS and SCSS linting rules optimized for the Windows98 design system and modern CSS practices.
+
+## Configuration Path
+
+```
+@windows98/configs/stylelint/css
+```
+
+## Install Dependencies
+
+```bash
+# Install lint-staged and husky
+pnpm add -D stylelint
+
+# Install the configs package
+pnpm add -D @windows98/configs
+```
+
+## Basic Usage
+
+### Simple Setup
+
+```javascript
+// ./@linter/stylelint.config.cjs
+module.exports = require('@windows98/configs/stylelint/css')
+```
+
+### With Custom Rules
+
+```javascript
+// ./@linter/stylelint.config.cjs
+const baseConfig = require('@windows98/configs/stylelint/css')
+
+module.exports = {
+  ...baseConfig,
+  rules: {
+    ...baseConfig.rules,
+    'custom-property-pattern': '^ds-[a-z-]+$',
+    'color-named': 'never'
+  }
+}
+```
+
+## Package.json Scripts
+
+```json
+{
+  "scripts": {
+    "lint:styles:fix": "stylelint --config ./@linter/stylelint.config.cjs \"src/**/*.css\" --fix",
+    "lint:styles:run": "stylelint --config ./@linter/stylelint.config.cjs \"src/**/*.css\"",
+  }
+}
+```

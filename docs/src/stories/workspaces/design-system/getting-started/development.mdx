@@ -1,0 +1,388 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Design System/Getting Started/Development" />
+
+<Title>🔧 Development</Title>
+
+Development workflows, best practices, and contribution guidelines for the Windows98 design system.
+
+## Available Commands
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>dev</code></td>
+      <td>Start development server with hot reloading</td>
+      <td><code>pnpm dev</code></td>
+    </tr>
+    <tr>
+      <td><code>build</code></td>
+      <td>Build the design system for production</td>
+      <td><code>pnpm build</code></td>
+    </tr>
+    <tr>
+      <td><code>storybook</code></td>
+      <td>Start Storybook development server</td>
+      <td><code>pnpm storybook</code></td>
+    </tr>
+    <tr>
+      <td><code>build-storybook</code></td>
+      <td>Build Storybook for production</td>
+      <td><code>pnpm build-storybook</code></td>
+    </tr>
+    <tr>
+      <td><code>test:unit:run</code></td>
+      <td>Run unit tests with Vitest</td>
+      <td><code>pnpm test:unit:run</code></td>
+    </tr>
+    <tr>
+      <td><code>test:ui:run</code></td>
+      <td>Run UI tests with Playwright</td>
+      <td><code>pnpm test:ui:run</code></td>
+    </tr>
+    <tr>
+      <td><code>lint:code:run</code></td>
+      <td>Run code linting with Biome</td>
+      <td><code>pnpm lint:code:run</code></td>
+    </tr>
+    <tr>
+      <td><code>lint:styles:run</code></td>
+      <td>Run CSS linting with Stylelint</td>
+      <td><code>pnpm lint:styles:run</code></td>
+    </tr>
+    <tr>
+      <td><code>lint:types:run</code></td>
+      <td>Run TypeScript type checking</td>
+      <td><code>pnpm lint:types:run</code></td>
+    </tr>
+  </tbody>
+</table>
+
+## Component Development Workflow
+
+### Creating New Components
+
+1. **Create component directory**
+   ```bash
+   mkdir src/components/my-component
+   cd src/components/my-component
+   ```
+
+2. **Create component files**
+   ```bash
+   # Component implementation
+   touch my-component.component.tsx
+   
+   # Component styles
+   touch my-component.component.css
+   
+   # Component story
+   touch my-component.stories.tsx
+   
+   # Component tests
+   touch my-component.test.tsx
+   
+   # Export file
+   touch index.ts
+   ```
+
+3. **Component structure example**
+   ```typescript
+   // my-component.component.tsx
+   import type { FunctionComponent, ReactNode } from 'react'
+   import './my-component.component.css'
+
+   export interface MyComponentProps {
+     children: ReactNode
+     variant?: 'primary' | 'secondary'
+     disabled?: boolean
+   }
+
+   export const MyComponent: FunctionComponent<MyComponentProps> = ({
+     children,
+     variant = 'primary',
+     disabled = false
+   }) => {
+     return (
+       <div 
+         className={`win98-my-component win98-my-component--${variant}`}
+         data-disabled={disabled}
+       >
+         {children}
+       </div>
+     )
+   }
+   ```
+
+4. **Add component styles**
+   ```css
+   /* my-component.component.css */
+   .win98-my-component {
+     /* Windows 98 styling */
+     border: 2px outset var(--win98-button-face);
+     background: var(--win98-button-face);
+     padding: var(--win98-spacing-sm);
+     font-family: var(--win98-font-family);
+     font-size: var(--win98-font-size-base);
+   }
+
+   .win98-my-component--primary {
+     /* Primary variant styles */
+   }
+
+   .win98-my-component[data-disabled="true"] {
+     opacity: 0.5;
+     cursor: not-allowed;
+   }
+   ```
+
+5. **Create component story**
+   ```typescript
+   // my-component.stories.tsx
+   import type { Meta, StoryObj } from '@storybook/react'
+   import { MyComponent } from './my-component.component'
+
+   const meta: Meta<typeof MyComponent> = {
+     title: 'Components/MyComponent',
+     component: MyComponent,
+     parameters: {
+       layout: 'centered',
+     },
+     tags: ['autodocs'],
+   }
+
+   export default meta
+   type Story = StoryObj<typeof meta>
+
+   export const Default: Story = {
+     args: {
+       children: 'My Component',
+     },
+   }
+
+   export const Secondary: Story = {
+     args: {
+       children: 'Secondary Component',
+       variant: 'secondary',
+     },
+   }
+
+   export const Disabled: Story = {
+     args: {
+       children: 'Disabled Component',
+       disabled: true,
+     },
+   }
+   ```
+
+6. **Add component tests**
+   ```typescript
+   // my-component.test.tsx
+   import { render, screen } from '@testing-library/react'
+   import { describe, it, expect } from 'vitest'
+   import { MyComponent } from './my-component.component'
+
+   describe('MyComponent', () => {
+     it('renders with children', () => {
+       render(<MyComponent>Test Content</MyComponent>)
+       expect(screen.getByText('Test Content')).toBeInTheDocument()
+     })
+
+     it('applies variant class', () => {
+       render(<MyComponent variant="secondary">Test</MyComponent>)
+       const component = screen.getByText('Test')
+       expect(component).toHaveClass('win98-my-component--secondary')
+     })
+
+     it('handles disabled state', () => {
+       render(<MyComponent disabled>Test</MyComponent>)
+       const component = screen.getByText('Test')
+       expect(component).toHaveAttribute('data-disabled', 'true')
+     })
+   })
+   ```
+
+7. **Export component**
+   ```typescript
+   // index.ts
+   export { MyComponent } from './my-component.component'
+   export type { MyComponentProps } from './my-component.component'
+   ```
+
+8. **Add to main exports**
+   ```typescript
+   // src/components/index.ts
+   export * from './my-component'
+   ```
+
+## Design Token Development
+
+### Adding New Design Tokens
+
+1. **Add token to CSS variables**
+   ```css
+   /* src/styles/tokens/colors.css */
+   :root {
+     --win98-new-color: #c0c0c0;
+     --win98-new-color-hover: #d4d4d4;
+   }
+   ```
+
+2. **Document the token**
+   ```typescript
+   // Update design-tokens.mdx documentation
+   ```
+
+3. **Use in components**
+   ```css
+   .my-component {
+     background: var(--win98-new-color);
+   }
+   
+   .my-component:hover {
+     background: var(--win98-new-color-hover);
+   }
+   ```
+
+## Testing Guidelines
+
+### Unit Testing
+
+```bash
+# Run unit tests
+pnpm test:unit:run
+
+# Run tests in watch mode
+pnpm test:unit:watch
+
+# Run tests with coverage
+pnpm test:unit:coverage
+```
+
+### UI Testing
+
+```bash
+# Run UI tests
+pnpm test:ui:run
+
+# Run tests in headed mode
+pnpm test:ui:headed
+
+# Run specific test file
+pnpm test:ui:run --grep "Button component"
+```
+
+### Testing Best Practices
+
+1. **UI Tests**
+   - Test visual appearance
+   - Test user interactions
+   - Test responsive behavior
+   - Test theme switching
+
+## Styling Guidelines
+
+### CSS Naming Convention
+
+```css
+/* Component styles */
+.win98-component-name { }
+.win98-component-name[data-state="disabled"] { }
+```
+
+### CSS Custom Properties
+
+```css
+/* Use design tokens */
+.my-component {
+  color: var(--win98-text-primary);
+  background: var(--win98-surface-primary);
+  border: var(--win98-border-width) var(--win98-border-style) var(--win98-border-color);
+  padding: var(--win98-spacing-md);
+  font-family: var(--win98-font-family);
+}
+```
+
+## Code Quality
+
+### Linting and Formatting
+
+```bash
+# Run all quality checks
+pnpm lint:code:run
+pnpm lint:styles:run
+pnpm lint:types:run
+
+# Fix auto-fixable issues
+pnpm lint:code:fix
+pnpm lint:styles:fix
+```
+
+### TypeScript Guidelines
+
+```typescript
+// Use strict types
+export interface ComponentProps {
+  variant: 'primary' | 'secondary' | 'tertiary'
+  size: 'small' | 'medium' | 'large'
+  disabled?: boolean
+  onClick?: (event: MouseEvent) => void
+}
+
+// Use proper React types
+import type { FunctionComponent, ReactNode, MouseEvent } from 'react'
+
+export const Component: FunctionComponent<ComponentProps> = ({ ... }) => {
+  // Component implementation
+}
+```
+
+## Contribution Guidelines
+
+### Pull Request Process
+
+1. **Create feature branch**
+   ```bash
+   git checkout -b feature/component-name
+   ```
+
+2. **Develop component**
+   - Follow component development workflow
+   - Write tests
+   - Update documentation
+
+3. **Quality checks**
+   ```bash
+   pnpm lint:types:run
+   pnpm lint:code:run
+   pnpm lint:styles:run
+   pnpm test:unit:run
+   pnpm test:ui:run
+   ```
+
+4. **Update documentation**
+   - Add component to Storybook
+   - Update README if needed
+   - Add component to guide/components.mdx
+
+5. **Submit pull request**
+   - Clear description of changes
+   - Screenshots of new components
+   - Link to related issues
+
+### Review Checklist
+
+- [ ] Component follows Windows 98 design patterns
+- [ ] TypeScript types are properly defined
+- [ ] Component is accessible
+- [ ] Tests cover main functionality
+- [ ] Storybook story is comprehensive
+- [ ] CSS follows naming conventions
+- [ ] Design tokens are used consistently

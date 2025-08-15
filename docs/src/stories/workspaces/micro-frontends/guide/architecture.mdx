@@ -1,0 +1,1309 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Frontends/Guide/Architecture" />
+
+<Title>🏗️ Architecture</Title>
+
+Understanding the architecture, structure, and design patterns of `@windows98/micro-frontends`.
+
+## Overview
+
+The micro-frontends package implements a modular architecture where each micro-frontend is an independent, self-contained application following Domain-Driven Design (DDD) principles. This approach enables scalable development, maintainability, and reusability.
+
+## Core Architecture Principles
+
+### 1. Domain-Driven Design (DDD)
+
+Each micro-frontend is organized around business domains:
+
+```
+mf-clock/
+├── src/
+│   ├── domain/           # Business logic layer
+│   │   ├── contracts/    # Interfaces and abstractions
+│   │   └── domains/      # Domain implementations
+│   ├── data/            # Data layer
+│   │   ├── adapters/     # External API adapters
+│   │   └── repositories/ # Data persistence layer
+│   └── ui/              # Presentation layer
+│       ├── components/   # Reusable UI components
+│       ├── context/      # React context providers
+│       ├── hooks/        # Custom React hooks
+│       ├── modules/      # Feature modules
+│       └── views/        # Main application views
+└── tests/               # Test suites
+    ├── domain/          # Domain tests
+    ├── data/            # Data layer tests
+    └── ui/              # UI tests
+```
+
+### 2. Separation of Concerns
+
+- **Domain Layer**: Business logic, data models, and rules
+- **Data Layer**: External API connections, repositories, and data persistence
+- **UI Layer**: React components, hooks, and presentation logic
+- **Contract Layer**: Interfaces defining the boundaries between layers
+
+### 3. Dependency Injection
+
+Using React Context for dependency injection:
+
+```tsx
+// Domain contract
+export interface ClockDomainContract {
+  getCurrentTime(): Date
+  formatTime(date: Date): string
+  setTimezone(timezone: string): void
+}
+
+// Domain implementation
+export const clockDomain: ClockDomainContract = {
+  getCurrentTime: () => new Date(),
+  formatTime: (date) => date.toLocaleTimeString(),
+  setTimezone: (timezone) => { /* timezone logic */ }
+}
+
+// Context provider
+export const DomainContext = createContext<ClockDomainContract | null>(null)
+
+// View with injected dependencies
+export const ClockView = () => (
+  <DomainContext.Provider value={clockDomain}>
+    <ClockModule />
+  </DomainContext.Provider>
+)
+```
+
+## Structural Patterns
+
+### Micro-frontend Layout
+
+```
+src/mf-{name}/
+├── src/
+│   ├── domain/                    # Domain layer
+│   │   ├── contracts/
+│   │   │   ├── domain.contract.ts # Main domain interface
+│   │   │   └── index.ts          # Contract exports
+│   │   └── domains/
+│   │       ├── {name}.domain.ts   # Domain implementation
+│   │       └── index.ts          # Domain exports
+│   ├── data/                     # Data layer
+│   │   ├── adapters/             # External API adapters
+│   │   │   ├── browser.adapter.ts # Browser APIs (window, storage, etc.)
+│   │   │   ├── network.adapter.ts # HTTP/API calls
+│   │   │   └── index.ts          # Adapter exports
+│   │   └── repositories/         # Data persistence
+│   │       ├── settings.repository.ts # Settings management
+│   │       ├── cache.repository.ts    # Caching layer
+│   │       └── index.ts          # Repository exports
+│   └── ui/                       # UI layer
+│       ├── components/           # Shared components
+│       ├── context/
+│       │   └── domain.context.ts # React context
+│       ├── hooks/                # Custom hooks
+│       ├── modules/              # Feature modules
+│       │   └── {feature}/
+│       │       ├── {feature}.tsx
+│       │       ├── {feature}.module.css
+│       │       └── index.ts
+│       └── views/                # Main views
+│           ├── {name}.view.tsx
+│           └── index.ts
+└── tests/                        # Tests
+    ├── domain/                   # Domain tests
+    ├── data/                     # Data layer tests
+    │   ├── adapters/             # Adapter tests
+    │   └── repositories/         # Repository tests
+    └── ui/                       # UI tests
+```
+
+### Module Organization
+
+Each UI module is self-contained:
+
+```tsx
+// src/mf-clock/src/ui/modules/time/time.tsx
+import { useContext } from 'react'
+import { DomainContext } from '../../context/domain.context'
+import { useTime } from './use-time.hook'
+import styles from './time.module.css'
+
+export const TimeModule = () => {
+  const domain = useContext(DomainContext)
+  const { currentTime, format } = useTime(domain)
+  
+  return (
+    <div className={styles.container}>
+      <span className={styles.time}>
+        {format(currentTime)}
+      </span>
+    </div>
+  )
+}
+```
+
+```css
+/* src/mf-clock/src/ui/modules/time/time.module.css */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-md);
+  background: var(--color-display-bg);
+  border: var(--border-inset);
+  border-radius: var(--border-radius);
+}
+
+.time {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  color: var(--color-display-text);
+  text-align: center;
+  min-width: 120px;
+  letter-spacing: 0.05em;
+}
+
+.time:focus {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: var(--spacing-sm);
+  }
+  
+  .time {
+    font-size: var(--font-size-lg);
+    min-width: 100px;
+  }
+}
+
+/* Theme variations */
+.container[data-theme="analog"] {
+  background: transparent;
+  border: none;
+}
+
+.container[data-theme="digital"] {
+  background: var(--color-lcd-bg);
+  border: var(--border-lcd);
+}
+```
+```
+
+## Design Patterns
+
+### 1. Provider Pattern
+
+Each micro-frontend uses the Provider pattern for dependency injection:
+
+```tsx
+export const ClockView = () => {
+  return (
+    <DomainContext.Provider value={clockDomain}>
+      <Wrapper />
+    </DomainContext.Provider>
+  )
+}
+```
+
+### 2. Hook Pattern
+
+Custom hooks encapsulate stateful logic:
+
+```tsx
+// src/ui/hooks/use-clock.hook.ts
+export const useClock = (domain: ClockDomainContract) => {
+  const [time, setTime] = useState(new Date())
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(domain.getCurrentTime())
+    }, 1000)
+    
+    return () => clearInterval(interval)
+  }, [domain])
+  
+  return { time, formatTime: domain.formatTime }
+}
+```
+
+### 3. Module Pattern
+
+Feature modules encapsulate related functionality:
+
+```tsx
+// Clock time module
+export const TimeModule = ({ format }: TimeProps) => {
+  const { currentTime } = useClock()
+  
+  return (
+    <div className={styles.time}>
+      {format(currentTime)}
+    </div>
+  )
+}
+
+// Clock timezone module
+export const TimezoneModule = ({ timezone }: TimezoneProps) => {
+  return (
+    <div className={styles.timezone}>
+      {timezone}
+    </div>
+  )
+}
+```
+
+```css
+/* Module-specific styles with Windows 98 design system */
+.time {
+  background: var(--w98-color-display-bg);
+  border: 2px inset var(--w98-color-border);
+  padding: var(--w98-spacing-md);
+  font-family: var(--w98-font-family-mono);
+  font-size: 1.5rem;
+  color: var(--w98-color-display-text);
+  text-align: center;
+  min-width: 140px;
+}
+
+.timezone {
+  background: var(--w98-color-button);
+  border: 1px outset var(--w98-color-border);
+  padding: var(--w98-spacing-xs) var(--w98-spacing-sm);
+  font-size: var(--w98-font-size-sm);
+  color: var(--w98-color-text);
+  text-align: center;
+  margin-top: var(--w98-spacing-xs);
+}
+
+.timezone:hover {
+  background: var(--w98-color-button-hover);
+}
+
+/* Module composition styles */
+.clockModule {
+  display: flex;
+  flex-direction: column;
+  gap: var(--w98-spacing-sm);
+  padding: var(--w98-spacing-md);
+  background: var(--w98-color-background);
+  border: 2px outset var(--w98-color-border);
+  width: 200px;
+}
+```
+```
+
+### 4. Observer Pattern
+
+Using React's built-in state management for reactive updates:
+
+```tsx
+export const useClockState = () => {
+  const [currentTime, setCurrentTime] = useState(new Date())
+  const [timezone, setTimezone] = useState('UTC')
+  
+  const updateTime = useCallback(() => {
+    setCurrentTime(new Date())
+    // Notify observers
+  }, [])
+  
+  useEffect(() => {
+    const interval = setInterval(updateTime, 1000)
+    return () => clearInterval(interval)
+  }, [updateTime])
+  
+  return { currentTime, timezone, setTimezone }
+}
+```
+
+## Data Layer Architecture
+
+### Overview
+
+The data layer serves as an abstraction between the domain layer and external systems (browser APIs, storage, network). This separation ensures that business logic remains pure and testable while handling external dependencies cleanly.
+
+### Data Layer Components
+
+#### 1. Adapters Pattern
+
+Adapters provide a clean interface to external APIs:
+
+```tsx
+// src/data/adapters/browser.adapter.ts
+export interface BrowserAdapterContract {
+  // Storage APIs
+  saveToStorage(key: string, data: any): Promise<void>
+  loadFromStorage<T>(key: string): Promise<T | null>
+  clearStorage(key: string): Promise<void>
+  
+  // Notification APIs
+  showNotification(title: string, options?: NotificationOptions): Promise<void>
+  requestNotificationPermission(): Promise<NotificationPermission>
+  
+  // Audio APIs
+  playSound(url: string): Promise<void>
+  stopSound(): void
+  
+  // Window APIs
+  requestWakeLock(): Promise<void>
+  releaseWakeLock(): void
+  getWindowSize(): { width: number; height: number }
+  
+  // Clipboard APIs
+  writeToClipboard(text: string): Promise<boolean>
+  readFromClipboard(): Promise<string>
+}
+
+class BrowserAdapter implements BrowserAdapterContract {
+  private wakeLock: any = null
+  private currentAudio: HTMLAudioElement | null = null
+
+  async saveToStorage(key: string, data: any): Promise<void> {
+    try {
+      const serialized = JSON.stringify(data)
+      localStorage.setItem(key, serialized)
+    } catch (error) {
+      console.warn('Failed to save to storage:', error)
+      throw new Error('Storage operation failed')
+    }
+  }
+
+  async loadFromStorage<T>(key: string): Promise<T | null> {
+    try {
+      const item = localStorage.getItem(key)
+      return item ? JSON.parse(item) : null
+    } catch (error) {
+      console.warn('Failed to load from storage:', error)
+      return null
+    }
+  }
+
+  async showNotification(title: string, options?: NotificationOptions): Promise<void> {
+    if (!('Notification' in window)) {
+      throw new Error('Notifications not supported')
+    }
+
+    if (Notification.permission === 'granted') {
+      new Notification(title, options)
+    } else if (Notification.permission !== 'denied') {
+      const permission = await Notification.requestPermission()
+      if (permission === 'granted') {
+        new Notification(title, options)
+      }
+    }
+  }
+
+  async playSound(url: string): Promise<void> {
+    try {
+      this.stopSound() // Stop any existing audio
+      this.currentAudio = new Audio(url)
+      await this.currentAudio.play()
+    } catch (error) {
+      console.warn('Failed to play sound:', error)
+      throw new Error('Audio playback failed')
+    }
+  }
+
+  async requestWakeLock(): Promise<void> {
+    try {
+      if ('wakeLock' in navigator) {
+        this.wakeLock = await (navigator as any).wakeLock.request('screen')
+      }
+    } catch (error) {
+      console.warn('Wake lock failed:', error)
+    }
+  }
+
+  releaseWakeLock(): void {
+    if (this.wakeLock) {
+      this.wakeLock.release()
+      this.wakeLock = null
+    }
+  }
+
+  getWindowSize(): { width: number; height: number } {
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight
+    }
+  }
+
+  async writeToClipboard(text: string): Promise<boolean> {
+    try {
+      if (navigator.clipboard) {
+        await navigator.clipboard.writeText(text)
+        return true
+      } else {
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea')
+        textArea.value = text
+        document.body.appendChild(textArea)
+        textArea.select()
+        const success = document.execCommand('copy')
+        document.body.removeChild(textArea)
+        return success
+      }
+    } catch (error) {
+      console.warn('Failed to copy to clipboard:', error)
+      return false
+    }
+  }
+
+  stopSound(): void {
+    if (this.currentAudio) {
+      this.currentAudio.pause()
+      this.currentAudio = null
+    }
+  }
+}
+
+export const browserAdapter = new BrowserAdapter()
+```
+
+```css
+/* Data layer status indicators and notifications */
+.adapterStatus {
+  position: fixed;
+  bottom: var(--w98-spacing-md);
+  right: var(--w98-spacing-md);
+  background: var(--w98-color-background);
+  border: 2px outset var(--w98-color-border);
+  padding: var(--w98-spacing-sm);
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.statusList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--w98-font-size-sm);
+}
+
+.statusItem {
+  display: flex;
+  align-items: center;
+  gap: var(--w98-spacing-xs);
+  padding: var(--w98-spacing-xs) 0;
+}
+
+.statusIcon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.statusIcon.success {
+  background: var(--w98-color-success);
+}
+
+.statusIcon.error {
+  background: var(--w98-color-error);
+}
+
+.statusIcon.warning {
+  background: var(--w98-color-warning);
+}
+
+.statusIcon.loading {
+  background: var(--w98-color-info);
+  animation: pulse 1s infinite;
+}
+
+/* Notification styles */
+.notification {
+  position: fixed;
+  top: var(--w98-spacing-md);
+  right: var(--w98-spacing-md);
+  background: var(--w98-color-background);
+  border: 2px outset var(--w98-color-border);
+  padding: var(--w98-spacing-md);
+  max-width: 300px;
+  z-index: 1001;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.notificationTitle {
+  font-weight: bold;
+  margin-bottom: var(--w98-spacing-xs);
+  color: var(--w98-color-text);
+}
+
+.notificationMessage {
+  color: var(--w98-color-text-secondary);
+  font-size: var(--w98-font-size-sm);
+}
+
+/* Permission request dialog styles */
+.permissionDialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--w98-color-background);
+  border: 3px outset var(--w98-color-border);
+  padding: var(--w98-spacing-lg);
+  z-index: 1002;
+  min-width: 300px;
+}
+
+.dialogTitle {
+  font-weight: bold;
+  margin-bottom: var(--w98-spacing-md);
+  color: var(--w98-color-text);
+}
+
+.dialogActions {
+  display: flex;
+  gap: var(--w98-spacing-sm);
+  justify-content: flex-end;
+  margin-top: var(--w98-spacing-md);
+}
+
+.dialogButton {
+  padding: var(--w98-spacing-xs) var(--w98-spacing-md);
+  background: var(--w98-color-button);
+  border: 2px outset var(--w98-color-border);
+  color: var(--w98-color-text);
+  cursor: pointer;
+  min-width: 75px;
+}
+
+.dialogButton:hover {
+  background: var(--w98-color-button-hover);
+}
+
+.dialogButton:active {
+  border: 2px inset var(--w98-color-border);
+}
+```
+
+#### 2. Repository Pattern
+
+Repositories handle data persistence and retrieval:
+
+```tsx
+// src/data/repositories/settings.repository.ts
+import { browserAdapter } from '../adapters/browser.adapter'
+
+export interface SettingsRepositoryContract<T> {
+  save(settings: T): Promise<void>
+  load(): Promise<T | null>
+  clear(): Promise<void>
+  getDefault(): T
+}
+
+export class SettingsRepository<T> implements SettingsRepositoryContract<T> {
+  constructor(
+    private readonly storageKey: string,
+    private readonly defaultSettings: T
+  ) {}
+
+  async save(settings: T): Promise<void> {
+    await browserAdapter.saveToStorage(this.storageKey, settings)
+  }
+
+  async load(): Promise<T | null> {
+    const saved = await browserAdapter.loadFromStorage<T>(this.storageKey)
+    return saved || this.defaultSettings
+  }
+
+  async clear(): Promise<void> {
+    await browserAdapter.clearStorage(this.storageKey)
+  }
+
+  getDefault(): T {
+    return { ...this.defaultSettings }
+  }
+}
+
+// Usage example
+export interface ClockSettings {
+  format: '12h' | '24h'
+  timezone: string
+  showSeconds: boolean
+  theme: 'analog' | 'digital'
+}
+
+const defaultClockSettings: ClockSettings = {
+  format: '12h',
+  timezone: 'UTC',
+  showSeconds: true,
+  theme: 'digital'
+}
+
+export const clockSettingsRepository = new SettingsRepository(
+  'clock_settings',
+  defaultClockSettings
+)
+```
+
+#### 3. Cache Repository
+
+For managing temporary data and performance optimization:
+
+```tsx
+// src/data/repositories/cache.repository.ts
+export interface CacheRepositoryContract<T> {
+  set(key: string, value: T, ttl?: number): void
+  get(key: string): T | null
+  has(key: string): boolean
+  delete(key: string): void
+  clear(): void
+}
+
+class CacheRepository<T> implements CacheRepositoryContract<T> {
+  private cache = new Map<string, { value: T; expires: number }>()
+
+  set(key: string, value: T, ttl: number = 300000): void { // 5 minutes default
+    const expires = Date.now() + ttl
+    this.cache.set(key, { value, expires })
+  }
+
+  get(key: string): T | null {
+    const item = this.cache.get(key)
+    
+    if (!item) return null
+    
+    if (Date.now() > item.expires) {
+      this.cache.delete(key)
+      return null
+    }
+    
+    return item.value
+  }
+
+  has(key: string): boolean {
+    return this.get(key) !== null
+  }
+
+  delete(key: string): void {
+    this.cache.delete(key)
+  }
+
+  clear(): void {
+    this.cache.clear()
+  }
+}
+
+export const cacheRepository = new CacheRepository()
+```
+
+### Data Flow with External Systems
+
+```
+┌──────────────────┐
+│   Domain Layer   │ ← Pure business logic
+└─────────┬────────┘
+          │
+          ▼
+┌──────────────────┐
+│   Data Layer     │ ← Adapters & Repositories
+│  ┌─────────────┐ │
+│  │ Repositories│ │ ← Data persistence
+│  └─────────────┘ │
+│  ┌─────────────┐ │
+│  │  Adapters   │ │ ← External API calls
+│  └─────────────┘ │
+└─────────┬────────┘
+          │
+          ▼
+┌──────────────────┐
+│ External APIs    │ ← Browser, Storage, Network
+│ • localStorage   │
+│ • IndexedDB      │
+│ • Notifications  │
+│ • Audio APIs     │
+│ • Clipboard      │
+│ • Wake Lock      │
+└──────────────────┘
+```
+
+### Integration with Domain Layer
+
+The domain layer uses data layer through dependency injection:
+
+```tsx
+// Domain with data layer integration
+import { browserAdapter } from '../../data/adapters/browser.adapter'
+import { clockSettingsRepository } from '../../data/repositories/settings.repository'
+
+export class ClockDomain implements ClockDomainContract {
+  private settings: ClockSettings
+  private updateInterval: NodeJS.Timeout | null = null
+  
+  constructor() {
+    this.loadSettings()
+  }
+
+  async startClock(): Promise<void> {
+    await this.loadSettings()
+    
+    this.updateInterval = setInterval(() => {
+      const currentTime = this.getCurrentTime()
+      
+      // Save time update to history via data layer
+      this.saveTimeUpdate(currentTime)
+      
+      // Show notification on hour change if enabled
+      if (currentTime.getMinutes() === 0 && currentTime.getSeconds() === 0) {
+        this.announceHour(currentTime)
+      }
+    }, 1000)
+  }
+
+  async setTimezone(timezone: string): Promise<void> {
+    this.settings.timezone = timezone
+    await clockSettingsRepository.save(this.settings)
+    
+    // Play timezone change sound
+    await browserAdapter.playSound('/sounds/timezone-change.wav')
+  }
+
+  async loadSettings(): Promise<void> {
+    this.settings = await clockSettingsRepository.load() || 
+                   clockSettingsRepository.getDefault()
+  }
+
+  private async announceHour(time: Date): Promise<void> {
+    if (this.settings.showNotifications) {
+      await browserAdapter.showNotification('Hour Change', {
+        body: `It's now ${time.getHours()}:00`
+      })
+    }
+  }
+
+  private async saveTimeUpdate(time: Date): Promise<void> {
+    const timeUpdate = { 
+      timestamp: Date.now(), 
+      timezone: this.settings.timezone,
+      format: this.settings.format
+    }
+    
+    await browserAdapter.saveToStorage('clock_last_update', timeUpdate)
+  }
+
+  getCurrentTime(): Date {
+    return new Date()
+  }
+
+  formatTime(date: Date): string {
+    const options: Intl.DateTimeFormatOptions = {
+      hour12: this.settings.format === '12h',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: this.settings.showSeconds ? '2-digit' : undefined,
+      timeZone: this.settings.timezone
+    }
+    
+    return date.toLocaleTimeString('en-US', options)
+  }
+}
+```
+
+## Data Flow Architecture
+
+### Unidirectional Data Flow
+
+```
+┌─────────────────┐
+│   User Input    │
+└─────────┬───────┘
+          │
+          ▼
+┌─────────────────┐
+│  UI Components  │
+└─────────┬───────┘
+          │
+          ▼
+┌─────────────────┐
+│  Custom Hooks   │
+└─────────┬───────┘
+          │
+          ▼
+┌─────────────────┐
+│ Domain Layer    │ ← Business Logic
+└─────────┬───────┘
+          │
+          ▼
+┌─────────────────┐
+│  Data Layer     │ ← External APIs & Persistence
+│  • Adapters     │
+│  • Repositories │
+└─────────┬───────┘
+          │
+          ▼
+┌─────────────────┐
+│ External Systems│ ← Browser APIs, Storage, Network
+│  • localStorage │
+│  • Notifications│
+│  • Audio APIs   │
+│  • Clipboard    │
+└─────────┬───────┘
+          │
+          ▼
+┌─────────────────┐
+│  State Update   │
+└─────────┬───────┘
+          │
+          ▼
+┌─────────────────┐
+│  UI Re-render   │
+└─────────────────┘
+```
+
+### State Management
+
+```tsx
+// Data layer handles external persistence
+import { browserAdapter } from '../../data/adapters/browser.adapter'
+import { settingsRepository } from '../../data/repositories/settings.repository'
+
+// Domain handles business logic with data layer integration
+class ClockDomain implements ClockDomainContract {
+  private settings: ClockSettings
+  private updateInterval: NodeJS.Timeout | null = null
+  
+  constructor() {
+    this.initializeSettings()
+  }
+
+  async startClock(): Promise<void> {
+    // Load settings from data layer
+    await this.initializeSettings()
+    
+    this.updateInterval = setInterval(async () => {
+      const currentTime = this.getCurrentTime()
+      
+      // Persist current time state via data layer
+      await this.saveCurrentState(currentTime)
+      
+      // External system integration
+      if (this.settings.playHourlyChime && currentTime.getMinutes() === 0) {
+        await browserAdapter.playSound('/sounds/hourly-chime.wav')
+      }
+      
+      if (this.settings.showNotifications && this.isSignificantTime(currentTime)) {
+        await browserAdapter.showNotification('Time Alert', {
+          body: `Current time: ${this.formatTime(currentTime)}`
+        })
+      }
+    }, 1000)
+  }
+  
+  private async initializeSettings(): Promise<void> {
+    this.settings = await settingsRepository.load()
+  }
+  
+  private async saveCurrentState(time: Date): Promise<void> {
+    const state = {
+      lastUpdate: time.toISOString(),
+      timezone: this.settings.timezone,
+      format: this.settings.format
+    }
+    await browserAdapter.saveToStorage('clock_state', state)
+  }
+  
+  private isSignificantTime(time: Date): boolean {
+    // Check for significant times (noon, midnight, etc.)
+    return time.getHours() === 12 && time.getMinutes() === 0
+  }
+
+  getCurrentTime(): Date {
+    return new Date()
+  }
+
+  formatTime(date: Date): string {
+    const options: Intl.DateTimeFormatOptions = {
+      hour12: this.settings.format === '12h',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: this.settings.showSeconds ? '2-digit' : undefined
+    }
+    return date.toLocaleTimeString('en-US', options)
+  }
+}
+
+// Hook manages React state and coordinates with domain
+export const useClock = (domain: ClockDomainContract) => {
+  const [currentTime, setCurrentTime] = useState(new Date())
+  const [isRunning, setIsRunning] = useState(false)
+  
+  const startClock = useCallback(async () => {
+    setIsRunning(true)
+    try {
+      await domain.startClock() // Now async for data layer
+      const interval = setInterval(() => {
+        setCurrentTime(domain.getCurrentTime())
+      }, 1000)
+      
+      return () => clearInterval(interval)
+    } catch (error) {
+      setIsRunning(false)
+      await browserAdapter.showNotification('Clock Error', {
+        body: 'Failed to start clock'
+      })
+    }
+  }, [domain])
+  
+  // Auto-save time state
+  useEffect(() => {
+    const saveTimeState = async () => {
+      await browserAdapter.saveToStorage('clock_display_time', currentTime.toISOString())
+    }
+    saveTimeState()
+  }, [currentTime])
+  
+  return { currentTime, isRunning, startClock, formatTime: domain.formatTime }
+}
+```
+
+## Component Architecture
+
+### Component Hierarchy
+
+```
+View (Entry Point)
+├── Context Provider
+└── Main Module
+    ├── Header Module
+    ├── Content Module
+    │   ├── Feature Component A
+    │   ├── Feature Component B
+    │   └── Feature Component C
+    └── Footer Module
+```
+
+### Component Types
+
+1. **Views**: Entry points for micro-frontends
+2. **Modules**: Feature-based component groups
+3. **Components**: Reusable UI elements
+4. **Hooks**: Stateful logic containers
+
+```tsx
+// View - Entry point
+export const SettingsView = () => (
+  <DomainContext.Provider value={settingsDomain}>
+    <SettingsWrapper />
+  </DomainContext.Provider>
+)
+
+// Module - Feature group
+export const GeneralSettingsModule = () => (
+  <div className={styles.generalSettings}>
+    <ThemeSelector />
+    <LanguageSelector />
+    <NotificationSettings />
+  </div>
+)
+
+// Component - Reusable element
+export const ThemeSelector = () => {
+  const { currentTheme, setTheme } = useTheme()
+  
+  return (
+    <select value={currentTheme} onChange={setTheme}>
+      <option value="classic">Classic</option>
+      <option value="modern">Modern</option>
+    </select>
+  )
+}
+```
+
+## Integration Patterns
+
+### Design System Integration
+
+```tsx
+import { Button, Window, Panel } from '@windows98/design-system'
+
+export const ClockModule = () => {
+  return (
+    <Panel className={styles.clock}>
+      <div className={styles.display}>
+        <TimeDisplayModule />
+      </div>
+      <div className={styles.controls}>
+        <Button variant="primary">Start</Button>
+        <Button variant="secondary">Stop</Button>
+        <Button variant="settings">Settings</Button>
+      </div>
+    </Panel>
+  )
+}
+```
+
+### Micro-services Integration
+
+```tsx
+import { useFileService, useStorageService } from '@windows98/micro-services'
+
+export const useNotepadData = () => {
+  const fileService = useFileService()
+  const storageService = useStorageService()
+  
+  const saveFile = useCallback(async (content: string, filename: string) => {
+    try {
+      await fileService.save(filename, content)
+      storageService.setItem(`notepad_${filename}`, content)
+    } catch (error) {
+      console.error('Failed to save file:', error)
+    }
+  }, [fileService, storageService])
+  
+  return { saveFile }
+}
+```
+
+### Internationalization Integration
+
+```tsx
+import { useTranslation } from 'react-i18next'
+
+export const ClockControls = () => {
+  const { t } = useTranslation('clock')
+  
+  return (
+    <div className={styles.controls}>
+      <Button>{t('buttons.start')}</Button>
+      <Button>{t('buttons.stop')}</Button>
+      <Button>{t('buttons.settings')}</Button>
+    </div>
+  )
+}
+```
+
+## Performance Architecture
+
+### Code Splitting
+
+```tsx
+// Lazy loading micro-frontends
+const MFClock = lazy(() => import('@windows98/micro-frontends').then(m => ({ default: m.MFClock })))
+const MFNotepad = lazy(() => import('@windows98/micro-frontends').then(m => ({ default: m.MFNotepad })))
+
+export const ApplicationLauncher = () => {
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <Routes>
+        <Route path="/clock" element={<MFClock />} />
+        <Route path="/notepad" element={<MFNotepad />} />
+      </Routes>
+    </Suspense>
+  )
+}
+```
+
+### Memory Management
+
+```tsx
+export const useCleanup = () => {
+  useEffect(() => {
+    return () => {
+      // Cleanup subscriptions
+      // Clear timers
+      // Reset state
+    }
+  }, [])
+}
+```
+
+## Security Architecture
+
+### Input Validation
+
+```tsx
+// Domain layer validation
+export class ClockDomain implements ClockDomainContract {
+  setTimezone(timezone: string): void {
+    // Validate input
+    if (!this.isValidTimezone(timezone)) {
+      throw new Error('Invalid timezone')
+    }
+    
+    // Safe timezone setting
+    this.applySafeTimezone(timezone)
+  }
+  
+  private isValidTimezone(timezone: string): boolean {
+    // Whitelist valid timezones
+    const validTimezones = ['UTC', 'America/New_York', 'Europe/London', 'Asia/Tokyo']
+    return validTimezones.includes(timezone)
+  }
+}
+```
+
+### Content Security
+
+```tsx
+// Sanitize user content
+import DOMPurify from 'dompurify'
+
+export const NotepadModule = ({ content }: { content: string }) => {
+  const sanitizedContent = DOMPurify.sanitize(content)
+  
+  return (
+    <div 
+      className={styles.content}
+      dangerouslySetInnerHTML={{ __html: sanitizedContent }}
+    />
+  )
+}
+```
+
+## Testing Architecture
+
+### Testing Layers
+
+```
+┌──────────────────────────────────┐
+│         E2E Tests                │ ← Full application flow
+├──────────────────────────────────┤
+│      Domain Tests                │ ← Module interactions
+└──────────────────────────────────┘
+
+```
+
+### Test Examples
+
+```tsx
+// Domain test
+describe('ClockDomain', () => {
+  it('should return current time', () => {
+    const domain = new ClockDomain()
+    const time = domain.getCurrentTime()
+    expect(time).toBeInstanceOf(Date)
+  })
+  
+  it('should format time correctly', () => {
+    const domain = new ClockDomain()
+    const testDate = new Date('2023-01-01T12:30:45')
+    const formatted = domain.formatTime(testDate)
+    expect(formatted).toMatch(/12:30/)
+  })
+})
+
+// Data layer adapter test
+describe('BrowserAdapter', () => {
+  it('should save and load from storage', async () => {
+    const adapter = new BrowserAdapter()
+    const testData = { timezone: 'UTC', format: '24h' }
+    
+    await adapter.saveToStorage('test_key', testData)
+    const loaded = await adapter.loadFromStorage('test_key')
+    
+    expect(loaded).toEqual(testData)
+  })
+  
+  it('should handle storage failures gracefully', async () => {
+    const adapter = new BrowserAdapter()
+    
+    // Mock localStorage to throw error
+    jest.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
+      throw new Error('Storage full')
+    })
+    
+    await expect(adapter.saveToStorage('key', 'data')).rejects.toThrow('Storage operation failed')
+  })
+})
+
+// Repository test
+describe('SettingsRepository', () => {
+  it('should load default settings when no saved settings exist', async () => {
+    const defaultSettings = { format: '12h', timezone: 'UTC' }
+    const repository = new SettingsRepository('test_settings', defaultSettings)
+    
+    const settings = await repository.load()
+    expect(settings).toEqual(defaultSettings)
+  })
+})
+
+// Component test
+describe('ClockView', () => {
+  it('should render clock interface', () => {
+    render(<ClockView />)
+    expect(screen.getByRole('button', { name: 'Start' })).toBeInTheDocument()
+  })
+})
+```
+
+## Best Practices
+
+### Architecture Guidelines
+
+1. **Single Responsibility**: Each micro-frontend has one clear purpose
+2. **Loose Coupling**: Minimal dependencies between micro-frontends
+3. **High Cohesion**: Related functionality grouped together
+4. **Clear Interfaces**: Well-defined contracts between layers
+5. **External Isolation**: Data layer abstracts all external dependencies
+6. **Graceful Degradation**: Handle external API failures elegantly
+
+### Code Organization
+
+1. **Domain First**: Start with domain logic, then build UI
+2. **Data Layer Isolation**: Keep external dependencies in data layer
+3. **Test Driven**: Write tests alongside implementation
+4. **Progressive Enhancement**: Build from simple to complex
+5. **Documentation**: Document architecture decisions
+
+### Data Layer Best Practices
+
+1. **Adapter Pattern**: Use adapters for all external APIs
+2. **Repository Pattern**: Centralize data persistence logic
+3. **Error Handling**: Always handle external API failures
+4. **Caching Strategy**: Implement intelligent caching for performance
+5. **Type Safety**: Strongly type all data layer interfaces
+6. **Testing**: Mock external dependencies in tests
+
+```tsx
+// Good: Clean adapter interface
+interface StorageAdapter {
+  save<T>(key: string, data: T): Promise<void>
+  load<T>(key: string): Promise<T | null>
+}
+
+// Good: Error handling in repository
+class UserRepository {
+  async save(user: User): Promise<void> {
+    try {
+      await this.adapter.save('user', user)
+    } catch (error) {
+      console.error('Failed to save user:', error)
+      throw new UserSaveError('Unable to save user data')
+    }
+  }
+}
+
+// Good: Fallback strategies
+class NotificationAdapter {
+  async notify(message: string): Promise<void> {
+    try {
+      if ('Notification' in window) {
+        await this.showBrowserNotification(message)
+      } else {
+        await this.showFallbackNotification(message)
+      }
+    } catch (error) {
+      console.warn('Notification failed, using console fallback')
+      console.log('Notification:', message)
+    }
+  }
+}
+```

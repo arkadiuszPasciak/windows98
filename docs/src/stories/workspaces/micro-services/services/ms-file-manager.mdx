@@ -1,0 +1,108 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSFileManager" />
+
+<Title>📁 MS File Manager</Title>
+
+File system operations and management service for Windows98 ecosystem.
+
+## What is MS File Manager?
+
+MS File Manager is a comprehensive file system service that provides file operations, directory management, and file system navigation capabilities. It offers a unified interface for file handling that works consistently across different environments while maintaining the classic Windows98 file management experience.
+
+## Key Features
+
+### 📄 **File Operations**
+- File reading and writing operations
+- File creation, deletion, and modification
+- File copying, moving, and renaming
+- File metadata and properties management
+
+### 📂 **Directory Management**
+- Directory creation and deletion
+- Directory traversal and navigation
+- Recursive directory operations
+- Directory structure analysis
+
+### 🔍 **File System Navigation**
+- File system browsing and exploration
+- Path resolution and validation
+- File and directory search capabilities
+- Recent files and favorites management
+
+### 💾 **Storage Management**
+- Storage space monitoring
+- File size calculations
+- Disk usage analysis
+- Storage quota management
+
+### 🔒 **File Security**
+- File access permissions
+- Read-only and write protection
+- File integrity verification
+- Secure file operations
+
+### 📋 **File Type Management**
+- File type detection and classification
+- MIME type identification
+- File extension handling
+- File association management
+
+### 🎯 **Windows98 Integration**
+- Classic file explorer interface
+- Desktop file shortcuts
+- Recycle bin management
+- System file handling
+
+### ⚡ **Performance Optimization**
+- Asynchronous file operations
+- File operation caching
+- Batch file operations
+- Progress tracking for large operations
+
+## Integration Example
+
+```tsx
+import { MSFileManager } from '@windows98/micro-services'
+
+const fileManager = new MSFileManager()
+
+// File operations
+const fileContent = await fileManager.readFile('/documents/readme.txt')
+await fileManager.writeFile('/documents/output.txt', 'Hello World')
+await fileManager.copyFile('/source.txt', '/backup/source.txt')
+
+// Directory operations
+const files = await fileManager.listDirectory('/documents')
+await fileManager.createDirectory('/projects/new-project')
+const dirSize = await fileManager.getDirectorySize('/documents')
+
+// File search
+const searchResults = await fileManager.searchFiles({
+  query: '*.txt',
+  directory: '/documents',
+  recursive: true
+})
+
+// File watching
+fileManager.watchFile('/config.json', (event, filename) => {
+  console.log(`File ${filename} ${event}`)
+})
+
+// File metadata
+const fileInfo = await fileManager.getFileInfo('/documents/data.json')
+console.log(`Size: ${fileInfo.size}, Modified: ${fileInfo.lastModified}`)
+
+// Storage information
+const storageInfo = await fileManager.getStorageInfo()
+console.log(`Free space: ${storageInfo.freeSpace}`)
+```
+
+## Common Use Cases
+
+- **File Browser**: Building Windows98-style file explorer interfaces
+- **Document Management**: Managing user documents and files
+- **Settings Storage**: Storing and managing application configuration files
+- **Media Management**: Handling images, videos, and audio files
+- **Backup Operations**: Implementing file backup and restore functionality
+- **Project Management**: Managing project files and directory structures

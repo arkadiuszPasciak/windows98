@@ -1,0 +1,207 @@
+import { Meta, Title, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+<Meta title="Workspaces/Design System/Guide/Borders" />
+
+<Title>🔲 Borders</Title>
+
+Border system and 3D effects for the Windows98 design system.
+
+## Border Radius
+
+```css
+/* Border Radius Tokens */
+--ds-border-radius-none: 0;
+--ds-border-radius-sm: 2px;
+--ds-border-radius-md: 4px;
+--ds-border-radius-lg: 8px;
+--ds-border-radius-round: 9999px;
+```
+
+## Windows 98 3D Border Effects
+
+The design system uses complex multi-layered borders to achieve the authentic 3D Windows 98 appearance:
+
+### Raised Borders (Buttons, Frames)
+
+<ColorPalette>
+  <ColorItem
+    title="Light Theme Raised Border"
+    subtitle="4-layer inset border effect"
+    colors={{
+      'Outer Light': '#dfdfdf',
+      'Inner Light': '#ffffff', 
+      'Inner Dark': '#0a0a0a',
+      'Outer Dark': '#808080'
+    }}
+  />
+  <ColorItem
+    title="Dark Theme Raised Border"
+    subtitle="4-layer inset border effect"
+    colors={{
+      'Outer Light': '#808080',
+      'Inner Light': '#9b9b9b',
+      'Inner Dark': '#0a0a0a', 
+      'Outer Dark': '#000000'
+    }}
+  />
+</ColorPalette>
+
+### Sunken Borders (Inputs, Pressed States)
+
+<ColorPalette>
+  <ColorItem
+    title="Light Theme Sunken Border"
+    subtitle="Inverted 4-layer inset border effect"
+    colors={{
+      'Outer Light': '#808080',
+      'Inner Light': '#0a0a0a',
+      'Inner Dark': '#ffffff',
+      'Outer Dark': '#dfdfdf'
+    }}
+  />
+  <ColorItem
+    title="Dark Theme Sunken Border" 
+    subtitle="Inverted 4-layer inset border effect"
+    colors={{
+      'Outer Light': '#9b9b9b',
+      'Inner Light': '#000000',
+      'Inner Dark': '#9b9b9b',
+      'Outer Dark': '#000000'
+    }}
+  />
+</ColorPalette>
+
+## Border Token Implementation
+
+```css
+/* Light Theme 3D Border Effects */
+:root[theme="light"] {
+  /* Field borders for inputs */
+  --ds-border-field-inner: inset -1px -1px var(--ds-color-white100), inset 1px 1px var(--ds-color-grey200);
+  --ds-border-field-outer: inset -2px -2px var(--ds-color-grey900), inset 2px 2px var(--ds-color-black200);
+  --ds-border-field: var(--ds-border-field-inner), var(--ds-border-field-outer);
+  
+  /* Raised borders for buttons */
+  --ds-border-raised-inner: inset -1px -1px var(--ds-color-black200), inset 1px 1px var(--ds-color-white100);
+  --ds-border-raised-outer: inset -2px -2px var(--ds-color-grey200), inset 2px 2px var(--ds-color-grey900);
+  --ds-border-raised: var(--ds-border-raised-inner), var(--ds-border-raised-outer);
+  
+  /* Sunken borders for pressed states */
+  --ds-border-sunken-inner: inset -1px -1px var(--ds-color-white100), inset 1px 1px var(--ds-color-black200);
+  --ds-border-sunken-outer: inset -2px -2px var(--ds-color-grey900), inset 2px 2px var(--ds-color-grey200);
+  --ds-border-sunken: var(--ds-border-sunken-inner), var(--ds-border-sunken-outer);
+}
+
+/* Dark Theme 3D Border Effects */
+:root[theme="dark"] {
+  /* Field borders for inputs */
+  --ds-border-field-inner: inset -1px -1px var(--ds-color-grey300), inset 1px 1px var(--ds-color-black100);
+  --ds-border-field-outer: inset -2px -2px var(--ds-color-grey300), inset 2px 2px var(--ds-color-black100);
+  --ds-border-field: var(--ds-border-field-inner), var(--ds-border-field-outer);
+  
+  /* Raised borders for buttons */
+  --ds-border-raised-inner: inset -1px -1px var(--ds-color-black200), inset 1px 1px var(--ds-color-grey500);
+  --ds-border-raised-outer: inset -2px -2px var(--ds-color-black100), inset 2px 2px var(--ds-color-grey200);
+  --ds-border-raised: var(--ds-border-raised-inner), var(--ds-border-raised-outer);
+  
+  /* Sunken borders for pressed states */
+  --ds-border-sunken-inner: inset -1px -1px var(--ds-color-grey500), inset 1px 1px var(--ds-color-black100);
+  --ds-border-sunken-outer: inset -2px -2px var(--ds-color-grey500), inset 2px 2px var(--ds-color-black100);
+  --ds-border-sunken: var(--ds-border-sunken-inner), var(--ds-border-sunken-outer);
+}
+```
+
+## Border Guidelines
+
+### Do's ✅
+
+1. **Use border tokens** for consistent 3D effects
+   ```css
+   box-shadow: var(--ds-border-raised);
+   ```
+
+2. **Choose appropriate border type** for component state
+   - `raised`: Default buttons, frames, containers
+   - `sunken`: Input fields, pressed buttons, panels
+   - `field`: Specifically for form inputs
+
+3. **Maintain Windows 98 authenticity** with proper layered effects
+
+4. **Consider interaction states** with appropriate border changes
+
+### Don'ts ❌
+
+1. **Don't use traditional borders** that break the 3D effect
+   ```css
+   /* ❌ Bad */
+   border: 1px solid #ccc;
+   
+   /* ✅ Good */
+   box-shadow: var(--ds-border-raised);
+   ```
+
+2. **Don't mix border styles** inconsistently within components
+
+3. **Don't ignore theme differences** - borders change between light/dark themes
+
+## Border Radius Usage
+
+### Component Border Radius
+
+```css
+/* Small radius for subtle rounding */
+.subtle-rounded {
+  border-radius: var(--ds-border-radius-sm);
+}
+
+/* Medium radius for containers */
+.container-rounded {
+  border-radius: var(--ds-border-radius-md);
+}
+
+/* Large radius for special elements */
+.large-rounded {
+  border-radius: var(--ds-border-radius-lg);
+}
+
+/* Circular elements */
+.circular {
+  border-radius: var(--ds-border-radius-round);
+}
+
+/* Sharp corners (authentic Windows 98) */
+.sharp {
+  border-radius: var(--ds-border-radius-none);
+}
+```
+
+## Custom Border Extensions
+
+### Project-Specific Borders
+
+```css
+:root {
+  /* Custom border effects */
+  --ds-border-focus: var(--ds-border-field), 0 0 0 1px var(--ds-color-blue300);
+  --ds-border-error: var(--ds-border-field), 0 0 0 1px var(--ds-color-red100);
+  --ds-border-success: var(--ds-border-field), 0 0 0 1px var(--ds-color-custom-green);
+}
+```
+
+### State-Specific Borders
+
+```css
+/* Interactive states */
+.ds-input.error {
+  box-shadow: var(--ds-border-error);
+}
+
+.ds-input.success {
+  box-shadow: var(--ds-border-success);
+}
+
+.ds-button.focus-visible {
+  box-shadow: var(--ds-border-raised), var(--ds-border-focus);
+}
+```
+

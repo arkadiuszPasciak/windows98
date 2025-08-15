@@ -1,0 +1,117 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSErrorHandler" />
+
+<Title>🚨 MS Error Handler</Title>
+
+Centralized error handling and reporting service for Windows98 ecosystem.
+
+## What is MS Error Handler?
+
+MS Error Handler is a comprehensive error management service that provides centralized error catching, logging, reporting, and recovery mechanisms across the Windows98 environment. It ensures consistent error handling and provides debugging tools for developers and error reporting for users.
+
+## Key Features
+
+### 🎯 **Error Capture**
+- Global error catching and handling
+- Unhandled promise rejection capture
+- Custom error boundary implementation
+- Runtime error interception
+
+### 📝 **Error Logging**
+- Structured error logging with context
+- Error severity classification
+- Timestamp and stack trace capture
+- User action and state logging
+
+### 📊 **Error Reporting**
+- User-friendly error message display
+- Developer-focused error details
+- Error analytics and metrics
+- External error reporting integration
+
+### 🔧 **Error Recovery**
+- Automatic recovery mechanisms
+- Fallback state management
+- Graceful degradation strategies
+- User-guided recovery options
+
+### 🧪 **Development Tools**
+- Debug mode error details
+- Error reproduction assistance
+- Performance impact analysis
+- Error pattern detection
+
+### 🔍 **Error Classification**
+- Error type categorization
+- Severity level assignment
+- Context-aware error handling
+- Domain-specific error processing
+
+### 📈 **Analytics & Monitoring**
+- Error frequency tracking
+- Error trend analysis
+- User impact assessment
+- System health monitoring
+
+### 🎨 **User Experience**
+- Windows98-style error dialogs
+- Progressive error disclosure
+- User action suggestions
+- Help and support integration
+
+## Integration Example
+
+```tsx
+import { MSErrorHandler } from '@windows98/micro-services'
+
+const errorHandler = new MSErrorHandler()
+
+// Initialize error handling
+errorHandler.initialize({
+  enableGlobalHandling: true,
+  enableReporting: true,
+  enableRecovery: true,
+  showUserDialogs: true
+})
+
+// Manual error handling
+try {
+  await riskyOperation()
+} catch (error) {
+  errorHandler.handleError(error, {
+    context: 'file-operation',
+    severity: 'high',
+    recoverable: true
+  })
+}
+
+// Error boundary usage
+export const AppWithErrorBoundary = () => (
+  <ErrorBoundary
+    fallback={<ErrorFallback />}
+    onError={(error, errorInfo) => {
+      errorHandler.handleError(error, {
+        component: errorInfo.componentStack,
+        context: 'react-render'
+      })
+    }}
+  >
+    <App />
+  </ErrorBoundary>
+)
+
+// Listen for error events
+errorHandler.onError((errorEvent) => {
+  console.log(`Error occurred: ${errorEvent.message}`)
+})
+```
+
+## Common Use Cases
+
+- **Global Error Handling**: Catching unhandled errors across the application
+- **User Error Dialogs**: Displaying Windows98-style error message boxes
+- **Developer Debugging**: Providing detailed error information for development
+- **Error Analytics**: Tracking and analyzing error patterns and trends
+- **Recovery Mechanisms**: Implementing automatic and manual error recovery
+- **Quality Assurance**: Monitoring application stability and reliability

@@ -1,0 +1,100 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSAppController" />
+
+<Title>🎮 MS App Controller</Title>
+
+Application lifecycle and state management service for Windows98 ecosystem.
+
+## What is MS App Controller?
+
+MS App Controller is a core service responsible for managing the overall application lifecycle, state transitions, and control operations. It provides centralized control over application startup, shutdown, restart, and state management across the Windows98 environment.
+
+## Key Features
+
+### 🚀 **Application Lifecycle**
+- Application startup and initialization
+- Graceful shutdown and cleanup
+- Application restart and recovery
+- State persistence across sessions
+
+### 🔄 **State Management**
+- Global application state tracking
+- State transition management
+- State synchronization across components
+- State restoration and recovery
+
+### 🎛️ **Control Operations**
+- System restart and shutdown controls
+- Application pause and resume
+- Emergency stop and recovery procedures
+- Safe mode and diagnostic operations
+
+### 🔧 **Initialization Control**
+- Service initialization orchestration
+- Dependency management and ordering
+- Bootstrap sequence coordination
+- Configuration loading and validation
+
+### 📊 **Health Monitoring**
+- Application health checks and monitoring
+- Performance metrics collection
+- Resource usage tracking
+- System stability assessment
+
+### 🛡️ **Error Recovery**
+- Automatic error recovery mechanisms
+- Fallback state management
+- Safe failure handling
+- Recovery strategy execution
+
+### 🔗 **Integration Management**
+- Service coordination and communication
+- Inter-service dependency resolution
+- Plugin and module lifecycle management
+- External system integration control
+
+### 📈 **Analytics & Logging**
+- Application usage analytics
+- Lifecycle event logging
+- Performance monitoring and reporting
+- Debugging and diagnostic information
+
+## Integration Example
+
+```tsx
+import { MSAppController } from '@windows98/micro-services'
+
+const appController = new MSAppController()
+
+// Initialize application
+await appController.initialize({
+  services: ['theme', 'storage', 'config'],
+  startupMode: 'normal',
+  recoveryEnabled: true
+})
+
+// Control application state
+appController.pause()
+appController.resume()
+appController.restart()
+
+// Monitor application health
+appController.onHealthChange((status) => {
+  console.log(`Application health: ${status}`)
+})
+
+// Handle shutdown
+window.addEventListener('beforeunload', () => {
+  appController.shutdown()
+})
+```
+
+## Common Use Cases
+
+- **Application Management**: Controlling app startup, shutdown, and restart procedures
+- **State Coordination**: Managing global application state and transitions
+- **System Control**: Implementing system-wide control and management features
+- **Error Recovery**: Handling application crashes and recovery scenarios
+- **Performance Monitoring**: Tracking application health and performance metrics
+- **Integration Control**: Coordinating service initialization and dependencies

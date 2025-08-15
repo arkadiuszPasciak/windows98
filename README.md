@@ -1,39 +1,7 @@
 # Windows98
 
-Welcome to **Windows98**, a creative endeavor where I am re-building the look and feel of Windows98 right in your browser. This project is more than just a nostalgic trip down memory lane, it serves as my personal sandbox for refining and improving my programming skills.
+Welcome to **Windows98**, a creative endeavor where I am re-building the look and feel of Windows98 right in your browser. This project serves as my **personal portfolio and development sandbox** for refining and improving not only my programming skills, but also architecture design, documentation practices, testing strategies, and modern development workflows.
 
-## Technologies
-
-This project utilizes an array of modern web technologies and tools:
-
-1. `@windows98/app` - This is the main application. Previously, it was developed using Vue 3 with Pinia. Now, its components have been divided among other workspaces.
-2. `@windows98/design-system` - This is a library of React components used in micro-frontends.
-3. `@windows98/micro-frontends` - These are React applications with MobX. They are built as web components and used within the main app.
-4. `@windows98/micro-services` - These are TypeScript classes with logic that is exported to the main app.
-5. `@windows98/toolkit` - This includes utilities, types, and other common elements.
-6. `@windows98/i18n` - This contains all locales and tools for the application.
-
-Feel free to explore the project, provide feedback. Enjoy the trip back to Windows98, right in your browser!
-
-## Documentation WIP
-
-- [Windows98 Documentation]()
-  - Guide
-    - [Manual Installation]()
-    - [Building for Production]()
-    - [Run a Development Server]()
-    - [Preview a Production Server]()
-  - References
-    - [CLI]()
-    - [Config]()
-    - [Features]()
-    - [Git hooks]()
-    - [IDE/VSCode]()
-    - [Internationalization]()
-    - [License]()
-    - [Linters]()
-    - [SRC Structure]()
-    - [Testing]()
 
 ## Quick Start
 
@@ -71,6 +39,40 @@ pnpm run dev
 
 Now you can access the application in your browser at http://localhost:5173. Enjoy!
 
+## About This Project
+
+This isn't just a nostalgic recreation—it's a comprehensive showcase of modern web development practices applied to a familiar interface. Through this project, I explore and demonstrate:
+
+- **Modern Architecture Patterns**: Micro-frontends, micro-services, and clean architecture
+- **Advanced TypeScript**: Strong typing, generics, and design patterns
+- **Component Design**: Reusable design systems and component libraries
+- **Documentation Excellence**: Comprehensive guides and API documentation
+- **Testing Strategies**: Unit, integration, and end-to-end testing approaches
+- **Development Workflows**: Monorepo management, CI/CD, and tooling optimization
+
+## Workspaces
+
+1. **`@windows98/app`** - Main application entry point that orchestrates all micro-frontends and services
+2. **`@windows98/design-system`** - Comprehensive React component library with Windows98 theming
+3. **`@windows98/micro-frontends`** - Independent React applications built as web components (Calculator, Notepad, File Manager, etc.)
+4. **`@windows98/micro-services`** - TypeScript services with clean data/domain architecture (Storage, Theme, Language, etc.)
+5. **`@windows98/toolkit`** - Shared utilities, types, and common functionality
+6. **`@windows98/i18n`** - Internationalization system with multi-language support
+
+## Documentation
+
+Comprehensive documentation is available in Storybook format, covering architecture, guides, and API references.**
+
+### Running the Documentation
+
+Run the Storybook documentation locally or dive into the source code to see these patterns in action.
+
+```bash
+cd docs
+pnpm dev
+```
+
 ## License
 
-This project is licensed under the MIT [license](src/docs/reference/license.md).
+This project is licensed under the MIT.
+

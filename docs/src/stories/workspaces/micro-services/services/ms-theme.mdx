@@ -1,0 +1,133 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSTheme" />
+
+<Title>🎨 MS Theme</Title>
+
+Theme management and styling service for Windows98 ecosystem.
+
+## What is MS Theme?
+
+MS Theme is a comprehensive theming service that manages visual appearance, styling, and customization across the Windows98 environment. It provides dynamic theme switching, custom theme creation, and consistent styling management throughout the application ecosystem.
+
+## Key Features
+
+### 🎨 **Theme Management**
+- Multiple theme support and switching
+- Dynamic theme loading and application
+- Theme inheritance and composition
+- Custom theme creation and editing
+
+### 🌈 **Visual Customization**
+- Color scheme management
+- Typography and font styling
+- Icon and asset theming
+- Layout and spacing customization
+
+### 💻 **Windows98 Themes**
+- Classic Windows98 theme
+- High contrast accessibility themes
+- Retro and vintage theme variations
+- Custom nostalgic theme options
+
+### 🔧 **Theme System**
+- CSS custom properties integration
+- Styled-components theme provider
+- SCSS variable management
+- Runtime style injection
+
+### 🌙 **Adaptive Theming**
+- System preference detection (dark/light mode)
+- Time-based theme switching
+- Context-aware theme application
+- User preference synchronization
+
+### ⚡ **Performance Optimization**
+- Efficient theme switching
+- CSS optimization and minification
+- Theme caching and preloading
+- Minimal reflow and repaint
+
+### 🎯 **Component Integration**
+- Theme-aware component styling
+- Design system integration
+- Component theme overrides
+- Consistent styling patterns
+
+### 🔒 **Theme Security**
+- Safe theme loading and validation
+- XSS protection for custom themes
+- Theme content sanitization
+- Secure theme distribution
+
+## Integration Example
+
+```tsx
+import { MSTheme } from '@windows98/micro-services'
+
+const themeService = new MSTheme()
+
+// Initialize theme system
+await themeService.initialize({
+  defaultTheme: 'classic-windows98',
+  enableSystemPreferences: true,
+  enablePersistence: true
+})
+
+// Apply themes
+await themeService.setTheme('classic-windows98')
+await themeService.setTheme('high-contrast')
+
+// Get current theme
+const currentTheme = themeService.getCurrentTheme()
+const themeData = themeService.getThemeData(currentTheme)
+
+// Create custom theme
+const customTheme = await themeService.createTheme({
+  name: 'retro-green',
+  colors: {
+    primary: '#00ff00',
+    background: '#000000',
+    text: '#ffffff'
+  },
+  fonts: {
+    system: 'MS Sans Serif',
+    monospace: 'Courier New'
+  }
+})
+
+// React integration
+export const useTheme = () => {
+  const [theme, setTheme] = useState('classic-windows98')
+  
+  useEffect(() => {
+    const unsubscribe = themeService.onThemeChange((newTheme) => {
+      setTheme(newTheme)
+    })
+    
+    return unsubscribe
+  }, [])
+  
+  return {
+    theme,
+    setTheme: themeService.setTheme,
+    getThemeData: themeService.getThemeData
+  }
+}
+
+// Styled components integration
+const ThemedButton = styled.button`
+  background-color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.text};
+  font-family: ${props => props.theme.fonts.system};
+`
+```
+
+## Common Use Cases
+
+- **Visual Customization**: Allowing users to customize application appearance
+- **Accessibility**: Providing high contrast and accessible theme options
+- **Brand Management**: Implementing consistent branding across applications
+- **User Preferences**: Storing and applying user visual preferences
+- **Dynamic Styling**: Changing appearance based on context or time
+- **Design System**: Maintaining consistent visual design across components

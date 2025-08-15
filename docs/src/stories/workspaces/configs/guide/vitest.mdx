@@ -1,0 +1,68 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Configs/Guide/Vitest" />
+
+<Title>⚡ Vitest</Title>
+
+Complete guide to using Vitest configuration from `@windows98/configs` for unit and integration testing.
+
+## Overview
+
+Vitest configuration provides fast, modern testing setup optimized for TypeScript and modern JavaScript frameworks within the Windows98 ecosystem.
+
+## Configuration Path
+
+```
+@windows98/configs/vitest/shared
+```
+
+### Install Dependencies
+
+```bash
+# Install vitest
+pnpm add -D vitest
+
+# Install the configs package
+pnpm add -D @windows98/configs
+```
+
+## Basic Usage
+
+### Simple Setup
+
+```javascript
+// ./@test/vitest/vitest.config.js
+import { defineConfig } from 'vitest/config'
+import sharedConfig from '@windows98/configs/vitest/shared'
+
+export default defineConfig(sharedConfig)
+```
+
+### With Custom Settings
+
+```javascript
+// ./@test/vitest/vitest.config.js
+import { defineConfig } from 'vitest/config'
+import sharedConfig from '@windows98/configs/vitest/shared'
+
+export default defineConfig({
+  ...sharedConfig,
+  test: {
+    ...sharedConfig.test,
+    environment: 'jsdom',
+    setupFiles: ['./src/test-setup.ts']
+  }
+})
+```
+
+## Package.json Scripts
+
+```json
+{
+  "scripts": {
+	"test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
+	"test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js",
+  }
+}
+```
+

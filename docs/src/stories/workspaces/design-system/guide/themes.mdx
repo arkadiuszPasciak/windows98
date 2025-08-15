@@ -1,0 +1,380 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Design System/Guide/Themes" />
+
+<Title>🎨 Themes</Title>
+
+Understanding and working with the Windows98 design system's light and dark themes.
+
+## Theme Overview
+
+The Windows98 design system supports two authentic themes that recreate the classic Windows 98 experience:
+
+- **Light Theme**: Traditional Windows 98 gray color scheme
+- **Dark Theme**: Alternative dark mode while maintaining Windows 98 aesthetics
+
+## Theme Architecture
+
+Themes are implemented using CSS custom properties (variables) that are dynamically switched based on the `theme` attribute on the HTML element.
+
+### Theme Structure
+
+```css
+/* Light theme variables */
+:root[theme="light"] {
+  --ds-background-color-primary: var(--ds-color-grey800);
+  --ds-text-color-primary: var(--ds-color-black300);
+  /* ... more variables */
+}
+
+/* Dark theme variables */
+:root[theme="dark"] {
+  --ds-background-color-primary: var(--ds-color-grey100);
+  --ds-text-color-primary: var(--ds-color-grey500);
+  /* ... more variables */
+}
+```
+
+## Setting Themes
+
+### HTML Attribute Method
+
+The primary way to set themes is via the HTML element's `theme` attribute:
+
+```html
+<!-- Light theme (default) -->
+<html theme="light">
+
+<!-- Dark theme -->
+<html theme="dark">
+```
+
+### JavaScript Theme Switching
+
+```tsx
+// Get current theme
+const currentTheme = document.documentElement.getAttribute('theme') || 'light'
+
+// Set light theme
+document.documentElement.setAttribute('theme', 'light')
+
+// Set dark theme
+document.documentElement.setAttribute('theme', 'dark')
+
+// Toggle theme
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('theme')
+  const newTheme = current === 'light' ? 'dark' : 'light'
+  document.documentElement.setAttribute('theme', newTheme)
+}
+```
+
+### React Theme Hook
+
+Create a custom hook for theme management:
+
+```tsx
+import { useState, useEffect } from 'react'
+
+type Theme = 'light' | 'dark'
+
+export function useTheme() {
+  const [theme, setTheme] = useState<Theme>(() => {
+    return (document.documentElement.getAttribute('theme') as Theme) || 'light'
+  })
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(newTheme)
+    document.documentElement.setAttribute('theme', newTheme)
+  }
+
+  useEffect(() => {
+    document.documentElement.setAttribute('theme', theme)
+  }, [theme])
+
+  return { theme, setTheme, toggleTheme }
+}
+```
+
+## Theme Variables
+
+### Background Colors
+
+| Variable | Light Theme | Dark Theme | Usage |
+|----------|-------------|------------|-------|
+| `--ds-background-color-primary` | Grey 800 (#c0c0c0) | Grey 100 (#3b3b3b) | Main backgrounds |
+| `--ds-background-color-secondary` | White (#ffffff) | Grey 100 (#3b3b3b) | Content areas |
+| `--ds-background-color-tertiary` | Grey 200 (#808080) | Grey 200 (#808080) | Disabled states |
+| `--ds-background-color-pulpit` | Blue 400 (#007b7b) | Black 100 (#000000) | Desktop background |
+
+### Text Colors
+
+| Variable | Light Theme | Dark Theme | Usage |
+|----------|-------------|------------|-------|
+| `--ds-text-color-primary` | Black 300 (#222222) | Grey 500 (#9b9b9b) | Primary text |
+| `--ds-text-color-secondary` | White (#ffffff) | Grey 500 (#9b9b9b) | Secondary text |
+| `--ds-text-color-tertiary` | Black 300 (#222222) | Black 100 (#000000) | Tertiary text |
+
+### Border Effects
+
+Windows 98 uses distinctive 3D border effects that change between themes:
+
+#### Light Theme Borders
+```css
+/* Raised borders (buttons, frames) */
+--ds-border-raised: 
+  inset -1px -1px var(--ds-color-black200),
+  inset 1px 1px var(--ds-color-white100),
+  inset -2px -2px var(--ds-color-grey200),
+  inset 2px 2px var(--ds-color-grey900);
+
+/* Sunken borders (inputs, pressed buttons) */
+--ds-border-sunken:
+  inset -1px -1px var(--ds-color-white100),
+  inset 1px 1px var(--ds-color-black200),
+  inset -2px -2px var(--ds-color-grey900),
+  inset 2px 2px var(--ds-color-grey200);
+```
+
+#### Dark Theme Borders
+```css
+/* Adapted for dark theme visibility */
+--ds-border-raised:
+  inset -1px -1px var(--ds-color-black200),
+  inset 1px 1px var(--ds-color-grey500),
+  inset -2px -2px var(--ds-color-black100),
+  inset 2px 2px var(--ds-color-grey200);
+```
+
+## Theme Components
+
+### Theme Switcher Component
+
+```tsx
+import { DSButton } from "@windows98/design-system"
+import { useTheme } from "./useTheme"
+
+export function ThemeSwitcher() {
+  const { theme, toggleTheme } = useTheme()
+  
+  return (
+    <DSButton
+      id="theme-toggle"
+      text={`${theme === 'light' ? 'Dark' : 'Light'} Mode`}
+      onClick={toggleTheme}
+    />
+  )
+}
+```
+
+### Theme-Aware Component
+
+```tsx
+import { DSFrame, DSText } from "@windows98/design-system"
+
+export function ThemeDisplay() {
+  const theme = document.documentElement.getAttribute('theme') || 'light'
+  
+  return (
+    <DSFrame>
+      <DSText text={`Current theme: ${theme}`} />
+      <div style={{
+        backgroundColor: 'var(--ds-background-color-primary)',
+        color: 'var(--ds-text-color-primary)',
+        padding: 'var(--ds-spacing-md)'
+      }}>
+        This text adapts to the current theme
+      </div>
+    </DSFrame>
+  )
+}
+```
+
+## Theme Customization
+
+### Custom Theme Variables
+
+You can override theme variables for customization:
+
+```css
+/* Custom theme overrides */
+:root[theme="light"] {
+  --ds-background-color-primary: #e0e0e0; /* Lighter gray */
+  --ds-text-color-primary: #1a1a1a;       /* Darker text */
+}
+
+:root[theme="dark"] {
+  --ds-background-color-primary: #2a2a2a; /* Different dark */
+  --ds-text-color-primary: #ffffff;        /* Pure white text */
+}
+```
+
+### Creating Custom Themes
+
+Add a new theme by extending the theme system:
+
+```css
+/* Custom purple theme */
+:root[theme="purple"] {
+  --ds-background-color-primary: #6a4c93;
+  --ds-background-color-secondary: #a8a8a8;
+  --ds-text-color-primary: #ffffff;
+  --ds-text-color-secondary: #f0f0f0;
+  /* Include all required variables... */
+}
+```
+
+## Theme Persistence
+
+### Local Storage Integration
+
+```tsx
+export function usePersistedTheme() {
+  const [theme, setTheme] = useState<Theme>(() => {
+    // Check localStorage first
+    const saved = localStorage.getItem('windows98-theme')
+    if (saved && (saved === 'light' || saved === 'dark')) {
+      return saved
+    }
+    // Fallback to system preference
+    return window.matchMedia('(prefers-color-scheme: dark)').matches 
+      ? 'dark' 
+      : 'light'
+  })
+
+  const updateTheme = (newTheme: Theme) => {
+    setTheme(newTheme)
+    localStorage.setItem('windows98-theme', newTheme)
+    document.documentElement.setAttribute('theme', newTheme)
+  }
+
+  useEffect(() => {
+    document.documentElement.setAttribute('theme', theme)
+  }, [])
+
+  return { theme, setTheme: updateTheme }
+}
+```
+
+### System Preference Detection
+
+```tsx
+export function useSystemTheme() {
+  const [systemTheme, setSystemTheme] = useState<Theme>(() => 
+    window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  )
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    const handleChange = (e: MediaQueryListEvent) => {
+      setSystemTheme(e.matches ? 'dark' : 'light')
+    }
+
+    mediaQuery.addEventListener('change', handleChange)
+    return () => mediaQuery.removeEventListener('change', handleChange)
+  }, [])
+
+  return systemTheme
+}
+```
+
+## Best Practices
+
+### Theme Usage Guidelines
+
+1. **Always use theme variables** instead of hardcoded colors
+2. **Test both themes** during development
+3. **Provide theme switching** in your application UI
+4. **Consider accessibility** when customizing themes
+5. **Maintain Windows 98 aesthetics** when creating custom themes
+
+### Accessibility Considerations
+
+```css
+/* Ensure sufficient contrast in both themes */
+:root[theme="light"] {
+  --ds-text-color-primary: #222222; /* WCAG AA compliant */
+}
+
+:root[theme="dark"] {
+  --ds-text-color-primary: #e0e0e0; /* WCAG AA compliant */
+}
+```
+
+### Performance Tips
+
+1. **Avoid theme flickering** by setting theme early in app initialization
+2. **Use CSS custom properties** for better performance than JavaScript theme switching
+3. **Minimize theme-specific CSS** by using variables effectively
+
+## Troubleshooting
+
+### Common Issues
+
+#### Theme Not Applying
+
+**Problem**: Theme changes not visible
+**Solutions**:
+1. Verify theme attribute is on `<html>` element, not `<body>`
+2. Check that CSS is properly imported
+3. Ensure no conflicting CSS overrides
+
+#### Flickering on Load
+
+**Problem**: Theme briefly shows wrong colors on page load
+**Solution**:
+```tsx
+// Set theme before React renders
+document.documentElement.setAttribute('theme', 'light')
+```
+
+#### Custom Variables Not Working
+
+**Problem**: Custom theme variables not applying
+**Solution**:
+```css
+/* Ensure proper specificity */
+:root[theme="custom"] {
+  --ds-background-color-primary: #custom-color !important;
+}
+```
+
+## Advanced Usage
+
+### Theme Transitions
+
+Add smooth transitions between themes:
+
+```css
+/* Smooth theme transitions */
+* {
+  transition: 
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+```
+
+### Theme Context Provider
+
+```tsx
+import { createContext, useContext } from 'react'
+
+const ThemeContext = createContext<{
+  theme: Theme
+  setTheme: (theme: Theme) => void
+}>({ theme: 'light', setTheme: () => {} })
+
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const themeState = usePersistedTheme()
+  
+  return (
+    <ThemeContext.Provider value={themeState}>
+      {children}
+    </ThemeContext.Provider>
+  )
+}
+
+export const useThemeContext = () => useContext(ThemeContext)
+```

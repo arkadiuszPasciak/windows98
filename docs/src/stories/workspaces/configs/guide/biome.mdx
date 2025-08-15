@@ -1,0 +1,70 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Configs/Guide/Biome" />
+
+<Title>🔍 Biome</Title>
+
+Complete guide to using Biome configuration from `@windows98/configs` for code formatting and linting.
+
+## Overview
+
+Biome is a fast formatter and linter for JavaScript, TypeScript, and JSON. The shared configuration provides consistent code style across all Windows98 workspaces.
+
+## Configuration Path
+
+```
+@windows98/configs/biome/shared
+```
+
+## Install Dependencies
+
+```bash
+# Install @biomejs/biome
+pnpm add -D @biomejs/biome
+
+# Install the configs package
+pnpm add -D @windows98/configs
+```
+
+## Basic Usage
+
+### Simple Extension
+
+Add the following to your project's Biome configuration file:
+
+```json
+// @linter/biome.config.json
+{
+  "extends": "@windows98/configs/biome/shared"
+}
+```
+
+### With Custom Overrides
+
+```json
+// @linter/biome.config.json
+{
+  "extends": "@windows98/configs/biome/shared",
+  "files": {
+    "ignore": ["custom-ignored-folder/**"]
+  },
+  "linter": {
+    "rules": {
+      "suspicious": {
+        "noExplicitAny": "warn"
+      }
+    }
+  }
+}
+```
+
+## Package.json Scripts
+
+```json
+{
+  "scripts": {
+    "lint:code:run": "biome check --config-path ./@linter/biome.config.json",
+    "lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
+  }
+}
+```

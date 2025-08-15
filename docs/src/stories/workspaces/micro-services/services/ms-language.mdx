@@ -1,0 +1,111 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSLanguage" />
+
+<Title>🌍 MS Language</Title>
+
+Internationalization and localization service for Windows98 ecosystem.
+
+## What is MS Language?
+
+MS Language is a comprehensive internationalization (i18n) and localization (l10n) service that manages language settings, translations, and cultural formatting across the Windows98 environment. It provides seamless multi-language support with dynamic language switching and cultural adaptation.
+
+## Key Features
+
+### 🗣️ **Language Management**
+- Multi-language support and switching
+- Language detection and preference handling
+- Fallback language management
+- Dynamic language loading
+
+### 📝 **Translation Services**
+- Text translation and localization
+- Interpolation and parameterization
+- Pluralization rule handling
+- Context-aware translations
+
+### 🌐 **Cultural Formatting**
+- Number and currency formatting
+- Date and time localization
+- Address and phone formatting
+- Cultural preference adaptation
+
+### 🔄 **Dynamic Loading**
+- Lazy loading of language packs
+- Hot-swapping language resources
+- Memory-efficient translation management
+- Progressive language enhancement
+
+### 📊 **Translation Management**
+- Translation key organization
+- Missing translation detection
+- Translation completion tracking
+- Translation quality assurance
+
+### 🎯 **Windows98 Integration**
+- Classic Windows interface localization
+- System dialog translations
+- Menu and toolbar localization
+- Help system internationalization
+
+### ⚡ **Performance Optimization**
+- Translation caching and optimization
+- Efficient string interpolation
+- Minimal bundle size impact
+- Fast language switching
+
+### 🔧 **Developer Tools**
+- Translation key extraction
+- Missing translation reporting
+- Localization debugging tools
+- Translation validation utilities
+
+## Integration Example
+
+```tsx
+import { MSLanguage } from '@windows98/micro-services'
+
+const languageService = new MSLanguage()
+
+// Initialize with language
+await languageService.initialize({
+  defaultLanguage: 'en-US',
+  supportedLanguages: ['en-US', 'es-ES', 'fr-FR', 'de-DE'],
+  fallbackLanguage: 'en-US'
+})
+
+// Basic translation
+const welcome = languageService.t('welcome.message') // "Welcome to Windows98"
+const greeting = languageService.t('greeting', { name: 'John' }) // "Hello, John!"
+
+// Pluralization
+const itemCount = languageService.t('items.count', { count: 5 })
+// "5 items" or "5 elementos" based on current language
+
+// Change language
+await languageService.setLanguage('es-ES')
+
+// Format numbers and dates
+const price = languageService.formatCurrency(99.99, 'USD') // "$99.99" or "99,99 €"
+const date = languageService.formatDate(new Date()) // Localized date format
+
+// React integration
+export const useTranslation = () => {
+  const [currentLanguage, setCurrentLanguage] = useState('en-US')
+  
+  const t = useCallback((key, params) => {
+    return languageService.t(key, params)
+  }, [currentLanguage])
+  
+  return { t, setLanguage: languageService.setLanguage }
+}
+```
+
+## Common Use Cases
+
+- **UI Localization**: Translating user interface elements and messages
+- **Content Management**: Managing multilingual content and documentation
+- **User Preferences**: Storing and applying user language preferences
+- **Cultural Adaptation**: Adapting formatting and behavior to local customs
+- **Error Messages**: Providing localized error messages and help text
+- **Accessibility**: Supporting assistive technologies in multiple languages

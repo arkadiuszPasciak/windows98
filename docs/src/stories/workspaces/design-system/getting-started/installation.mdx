@@ -1,0 +1,110 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Design System/Getting Started/Installation" />
+
+<Title>📦 Installation</Title>
+
+Complete installation and setup guide for the Windows98 design system.
+
+## Installation
+
+```bash
+# Install the design system
+pnpm add @windows98/design-system
+
+# Install peer dependencies if not already present
+pnpm add react@19.1.0 react-dom@19.1.0
+
+# From the root of the monorepo
+pnpm install
+
+# The design system will be available as a workspace dependency
+```
+
+## Setup Configuration
+
+### Import Styles
+
+Import the design system CSS in your application entry point:
+
+```tsx
+// src/main.tsx (Vite) or src/index.tsx (Create React App)
+import "@windows98/design-system/index.css"
+```
+
+### Configure HTML Theme
+
+Add the theme attribute to your HTML document:
+
+```html
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en" theme="light">
+  <head>...</head>
+  <body>...</body>
+</html>
+```
+
+### Configure TypeScript
+
+If you are using TypeScript, ensure your `tsconfig.json` extends the configuration from `@windows98/configs`:
+
+```json
+{
+  "extends": ["@windows98/configs/typescript/react"],
+}
+```
+
+### Configure Fonts
+
+The Windows98 design system uses custom MS Sans Serif fonts to provide an authentic retro experience.
+
+#### Step 1: Copy Font Files
+
+Copy the font files from the design system to your application's public directory:
+
+```bash
+# Copy fonts to your public/fonts directory
+cp core/design-system/src/fonts/ms-sans-serif-medium/ms-sans-serif-medium.woff2 public/fonts/MSSansSerifMedium.woff2
+cp core/design-system/src/fonts/ms-sans-serif-bold/ms-sans-serif-bold.woff2 public/fonts/MSSansSerifBold.woff2
+```
+
+#### Step 2: Preload Fonts (Optional but Recommended)
+
+Add font preload links to your HTML head for better performance:
+
+```html
+<link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="fonts/MSSansSerifBold.woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="fonts/MSSansSerifMedium.woff2"
+      crossorigin
+    />
+```
+
+#### Step 3: Import Font Definitions
+
+The @font-face rules and CSS variables are automatically available when you import the design system styles. You can use the predefined font variables in your CSS:
+
+```css
+/* Import the design system styles (includes font definitions) */
+@import "@windows98/design-system/index.css";
+
+/* Use the available font families: */
+.my-element {
+  font-family: var(--ds-font-sans-serif-medium); /* MS Sans Serif Medium */
+}
+
+.my-bold-element {
+  font-family: var(--ds-font-sans-serif-bold);   /* MS Sans Serif Bold */
+}
+```
+

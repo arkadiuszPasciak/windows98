@@ -1,0 +1,52 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Toolkit/Guide/Helpers" />
+
+<Title>🔧 Helpers</Title>
+
+Learn how to add design patterns to the `@windows98/toolkit` package.
+
+## Overview
+
+The helpers module provides simple implementations of design patterns. This guide shows you how to add new patterns using the Builder pattern as an example.
+
+## How to Add a New Helper Pattern
+
+### Example: Builder Pattern
+
+The Builder pattern helps you create objects step by step.
+
+#### Basic Implementation
+
+```typescript
+import { Builder } from '@windows98/toolkit'
+
+interface WindowConfig {
+  title: string
+  width: number
+  height: number
+}
+
+const windowConfig = new Builder<WindowConfig>()
+  .set('title', 'Calculator')
+  .set('width', 300)
+  .set('height', 400)
+  .build()
+
+console.log(windowConfig)
+// Result: { title: 'Calculator', width: 300, height: 400 }
+```
+
+#### How to Add Your Own Pattern
+
+1. **Create the pattern file** in `src/helpers/`
+2. **Export from index** in the helpers module
+3. **Add TypeScript types** if needed
+
+Example structure:
+```
+src/helpers/
+├── builder.ts
+├── your-new-pattern.ts  ← Add here
+└── index.ts             ← Export here
+```

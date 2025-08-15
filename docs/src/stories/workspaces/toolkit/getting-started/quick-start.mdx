@@ -1,0 +1,25 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Toolkit/Getting Started/Quick Start" />
+
+<Title>🏎️ Quick Start</Title>
+
+Fast setup guide to get started with the `@windows98/toolkit` package in your Windows98 project.
+
+## Installation
+
+```bash
+# Install the toolkit package
+pnpm add @windows98/toolkit
+
+# For development, install types (if not included)
+pnpm add -D typescript
+```
+
+## Basic Usage
+
+```typescript
+import { addZeroBeforeNumber } from "@windows98/toolkit"
+
+addZeroBeforeNumber(5, 10)
+```

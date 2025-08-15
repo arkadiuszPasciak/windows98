@@ -15,7 +15,6 @@
 		"./typescript/node": "./src/typescript/react.config.json",
 		"./typescript/react": "./src/typescript/react.config.json",
 		"./typescript/vite": "./src/typescript/vite.config.json",
-		"./typescript/vue": "./src/typescript/vue.config.json",
 		"./vitest/shared": "./src/vitest/shared.config.mjs"
 	},
 	"name": "@windows98/configs",
@@ -37,6 +36,5 @@
 		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs"
 	},
-	"types": "src/types/declarations.d.ts",
 	"version": "1.0.0"
 }

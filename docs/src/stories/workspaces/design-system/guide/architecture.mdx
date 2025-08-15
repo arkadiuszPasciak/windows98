@@ -1,0 +1,153 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Design System/Guide/Architecture" />
+
+<Title>🏗️ Architecture</Title>
+
+The Windows98 design system follows a modular, component-based architecture that promotes consistency, reusability, and maintainability across the entire Windows98 application ecosystem.
+
+## Architecture Diagram
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                @windows98/design-system                      │
+├──────────────────────────────────────────────────────────────┤
+│  ┌────────────────────────────────────────────────────────┐  │
+│  │                   Build Process                        │  │
+│  │  Components + Styles → Bundle → Distribution           │  │
+│  └────────────────────────────────────────────────────────┘  │
+│                             │                                │
+│                             ▼                                │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌──────────────┐  │
+│  │   Components    │  │     Styles      │  │    Assets    │  │
+│  │                 │  │                 │  │              │  │
+│  │ • ds-button     │  │ • Variables     │  │ • Fonts      │  │
+│  │ • ds-input      │  │ • Themes        │  │ • Icons      │  │
+│  │ • ds-modal      │  │ • Base Styles   │  │ • Favicon    │  │
+│  │ • ds-frame      │  │ • Resets        │  │              │  │
+│  │ • ds-tabs       │  │ • Typography    │  │              │  │
+│  │ • more...       │  │                 │  │              │  │
+│  └─────────────────┘  └─────────────────┘  └──────────────┘  │
+│           │                    │                    │        │
+│           ▼                    ▼                    ▼        │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌──────────────┐  │
+│  │   TypeScript    │  │   CSS Modules   │  │    Utils     │  │
+│  │                 │  │                 │  │              │  │
+│  │ • Props Types   │  │ • Scoped Styles │  │ • Helpers    │  │
+│  │ • Interfaces    │  │ • Theme Support │  │ • Constants  │  │
+│  │ • Enums         │  │ • Responsive    │  │ • Validators │  │
+│  └─────────────────┘  └─────────────────┘  └──────────────┘  │
+└──────────────────────────────────────────────────────────────┘
+```
+
+## Core Architecture Principles
+
+### 1. Modular Design System
+
+The design system is built with modularity at its core:
+- Independent component packages
+- Separated concerns (components, styles, tokens)
+- Clear boundaries between layers
+- Pluggable theme system
+
+### 2. Design Token System
+
+Centralized design tokens provide consistency across all components:
+
+```css
+/* Base tokens */
+:root {
+  --ds-spacing-md: 0.625rem;
+  --ds-font-size-md: 1.25rem;
+  --ds-border-radius-sm: 2px;
+}
+
+/* Semantic tokens */
+:root[theme="light"] {
+  --ds-background-color-primary: var(--ds-color-grey800);
+  --ds-text-color-primary: var(--ds-color-black300);
+}
+```
+
+### 3. Theme Architecture
+
+Multi-theme support through CSS custom properties:
+
+```css
+/* Theme switching via HTML attribute */
+:root[theme="light"] { /* light theme variables */ }
+:root[theme="dark"]  { /* dark theme variables */ }
+```
+
+## Testing Architecture
+
+### Testing Strategy
+
+The design system employs a comprehensive testing approach:
+
+1. **Unit Testing** - Component functionality and props
+2. **Integration Testing** - Component interaction and behavior  
+3. **Visual Testing** - UI consistency and theme support
+4. **Accessibility Testing** - WCAG compliance and screen readers
+
+### Testing Tools
+
+- **Vitest** - Unit and integration testing
+- **Playwright** - End-to-end and visual testing
+- **Testing Library** - React component testing utilities
+- **Axe** - Accessibility testing
+
+## File Organization
+
+### Source Structure
+
+```
+src/
+├── components/          # All UI components
+│   ├── ds-button/
+│   ├── ds-input/
+│   └── ...
+├── styles/             # Global styles and themes
+│   ├── variables.css   # Design tokens
+│   ├── theme-light.css # Light theme
+│   ├── theme-dark.css  # Dark theme
+│   └── index.css       # Main stylesheet
+├── types/              # Shared TypeScript types
+├── utils/              # Utility functions
+├── fonts/              # Windows 98 fonts
+├── favicon/            # Favicon assets
+└── index.ts            # Main export file
+```
+
+## Package Distribution
+
+### Built Artifacts
+
+The build process generates multiple distribution formats:
+
+```
+@bundler/build/
+├── index.js              # ES Module bundle
+├── index.umd.cjs         # UMD bundle
+├── index.d.ts            # TypeScript definitions
+├── styles/
+│   └── index.css         # Compiled CSS bundle
+└── components/           # Individual component builds
+    ├── ds-button/
+    └── ...
+```
+
+### Package Entry Points
+
+Multiple entry points support different import patterns:
+
+```javascript
+// Main component imports
+import { DSButton } from '@windows98/design-system'
+
+// CSS import
+import '@windows98/design-system/index.css'
+
+// Type imports
+import type { DSButtonProps } from '@windows98/design-system'
+```

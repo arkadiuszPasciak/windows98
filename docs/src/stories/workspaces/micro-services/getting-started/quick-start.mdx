@@ -1,0 +1,39 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Getting Started/Quick Start" />
+
+<Title>🚀 Quick Start</Title>
+
+Get up and running with `@windows98/micro-services` in minutes.
+
+## Installation
+
+### Package Manager Installation
+
+```bash
+# Install with pnpm
+pnpm add @windows98/micro-services
+```
+
+## Basic Usage
+
+### 1. Import Services
+
+```tsx
+import { 
+  MSAppConfig,
+} from '@windows98/micro-services'
+```
+
+### 2. Basic Usage Example
+
+```tsx
+import { 
+  MSAppConfig,
+} from '@windows98/micro-services'
+
+const appConfig = new MSAppConfig()
+await appConfig.initialize({
+  environment: 'production',
+  enableValidation: true
+})

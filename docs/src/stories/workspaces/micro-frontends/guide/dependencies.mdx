@@ -1,0 +1,257 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Frontends/Guide/Dependencies" />
+
+<Title>📦 Dependencies</Title>
+
+Complete guide to managing dependencies in the `@windows98/micro-frontends` package.
+
+## Overview
+
+The micro-frontends package uses a carefully managed dependency strategy to ensure compatibility, performance, and maintainability across all micro-frontends while allowing for modular development.
+
+## Dependency Categories
+
+### Peer Dependencies
+
+Peer dependencies are required by consumers and shared across all micro-frontends:
+
+```json
+{
+  "peerDependencies": {
+    "@windows98/design-system": "workspace:*",
+    "@windows98/micro-services": "workspace:*", 
+    "@windows98/i18n": "workspace:*",
+    "i18next": "25.3.2",
+    "mobx": "6.13.7",
+    "mobx-react-lite": "4.1.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-i18next": "15.6.1"
+  }
+}
+```
+
+#### Why Peer Dependencies?
+
+- **Prevents duplication**: Multiple versions of React would break the app
+- **Shared state**: Design system and micro-services need single instances
+- **Bundle optimization**: Consumers control the exact versions
+- **Compatibility**: Ensures all micro-frontends use compatible versions
+
+### Development Dependencies
+
+Used only during development and building:
+
+```json
+{
+  "devDependencies": {
+    "@playwright/experimental-ct-react": "1.54.1",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.0",
+    "@vitejs/plugin-react": "4.7.0",
+    "@windows98/configs": "workspace:*",
+    "@windows98/toolkit": "workspace:*",
+    "typescript": "5.7.3",
+    "vite": "6.0.5",
+    "vitest": "2.1.7"
+  }
+}
+```
+
+### Internal Dependencies
+
+Workspace packages used within micro-frontends:
+
+- **@windows98/design-system**: UI components and styling
+- **@windows98/micro-services**: Backend integration
+- **@windows98/i18n**: Internationalization
+- **@windows98/toolkit**: Utilities and helpers
+
+## Dependency Usage Patterns
+
+### Design System Integration
+
+```tsx
+// Importing design system components
+import { 
+  Button, 
+  Window, 
+  Panel, 
+  Input,
+  Checkbox 
+} from '@windows98/design-system'
+
+export const CalculatorModule = () => {
+  return (
+    <Panel>
+      <div className="calculator-display">
+        <Input value="0" readOnly />
+      </div>
+      <div className="calculator-buttons">
+        <Button variant="number">1</Button>
+        <Button variant="number">2</Button>
+        <Button variant="operator">+</Button>
+      </div>
+    </Panel>
+  )
+}
+```
+
+### Micro-services Integration
+
+```tsx
+// Using micro-services for data operations
+import { 
+  useFileService, 
+  useStorageService,
+  useAppConfigService 
+} from '@windows98/micro-services'
+
+export const useNotepadData = () => {
+  const fileService = useFileService()
+  const storageService = useStorageService()
+  const configService = useAppConfigService()
+  
+  const saveFile = useCallback(async (content: string, filename: string) => {
+    try {
+      // Save to file system
+      await fileService.save(filename, content)
+      
+      // Update local storage
+      storageService.setItem(`notepad_${filename}`, content)
+      
+      // Update recent files in config
+      const recentFiles = configService.get('recentFiles') || []
+      configService.set('recentFiles', [filename, ...recentFiles.slice(0, 9)])
+      
+    } catch (error) {
+      console.error('Failed to save file:', error)
+      throw error
+    }
+  }, [fileService, storageService, configService])
+  
+  return { saveFile }
+}
+```
+
+### Internationalization Integration
+
+```tsx
+// Using i18n for multi-language support
+import { useTranslation } from 'react-i18next'
+
+export const CalculatorButtons = () => {
+  const { t } = useTranslation('calculator')
+  
+  return (
+    <div className="calculator-buttons">
+      <Button onClick={handleClear}>
+        {t('buttons.clear')}
+      </Button>
+      <Button onClick={handleEquals}>
+        {t('buttons.equals')}
+      </Button>
+      <Button onClick={handleMemoryStore}>
+        {t('buttons.memoryStore')}
+      </Button>
+    </div>
+  )
+}
+
+// Translation files structure:
+// src/locales/en/calculator.json
+{
+  "buttons": {
+    "clear": "Clear",
+    "equals": "Equals", 
+    "memoryStore": "Memory Store"
+  }
+}
+```
+
+### State Management with MobX
+
+```tsx
+// Using MobX for reactive state management
+import { makeAutoObservable } from 'mobx'
+import { observer } from 'mobx-react-lite'
+
+class CalculatorStore {
+  display = '0'
+  memory = 0
+  operation: string | null = null
+  
+  constructor() {
+    makeAutoObservable(this)
+  }
+  
+  setDisplay(value: string) {
+    this.display = value
+  }
+  
+  setMemory(value: number) {
+    this.memory = value
+  }
+  
+  clear() {
+    this.display = '0'
+    this.operation = null
+  }
+}
+
+const calculatorStore = new CalculatorStore()
+
+export const CalculatorDisplay = observer(() => {
+  return (
+    <div className="display">
+      {calculatorStore.display}
+    </div>
+  )
+})
+```
+
+### Toolkit Integration
+
+```tsx
+// Using toolkit utilities and patterns
+import { 
+  Builder, 
+  Observer, 
+  addZeroBeforeNumber,
+  getClassNames 
+} from '@windows98/toolkit'
+
+export const ClockModule = () => {
+  const [time, setTime] = useState(new Date())
+  const [format24h, setFormat24h] = useState(false)
+  
+  // Using toolkit utilities
+  const formatTime = useCallback((date: Date) => {
+    let hours = date.getHours()
+    const minutes = addZeroBeforeNumber(date.getMinutes())
+    const seconds = addZeroBeforeNumber(date.getSeconds())
+    
+    if (!format24h) {
+      const ampm = hours >= 12 ? 'PM' : 'AM'
+      hours = hours % 12 || 12
+      return `${addZeroBeforeNumber(hours)}:${minutes}:${seconds} ${ampm}`
+    }
+    
+    return `${addZeroBeforeNumber(hours)}:${minutes}:${seconds}`
+  }, [format24h])
+  
+  // Using getClassNames utility
+  const clockClasses = getClassNames([
+    'clock',
+    format24h && 'clock--24h',
+    'clock--digital'
+  ])
+  
+  return (
+    <div className={clockClasses}>
+      {formatTime(time)}
+    </div>
+  )
+}
+```

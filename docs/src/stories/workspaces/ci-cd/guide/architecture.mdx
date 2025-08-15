@@ -1,0 +1,169 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/CI-CD/Guide/Architecture" />
+
+<Title>🏗️ Architecture</Title>
+
+Understanding the structure and design of the Windows98 CI/CD system.
+
+## Architecture Diagram
+
+The following diagram illustrates the CI/CD system architecture and command flow:
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                    @windows98/ci-cd                          │
+├──────────────────────────────────────────────────────────────┤
+│  ┌────────────────────────────────────────────────────────┐  │
+│  │                Command Entry Point                     │  │
+│  │              run.command.mjs                           │  │
+│  │         [extracts command from argv]                   │  │
+│  └────────────────────────────────────────────────────────┘  │
+│                             │                                │
+│                             ▼                                │
+│  ┌────────────────────────────────────────────────────────┐  │
+│  │                CICDCommand Class                       │  │
+│  │              ci-cd.config.mjs                          │  │
+│  │  ┌──────────────────────────────────────────────────┐  │  │
+│  │  │            Command Mapping                       │  │  │
+│  │  │  • build → [@windows98/app]                      │  │  │
+│  │  │  • lint:code:run → [7 packages]                  │  │  │
+│  │  │  • test:unit:run → [5 packages]                  │  │  │
+│  │  │  • And more...                                   │  │  │
+│  │  └──────────────────────────────────────────────────┘  │  │
+│  └────────────────────────────────────────────────────────┘  │
+│                             │                                │
+│                             ▼                                │
+│  ┌────────────────────────────────────────────────────────┐  │
+│  │              Command Execution                         │  │
+│  │        pnpm -r --filter <workspace> <command>          │  │
+│  └────────────────────────────────────────────────────────┘  │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌──────────────────────────────────────────────────────────────┐
+│                     Target Workspaces                        │
+├──────────────────────────────────────────────────────────────┤
+│  @windows98/app          @windows98/design-system            │
+│  @windows98/configs      @windows98/docs                     │
+│  @windows98/i18n         @windows98/micro-frontends          │
+│  @windows98/micro-services  @windows98/toolkit               │
+└──────────────────────────────────────────────────────────────┘
+```
+
+## Core Components
+
+### 1. Command Entry Point (`run.command.mjs`)
+
+```javascript
+import { CICDCommand } from "../configs/ci-cd.config.mjs"
+
+const [, , commandType] = process.argv
+const command = new CICDCommand()
+command.run(commandType)
+```
+
+**Responsibilities:**
+- Extract command type from command line arguments
+- Instantiate the CICDCommand class
+- Execute the specified command
+
+### 2. CICDCommand Class (`ci-cd.config.mjs`)
+
+**Key Features:**
+- **Command Mapping**: Maps command types to target workspace packages
+- **Sequential Execution**: Runs commands across packages in sequence
+- **Error Handling**: Comprehensive error reporting and failure management
+- **Promise-based**: Async/await pattern for command execution
+
+**Command Mapping Structure:**
+```javascript
+#commands = {
+  build: ["@windows98/app"],
+  "lint:code:run": [
+    "@windows98/app",
+    "@windows98/configs", 
+    "@windows98/design-system",
+    // ... more packages
+  ],
+  // ... other commands
+}
+```
+
+### 3. Command Execution Flow
+
+```
+1. Command Type Extraction
+   ↓
+2. Command Validation
+   ↓
+3. Workspace Resolution
+   ↓
+4. Sequential Package Execution
+   ↓
+5. Error Handling & Reporting
+```
+
+## Design Principles
+
+### **Centralized Control**
+- Single source of truth for all CI/CD operations
+- Consistent command execution across all packages
+- Unified error handling and reporting
+
+### **Workspace Awareness**
+- Commands only run on relevant packages
+- Optimized execution by avoiding unnecessary operations
+- Package-specific command targeting
+
+### **Sequential Execution**
+- Commands run one package at a time
+- Prevents resource conflicts and dependency issues
+- Clear error isolation and reporting
+
+### **Error Resilience**
+- Comprehensive error catching and reporting
+- Detailed error messages with context
+- Proper exit code propagation
+
+## Integration Points
+
+### **pnpm Workspaces**
+- Leverages pnpm's workspace filtering: `pnpm -r --filter <package>`
+- Automatic dependency resolution
+- Workspace-aware command execution
+
+### **GitHub Actions**
+- Seamless integration with CI/CD pipelines
+- Standardized command interface
+- Consistent execution environment
+
+### **Development Tools**
+- Integration with Biome (code linting)
+- Stylelint (style linting)
+- TypeScript (type checking)
+- Vitest (unit testing)
+- Playwright (UI testing)
+
+## Command Categories
+
+### **Build Commands**
+- `build`: Production build for deployment
+
+### **Linting Commands**
+- `lint:code:run`: Code quality and formatting
+- `lint:staged:fix`: Pre-commit linting fixes
+- `lint:styles:run`: CSS/SCSS linting
+- `lint:types:run`: TypeScript type checking
+
+### **Testing Commands**
+- `test:unit:run`: Unit tests with Vitest
+- `test:ui:run`: UI tests with Playwright
+
+## Benefits
+
+1. **Consistency**: All packages use the same command interface
+2. **Efficiency**: Only relevant packages are targeted for each command
+3. **Reliability**: Robust error handling and clear feedback
+4. **Scalability**: Easy to add new commands and packages
+5. **CI/CD Ready**: Direct integration with automation pipelines

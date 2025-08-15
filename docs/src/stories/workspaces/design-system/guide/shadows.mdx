@@ -1,0 +1,242 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Design System/Guide/Shadows" />
+
+<Title>🌫️ Shadows</Title>
+
+Shadow system and depth effects for the Windows98 design system.
+
+## Opacity Tokens
+
+```css
+/* Opacity Tokens */
+--ds-opacity-not-allowed: 0.5;
+```
+
+## Traditional Shadows (Limited Use)
+
+While not commonly used in authentic Windows 98 design, modern implementations may include subtle shadows for enhanced usability:
+
+```css
+/* Subtle shadow tokens for modern enhancements */
+--ds-shadow-none: none;
+--ds-shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.1);
+--ds-shadow-soft: 0 2px 4px rgba(0, 0, 0, 0.05);
+--ds-shadow-modal: 0 4px 8px rgba(0, 0, 0, 0.15);
+```
+
+## Primary Shadow System: 3D Borders
+
+The main "shadow" system in Windows 98 is achieved through multi-layered inset borders that create the characteristic 3D appearance:
+
+### Raised Effect (Light Source Top-Left)
+```css
+/* Creates the illusion of an element raised above the surface */
+--ds-border-raised: 
+  inset -1px -1px var(--ds-color-black200),  /* Bottom-right dark */
+  inset 1px 1px var(--ds-color-white100),   /* Top-left light */
+  inset -2px -2px var(--ds-color-grey200),  /* Outer bottom-right */
+  inset 2px 2px var(--ds-color-grey900);    /* Outer top-left */
+```
+
+### Sunken Effect (Inverted Light Source)
+```css
+/* Creates the illusion of an element pressed into the surface */
+--ds-border-sunken:
+  inset -1px -1px var(--ds-color-white100),  /* Bottom-right light */
+  inset 1px 1px var(--ds-color-black200),   /* Top-left dark */
+  inset -2px -2px var(--ds-color-grey900),  /* Outer bottom-right */
+  inset 2px 2px var(--ds-color-grey200);    /* Outer top-left */
+```
+
+## Shadow Usage Guidelines
+
+### When to Use 3D Borders (Primary)
+
+1. **Interactive Elements**
+   ```css
+   .ds-button {
+     box-shadow: var(--ds-border-raised);
+   }
+   
+   .ds-button:active {
+     box-shadow: var(--ds-border-sunken);
+   }
+   ```
+
+2. **Form Controls**
+   ```css
+   .ds-input {
+     box-shadow: var(--ds-border-field);
+   }
+   ```
+
+3. **Containers and Frames**
+   ```css
+   .ds-frame {
+     box-shadow: var(--ds-border-raised);
+   }
+   ```
+
+### When to Use Traditional Shadows (Limited)
+
+1. **Modal Overlays** (for modern usability)
+   ```css
+   .ds-modal-backdrop {
+     box-shadow: var(--ds-shadow-modal);
+   }
+   ```
+
+2. **Tooltips** (if implemented)
+   ```css
+   .ds-tooltip {
+     box-shadow: var(--ds-shadow-soft);
+   }
+   ```
+
+3. **Dropdown Menus** (subtle enhancement)
+   ```css
+   .ds-dropdown {
+     box-shadow: var(--ds-shadow-subtle);
+   }
+   ```
+
+## Opacity Usage
+
+### Disabled States
+
+```css
+/* Disabled component styling */
+.ds-button:disabled {
+  opacity: var(--ds-opacity-not-allowed);
+  pointer-events: none;
+}
+
+.ds-input:disabled {
+  opacity: var(--ds-opacity-not-allowed);
+  background-color: var(--ds-background-color-tertiary);
+}
+```
+
+### Loading States
+
+```css
+/* Loading/busy states */
+.ds-loading {
+  opacity: var(--ds-opacity-not-allowed);
+  cursor: wait;
+}
+
+.ds-loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+```
+
+## Shadow Animation
+
+### Hover Effects with 3D Borders
+
+```css
+/* Button hover animation */
+.ds-button {
+  box-shadow: var(--ds-border-raised);
+  transition: box-shadow 0.1s ease;
+}
+
+.ds-button:hover {
+  /* Maintain raised appearance on hover */
+  box-shadow: var(--ds-border-raised);
+}
+
+.ds-button:active {
+  /* Quick transition to sunken state */
+  box-shadow: var(--ds-border-sunken);
+  transition: box-shadow 0.05s ease;
+}
+```
+
+### Opacity Transitions
+
+```css
+/* Smooth opacity changes */
+.ds-element {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.ds-element.disabled {
+  opacity: var(--ds-opacity-not-allowed);
+}
+
+.ds-element.loading {
+  opacity: var(--ds-opacity-not-allowed);
+}
+```
+
+## Shadow Guidelines
+
+### Do's ✅
+
+1. **Prefer 3D borders** for authentic Windows 98 appearance
+   ```css
+   /* ✅ Authentic Windows 98 */
+   box-shadow: var(--ds-border-raised);
+   ```
+
+2. **Use opacity** for disabled and loading states
+   ```css
+   opacity: var(--ds-opacity-not-allowed);
+   ```
+
+3. **Limit traditional shadows** to modern usability enhancements only
+
+### Don'ts ❌
+
+1. **Don't use heavy shadows** that break the Windows 98 aesthetic
+   ```css
+   /* ❌ Too modern */
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+   
+   /* ✅ Windows 98 style */
+   box-shadow: var(--ds-border-raised);
+   ```
+
+2. **Don't mix shadow types** inconsistently
+
+3. **Don't overuse transparency** - Windows 98 was mostly opaque
+
+## Custom Shadow Extensions
+
+### Project-Specific Opacity
+
+```css
+:root {
+  /* Custom opacity values */
+  --ds-opacity-hover: 0.8;
+  --ds-opacity-focus: 0.9;
+  --ds-opacity-overlay: 0.6;
+}
+```
+
+### Enhanced 3D Effects
+
+```css
+/* Enhanced 3D borders for special cases */
+:root {
+  --ds-border-deep-raised: 
+    var(--ds-border-raised),
+    inset -3px -3px var(--ds-color-black100),
+    inset 3px 3px var(--ds-color-white100);
+    
+  --ds-border-deep-sunken:
+    var(--ds-border-sunken),
+    inset -3px -3px var(--ds-color-white100),
+    inset 3px 3px var(--ds-color-black100);
+}
+```

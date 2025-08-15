@@ -1,0 +1,92 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/I18n/Guide/Add Language" />
+
+<Title>🌍 Add Language</Title>
+
+Complete guide to adding new language support to the `@windows98/i18n` package.
+
+## Overview
+
+Adding a new language involves creating translation files, updating the configuration, and ensuring all micro-frontends have proper translations.
+
+## Step-by-Step Guide
+
+### 1. Create Language Directory
+
+Create a new directory for your language in the locales folder:
+
+```bash
+# Navigate to the i18n package
+cd core/internationalization/i18n/src/locales
+
+# Create directory for your language (e.g., French)
+mkdir fr
+
+# Create micro-frontends directory
+mkdir micro-frontends/fr
+```
+
+### 2. Create Base Language Files
+
+```typescript
+// src/locales/fr/index.ts
+const localesFR: I18nLocaleSkeleton = {
+	...audioFR,
+    // The rest of the files...
+}
+```
+
+### 3. Create Micro-Frontend Translations
+
+Copy and translate each micro-frontend from an existing language:
+
+```typescript
+// src/locales/micro-frontends/fr/mf-calculator.ts
+export default {
+  'mf-calculator': {
+    title: 'Calculatrice',
+    // ...
+  }
+}
+
+// Add the rest of the files...
+```
+
+
+### 4. Create Index Files
+
+```typescript
+// src/locales/micro-frontends/fr/index.ts
+import mfCalculator from './mf-calculator'
+import mfNotepad from './mf-notepad'
+import mfCalendar from './mf-calendar'
+// Import other micro-frontends...
+
+export default {
+  ...mfCalculator,
+  ...mfNotepad,
+  ...mfCalendar,
+  // Add other micro-frontends...
+}
+```
+
+### 5. Update Main Configuration
+
+Add your new language to the main configuration:
+
+```typescript
+// src/locales/index.config.ts
+import localesMicroFrontendsFR from "./micro-frontends/fr" // Add new language
+
+export const localesReact = {
+    // ... previous languages
+	fr: { // Add new language
+		translation: {
+			...localesMicroFrontendsFR,
+		},
+	},
+}
+
+export default locales
+```

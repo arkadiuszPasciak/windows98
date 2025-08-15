@@ -1,0 +1,376 @@
+import { Meta, Title, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+<Meta title="Workspaces/Design System/Guide/Semantic" />
+
+<Title>🎯 Semantic Colors</Title>
+
+Semantic color tokens that adapt based on the selected theme (light/dark) for the Windows98 design system.
+
+## Overview
+
+Semantic colors provide meaning-based color assignments that automatically adapt between light and dark themes. These tokens abstract the underlying color values and provide consistent naming conventions for different UI purposes.
+
+## Background Colors
+
+Semantic background colors for different interface elements and contexts.
+
+### Primary Backgrounds
+
+<ColorPalette>
+  <ColorItem
+    title="Primary Background"
+    subtitle="Main interface background"
+    colors={{
+      "Light Theme": "var(--ds-color-grey800)",
+      "Dark Theme": "var(--ds-color-grey100)"
+    }}
+  />
+  <ColorItem
+    title="Secondary Background"
+    subtitle="Content areas and panels"
+    colors={{
+      "Light Theme": "var(--ds-color-white100)",
+      "Dark Theme": "var(--ds-color-grey100)"
+    }}
+  />
+  <ColorItem
+    title="Tertiary Background"
+    subtitle="Subtle backgrounds and borders"
+    colors={{
+      "Light Theme": "var(--ds-color-grey200)",
+      "Dark Theme": "var(--ds-color-grey200)"
+    }}
+  />
+</ColorPalette>
+
+### Background Token Usage
+
+```css
+/* Background Color Tokens */
+--ds-background-color-primary: /* Main interface background */
+--ds-background-color-secondary: /* Content areas and panels */
+--ds-background-color-tertiary: /* Subtle backgrounds */
+--ds-background-color-modal-header: /* Modal title bars (gradient) */
+--ds-background-color-pulpit: /* Desktop/pulpit background */
+```
+
+### Theme-Specific Values
+
+```css
+/* Light Theme */
+:root[theme="light"] {
+  --ds-background-color-primary: var(--ds-color-grey800);
+  --ds-background-color-secondary: var(--ds-color-white100);
+  --ds-background-color-tertiary: var(--ds-color-grey200);
+  --ds-background-color-modal-header: linear-gradient(
+    90deg,
+    var(--ds-color-blue200),
+    var(--ds-color-blue300)
+  );
+  --ds-background-color-pulpit: var(--ds-color-blue400);
+}
+
+/* Dark Theme */
+:root[theme="dark"] {
+  --ds-background-color-primary: var(--ds-color-grey100);
+  --ds-background-color-secondary: var(--ds-color-grey100);
+  --ds-background-color-tertiary: var(--ds-color-grey200);
+  --ds-background-color-modal-header: linear-gradient(
+    90deg,
+    var(--ds-color-blue600),
+    var(--ds-color-blue500)
+  );
+  --ds-background-color-pulpit: var(--ds-color-black100);
+}
+```
+
+## Text Colors
+
+Semantic text colors that ensure proper contrast across themes.
+
+### Text Color Hierarchy
+
+<ColorPalette>
+  <ColorItem
+    title="Primary Text"
+    subtitle="Main content text"
+    colors={{
+      "Light Theme": "var(--ds-color-black300)",
+      "Dark Theme": "var(--ds-color-grey500)"
+    }}
+  />
+  <ColorItem
+    title="Secondary Text"
+    subtitle="Interface text on backgrounds"
+    colors={{
+      "Light Theme": "var(--ds-color-white100)",
+      "Dark Theme": "var(--ds-color-grey500)"
+    }}
+  />
+  <ColorItem
+    title="Tertiary Text"
+    subtitle="Labels and captions"
+    colors={{
+      "Light Theme": "var(--ds-color-black300)",
+      "Dark Theme": "var(--ds-color-black100)"
+    }}
+  />
+</ColorPalette>
+
+### Text Token Usage
+
+```css
+/* Text Color Tokens */
+--ds-text-color-primary: /* Main content text */
+--ds-text-color-secondary: /* Interface text on backgrounds */
+--ds-text-color-tertiary: /* Labels and captions */
+```
+
+### Theme-Specific Text Values
+
+```css
+/* Light Theme */
+:root[theme="light"] {
+  --ds-text-color-primary: var(--ds-color-black300);
+  --ds-text-color-secondary: var(--ds-color-white100);
+  --ds-text-color-tertiary: var(--ds-color-black300);
+}
+
+/* Dark Theme */
+:root[theme="dark"] {
+  --ds-text-color-primary: var(--ds-color-grey500);
+  --ds-text-color-secondary: var(--ds-color-grey500);
+  --ds-text-color-tertiary: var(--ds-color-black100);
+}
+```
+
+## Border Colors
+
+Semantic border colors for consistent theming across interface elements.
+
+### Border Color System
+
+<ColorPalette>
+  <ColorItem
+    title="Primary Border"
+    subtitle="Main border color"
+    colors={{
+      "Light Theme": "rgba(255, 255, 255, 0.7)",
+      "Dark Theme": "var(--ds-color-grey300)"
+    }}
+  />
+  <ColorItem
+    title="Secondary Border"
+    subtitle="Subtle borders"
+    colors={{
+      "Light Theme": "var(--ds-color-grey400)",
+      "Dark Theme": "var(--ds-color-grey400)"
+    }}
+  />
+  <ColorItem
+    title="Tertiary Border"
+    subtitle="Minimal borders"
+    colors={{
+      "Light Theme": "var(--ds-color-white100)",
+      "Dark Theme": "var(--ds-color-grey100)"
+    }}
+  />
+</ColorPalette>
+
+### Border Token Usage
+
+```css
+/* Border Color Tokens */
+--ds-border-color-primary: /* Main border color */
+--ds-border-color-secondary: /* Subtle borders */
+--ds-border-color-tertiary: /* Minimal borders */
+```
+
+### Theme-Specific Border Values
+
+```css
+/* Light Theme */
+:root[theme="light"] {
+  --ds-border-color-primary: rgba(255, 255, 255, 0.7);
+  --ds-border-color-secondary: var(--ds-color-grey400);
+  --ds-border-color-tertiary: var(--ds-color-white100);
+}
+
+/* Dark Theme */
+:root[theme="dark"] {
+  --ds-border-color-primary: var(--ds-color-grey300);
+  --ds-border-color-secondary: var(--ds-color-grey400);
+  --ds-border-color-tertiary: var(--ds-color-grey100);
+}
+```
+
+## 3D Border Effects
+
+Semantic 3D border tokens that create the authentic Windows 98 raised and sunken effects.
+
+### 3D Border Components
+
+```css
+/* 3D Border Inner Effects */
+--ds-border-field-inner: /* Inner layer of form field borders */
+--ds-border-raised-inner: /* Inner layer of raised elements */
+--ds-border-sunken-inner: /* Inner layer of sunken elements */
+
+/* 3D Border Outer Effects */
+--ds-border-field-outer: /* Outer layer of form field borders */
+--ds-border-raised-outer: /* Outer layer of raised elements */
+--ds-border-sunken-outer: /* Outer layer of sunken elements */
+
+/* Combined 3D Borders */
+--ds-border-field: /* Complete form field border effect */
+--ds-border-raised: /* Complete raised element effect */
+--ds-border-sunken: /* Complete sunken element effect */
+```
+
+### Light Theme 3D Borders
+
+```css
+:root[theme="light"] {
+  /* Field borders (sunken appearance) */
+  --ds-border-field-inner: inset -1px -1px var(--ds-color-white100), 
+                           inset 1px 1px var(--ds-color-grey200);
+  --ds-border-field-outer: inset -2px -2px var(--ds-color-grey900), 
+                           inset 2px 2px var(--ds-color-black200);
+  
+  /* Raised borders (buttons, panels) */
+  --ds-border-raised-inner: inset -1px -1px var(--ds-color-black200), 
+                            inset 1px 1px var(--ds-color-white100);
+  --ds-border-raised-outer: inset -2px -2px var(--ds-color-grey200), 
+                            inset 2px 2px var(--ds-color-grey900);
+  
+  /* Sunken borders (pressed buttons) */
+  --ds-border-sunken-inner: inset -1px -1px var(--ds-color-white100), 
+                            inset 1px 1px var(--ds-color-black200);
+  --ds-border-sunken-outer: inset -2px -2px var(--ds-color-grey900), 
+                            inset 2px 2px var(--ds-color-grey200);
+}
+```
+
+### Dark Theme 3D Borders
+
+```css
+:root[theme="dark"] {
+  /* Field borders (sunken appearance) */
+  --ds-border-field-inner: inset -1px -1px var(--ds-color-grey300), 
+                           inset 1px 1px var(--ds-color-black100);
+  --ds-border-field-outer: inset -2px -2px var(--ds-color-grey300), 
+                           inset 2px 2px var(--ds-color-black100);
+  
+  /* Raised borders (buttons, panels) */
+  --ds-border-raised-inner: inset -1px -1px var(--ds-color-black200), 
+                            inset 1px 1px var(--ds-color-grey500);
+  --ds-border-raised-outer: inset -2px -2px var(--ds-color-black100), 
+                            inset 2px 2px var(--ds-color-grey200);
+  
+  /* Sunken borders (pressed buttons) */
+  --ds-border-sunken-inner: inset -1px -1px var(--ds-color-grey500), 
+                            inset 1px 1px var(--ds-color-black100);
+  --ds-border-sunken-outer: inset -2px -2px var(--ds-color-grey500), 
+                            inset 2px 2px var(--ds-color-black100);
+}
+```
+
+## Usage Examples
+
+### Component Implementation
+
+```css
+/* Button using semantic colors */
+.ds-button {
+  background-color: var(--ds-background-color-secondary);
+  color: var(--ds-text-color-primary);
+  box-shadow: var(--ds-border-raised);
+}
+
+.ds-button:hover {
+  background-color: var(--ds-background-color-secondary);
+}
+
+.ds-button:active {
+  box-shadow: var(--ds-border-sunken);
+}
+
+/* Input field using semantic colors */
+.ds-input {
+  background-color: var(--ds-background-color-secondary);
+  color: var(--ds-text-color-primary);
+  box-shadow: var(--ds-border-field);
+  border: 1px solid var(--ds-border-color-secondary);
+}
+
+/* Modal header with gradient */
+.ds-modal-header {
+  background: var(--ds-background-color-modal-header);
+  color: var(--ds-text-color-secondary);
+}
+
+/* Panel with semantic background */
+.ds-panel {
+  background-color: var(--ds-background-color-primary);
+  border: 1px solid var(--ds-border-color-primary);
+  box-shadow: var(--ds-border-raised);
+}
+```
+
+## Semantic Color Guidelines
+
+### Do's ✅
+
+1. **Use semantic tokens** instead of direct color references
+   ```css
+   /* ✅ Semantic approach */
+   background-color: var(--ds-background-color-primary);
+   
+   /* ❌ Direct color reference */
+   background-color: var(--ds-color-grey800);
+   ```
+
+2. **Follow the hierarchy** for text colors
+   ```css
+   /* ✅ Proper hierarchy */
+   .title { color: var(--ds-text-color-primary); }
+   .subtitle { color: var(--ds-text-color-secondary); }
+   .caption { color: var(--ds-text-color-tertiary); }
+   ```
+
+3. **Use appropriate 3D borders** for element states
+   ```css
+   /* ✅ Semantic border usage */
+   .button { box-shadow: var(--ds-border-raised); }
+   .input { box-shadow: var(--ds-border-field); }
+   .pressed { box-shadow: var(--ds-border-sunken); }
+   ```
+
+### Don'ts ❌
+
+1. **Don't hardcode colors** that should be semantic
+   ```css
+   /* ❌ Hardcoded theme-specific color */
+   background-color: #c0c0c0;
+   
+   /* ✅ Semantic color that adapts */
+   background-color: var(--ds-background-color-secondary);
+   ```
+
+2. **Don't mix semantic levels** inappropriately
+   ```css
+   /* ❌ Wrong semantic level */
+   .main-content { color: var(--ds-text-color-tertiary); }
+   
+   /* ✅ Appropriate semantic level */
+   .main-content { color: var(--ds-text-color-primary); }
+   ```
+
+3. **Don't bypass the 3D border system**
+   ```css
+   /* ❌ Manual border construction */
+   box-shadow: inset 1px 1px white, inset -1px -1px gray;
+   
+   /* ✅ Semantic 3D border */
+   box-shadow: var(--ds-border-raised);
+   ```
