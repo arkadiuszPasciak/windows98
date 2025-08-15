@@ -12,7 +12,7 @@ export default defineConfig({
 			fileName: "index",
 		},
 		emptyOutDir: true,
-		outDir: "build",
+		outDir: "dist",
 		sourcemap: true,
 		rollupOptions: {
 			external: ["react", "react-dom"],
