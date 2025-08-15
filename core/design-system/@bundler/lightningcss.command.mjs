@@ -15,7 +15,7 @@ if (!existsSync(outputDir)) {
 console.log("🎨 Building CSS with Lightning CSS...")
 
 const command =
-	'lightningcss --minify --bundle --targets ">= 0.25%" ./src/styles/index.css -o ./@bundler/dist/styles/index.css'
+	'npx lightningcss --minify --bundle --targets ">= 0.25%" ./src/styles/index.css -o ./@bundler/dist/styles/index.css'
 
 try {
 	execSync(command, {

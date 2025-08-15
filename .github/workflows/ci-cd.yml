@@ -50,6 +50,9 @@ jobs:
       - name: Install PNPM
         run: npm install -g pnpm@10.13.1
 
+      - name: Install lightningcss-cli globally
+        run: npm install -g lightningcss-cli@1.30.1
+
       - name: Install Dependencies
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: pnpm install
@@ -251,6 +254,9 @@ jobs:
 
       - name: Install PNPM
         run: npm install -g pnpm@10.13.1
+
+      - name: Install lightningcss-cli globally
+        run: npm install -g lightningcss-cli@1.30.1
 
       - name: Install Dependencies
         run: pnpm install
