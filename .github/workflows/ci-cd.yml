@@ -37,12 +37,26 @@ jobs:
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
+      - name: Cache build artifacts
+        id: cache-build
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/dist
+          key: ${{ runner.os }}-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+
       - name: Install PNPM
         run: npm install -g pnpm@10.13.1
 
       - name: Install Dependencies
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: pnpm install
+
+      - name: Build Workspaces
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
+        run: pnpm run --filter @windows98/ci-cd build
 
   type-check:
     runs-on: ubuntu-latest
@@ -66,6 +80,15 @@ jobs:
             ~/.pnpm-store
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+
+      - name: Restore build artifacts
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/dist
+          key: ${{ runner.os }}-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-build-
 
       - name: Install PNPM
         run: npm install -g pnpm@10.13.1
@@ -100,6 +123,15 @@ jobs:
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
+      - name: Restore build artifacts
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/dist
+          key: ${{ runner.os }}-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+
       - name: Install PNPM
         run: npm install -g pnpm@10.13.1
 
@@ -133,6 +165,15 @@ jobs:
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
+      - name: Restore build artifacts
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/dist
+          key: ${{ runner.os }}-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+
       - name: Install PNPM
         run: npm install -g pnpm@10.13.1
 
@@ -165,6 +206,15 @@ jobs:
             ~/.pnpm-store
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+
+      - name: Restore build artifacts
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/dist
+          key: ${{ runner.os }}-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-build-
 
       - name: Install PNPM
         run: npm install -g pnpm@10.13.1
@@ -206,6 +256,16 @@ jobs:
         run: pnpm install
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
 
+      - name: Cache build artifacts
+        id: cache-build
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/dist
+          key: ${{ runner.os }}-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+
       - name: Build Applications
         run: pnpm run --filter @windows98/ci-cd build
 
@@ -232,6 +292,15 @@ jobs:
             node_modules
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
+      - name: Restore build artifacts
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/dist
+          key: ${{ runner.os }}-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+
       - name: Install PNPM
         run: npm install -g pnpm@10.13.1
 
@@ -250,6 +319,15 @@ jobs:
     needs: e2e-tests
     steps:
       - uses: actions/checkout@v3.5.0
+
+      - name: Restore build artifacts
+        uses: actions/cache@v3
+        with:
+          path: |
+            **/dist
+          key: ${{ runner.os }}-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-build-
 
       - name: Install PNPM
         run: npm install -g pnpm@10.13.1

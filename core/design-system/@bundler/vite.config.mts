@@ -2,6 +2,7 @@ import react from "@vitejs/plugin-react"
 import { defineConfig } from "vite"
 import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js"
 import dts from "vite-plugin-dts"
+import { lightningCssPlugin } from "./src/plugins"
 
 export default defineConfig({
 	build: {
@@ -12,7 +13,7 @@ export default defineConfig({
 			fileName: "index",
 		},
 		emptyOutDir: true,
-		outDir: "build",
+		outDir: "dist",
 		sourcemap: true,
 		rollupOptions: {
 			external: ["react", "react-dom"],
@@ -24,5 +25,10 @@ export default defineConfig({
 			},
 		},
 	},
-	plugins: [cssInjectedByJsPlugin(), dts({ include: ["../src"] }), react()],
+	plugins: [
+		cssInjectedByJsPlugin(),
+		dts({ include: ["../src"] }),
+		react(),
+		lightningCssPlugin(),
+	],
 })

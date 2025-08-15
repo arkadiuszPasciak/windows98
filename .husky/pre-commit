@@ -2,16 +2,19 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 pnpm --filter @windows98/ci-cd run lint:types:run
-echo "✅ The types are okay!"
+echo "✅ Types checked successfully!"
 
 pnpm --filter @windows98/ci-cd run lint:code:run
-echo "✅ The code is okay!"
+echo "✅ Code linting passed!"
 
 pnpm --filter @windows98/ci-cd run lint:styles:run
-echo "✅ The styles are okay!"
+echo "✅ Styles linting passed!"
 
 pnpm --filter @windows98/ci-cd run test:unit:run
-echo "✅ The tests are okay!"
+echo "✅ Unit tests passed!"
 
-pnpm --filter @windows98/ci-cd run lint:staged:fix 
-echo "✅ The files are okay!"
+pnpm --filter @windows98/ci-cd run lint:staged:fix
+echo "✅ Staged files fixed successfully!"
+
+pnpm --filter @windows98/ci-cd build
+echo "✅ The workspaces have been built successfully!"

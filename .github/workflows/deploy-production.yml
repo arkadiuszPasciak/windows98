@@ -19,6 +19,9 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
 
+      - name: Build Workspaces
+        run: pnpm run --filter @windows98/ci-cd build
+
       - name: Install Vercel CLI Locally
         run: npm install --global vercel@latest
 

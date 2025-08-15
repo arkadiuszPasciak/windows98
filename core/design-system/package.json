@@ -8,23 +8,21 @@
 		"node": "22.17.1",
 		"pnpm": "10.13.1"
 	},
-	"main": "@bundler/build/index.umd.cjs",
-	"module": "@bundler/build/index.js",
-	"types": "@bundler/build/index.d.ts",
-	"files": ["@bundler/build"],
+	"main": "@bundler/dist/index.umd.cjs",
+	"module": "@bundler/dist/index.js",
+	"types": "@bundler/dist/index.d.ts",
+	"files": ["@bundler/dist"],
 	"exports": {
 		".": {
-			"import": "./@bundler/build/index.js",
-			"require": "./@bundler/build/index.umd.cjs"
+			"import": "./@bundler/dist/index.js",
+			"require": "./@bundler/dist/index.umd.cjs"
 		},
-		"./index.css": "./@bundler/build/styles/index.css"
+		"./index.css": "./@bundler/dist/styles/index.css"
 	},
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite @bundler",
-		"build": "pnpm run build:components && pnpm run build:styles",
-		"build:components": "vite build @bundler",
-		"build:styles": "lightningcss --minify --bundle --targets \">= 0.25%\" ./src/styles/index.css -o ./@bundler/build/styles/index.css",
+		"build": "vite build @bundler",
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
 		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
 		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
@@ -50,7 +48,7 @@
 		"@vitejs/plugin-react": "4.7.0",
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
-		"lightningcss-cli": "1.30.1",
+		"lightningcss": "1.30.1",
 		"lint-staged": "16.1.2",
 		"stylelint": "16.22.0",
 		"typescript": "5.8.3",

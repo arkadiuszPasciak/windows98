@@ -1,11 +1,16 @@
-import { exec } from "node:child_process";
+import { exec } from "node:child_process"
 
 /**
  * Class representing a CICD command executor.
  */
 export class CICDCommand {
 	#commands = {
-		build: ["@windows98/app"],
+		build: [
+			"@windows98/design-system",
+			"@windows98/micro-services",
+			"@windows98/micro-frontends",
+			"@windows98/app",
+		],
 		"lint:code:run": [
 			"@windows98/app",
 			"@windows98/configs",
@@ -47,7 +52,7 @@ export class CICDCommand {
 			"@windows98/micro-services",
 			"@windows98/toolkit",
 		],
-	};
+	}
 
 	/**
 	 * Executes a shell command.
@@ -61,13 +66,13 @@ export class CICDCommand {
 				if (error) {
 					reject(
 						new Error(`[CICDCommand]: error executing ${command}: ${stderr}`),
-					);
+					)
 				} else {
-					console.log(stdout);
-					resolve();
+					console.log(stdout)
+					resolve()
 				}
-			});
-		});
+			})
+		})
 	}
 
 	/**
@@ -79,24 +84,24 @@ export class CICDCommand {
 	 */
 	async #runCommands(command) {
 		if (!command) {
-			throw new Error("[CICDCommand]: command is required");
+			throw new Error("[CICDCommand]: command is required")
 		}
 
 		if (!this.#commands[command]) {
-			throw new Error(`[CICDCommand]: command ${command} not found`);
+			throw new Error(`[CICDCommand]: command ${command} not found`)
 		}
 
-		const workspaces = this.#commands[command];
+		const workspaces = this.#commands[command]
 
 		try {
 			for (const workspace of workspaces) {
-				console.log(`[CICDCommand/${command}]: ${workspace}`);
-				await this.#runCommand(`pnpm -r --filter ${workspace} ${command}`);
+				console.log(`[CICDCommand/${command}]: ${workspace}`)
+				await this.#runCommand(`pnpm -r --filter ${workspace} ${command}`)
 			}
 
-			console.log(`[CICDCommand/${command}]: all packages successfully!`);
+			console.log(`[CICDCommand/${command}]: all packages successfully!`)
 		} catch (error) {
-			throw new Error(`[CICDCommand/${command}]: process failed ${error}`);
+			throw new Error(`[CICDCommand/${command}]: process failed ${error}`)
 		}
 	}
 
@@ -106,6 +111,6 @@ export class CICDCommand {
 	 * @returns {Promise<void>} - A promise that resolves when the command completes.
 	 */
 	async run(command) {
-		await this.#runCommands(command);
+		await this.#runCommands(command)
 	}
 }
