@@ -1,0 +1,121 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSColorGenerator" />
+
+<Title>🎨 MS Color Generator</Title>
+
+Advanced color generation and conversion service for Windows98 ecosystem.
+
+## What is MS Color Generator?
+
+MS Color Generator is a comprehensive color management service that provides random color generation, format conversion, and color manipulation utilities across the Windows98 environment. It ensures consistent color handling and provides tools for both developers and users working with colors.
+
+## Key Features
+
+### 🎲 **Color Generation**
+- Random color generation with configurable ranges
+- Hex color format output (#RRGGBB)
+- RGB color format output (r, g, b)
+- Seeded random generation for reproducible colors
+
+### 🔄 **Format Conversion**
+- Hex to RGB conversion with validation
+- RGB to Hex conversion with clamping
+- Support for various hex formats (with/without #)
+- Automatic decimal value rounding and validation
+
+### ✅ **Input Validation**
+- Hex format validation (6-character format)
+- RGB value range validation (0-255)
+- Case-insensitive hex processing
+- Graceful error handling with descriptive messages
+
+### 🎯 **Strategy Pattern Architecture**
+- Pluggable color converter strategy
+- Configurable random generator strategy
+- Dependency injection for testing
+- Extensible architecture for custom implementations
+
+### 🧮 **Color Mathematics**
+- Decimal value rounding for RGB inputs
+- Value clamping to valid ranges
+- Precise hex string formatting
+- Bidirectional conversion integrity
+
+### 📊 **Color Analysis**
+- Color format detection
+- Value range validation
+- Conversion accuracy verification
+- Input sanitization
+
+## Integration Example
+
+```tsx
+import { MSColorGenerator } from '@windows98/micro-services'
+
+const colorGenerator = new MSColorGenerator()
+
+// Generate random colors
+const randomColor = colorGenerator.generateColor()
+console.log(randomColor)
+// Output: { hex: "#a3b5c7", rgb: { r: 163, g: 181, b: 199 } }
+
+// Multiple color generation
+const colors = []
+for (let i = 0; i < 5; i++) {
+  colors.push(colorGenerator.generateColor())
+}
+
+// Custom strategy injection (useful for testing)
+import { 
+  ColorConverterStrategy, 
+  RandomColorGeneratorStrategy 
+} from '@windows98/micro-services'
+
+const customConverter = new ColorConverterStrategy()
+const customGenerator = new RandomColorGeneratorStrategy()
+
+const customColorGenerator = new MSColorGenerator(
+  customConverter,
+  customGenerator
+)
+
+// Direct conversion utilities
+const converter = new ColorConverterStrategy()
+
+// Hex to RGB conversion
+const rgbColor = converter.hexToRgb("#ff6600")
+console.log(rgbColor) // { r: 255, g: 102, b: 0 }
+
+// RGB to Hex conversion
+const hexColor = converter.rgbToHex({ r: 255, g: 102, b: 0 })
+console.log(hexColor) // "#ff6600"
+
+// Handle various hex formats
+const variations = [
+  "#FF6600",    // uppercase with #
+  "ff6600",     // lowercase without #
+  "#Ff6600"     // mixed case with #
+]
+
+variations.forEach(hex => {
+  const rgb = converter.hexToRgb(hex)
+  console.log(`${hex} -> ${JSON.stringify(rgb)}`)
+})
+
+// Decimal value handling
+const rgbWithDecimals = { r: 255.7, g: 165.3, b: 0.1 }
+const roundedHex = converter.rgbToHex(rgbWithDecimals)
+console.log(roundedHex) // "#ffa500" (values rounded and clamped)
+```
+
+## Common Use Cases
+
+- **Theme Generation**: Creating random color schemes for Windows98 applications
+- **Color Picker Tools**: Converting between hex and RGB formats for user interfaces
+- **Palette Creation**: Generating consistent color palettes for design systems
+- **Color Validation**: Ensuring user input colors are valid and properly formatted
+- **Design Tools**: Building color manipulation utilities for creative applications
+- **Testing Utilities**: Generating predictable colors for automated testing
+- **Data Visualization**: Creating distinct colors for charts and graphs
+- **Accessibility Tools**: Generating colors with proper contrast ratios
