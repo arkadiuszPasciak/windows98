@@ -1,4 +1,5 @@
 import { getClassNames } from "@windows98/toolkit"
+import { DSLabel } from "../ds-label"
 import styles from "./ds-textarea.module.css"
 import type { DSTextareaProps } from "./ds-textarea.type"
 import { useDSTextarea } from "./use-ds-textarea.hook"
@@ -31,13 +32,10 @@ export function DSTextarea({
 			data-state={state}
 		>
 			{labelName && (
-				<label
-					className={getClassNames([styles.label])}
-					data-testid={`${mainId}-label`}
-					htmlFor={mainId}
-				>
-					{labelName}
-				</label>
+				<DSLabel
+					id={mainId}
+					text={labelName}
+				/>
 			)}
 
 			<textarea

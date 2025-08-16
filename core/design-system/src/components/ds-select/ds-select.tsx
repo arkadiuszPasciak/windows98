@@ -1,5 +1,6 @@
 import { getClassNames } from "@windows98/toolkit"
 import { DSIconSelectButton } from "../ds-icon/ds-icon-select-button.svg"
+import { DSLabel } from "../ds-label"
 import styles from "./ds-select.module.css"
 import type { DSSelectProps } from "./ds-select.type"
 import useDSSelect from "./use-ds-select.hook"
@@ -34,12 +35,10 @@ export function DSSelect({
 			data-wrapper={wrapperLayout}
 		>
 			{labelName && (
-				<label
-					data-testid={`${mainId}-label`}
-					htmlFor={mainId}
-				>
-					{labelName}
-				</label>
+				<DSLabel
+					id={mainId}
+					text={labelName}
+				/>
 			)}
 			<select
 				data-testid={`${mainId}-select`}

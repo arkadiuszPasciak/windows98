@@ -12,8 +12,7 @@
 	max-width: 200px;
 }
 
-.textarea,
-.label {
+.textarea {
 	font-family: var(--ds-font-sans-serif-medium);
 	font-size: var(--ds-font-size-xs);
 	font-weight: var(--ds-font-weight-regular);
@@ -28,9 +27,9 @@
 	resize: none;
 
 	&:disabled,
-	&:disabled + .label,
+	&:disabled + label,
 	&[readonly],
-	&[readonly] + .label {
+	&[readonly] + label {
 		opacity: var(--ds-opacity-not-allowed);
 		cursor: not-allowed;
 	}
