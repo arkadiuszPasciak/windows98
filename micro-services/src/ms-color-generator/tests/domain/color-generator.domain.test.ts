@@ -4,6 +4,13 @@ import type {
 	RandomColorGeneratorStrategyContract,
 } from "../../src/domain/contracts"
 import { ColorGeneratorDomain } from "../../src/domain/domains/color-generator.domain"
+import type { RgbColor } from "../../src/domain/models"
+
+const rgbToHexHelper = (rgb: RgbColor): string => {
+	const toHex = (value: number) =>
+		Math.round(value).toString(16).padStart(2, "0")
+	return `#${toHex(rgb.r)}${toHex(rgb.g)}${toHex(rgb.b)}`
+}
 
 describe("ColorGeneratorDomain", () => {
 	let colorGenerator: ColorGeneratorDomain
@@ -149,7 +156,7 @@ describe("ColorGeneratorDomain", () => {
 				expect(result.rgb.b).toBeGreaterThanOrEqual(0)
 				expect(result.rgb.b).toBeLessThanOrEqual(255)
 
-				const expectedHex = `#${result.rgb.r.toString(16).padStart(2, "0")}${result.rgb.g.toString(16).padStart(2, "0")}${result.rgb.b.toString(16).padStart(2, "0")}`
+				const expectedHex = rgbToHexHelper(result.rgb)
 				expect(result.hex).toBe(expectedHex)
 			}
 		})

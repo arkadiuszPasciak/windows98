@@ -2,13 +2,19 @@ import type { ColorConverterStrategyContract } from "../../contracts"
 import type { RgbColor } from "../../models"
 
 export class ColorConverterStrategy implements ColorConverterStrategyContract {
+	private readonly MIN_RGB_VALUE = 0
+	private readonly MAX_RGB_VALUE = 255
+	private readonly MAX_RGB_VALUE_WITH_TOLERANCE = 255.9
+	private readonly HEX_LENGTH = 6
+	private readonly HEX_RADIX = 16
+
 	public hexToRgb(hex: string): RgbColor {
 		const cleanHex = this.removeHashFromHex(hex)
 		this.validateHexFormat(cleanHex, hex)
 
-		const r = Number.parseInt(cleanHex.substring(0, 2), 16)
-		const g = Number.parseInt(cleanHex.substring(2, 4), 16)
-		const b = Number.parseInt(cleanHex.substring(4, 6), 16)
+		const r = Number.parseInt(cleanHex.substring(0, 2), this.HEX_RADIX)
+		const g = Number.parseInt(cleanHex.substring(2, 4), this.HEX_RADIX)
+		const b = Number.parseInt(cleanHex.substring(4, 6), this.HEX_RADIX)
 
 		return { r, g, b }
 	}
@@ -25,19 +31,22 @@ export class ColorConverterStrategy implements ColorConverterStrategyContract {
 	}
 
 	private validateHexFormat(cleanHex: string, originalHex: string): void {
-		if (!/^[0-9A-Fa-f]{6}$/.test(cleanHex)) {
+		if (
+			!/^[0-9A-Fa-f]{6}$/.test(cleanHex) ||
+			cleanHex.length !== this.HEX_LENGTH
+		) {
 			throw new Error(`Invalid hex color format: ${originalHex}`)
 		}
 	}
 
 	private validateRgbValues(rgb: RgbColor): void {
 		if (
-			rgb.r < 0 ||
-			rgb.r > 255.9 ||
-			rgb.g < 0 ||
-			rgb.g > 255.9 ||
-			rgb.b < 0 ||
-			rgb.b > 255.9
+			rgb.r < this.MIN_RGB_VALUE ||
+			rgb.r > this.MAX_RGB_VALUE_WITH_TOLERANCE ||
+			rgb.g < this.MIN_RGB_VALUE ||
+			rgb.g > this.MAX_RGB_VALUE_WITH_TOLERANCE ||
+			rgb.b < this.MIN_RGB_VALUE ||
+			rgb.b > this.MAX_RGB_VALUE_WITH_TOLERANCE
 		) {
 			throw new Error(`Invalid RGB values: r=${rgb.r}, g=${rgb.g}, b=${rgb.b}`)
 		}
@@ -49,9 +58,9 @@ export class ColorConverterStrategy implements ColorConverterStrategyContract {
 		const roundedB = Math.round(rgb.b)
 
 		return {
-			r: Math.max(0, Math.min(255, roundedR)),
-			g: Math.max(0, Math.min(255, roundedG)),
-			b: Math.max(0, Math.min(255, roundedB)),
+			r: Math.max(this.MIN_RGB_VALUE, Math.min(this.MAX_RGB_VALUE, roundedR)),
+			g: Math.max(this.MIN_RGB_VALUE, Math.min(this.MAX_RGB_VALUE, roundedG)),
+			b: Math.max(this.MIN_RGB_VALUE, Math.min(this.MAX_RGB_VALUE, roundedB)),
 		}
 	}
 
@@ -60,7 +69,7 @@ export class ColorConverterStrategy implements ColorConverterStrategyContract {
 	}
 
 	private convertValueToHex(value: number): string {
-		const hex = value.toString(16)
+		const hex = value.toString(this.HEX_RADIX)
 		return hex.length === 1 ? `0${hex}` : hex
 	}
 }
