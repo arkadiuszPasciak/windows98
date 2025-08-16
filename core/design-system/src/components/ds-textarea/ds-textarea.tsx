@@ -35,7 +35,6 @@ export function DSTextarea({
 				<DSLabel
 					id={mainId}
 					text={labelName}
-					className={getClassNames([styles.label])}
 				/>
 			)}
 

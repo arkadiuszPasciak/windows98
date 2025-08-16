@@ -1,7 +1,8 @@
 .wrapper {
 	display: flex;
 
-	&[data-state="disabled"] {
+	&[data-state="disabled"],
+	&[data-state="disabled"] > label {
 		pointer-events: none;
 		opacity: var(--ds-opacity-not-allowed);
 		cursor: not-allowed;
