@@ -18,20 +18,12 @@
 		row-gap: var(--ds-spacing-xs);
 	}
 
-	label {
-		min-width: 46px;
-	}
-
-	input,
-	label {
+	input {
 		font-family: var(--ds-font-sans-serif-medium);
 		font-size: var(--ds-font-size-xs);
 		font-weight: var(--ds-font-weight-regular);
 		line-height: var(--ds-line-height-tight);
 		color: var(--ds-text-color-primary);
-	}
-
-	input {
 		padding: var(--ds-spacing-sm);
 		box-shadow: var(--ds-border-field);
 		background-color: var(--ds-background-color-secondary);

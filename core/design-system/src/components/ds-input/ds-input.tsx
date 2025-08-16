@@ -1,4 +1,5 @@
 import { getClassNames } from "@windows98/toolkit"
+import { DSLabel } from "../ds-label"
 import styles from "./ds-input.module.css"
 import type { DSInputProps } from "./ds-input.type"
 import { useDSInput } from "./use-ds-input.hook"
@@ -29,12 +30,10 @@ export function DSInput({
 			data-state={state}
 		>
 			{labelName && (
-				<label
-					data-testid={`${mainID}-label`}
-					htmlFor={mainID}
-				>
-					{labelName}
-				</label>
+				<DSLabel
+					id={mainID}
+					text={labelName}
+				/>
 			)}
 
 			<input
