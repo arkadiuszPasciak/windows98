@@ -6,6 +6,11 @@ const Calculator = lazy(() =>
 		default: m.Calculator,
 	})),
 )
+const ColorGenerator = lazy(() =>
+	import("../../../presentation/components/color-generator").then((m) => ({
+		default: m.ColorGenerator,
+	})),
+)
 const Notepad = lazy(() =>
 	import("../../../presentation/components/notepad").then((m) => ({
 		default: m.Notepad,
@@ -45,6 +50,7 @@ export const ProgramsPortal: FunctionComponent = () => {
 	return (
 		<Suspense>
 			{programs.calculator && <Calculator />}
+			{programs["color-generator"] && <ColorGenerator />}
 			{programs.notepad && <Notepad />}
 			{programs.settings && <Settings />}
 			{programs.shutdown && <Shutdown />}
