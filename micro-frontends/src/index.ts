@@ -3,6 +3,7 @@ export { AudioButtonView as MFAudioButton } from "./mf-audio-button/src/ui/views
 export { MFCalculator } from "./mf-calculator/src/ui/views"
 export { CalendarView as MFCalendar } from "./mf-calendar/src/ui/views/calendar.view"
 export { ClockView as MFClock } from "./mf-clock/src/ui/views"
+export { MFColorGenerator } from "./mf-color-generator/src/ui/views"
 export { LanguageManagerView as MFLanguageManager } from "./mf-language-manager/src/ui/views/language-manager.view"
 export { NavigationView as MFNavigation } from "./mf-navigation/src/ui/views/navigation.view"
 export { NotepadView as MFNotepad } from "./mf-notepad/src/ui/views"

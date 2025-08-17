@@ -1,5 +1,6 @@
 import calculatorEN from "./mf-calculator.locale.json"
 import calendarEN from "./mf-calendar.locale.json"
+import colorGeneratorEN from "./mf-color-generator.locale.json"
 import languageManagerEN from "./mf-language-manager.locale.json"
 import notepadEN from "./mf-notepad.locale.json"
 import pulpitEN from "./mf-pulpit.locale.json"
@@ -17,6 +18,7 @@ import timezoneEN from "./mf-timezone.locale.json"
 const localesMicroFrontendsEN = {
 	...calculatorEN,
 	...calendarEN,
+	...colorGeneratorEN,
 	...languageManagerEN,
 	...notepadEN,
 	...pulpitEN,

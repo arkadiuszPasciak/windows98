@@ -1,0 +1,16 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	gap: var(--ds-spacing-md);
+	padding: var(--ds-spacing-md);
+	place-items: center;
+}
+
+.wrapper > :first-child {
+	grid-column: 1 / -1;
+}
+
+.wrapper > :last-child {
+	grid-column: 1 / -1;
+}

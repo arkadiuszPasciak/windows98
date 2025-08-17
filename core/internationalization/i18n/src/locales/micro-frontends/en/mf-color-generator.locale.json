@@ -1,0 +1,8 @@
+{
+	"mf-color-generator": {
+		"title": "Color Generator",
+		"hex": "HEX",
+		"rgb": "RGB",
+		"generate-button": "Generate"
+	}
+}
