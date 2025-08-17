@@ -1,0 +1,46 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSClipboard" />
+
+<Title>📋 MS Clipboard</Title>
+
+Clipboard management service for the Windows98 ecosystem.
+
+## What is MS Clipboard?
+
+MS Clipboard provides a unified interface for copying and pasting text using the browser's Clipboard API. It enables micro frontends and services to interact with the user's clipboard in a secure and consistent way.
+
+## Key Features
+
+### ✂️ **Copy Text**
+- Copy any string to the user's clipboard
+- Uses the browser's `navigator.clipboard.writeText` method
+- Handles browser compatibility and errors
+
+### 📥 **Paste Text**
+- Retrieve text from the user's clipboard
+- Uses the browser's `navigator.clipboard.readText` method
+- Handles browser compatibility and errors
+
+## Usage Example
+
+```ts
+import { MSClipboard } from "@windows98/micro-services/ms-clipboard"
+
+await MSClipboard.copyText("Hello, clipboard!")
+const text = await MSClipboard.pasteText()
+console.log(text) // "Hello, clipboard!"
+```
+
+## API
+
+### `copyText(text: string): Promise<void>`
+Copies the provided text to the user's clipboard.
+
+### `pasteText(): Promise<string>`
+Retrieves the current text from the user's clipboard.
+
+## Implementation Notes
+- Relies on the browser's Clipboard API (`navigator.clipboard`)
+- Throws an error if Clipboard API is not available
+- Designed for use in browser environments
