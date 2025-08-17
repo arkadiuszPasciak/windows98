@@ -1,0 +1,5 @@
+.color-box {
+	width: 100px;
+	height: 60px;
+	box-shadow: var(--ds-border-field);
+}
