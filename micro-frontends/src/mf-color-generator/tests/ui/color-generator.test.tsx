@@ -91,4 +91,38 @@ test.describe("ColorGenerator", () => {
 			"Color box should have background color applied",
 		).toBeTruthy()
 	})
+
+	test("should copy hex and rgb color to clipboard", async ({
+		mount,
+		context,
+		page,
+	}) => {
+		await context.grantPermissions(["clipboard-read", "clipboard-write"])
+		const component = await mount(
+			<MFColorGenerator onCloseProgram={() => {}} />,
+		)
+
+		const hexInput = component.getByTestId(
+			"mf-color-generator-hex-color-input-input",
+		)
+		const rgbInput = component.getByTestId(
+			"mf-color-generator-rgb-color-input-input",
+		)
+		const hexCopyButton = component.getByTestId(
+			"mf-color-generator-copy-hex-button",
+		)
+		const rgbCopyButton = component.getByTestId(
+			"mf-color-generator-copy-rgb-button",
+		)
+
+		await hexCopyButton.click()
+
+		const hexClipboard = await page.evaluate("navigator.clipboard.readText()")
+		expect(hexClipboard).toContain(await hexInput.inputValue())
+
+		await rgbCopyButton.click()
+
+		const rgbClipboard = await page.evaluate("navigator.clipboard.readText()")
+		expect(rgbClipboard).toContain(await rgbInput.inputValue())
+	})
 })
