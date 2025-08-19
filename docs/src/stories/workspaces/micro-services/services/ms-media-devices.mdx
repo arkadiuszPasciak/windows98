@@ -1,0 +1,70 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSMediaDevices" />
+
+<Title>📷 MS Media Devices</Title>
+
+Camera and media device access service for the Windows98 ecosystem.
+
+## What is MS Media Devices?
+
+MS Media Devices provides a unified interface for accessing user media devices (camera, microphone, etc.) using the browser's MediaDevices API. It enables micro frontends and services to request camera streams and enumerate available media devices in a secure and consistent way.
+
+## Key Features
+
+### 🎥 **Request Camera Stream**
+- Request access to the user's camera (and optionally microphone)
+- Uses the browser's `navigator.mediaDevices.getUserMedia` method
+- Returns a `MediaStream` for use in video elements or further processing
+
+### 🖥️ **List Devices**
+- Enumerate all available media input and output devices
+- Uses the browser's `navigator.mediaDevices.enumerateDevices` method
+- Returns an array of `MediaDeviceInfo` objects
+
+### 🔄 **Device Change Events**
+- Listen for changes in available media devices (e.g., camera plugged/unplugged)
+- Uses the browser's `ondevicechange` event
+
+## Usage Example
+
+```ts
+import { MSMediaDevices } from "@windows98/micro-services/ms-media-devices"
+
+// Request camera stream
+const stream = await MSMediaDevices.requestCameraStream({ video: true })
+
+// List available devices
+const devices = await MSMediaDevices.listDevices()
+console.log(devices)
+
+// Listen for device changes
+MSMediaDevices.onDeviceChange(() => {
+  console.log("Media devices changed!")
+})
+```
+
+or
+
+```ts
+import { MSMediaDevices } from "@windows98/micro-services/ms-media-devices"
+
+// Request camera stream and assign to a video element
+const stream = await MSMediaDevices.requestCameraStream({ video: true })
+const video = document.querySelector('video')
+if (video) {
+  video.srcObject = stream
+  video.play()
+}
+```
+
+## API
+
+### `requestCameraStream(constraints: MediaStreamConstraints): Promise<MediaStream>`
+Requests access to the user's camera (and/or microphone) and returns a `MediaStream`.
+
+### `listDevices(): Promise<MediaDeviceInfo[]>`
+Returns a list of available media devices.
+
+### `onDeviceChange(callback: () => void): void`
+Registers a callback to be called when the set of available media devices changes.
