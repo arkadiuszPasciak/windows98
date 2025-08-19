@@ -3,6 +3,7 @@
 		"title": "Farbgenerator",
 		"hex": "HEX",
 		"rgb": "RGB",
-		"generate-button": "Generieren"
+		"generate-button": "Generieren",
+		"copy": "Kopieren"
 	}
 }
