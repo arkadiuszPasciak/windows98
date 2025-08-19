@@ -1,14 +1,33 @@
 .wrapper {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto auto auto;
-	gap: var(--ds-spacing-md);
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: repeat(3, auto);
+	gap: var(--ds-spacing-lg);
 	padding: var(--ds-spacing-md);
 	place-items: center;
+	align-items: end;
 }
 
 .wrapper > :first-child {
 	grid-column: 1 / -1;
+}
+
+.wrapper > :nth-child(2) {
+	grid-column: 1;
+	margin-left: auto;
+}
+.wrapper > :nth-child(3) {
+	grid-column: 2;
+	margin-right: auto;
+}
+
+.wrapper > :nth-child(4) {
+	grid-column: 1;
+	margin-left: auto;
+}
+.wrapper > :nth-child(5) {
+	grid-column: 2;
+	margin-right: auto;
 }
 
 .wrapper > :last-child {

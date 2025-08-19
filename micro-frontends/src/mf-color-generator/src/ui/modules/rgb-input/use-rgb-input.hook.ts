@@ -7,6 +7,7 @@ export const useRgbInput = () => {
 
 	const translations = {
 		label: t("mf-color-generator.rgb"),
+		copy: t("mf-color-generator.copy"),
 	}
 
 	const rgbValue = `rgb(${domain.currentColor.rgb.r}, ${domain.currentColor.rgb.g}, ${domain.currentColor.rgb.b})`
@@ -15,5 +16,6 @@ export const useRgbInput = () => {
 		currentColor: domain.currentColor,
 		translations,
 		rgbValue,
+		copyRgbColor: domain.copyRgbColor,
 	}
 }

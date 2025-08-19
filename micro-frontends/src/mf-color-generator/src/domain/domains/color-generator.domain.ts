@@ -1,4 +1,5 @@
 import { MSColorGenerator } from "@windows98/micro-services"
+import { MSClipboard } from "@windows98/micro-services"
 import { makeAutoObservable } from "mobx"
 import type { ColorGeneratorDomainContract } from "../contracts"
 import type { ColorState } from "../models"
@@ -6,6 +7,16 @@ import type { ColorState } from "../models"
 export class ColorGeneratorDomain implements ColorGeneratorDomainContract {
 	private msColorGenerator: typeof MSColorGenerator
 	public currentColor: ColorState
+
+	public copyHexColor = async (): Promise<void> => {
+		await MSClipboard.copyText(this.currentColor.hex)
+	}
+
+	public copyRgbColor = async (): Promise<void> => {
+		const { r, g, b } = this.currentColor.rgb
+		const rgbString = `rgb(${r}, ${g}, ${b})`
+		await MSClipboard.copyText(rgbString)
+	}
 
 	constructor() {
 		makeAutoObservable(this)

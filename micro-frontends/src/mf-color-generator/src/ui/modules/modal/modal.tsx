@@ -13,7 +13,7 @@ export const Modal: FunctionComponent<ModalProps> = ({ children }) => {
 			onClose={onCloseProgram}
 			title={translations.title}
 			width="300px"
-			height="200px"
+			height="250px"
 		>
 			{children}
 		</DSModal>
