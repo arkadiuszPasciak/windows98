@@ -1,5 +1,5 @@
 import { beforeAll, describe, expect, it, vi } from "vitest"
-import { MSMediaDevices } from "../domain/domains"
+import { MSMediaDevices } from "../src/domain/domains"
 
 function ensureNavigatorMediaDevicesMocked() {
 	if (!globalThis.navigator) {
