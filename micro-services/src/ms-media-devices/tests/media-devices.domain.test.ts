@@ -73,4 +73,12 @@ describe("MSMediaDevices", () => {
 		MSMediaDevices.onDeviceChange(callback)
 		expect(navigator.mediaDevices.ondevicechange).toBe(callback)
 	})
+
+	it("should assign MediaStream to video.srcObject", async () => {
+		const video: HTMLVideoElement = document.createElement("video")
+		const stream = mediaStreamMock
+		video.srcObject = stream
+
+		expect(video.srcObject).toBe(stream)
+	})
 })
