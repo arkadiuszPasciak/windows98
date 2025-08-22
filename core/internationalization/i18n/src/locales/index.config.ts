@@ -4,13 +4,19 @@ import localesMicroFrontendsPL from "./micro-frontends/pl"
 
 const locales = {
 	de: {
-		...localesMicroFrontendsDE,
+		translation: {
+			...localesMicroFrontendsDE,
+		},
 	},
 	en: {
-		...localesMicroFrontendsEN,
+		translation: {
+			...localesMicroFrontendsEN,
+		},
 	},
 	pl: {
-		...localesMicroFrontendsPL,
+		translation: {
+			...localesMicroFrontendsPL,
+		},
 	},
 }
 

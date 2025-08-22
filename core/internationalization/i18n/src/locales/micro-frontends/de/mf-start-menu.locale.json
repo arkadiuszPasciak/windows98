@@ -18,7 +18,9 @@
 			"shutdown": "Shut Down",
 			"start": "Start",
 			"tic-tac-toe": "Tic Tac Toe",
-			"timer": "Timer"
+			"timer": "Timer",
+			"multimedia": "Multimedia",
+			"webcam": "Webcam"
 		}
 	}
 }

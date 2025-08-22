@@ -14,6 +14,7 @@ import themeManagerEN from "./mf-theme-manager.locale.json"
 import ticTacToeEN from "./mf-tic-tac-toe.locale.json"
 import timerEN from "./mf-timer.locale.json"
 import timezoneEN from "./mf-timezone.locale.json"
+import webcamEN from "./mf-webcam.locale.json"
 
 const localesMicroFrontendsEN = {
 	...calculatorEN,
@@ -32,6 +33,7 @@ const localesMicroFrontendsEN = {
 	...ticTacToeEN,
 	...timerEN,
 	...timezoneEN,
+	...webcamEN,
 }
 
 export default localesMicroFrontendsEN
