@@ -1,0 +1,5 @@
+.video {
+	padding: var(--ds-spacing-xs);
+	box-shadow: var(--ds-border-field);
+	object-fit: cover;
+}
