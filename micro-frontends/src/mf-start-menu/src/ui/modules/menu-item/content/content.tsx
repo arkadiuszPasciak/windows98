@@ -6,10 +6,12 @@ import styles from "./content.module.css"
 import type { GetIconURL, MenuItemContentProps } from "./content.type"
 
 const getIconURL: GetIconURL = (id) => {
+	// TODO: It should be done in a better way than every time update this switch case
 	switch (id) {
 		case "programs":
 		case "accessories":
 		case "entertainment":
+		case "multimedia":
 		case "games":
 			return "/icons/programs/folder.png"
 		default:
