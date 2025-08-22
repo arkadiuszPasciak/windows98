@@ -42,6 +42,12 @@ const Timer = lazy(() =>
 	})),
 )
 
+const Webcam = lazy(() =>
+	import("../../../presentation/components/webcam/webcam").then((m) => ({
+		default: m.Webcam || m.Webcam,
+	})),
+)
+
 import { useProgramsPortal } from "./use-programs-portal.hook"
 
 export const ProgramsPortal: FunctionComponent = () => {
@@ -57,6 +63,7 @@ export const ProgramsPortal: FunctionComponent = () => {
 			{programs.runner && <Runner />}
 			{programs["tic-tac-toe"] && <TicTacToe />}
 			{programs.timer && <Timer />}
+			{programs.webcam && <Webcam />}
 		</Suspense>
 	)
 }

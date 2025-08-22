@@ -18,7 +18,9 @@
 			"shutdown": "Wyłącz",
 			"start": "Start",
 			"tic-tac-toe": "Kółko i krzyżyk",
-			"timer": "Minutnik"
+			"timer": "Minutnik",
+			"multimedia": "Multimedia",
+			"webcam": "Kamera internetowa"
 		}
 	}
 }

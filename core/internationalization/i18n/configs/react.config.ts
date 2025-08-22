@@ -1,9 +1,9 @@
 import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
-import { localesReact } from "../src/locales/index.config"
+import locales from "../src/locales/index.config"
 
 i18n.use(initReactI18next).init({
-	resources: localesReact,
+	resources: locales,
 	lng: "en",
 	fallbackLng: "en",
 	initImmediate: false,
