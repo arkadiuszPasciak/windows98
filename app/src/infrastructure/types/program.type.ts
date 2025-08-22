@@ -7,6 +7,7 @@ export enum Program {
 	SHUTDOWN = "shutdown",
 	TIC_TAC_TOE = "tic-tac-toe",
 	TIMER = "timer",
+	WEBCAM = "webcam",
 }
 
 export type ProgramManager = {

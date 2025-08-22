@@ -35,6 +35,16 @@ export const startMenuConfig = [
 					},
 				],
 			},
+			{
+				type: "group",
+				id: "multimedia",
+				programs: [
+					{
+						type: "program",
+						id: "webcam",
+					},
+				],
+			},
 		],
 	},
 	{

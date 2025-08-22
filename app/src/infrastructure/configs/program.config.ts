@@ -9,4 +9,5 @@ export const programManagerConfig: ProgramManager = {
 	shutdown: false,
 	"tic-tac-toe": false,
 	timer: false,
+	webcam: false,
 }
