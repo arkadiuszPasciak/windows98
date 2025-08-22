@@ -1,6 +1,6 @@
-import type { Maybe } from "@windows98/toolkit"
+import type { LoadingStateHelper, Maybe } from "@windows98/toolkit"
 
-export interface WebcamDomainContract {
+export interface WebcamDomainContract extends LoadingStateHelper {
 	mediaStream: Maybe<MediaStream>
 
 	generateMediaStream(): Promise<void>
