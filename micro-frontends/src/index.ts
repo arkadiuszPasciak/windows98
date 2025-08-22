@@ -18,3 +18,4 @@ export { ThemeManagerView as MFThemeManager } from "./mf-theme-manager/src/ui/vi
 export { MFTicTacToe } from "./mf-tic-tac-toe/src/ui/views/tic-tac-toe"
 export { MFTimer } from "./mf-timer/src/ui/views"
 export { TimezoneView as MFTimezone } from "./mf-timezone/src/ui/views/timezone.view"
+export { MFWebcam } from "./mf-webcam/src/ui/views"
