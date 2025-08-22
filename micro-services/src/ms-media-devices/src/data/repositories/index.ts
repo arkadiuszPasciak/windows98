@@ -1,1 +1,2 @@
-export * from "./media-devices.repository"
+export * from "./canvas-api.repository"
+export * from "./media-devices-api.repository"
