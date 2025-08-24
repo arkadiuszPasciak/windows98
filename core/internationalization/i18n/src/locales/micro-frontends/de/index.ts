@@ -8,6 +8,7 @@ import runnerDE from "./mf-runner.locale.json"
 import saveFileDE from "./mf-save-file.locale.json"
 import settingsDE from "./mf-settings.locale.json"
 import shutdownDE from "./mf-shutdown.locale.json"
+import snapshotDE from "./mf-snapshot.locale.json"
 import startMenuDE from "./mf-start-menu.locale.json"
 import systemInformationDE from "./mf-system-information.locale.json"
 import themeManagerDE from "./mf-theme-manager.locale.json"
@@ -27,6 +28,7 @@ const localesMicroFrontendsDE = {
 	...saveFileDE,
 	...settingsDE,
 	...shutdownDE,
+	...snapshotDE,
 	...startMenuDE,
 	...systemInformationDE,
 	...themeManagerDE,
