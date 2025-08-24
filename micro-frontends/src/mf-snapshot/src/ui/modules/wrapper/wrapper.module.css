@@ -1,0 +1,5 @@
+.wrapper {
+	display: grid;
+	row-gap: var(--ds-spacing-sm);
+	width: 200px;
+}
