@@ -1,0 +1,5 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr 230px;
+	row-gap: var(--ds-spacing-xs);
+}
