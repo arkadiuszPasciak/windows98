@@ -1,5 +1,6 @@
 .wrapper {
-	display: grid;
+	display: flex;
 	row-gap: var(--ds-spacing-sm);
-	width: 200px;
+	min-width: 200px;
+	flex-direction: column;
 }

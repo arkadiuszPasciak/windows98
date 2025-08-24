@@ -12,8 +12,9 @@ export const Photo: FunctionComponent<PhotoProps> = ({ imgSrc }) => {
 			data-testid="mf-snapshot-photo"
 		>
 			<img
-				width={150}
-				height={110}
+				className={styles.image}
+				width="100%"
+				height={130}
 				src={imgSrc}
 				alt={translations.name}
 			/>
