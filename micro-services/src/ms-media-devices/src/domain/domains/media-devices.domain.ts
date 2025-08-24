@@ -1,28 +1,30 @@
-import { MediaDevicesRepository } from "../../data/repositories"
+import {
+	CanvasAPIRepository,
+	MediaDevicesRepository,
+} from "../../data/repositories"
 import type {
+	CanvasAPIRepositoryContract,
 	MediaDevicesAPIRepositoryContract,
 	MediaDevicesDomainContract,
 } from "../contracts"
 
 class MediaDevicesDomain implements MediaDevicesDomainContract {
-	private readonly repository: MediaDevicesAPIRepositoryContract
+	private readonly mediaDevicesAPI: MediaDevicesAPIRepositoryContract
+	private readonly canvasAPI: CanvasAPIRepositoryContract
 
 	constructor() {
-		this.repository = new MediaDevicesRepository()
+		this.mediaDevicesAPI = new MediaDevicesRepository()
+		this.canvasAPI = new CanvasAPIRepository()
 	}
 
 	async requestCameraStream(
 		constraints: MediaStreamConstraints,
 	): Promise<MediaStream> {
-		return this.repository.getUserMedia(constraints)
+		return this.mediaDevicesAPI.getUserMedia(constraints)
 	}
 
-	async listDevices(): Promise<MediaDeviceInfo[]> {
-		return this.repository.enumerateDevices()
-	}
-
-	onDeviceChange(callback: () => void): void {
-		this.repository.onDeviceChange(callback)
+	async getSnapshot(videoElement: HTMLVideoElement): Promise<string> {
+		return this.canvasAPI.getSnapshot(videoElement)
 	}
 }
 

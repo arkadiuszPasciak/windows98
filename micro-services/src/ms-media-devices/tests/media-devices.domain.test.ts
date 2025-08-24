@@ -44,41 +44,46 @@ describe("MSMediaDevices", () => {
 	beforeAll(() => {
 		ensureNavigatorMediaDevicesMocked()
 	})
-	it("should list devices (mocked)", async () => {
-		const devices: MediaDeviceInfo[] = [
-			{
-				deviceId: "1",
-				kind: "videoinput",
-				groupId: "group1",
-				label: "Mock Camera",
-				toJSON: () => ({}),
-			},
-		]
-		vi.spyOn(navigator.mediaDevices, "enumerateDevices").mockResolvedValue(
-			devices,
-		)
-		const result = await MSMediaDevices.listDevices()
-		expect(result).toEqual(devices)
-	})
 
-	it("should request camera stream (mocked)", async () => {
+	it("requestCameraStream", async () => {
 		const stream = mediaStreamMock
 		vi.spyOn(navigator.mediaDevices, "getUserMedia").mockResolvedValue(stream)
 		const result = await MSMediaDevices.requestCameraStream({ video: true })
 		expect(result).toBe(stream)
-	})
 
-	it("should register device change callback", () => {
-		const callback = vi.fn()
-		MSMediaDevices.onDeviceChange(callback)
-		expect(navigator.mediaDevices.ondevicechange).toBe(callback)
-	})
-
-	it("should assign MediaStream to video.srcObject", async () => {
 		const video: HTMLVideoElement = document.createElement("video")
-		const stream = mediaStreamMock
 		video.srcObject = stream
+		expect(
+			video.srcObject,
+			"should assign MediaStream to video.srcObject",
+		).toBe(stream)
+	})
 
-		expect(video.srcObject).toBe(stream)
+	it("getSnapshot", async () => {
+		const video = document.createElement("video")
+		video.width = 320
+		video.height = 240
+
+		Object.defineProperty(video, "videoWidth", { value: 320 })
+		Object.defineProperty(video, "videoHeight", { value: 240 })
+
+		const canvasMock = document.createElement("canvas")
+		vi.spyOn(document, "createElement").mockImplementation((tag) => {
+			if (tag === "canvas") return canvasMock
+			return document.createElement(tag)
+		})
+
+		const drawImageMock = vi.fn()
+		canvasMock.getContext = vi.fn().mockReturnValue({
+			drawImage: drawImageMock,
+			...canvasMock.getContext("2d"),
+		})
+
+		const dataUrl = "data:image/png;base64,mock"
+		canvasMock.toDataURL = vi.fn().mockReturnValue(dataUrl)
+
+		const result = await MSMediaDevices.getSnapshot(video)
+		expect(drawImageMock).toHaveBeenCalledWith(video, 0, 0, 320, 240)
+		expect(result).toBe(dataUrl)
 	})
 })

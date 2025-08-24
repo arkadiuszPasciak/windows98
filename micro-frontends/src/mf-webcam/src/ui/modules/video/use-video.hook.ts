@@ -1,17 +1,17 @@
 import { LoadingState } from "@windows98/toolkit"
-import { useEffect, useRef } from "react"
-import { useWebcam } from "../../hooks"
+import { useEffect } from "react"
+import { useVideoRef, useWebcam } from "../../hooks"
 
 export function useVideo() {
 	const { domain } = useWebcam()
-	const videoRef = useRef<HTMLVideoElement>(null)
+	const videoRef = useVideoRef()
 
 	const setupMediaStream = async () => {
 		try {
 			domain.setLoadingState(LoadingState.LOADING)
 			await domain.generateMediaStream()
 
-			if (videoRef.current && domain.mediaStream) {
+			if (videoRef?.current && domain.mediaStream) {
 				videoRef.current.srcObject = domain.mediaStream
 				domain.setLoadingState(LoadingState.SUCCESS)
 			}

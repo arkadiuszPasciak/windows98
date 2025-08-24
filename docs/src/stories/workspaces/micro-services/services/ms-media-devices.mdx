@@ -12,19 +12,19 @@ MS Media Devices provides a unified interface for accessing user media devices (
 
 ## Key Features
 
-### 🎥 **Request Camera Stream**
-- Request access to the user's camera (and optionally microphone)
-- Uses the browser's `navigator.mediaDevices.getUserMedia` method
-- Returns a `MediaStream` for use in video elements or further processing
+### **Request Camera Stream**
+ Request access to the user's camera (and optionally microphone)
+ Uses the browser's `navigator.mediaDevices.getUserMedia` method
+ Returns a `MediaStream` for use in video elements or further processing
 
-### 🖥️ **List Devices**
-- Enumerate all available media input and output devices
-- Uses the browser's `navigator.mediaDevices.enumerateDevices` method
-- Returns an array of `MediaDeviceInfo` objects
+### **Get Snapshot**
+ Capture a snapshot from a video element displaying a camera stream
+ Returns a base64-encoded image string (PNG)
 
-### 🔄 **Device Change Events**
-- Listen for changes in available media devices (e.g., camera plugged/unplugged)
-- Uses the browser's `ondevicechange` event
+### **List Devices**
+ Enumerate all available media input and output devices
+ Uses the browser's `navigator.mediaDevices.enumerateDevices` method
+ Returns an array of `MediaDeviceInfo` objects
 
 ## Usage Example
 
@@ -37,6 +37,13 @@ const stream = await MSMediaDevices.requestCameraStream({ video: true })
 // List available devices
 const devices = await MSMediaDevices.listDevices()
 console.log(devices)
+
+// Take a snapshot from a video element
+const video = document.querySelector('video')
+if (video) {
+  const imageBase64 = await MSMediaDevices.getSnapshot(video)
+  console.log(imageBase64) // data:image/png;base64,...
+}
 
 // Listen for device changes
 MSMediaDevices.onDeviceChange(() => {
@@ -62,6 +69,9 @@ if (video) {
 
 ### `requestCameraStream(constraints: MediaStreamConstraints): Promise<MediaStream>`
 Requests access to the user's camera (and/or microphone) and returns a `MediaStream`.
+
+### `getSnapshot(videoElement: HTMLVideoElement): Promise<string>`
+Captures a snapshot from the provided video element and returns a base64-encoded PNG image string.
 
 ### `listDevices(): Promise<MediaDeviceInfo[]>`
 Returns a list of available media devices.

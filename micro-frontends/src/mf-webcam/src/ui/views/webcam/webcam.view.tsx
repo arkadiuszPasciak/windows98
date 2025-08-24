@@ -1,5 +1,9 @@
 import type { FunctionComponent } from "react"
-import { ConfigContextComponent, DomainContextComponent } from "../../context"
+import {
+	ConfigContextComponent,
+	DomainContextComponent,
+	VideoRefContextComponent,
+} from "../../context"
 import { Wrapper } from "../../modules/wrapper"
 import type { WebcamViewProps } from "./webcam.type"
 
@@ -9,7 +13,9 @@ export const MFWebcam: FunctionComponent<WebcamViewProps> = ({
 	return (
 		<ConfigContextComponent onCloseProgram={onCloseProgram}>
 			<DomainContextComponent>
-				<Wrapper />
+				<VideoRefContextComponent>
+					<Wrapper />
+				</VideoRefContextComponent>
 			</DomainContextComponent>
 		</ConfigContextComponent>
 	)

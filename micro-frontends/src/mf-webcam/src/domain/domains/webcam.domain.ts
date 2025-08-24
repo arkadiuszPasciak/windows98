@@ -7,6 +7,7 @@ export class WebcamDomain
 	extends LoadingStateHelper
 	implements WebcamDomainContract
 {
+	private readonly msMediaDevices = MSMediaDevices
 	mediaStream: Maybe<MediaStream> = null
 
 	constructor() {
@@ -17,7 +18,7 @@ export class WebcamDomain
 	}
 
 	async generateMediaStream(): Promise<void> {
-		this.mediaStream = await MSMediaDevices.requestCameraStream({
+		this.mediaStream = await this.msMediaDevices.requestCameraStream({
 			video: true,
 		})
 	}
