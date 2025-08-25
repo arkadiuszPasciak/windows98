@@ -43,3 +43,5 @@ export class CaseConverterDomain implements CaseConverterDomainContract {
 		this.uppercase = this.msCaseConverter.toUppercase(this.inputValue)
 	}
 }
+
+export const caseConverterDomain = new CaseConverterDomain()
