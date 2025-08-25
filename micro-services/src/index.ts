@@ -1,6 +1,7 @@
 export * from "./ms-app-config/src"
 export * from "./ms-app-controller/src"
 export * from "./ms-browser-env/src"
+export * from "./ms-case-converter/src"
 export * from "./ms-clipboard/src"
 export * from "./ms-color-generator/src"
 export * from "./ms-date/src"
