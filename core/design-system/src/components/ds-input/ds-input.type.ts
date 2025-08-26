@@ -12,6 +12,7 @@ export interface DSInputProps extends DSDefaultProps {
 	min?: number
 	max?: number
 	onChange?: ReactEventHandler<HTMLInputElement>
+	placeholder?: string
 }
 
 export interface UseDSInputProps {

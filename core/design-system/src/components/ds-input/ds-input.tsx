@@ -16,6 +16,7 @@ export function DSInput({
 	min,
 	max,
 	onChange,
+	placeholder = "",
 }: DSInputProps) {
 	const { value, handleInputChange } = useDSInput({ initialValue, onChange })
 
@@ -47,6 +48,7 @@ export function DSInput({
 				max={max ?? undefined}
 				name={mainID}
 				onChange={handleInputChange}
+				placeholder={placeholder}
 			/>
 		</div>
 	)
