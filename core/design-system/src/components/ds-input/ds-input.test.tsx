@@ -10,6 +10,7 @@ const defaultInput: DSInputProps = {
 	labelName: "Test Label",
 	wrapperLayout: "vertical",
 	onChange: () => {},
+	placeholder: "Enter your name",
 }
 
 const disabledInput: DSInputProps = {
@@ -42,6 +43,10 @@ test.describe("DSInput", () => {
 		await expect(inputElement).toHaveAttribute(
 			"name",
 			`${defaultInput.id}-input`,
+		)
+		await expect(inputElement).toHaveAttribute(
+			"placeholder",
+			defaultInput.placeholder ?? "",
 		)
 
 		await expect(labelElement).toHaveAttribute(
