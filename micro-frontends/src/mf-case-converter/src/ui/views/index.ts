@@ -1,1 +1,1 @@
-export * from "./color-generator"
+export * from "./case-converter"
