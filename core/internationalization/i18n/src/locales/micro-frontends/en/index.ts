@@ -22,7 +22,6 @@ const localesMicroFrontendsEN = {
 	...calculatorEN,
 	...calendarEN,
 	...caseConverterEN,
-	...calendarEN,
 	...colorGeneratorEN,
 	...languageManagerEN,
 	...notepadEN,

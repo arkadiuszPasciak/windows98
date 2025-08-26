@@ -22,7 +22,6 @@ const localesMicroFrontendsPL = {
 	...calculatorPL,
 	...calendarPL,
 	...caseConverterPL,
-	...calendarPL,
 	...colorGeneratorPL,
 	...languageManagerPL,
 	...notepadPL,
