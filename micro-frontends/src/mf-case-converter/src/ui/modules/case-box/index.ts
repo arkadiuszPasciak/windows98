@@ -1,2 +1,2 @@
 export { CaseBox } from "./case-box"
-export { CaseBoxProps } from "./case-box.type"
+export type { CaseBoxProps } from "./case-box.type"
