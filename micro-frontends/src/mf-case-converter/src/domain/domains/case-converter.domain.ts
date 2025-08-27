@@ -25,7 +25,6 @@ export class CaseConverterDomain implements CaseConverterDomainContract {
 	constructor() {
 		makeAutoObservable(this)
 		this.msCaseConverter = MSCaseConverter
-		this.convertAllCases()
 	}
 
 	public convertAllCases(): void {

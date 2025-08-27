@@ -20,9 +20,10 @@ export const useInputText = () => {
 
 	const inputValue = domain.inputValue
 	const setInputValue: ReactEventHandler<HTMLInputElement> = (event) => {
-		domain.setInputValue(event.currentTarget.value)
+		const newValue = event.currentTarget.value
+		domain.setInputValue(newValue)
 
-		if (inputValue.length === 0) return
+		if (newValue.length === 0) return
 
 		debouncedConvertAllCases()
 	}
