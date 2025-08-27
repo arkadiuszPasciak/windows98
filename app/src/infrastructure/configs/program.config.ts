@@ -2,6 +2,7 @@ import type { ProgramManager } from "../types"
 
 export const programManagerConfig: ProgramManager = {
 	calculator: false,
+	"case-converter": false,
 	"color-generator": false,
 	notepad: false,
 	runner: false,

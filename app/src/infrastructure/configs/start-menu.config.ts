@@ -37,6 +37,16 @@ export const startMenuConfig = [
 			},
 			{
 				type: "group",
+				id: "converters",
+				programs: [
+					{
+						type: "program",
+						id: "case-converter",
+					},
+				],
+			},
+			{
+				type: "group",
 				id: "multimedia",
 				programs: [
 					{
