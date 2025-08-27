@@ -6,6 +6,13 @@ const Calculator = lazy(() =>
 		default: m.Calculator,
 	})),
 )
+
+const CaseConverter = lazy(() =>
+	import("../../../presentation/components/case-converter").then((m) => ({
+		default: m.CaseConverter,
+	})),
+)
+
 const ColorGenerator = lazy(() =>
 	import("../../../presentation/components/color-generator").then((m) => ({
 		default: m.ColorGenerator,
@@ -56,6 +63,7 @@ export const ProgramsPortal: FunctionComponent = () => {
 	return (
 		<Suspense>
 			{programs.calculator && <Calculator />}
+			{programs["case-converter"] && <CaseConverter />}
 			{programs["color-generator"] && <ColorGenerator />}
 			{programs.notepad && <Notepad />}
 			{programs.settings && <Settings />}

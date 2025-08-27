@@ -1,5 +1,6 @@
 export enum Program {
 	CALCULATOR = "calculator",
+	CASE_CONVERTER = "case-converter",
 	COLOR_GENERATOR = "color-generator",
 	NOTEPAD = "notepad",
 	RUNNER = "runner",
