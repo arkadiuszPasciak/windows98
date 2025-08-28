@@ -1,11 +1,9 @@
 {
-	"mf-case-generator": {
+	"mf-case-converter": {
 		"input-text": {
 			"label": "Tekst wejściowy",
 			"placeholder": "Wpisz tekst do konwersji między różnymi stylami..."
-		}
-	},
-	"mf-case-converter": {
+		},
 		"title": "Konwerter wielkości liter",
 		"cases": {
 			"alternatecase": "nApRzEmIeNnA wIeLkOść",

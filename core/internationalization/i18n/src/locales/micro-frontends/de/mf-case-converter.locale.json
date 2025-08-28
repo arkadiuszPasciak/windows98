@@ -1,11 +1,9 @@
 {
-	"mf-case-generator": {
+	"mf-case-converter": {
 		"input-text": {
 			"label": "Eingabetext",
 			"placeholder": "Text eingeben, um zwischen verschiedenen Schreibweisen zu konvertieren..."
-		}
-	},
-	"mf-case-converter": {
+		},
 		"title": "Schreibweisen-Konverter",
 		"cases": {
 			"alternatecase": "aLtErNaTiNg CaSe",
