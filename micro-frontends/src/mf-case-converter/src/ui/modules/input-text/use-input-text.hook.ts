@@ -9,8 +9,8 @@ export const useInputText = () => {
 	const { domain } = useCaseConverter()
 
 	const translations = {
-		label: t("mf-case-generator.input-text.label"),
-		placeholder: t("mf-case-generator.input-text.placeholder"),
+		label: t("mf-case-converter.input-text.label"),
+		placeholder: t("mf-case-converter.input-text.placeholder"),
 	}
 
 	const debouncedConvertAllCases = useMemo(
