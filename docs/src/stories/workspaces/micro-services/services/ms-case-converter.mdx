@@ -1,0 +1,61 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSCaseConverter" />
+
+<Title>🔤 MS Case Converter</Title>
+
+A flexible string case conversion service for the Windows98 ecosystem.
+
+## What is MS Case Converter?
+
+MS Case Converter is a utility service that provides a wide range of string case conversions. It supports multiple case styles and is designed for use across the Windows98 micro-services architecture, enabling consistent text formatting and transformation.
+
+## Key Features
+
+### 🔁 Case Conversion
+- Convert strings to various cases: lower, upper, camel, pascal, snake, kebab, constant, dot, path, title, sentence, alternate
+- Strategy pattern for extensibility and testability
+- Handles edge cases and input validation
+
+### 🧩 Integration
+- Easily integrated into other services or applications
+- Dependency injection for custom strategies
+- Consistent API for all case conversions
+
+## Integration Example
+
+```ts
+import { MSCaseConverter } from '@windows98/micro-services'
+
+const result = MSCaseConverter.toCamelCase('hello world')
+console.log(result) // "helloWorld"
+
+const snake = MSCaseConverter.toSnakeCase('Hello World')
+console.log(snake) // "hello_world"
+
+// Convert to all supported cases
+const input = 'Windows98 Case Converter'
+const allCases = {
+  alternate: MSCaseConverter.toAlternateCase(input),
+  camel: MSCaseConverter.toCamelCase(input),
+  constant: MSCaseConverter.toConstantCase(input),
+  dot: MSCaseConverter.toDotCase(input),
+  kebab: MSCaseConverter.toKebabCase(input),
+  lower: MSCaseConverter.toLowercase(input),
+  pascal: MSCaseConverter.toPascalCase(input),
+  path: MSCaseConverter.toPathCase(input),
+  sentence: MSCaseConverter.toSentenceCase(input),
+  snake: MSCaseConverter.toSnakeCase(input),
+  title: MSCaseConverter.toTitleCase(input),
+  upper: MSCaseConverter.toUppercase(input),
+}
+console.log(allCases)
+```
+
+## Common Use Cases
+
+- **Text normalization** for user input
+- **Generating code** (e.g., variable names, constants)
+- **Formatting data** for APIs or UI
+- **Automated testing** of string transformations
+- **Supporting internationalization** and consistent naming

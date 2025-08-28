@@ -1,0 +1,23 @@
+{
+	"mf-case-converter": {
+		"input-text": {
+			"label": "Eingabetext",
+			"placeholder": "Text eingeben, um zwischen verschiedenen Schreibweisen zu konvertieren..."
+		},
+		"title": "Schreibweisen-Konverter",
+		"cases": {
+			"alternatecase": "aLtErNaTiNg CaSe",
+			"camelcase": "camelCase",
+			"constantcase": "KONSTANTEN_SCHREIBWEISE",
+			"dotcase": "punkt.schreibweise",
+			"kebabcase": "kebab-schreibweise",
+			"lowercase": "kleinschreibung",
+			"pascalcase": "PascalSchreibweise",
+			"pathcase": "pfad/schreibweise",
+			"sentencecase": "Satzschreibung",
+			"snakecase": "snake_schreibweise",
+			"titlecase": "Titel-Schreibung",
+			"uppercase": "GROSSSCHREIBUNG"
+		}
+	}
+}

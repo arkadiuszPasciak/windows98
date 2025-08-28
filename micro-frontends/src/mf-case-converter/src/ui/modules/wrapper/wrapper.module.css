@@ -1,0 +1,7 @@
+.wrapper {
+	padding: var(--ds-spacing-sm);
+
+	& > :first-of-type {
+		margin-bottom: var(--ds-spacing-xl);
+	}
+}

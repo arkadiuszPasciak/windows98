@@ -1,0 +1,23 @@
+{
+	"mf-case-converter": {
+		"input-text": {
+			"label": "Tekst wejściowy",
+			"placeholder": "Wpisz tekst do konwersji między różnymi stylami..."
+		},
+		"title": "Konwerter wielkości liter",
+		"cases": {
+			"alternatecase": "nApRzEmIeNnA wIeLkOść",
+			"camelcase": "camelCase",
+			"constantcase": "WIELKIE_LITERY",
+			"dotcase": "kropka.styl",
+			"kebabcase": "kebab-styl",
+			"lowercase": "małe litery",
+			"pascalcase": "PascalCase",
+			"pathcase": "ścieżka/styl",
+			"sentencecase": "Zdaniowy styl",
+			"snakecase": "snake_case",
+			"titlecase": "Styl Tytułu",
+			"uppercase": "DUŻE LITERY"
+		}
+	}
+}

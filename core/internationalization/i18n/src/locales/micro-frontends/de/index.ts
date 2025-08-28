@@ -1,5 +1,6 @@
 import calculatorDE from "./mf-calculator.locale.json"
 import calendarDE from "./mf-calendar.locale.json"
+import caseConverterDE from "./mf-case-converter.locale.json"
 import colorGeneratorDE from "./mf-color-generator.locale.json"
 import languageManagerDE from "./mf-language-manager.locale.json"
 import notepadDE from "./mf-notepad.locale.json"
@@ -19,6 +20,8 @@ import webcamDE from "./mf-webcam.locale.json"
 
 const localesMicroFrontendsDE = {
 	...calculatorDE,
+	...calendarDE,
+	...caseConverterDE,
 	...calendarDE,
 	...colorGeneratorDE,
 	...languageManagerDE,

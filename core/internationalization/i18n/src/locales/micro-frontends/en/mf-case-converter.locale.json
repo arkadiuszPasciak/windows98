@@ -1,0 +1,23 @@
+{
+	"mf-case-converter": {
+		"input-text": {
+			"label": "Input text",
+			"placeholder": "Enter text to convert between different cases..."
+		}
+	},
+	"title": "Case converter",
+	"cases": {
+		"alternatecase": "aLtErNaTiNg CaSe",
+		"camelcase": "camelCase",
+		"constantcase": "CONSTANT_CASE",
+		"dotcase": "dot.case",
+		"kebabcase": "kebab-case",
+		"lowercase": "lowercase",
+		"pascalcase": "PascalCase",
+		"pathcase": "path/case",
+		"sentencecase": "Sentence case",
+		"snakecase": "snake_case",
+		"titlecase": "Title Case",
+		"uppercase": "UPPERCASE"
+	}
+}
