@@ -1,8 +1,8 @@
-import { MSErrorHandler } from "../../../../../ms-error-handler/src"
+import { CatchError } from "@windows98/toolkit"
 import type { DateStrategyContract } from "../../../domain/contracts"
 
 export class DateStrategy implements DateStrategyContract {
-	@MSErrorHandler.CatchError("DateStrategy", "createDate")
+	@CatchError()
 	public createDate(value?: string): Date {
 		if (value && !this.isValidDate(value)) {
 			throw new Error(`Invalid date string: ${value}`)

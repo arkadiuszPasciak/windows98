@@ -1,8 +1,8 @@
-import { MSErrorHandler } from "../../../../../ms-error-handler/src"
+import { CatchError } from "@windows98/toolkit"
 import type { SaveFileStrategyContract } from "../../contracts"
 
 export class SaveFileStrategy implements SaveFileStrategyContract {
-	@MSErrorHandler.CatchError("SaveFileStrategy", "saveFile")
+	@CatchError()
 	public async save<FileType extends string>(
 		content: string,
 		filename: string,
