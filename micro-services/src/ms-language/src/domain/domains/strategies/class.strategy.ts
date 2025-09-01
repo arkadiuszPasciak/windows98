@@ -1,11 +1,11 @@
 import type { Maybe } from "@windows98/toolkit"
-import { MSErrorHandler } from "../../../../../ms-error-handler/src"
+import { CatchError } from "@windows98/toolkit"
 import type { LanguageStrategyContract } from "../../contracts"
 
 export class ClassLanguageStrategy<ELanguages>
 	implements LanguageStrategyContract<ELanguages>
 {
-	@MSErrorHandler.CatchError("ClassLanguageStrategy", "applyLanguage")
+	@CatchError()
 	public applyLanguage(language: ELanguages): void {
 		const element: Maybe<HTMLHtmlElement> =
 			window.document.querySelector("html")

@@ -1,15 +1,12 @@
-import type { IError } from "../../models"
-import type { ErrorHandlerDomainContract } from "../contracts"
-
-export class ErrorHandlerDomain implements ErrorHandlerDomainContract {
+class ErrorCatcher {
 	private readonly UNKNOWN_ERROR_MESSAGE = "Unknown error message"
 
-	public CatchError(moduleName: string, methodName: string) {
+	public Catch() {
 		const instance = this
 
 		return (
-			_target: object,
-			_propertyKey: string,
+			target: object,
+			propertyKey: string,
 			descriptor: PropertyDescriptor,
 		): void => {
 			const originalMethod = descriptor.value
@@ -18,11 +15,9 @@ export class ErrorHandlerDomain implements ErrorHandlerDomainContract {
 				try {
 					return originalMethod.apply(this, args)
 				} catch (error) {
-					const customError = instance.createError(
-						moduleName,
-						methodName,
-						error,
-					)
+					const className = target.constructor.name
+					const methodName = propertyKey
+					const customError = instance.createError(className, methodName, error)
 
 					throw customError
 				}
@@ -31,14 +26,14 @@ export class ErrorHandlerDomain implements ErrorHandlerDomainContract {
 	}
 
 	private createError(
-		moduleName: string,
+		className: string,
 		methodName: string,
 		error: Error | unknown,
-	): IError {
+	): Error {
 		const errorMessage = this.generateErrorMessage(error)
 
 		const newError = new Error(errorMessage)
-		newError.name = `[${moduleName}]<${methodName}>`
+		newError.name = `[${className}]<${methodName}>`
 
 		return newError
 	}
@@ -50,8 +45,6 @@ export class ErrorHandlerDomain implements ErrorHandlerDomainContract {
 	}
 }
 
-const errorHandlerInstance = new ErrorHandlerDomain()
+const errorCatcherInstance = new ErrorCatcher()
 
-export const MSErrorHandler = {
-	CatchError: errorHandlerInstance.CatchError.bind(errorHandlerInstance),
-}
+export const CatchError = errorCatcherInstance.Catch.bind(errorCatcherInstance)

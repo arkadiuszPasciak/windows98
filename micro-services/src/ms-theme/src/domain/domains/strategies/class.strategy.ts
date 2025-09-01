@@ -1,11 +1,11 @@
 import type { Maybe } from "@windows98/toolkit"
-import { MSErrorHandler } from "../../../../../ms-error-handler/src"
+import { CatchError } from "@windows98/toolkit"
 import type { ThemeStrategyContract } from "../../contracts"
 
 export class ClassThemeStrategy<EThemes>
 	implements ThemeStrategyContract<EThemes>
 {
-	@MSErrorHandler.CatchError("ClassThemeStrategy", "applyTheme")
+	@CatchError()
 	public applyTheme(theme: EThemes): void {
 		const element: Maybe<HTMLHtmlElement> = this.getHtmlElement()
 		const themeClassName: string = `theme-${theme}`
@@ -17,7 +17,7 @@ export class ClassThemeStrategy<EThemes>
 		element.className = themeClassName
 	}
 
-	@MSErrorHandler.CatchError("ClassThemeStrategy", "getTheme")
+	@CatchError()
 	public getTheme(): EThemes {
 		const element: Maybe<HTMLHtmlElement> = this.getHtmlElement()
 
@@ -29,7 +29,7 @@ export class ClassThemeStrategy<EThemes>
 		return themeName
 	}
 
-	@MSErrorHandler.CatchError("ClassThemeStrategy", "getHtmlElement")
+	@CatchError()
 	private getHtmlElement(): Maybe<HTMLHtmlElement> {
 		const element: Maybe<HTMLHtmlElement> =
 			window.document.querySelector("html")

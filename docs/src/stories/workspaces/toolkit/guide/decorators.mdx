@@ -1,0 +1,71 @@
+import { Meta, Title, Subtitle } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Toolkit/Guide/Decorators" />
+
+<Title>🪄 Decorators</Title>
+
+Learn how to use and add decorators in the `@windows98/toolkit` package.
+
+## Overview
+
+The decorators module provides reusable method and class decorators to simplify error handling and other cross-cutting concerns.
+
+---
+
+## Example: Error Handler Decorator
+
+The Error Handler decorator helps you automatically catch and rethrow errors with contextual information about the class and method where the error occurred.
+
+### Basic Implementation
+
+```typescript
+import { CatchError } from '@windows98/toolkit'
+
+class ExampleService {
+  @CatchError()
+  doSomething() {
+    throw new Error('Something went wrong')
+  }
+}
+
+const service = new ExampleService()
+try {
+  service.doSomething()
+} catch (error) {
+  console.error(error)
+  // Output: [ExampleService]<doSomething>: Something went wrong
+}
+```
+
+### How It Works
+
+- The decorator wraps your method and catches any thrown errors.
+- It rethrows a new error with a name in the format `[ClassName]<methodName>` and preserves the original error message.
+- If the error has no message, it uses `"Unknown error message"`.
+
+### How to Add Your Own Decorator
+
+1. **Create the decorator file** in `src/decorators/your-decorator/`
+2. **Export from index** in the decorators module
+3. **Add TypeScript types and tests** if needed
+
+Example structure:
+```
+src/decorators/
+├── error-handler/
+│   ├── error-handler.decorator.ts
+│   ├── error-handler.type.ts
+│   └── error-handler.test.ts
+├── your-decorator/
+│   ├── your-decorator.decorator.ts
+│   └── your-decorator.test.ts
+└── index.ts
+```
+
+---
+
+## Best Practices
+
+- Use decorators to keep your business logic clean and DRY.
+- Always add tests for your decorators to ensure reliability.
+- Document usage and edge cases in your codebase and docs.

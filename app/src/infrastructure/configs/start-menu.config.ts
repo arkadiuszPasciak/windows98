@@ -13,10 +13,6 @@ export const startMenuConfig = [
 					},
 					{
 						type: "program",
-						id: "color-generator",
-					},
-					{
-						type: "program",
 						id: "notepad",
 					},
 					{
@@ -32,6 +28,16 @@ export const startMenuConfig = [
 					{
 						type: "program",
 						id: "tic-tac-toe",
+					},
+				],
+			},
+			{
+				type: "group",
+				id: "generators",
+				programs: [
+					{
+						type: "program",
+						id: "color-generator",
 					},
 				],
 			},
