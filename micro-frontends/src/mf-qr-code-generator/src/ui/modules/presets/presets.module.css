@@ -1,0 +1,4 @@
+.presets {
+	display: flex;
+	column-gap: var(--ds-spacing-xs);
+}
