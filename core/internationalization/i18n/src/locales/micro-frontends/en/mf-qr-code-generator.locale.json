@@ -1,0 +1,24 @@
+{
+	"mf-qr-code-generator": {
+		"input-text": {
+			"label": "Text/Content",
+			"placeholder": "Enter Text, URL or content for QR Code..."
+		},
+		"presets": {
+			"label": "Quick Presets",
+			"email": "Email",
+			"phone": "Phone",
+			"sms": "SMS",
+			"website": "Website"
+		},
+		"select-size": {
+			"label": "Size (pixels)"
+		},
+		"select-format": {
+			"label": "Format"
+		},
+		"button-generate": {
+			"label": "Generate QR Code"
+		}
+	}
+}
