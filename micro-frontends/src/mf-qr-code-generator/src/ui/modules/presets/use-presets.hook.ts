@@ -1,11 +1,7 @@
 import { useTranslation } from "react-i18next"
 import type { Type } from "../../../domain/models"
 import { useQRCodeGenerator } from "../../hooks"
-
-export interface PresetItem {
-	content: string
-	id: Type
-}
+import type { PresetItem } from "./presets.type"
 
 export const usePresets = () => {
 	const { t } = useTranslation()

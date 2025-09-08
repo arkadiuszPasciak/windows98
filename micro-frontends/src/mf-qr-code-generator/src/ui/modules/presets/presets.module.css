@@ -1,4 +1,3 @@
-.presets {
-	display: flex;
-	column-gap: var(--ds-spacing-xs);
+.label {
+	margin-bottom: var(--ds-spacing-xs);
 }

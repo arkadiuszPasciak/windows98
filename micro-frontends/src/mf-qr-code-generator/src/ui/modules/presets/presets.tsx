@@ -9,11 +9,12 @@ export const Presets: FunctionComponent = observer(() => {
 
 	return (
 		<>
-			<DSText
-				text={translations.label}
-				id="mf-qr-code-generator-presets"
-			/>
 			<div className={styles.presets}>
+				<DSText
+					className={styles.label}
+					text={translations.label}
+					id="mf-qr-code-generator-presets"
+				/>
 				{presets.map((preset) => (
 					<DSRadio
 						initialChecked={preset.id === presetValue}
