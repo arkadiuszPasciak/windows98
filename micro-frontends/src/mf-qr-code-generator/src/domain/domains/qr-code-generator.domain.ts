@@ -1,7 +1,8 @@
 import { MSQRCode } from "@windows98/micro-services"
+import type { Maybe } from "@windows98/toolkit"
 import { makeAutoObservable } from "mobx"
 import type { QRCodeGeneratorDomainContract } from "../contracts"
-import type { Format, Size, Type } from "../models"
+import type { Format, QRCode, Size, Type } from "../models"
 
 export class QRCodeGeneratorDomain implements QRCodeGeneratorDomainContract {
 	private msQRCode = MSQRCode
@@ -9,6 +10,7 @@ export class QRCodeGeneratorDomain implements QRCodeGeneratorDomainContract {
 	public format: Format = "jpg"
 	public size: Size = "150x150"
 	public type: Type = "email"
+	public qrCode: Maybe<QRCode> = null
 
 	constructor() {
 		makeAutoObservable(this)
@@ -30,10 +32,10 @@ export class QRCodeGeneratorDomain implements QRCodeGeneratorDomainContract {
 		this.type = value
 	}
 
-	public generateQRCode(): HTMLCanvasElement {
+	public generateQRCode(): void {
 		const buildedContent = this.msQRCode.build(this.content, this.type)
 
-		return this.msQRCode.generate(buildedContent, this.size)
+		this.qrCode = this.msQRCode.generate(buildedContent, this.size)
 	}
 }
 
