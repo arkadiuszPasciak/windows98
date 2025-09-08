@@ -13,7 +13,7 @@ export const InputText: FunctionComponent = observer(() => {
 				labelName={translations.label}
 				initialValue={inputValue}
 				placeholder={translations.placeholder}
-				wrapperLayout="horizontal"
+				wrapperLayout="vertical"
 				onChange={setInputValue}
 			/>
 		</>
