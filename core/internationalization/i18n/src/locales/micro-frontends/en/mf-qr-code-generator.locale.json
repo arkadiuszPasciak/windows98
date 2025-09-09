@@ -1,5 +1,8 @@
 {
 	"mf-qr-code-generator": {
+		"modal": {
+			"title": "QR Code Generator"
+		},
 		"input-text": {
 			"label": "Text/Content",
 			"placeholder": "Enter Text, URL or content for QR Code..."
