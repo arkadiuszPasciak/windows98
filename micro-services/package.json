@@ -37,5 +37,8 @@
 		"lint:types:run": "tsc",
 		"test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
 		"test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js"
+	},
+	"dependencies": {
+		"qrcode-generator": "2.0.4"
 	}
 }
