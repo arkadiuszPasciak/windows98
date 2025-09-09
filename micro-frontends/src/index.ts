@@ -9,6 +9,7 @@ export { LanguageManagerView as MFLanguageManager } from "./mf-language-manager/
 export { NavigationView as MFNavigation } from "./mf-navigation/src/ui/views/navigation.view"
 export { NotepadView as MFNotepad } from "./mf-notepad/src/ui/views"
 export { PulpitView as MFPulpit } from "./mf-pulpit/src/ui/views"
+export { MFQRCodeGenerator } from "./mf-qr-code-generator/src/ui/views"
 export { MFRunner } from "./mf-runner/src/ui/views/runner"
 export { SaveFileView as MSSaveFile } from "./mf-save-file/src/ui/views"
 export { MFSettings } from "./mf-settings/src/ui/views"
