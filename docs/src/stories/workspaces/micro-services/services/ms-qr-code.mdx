@@ -1,0 +1,54 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Micro Services/Services/MSQRCode" />
+
+<Title>🔳 MS QR Code</Title>
+
+Robust QR code generation and building service for the Windows98 ecosystem.
+
+## What is MS QR Code?
+
+MS QR Code is a service for generating and building QR codes in various formats and sizes. It provides a simple API for creating QR codes for emails, phones, SMS, and websites, supporting multiple output types and sizes for flexible integration.
+
+## Key Features
+
+### 🏗️ QR Code Building
+- Build QR code data for different types: email, phone, sms, website
+- Output as string for further processing or rendering
+
+### 🖼️ QR Code Generation
+- Generate QR code as HTMLCanvasElement
+- Supports multiple sizes: 150x150, 200x200, 300x300, 400x400, 500x500
+- Easy integration with UI components
+
+### 🧩 Strategy Pattern Architecture
+- Pluggable builder and generator strategies
+- Extensible for custom QR code types or rendering methods
+
+### 🛡️ Input Validation
+- Type-safe QR code type and size
+- Graceful error handling for invalid input
+
+## Usage Example
+
+```ts
+import { MSQRCode, MSQRCodeTypes } from '@windows98/micro-services';
+
+// Build QR code data string
+const data = MSQRCode.build('https://windows98.app', 'website');
+
+// Generate QR code as canvas
+const canvas = MSQRCode.generate('https://windows98.app', '300x300');
+```
+
+## API
+
+### MSQRCode.build(content: string, type: QRCodeType): string
+- `content`: The data to encode
+- `type`: One of 'email', 'phone', 'sms', 'website'
+- Returns: Encoded string for QR code
+
+### MSQRCode.generate(content: string, size: QRCodeSize): HTMLCanvasElement
+- `content`: The data to encode
+- `size`: One of '150x150', '200x200', '300x300', '400x400', '500x500'
+- Returns: Canvas element with rendered QR code

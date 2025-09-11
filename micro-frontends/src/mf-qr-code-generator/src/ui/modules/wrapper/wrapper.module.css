@@ -1,0 +1,17 @@
+.wrapper {
+	padding: var(--ds-spacing-sm);
+	display: grid;
+	row-gap: var(--ds-spacing-md);
+	column-gap: var(--ds-spacing-xl);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+}
+.wrapper > :not(:last-child) {
+	grid-column: 1;
+}
+
+.wrapper > :last-child {
+	grid-column: 2;
+	grid-row: 1 / 6;
+	align-self: center;
+}

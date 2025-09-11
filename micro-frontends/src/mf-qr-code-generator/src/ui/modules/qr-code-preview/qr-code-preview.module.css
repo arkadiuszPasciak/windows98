@@ -1,0 +1,6 @@
+.qr-code-preview {
+	width: 150px;
+	height: 150px;
+	box-shadow: var(--ds-border-field);
+	padding: 2px;
+}

@@ -5,6 +5,7 @@ import colorGeneratorEN from "./mf-color-generator.locale.json"
 import languageManagerEN from "./mf-language-manager.locale.json"
 import notepadEN from "./mf-notepad.locale.json"
 import pulpitEN from "./mf-pulpit.locale.json"
+import qrCodeGeneratorEN from "./mf-qr-code-generator.locale.json"
 import runnerEN from "./mf-runner.locale.json"
 import saveFileEN from "./mf-save-file.locale.json"
 import settingsEN from "./mf-settings.locale.json"
@@ -38,6 +39,7 @@ const localesMicroFrontendsEN = {
 	...timerEN,
 	...timezoneEN,
 	...webcamEN,
+	...qrCodeGeneratorEN,
 }
 
 export default localesMicroFrontendsEN
