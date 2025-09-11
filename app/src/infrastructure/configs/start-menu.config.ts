@@ -39,6 +39,10 @@ export const startMenuConfig = [
 						type: "program",
 						id: "color-generator",
 					},
+					{
+						type: "program",
+						id: "qr-code-generator",
+					},
 				],
 			},
 			{

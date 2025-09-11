@@ -5,6 +5,7 @@ export const programManagerConfig: ProgramManager = {
 	"case-converter": false,
 	"color-generator": false,
 	notepad: false,
+	"qr-code-generator": false,
 	runner: false,
 	settings: false,
 	shutdown: false,

@@ -18,31 +18,43 @@ const ColorGenerator = lazy(() =>
 		default: m.ColorGenerator,
 	})),
 )
+
 const Notepad = lazy(() =>
 	import("../../../presentation/components/notepad").then((m) => ({
 		default: m.Notepad,
 	})),
 )
+
+const QRCodeGenerator = lazy(() =>
+	import("../../../presentation/components/qr-code-generator").then((m) => ({
+		default: m.QRCodeGenerator,
+	})),
+)
+
 const Runner = lazy(() =>
 	import("../../../presentation/components/runner").then((m) => ({
 		default: m.Runner,
 	})),
 )
+
 const Settings = lazy(() =>
 	import("../../../presentation/components/settings").then((m) => ({
 		default: m.Settings,
 	})),
 )
+
 const Shutdown = lazy(() =>
 	import("../../../presentation/components/shutdown").then((m) => ({
 		default: m.Shutdown,
 	})),
 )
+
 const TicTacToe = lazy(() =>
 	import("../../../presentation/components/tic-tac-toe").then((m) => ({
 		default: m.TicTacToe,
 	})),
 )
+
 const Timer = lazy(() =>
 	import("../../../presentation/components/timer").then((m) => ({
 		default: m.Timer,
@@ -72,6 +84,7 @@ export const ProgramsPortal: FunctionComponent = () => {
 			{programs["tic-tac-toe"] && <TicTacToe />}
 			{programs.timer && <Timer />}
 			{programs.webcam && <Webcam />}
+			{programs["qr-code-generator"] && <QRCodeGenerator />}
 		</Suspense>
 	)
 }
