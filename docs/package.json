@@ -10,8 +10,6 @@
 		"@storybook/addon-a11y": "9.0.18",
 		"@storybook/addon-docs": "9.0.18",
 		"@storybook/react-vite": "9.0.18",
-		"@types/react": "19.1.0",
-		"@types/react-dom": "19.1.0",
 		"@vitejs/plugin-react": "4.7.0",
 		"@windows98/configs": "workspace:*",
 		"@windows98/design-system": "workspace:*",

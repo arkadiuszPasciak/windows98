@@ -33,8 +33,6 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@types/react": "19.1.0",
-		"@types/react-dom": "19.1.0",
 		"@vitejs/plugin-react": "4.7.0",
 		"@windows98/toolkit": "workspace:*",
 		"lint-staged": "16.1.2",

@@ -23,8 +23,6 @@
 	},
 	"devDependencies": {
 		"@playwright/experimental-ct-react": "1.54.1",
-		"@types/react": "19.1.0",
-		"@types/react-dom": "19.1.0",
 		"@vitejs/plugin-react": "4.7.0",
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
