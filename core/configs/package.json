@@ -19,8 +19,8 @@
 	},
 	"name": "@windows98/configs",
 	"devDependencies": {
-		"@types/react": "19.1.0",
-		"@types/react-dom": "19.1.0",
+		"@types/react": "19.1.1",
+		"@types/react-dom": "19.1.1",
 		"postcss-html": "1.8.0"
 	},
 	"peerDependencies": {

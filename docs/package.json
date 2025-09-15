@@ -2,8 +2,8 @@
 	"author": "Arkadiusz Paściak",
 	"description": "This workspace uses Storybook, an open-source tool for developing UI components in isolation. It helps to build, document, and test React components interactively.",
 	"dependencies": {
-		"react": "19.1.0",
-		"react-dom": "19.1.0"
+		"react": "19.1.1",
+		"react-dom": "19.1.1"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",

@@ -36,8 +36,8 @@
 		"test:ui:watch": "playwright test -c ./@test/playwright/playwright-ct.config.mjs --ui"
 	},
 	"peerDependencies": {
-		"react": "19.1.0",
-		"react-dom": "19.1.0"
+		"react": "19.1.1",
+		"react-dom": "19.1.1"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
