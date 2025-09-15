@@ -12,7 +12,7 @@ class PNPMReadPackageHook {
 			"react-i18next": "15.6.1",
 			"react-dom": "19.1.1",
 			stylelint: "16.22.0",
-			typescript: "5.8.3",
+			typescript: "5.9.2",
 			vite: "7.1.5",
 			"vite-plugin-css-injected-by-js": "3.5.2",
 			"vite-plugin-dts": "4.5.4",
