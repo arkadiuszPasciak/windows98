@@ -10,7 +10,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@windows98/configs": "workspace:*",
-		"i18next": "25.3.2",
+		"i18next": "25.5.2",
 		"lint-staged": "16.1.2",
 		"react-i18next": "15.6.1",
 		"typescript": "5.9.2"
