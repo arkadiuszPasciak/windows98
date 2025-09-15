@@ -48,7 +48,7 @@ jobs:
             ${{ runner.os }}-build-
 
       - name: Install PNPM
-        run: npm install -g pnpm@10.13.1
+        run: npm install -g pnpm@10.16.1
 
       - name: Install Dependencies
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
@@ -91,7 +91,7 @@ jobs:
             ${{ runner.os }}-build-
 
       - name: Install PNPM
-        run: npm install -g pnpm@10.13.1
+        run: npm install -g pnpm@10.16.1
 
       - name: Install Dependencies
         run: pnpm install
@@ -133,7 +133,7 @@ jobs:
             ${{ runner.os }}-build-
 
       - name: Install PNPM
-        run: npm install -g pnpm@10.13.1
+        run: npm install -g pnpm@10.16.1
 
       - name: Install Dependencies
         run: pnpm install
@@ -175,7 +175,7 @@ jobs:
             ${{ runner.os }}-build-
 
       - name: Install PNPM
-        run: npm install -g pnpm@10.13.1
+        run: npm install -g pnpm@10.16.1
 
       - name: Install Dependencies
         run: pnpm install
@@ -217,7 +217,7 @@ jobs:
             ${{ runner.os }}-build-
 
       - name: Install PNPM
-        run: npm install -g pnpm@10.13.1
+        run: npm install -g pnpm@10.16.1
 
       - name: Install Dependencies
         run: pnpm install
@@ -250,7 +250,7 @@ jobs:
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: Install PNPM
-        run: npm install -g pnpm@10.13.1
+        run: npm install -g pnpm@10.16.1
 
       - name: Install Dependencies
         run: pnpm install
@@ -302,7 +302,7 @@ jobs:
             ${{ runner.os }}-build-
 
       - name: Install PNPM
-        run: npm install -g pnpm@10.13.1
+        run: npm install -g pnpm@10.16.1
 
       - name: Install Dependencies
         run: pnpm install
@@ -330,7 +330,7 @@ jobs:
             ${{ runner.os }}-build-
 
       - name: Install PNPM
-        run: npm install -g pnpm@10.13.1
+        run: npm install -g pnpm@10.16.1
 
       - name: Install Dependencies
         run: pnpm install
