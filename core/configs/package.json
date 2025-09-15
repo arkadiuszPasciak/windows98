@@ -25,7 +25,7 @@
 	},
 	"peerDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@playwright/experimental-ct-react": "1.54.1",
+		"@playwright/experimental-ct-react": "1.55.0",
 		"lint-staged": "16.1.2",
 		"stylelint": "16.22.0",
 		"typescript": "5.9.2",

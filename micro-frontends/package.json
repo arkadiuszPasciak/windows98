@@ -22,7 +22,7 @@
 		"react-i18next": "15.6.1"
 	},
 	"devDependencies": {
-		"@playwright/experimental-ct-react": "1.54.1",
+		"@playwright/experimental-ct-react": "1.55.0",
 		"@vitejs/plugin-react": "5.0.2",
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
