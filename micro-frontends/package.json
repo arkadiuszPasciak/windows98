@@ -27,7 +27,7 @@
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
 		"@biomejs/biome": "1.9.4",
-		"lint-staged": "16.1.2",
+		"lint-staged": "16.1.6",
 		"stylelint": "16.22.0",
 		"typescript": "5.9.2",
 		"vite": "7.1.5",
