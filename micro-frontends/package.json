@@ -23,7 +23,7 @@
 	},
 	"devDependencies": {
 		"@playwright/experimental-ct-react": "1.54.1",
-		"@vitejs/plugin-react": "4.7.0",
+		"@vitejs/plugin-react": "5.0.2",
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
 		"@biomejs/biome": "1.9.4",

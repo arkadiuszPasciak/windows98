@@ -3,7 +3,7 @@ class PNPMReadPackageHook {
 		requirements: {
 			"@biomejs/biome": "1.9.4",
 			"@playwright/experimental-ct-react": "1.54.1",
-			"@vitejs/plugin-react": "4.7.0",
+			"@vitejs/plugin-react": "5.0.2",
 			i18next: "25.3.2",
 			"lint-staged": "16.1.2",
 			mobx: "6.13.7",
