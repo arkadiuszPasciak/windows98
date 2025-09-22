@@ -7,6 +7,7 @@ export class CICDCommand {
 	#commands = {
 		build: [
 			"@windows98/design-system",
+			"@windows98/web-api",
 			"@windows98/micro-services",
 			"@windows98/micro-frontends",
 			"@windows98/app",
@@ -19,6 +20,7 @@ export class CICDCommand {
 			"@windows98/i18n",
 			"@windows98/micro-frontends",
 			"@windows98/micro-services",
+			"@windows98/web-api",
 		],
 		"lint:staged:fix": [
 			"@windows98/app",
@@ -29,6 +31,7 @@ export class CICDCommand {
 			"@windows98/micro-frontends",
 			"@windows98/micro-services",
 			"@windows98/toolkit",
+			"@windows98/web-api",
 		],
 		"lint:styles:run": [
 			"@windows98/app",
@@ -43,6 +46,7 @@ export class CICDCommand {
 			"@windows98/micro-frontends",
 			"@windows98/micro-services",
 			"@windows98/toolkit",
+			"@windows98/web-api",
 		],
 		"test:ui:run": ["@windows98/design-system", "@windows98/micro-frontends"],
 		"test:unit:run": [
@@ -51,6 +55,7 @@ export class CICDCommand {
 			"@windows98/micro-frontends",
 			"@windows98/micro-services",
 			"@windows98/toolkit",
+			"@windows98/web-api",
 		],
 	}
 
