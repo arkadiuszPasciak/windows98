@@ -1,0 +1,40 @@
+{
+	"name": "@windows98/web-api",
+	"main": "@bundler/dist/index.umd.cjs",
+	"module": "@bundler/dist/index.js",
+	"types": "@bundler/dist/@bundles/src/wc/index.wc.d.ts",
+	"files": ["@bundler/dist"],
+	"exports": {
+		".": {
+			"import": "./@bundler/dist/index.js",
+			"require": "./@bundler/dist/index.umd.cjs"
+		}
+	},
+	"version": "1.0.0",
+	"description": "Web APIs from the browser",
+	"author": "Arkadiusz Paściak",
+	"engines": {
+		"node": "22.19.0",
+		"pnpm": "10.16.1"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@windows98/configs": "workspace:*",
+		"lint-staged": "16.1.6",
+		"typescript": "5.9.2",
+		"vite": "7.1.5",
+		"vite-plugin-dts": "4.5.4",
+		"vitest": "3.2.4"
+	},
+	"scripts": {
+		"dev": "vite @bundler",
+		"build": "vite build @bundler",
+		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
+		"lint:code:run": "biome check --config-path ./@linter/biome.config.json",
+		"lint:staged:fix": "lint-staged --config ./@linter/lint-staged.config.cjs",
+		"lint:types:run": "tsc",
+		"test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
+		"test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js"
+	}
+}

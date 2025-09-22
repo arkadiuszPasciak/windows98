@@ -4,8 +4,8 @@ packages:
   - core/configs
   - core/design-system
   - core/internationalization/*
-  - core/tests/*
   - core/toolkit
+  - core/web-api
   - docs
   - micro-frontends
   - micro-services
