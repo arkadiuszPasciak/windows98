@@ -5,7 +5,7 @@ Welcome to **Windows98**, a creative endeavor where I am re-building the look an
 
 ## Quick Start
 
-1. Ensure you have Node.js v22.17.1 installed. If not, download and install it from https://nodejs.org/en/download/. If you have a different version of Node.js installed, you can use Node Version Manager (NVM) to switch between versions. To install NVM, follow the instructions at https://github.com/nvm-sh/nvm#installing-and-updating. Once installed, use nvm install 22.17.1 to install Node.js v22.17.1 and nvm use 22.17.1 to switch to it.
+1. Ensure you have Node.js v22.19.0 installed. If not, download and install it from https://nodejs.org/en/download/. If you have a different version of Node.js installed, you can use Node Version Manager (NVM) to switch between versions. To install NVM, follow the instructions at https://github.com/nvm-sh/nvm#installing-and-updating. Once installed, use nvm install 22.19.0 to install Node.js v22.19.0 and nvm use 22.19.0 to switch to it.
 
 2. Clone the repository by running.
 

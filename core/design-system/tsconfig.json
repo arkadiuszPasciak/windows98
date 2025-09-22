@@ -1,5 +1,6 @@
 {
 	"extends": [
+		"@windows98/configs/typescript/node",
 		"@windows98/configs/typescript/react",
 		"@windows98/configs/typescript/vite"
 	],

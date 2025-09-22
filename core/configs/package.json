@@ -2,8 +2,8 @@
 	"author": "Arkadiusz Paściak",
 	"description": "Tests",
 	"engines": {
-		"node": "22.17.1",
-		"pnpm": "10.13.1"
+		"node": "22.19.0",
+		"pnpm": "10.16.1"
 	},
 	"exports": {
 		"./biome/shared": "./src/biome/shared.config.json",
@@ -19,16 +19,16 @@
 	},
 	"name": "@windows98/configs",
 	"devDependencies": {
-		"@types/react": "19.1.0",
-		"@types/react-dom": "19.1.0",
+		"@types/react": "19.1.1",
+		"@types/react-dom": "19.1.1",
 		"postcss-html": "1.8.0"
 	},
 	"peerDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@playwright/experimental-ct-react": "1.54.1",
-		"lint-staged": "16.1.2",
-		"stylelint": "16.22.0",
-		"typescript": "5.8.3",
+		"@playwright/experimental-ct-react": "1.55.0",
+		"lint-staged": "16.1.6",
+		"stylelint": "16.24.0",
+		"typescript": "5.9.2",
 		"vitest": "3.2.4"
 	},
 	"scripts": {

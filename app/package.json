@@ -4,8 +4,8 @@
 	"description": "Application for Windows 98",
 	"author": "Arkadiusz Paściak",
 	"engines": {
-		"node": "22.17.1",
-		"pnpm": "10.13.1"
+		"node": "22.19.0",
+		"pnpm": "10.16.1"
 	},
 	"scripts": {
 		"build": "vite build @bundler/vite",
@@ -24,23 +24,23 @@
 		"@windows98/design-system": "workspace:*",
 		"@windows98/micro-frontends": "workspace:*",
 		"@windows98/micro-services": "workspace:*",
-		"i18next": "25.3.2",
+		"i18next": "25.5.2",
 		"mobx": "6.13.7",
 		"mobx-react-lite": "4.1.0",
-		"react": "19.1.0",
-		"react-dom": "19.1.0",
-		"react-i18next": "15.6.1"
+		"react": "19.1.1",
+		"react-dom": "19.1.1",
+		"react-i18next": "15.7.3"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@types/react": "19.1.0",
-		"@types/react-dom": "19.1.0",
-		"@vitejs/plugin-react": "4.7.0",
+		"@types/react": "19.1.1",
+		"@types/react-dom": "19.1.1",
+		"@vitejs/plugin-react": "5.0.2",
 		"@windows98/toolkit": "workspace:*",
-		"lint-staged": "16.1.2",
-		"stylelint": "16.22.0",
-		"typescript": "5.8.3",
-		"vite": "6.3.5"
+		"lint-staged": "16.1.6",
+		"stylelint": "16.24.0",
+		"typescript": "5.9.2",
+		"vite": "7.1.5"
 	},
 	"type": "module"
 }
