@@ -2,7 +2,7 @@
 	"name": "@windows98/micro-services",
 	"main": "@bundler/dist/index.umd.cjs",
 	"module": "@bundler/dist/index.js",
-	"types": "@bundler/dist/@bundles/src/wc/index.wc.d.ts",
+	"types": "@bundler/dist/index.d.ts",
 	"files": ["@bundler/dist"],
 	"exports": {
 		".": {
