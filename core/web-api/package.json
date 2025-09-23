@@ -2,7 +2,7 @@
 	"name": "@windows98/web-api",
 	"main": "@bundler/dist/index.umd.cjs",
 	"module": "@bundler/dist/index.js",
-	"types": "@bundler/dist/@bundles/src/wc/index.wc.d.ts",
+	"types": "@bundler/dist/index.d.ts",
 	"files": ["@bundler/dist"],
 	"exports": {
 		".": {
