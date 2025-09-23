@@ -1,0 +1,37 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Web API/APIs/ClipboardApi" />
+
+<Title>🔧 ClipboardApi</Title>
+
+A typed, injectable wrapper for the [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API), designed for use in micro-services and other TypeScript code.
+
+## Features
+- Safe, dependency-injectable access to the browser clipboard
+- Typed methods for reading and writing text
+- Consistent error handling
+
+## Usage in a Micro-Service
+
+```ts
+import { ClipboardApi } from "@windows98/web-api";
+
+class ClipboardService {
+  constructor(private clipboard: ClipboardApi) {}
+
+  async copyToClipboard(text: string) {
+    await this.clipboard.writeText(text);
+  }
+
+  async readFromClipboard() {
+    return await this.clipboard.readText();
+  }
+}
+```
+
+## API Reference
+
+- `writeText(text: string): Promise<void>` — Writes text to the clipboard
+- `readText(): Promise<string>` — Reads text from the clipboard
+
+> For full details on the underlying browser API, see the [MDN Clipboard API documentation](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API).
