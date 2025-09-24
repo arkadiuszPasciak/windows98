@@ -58,14 +58,22 @@ test.describe("ColorGenerator", () => {
 		await expect(generateButton, "Button should be clickable").toBeEnabled()
 
 		await generateButton.click()
+
+		// Wait for hex and rgb values to change after clicking
+		await expect
+			.poll(async () => await hexInput.inputValue(), {
+				timeout: 1000,
+			})
+			.not.toBe(initialHex)
+		await expect
+			.poll(async () => await rgbInput.inputValue(), {
+				timeout: 1000,
+			})
+			.not.toBe(initialRgb)
+
 		const newHex = await hexInput.inputValue()
 		const newRgb = await rgbInput.inputValue()
-		expect(newHex, "New hex color should be different from initial").not.toBe(
-			initialHex,
-		)
-		expect(newRgb, "New RGB color should be different from initial").not.toBe(
-			initialRgb,
-		)
+
 		expect(newHex, "New hex should maintain valid format").toMatch(
 			/^#[0-9a-f]{6}$/,
 		)
@@ -74,12 +82,25 @@ test.describe("ColorGenerator", () => {
 		)
 
 		await generateButton.click()
-		const secondHex = await hexInput.inputValue()
-		const secondRgb = await rgbInput.inputValue()
-		expect(secondHex, "Second hex should maintain valid format").toMatch(
+
+		// Wait for hex and rgb values to change after second click
+		await expect
+			.poll(async () => await hexInput.inputValue(), {
+				timeout: 1000,
+			})
+			.not.toBe(newHex)
+		await expect
+			.poll(async () => await rgbInput.inputValue(), {
+				timeout: 1000,
+			})
+			.not.toBe(newRgb)
+
+		const updatedHex = await hexInput.inputValue()
+		const updatedRgb = await rgbInput.inputValue()
+		expect(updatedHex, "Second hex should maintain valid format").toMatch(
 			/^#[0-9a-f]{6}$/,
 		)
-		expect(secondRgb, "Second RGB should maintain valid format").toMatch(
+		expect(updatedRgb, "Second RGB should maintain valid format").toMatch(
 			/^rgb\(\d{1,3}, \d{1,3}, \d{1,3}\)$/,
 		)
 
