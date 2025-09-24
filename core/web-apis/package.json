@@ -1,5 +1,5 @@
 {
-	"name": "@windows98/micro-services",
+	"name": "@windows98/web-apis",
 	"main": "@bundler/dist/index.umd.cjs",
 	"module": "@bundler/dist/index.js",
 	"types": "@bundler/dist/index.d.ts",
@@ -11,7 +11,7 @@
 		}
 	},
 	"version": "1.0.0",
-	"description": "Micro services for Windows 98",
+	"description": "Web APIs from the browser",
 	"author": "Arkadiusz Paściak",
 	"engines": {
 		"node": "22.19.0",
@@ -21,7 +21,6 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@windows98/configs": "workspace:*",
-		"@windows98/toolkit": "workspace:*",
 		"lint-staged": "16.1.6",
 		"typescript": "5.9.2",
 		"vite": "7.1.5",
@@ -37,8 +36,5 @@
 		"lint:types:run": "tsc",
 		"test:unit:run": "vitest run -c ./@test/vitest/vitest.config.js",
 		"test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js"
-	},
-	"dependencies": {
-		"qrcode-generator": "2.0.4"
 	}
 }

@@ -1,0 +1,4 @@
+{
+	"extends": ["@windows98/configs/typescript/base"],
+	"include": ["./**/*"]
+}

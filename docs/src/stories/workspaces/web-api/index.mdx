@@ -1,0 +1,20 @@
+import { Meta, Title } from "@storybook/addon-docs/blocks";
+
+<Meta title="Workspaces/Web API/Overview" />
+
+<Title>🔧 Web API</Title>
+
+The `@windows98/web-apis` workspace provides a curated set of browser Web APIs, wrapped and structured for easy, consistent use within the Windows98 monorepo. These APIs are designed to be injected and consumed primarily by micro-services, following the dependency injection and clean architecture patterns used throughout the project.
+
+## Purpose
+
+- **Centralizes** browser Web API access for all workspaces.
+- **Encapsulates** only the APIs needed by the project (not a full polyfill or browser API mirror).
+- **Promotes** testability and abstraction by providing injectable classes/services.
+- **Ensures** consistent usage and error handling across the monorepo.
+
+## Usage Philosophy
+
+- Only add Web APIs that are actually needed by micro-services or other workspaces.
+- Each API is exposed as a class or service, following the dependency injection pattern.
+- APIs are documented and versioned as part of the monorepo.
