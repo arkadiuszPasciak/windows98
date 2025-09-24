@@ -5,7 +5,7 @@ packages:
   - core/design-system
   - core/internationalization/*
   - core/toolkit
-  - core/web-api
+  - core/web-apis
   - docs
   - micro-frontends
   - micro-services
