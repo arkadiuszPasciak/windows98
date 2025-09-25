@@ -1,20 +1,17 @@
-import {
-	CanvasAPIRepository,
-	MediaDevicesRepository,
-} from "../../data/repositories"
+import { CanvasAPI } from "@windows98/web-apis"
+import { MediaDevicesRepository } from "../../data/repositories"
 import type {
-	CanvasAPIRepositoryContract,
 	MediaDevicesAPIRepositoryContract,
 	MediaDevicesDomainContract,
 } from "../contracts"
 
 class MediaDevicesDomain implements MediaDevicesDomainContract {
 	private readonly mediaDevicesAPI: MediaDevicesAPIRepositoryContract
-	private readonly canvasAPI: CanvasAPIRepositoryContract
+	private readonly canvasAPI: CanvasAPI
 
 	constructor() {
 		this.mediaDevicesAPI = new MediaDevicesRepository()
-		this.canvasAPI = new CanvasAPIRepository()
+		this.canvasAPI = new CanvasAPI()
 	}
 
 	async requestCameraStream(

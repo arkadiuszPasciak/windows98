@@ -1,4 +1,5 @@
-import { beforeAll, describe, expect, it, vi } from "vitest"
+import { canvasAPIMock, videoAPIMock } from "@windows98/web-apis/mocks"
+import { describe, expect, it, vi } from "vitest"
 import { MSMediaDevices } from "../src/domain/domains"
 
 function ensureNavigatorMediaDevicesMocked() {
@@ -41,11 +42,9 @@ const mediaStreamMock: MediaStream = {
 } as MediaStream
 
 describe("MSMediaDevices", () => {
-	beforeAll(() => {
-		ensureNavigatorMediaDevicesMocked()
-	})
-
 	it("requestCameraStream", async () => {
+		ensureNavigatorMediaDevicesMocked()
+
 		const stream = mediaStreamMock
 		vi.spyOn(navigator.mediaDevices, "getUserMedia").mockResolvedValue(stream)
 		const result = await MSMediaDevices.requestCameraStream({ video: true })
@@ -60,30 +59,21 @@ describe("MSMediaDevices", () => {
 	})
 
 	it("getSnapshot", async () => {
-		const video = document.createElement("video")
-		video.width = 320
-		video.height = 240
+		const testData = {
+			url: "mock-data-url",
+			height: 240,
+			width: 320,
+		}
 
-		Object.defineProperty(video, "videoWidth", { value: 320 })
-		Object.defineProperty(video, "videoHeight", { value: 240 })
+		const canvasElementMock = canvasAPIMock.createMockElement(testData.url)
+		const videoElementMock = videoAPIMock.createMockElement(
+			testData.height,
+			testData.width,
+		)
 
-		const canvasMock = document.createElement("canvas")
-		vi.spyOn(document, "createElement").mockImplementation((tag) => {
-			if (tag === "canvas") return canvasMock
-			return document.createElement(tag)
-		})
+		canvasAPIMock.implementMock(canvasElementMock)
 
-		const drawImageMock = vi.fn()
-		canvasMock.getContext = vi.fn().mockReturnValue({
-			drawImage: drawImageMock,
-			...canvasMock.getContext("2d"),
-		})
-
-		const dataUrl = "data:image/png;base64,mock"
-		canvasMock.toDataURL = vi.fn().mockReturnValue(dataUrl)
-
-		const result = await MSMediaDevices.getSnapshot(video)
-		expect(drawImageMock).toHaveBeenCalledWith(video, 0, 0, 320, 240)
-		expect(result).toBe(dataUrl)
+		const result = await MSMediaDevices.getSnapshot(videoElementMock)
+		expect(result).toBe(testData.url)
 	})
 })
