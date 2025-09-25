@@ -12,8 +12,8 @@ describe("CanvasAPIRepository", () => {
 			width: 320,
 		}
 
-		const canvasElementMock = canvasAPIMock.createMockElement(testData.url)
-		const videoElementMock = videoAPIMock.createMockElement(
+		const canvasElementMock = canvasAPIMock.createMock(testData.url)
+		const videoElementMock = videoAPIMock.createMock(
 			testData.height,
 			testData.width,
 		)

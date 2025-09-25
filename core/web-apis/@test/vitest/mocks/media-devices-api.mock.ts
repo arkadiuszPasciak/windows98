@@ -1,7 +1,7 @@
 import { vi } from "vitest"
 
 class MediaDevicesAPIMock {
-	public createMockElement(id: string) {
+	public createMock(id: string) {
 		return {
 			id: id,
 			active: true,

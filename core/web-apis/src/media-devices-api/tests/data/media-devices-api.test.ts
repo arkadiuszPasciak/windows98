@@ -13,13 +13,13 @@ describe("MediaDevicesAPIRepository", () => {
 			id: "mock-stream",
 		}
 
-		const streamElementMock = mediaDevicesAPIMock.createMockElement(testData.id)
+		const streamElementMock = mediaDevicesAPIMock.createMock(testData.id)
 		mediaDevicesAPIMock.implementMock(streamElementMock)
 
 		const result = await mediaDevicesRepository.getUserMedia({ video: true })
 		expect(result).toBe(streamElementMock)
 
-		const videoElementMock = videoAPIMock.createMockElement(240, 320)
+		const videoElementMock = videoAPIMock.createMock(240, 320)
 		videoElementMock.srcObject = streamElementMock
 
 		expect(

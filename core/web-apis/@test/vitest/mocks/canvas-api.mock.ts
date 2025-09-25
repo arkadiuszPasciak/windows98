@@ -1,7 +1,7 @@
 import { vi } from "vitest"
 
 class CanvasAPIMock {
-	public createMockElement(dataUrl: string) {
+	public createMock(dataUrl: string): HTMLCanvasElement {
 		return {
 			getContext: vi.fn().mockReturnValue({
 				drawImage: vi.fn(),

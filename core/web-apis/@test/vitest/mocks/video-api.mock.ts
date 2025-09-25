@@ -1,7 +1,7 @@
 import { vi } from "vitest"
 
 class VideoAPIMock {
-	public createMockElement(videoHeight: number, videoWidth: number) {
+	public createMock(videoHeight: number, videoWidth: number) {
 		return {
 			videoHeight: videoHeight,
 			videoWidth: videoWidth,

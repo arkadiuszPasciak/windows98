@@ -12,13 +12,13 @@ describe("MSMediaDevices", () => {
 			id: "mock-stream",
 		}
 
-		const streamElementMock = mediaDevicesAPIMock.createMockElement(testData.id)
+		const streamElementMock = mediaDevicesAPIMock.createMock(testData.id)
 		mediaDevicesAPIMock.implementMock(streamElementMock)
 
 		const result = await MSMediaDevices.requestCameraStream({ video: true })
 		expect(result).toBe(streamElementMock)
 
-		const videoElementMock = videoAPIMock.createMockElement(240, 320)
+		const videoElementMock = videoAPIMock.createMock(240, 320)
 		videoElementMock.srcObject = streamElementMock
 
 		expect(
@@ -34,8 +34,8 @@ describe("MSMediaDevices", () => {
 			width: 320,
 		}
 
-		const canvasElementMock = canvasAPIMock.createMockElement(testData.url)
-		const videoElementMock = videoAPIMock.createMockElement(
+		const canvasElementMock = canvasAPIMock.createMock(testData.url)
+		const videoElementMock = videoAPIMock.createMock(
 			testData.height,
 			testData.width,
 		)
