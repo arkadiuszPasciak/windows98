@@ -8,6 +8,9 @@
 		".": {
 			"import": "./@bundler/dist/index.js",
 			"require": "./@bundler/dist/index.umd.cjs"
+		},
+		"./mocks": {
+			"import": "./@test/vitest/mocks/index.ts"
 		}
 	},
 	"version": "1.0.0",
