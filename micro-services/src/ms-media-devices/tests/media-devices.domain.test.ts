@@ -1,61 +1,30 @@
-import { canvasAPIMock, videoAPIMock } from "@windows98/web-apis/mocks"
-import { describe, expect, it, vi } from "vitest"
+import {
+	canvasAPIMock,
+	mediaDevicesAPIMock,
+	videoAPIMock,
+} from "@windows98/web-apis/mocks"
+import { describe, expect, it } from "vitest"
 import { MSMediaDevices } from "../src/domain/domains"
-
-function ensureNavigatorMediaDevicesMocked() {
-	if (!globalThis.navigator) {
-		// @ts-expect-error
-		globalThis.navigator = {}
-	}
-	if (!navigator.mediaDevices) {
-		// @ts-expect-error
-		navigator.mediaDevices = {}
-	}
-	if (!navigator.mediaDevices.enumerateDevices) {
-		navigator.mediaDevices.enumerateDevices = vi.fn()
-	}
-	if (!navigator.mediaDevices.getUserMedia) {
-		navigator.mediaDevices.getUserMedia = vi.fn()
-	}
-	if (!("ondevicechange" in navigator.mediaDevices)) {
-		// @ts-expect-error
-		navigator.mediaDevices.ondevicechange = null
-	}
-}
-
-const mediaStreamMock: MediaStream = {
-	id: "mock-stream",
-	active: true,
-	addTrack: vi.fn(),
-	removeTrack: vi.fn(),
-	getTracks: vi.fn(() => []),
-	getAudioTracks: vi.fn(() => []),
-	getVideoTracks: vi.fn(() => []),
-	getTrackById: vi.fn(),
-	addEventListener: vi.fn(),
-	removeEventListener: vi.fn(),
-	dispatchEvent: vi.fn(),
-	onaddtrack: null,
-	onremovetrack: null,
-	clone: vi.fn(() => ({}) as MediaStream),
-	stop: vi.fn(),
-} as MediaStream
 
 describe("MSMediaDevices", () => {
 	it("requestCameraStream", async () => {
-		ensureNavigatorMediaDevicesMocked()
+		const testData = {
+			id: "mock-stream",
+		}
 
-		const stream = mediaStreamMock
-		vi.spyOn(navigator.mediaDevices, "getUserMedia").mockResolvedValue(stream)
+		const streamElementMock = mediaDevicesAPIMock.createMockElement(testData.id)
+		mediaDevicesAPIMock.implementMock(streamElementMock)
+
 		const result = await MSMediaDevices.requestCameraStream({ video: true })
-		expect(result).toBe(stream)
+		expect(result).toBe(streamElementMock)
 
-		const video: HTMLVideoElement = document.createElement("video")
-		video.srcObject = stream
+		const videoElementMock = videoAPIMock.createMockElement(240, 320)
+		videoElementMock.srcObject = streamElementMock
+
 		expect(
-			video.srcObject,
+			videoElementMock.srcObject,
 			"should assign MediaStream to video.srcObject",
-		).toBe(stream)
+		).toBe(streamElementMock)
 	})
 
 	it("getSnapshot", async () => {
