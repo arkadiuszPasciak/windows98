@@ -365,6 +365,9 @@ importers:
 
   micro-services:
     dependencies:
+      '@windows98/web-apis':
+        specifier: workspace:*
+        version: link:../core/web-apis
       qrcode-generator:
         specifier: 2.0.4
         version: 2.0.4
