@@ -1,5 +1,5 @@
 import { beforeAll, describe, expect, it } from "vitest"
-import { screenAPIMock } from "../../../../@test/vitest/mocks"
+import { screenAPIMock } from "../../../../../@test/vitest/mocks"
 import { ScreenAPIRepository } from "../../src/data/repositories"
 
 describe("ScreenAPIRepository", () => {

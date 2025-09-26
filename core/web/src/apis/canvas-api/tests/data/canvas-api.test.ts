@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { canvasAPIMock, videoAPIMock } from "../../../../@test/vitest/mocks"
+import { canvasAPIMock, videoAPIMock } from "../../../../../@test/vitest/mocks"
 import { CanvasAPIRepository } from "../../src/data/repositories"
 
 describe("CanvasAPIRepository", () => {

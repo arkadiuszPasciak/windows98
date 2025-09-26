@@ -7,7 +7,7 @@ export default defineConfig({
 		emptyOutDir: true,
 		lib: {
 			entry: "../src/index.ts",
-			name: "web-api",
+			name: "web",
 			fileName: "index",
 			formats: ["es", "umd"],
 		},

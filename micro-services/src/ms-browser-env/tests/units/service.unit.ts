@@ -1,4 +1,4 @@
-import { screenAPIMock } from "@windows98/web-apis/mocks"
+import { screenAPIMock } from "@windows98/web/mocks"
 import { describe, expect, it, test, vi } from "vitest"
 import BrowserEnvService from "../../src/domain/services/browser-env.service"
 

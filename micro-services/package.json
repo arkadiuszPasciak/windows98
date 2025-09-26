@@ -39,7 +39,7 @@
 		"test:unit:watch": "vitest -c ./@test/vitest/vitest.config.js"
 	},
 	"dependencies": {
-		"@windows98/web-apis": "workspace:*",
+		"@windows98/web": "workspace:*",
 		"qrcode-generator": "2.0.4"
 	}
 }

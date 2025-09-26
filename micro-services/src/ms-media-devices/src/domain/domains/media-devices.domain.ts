@@ -1,4 +1,4 @@
-import { CanvasAPI, MediaDevicesAPI } from "@windows98/web-apis"
+import { CanvasAPI, MediaDevicesAPI } from "@windows98/web"
 import type { MediaDevicesDomainContract } from "../contracts"
 
 class MediaDevicesDomain implements MediaDevicesDomainContract {

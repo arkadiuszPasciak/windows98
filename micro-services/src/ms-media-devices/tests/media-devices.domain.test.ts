@@ -2,7 +2,7 @@ import {
 	canvasAPIMock,
 	mediaDevicesAPIMock,
 	videoAPIMock,
-} from "@windows98/web-apis/mocks"
+} from "@windows98/web/mocks"
 import { describe, expect, it } from "vitest"
 import { MSMediaDevices } from "../src/domain/domains"
 

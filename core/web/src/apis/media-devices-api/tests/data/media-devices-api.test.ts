@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest"
 import {
 	mediaDevicesAPIMock,
 	videoAPIMock,
-} from "../../../../@test/vitest/mocks"
+} from "../../../../../@test/vitest/mocks"
 import { MediaDevicesAPIRepository } from "../../src/data/repositories"
 
 describe("MediaDevicesAPIRepository", () => {

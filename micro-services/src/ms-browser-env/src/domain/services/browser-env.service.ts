@@ -1,4 +1,4 @@
-import { ScreenAPI } from "@windows98/web-apis"
+import { ScreenAPI } from "@windows98/web"
 import BrowserNameRepository from "../../data/repositories/browser-name.repository"
 import DeviceTypeRepository from "../../data/repositories/device-type.repository"
 import OperatingSystemRepository from "../../data/repositories/operating-system.repository"
