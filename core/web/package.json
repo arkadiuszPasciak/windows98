@@ -1,5 +1,5 @@
 {
-	"name": "@windows98/web-apis",
+	"name": "@windows98/web",
 	"main": "@bundler/dist/index.umd.cjs",
 	"module": "@bundler/dist/index.js",
 	"types": "@bundler/dist/index.d.ts",
@@ -8,6 +8,9 @@
 		".": {
 			"import": "./@bundler/dist/index.js",
 			"require": "./@bundler/dist/index.umd.cjs"
+		},
+		"./mocks": {
+			"import": "./@test/vitest/mocks/index.ts"
 		}
 	},
 	"version": "1.0.0",

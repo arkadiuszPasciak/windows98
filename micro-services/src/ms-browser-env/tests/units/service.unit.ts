@@ -1,3 +1,4 @@
+import { screenAPIMock } from "@windows98/web/mocks"
 import { describe, expect, it, test, vi } from "vitest"
 import BrowserEnvService from "../../src/domain/services/browser-env.service"
 
@@ -103,13 +104,20 @@ describe("[MicroServices]<BrowserEnv>(BrowserEnvService)", () => {
 	)
 
 	test("getScreenInformation()", () => {
+		const testData = {
+			height: 1080,
+			width: 1920,
+		}
 		const browserEnvService = new BrowserEnvService()
-		const screenInformating = browserEnvService.getScreenInformation()
+		const screenMock = screenAPIMock.createMock(testData.height, testData.width)
 
-		expect(screenInformating).toMatchObject({
-			colorDepth: expect.any(Number),
-			height: expect.any(Number),
-			width: expect.any(Number),
+		screenAPIMock.implementMock(screenMock)
+
+		const screenInformation = browserEnvService.getScreenInformation()
+
+		expect(screenInformation).toMatchObject({
+			height: testData.height,
+			width: testData.width,
 		})
 	})
 })

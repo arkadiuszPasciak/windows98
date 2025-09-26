@@ -1,7 +1,7 @@
-import type { CanvasAPIRepositoryContract } from "../../domain/contracts"
+import type { CanvasAPIRepositoryContract } from "../contracts"
 
 export class CanvasAPIRepository implements CanvasAPIRepositoryContract {
-	async getSnapshot(videoElement: HTMLVideoElement): Promise<string> {
+	public async getSnapshot(videoElement: HTMLVideoElement): Promise<string> {
 		const canvas = document.createElement("canvas")
 		canvas.width = videoElement.videoWidth
 		canvas.height = videoElement.videoHeight
