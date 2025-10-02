@@ -1,29 +1,24 @@
-import type { Maybe } from "@windows98/toolkit"
-import type {
-	StorageDomainContract,
-	StorageRepositoryStrategyContract,
-} from "../contracts"
+import { WebStorageAPI } from "@windows98/web"
+import type { StorageDomainContract } from "../contracts"
 
 export class StorageDomain<StorageKeys>
 	implements StorageDomainContract<StorageKeys>
 {
-	private storageRepository: StorageRepositoryStrategyContract<StorageKeys>
+	private storageRepository
 
-	constructor(
-		storageRepository: StorageRepositoryStrategyContract<StorageKeys>,
-	) {
-		this.storageRepository = storageRepository
+	constructor() {
+		this.storageRepository = new WebStorageAPI()
 	}
 
 	public set<Key extends keyof StorageKeys>(
 		key: Key,
 		value: StorageKeys[Key],
 	): void {
-		this.storageRepository.setItem(key, value)
+		this.storageRepository.localStorage.setItem(key, value)
 	}
 
-	public get<Key extends keyof StorageKeys>(key: Key): Maybe<StorageKeys[Key]> {
-		return this.storageRepository.getItem(key) as Maybe<StorageKeys[Key]>
+	public get<Key extends keyof StorageKeys>(key: Key): StorageKeys[Key] {
+		return this.storageRepository.localStorage.getItem(key)
 	}
 
 	public exists<Key extends keyof StorageKeys>(key: Key): boolean {
@@ -33,6 +28,6 @@ export class StorageDomain<StorageKeys>
 	}
 
 	public remove<Key extends keyof StorageKeys>(key: Key): void {
-		this.storageRepository.removeItem(key)
+		this.storageRepository.localStorage.removeItem(key)
 	}
 }
