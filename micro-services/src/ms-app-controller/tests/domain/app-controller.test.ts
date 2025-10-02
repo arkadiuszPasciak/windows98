@@ -1,18 +1,16 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
+import { locationAPIMock } from "@windows98/web/mocks"
+import { beforeAll, describe, expect, it } from "vitest"
 import { AppControllerDomain } from "../../src/domain/domains"
 
 describe("AppControllerDomain", () => {
-	const appControllerDomain = new AppControllerDomain()
+	const testData = {
+		href: "https://google.com",
+	}
+	const appControllerDomain = new AppControllerDomain(testData.href)
+	const locationMock = locationAPIMock.createMock()
 
-	beforeEach(() => {
-		vi.stubGlobal("location", {
-			reload: vi.fn(),
-			href: "",
-		})
-	})
-
-	afterEach(() => {
-		vi.restoreAllMocks()
+	beforeAll(() => {
+		locationAPIMock.implementMock(locationMock)
 	})
 
 	it("restartApplication should reload the browser", () => {
@@ -21,9 +19,9 @@ describe("AppControllerDomain", () => {
 		expect(window.location.reload).toHaveBeenCalled()
 	})
 
-	it("turnOffApplication should redirect to 'https://google.com'", () => {
+	it("turnOffApplication should redirect outside of the app", () => {
 		appControllerDomain.shutdownApplication()
 
-		expect(window.location.href).toBe("https://google.com")
+		expect(window.location.href).toBe(testData.href)
 	})
 })
