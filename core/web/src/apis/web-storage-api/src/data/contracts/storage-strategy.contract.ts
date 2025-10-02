@@ -1,6 +1,6 @@
 import type { Maybe } from "@windows98/toolkit"
 
-export interface StorageRepositoryStrategyContract<StorageKeys> {
+export interface StorageStrategyContract<StorageKeys> {
 	getItem<Key extends keyof StorageKeys>(key: Key): Maybe<StorageKeys[Key]>
 	setItem<Key extends keyof StorageKeys>(
 		key: Key,

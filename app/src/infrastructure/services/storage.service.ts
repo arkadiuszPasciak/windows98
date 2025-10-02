@@ -1,4 +1,4 @@
-import { MSLocalStorage } from "@windows98/micro-services"
+import { MSStorage } from "@windows98/micro-services"
 import type { Storage } from "../types"
 
-export const LocalStorageService = new MSLocalStorage<Storage>()
+export const StorageService = new MSStorage<Storage>()

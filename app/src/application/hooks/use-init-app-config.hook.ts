@@ -3,12 +3,12 @@ import { useTranslation } from "react-i18next"
 import { useAppConfig } from "./use-app-config.hook"
 import { useBrowserEnv } from "./use-browser-env.hook"
 import { useLanguageManager } from "./use-language-manager.hook"
-import { useLocalStorage } from "./use-local-storage.hook"
+import { useStorage } from "./use-storage.hook"
 import { useThemeManager } from "./use-theme-manager.hook"
 
 export function useInitAppConfig() {
 	const { AppConfigService } = useAppConfig()
-	const { LocalStorageService } = useLocalStorage()
+	const { StorageService } = useStorage()
 	const { ThemeService } = useThemeManager()
 	const { LanguageService } = useLanguageManager()
 	const { BrowserEnvService } = useBrowserEnv()
@@ -19,8 +19,8 @@ export function useInitAppConfig() {
 		const browserName = BrowserEnvService.getBrowserName()
 		const deviceType = BrowserEnvService.getDeviceType()
 		const operatingSystem = BrowserEnvService.getOperatingSystem()
-		const language = LocalStorageService.get("language")
-		const theme = LocalStorageService.get("theme")
+		const language = StorageService.get("language")
+		const theme = StorageService.get("theme")
 
 		if (browserName) {
 			AppConfigService.set("browserName", browserName)
