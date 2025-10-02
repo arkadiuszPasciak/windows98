@@ -10,7 +10,7 @@ export class ShutdownDomain implements ShutdownDomainContract {
 	constructor() {
 		makeAutoObservable(this)
 
-		this.appController = new MSAppController()
+		this.appController = new MSAppController("https://google.com")
 	}
 
 	public changePreset(preset: EShutdownPresets): void {

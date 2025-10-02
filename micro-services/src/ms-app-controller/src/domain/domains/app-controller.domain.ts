@@ -1,21 +1,20 @@
-import { AppControllerRepository } from "../../data/repositories"
-import type {
-	AppControllerDomainContract,
-	AppControllerRepositoryContract,
-} from "../contracts"
+import { LocationAPI } from "@windows98/web"
+import type { AppControllerDomainContract } from "../contracts"
 
 export class AppControllerDomain implements AppControllerDomainContract {
-	private appControllerRepository: AppControllerRepositoryContract
+	private locationRepository: LocationAPI
+	private href: string
 
-	constructor() {
-		this.appControllerRepository = new AppControllerRepository()
+	constructor(href: string) {
+		this.locationRepository = new LocationAPI()
+		this.href = href
 	}
 
 	restartApplication(): void {
-		this.appControllerRepository.restartApplication()
+		this.locationRepository.reload()
 	}
 
 	shutdownApplication(): void {
-		this.appControllerRepository.shutdownApplication()
+		this.locationRepository.setHref(this.href)
 	}
 }
