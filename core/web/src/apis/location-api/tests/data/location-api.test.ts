@@ -1,4 +1,4 @@
-import { beforeAll, describe, expect, it, vi } from "vitest"
+import { beforeAll, describe, expect, it } from "vitest"
 import { locationAPIMock } from "../../../../../@test/vitest/mocks"
 import { LocationAPIRepository } from "../../src/data/repositories"
 
@@ -14,14 +14,13 @@ describe("LocationAPIRepository", () => {
 	})
 
 	it("reload", () => {
-		const reloadSpy = vi.spyOn(locationMock, "reload")
 		locationRepository.reload()
-		expect(reloadSpy).toHaveBeenCalled()
-		reloadSpy.mockRestore()
+
+		expect(window.location.reload).toHaveBeenCalled()
 	})
 
 	it("setHref", () => {
 		locationRepository.setHref(testData.href)
-		expect(locationMock.href).toBe(testData.href)
+		expect(window.location.href).toBe(testData.href)
 	})
 })

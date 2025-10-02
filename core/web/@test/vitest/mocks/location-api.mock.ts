@@ -12,15 +12,15 @@ class LocationAPIMock {
 			host: "",
 			hostname: "",
 			href: "",
-			toString: () => "",
+			toString: vi.fn(),
 			origin: "",
 			pathname: "",
 			port: "",
 			protocol: "",
 			search: "",
-			assign: () => {},
-			reload: () => {},
-			replace: () => {},
+			assign: vi.fn(),
+			reload: vi.fn(),
+			replace: vi.fn(),
 		}
 	}
 
