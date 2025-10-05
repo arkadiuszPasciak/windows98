@@ -1,24 +1,14 @@
-import { beforeEach, describe, expect, it, vi } from "vitest"
+import { clipboardAPIMock } from "@windows98/web/mocks"
+import { beforeEach, describe, expect, it } from "vitest"
 import { MSClipboard } from "../../src/domain/domains/clipboard.domain"
 
 describe("ClipboardDomain", () => {
-	let clipboardValue = ""
+	const clipboardMock = clipboardAPIMock.createMock()
 
 	beforeEach(() => {
-		clipboardValue = ""
-		Object.defineProperty(window, "navigator", {
-			value: {
-				clipboard: {
-					writeText: vi.fn((text: string) => {
-						clipboardValue = text
-						return Promise.resolve()
-					}),
-					readText: vi.fn(() => Promise.resolve(clipboardValue)),
-				},
-			},
-			configurable: true,
-		})
+		clipboardAPIMock.implementMock(clipboardMock)
 	})
+
 	it("should copy and paste text using the repository", async () => {
 		await MSClipboard.copyText("test")
 		expect(await MSClipboard.pasteText()).toBe("test")
