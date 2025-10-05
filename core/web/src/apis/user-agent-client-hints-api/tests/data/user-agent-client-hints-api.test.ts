@@ -5,8 +5,8 @@ import { UserAgentClientHintsAPIRepository } from "../../src/data/repositories"
 describe("UserAgentClientHintsAPIRepository", () => {
 	const testData = {
 		brands: [
-			{ name: "Google", version: "89" },
-			{ name: "Apple", version: "14" },
+			{ brand: "Google", version: "89" },
+			{ brand: "Apple", version: "14" },
 		],
 		mobile: true,
 		platform: "MacOS",

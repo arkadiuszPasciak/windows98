@@ -17,14 +17,14 @@ export class UserAgentClientHintsAPIRepository
 	implements UserAgentClientHintsAPIRepositoryContract
 {
 	public getBrands(): Maybe<Brands> {
-		return window.navigator.userAgentData?.brands || null
+		return window.navigator.userAgentData?.brands ?? null
 	}
 
 	public isMobile(): Maybe<boolean> {
-		return window.navigator.userAgentData?.mobile || null
+		return window.navigator.userAgentData?.mobile ?? null
 	}
 
 	public getPlatform(): Maybe<Platform> {
-		return window.navigator.userAgentData?.platform || null
+		return window.navigator.userAgentData?.platform ?? null
 	}
 }

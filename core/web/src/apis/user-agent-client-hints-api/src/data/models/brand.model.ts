@@ -1,5 +1,5 @@
 export interface Brand {
-	name: string
+	brand: string
 	version: string
 }
 

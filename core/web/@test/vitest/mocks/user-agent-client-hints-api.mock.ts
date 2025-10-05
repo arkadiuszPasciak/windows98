@@ -1,5 +1,5 @@
 interface UserAgentClientHints {
-	brands: { name: string; version: string }[]
+	brands: { brand: string; version: string }[]
 	mobile: boolean
 	platform: string
 }
