@@ -1,23 +1,20 @@
-import { ClipboardRepository } from "../../data/repositories"
-import type {
-	ClipboardAPIRepositoryContract,
-	ClipboardDomainContract,
-} from "../contracts"
+import { ClipBoardAPI } from "@windows98/web"
+import type { ClipboardDomainContract } from "../contracts"
 
 class ClipboardDomain implements ClipboardDomainContract {
-	private readonly repository: ClipboardAPIRepositoryContract
+	private readonly clipboardRepository: ClipBoardAPI
 
-	constructor(repository: ClipboardAPIRepositoryContract) {
-		this.repository = repository
+	constructor() {
+		this.clipboardRepository = new ClipBoardAPI()
 	}
 
 	async copyText(text: string): Promise<void> {
-		await this.repository.writeText(text)
+		await this.clipboardRepository.writeText(text)
 	}
 
 	async pasteText(): Promise<string> {
-		return this.repository.readText()
+		return this.clipboardRepository.readText()
 	}
 }
 
-export const MSClipboard = new ClipboardDomain(new ClipboardRepository())
+export const MSClipboard = new ClipboardDomain()
