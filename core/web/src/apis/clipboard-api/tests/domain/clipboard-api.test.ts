@@ -1,26 +1,16 @@
-import { beforeEach, describe, expect, it, vi } from "vitest"
+import { beforeEach, describe, expect, it } from "vitest"
+import { clipboardAPIMock } from "../../../../../@test/vitest/mocks"
 import { ClipboardRepository } from "../../src/data/repositories"
 
 const clipboardRepository = new ClipboardRepository()
 
 describe("ClipboardRepository", () => {
-	let clipboardValue = ""
+	const clipboardMock = clipboardAPIMock.createMock()
 
 	beforeEach(() => {
-		clipboardValue = ""
-		Object.defineProperty(window, "navigator", {
-			value: {
-				clipboard: {
-					writeText: vi.fn((text: string) => {
-						clipboardValue = text
-						return Promise.resolve()
-					}),
-					readText: vi.fn(() => Promise.resolve(clipboardValue)),
-				},
-			},
-			configurable: true,
-		})
+		clipboardAPIMock.implementMock(clipboardMock)
 	})
+
 	it("should copy and paste text", async () => {
 		await clipboardRepository.writeText("test")
 		expect(await clipboardRepository.readText()).toBe("test")
