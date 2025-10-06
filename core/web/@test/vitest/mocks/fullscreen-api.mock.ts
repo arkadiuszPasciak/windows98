@@ -23,8 +23,8 @@ class FullscreenAPIMock {
 			documentElement: {
 				requestFullscreen,
 			},
-			exitFullscreen: exitFullscreen,
-			fullscreenElement: fullscreenElement,
+			exitFullscreen,
+			fullscreenElement,
 		})
 	}
 }
