@@ -1,5 +1,6 @@
 export * from "./canvas-api/src"
 export * from "./clipboard-api/src"
+export * from "./device-memory-api/src"
 export * from "./location-api/src"
 export * from "./media-devices-api/src"
 export * from "./screen-api/src"
