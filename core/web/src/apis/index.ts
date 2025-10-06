@@ -1,3 +1,4 @@
+export * from "./battery-status-api/src"
 export * from "./canvas-api/src"
 export * from "./clipboard-api/src"
 export * from "./device-memory-api/src"
