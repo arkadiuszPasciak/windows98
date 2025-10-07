@@ -1,6 +1,7 @@
 export * from "./battery-status-api/src"
 export * from "./canvas-api/src"
 export * from "./clipboard-api/src"
+export * from "./cookie-store-api/src"
 export * from "./device-memory-api/src"
 export * from "./fullscreen-api/src"
 export * from "./location-api/src"
