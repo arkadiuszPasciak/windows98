@@ -14,7 +14,7 @@ export class GeolocationAPIRepository
 	): void {
 		window.navigator.geolocation.getCurrentPosition(
 			successCallback,
-			errorCallback ?? undefined,
+			errorCallback,
 			options,
 		)
 	}
@@ -26,7 +26,7 @@ export class GeolocationAPIRepository
 	): number {
 		return window.navigator.geolocation.watchPosition(
 			successCallback,
-			errorCallback ?? undefined,
+			errorCallback,
 			options,
 		)
 	}
