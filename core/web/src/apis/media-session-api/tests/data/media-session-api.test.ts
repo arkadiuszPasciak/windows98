@@ -26,6 +26,10 @@ describe("MediaSessionAPIRepository", () => {
 	const mediaSessionAPIRepository = new MediaSessionAPIRepository()
 
 	beforeAll(() => {
+		it("should throw if MediaSessionAPI is not supported", () => {
+			expect(() => mediaSessionAPIRepository.getMetadata()).toThrow()
+		})
+
 		mediaSessionAPIMock.implementMock(mediaSessionMock)
 	})
 
@@ -54,5 +58,19 @@ describe("MediaSessionAPIRepository", () => {
 		expect(window.navigator.mediaSession.setPositionState).toHaveBeenCalledWith(
 			state,
 		)
+	})
+
+	it("should set camera active", async () => {
+		await mediaSessionAPIRepository.setCameraActive(true)
+		expect(window.navigator.mediaSession.setCameraActive).toHaveBeenCalledWith(
+			true,
+		)
+	})
+
+	it("should set microphone active", async () => {
+		await mediaSessionAPIRepository.setMicrophoneActive(false)
+		expect(
+			window.navigator.mediaSession.setMicrophoneActive,
+		).toHaveBeenCalledWith(false)
 	})
 })

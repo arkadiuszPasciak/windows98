@@ -5,54 +5,48 @@ export class MediaSessionAPIRepository
 	implements MediaSessionAPIRepositoryContract
 {
 	public getMetadata(): Maybe<MediaMetadata> {
+		this.assertAPISupported()
+
 		return window.navigator.mediaSession.metadata
 	}
 
-	@CatchError()
 	public getPlaybackState(): MediaSessionPlaybackState {
-		try {
-			return window.navigator.mediaSession.playbackState
-		} catch (error) {
-			throw new Error(String(error))
-		}
+		this.assertAPISupported()
+
+		return window.navigator.mediaSession.playbackState
 	}
 
-	@CatchError()
 	public setActionHandler(
 		action: MediaSessionAction,
 		handler: MediaSessionActionHandler | null,
 	): void {
-		try {
-			window.navigator.mediaSession.setActionHandler(action, handler)
-		} catch (error) {
-			throw new Error(String(error))
-		}
+		this.assertAPISupported()
+
+		window.navigator.mediaSession.setActionHandler(action, handler)
 	}
 
-	@CatchError()
 	public async setCameraActive(active: boolean): Promise<void> {
-		try {
-			await window.navigator.mediaSession.setCameraActive(active)
-		} catch (error) {
-			throw new Error(String(error))
-		}
+		this.assertAPISupported()
+
+		await window.navigator.mediaSession.setCameraActive(active)
 	}
 
-	@CatchError()
 	public async setMicrophoneActive(active: boolean): Promise<void> {
-		try {
-			await window.navigator.mediaSession.setMicrophoneActive(active)
-		} catch {
-			throw new Error("Unable to set microphone active")
-		}
+		this.assertAPISupported()
+
+		await window.navigator.mediaSession.setMicrophoneActive(active)
+	}
+
+	public setPositionState(state: MediaPositionState): void {
+		this.assertAPISupported()
+
+		window.navigator.mediaSession.setPositionState(state)
 	}
 
 	@CatchError()
-	public setPositionState(state: MediaPositionState): void {
-		try {
-			window.navigator.mediaSession.setPositionState(state)
-		} catch {
-			throw new Error("Unable to set position state")
+	private assertAPISupported(): void {
+		if (!window.navigator.mediaSession) {
+			throw new Error("MediaSessionAPI is not supported in the browser")
 		}
 	}
 }

@@ -10,6 +10,8 @@ class MediaSessionAPIMock {
 			metadata,
 			playbackState,
 			setActionHandler: vi.fn(),
+			setCameraActive: vi.fn(),
+			setMicrophoneActive: vi.fn(),
 			setPositionState: vi.fn(),
 			addEventListener: vi.fn(),
 			removeEventListener: vi.fn(),
