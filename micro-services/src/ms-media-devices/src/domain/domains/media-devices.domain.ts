@@ -1,19 +1,19 @@
-import { CanvasAPI, MediaDevicesAPI } from "@windows98/web"
+import { CanvasAPI, MediaStreamImageCaptureAPI } from "@windows98/web"
 import type { MediaDevicesDomainContract } from "../contracts"
 
 class MediaDevicesDomain implements MediaDevicesDomainContract {
-	private readonly mediaDevicesAPI: MediaDevicesAPI
 	private readonly canvasAPI: CanvasAPI
+	private readonly mediaStreamImageCaptureAPI: MediaStreamImageCaptureAPI
 
 	constructor() {
-		this.mediaDevicesAPI = new MediaDevicesAPI()
 		this.canvasAPI = new CanvasAPI()
+		this.mediaStreamImageCaptureAPI = new MediaStreamImageCaptureAPI()
 	}
 
 	async requestCameraStream(
 		constraints: MediaStreamConstraints,
 	): Promise<MediaStream> {
-		return this.mediaDevicesAPI.getUserMedia(constraints)
+		return this.mediaStreamImageCaptureAPI.getUserMedia(constraints)
 	}
 
 	async getSnapshot(videoElement: HTMLVideoElement): Promise<string> {
