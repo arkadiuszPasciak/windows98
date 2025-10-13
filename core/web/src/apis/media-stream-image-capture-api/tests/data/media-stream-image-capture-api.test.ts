@@ -1,5 +1,5 @@
 import { beforeAll, describe, expect, it } from "vitest"
-import { mediaStreamImageCaptureAPIMock } from "/Users/wilhelm-neumann/Documents/projects/windows98/core/web/@test/vitest/mocks/media-stream-image-capture-api.mock"
+import { mediaStreamImageCaptureAPIMock } from "../../../../../@test/vitest/mocks"
 import { MediaStreamImageCaptureAPIRepository } from "../../src/data/repositories"
 
 describe("MediaStreamImageCaptureAPIRepository", () => {
