@@ -1,6 +1,6 @@
 import {
 	canvasAPIMock,
-	mediaDevicesAPIMock,
+	mediaStreamImageCaptureAPIMock,
 	videoAPIMock,
 } from "@windows98/web/mocks"
 import { describe, expect, it } from "vitest"
@@ -8,23 +8,18 @@ import { MSMediaDevices } from "../src/domain/domains"
 
 describe("MSMediaDevices", () => {
 	it("requestCameraStream", async () => {
-		const testData = {
-			id: "mock-stream",
-		}
-
-		const streamElementMock = mediaDevicesAPIMock.createMock(testData.id)
-		mediaDevicesAPIMock.implementMock(streamElementMock)
+		mediaStreamImageCaptureAPIMock.implementMock()
 
 		const result = await MSMediaDevices.requestCameraStream({ video: true })
-		expect(result).toBe(streamElementMock)
+		expect(result).toBeInstanceOf(MediaStream)
 
 		const videoElementMock = videoAPIMock.createMock(240, 320)
-		videoElementMock.srcObject = streamElementMock
+		videoElementMock.srcObject = result
 
 		expect(
 			videoElementMock.srcObject,
 			"should assign MediaStream to video.srcObject",
-		).toBe(streamElementMock)
+		).toBe(result)
 	})
 
 	it("getSnapshot", async () => {
