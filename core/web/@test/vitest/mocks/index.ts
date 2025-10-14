@@ -1,6 +1,7 @@
 export * from "./battery-status-api.mock"
 export * from "./canvas-api.mock"
 export * from "./clipboard-api.mock"
+export * from "./compression-streams-api.mock"
 export * from "./cookie-store-api.mock"
 export * from "./device-memory-api.mock"
 export * from "./fullscreen-api.mock"
