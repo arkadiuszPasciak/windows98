@@ -9,5 +9,5 @@ export interface MediaSessionAPIRepositoryContract {
 	): void
 	setCameraActive(active: boolean): Promise<void>
 	setMicrophoneActive(active: boolean): Promise<void>
-	setPositionState(state?: MediaPositionState | undefined): void
+	setPositionState(state: MediaPositionState): void
 }
