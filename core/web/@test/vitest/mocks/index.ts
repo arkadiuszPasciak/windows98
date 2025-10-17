@@ -1,5 +1,6 @@
 export * from "./battery-status-api.mock"
 export * from "./beacon-api.mock"
+export * from "./broadcast-channel-api.mock"
 export * from "./canvas-api.mock"
 export * from "./clipboard-api.mock"
 export * from "./compression-streams-api.mock"
