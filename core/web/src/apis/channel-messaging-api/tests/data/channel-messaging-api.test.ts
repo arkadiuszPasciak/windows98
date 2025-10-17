@@ -9,7 +9,7 @@ describe("ChannelMessagingAPIRepository", () => {
 		channelMessagingAPIMock.implementMock()
 	})
 
-	it("should sendBeacon return boolean value", () => {
+	it("should create and return a MessageChannel instance", () => {
 		const result = channelMessagingRepository.createMessageChannel()
 
 		expect(result).toBeInstanceOf(MessageChannel)
