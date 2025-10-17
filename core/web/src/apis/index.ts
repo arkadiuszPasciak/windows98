@@ -1,4 +1,5 @@
 export * from "./battery-status-api/src"
+export * from "./beacon-api/src"
 export * from "./canvas-api/src"
 export * from "./clipboard-api/src"
 export * from "./compression-streams-api/src"
