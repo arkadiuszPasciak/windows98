@@ -4,7 +4,6 @@ export type ServiceWorkerState =
 	| "activating"
 	| "activated"
 	| "redundant"
-	| "parsed"
 
 export interface ServiceWorkerStateModel {
 	scriptURL: string

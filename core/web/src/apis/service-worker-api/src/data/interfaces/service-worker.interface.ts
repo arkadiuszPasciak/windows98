@@ -1,3 +1,5 @@
+import type { ServiceWorkerState } from "../models/state.model"
+
 export interface ServiceWorkerInterface {
 	scriptURL: string
 	state: ServiceWorkerState

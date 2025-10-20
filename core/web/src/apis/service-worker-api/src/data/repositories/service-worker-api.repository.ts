@@ -91,11 +91,11 @@ export class ServiceWorkerAPIRepository
 	}
 
 	private toStateModel(
-		worker: ServiceWorkerInterface,
+		worker: ServiceWorker | ServiceWorkerInterface,
 	): ServiceWorkerStateModel {
 		return {
 			scriptURL: worker.scriptURL,
-			state: worker.state,
+			state: worker.state as unknown as ServiceWorkerStateModel["state"],
 		}
 	}
 }

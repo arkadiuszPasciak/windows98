@@ -6,7 +6,6 @@ type WorkerState =
 	| "activating"
 	| "activated"
 	| "redundant"
-	| "controlling"
 
 class ServiceWorkerAPIMock {
 	public registration: {
