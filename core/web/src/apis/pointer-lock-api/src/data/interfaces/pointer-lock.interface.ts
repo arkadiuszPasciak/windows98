@@ -4,7 +4,6 @@ import type { ElementWithPointerLockInterface } from "./element.interface"
 export interface PointerLockInterface {
 	exitPointerLock(): void
 	requestPointerLock(element: ElementWithPointerLockInterface): Promise<void>
-	exitPointerLock(): void
 	onPointerLockChange(listener: (event: PointerLockChangeEvent) => void): void
 	offPointerLockChange(listener: (event: PointerLockChangeEvent) => void): void
 	onPointerLockError(listener: (event: Event) => void): void
