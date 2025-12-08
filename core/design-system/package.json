@@ -36,14 +36,14 @@
 		"test:ui:watch": "playwright test -c ./@test/playwright/playwright-ct.config.mjs --ui"
 	},
 	"peerDependencies": {
-		"react": "19.1.1",
-		"react-dom": "19.1.1"
+		"react": "19.2.1",
+		"react-dom": "19.2.1"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@playwright/experimental-ct-react": "1.55.0",
-		"@types/react": "19.1.1",
-		"@types/react-dom": "19.1.1",
+		"@types/react": "19.2.7",
+		"@types/react-dom": "19.2.3",
 		"@types/node": "22.13.14",
 		"@vitejs/plugin-react": "5.0.2",
 		"@windows98/configs": "workspace:*",
