@@ -5,7 +5,7 @@
 	"version": "1.0.0",
 	"type": "module",
 	"engines": {
-		"node": "22.19.0",
+		"node": "22.21.1",
 		"pnpm": "10.16.1"
 	},
 	"main": "@bundler/dist/index.umd.cjs",
