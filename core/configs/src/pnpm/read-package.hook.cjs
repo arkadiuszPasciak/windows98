@@ -2,7 +2,7 @@ class PNPMReadPackageHook {
 	#dependencies = {
 		requirements: {
 			"@biomejs/biome": "1.9.4",
-			"@playwright/experimental-ct-react": "1.55.0",
+			"@playwright/experimental-ct-react": "1.57.0",
 			"@vitejs/plugin-react": "5.1.2",
 			"@types/react": "19.2.7",
 			"@types/react-dom": "19.2.3",
