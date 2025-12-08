@@ -70,7 +70,7 @@ install-cache:
   runs-on: ubuntu-latest
   strategy:
     matrix:
-      node-version: [22.19.0]
+      node-version: [22.21.1]
   steps:
     - name: Checkout Commit
       uses: actions/checkout@v3.5.0
@@ -89,7 +89,7 @@ install-cache:
         key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
     
     - name: Install PNPM
-      run: npm install -g pnpm@10.16.1
+      run: npm install -g pnpm@10.25.0
     
     - name: Install Dependencies
       run: pnpm install
@@ -201,7 +201,7 @@ Deploy-Production:
     - uses: actions/checkout@v3.5.0
     
     - name: Install PNPM
-      run: npm install -g pnpm@10.16.1
+      run: npm install -g pnpm@10.25.0
     
     - name: Install Dependencies
       run: pnpm install
@@ -267,7 +267,7 @@ pnpm --filter @windows98/ci-cd run build
 ```yaml
 strategy:
   matrix:
-    node-version: [22.19.0]
+    node-version: [22.21.1]
 ```
 
 **Purpose:** Ensure compatibility with specific Node.js version

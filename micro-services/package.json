@@ -14,19 +14,19 @@
 	"description": "Micro services for Windows 98",
 	"author": "Arkadiusz Paściak",
 	"engines": {
-		"node": "22.19.0",
-		"pnpm": "10.16.1"
+		"node": "22.21.1",
+		"pnpm": "10.25.0"
 	},
 	"type": "module",
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
-		"lint-staged": "16.1.6",
-		"typescript": "5.9.2",
-		"vite": "7.1.5",
+		"lint-staged": "16.2.7",
+		"typescript": "5.9.3",
+		"vite": "7.2.7",
 		"vite-plugin-dts": "4.5.4",
-		"vitest": "3.2.4"
+		"vitest": "4.0.15"
 	},
 	"scripts": {
 		"dev": "vite @bundler",

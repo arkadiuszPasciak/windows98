@@ -2,25 +2,25 @@
 	"author": "Arkadiusz Paściak",
 	"description": "This workspace uses Storybook, an open-source tool for developing UI components in isolation. It helps to build, document, and test React components interactively.",
 	"dependencies": {
-		"react": "19.1.1",
-		"react-dom": "19.1.1"
+		"react": "19.2.1",
+		"react-dom": "19.2.1"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
-		"@storybook/addon-a11y": "9.1.6",
-		"@storybook/addon-docs": "9.1.6",
-		"@storybook/react-vite": "9.1.6",
-		"@types/react": "19.1.1",
-		"@types/react-dom": "19.1.1",
-		"@vitejs/plugin-react": "5.0.2",
+		"@storybook/addon-a11y": "10.1.4",
+		"@storybook/addon-docs": "10.1.4",
+		"@storybook/react-vite": "10.1.4",
+		"@types/react": "19.2.7",
+		"@types/react-dom": "19.2.3",
+		"@vitejs/plugin-react": "5.1.2",
 		"@windows98/configs": "workspace:*",
 		"@windows98/design-system": "workspace:*",
 		"@windows98/i18n": "workspace:*",
 		"@windows98/micro-frontends": "workspace:*",
-		"lint-staged": "16.1.6",
-		"storybook": "9.1.6",
-		"typescript": "5.9.2",
-		"vite": "7.1.5"
+		"lint-staged": "16.2.7",
+		"storybook": "10.1.4",
+		"typescript": "5.9.3",
+		"vite": "7.2.7"
 	},
 	"main": ".storybook/main.ts",
 	"name": "@windows98/docs",

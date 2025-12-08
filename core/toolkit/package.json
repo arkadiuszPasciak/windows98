@@ -4,8 +4,8 @@
 	"description": "Curated set of tools and utilities for efficient software development",
 	"author": "Arkadiusz Paściak",
 	"engines": {
-		"node": "22.19.0",
-		"pnpm": "10.16.1"
+		"node": "22.21.1",
+		"pnpm": "10.25.0"
 	},
 	"exports": {
 		".": "./src/index.ts"
@@ -14,9 +14,9 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"@windows98/configs": "workspace:*",
-		"lint-staged": "16.1.6",
-		"typescript": "5.9.2",
-		"vitest": "3.2.4"
+		"lint-staged": "16.2.7",
+		"typescript": "5.9.3",
+		"vitest": "4.0.15"
 	},
 	"scripts": {
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",

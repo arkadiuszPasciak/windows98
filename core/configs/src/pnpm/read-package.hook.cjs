@@ -2,21 +2,24 @@ class PNPMReadPackageHook {
 	#dependencies = {
 		requirements: {
 			"@biomejs/biome": "1.9.4",
-			"@playwright/experimental-ct-react": "1.55.0",
-			"@vitejs/plugin-react": "5.0.2",
-			i18next: "25.5.2",
-			"lint-staged": "16.1.6",
-			mobx: "6.13.7",
-			"mobx-react-lite": "4.1.0",
-			react: "19.1.1",
-			"react-i18next": "15.7.3",
-			"react-dom": "19.1.1",
-			stylelint: "16.24.0",
-			typescript: "5.9.2",
-			vite: "7.1.5",
+			"@playwright/experimental-ct-react": "1.57.0",
+			"@vitejs/plugin-react": "5.1.2",
+			"@types/react": "19.2.7",
+			"@types/react-dom": "19.2.3",
+			i18next: "25.7.2",
+			lightningcss: "1.30.2",
+			"lint-staged": "16.2.7",
+			mobx: "6.15.0",
+			"mobx-react-lite": "4.1.1",
+			react: "19.2.1",
+			"react-i18next": "16.4.0",
+			"react-dom": "19.2.1",
+			stylelint: "16.26.1",
+			typescript: "5.9.3",
+			vite: "7.2.7",
 			"vite-plugin-css-injected-by-js": "3.5.2",
 			"vite-plugin-dts": "4.5.4",
-			vitest: "3.2.4",
+			vitest: "4.0.15",
 		},
 		types: [
 			"dependencies",
@@ -28,8 +31,8 @@ class PNPMReadPackageHook {
 
 	#engines = {
 		requirements: {
-			node: "22.19.0",
-			pnpm: "10.16.1",
+			node: "22.21.1",
+			pnpm: "10.25.0",
 		},
 	}
 

@@ -8,8 +8,8 @@ The repository is structured as a monorepo, with multiple packages and services 
 
 ### Requirements
 
-1. Node.js 22.19.0
-2. PNPM 10.16.1
+1. Node.js 22.21.1
+2. PNPM 10.25.0
 
 ### Workspaces
 

@@ -4,8 +4,8 @@
 	"description": "CI/CD configuration for Windows 98",
 	"author": "Arkadiusz Paściak",
 	"engines": {
-		"node": "22.19.0",
-		"pnpm": "10.16.1"
+		"node": "22.21.1",
+		"pnpm": "10.25.0"
 	},
 	"type": "module",
 	"scripts": {
