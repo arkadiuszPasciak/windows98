@@ -63,7 +63,7 @@ class ServiceWorkerAPIMock {
 
 		const unregister = vi.fn(async () => {
 			if (!this.registration) return Promise.resolve(false)
-			return Promise.resolve(this.registration.unregister())
+			return Promise.resolve(new this.registration.unregister())
 		})
 
 		const addEventListener = vi.fn()
