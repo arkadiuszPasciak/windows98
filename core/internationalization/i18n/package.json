@@ -11,7 +11,7 @@
 		"@biomejs/biome": "1.9.4",
 		"@windows98/configs": "workspace:*",
 		"i18next": "25.7.2",
-		"lint-staged": "16.1.6",
+		"lint-staged": "16.2.7",
 		"react-i18next": "16.4.0",
 		"typescript": "5.9.3"
 	},
