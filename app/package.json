@@ -38,7 +38,7 @@
 		"@vitejs/plugin-react": "5.1.2",
 		"@windows98/toolkit": "workspace:*",
 		"lint-staged": "16.2.7",
-		"stylelint": "16.24.0",
+		"stylelint": "16.26.1",
 		"typescript": "5.9.3",
 		"vite": "7.2.7"
 	},
