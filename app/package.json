@@ -39,7 +39,7 @@
 		"@windows98/toolkit": "workspace:*",
 		"lint-staged": "16.1.6",
 		"stylelint": "16.24.0",
-		"typescript": "5.9.2",
+		"typescript": "5.9.3",
 		"vite": "7.2.7"
 	},
 	"type": "module"
