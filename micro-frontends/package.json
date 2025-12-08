@@ -15,8 +15,8 @@
 		"@windows98/micro-services": "workspace:*",
 		"@windows98/i18n": "workspace:*",
 		"i18next": "25.5.2",
-		"mobx": "6.13.7",
-		"mobx-react-lite": "4.1.0",
+		"mobx": "6.15.0",
+		"mobx-react-lite": "4.1.1",
 		"react": "19.2.1",
 		"react-dom": "19.2.1",
 		"react-i18next": "15.7.3"
