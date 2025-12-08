@@ -35,14 +35,14 @@ importers:
         specifier: workspace:*
         version: link:../micro-services
       i18next:
-        specifier: 25.5.2
-        version: 25.5.2(typescript@5.9.2)
+        specifier: 25.7.2
+        version: 25.7.2(typescript@5.9.2)
       mobx:
-        specifier: 6.13.7
-        version: 6.13.7
+        specifier: 6.15.0
+        version: 6.15.0
       mobx-react-lite:
-        specifier: 4.1.0
-        version: 4.1.0(mobx@6.13.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        specifier: 4.1.1
+        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       react:
         specifier: 19.2.1
         version: 19.2.1
@@ -50,8 +50,8 @@ importers:
         specifier: 19.2.1
         version: 19.2.1(react@19.2.1)
       react-i18next:
-        specifier: 15.7.3
-        version: 15.7.3(i18next@25.5.2(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2)
+        specifier: 16.4.0
+        version: 16.4.0(i18next@25.7.2(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2)
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -181,14 +181,14 @@ importers:
         specifier: workspace:*
         version: link:../../configs
       i18next:
-        specifier: 25.5.2
-        version: 25.5.2(typescript@5.9.2)
+        specifier: 25.7.2
+        version: 25.7.2(typescript@5.9.2)
       lint-staged:
         specifier: 16.1.6
         version: 16.1.6
       react-i18next:
-        specifier: 15.7.3
-        version: 15.7.3(i18next@25.5.2(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2)
+        specifier: 16.4.0
+        version: 16.4.0(i18next@25.7.2(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2)
       typescript:
         specifier: 5.9.2
         version: 5.9.2
@@ -305,14 +305,14 @@ importers:
         specifier: workspace:*
         version: link:../micro-services
       i18next:
-        specifier: 25.5.2
-        version: 25.5.2(typescript@5.9.2)
+        specifier: 25.7.2
+        version: 25.7.2(typescript@5.9.2)
       mobx:
-        specifier: 6.13.7
-        version: 6.13.7
+        specifier: 6.15.0
+        version: 6.15.0
       mobx-react-lite:
-        specifier: 4.1.0
-        version: 4.1.0(mobx@6.13.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        specifier: 4.1.1
+        version: 4.1.1(mobx@6.15.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       react:
         specifier: 19.2.1
         version: 19.2.1
@@ -320,8 +320,8 @@ importers:
         specifier: 19.2.1
         version: 19.2.1(react@19.2.1)
       react-i18next:
-        specifier: 15.7.3
-        version: 15.7.3(i18next@25.5.2(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2)
+        specifier: 16.4.0
+        version: 16.4.0(i18next@25.7.2(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2)
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -487,6 +487,10 @@ packages:
 
   '@babel/runtime@7.28.2':
     resolution: {integrity: sha512-KHp2IflsnGywDjBWDkR9iEqiWSpc8GIi0lgTT3mOElT0PP1tG26P4tmFI2YvAdzgq9RGyoHZQEIEdZy6Ec5xCA==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.28.4':
+    resolution: {integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -1776,8 +1780,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  i18next@25.5.2:
-    resolution: {integrity: sha512-lW8Zeh37i/o0zVr+NoCHfNnfvVw+M6FQbRp36ZZ/NyHDJ3NJVpp2HhAUyU9WafL5AssymNoOjMRB48mmx2P6Hw==}
+  i18next@25.7.2:
+    resolution: {integrity: sha512-58b4kmLpLv1buWUEwegMDUqZVR5J+rT+WTRFaBGL7lxDuJQQ0NrJFrq+eT2N94aYVR1k1Sr13QITNOL88tZCuw==}
     peerDependencies:
       typescript: ^5
     peerDependenciesMeta:
@@ -2096,8 +2100,8 @@ packages:
   mlly@1.7.4:
     resolution: {integrity: sha512-qmdSIPC4bDJXgZTCR7XosJiNKySV7O215tsPtDN9iEO/7q/76b/ijtgRu/+epFXSJhijtTCCGp3DWS549P3xKw==}
 
-  mobx-react-lite@4.1.0:
-    resolution: {integrity: sha512-QEP10dpHHBeQNv1pks3WnHRCem2Zp636lq54M2nKO2Sarr13pL4u6diQXf65yzXUn0mkk18SyIDCm9UOJYTi1w==}
+  mobx-react-lite@4.1.1:
+    resolution: {integrity: sha512-iUxiMpsvNraCKXU+yPotsOncNNmyeS2B5DKL+TL6Tar/xm+wwNJAubJmtRSeAoYawdZqwv8Z/+5nPRHeQxTiXg==}
     peerDependencies:
       mobx: ^6.9.0
       react: ^16.8.0 || ^17 || ^18 || ^19
@@ -2109,8 +2113,8 @@ packages:
       react-native:
         optional: true
 
-  mobx@6.13.7:
-    resolution: {integrity: sha512-aChaVU/DO5aRPmk1GX8L+whocagUUpBQqoPtJk+cm7UOXUk87J4PeWCh6nNmTTIfEhiR9DI/+FnA8dln/hTK7g==}
+  mobx@6.15.0:
+    resolution: {integrity: sha512-UczzB+0nnwGotYSgllfARAqWCJ5e/skuV2K/l+Zyck/H6pJIhLXuBnz+6vn2i211o7DtbE78HQtsYEKICHGI+g==}
 
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
@@ -2301,10 +2305,10 @@ packages:
     peerDependencies:
       react: ^19.2.1
 
-  react-i18next@15.7.3:
-    resolution: {integrity: sha512-AANws4tOE+QSq/IeMF/ncoHlMNZaVLxpa5uUGW1wjike68elVYr0018L9xYoqBr1OFO7G7boDPrbn0HpMCJxTw==}
+  react-i18next@16.4.0:
+    resolution: {integrity: sha512-bxVeBA8Ky2UeItNhF4JRxHCFIrpEJHGFG/mOAa4CR0JkqaDEYSLmlEgmC4Os63SBlZ+E5U0YyrNJOSVl2mtVqQ==}
     peerDependencies:
-      i18next: '>= 25.4.1'
+      i18next: '>= 25.6.2'
       react: '>= 16.8.0'
       react-dom: '*'
       react-native: '*'
@@ -2635,6 +2639,11 @@ packages:
 
   use-sync-external-store@1.5.0:
     resolution: {integrity: sha512-Rb46I4cGGVBmjamjphe8L/UnvJD+uPPtTkNvX5mZgqdbavhI4EbgIWJiIHXJ8bc/i9EQGPRh4DwEURJ552Do0A==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
+  use-sync-external-store@1.6.0:
+    resolution: {integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -2972,6 +2981,8 @@ snapshots:
       '@babel/helper-plugin-utils': 7.27.1
 
   '@babel/runtime@7.28.2': {}
+
+  '@babel/runtime@7.28.4': {}
 
   '@babel/template@7.27.2':
     dependencies:
@@ -4240,9 +4251,9 @@ snapshots:
 
   husky@8.0.3: {}
 
-  i18next@25.5.2(typescript@5.9.2):
+  i18next@25.7.2(typescript@5.9.2):
     dependencies:
-      '@babel/runtime': 7.28.2
+      '@babel/runtime': 7.28.4
     optionalDependencies:
       typescript: 5.9.2
 
@@ -4536,15 +4547,15 @@ snapshots:
       pkg-types: 1.3.1
       ufo: 1.6.1
 
-  mobx-react-lite@4.1.0(mobx@6.13.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  mobx-react-lite@4.1.1(mobx@6.15.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
-      mobx: 6.13.7
+      mobx: 6.15.0
       react: 19.2.1
       use-sync-external-store: 1.5.0(react@19.2.1)
     optionalDependencies:
       react-dom: 19.2.1(react@19.2.1)
 
-  mobx@6.13.7: {}
+  mobx@6.15.0: {}
 
   ms@2.1.3: {}
 
@@ -4720,12 +4731,13 @@ snapshots:
       react: 19.2.1
       scheduler: 0.27.0
 
-  react-i18next@15.7.3(i18next@25.5.2(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2):
+  react-i18next@16.4.0(i18next@25.7.2(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2):
     dependencies:
       '@babel/runtime': 7.28.2
       html-parse-stringify: 3.0.1
-      i18next: 25.5.2(typescript@5.9.2)
+      i18next: 25.7.2(typescript@5.9.2)
       react: 19.2.1
+      use-sync-external-store: 1.6.0(react@19.2.1)
     optionalDependencies:
       react-dom: 19.2.1(react@19.2.1)
       typescript: 5.9.2
@@ -5095,6 +5107,10 @@ snapshots:
       punycode: 2.3.1
 
   use-sync-external-store@1.5.0(react@19.2.1):
+    dependencies:
+      react: 19.2.1
+
+  use-sync-external-store@1.6.0(react@19.2.1):
     dependencies:
       react: 19.2.1
 
