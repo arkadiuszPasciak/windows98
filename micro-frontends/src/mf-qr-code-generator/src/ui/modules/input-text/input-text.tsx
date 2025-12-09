@@ -7,15 +7,13 @@ export const InputText: FunctionComponent = observer(() => {
 	const { translations, inputValue, setInputValue } = useInputText()
 
 	return (
-		<>
-			<DSInput
-				id="mf-qr-code-generator-text"
-				labelName={translations.label}
-				initialValue={inputValue}
-				placeholder={translations.placeholder}
-				wrapperLayout="vertical"
-				onChange={setInputValue}
-			/>
-		</>
+		<DSInput
+			id="mf-qr-code-generator-text"
+			labelName={translations.label}
+			initialValue={inputValue}
+			placeholder={translations.placeholder}
+			wrapperLayout="vertical"
+			onChange={setInputValue}
+		/>
 	)
 })

@@ -87,21 +87,20 @@ describe("[MicroServices]<BrowserEnv>(BrowserEnvService)", () => {
 		vi.restoreAllMocks()
 	})
 
-	it.each(MUserAgentOperatingSystems)(
-		"getOperatingSystem()",
-		(operatingSystem) => {
-			vi.stubGlobal("navigator", {
-				userAgent: operatingSystem.userAgent,
-			})
+	it.each(
+		MUserAgentOperatingSystems,
+	)("getOperatingSystem()", (operatingSystem) => {
+		vi.stubGlobal("navigator", {
+			userAgent: operatingSystem.userAgent,
+		})
 
-			const browserEnvService = new BrowserEnvService()
-			const operatingSystemName = browserEnvService.getOperatingSystem()
+		const browserEnvService = new BrowserEnvService()
+		const operatingSystemName = browserEnvService.getOperatingSystem()
 
-			expect(operatingSystemName).equal(operatingSystem.expected)
+		expect(operatingSystemName).equal(operatingSystem.expected)
 
-			vi.restoreAllMocks()
-		},
-	)
+		vi.restoreAllMocks()
+	})
 
 	test("getScreenInformation()", () => {
 		const testData = {

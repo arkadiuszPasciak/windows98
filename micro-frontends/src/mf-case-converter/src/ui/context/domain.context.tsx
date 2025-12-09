@@ -1,7 +1,7 @@
 import {
+	createContext,
 	type FunctionComponent,
 	type PropsWithChildren,
-	createContext,
 } from "react"
 import { caseConverterDomain } from "../../domain/domains"
 

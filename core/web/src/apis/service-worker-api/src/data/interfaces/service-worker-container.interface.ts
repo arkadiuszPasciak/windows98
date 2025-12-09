@@ -1,5 +1,5 @@
-import type { ServiceWorkerRegistrationInterface } from "./service-worker-registration.interface"
 import type { ServiceWorkerInterface } from "./service-worker.interface"
+import type { ServiceWorkerRegistrationInterface } from "./service-worker-registration.interface"
 
 export interface ServiceWorkerContainerInterface {
 	controller: ServiceWorkerInterface | null

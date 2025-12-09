@@ -17,6 +17,7 @@ export const MenuItemGroup: FunctionComponent<MenuItemGroupProps> = ({
 
 	return (
 		<div
+			role="toolbar"
 			className={getClassNames([styles["menu-item"]])}
 			data-testid={`mf-start-menu-menu-item-${id}-open-group`}
 			onMouseEnter={handleMouseEnter}

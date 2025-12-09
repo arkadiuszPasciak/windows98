@@ -1,5 +1,4 @@
-import { MSColorGenerator } from "@windows98/micro-services"
-import { MSClipboard } from "@windows98/micro-services"
+import { MSClipboard, MSColorGenerator } from "@windows98/micro-services"
 import { makeAutoObservable } from "mobx"
 import type { ColorGeneratorDomainContract } from "../contracts"
 import type { ColorState } from "../models"

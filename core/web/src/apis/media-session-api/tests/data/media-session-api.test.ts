@@ -1,5 +1,4 @@
-import { beforeAll, describe, expect, it } from "vitest"
-import { vi } from "vitest"
+import { beforeAll, describe, expect, it, vi } from "vitest"
 import { mediaSessionAPIMock } from "../../../../../@test/vitest/mocks"
 import { MediaSessionAPIRepository } from "../../src/data/repositories"
 

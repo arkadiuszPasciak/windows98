@@ -18,24 +18,30 @@
 		--ds-border-color-secondary: var(--ds-color-grey400);
 		--ds-border-color-tertiary: var(--ds-color-white100);
 
-		--ds-border-field-inner: inset -1px -1px var(--ds-color-white100), inset 1px
-			1px var(--ds-color-grey200);
-		--ds-border-field-outer: inset -2px -2px var(--ds-color-grey900), inset 2px
-			2px var(--ds-color-black200);
-		--ds-border-raised-inner: inset -1px -1px var(--ds-color-black200), inset
-			1px 1px var(--ds-color-white100);
-		--ds-border-raised-outer: inset -2px -2px var(--ds-color-grey200), inset 2px
-			2px var(--ds-color-grey900);
-		--ds-border-sunken-inner: inset -1px -1px var(--ds-color-white100), inset
-			1px 1px var(--ds-color-black200);
-		--ds-border-sunken-outer: inset -2px -2px var(--ds-color-grey900), inset 2px
-			2px var(--ds-color-grey200);
+		--ds-border-field-inner:
+			inset -1px -1px var(--ds-color-white100), inset 1px 1px
+			var(--ds-color-grey200);
+		--ds-border-field-outer:
+			inset -2px -2px var(--ds-color-grey900), inset 2px 2px
+			var(--ds-color-black200);
+		--ds-border-raised-inner:
+			inset -1px -1px var(--ds-color-black200), inset 1px 1px
+			var(--ds-color-white100);
+		--ds-border-raised-outer:
+			inset -2px -2px var(--ds-color-grey200), inset 2px 2px
+			var(--ds-color-grey900);
+		--ds-border-sunken-inner:
+			inset -1px -1px var(--ds-color-white100), inset 1px 1px
+			var(--ds-color-black200);
+		--ds-border-sunken-outer:
+			inset -2px -2px var(--ds-color-grey900), inset 2px 2px
+			var(--ds-color-grey200);
 
-		--ds-border-field: var(--ds-border-field-inner),
-			var(--ds-border-field-outer);
-		--ds-border-raised: var(--ds-border-raised-inner),
-			var(--ds-border-raised-outer);
-		--ds-border-sunken: var(--ds-border-sunken-inner),
-			var(--ds-border-sunken-outer);
+		--ds-border-field:
+			var(--ds-border-field-inner), var(--ds-border-field-outer);
+		--ds-border-raised:
+			var(--ds-border-raised-inner), var(--ds-border-raised-outer);
+		--ds-border-sunken:
+			var(--ds-border-sunken-inner), var(--ds-border-sunken-outer);
 	}
 }

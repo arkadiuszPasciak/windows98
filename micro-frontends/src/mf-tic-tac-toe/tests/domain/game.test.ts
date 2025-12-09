@@ -47,9 +47,7 @@ describe("TicTacToeGameDomain", () => {
 				ticTacToeGameDomain.statusResult.status !== GameStatus.DRAW &&
 				moves < 9
 			) {
-				const index = ticTacToeGameDomain.boardCells.findIndex(
-					(cell) => cell === "",
-				)
+				const index = ticTacToeGameDomain.boardCells.indexOf("")
 				if (index === -1) break
 				ticTacToeGameDomain.makeMove(index)
 				moves++

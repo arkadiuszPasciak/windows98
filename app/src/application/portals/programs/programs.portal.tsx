@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react"
-import { Suspense, lazy } from "react"
+import { lazy, Suspense } from "react"
 
 const Calculator = lazy(() =>
 	import("../../../presentation/components/calculator").then((m) => ({

@@ -15,6 +15,8 @@ export const ModalHeader: FunctionComponent<ModalHeaderProps> = ({
 }) => {
 	return (
 		<div
+			role="toolbar"
+			aria-label={`Modal header: ${title}`}
 			className={getClassNames([styles.header])}
 			data-testid={`${id}-modal-header`}
 			data-cursor={cursorType}

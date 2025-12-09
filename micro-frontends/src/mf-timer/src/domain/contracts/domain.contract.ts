@@ -1,9 +1,9 @@
+import type { ETimerStatus, ETimerTime, ITimerTime } from "../models"
 import type {
 	TimerControllerDomainContract,
 	TimerPlayerDomainContract,
 	TimerPresetsDomainContract,
 } from "."
-import type { ETimerStatus, ETimerTime, ITimerTime } from "../models"
 
 export interface TimerDomainContract {
 	controllerDomain: TimerControllerDomainContract

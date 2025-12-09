@@ -3,7 +3,9 @@
 	"main": "@bundler/dist/index.umd.cjs",
 	"module": "@bundler/dist/index.js",
 	"types": "@bundler/dist/index.d.ts",
-	"files": ["@bundler/dist"],
+	"files": [
+		"@bundler/dist"
+	],
 	"exports": {
 		".": {
 			"import": "./@bundler/dist/index.js",
@@ -22,7 +24,7 @@
 	},
 	"type": "module",
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
+		"@biomejs/biome": "2.3.8",
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
 		"lint-staged": "16.2.7",

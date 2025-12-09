@@ -29,27 +29,27 @@ export const Main: Story = {
 		menuItems: [
 			{
 				// TODO: Fix this enum to type union
-				// @ts-ignore
+				// @ts-expect-error
 				type: "program",
 				id: "settings",
 			},
 			{
-				// @ts-ignore
+				// @ts-expect-error
 				type: "group",
 				id: "programs",
 				programs: [
 					{
-						// @ts-ignore
+						// @ts-expect-error
 						type: "group",
 						id: "accessories",
 						programs: [
 							{
-								// @ts-ignore
+								// @ts-expect-error
 								type: "program",
 								id: "calculator",
 							},
 							{
-								// @ts-ignore
+								// @ts-expect-error
 								type: "program",
 								id: "notepad",
 							},

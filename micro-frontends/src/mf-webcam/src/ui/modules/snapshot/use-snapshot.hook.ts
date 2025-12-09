@@ -1,5 +1,4 @@
-import { useVideoRef } from "../../hooks"
-import { useWebcam } from "../../hooks"
+import { useVideoRef, useWebcam } from "../../hooks"
 
 export function useSnapshot() {
 	const videoRef = useVideoRef()
