@@ -1,2 +1,2 @@
-export * from "./domain.contract"
 export * from "./converter-strategy.contract"
+export * from "./domain.contract"

@@ -1,2 +1,2 @@
-export * from "./config.domain"
 export * from "./builder.domain"
+export * from "./config.domain"
