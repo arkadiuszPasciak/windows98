@@ -8,7 +8,7 @@ export const StartMenu: FunctionComponent = () => {
 	return (
 		<MFStartMenu
 			onRunProgram={onRunProgram}
-			// @ts-ignore TODO: Fix type error
+			// @ts-expect-error TODO: Fix type error
 			menuItems={programs}
 		/>
 	)
