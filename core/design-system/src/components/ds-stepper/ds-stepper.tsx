@@ -1,6 +1,5 @@
 import { getClassNames } from "@windows98/toolkit"
-import { DSInput } from "../../index"
-import { DSButtonArrow } from "../../index"
+import { DSButtonArrow, DSInput } from "../../index"
 import styles from "./ds-stepper.module.css"
 import type { DSStepperProps } from "./ds-stepper.type"
 import { useDSStepper } from "./use-ds-stepper.hook"

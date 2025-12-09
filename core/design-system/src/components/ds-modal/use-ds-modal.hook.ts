@@ -31,7 +31,7 @@ export const useDSModal = ({ moveWindow, onClose }: UseDSModalProps) => {
 			mouseDownEvent(
 				event,
 				// TODO: Fix - 'HTMLDivElement | null' is not assignable to type 'HTMLDivElement'.
-				// @ts-ignore
+				// @ts-expect-error
 				modalElement,
 				moveWindow,
 				setCursorType,
@@ -52,7 +52,7 @@ export const useDSModal = ({ moveWindow, onClose }: UseDSModalProps) => {
 			mouseMoveEvent(
 				event,
 				// TODO: Fix - 'HTMLDivElement | null' is not assignable to type 'HTMLDivElement'.
-				// @ts-ignore
+				// @ts-expect-error
 				modalElement,
 				moveWindow,
 				mouseState,

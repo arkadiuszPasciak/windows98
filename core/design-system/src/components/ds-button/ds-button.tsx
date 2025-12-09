@@ -1,5 +1,4 @@
 import { getClassNames } from "@windows98/toolkit"
-import React, { type JSX } from "react"
 import styles from "./ds-button.module.css"
 import type { DSButtonProps } from "./ds-button.type"
 
@@ -13,7 +12,7 @@ export const DSButton = ({
 	isTextVisible = true,
 	iconLeft,
 	iconRight,
-}: DSButtonProps): JSX.Element => {
+}: DSButtonProps) => {
 	return (
 		<button
 			aria-label={!isTextVisible ? text : undefined}

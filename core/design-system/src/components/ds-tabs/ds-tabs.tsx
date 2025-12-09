@@ -1,5 +1,5 @@
 import { getClassNames } from "@windows98/toolkit"
-import { type FunctionComponent, createElement } from "react"
+import { createElement, type FunctionComponent } from "react"
 
 import styles from "./ds-tabs.module.css"
 import type { DSTabsProps } from "./ds-tabs.type"
