@@ -1,6 +1,10 @@
 import { beforeEach, describe, expect, it } from "vitest"
-import { type BoardCells, BoardType, GameStatus } from "../../src/domain/models"
-import { PlayerSign } from "../../src/domain/models"
+import {
+	type BoardCells,
+	BoardType,
+	GameStatus,
+	PlayerSign,
+} from "../../src/domain/models"
 import { TicTacToeStatusStrategy } from "../../src/domain/strategies"
 
 function generateDrawBoard(size: number): BoardCells {

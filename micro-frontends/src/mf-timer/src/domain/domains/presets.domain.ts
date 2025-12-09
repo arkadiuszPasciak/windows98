@@ -1,6 +1,8 @@
 import { makeAutoObservable } from "mobx"
-import type { TimerPresetsDomainContract } from "../contracts"
-import type { TimerDomainContract } from "../contracts"
+import type {
+	TimerDomainContract,
+	TimerPresetsDomainContract,
+} from "../contracts"
 import { ETimerPresets, ETimerTime } from "../models"
 
 export class TimerPresetsDomain implements TimerPresetsDomainContract {

@@ -1,8 +1,8 @@
 import { getClassNames } from "@windows98/toolkit"
 import { observer } from "mobx-react-lite"
 import type { FunctionComponent } from "react"
-import { BoardItem } from "./board-item"
 import styles from "./board.module.css"
+import { BoardItem } from "./board-item"
 import { useBoard } from "./use-board.hook"
 
 export const Board: FunctionComponent = observer(() => {

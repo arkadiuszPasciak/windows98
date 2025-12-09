@@ -1,6 +1,6 @@
 import {
-	type MountResult,
 	expect,
+	type MountResult,
 	test,
 } from "@playwright/experimental-ct-react"
 import { MFCalculator } from "../../src/ui/views"

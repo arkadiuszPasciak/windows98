@@ -25,6 +25,7 @@ export const useFileType = () => {
 		saveFileDomain.setFileType(event.currentTarget.value)
 	}
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: Use only once on mount
 	useEffect(() => {
 		setDefaultFileType()
 	}, [])

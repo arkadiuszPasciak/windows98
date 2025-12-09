@@ -1,7 +1,7 @@
 import {
+	createContext,
 	type FunctionComponent,
 	type PropsWithChildren,
-	createContext,
 } from "react"
 import { colorGeneratorDomain } from "../../domain/domains"
 

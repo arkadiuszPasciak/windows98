@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/experimental-ct-react"
-import { MenuItemType, type MenuItems } from "../../src/domain/models"
+import { type MenuItems, MenuItemType } from "../../src/domain/models"
 import { MFStartMenu } from "../../src/ui/views/start-menu"
 
 const programs: MenuItems = [

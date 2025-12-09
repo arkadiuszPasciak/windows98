@@ -1,5 +1,5 @@
+/** biome-ignore-all lint/complexity/noImportantStyles: TODO resolve these !important problem */
 .button-start {
-	/* @TODO: from copilot - This code is temporary and should be removed after migration to panda CSS */
 	font-family: var(--ds-font-sans-serif-bold) !important;
 	font-size: 11px !important;
 	line-height: 11px !important;

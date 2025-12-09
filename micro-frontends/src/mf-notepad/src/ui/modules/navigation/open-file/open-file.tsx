@@ -7,15 +7,13 @@ export const OpenFile: FunctionComponent = observer(() => {
 	const { openFile, translations } = useOpenFile()
 
 	return (
-		<>
-			<button
-				className={styles.button}
-				data-testid="mf-notepad-open-file-button"
-				type="button"
-				onClick={openFile}
-			>
-				{translations.button}
-			</button>
-		</>
+		<button
+			className={styles.button}
+			data-testid="mf-notepad-open-file-button"
+			type="button"
+			onClick={openFile}
+		>
+			{translations.button}
+		</button>
 	)
 })
