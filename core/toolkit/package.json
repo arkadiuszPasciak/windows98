@@ -12,7 +12,7 @@
 	},
 	"type": "module",
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
+		"@biomejs/biome": "2.3.8",
 		"@windows98/configs": "workspace:*",
 		"lint-staged": "16.2.7",
 		"typescript": "5.9.3",
