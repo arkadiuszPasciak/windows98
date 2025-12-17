@@ -4,7 +4,7 @@ import type { UserDeviceDomainContract } from "../contracts"
 import type { BatteryInformation } from "../models"
 
 export class UserDeviceDomain implements UserDeviceDomainContract {
-	private batteryStatusAPI: BatteryStatusAPI = new BatteryStatusAPI()
+	private batteryStatusAPI: BatteryStatusAPI
 
 	constructor() {
 		this.batteryStatusAPI = new BatteryStatusAPI()
