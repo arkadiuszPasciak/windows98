@@ -22,6 +22,10 @@ class BatteryStatusAPIMock {
 			getBattery: () => Promise.resolve(batteryStatusMock),
 		})
 	}
+
+	public reset() {
+		vi.restoreAllMocks()
+	}
 }
 
 export const batteryStatusAPIMock = new BatteryStatusAPIMock()
