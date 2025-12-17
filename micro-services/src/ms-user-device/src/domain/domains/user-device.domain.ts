@@ -33,7 +33,7 @@ export class UserDeviceDomain implements UserDeviceDomainContract {
 		try {
 			const RAMInGB = this.deviceMemoryAPI.getDeviceMemory()
 
-			if (!RAMInGB) return null
+			if (RAMInGB === null) return null
 
 			return {
 				RAMInGB,

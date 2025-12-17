@@ -53,9 +53,9 @@ describe("UserDeviceDomain", () => {
 			const mockMemoryInfo = {
 				RAMInGB: 8,
 			}
-			const cratedMock = deviceMemoryAPIMock.createMock(mockMemoryInfo.RAMInGB)
+			const createdMock = deviceMemoryAPIMock.createMock(mockMemoryInfo.RAMInGB)
 
-			deviceMemoryAPIMock.implementMock(cratedMock)
+			deviceMemoryAPIMock.implementMock(createdMock)
 
 			const memoryInfo = domain.getMemoryInformation()
 
