@@ -1,4 +1,8 @@
-import { batteryStatusAPIMock, deviceMemoryAPIMock } from "@windows98/web/mocks"
+import {
+	batteryStatusAPIMock,
+	deviceMemoryAPIMock,
+	networkInformationAPIMock,
+} from "@windows98/web/mocks"
 import { afterEach, describe, expect, it, suite, vi } from "vitest"
 import { UserDeviceDomain } from "../../src/domain/domains"
 
@@ -62,6 +66,43 @@ describe("UserDeviceDomain", () => {
 			expect(memoryInfo).toEqual({
 				RAMInGB: mockMemoryInfo.RAMInGB,
 			})
+		})
+	})
+
+	suite("getNetworkInformation", () => {
+		it("should return null when is not available", () => {
+			const domain = new UserDeviceDomain()
+
+			const networkInfo = domain.getNetworkInformation()
+
+			expect(networkInfo).toBeNull()
+		})
+
+		it("should return network information when available", () => {
+			const domain = new UserDeviceDomain()
+			const mockNetworkInfo = {
+				type: "wifi",
+				effectiveType: "4g",
+				downlink: 10,
+				downlinkMax: 20,
+				rtt: 50,
+				saveData: false,
+			}
+
+			networkInformationAPIMock.implementMock()
+
+			const networkInfo = domain.getNetworkInformation()
+
+			expect(networkInfo).toEqual({
+				connectionType: mockNetworkInfo.type,
+				effectiveConnectionType: mockNetworkInfo.effectiveType,
+				downlinkInMbps: mockNetworkInfo.downlink,
+				downlinkMaxInMbps: mockNetworkInfo.downlinkMax,
+				roundeTripTimeInMiliseconds: mockNetworkInfo.rtt,
+				isSaveData: mockNetworkInfo.saveData,
+			})
+
+			networkInformationAPIMock.reset()
 		})
 	})
 })

@@ -1,15 +1,44 @@
 import type { Maybe } from "@windows98/toolkit"
-import { BatteryStatusAPI, DeviceMemoryAPI } from "@windows98/web"
+import {
+	BatteryStatusAPI,
+	DeviceMemoryAPI,
+	NetworkInformationAPI,
+} from "@windows98/web"
 import type { UserDeviceDomainContract } from "../contracts"
-import type { BatteryInformation, MemoryInformation } from "../models"
+import type {
+	BatteryInformation,
+	MemoryInformation,
+	NetworkInformation,
+} from "../models"
 
 export class UserDeviceDomain implements UserDeviceDomainContract {
 	private batteryStatusAPI: BatteryStatusAPI
 	private deviceMemoryAPI: DeviceMemoryAPI
+	private networkInformationAPI: NetworkInformationAPI
 
 	constructor() {
 		this.batteryStatusAPI = new BatteryStatusAPI()
 		this.deviceMemoryAPI = new DeviceMemoryAPI()
+		this.networkInformationAPI = new NetworkInformationAPI()
+	}
+
+	public getNetworkInformation(): Maybe<NetworkInformation> {
+		try {
+			const networkInfo = this.networkInformationAPI.getState()
+
+			if (!networkInfo) return null
+
+			return {
+				connectionType: networkInfo.type,
+				effectiveConnectionType: networkInfo.effectiveType,
+				downlinkInMbps: networkInfo.downlink,
+				downlinkMaxInMbps: networkInfo.downlinkMax,
+				roundeTripTimeInMiliseconds: networkInfo.rtt,
+				isSaveData: networkInfo.saveData,
+			}
+		} catch {
+			return null
+		}
 	}
 
 	public async getBatteryInformation(): Promise<Maybe<BatteryInformation>> {
