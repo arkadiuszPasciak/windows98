@@ -1,13 +1,13 @@
-import { batteryStatusAPIMock } from "@windows98/web/mocks"
-import { afterEach, describe, expect, it, suite } from "vitest"
+import { batteryStatusAPIMock, deviceMemoryAPIMock } from "@windows98/web/mocks"
+import { afterEach, describe, expect, it, suite, vi } from "vitest"
 import { UserDeviceDomain } from "../../src/domain/domains"
 
 describe("UserDeviceDomain", () => {
-	suite("getBatteryInformation", () => {
-		afterEach(() => {
-			batteryStatusAPIMock.reset()
-		})
+	afterEach(() => {
+		vi.resetAllMocks()
+	})
 
+	suite("getBatteryInformation", () => {
 		it("should return null when is not available", async () => {
 			const domain = new UserDeviceDomain()
 
@@ -35,6 +35,32 @@ describe("UserDeviceDomain", () => {
 				batteryLevel: 75,
 				chargingTimeInMinutes: 20,
 				dischargingTimeInMinutes: 60,
+			})
+		})
+	})
+
+	suite("getMemoryInformation", () => {
+		it("should return null when is not available", () => {
+			const domain = new UserDeviceDomain()
+
+			const memoryInfo = domain.getMemoryInformation()
+
+			expect(memoryInfo).toBeNull()
+		})
+
+		it("should return memory information when available", () => {
+			const domain = new UserDeviceDomain()
+			const mockMemoryInfo = {
+				RAMInGB: 8,
+			}
+			const createdMock = deviceMemoryAPIMock.createMock(mockMemoryInfo.RAMInGB)
+
+			deviceMemoryAPIMock.implementMock(createdMock)
+
+			const memoryInfo = domain.getMemoryInformation()
+
+			expect(memoryInfo).toEqual({
+				RAMInGB: mockMemoryInfo.RAMInGB,
 			})
 		})
 	})
