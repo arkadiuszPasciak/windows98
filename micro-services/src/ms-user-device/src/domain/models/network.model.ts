@@ -3,6 +3,6 @@ export interface NetworkInformation {
 	effectiveConnectionType: string
 	downlinkInMbps: number
 	downlinkMaxInMbps: number
-	roundeTripTimeInMiliseconds: number
+	roundTripTimeInMilliseconds: number
 	isSaveData: boolean
 }

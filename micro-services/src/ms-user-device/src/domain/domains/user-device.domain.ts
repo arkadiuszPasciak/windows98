@@ -74,7 +74,7 @@ export class UserDeviceDomain implements UserDeviceDomainContract {
 				effectiveConnectionType: networkInfo.effectiveType,
 				downlinkInMbps: networkInfo.downlink,
 				downlinkMaxInMbps: networkInfo.downlinkMax,
-				roundeTripTimeInMiliseconds: networkInfo.rtt,
+				roundTripTimeInMilliseconds: networkInfo.rtt,
 				isSaveData: networkInfo.saveData,
 			}
 		} catch {

@@ -36,7 +36,7 @@ describe("UserDeviceDomain", () => {
 				effectiveConnectionType: mockNetworkInformation.effectiveType,
 				downlinkInMbps: mockNetworkInformation.downlink,
 				downlinkMaxInMbps: mockNetworkInformation.downlinkMax,
-				roundeTripTimeInMiliseconds: mockNetworkInformation.rtt,
+				roundTripTimeInMilliseconds: mockNetworkInformation.rtt,
 				isSaveData: mockNetworkInformation.saveData,
 			})
 

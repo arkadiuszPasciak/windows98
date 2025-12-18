@@ -8,7 +8,7 @@ import type {
 
 export interface UserDeviceDomainContract {
 	getBatteryInformation(): Promise<Maybe<BatteryInformation>>
-	getScreenInformation(): Maybe<ScreenInformation>
 	getMemoryInformation(): Maybe<MemoryInformation>
 	getNetworkInformation(): Maybe<NetworkInformation>
+	getScreenInformation(): Maybe<ScreenInformation>
 }
