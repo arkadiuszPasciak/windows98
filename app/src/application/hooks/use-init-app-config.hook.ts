@@ -69,7 +69,5 @@ export function useInitAppConfig() {
 		}
 
 		void init()
-
-		console.log(AppConfigService)
 	}, [])
 }
