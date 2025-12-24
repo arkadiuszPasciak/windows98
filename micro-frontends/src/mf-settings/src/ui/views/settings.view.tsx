@@ -4,19 +4,21 @@ import { Wrapper } from "../modules/wrapper"
 import type { SettingsViewProps } from "./settings.types"
 
 export const MFSettings: FunctionComponent<SettingsViewProps> = ({
+	generalInformation,
+	onChangeLanguage,
+	onChangeTheme,
 	onCloseProgram,
 	languages,
-	onChangeLanguage,
 	themes,
-	onChangeTheme,
 }) => {
 	return (
 		<Config
+			generalInformation={generalInformation}
+			onChangeLanguage={onChangeLanguage}
+			onChangeTheme={onChangeTheme}
 			onCloseProgram={onCloseProgram}
 			languages={languages}
-			onChangeLanguage={onChangeLanguage}
 			themes={themes}
-			onChangeTheme={onChangeTheme}
 		>
 			<Wrapper />
 		</Config>

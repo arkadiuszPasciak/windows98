@@ -4,18 +4,20 @@ import type { ConfigProps } from "./config.types"
 
 export const Config: FunctionComponent<ConfigProps> = ({
 	children,
+	generalInformation,
+	onChangeLanguage,
+	onChangeTheme,
 	onCloseProgram,
 	languages,
-	onChangeLanguage,
 	themes,
-	onChangeTheme,
 }) => {
 	const ConfigContextValue = {
+		generalInformation,
+		onChangeLanguage,
+		onChangeTheme,
 		onCloseProgram,
 		languages,
-		onChangeLanguage,
 		themes,
-		onChangeTheme,
 	}
 
 	return (
