@@ -1,1 +1,1 @@
-export * from "./domain.context"
+export * from "./config.context"

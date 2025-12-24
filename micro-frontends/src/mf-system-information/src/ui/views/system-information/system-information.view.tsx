@@ -1,10 +1,14 @@
-import { Domain } from "../../context"
+import type { FunctionComponent } from "react"
+import { ConfigComponent } from "../../context"
 import { Wrapper } from "../../modules/wrapper"
+import type { SystemInformationViewProps } from "./system-information.types"
 
-export const MFSystemInformation = () => {
+export const MFSystemInformation: FunctionComponent<
+	SystemInformationViewProps
+> = ({ sections }) => {
 	return (
-		<Domain>
+		<ConfigComponent sections={sections}>
 			<Wrapper />
-		</Domain>
+		</ConfigComponent>
 	)
 }

@@ -1,1 +1,1 @@
-export * from "./use-domain.hook"
+export * from "./use-config.hook"
