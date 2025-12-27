@@ -1,5 +1,6 @@
 .wrapper {
 	background-color: var(--ds-background-color-primary);
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	overflow: auto;
+	scroll-behavior: smooth;
+	height: 310px;
 }
