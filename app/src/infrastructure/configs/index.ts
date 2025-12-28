@@ -1,4 +1,5 @@
 export * from "./app.config"
+export * from "./general-information.config"
 export * from "./language.config"
 export * from "./program.config"
 export * from "./pulpit.config"

@@ -1,5 +1,6 @@
 export * from "./battery.type"
 export * from "./config.type"
+export * from "./general-information.type"
 export * from "./language.type"
 export * from "./memory.type"
 export * from "./network.type"

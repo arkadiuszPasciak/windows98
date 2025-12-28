@@ -9,12 +9,12 @@ import type { Theme } from "./theme.type"
 // TODO: Add types from browsers, devices, and operating systems
 export interface Config {
 	battery: Maybe<Battery>
-	browserName: string | undefined
-	deviceType: string | undefined
+	browserName: Maybe<string>
+	deviceType: Maybe<string>
 	language: Language | undefined
 	memory: Maybe<Memory>
 	network: Maybe<Network>
-	operatingSystem: string | undefined
+	operatingSystem: Maybe<string>
 	screen: Maybe<Screen>
 	theme: Theme | undefined
 }
