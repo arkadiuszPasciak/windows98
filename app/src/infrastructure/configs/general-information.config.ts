@@ -172,7 +172,9 @@ export class GeneralInformationBuilder extends TranslationHelper {
 					{
 						label: this.translations.networkMaxDownlink,
 						value:
-							String(network.downlinkMaxInMbps) ?? this.translations.unknown,
+							network.downlinkMaxInMbps !== null
+								? String(network.downlinkMaxInMbps)
+								: this.translations.unknown,
 					},
 					{
 						label: this.translations.networkRtt,
