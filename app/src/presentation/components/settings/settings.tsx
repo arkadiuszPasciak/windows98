@@ -3,11 +3,18 @@ import type { FunctionComponent } from "react"
 import { useSettings } from "./use-settings.hook"
 
 export const Settings: FunctionComponent = () => {
-	const { onCloseProgram, languages, onChangeLanguage, themes, onChangeTheme } =
-		useSettings()
+	const {
+		generalInformation,
+		onCloseProgram,
+		languages,
+		onChangeLanguage,
+		themes,
+		onChangeTheme,
+	} = useSettings()
 
 	return (
 		<MFSettings
+			generalInformation={generalInformation}
 			onCloseProgram={onCloseProgram}
 			languages={languages}
 			onChangeLanguage={onChangeLanguage}
