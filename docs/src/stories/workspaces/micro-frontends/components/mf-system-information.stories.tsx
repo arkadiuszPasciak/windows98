@@ -3,10 +3,7 @@ import { MFSystemInformation } from "@windows98/micro-frontends"
 
 const meta: Meta<typeof MFSystemInformation> = {
 	argTypes: {
-		onCloseProgram: {
-			action: "closed",
-			control: false,
-		},
+		sections: { control: "object" },
 	},
 	component: MFSystemInformation,
 	tags: ["autodocs"],
@@ -19,6 +16,29 @@ type Story = StoryObj<typeof MFSystemInformation>
 
 export const Main: Story = {
 	args: {
-		onCloseProgram: () => console.log("System Information closed"),
+		sections: [
+			{
+				name: "battery",
+				items: [
+					{
+						label: "level",
+						value: "85%",
+					},
+					{
+						label: "status",
+						value: "charging",
+					},
+				],
+			},
+			{
+				name: "browser",
+				items: [
+					{
+						label: "name",
+						value: "chrome",
+					},
+				],
+			},
+		],
 	},
 }
