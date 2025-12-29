@@ -1,7 +1,33 @@
 {
 	"mf-system-information": {
-		"browser-name": "Browser",
-		"device-type": "Device",
-		"operating-system": "Operation system"
+		"battery": "Battery",
+		"battery-level": "Level",
+		"battery-charging-time": "Charging Time (minutes)",
+		"battery-discharging-time": "Discharging Time (minutes)",
+		"battery-charging": "Charging",
+		"browser": "Browser",
+		"browser-name": "Name",
+		"device": "Device",
+		"device-type": "Type",
+		"memory": "Memory",
+		"memory-total": "Total Memory (GB)",
+		"network": "Network",
+		"network-connection-type": "Connection Type",
+		"network-effective-connection-type": "Effective Connection Type",
+		"network-downlink": "Downlink (Mbps)",
+		"network-max-downlink": "Max Downlink (Mbps)",
+		"network-rtt": "Round Trip Time (ms)",
+		"network-save-data": "Save Data Mode",
+		"operating-system": "Operating System",
+		"operating-system-name": "Name",
+		"screen": "Screen",
+		"screen-angle": "Angle (degrees)",
+		"screen-height": "Height (pixels)",
+		"screen-fullscreen": "Fullscreen",
+		"screen-orientation": "Orientation Type",
+		"screen-width": "Width (pixels)",
+		"unknown": "Unknown",
+		"yes": "Yes",
+		"no": "No"
 	}
 }

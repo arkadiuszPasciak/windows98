@@ -1,0 +1,6 @@
+.wrapper {
+	background-color: var(--ds-background-color-primary);
+	overflow: auto;
+	scroll-behavior: smooth;
+	height: 310px;
+}
