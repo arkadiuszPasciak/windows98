@@ -27,6 +27,8 @@ describe("MSMediaDevices", () => {
 			url: "mock-data-url",
 			height: 240,
 			width: 320,
+			format: "image/png",
+			quality: 0.8,
 		}
 
 		const canvasElementMock = canvasAPIMock.createMock(testData.url)
@@ -38,6 +40,8 @@ describe("MSMediaDevices", () => {
 		canvasAPIMock.implementMock(canvasElementMock)
 
 		const result = await MSMediaDevices.getSnapshot(videoElementMock)
-		expect(result).toBe(testData.url)
+		expect(result.startsWith(`${testData.format};base64,${testData.url}`)).toBe(
+			true,
+		)
 	})
 })
