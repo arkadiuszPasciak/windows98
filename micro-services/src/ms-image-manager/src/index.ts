@@ -1,1 +1,1 @@
-export * from "./domain"
+export { MSImageManager } from "./domain/domains"

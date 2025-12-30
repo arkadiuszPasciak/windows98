@@ -1,6 +1,6 @@
 import { canvasAPIMock } from "@windows98/web/mocks"
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
-import type { ImageFormat, ImageQuality } from "../../src"
+import type { ImageFormat, ImageQuality } from "../../src/domain"
 import { ImageManagerDomain } from "../../src/domain/domains"
 
 const testData = {
