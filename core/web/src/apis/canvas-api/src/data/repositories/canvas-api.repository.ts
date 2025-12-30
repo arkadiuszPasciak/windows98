@@ -14,7 +14,7 @@ export class CanvasAPIRepository implements CanvasAPIRepositoryContract {
 		format: string,
 		quality?: number,
 	): string {
-		return canvasElement.toDataURL(format, quality ? quality : undefined)
+		return canvasElement.toDataURL(format, quality)
 	}
 
 	public async getSnapshot(videoElement: HTMLVideoElement): Promise<string> {
