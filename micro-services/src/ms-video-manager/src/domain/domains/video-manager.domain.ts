@@ -1,7 +1,7 @@
 import { CanvasAPI, MediaStreamImageCaptureAPI } from "@windows98/web"
-import type { MediaDevicesDomainContract } from "../contracts"
+import type { VideoManagerDomainContract } from "../contracts"
 
-class MediaDevicesDomain implements MediaDevicesDomainContract {
+class VideoManagerDomain implements VideoManagerDomainContract {
 	private readonly canvasAPI: CanvasAPI
 	private readonly mediaStreamImageCaptureAPI: MediaStreamImageCaptureAPI
 
@@ -21,4 +21,4 @@ class MediaDevicesDomain implements MediaDevicesDomainContract {
 	}
 }
 
-export const MSMediaDevices = new MediaDevicesDomain()
+export const MSVideoManager = new VideoManagerDomain()
