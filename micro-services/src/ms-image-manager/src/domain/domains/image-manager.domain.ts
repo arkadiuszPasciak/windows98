@@ -10,11 +10,10 @@ export class ImageManagerDomain implements ImageManagerDomainContract {
 	}
 
 	public convertImage(
+		canvasElement: HTMLCanvasElement,
 		format: ImageFormat,
 		quality?: ImageQuality,
 	): ConvertedImage {
-		const canvasElement = this.canvasAPI.createCanvas(100, 100)
-
 		return this.canvasAPI.convertCanvas(canvasElement, format, quality)
 	}
 }

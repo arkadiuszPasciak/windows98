@@ -26,7 +26,10 @@ describe("ImageManagerDomain", () => {
 	})
 
 	it("should convert an image", async () => {
+		const canvasElement = document.createElement("canvas")
+
 		const convertedImage = ImageManager.convertImage(
+			canvasElement,
 			testData.format,
 			testData.quality,
 		)
