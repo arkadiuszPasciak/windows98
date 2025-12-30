@@ -25,7 +25,7 @@ describe("ImageManagerDomain", () => {
 		vi.clearAllMocks()
 	})
 
-	it("should convert an image", async () => {
+	it("should convert an image", () => {
 		const canvasElement = document.createElement("canvas")
 
 		const convertedImage = ImageManager.convertImage(
