@@ -6,7 +6,8 @@ class CanvasAPIMock {
 			getContext: vi.fn().mockReturnValue({
 				drawImage: vi.fn(),
 			}),
-			toDataURL: vi.fn().mockReturnValue(dataUrl),
+			toDataURL: (format: string, _quality?: number) =>
+				vi.fn().mockReturnValue(`${format};base64,${dataUrl}`)(),
 		} as unknown as HTMLCanvasElement
 	}
 

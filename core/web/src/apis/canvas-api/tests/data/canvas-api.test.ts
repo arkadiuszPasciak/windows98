@@ -29,7 +29,9 @@ describe("CanvasAPIRepository", () => {
 		)
 
 		const result = await canvasRepository.getSnapshot(videoElementMock)
-		expect(result).toBe(testData.url)
+		expect(result.startsWith(`${testData.format};base64,${testData.url}`)).toBe(
+			true,
+		)
 	})
 
 	it("createCanvas", () => {
@@ -54,6 +56,8 @@ describe("CanvasAPIRepository", () => {
 			testData.quality,
 		)
 		expect(typeof dataUrl).toBe("string")
-		expect(dataUrl.startsWith(`mock-data-url`)).toBe(true)
+		expect(
+			dataUrl.startsWith(`${testData.format};base64,${testData.url}`),
+		).toBe(true)
 	})
 })
