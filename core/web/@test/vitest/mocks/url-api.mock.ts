@@ -7,7 +7,7 @@ interface URLMock {
 class URLAPIMock {
 	public createMock(mockedUrl: string): URLMock {
 		return {
-			createObjectURL: (_object) => mockedUrl,
+			createObjectURL: vi.fn(() => mockedUrl),
 		}
 	}
 
