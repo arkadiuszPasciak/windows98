@@ -1,7 +1,6 @@
 import { urlAPIMock } from "@windows98/web/mocks"
-import { beforeEach, describe, expect, it, vi } from "vitest"
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 import { FileManagerDomain } from "../../src/domain/domains/file-manager.domain"
-import { TextFileTypes } from "../../src/domain/models"
 
 const testDataMock = {
 	plainText: "Hello, World!",
@@ -14,6 +13,10 @@ describe("FileManagerDomain", () => {
 
 	beforeEach(() => {
 		fileManager = new FileManagerDomain()
+	})
+
+	afterEach(() => {
+		vi.restoreAllMocks()
 	})
 
 	it("should download a file with the given blob and filename", () => {
@@ -37,9 +40,9 @@ describe("FileManagerDomain", () => {
 
 	it("should open a file and return its contents", async () => {
 		const mockFile = {
-			text: vi.fn().mockResolvedValue("file content"),
-			name: "test.txt",
-			type: "text/plain",
+			text: vi.fn().mockResolvedValue(testDataMock.plainText),
+			name: testDataMock.filename,
+			type: testDataMock.type,
 		} as unknown as File
 
 		const mockInput = {
@@ -48,7 +51,7 @@ describe("FileManagerDomain", () => {
 
 		vi.spyOn(document, "createElement").mockImplementation(() => {
 			return {
-				type: "file",
+				type: testDataMock.type,
 				accept: ".txt,.csv,.doc,.rtf",
 				onchange: null,
 				click: function () {
@@ -60,26 +63,25 @@ describe("FileManagerDomain", () => {
 		})
 
 		const content = await fileManager.openFile()
-		expect(content).toBe("file content")
+		expect(content).toBe(testDataMock.plainText)
 	})
 
 	it("should save a file with the given content, filename, and type", async () => {
-		const content = "file content"
-		const filename = "test.txt"
-		const type = TextFileTypes.PLAIN
-
-		const createObjectURLMock = vi.fn(() => "blob:url")
 		const appendChildMock = vi.fn()
 		const removeChildMock = vi.fn()
 
-		global.URL.createObjectURL = createObjectURLMock
+		urlAPIMock.implementMock(urlAPIMock.createMock("blob:url"))
 
 		vi.spyOn(document.body, "appendChild").mockImplementation(appendChildMock)
 		vi.spyOn(document.body, "removeChild").mockImplementation(removeChildMock)
 
-		await fileManager.saveFile(content, filename, type)
+		await fileManager.saveFile(
+			testDataMock.plainText,
+			testDataMock.filename,
+			testDataMock.type,
+		)
 
-		expect(createObjectURLMock).toHaveBeenCalled()
+		expect(global.URL.createObjectURL).toHaveBeenCalled()
 		expect(appendChildMock).toHaveBeenCalled()
 		expect(removeChildMock).toHaveBeenCalled()
 	})
