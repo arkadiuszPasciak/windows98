@@ -1,5 +1,5 @@
 export interface FileManagerDomainContract {
-	openFile(): Promise<string>
+	openFile<SelectedFile extends string>(): Promise<SelectedFile>
 	saveFile<FileType extends string>(
 		content: string,
 		filename: string,
