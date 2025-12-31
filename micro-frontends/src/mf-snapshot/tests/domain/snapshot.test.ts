@@ -1,4 +1,4 @@
-import { MSMediaDevices } from "@windows98/micro-services"
+import { MSVideoManager } from "@windows98/micro-services"
 import { beforeEach, describe, expect, it, vi } from "vitest"
 import { SnapshotDomain } from "../../src/domain/domains"
 
@@ -15,7 +15,7 @@ describe("SnapshotDomain", () => {
 	})
 
 	it("should set snapshotUrl after getSnapshot", async () => {
-		vi.spyOn(MSMediaDevices, "getSnapshot").mockResolvedValue(
+		vi.spyOn(MSVideoManager, "getSnapshot").mockResolvedValue(
 			"mock-snapshot-url",
 		)
 		await domain.getSnapshot(document.createElement("video"))
