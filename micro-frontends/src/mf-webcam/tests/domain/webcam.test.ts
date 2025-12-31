@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest"
 import { WebcamDomain } from "../../src/domain/domains/webcam.domain"
 
 vi.mock("@windows98/micro-services", () => ({
-	MSMediaDevices: {
+	MSVideoManager: {
 		requestCameraStream: vi.fn(() => Promise.resolve("mock-stream")),
 	},
 }))
