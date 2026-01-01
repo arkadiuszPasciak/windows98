@@ -1,35 +1,30 @@
 import type {
+	DownloadFileStrategyContract,
 	FileManagerDomainContract,
+	OpenFileStrategyContract,
 	SaveFileStrategyContract,
 } from "../contracts"
 import { SaveFileStrategy } from "./strategies"
+import { DownloadFileStrategy } from "./strategies/download-file.strategy"
+import { OpenFileStrategy } from "./strategies/open-file.strategy"
 
 export class FileManagerDomain implements FileManagerDomainContract {
+	private downloadFileStrategy: DownloadFileStrategyContract
+	private openFileStrategy: OpenFileStrategyContract
 	private saveFileStrategy: SaveFileStrategyContract
 
 	constructor() {
+		this.downloadFileStrategy = new DownloadFileStrategy()
+		this.openFileStrategy = new OpenFileStrategy()
 		this.saveFileStrategy = new SaveFileStrategy()
 	}
 
-	public async openFile(): Promise<string> {
-		return new Promise((resolve, reject) => {
-			const input = document.createElement("input")
-			input.type = "file"
+	public downloadFile(blob: Blob, filename: string): void {
+		this.downloadFileStrategy.download(blob, filename)
+	}
 
-			input.onchange = async (event: Event) => {
-				const target = event.target as HTMLInputElement
-				if (!target.files || target.files.length === 0) {
-					reject(new Error("No file selected"))
-					return
-				}
-
-				const file = target.files[0]
-				const contents = await file.text()
-				resolve(contents)
-			}
-
-			input.click()
-		})
+	public async openFile<SelectedFile extends string>(): Promise<SelectedFile> {
+		return this.openFileStrategy.open<SelectedFile>()
 	}
 
 	public async saveFile<FileType extends string>(
