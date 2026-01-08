@@ -17,8 +17,7 @@ describe("ImageManagerDomain", () => {
 	beforeEach(() => {
 		ImageManager = new ImageManagerDomain()
 
-		const canvasElementMock = canvasAPIMock.createMock(testData.url)
-		canvasAPIMock.implementMock(canvasElementMock)
+		canvasAPIMock.implementMock()
 	})
 
 	afterEach(() => {
@@ -35,7 +34,9 @@ describe("ImageManagerDomain", () => {
 		)
 
 		expect(
-			convertedImage.startsWith(`${testData.format};base64,${testData.url}`),
+			convertedImage.startsWith(
+				`data:${testData.format};base64,MOCKED_DATA_URL`,
+			),
 		).toBe(true)
 	})
 })
