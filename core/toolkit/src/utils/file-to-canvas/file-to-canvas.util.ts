@@ -10,7 +10,9 @@ export async function fileToCanvas(file: File): Promise<HTMLCanvasElement> {
 				const context = canvas.getContext("2d")
 
 				if (!context) {
-					reject(new Error("Could not get 2D context"))
+					reject(
+						new Error("Failed to get 2D rendering context from canvas element"),
+					)
 					return
 				}
 
