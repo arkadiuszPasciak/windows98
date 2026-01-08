@@ -31,17 +31,16 @@ describe("MSVideoManager", () => {
 			quality: 0.8,
 		}
 
-		const canvasElementMock = canvasAPIMock.createMock(testData.url)
 		const videoElementMock = videoAPIMock.createMock(
 			testData.height,
 			testData.width,
 		)
 
-		canvasAPIMock.implementMock(canvasElementMock)
+		canvasAPIMock.implementMock()
 
 		const result = await MSVideoManager.getSnapshot(videoElementMock)
-		expect(result.startsWith(`${testData.format};base64,${testData.url}`)).toBe(
-			true,
-		)
+		expect(
+			result.startsWith(`data:${testData.format};base64,MOCKED_DATA_URL`),
+		).toBe(true)
 	})
 })
