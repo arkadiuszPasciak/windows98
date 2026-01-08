@@ -14,8 +14,7 @@ describe("CanvasAPIRepository", () => {
 	const canvasRepository = new CanvasAPIRepository()
 
 	beforeEach(() => {
-		const canvasElementMock = canvasAPIMock.createMock(testData.url)
-		canvasAPIMock.implementMock(canvasElementMock)
+		canvasAPIMock.implementMock()
 	})
 
 	afterEach(() => {
@@ -29,9 +28,9 @@ describe("CanvasAPIRepository", () => {
 		)
 
 		const result = await canvasRepository.getSnapshot(videoElementMock)
-		expect(result.startsWith(`${testData.format};base64,${testData.url}`)).toBe(
-			true,
-		)
+		expect(
+			result.startsWith(`data:${testData.format};base64,MOCKED_DATA_URL`),
+		).toBe(true)
 	})
 
 	it("createCanvas", () => {
@@ -57,7 +56,7 @@ describe("CanvasAPIRepository", () => {
 		)
 		expect(typeof dataUrl).toBe("string")
 		expect(
-			dataUrl.startsWith(`${testData.format};base64,${testData.url}`),
+			dataUrl.startsWith(`data:${testData.format};base64,MOCKED_DATA_URL`),
 		).toBe(true)
 	})
 })
