@@ -16,8 +16,9 @@ export class NotepadDomain implements NotepadDomainContract {
 
 	public async openFile(): Promise<void> {
 		const result = await this.fileManagerDomain.openFile()
+		const text = await result.text()
 
-		this.setText(result)
+		this.setText(text)
 	}
 
 	public setText(text: string): void {
