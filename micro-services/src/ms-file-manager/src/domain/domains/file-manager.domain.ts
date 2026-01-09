@@ -20,7 +20,7 @@ export class FileManagerDomain implements FileManagerDomainContract {
 	}
 
 	public async downloadFile(file: File, filename: string): Promise<void> {
-		this.downloadFileStrategy.download(file, filename)
+		await this.downloadFileStrategy.download(file, filename)
 	}
 
 	public async openFile(): Promise<File> {
