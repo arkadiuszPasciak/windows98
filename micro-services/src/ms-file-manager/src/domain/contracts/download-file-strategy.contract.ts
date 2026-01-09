@@ -1,3 +1,3 @@
 export interface DownloadFileStrategyContract {
-	download(blob: Blob, filename: string): void
+	download(file: File, filename: string): Promise<void>
 }

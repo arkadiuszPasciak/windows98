@@ -3,7 +3,7 @@ import type { OpenFileStrategyContract } from "../../contracts"
 
 export class OpenFileStrategy implements OpenFileStrategyContract {
 	@CatchError()
-	public async open<SelectedFile extends string>(): Promise<SelectedFile> {
+	public async open(): Promise<File> {
 		return new Promise((resolve, reject) => {
 			const input = document.createElement("input")
 			input.type = "file"
@@ -16,8 +16,7 @@ export class OpenFileStrategy implements OpenFileStrategyContract {
 				}
 
 				const file = target.files[0]
-				const contents = (await file.text()) as SelectedFile
-				resolve(contents)
+				resolve(file)
 			}
 
 			input.click()

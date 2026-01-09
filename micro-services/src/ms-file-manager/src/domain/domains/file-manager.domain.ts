@@ -19,12 +19,12 @@ export class FileManagerDomain implements FileManagerDomainContract {
 		this.saveFileStrategy = new SaveFileStrategy()
 	}
 
-	public downloadFile(blob: Blob, filename: string): void {
-		this.downloadFileStrategy.download(blob, filename)
+	public async downloadFile(file: File, filename: string): Promise<void> {
+		await this.downloadFileStrategy.download(file, filename)
 	}
 
-	public async openFile<SelectedFile extends string>(): Promise<SelectedFile> {
-		return this.openFileStrategy.open<SelectedFile>()
+	public async openFile(): Promise<File> {
+		return this.openFileStrategy.open()
 	}
 
 	public async saveFile<FileType extends string>(

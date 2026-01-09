@@ -1,6 +1,6 @@
 export interface FileManagerDomainContract {
-	downloadFile(blob: Blob, filename: string): void
-	openFile<SelectedFile extends string>(): Promise<SelectedFile>
+	downloadFile(file: File, filename: string): Promise<void>
+	openFile(): Promise<File>
 	saveFile<FileType extends string>(
 		content: string,
 		filename: string,
