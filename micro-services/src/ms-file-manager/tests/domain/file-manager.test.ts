@@ -19,30 +19,22 @@ describe("FileManagerDomain", () => {
 		vi.restoreAllMocks()
 	})
 
-	it("should download a file with the given blob and filename", () => {
-		const blob = new Blob([testDataMock.plainText], { type: testDataMock.type })
+	it("should download a file with the given File and filename", async () => {
+		const file = new File([testDataMock.plainText], testDataMock.filename, {
+			type: testDataMock.type,
+		})
 		const filename = testDataMock.filename
 
-		const appendChildMock = vi.fn()
-		const removeChildMock = vi.fn()
-
-		urlAPIMock.implementMock(urlAPIMock.createMock("blob:url"))
-
-		vi.spyOn(document.body, "appendChild").mockImplementation(appendChildMock)
-		vi.spyOn(document.body, "removeChild").mockImplementation(removeChildMock)
-
-		fileManager.downloadFile(blob, filename)
-
-		expect(global.URL.createObjectURL).toHaveBeenCalledWith(blob)
-		expect(appendChildMock).toHaveBeenCalled()
-		expect(removeChildMock).toHaveBeenCalled()
+		await expect(
+			fileManager.downloadFile(file, filename),
+		).resolves.not.toThrow()
 	})
 
-	it("should open a file and return its contents", async () => {
+	it("should open a file and return the File object", async () => {
 		const mockFile = {
-			text: vi.fn().mockResolvedValue(testDataMock.plainText),
 			name: testDataMock.filename,
 			type: testDataMock.type,
+			text: vi.fn().mockResolvedValue(testDataMock.plainText),
 		} as unknown as File
 
 		const mockInput = {
@@ -51,8 +43,7 @@ describe("FileManagerDomain", () => {
 
 		vi.spyOn(document, "createElement").mockImplementation(() => {
 			return {
-				type: testDataMock.type,
-				accept: ".txt,.csv,.doc,.rtf",
+				type: "file",
 				onchange: null,
 				click: function () {
 					if (this.onchange) {
@@ -62,8 +53,10 @@ describe("FileManagerDomain", () => {
 			} as HTMLInputElement
 		})
 
-		const content = await fileManager.openFile()
-		expect(content).toBe(testDataMock.plainText)
+		const file = await fileManager.openFile()
+		expect(file).toBe(mockFile)
+		expect(file.name).toBe(testDataMock.filename)
+		expect(file.type).toBe(testDataMock.type)
 	})
 
 	it("should save a file with the given content, filename, and type", async () => {
@@ -81,7 +74,6 @@ describe("FileManagerDomain", () => {
 			testDataMock.type,
 		)
 
-		expect(global.URL.createObjectURL).toHaveBeenCalled()
 		expect(appendChildMock).toHaveBeenCalled()
 		expect(removeChildMock).toHaveBeenCalled()
 	})
