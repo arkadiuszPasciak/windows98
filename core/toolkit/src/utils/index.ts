@@ -1,3 +1,5 @@
 export * from "./add-zero-before-number"
+export * from "./data-url-to-file"
 export * from "./debounce"
+export * from "./file-to-canvas"
 export * from "./get-class-names"
