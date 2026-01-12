@@ -36,6 +36,13 @@
 		color: var(--ds-text-color-primary);
 		min-width: 46px;
 	}
+
+	&[data-state="disabled"],
+	&[data-state="disabled"] > label {
+		pointer-events: none;
+		opacity: var(--ds-opacity-not-allowed);
+		cursor: not-allowed;
+	}
 }
 
 .arrow {
