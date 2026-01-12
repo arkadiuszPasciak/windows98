@@ -1,0 +1,22 @@
+{
+	"mf-image-converter": {
+		"convert-image": {
+			"button-name": "Convert Image"
+		},
+		"download-image": {
+			"button-name": "Download Image"
+		},
+		"image-format": {
+			"select-label": "Output format"
+		},
+		"information": {
+			"text": "Convert images between PNG, JPEG and WebP"
+		},
+		"modal": {
+			"title": "Image Converter"
+		},
+		"open-image": {
+			"button-name": "Click to select an image"
+		}
+	}
+}
