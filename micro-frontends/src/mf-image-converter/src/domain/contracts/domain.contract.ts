@@ -4,7 +4,7 @@ import type { ImageFile, ImageFormat } from "../models"
 export interface ImageConverterDomainContract {
 	convertedImageFile: Maybe<ImageFile>
 	format: ImageFormat
-	fileName: string
+	imageName: string
 	originalImageFile: Maybe<ImageFile>
 
 	convertImage(): Promise<void>
@@ -12,5 +12,5 @@ export interface ImageConverterDomainContract {
 	openImage(): Promise<void>
 	reset(): void
 	setFormat(format: ImageFormat): void
-	setFileName(fileName: string): void
+	setImageName(imageName: string): void
 }

@@ -1,13 +1,19 @@
 import { describe, expect, it, vi } from "vitest"
 import { ImageConverterDomain } from "../../src/domain/domains"
 
+const testData = {
+	imageName: "mock-image",
+	imageNameWithExtension: "mock-image.png",
+	dataURL: "data:image/png;base64,mockdata",
+}
+
 vi.mock("@windows98/micro-services", () => ({
 	MSFileManager: {
 		downloadFile: vi.fn(() => Promise.resolve()),
-		openFile: vi.fn(() => Promise.resolve(new File([], "mock-image.png"))),
+		openFile: vi.fn(() => Promise.resolve(new File([], testData.imageName))),
 	},
 	MSImageManager: {
-		convertImage: vi.fn(() => "data:image/png;base64,mockdata"),
+		convertImage: vi.fn(() => testData.dataURL),
 	},
 }))
 
@@ -22,14 +28,14 @@ describe("ImageConverterDomain", () => {
 	const domain: ImageConverterDomain = new ImageConverterDomain()
 
 	it("should set file name and format, open, convert, and download image", async () => {
-		domain.setFileName("test-file-name")
-		expect(domain.fileName, "should set file name").toBe("test-file-name")
+		await domain.openImage()
+		expect(domain.originalImageFile, "should open image").not.toBeNull()
+
+		domain.setImageName("test-file-name")
+		expect(domain.imageName, "should set file name").toBe("test-file-name")
 
 		domain.setFormat("image/jpeg")
 		expect(domain.format, "should set format").toBe("image/jpeg")
-
-		await domain.openImage()
-		expect(domain.originalImageFile, "should open image").not.toBeNull()
 
 		await domain.convertImage()
 		expect(domain.convertedImageFile, "should convert image").not.toBeNull()
@@ -40,7 +46,7 @@ describe("ImageConverterDomain", () => {
 		).resolves.not.toThrow()
 
 		expect(domain, "should reset domain after download").toMatchObject({
-			fileName: "",
+			imageName: "",
 			format: "image/png",
 			convertedImageFile: null,
 			originalImageFile: null,

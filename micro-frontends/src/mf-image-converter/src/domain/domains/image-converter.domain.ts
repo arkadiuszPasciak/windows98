@@ -7,7 +7,7 @@ import type { ImageFile, ImageFormat } from "../models"
 
 export class ImageConverterDomain implements ImageConverterDomainContract {
 	public convertedImageFile: Maybe<ImageFile> = null
-	public fileName: string = "converted-image"
+	public imageName: string = "converted-image"
 	public format: ImageFormat = "image/png"
 	public originalImageFile: Maybe<ImageFile> = null
 
@@ -28,13 +28,13 @@ export class ImageConverterDomain implements ImageConverterDomainContract {
 
 		const dataURL = this.imageManager.convertImage(canvasElement, this.format)
 
-		this.convertedImageFile = dataURLToFile(dataURL, this.fileName)
+		this.convertedImageFile = dataURLToFile(dataURL, this.imageName)
 	}
 
 	public async downloadImage(): Promise<void> {
-		if (this.convertedImageFile === null || this.fileName === "") return
+		if (this.convertedImageFile === null || this.imageName === "") return
 
-		await this.fileManager.downloadFile(this.convertedImageFile, this.fileName)
+		await this.fileManager.downloadFile(this.convertedImageFile, this.imageName)
 
 		this.reset()
 	}
@@ -46,7 +46,7 @@ export class ImageConverterDomain implements ImageConverterDomainContract {
 	public reset(): void {
 		this.convertedImageFile = null
 		this.format = "image/png"
-		this.fileName = ""
+		this.imageName = ""
 		this.originalImageFile = null
 	}
 
@@ -56,9 +56,11 @@ export class ImageConverterDomain implements ImageConverterDomainContract {
 		this.format = format
 	}
 
-	public setFileName(fileName: string): void {
-		if (this.fileName === fileName) return
+	public setImageName(name: string): void {
+		if (this.imageName === name) return
 
-		this.fileName = fileName
+		this.imageName = name
 	}
 }
+
+export const imageConverterDomain = new ImageConverterDomain()
