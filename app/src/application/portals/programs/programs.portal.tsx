@@ -19,6 +19,12 @@ const ColorGenerator = lazy(() =>
 	})),
 )
 
+const ImageConverter = lazy(() =>
+	import("../../../presentation/components/image-converter").then((m) => ({
+		default: m.ImageConverter,
+	})),
+)
+
 const Notepad = lazy(() =>
 	import("../../../presentation/components/notepad").then((m) => ({
 		default: m.Notepad,
@@ -77,6 +83,7 @@ export const ProgramsPortal: FunctionComponent = () => {
 			{programs.calculator && <Calculator />}
 			{programs["case-converter"] && <CaseConverter />}
 			{programs["color-generator"] && <ColorGenerator />}
+			{programs["image-converter"] && <ImageConverter />}
 			{programs.notepad && <Notepad />}
 			{programs.settings && <Settings />}
 			{programs.shutdown && <Shutdown />}
