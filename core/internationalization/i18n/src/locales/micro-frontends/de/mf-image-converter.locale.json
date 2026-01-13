@@ -10,7 +10,7 @@
 			"select-label": "Ausgabeformat"
 		},
 		"information": {
-			"text": "Bilder zwischen PNG, JPEG oder WebP konvertieren"
+			"text": "Bilder zwischen PNG, JPEG und WebP konvertieren"
 		},
 		"modal": {
 			"title": "Bildkonverter"
