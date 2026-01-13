@@ -12,4 +12,5 @@ export const programManagerConfig: ProgramManager = {
 	"tic-tac-toe": false,
 	timer: false,
 	webcam: false,
+	"image-converter": false,
 }

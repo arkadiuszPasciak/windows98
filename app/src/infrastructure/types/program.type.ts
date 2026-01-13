@@ -2,6 +2,7 @@ export enum Program {
 	CALCULATOR = "calculator",
 	CASE_CONVERTER = "case-converter",
 	COLOR_GENERATOR = "color-generator",
+	IMAGE_CONVERTER = "image-converter",
 	NOTEPAD = "notepad",
 	QR_CODE_GENERATOR = "qr-code-generator",
 	RUNNER = "runner",
