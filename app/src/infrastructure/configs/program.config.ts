@@ -4,6 +4,7 @@ export const programManagerConfig: ProgramManager = {
 	calculator: false,
 	"case-converter": false,
 	"color-generator": false,
+	"image-converter": false,
 	notepad: false,
 	"qr-code-generator": false,
 	runner: false,
