@@ -46,7 +46,7 @@ describe("ImageConverterDomain", () => {
 		).resolves.not.toThrow()
 
 		expect(domain, "should reset domain after download").toMatchObject({
-			imageName: "",
+			imageName: "converted-image",
 			format: "image/png",
 			convertedImageFile: null,
 			originalImageFile: null,

@@ -46,7 +46,7 @@ export class ImageConverterDomain implements ImageConverterDomainContract {
 	public reset(): void {
 		this.convertedImageFile = null
 		this.format = "image/png"
-		this.imageName = ""
+		this.imageName = "converted-image"
 		this.originalImageFile = null
 	}
 
