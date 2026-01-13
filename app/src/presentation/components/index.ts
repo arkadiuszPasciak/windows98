@@ -1,6 +1,7 @@
 export * from "./audio-button"
 export * from "./calculator"
 export * from "./clock"
+export * from "./image-converter"
 export * from "./notepad"
 export * from "./qr-code-generator"
 export * from "./runner"
