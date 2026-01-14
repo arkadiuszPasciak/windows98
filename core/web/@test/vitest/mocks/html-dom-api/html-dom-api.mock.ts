@@ -1,9 +1,17 @@
 import { vi } from "vitest"
-import { HTMLImageElementInterfaceMock } from "./interfaces"
+import {
+	HTMLAudioElementInterfaceMock,
+	HTMLImageElementInterfaceMock,
+} from "./interfaces"
 
 class HTMLDOMAPIMock {
 	public implementMock() {
+		vi.stubGlobal("Audio", HTMLAudioElementInterfaceMock)
 		vi.stubGlobal("Image", HTMLImageElementInterfaceMock)
+	}
+
+	public reset() {
+		vi.unstubAllGlobals()
 	}
 }
 
