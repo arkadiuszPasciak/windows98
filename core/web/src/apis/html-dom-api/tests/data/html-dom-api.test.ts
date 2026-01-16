@@ -46,4 +46,17 @@ describe("HTMLDOMAPIRepository", () => {
 			expect(canPlayTriggered).toBe(true)
 		}, 10)
 	})
+
+	it("returns a new image element", () => {
+		const width = 100
+		const height = 200
+		const imageElement = htmlDOMAPIRepository.createNewImage(width, height)
+
+		expect(imageElement.width, "Image width should be set correctly").toBe(
+			width,
+		)
+		expect(imageElement.height, "Image height should be set correctly").toBe(
+			height,
+		)
+	})
 })
