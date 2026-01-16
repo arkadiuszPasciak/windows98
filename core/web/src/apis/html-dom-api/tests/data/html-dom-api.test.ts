@@ -14,7 +14,7 @@ describe("HTMLDOMAPIRepository", () => {
 		htmlDOMAPIRepository = new HTMLDOMAPIRepository()
 	})
 
-	it("returns a new audio element", () => {
+	it("should create a new audio element", () => {
 		const testSrc = "test-src"
 		const audioElement = htmlDOMAPIRepository.createNewAudio(testSrc)
 
@@ -47,7 +47,7 @@ describe("HTMLDOMAPIRepository", () => {
 		}, 10)
 	})
 
-	it("returns a new image element", () => {
+	it("should create a new image element", () => {
 		const width = 100
 		const height = 200
 		const imageElement = htmlDOMAPIRepository.createNewImage(width, height)
