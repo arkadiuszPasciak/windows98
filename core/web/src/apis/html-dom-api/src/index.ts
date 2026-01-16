@@ -1,1 +1,1 @@
-export { HTMLDOMAPIRepository as PointerLockAPI } from "./data/repositories"
+export { HTMLDOMAPIRepository as HTMLDOMAPI } from "./data/repositories"
