@@ -1,5 +1,6 @@
 export * from "./ms-app-config/src"
 export * from "./ms-app-controller/src"
+export * from "./ms-audio-manager/src"
 export * from "./ms-browser-env/src"
 export * from "./ms-case-converter/src"
 export * from "./ms-clipboard/src"
