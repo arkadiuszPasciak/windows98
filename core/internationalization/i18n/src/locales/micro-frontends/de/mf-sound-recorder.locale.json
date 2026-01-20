@@ -1,0 +1,22 @@
+{
+	"mf-sound-recorder": {
+		"download-sound": {
+			"button-name": "Sound herunterladen"
+		},
+		"information": {
+			"text": "Töne aufnehmen und herunterladen"
+		},
+		"modal": {
+			"title": "Soundrekorder"
+		},
+		"reset-recording": {
+			"button-name": "Zurücksetzen"
+		},
+		"start-recording": {
+			"button-name": "Aufnahme starten"
+		},
+		"stop-recording": {
+			"button-name": "Aufnahme stoppen"
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"mf-sound-recorder": {
+		"download-sound": {
+			"button-name": "Download Sound"
+		},
+		"information": {
+			"text": "Record and download sounds"
+		},
+		"modal": {
+			"title": "Sound Recorder"
+		},
+		"reset-recording": {
+			"button-name": "Reset"
+		},
+		"start-recording": {
+			"button-name": "Start Recording"
+		},
+		"stop-recording": {
+			"button-name": "Stop Recording"
+		}
+	}
+}
