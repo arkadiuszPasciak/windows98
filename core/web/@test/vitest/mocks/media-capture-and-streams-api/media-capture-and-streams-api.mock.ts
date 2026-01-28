@@ -3,7 +3,9 @@ import { MediaDevicesInterfaceMock } from "./interfaces"
 
 class MediaCaptureAndStreamsAPIMock {
 	public implementMock() {
-		vi.stubGlobal("MediaDevices", MediaDevicesInterfaceMock)
+		vi.stubGlobal("navigator", {
+			mediaDevices: new MediaDevicesInterfaceMock(),
+		})
 	}
 
 	public reset() {
