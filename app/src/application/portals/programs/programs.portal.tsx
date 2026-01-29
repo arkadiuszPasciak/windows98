@@ -55,6 +55,12 @@ const Shutdown = lazy(() =>
 	})),
 )
 
+const SoundRecorder = lazy(() =>
+	import("../../../presentation/components/sound-recorder").then((m) => ({
+		default: m.SoundRecorder,
+	})),
+)
+
 const TicTacToe = lazy(() =>
 	import("../../../presentation/components/tic-tac-toe").then((m) => ({
 		default: m.TicTacToe,
@@ -87,6 +93,7 @@ export const ProgramsPortal: FunctionComponent = () => {
 			{programs.notepad && <Notepad />}
 			{programs.settings && <Settings />}
 			{programs.shutdown && <Shutdown />}
+			{programs["sound-recorder"] && <SoundRecorder />}
 			{programs.runner && <Runner />}
 			{programs["tic-tac-toe"] && <TicTacToe />}
 			{programs.timer && <Timer />}
