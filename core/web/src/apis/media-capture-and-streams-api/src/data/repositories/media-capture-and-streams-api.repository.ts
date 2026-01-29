@@ -5,6 +5,6 @@ export class MediaCaptureAndStreamsAPIRepository
 	implements MediaCaptureAndStreamsAPIRepositoryContract
 {
 	public createNewMediaDevices(): MediaDevicesInterface {
-		return new MediaDevices()
+		return window.navigator.mediaDevices
 	}
 }

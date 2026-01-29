@@ -1,0 +1,22 @@
+{
+	"mf-sound-recorder": {
+		"download-sound": {
+			"button-name": "Pobierz dźwięk"
+		},
+		"information": {
+			"text": "Nagraj i pobierz dźwięki"
+		},
+		"modal": {
+			"title": "Dyktafon"
+		},
+		"reset-recording": {
+			"button-name": "Resetuj"
+		},
+		"start-recording": {
+			"button-name": "Rozpocznij nagrywanie"
+		},
+		"stop-recording": {
+			"button-name": "Zatrzymaj nagrywanie"
+		}
+	}
+}
