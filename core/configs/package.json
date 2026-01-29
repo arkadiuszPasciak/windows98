@@ -29,7 +29,7 @@
 		"lint-staged": "16.2.7",
 		"stylelint": "17.0.0",
 		"typescript": "5.9.3",
-		"vitest": "4.0.15"
+		"vitest": "4.0.18"
 	},
 	"scripts": {
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",

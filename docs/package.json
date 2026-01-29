@@ -20,7 +20,7 @@
 		"lint-staged": "16.2.7",
 		"storybook": "10.1.4",
 		"typescript": "5.9.3",
-		"vite": "7.2.7"
+		"vite": "7.3.1"
 	},
 	"main": ".storybook/main.ts",
 	"name": "@windows98/docs",

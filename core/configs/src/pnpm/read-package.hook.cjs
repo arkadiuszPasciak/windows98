@@ -16,10 +16,10 @@ class PNPMReadPackageHook {
 			"react-dom": "19.2.4",
 			stylelint: "17.0.0",
 			typescript: "5.9.3",
-			vite: "7.2.7",
+			vite: "7.3.1",
 			"vite-plugin-css-injected-by-js": "3.5.2",
 			"vite-plugin-dts": "4.5.4",
-			vitest: "4.0.15",
+			vitest: "4.0.18",
 		},
 		types: [
 			"dependencies",
