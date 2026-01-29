@@ -19,9 +19,6 @@ export class SoundRecorderDomain implements SoundRecorderDomainContract {
 	}
 
 	public async downloadRecordedSound(): Promise<void> {
-		console.log("Downloading recorded sound...")
-		console.log(this.recordedSoundFile)
-
 		if (this.recordedSoundFile === null) return
 
 		await this.fileManager.downloadFile(
