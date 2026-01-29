@@ -65,6 +65,10 @@ export const startMenuConfig = [
 				programs: [
 					{
 						type: "program",
+						id: "sound-recorder",
+					},
+					{
+						type: "program",
 						id: "webcam",
 					},
 				],

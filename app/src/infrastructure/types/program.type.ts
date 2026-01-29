@@ -8,6 +8,7 @@ export enum Program {
 	RUNNER = "runner",
 	SETTINGS = "settings",
 	SHUTDOWN = "shutdown",
+	SOUND_RECORDER = "sound-recorder",
 	TIC_TAC_TOE = "tic-tac-toe",
 	TIMER = "timer",
 	WEBCAM = "webcam",
