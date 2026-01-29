@@ -7,9 +7,9 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.13",
-		"@storybook/addon-a11y": "10.1.4",
-		"@storybook/addon-docs": "10.1.4",
-		"@storybook/react-vite": "10.1.4",
+		"@storybook/addon-a11y": "10.2.1",
+		"@storybook/addon-docs": "10.2.1",
+		"@storybook/react-vite": "10.2.1",
 		"@types/react": "19.2.10",
 		"@types/react-dom": "19.2.3",
 		"@vitejs/plugin-react": "5.1.2",
@@ -18,7 +18,7 @@
 		"@windows98/i18n": "workspace:*",
 		"@windows98/micro-frontends": "workspace:*",
 		"lint-staged": "16.2.7",
-		"storybook": "10.1.4",
+		"storybook": "10.2.1",
 		"typescript": "5.9.3",
 		"vite": "7.3.1"
 	},
