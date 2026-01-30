@@ -33,16 +33,12 @@ describe("ColorGeneratorDomain", () => {
 		domain.generateRandomColor()
 		const thirdNewColor = { ...domain.currentColor }
 
-		describe("colors should be different from initial and each other", () => {
-			expect(firstNewColor).not.toEqual(initialColor)
-			expect(secondNewColor).not.toEqual(firstNewColor)
-			expect(thirdNewColor).not.toEqual(secondNewColor)
-		})
+		expect(firstNewColor).not.toEqual(initialColor)
+		expect(secondNewColor).not.toEqual(firstNewColor)
+		expect(thirdNewColor).not.toEqual(secondNewColor)
 
-		describe("colors should have valid format", () => {
-			expect(firstNewColor.hex).toMatch(/^#[0-9a-f]{6}$/)
-			expect(secondNewColor.hex).toMatch(/^#[0-9a-f]{6}$/)
-			expect(thirdNewColor.hex).toMatch(/^#[0-9a-f]{6}$/)
-		})
+		expect(firstNewColor.hex).toMatch(/^#[0-9a-f]{6}$/)
+		expect(secondNewColor.hex).toMatch(/^#[0-9a-f]{6}$/)
+		expect(thirdNewColor.hex).toMatch(/^#[0-9a-f]{6}$/)
 	})
 })
