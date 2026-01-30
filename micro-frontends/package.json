@@ -16,28 +16,28 @@
 		"@windows98/design-system": "workspace:*",
 		"@windows98/micro-services": "workspace:*",
 		"@windows98/i18n": "workspace:*",
-		"i18next": "25.7.2",
+		"i18next": "25.8.0",
 		"mobx": "6.15.0",
 		"mobx-react-lite": "4.1.1",
-		"react": "19.2.1",
-		"react-dom": "19.2.1",
-		"react-i18next": "16.4.0"
+		"react": "19.2.4",
+		"react-dom": "19.2.4",
+		"react-i18next": "16.5.4"
 	},
 	"devDependencies": {
-		"@playwright/experimental-ct-react": "1.57.0",
+		"@playwright/experimental-ct-react": "1.58.0",
 		"@vitejs/plugin-react": "5.1.2",
-		"@types/react": "19.2.7",
+		"@types/react": "19.2.10",
 		"@types/react-dom": "19.2.3",
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
-		"@biomejs/biome": "2.3.8",
+		"@biomejs/biome": "2.3.13",
 		"lint-staged": "16.2.7",
-		"stylelint": "16.26.1",
+		"stylelint": "17.0.0",
 		"typescript": "5.9.3",
-		"vite": "7.2.7",
+		"vite": "7.3.1",
 		"vite-plugin-css-injected-by-js": "3.5.2",
 		"vite-plugin-dts": "4.5.4",
-		"vitest": "4.0.15"
+		"vitest": "4.0.18"
 	},
 	"engines": {
 		"node": "22.21.1",

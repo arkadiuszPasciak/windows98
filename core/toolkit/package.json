@@ -12,12 +12,12 @@
 	},
 	"type": "module",
 	"devDependencies": {
-		"@biomejs/biome": "2.3.8",
+		"@biomejs/biome": "2.3.13",
 		"@windows98/configs": "workspace:*",
 		"@windows98/web": "workspace:*",
 		"lint-staged": "16.2.7",
 		"typescript": "5.9.3",
-		"vitest": "4.0.15"
+		"vitest": "4.0.18"
 	},
 	"scripts": {
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",
