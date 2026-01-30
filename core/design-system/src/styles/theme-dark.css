@@ -15,23 +15,23 @@
 		--ds-text-color-tertiary: var(--ds-color-black100);
 
 		--ds-border-field-inner:
-			inset -1px -1px var(--ds-color-grey300), inset 1px 1px
-			var(--ds-color-black100);
+			inset -1px -1px var(--ds-color-grey300),
+			inset 1px 1px var(--ds-color-black100);
 		--ds-border-field-outer:
-			inset -2px -2px var(--ds-color-grey300), inset 2px 2px
-			var(--ds-color-black100);
+			inset -2px -2px var(--ds-color-grey300),
+			inset 2px 2px var(--ds-color-black100);
 		--ds-border-raised-inner:
-			inset -1px -1px var(--ds-color-black200), inset 1px 1px
-			var(--ds-color-grey500);
+			inset -1px -1px var(--ds-color-black200),
+			inset 1px 1px var(--ds-color-grey500);
 		--ds-border-raised-outer:
-			inset -2px -2px var(--ds-color-black100), inset 2px 2px
-			var(--ds-color-grey200);
+			inset -2px -2px var(--ds-color-black100),
+			inset 2px 2px var(--ds-color-grey200);
 		--ds-border-sunken-inner:
-			inset -1px -1px var(--ds-color-grey500), inset 1px 1px
-			var(--ds-color-black100);
+			inset -1px -1px var(--ds-color-grey500),
+			inset 1px 1px var(--ds-color-black100);
 		--ds-border-sunken-outer:
-			inset -2px -2px var(--ds-color-grey500), inset 2px 2px
-			var(--ds-color-black100);
+			inset -2px -2px var(--ds-color-grey500),
+			inset 2px 2px var(--ds-color-black100);
 
 		--ds-border-color-primary: var(--ds-color-grey300);
 		--ds-border-color-secondary: var(--ds-color-grey400);
