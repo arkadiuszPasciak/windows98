@@ -1,6 +1,6 @@
 import type {
 	ColorConverterStrategyContract,
-	ColorGeneratorDomainContract,
+	ColorManagerDomainContract,
 	RandomColorGeneratorStrategyContract,
 } from "../contracts"
 import type { Color } from "../models"
@@ -9,7 +9,7 @@ import {
 	RandomColorGeneratorStrategy,
 } from "./strategies"
 
-export class ColorGeneratorDomain implements ColorGeneratorDomainContract {
+export class ColorManagerDomain implements ColorManagerDomainContract {
 	private colorConverterStrategy: ColorConverterStrategyContract
 	private randomColorGeneratorStrategy: RandomColorGeneratorStrategyContract
 
@@ -34,4 +34,4 @@ export class ColorGeneratorDomain implements ColorGeneratorDomainContract {
 	}
 }
 
-export const MSColorGenerator = new ColorGeneratorDomain()
+export const MSColorManager = new ColorManagerDomain()

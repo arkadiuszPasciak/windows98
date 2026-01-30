@@ -3,7 +3,7 @@ import type {
 	ColorConverterStrategyContract,
 	RandomColorGeneratorStrategyContract,
 } from "../../src/domain/contracts"
-import { ColorGeneratorDomain } from "../../src/domain/domains/color-generator.domain"
+import { ColorManagerDomain } from "../../src/domain/domains/color-manager.domain"
 import type { RgbColor } from "../../src/domain/models"
 
 const rgbToHexHelper = (rgb: RgbColor): string => {
@@ -12,8 +12,8 @@ const rgbToHexHelper = (rgb: RgbColor): string => {
 	return `#${toHex(rgb.r)}${toHex(rgb.g)}${toHex(rgb.b)}`
 }
 
-describe("ColorGeneratorDomain", () => {
-	let colorGenerator: ColorGeneratorDomain
+describe("ColorManagerDomain", () => {
+	let colorManager: ColorManagerDomain
 	let mockColorConverter: ColorConverterStrategyContract
 	let mockRandomGenerator: RandomColorGeneratorStrategyContract
 
@@ -27,7 +27,7 @@ describe("ColorGeneratorDomain", () => {
 			generateRandomHex: vi.fn(),
 		}
 
-		colorGenerator = new ColorGeneratorDomain(
+		colorManager = new ColorManagerDomain(
 			mockColorConverter,
 			mockRandomGenerator,
 		)
@@ -40,7 +40,7 @@ describe("ColorGeneratorDomain", () => {
 			;(mockRandomGenerator.generateRandomHex as Mock).mockReturnValue(mockHex)
 			;(mockColorConverter.hexToRgb as Mock).mockReturnValue(mockRgb)
 
-			const result = colorGenerator.generateColor()
+			const result = colorManager.generateColor()
 
 			expect(result).toEqual({
 				hex: mockHex,
@@ -66,9 +66,9 @@ describe("ColorGeneratorDomain", () => {
 			}
 
 			const results = [
-				colorGenerator.generateColor(),
-				colorGenerator.generateColor(),
-				colorGenerator.generateColor(),
+				colorManager.generateColor(),
+				colorManager.generateColor(),
+				colorManager.generateColor(),
 			]
 
 			expect(results[0]).toEqual({ hex: colors[0], rgb: rgbValues[0] })
@@ -89,7 +89,7 @@ describe("ColorGeneratorDomain", () => {
 				)
 				;(mockColorConverter.hexToRgb as Mock).mockReturnValueOnce(testCase.rgb)
 
-				const result = colorGenerator.generateColor()
+				const result = colorManager.generateColor()
 
 				expect(result).toEqual({
 					hex: testCase.hex,
@@ -104,7 +104,7 @@ describe("ColorGeneratorDomain", () => {
 			;(mockRandomGenerator.generateRandomHex as Mock).mockReturnValue(mockHex)
 			;(mockColorConverter.hexToRgb as Mock).mockReturnValue(mockRgb)
 
-			colorGenerator.generateColor()
+			colorManager.generateColor()
 
 			expect(mockRandomGenerator.generateRandomHex).toHaveBeenCalledTimes(1)
 		})
@@ -115,7 +115,7 @@ describe("ColorGeneratorDomain", () => {
 			;(mockRandomGenerator.generateRandomHex as Mock).mockReturnValue(mockHex)
 			;(mockColorConverter.hexToRgb as Mock).mockReturnValue(mockRgb)
 
-			colorGenerator.generateColor()
+			colorManager.generateColor()
 
 			expect(mockColorConverter.hexToRgb).toHaveBeenCalledWith(mockHex)
 			expect(mockColorConverter.hexToRgb).toHaveBeenCalledTimes(1)
@@ -124,8 +124,8 @@ describe("ColorGeneratorDomain", () => {
 
 	describe("constructor with default strategies", () => {
 		it("should work with default strategies when none provided", () => {
-			const defaultColorGenerator = new ColorGeneratorDomain()
-			const result = defaultColorGenerator.generateColor()
+			const defaultColorManager = new ColorManagerDomain()
+			const result = defaultColorManager.generateColor()
 
 			expect(result).toHaveProperty("hex")
 			expect(result).toHaveProperty("rgb")
@@ -142,10 +142,10 @@ describe("ColorGeneratorDomain", () => {
 		})
 
 		it("should generate valid colors consistently with default strategies", () => {
-			const defaultColorGenerator = new ColorGeneratorDomain()
+			const defaultColorManager = new ColorManagerDomain()
 
 			for (let i = 0; i < 10; i++) {
-				const result = defaultColorGenerator.generateColor()
+				const result = defaultColorManager.generateColor()
 
 				expect(result.hex).toMatch(/^#[0-9a-f]{6}$/)
 

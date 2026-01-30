@@ -1,5 +1,5 @@
 import type { Color } from "../models"
 
-export interface ColorGeneratorDomainContract {
+export interface ColorManagerDomainContract {
 	generateColor(): Color
 }
