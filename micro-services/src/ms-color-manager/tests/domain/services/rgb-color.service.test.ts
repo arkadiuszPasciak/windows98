@@ -1,17 +1,11 @@
 import { describe, expect, it } from "vitest"
 import { RgbColorService } from "../../../src/domain/domains/services/rgb-color.service"
-import type {
-	CmykColor,
-	HexColor,
-	HslColor,
-	HsvColor,
-	RgbColor,
-} from "../../../src/domain/models"
+import type { ColorValue, RgbColor } from "../../../src/domain/models"
 
 const conversionScenarios: Array<{
 	input: RgbColor
 	to: "cmyk" | "hex" | "hsl" | "hsv"
-	expected: CmykColor | HexColor | HslColor | HsvColor
+	expected: ColorValue
 }> = [
 	{
 		input: { r: 255, g: 255, b: 255 },
