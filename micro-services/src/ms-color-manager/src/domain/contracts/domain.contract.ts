@@ -1,5 +1,5 @@
-import type { Color } from "../models"
+import type { HexColor, RgbColor } from "../models"
 
 export interface ColorManagerDomainContract {
-	generateColor(): Color
+	generateColor(): { rgb: RgbColor; hex: HexColor }
 }

@@ -1,37 +1,32 @@
 import type {
-	ColorConverterStrategyContract,
 	ColorManagerDomainContract,
+	ConverterStrategyContract,
 	RandomColorGeneratorStrategyContract,
 } from "../contracts"
-import type { Color } from "../models"
-import {
-	ColorConverterStrategy,
-	RandomColorGeneratorStrategy,
-} from "./strategies"
+import type { HexColor, RgbColor } from "../models"
+import { ConverterStrategy, RandomColorGeneratorStrategy } from "./strategies"
 
 export class ColorManagerDomain implements ColorManagerDomainContract {
-	private colorConverterStrategy: ColorConverterStrategyContract
+	private colorConverterStrategy: ConverterStrategyContract
 	private randomColorGeneratorStrategy: RandomColorGeneratorStrategyContract
 
 	constructor(
-		colorConverterStrategy?: ColorConverterStrategyContract,
-		randomColorGeneratorStrategy?: RandomColorGeneratorStrategyContract,
+		colorConverterStrategy: ConverterStrategyContract,
+		randomColorGeneratorStrategy: RandomColorGeneratorStrategyContract,
 	) {
-		this.colorConverterStrategy =
-			colorConverterStrategy || new ColorConverterStrategy()
-		this.randomColorGeneratorStrategy =
-			randomColorGeneratorStrategy || new RandomColorGeneratorStrategy()
+		this.colorConverterStrategy = colorConverterStrategy
+		this.randomColorGeneratorStrategy = randomColorGeneratorStrategy
 	}
 
-	public generateColor(): Color {
+	public generateColor(): { rgb: RgbColor; hex: HexColor } {
 		const hex = this.randomColorGeneratorStrategy.generateRandomHex()
-		const rgb = this.colorConverterStrategy.hexToRgb(hex)
+		const rgb = this.colorConverterStrategy.convert("hex", hex, "rgb")
 
-		return {
-			hex,
-			rgb,
-		}
+		return { rgb: rgb as RgbColor, hex: hex as HexColor }
 	}
 }
 
-export const MSColorManager = new ColorManagerDomain()
+export const MSColorManager = new ColorManagerDomain(
+	new ConverterStrategy(),
+	new RandomColorGeneratorStrategy(),
+)
