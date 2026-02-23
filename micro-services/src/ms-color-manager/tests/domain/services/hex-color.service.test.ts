@@ -47,4 +47,9 @@ describe("HexColorService", () => {
 			expect(hexColorService.validate(color as HexColor)).toBe(valid)
 		})
 	})
+
+	it("should generate a valid HEX color", () => {
+		const generatedColor = hexColorService.generate()
+		expect(hexColorService.validate(generatedColor)).toBe(true)
+	})
 })

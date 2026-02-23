@@ -57,4 +57,9 @@ describe("CmykColorService", () => {
 			expect(cmykColorService.validate(color)).toBe(valid)
 		})
 	})
+
+	it("should generate a valid CMYK color", () => {
+		const generatedColor = cmykColorService.generate()
+		expect(cmykColorService.validate(generatedColor)).toBe(true)
+	})
 })
