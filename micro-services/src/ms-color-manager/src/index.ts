@@ -1,1 +1,1 @@
-export * from "./domain"
+export { MSColorManager } from "./domain"
