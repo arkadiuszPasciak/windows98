@@ -5,5 +5,6 @@ export interface ColorServiceContract<
 	ColorConvert = Exclude<ColorValue, ColorService>,
 > {
 	convert(color: ColorService, to: ColorConvert): ColorConvert
+	generate(): ColorService
 	validate(color: ColorService): boolean
 }

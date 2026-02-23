@@ -61,4 +61,9 @@ describe("HsvColorService", () => {
 			expect(hsvColorService.validate(color as HsvColor)).toBe(valid)
 		})
 	})
+
+	it("should generate a valid HSV color", () => {
+		const generatedColor = hsvColorService.generate()
+		expect(hsvColorService.validate(generatedColor)).toBe(true)
+	})
 })

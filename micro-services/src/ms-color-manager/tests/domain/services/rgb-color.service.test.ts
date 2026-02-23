@@ -68,4 +68,9 @@ describe("RgbColorService", () => {
 			expect(rgbColorService.validate(color as RgbColor)).toBe(valid)
 		})
 	})
+
+	it("should generate a valid RGB color", () => {
+		const generatedColor = rgbColorService.generate()
+		expect(rgbColorService.validate(generatedColor)).toBe(true)
+	})
 })

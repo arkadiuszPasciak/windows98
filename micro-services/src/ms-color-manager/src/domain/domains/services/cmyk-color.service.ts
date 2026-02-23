@@ -33,6 +33,12 @@ export class CmykColorService implements ColorServiceContract<CmykColor> {
 		}
 	}
 
+	public generate(): CmykColor {
+		const rgb = this.rgbColorService.generate()
+
+		return this.rgbColorService.convert(rgb, "cmyk") as CmykColor
+	}
+
 	public validate(color: CmykColor): boolean {
 		return (
 			color != null &&

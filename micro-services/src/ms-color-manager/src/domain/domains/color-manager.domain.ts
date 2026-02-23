@@ -1,33 +1,33 @@
 import type {
 	ColorManagerDomainContract,
 	ConverterStrategyContract,
-	RandomColorGeneratorStrategyContract,
+	GeneratorStrategyContract,
 	ValidatorStrategyContract,
 } from "../contracts"
 import type { ColorType, ColorValue, HexColor, RgbColor } from "../models"
 import {
 	ConverterStrategy,
-	RandomColorGeneratorStrategy,
+	GeneratorStrategy,
 	ValidatorStrategy,
 } from "./strategies"
 
 export class ColorManagerDomain implements ColorManagerDomainContract {
 	private colorConverterStrategy: ConverterStrategyContract
-	private randomColorGeneratorStrategy: RandomColorGeneratorStrategyContract
+	private generatorStrategy: GeneratorStrategyContract
 	private validatorStrategy: ValidatorStrategyContract
 
 	constructor(
 		colorConverterStrategy: ConverterStrategyContract,
-		randomColorGeneratorStrategy: RandomColorGeneratorStrategyContract,
+		generatorStrategy: GeneratorStrategyContract,
 		validatorStrategy: ValidatorStrategyContract,
 	) {
 		this.colorConverterStrategy = colorConverterStrategy
-		this.randomColorGeneratorStrategy = randomColorGeneratorStrategy
+		this.generatorStrategy = generatorStrategy
 		this.validatorStrategy = validatorStrategy
 	}
 
 	public generateColor(): { rgb: RgbColor; hex: HexColor } {
-		const hex = this.randomColorGeneratorStrategy.generateRandomHex()
+		const hex = this.generatorStrategy.generate("hex")
 		const rgb = this.colorConverterStrategy.convert("hex", hex, "rgb")
 
 		return { rgb: rgb as RgbColor, hex: hex as HexColor }
@@ -40,6 +40,6 @@ export class ColorManagerDomain implements ColorManagerDomainContract {
 
 export const MSColorManager = new ColorManagerDomain(
 	new ConverterStrategy(),
-	new RandomColorGeneratorStrategy(),
+	new GeneratorStrategy(),
 	new ValidatorStrategy(),
 )
