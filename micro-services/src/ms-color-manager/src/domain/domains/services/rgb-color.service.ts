@@ -26,6 +26,14 @@ export class RgbColorService implements ColorServiceContract<RgbColor> {
 		}
 	}
 
+	public generate(): RgbColor {
+		return {
+			r: Math.floor(Math.random() * 256),
+			g: Math.floor(Math.random() * 256),
+			b: Math.floor(Math.random() * 256),
+		}
+	}
+
 	public validate(color: RgbColor): boolean {
 		return (
 			color != null &&

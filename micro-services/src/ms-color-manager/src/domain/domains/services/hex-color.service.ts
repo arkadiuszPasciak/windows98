@@ -33,6 +33,12 @@ export class HexColorService implements ColorServiceContract<"hex"> {
 		}
 	}
 
+	public generate(): "hex" {
+		const rgb = this.rgbColorService.generate()
+
+		return this.rgbColorService.convert(rgb, "hex") as "hex"
+	}
+
 	public validate(color: HexColor): boolean {
 		return (
 			typeof color === "string" &&

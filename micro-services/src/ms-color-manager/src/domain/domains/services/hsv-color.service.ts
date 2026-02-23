@@ -33,6 +33,12 @@ export class HsvColorService implements ColorServiceContract<HsvColor> {
 		}
 	}
 
+	public generate(): HsvColor {
+		const rgb = this.rgbColorService.generate()
+
+		return this.rgbColorService.convert(rgb, "hsv") as HsvColor
+	}
+
 	public validate(color: HsvColor): boolean {
 		return (
 			color != null &&
