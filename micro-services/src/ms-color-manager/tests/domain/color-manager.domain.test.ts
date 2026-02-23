@@ -18,4 +18,34 @@ describe("ColorManagerDomain", () => {
 			})
 		})
 	})
+
+	describe("validateColor", () => {
+		it("should validate a correct hex color", () => {
+			const isValid = msColorManager.validateColor("hex", "#ff5733")
+			expect(isValid).toBe(true)
+		})
+
+		it("should invalidate an incorrect hex color", () => {
+			const isValid = msColorManager.validateColor("hex", "ff5733")
+			expect(isValid).toBe(false)
+		})
+
+		it("should validate a correct rgb color", () => {
+			const isValid = msColorManager.validateColor("rgb", {
+				r: 255,
+				g: 87,
+				b: 51,
+			})
+			expect(isValid).toBe(true)
+		})
+
+		it("should invalidate an incorrect rgb color", () => {
+			const isValid = msColorManager.validateColor("rgb", {
+				r: 300,
+				g: -10,
+				b: 51,
+			})
+			expect(isValid).toBe(false)
+		})
+	})
 })
