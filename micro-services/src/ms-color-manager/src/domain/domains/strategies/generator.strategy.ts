@@ -1,5 +1,6 @@
 import type { GeneratorStrategyContract } from "../../contracts"
-import type { ColorType, ColorValue } from "../../models"
+import type { ColorServiceContract } from "../../contracts/color-service.contract"
+import type { ColorType, ColorTypeMap } from "../../models"
 import {
 	CmykColorService,
 	HexColorService,
@@ -9,26 +10,19 @@ import {
 } from "../services"
 
 export class GeneratorStrategy implements GeneratorStrategyContract {
-	private cmykColorService = new CmykColorService()
-	private hexColorService = new HexColorService()
-	private hslColorService = new HslColorService()
-	private hsvColorService = new HsvColorService()
-	private rgbColorService = new RgbColorService()
+	private readonly services: {
+		[ServiceColorType in ColorType]: ColorServiceContract<ServiceColorType>
+	} = {
+		cmyk: new CmykColorService(),
+		hex: new HexColorService(),
+		hsl: new HslColorService(),
+		hsv: new HsvColorService(),
+		rgb: new RgbColorService(),
+	}
 
-	public generate(type: ColorType): ColorValue {
-		switch (type) {
-			case "cmyk":
-				return this.cmykColorService.generate()
-			case "hex":
-				return this.hexColorService.generate()
-			case "hsl":
-				return this.hslColorService.generate()
-			case "hsv":
-				return this.hsvColorService.generate()
-			case "rgb":
-				return this.rgbColorService.generate()
-			default:
-				throw new Error(`Unsupported color type: ${type}`)
-		}
+	public generate<TargetColorType extends ColorType>(
+		type: TargetColorType,
+	): ColorTypeMap[TargetColorType] {
+		return this.services[type].generate()
 	}
 }
