@@ -1,6 +1,8 @@
 import type { ColorServiceContract } from "../../contracts"
 import type {
 	CmykColor,
+	ColorType,
+	ColorTypeMap,
 	HexColor,
 	HslColor,
 	HsvColor,
@@ -9,34 +11,32 @@ import type {
 import { RgbColorService } from "./rgb-color.service"
 
 export class HexColorService implements ColorServiceContract<"hex"> {
-	private rgbColorService: ColorServiceContract<RgbColor>
+	private rgbColorService: ColorServiceContract<"rgb">
 
 	constructor() {
 		this.rgbColorService = new RgbColorService()
 	}
 
-	public convert(
+	public convert<TargetColorType extends Exclude<ColorType, "hex">>(
 		color: HexColor,
-		to: "cmyk" | "hsv" | "hsl" | "rgb",
-	): CmykColor | RgbColor | HslColor | HsvColor {
-		switch (to) {
-			case "cmyk":
-				return this.hexToCmyk(color)
-			case "hsl":
-				return this.hexToHsl(color)
-			case "hsv":
-				return this.hexToHsv(color)
-			case "rgb":
-				return this.hexToRgb(color)
-			default:
-				throw new Error(`Unsupported conversion: ${to}`)
+		to: TargetColorType,
+	): ColorTypeMap[TargetColorType] {
+		const converters: {
+			[TKey in Exclude<ColorType, "hex">]: () => ColorTypeMap[TKey]
+		} = {
+			cmyk: () => this.hexToCmyk(color),
+			rgb: () => this.hexToRgb(color),
+			hsl: () => this.hexToHsl(color),
+			hsv: () => this.hexToHsv(color),
 		}
+
+		return converters[to]()
 	}
 
-	public generate(): "hex" {
+	public generate(): HexColor {
 		const rgb = this.rgbColorService.generate()
 
-		return this.rgbColorService.convert(rgb, "hex") as "hex"
+		return this.rgbColorService.convert(rgb, "hex")
 	}
 
 	public validate(color: HexColor): boolean {
@@ -49,19 +49,19 @@ export class HexColorService implements ColorServiceContract<"hex"> {
 	private hexToCmyk(hex: HexColor): CmykColor {
 		const rgb = this.hexToRgb(hex)
 
-		return this.rgbColorService.convert(rgb, "cmyk") as CmykColor
+		return this.rgbColorService.convert(rgb, "cmyk")
 	}
 
 	private hexToHsl(hex: HexColor): HslColor {
 		const rgb = this.hexToRgb(hex)
 
-		return this.rgbColorService.convert(rgb, "hsl") as HslColor
+		return this.rgbColorService.convert(rgb, "hsl")
 	}
 
 	private hexToHsv(hex: HexColor): HsvColor {
 		const rgb = this.hexToRgb(hex)
 
-		return this.rgbColorService.convert(rgb, "hsv") as HsvColor
+		return this.rgbColorService.convert(rgb, "hsv")
 	}
 
 	private hexToRgb(hex: HexColor): RgbColor {
