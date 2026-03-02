@@ -4,7 +4,7 @@ import type {
 	GeneratorStrategyContract,
 	ValidatorStrategyContract,
 } from "../contracts"
-import type { ColorType, ColorValue, HexColor, RgbColor } from "../models"
+import type { ColorType, ColorTypeMap, HexColor, RgbColor } from "../models"
 import {
 	ConverterStrategy,
 	GeneratorStrategy,
@@ -30,10 +30,13 @@ export class ColorManagerDomain implements ColorManagerDomainContract {
 		const hex = this.generatorStrategy.generate("hex")
 		const rgb = this.colorConverterStrategy.convert("hex", hex, "rgb")
 
-		return { rgb: rgb as RgbColor, hex: hex as HexColor }
+		return { rgb, hex }
 	}
 
-	public validateColor(type: ColorType, value: ColorValue): boolean {
+	public validateColor<TargetColorType extends ColorType>(
+		type: TargetColorType,
+		value: ColorTypeMap[TargetColorType],
+	): boolean {
 		return this.validatorStrategy.validate(type, value)
 	}
 }
