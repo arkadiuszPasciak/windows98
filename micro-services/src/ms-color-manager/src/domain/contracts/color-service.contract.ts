@@ -1,10 +1,10 @@
-import type { ColorValue } from "../models"
+import type { ColorType, ColorTypeMap } from "../models"
 
-export interface ColorServiceContract<
-	ColorService extends ColorValue,
-	ColorConvert = Exclude<ColorValue, ColorService>,
-> {
-	convert(color: ColorService, to: ColorConvert): ColorConvert
-	generate(): ColorService
-	validate(color: ColorService): boolean
+export interface ColorServiceContract<ServiceColorType extends ColorType> {
+	convert<TargetColorType extends Exclude<ColorType, ServiceColorType>>(
+		color: ColorTypeMap[ServiceColorType],
+		to: TargetColorType,
+	): ColorTypeMap[TargetColorType]
+	generate(): ColorTypeMap[ServiceColorType]
+	validate(color: ColorTypeMap[ServiceColorType]): boolean
 }
