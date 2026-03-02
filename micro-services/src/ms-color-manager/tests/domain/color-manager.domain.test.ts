@@ -9,7 +9,23 @@ describe("ColorManagerDomain", () => {
 			const result = msColorManager.generateColor()
 
 			expect(result).toEqual({
+				cmyk: expect.objectContaining({
+					c: expect.any(Number),
+					m: expect.any(Number),
+					y: expect.any(Number),
+					k: expect.any(Number),
+				}),
 				hex: expect.stringMatching(/^#[0-9a-f]{6}$/),
+				hsl: expect.objectContaining({
+					h: expect.any(Number),
+					s: expect.any(Number),
+					l: expect.any(Number),
+				}),
+				hsv: expect.objectContaining({
+					h: expect.any(Number),
+					s: expect.any(Number),
+					v: expect.any(Number),
+				}),
 				rgb: expect.objectContaining({
 					r: expect.any(Number),
 					g: expect.any(Number),
