@@ -5,7 +5,7 @@ describe("ColorManagerDomain", () => {
 	const msColorManager = MSColorManager
 
 	describe("generateColor", () => {
-		it("should generate a color with both hex and rgb values", () => {
+		it("should generate colors values", () => {
 			const result = msColorManager.generateColor()
 
 			expect(result).toEqual({
