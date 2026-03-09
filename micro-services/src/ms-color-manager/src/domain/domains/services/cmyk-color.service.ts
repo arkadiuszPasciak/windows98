@@ -1,6 +1,8 @@
 import type { ColorServiceContract } from "../../contracts"
 import type {
 	CmykColor,
+	ColorType,
+	ColorTypeMap,
 	HexColor,
 	HslColor,
 	HsvColor,
@@ -8,35 +10,33 @@ import type {
 } from "../../models"
 import { RgbColorService } from "./rgb-color.service"
 
-export class CmykColorService implements ColorServiceContract<CmykColor> {
-	private rgbColorService: ColorServiceContract<RgbColor>
+export class CmykColorService implements ColorServiceContract<"cmyk"> {
+	private rgbColorService: ColorServiceContract<"rgb">
 
 	constructor() {
 		this.rgbColorService = new RgbColorService()
 	}
 
-	public convert(
+	public convert<TargetColorType extends Exclude<ColorType, "cmyk">>(
 		color: CmykColor,
-		to: "rgb" | "hex" | "hsv" | "hsl",
-	): RgbColor | HexColor | HslColor | HsvColor {
-		switch (to) {
-			case "rgb":
-				return this.cmykToRgb(color)
-			case "hex":
-				return this.cmykToHex(color)
-			case "hsl":
-				return this.cmykToHsl(color)
-			case "hsv":
-				return this.cmykToHsv(color)
-			default:
-				throw new Error(`Unsupported conversion: ${to}`)
+		to: TargetColorType,
+	): ColorTypeMap[TargetColorType] {
+		const converters: {
+			[TKey in Exclude<ColorType, "cmyk">]: () => ColorTypeMap[TKey]
+		} = {
+			rgb: () => this.cmykToRgb(color),
+			hex: () => this.cmykToHex(color),
+			hsl: () => this.cmykToHsl(color),
+			hsv: () => this.cmykToHsv(color),
 		}
+
+		return converters[to]()
 	}
 
 	public generate(): CmykColor {
 		const rgb = this.rgbColorService.generate()
 
-		return this.rgbColorService.convert(rgb, "cmyk") as CmykColor
+		return this.rgbColorService.convert(rgb, "cmyk")
 	}
 
 	public validate(color: CmykColor): boolean {
@@ -68,18 +68,18 @@ export class CmykColorService implements ColorServiceContract<CmykColor> {
 	private cmykToHex(cmyk: CmykColor): HexColor {
 		const rgb = this.cmykToRgb(cmyk)
 
-		return this.rgbColorService.convert(rgb, "hex") as HexColor
+		return this.rgbColorService.convert(rgb, "hex")
 	}
 
 	private cmykToHsl(cmyk: CmykColor): HslColor {
 		const rgb = this.cmykToRgb(cmyk)
 
-		return this.rgbColorService.convert(rgb, "hsl") as HslColor
+		return this.rgbColorService.convert(rgb, "hsl")
 	}
 
 	private cmykToHsv(cmyk: CmykColor): HsvColor {
 		const rgb = this.cmykToRgb(cmyk)
 
-		return this.rgbColorService.convert(rgb, "hsv") as HsvColor
+		return this.rgbColorService.convert(rgb, "hsv")
 	}
 }

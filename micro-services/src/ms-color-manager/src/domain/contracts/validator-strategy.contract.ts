@@ -1,5 +1,8 @@
-import type { ColorType, ColorValue } from "../models"
+import type { ColorType, ColorTypeMap } from "../models"
 
 export interface ValidatorStrategyContract {
-	validate(type: ColorType, value: ColorValue): boolean
+	validate<TargetColorType extends ColorType>(
+		type: TargetColorType,
+		value: ColorTypeMap[TargetColorType],
+	): boolean
 }

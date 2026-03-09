@@ -1,5 +1,7 @@
-import type { ColorType, ColorValue } from "../models"
+import type { ColorType, ColorTypeMap } from "../models"
 
 export interface GeneratorStrategyContract {
-	generate(type: ColorType): ColorValue
+	generate<TargetColorType extends ColorType>(
+		type: TargetColorType,
+	): ColorTypeMap[TargetColorType]
 }

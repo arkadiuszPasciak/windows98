@@ -1,13 +1,6 @@
 import type { ConverterStrategyContract } from "../../contracts"
-import type {
-	CmykColor,
-	ColorType,
-	ColorValue,
-	HexColor,
-	HslColor,
-	HsvColor,
-	RgbColor,
-} from "../../models"
+import type { ColorServiceContract } from "../../contracts/color-service.contract"
+import type { ColorType, ColorTypeMap } from "../../models"
 import {
 	CmykColorService,
 	HexColorService,
@@ -17,45 +10,24 @@ import {
 } from "../services"
 
 export class ConverterStrategy implements ConverterStrategyContract {
-	private cmykColorService = new CmykColorService()
-	private hexColorService = new HexColorService()
-	private hslColorService = new HslColorService()
-	private hsvColorService = new HsvColorService()
-	private rgbColorService = new RgbColorService()
+	private readonly services: {
+		[ServiceColorType in ColorType]: ColorServiceContract<ServiceColorType>
+	} = {
+		cmyk: new CmykColorService(),
+		hex: new HexColorService(),
+		hsl: new HslColorService(),
+		hsv: new HsvColorService(),
+		rgb: new RgbColorService(),
+	}
 
-	public convert(
-		type: ColorType,
-		value: ColorValue,
-		returnType: ColorType,
-	): ColorValue {
-		switch (type) {
-			case "cmyk":
-				return this.cmykColorService.convert(
-					value as CmykColor,
-					returnType as Exclude<ColorType, "cmyk">,
-				)
-			case "hex":
-				return this.hexColorService.convert(
-					value as HexColor,
-					returnType as Exclude<ColorType, "hex">,
-				)
-			case "hsl":
-				return this.hslColorService.convert(
-					value as HslColor,
-					returnType as Exclude<ColorType, "hsl">,
-				)
-			case "hsv":
-				return this.hsvColorService.convert(
-					value as HsvColor,
-					returnType as Exclude<ColorType, "hsv">,
-				)
-			case "rgb":
-				return this.rgbColorService.convert(
-					value as RgbColor,
-					returnType as Exclude<ColorType, "rgb">,
-				)
-			default:
-				throw new Error(`Unsupported color type: ${type}`)
-		}
+	public convert<
+		TargetSourceColorType extends ColorType,
+		TargetColorType extends Exclude<ColorType, TargetSourceColorType>,
+	>(
+		type: TargetSourceColorType,
+		value: ColorTypeMap[TargetSourceColorType],
+		returnType: TargetColorType,
+	): ColorTypeMap[TargetColorType] {
+		return this.services[type].convert(value, returnType)
 	}
 }

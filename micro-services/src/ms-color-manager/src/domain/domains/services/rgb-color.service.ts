@@ -1,29 +1,29 @@
 import type { ColorServiceContract } from "../../contracts"
 import type {
 	CmykColor,
+	ColorType,
+	ColorTypeMap,
 	HexColor,
 	HslColor,
 	HsvColor,
 	RgbColor,
 } from "../../models"
 
-export class RgbColorService implements ColorServiceContract<RgbColor> {
-	public convert(
+export class RgbColorService implements ColorServiceContract<"rgb"> {
+	public convert<TargetColorType extends Exclude<ColorType, "rgb">>(
 		color: RgbColor,
-		to: "cmyk" | "hex" | "hsv" | "hsl",
-	): CmykColor | HexColor | HslColor | HsvColor {
-		switch (to) {
-			case "cmyk":
-				return this.rgbToCmyk(color)
-			case "hex":
-				return this.rgbToHex(color)
-			case "hsl":
-				return this.rgbToHsl(color)
-			case "hsv":
-				return this.rgbToHsv(color)
-			default:
-				throw new Error(`Unsupported conversion: ${to}`)
+		to: TargetColorType,
+	): ColorTypeMap[TargetColorType] {
+		const converters: {
+			[TKey in Exclude<ColorType, "rgb">]: () => ColorTypeMap[TKey]
+		} = {
+			cmyk: () => this.rgbToCmyk(color),
+			hex: () => this.rgbToHex(color),
+			hsl: () => this.rgbToHsl(color),
+			hsv: () => this.rgbToHsv(color),
 		}
+
+		return converters[to]()
 	}
 
 	public generate(): RgbColor {
