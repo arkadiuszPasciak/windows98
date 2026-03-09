@@ -4,15 +4,7 @@ import type {
 	GeneratorStrategyContract,
 	ValidatorStrategyContract,
 } from "../contracts"
-import type {
-	CmykColor,
-	ColorType,
-	ColorTypeMap,
-	HexColor,
-	HslColor,
-	HsvColor,
-	RgbColor,
-} from "../models"
+import type { ColorType, ColorTypeMap } from "../models"
 import {
 	ConverterStrategy,
 	GeneratorStrategy,
@@ -34,13 +26,7 @@ export class ColorManagerDomain implements ColorManagerDomainContract {
 		this.validatorStrategy = validatorStrategy
 	}
 
-	public generateColor(): {
-		cmyk: CmykColor
-		hex: HexColor
-		hsl: HslColor
-		hsv: HsvColor
-		rgb: RgbColor
-	} {
+	public generateColor(): ColorTypeMap {
 		const hex = this.generatorStrategy.generate("hex")
 		const rgb = this.colorConverterStrategy.convert("hex", hex, "rgb")
 		const cmyk = this.colorConverterStrategy.convert("hex", hex, "cmyk")
