@@ -5,6 +5,7 @@ export interface ColorServiceContract<ServiceColorType extends ColorType> {
 		color: ColorTypeMap[ServiceColorType],
 		to: TargetColorType,
 	): ColorTypeMap[TargetColorType]
+	format(color: ColorTypeMap[ServiceColorType]): string
 	generate(): ColorTypeMap[ServiceColorType]
 	validate(color: ColorTypeMap[ServiceColorType]): boolean
 }

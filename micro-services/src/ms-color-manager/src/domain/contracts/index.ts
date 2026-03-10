@@ -1,5 +1,6 @@
 export * from "./color-service.contract"
 export * from "./converter-strategy.contract"
 export * from "./domain.contract"
+export * from "./formatter-strategy.contract"
 export * from "./generator-strategy.contract"
 export * from "./validator-strategy.contract"
