@@ -64,4 +64,48 @@ describe("ColorManagerDomain", () => {
 			expect(isValid).toBe(false)
 		})
 	})
+
+	describe("formatColor", () => {
+		it("should format a cmyk color correctly", () => {
+			const formatted = msColorManager.formatColor("cmyk", {
+				c: 0,
+				m: 66,
+				y: 80,
+				k: 0,
+			})
+			expect(formatted).toBe("cmyk(0%, 66%, 80%, 0%)")
+		})
+
+		it("should format a hex color correctly", () => {
+			const formatted = msColorManager.formatColor("hex", "#ff5733")
+			expect(formatted).toBe("#ff5733")
+		})
+
+		it("should format an hsl color correctly", () => {
+			const formatted = msColorManager.formatColor("hsl", {
+				h: 9,
+				s: 100,
+				l: 60,
+			})
+			expect(formatted).toBe("hsl(9, 100%, 60%)")
+		})
+
+		it("should format a hsv color correctly", () => {
+			const formatted = msColorManager.formatColor("hsv", {
+				h: 9,
+				s: 100,
+				v: 100,
+			})
+			expect(formatted).toBe("hsv(9, 100%, 100%)")
+		})
+
+		it("should format an rgb color correctly", () => {
+			const formatted = msColorManager.formatColor("rgb", {
+				r: 255,
+				g: 87,
+				b: 51,
+			})
+			expect(formatted).toBe("rgb(255, 87, 51)")
+		})
+	})
 })

@@ -32,6 +32,18 @@ const conversionScenarios: Array<{
 	{ input: { h: 0, s: 0, v: 0 }, to: "hex", expected: "#000000" },
 ]
 
+const formatterScenarios: Array<{ color: HsvColor; expected: string }> = [
+	{ color: { h: 0, s: 0, v: 100 }, expected: "hsv(0, 0%, 100%)" },
+	{
+		color: { h: 120, s: 50, v: 50 },
+		expected: "hsv(120, 50%, 50%)",
+	},
+	{
+		color: { h: 240, s: 100, v: 50 },
+		expected: "hsv(240, 100%, 50%)",
+	},
+]
+
 const validationScenarios: Array<{
 	color: HsvColor | null | undefined
 	valid: boolean
@@ -53,6 +65,13 @@ describe("HsvColorService", () => {
 		it(`should convert HSV ${JSON.stringify(input)} to ${to}`, () => {
 			const result = hsvColorService.convert(input, to)
 			expect(result).toEqual(expected)
+		})
+	})
+
+	formatterScenarios.forEach(({ color, expected }) => {
+		it(`should format HSV color ${JSON.stringify(color)} as ${expected}`, () => {
+			const formatted = hsvColorService.format(color)
+			expect(formatted).toBe(expected)
 		})
 	})
 

@@ -33,6 +33,11 @@ export class HslColorService implements ColorServiceContract<"hsl"> {
 		return converters[to]()
 	}
 
+	public format(color: HslColor): string {
+		const { h, s, l } = color
+		return `hsl(${h}, ${s}%, ${l}%)`
+	}
+
 	public generate(): HslColor {
 		const rgb = this.rgbColorService.generate()
 

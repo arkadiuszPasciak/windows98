@@ -1,29 +1,41 @@
 import type {
 	ColorManagerDomainContract,
 	ConverterStrategyContract,
+	FormatterStrategyContract,
 	GeneratorStrategyContract,
 	ValidatorStrategyContract,
 } from "../contracts"
 import type { ColorType, ColorTypeMap } from "../models"
 import {
 	ConverterStrategy,
+	FormatterStrategy,
 	GeneratorStrategy,
 	ValidatorStrategy,
 } from "./strategies"
 
 export class ColorManagerDomain implements ColorManagerDomainContract {
 	private colorConverterStrategy: ConverterStrategyContract
+	private formatterStrategy: FormatterStrategyContract
 	private generatorStrategy: GeneratorStrategyContract
 	private validatorStrategy: ValidatorStrategyContract
 
 	constructor(
 		colorConverterStrategy: ConverterStrategyContract,
+		formatterStrategy: FormatterStrategyContract,
 		generatorStrategy: GeneratorStrategyContract,
 		validatorStrategy: ValidatorStrategyContract,
 	) {
 		this.colorConverterStrategy = colorConverterStrategy
+		this.formatterStrategy = formatterStrategy
 		this.generatorStrategy = generatorStrategy
 		this.validatorStrategy = validatorStrategy
+	}
+
+	public formatColor<TargetColorType extends ColorType>(
+		type: TargetColorType,
+		value: ColorTypeMap[TargetColorType],
+	): string {
+		return this.formatterStrategy.format(type, value)
 	}
 
 	public generateColor(): ColorTypeMap {
@@ -46,6 +58,7 @@ export class ColorManagerDomain implements ColorManagerDomainContract {
 
 export const MSColorManager = new ColorManagerDomain(
 	new ConverterStrategy(),
+	new FormatterStrategy(),
 	new GeneratorStrategy(),
 	new ValidatorStrategy(),
 )
