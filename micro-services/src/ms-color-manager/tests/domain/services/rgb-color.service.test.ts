@@ -39,6 +39,21 @@ const conversionScenarios: Array<{
 	},
 ]
 
+const formatterScenarios: Array<{ color: RgbColor; expected: string }> = [
+	{
+		color: { r: 255, g: 255, b: 255 },
+		expected: "rgb(255, 255, 255)",
+	},
+	{
+		color: { r: 128, g: 128, b: 128 },
+		expected: "rgb(128, 128, 128)",
+	},
+	{
+		color: { r: 0, g: 0, b: 0 },
+		expected: "rgb(0, 0, 0)",
+	},
+]
+
 const validationScenarios: Array<{
 	color: RgbColor | null | undefined
 	valid: boolean
@@ -60,6 +75,13 @@ describe("RgbColorService", () => {
 		it(`should convert RGB ${JSON.stringify(input)} to ${to}`, () => {
 			const result = rgbColorService.convert(input, to)
 			expect(result).toEqual(expected)
+		})
+	})
+
+	formatterScenarios.forEach(({ color, expected }) => {
+		it(`should format RGB color ${JSON.stringify(color)} as ${expected}`, () => {
+			const formatted = rgbColorService.format(color)
+			expect(formatted).toBe(expected)
 		})
 	})
 

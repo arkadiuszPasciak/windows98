@@ -32,6 +32,18 @@ const conversionScenarios: Array<{
 	{ input: { h: 0, s: 0, l: 0 }, to: "hex", expected: "#000000" },
 ]
 
+const formatterScenarios: Array<{ color: HslColor; expected: string }> = [
+	{ color: { h: 0, s: 0, l: 100 }, expected: "hsl(0, 0%, 100%)" },
+	{
+		color: { h: 120, s: 50, l: 50 },
+		expected: "hsl(120, 50%, 50%)",
+	},
+	{
+		color: { h: 240, s: 100, l: 50 },
+		expected: "hsl(240, 100%, 50%)",
+	},
+]
+
 const validationScenarios: Array<{
 	color: HslColor | null | undefined
 	valid: boolean
@@ -53,6 +65,13 @@ describe("HslColorService", () => {
 		it(`should convert HSL ${JSON.stringify(input)} to ${to}`, () => {
 			const result = hslColorService.convert(input, to)
 			expect(result).toEqual(expected)
+		})
+	})
+
+	formatterScenarios.forEach(({ color, expected }) => {
+		it(`should format HSL color ${JSON.stringify(color)} as ${expected}`, () => {
+			const formatted = hslColorService.format(color)
+			expect(formatted).toBe(expected)
 		})
 	})
 

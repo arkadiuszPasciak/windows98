@@ -16,6 +16,18 @@ const conversionScenarios: Array<{
 	{ input: "#000000", to: "hsv", expected: { h: 0, s: 0, v: 0 } },
 ]
 
+const formatterScenarios: Array<{ color: HexColor; expected: string }> = [
+	{ color: "ffffff", expected: "#ffffff" },
+	{
+		color: "123456",
+		expected: "#123456",
+	},
+	{
+		color: "abcdef",
+		expected: "#abcdef",
+	},
+]
+
 const validationScenarios: Array<{
 	color: HexColor | null | undefined
 	valid: boolean
@@ -39,6 +51,13 @@ describe("HexColorService", () => {
 		it(`should convert HEX ${input} to ${to}`, () => {
 			const result = hexColorService.convert(input, to)
 			expect(result).toEqual(expected)
+		})
+	})
+
+	formatterScenarios.forEach(({ color, expected }) => {
+		it(`should format HEX color ${JSON.stringify(color)} as ${expected}`, () => {
+			const formatted = hexColorService.format(color)
+			expect(formatted).toBe(expected)
 		})
 	})
 
