@@ -26,6 +26,11 @@ export class RgbColorService implements ColorServiceContract<"rgb"> {
 		return converters[to]()
 	}
 
+	public format(color: RgbColor): string {
+		const { r, g, b } = color
+		return `rgb(${r}, ${g}, ${b})`
+	}
+
 	public generate(): RgbColor {
 		return {
 			r: Math.floor(Math.random() * 256),

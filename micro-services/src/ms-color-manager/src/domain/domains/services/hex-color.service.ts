@@ -33,6 +33,14 @@ export class HexColorService implements ColorServiceContract<"hex"> {
 		return converters[to]()
 	}
 
+	public format(color: HexColor): string {
+		if (!color.startsWith("#")) {
+			return `#${color}`
+		}
+
+		return color
+	}
+
 	public generate(): HexColor {
 		const rgb = this.rgbColorService.generate()
 
