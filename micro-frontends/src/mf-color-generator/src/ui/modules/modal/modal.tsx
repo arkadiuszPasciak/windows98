@@ -12,7 +12,7 @@ export const Modal: FunctionComponent<ModalProps> = ({ children }) => {
 			moveWindow={true}
 			onClose={onCloseProgram}
 			title={translations.title}
-			width="300px"
+			width="650px"
 			height="250px"
 		>
 			{children}

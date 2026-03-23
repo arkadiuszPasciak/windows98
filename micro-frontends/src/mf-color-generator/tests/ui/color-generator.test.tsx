@@ -1,6 +1,8 @@
 import { expect, test } from "@playwright/experimental-ct-react"
 import { MFColorGenerator } from "../../src/ui/views"
 
+const colorTypes = ["cmyk", "hex", "hsl", "hsv", "rgb"] as const
+
 test.describe("ColorGenerator", () => {
 	test("should render and work as complete color generator application", async ({
 		mount,
@@ -22,29 +24,49 @@ test.describe("ColorGenerator", () => {
 			"Visual color representation should be present",
 		).toBeVisible()
 
-		const hexInput = component.getByTestId(
-			"mf-color-generator-hex-color-input-input",
+		const inputs = Object.fromEntries(
+			colorTypes.map((type) => [
+				type,
+				component.getByTestId(`mf-color-generator-${type}-input-input`),
+			]),
+		) as Record<
+			(typeof colorTypes)[number],
+			ReturnType<typeof component.getByTestId>
+		>
+
+		for (const type of colorTypes) {
+			await expect(
+				inputs[type],
+				`${type.toUpperCase()} input should be visible`,
+			).toBeVisible()
+			await expect(
+				inputs[type],
+				`${type.toUpperCase()} input should be readonly`,
+			).toHaveAttribute("readonly")
+		}
+
+		const initialValues = Object.fromEntries(
+			await Promise.all(
+				colorTypes.map(async (type) => [type, await inputs[type].inputValue()]),
+			),
+		) as Record<(typeof colorTypes)[number], string>
+
+		expect(
+			initialValues.cmyk,
+			"Should contain valid CMYK color format",
+		).toMatch(
+			/^cmyk\(\d+(\.\d+)?%, \d+(\.\d+)?%, \d+(\.\d+)?%, \d+(\.\d+)?%\)$/,
 		)
-		await expect(hexInput, "Hex color input should be visible").toBeVisible()
-		await expect(
-			hexInput,
-			"Input should be readonly for display only",
-		).toHaveAttribute("readonly")
-		const initialHex = await hexInput.inputValue()
-		expect(initialHex, "Should contain valid hex color format").toMatch(
+		expect(initialValues.hex, "Should contain valid HEX color format").toMatch(
 			/^#[0-9a-f]{6}$/,
 		)
-
-		const rgbInput = component.getByTestId(
-			"mf-color-generator-rgb-color-input-input",
+		expect(initialValues.hsl, "Should contain valid HSL color format").toMatch(
+			/^hsl\(\d+, \d+%, \d+%\)$/,
 		)
-		await expect(rgbInput, "RGB color input should be visible").toBeVisible()
-		await expect(
-			rgbInput,
-			"Input should be readonly for display only",
-		).toHaveAttribute("readonly")
-		const initialRgb = await rgbInput.inputValue()
-		expect(initialRgb, "Should contain valid RGB color format").toMatch(
+		expect(initialValues.hsv, "Should contain valid HSV color format").toMatch(
+			/^hsv\(\d+, \d+%, \d+%\)$/,
+		)
+		expect(initialValues.rgb, "Should contain valid RGB color format").toMatch(
 			/^rgb\(\d{1,3}, \d{1,3}, \d{1,3}\)$/,
 		)
 
@@ -59,49 +81,41 @@ test.describe("ColorGenerator", () => {
 
 		await generateButton.click()
 
-		// Wait for hex and rgb values to change after clicking
 		await expect
-			.poll(async () => await hexInput.inputValue(), {
-				timeout: 1000,
-			})
-			.not.toBe(initialHex)
-		await expect
-			.poll(async () => await rgbInput.inputValue(), {
-				timeout: 1000,
-			})
-			.not.toBe(initialRgb)
+			.poll(async () => await inputs.hex.inputValue(), { timeout: 1000 })
+			.not.toBe(initialValues.hex)
 
-		const newHex = await hexInput.inputValue()
-		const newRgb = await rgbInput.inputValue()
+		const newValues = Object.fromEntries(
+			await Promise.all(
+				colorTypes.map(async (type) => [type, await inputs[type].inputValue()]),
+			),
+		) as Record<(typeof colorTypes)[number], string>
 
-		expect(newHex, "New hex should maintain valid format").toMatch(
+		expect(newValues.cmyk, "New CMYK should maintain valid format").toMatch(
+			/^cmyk\(\d+(\.\d+)?%, \d+(\.\d+)?%, \d+(\.\d+)?%, \d+(\.\d+)?%\)$/,
+		)
+		expect(newValues.hex, "New HEX should maintain valid format").toMatch(
 			/^#[0-9a-f]{6}$/,
 		)
-		expect(newRgb, "New RGB should maintain valid format").toMatch(
+		expect(newValues.hsl, "New HSL should maintain valid format").toMatch(
+			/^hsl\(\d+, \d+%, \d+%\)$/,
+		)
+		expect(newValues.hsv, "New HSV should maintain valid format").toMatch(
+			/^hsv\(\d+, \d+%, \d+%\)$/,
+		)
+		expect(newValues.rgb, "New RGB should maintain valid format").toMatch(
 			/^rgb\(\d{1,3}, \d{1,3}, \d{1,3}\)$/,
 		)
 
 		await generateButton.click()
 
-		// Wait for hex and rgb values to change after second click
 		await expect
-			.poll(async () => await hexInput.inputValue(), {
-				timeout: 1000,
-			})
-			.not.toBe(newHex)
-		await expect
-			.poll(async () => await rgbInput.inputValue(), {
-				timeout: 1000,
-			})
-			.not.toBe(newRgb)
+			.poll(async () => await inputs.hex.inputValue(), { timeout: 1000 })
+			.not.toBe(newValues.hex)
 
-		const updatedHex = await hexInput.inputValue()
-		const updatedRgb = await rgbInput.inputValue()
-		expect(updatedHex, "Second hex should maintain valid format").toMatch(
+		const updatedHex = await inputs.hex.inputValue()
+		expect(updatedHex, "Second HEX should maintain valid format").toMatch(
 			/^#[0-9a-f]{6}$/,
-		)
-		expect(updatedRgb, "Second RGB should maintain valid format").toMatch(
-			/^rgb\(\d{1,3}, \d{1,3}, \d{1,3}\)$/,
 		)
 
 		const backgroundColor = await colorBox.evaluate(
@@ -113,7 +127,7 @@ test.describe("ColorGenerator", () => {
 		).toBeTruthy()
 	})
 
-	test("should copy hex and rgb color to clipboard", async ({
+	test("should copy all color formats to clipboard", async ({
 		mount,
 		context,
 		page,
@@ -123,27 +137,20 @@ test.describe("ColorGenerator", () => {
 			<MFColorGenerator onCloseProgram={() => {}} />,
 		)
 
-		const hexInput = component.getByTestId(
-			"mf-color-generator-hex-color-input-input",
-		)
-		const rgbInput = component.getByTestId(
-			"mf-color-generator-rgb-color-input-input",
-		)
-		const hexCopyButton = component.getByTestId(
-			"mf-color-generator-copy-hex-button",
-		)
-		const rgbCopyButton = component.getByTestId(
-			"mf-color-generator-copy-rgb-button",
-		)
+		for (const type of colorTypes) {
+			const input = component.getByTestId(
+				`mf-color-generator-${type}-input-input`,
+			)
+			const copyButton = component.getByTestId(
+				`mf-color-generator-copy-${type}-button`,
+			)
 
-		await hexCopyButton.click()
+			await copyButton.click()
 
-		const hexClipboard = await page.evaluate("navigator.clipboard.readText()")
-		expect(hexClipboard).toContain(await hexInput.inputValue())
-
-		await rgbCopyButton.click()
-
-		const rgbClipboard = await page.evaluate("navigator.clipboard.readText()")
-		expect(rgbClipboard).toContain(await rgbInput.inputValue())
+			const clipboard = await page.evaluate("navigator.clipboard.readText()")
+			expect(clipboard, `Clipboard should contain ${type} value`).toBe(
+				await input.inputValue(),
+			)
+		}
 	})
 })

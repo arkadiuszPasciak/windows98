@@ -1,0 +1,13 @@
+.color-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ds-spacing-md);
+	align-items: center;
+}
+
+.color-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: var(--ds-spacing-md);
+}
