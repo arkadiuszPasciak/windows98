@@ -1,6 +1,4 @@
 export * from "./color-preview"
 export * from "./generate-button"
-export * from "./hex-input"
 export * from "./modal"
-export * from "./rgb-input"
 export * from "./wrapper"

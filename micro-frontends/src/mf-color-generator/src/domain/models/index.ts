@@ -1,1 +1,2 @@
-export * from "./color.model"
+export * from "./state.model"
+export * from "./types.model"

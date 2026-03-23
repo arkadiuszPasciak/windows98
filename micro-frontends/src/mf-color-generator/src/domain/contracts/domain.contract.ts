@@ -1,8 +1,9 @@
-import type { ColorState } from "../models"
+import type { ColorState, ColorType, FormattedColorState } from "../models"
 
 export interface ColorGeneratorDomainContract {
 	currentColor: ColorState
+	formattedColor: FormattedColorState
+
 	generateRandomColor(): void
-	copyHexColor(): Promise<void>
-	copyRgbColor(): Promise<void>
+	copyColor(type: ColorType): Promise<void>
 }
