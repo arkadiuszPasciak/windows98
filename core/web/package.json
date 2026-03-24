@@ -24,7 +24,7 @@
 	},
 	"type": "module",
 	"devDependencies": {
-		"@biomejs/biome": "2.3.13",
+		"@biomejs/biome": "2.4.8",
 		"@windows98/configs": "workspace:*",
 		"@windows98/toolkit": "workspace:*",
 		"lint-staged": "16.4.0",
