@@ -12,7 +12,6 @@
 		"./playwright/component-react": "./src/playwright/component-react.config.mjs",
 		"./stylelint/css": "./src/stylelint/css.config.cjs",
 		"./typescript/base": "./src/typescript/base.config.json",
-		"./typescript/node": "./src/typescript/react.config.json",
 		"./typescript/react": "./src/typescript/react.config.json",
 		"./typescript/vite": "./src/typescript/vite.config.json",
 		"./vitest/shared": "./src/vitest/shared.config.mjs"
