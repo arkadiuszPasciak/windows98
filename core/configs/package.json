@@ -3,7 +3,7 @@
 	"description": "Tests",
 	"engines": {
 		"node": "24.14.0",
-		"pnpm": "10.25.0"
+		"pnpm": "10.32.1"
 	},
 	"exports": {
 		"./biome/shared": "./src/biome/shared.config.json",
