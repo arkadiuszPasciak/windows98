@@ -15,7 +15,7 @@ class PNPMReadPackageHook {
 			mobx: "6.15.0",
 			"mobx-react-lite": "4.1.1",
 			react: "19.2.4",
-			"react-i18next": "16.5.4",
+			"react-i18next": "16.6.4",
 			"react-dom": "19.2.4",
 			stylelint: "17.5.0",
 			storybook: "10.2.1",
