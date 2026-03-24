@@ -13,7 +13,7 @@
 		"i18next": "25.8.0",
 		"lint-staged": "16.2.7",
 		"react-i18next": "16.5.4",
-		"typescript": "5.9.3"
+		"typescript": "6.0.2"
 	},
 	"scripts": {
 		"lint:code:fix": "biome check --config-path ./@linter/biome.config.json --fix",

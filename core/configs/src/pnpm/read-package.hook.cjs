@@ -19,7 +19,7 @@ class PNPMReadPackageHook {
 			"react-dom": "19.2.4",
 			stylelint: "17.0.0",
 			storybook: "10.2.1",
-			typescript: "5.9.3",
+			typescript: "6.0.2",
 			vite: "8.0.2",
 			"vite-plugin-css-injected-by-js": "4.0.1",
 			"vite-plugin-dts": "4.5.4",

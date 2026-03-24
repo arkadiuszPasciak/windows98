@@ -36,7 +36,7 @@ importers:
         version: link:../micro-services
       i18next:
         specifier: 25.8.0
-        version: 25.8.0(typescript@5.9.3)
+        version: 25.8.0(typescript@6.0.2)
       mobx:
         specifier: 6.15.0
         version: 6.15.0
@@ -51,7 +51,7 @@ importers:
         version: 19.2.4(react@19.2.4)
       react-i18next:
         specifier: 16.5.4
-        version: 16.5.4(i18next@25.8.0(typescript@5.9.3))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3)
+        version: 16.5.4(i18next@25.8.0(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2)
     devDependencies:
       '@biomejs/biome':
         specifier: 2.3.13
@@ -73,10 +73,10 @@ importers:
         version: 16.2.7
       stylelint:
         specifier: 17.0.0
-        version: 17.0.0(typescript@5.9.3)
+        version: 17.0.0(typescript@6.0.2)
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 6.0.2
+        version: 6.0.2
       vite:
         specifier: 8.0.2
         version: 8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1)
@@ -96,10 +96,10 @@ importers:
         version: 16.2.7
       stylelint:
         specifier: 17.0.0
-        version: 17.0.0(typescript@5.9.3)
+        version: 17.0.0(typescript@6.0.2)
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 6.0.2
+        version: 6.0.2
       vitest:
         specifier: 4.1.1
         version: 4.1.1(@types/node@22.13.14)(jsdom@25.0.1)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
@@ -155,10 +155,10 @@ importers:
         version: 16.2.7
       stylelint:
         specifier: 17.0.0
-        version: 17.0.0(typescript@5.9.3)
+        version: 17.0.0(typescript@6.0.2)
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 6.0.2
+        version: 6.0.2
       vite:
         specifier: 8.0.2
         version: 8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1)
@@ -167,7 +167,7 @@ importers:
         version: 4.0.1(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
       vite-plugin-dts:
         specifier: 4.5.4
-        version: 4.5.4(@types/node@22.13.14)(rollup@4.50.2)(typescript@5.9.3)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
+        version: 4.5.4(@types/node@22.13.14)(rollup@4.50.2)(typescript@6.0.2)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
       vitest:
         specifier: 4.1.1
         version: 4.1.1(@types/node@22.13.14)(jsdom@25.0.1)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
@@ -182,16 +182,16 @@ importers:
         version: link:../../configs
       i18next:
         specifier: 25.8.0
-        version: 25.8.0(typescript@5.9.3)
+        version: 25.8.0(typescript@6.0.2)
       lint-staged:
         specifier: 16.2.7
         version: 16.2.7
       react-i18next:
         specifier: 16.5.4
-        version: 16.5.4(i18next@25.8.0(typescript@5.9.3))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3)
+        version: 16.5.4(i18next@25.8.0(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2)
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 6.0.2
+        version: 6.0.2
 
   core/toolkit:
     devDependencies:
@@ -208,8 +208,8 @@ importers:
         specifier: 16.2.7
         version: 16.2.7
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 6.0.2
+        version: 6.0.2
       vitest:
         specifier: 4.1.1
         version: 4.1.1(@types/node@22.13.14)(jsdom@25.0.1)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
@@ -229,14 +229,14 @@ importers:
         specifier: 16.2.7
         version: 16.2.7
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 6.0.2
+        version: 6.0.2
       vite:
         specifier: 8.0.2
         version: 8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1)
       vite-plugin-dts:
         specifier: 4.5.4
-        version: 4.5.4(@types/node@22.13.14)(rollup@4.50.2)(typescript@5.9.3)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
+        version: 4.5.4(@types/node@22.13.14)(rollup@4.50.2)(typescript@6.0.2)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
       vitest:
         specifier: 4.1.1
         version: 4.1.1(@types/node@22.13.14)(jsdom@25.0.1)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
@@ -261,7 +261,7 @@ importers:
         version: 10.2.1(@types/react@19.2.10)(esbuild@0.27.2)(rollup@4.50.2)(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
       '@storybook/react-vite':
         specifier: 10.2.1
-        version: 10.2.1(esbuild@0.27.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(rollup@4.50.2)(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
+        version: 10.2.1(esbuild@0.27.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(rollup@4.50.2)(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
       '@types/react':
         specifier: 19.2.10
         version: 19.2.10
@@ -290,8 +290,8 @@ importers:
         specifier: 10.2.1
         version: 10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 6.0.2
+        version: 6.0.2
       vite:
         specifier: 8.0.2
         version: 8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1)
@@ -309,7 +309,7 @@ importers:
         version: link:../micro-services
       i18next:
         specifier: 25.8.0
-        version: 25.8.0(typescript@5.9.3)
+        version: 25.8.0(typescript@6.0.2)
       mobx:
         specifier: 6.15.0
         version: 6.15.0
@@ -324,7 +324,7 @@ importers:
         version: 19.2.4(react@19.2.4)
       react-i18next:
         specifier: 16.5.4
-        version: 16.5.4(i18next@25.8.0(typescript@5.9.3))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3)
+        version: 16.5.4(i18next@25.8.0(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2)
     devDependencies:
       '@biomejs/biome':
         specifier: 2.3.13
@@ -352,10 +352,10 @@ importers:
         version: 16.2.7
       stylelint:
         specifier: 17.0.0
-        version: 17.0.0(typescript@5.9.3)
+        version: 17.0.0(typescript@6.0.2)
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 6.0.2
+        version: 6.0.2
       vite:
         specifier: 8.0.2
         version: 8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1)
@@ -364,7 +364,7 @@ importers:
         version: 4.0.1(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
       vite-plugin-dts:
         specifier: 4.5.4
-        version: 4.5.4(@types/node@22.13.14)(rollup@4.50.2)(typescript@5.9.3)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
+        version: 4.5.4(@types/node@22.13.14)(rollup@4.50.2)(typescript@6.0.2)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
       vitest:
         specifier: 4.1.1
         version: 4.1.1(@types/node@22.13.14)(jsdom@25.0.1)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
@@ -391,14 +391,14 @@ importers:
         specifier: 16.2.7
         version: 16.2.7
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 6.0.2
+        version: 6.0.2
       vite:
         specifier: 8.0.2
         version: 8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1)
       vite-plugin-dts:
         specifier: 4.5.4
-        version: 4.5.4(@types/node@22.13.14)(rollup@4.50.2)(typescript@5.9.3)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
+        version: 4.5.4(@types/node@22.13.14)(rollup@4.50.2)(typescript@6.0.2)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
       vitest:
         specifier: 4.1.1
         version: 4.1.1(@types/node@22.13.14)(jsdom@25.0.1)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
@@ -3149,8 +3149,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  typescript@5.9.3:
-    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+  typescript@6.0.2:
+    resolution: {integrity: sha512-bGdAIrZ0wiGDo5l8c++HWtbaNCWTS4UTv7RaTH/ThVIgjkveJt83m74bBHMJkuCbslY8ixgLBVZJIOiQlQTjfQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -3885,13 +3885,13 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@joshwooding/vite-plugin-react-docgen-typescript@0.6.3(typescript@5.9.3)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))':
+  '@joshwooding/vite-plugin-react-docgen-typescript@0.6.3(typescript@6.0.2)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))':
     dependencies:
       glob: 11.1.0
-      react-docgen-typescript: 2.2.2(typescript@5.9.3)
+      react-docgen-typescript: 2.2.2(typescript@6.0.2)
       vite: 8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1)
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.2
 
   '@jridgewell/gen-mapping@0.3.12':
     dependencies:
@@ -4337,12 +4337,12 @@ snapshots:
       react-dom: 19.2.4(react@19.2.4)
       storybook: 10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
 
-  '@storybook/react-vite@10.2.1(esbuild@0.27.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(rollup@4.50.2)(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))':
+  '@storybook/react-vite@10.2.1(esbuild@0.27.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(rollup@4.50.2)(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))':
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.6.3(typescript@5.9.3)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.6.3(typescript@6.0.2)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
       '@rollup/pluginutils': 5.1.4(rollup@4.50.2)
       '@storybook/builder-vite': 10.2.1(esbuild@0.27.2)(rollup@4.50.2)(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1))
-      '@storybook/react': 10.2.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)
+      '@storybook/react': 10.2.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2)
       empathic: 2.0.0
       magic-string: 0.30.21
       react: 19.2.4
@@ -4359,7 +4359,7 @@ snapshots:
       - typescript
       - webpack
 
-  '@storybook/react@10.2.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@5.9.3)':
+  '@storybook/react@10.2.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(typescript@6.0.2)':
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/react-dom-shim': 10.2.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(storybook@10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
@@ -4368,7 +4368,7 @@ snapshots:
       react-dom: 19.2.4(react@19.2.4)
       storybook: 10.2.1(@testing-library/dom@10.4.0)(prettier@3.2.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.2
     transitivePeerDependencies:
       - supports-color
 
@@ -4569,7 +4569,7 @@ snapshots:
       de-indent: 1.0.2
       he: 1.2.0
 
-  '@vue/language-core@2.2.0(typescript@5.9.3)':
+  '@vue/language-core@2.2.0(typescript@6.0.2)':
     dependencies:
       '@volar/language-core': 2.4.11
       '@vue/compiler-dom': 3.5.13
@@ -4580,7 +4580,7 @@ snapshots:
       muggle-string: 0.4.1
       path-browserify: 1.0.1
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.2
 
   '@vue/shared@3.5.13': {}
 
@@ -4763,14 +4763,14 @@ snapshots:
 
   convert-source-map@2.0.0: {}
 
-  cosmiconfig@9.0.0(typescript@5.9.3):
+  cosmiconfig@9.0.0(typescript@6.0.2):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.2
 
   cross-spawn@7.0.6:
     dependencies:
@@ -5184,11 +5184,11 @@ snapshots:
 
   husky@9.1.7: {}
 
-  i18next@25.8.0(typescript@5.9.3):
+  i18next@25.8.0(typescript@6.0.2):
     dependencies:
       '@babel/runtime': 7.28.4
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.2
 
   iconv-lite@0.6.3:
     dependencies:
@@ -5693,9 +5693,9 @@ snapshots:
 
   queue-microtask@1.2.3: {}
 
-  react-docgen-typescript@2.2.2(typescript@5.9.3):
+  react-docgen-typescript@2.2.2(typescript@6.0.2):
     dependencies:
-      typescript: 5.9.3
+      typescript: 6.0.2
 
   react-docgen@8.0.2:
     dependencies:
@@ -5717,16 +5717,16 @@ snapshots:
       react: 19.2.4
       scheduler: 0.27.0
 
-  react-i18next@16.5.4(i18next@25.8.0(typescript@5.9.3))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3):
+  react-i18next@16.5.4(i18next@25.8.0(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2):
     dependencies:
       '@babel/runtime': 7.28.4
       html-parse-stringify: 3.0.1
-      i18next: 25.8.0(typescript@5.9.3)
+      i18next: 25.8.0(typescript@6.0.2)
       react: 19.2.4
       use-sync-external-store: 1.6.0(react@19.2.4)
     optionalDependencies:
       react-dom: 19.2.4(react@19.2.4)
-      typescript: 5.9.3
+      typescript: 6.0.2
 
   react-is@17.0.2: {}
 
@@ -5957,7 +5957,7 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  stylelint@17.0.0(typescript@5.9.3):
+  stylelint@17.0.0(typescript@6.0.2):
     dependencies:
       '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
       '@csstools/css-syntax-patches-for-csstree': 1.0.26
@@ -5967,7 +5967,7 @@ snapshots:
       '@csstools/selector-specificity': 6.0.0(postcss-selector-parser@7.1.1)
       balanced-match: 3.0.1
       colord: 2.9.3
-      cosmiconfig: 9.0.0(typescript@5.9.3)
+      cosmiconfig: 9.0.0(typescript@6.0.2)
       css-functions-list: 3.2.3
       css-tree: 3.1.0
       debug: 4.4.3
@@ -6082,7 +6082,7 @@ snapshots:
 
   typescript@5.8.2: {}
 
-  typescript@5.9.3: {}
+  typescript@6.0.2: {}
 
   ufo@1.6.1: {}
 
@@ -6123,18 +6123,18 @@ snapshots:
     dependencies:
       vite: 8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1)
 
-  vite-plugin-dts@4.5.4(@types/node@22.13.14)(rollup@4.50.2)(typescript@5.9.3)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1)):
+  vite-plugin-dts@4.5.4(@types/node@22.13.14)(rollup@4.50.2)(typescript@6.0.2)(vite@8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1)):
     dependencies:
       '@microsoft/api-extractor': 7.52.6(@types/node@22.13.14)
       '@rollup/pluginutils': 5.1.4(rollup@4.50.2)
       '@volar/typescript': 2.4.11
-      '@vue/language-core': 2.2.0(typescript@5.9.3)
+      '@vue/language-core': 2.2.0(typescript@6.0.2)
       compare-versions: 6.1.1
       debug: 4.4.1
       kolorist: 1.8.0
       local-pkg: 1.1.1
       magic-string: 0.30.17
-      typescript: 5.9.3
+      typescript: 6.0.2
     optionalDependencies:
       vite: 8.0.2(@types/node@22.13.14)(esbuild@0.27.2)(sass@1.83.0)(yaml@2.8.1)
     transitivePeerDependencies:
