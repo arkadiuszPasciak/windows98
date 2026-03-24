@@ -3,7 +3,7 @@ class PNPMReadPackageHook {
 		requirements: {
 			"@biomejs/biome": "2.3.13",
 			"@playwright/experimental-ct-react": "1.58.0",
-			"@vitejs/plugin-react": "5.1.2",
+			"@vitejs/plugin-react": "6.0.1",
 			"@storybook/addon-a11y": "10.2.1",
 			"@storybook/addon-docs": "10.2.1",
 			"@storybook/react-vite": "10.2.1",
@@ -20,10 +20,10 @@ class PNPMReadPackageHook {
 			stylelint: "17.0.0",
 			storybook: "10.2.1",
 			typescript: "5.9.3",
-			vite: "7.3.1",
-			"vite-plugin-css-injected-by-js": "3.5.2",
+			vite: "8.0.2",
+			"vite-plugin-css-injected-by-js": "4.0.1",
 			"vite-plugin-dts": "4.5.4",
-			vitest: "4.0.18",
+			vitest: "4.1.1",
 		},
 		types: [
 			"dependencies",
