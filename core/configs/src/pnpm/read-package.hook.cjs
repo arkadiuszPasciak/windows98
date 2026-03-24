@@ -9,7 +9,7 @@ class PNPMReadPackageHook {
 			"@storybook/react-vite": "10.2.1",
 			"@types/react": "19.2.14",
 			"@types/react-dom": "19.2.3",
-			i18next: "25.8.0",
+			i18next: "25.10.6",
 			lightningcss: "1.32.0",
 			"lint-staged": "16.4.0",
 			mobx: "6.15.0",

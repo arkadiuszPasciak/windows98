@@ -35,8 +35,8 @@ importers:
         specifier: workspace:*
         version: link:../micro-services
       i18next:
-        specifier: 25.8.0
-        version: 25.8.0(typescript@6.0.2)
+        specifier: 25.10.6
+        version: 25.10.6(typescript@6.0.2)
       mobx:
         specifier: 6.15.0
         version: 6.15.0
@@ -51,7 +51,7 @@ importers:
         version: 19.2.4(react@19.2.4)
       react-i18next:
         specifier: 16.5.4
-        version: 16.5.4(i18next@25.8.0(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2)
+        version: 16.5.4(i18next@25.10.6(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2)
     devDependencies:
       '@biomejs/biome':
         specifier: 2.4.8
@@ -178,14 +178,14 @@ importers:
         specifier: workspace:*
         version: link:../../configs
       i18next:
-        specifier: 25.8.0
-        version: 25.8.0(typescript@6.0.2)
+        specifier: 25.10.6
+        version: 25.10.6(typescript@6.0.2)
       lint-staged:
         specifier: 16.4.0
         version: 16.4.0
       react-i18next:
         specifier: 16.5.4
-        version: 16.5.4(i18next@25.8.0(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2)
+        version: 16.5.4(i18next@25.10.6(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2)
       typescript:
         specifier: 6.0.2
         version: 6.0.2
@@ -305,8 +305,8 @@ importers:
         specifier: workspace:*
         version: link:../micro-services
       i18next:
-        specifier: 25.8.0
-        version: 25.8.0(typescript@6.0.2)
+        specifier: 25.10.6
+        version: 25.10.6(typescript@6.0.2)
       mobx:
         specifier: 6.15.0
         version: 6.15.0
@@ -321,7 +321,7 @@ importers:
         version: 19.2.4(react@19.2.4)
       react-i18next:
         specifier: 16.5.4
-        version: 16.5.4(i18next@25.8.0(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2)
+        version: 16.5.4(i18next@25.10.6(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2)
     devDependencies:
       '@biomejs/biome':
         specifier: 2.4.8
@@ -503,6 +503,10 @@ packages:
 
   '@babel/runtime@7.28.4':
     resolution: {integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.29.2':
+    resolution: {integrity: sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.27.2':
@@ -2244,10 +2248,10 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  i18next@25.8.0:
-    resolution: {integrity: sha512-urrg4HMFFMQZ2bbKRK7IZ8/CTE7D8H4JRlAwqA2ZwDRFfdd0K/4cdbNNLgfn9mo+I/h9wJu61qJzH7jCFAhUZQ==}
+  i18next@25.10.6:
+    resolution: {integrity: sha512-IIZ18PpChZajtOJ+7IhuRagBCieiNBtnAcLKdtT7TSPblix2fDChTaQGoeqzWqFllKESPaou+uQn309z/KvTQg==}
     peerDependencies:
-      typescript: ^5
+      typescript: ^5 | ^6
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -3484,6 +3488,8 @@ snapshots:
       '@babel/helper-plugin-utils': 7.27.1
 
   '@babel/runtime@7.28.4': {}
+
+  '@babel/runtime@7.29.2': {}
 
   '@babel/template@7.27.2':
     dependencies:
@@ -5091,9 +5097,9 @@ snapshots:
 
   husky@9.1.7: {}
 
-  i18next@25.8.0(typescript@6.0.2):
+  i18next@25.10.6(typescript@6.0.2):
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.29.2
     optionalDependencies:
       typescript: 6.0.2
 
@@ -5568,11 +5574,11 @@ snapshots:
       react: 19.2.4
       scheduler: 0.27.0
 
-  react-i18next@16.5.4(i18next@25.8.0(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2):
+  react-i18next@16.5.4(i18next@25.10.6(typescript@6.0.2))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.2):
     dependencies:
       '@babel/runtime': 7.28.4
       html-parse-stringify: 3.0.1
-      i18next: 25.8.0(typescript@6.0.2)
+      i18next: 25.10.6(typescript@6.0.2)
       react: 19.2.4
       use-sync-external-store: 1.6.0(react@19.2.4)
     optionalDependencies:
