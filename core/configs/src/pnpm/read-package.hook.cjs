@@ -7,7 +7,7 @@ class PNPMReadPackageHook {
 			"@storybook/addon-a11y": "10.2.1",
 			"@storybook/addon-docs": "10.2.1",
 			"@storybook/react-vite": "10.2.1",
-			"@types/react": "19.2.10",
+			"@types/react": "19.2.14",
 			"@types/react-dom": "19.2.3",
 			i18next: "25.8.0",
 			lightningcss: "1.31.1",
