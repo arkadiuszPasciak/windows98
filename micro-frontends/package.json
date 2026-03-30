@@ -2,7 +2,7 @@
 	"author": "Arkadiusz Paściak",
 	"main": "@bundler/dist/index.umd.cjs",
 	"module": "@bundler/dist/index.js",
-	"types": "@bundler/dist/index.d.ts",
+	"types": "@bundler/dist/src/index.d.ts",
 	"files": [
 		"@bundler/dist"
 	],
