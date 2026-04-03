@@ -50,7 +50,6 @@ export class CICDCommand {
 		],
 		"test:ui:run": ["@windows98/design-system", "@windows98/micro-frontends"],
 		"test:unit:run": [
-			"@windows98/app",
 			"@windows98/design-system",
 			"@windows98/micro-frontends",
 			"@windows98/micro-services",
