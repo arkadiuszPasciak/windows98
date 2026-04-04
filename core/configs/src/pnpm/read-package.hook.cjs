@@ -2,7 +2,7 @@ class PNPMReadPackageHook {
 	#dependencies = {
 		requirements: {
 			"@biomejs/biome": "2.4.10",
-			"@playwright/experimental-ct-react": "1.58.0",
+			"@playwright/experimental-ct-react": "1.59.1",
 			"@vitejs/plugin-react": "5.1.2",
 			"@storybook/addon-a11y": "10.2.1",
 			"@storybook/addon-docs": "10.2.1",
@@ -23,7 +23,7 @@ class PNPMReadPackageHook {
 			vite: "7.3.1",
 			"vite-plugin-css-injected-by-js": "3.5.2",
 			"vite-plugin-dts": "4.5.4",
-			vitest: "4.0.18",
+			vitest: "4.1.2",
 		},
 		types: [
 			"dependencies",
