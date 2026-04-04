@@ -22,11 +22,11 @@ export const Board: FunctionComponent = observer(() => {
 				disabledClass || "",
 			])}
 		>
-			{boardCells.map((cell, index) => (
+			{Array.from(boardCells.entries()).map(([position, cell]) => (
 				<BoardItem
-					key={`mf-tic-tac-toe-game-board-item-${index}-${cell}`}
+					key={`mf-tic-tac-toe-game-board-item-${position}`}
 					value={cell}
-					onClick={() => handleCellClick(index)}
+					onClick={() => handleCellClick(position)}
 				/>
 			))}
 		</div>

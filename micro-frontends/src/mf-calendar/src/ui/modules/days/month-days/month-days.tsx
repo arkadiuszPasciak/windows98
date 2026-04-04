@@ -12,27 +12,31 @@ export const MonthDays = observer(() => {
 				className={styles["month-days"]}
 				data-testid="calendar-view-days"
 			>
-				{Array.from({ length: firstDayOfWeek }).map((_, index) => (
-					<span
-						className={styles.day}
-						data-testid={`calendar-month-days-empty-${index + 1}`}
-						key={`calendar-month-days-empty-${index + 1}`}
-					/>
-				))}
+				{Array.from({ length: firstDayOfWeek }, (_, index) => index + 1).map(
+					(dayOffset) => (
+						<span
+							className={styles.day}
+							data-testid={`calendar-month-days-empty-${dayOffset}`}
+							key={`calendar-month-days-empty-${dayOffset}`}
+						/>
+					),
+				)}
 
-				{Array.from({ length: monthDays }).map((_, index) => (
-					<button
-						className={getClassNames([
-							styles.day,
-							index + 1 === activeDay ? styles["day-active"] : "",
-						])}
-						data-testid={`calendar-month-days-day-${index + 1}`}
-						type="button"
-						key={`calendar-month-days-day-${index + 1}`}
-					>
-						{index + 1}
-					</button>
-				))}
+				{Array.from({ length: monthDays }, (_, index) => index + 1).map(
+					(day) => (
+						<button
+							className={getClassNames([
+								styles.day,
+								day === activeDay ? styles["day-active"] : "",
+							])}
+							data-testid={`calendar-month-days-day-${day}`}
+							type="button"
+							key={`calendar-month-days-day-${day}`}
+						>
+							{day}
+						</button>
+					),
+				)}
 			</div>
 		)
 	)

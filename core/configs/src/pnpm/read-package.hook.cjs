@@ -1,7 +1,7 @@
 class PNPMReadPackageHook {
 	#dependencies = {
 		requirements: {
-			"@biomejs/biome": "2.3.13",
+			"@biomejs/biome": "2.4.10",
 			"@playwright/experimental-ct-react": "1.58.0",
 			"@vitejs/plugin-react": "5.1.2",
 			"@storybook/addon-a11y": "10.2.1",
@@ -11,13 +11,13 @@ class PNPMReadPackageHook {
 			"@types/react-dom": "19.2.3",
 			i18next: "26.0.3",
 			lightningcss: "1.31.1",
-			"lint-staged": "16.2.7",
+			"lint-staged": "16.4.0",
 			mobx: "6.15.0",
 			"mobx-react-lite": "4.1.1",
 			react: "19.2.4",
 			"react-i18next": "17.0.2",
 			"react-dom": "19.2.4",
-			stylelint: "17.0.0",
+			stylelint: "17.6.0",
 			storybook: "10.2.1",
 			typescript: "5.9.3",
 			vite: "7.3.1",

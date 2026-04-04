@@ -9,9 +9,9 @@ export const Pulpit: FunctionComponent<PulpitProps> = ({ items }) => {
 			className={styles.pulpit}
 			data-testid="mf-pulpit-pulpit"
 		>
-			{items.map((item, index) => (
+			{items.map((item) => (
 				<PulpitItem
-					key={`pulpit-item-${index}-${item.name}`}
+					key={item.name}
 					name={item.name}
 				/>
 			))}
