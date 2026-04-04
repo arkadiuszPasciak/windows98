@@ -23,7 +23,7 @@ class PNPMReadPackageHook {
 			vite: "7.3.1",
 			"vite-plugin-css-injected-by-js": "3.5.2",
 			"vite-plugin-dts": "4.5.4",
-			vitest: "4.0.18",
+			vitest: "4.1.2",
 		},
 		types: [
 			"dependencies",
