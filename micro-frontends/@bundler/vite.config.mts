@@ -35,5 +35,9 @@ export default defineConfig({
 			},
 		},
 	},
-	plugins: [cssInjectedByJsPlugin(), dts({ include: ["../src"] }), react()],
+	plugins: [
+		cssInjectedByJsPlugin(),
+		dts({ include: ["../src/"], entryRoot: "../src" }),
+		react(),
+	],
 })
