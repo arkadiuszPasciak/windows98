@@ -10,7 +10,7 @@ class PNPMReadPackageHook {
 			"@types/react": "19.2.10",
 			"@types/react-dom": "19.2.3",
 			i18next: "26.0.3",
-			lightningcss: "1.31.1",
+			lightningcss: "1.32.0",
 			"lint-staged": "16.4.0",
 			mobx: "6.15.0",
 			"mobx-react-lite": "4.1.1",
