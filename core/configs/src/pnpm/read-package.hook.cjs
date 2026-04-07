@@ -20,7 +20,7 @@ class PNPMReadPackageHook {
 			stylelint: "17.6.0",
 			storybook: "10.3.4",
 			typescript: "5.9.3",
-			vite: "8.0.3",
+			vite: "8.0.6",
 			"vite-plugin-css-injected-by-js": "4.0.1",
 			"vite-plugin-dts": "4.5.4",
 			vitest: "4.1.2",
