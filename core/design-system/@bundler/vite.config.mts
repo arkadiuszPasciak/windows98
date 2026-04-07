@@ -27,7 +27,7 @@ export default defineConfig({
 	},
 	plugins: [
 		cssInjectedByJsPlugin(),
-		dts({ include: ["../src"] }),
+		dts({ include: ["../src/"], entryRoot: "../src" }),
 		react(),
 		lightningCssPlugin(),
 	],

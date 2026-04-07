@@ -14,5 +14,5 @@ export default defineConfig({
 		outDir: "dist",
 		sourcemap: true,
 	},
-	plugins: [dts({ include: ["../src/"] })],
+	plugins: [dts({ include: ["../src/"], entryRoot: "../src" })],
 })

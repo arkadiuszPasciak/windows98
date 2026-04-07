@@ -25,7 +25,7 @@
 	},
 	"devDependencies": {
 		"@playwright/experimental-ct-react": "1.59.1",
-		"@vitejs/plugin-react": "5.1.2",
+		"@vitejs/plugin-react": "6.0.1",
 		"@types/react": "19.2.10",
 		"@types/react-dom": "19.2.3",
 		"@windows98/configs": "workspace:*",
@@ -34,8 +34,8 @@
 		"lint-staged": "16.4.0",
 		"stylelint": "17.6.0",
 		"typescript": "5.9.3",
-		"vite": "7.3.1",
-		"vite-plugin-css-injected-by-js": "3.5.2",
+		"vite": "8.0.3",
+		"vite-plugin-css-injected-by-js": "4.0.1",
 		"vite-plugin-dts": "4.5.4",
 		"vitest": "4.1.2"
 	},

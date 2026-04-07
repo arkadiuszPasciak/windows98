@@ -1,3 +1,4 @@
+import type { Maybe } from "@windows98/toolkit"
 import { WebStorageAPI } from "@windows98/web"
 import type { StorageDomainContract } from "../contracts"
 
@@ -7,7 +8,7 @@ export class StorageDomain<StorageKeys>
 	private storageRepository
 
 	constructor() {
-		this.storageRepository = new WebStorageAPI()
+		this.storageRepository = new WebStorageAPI<StorageKeys>()
 	}
 
 	public set<Key extends keyof StorageKeys>(
@@ -17,7 +18,7 @@ export class StorageDomain<StorageKeys>
 		this.storageRepository.localStorage.setItem(key, value)
 	}
 
-	public get<Key extends keyof StorageKeys>(key: Key): StorageKeys[Key] {
+	public get<Key extends keyof StorageKeys>(key: Key): Maybe<StorageKeys[Key]> {
 		return this.storageRepository.localStorage.getItem(key)
 	}
 
