@@ -1,6 +1,26 @@
 import { describe, expect, it } from "vitest"
-import type { Operation } from "../../src/domain"
+import type { Numbers, Operation, Sign } from "../../src/domain"
 import { MSMathematics } from "../../src/domain/domains"
+
+const addScenarios: Array<{
+	currentOperation: Operation
+	value: Numbers | Sign
+	result: Operation
+	message: string
+}> = [
+	...["+", "-", "*", "/", ".", "="].map((sign) => ({
+		currentOperation: "5" as Operation,
+		value: sign as Sign,
+		result: `5${sign}` as Operation,
+		message: `adding sign "${sign}"`,
+	})),
+	...[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => ({
+		currentOperation: "5" as Operation,
+		value: num as Numbers,
+		result: `5${num}` as Operation,
+		message: `adding number ${num}`,
+	})),
+]
 
 const equalScenarios: Array<{
 	currentOperation: Operation
@@ -43,6 +63,18 @@ const equalScenarios: Array<{
 
 describe("MathematicsDomain", () => {
 	const msMathematics = MSMathematics
+
+	describe("add", () => {
+		it.each(addScenarios)("should add $message", ({
+			currentOperation,
+			value,
+			result,
+		}) => {
+			expect(msMathematics.add(currentOperation, value as Numbers | Sign)).toBe(
+				result,
+			)
+		})
+	})
 
 	describe("clear", () => {
 		it("should clear operation", () => {
