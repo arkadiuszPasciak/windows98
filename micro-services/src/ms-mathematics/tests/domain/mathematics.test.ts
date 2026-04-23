@@ -2,22 +2,25 @@ import { describe, expect, it } from "vitest"
 import type { Numbers, Operation, Sign } from "../../src/domain"
 import { MSMathematics } from "../../src/domain/domains"
 
+const sings: Sign[] = ["+", "-", "*", "/", ".", "="]
+const numbers: Numbers[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
 const addScenarios: Array<{
 	currentOperation: Operation
 	value: Numbers | Sign
 	result: Operation
 	message: string
 }> = [
-	...["+", "-", "*", "/", ".", "="].map((sign) => ({
-		currentOperation: "5" as Operation,
-		value: sign as Sign,
-		result: `5${sign}` as Operation,
+	...sings.map((sign) => ({
+		currentOperation: "5",
+		value: sign,
+		result: `5${sign}`,
 		message: `adding sign "${sign}"`,
 	})),
-	...[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => ({
-		currentOperation: "5" as Operation,
-		value: num as Numbers,
-		result: `5${num}` as Operation,
+	...numbers.map((num) => ({
+		currentOperation: "5",
+		value: num,
+		result: `5${num}`,
 		message: `adding number ${num}`,
 	})),
 ]
@@ -61,6 +64,112 @@ const equalScenarios: Array<{
 	},
 ]
 
+const invalidScenarios: Array<{
+	currentOperation: Operation
+	result: string
+	message: string
+}> = [
+	{
+		currentOperation: "",
+		result: "empty_operation",
+		message: "empty operation",
+	},
+	{
+		currentOperation: "   ",
+		result: "empty_operation",
+		message: "whitespace-only operation",
+	},
+	{
+		currentOperation: "2+a",
+		result: "invalid_character",
+		message: "letter in operation",
+	},
+	{
+		currentOperation: "2+%",
+		result: "invalid_character",
+		message: "special character in operation",
+	},
+	{
+		currentOperation: "2++3",
+		result: "consecutive_operators",
+		message: "consecutive plus operators",
+	},
+	{
+		currentOperation: "2*/3",
+		result: "consecutive_operators",
+		message: "consecutive multiply and divide operators",
+	},
+	{
+		currentOperation: "2*-3",
+		result: "consecutive_operators",
+		message: "consecutive multiply and minus operators",
+	},
+	{
+		currentOperation: "+2+3",
+		result: "invalid_leading_operator",
+		message: "leading plus operator",
+	},
+	{
+		currentOperation: "*2+3",
+		result: "invalid_leading_operator",
+		message: "leading multiply operator",
+	},
+	{
+		currentOperation: "/2+3",
+		result: "invalid_leading_operator",
+		message: "leading divide operator",
+	},
+	{
+		currentOperation: "1..2+3",
+		result: "invalid_character",
+		message: "dot in expression (not in allowed character set)",
+	},
+	{
+		currentOperation: "(2+3",
+		result: "invalid_character",
+		message: "opening parenthesis (not in allowed character set)",
+	},
+	{
+		currentOperation: "2+3)",
+		result: "invalid_character",
+		message: "closing parenthesis (not in allowed character set)",
+	},
+	{
+		currentOperation: "2+3+",
+		result: "trailing_operator",
+		message: "trailing plus operator",
+	},
+	{
+		currentOperation: "2*3-",
+		result: "trailing_operator",
+		message: "trailing minus operator",
+	},
+	{
+		currentOperation: "2*3*",
+		result: "trailing_operator",
+		message: "trailing multiply operator",
+	},
+	{
+		currentOperation: "2+3/",
+		result: "trailing_operator",
+		message: "trailing divide operator",
+	},
+]
+
+const validScenarios: Array<{
+	currentOperation: Operation
+	message: string
+}> = [
+	{ currentOperation: "1+2", message: "simple addition" },
+	{ currentOperation: "10-3", message: "simple subtraction" },
+	{ currentOperation: "3*4", message: "simple multiplication" },
+	{ currentOperation: "10/2", message: "simple division" },
+	{ currentOperation: "-5+3", message: "negative leading number" },
+	{ currentOperation: "2+3*4-6/2", message: "mixed operations" },
+	{ currentOperation: "100", message: "single number" },
+	{ currentOperation: "9876543210", message: "all allowed digits" },
+]
+
 describe("MathematicsDomain", () => {
 	const msMathematics = MSMathematics
 
@@ -98,6 +207,21 @@ describe("MathematicsDomain", () => {
 			expect(msMathematics.remove("1")).toBe("")
 
 			expect(msMathematics.remove("")).toBe("")
+		})
+	})
+
+	describe("validate", () => {
+		it.each(validScenarios)("should return true for $message", ({
+			currentOperation,
+		}) => {
+			expect(msMathematics.validate(currentOperation)).toBe(true)
+		})
+
+		it.each(invalidScenarios)("should return '$result' for $message", ({
+			currentOperation,
+			result,
+		}) => {
+			expect(msMathematics.validate(currentOperation)).toBe(result)
 		})
 	})
 })
