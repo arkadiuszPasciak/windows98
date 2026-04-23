@@ -1,4 +1,4 @@
 export * from "./error.model"
-export * from "./numbers.model"
+export * from "./number.model"
 export * from "./operation.model"
-export * from "./signs.model"
+export * from "./sign.model"
