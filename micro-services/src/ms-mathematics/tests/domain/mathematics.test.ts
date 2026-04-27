@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest"
 import type { Numbers, Operation, Sign } from "../../src/domain"
 import { MSMathematics } from "../../src/domain/domains"
 
-const sings: Sign[] = ["+", "-", "*", "/", ".", "="]
+const signs: Sign[] = ["+", "-", "*", "/", ".", "="]
 const numbers: Numbers[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 const addScenarios: Array<{
@@ -11,7 +11,7 @@ const addScenarios: Array<{
 	result: Operation
 	message: string
 }> = [
-	...sings.map((sign) => ({
+	...signs.map((sign) => ({
 		currentOperation: "5",
 		value: sign,
 		result: `5${sign}`,
@@ -179,9 +179,7 @@ describe("MathematicsDomain", () => {
 			value,
 			result,
 		}) => {
-			expect(msMathematics.add(currentOperation, value as Numbers | Sign)).toBe(
-				result,
-			)
+			expect(msMathematics.add(currentOperation, value)).toBe(result)
 		})
 	})
 
