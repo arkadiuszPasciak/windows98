@@ -1,0 +1,6 @@
+export * from "./add-strategy.contract"
+export * from "./clear-strategy.contract"
+export * from "./domain.contract"
+export * from "./equal-strategy.contract"
+export * from "./remove-strategy.contract"
+export * from "./validator-strategy.contract"

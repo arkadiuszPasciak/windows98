@@ -1,0 +1,5 @@
+export * from "./add.strategy"
+export * from "./clear.strategy"
+export * from "./equal.strategy"
+export * from "./remove.strategy"
+export * from "./validator.strategy"
