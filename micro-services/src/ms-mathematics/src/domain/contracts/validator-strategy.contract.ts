@@ -1,5 +1,5 @@
-import type { ErrorType } from "../models"
+import type { ErrorType, Operation } from "../models"
 
 export interface ValidatorStrategyContract {
-	validate(currentOperation: string): ErrorType | true
+	validate(currentOperation: Operation): ErrorType | true
 }
