@@ -3,11 +3,13 @@ import type { ErrorType, Numbers, Operation, Sign } from "../../models"
 
 export class ValidatorStrategy implements ValidatorStrategyContract {
 	private allowedNumbers: Numbers[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-	private allowedSigns: Sign[] = ["+", "-", "*", "/", "="]
+	private allowedSigns: Sign[] = ["+", "-", "*", "/", "=", "."]
 
 	public validate(currentOperation: Operation): ErrorType | true {
 		if (!this.verifyNotEmpty(currentOperation)) return "empty_operation"
 		if (!this.verifyNumbers(currentOperation)) return "invalid_character"
+		if (!this.verifyNoConsecutiveDots(currentOperation))
+			return "invalid_character"
 		if (!this.verifySigns(currentOperation)) return "consecutive_operators"
 		if (!this.verifyLeadingOperator(currentOperation))
 			return "invalid_leading_operator"
@@ -66,6 +68,10 @@ export class ValidatorStrategy implements ValidatorStrategyContract {
 		}
 
 		return true
+	}
+
+	private verifyNoConsecutiveDots(currentOperation: Operation): boolean {
+		return !currentOperation.includes("..")
 	}
 
 	private verifyDecimals(currentOperation: Operation): boolean {
