@@ -1,6 +1,5 @@
 import { beforeEach, describe, expect, it } from "vitest"
 import { CalculatorDomain } from "../../src/domain/domains"
-import { ECalculatorSymbol } from "../../src/domain/models"
 
 describe("CalculatorDomain", () => {
 	let calculatorDomain: CalculatorDomain
@@ -9,52 +8,80 @@ describe("CalculatorDomain", () => {
 		calculatorDomain = new CalculatorDomain()
 	})
 
-	describe("addNumber", () => {
-		it("should add a number to the initial value", () => {
-			calculatorDomain.addNumber(5)
-			expect(calculatorDomain.value).toBe("5")
+	describe("add", () => {
+		it("should add a number to the empty operation", () => {
+			calculatorDomain.add(5)
+			expect(calculatorDomain.currentOperation).toBe("5")
 		})
 
-		it("should append a number to the existing value", () => {
-			calculatorDomain.value = "1"
-			calculatorDomain.addNumber(2)
-			expect(calculatorDomain.value).toBe("12")
-		})
-	})
-
-	describe("addDot", () => {
-		it("should add a dot if no dot exists", () => {
-			calculatorDomain.value = "123"
-			calculatorDomain.addDot()
-			expect(calculatorDomain.value).toBe("123.")
+		it("should append a number to the existing operation", () => {
+			calculatorDomain.add(1)
+			calculatorDomain.add(2)
+			expect(calculatorDomain.currentOperation).toBe("12")
 		})
 
-		it("should not add a dot if a dot already exists", () => {
-			calculatorDomain.value = "123."
-			calculatorDomain.addDot()
-			expect(calculatorDomain.value).toBe("123.")
+		it("should append a sign to the existing operation", () => {
+			calculatorDomain.add(1)
+			calculatorDomain.add("+")
+			expect(calculatorDomain.currentOperation).toBe("1+")
+		})
+
+		it("should append a dot to the existing operation", () => {
+			calculatorDomain.add(1)
+			calculatorDomain.add(".")
+			expect(calculatorDomain.currentOperation).toBe("1.")
 		})
 	})
 
-	describe("addSign", () => {
-		it("should add a mathematical sign to the value", () => {
-			calculatorDomain.value = "123"
-			calculatorDomain.addSymbol(ECalculatorSymbol.ADD)
-			expect(calculatorDomain.value).toBe("123+")
-		})
-
-		it("should not add a sign if the last character is a sign", () => {
-			calculatorDomain.value = "123+"
-			calculatorDomain.addSymbol(ECalculatorSymbol.MINUS)
-			expect(calculatorDomain.value).toBe("123+")
+	describe("clear", () => {
+		it("should clear the current operation", () => {
+			calculatorDomain.add(5)
+			calculatorDomain.clear()
+			expect(calculatorDomain.currentOperation).toBe("")
 		})
 	})
 
-	describe("summResult", () => {
+	describe("equal", () => {
 		it("should calculate the result of the mathematical expression", () => {
-			calculatorDomain.value = "1+2"
-			calculatorDomain.summResult()
-			expect(calculatorDomain.value).toBe("3")
+			calculatorDomain.add(1)
+			calculatorDomain.add("+")
+			calculatorDomain.add(2)
+			calculatorDomain.equal()
+			expect(calculatorDomain.currentOperation).toBe("3")
+		})
+	})
+
+	describe("remove", () => {
+		it("should remove the last character from the operation", () => {
+			calculatorDomain.add(1)
+			calculatorDomain.add(2)
+			calculatorDomain.remove()
+			expect(calculatorDomain.currentOperation).toBe("1")
+		})
+
+		it("should result in an empty operation when removing from a single character", () => {
+			calculatorDomain.add(5)
+			calculatorDomain.remove()
+			expect(calculatorDomain.currentOperation).toBe("")
+		})
+	})
+
+	describe("validate", () => {
+		it("should return true for a valid operation", () => {
+			calculatorDomain.add(1)
+			calculatorDomain.add("+")
+			calculatorDomain.add(2)
+			expect(calculatorDomain.validate()).toBe(true)
+		})
+
+		it("should return an error type for an empty operation", () => {
+			expect(calculatorDomain.validate()).toBe("empty_operation")
+		})
+
+		it("should return an error type for a trailing operator", () => {
+			calculatorDomain.add(1)
+			calculatorDomain.add("+")
+			expect(calculatorDomain.validate()).toBe("trailing_operator")
 		})
 	})
 })
