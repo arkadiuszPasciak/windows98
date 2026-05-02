@@ -1,10 +1,7 @@
-import type {
-	ECalculatorNumber,
-	ECalculatorSymbol,
-} from "../../../domain/models"
+import type { Numbers, Sign } from "../../../domain/models"
 
 export interface OperationButtonProps {
-	id: ECalculatorNumber | ECalculatorSymbol
+	id: Numbers | Sign
 	onClick: () => void
 	variant: "primary" | "secondary"
 }
