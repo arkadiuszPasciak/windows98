@@ -1,10 +1,11 @@
-import type { ECalculatorNumber, ECalculatorSymbol } from "../models"
+import type { ErrorType, Numbers, Operation, Sign } from "../models"
 
 export interface CalculatorDomainContract {
-	value: string
+	currentOperation: Operation
 
-	addNumber(number: ECalculatorNumber): void
-	addDot(): void
-	addSymbol(symbol: ECalculatorSymbol): void
-	summResult(): void
+	add(value: Numbers | Sign): void
+	clear(): void
+	equal(): void
+	remove(): void
+	validate(): true | ErrorType
 }
