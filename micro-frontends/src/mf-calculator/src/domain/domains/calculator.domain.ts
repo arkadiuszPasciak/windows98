@@ -1,72 +1,45 @@
+import { MSMathematics } from "@windows98/micro-services"
 import { makeAutoObservable } from "mobx"
 import type { CalculatorDomainContract } from "../contracts"
-import {
-	ECalculatorDirect,
-	type ECalculatorNumber,
-	type ECalculatorSymbol,
-} from "../models"
-import { CalculatorService } from "../services"
+import type { ErrorType, Numbers, Operation, Sign } from "../models"
 
 export class CalculatorDomain implements CalculatorDomainContract {
-	public value = "0"
-	private calculatorService: CalculatorService = new CalculatorService()
+	public currentOperation: Operation = ""
+	private mathematicsService: typeof MSMathematics = MSMathematics
 
 	constructor() {
 		makeAutoObservable(this)
 	}
 
-	public addNumber = (number: ECalculatorNumber) => {
-		if (
-			this.calculatorService.isValueEqual(
-				this.value,
-				"0",
-				ECalculatorDirect.FIRST,
-			) &&
-			!this.calculatorService.isValueEqual(
-				this.value,
-				"0.",
-				ECalculatorDirect.FIRST,
-			) &&
-			this.value.length === 1
-		) {
-			this.value = String(number)
-		} else {
-			this.value += String(number)
-		}
+	public add(value: Numbers | Sign) {
+		this.currentOperation = this.mathematicsService.add(
+			this.currentOperation,
+			value,
+		)
 	}
 
-	public addDot = () => {
-		if (
-			this.calculatorService.isDotExist(this.value) ||
-			this.calculatorService.isMathematicalSignLast(this.value)
-		) {
-			return
-		}
-
-		if (
-			!this.calculatorService.isValueEqual(
-				this.value,
-				".",
-				ECalculatorDirect.LAST,
-			)
-		) {
-			this.value += "."
-		}
+	public clear() {
+		this.currentOperation = this.mathematicsService.clear()
 	}
 
-	public addSymbol = (symbol: ECalculatorSymbol) => {
-		if (
-			this.value === "0." ||
-			this.calculatorService.isMathematicalSignLast(this.value)
-		) {
-			return
-		}
-
-		this.value += symbol
+	public equal() {
+		this.currentOperation = this.mathematicsService.equal(this.currentOperation)
 	}
 
-	public summResult = () => {
-		this.value = this.calculatorService.summResult(this.value)
+	public remove() {
+		this.currentOperation = this.mathematicsService.remove(
+			this.currentOperation,
+		)
+	}
+
+	public validate(): true | ErrorType {
+		const validationResult = this.mathematicsService.validate(
+			this.currentOperation,
+		)
+
+		if (validationResult !== true) return validationResult
+
+		return true
 	}
 }
 
